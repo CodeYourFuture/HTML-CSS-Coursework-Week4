@@ -1,3 +1,57 @@
 /* Add your custom CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
+.name {
+    font-weight: bolder;
+    text-align: center;
+}
+
+.job {
+    text-align: center;
+}
+
+header {
+    background-color: antiquewhite;
+}
+
+li {
+    margin-left: 15px;
+    list-style-type: none;
+    text-align: center;
+}
+
+.fa-user-circle-o {
+    color: darkcyan;
+    padding-top: 16px;
+    text-align: right;
+}
+
+.login {
+    color: lightblue;
+    text-align: left;
+}
+
+.intro {
+    background-color: lightcoral;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+button {
+    width: auto;
+    background-color: black;
+    color: cornsilk;
+}
+
+.about {
+    width: 100%;
+    background-color: darksalmon;
+}
+
+.photo {
+    width: 100%;
+    background-color:peachpuff;
+
+}
