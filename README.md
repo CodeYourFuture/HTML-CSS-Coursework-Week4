@@ -1,6 +1,6 @@
 # Make a website using a 12-column grid system
 
-Follow one of the 3 designs attached [here] (https://classroom.google.com/u/0/c/Mzk3NDA1NjA4MTVa/a/NjE3NDA1ODQ5MDha/details)
+Follow one of the 3 [designs attached here](https://classroom.google.com/u/0/c/Mzk3NDA1NjA4MTVa/a/NjE3NDA1ODQ5MDha/details)
 
 ### Responsive grid reminder
 
