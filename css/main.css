@@ -4,10 +4,24 @@
 .name {
     font-weight: bolder;
     text-align: center;
+    margin: 8px 0px;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.subrow {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .job {
     text-align: center;
+    margin-top: 0;
 }
 
 header {
@@ -27,8 +41,10 @@ li {
 }
 
 .login {
-    color: lightblue;
+    color: rgb(39, 18, 231);
     text-align: left;
+    font-weight: bold;
+    font-size: 0.8rem;
 }
 
 .intro {
@@ -39,19 +55,55 @@ li {
     margin-right: -15px;
     margin-left: -15px;
 }
+
+.ambition {
+    font-size: small;
+    margin: 2rem 0 0 0;
+}
+
+.succeed {
+    font-size: 3rem;
+    font-weight: bolder;
+    margin: 0.5rem 0 0 0;
+}
+
+@media (min-width: 576px) {
+   .succeed {
+    font-size: 7rem;
+    font-weight: bolder;
+    margin: 0.5rem 0 0 0;
+    }
+}
+
 button {
     width: auto;
     background-color: black;
     color: cornsilk;
+    margin-top:0;
+    margin-bottom: 10rem;
 }
 
 .about {
-    width: 100%;
-    background-color: darksalmon;
+    margin: 0;
+    background-color: rgb(235, 215, 127);
 }
 
 .photo {
-    width: 100%;
+    margin: 0;
     background-color:peachpuff;
 
+}
+
+.pricing {
+    background-color: cadetblue;
+}
+
+.heading {
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.pricingbox {
+    border-width: 3px;
+    border-color: black;
 }
