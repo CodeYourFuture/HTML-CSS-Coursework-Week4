@@ -1,3 +1,21 @@
-/* Add your custom CSS here */
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #ebebeb;
+}
 
-/* Dont' forget to link this file to your HTML in the <head> */
+.logo {
+    display: flex;
+    padding: 10px;
+}
+
+.logo h2 {
+    text-decoration: none;
+    font-size: 2.2em;
+}
+header {
+    display: flex;
+    background-color: white;
+}
