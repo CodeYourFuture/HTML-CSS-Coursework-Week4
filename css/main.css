@@ -1,16 +1,35 @@
 /* Add your custom CSS here */
-header{
-    font-size: larger;
-    color: blue;
+.supercontainer {
     position: relative;
-    display:block;
-    align: center;
-
-}
-
-h1{
-    display:flex;
-    position: absorelative;
-    text-align: center;
-}
+  }
+ 
 /* Dont' forget to link this file to your HTML in the <head> */
+.text-block {
+    position: absolute;
+    translate:70vh 0 0 0;
+    bottom: 50%;
+    right:40%;
+    top:20%;
+    font-size:1em;
+    background-color: black;
+    color: rgb(255, 255, 255);
+
+  }
+  .header-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .header-logo{
+      float:left;
+  }
+  ul{
+      display:inline-flex;
+      list-style-type: none;
+      justify-content: space-around;
+  }
+  li{ 
+      padding-left:5vw;
+      font-size: 1 em;
+    
+  }
