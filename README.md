@@ -4,6 +4,6 @@ Follow one of the 3 [designs attached here](https://classroom.google.com/u/0/c/M
 
 ### Responsive grid reminder
 
-- Always wrap your entire page with a `container` (unless you have a background image that you want to bleed to the edges of the page at all times)
+- Wrap each section of your page with a `container` (unless you have a background image that you want to bleed to the edges of the page at all times)
 - Wrap each set of elements in a `row`
-- Don't change the width, padding-left, padding-right, margin-left or margin-right of the items that have a `[size]-col-[x]` class on them. 
+- Don't change the width, padding-left, padding-right, margin-left or margin-right of the items that have a `col-[x]` class on them.
