@@ -26,6 +26,7 @@ body {
 
 header {
     background-color: antiquewhite;
+    align-items: center;
 }
 
 li {
@@ -48,7 +49,9 @@ li {
 }
 
 .intro {
-    background-color: lightcoral;
+    background-image: url("https://unenvironment.s3.us-east-2.amazonaws.com/s3fs-public/inline-images/1.jpg");
+    background-position: center;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -61,13 +64,13 @@ li {
     margin: 2rem 0 0 0;
 }
 
-.succeed {
+.succees {
     font-size: 3rem;
     font-weight: bolder;
     margin: 0.5rem 0 0 0;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
    .succeed {
     font-size: 7rem;
     font-weight: bolder;
@@ -76,7 +79,6 @@ li {
 }
 
 button {
-    width: auto;
     background-color: black;
     color: cornsilk;
     margin-top:0;
@@ -85,17 +87,24 @@ button {
 
 .about {
     margin: 0;
-    background-color: rgb(235, 215, 127);
+    background-color: rgb(235, 231, 217);
+    align-self: flex-end;
 }
 
 .photo {
-    margin: 0;
-    background-color:peachpuff;
-
-}
+        display: block;
+        background-image: url("https://lh3.googleusercontent.com/proxy/cE3F8DSn61NKD30zzv85mSdHh0i_L3i6l9uYSUDUFHOnY2eTyjvy9v5eiXjjLXW9MqnKhf7WNU2YJ4FQB1Ly1hJmL4UO_iQVB9NwaZdD1WNxo-Sk_FFf25J9UTqTCXJ_q_6BSiTdjk1DCXcR");
+        background-position: center;
+        background-size: cover;
+        margin: 0;
+        background-color:peachpuff;
+        min-height: 30rem;
+    }
 
 .pricing {
-    background-color: cadetblue;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT7p9klDuc56gZoB3UlRtzGLXemC5yG8hvMUxk6ZoRjmdHlpvND");
+        background-position: center;
+        background-size: cover;
 }
 
 .heading {
@@ -103,7 +112,43 @@ button {
     font-weight: bolder;
 }
 
+/*.headin p {
+    margin: 5px;
+}*/
+
 .pricingbox {
-    border-width: 3px;
-    border-color: black;
+    border-style: solid;
+    border-width: thick;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h2 {
+    margin-top: 4rem;
+}
+
+h4 {
+    padding: 0 5rem 2rem 5rem;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+hr {
+    width: 70%;
+}
+
+.line {
+    border:2px solid purple;
+}
+.greenbutton {
+    margin-bottom: 3rem;
+    background-color: forestgreen;
+    color: gainsboro;
+}
+
+.moresrv {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
