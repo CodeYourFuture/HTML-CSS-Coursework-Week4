@@ -12,9 +12,10 @@ h1{
 }
 
 h2{
+    
     text-align: center;
-    color: crimson;
-    margin: 0;
+    color: rgb(129, 48, 11);
+    padding-top: 10px;
 }
 
 h3{
@@ -22,9 +23,17 @@ h3{
     font-weight: lighter;
 }
 
+h4{
+    text-align: center;
+    padding: 10px;
+}
 P{
     text-align: center;
     color: rgb(247, 243, 244);
+}
+
+.promo{
+    color: rgb(129, 48, 11);
 }
 
 img{
