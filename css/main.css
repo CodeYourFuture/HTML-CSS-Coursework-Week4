@@ -1,3 +1,149 @@
 /* Add your custom CSS here */
+@import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
+body {
+    font-family: 'PT Sans', sans-serif;
+    background: rgb(219, 218, 218);
+    color: sienna;
+}
 
-/* Dont' forget to link this file to your HTML in the <head> */
+h1{
+    color: white;
+    font-size: 4rem;
+}
+
+h2{
+    text-align: center;
+    color: crimson;
+    margin: 0;
+}
+
+h3{
+    color: white;
+    font-weight: lighter;
+}
+
+P{
+    text-align: center;
+    color: rgb(247, 243, 244);
+}
+
+img{
+    width: 100%;
+}
+
+.top-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+li {
+    display: inline-block;
+    margin-left: 1.563rem;
+}
+
+.hero{
+    
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("../images/hero.jpg") center no-repeat;
+}
+
+.button{
+    width: 9rem;
+    background-color: #f15a29;
+    border-color: #f15a29;
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 1rem 1.5rem;
+    color: white;
+    font-size: 1.125rem;
+}
+/*About Us Section*/
+
+.about-us{
+    background-color: darkolivegreen;
+    margin: 15px;
+}
+
+.info{
+    margin: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background-color: white;
+}
+
+
+
+/*form*/
+
+.request{
+
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    background: linear-gradient(to bottom, rgba(114, 114, 117, 0.52), rgba(80, 77, 79, 0.73)), url("../images/hero.jpg") center;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: rgb(196, 129, 29);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #aa691f;
+  }
+  
+  .form-container {
+    border-radius: 5px;
+    padding: 20px;
+    color: white;
+  }
+
+  .footer{
+    background-color: darkolivegreen;
+    color: white;
+  }
+  .footer p{
+      color: white;
+      padding: 15px;
+  }
