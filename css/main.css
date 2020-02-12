@@ -59,9 +59,15 @@ li {
     margin-left: -15px;
 }
 
+@media (min-width: 768px) {
+    .intro {
+        min-height:500px ;
+    }
+}
+
 .ambition {
     font-size: small;
-    margin: 2rem 0 0 0;
+    margin: 4rem 0 0 0;
 }
 
 .succees {
@@ -81,14 +87,12 @@ li {
 button {
     background-color: black;
     color: cornsilk;
-    margin-top:0;
-    margin-bottom: 10rem;
+    margin-top:2rem;
 }
 
 .about {
     margin: 0;
     background-color: rgb(235, 231, 217);
-    align-self: flex-end;
 }
 
 .photo {
@@ -103,18 +107,14 @@ button {
 
 .pricing {
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT7p9klDuc56gZoB3UlRtzGLXemC5yG8hvMUxk6ZoRjmdHlpvND");
-        background-position: center;
-        background-size: cover;
+    background-position: center;
+    background-size: cover;
 }
 
 .heading {
     font-size: 1.5rem;
     font-weight: bolder;
 }
-
-/*.headin p {
-    margin: 5px;
-}*/
 
 .pricingbox {
     border-style: solid;
@@ -123,6 +123,7 @@ button {
     flex-direction: column;
     align-items: center;
 }
+
 h2 {
     margin-top: 4rem;
 }
@@ -147,8 +148,83 @@ hr {
 }
 
 .moresrv {
-    margin-top: 2rem;
+    margin: 2rem 0 2rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
+
+footer {
+    background-color: skyblue;
+}
+
+.contact {
+    font-size: 0.8rem;
+    margin: 3rem 0 0 3rem;
+}
+
+.firstline {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    margin-top: 2rem;
+}
+
+.social {
+
+}
+
+.fa {
+    padding: 1rem;
+    font-size: 1rem;
+    width: 1rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: black;
+  }
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    padding-left: 1rem;
+}
+
+@media (min-width: 768px) {
+    .form {
+        display: flex;
+        flex-direction: column;
+        padding-top: 3rem;
+        padding-left: 3rem;
+     }
+ }
+
+.label {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.85rem;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 0.5rem;
+    margin-bottom: 1.3rem;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: 5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.3rem;
+}
+
+.submit {
+    align-self: flex-end;
+    margin-bottom: 2rem;
+}
+
