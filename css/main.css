@@ -1,35 +1,95 @@
 /* Add your custom CSS here */
 .supercontainer {
-    position: relative;
+  display:flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
   }
  
 /* Dont' forget to link this file to your HTML in the <head> */
 .text-block {
     position: absolute;
-    translate:70vh 0 0 0;
-    bottom: 50%;
-    right:40%;
-    top:20%;
-    font-size:1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:10vh;
     background-color: black;
     color: rgb(255, 255, 255);
-
+    justify-content: center;
+    height:12vh;
   }
+
+ h2{
+   display:flex;
+   flex-wrap:wrap;
+   font-size:2 em;
+   font-style:large;
+   margin:0.5vh;
+ }
+ p{
+  font-family: roboto;
+  font-size:0.5 em;
+  font-style:light;
+  margin:1vh;
+ }
   .header-wrapper {
-    display: flex;
+    display: inline-flex;
+    min-width:15vh;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-content: center;
   }
   .header-logo{
+      display:flex;
       float:left;
+      align-items: center;
+  
+  }
+  .header-nav{
+    justify-content: right;
   }
   ul{
+      font-family: 'Roboto';font-size: 22px;
       display:inline-flex;
       list-style-type: none;
       justify-content: space-around;
+      max-width:50vw;
   }
   li{ 
+    
       padding-left:5vw;
       font-size: 1 em;
     
+  }
+  .bigpic{
+    height:50%;
+  }
+  .contactform{
+    display:flex;
+    flex-direction:column;
+    margin:15px;
+    text-align:center;
+    background-color: red;
+    margin-left:30px;
+  }
+  .quit{
+    background-color:red;
+    color:white;
+    font-style:larger;
+    padding-bottom:15px;
+  }
+  .email{
+    background-color:white;
+    color:red;
+    font-style:larger;
+  }
+  aside{
+    display:flex;
+    background-color: rgb(5, 41, 58);
+    color:white;
+    padding-left: 15px;
+    margin-left:30px;
+    flex-direction:column;
+    text-align: justify;
   }
