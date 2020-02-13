@@ -1,3 +1,56 @@
 /* Add your custom CSS here */
-
 /* Dont' forget to link this file to your HTML in the <head> */
+
+.header-container {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  color: red;
+}
+ .logo-container{
+   position: absolute;
+   top: 10%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   z-index: 100;
+ }
+.logo{
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    width: 6rem;
+}
+.nav-list {
+  display: flex;
+  list-style-type: none;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  font-size: 30px;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  color: red;
+}
+.arrow-down {
+  width: 20px;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+ #proj, #about,#contact {
+   text-align: center;
+}
+.flex-box{
+    list-style-type: none;
+     display: inline;
+  
+}
+.row{
+    display:flex;
+    flex-wrap: wrap;
+}
