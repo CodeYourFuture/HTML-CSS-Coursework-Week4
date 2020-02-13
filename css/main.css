@@ -1,3 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
 /* Add your custom CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
+body {
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Nunito', sans-serif;
+    /* background-color: rosybrown; */
+    margin: 0px;
+    
+    
+    
+
+}
+.hide{
+    display: none;
+}
+.nav-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+    margin-top: 0px;
+    /* position: fixed; */
+    z-index: 1;
+
+}
+.no-padding{
+    padding: 0px;
+
+}
+.right-side{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* background-color: lightblue; */
+    
+
+}
+.login-font{
+    font-size: 15px;
+    text-decoration: none;
+    color: #c0392b;
+}
+.left-side{
+    display: flex;
+    justify-content: flex-start;
+}
+.first-section{
+    background-color: skyblue;
+    background: url("../img/first-sec-img.jpg") no-repeat center;
+    
+    color: snow;
+    height: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* margin-top: 60px; */
+    /* position: a; */
+    
+}
+.first-sec-buy{
+    text-decoration: none;
+    color: white;
+    background-color: #d35400;
+    border-radius: 2px;
+}
+.first-sec-buy:hover{
+    background-color: #d354aa;
+    
+}
+
+*{
+    /* border: solid green 0.1px; */
+}
