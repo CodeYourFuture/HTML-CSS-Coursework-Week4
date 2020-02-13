@@ -1,29 +1,240 @@
 body {
+    background-color: white;
+   
+}
+.header h2 {
+    margin-left: 20px;
+}
+
+span {
+    color: red;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 2px 2px 6px 0 rgba(0,0,0, .1);
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+
+.header ul {
     margin: 0;
     padding: 0;
-    background-color: #ebebeb;
-}
-
-.logo h2 {
-    text-decoration: none;
-    font-size: 2.2em;
-}
-span {
-    color: grey;
-}
-header {
-    display: flex;
-    position: fixed;
-    background-color: white;
-    width: 100%;
-    box-shadow: 2px 2px 6px 0 rgba(0,0,0, .1);
-}
-
-.menu-nav {
     list-style: none;
-    text-decoration: none;
+    overflow: hidden;
+    background-color: black;
+    display: block;
+    text-align: center;
+    
 }
-.menu-nav a {
-    text-decoration: none;
-    color: black;
+
+.header li {
+    padding: 20px 30px;
+    border: 1px solid #333;
+    
 }
+.header li a {
+   text-decoration: none;
+   cursor: pointer;
+   color: white;
+   
+}
+.header li a:hover,
+.header .menu-btn:hover {
+    color: grey;
+} 
+
+.header .menu {
+    transition: max-height .2s ease-out;
+    max-height: 0px;
+    position: absolute;
+    top: 0;
+    margin-top: 68px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    
+}
+.header .menu-icon {
+    cursor: pointer;
+    display: block;
+    float: right;
+    padding: 28px 30px;
+    position: relative;
+    cursor: pointer;
+}
+.header .menu-icon .navicon {
+    background: black;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition:  .2s ease-out;
+    width: 18px;
+}
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+    background: black;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+
+}
+.header .menu-icon .navicon:before {
+    top: 8px;
+}
+.header .menu-icon .navicon:after {
+    top: -8px;
+}
+.header .menu-btn {
+    display: none;
+
+}
+.header .menu-btn:checked ~ .menu  {
+    max-height: 240px;
+    transition: all 1s cubic-bezier(.5, 1, .22, 1);
+
+}
+.header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+    
+  }
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+.contact-icons .mobile {
+    visibility: hidden;
+}
+.fa {
+    text-decoration: none;
+    color: red;
+    margin-left: 5px;
+}
+.st-title {
+    justify-content: space-around;
+}
+.centered {
+    margin-top: 30px;
+    font-size: 1em;
+}
+.centered p {
+   text-align: center;
+}
+.since {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.products {
+    justify-content: space-around;
+    align-items: center;
+}
+.row img {
+    width: 100%;
+}
+.since img {
+    width: 50px;
+    padding: 10px;
+}
+
+h2 {
+    text-align: center;
+}
+.box h2,h3,p{
+    text-align: center;
+}
+
+.about{
+    background-color: rgba(0,0,0, .1);
+    text-align: center;
+}
+hr {
+    border: 1px solid red;
+    width: 30px;
+}
+.about-img {
+    padding: 0; !important
+    object-fit: cover;
+}
+
+
+
+/*MEDIA*/
+
+@media screen and (min-width: 768px) {
+    .header .menu-icon {
+        display: none;
+    }
+    .header {
+        position: fixed;
+        background-color: white;
+        box-shadow: none;
+        z-index: 1;
+
+    }
+    .header .menu {
+        overflow: visible;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        left: 200px;
+        margin-top: 35px;
+    }
+    .header li a {
+        color: black;
+    }
+    .header li {
+        border: none;
+    }
+    .header li a {
+        color: black;
+    }
+
+    .main-bg {
+        position: relative;
+    }
+    .centered {
+        top: 20px;
+        position: absolute;
+        font-size: 1.5em;
+    }
+    .col-12 {
+        width: 30%;
+    }
+    .fa {
+        margin-right: 40px;
+    }
+    .contact-icons .mobile {
+        visibility: visible;
+    }
+   .section-about .col-6 {
+       width: 50%;
+   }
+   .section-about .col-3 {
+    width: 25%;
+}
+
+}
+
