@@ -1,4 +1,7 @@
 /* Add your custom CSS here */
+body{
+  background-color: black;
+}
 .supercontainer {
   display:flex;
   justify-content: center;
@@ -11,20 +14,19 @@
     position: absolute;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    margin-top:10vh;
-    background-color: black;
+    background-color:rgb(1, 31, 47);
     color: rgb(255, 255, 255);
     justify-content: center;
     height:12vh;
+    box-shadow: 2vw 2vh rgb(238, 234, 4);
   }
 
- h2{
+ h1{
    display:flex;
    flex-wrap:wrap;
    font-size:2 em;
-   font-style:large;
+   font-style:larger;
    margin:0.5vh;
  }
  p{
@@ -39,6 +41,9 @@
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
+    background-color: rgb(8, 94, 151);
+    box-shadow: 2vw 2vh rgb(251, 255, 0);
+    z-index:3;
   }
   .header-logo{
       display:flex;
@@ -48,11 +53,14 @@
   }
   .header-nav{
     justify-content: right;
+    
   }
   ul{
-      font-family: 'Roboto';font-size: 22px;
+      font-family: 'Roboto';font-size: 1em;
       display:inline-flex;
       list-style-type: none;
+      color:white;
+      font-style: italic;
       justify-content: space-around;
       max-width:50vw;
   }
@@ -65,31 +73,92 @@
   .bigpic{
     height:50%;
   }
+.main-wrapper{
+  display:inline-flex;
+
+  color:white;
+}
   .contactform{
     display:flex;
     flex-direction:column;
-    margin:15px;
     text-align:center;
-    background-color: red;
-    margin-left:30px;
+    color: white;
   }
   .quit{
-    background-color:red;
+    background-color:rgb(5, 0, 0);
     color:white;
-    font-style:larger;
-    padding-bottom:15px;
+    font-size:1em;
+  
   }
   .email{
     background-color:white;
-    color:red;
+    color:rgb(247, 240, 240);
     font-style:larger;
   }
   aside{
+
     display:flex;
+    flex-direction: column;
+    align-content: center;
+    border-radius: 0.2rem;
     background-color: rgb(5, 41, 58);
     color:white;
-    padding-left: 15px;
-    margin-left:30px;
+    
+    margin-left:15px;
     flex-direction:column;
     text-align: justify;
   }
+  main{
+    display:flex;
+    flex-direction:column;
+    padding-left: 30px;
+    hyphens: auto;
+    margin-left:15px;
+    flex-direction:column;
+    text-align: justify;
+    align-content: center;
+    background-color: white;
+    color:black;
+  }
+  .secretcol {
+    background-color: rgb(53, 4, 4);
+  }
+  @media (max-width: 768px) {
+    /* md */
+    .secretcol {
+      display:none;
+    }
+  }
+  .breaking{
+    color: rgb(255, 238, 0);
+  }
+  h3{
+    padding:15px;
+   
+  }
+  .black{
+    background-color: black;
+  }
+.tooltips{
+  background-color:none;
+  padding:0px;
+}
+.iframe-container{
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 35px;
+  height: 0;
+  overflow: hidden;
+}
+iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 768px)
+{iframe{
+  display:none;
+}
+}
