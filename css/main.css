@@ -1,3 +1,87 @@
 /* Add your custom CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
+
+
+.figuretop{
+    background-color: rgb(173, 126, 218);
+    padding: 25px;
+    margin: 0;
+} 
+
+.navbar{
+justify-content: space-around;
+background-color: blueviolet;
+}
+
+.list-elements{
+list-style-type: none;
+display: flex;
+justify-content: space-evenly;
+}
+
+.list-elements li{
+    padding: 5px;
+    margin: 0em;
+    flex-direction: row;
+}
+
+.contact {
+    background-color: rgb(140, 140, 235);
+    padding: 3px;
+}
+
+.hero-image{
+    margin-top: 10px;
+}
+.row3{
+    display: flex;
+    justify-content: center;
+}
+
+.sectiontitle{
+    font-size: 25px;
+    font-family: cursive; 
+    color: rgb(77, 19, 104);
+    font-weight: 500;
+}
+
+.row4image{
+    padding-right: 0px;
+    padding-left: 0px;
+    /* height: 100%; */
+}
+
+.heromin-image{
+    /* margin: 5px; */
+    padding: 0 3px;
+}
+
+.widerrow{
+    margin-bottom: 0em;
+    background-color: rgb(151, 152, 211);
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.imagebox{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.smallimage{
+/* height:auto; */
+display:block;
+width: 100%;
+}
+
+h2{
+    font-size: 35px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: justify;
+}
+
+.row8{
+    background-color: #d5b8ff;
+}
