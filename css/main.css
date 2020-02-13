@@ -132,7 +132,30 @@ body{
   .breaking{
     color: rgb(255, 238, 0);
   }
+  .fun{
+    display:flex;
+    flex-direction:column;
+    padding-top:5vh;
+    align-items: center;
+    font-weight: bold;
+    color:black;
+    background-color:rgb(255, 217, 0);
+    font-family: roboto;
+    font-size:0.5 em;
+    font-style:light;
+    margin:1vh;
+    margin-top:5vh;
+  }
+  .allow{
+    margin-top:5vh;
+    font-weight: bold;
+    margin-bottom: 5vh;
+    color:white;
+    background-color:green;
+    border-radius: 1em;
+  }
   h3{
+    text-align: left;
     padding:15px;
    
   }
