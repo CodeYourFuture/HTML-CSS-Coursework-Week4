@@ -12,9 +12,10 @@
 
     <title>Responsive grid project</title>
 </head>
+<!--wraps whole body with the class "container"-->
+<body class="container"> 
 
-<body class="container">
-<header class="row headercontainer">
+    <header class="row headercontainer">
     
         <div class="col-3">
             <img class="logo" src="images/icons8-flower-96.png" alt="Logo Image" >
@@ -90,20 +91,36 @@
 
 </section>
 <section class="row">
-    <div class="contact col-12 md-col-6">
-            <div class="contacttext">
-                <h3>CONTACT</h3>
-                <p>500 Terry Francois Street<br>San Francisco, CA 94158<br><br>
-                Tel: 123-456-7890<br>Fax:123-456-7890<br><br>info@mysite.com</p>
-                <i class="fa fa-facebook"></i>
-                <i class="fa fa-twitter"></i>
-                <i class="fa fa-youtube"></i>
-                <i class="fa fa-instagram"></i>
+        <div class="contact col-12 md-col-6">
+            <div class="col-3">
+            
             </div>
-        
-     </div>
-     <div class="form md-col-6">
+            <div class="contacttext col-7">
+                
+                
+                    <h3>CONTACT</h3>
+                    <p>500 Terry Francois Street<br>San Francisco, CA 94158<br><br>
+                    Tel: 123-456-7890<br>Fax:123-456-7890<br><br>info@mysite.com</p>
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-youtube"></i>
+                    <i class="fa fa-instagram"></i>   
+            </div>
+            <div class="col-2">
+                
+            </div>
+        </div>
 
+     <div class="form col-12 md-col-6">
+        <p>Enter Your Name</p>
+        <input type="text"><br>
+        <p>Enter Your Email</p>
+        <input type="text"><br>
+        <p>Enter Your Subject</p>
+        <input type="text"><br>
+        <p>Message</p>
+        <input type="text" id="message"><br>
+        <input type="submit" id="submit"><br>
      
 
 

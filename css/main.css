@@ -69,11 +69,11 @@ header{
     font-family: Arial, Helvetica, sans-serif;
 }
 .btn{
-    background-color: lightseagreen;
+    background-color: rgb(236, 109, 86);
 }
 .leftside{
     height:auto;
-    background-color: #fdedca;
+    background-color: #FFB661;
     text-align: center;
 }
 .abouttext{
@@ -110,10 +110,24 @@ header{
     
 }
 .service{
-    width:15%;
+    text-align: center;
     padding-top: 0.5rem;
 }
 .contact{
-    background-color: lightsalmon;
-    text-align: center;
+    display: flex;
+    display:column;
+    background-color: #FFB661;
+    text-align: left;
+}
+.form{
+    background-color: #FFB661;
+}
+#message{
+    height:3rem;
+    
+}
+#submit{
+    margin-top: 10px;
+    color:white;
+    background-color: black;
 }
