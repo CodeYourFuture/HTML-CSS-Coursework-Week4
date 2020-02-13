@@ -11,12 +11,21 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.subrow {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-    padding-left: 15px;
-    padding-right: 15px;
+.navlist {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+@media (min-width: 768px) {
+    .navlist {
+        display: flex;
+        flex-direction: row;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+    li {
+        text-align: center;
+    }
 }
 
 .job {
@@ -32,7 +41,8 @@ header {
 li {
     margin-left: 15px;
     list-style-type: none;
-    text-align: center;
+    text-align: left;
+    font-size: 0.8rem;
 }
 
 .fa-user-circle-o {
@@ -63,6 +73,10 @@ li {
     .intro {
         min-height:500px ;
     }
+    .ambition {
+        font-size: small;
+        margin: 4rem 0 0 0;
+    }
 }
 
 .ambition {
@@ -82,12 +96,15 @@ li {
     font-weight: bolder;
     margin: 0.5rem 0 0 0;
     }
+    button {
+        margin-top:2rem;
+    }
 }
 
 button {
     background-color: black;
     color: cornsilk;
-    margin-top:2rem;
+    margin:2rem 0 2rem;
 }
 
 .about {
@@ -125,14 +142,25 @@ button {
 }
 
 h2 {
-    margin-top: 4rem;
+    margin-top: 1rem;
+    text-align: center;
 }
 
 h4 {
-    padding: 0 5rem 2rem 5rem;
+    padding: 0 1rem 2rem 1rem;
     border-bottom-style: solid;
     border-bottom-width: 1px;
 }
+
+@media (min-width: 768px) {
+    h2 {
+        margin-top: 3rem;
+    }
+    
+    h4 {
+        padding: 0 5rem 2rem 5rem;
+    }
+ }
 
 hr {
     width: 70%;
@@ -160,7 +188,13 @@ footer {
 
 .contact {
     font-size: 0.8rem;
-    margin: 3rem 0 0 3rem;
+    margin: 1rem 0 0 1rem;
+}
+
+@media (min-width: 768px) {
+    .contact {
+        margin: 3rem 0 0 3rem;
+    }
 }
 
 .firstline {
@@ -170,7 +204,7 @@ footer {
 }
 
 .social {
-
+    flex-direction: row;
 }
 
 .fa {
