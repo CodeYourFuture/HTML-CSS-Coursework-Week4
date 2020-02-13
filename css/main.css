@@ -114,13 +114,13 @@ button {
 
 .photo {
         display: block;
-        background-image: url("https://lh3.googleusercontent.com/proxy/cE3F8DSn61NKD30zzv85mSdHh0i_L3i6l9uYSUDUFHOnY2eTyjvy9v5eiXjjLXW9MqnKhf7WNU2YJ4FQB1Ly1hJmL4UO_iQVB9NwaZdD1WNxo-Sk_FFf25J9UTqTCXJ_q_6BSiTdjk1DCXcR");
+        background-image: url("https://n8g5aw6nho-flywheel.netdna-ssl.com/wp-content/uploads/2019/05/coaching.jpg");
         background-position: center;
         background-size: cover;
         margin: 0;
         background-color:peachpuff;
         min-height: 30rem;
-    }
+}
 
 .pricing {
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT7p9klDuc56gZoB3UlRtzGLXemC5yG8hvMUxk6ZoRjmdHlpvND");
@@ -215,7 +215,7 @@ footer {
     text-decoration: none;
     border-radius: 50%;
     color: black;
-  }
+}
 
 .form {
     display: flex;
@@ -231,7 +231,7 @@ footer {
         padding-top: 3rem;
         padding-left: 3rem;
      }
- }
+}
 
 .label {
     font-family: 'Times New Roman', Times, serif;
