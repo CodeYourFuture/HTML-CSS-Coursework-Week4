@@ -1,3 +1,27 @@
 /* Add your custom CSS here */
 
+body {
+    margin: 0em;
+    background-color: antiquewhite;
+}
+
+.head {
+    height: 80px;
+    background-color: brown;
+}
+
+h2 {
+    font-weight: 800px;
+    text-align: center;
+    color: cornsilk;
+    display: flexbox;
+}
+
+h1 {
+    background-color: black;
+    text-align: center;
+    color: ghostwhite;
+}
+
+
 /* Dont' forget to link this file to your HTML in the <head> */
