@@ -49,7 +49,7 @@ span {
 }
 .header li a:hover,
 .header .menu-btn:hover {
-    color: grey;
+    color: red;
 } 
 
 .header .menu {
@@ -167,11 +167,16 @@ h2 {
 
 .about{
     background-color: rgba(0,0,0, .3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
     text-align: center;
 }
 .about h1{
     color: red;
 }
+
 .grid-img {
     position: relative;
 }
@@ -193,14 +198,112 @@ hr {
 }
 .about-img {
     padding: 0; !important
-    object-fit: cover;
+}
+
+.mob-img {
+    display: none;
+}
+.products-2nd .grid-img {
+    display: none;
+}
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+.name-form {
+    text-align: center;
+    color: white;
+}
+.email-form {
+    text-align: center;
+    color: white;
+}
+
+form {
+    margin-top: 20px;
+    width: 100%;
+    padding: 20px;
+}
+.section-form {
+    margin-top: 100px;
+    background-image: url(/img/form-back.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.section-form h2 {
+    padding: 30px;
+   color: white;
+}
+textarea {
+    width: 100%;
+}
+.sub-botton {
+    background-color: red;
+    border: none;
+    color: white;
+    font-size: 1em;
+}
+.section-footer {
+    margin-top: 80px;
+    background-color: rgba(0,0,0, .1);
+    padding: 40px;
+}
+.links-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.links-footer a {
+  text-decoration: none;
+  color: black;
+}
+
+.links-footer a:hover {
+    text-decoration: none;
+    color: white;
+  }
+.subs {
+    margin-top: 20px;
+}
+.subs-form {
+    display: flex;
+}
+.sub-botton-footer {
+    color: red;
+}
+.sub-botton-footer:hover {
+    color: white;
+    background-color: red;
+}
+.contact-icons-footer  {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-icons-footer .fa {
+   width: 30px;
+   margin-left: 40px;
+}
+.copy {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
 
 /*MEDIA*/
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
     .header .menu-icon {
         display: none;
     }
@@ -256,6 +359,33 @@ hr {
     .products .col-4 {
         width: 33.333333%;
     }
-
+    .discount .col-6 {
+        width: 50%;
+    }
+    .mob-img {
+        display: block;
+    }
+    .products-2nd .grid-img {
+        display: block;
+    }
+    .xl-col-6 {
+        width: 50%;
+    }
+    .xl-col-10 {
+        width: 100%;
+    }
+    form {
+        padding: 80px;
+    }
+   
+    .xl-col-3 {
+        width: 33.333%;
+    }
+    .section-footer {
+        padding: 140px;
+    }
+    .xl-col-5 {
+        width: 100%;
+    }
 }
 
