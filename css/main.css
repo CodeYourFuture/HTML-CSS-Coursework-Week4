@@ -10,6 +10,7 @@ body {
 
 header {
     width: 100vw;
+    margin-bottom: 0em;
 }
 header h1 {
 	text-align: center;
@@ -27,6 +28,20 @@ ul {
 img {
     width: 100vw;
 }
+
+
+.section-a h2, .section-b h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0em;
+}
+
+iframe {
+    width: 90vw;
+    height: 28vh;
+    padding: 0.5rem;
+}
+
 
 
 /* Dont' forget to link this file to your HTML in the <head> */
