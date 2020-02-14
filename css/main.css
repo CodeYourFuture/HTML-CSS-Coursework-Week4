@@ -3,7 +3,30 @@
 @import url('https://fonts.googleapis.com/css?family=Sriracha&display=swap');
 
 body {
-    background-color: rgb(223, 223, 223);
+	background-color: rgb(223, 223, 223);
     font-family: 'Sriracha', cursive, sans-serif;
+    margin:0;
 }
+
+header {
+    width: 100vw;
+}
+header h1 {
+	text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav-bar a {
+	text-decoration: none;
+	color: rgb(54, 54, 54);
+}
+
+img {
+    width: 100vw;
+}
+
+
 /* Dont' forget to link this file to your HTML in the <head> */
