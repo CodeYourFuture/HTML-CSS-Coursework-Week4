@@ -30,7 +30,7 @@ img {
 }
 
 
-.section-a h2, .section-b h2 {
+.section-a h2, .section-b h2, .section-c h2 {
     text-align: center;
     font-size: 2rem;
     margin: 0em;
@@ -42,6 +42,25 @@ iframe {
     padding: 0.5rem;
 }
 
+.section-b p {
+    padding: 1rem;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.section-c input, textarea {
+    width: 90vw;
+}
+
+input {
+    height: 3em;
+}
+
+form label {
+    display: block;
+    padding: 0em;
+    font-size: 1.5rem;
+}
 
 
 /* Dont' forget to link this file to your HTML in the <head> */
