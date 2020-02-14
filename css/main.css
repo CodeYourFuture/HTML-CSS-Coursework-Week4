@@ -1,3 +1,42 @@
 /* Add your custom CSS here */
-
 /* Dont' forget to link this file to your HTML in the <head> */
+header {
+    justify-content: center;
+}
+
+h3,h6,h1 {
+    text-align: center;
+}
+ul {
+   list-style-type: none;
+     
+}
+
+.hero-text {
+    justify-content: center;
+}
+
+
+.img-background {
+    background-image: url("images/picText4.JPG");
+}
+
+.h-about {
+    text-align: left;
+}
+.h-me {
+    text-align: left;
+}
+.h-button {
+    background-color: rgb(95, 141, 126);
+}
+ul {
+    justify-content: space-between;
+}
+.about-me {
+    align-items: flex-start;
+}
+
+
+
+
