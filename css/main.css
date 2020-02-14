@@ -1,3 +1,9 @@
 /* Add your custom CSS here */
 
+@import url('https://fonts.googleapis.com/css?family=Sriracha&display=swap');
+
+body {
+    background-color: rgb(223, 223, 223);
+    font-family: 'Sriracha', cursive, sans-serif;
+}
 /* Dont' forget to link this file to your HTML in the <head> */
