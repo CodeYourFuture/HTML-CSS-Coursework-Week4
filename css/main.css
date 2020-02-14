@@ -5,6 +5,29 @@ body {
     background: rgb(219, 218, 218);
     color: sienna;
 }
+/* custom gridfor about-us */
+.row-2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  .about-col-6 {
+    width: 100%;
+    position: relative;
+    min-height: 1px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  @media (min-width: 768px) {
+    .about-col-6 {
+      width: 50%;
+    }
+}
+
+
 
 h1{
     color: white;
@@ -27,13 +50,17 @@ h4{
     text-align: center;
     padding: 10px;
 }
+h5{
+    padding: 5px 10px ;
+}
 P{
     text-align: center;
     color: rgb(247, 243, 244);
 }
 
-.promo{
-    color: rgb(129, 48, 11);
+.form-title{
+    color: white;
+    font-size: 2rem;;
 }
 
 img{
@@ -57,12 +84,16 @@ img{
 ul{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding: 5px;
 }
 
 li {
     display: inline-block;
     margin-left: 1.563rem;
+}
+a:hover{
+    color: black;
 }
 
 .hero{
@@ -86,6 +117,17 @@ li {
     color: white;
     font-size: 1.125rem;
 }
+/* map area */
+.row-3 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 15px;
+    background-color: white;
+  }
+
+
 /*About Us Section*/
 
 .about-us{
@@ -147,10 +189,11 @@ input[type=text], select, textarea {
     padding: 20px;
     color: white;
   }
-
+/*form*/
   .footer{
     background-color: darkolivegreen;
     color: white;
+    margin: 15px 0px;
   }
   .footer p{
       color: white;
