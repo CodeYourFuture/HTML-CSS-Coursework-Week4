@@ -5,21 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/grid.css">
     <!-- Add a link to your custom CSS here -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
     <title>Responsive grid project</title>
 </head>
 
 <body>
 <!-- NAVBAR ON TOP OF BACKGROUND IMAGE-->
     <section>
-        <div class="container-1">
-            <div class="bold-name">
+<!-- navbar container col-12 -->
+        <header class="container-1">
+        <!-- navbar-left col-3-->            
+            <div class="bold-name-left">
                 <h1>Name Alice</h1>
                 <h2>Personal Life Coach</h2>
             </div>
-            <div class="6links"></div>
-            <ul>
+<!-- navbar-col-6 -->
+            <div class="6-nav-links-middle"></div>
+            <ul class="nav-links">
                 <li><a href="">Home</a></li>
                 <li><a href="">About</a></li>
                 <li><a href="">Services</a></li>
@@ -27,47 +32,70 @@
                 <li><a href="">Blog</a></li>
                 <li><a href="">Contact</a></li>
             </ul>
-            <div class="login-button"></div>
+            <!-- navbar-right col-3-->
+            <div class="login-section-right">
+                <ul>
+                    <li class="nav-login-in-icon">
+                        <i><fa fa-user-circle-o"></i>
+                    </li>
+                    <li class="log-in-link">
+                        <a href="log-in">Log in</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- should this be here -research -->
             <div class="background-image"></div>
-        </div>
+        </header>
     </section>
     <!-- navbar ends here -->
 
 <!-- hero picture-->
     <section>
+        <!-- hero container col-12 -->
         <div class="container-2">
+            <!-- description col-6 - center -->
         <div class="description">
         <h1>AMBITION IS THE FIRST STEP TOWARDS</h1>
         <h2>SUCCESS</h2>            
         </div>
-        <div>
+        <!-- col-1 -->
+        <div class="hero-button-black">
             <button>Book Now</button>
-        </div>            
+            </div>           
         </div>
     </section>
 <!-- hero ends here -->
 <!-- ABOUT ME SECTION START -->
     <section>
         <div class="container-3">
-        <div class="article">
+                    <!-- col-6 -->
+        <div class="article-left">
             <h1>About Me</h1>
-            <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores quis alias quo ipsum nihil quisquam. Praesentium tempore sit quod velit autem facere voluptatem deserunt, eligendi totam accusantium natus deleniti consectetur!</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores quis alias quo ipsum nihil quisquam. Praesentium tempore sit quod velit autem facere voluptatem deserunt, eligendi totam accusantium natus deleniti consectetur!</p>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores quis alias quo ipsum nihil quisquam. Praesentium tempore sit quod velit autem facere voluptatem deserunt, eligendi totam accusantium natus deleniti consectetur!</p>
         </div>
-        <div>
-        <button></button>
-        </div>            
+                <!-- col-1 -->
+        <div class="Read-more-button-black">
+        <button>Read More</button>
+        </div>
+                <!-- col-6 -->            
         <div class="image">            
         </div>
         </div>        
     </section>
     <!-- ABOUT ME ends here -->
 
-    <!-- HOW I CAN HELP YOU SECTION with background image-->
+    <!-- SERVICES - HOW I CAN HELP YOU SECTION with background image-->
     <section>
+                <!-- col-12 -->
 <div class="container-3">
-    <div class="outside-content">
+    <div class="outside-services">
         <h1>HOW I CAN HELP YOU</h1>
-        <div class="button"></div>
+                <!-- col-2 -->
+        <div class="services-button-black">
+            <button>More Services</button>
+            </div>
     </div>
     <div class="inside-content">
         <h1>ONE ONE ONE COACHING</h1>
@@ -75,8 +103,10 @@
         <hr>
         <h3>1 hr</h3>
         <h3>$70</h3>
-        <div><button>Book It</button></div>
-    </div>
+        <!-- col-1 -->
+        <div class="book-it-button-teal">
+            <button>Book It</button>
+            </div>
     <div class="background-image"></div>
 </div>
     </section>
@@ -115,7 +145,10 @@
       <div class="right-column">
     <div class="right">
         <div class="form"></div>
-        <div class="button"><button></button></div>            
+        <!-- col-2 -->
+        <div class="submit-button-black">
+        <button>SUBMIT</button>
+        </div>          
     </div>           
       </div>           
         </footer>    
