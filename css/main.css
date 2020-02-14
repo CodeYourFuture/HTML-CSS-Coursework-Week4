@@ -166,8 +166,26 @@ h2 {
 }
 
 .about{
-    background-color: rgba(0,0,0, .1);
+    background-color: rgba(0,0,0, .3);
     text-align: center;
+}
+.about h1{
+    color: red;
+}
+.grid-img {
+    position: relative;
+}
+.sale {
+    background-color: rgba(0,0,0, .3);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    color: red;
+
+}
+.sale h3 {
+    font-size: 25px;
+    font-weight: bold;
 }
 hr {
     border: 1px solid red;
@@ -234,7 +252,10 @@ hr {
    }
    .section-about .col-3 {
     width: 25%;
-}
+    }
+    .products .col-4 {
+        width: 33.333333%;
+    }
 
 }
 
