@@ -17,8 +17,8 @@ ul {
 }
 
 
-.img-background {
-    background-image: url("images/picText4.JPG");
+.img-text {
+    justify-content: center;
 }
 
 .h-about {
