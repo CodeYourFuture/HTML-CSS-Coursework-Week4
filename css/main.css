@@ -1,13 +1,7 @@
 /* Add your custom CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
-body{
 
-}
-header{
-    
-    
-}
 .headercontainer{
     background-color:#e7e3db;
     
@@ -50,14 +44,13 @@ header{
     margin: auto;
 }
 .hero{
-    margin: 0 auto;
-	padding: 70px;
     text-align: center;
+    flex-direction: column;
     background-image: url(https://s3-us-west-2.amazonaws.com/hispotion-prod/wp-content/uploads/2016/06/mountain-climbing-wallpaper-2.jpg);
     background-position: center;
     background-size: cover;
     height:350px;
-    color:#112532;
+    color:#2a2c2e;
 }
 .think{
     font-size: 3.2rem;
@@ -75,6 +68,12 @@ header{
     height:auto;
     background-color: #FFB661;
     text-align: center;
+}
+.rightside{
+    background-image: url(https://images.unsplash.com/photo-1512438248247-f0f2a5a8b7f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+    background-position: center;
+    background-size: cover;
+    height:350px;
 }
 .abouttext{
     font-family: Arial, Helvetica, sans-serif;
