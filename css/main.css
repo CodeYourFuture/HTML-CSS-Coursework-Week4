@@ -130,6 +130,17 @@ input {
     height: 12rem;
 }
 
+.form-end {
+    align-self: center;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-end p {
+    margin-bottom: 1rem;
+}
+
 .social-media {
     order: -1;
 }
@@ -138,11 +149,25 @@ input {
     padding: 0.5rem;
 }
 
-.form-end {
-    align-self: center;
-    flex-direction: column-reverse;
-    justify-content: space-between;
-    align-items: center;
+.fa {
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.625rem 0;
+    text-align: center;
+    text-decoration: none;
+  }
+
+.fa-facebook {
+    color: #3b5998;
+}
+
+.fa-pinterest {
+    color: #cb2027;
+}
+
+.fa-instagram {
+    color: #517fa4;
 }
 
 footer {
