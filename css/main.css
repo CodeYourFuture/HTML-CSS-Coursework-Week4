@@ -8,7 +8,7 @@
   }
 
   body{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(240, 224, 83);
     margin:0;
     padding:0;
     position: relative;
@@ -70,8 +70,6 @@ hr.small-2 {
   margin: 0 200px;
 }
 
-
-
   /* standard size button including link-button*/
   .button {
     background-color: black;       /* button color*/
@@ -94,7 +92,6 @@ hr.small-2 {
     opacity: 1; */
 }
 
-
 /* special-buttons-small-size and link-button*/
 
 .book-it-button-teal .button {
@@ -106,10 +103,39 @@ hr.small-2 {
     background-color: red;
   }
 
+/* HEADER SECTION - TOP NAVBAR */
 
-/* HEADER section */
+/* .nav-img {
+ background-image: url(../image/Hero.jpg);
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ min-height: auto;
+ z-index: 9999;
+} */
 
-/* NAVBAR-section */
+ .navbar{
+  position: fixed;
+  margin: 0 0px;
+  height: 80px;
+  width: auto;
+  background-color: blue;
+}
+
+
+.navbar .description .nav-links{
+  display: flex;
+  flex-direction: row;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.name .job {
+  text-align: center;
+  margin: 5px; 
+}
 
 /* left-of-navbar */
 
