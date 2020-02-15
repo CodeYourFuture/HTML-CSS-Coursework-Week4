@@ -2,16 +2,26 @@
 
 /* Dont' forget to link this file to your HTML in the <head> */
 
+.container{
+    border: 2px solid rgb(58, 2, 58);
+    background-color: #ebe8f0;  
+}
+
+header{
+    background-color: rgb(35, 6, 63);
+    color: #eeebf3;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;    
+    font-weight: bolder;
+}
 
 .figuretop{
-    background-color: rgb(173, 126, 218);
-    padding: 25px;
+    padding: 5px 15px;
     margin: 0;
 } 
 
 .navbar{
 justify-content: space-around;
-background-color: blueviolet;
 }
 
 .list-elements{
@@ -27,8 +37,10 @@ justify-content: space-evenly;
 }
 
 .contact {
-    background-color: rgb(140, 140, 235);
     padding: 3px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .hero-image{
@@ -41,8 +53,7 @@ justify-content: space-evenly;
 
 .sectiontitle{
     font-size: 25px;
-    font-family: cursive; 
-    color: rgb(77, 19, 104);
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    color: rgb(77, 19, 104);
     font-weight: 500;
 }
 
@@ -84,4 +95,23 @@ h2{
 
 .row8{
     background-color: #d5b8ff;
+}
+
+.submission{
+margin-top: 30px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.form{
+    margin-left: 20px;
+}
+
+.emailbox{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.message{
+    height: 80px;
 }
