@@ -1,3 +1,132 @@
-/* Add your custom CSS here */
+/* Add your custom CSS here
 
 /* Dont' forget to link this file to your HTML in the <head> */
+/* hearder logo menu and log in */
+body{
+    background-color: #8BAFB1;
+}
+/* hearder, dropdown menu and log-in button */
+header{
+    border-bottom: black 2px solid;
+}
+ul li ul li{
+    display: none;
+    background-color:white;
+    border-radius: 5px;
+}
+
+ ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: rgb(223, 189, 196);
+    opacity: 0.6;
+} 
+a{
+    color:black;
+    text-decoration:none;
+}
+
+ul li:hover ul li{
+    display:inline-block;
+   }
+
+/* section1 image, text and button */
+h5{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 12px;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 34px;
+    margin: 0px;
+}
+.book-now{
+    font-size: 12px;
+    background-color:black;
+    color: white;
+    border: none;
+    text-align: center;
+}
+img{
+}
+
+/* section2 image, paragraph,h2 and button */
+p{
+    font-size: 12px;
+}
+.read-more{
+    font-size: 8px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+/* section3 image, paragraph, h2 and button */
+fieldset{
+    display: flex;
+    justify-content: center;
+    background-color:rgb(145, 145, 211, 0.3);
+}
+.one-hour{
+    display: flex;
+    justify-content: center;
+}
+.book-it{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+.row{
+    position: relative;
+}
+.more-services{
+    position: absolute;
+    top:350px;
+    left: 300px;
+} 
+
+      /* footer */
+      /* media */
+.li-footer{
+    list-style: none;
+    display: inline-block;
+    font-size: 14px;
+    padding:  10px;
+    margin:  5px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: rgb(110, 110, 163);
+    color: white;
+}
+.li-footer:hover {
+    color:rgb(158, 235, 17);
+    border: 1px solid red;
+    transition: .1s;
+}
+/* i:hover {
+    color:rgb(158, 235, 17);
+    border: 1px solid red;
+    transition: .5s;
+} */
+/* input and submit button */
+.submit{
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 5px 10px;
+
+}
+/* footer ended */
