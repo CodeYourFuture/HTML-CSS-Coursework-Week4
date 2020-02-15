@@ -241,3 +241,9 @@ footer p {
         font-size: 1.5rem;
     }
 }
+
+.req::after {
+    content: "*";
+    padding-left: 3px;
+    color: #cb2027;
+}
