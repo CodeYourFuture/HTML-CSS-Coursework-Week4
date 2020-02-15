@@ -1,3 +1,282 @@
 /* Add your custom CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
+/* Header */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	font-family: 'Lato', sans-serif;
+    background-color: #eee;  
+}  
+#page-wrapper {
+	position: relative;
+}
+.btn {
+	padding: 0 10px;
+	height: 32px;
+	font-size: Arial;
+	font-weight: 800;
+	text-transform: uppercase;
+	border: 2px black solid;
+	border-radius: 3px;
+	background: transparent;
+	cursor: pointer;
+	background-color: #d6dbdf;
+}
+li {
+	list-style: none;
+}
+a {
+	color: Black;
+	text-decoration: none;
+}
+
+
+.grid {
+  display: flex;
+}
+header {
+	padding: 10px 10px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+	min-height: -100px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.logo>img {
+	float: left;
+	width: 100px;
+	height: 60px;
+	max-width: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-left: 0px;
+}
+
+nav {
+  font-weight: 400;
+}
+
+nav>ul {
+	width: 35vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+
+
+
+
+/* Start css for top photo  */
+.image-main {
+    background: url(../image/head.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    margin-top: initial;
+    margin-left: 300px;
+    color: rgb(12, 11, 11);
+    font-size: 2em;
+    margin: 0em;
+}
+
+.button {
+    margin-top: 3vh;
+    height: 30px;
+    background-color: rgb(255, 74, 42);
+    color: white;
+    border: 0vh;
+    padding: 0px 40px;
+}
+
+/*  list photos which is from gallery */
+
+.gallery {
+    border: 5px solid red;
+    height: 120px;
+    margin: 10px;
+  }
+  .container {
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+
+/* grid.css part */
+
+
+@media (min-width: 576px) {
+    /* sm */
+    .container {
+      max-width: 540px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    /* md */
+    .container {
+      max-width: 720px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    /* lg */
+    .container {
+      max-width: 960px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    /* xl */
+    .container {
+      max-width: 1140px;
+    }
+  }
+  
+/* Default styles for all col-classes */
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12,
+.sm-col-1,
+.sm-col-2,
+.sm-col-3,
+.sm-col-4,
+.sm-col-5,
+.sm-col-6,
+.sm-col-7,
+.sm-col-8,
+.sm-col-9,
+.sm-col-10,
+.sm-col-11,
+.sm-col-12,
+.md-col-1,
+.md-col-2,
+.md-col-3,
+.md-col-4,
+.md-col-5,
+.md-col-6,
+.md-col-7,
+.md-col-8,
+.md-col-9,
+.md-col-10,
+.md-col-11,
+.md-col-12,
+.lg-col-1,
+.lg-col-2,
+.lg-col-3,
+.lg-col-4,
+.lg-col-5,
+.lg-col-6,
+.lg-col-7,
+.lg-col-8,
+.lg-col-9,
+.lg-col-10,
+.lg-col-11,
+.lg-col-12,
+.xl-col-1,
+.xl-col-2,
+.xl-col-3,
+.xl-col-4,
+.xl-col-5,
+.xl-col-6,
+.xl-col-7,
+.xl-col-8,
+.xl-col-9,
+.xl-col-10,
+.xl-col-11,
+.xl-col-12 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+
+/* Small and above */
+
+@media (min-width: 576px) {
+.sm-col-12 {
+    width: 100%;
+    }
+}
+
+/* Medium and above */
+
+@media (min-width: 768px) {
+.md-col-6 {
+     width: 50%;
+}
+.md-col-12 {
+    width: 100%;
+  }
+}
+
+/* Large and above */
+
+@media (min-width: 992px) {
+.lg-col-12 {
+    width: 100%;
+}
+
+.lg-col-3 {
+    width: 25%;
+ }
+}
+
+/* Extra large and above */
+
+@media (min-width: 1200px) {
+.xl-col-2 {
+    width: 16.666666%;
+    }
+    .xl-col-12 {
+    width: 100%;
+    }
+}
