@@ -23,8 +23,6 @@ header {
 .logo {
     max-width: 10%;
     margin-top: 1rem;
-    /* border: 1px solid black; */
-    /* border-radius: 50%; */
 }
 
 header ul {
@@ -57,7 +55,6 @@ h4 {
     background-position: center;
     background-size: cover;
     min-height: 60vh;
-    max-height: 100vh;
     text-align: center;
     margin-top: auto;
 }
@@ -161,9 +158,7 @@ footer p {
 @media (min-width: 576px) {
 
     /* sm */
-    * {
-        font-size: 1.25rem;
-    }
+ 
 }
 
 @media (min-width: 768px) {
@@ -171,6 +166,10 @@ footer p {
     /* md */
     * {
         font-size: 1.25rem;
+    }
+
+    .hero {
+        min-height: 100vh;
     }
 
 }
