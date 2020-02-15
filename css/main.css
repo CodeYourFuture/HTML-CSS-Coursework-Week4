@@ -1,3 +1,164 @@
 /* Add your custom CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
+
+.logotext-wrapper{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+.logotext{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-weight:bold;
+    font-size:1em;
+}
+.sublogo{
+    font-size:0.92em;
+}
+ul{
+    display:inline-flex;
+    list-style: none;
+}
+li{
+    padding-left:1vw;
+}
+
+.navigation-wrapper{
+    display:inline-flex;
+    justify-content: space-around;
+}
+.container2{
+    display:flex;
+    flex-direction:column;
+    position: relative;
+    align-content: center;
+    text-align:center;
+    justify-content: center;
+    align-items: center;
+
+    
+   
+}
+
+h2{
+    position:absolute;
+    font-size:1.5em;
+    font-weight: lighter;
+    
+}
+h3{
+    position:absolute;
+    margin-bottom:3vh;
+    font-size:5em;
+    margin-top:0em;
+}
+button{
+    position:absolute;
+    background-color: black;
+    color:white;
+    border:none;
+}
+.faceblock {
+    display:flex;
+    flex-direction: row;
+}
+.square{
+    display:flex;
+    flex-direction: column;
+    height: 78vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+    border:5px solid black;
+    z-index:5;
+}
+.line{
+    display:flex;
+    height: 1px;
+    border:1px solid black;
+    z-index:5;
+}
+.intro{
+    display:flex;
+    flex-direction:column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding:1em;
+}
+.blue{
+    background-color: rgb(36, 97, 116);
+}
+.margin-10em{
+    margin-top:-10em;
+}
+.margin-15em{
+    margin-top:-25em;
+}
+.margin0{
+    margin:0;
+}
+.bold{font-weight:bold}
+.margin3em{
+margin-top:3em;
+}
+.margin10em{
+    margin-top:10em;
+    }
+    .margin-1em{
+        margin-top:-1em;
+        }
+        .margin-5em{
+            margin-top:-5em;
+        }
+        .margin4em{
+            margin-top:4em;
+        }
+        .contact-wrapper{
+            display:flex;
+            flex-direction: row;
+        }
+        .contact{
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            
+        }
+        .contactform{
+            display:flex;
+            flex-direction: column;
+            align-items: left;
+        }
+        .message{
+            class:flex;
+            align-items: flex-start;
+            height:10em;
+        }
+        .butt{
+           display:flex;
+           flex-direction: row;
+           justify-items: right;
+        }
+        .margin-top25em{
+            margin-top:25em;
+        }
+        .formbox{
+            display:flex;
+           flex-direction: column;
+           align-items: right;
+           align-self: flex-end;
+
+        }
+        .vw10{
+            width:10vw;
+        }
+        .right{
+            display:flex;
+            flex-direction:column;
+            justify-content: right;
+            align-self: right;
+            text-align: right;
+        }
