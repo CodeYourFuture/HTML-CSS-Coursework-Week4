@@ -117,6 +117,33 @@ nav a:hover{
     font-family: 'Open Sans', sans-serif;
 }
 
+.contact-form{
+    font-family: 'Open Sans', sans-serif;
+     
+}
+.contact-form input,textarea, button{
+   width: 100%;
+   border: #000000 2px solid;
+   font-size: 1em;
+   padding: 5px;
+   margin-top: 5px;
+   outline: none;
+}
+.contact-form textarea{
+height:100px;
+}
+
+.contact-form button{
+    color: #ffffff;
+    background-color: #000000;
+    text-align: center;
+    width: 120px;
+    }
+
+    .form-btn{
+        text-align: right;
+    }
+
 footer{
 
     background-color: #BF512E;
