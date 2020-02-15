@@ -5,7 +5,8 @@
 .logotext-wrapper{
     display:flex;
     flex-direction:column;
-    justify-content:center;
+    justify-content:left;
+    max-height: 10vh;
 }
 .logotext{
     display:flex;
@@ -16,18 +17,26 @@
 }
 .sublogo{
     font-size:0.92em;
+    margin-top: 1vh;
 }
 ul{
     display:inline-flex;
     list-style: none;
+    justify-content: space-around;
+    align-content: flex-end;
 }
 li{
-    padding-left:1vw;
+    display:inline-flex;
+    flex-wrap:nowrap;
+   margin-left: 2vw;
+    
 }
 
 .navigation-wrapper{
     display:inline-flex;
-    justify-content: space-around;
+    align-content: middle;
+    justify-content:justify;
+    
 }
 .container2{
     display:flex;
@@ -37,25 +46,36 @@ li{
     text-align:center;
     justify-content: center;
     align-items: center;
+    vertical-align: auto;
 
     
    
 }
-
-h2{
+.margin0{
+    margin-top:0px;
+}
+.stamp{
+    display:flex;
+    max-height: 30vh;
+    flex-direction: column;
+    align-items: center;
     position:absolute;
+}
+h2{
+    position:relative;
     font-size:1.5em;
     font-weight: lighter;
+    margin:0px !important;
     
 }
+
 h3{
-    position:absolute;
-    margin-bottom:3vh;
+    position:relative;
     font-size:5em;
-    margin-top:0em;
+    margin:0px !important;
 }
 button{
-    position:absolute;
+    position:relative;
     background-color: black;
     color:white;
     border:none;
@@ -66,14 +86,25 @@ button{
 }
 .square{
     display:flex;
+    padding:10px;
     flex-direction: column;
-    height: 78vh;
+    height: 45vh;
     text-align: center;
     align-items: center;
     justify-content: center;
     position:absolute;
     border:5px solid black;
     z-index:5;
+    max-height: 30vh;
+}
+.bio-wrap{
+    display:flex;
+    flex-direction:row;
+}
+@media (max-width: 768px) {
+    ul{
+        display:none;
+    }
 }
 .line{
     display:flex;
@@ -86,8 +117,18 @@ button{
     flex-direction:column;
     text-align: center;
     align-items: center;
-    justify-content: center;
+    justify-content:space-evenly;
     padding:1em;
+    hyphens: auto;
+}
+.introtext{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    hyphens: auto;
+    text-align: center;
+    align-self: center;
+    font-size: 1em;
 }
 .blue{
     background-color: rgb(36, 97, 116);
@@ -106,7 +147,7 @@ button{
 margin-top:3em;
 }
 .margin10em{
-    margin-top:10em;
+    margin-top:10vh;
     }
     .margin-1em{
         margin-top:-1em;
@@ -118,13 +159,14 @@ margin-top:3em;
             margin-top:4em;
         }
         .contact-wrapper{
+            position:relative;
             display:flex;
             flex-direction: row;
         }
         .contact{
             flex-direction: column;
-            align-items: center;
-            text-align: center;
+            align-items: left;
+            text-align: left;
             
         }
         .contactform{
@@ -133,9 +175,10 @@ margin-top:3em;
             align-items: left;
         }
         .message{
-            class:flex;
-            align-items: flex-start;
+            display:flex;
+            flex-direction:column;
             height:10em;
+            text-align: tops;
         }
         .butt{
            display:flex;
@@ -146,10 +189,11 @@ margin-top:3em;
             margin-top:25em;
         }
         .formbox{
+            position:relative;
             display:flex;
            flex-direction: column;
            align-items: right;
-           align-self: flex-end;
+          
 
         }
         .vw10{
@@ -161,4 +205,16 @@ margin-top:3em;
             justify-content: right;
             align-self: right;
             text-align: right;
+        }
+        .left{
+            display:flex;
+            flex-direction:column;
+            justify-content: left;
+            align-items: left;
+            text-align: left;
+        }
+        .h4{
+            display:flex;
+            flex-direction: row;
+            text-align: start;
         }
