@@ -21,13 +21,12 @@ header {
 }
 
 .logo {
-    max-width: 10%;
+    max-width: 8%;
     margin-top: 1rem;
 }
 
 header ul {
     display: flex;
-    justify-content: center;
 }
 
 header ul li {
@@ -45,8 +44,10 @@ header ul li a:hover {
     opacity: 1;
 }
 
-h4 {
-    padding-top: 0.5rem;
+h5 {
+    padding-top: 1rem;
+    font-weight: 400;
+    opacity: 0.75;
 }
 
 .hero {
@@ -74,7 +75,7 @@ h1 {
 .projects,
 .about,
 .contact {
-    margin: 1rem auto;
+    margin: 1.5rem auto;
 }
 
 .second-bg-img {
@@ -107,10 +108,13 @@ form {
     flex-direction: column;
 }
 
-label {
+form label {
     text-align: left;
-    margin: 0 auto;
+    margin: 5px auto;
+}
 
+.info-label {
+    padding: 0;
 }
 
 input {
@@ -118,15 +122,12 @@ input {
     border: 1px solid black;
     text-align: left;
     margin: 0 auto;
-    color: #888;
-}
-
-.info-label {
-    padding: 0;
+    color: #000;
+    opacity: 0.75;
 }
 
 #message {
-    height: 12.5rem;
+    height: 12rem;
 }
 
 .social-media {
@@ -164,14 +165,32 @@ footer p {
 @media (min-width: 768px) {
 
     /* md */
-    * {
+    body {
         font-size: 1.25rem;
+    }
+
+    header ul li {
+        padding: 1rem 4rem;
     }
 
     .hero {
         min-height: 100vh;
     }
 
+    .form-end {
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 1rem;
+        padding: 0;
+    }
+
+    .social-media {
+        order: 0;
+    }
+    
+    .btn {
+        margin: 0;
+    }
 }
 
 @media (min-width: 992px) {
@@ -181,10 +200,9 @@ footer p {
         font-size: 1.50rem;
     }
 
-    form {
+    form, footer {
         font-size: 1.25rem;
     }
-
 }
 
 @media (min-width: 1200px) {
@@ -194,7 +212,7 @@ footer p {
         font-size: 1.75rem;
     }
 
-    form {
-        font-size: 1.25rem;
+    form, footer {
+        font-size: 1.5rem;
     }
 }
