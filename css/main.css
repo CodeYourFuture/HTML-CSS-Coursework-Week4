@@ -1,3 +1,63 @@
 /* Add your custom CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
+
+/* font-family: 'Quicksand', sans-serif;     navigation font*/
+
+/* font-family: 'Roboto', sans-serif;   Logo font */
+*{
+    text-decoration: none;
+    color: black;
+}
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    background-color: darkgrey;
+    width: 100%;
+}
+.logo{
+    background-color: cornflowerblue;
+}
+.nav{
+    background-color: cornsilk;
+}
+.login{
+    background-color: cyan;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-items: space-between;
+}
+.row2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 736px;
+    background-color: beige;
+    width: 100%;
+}
+.aboutme{
+    background-color: pink;
+    height: 640px;
+}
+.asideimg{
+    background-color: yellowgreen;
+    height: 640px;
+}
+.row4{
+    background-color: aquamarine;
+    height: 608px;
+}
+.row5{
+    background-color: cadetblue;
+}
+.contact{
+    
+}
+.form{
+
+}
