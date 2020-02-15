@@ -15,7 +15,7 @@ body{
     color: #ffffff;
     
   /*  align-items: flex-start;*/
-    background-image: url("img/bg_laptop1200_1080.jpg");
+    background-image: url("/img/bg_laptop1200_1080.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center right;
@@ -93,7 +93,7 @@ nav a:hover{
     background-color: #c7c7c7;
     min-height: 400px;
     color: #ffffff;
-    background-image: url("img/bg-p-laptop-coding.jpg");
+    background-image: url("/img/bg-p-laptop-coding.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
@@ -106,7 +106,7 @@ nav a:hover{
     background-color: #c7c7c7;
     min-height: 200px;
     color: #ffffff;
-    background-image: url("img/pt_about.jpg");
+    background-image: url("/img/pt_about.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
