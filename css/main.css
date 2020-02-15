@@ -38,6 +38,12 @@
   }
   .col-12{
     width: 100%;
+    padding: 20px 10px;
+    
+  }
+  .col-12 img{
+    width: 100%;
+    margin-top: 10px;
   }
   .col-6 {
     width: 50%;
@@ -115,7 +121,7 @@ button {
     color: #ffffff;
     background-color: #4794f8;
     font-size: 16px;
-    display: block;
+    
     padding: 16px 32px;
     margin: 0 auto;
     text-decoration: none;
@@ -130,13 +136,60 @@ button {
 
     color: cornsilk;
 	border-radius: 4px;
-    color: #ffffff;
     font-size: 16px;
-    display: block;
+    display: flex;
+    justify-items: left;
     padding: 10px 20px;
     margin: 0 auto;
     text-decoration: none;
     text-align:center;
     background-color: rgb(243, 167, 52);
+}
+.subhero{
+    background-image: url(../img/2background.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: auto;
+     opacity: 0.5;
+
+}
+.heading {
+    opacity: 1;
+    font-weight: bold;
+    font-size: 16px;
+    color: #000308;
+}
+.pricing {
+    border-style: solid;
+    border-width: thick;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h4 {
+    padding: 0 1rem 2rem 1rem;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+h3 {
+    margin-top: 1rem;
+    text-align: center;
+}
+.pricing button{
+    margin-bottom: 3rem;
+}
+.moreserv{
+    margin: 2rem 0 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(241, 131, 131);
+
 }
   
