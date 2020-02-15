@@ -88,13 +88,44 @@ ul{
     display: inline-block;
     font-size: 14px;
 }
-.aboutme{
+.readmore{
     background-color: pink;
     height: 640px;
+    left: 100px;
+}
+.reading{
+    background-color:black;
+    border: none;
+    color: white;
+    padding: 8px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+.sm-line{
+    width: 40px;
+    border-top:2px solid black;
+    float: left;
+}
+.aboutme{
+    font-family: 'Roboto';
+    font-size: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3px;
+    margin-bottom: 0;
+}
+.paragraph{
+    font-family: 'Quicksand';
+    display: flex;
+    flex-wrap: wrap;
 }
 .asideimg{
     background-color: yellowgreen;
     height: 640px;
+    position: relative;
+
 }
 .row4{
     background-color: aquamarine;
