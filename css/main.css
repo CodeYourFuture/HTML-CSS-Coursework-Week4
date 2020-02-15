@@ -3,8 +3,8 @@
 /* Dont' forget to link this file to your HTML in the <head> */
 
 .container {
-    border: 2px solid rgb(58, 2, 58);
-    background-color: #ebe8f0;
+    /* border: 2px solid rgb(58, 2, 58);
+    background-color: #ebe8f0; */
 }
 
 header {
@@ -125,23 +125,49 @@ h2 {
 .submission {
     margin-top: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: block;
 }
 
 .form {
-    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .emailbox {
     margin-bottom: 10px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .message {
     height: 80px;
 }
 
+.emailbox .input{
+    border-radius: 7px;
+    width: ;
+}
+
+.message{
+    border-radius: 7px;
+}
+
 .submit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.submit button{
+    border-radius: 8px;
     margin-bottom: 20px;
-    align-self: center;
+    background-color: red;
+    padding: 5px;
+}
+
+.submit button:hover {
+    background-color: rgb(97, 31, 24);
+    color: white;
 }
