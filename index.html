@@ -5,16 +5,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="css/grid.css">
+    <link rel="stylesheet" type="text/css" href="css/grid.css"> 
+    <link rel="stylesheet" type="text/css" href="css/main.css">
     <!-- Add a link to your custom CSS here -->
 
     <title>Responsive grid project</title>
 </head>
-
 <body>
+<div class="container">
+    <div class="row"> <!--header-->
+        <header>
+            <div class="col-6">
+            <h1 class="logo-title">ALLAN JOHNSON</h1>
+            <h3 class="logo-sub">Personal Life Coach</h3>
+        </div>
+            <nav>
+                <div class="col-6">
+                <ul>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Motivational Reading</li>
+                    <li>Blog</li>
+                    <li>Contact</li>
+                    <li>Log In</li>
+               </ul>
+        </nav>
+        </header>
+    </div>
 
-    <!-- Add your markup here -->
+    <div class="row"> <!--hero-->
+        <div class="col-12 hero">
+            <p class="ambition">Ambition is the first step towards</p>
+            <p class="success">SUCCESS</p>
+            <button class="book-now" type="button">Book Now</button>
+        </div>
+    </div>
+    <div class="row"> <!--About Me-->
+       <div class="row3">
+        <div class="col-6 left">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, accusamus ut veniam ratione amet tempore minus expedita eum corporis nihil ducimus laudantium optio. Voluptatum unde error iusto minus repellendus animi.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores facere enim quod porro minus. Deleniti, quasi. Sint repellendus ipsam reiciendis. Facere, tempora alias sint eos ex atque voluptate aspernatur delectus.</p>
+            <button class="read-more" type="button">Read More</button>
+        </div> 
+       <div class="col-6 right"></div>
+        </div>
+    </div>
+    <div class="row"> <!--How I Can Help-->
+        <div class="col-12 help">
+            <h1>How I Can <br>Help You</h1>
+        <div class="coaching">
+            <h1 class="box">ONE ON ONE COACHING</h1>
+            <p class="coaching-info">1 hr<br>£40</p>
+            <button class="book-it" type="button">Book It</button>
+        </div>
+    </div>
+    </div>
 
+    <div class="row"> <!--Footer & Form-->
+        <footer>
+            <div class="row-5">
+                <div class="col-6 left">
+                    <p>Contact<br><br>Address</p>
+                    <p><br><br>Tel<br><br> Fax</p>
+                <div class="col-6 right">
+                    <form class="footer-form">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email">
+                        <label for="message">Message</label>
+                        <input type="text" id="message" name="message">
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>           
+            </div>
+        </footer>
+    </div>
+</div>
 </body>
 
 </html>

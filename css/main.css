@@ -1,3 +1,99 @@
 /* Add your custom CSS here */
 
+
+.hero {
+    height: 500px;
+    background-image: url(../images/rockclimbing.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+header {
+    background-color: rgb(191, 211, 248);
+    width: 100%;
+
+}
+
+.ambition {
+    font-size: 2.5vw;
+}
+
+.success {
+    font-size: 4vw;
+    font-weight: 200;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.book-now {
+    text-align: center;
+    font-size: 1.5vw;
+    background-color: black;
+    color: white;
+}
+
+.row3 .col-6 {
+    height: 400px;
+}
+
+.row3 .left {
+    background-color: rgb(191, 211, 248);
+}
+
+.read-more {
+    background-color: teal;
+    color: white;
+    font-size: 1.5vw;
+}
+
+.row3 .right {
+    background-image: url(../images/laptop.jpg);
+    background-size: cover;
+
+}
+
+ .help {
+    background-image: url(../images/mountain\ landscape.jpg);
+    background-size: cover;
+    height: 500px;
+}
+
+.coaching {
+    align-items: center;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.coaching-info {
+    font-size: 2vw;
+}
+
+.book-it {
+    font-size: 1.5vw;
+    background-color: teal;
+    color: white;
+}
+
+footer {
+    background-color: rgb(191, 211, 248);
+    width: 100%;
+    font-size: 1.5vw;
+}
+
+.footer-form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+
 /* Dont' forget to link this file to your HTML in the <head> */
