@@ -47,8 +47,8 @@ header ul li a:hover {
     opacity: 1;
 }
 
-h2 {
-    padding-top: 1rem;
+h4 {
+    padding-top: 0.5rem;
 }
 
 .hero {
@@ -59,6 +59,7 @@ h2 {
     min-height: 60vh;
     max-height: 100vh;
     text-align: center;
+    margin-top: auto;
 }
 
 h1 {
