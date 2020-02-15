@@ -43,7 +43,8 @@
     background-color: cyan;
     font-family: 'Quicksand';
     font-size: small;
-    width: min-content;
+    display: flex;
+    justify-items: center;
 }
 ul{
     list-style: none;
