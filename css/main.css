@@ -4,6 +4,17 @@
 }
 
 /* navigation*/
+.head-logo {
+  justify-content: center;
+}
+.logo {
+  border: 1px solid black;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 50%;
+  padding: 25px 10px;
+  background-color: black;
+}
 header h3 {
   color: white;
   text-transform: uppercase;
@@ -114,4 +125,13 @@ input {
 }
 .red {
   color: red;
+}
+.btn-social{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.btn-social i{
+  font-size:1.5rem;
+  
 }
