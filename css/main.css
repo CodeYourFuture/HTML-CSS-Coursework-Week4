@@ -1,12 +1,20 @@
 /* Add your custom CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
+
+/* global styling elements */
 * {
     box-sizing: border-box;
   }
 
   body{
-
+    /* background-image: url(../image/Hero.jpg); */
+    background-color: rgb(255, 255, 255);
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    color:black;
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
   }
 
   .container {
@@ -25,7 +33,57 @@
     margin-left: -15px;
   }
 
-  /* buttons-large */
+
+ul li {
+    list-style: none;
+}
+
+a {
+    color: rgb(58, 53, 53);
+    text-decoration: none;
+    opacity: 0.65;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+hr {
+    margin: 0px 250px;
+    color: black;
+    /* opacity: 0.30; */
+}
+
+  /* link-button*/
+  .button {
+    background-color: black;       /* button color*/
+    border: none;
+    border-radius: 2px;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;  /* default span*/
+    color: white;       /* button text color*/
+    font-size: 16px;
+    margin: 2px;
+    padding: 5px;    
+    cursor: pointer;
+}
+
+.button:hover  {
+    background-color: grey;
+    /* color: white;
+    opacity: 1; */
+}
+
+.book-it-button-teal .button {
+  background-color: teal;
+  width: 100px;
+}
+
+.book-it-button-teal .button:hover{
+    background-color: red;
+  }
 
 /* button-small */
 
