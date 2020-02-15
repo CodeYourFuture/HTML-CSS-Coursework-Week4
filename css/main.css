@@ -9,18 +9,18 @@
   z-index: 100;
   color: red;
 }
- .logo-container{
-   position: absolute;
-   top: 10%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   z-index: 100;
- }
-.logo{
-    display: block;
-    margin-left:auto;
-    margin-right: auto;
-    width: 6rem;
+.logo-container {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 6rem;
 }
 .nav-list {
   display: flex;
@@ -38,19 +38,21 @@
 }
 .arrow-down {
   width: 20px;
-  display:block;
+  display: block;
   margin-left: auto;
   margin-right: auto;
 }
- #proj, #about,#contact {
-   text-align: center;
+#proj,
+#about,
+#contact {
+  text-align: center;
 }
-.flex-box{
-    list-style-type: none;
-     display: inline;
-  
+.image{
+  height: 200px;
 }
-.row{
-    display:flex;
-    flex-wrap: wrap;
+.para{
+  text-align: center;
+}
+.train-image{
+  height: 400px;
 }
