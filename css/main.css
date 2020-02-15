@@ -1,3 +1,5 @@
-/* Add your custom CSS here */
-
-/* Dont' forget to link this file to your HTML in the <head> */
+.navbar {
+    display: flex;
+    height: 20px;
+    grid-auto-flow: column;
+}
