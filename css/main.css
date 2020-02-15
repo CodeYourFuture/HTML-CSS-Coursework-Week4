@@ -2,116 +2,146 @@
 
 /* Dont' forget to link this file to your HTML in the <head> */
 
-.container{
+.container {
     border: 2px solid rgb(58, 2, 58);
-    background-color: #ebe8f0;  
+    background-color: #ebe8f0;
 }
 
-header{
+header {
     background-color: rgb(35, 6, 63);
     color: #eeebf3;
     font-size: 20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;    
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bolder;
 }
 
-.figuretop{
+.figuretop {
     padding: 5px 15px;
     margin: 0;
-} 
-
-.navbar{
-justify-content: space-around;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.list-elements{
-list-style-type: none;
-display: flex;
-justify-content: space-evenly;
+.navbar {
+    justify-content: space-around;
+    align-items: center;
 }
 
-.list-elements li{
+.list-elements {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 768px) {
+    .list-elements {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.list-elements li {
     padding: 5px;
     margin: 0em;
     flex-direction: row;
+    align-self: center;
+}
+
+/* Change color on hover */
+
+.list-elements li:hover {
+    background-color: #ddd;
+    color: black;
 }
 
 .contact {
     padding: 3px;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
 
-.hero-image{
-    margin-top: 10px;
+@media screen and (min-width: 768px) {
+    .contact{
+        flex-direction: row;
+    }
 }
-.row3{
+.hero-image {
+    margin-top: 10px;
+    padding: 0 2px;
+}
+
+.row3 {
     display: flex;
     justify-content: center;
 }
 
-.sectiontitle{
+.sectiontitle {
     font-size: 25px;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    color: rgb(77, 19, 104);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(77, 19, 104);
     font-weight: 500;
 }
 
-.row4image{
+
+.row4image {
     padding-right: 0px;
     padding-left: 0px;
-    /* height: 100%; */
 }
 
-.heromin-image{
-    /* margin: 5px; */
+.heromin-image {
     padding: 0 3px;
 }
 
-.widerrow{
+.widerrow {
     margin-bottom: 0em;
     background-color: rgb(151, 152, 211);
     padding-right: 0px;
     padding-left: 0px;
 }
 
-.imagebox{
+.imagebox {
     padding-right: 0;
     padding-left: 0;
 }
 
-.smallimage{
-/* height:auto; */
-display:block;
-width: 100%;
+.smallimage {
+    display: block;
+    width: 100%;
 }
 
-h2{
-    font-size: 35px;
+h2 {
     margin-left: 2rem;
     margin-right: 2rem;
     text-align: justify;
 }
 
-.row8{
+.row8 {
     background-color: #d5b8ff;
 }
 
-.submission{
-margin-top: 30px;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
+.submission {
+    margin-top: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.form{
+.form {
     margin-left: 20px;
 }
 
-.emailbox{
+.emailbox {
     margin-bottom: 10px;
     display: flex;
     flex-direction: column;
 }
 
-.message{
+.message {
     height: 80px;
+}
+
+.submit{
+    margin-bottom: 20px;
+    align-self: center;
 }
