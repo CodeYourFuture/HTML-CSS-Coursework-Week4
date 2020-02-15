@@ -16,18 +16,6 @@ body {
     align-items: flex-start;
 }
 
-@media (min-width: 768px) {
-    .navlist {
-        display: flex;
-        flex-direction: row;
-        margin-right: -15px;
-        margin-left: -15px;
-    }
-    li {
-        text-align: center;
-    }
-}
-
 .job {
     text-align: center;
     margin-top: 0;
@@ -69,36 +57,15 @@ li {
     margin-left: -15px;
 }
 
-@media (min-width: 768px) {
-    .intro {
-        min-height:500px ;
-    }
-    .ambition {
-        font-size: small;
-        margin: 4rem 0 0 0;
-    }
-}
-
-.ambition {
+#ambition {
     font-size: small;
     margin: 4rem 0 0 0;
 }
 
-.succees {
+.success {
     font-size: 3rem;
     font-weight: bolder;
     margin: 0.5rem 0 0 0;
-}
-
-@media (min-width: 768px) {
-   .succeed {
-    font-size: 7rem;
-    font-weight: bolder;
-    margin: 0.5rem 0 0 0;
-    }
-    button {
-        margin-top:2rem;
-    }
 }
 
 button {
@@ -110,6 +77,8 @@ button {
 .about {
     margin: 0;
     background-color: rgb(235, 231, 217);
+    display: flex;
+    flex-direction: column;
 }
 
 .photo {
@@ -152,16 +121,6 @@ h4 {
     border-bottom-width: 1px;
 }
 
-@media (min-width: 768px) {
-    h2 {
-        margin-top: 3rem;
-    }
-    
-    h4 {
-        padding: 0 5rem 2rem 5rem;
-    }
- }
-
 hr {
     width: 70%;
 }
@@ -191,12 +150,6 @@ footer {
     margin: 1rem 0 0 1rem;
 }
 
-@media (min-width: 768px) {
-    .contact {
-        margin: 3rem 0 0 3rem;
-    }
-}
-
 .firstline {
     font-size: 1.2rem;
     font-weight: bolder;
@@ -222,15 +175,6 @@ footer {
     flex-direction: column;
     margin-top: 1rem;
     padding-left: 1rem;
-}
-
-@media (min-width: 768px) {
-    .form {
-        display: flex;
-        flex-direction: column;
-        padding-top: 3rem;
-        padding-left: 3rem;
-     }
 }
 
 .label {
@@ -262,3 +206,43 @@ footer {
     margin-bottom: 2rem;
 }
 
+@media (min-width: 768px) {
+    .navlist {
+        display: flex;
+        flex-direction: row;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+    li {
+        text-align: center;
+    }
+    .intro {
+        min-height:500px ;
+    }
+    .ambition {
+        font-size: small;
+        margin: 4rem 0 0 0;
+    }
+    .success {
+    font-size: 7rem;
+    }
+    button {
+        margin-top:2rem;
+    }
+    h2 {
+        margin-top: 3rem;
+    }
+    
+    h4 {
+        padding: 0 5rem 2rem 5rem;
+    }
+    .contact {
+        margin: 3rem 0 0 3rem;
+    }
+    .form {
+        display: flex;
+        flex-direction: column;
+        padding-top: 3rem;
+        padding-left: 3rem;
+        }
+}
