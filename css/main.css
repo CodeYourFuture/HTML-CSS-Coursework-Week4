@@ -45,6 +45,7 @@
     font-size: small;
     display: flex;
     justify-items: center;
+    align-items: center;
 }
 ul{
     list-style: none;
