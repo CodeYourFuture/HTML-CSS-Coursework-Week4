@@ -1,3 +1,230 @@
 /* Add your custom CSS here */
 
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+SC&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
 /* Dont' forget to link this file to your HTML in the <head> */
+
+body{
+    margin: 0;
+}
+.mainpage-section{
+    background-color: #c7c7c7;
+    /* Set a specific height */
+    min-height: 800px;
+    color: #ffffff;
+    
+  /*  align-items: flex-start;*/
+    background-image: url("/img/bg_laptop1200_1080.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center right;
+    background-size: cover;
+}
+
+.logo-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.logo{
+    width: 80px;
+    height: auto;
+}
+
+nav{
+    font-family: 'Noto Serif SC', serif;
+    font-weight: 700;
+    font-size: 1.6em;
+}
+
+nav > ul {
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    margin-top:5px;
+}
+
+nav > ul > li {
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+nav a:active{
+    color: #1b1b1b;
+}
+
+nav a:visited{
+    color: #1b1b1b;
+}
+
+
+nav a:hover{
+    cursor: pointer;
+    color: #000000;
+}
+
+
+
+.part-title{
+
+    font-family: 'Noto Serif SC', serif;
+    font-weight: 700;
+    font-size: 2.2em;
+    margin: 40px 0;
+    text-align: center;
+     
+}
+
+.project-image{
+    display:block ;
+    width:auto;
+    margin: 20px auto;
+    
+}
+
+.contact-bg{
+    background-color: #c7c7c7;
+    min-height: 400px;
+    color: #ffffff;
+    background-image: url("/img/bg-p-laptop-coding.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    margin-top: 40px;
+}
+
+.about-bg{
+    margin-top: 40px;
+    background-color: #c7c7c7;
+    min-height: 200px;
+    color: #ffffff;
+    background-image: url("/img/pt_about.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+.about-text{
+    font-family: 'Open Sans', sans-serif;
+}
+
+footer{
+
+    background-color: #BF512E;
+    min-height: 50px;
+    margin-top: 40px;
+    height: 50px;
+   
+}
+footer > p {
+    color: white;
+    text-decoration: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+footer > p > a {
+    color: #ffffff;
+}
+
+@media (max-width: 576px) {
+
+    .logo{
+        width: 60px;
+        height: auto;
+    }
+    nav > ul > li {
+        padding-right: 30px;
+        padding-left:20px;
+    }
+
+
+    .project-image{
+        height: 250px;
+  
+    }
+
+    .about-text{
+        margin: 0 5%;
+     }
+
+}
+
+
+@media (min-width: 576px) and (max-width: 768px) {
+    
+    nav > ul > li {
+        padding-right: 50px;
+        padding-left:20px;
+    }
+
+
+    .project-image{    
+        height: 300px;
+
+    }
+
+    .about-text{
+        margin: 0 5%;
+     }
+
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    nav > ul > li {
+        padding-right: 50px;
+        padding-left:20px;
+    }
+
+    .project-image{
+        height: 300px;
+
+    }
+
+    .about-text{
+        margin: 0 10%;
+     }
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    nav > ul > li {
+        padding-right: 80px;
+        padding-left:40px;
+    }
+
+    .project-image{
+        height: 170px;
+    }
+
+    .about-text{
+        margin: 0 15%;
+     }
+}
+
+@media (min-width: 1200px) {
+    nav > ul > li {
+        padding-right: 100px;
+        padding-left:50px;
+    }
+    .project-image{
+        height: 220px;
+    }
+
+    .about-text{
+       margin: 0 20%;
+       
+    }
+}
