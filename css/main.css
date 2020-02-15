@@ -1,3 +1,117 @@
-/* Add your custom CSS here */
+.body {
+  font-family: "Lemonada", sans-serif;
+  font-size: 1.125rem;
+}
 
-/* Dont' forget to link this file to your HTML in the <head> */
+/* navigation*/
+header h3 {
+  color: white;
+  text-transform: uppercase;
+}
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+li a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
+.about-text {
+  text-align: center;
+  margin: 0 20px 20px;
+}
+.active,
+a:hover {
+  background-color: #ccc;
+  opacity: 1;
+}
+
+.nav-bar {
+  background-color: white;
+}
+.nav-list li {
+  list-style: none;
+}
+.nav-list {
+  text-align: center;
+}
+.logo {
+  background-color: black;
+  text-align: center;
+}
+.nav-bar {
+  background-image: url("../images/fruit-vertical-one.png");
+  background-size: 100%, cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* hero  */
+
+.hero {
+  background-color: white;
+}
+.hero-img {
+  width: 100%;
+  text-align: center;
+}
+.hero-content {
+  background-color: whitesmoke;
+}
+.hero-content-img {
+  width: 100%;
+}
+input {
+  width: 100%;
+  padding: 0.5em;
+  border-radius: 5px;
+  margin-top: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+}
+.message-box {
+  width: 100%;
+  height: 5em;
+}
+.contact-form {
+  background-color: whitesmke;
+  border-radius: 5px;
+}
+.contact-form-content {
+  width: 50%;
+  margin: 0 auto;
+}
+.btn {
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 16px;
+  padding: 5px 15px;
+}
+.active,
+.btn:hover {
+  background-color: green;
+}
+.social-content-text {
+  text-align: center;
+}
+.social-content-text i {
+  margin: 0 12px;
+}
+.copy-right {
+  text-align: center;
+  font-weight: bold;
+}
+.light-blue {
+  color: lightblue;
+}
+.blue {
+  color: blue;
+}
+.red {
+  color: red;
+}
