@@ -70,4 +70,14 @@ footer {
     background-color: aliceblue;
     text-align: center;
 }
+
+
+@media (min-width: 768px) {
+ 
+    .nav-bar a {
+        font-size: 1.5rem;
+    }
+
+    
+  }
 /* Dont' forget to link this file to your HTML in the <head> */
