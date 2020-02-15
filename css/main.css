@@ -19,8 +19,7 @@
   .row {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
+    
   }
   .hero{
     background-image: url(../img/background.jpg);
@@ -38,7 +37,6 @@
   }
   .col-12{
     width: 100%;
-    padding: 20px 10px;
     
   }
   .col-12 img{
@@ -51,6 +49,7 @@
 .col-3 {
     width: 25%;
 }
+
 
 .name {
     font-weight: bolder;
@@ -95,7 +94,7 @@ p{
 
 position: relative;
 min-height: 1px;
-padding-right: 15px;
+
 
 }
 p.login{
@@ -191,5 +190,48 @@ h3 {
     justify-content: center;
     background-color: rgb(241, 131, 131);
 
+}
+footer{
+    background-color: rgba(164, 225, 250, 0.849);
+    margin-top: 10px;
+    
+    
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    padding-left: 1rem;
+}
+.label {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.85rem;
+}
+.input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 0.5rem;
+    margin-bottom: 1.3rem;
+}
+.message {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: 5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.3rem;
+}
+.submit {
+    align-self: flex-end;
+    margin-bottom: 2rem;
+}
+.submit button{
+     background-color: black;
+     color: cornsilk;
+    margin: 2rem 0 2rem;
+    
 }
   
