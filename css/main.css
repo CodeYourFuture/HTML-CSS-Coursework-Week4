@@ -48,10 +48,7 @@ a:hover {
 .nav-list {
   text-align: center;
 }
-.logo {
-  background-color: black;
-  text-align: center;
-}
+
 .nav-bar {
   background-image: url("../images/fruit-vertical-one.png");
   background-size: 100%, cover;
@@ -100,7 +97,7 @@ input {
   text-align: center;
   border-radius: 5px;
   cursor: pointer;
-  margin-bottom: 16px;
+ 
   padding: 5px 15px;
 }
 .active,
@@ -130,6 +127,7 @@ input {
   display:flex;
   justify-content: space-around;
   align-items: center;
+  margin:16px 0;
 }
 .btn-social i{
   font-size:1.5rem;
