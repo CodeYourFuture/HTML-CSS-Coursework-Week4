@@ -8,14 +8,17 @@
   }
 
   body{
-    /* background-image: url(../image/Hero.jpg); */
     background-color: rgb(255, 255, 255);
     margin:0;
     padding:0;
+    position: relative;
     box-sizing: border-box;
     color:black;
     font-family: Arial, Helvetica, sans-serif, sans-serif;
+    font-size: 16px;
   }
+
+  /* responsive font-size for all content -https://learnui.design/blog/mobile-desktop-website-font-size-guidelines.html */
 
   .container {
     /* default from breakpoint 0, until another breakpoint overrides it */
@@ -48,13 +51,28 @@ a:hover {
     opacity: 1;
 }
 
-hr {
-    margin: 0px 250px;
-    color: black;
-    /* opacity: 0.30; */
+hr.center {
+  border: 1px solid red;
+  padding: 0px;
+  margin: 0 100px;
 }
 
-  /* link-button*/
+/* need to align to the left - use a div?  */
+hr.small-1 {
+  border: 1px solid rgb(255, 0, 221);
+  padding: 0px;
+  margin: 0 200px;
+}
+
+hr.small-2 {
+  border: 1px solid rgb(4, 0, 255);
+  padding: 0px;
+  margin: 0 200px;
+}
+
+
+
+  /* standard size button including link-button*/
   .button {
     background-color: black;       /* button color*/
     border: none;
@@ -76,6 +94,9 @@ hr {
     opacity: 1; */
 }
 
+
+/* special-buttons-small-size and link-button*/
+
 .book-it-button-teal .button {
   background-color: teal;
   width: 100px;
@@ -85,7 +106,6 @@ hr {
     background-color: red;
   }
 
-/* button-small */
 
 /* HEADER section */
 
