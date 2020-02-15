@@ -1,168 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/grid.css">
-    <!-- Add a link to your custom CSS here -->
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <title>Responsive grid project</title>
-</head>
-
-<body>
-<!-- SECTION-1 // NAVBAR ON TOP OF BACKGROUND IMAGE-->
-<!-- navbar container col-12 -->
-        <header class="container nav-img">
-            <!-- LEFT-COLUMN -->
-        <!-- navbar-left col-3-->            
-        <div class="navbar row col-12">
-           <div class="description col-3">
-                <p class="name">Alice Wonderland</p>
-                <p class="job">Personal Life Coach</p>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" type="text/css" href="css/grid.css">
+      <!-- Add a link to your custom CSS here -->
+      <link rel="stylesheet" type="text/css" href="css/main.css">
+      <title>Responsive grid project</title>
+   </head>
+   <body>
+      <!-- SECTION-1 // NAVBAR ON TOP OF BACKGROUND IMAGE-->
+      <header class="container">
+         <!-- parent -->
+         <nav class="row col-12 sm-col-12 md-col-12 lg-col-12 nav-bar-top">
+            <!-- child1 -->
+            <div class="row col-3 sm-col-3 md-col-3 lg-col-3 name-job">
+               <p class="name">Alice Wonderland</p>
+               <p class="job">Personal Life Coach</p>
             </div>
-            <!-- MIDDLE-COLUMN -->
-<!-- navbar-col-6 -->
-            <div class="col-6"></div>
-            <ul class="nav-links">
-                <li><a class="active" href="#home">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Motivational Reading</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <!-- RIGHT-COLUMN -->
-            <!-- navbar-right-login-section-right-->
-            <div class="col-3">
-                <ul class="log-in">
-                    <li class="nav-login-in-icon">
-                        <i><fa fa-user-circle-o"></i>
-                    </li>
-                    <li class="log-in-link">
-                        <a href="log-in">Log in</a>
-                    </li>
-                </ul>
-            </div> 
-        </div>
-        </header>
-    <!-- navbar ends here -->
-
-<!-- SECTION-2 // HERO-IMAGE+INTRO-TEXT-->
-    <section>
-        <!-- hero container col-12 -->
-        <div class="row container">
-            <!-- description col-6 - center -->
-        <div class="col-6">
-        <h1>AMBITION IS THE FIRST STEP TOWARDS</h1>
-        <h2>SUCCESS</h2>            
-        </div>
-        <!-- col-1 -->
-        <div class="md-btn">
-            <button class="button">Book Now</button>
-            </div>           
-        </div>
-    </section>
-<!-- hero ends here -->
-
-<!-- SECTION-3 // ABOUT ME SECTION START - LEFT COLUMN/TEXT + RIGHT COLUMN/IMAGE-->
-    <section>
-        <div class="container">
-            <!-- ARTICLE-TEXT -->
-                    <!-- col-6 -->
-        <hr class="small-1">
-<div class="row article-left">
-                        <h1>About Me</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores quis alias quo ipsum nihil quisquam. Praesentium tempore sit quod velit autem facere voluptatem deserunt, eligendi totam accusantium natus deleniti consectetur!</p>
-
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores quis alias quo ipsum nihil quisquam. Praesentium tempore sit quod velit autem facere voluptatem deserunt, eligendi totam accusantium natus deleniti consectetur!</p>
-        </div>
-                <!-- col-1 -->
-        <div class="article-button">
-        <button class="button">Read More</button>
-        </div>
-        <!-- PORTRAIT-RIGHT -->
-                <!-- col-6 -->            
-        <div class="portrait-right">            
-        </div>
-        </div>        
-    </section>
-    <!-- about me ends here -->
-
-    <!-- SECTION-4 // SERVICES HOW I CAN HELP YOU SECTION + BACKGROUND-IMAGE-->
-    <section>
-                <!-- col-12 -->
-<div class="container">
-    <!-- OUTSIDE-CONTENT -->
-    <div class="outside-services-image">
-        <h1>HOW I CAN HELP YOU</h1>
-                <!-- col-2 -->
-        <div class="services-button-black">
-            <button class="button">More Services</button>
+            <!-- child2 -->
+            <div class="row col-6 sm-col-6 md-col-6 lg-col-6 nav-links">
+               <ul class="links">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Motivational Reading</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Contact</a></li>
+               </ul>
             </div>
-    </div>
-    <!-- INSIDE-CONTENT -->
-    <div class="inside-content-box">
-        <h1>ONE ONE ONE COACHING</h1>
-        <h2>I'm a tagline. Click here to add your own text and edit me.</h2>
-        <hr class="center">
-        <h3>1 hr</h3>
-        <h3>$70</h3>
-        <!-- col-1 -->
-        <div class="book-it-button-teal">
-            <button class="button">Book It</button>
-            </div>
-    <div class="background-image"></div>
-</div>
-    </section>
-
-    <!-- SECTION-5 // FOOTER WITH SOLID-COLOR-BACKGROUND WITH 2 COLUMN - LEFT COLUMN WITH CONTACT DETAILS+ADDRESS - RIGHT COLUMN - FORM -->
-    <section>
-    <footer class="container">
-        <!-- LEFT-COLUMN -->
-        <div class="left-column">
-        <div class="contact-me">
-            <hr class="small-2">            
-            <h2>CONTACT</h2>
-            <h3>500 Francisco, CA 98765</h3>
-            <h3>Tel: 123-456-789</h3>
-            <h3>Fax: 123-456-789</h3>
-            <h3>info@mysite.com</h3>
-        </div>
-        <div class="social-media">
+            <!-- child3 -->
+            <div class="row col-3 sm-col-3 md-col-3 lg-col-3 login-in">
             <ul>
-                <li class="facebook">
-                    <a href="" class="fa fa-facebook"></a>
-                </li>
-                <li class="twitter">
-                    <a href="" class="fa fa-twitter"></a>
-                </li>
-                <li class="instagram">
-                    <a href="" class="fa fa-instagram"></a>
-                </li>
-                <li class="youtube">
-                    <a href="" class="fa fa-youtube"></a>
-                </li>
+               <li class="login-icon">
+                  <i>
+                     <fa fa-user-circle-o">
+                  </i>
+               </li>
+               <li class="login-link">
+                  <a href="log-in">Log in</a>
+               </li>
             </ul>
-        </div>
-        <div class="copy">
-            <p>&copy; 2015 by Personal Life Coach. <br> Proudly created by Sonjide Hussain</p>   
-    </div>        
-</div>
-<!-- RIGHT-COLUMN -->
-      <div class="right-column">
-    <div class="right">
-        <div class="form"></div>
-        <!-- col-2 -->
-        <div class="link-button">
-        <a href class="button">SUBMIT</a>
-        </div>          
-    </div>           
-      </div>           
-        </footer>    
-</section>
-</body>
-
+         </nav>
+      </header>
+      <!-- SECTION-2 // HERO-IMAGE+INTRO-TEXT - was corrected by Tam use this template again and again-->        
+      <section class="container">
+         <div class="row col-12 sm-col-12 md-col-12 lg-col-12 hero-img">
+            <!-- child1 -->
+            <div class="row col-4 sm-col-4 md-col-4 lg-col-4 hero-description">
+               <h1>AMBITION IS THE FIRST STEP TOWARDS</h1>
+               <h2>SUCCESS</h2>
+            </div>
+            <!-- child2 -->
+            <div class="row col-4 sm-col-4 md-col-4 lg-col-4 hero-btn">
+               <button class="button">Book Now</button>
+            </div>
+         </div>
+      </section>
+      <!-- SECTION-3 // ABOUT ME SECTION START - LEFT COLUMN/TEXT + RIGHT COLUMN/IMAGE-->
+      <section class="container">
+         <div class="row col-12 sm-col-12 md-col-12 lg-col-12 about-me">
+            <div class="row col-6 sm-col-6 md-col-6 lg-col-6 about-me-text">
+               <div class="hr-info">
+                  <hr>
+               </div>
+               <div class="info-title">
+                  <h1>About Me</h1>
+               </div>
+               <div class="info-paragraph">
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores quis alias quo ipsum nihil quisquam. Praesentium tempore sit quod velit autem facere voluptatem deserunt, eligendi totam accusantium natus deleniti consectetur!</p>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores quis alias quo ipsum nihil quisquam. Praesentium tempore sit quod velit autem facere voluptatem deserunt, eligendi totam accusantium natus deleniti consectetur!</p>
+               </div>
+               <div class="info-btn">
+                  <button class="button">Read More</button>
+               </div>
+            </div>
+            <!-- PORTRAIT-RIGHT -->
+            <div class="row col-6 sm-col-6 md-col-6 lg-col-6 info-img">            
+            </div>
+         </div>
+      </section>
+      <!-- about me ends here -->
+      <!-- services start here -->
+      <section class="container">
+         <div class="row col-12 sm-col-12 md-col-12 lg-col-12 service-img">
+            <div class="row col-6 sm-col-6 md-col-6 lg-col-6 service-banner">
+               <h1>HOW I CAN HELP YOU</h1>
+            </div>
+            <div class="row col-6 sm-col-6 md-col-6 lg-col-6 service-title">
+               <h1>ONE ON ONE COACHING</h1>
+            </div>
+            <div class="row col-8 sm-col-8 md-col-8 lg-col- service-title">
+               <h2>I'm a tagline. Click here to add your own text and edit me.</h2>
+            </div>
+            <div class="hr-service">
+               <hr>
+            </div>
+            <div class="price">
+               <p>1 hr
+               </h3>
+               <p>$70
+               </h3>
+            </div>
+            <div class="book-it-button-teal">
+               <button class="button">Book It</button>
+            </div>
+            <div class="service-btn-black">
+               <button class="button">Read More</button>
+            </div>
+         </div>
+      </section>
+      <!-- SECTION-5 // FOOTER WITH SOLID-COLOR-BACKGROUND WITH 2 COLUMN - LEFT COLUMN WITH CONTACT DETAILS+ADDRESS - RIGHT COLUMN - FORM -->
+      <footer class="container">
+         <div class="row col-12 sm-col-12 md-col-12 lg-col-12 nav-bar-top">
+            <!-- child1 -->
+            <div class="row col-6 sm-col-6 md-col-6 lg-col-6 footer-address">
+               <div class="contact-me">
+                  <div class="hr">
+                     <hr class="small-2">
+                  </div>
+                  <h2>CONTACT</h2>
+               </div>
+               <div class="address-para">
+                  <p>500 Francisco, CA 98765</p>
+                  <p>Tel: 123-456-789</p>
+               </div>
+               <div class="address-para">
+                  <p>Fax: 123-456-789</p>
+                  <p>info@mysite.com</p>
+               </div>
+               <div class="social-media-links-row">
+                  <ul>
+                     <li class="facebook">
+                        <a href="#" class="fa fa-facebook"></a>
+                     </li>
+                     <li class="twitter">
+                        <a href="#" class="fa fa-twitter"></a>
+                     </li>
+                     <li class="instagram">
+                        <a href="#" class="fa fa-instagram"></a>
+                     </li>
+                     <li class="youtube">
+                        <a href="#" class="fa fa-youtube"></a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="copy">
+                  <p>&copy; 2015 by Personal Life Coach. <br> Proudly created by Sonjide Hussain</p>
+               </div>
+            </div>
+            <!-- RIGHT-COLUMN -->
+            <div class="row col-6 sm-col-6 md-col-6 lg-col-6 footer-form">
+               <form class="contact-form-content">
+                  <label for="name">Enter Your Name*</label><br/>
+                  <input type="text" id="name" placeholder="   Name" /><br/>
+                  <label for="email">Enter Your Email*</label><br />
+                  <input type="text" id="email" placeholder="   Email" /><br/>
+                  <label for="phone">Enter Your Subject*</label><br />
+                  <input type="text" id="subject" placeholder="   Subject" /><br/>
+                  <label for="message">Message</label><br/>
+                  <input
+                     class="message-box"
+                     type="text"
+                     id="message"
+                     placeholder="   Message"/><br/>
+                  <div class="link-button">
+                     <a href class="button">SUBMIT</a>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </footer>
+   </body>
 </html>
