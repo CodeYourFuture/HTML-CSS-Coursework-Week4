@@ -1,3 +1,200 @@
 /* Add your custom CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.4rem;
+    text-align: center;
+}
+
+body {
+    background-color: #F5F3EF;
+
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo {
+    max-width: 10%;
+    margin-top: 1rem;
+    /* border: 1px solid black; */
+    /* border-radius: 50%; */
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+}
+
+header ul li {
+    list-style-type: none;
+    padding: 1rem;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: black;
+    opacity: 0.5;
+}
+
+header ul li a:hover {
+    opacity: 1;
+}
+
+h2 {
+    padding-top: 1rem;
+}
+
+.hero {
+    background-image: url('../imgs/photo-1490117874548-e35a2286fd89.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 60vh;
+    max-height: 100vh;
+    text-align: center;
+}
+
+h1 {
+    margin: 1.4rem auto;
+}
+
+.projects div {
+    padding: 5px;
+}
+
+.projects img {
+    max-width: 100%;
+}
+
+.projects,
+.about,
+.contact {
+    margin: 1rem auto;
+}
+
+.second-bg-img {
+    background-image: url('../imgs/photo-1564881558397-ab36e5b17755.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 30vh;
+    text-align: center;
+}
+
+.third-bg-img {
+    background-image: url('https://images.unsplash.com/photo-1572190006810-a55bd7077c3b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1268&q=80');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 40vh;
+    text-align: center;
+}
+
+.btn {
+    border: 1px solid black;
+    color: white;
+    background-color: black;
+    padding: 0.2rem 2rem;
+    margin-bottom: 1rem;
+}
+
+form {
+    flex-direction: column;
+}
+
+label {
+    text-align: left;
+    margin: 0 auto;
+
+}
+
+input {
+    align-self: flex-start;
+    border: 1px solid black;
+    text-align: left;
+    margin: 0 auto;
+    color: #888;
+}
+
+.info-label {
+    padding: 0;
+}
+
+#message {
+    height: 12.5rem;
+}
+
+.social-media {
+    order: -1;
+}
+
+.social-media a {
+    padding: 0.5rem;
+}
+
+.form-end {
+    align-self: center;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+    margin: 20px auto;
+    background-color: #E59340;
+    height: 2.5rem;
+}
+
+footer p {
+    padding-top: 0.4rem;
+    opacity: 0.50;
+}
+
+@media (min-width: 576px) {
+
+    /* sm */
+    * {
+        font-size: 1.25rem;
+    }
+}
+
+@media (min-width: 768px) {
+
+    /* md */
+    * {
+        font-size: 1.25rem;
+    }
+
+}
+
+@media (min-width: 992px) {
+
+    /* lg */
+    body {
+        font-size: 1.50rem;
+    }
+
+    form {
+        font-size: 1.25rem;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    /* xl */
+    body {
+        font-size: 1.75rem;
+    }
+
+    form {
+        font-size: 1.25rem;
+    }
+}
