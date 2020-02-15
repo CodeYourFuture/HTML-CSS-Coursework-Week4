@@ -15,7 +15,7 @@
     justify-items: center;
     align-items: center;
     background-color: darkgrey;
-    width: 100%;
+    /* width: 100%; */
 }
 .logo{
     background-color: cornflowerblue;
