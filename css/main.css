@@ -1,3 +1,142 @@
 /* Add your custom CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Containers */
+  
+  .container {
+    /* default from breakpoint 0, until another breakpoint overrides it */
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  .hero{
+    background-image: url(../img/background.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: auto;
+    
+
+  }
+  .col-12{
+    width: 100%;
+  }
+  .col-6 {
+    width: 50%;
+}
+.col-3 {
+    width: 25%;
+}
+
+.name {
+    font-weight: bolder;
+    text-align: center;
+    margin: 8px 0px;
+}
+.job {
+    text-align: center;
+}
+
+nav > ul {
+   
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #838994;
+   
+    
+  
+  }
+  li {
+    list-style: none;
+    
+  }
+  li:hover {
+	cursor: pointer;
+	color: #282a85;
+}
+
+
+  .fa {
+    padding: 1rem;
+    font-size: 1rem;
+    width: 1rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: black;
+}
+p{
+
+position: relative;
+min-height: 1px;
+padding-right: 15px;
+
+}
+p.login{
+    color: rgb(39, 18, 231);
+    text-align: left;
+    font-weight: bold;
+    font-size: 0.
+}
+.ambition {
+    font-size: small;
+    margin: 4rem 0 0 0;
+}
+.fitness {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin: 0.5rem 0 0 0;
+}
+button {
+
+    color: cornsilk;
+    
+	border-radius: 4px;
+    color: #ffffff;
+    background-color: #4794f8;
+    font-size: 16px;
+    display: block;
+    padding: 16px 32px;
+    margin: 0 auto;
+    text-decoration: none;
+    text-align: center;
+}
+.btn :hover {
+	cursor: pointer;
+    background-color: #d9400e;
+    text-decoration: none;
+}
+.more-btn {
+
+    color: cornsilk;
+	border-radius: 4px;
+    color: #ffffff;
+    font-size: 16px;
+    display: block;
+    padding: 10px 20px;
+    margin: 0 auto;
+    text-decoration: none;
+    text-align:center;
+    background-color: rgb(243, 167, 52);
+}
+  
