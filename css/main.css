@@ -52,14 +52,13 @@
         background-image: url(picture1.jfif);
         background-position: center; 
         background-repeat: no-repeat; 
-        background-size: cover; 
-        
+        background-size: cover;  
     }
     
     .section1-text-content {
         display: flex;
         flex-direction: column;
-        align-content: space-evenly;
+        align-content: center;
         text-align: center;
      }
     
@@ -79,7 +78,7 @@
          border: none;
          color: white;
          width: 30%;
-        align-items: center;
+         align-content: center;
      }
     
      .section2 {
@@ -93,11 +92,12 @@
         flex-direction: column;
         align-content: center;
         max-width: 100%;
+        top: 2.5rem;
     }
     
     
     .section2-image {
-        max-width: 100%;
+        width: 100%;
     }
 
     
@@ -109,6 +109,7 @@
         background-size: cover; 
     }
     
+
     .border-content {
         display: flex;
         flex-direction: column;
@@ -119,12 +120,18 @@
     .section3-content {
         display: flex;
         flex-direction: column;
-        align-content: flex-start;
+        align-content: space-between;
     }
 
     .more-button {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-end;
         background-color: black;
-        width: 30%;
+        width: 8%;
+        left: 28%;
+        top: 3rem;
+        text-align: center;
     }
     
     .contact-text {
@@ -150,4 +157,31 @@
        display: flex;
        flex-direction: row;
        justify-content: flex-end;
+       border: 2px solid black;
+   }
+
+   input, textarea{
+       border-radius: 8%;
+       border: 1px inset black;
+       width: 100%
+   }
+
+   h1 {
+    font-family: 'Coda Caption', sans-serif;
+   }
+
+   p {
+    font-family: 'Fira Sans', sans-serif;
+   }
+
+   .bottom-button {
+       background-color: black;
+       color: cornsilk;
+   }
+
+   @media(min-width:992px) {
+
+       .section1 {
+           height: 40rem;
+       }
    }
