@@ -142,6 +142,13 @@ color : white;
     height: 1005;
     background-color: rgb(200, 199, 209);
 }
+.row1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
 .footer__title{
     text-align: center;
     font-size: 16px;
@@ -191,6 +198,12 @@ color : white;
     }
     .sm-col-11 {
         width: 91.666666%;
+      }
+      div.gallery {
+        margin-top: 5mm;
+       align-items: center;
+        border: 5px solid rgba(248, 246, 246, 0.13);
+        float: left;
       }
 }
 @media (min-width: 768px) {
