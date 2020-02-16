@@ -69,13 +69,15 @@ h1 {
 
 .projects img {
     max-width: 100%;
-    /* transition:transform 0.25s ease; */
+    transition:transform 0.25s ease;
 }
 
-/* img:hover {
+img:hover {
     -webkit-transform:scale(1.5); /* or some other value */
-/* transform:scale(1.5);
-} */
+    transform:scale(1.5);
+    position: relative;
+    z-index: 1;
+}
 
 .projects,
 .about,
