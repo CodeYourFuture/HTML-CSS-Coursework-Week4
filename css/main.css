@@ -1,48 +1,49 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+/* @import "../css/grid.css"; */
 /* Add your custom CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
 body {
     /* font-family: 'Open Sans', sans-serif; */
     font-family: 'Nunito', sans-serif;
-    /* background-color: rosybrown; */
-    margin: 0px;
-    
-    
-    
-
+    background-color: lightgray;
+    margin: 0px; 
 }
 .hide{
     display: none;
 }
-.nav-content {
+.nav-content{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: white;
     align-items: center;
-    margin-top: 0px;
-    /* position: fixed; */
     z-index: 1;
+    background-color: #dfe4ea;
+    position: fixed;
 
 }
 .no-padding{
     padding: 0px;
-
+}
+.top-down-padding{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
 }
 .right-side{
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    /* background-color: lightblue; */
-    
-
+    justify-content: space-around;  
 }
 .login-font{
-    font-size: 15px;
+    font-size: 18px;
     text-decoration: none;
     color: #c0392b;
+}
+.user-icon{
+    color: #c0392b;
+
 }
 .left-side{
     display: flex;
@@ -51,14 +52,13 @@ body {
 .first-section{
     background-color: skyblue;
     background: url("../img/first-sec-img.jpg") no-repeat center;
-    
     color: snow;
     height: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* margin-top: 60px; */
+
     /* position: a; */
     
 }
@@ -67,12 +67,209 @@ body {
     color: white;
     background-color: #d35400;
     border-radius: 2px;
+    margin:0px auto;
 }
 .first-sec-buy:hover{
     background-color: #d354aa;
     
 }
-
-*{
-    /* border: solid green 0.1px; */
+.second-section{
+    /* background-color: lightgray; */
+    height: auto;
+    margin-top: 0px;
 }
+.second-section-img-align{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50%;;
+
+}
+.prices{
+    margin-top: 3px;
+    padding-top: 0px;
+}
+.space-img-price{
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+
+.insta-icon{
+    color: brown;
+}
+.telegram-icon{
+    color: lightblue;
+}
+
+.first-form-align{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.align-all{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+}
+.lbl-color{
+    background-color: lightgray;
+    border: none;
+    font-family: 'Nunito', sans-serif;
+}
+.message-height{
+    height: 80px;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #dfe4ea;
+    
+}
+.bg-color1{
+    background-color: lightgray;
+}
+
+
+.bg-color2{
+    background-color: lightgray;
+}
+
+
+.bg-color3{
+    background-color: lightgray;
+}
+
+
+.bg-color4{
+    background-color: lightgray;
+}
+
+
+
+
+
+
+
+
+@media (min-width: 576px) {
+    body{
+        background-color: red;
+    }
+}
+
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+    body{
+        background-color: green;
+    }
+}
+
+
+
+
+
+@media (min-width: 992px) {
+    body{
+        background-color: lightgray;
+    }
+    
+    .first-section-lg{  
+        display: flex;
+        align-items: center;
+        flex-direction: column;  
+    }
+    .hide{
+        display: block;
+    }
+    .menu{
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        align-items: center;
+    }
+    .left{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .right{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .menu-item{
+        padding: 7px;
+        font-size: 15px;
+        color:gray;
+        text-decoration: none;
+
+    }
+    .menu-item:hover ~ .font{
+            color: green;
+        
+    }
+    .font{
+        font-weight: bolder;
+        font-size: 22px;
+        color: #c0392b;
+    }
+    .login-font{
+        font-size: 15px;
+        margin: 15px 0px;
+    }
+    .right-side{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        font-size: 15px;  
+    }
+    .left-side{
+        margin: 0px;
+
+    }
+    .sec-content-align{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    }
+    .third-cell{
+        background-color: rgba(23, 55, 32, 255);
+        
+    }
+    .third-cell-text{
+        font-size: 40px;
+        font-weight: bolder;
+    }
+    .top-down-margin{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .font-gray{
+        color: gray;
+    }
+    
+}
+
+
+
+
+
+
+
+/* @media (min-width: 1200px) {
+    body{
+        background-color: pink;
+    }
+ 
+} */
