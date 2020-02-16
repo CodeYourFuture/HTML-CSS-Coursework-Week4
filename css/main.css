@@ -94,8 +94,9 @@ textarea{
 .social-media{
    display: inline;
 }
-.face .pint .insta{
-   width:150000px;
+.face ,.pint, .insta{
+   width:10px;
+   height:10px ;
 }
 .footer{
   background-color: orange;
