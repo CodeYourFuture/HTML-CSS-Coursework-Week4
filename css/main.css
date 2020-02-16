@@ -24,7 +24,7 @@
     justify-content: center;
     align-items: center;
 }
-.logo h3{
+h3{
     font-family: 'roboto';
     font-size: larger;
 }
@@ -104,7 +104,7 @@ ul{
     font-size: 14px;
 }
 .sm-line{
-    width: 40px;
+    width: 10%;
     border-top:2px solid black;
     float: left;
 }
@@ -152,7 +152,7 @@ ul{
     margin-top: 0;
 }
 .md-line{
-    width: 600px;
+    width: 70%;
     border-top:2px solid black;
 }
 .reading2{
@@ -171,11 +171,29 @@ ul{
 }
 
 .row5{
-    background-color: gainsboro;
+    /* background-color: rgb(85, 202, 248); */
+    position: absolute;
+    left: 20%;
 }
-.contact{
-    
+.check{
+    margin-top: 0;
+    margin-bottom: 0;
 }
-.form{
-
+.finput{
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid black;
+    /* background-color:rgb(85, 202, 248); */
+}
+.minput{
+    padding: 60px 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid black;
+    /* background-color:rgb(85, 202, 248); */
+}
+.submit{
+    /* position: absolute; */
+    left: 49.8%;
 }
