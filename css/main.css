@@ -72,13 +72,13 @@ ul.ul_header_nav a:hover{
 }
 
 .logo_img{
-  background: url("/steve-jobs-nav.jpg");
+  background: url("steve-jobs-nav.jpg");
 
 }
 
 .hero_image{
   display: flex;
-  background: url("/steve_jobs.jpg");
+  background: url("steve_jobs.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   flex-direction: column;
@@ -130,7 +130,7 @@ ul.ul_header_nav a:hover{
 }
 .about_me{
   width:100%;
-  background:url("/apple_sign.jpg") ;
+  background:url("apple_sign.jpg") ;
   background-repeat: no-repeat;
   background-size: cover;
   padding:10px 10px;
