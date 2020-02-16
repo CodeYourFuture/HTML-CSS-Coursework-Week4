@@ -6,7 +6,6 @@
     padding: 0;
     line-height: 1.4rem;
     text-align: center;
-    font: robo
 }
 
 body {
@@ -94,7 +93,7 @@ h1 {
 }
 
 .third-bg-img {
-    background-image: url('https://images.unsplash.com/photo-1572190006810-a55bd7077c3b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1268&q=80');
+    background-image: url('../imgs/photo-1572190006810-a55bd7077c3b.jpeg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -195,9 +194,6 @@ footer p {
 @media (min-width: 576px) {
 
     /* sm */
-    .hero {
-        max-height: 70vh;
-    }
 }
 
 @media (min-width: 768px) {
@@ -239,7 +235,7 @@ footer p {
     }
 
     .hero {
-        min-height: 80vh;
+        min-height: 90vh;
     }
 
     form,
