@@ -125,6 +125,11 @@
     height:3rem;
     
 }
+.sbmt{
+    text-align:left;
+    margin-left: 7rem;
+   
+}
 #submit{
     margin-top: 10px;
     color:white;
