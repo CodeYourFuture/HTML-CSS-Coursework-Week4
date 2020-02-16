@@ -4,7 +4,7 @@ header {
     justify-content: center;
 }
 
-h3,h6,h1 {
+.h-center {
     text-align: center;
 }
 ul {
@@ -36,7 +36,18 @@ ul {
 .about-me {
     align-items: flex-start;
 }
-
+.img-text > button {
+   margin: 2rem 0 2rem;
+}
+.box-boarder {
+    border: 2px solid black;
+    text-align: center;
+    font-size: 1rem;
+}
+.btn-wraper {
+    justify-content: center;
+    margin-top: 2rem;
+}
 
 
 
