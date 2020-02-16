@@ -6,11 +6,11 @@
     padding: 0;
     line-height: 1.4rem;
     text-align: center;
+    font: robo
 }
 
 body {
     background-color: #F5F3EF;
-
 }
 
 header {
@@ -45,7 +45,7 @@ header ul li a:hover {
 }
 
 h5 {
-    padding-top: 1rem;
+    padding: 1rem;
     font-weight: 400;
     opacity: 0.75;
 }
@@ -70,7 +70,13 @@ h1 {
 
 .projects img {
     max-width: 100%;
+    /* transition:transform 0.25s ease; */
 }
+
+/* img:hover {
+    -webkit-transform:scale(1.5); /* or some other value */
+/* transform:scale(1.5);
+} */
 
 .projects,
 .about,
@@ -117,6 +123,12 @@ form label {
     padding: 0;
 }
 
+.req::after {
+    content: "*";
+    padding-left: 3px;
+    color: #cb2027;
+}
+
 input {
     align-self: flex-start;
     border: 1px solid black;
@@ -155,7 +167,7 @@ input {
     padding: 0.625rem 0;
     text-align: center;
     text-decoration: none;
-  }
+}
 
 .fa-facebook {
     color: #3b5998;
@@ -183,6 +195,9 @@ footer p {
 @media (min-width: 576px) {
 
     /* sm */
+    .hero {
+        max-height: 70vh;
+    }
 }
 
 @media (min-width: 768px) {
@@ -197,7 +212,7 @@ footer p {
     }
 
     .hero {
-        min-height: 100vh;
+        min-height: 80vh;
     }
 
     .form-end {
@@ -210,7 +225,7 @@ footer p {
     .social-media {
         order: 0;
     }
-    
+
     .btn {
         margin: 0;
     }
@@ -223,7 +238,12 @@ footer p {
         font-size: 1.50rem;
     }
 
-    form, footer {
+    .hero {
+        min-height: 80vh;
+    }
+
+    form,
+    footer {
         font-size: 1.25rem;
     }
 }
@@ -235,13 +255,12 @@ footer p {
         font-size: 1.75rem;
     }
 
-    form, footer {
+    .hero {
+        min-height: 100vh;
+    }
+
+    form,
+    footer {
         font-size: 1.5rem;
     }
-}
-
-.req::after {
-    content: "*";
-    padding-left: 3px;
-    color: #cb2027;
 }
