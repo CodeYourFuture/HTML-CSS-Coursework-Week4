@@ -14,11 +14,11 @@
     flex-direction: row;
     justify-items: center;
     align-items: center;
-    background-color: darkgrey;
+    background-color: white;
     /* width: 100%; */
 }
 .logo{
-    background-color: cornflowerblue;
+    background-color: white;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -35,12 +35,12 @@
     top: 40px;
 }
 .nav{
-    background-color: cornsilk;
+    background-color: white;
     font-family: 'Quicksand';
     font-size: small;
 }
 .login{
-    background-color: cyan;
+    background-color: white;
     font-family: 'Quicksand';
     font-size: small;
     display: flex;
@@ -58,7 +58,7 @@ ul{
     /* justify-content: center; */
     align-items: center;
     height: 736px;
-    background-color: beige;
+    background-color: white;
     background-image: url(https://thumbs.dreamstime.com/z/funny-smile-horse-face-winter-nature-background-snow-fall-outdoor-100040277.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -89,7 +89,7 @@ ul{
     font-size: 14px;
 }
 .readmore{
-    background-color: pink;
+    background-color: white;
     height: 640px;
     left: 100px;
 }
@@ -122,17 +122,56 @@ ul{
     flex-wrap: wrap;
 }
 .asideimg{
-    background-color: yellowgreen;
+    background-color: white;
     height: 640px;
     position: relative;
 
 }
 .row4{
-    background-color: aquamarine;
+    background-color: gainsboro;
     height: 608px;
+    display: flex;
+    flex-direction: column;
+    background-image: url(https://www.wallpaperup.com/uploads/wallpapers/2015/04/02/653105/09d95a6f0e5f6e6a79bcbc58aa1222ad-700.jpg);
+    background-repeat: no-repeat;
+    justify-items: center;
+    align-items: center;
 }
+.box{
+    border: 6px solid black;
+    display: flex;
+    padding-bottom: 20px;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+}
+.coaching{
+    margin-bottom: 10px;
+}
+.tagline{
+    margin-top: 0;
+}
+.md-line{
+    width: 600px;
+    border-top:2px solid black;
+}
+.reading2{
+    background-color:rgb(0, 169, 236);
+    border: none;
+    color: black;
+    padding: 8px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+.services{
+   position: absolute;
+   left: 300px;
+}
+
 .row5{
-    background-color: cadetblue;
+    background-color: gainsboro;
 }
 .contact{
     
