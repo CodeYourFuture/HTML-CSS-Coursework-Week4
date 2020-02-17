@@ -72,7 +72,7 @@ hr.small-2 {
 
   /* standard size button including link-button*/
   .button {
-    background-color: rgb(37, 49, 223);       /* button color*/
+    background-color: rgb(1, 3, 19);       /* button color*/
     border: 2px solid grey;
     border-radius: 5px;
     width: 125px;
@@ -118,6 +118,7 @@ hr.small-2 {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
+
 }
 
 .name-job {
@@ -158,9 +159,15 @@ hr.small-2 {
 linergradient - makes the img dimmer https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_hero_image
 */
 
-.hero-text h1 h2 {
-color: white;
-text-align: center;
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  color: white;
+  text-align: center;
+  font-style: normal;
+  font-family: Arial, Helvetica, sans-serif;
 
 }
 
@@ -170,10 +177,6 @@ text-align: center;
 
 .hero-text h2 {
   font-size: large;
-}
-
-.hero-text button {
-
 }
 
 
