@@ -51,14 +51,14 @@ a:hover {
     opacity: 1;
 }
 
-/* hr.center {
+hr.center {
   border: 1px solid red;
   padding: 0px;
   margin: 0 100px;
 }
 
 /* need to align to the left - use a div?  */
-/* hr.small-1 {
+hr.small-1 {
   border: 1px solid rgb(255, 0, 221);
   padding: 0px;
   margin: 0 200px;
@@ -68,7 +68,7 @@ hr.small-2 {
   border: 1px solid rgb(4, 0, 255);
   padding: 0px;
   margin: 0 200px;
-} */ 
+}
 
   /* standard size button including link-button*/
   .button {
@@ -91,7 +91,7 @@ hr.small-2 {
 }
 
 /* special-buttons-small-size and link-button*/
-/* 
+
 .book-it-button-teal .button {
   background-color: teal;
   width: 100px;
@@ -99,73 +99,88 @@ hr.small-2 {
 
 .book-it-button-teal .button:hover{
     background-color: red;
-  } */
+  }
 
-/* HEADER SECTION - TOP NAVBAR */
-
- /* .navbar{
+/* HEADER SECTION - TOP NAVBAR - total width+height - sorted*/
+.navbar-top {
   position: fixed;
-  margin: 0 0px;
-  height: 80px;
-  width: auto;
-  background-color: blue;
-} */
-
-/* 
-.navbar .description .nav-links{
+  width: 100%;  
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  box-sizing: border-box;
   display: flex;
-  flex-direction: row;
-} */
-/* 
-.name {
-  font-weight: bold;
+  justify-content: center;
+  z-index: 9999;
 }
 
-.name .job {
-  text-align: center;
-  margin: 5px; 
-} */
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
 
-/* left-of-navbar */
+.name-job {
+  display: flex;
+  flex-direction: column;
+}
 
-/* middle-of-navbar */
+.name {
+  font-weight: bold;
+  margin-bottom: 0px;
+}
 
 /* HERO-SECTION */
 .hero-img {
-  background-image: url(../image/hero.jpg);
+  position: relative;
+  width: 100vw;
   height: 100vh;
-  width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: auto;
 }
-/* hero-content-center */
-.hero-content {
-  border: 6px solid white;
+
+.hero-img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}  
-
-.hero-txt {
-  text-align: center;
-  color: white;
+  align-items: center;  
+  justify-content: space-around;
 }
 
-.hero-txt p {
+.hero-img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),  url(../image/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* source for HERO - https://www.developerdrive.com/full-page-hero-image-html-css/ 
+
+linergradient - makes the img dimmer https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_hero_image
+*/
+
+.hero-text h1 h2 {
+color: white;
+text-align: center;
+
+}
+
+.hero-text h1 {
+  font-size: xx-large;
+}
+
+.hero-text h2 {
   font-size: large;
 }
 
-.hero-txt h1 {
-  font-size: x-large;
-}
+.hero-text button {
 
-.hero-btn {
-
- 
 }
 
 
-/* flex-box source -  https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
-/* hero-right */
+
+/* resources list- 
+flexbox - https://github.com/billfienberg/flexbox-froggy
+images - https://unsplash.com/
+html+css beutify https://www.freeformatter.com/html-formatter.html
+flex-box source css -  https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+*/
