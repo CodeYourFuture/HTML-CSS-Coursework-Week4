@@ -151,7 +151,7 @@ footer {
     height: 50px;
    
 }
-footer > div > p {
+.footer-text {
     color: white;
     text-decoration: #ffffff;
     font-family: 'Open Sans', sans-serif;
@@ -159,7 +159,7 @@ footer > div > p {
     font-size: 0.8em;
 }
 
-footer > p > a {
+.footer-text  a {
     color: #ffffff;
 }
 
