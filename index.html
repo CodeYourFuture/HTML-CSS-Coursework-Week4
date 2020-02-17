@@ -6,41 +6,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="css/grid.css">
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>Responsive grid project</title>
 </head>
 
 <body>
 
-    <header>
-        <div>
-            <h1> ALLAN JOHNSON</h1>
-            <h2>Personal Life Coach</h2>
+    <header class= "container">
+        <div class="row">
+            <div class="col-12">
+            <div>
+                <h1> ALLAN JOHNSON</h1>
+                <h2>Personal Life Coach</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home">Home</a></li>
+                    <li><a href="about">About</a></li>
+                    <li><a href="services">Services</a></li>
+                    <li><a href="motivational reading">Motivational Reading</a></li>
+                    <li><a href="blog">Blog</a></li>
+                    <li><a href="contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div>
+                <i class="fas fa user"></i>
+                <img class="profile-pic" src="http://media.idownloadblog.com/wp-content/uploads/2017/03/Twitter-new-2017-avatar-001.png" alt="user profile image"/>
+                <a href="log in">Log in</a>
+            </div>
         </div>
-        <nav class= "navbar">
-            <ul>
-                <li><a href="home">Home</a></li>
-                <li><a href="about">About</a></li>
-                <li><a href="services">Services</a></li>
-                <li><a href="motivational reading">Motivational Reading</a></li>
-                <li><a href="blog">Blog</a></li>
-                <li><a href="contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div>
-            <img class="profile-pic" src="http://media.idownloadblog.com/wp-content/uploads/2017/03/Twitter-new-2017-avatar-001.png" alt="user profile image"/>
-            <a href="log in">Log in</a>
-        </div>
+           </div>
     </header>
     <main>
-        <div>
-            <h4>AMBITION IS THE FIRST STEP TOWARDS</h4>
-            <h2>SUCCESS</h2>
-        </div>
-        <div>
-            <button type="button">Book Now</button>
-        </div>
+        <section class="hero-image">
+            <div class="container" >
+                <div class="row">
+                    <div col-12>
+                        <h4 class="hero-content">AMBITION IS THE FIRST STEP TOWARDS</h4>
+                        <h2 class="hero-content-h2">SUCCESS</h2>
+                        <button class="hero-content" type="button">Book Now</button>
+                    </div>    
+            </div>
+                </div>
+        </section>
+        <section class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div>&mdash;</div>
+                        <h1>About Me</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore sint qui, distinctio a, accusamus reiciendis totam est cumque consequuntur dolore perferendis suscipit optio quidem unde corporis quis placeat natus. Placeat?
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam minima culpa officia iure distinctio consequatur neque a repellendus, nam nemo magnam accusamus qui nobis suscipit iste expedita error labore dolores.
+                        </p>
+                        <button onclick="read.more">Read More</button>
+                    </div>
+                    <div class="col-6">
+                        <div class="row">
+                            <img class="main-section2-image" src="https://images.unsplash.com/photo-1565382560154-677e13d8d779?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+                        </div>
+                    </div>         
+                </div>
+            </div>     
+        </section> 
+        <section class="container">
+            <div class="row">
+                <!-- <div class="col-12">  -->
+                    <div>&mdash;</div>
+                    <div>HOW I CAN HELP YOU</div>
+                    <div class="col-8">
+                        <div class="booking-section">
+                            <h3>One on one coaching</h3>
+                            <h4>I am a tagline, click here</h4>
+                            <hr>
+                            <h5>1hr</h5>
+                            <h5>$70</h5>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+
+        </section>  
     </main>
 
 </body>

@@ -1,5 +1,45 @@
 .navbar {
     display: flex;
-    height: 20px;
-    grid-auto-flow: column;
+    height: 0px;
+    grid-auto-flow: column;   
+}
+.hero-image {
+    background-image: url("https://images.unsplash.com/photo-1487291783462-9d3d36a0cbf1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+    background-repeat: no-repeat;
+    position: relative;
+    height: 500px;
+    background-size: cover;
+    background-color: blue;
+    
+}
+.hero-content {
+   position: absolute;
+   text-align: center;
+   top: 15%;
+   left:300px; 
+}
+.hero-content-h2 {
+    text-align: center;
+    bottom: 70px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+nav, ul, li, a {
+    text-decoration: none;
+    /* justify-content: space-between;  */
+    padding: 15px; 
+    /* position: absolute;  */
+    display: flex;
+}
+ /*.main-section2-image {
+     height: auto;
+     width:100%;
+ }*/
+    
+.booking-section {
+    border: 5px solid black
 }
