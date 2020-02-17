@@ -35,7 +35,7 @@ body{
 nav{
     font-family: 'Noto Serif SC', serif;
     font-weight: 700;
-    font-size: 1.6em;
+    font-size: 1.5em;
 }
 
 nav > ul {
@@ -44,7 +44,7 @@ nav > ul {
     justify-content: center;
     align-content: center;
     flex-wrap: nowrap;
-    margin-top:5px;
+    margin-top:15px;
 }
 
 nav > ul > li {
@@ -79,7 +79,6 @@ nav a:hover{
     font-size: 2.2em;
     margin: 40px 0;
     text-align: center;
-     
 }
 
 .project-image{
@@ -164,6 +163,11 @@ footer > p > a {
     color: #ffffff;
 }
 
+.center{
+    margin: 0 auto;
+    justify-content: center;
+}
+
 @media (max-width: 576px) {
 
     .logo{
@@ -171,8 +175,8 @@ footer > p > a {
         height: auto;
     }
     nav > ul > li {
-        padding-right: 30px;
-        padding-left:20px;
+        padding-right: 40px;
+        padding-left:0;
     }
 
 
@@ -192,7 +196,7 @@ footer > p > a {
     
     nav > ul > li {
         padding-right: 50px;
-        padding-left:20px;
+        padding-left:10px;
     }
 
 
@@ -212,7 +216,7 @@ footer > p > a {
 
     nav > ul > li {
         padding-right: 50px;
-        padding-left:20px;
+        padding-left:10px;
     }
 
     .project-image{
@@ -242,9 +246,13 @@ footer > p > a {
 }
 
 @media (min-width: 1200px) {
+
+    nav{
+        font-size: 2em;
+    }
     nav > ul > li {
-        padding-right: 100px;
-        padding-left:50px;
+         padding-right: 100px;  
+        padding-left:60px;  
     }
     .project-image{
         height: 220px;

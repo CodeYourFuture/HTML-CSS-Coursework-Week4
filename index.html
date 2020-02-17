@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="css/grid.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <!-- Add a link to your custom CSS here -->
 
@@ -23,6 +25,10 @@
                         <div class="logo-wrapper">
                             <img src="img/logo_b_t.png" class="logo" alt="B logo" title="B logo">
                         </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 sm-col-12 md-col-12 lg-col-12 xl-col-12 center">
                         <nav>
                             <ul>
                                 <li><a href="#project">projects.</a></li>
@@ -31,14 +37,13 @@
                             </ul>
                         </nav>
 
-
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Projects Section -->
-        <section class="container1" id="project">
+        <section class="container" id="project">
             <div class="row">
                 <div class="col-12 sm-col-12 md-col-12 lg-col-12 xl-col-12">
                     <p class="part-title">projects.</p>
@@ -65,67 +70,84 @@
 
 
         <!-- About Section -->
-        <section class="row" id="about">
-            <div class="col-12 sm-col-12 md-col-12 lg-col-12 xl-col-12 about-bg">
+        <section class="container" id="about">
+            <div class="about-bg">
             </div>
-            <div class="col-12 sm-col-12 md-col-12 lg-col-12 xl-col-12">
-                <p class="part-title">about.</p>
-                <p class="about-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed
-                    cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.
-                    Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget
-                    nulla.
-                </p>
+            <div class="row">
+                <div class="col-12 sm-col-12 md-col-12 lg-col-12 xl-col-12 ">
+                </div>
+                <div class="col-12 sm-col-12 md-col-12 lg-col-12 xl-col-12">
+                    <p class="part-title">about.</p>
+                    <p class="about-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed
+                        cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis
+                        ipsum.
+                        Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu
+                        eget
+                        nulla.
+                    </p>
+                </div>
             </div>
         </section>
 
 
         <!-- contact Section -->
         <section id="contact">
-            <div class="row">
-                <div class="col-12 sm-col-12 md-col-12 lg-col-12 xl-col-12 contact-bg">
+            <div class="contact-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 sm-col-12 md-col-12 lg-col-12 xl-col-12">
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12 sm-col-12 md-col-12 lg-col-12 xl-col-12">
-                    <p class="part-title">contact.</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 sm-col-12 md-col-12 lg-col-12 xl-col-12">
+                        <p class="part-title">contact.</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-1 sm-col-1 md-col-2 lg-col-3 xl-col-3"></div>
+                    <div class="contact-form col-10 sm-col-10 md-col-8 lg-col-6 xl-col-6">
+                        <p>
+                            <label for="fname">Enter Your Name</label><br>
+                            <input type="text" id="fname" name="fname" placeholder="Name">
+                        </p>
+
+                        <p>
+                            <label for="femail">Enter Your Email</label><br>
+                            <input type="text" id="femail" name="femail" placeholder="Email">
+                        </p>
+
+                        <p>
+                            <label for="fname">Enter Your Phone</label><br>
+                            <input type="text" id="fname" name="fname" placeholder="Enter Your Phone">
+                        </p>
+
+                        <p>
+                            <label for="fname">Enter Your Message Here</label><br>
+                            <textarea type="text" id="fname" name="fname" placeholder="Message"></textarea>
+                        </p>
+                        <p class="form-btn">
+                            <button type="button">Send</button>
+                        </p>
+
+                    </div>
+                    <div class="col-1 sm-col-1 md-col-2 lg-col-3 xl-col-3"></div>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-1 sm-col-1 md-col-2 lg-col-3 xl-col-3"></div>
-                <div class="contact-form col-10 sm-col-10 md-col-8 lg-col-6 xl-col-6">
-                    <p>
-                        <label for="fname">Enter Your Name</label><br>
-                        <input type="text" id="fname" name="fname" placeholder="Name">
-                    </p>
-
-                    <p>
-                        <label for="femail">Enter Your Email</label><br>
-                        <input type="text" id="femail" name="femail" placeholder="Email">
-                    </p>
-
-                    <p>
-                        <label for="fname">Enter Your Phone</label><br>
-                        <input type="text" id="fname" name="fname" placeholder="Enter Your Phone">
-                    </p>
-
-                    <p>
-                        <label for="fname">Enter Your Message Here</label><br>
-                        <textarea type="text" id="fname" name="fname" placeholder="Message"></textarea>
-                    </p>
-                    <p class="form-btn">
-                        <button type="button">Send</button>
-                    </p>
-
-                </div>
-                <div class="col-1 sm-col-1 md-col-2 lg-col-3 xl-col-3"></div>
-            </div>
         </section>
     </main>
-    <footer class="row">
-        <div class="col-12 sm-col-12 md-col-12 lg-col-12 xl-col-12">
-            <p>2023 by babak jahangiri contact with <a href="#" target="_blank">Wix.com</a></p>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 sm-col-12 md-col-12 lg-col-12 xl-col-12">
+                    <p>2023 by babak jahangiri contact with <a href="#" target="_blank">Wix.com</a></p>
+                </div>
+            </div>
         </div>
     </footer>
 
