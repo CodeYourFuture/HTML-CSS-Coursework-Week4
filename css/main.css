@@ -180,10 +180,31 @@ linergradient - makes the img dimmer https://www.w3schools.com/howto/tryit.asp?f
 }
 
 
+.about-me {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+  width: 100%;
+  height: auto;
+}
+/* col-6 sm-col-6 md-col-6 lg-col-6  */
+.about-me-img {
+  background-image: url(../image/portrait.jpg);
+}
+
+
+
+
+
 
 /* resources list- 
 flexbox - https://github.com/billfienberg/flexbox-froggy
 images - https://unsplash.com/
 html+css beutify https://www.freeformatter.com/html-formatter.html
 flex-box source css -  https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+*/
+
+/* source for HERO - https://www.developerdrive.com/full-page-hero-image-html-css/ 
+linergradient - makes the img dimmer https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_hero_image
 */
