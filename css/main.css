@@ -58,7 +58,7 @@ hr.center {
 }
 
 /* need to align to the left - use a div?  */
-hr.small-1 {
+/* hr.small-1 {
   border: 1px solid rgb(255, 0, 221);
   padding: 0px;
   margin: 0 200px;
@@ -68,7 +68,7 @@ hr.small-2 {
   border: 1px solid rgb(4, 0, 255);
   padding: 0px;
   margin: 0 200px;
-}
+} */
 
   /* standard size button including link-button*/
   .button {
@@ -118,7 +118,6 @@ hr.small-2 {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-
 }
 
 .name-job {
@@ -129,6 +128,9 @@ hr.small-2 {
 .name {
   font-weight: bold;
   margin-bottom: 0px;
+}
+.iconLogin ul li {
+  padding: 10px;
 }
 
 /* HERO-SECTION */
@@ -182,38 +184,35 @@ linergradient - makes the img dimmer https://www.w3schools.com/howto/tryit.asp?f
 /* ABOUT-ME-SECTION */
 
 .about-me {
-  width: 100%;
-  height: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;  
+  height: auto;  
   box-sizing: border-box;
 }
 
-/* col-6 sm-col-6 md-col- lg-col-6  */
-
-.about-me-text-LEFT {
-text-align: justify;
-
+.about-me-text-LEFT p {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px;
+  padding: 5px;
 }
-/* 
+
 .portrait {
   position: relative;
   width: 100vw;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
+}
 
 .portrait {
   background-image: url(../image/portrait.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
 }
 /*  */
 /* .about-me-text h2 p {
@@ -233,3 +232,12 @@ flex-box source css -  https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 /* source for HERO - https://www.developerdrive.com/full-page-hero-image-html-css/ 
 linergradient - makes the img dimmer https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_hero_image
 */
+
+<section class="container">
+<div class="row">
+    <div class="col-4">
+        <img src="" alt="">
+    </div>
+</div>
+</section>
+
