@@ -180,17 +180,35 @@ linergradient - makes the img dimmer https://www.w3schools.com/howto/tryit.asp?f
 }
 
 
-.about-me {
+.about{
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-
   width: 100%;
-  height: auto;
+  box-sizing: border-box;
+  box-sizing: border-box;
+
+  /* z-index: 9999;
+  position: relative; */
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+ */
 }
 /* col-6 sm-col-6 md-col-6 lg-col-6  */
 .about-me-img {
+ /* position: relative;     */
+ /* width: 100vw;
+  height: 100vh; */
+}
+
+.about-me-img {
   background-image: url(../image/portrait.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+ 
+
 }
 
 
