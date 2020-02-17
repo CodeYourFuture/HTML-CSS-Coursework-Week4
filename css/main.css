@@ -11,7 +11,7 @@ body{
 .mainpage-section{
     background-color: #c7c7c7;
     /* Set a specific height */
-    min-height: 800px;
+    min-height: 1000px;
     color: #ffffff;
     
   /*  align-items: flex-start;*/
@@ -86,7 +86,6 @@ nav a:hover{
     display:block ;
     width:auto;
     margin: 20px auto;
-    
 }
 
 .contact-bg{
@@ -129,6 +128,7 @@ nav a:hover{
    margin-top: 5px;
    outline: none;
 }
+
 .contact-form textarea{
 height:100px;
 }
@@ -144,7 +144,7 @@ height:100px;
         text-align: right;
     }
 
-footer{
+footer {
 
     background-color: #BF512E;
     min-height: 50px;
@@ -152,7 +152,7 @@ footer{
     height: 50px;
    
 }
-footer > p {
+footer > div > p {
     color: white;
     text-decoration: #ffffff;
     font-family: 'Open Sans', sans-serif;
