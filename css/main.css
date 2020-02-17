@@ -68,7 +68,6 @@ span {
 .header .menu-icon {
     cursor: pointer;
     display: block;
-    float: right;
     padding: 28px 30px;
     position: relative;
     cursor: pointer;
@@ -103,7 +102,7 @@ span {
 
 }
 .header .menu-btn:checked ~ .menu  {
-    max-height: 240px;
+    max-height: 300px;
     transition: all 1s cubic-bezier(.5, 1, .22, 1);
 
 }
@@ -128,7 +127,6 @@ span {
 .fa {
     text-decoration: none;
     color: red;
-    margin-left: 5px;
 }
 .st-title {
     justify-content: space-around;
@@ -303,7 +301,7 @@ textarea {
 
 /*MEDIA*/
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
     .header .menu-icon {
         display: none;
     }
@@ -341,26 +339,12 @@ textarea {
         position: absolute;
         font-size: 1.5em;
     }
-    .col-12 {
-        width: 30%;
-    }
+   
     .fa {
         margin-right: 40px;
     }
     .contact-icons .mobile {
         visibility: visible;
-    }
-   .section-about .col-6 {
-       width: 50%;
-   }
-   .section-about .col-3 {
-    width: 25%;
-    }
-    .products .col-4 {
-        width: 33.333333%;
-    }
-    .discount .col-6 {
-        width: 50%;
     }
     .mob-img {
         display: block;
@@ -368,24 +352,13 @@ textarea {
     .products-2nd .grid-img {
         display: block;
     }
-    .xl-col-6 {
-        width: 50%;
-    }
-    .xl-col-10 {
-        width: 100%;
-    }
     form {
         padding: 80px;
     }
    
-    .xl-col-3 {
-        width: 33.333%;
-    }
     .section-footer {
         padding: 140px;
     }
-    .xl-col-5 {
-        width: 100%;
-    }
+
 }
 
