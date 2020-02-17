@@ -10,16 +10,15 @@ body{
 }
 .mainpage-section{
     background-color: #c7c7c7;
-    /* Set a specific height */
-    min-height: 1000px;
-    color: #ffffff;
-    
-  /*  align-items: flex-start;*/
-    background-image: url("/img/bg_laptop1200_1080.jpg");
+    background-image: url("/img/bg_laptop1200_1080.jpg"); 
+    min-height: 400px;
+    height: 400px;
+  
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center right;
+    background-position: top center;
     background-size: cover;
+   
 }
 
 .logo-wrapper{
@@ -109,6 +108,7 @@ nav a:hover{
     background-attachment: fixed;
     background-position: center center;
     background-size: cover;
+ 
 }
 
 .about-text{
@@ -209,6 +209,18 @@ footer {
         margin: 0 5%;
      }
 
+
+     .mainpage-section{
+        min-height: 400px;
+        height: 500px;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: top center;
+        background-size: contain;
+        background-color: silver;
+
+    }
+
 }
 
 
@@ -228,6 +240,14 @@ footer {
         margin: 0 10%;
      }
 
+     .mainpage-section{
+        min-height: 400px;
+        height: 600px;
+        background-size: cover;
+        background-color: silver;
+
+    }
+
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -243,6 +263,17 @@ footer {
     .about-text{
         margin: 0 15%;
      }
+
+     
+     .mainpage-section{
+        min-height: 500px;
+        height: 800px;
+        background-size: cover;
+        background-color: silver;
+
+    }
+
+
 }
 
 @media (min-width: 1200px) {
@@ -262,4 +293,45 @@ footer {
        margin: 0 20%;
        
     }
+
+
+    .mainpage-section{
+        min-height: 500px;
+        height: 1000px;
+        background-size: cover;
+        background-color: silver;
+    }
+
 }
+
+
+
+
+@media only screen and (min-width:321px) and (max-width:768px)
+{
+
+    .mainpage-section{
+        min-height: 400px;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: top center;
+        background-size: contain;
+    }
+
+}
+
+
+@media only screen and (max-width:320px)
+{
+
+    .mainpage-section{
+        min-height: 400px;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: top center;
+        background-size: contain;  
+    }
+ 
+
+}
+
