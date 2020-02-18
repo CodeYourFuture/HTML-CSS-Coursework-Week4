@@ -10,6 +10,7 @@
 
 body {
     background-color: #F5F3EF;
+    font-size: 16px;
 }
 
 header {
@@ -130,7 +131,7 @@ form label {
     color: #cb2027;
 }
 
-input {
+input, textarea{
     align-self: flex-start;
     border: 1px solid black;
     text-align: left;
@@ -147,6 +148,7 @@ input {
     flex-direction: column-reverse;
     justify-content: space-between;
     align-items: center;
+    margin-top: 0.3rem;
 }
 
 .form-end p {
