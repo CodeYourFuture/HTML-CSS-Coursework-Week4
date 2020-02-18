@@ -43,6 +43,11 @@ display: inline-flex;
 
 }
 
+.log-in {
+    text-decoration: none;
+    color: lightblue;
+}
+
 .hero-image {
     background-image: url(../images/hero-image.jpg);
     width: 100%;
@@ -64,17 +69,28 @@ display: inline-flex;
 
 }
 
-
-.btn {
+.btn-hero {
     border: none;
-    display: inline-block;
+    text-align: center;
     text-decoration: none;
     background-color: #000;
     color: #fff;
     cursor: pointer;
-    padding: 0.5em 0.5em;
-    transform: translate(-50%, -50%);
+    padding: 0.3em 0.3em;
+    display: inline-flex;
     
+}
+
+
+.btn-about {
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    padding: 0.3em 0.3em;
+  
 }
 
 .about-me-img {
@@ -83,20 +99,42 @@ display: inline-flex;
 }
 
 
-
-
-
-
 .about-text {
+    padding-top: 5em;
     width: 80%;
 }
 
+.about-text p {
+    padding-top: 1em;
 
+}
+
+.section-image {
+    height: 30em;
+    background-image: url(../images/section-image.jpg);
+}
 
 
 .section-text {
-    border: 3px;
+    border: 0.1em;
     border-style: solid;
     border-color: #000;
-    padding: 5em;
+    padding: 4em;
+    text-align: center;
+    padding-top: 1em;
+ 
+}
+
+.btn-section {
+    border: none;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    padding: 0.3em 0.3em;
+    margin: auto;
+    max-width: 6em;
+
 }
