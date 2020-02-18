@@ -102,12 +102,37 @@ p {
     padding: 1rem;
 }
 
+form>label {
+    padding: 0.500rem;
+}
+
 form>input,
 textarea {
     border: 1px solid black;
+    padding: 0.500rem;
 }
 
 #form {
     justify-content: center;
     text-align: left;
+}
+
+.last-form-section {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+}
+
+.icons {
+    display: flex;
+}
+
+.submit {
+    border: 1px solid black;
+}
+
+footer>p {
+    text-align: center;
+    padding: 1rem;
+    background-color: darkgrey;
 }
