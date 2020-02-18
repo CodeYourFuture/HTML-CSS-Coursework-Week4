@@ -157,6 +157,10 @@ footer>p {
         min-height: 90vh;
     }
 
+    .pictures {
+        padding: 5px;
+    }
+
     /* .form {
         justify-content: center;
     }
