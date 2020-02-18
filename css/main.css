@@ -173,7 +173,6 @@ linergradient - makes the img dimmer https://www.w3schools.com/howto/tryit.asp?f
   text-align: center;
   font-style: normal;
   font-family: Arial, Helvetica, sans-serif;
-
 }
 
 .hero-text h1 {
@@ -227,22 +226,42 @@ linergradient - makes the img dimmer https://www.w3schools.com/howto/tryit.asp?f
   width: 100%;
   height: auto;
   box-sizing: border-box;
+  
+
 }
 
 .service-text {
   display: flex;
   flex-direction: column;
-  justify-content: center space-between;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
   color: white;
   text-align: center;
   font-style: normal;
   font-family: Arial, Helvetica, sans-serif;
+  margin: 5px;
+  padding: 2px;
+}
+
+.white-border-box, h3, p, .book-it-button-teal {
+border-color: 2px white;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+justify-content: space-around;
+width: 100%;
+height:fit-content;
+
 }
 
 
 
+
 .service-img {
+  position: relative;
   width: 100vw;
   height: 100vh;
 }
