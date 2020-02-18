@@ -62,7 +62,6 @@ div>img {
 
 .second-hero-section {
     background-image: url("https://images.pexels.com/photos/280221/pexels-photo-280221.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
-    height: 20vh;
     margin-top: 1rem;
     background-repeat: no-repeat;
     background-position: center;
@@ -86,7 +85,6 @@ p {
 
 .third-hero-section {
     background-image: url("https://images.pexels.com/photos/1438832/pexels-photo-1438832.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
-    height: 20vh;
     margin-top: 1rem;
     background-repeat: no-repeat;
     background-position: center;
@@ -129,10 +127,33 @@ textarea {
 
 .submit {
     border: 1px solid black;
+    background-color: black;
+    color: white;
+    padding: 0.200rem;
 }
 
 footer>p {
     text-align: center;
     padding: 1rem;
-    background-color: darkgrey;
+    background-color: black;
+    color: white;
 }
+
+.last-form-section {
+    text-decoration: none;
+    color: black;
+}
+
+@media (min-width: 992px) {
+    .second-hero-section {
+        min-height: 45vh;
+    }
+
+    .third-hero-section {
+        min-height: 45vh;
+    }
+
+    /* .form {
+        justify-content: center;
+    }
+} */
