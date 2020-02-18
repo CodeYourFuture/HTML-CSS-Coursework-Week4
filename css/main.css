@@ -101,3 +101,13 @@ p {
 .contact>h2 {
     padding: 1rem;
 }
+
+form>input,
+textarea {
+    border: 1px solid black;
+}
+
+#form {
+    justify-content: center;
+    text-align: left;
+}

@@ -66,20 +66,28 @@
     </section>
     <section class="third-hero-section">
     </section>
-    <section class="contact">
+    <section class="contact container">
       <h2>contact.</h2>
-      <form>
-        <label for="fname">Enter Your Name *</label><br>
-        <input type="text" id="fname" name="fname" value="John"><br>
-        <label for="lname">Enter Your Email *</label><br>
-        <input type="text" id="lname" name="lname" value="Doe"><br><br>
-        <label for="lname">Enter Your Phone *</label><br>
-        <input type="text" id="lname" name="lname" value="Doe"><br><br>
-        <label for="lname">Enter Your Message Here *</label><br>
-        <textarea value="Message">
-
+      <form class="row" id="form">
+        <label class="col-10" for="fname">Enter Your Name *</label><br>
+        <input class="col-10" type="text" id="fname" name="fname" value="Name"><br>
+        <label class="col-10" for="lname">Enter Your Email *</label><br>
+        <input class="col-10" type="text" id="lname" name="lname" value="Email"><br>
+        <label class="col-10" for="lname">Enter Your Phone *</label><br>
+        <input class="col-10" type="text" id="lname" name="lname" value="Phone"><br>
+        <label class="col-10" for="lname">Enter Your Message Here *</label><br>
+        <textarea class="col-10" value="Message">
         </textarea>
-        <input type="submit" value="Submit">
+        <div class="last-form-section col-10">
+          <a href="mailto:info@mysite.com">info@mysite.com</a>
+          <ul class="icons">
+            <li class="facebook"><img src="https://img.icons8.com/material-two-tone/24/000000/facebook-f--v2.png"></li>
+            <li class="pinterest"><img src="https://img.icons8.com/windows/32/000000/pinterest.png"></li>
+            <li class=""><img src="https://img.icons8.com/material-outlined/24/000000/instagram-new.png"></li>
+          </ul>
+          <input class="col-10" type="submit" value="Submit">
+        </div>
+
       </form>
     </section>
   </main>
