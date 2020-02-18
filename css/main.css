@@ -27,6 +27,7 @@ ul {
 ul>li {
     list-style: none;
     display: inline-flex;
+    padding: 0px 10px;
 }
 
 li>a {
@@ -142,6 +143,21 @@ footer>p {
 .last-form-section {
     text-decoration: none;
     color: black;
+    padding: 0px;
+}
+
+.pictures {
+    padding: 5px;
+}
+
+.mail {
+    text-decoration: none;
+    color: black;
+    padding-left: 0px;
+}
+
+.zero_padding {
+    padding-left: 0px;
 }
 
 @media (min-width: 992px) {
@@ -157,11 +173,4 @@ footer>p {
         min-height: 90vh;
     }
 
-    .pictures {
-        padding: 5px;
-    }
-
-    /* .form {
-        justify-content: center;
-    }
-} */
+}
