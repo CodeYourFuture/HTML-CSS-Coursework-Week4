@@ -1,31 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" type="text/css" href="css/grid.css" />
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Merriweather+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <title>Responsive grid project</title>
-  </head>
-  <body>
-    <header>
-      <img class="logo" src="../css/img/key.png" />
-      <ul>
-        <li><a href="#dream_house">dream house.</a></li>
-        <li><a href="#about">about.</a></li>
-        <li><a href="#contact">contact.</a></li>
-      </ul>
-    </header>
-    <main>
-      <section class="hero">
-        <h2 class="">YOUR HOUSE.</h2>
-      </section>
-    </main>
-    <footer></footer>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" type="text/css" href="css/grid.css" />
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans&display=swap" rel="stylesheet" />
+  <title>Responsive grid project</title>
+</head>
+
+<body>
+  <header>
+    <img class="logo" src="../css/img/key.png" />
+    <ul>
+      <li><a href="#dream_house">dream house.</a></li>
+      <li><a href="#about">about.</a></li>
+      <li><a href="#contact">contact.</a></li>
+    </ul>
+  </header>
+  <main>
+    <section class="hero">
+      <h2 class="">YOUR HOUSE.</h2>
+    </section>
+    <section class="container" id="houses">
+      <h2>houses.</h2>
+      <div class="row">
+        <div class="col-6 md-col-4 lg-col-3"><img
+            src="https://images.pexels.com/photos/1029599/pexels-photo-1029599.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+            alt=""></div>
+        <div class="col-6 md-col-4 lg-col-3"><img
+            src="https://images.pexels.com/photos/280222/pexels-photo-280222.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+            alt=""></div>
+        <div class="col-6 md-col-4 lg-col-3"><img
+            src="https://images.pexels.com/photos/259593/pexels-photo-259593.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+            alt=""></div>
+
+        <div class="col-6 md-col-4 lg-col-3"><img
+            src="https://images.pexels.com/photos/1396132/pexels-photo-1396132.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+            alt=""></div>
+        <div class="col-6 md-col-4 lg-col-3"><img
+            src="https://images.pexels.com/photos/2091166/pexels-photo-2091166.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+            alt=""></div>
+        <div><img src="" alt=""></div>
+
+        <div class="col-6 md-col-4 lg-col-3"><img
+            src="https://images.pexels.com/photos/259685/pexels-photo-259685.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+            alt=""></div>
+        <div class="col-6 md-col-4 lg-col-3"><img
+            src="https://images.pexels.com/photos/221024/pexels-photo-221024.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+            alt=""></div>
+        <div class="col-6 md-col-4 lg-col-3"><img
+            src="https://images.pexels.com/photos/2101087/pexels-photo-2101087.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+            alt=""></div>
+      </div>
+    </section>
+    <section class="second-hero-section">
+    </section>
+    <section class="about container">
+      <h2>about.</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quo, mollitia, ducimus blanditiis animi,
+        debitis delectus distinctio ullam molestiae asperiores id. Numquam amet quaerat fugiat sequi accusantium
+        repellat, ab nihil.</p>
+    </section>
+    <section class="third-hero-section">
+    </section>
+    <section class="contact">
+      <h2>contact.</h2>
+      <form>
+        <label for="fname">Enter Your Name *</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Enter Your Email *</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <label for="lname">Enter Your Phone *</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <label for="lname">Enter Your Message Here *</label><br>
+        <textarea value="Message">
+
+        </textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+
 </html>

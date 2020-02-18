@@ -2,6 +2,7 @@
     font-family: 'Merriweather Sans', sans-serif;
     margin: 0;
     padding: 0;
+    line-height: 1.4rem;
 
 }
 
@@ -48,4 +49,55 @@ li>a {
     padding-top: 150px;
     text-align: center;
 
+}
+
+div>img {
+    max-width: 100%;
+}
+
+#houses>h2 {
+    text-align: center;
+    padding: 1rem;
+}
+
+.second-hero-section {
+    background-image: url("https://images.pexels.com/photos/280221/pexels-photo-280221.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+    height: 20vh;
+    margin-top: 1rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 25vh;
+}
+
+.about>h2,
+p {
+    text-align: center;
+
+}
+
+.about>h2 {
+    padding: 1rem;
+}
+
+.about>p {
+    text-align: justify;
+}
+
+.third-hero-section {
+    background-image: url("https://images.pexels.com/photos/1438832/pexels-photo-1438832.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+    height: 20vh;
+    margin-top: 1rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 25vh;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact>h2 {
+    padding: 1rem;
 }
