@@ -153,6 +153,10 @@ footer>p {
         min-height: 45vh;
     }
 
+    .hero {
+        min-height: 90vh;
+    }
+
     /* .form {
         justify-content: center;
     }
