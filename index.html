@@ -7,7 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="css/grid.css">
     <link rel="stylesheet" href="css/main.css">
-
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
     <title>Responsive grid project</title>
 </head>
 
@@ -23,9 +24,10 @@
             <li><a href="#">Motivational Reading</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">Content</a></li>
+            <i class="fas fa-user-circle"></i>
+            <a href="#" class="log-in">Log In</a>
         </ul>
-        <i class="fas fa-user-circle"></i>
-        <a href="#" class="log-in">Log In</a>
+        
     </header>
 
 
@@ -120,30 +122,25 @@
     <footer>
         <div class="row">
             <div class="col-2">
-
             </div>
-            
-            
+        
             <div class="col-4">
 
                 <h3>CONTACT</h3>
-
                 <p>500 Terry Francois Street</p>
                 <p>San Francisco, CA 94158</p>
                 <p>Tel: 123-456-7890</p>
                 <p>Fax: 123-456-7890</p>
 
-
-                
                     <a href="mailto:info@" jane.dev class="footer_link">info@mysite.com</a>
                     <ul class="social-list">
-                        <li class="social-list_item"><a class="social-list_link" href="https://codepen.io">face</a>
+                        <li class="sm_item"><a class="sm_link" href="https://facebook.com">face</a>
                         </li>
-                        <li class="social-list_item"><a class="social-list_link" href="https://codepen.io">B</a>
+                        <li class="sm_item"><a class="sm_link" href="https://codepen.io">B</a>
                         </li>
-                        <li class="social-list_item"><a class="social-list_link" href="https://codepen.io">C</a>
+                        <li class="sm_item"><a class="sm_link" href="https://codepen.io">C</a>
                         </li>
-                        <li class="social-list_item"><a class="social-list_link" href="https://codepen.io">D</a>
+                        <li class="sm_item"><a class="sm_link" href="https://codepen.io">D</a>
                         </li>
                     </ul>
                     <span> &#169 2023 by Personal Life Coach</span>
@@ -151,7 +148,7 @@
             </div>
 
             <div class="col-6">
-                <div>
+            <div>
 
                 <div>
                     <form>
@@ -162,12 +159,11 @@
                         <label for="">Enter Your Subject</label><br>
                         <input type="text" name="Enter Your Subject"> <br><br>
                         <label for="message">Message</label><br>
-                        <input type="text" name="Message">
+                        <input type="text" name="Message"><br><br>
+                        <button type="submit">Submit</button>
                     </form>
                 </div>
             </div>
-
-            
     </footer>
 
 </body>
