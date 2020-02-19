@@ -7,8 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="css/grid.css">
     <link rel="stylesheet" href="css/main.css">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/normalize.css">
+    <script src="https://kit.fontawesome.com/1eecab1464.js" crossorigin="anonymous"></script>
     <title>Responsive grid project</title>
 </head>
 
@@ -117,40 +116,62 @@
         </div>
         </div>
 
-    </div>
+    <!--</div>-->
 
-    <footer>
+    <footer class="footer">
         <div class="row">
             <div class="col-2">
             </div>
         
             <div class="col-4">
 
-                <h3>CONTACT</h3>
-                <p>500 Terry Francois Street</p>
-                <p>San Francisco, CA 94158</p>
-                <p>Tel: 123-456-7890</p>
-                <p>Fax: 123-456-7890</p>
+               <div class="contact">
+                    <h3>CONTACT</h3>
+                    <p>500 Terry Francois Street</p>
+                    <p>San Francisco, CA 94158</p><br>
+                    <p>Tel: 123-456-7890</p>
+                    <p>Fax: 123-456-7890</p>
+                </div><br>
 
-                    <a href="mailto:info@" jane.dev class="footer_link">info@mysite.com</a>
-                    <ul class="social-list">
-                        <li class="sm_item"><a class="sm_link" href="https://facebook.com">face</a>
+                <div>
+                    <a href="mailto:info@" mysite.com class="mail_link">info@mysite.com</a>
+                    <ul class="sm-list">
+                        <li class="sm-item">
+                            <a class="sm-link" href="https://facebook.com">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
                         </li>
-                        <li class="sm_item"><a class="sm_link" href="https://codepen.io">B</a>
+                        <li class="sm-item">
+                            <a class="sm-link" href="https://twitter.com">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                    
                         </li>
-                        <li class="sm_item"><a class="sm_link" href="https://codepen.io">C</a>
+                        <li class="sm-item">
+                            <a class="sm-link" href="https://instagram.com">
+                                <i class="fab fa-instagram"></i>
+                            </a>
                         </li>
-                        <li class="sm_item"><a class="sm_link" href="https://codepen.io">D</a>
+                        <li class="sm-item">
+                            <a class="sm-link" href="https://youtube.com">
+                                <i class="fab fa-youtube"></i>
+                            </a>
                         </li>
                     </ul>
-                    <span> &#169 2023 by Personal Life Coach</span>
+                    
 
+                </div>
+
+                <div class="copyright">
+                    <span> &#169 2023 by Personal Life Coach</span>
+                </div>
+                
             </div>
 
             <div class="col-6">
             <div>
 
-                <div>
+                <div class="form">
                     <form>
                         <label for="enter your name">Enter Your Name</label><br>
                         <input type="text" id="enter your name" name="Enter Your Name"><br><br>
@@ -159,8 +180,8 @@
                         <label for="">Enter Your Subject</label><br>
                         <input type="text" name="Enter Your Subject"> <br><br>
                         <label for="message">Message</label><br>
-                        <input type="text" name="Message"><br><br>
-                        <button type="submit">Submit</button>
+                        <textarea id="message" type="text" name="message"></textarea><br>
+                        <input type="Submit" value="Submit">
                     </form>
                 </div>
             </div>
