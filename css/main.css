@@ -1,63 +1,28 @@
-* {
-  box-sizing:border-box;
-  margin:0 ;
-  padding: 0 0;
-}
+
 .hamIcon{
   position: absolute;
   right: 10px;
   top: 20px;
 }
 
-.md-col-12 {
-    width: 100%;
- }
 .header_customize{
   background-color:#466381;
-  display:flex;
-  justify-content:space-between;
+  justify-content:space-around;
   font-family: 'Vast Shadow', cursive;
-}
-.col-12 {
-  width: 100%;
-}
-.col-8 {
-  width: 66.666666%;
-}
-.col-6 {
-  width: 50%;
-}
-.col-10 {
-  width: 83.333333%;
-}
-.col-3 {
-  width: 25%;
-}
-.col-2 {
-  width: 16.666666%;
-}
-.col-1 {
-  width: 8.333333%;
+  display:flex;
 }
 .logo_img{
-  width: 80%;
-  flex-direction: flex-start;
+  width:10%;
 }
 .ul_header {
   list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding-top: 20px;
-  margin-left: -400px;
+  margin-top: 30px;
 }
 .ul_header_nav{
   display: flex;
-  justify-content:center;
   list-style-type: none;
   color: black;
-  padding: 50px 10px;
-  margin-left: -100px;
+  margin-top: 50px;
 }
 ul.ul_header_nav a {
   padding-right: 10px;
@@ -77,14 +42,11 @@ ul.ul_header_nav a:hover{
 }
 
 .hero_image{
-  display: flex;
-  background: url("steve_jobs.jpg");
-  background-size: cover;
+  background: url("../s.jpg");
+  background-size:cover;
+  background-position:center;
   background-repeat: no-repeat;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 1200px;
+  min-height:120vh;
 }
 
 .font_anton{
@@ -92,14 +54,17 @@ ul.ul_header_nav a:hover{
   text-align: center;
   color: blanchedalmond;
   font-size: 100px;
+  margin: 0;
 
 }
 
 .section_one{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content:flex-start;
+
 }
+
 
 .font_section_one{
   display: flex;
@@ -109,18 +74,20 @@ ul.ul_header_nav a:hover{
 }
 
 .button{
-  display: flex;
-  flex-direction: column;
   border: none;
   color: white;
-  padding: 15px 80px;
   text-align: center;
   text-decoration: none;
   font-size: 16px;
-  margin: 150px 10px;
   cursor: pointer;
   background-color: #466381;
+  margin: 0 auto;
+  padding: 10px 10px;
 }
+ .p_section2{
+   display: flex;
+   flex-direction:column;
+ }
 
 .section_two{
   display: flex;
@@ -139,7 +106,6 @@ ul.ul_header_nav a:hover{
 }
 
 .button_about_me{
-  display: flex;
   border: none;
   color: white;
   padding: 15px 20px;
@@ -147,7 +113,6 @@ ul.ul_header_nav a:hover{
   text-decoration: none;
   background-color: #466381;
   cursor: pointer;
-  margin-left: 340px;
   margin-top: 5px;
 }
 .about_me_img{
@@ -176,12 +141,15 @@ ul.ul_header_nav a:hover{
 
 }
 .help_font{
-  border:3px solid whitesmoke;
+  /* border:3px solid whitesmoke; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 div.help_font p{
   margin-top: 5px;
 }
-.button_section_three{
+/*.button_section_three{
   display: flex;
   border-color: honeydew;
   color: white;
@@ -204,19 +172,20 @@ div.help_font p{
   color: aliceblue;
   background-color: gray;
 }
+*/
 
-
-.help_border{
+/* .help_border{
   border:5px solid gray ;
   border-radius: 2px;
-}
+} */
 /* I cant make it horizontally*/
 .footer_style{
   display: flex;
   flex-direction:column;
   justify-content: flex-end;
-  align-items: center;
+  align-items: center; 
   background-color:lightblue;
+  flex: 1;
 }
 .social_media{
   list-style-type: none;
@@ -224,31 +193,11 @@ div.help_font p{
   flex-direction: row;
   justify-content:center;}
 
-.row {
+i {
+  padding: 0 5px;
+}
+.fo{
   display: flex;
-  flex-wrap: wrap;
-
-
-
-.container {
-  max-width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+  justify-content: space-between;
+  width: 100%;
 }
-
-@media(max-width: 768px){
-  .ul_header_nav{
-      display: none;
-  }
-
-  .ul_header_nav.toggleClasses{
-      display: block;
-  }
-  
-}
-@media(min-width:769px ){
-  .hamIcon{
-      display: none;
-  }
