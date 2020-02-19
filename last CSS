@@ -1,0 +1,138 @@
+
+ /* 
+  background-image: url(file:///Users/User1/Desktop/pexels-photo-1024613.jpeg)
+  background-image:"https://images.pexels.com/photos/1225284/pexels-photo-1225284.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+  background-image: <href="https://www.freepik.com/free-photos-vectors/background">Background photo created by freepik - www.freepik.com</>
+  background-repeat: no-repeat;
+  background-size: cover;
+*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+
+/* header section */
+
+.navigation {
+  background: blue;
+}
+
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: column;
+  padding: 0 auto;
+  marging: 50px auto;  
+}
+
+
+.links {
+  display: flex;
+  justify-content: center;  
+}
+
+
+.style {
+  list-style-type: none;
+  font-size: 130%;
+}
+
+
+.text {
+  display: flex;
+  justify-content: center;
+  color: white;
+  background: red;
+  margin: 100px auto; 
+}
+
+
+/* project section */
+
+.project {
+  display: flex;
+  justify-content: center;
+  background: yellow;
+  margin: 20px auto; 
+}
+
+
+/* About section */
+
+.about {
+  display: flex;
+  justify-content: center;
+  margin: 50px auto;
+}
+
+
+.paragraf {
+  display: flex;
+  justify-content: center;
+  background: yellow;
+  padding: 50px 50px;
+}
+
+
+
+
+/* contact form section */
+
+
+
+
+
+.contact {
+  display: flex;
+  justify-content: center;
+  
+ 
+}
+
+
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.label {
+  font-family: "Times New Roman", Times, Serif;
+  font-size: 0.85rem;  
+}
+
+.input {
+  display: flex;
+  flex-direction: colunm;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 0.5rem;
+  margin-bottom: 1.3rem;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: 5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.3rem;
+}
+
+.submit {
+  align-self: flex-end;
+  margin-bottom: 2rem;
+}
+
+.submit button {
+  background-color: black;
+  color: white;
+  margin: 2rem 0 2rem;
+}
