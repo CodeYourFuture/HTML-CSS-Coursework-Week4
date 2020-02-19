@@ -1,3 +1,59 @@
 /* Add your custom CSS here */
+.navbar container {
+  background-image: <href="https://www.freepik.com/free-photos-vectors/background">Background photo created by freepik - www.freepik.com</>
+}
+
+
+.container {
+  background: bisque;
+  
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.label {
+  font-family: "Times New Roman", Times, Serif;
+  font-size: 0.85rem;  
+}
+
+.input {
+  display: flex;
+  flex-direction: colunm;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 0.5rem;
+  margin-bottom: 1.3rem;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: 5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.3rem;
+}
+
+.submit {
+  align-self: flex-end;
+  margin-bottom: 2rem;
+}
+
+.submit button {
+  background-color: black;
+  color: white;
+  margin: 2rem 0 2rem;
+}
 
 /* Dont' forget to link this file to your HTML in the <head> */
