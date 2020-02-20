@@ -8,6 +8,35 @@
     justify-content:left;
     max-height: 10vh;
 }
+.coverimage{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-image:url("b74b2725ad015f5e_800x800ar.jpg");
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+}
+.coverimage2{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-image:url("b74b2725ad015f5e_800x800ar.jpg");
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+    height:100vh;
+}
+.portrait{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-image:url("james-stewart-man-person-actor-53487.jpeg");
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+   
+}
 .logotext{
     display:flex;
     flex-direction: row;
@@ -39,6 +68,9 @@ li{
     padding:15px;
     
 }
+.padding15{
+    padding:15px;
+}
 .container2{
     display:flex;
     flex-direction:column;
@@ -57,16 +89,17 @@ li{
 }
 .stamp{
     display:flex;
-    max-height: 30vh;
     flex-direction: column;
     align-items: center;
-    position:absolute;
+    padding-top:50vh;
+    padding-bottom:50vh;
 }
 h2{
     position:relative;
     font-size:1.5em;
     font-weight: lighter;
     margin:0px !important;
+    overflow-wrap: break-word;
     
 }
 
@@ -93,10 +126,12 @@ button{
     text-align: center;
     align-items: center;
     justify-content: center;
-    position:absolute;
     border:5px solid black;
     z-index:5;
     max-height: 30vh;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    overflow-wrap: break-word;
 }
 .bio-wrap{
     display:flex;
@@ -116,13 +151,14 @@ button{
 }
 .intro{
     display:flex;
-    flex-direction:column;
-    text-align: center;
-    align-items: center;
-    justify-content:space-evenly;
-    padding:1em;
+    flex-direction: column;
+    justify-content: space-around;
     hyphens: auto;
-}
+    text-align: center;
+    align-self: center;
+    font-size: 1em;
+    padding-top:50%;
+    padding-bottom:50%;
 .introtext{
     display:flex;
     flex-direction: column;
@@ -131,6 +167,7 @@ button{
     text-align: center;
     align-self: center;
     font-size: 1em;
+    
 }
 .blue{
     background-color: rgb(36, 97, 116);
