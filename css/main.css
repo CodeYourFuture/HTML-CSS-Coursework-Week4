@@ -44,10 +44,17 @@ a:hover {
 }
 .nav-list li {
   list-style: none;
-}
-.nav-list {
   text-align: center;
 }
+.nav-list {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding:0;
+
+
+}
+
 
 .nav-bar {
   background-image: url("../images/fruit-vertical-one.png");
@@ -76,7 +83,7 @@ input {
   padding: 0.5em;
   border-radius: 5px;
   margin-top: 4px;
-  margin-bottom: 16px;
+
   border: 1px solid #ccc;
 }
 .message-box {
@@ -88,7 +95,7 @@ input {
   border-radius: 5px;
 }
 .contact-form-content {
-  width: 50%;
+  
   margin: 0 auto;
 }
 .btn {
@@ -98,7 +105,12 @@ input {
   border-radius: 5px;
   cursor: pointer;
  
-  padding: 5px 15px;
+  padding:5px;
+  
+   
+  
+
+  
 }
 .active,
 .btn:hover {
@@ -125,11 +137,33 @@ input {
 }
 .btn-social{
   display:flex;
-  justify-content: space-around;
+  justify-content:space-between;
   align-items: center;
-  margin:16px 0;
+  
 }
 .btn-social i{
   font-size:1.5rem;
   
 }
+label::after { 
+  content: "*";
+  color:red;
+}
+.form-bottom{
+  margin-top:0;
+  justify-content:space-between;
+  align-items: flex-start;
+  margin-top:5px;
+}
+
+@media (min-width: 576px) {
+  /* sm */
+  .nav-list{
+    flex-direction: row;
+    justify-content: space-around;
+
+  }
+
+  
+}
+
