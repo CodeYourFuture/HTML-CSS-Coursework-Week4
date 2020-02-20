@@ -1,3 +1,102 @@
 /* Add your custom CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
+
+body{
+   font-family: 'Roboto', sans-serif; 
+}
+
+
+
+.nav-bar{
+    position: fixed;
+    top: 0;
+    background-color: ;
+    width: 100%;
+    display: flex;
+    flex-direction: flex-start;
+    align-items: center;
+    z-index: 1; 
+    float: right;
+}
+
+.logo{
+    height:35px;
+    width: 35px;
+    margin: auto;
+    float: left;
+}
+
+.nav-link {
+    margin: 30px;
+    
+}
+
+.boxColor{
+    background-color: white;
+}
+
+.div2{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    user-select: center;
+    align-items: center;
+    background-image: url("../imges/martin-katler-HybjMHIDlUU-unsplash.jpg");
+    background-size: cover;
+    flex-direction: column;
+}
+
+.introduction{ 
+    top: 40%;
+    left: 36%;
+    font-weight: 100;
+    font-size: 20px;
+    display: flex;
+    color: cornsilk;
+}
+
+.intro-subheading{
+    display: flex;
+    padding:10px 10px; 
+    top: 65%;
+    left: 45%; 
+    font-size: 45px;
+    color: cornsilk;
+}
+
+.learn{
+    background-color: whitesmoke;
+    border: none;
+    padding:10px 10px; 
+    display: flex;
+    top: 65%
+    left: 49%; 
+    font-size: 20px;
+    color: black; 
+}
+
+.learn:hover{
+    background-color: gray);
+}
+
+.carRacer{
+    height:700px;
+    width: 670px;
+    margin: auto;
+    float: right; 
+}
+
+.Help{
+    padding-left: 10px;
+}
+
+.book{
+    border: 1px solid black;
+    text-align: center;
+}
+
+.About{
+    margin-left: 100px;
+    margin-top: 100px;
+}
