@@ -8,10 +8,12 @@ body {
   header {
     display: flex;
     flex-direction: column;
+    height: 40vh;
   }
   .head-logo {
     justify-content: center;
   }
+  
   .logo {
     border: 3px solid black;
     color:white;
@@ -41,6 +43,16 @@ body {
     text-align: center;
     text-transform: lowercase;
     font-weight: bold;
+    height: 10vh;
+    font-size: 30px;
+  }
+  h4{
+    align-items: center;
+    text-align: center;
+    color: black;
+    font-weight: lighter;
+    font-size: 30px;
+    
   }
   li a {
     color: black;
@@ -53,16 +65,16 @@ body {
       font-size: 1rem;
   }
   .about-text {
-    text-align: justify;
-    margin: 0 20px 20px;
+    text-align: center;
+    padding:  30px 20px;
   }
   
   .header-hero {
-    background-image: url('../images/porsche.jpeg');
+    background-image: url('../images/bgimg1.jpeg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    min-height: 30vh;
+    min-height: 40vh;
     text-align: center;
     margin-top: auto;
 }
@@ -110,16 +122,62 @@ body {
     margin: 0 12px;
   }
   .copy-right {
+    align-items: center;
     text-align: center;
-    font-weight: bold;
+      margin: 20px auto;
+      background-color: #E59340;
+      height: 2.5rem;
+      widows: 100% ;
   }
  
   
   .before-about-img{
-    background-image: url('../images/\,\,\,.jpeg');
+    background-image: url('../images/bgimg2.jpeg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    min-height: 30vh;
+    margin: 50px 0;
+    min-height: 40vh;
     text-align: center;
   }
+  .after-about-img{
+    background-image: url('../images/bgimg3.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 70vh;
+    text-align: center;
+  }
+  .btn {
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+  
+    padding: 5px 15px;
+  }
+ .light-blue {
+    color: lightblue;
+  }
+  .blue {
+    color: blue;
+  }
+  .red {
+    color: red;
+  }
+ .btn-social{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin:16px 0;
+  }
+  .btn-social i{
+    font-size:1.5rem;
+   
+  }
+ .active,
+  .btn:hover {
+    background-color: green;
+  }
+ 
