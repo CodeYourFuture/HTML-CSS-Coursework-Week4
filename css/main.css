@@ -156,9 +156,12 @@ button{
     hyphens: auto;
     text-align: center;
     align-self: center;
-    font-size: 1em;
-    padding-top:50%;
-    padding-bottom:50%;
+    
+}
+.icons{
+    font-size:24px;
+    padding:15px;
+}
 .introtext{
     display:flex;
     flex-direction: column;
@@ -168,6 +171,12 @@ button{
     align-self: center;
     font-size: 1em;
     
+    padding-top:50%;
+    padding-bottom:50%;
+    padding-left:15%;
+}
+.cont{
+    margin-left:25%;
 }
 .blue{
     background-color: rgb(36, 97, 116);
