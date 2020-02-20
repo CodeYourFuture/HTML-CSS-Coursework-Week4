@@ -13,15 +13,11 @@
 </head>
 
 <body>
-
     <header class="col-12 navbar">
-        <!-- <div class="row"> -->
-        <!-- <div class="col-12"> -->
         <div class="logo">
             <h1> ALLAN JOHNSON</h1>
             <h2>Personal Life Coach</h2>
         </div>
-        <!-- <nav > -->
         <ul>
             <li><a href="home">Home</a></li>
             <li><a href="about">About</a></li>
@@ -30,11 +26,8 @@
             <li><a href="blog">Blog</a></li>
             <li><a href="contact">Contact</a></li>
         </ul>
-        <!-- </nav> -->
-        <img class="profile-pic" src="Profile Image .png" alt="user profile image" />
+        <i class="fa fa-user"></i>
         <a href="#">Log in</a>
-        <!-- </div> -->
-        <!-- </div> -->
     </header>
     <main>
         <section class="hero-image">
@@ -64,22 +57,25 @@
                     <img class="image" src="image.jfif" alt="">
                 </div>
             </div>
-        <section class="col-12">
-            <div class="background" >
+        <section >
+            <div class="background">
+               <div class="help-content">
                 <h1>&mdash;</h1>
                 <h1>HOW I CAN</h1>
                 <h1> HELP YOU</h1>
-                <div class="col-6">
-                    <div class="booking-section container">
-                        <h3>One on one coaching</h3>
-                        <h4>I am a tagline, click here</h4>
-                        <hr>
-                        <h5>1hr</h5>
-                        <h5>$70</h5>
-                    </div>
+                </div>
+            <div class="col-6 container">
+                <div class="booking-section ">
+                    <h3>One on one coaching</h3>
+                    <h4>I am a tagline, click here</h4>
+                    <hr>
+                    <h5>1hr</h5>
+                    <h5>$70</h5>
+                    <input class="book-it" type="button" value="Book It">
+                </div>
+                    <button class="more-services" type="button">More Services</button>
                 </div>
             </div>
-            <button type="button">More Services</button>
         </section>
     </main>
     <footer class="col-12">
@@ -92,18 +88,26 @@
                 <p>fax:02155665552</p>
                 <h3>info@mysite.com</h3>
             </div>
+            <ul class="footer-ul">
+                <li><i class="fa fa-facebook-f"></i></li>
+                <li><i class="fa fa-twitter"></i></li>
+                <li><i class="fa fa-instagram"></i></li>
+                <li><i class="fa fa-youtube"></i></li>
+            </ul>
         </div>
         <form action="">
-            <div class="class="container>
-                <label for="name">Enter Your Name</label><br>
+            <div class="col-6 input">
+                <label class="footer-form" for="name">Enter Your Name</label><br>
                 <input type="text" id="name" name="enter your name" placeholder="Name"><br>
-                <label for="email">Enter Your Email</label><br>
+                <label for="email">Enter Your Email *</label><br>
                 <input type="text" id="email" name="email" placeholder="email" required><br>
                 <label for="subject">Enter Your Subject</label><br>
                 <input type="text" id="subject" name="subject" placeholder="Subject"><br>
                 <label for="msg">Message</label>
                 <textarea name="message" id="msg" cols="30" rows="10" placeholder="Message">Message</textarea>
             </div>
+            <br>
+            <button class="form-btn" type="submit">Submit</button>
         </form>
     </footer>
 </body>

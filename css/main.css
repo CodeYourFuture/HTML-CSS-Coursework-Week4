@@ -8,7 +8,6 @@
     position: relative;
     height: 500px;
     background-size: cover;
-    background-color: blue;
     color: white;
     text-align: center;
     
@@ -28,13 +27,11 @@ nav, ul, li, a {
     border: 5px solid black;
     text-align: center;
     margin-left: 40px;
-    /* margin: 50px; */
 }
 .about {
     display: flex;
     justify-content: space-between;
-    margin: 0;
-    
+    margin: 0;   
 }
 .image {
     width: 100%;
@@ -50,17 +47,50 @@ nav, ul, li, a {
 }
 .background {
     background-image: url("https://images.unsplash.com/photo-1533419240011-ea2cd2e1dc82?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
-    margin-bottom: 100px;
     background-repeat: no-repeat;
     width: 100%; 
     background-size: cover;
-    height: 400px;
-
+    height: 500px;
+    margin: 0;
 }
 
 footer {
     background-color: lightblue;
     display: flex;
     flex-direction: row;
-    justify-content: s    
+    justify-content: space-around;  
+    text-align: center;
+}
+.footer-form {
+   padding-right: 40px;
+   margin-left: 50px; 
+}
+.form-btn {
+    color:white;
+    margin-left: 13em;
+    background-color: black;
+    border-color: black;
+}
+.input {
+    border-width: 20px;
+}
+book-it {
+    background-color: rgb(15, 78, 117);
+}
+.help-content {
+    padding-left: 400px;
+}
+.more-services {
+    margin-left: 300px;
+    margin-top: 20px;
+    background-color: black;
+    border-color: black;
+    color:white;
+}
+.footer-ul {
+  padding-left: 40px;
+
+}
+hr {
+    padding: 0px 10px 0px 10px;
 }
