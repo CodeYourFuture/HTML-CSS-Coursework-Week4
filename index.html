@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/grid.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <title>Responsive grid project</title>
 </head>
 
@@ -28,15 +29,15 @@
        </nav>  
     </header>    
    </section>
-   
-   <section class="col-12">
-    <div class="div2">
+  <main>
+    <section class="col-12">
+     <div class="div2">
         <h1 class="introduction">The Key to getting a good car is</h1>
         <h2 class="intro-subheading">Harris' Motors</h2>
         <button class="learn">Buy Now</butten>
-    </div>
-   </section>
-   
+     </div>
+    </section>
+
    <section class="row About" >
     <div class="col-6">
       <h1>About us</h1>  
@@ -48,18 +49,60 @@
     <div class="col-6">
          <img src="https://media.gettyimages.com/photos/feb-1996-a-portrait-of-usa-indy-car-racer-bobby-rahal-of-the-team-picture-id72504252?s=2048x2048" alt="img" class="carRacer">
      </div>
-  </section>
+   </section>
   <section class="col-12">
-     <div>
-        <h1>How can I help you</h1>
+     <div class="help">
+        <h1 class="simpletitle">How can I help you</h1>
         <div class="book">
         <h4>Got a queastion?</h4>
-        <p> If you have any issues then click below to find our contacts.</p>
+        <p> If you have any issues then click below to find our QnA seation. <br> Where you can text use a question then are staft will reply in an instant.</p>
+        <button class="learn">Ask Us</button>
       </div>
       
     </div>
   </section>
+  </main>
+   
+  <footer>
+    <section class="row About" >
+    <div class="col-6">
+      <h1>Contact use</h1>  
+      <h4>
+        England<br>london<br>Ilford<br>Essex<br>86 Breamore Road<br>IG3 9NJ<br> 
+      <br>
+      <br>
+        Tel: 0208 9300 3119<br>
+      <br>
+      <br> 
+        harrissheraz2018@gmail.com
+      </h4>
+      <br>
+      <br>
+      <h5 class="join"> Join us on</h5>
+          <section class="media">
+              <button class="social"><i class="fa fa-twitter"></i></button>
+              <button class="social"><i class="fa fa-facebook"></i></button> 
+              <button class="social"><i class="fa fa-instagram"></i></button>
+              <button class="social"><i class="fab fa-youtube"></i></button>
+          </section>
+          <br>
+      <p class="copyright">@2020 by Harris Sheraz <br> Product created with Visual Studia.</p>
 
+    </div>
+    <div class="col-6">
+      <h2>Sign Up for Our Newsletter:</h2>
+        <form action="/action_page.php">
+          <label for="fname">First name:</label><br><br>
+          <input type="text" id="fname" name="fname" value="John"><br><br>
+          <label for="lname">Last name:</label><br><br>
+          <input type="text" id="lname" name="lname" value="Doe"><br><br>
+          <label class="sub-guid" for="email">email</label><br><br>
+          <input name="email" type="email" placeholder="Email"><br><br>
+          <input type="submit" value="Submit">
+      </form> 
+     </div>
+  </section>
+</footer>  
 </body>
 
 </html>

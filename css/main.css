@@ -2,23 +2,26 @@
 
 /* Dont' forget to link this file to your HTML in the <head> */
 
-body{
-   font-family: 'Roboto', sans-serif; 
+header{
+   font-family: 'Roboto', sans-serif;
+   background-color: white;
 }
 
-
-
+body{
+   font-family: 'Roboto', sans-serif;
+   background-color: rgb(44, 42, 42);
+}
 .nav-bar{
     position: fixed;
     top: 0;
-    background-color: ;
+    background-color: black;
     width: 100%;
     display: flex;
     flex-direction: flex-start;
     align-items: center;
     z-index: 1; 
-    float: right;
-}
+    color: white;
+  }
 
 .logo{
     height:35px;
@@ -92,11 +95,39 @@ body{
 }
 
 .book{
-    border: 1px solid black;
+    border: 10px solid white;
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.simpletitle{
     text-align: center;
 }
 
 .About{
     margin-left: 100px;
     margin-top: 100px;
+}
+
+.help{
+    background-image: url("../imges/neil-daftary-sA7e2754eyw-unsplash.jpg");
+    color: white;
+}
+
+.social{
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 5px;
+}
+
+.copyright{
+    text-align: left;
+    color: slategray;
+}
+
+footer{
+    color: white;
+    background-image: url("../imges/zian-fzr-nYlXteQRUHo-unsplash.jpg");
 }
