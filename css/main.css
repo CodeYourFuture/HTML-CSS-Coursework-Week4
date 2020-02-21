@@ -1,3 +1,133 @@
 /* Add your custom CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
+
+
+* {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: rgb(185, 127, 109);
+    
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;   
+    z-index: 1000;
+    position: fixed;
+    background-color: rgb(237,237,238);
+}
+.header__inner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 0.7rem;
+}
+
+.nav__list{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 8px;
+}
+
+.header__text,
+.header__login{
+    font-size: 0.7rem;
+}
+
+body{
+    background-color: rgb(237,237,238);
+}
+.main{
+    background-image: url('../img/main.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__text{
+    font-family: Amatic SC;
+    color: #fff;
+    font-size: 3rem;
+}
+.main__descr{
+    color: #fff;
+    font-size: 0.5rem;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.main__button{
+    background-color: rgb(185, 127, 109);
+    color: #fff;
+    border: none;
+    font-size: 0.5rem;
+    padding: 6px 30px;
+    margin-top: 10px;
+}
+
+.plants{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+    margin-top: 20px;
+}
+
+
+.plant__1{
+    background-image: url('../img/cacti.png');
+}
+
+.plant__2{
+    background-image: url('../img/plants.png');
+}
+
+.plant__3{
+    background-image: url('../img/succu.png');
+}
+
+.plant{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 0;
+    padding-bottom: 50%;
+}
+
+.plant__name{
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 0.7rem;
+    margin-top: 25px;
+}
+
+.plant__dash{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.plant__text{
+    text-align: center;
+    font-size: 0.7rem;
+}
