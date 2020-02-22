@@ -80,7 +80,7 @@ li{
     
 }
 .padding15{
-    padding:15px;
+    padding-left:15px;
 }
 .container2{
     display:flex;
@@ -226,8 +226,12 @@ margin-top:3em;
 }
 
         }
+.top-padding15{
+    padding-top:15;
+}
        
         .contact{
+            margin-top:15px;
             flex-direction: column;
             align-items: left;
             text-align: left;
