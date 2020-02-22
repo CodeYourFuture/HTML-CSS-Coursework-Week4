@@ -1,3 +1,217 @@
-/* Add your custom CSS here */
+.title-row {
+  justify-content: center;
+}
+.title-row p {
+  color: white;
+  font-size: 2rem;
+}
+.main-centre {
+  margin-top: 30px;
+  font-size: 1em;
+}
+.main-centre p {
+  text-align: center;
+}
+.about-section {
+  margin: 15px;
+}
+.row2 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+.about-col-6 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.about-col-6 h2 {
+  font-size: 80px;
+}
+.aboutus-text {
+  margin: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.aboutus-text p {
+  color: white;
+}
+.about {
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3em;
+  text-align: center;
+  font-size: 1.3em;
+  text-align: center;
+}
+.image-about {
+  padding: 0;
+}
+.about h1 {
+  text-align: center;
+  color: red;
+}
 
-/* Dont' forget to link this file to your HTML in the <head> */
+h5 {
+  text-align: center;
+  color: rgb(26, 25, 24);
+}
+h2 {
+  text-align: center;
+  color: rgb(138, 25, 25);
+}
+h1 {
+  color: white;
+  font-size: 3rem;
+}
+img {
+  width: 100%;
+}
+h3 {
+  color: rgb(138, 25, 25);
+  font-size: 2rem;
+}
+h4 {
+  text-align: center;
+  font-weight: bold;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+li {
+  display: inline-block;
+  margin-left: 1.4rem;
+}
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+}
+.top-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.shop-now {
+  width: 9rem;
+  background-color: #f15a29;
+  border-color: #f15a29;
+  text-shadow: none;
+  border-style: none;
+  border-radius: 4px;
+  padding: 1rem 1.5rem;
+  color: white;
+  font-size: 1.125rem;
+}
+.send-button {
+  background-color: #f15a29;
+  border-color: #f15a29;
+  text-shadow: none;
+  border-style: none;
+  color: white;
+  font-size: 1.125rem;
+  text-align: center;
+}
+
+.main {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("/images/NewBirthdayCake.jpg") center no-repeat;
+}
+.last-name {
+  text-align: left;
+  color: black;
+}
+
+.submit {
+  margin: 0 auto;
+  padding: 5px 15px;
+}
+
+.section-footer {
+  margin-top: 80px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+div {
+  display: block;
+}
+h3 {
+  display: block;
+  font-size: 1.17em;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.form-section h3 {
+  text-align: center;
+}
+.subscribe {
+  margin-top: 20px;
+}
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.footer-last {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-icons-footer .fa {
+  width: 30px;
+  margin-left: 25px;
+}
+.form-container {
+  border-radius: 5px;
+  padding: 20px;
+  color: white;
+}
+@media (min-width: 768px) {
+  .about-col-6 {
+    width: 50%;
+  }
+}
