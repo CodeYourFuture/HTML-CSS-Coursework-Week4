@@ -19,7 +19,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;   
+    right: 0;
     z-index: 1000;
     position: fixed;
     background-color: rgb(237,237,238);
@@ -29,10 +29,11 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    height: 7vh;    
 }
 
 .logo{
-    font-size: 16px;
+    font-size: 1.7rem;
 }
 
 .nav__list{
@@ -41,12 +42,12 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    font-size: 10px;
+    font-size: 1rem;
 }
 
 .header__text,
 .header__login{
-    font-size: 13px;
+    font-size: 1.5rem;
 }
 
 body{
@@ -68,11 +69,11 @@ body{
 .main__text{
     font-family: Amatic SC;
     color: #fff;
-    font-size: 60px;
+    font-size: 5rem;
 }
 .main__descr{
     color: #fff;
-    font-size: 12px;
+    font-size: 1rem;
     letter-spacing: 3px;
     text-align: center;
 }
@@ -81,9 +82,9 @@ body{
     background-color: rgb(185, 127, 109);
     color: #fff;
     border: none;
-    font-size: 12px;
-    padding: 6px 30px;
-    margin-top: 10px;
+    font-size: 0.8rem;
+    padding: 12px 50px;
+    margin-top: 15px;
 }
 
 .plants{
@@ -91,7 +92,7 @@ body{
     flex-direction: row;
     justify-content: space-between;
     height: 100%;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 
@@ -118,26 +119,26 @@ body{
 .plant__name{
     text-align: center;
     letter-spacing: 2px;
-    font-size: 20px;
+    font-size: 1.8rem;
     margin-top: 25px;
 }
 
 .plant__dash{
-    font-size: 20px;
+    font-size: 4rem;
     text-align: center;
     padding: 0;
 }
 
 .plant__text{
     text-align: center;
-    font-size: 10px;
+    font-size: 1rem;
 }
 
 .blocks{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 20px;
+    margin-top: 40px;
     background-color: #fff;
     justify-content: center;
     align-items: center;
@@ -145,24 +146,23 @@ body{
 
 .block__1{
     background-color: #fff;
-    height: 150px;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 15px;
 }
 .block__1__title{
     text-align: center;
     letter-spacing: 3px;
-    font-size: 13px;
+    font-size: 2rem;
     
 }
 
 .block__1__text{
     text-align: center;
     text-indent: 20px;
-    font-size: 10px;
-    padding: 0 30px;
+    font-size: 1rem;
+    padding: 0 50px;
     line-height: 1.5;
 }
 
@@ -171,8 +171,8 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 220px;
-    margin:0;
+    height: 60vh;
+    margin: 0;
     padding: 0;
 }
 .block__3{
@@ -180,7 +180,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 220px;
+    height: 60vh;
 
 }
 
@@ -189,8 +189,101 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 220px;
+    height: 100vh;
 }
+
+.block__5{
+    background-color: rgb(18,49,50);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.block__5__text{
+    text-align: center;
+    padding: 10vh 40px 0 40px;
+    font-size: 6rem;
+    line-height: 0.9;
+}
+
+.special{
+    background-image: url('../img/spec.png');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.spec__title{
+    text-align: center;
+    letter-spacing: 10px;
+    padding-top: 20vh;
+}
+.spec__input{
+    padding: 0;
+}
+.spec__form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.spec__top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.spec__phone{
+    margin: 10px 0;
+    height: 35px;
+}
+
+.spec__name,
+.spec__email{
+    height: 35px;
+}
+
+.spec__text{
+    color: grey;
+    padding-top: 10px;
+}
+
+.contacts {
+    background-color: rgb(18,49,50);
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contacts__title{
+    font-size: 20px;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.store__address,
+.store__hours,
+.contacts__links
+{
+    text-align: center; 
+    line-height: 1.5;
+}
+
+
+
+
 
 
 
