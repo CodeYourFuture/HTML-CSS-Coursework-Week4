@@ -16,7 +16,9 @@
     background-repeat: no-repeat;
     background-position: center; 
     background-size: cover;
+    height:100vw;
 }
+
 .coverimage2{
     display:flex;
     align-items: center;
@@ -25,7 +27,10 @@
     background-repeat: no-repeat;
     background-position: center; 
     background-size: cover;
-    height:100vh;
+    height:100vw;
+}
+p{
+    margin:0;
 }
 .portrait{
     display:flex;
@@ -35,6 +40,7 @@
     background-repeat: no-repeat;
     background-position: center; 
     background-size: cover;
+    min-height:550px;
    
 }
 .logotext{
@@ -89,24 +95,28 @@ li{
 }
 .stamp{
     display:flex;
+    text-align: center;
+    justify-items: center;
     flex-direction: column;
     align-items: center;
-    padding-top:50vh;
-    padding-bottom:50vh;
+    padding-top:0vh;
+    padding-bottom:0vh;
 }
-h2{
+h2{ display:flex;
+    justify-items: center;
     position:relative;
-    font-size:1.5em;
+    font-size:4vw;
     font-weight: lighter;
-    margin:0px !important;
-    overflow-wrap: break-word;
+   
     
 }
 
 h3{
     position:relative;
-    font-size:5em;
-    margin:0px !important;
+    font-size:15vw;
+    
+    padding-left:15px;
+    padding-right:15px;
 }
 button{
     position:relative;
@@ -171,9 +181,9 @@ button{
     align-self: center;
     font-size: 1em;
     
-    padding-top:50%;
-    padding-bottom:50%;
-    padding-left:15%;
+    padding-top:5%;
+    padding-bottom:5%;
+    padding-left:5%;
 }
 .cont{
     margin-left:25%;
@@ -230,7 +240,7 @@ margin-top:3em;
             position:relative;
             display:flex;
            flex-direction: column;
-           align-items: right;
+           
           
 
         }
@@ -252,6 +262,8 @@ margin-top:3em;
             text-align: left;
         }
         .h4{
+            margin-top:1vh;
+            margin-bottom:1vh;
             display:flex;
             flex-direction: row;
             text-align: start;
