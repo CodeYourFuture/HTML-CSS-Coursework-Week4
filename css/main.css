@@ -173,7 +173,6 @@ textarea{
     display:flex;
     height: 0px;
     border:1px solid black;
-    padding-left:15px;
     z-index:5;
     margin-top: 15px;
     margin-bottom:15px;
