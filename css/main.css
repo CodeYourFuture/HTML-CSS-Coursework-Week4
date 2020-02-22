@@ -32,7 +32,7 @@
 }
 
 .logo{
-    font-size: 10px;
+    font-size: 16px;
 }
 
 .nav__list{
@@ -41,12 +41,12 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    font-size: 8px;
+    font-size: 10px;
 }
 
 .header__text,
 .header__login{
-    font-size: 10px;
+    font-size: 13px;
 }
 
 body{
@@ -68,11 +68,11 @@ body{
 .main__text{
     font-family: Amatic SC;
     color: #fff;
-    font-size: 50px;
+    font-size: 60px;
 }
 .main__descr{
     color: #fff;
-    font-size: 8px;
+    font-size: 12px;
     letter-spacing: 3px;
     text-align: center;
 }
@@ -81,7 +81,7 @@ body{
     background-color: rgb(185, 127, 109);
     color: #fff;
     border: none;
-    font-size: 8px;
+    font-size: 12px;
     padding: 6px 30px;
     margin-top: 10px;
 }
