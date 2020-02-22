@@ -2,6 +2,7 @@
 
 /* Dont' forget to link this file to your HTML in the <head> */
 
+
 .logotext-wrapper{
     display:flex;
     flex-direction:column;
@@ -28,6 +29,8 @@
     background-position: center; 
     background-size: cover;
     height:100vw;
+    font-family: 'Roboto', ;
+    
 }
 p{
     margin:0;
@@ -59,11 +62,13 @@ ul{
     list-style: none;
     justify-content: space-around;
     align-content: flex-end;
+    font-family: 'Roboto';
 }
 li{
     display:inline-flex;
-    flex-wrap:nowrap;
+    white-space: nowrap;
    margin-left: 2vw;
+   
     
 }
 
@@ -102,27 +107,40 @@ li{
     padding-top:0vh;
     padding-bottom:0vh;
 }
+
 h2{ display:flex;
     justify-items: center;
     position:relative;
-    font-size:4vw;
+    font-size:3vw;
     font-weight: lighter;
+    font-family: 'Roboto';
    
     
 }
 
 h3{
     position:relative;
-    font-size:15vw;
+    font-size:8vw;
+    color: white;
+  text-shadow: 2px 2px 4px #000000;
     
     padding-left:15px;
     padding-right:15px;
 }
 button{
-    position:relative;
+    font-size: 2vw;;
     background-color: black;
     color:white;
     border:none;
+}
+input{
+    background-color:black;
+    color:white;
+}
+textarea{
+    background-color:black;
+    color:white;
+    font-family: 'Roboto';
 }
 .faceblock {
     display:flex;
@@ -132,15 +150,14 @@ button{
     display:flex;
     padding:10px;
     flex-direction: column;
-    height: 45vh;
+    
     text-align: center;
     align-items: center;
     justify-content: center;
     border:5px solid black;
     z-index:5;
-    max-height: 30vh;
-    overflow: hidden;
-    text-overflow: ellipsis;
+
+    o
     overflow-wrap: break-word;
 }
 .bio-wrap{
@@ -156,8 +173,11 @@ button{
     display:flex;
     height: 0px;
     border:1px solid black;
+    padding-left:15px;
     z-index:5;
-    margin-top: auto;
+    margin-top: 15px;
+    margin-bottom:15px;
+    margin-left:15px;
 }
 .intro{
     display:flex;
@@ -169,7 +189,7 @@ button{
     
 }
 .icons{
-    font-size:24px;
+    font-size:5vw;
     padding:15px;
 }
 .introtext{
@@ -206,21 +226,27 @@ margin-top:3em;
 }
 
         }
-        .contact-wrapper{
-            display:flex;
-            position:relative;
-            flex-direction: row;
-        }
+       
         .contact{
             flex-direction: column;
             align-items: left;
             text-align: left;
+            font-family: 'Roboto';
             
         }
-        .contactform{
+        p{
+            font-family: 'Roboto';
+        }
+        form{
+            font-family: 'Roboto';
             display:flex;
+            padding-top:15px;
+            
             flex-direction: column;
             
+        }
+        input{
+            ont-family: 'Roboto', ;
         }
         .message{
             display:flex;
@@ -228,22 +254,11 @@ margin-top:3em;
             height:10em;
             text-align: tops;
         }
-        .butt{
-           display:flex;
-           flex-direction: row;
-           justify-items: right;
-        }
+       
         .margin-top25em{
             margin-top:25em;
         }
-        .formbox{
-            position:relative;
-            display:flex;
-           flex-direction: column;
-           
-          
-
-        }
+       
         .vw10{
             width:10vw;
         }

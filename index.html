@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+        <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Roboto+Mono|Roboto+Slab&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +21,7 @@
                 <div class="sublogo col-6 sm-col-12">Personal Life Coach</div>
                 </div>
                
-                    <ul class="col-6" >
+                    <ul class="col-10" >
                         <li>Home</li>
                         <li>About</li>
                         <li>Services</li>
@@ -35,7 +36,7 @@
     <div class="stamp col-6">
     <h2 class="margin0">Ambition is the first way towards</h2>
     <h3 class=" ">SUCCESS</h3>
-    <button class="margin0">BOOK NOW</button>
+    <button class=" col-6 black">BOOK NOW</button>
     </div>
 </div>
     <!-- Add your markup here -->
@@ -67,14 +68,14 @@
 
     <div class="row">
         
-    <div class="col-6">
+    <div class=" contact col-6">
     
         <p class="bold padding15">Contact</p>
         <div class="line col-6" ></div>
-        <p class="bold col-6">15 st. Pauls drive E151JN</p>
-        <p class="bold col-6">London, UK</p>
-        <p class="bold col-6">+4 44 56 73478</p>
-        <p  class="bold col-6"></p>
+        <p class=" col-6">15 st. Pauls drive E151JN</p>
+        <p class="col-6">London, UK</p>
+        <p class=" col-6">+4 44 56 73478</p>
+        <p  class=" col-6"></p>
         <div class="icons">
             <i class="fa fa-facebook"></i>
             <i class="fa fa-linkedin"></i>
@@ -83,19 +84,15 @@
         </div>
 
 
-<form class=" col-6">
-    <p>Enter your name</p>
-    <input class="col-10" name="name" value="Name"></input>
-    <P>Enter youre-mail</P>
-    <input class="col-10" name="name" value="E-mail"></input>
-    <p>Enter your subject</p>
-    <input class="col-10" name="subject" value="Subject"></input>
-    <p>Enter your Message here</p>
-    <input class="col-10" name="message" value="Message" class="message"></input>
-    <div class="butt col-10 ">
-            <button class="black submit col-6">Submit</button>
-        </div>
-</form>
+        <form  class= "col-6" action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+            <input  type="submit" value="Submit">
+          </form>
 </div>
 </div>
 </div>
