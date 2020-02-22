@@ -118,7 +118,7 @@ body{
 .plant__name{
     text-align: center;
     letter-spacing: 2px;
-    font-size: 10px;
+    font-size: 20px;
     margin-top: 25px;
 }
 
@@ -161,7 +161,7 @@ body{
 .block__1__text{
     text-align: center;
     text-indent: 20px;
-    font-size: 7px;
+    font-size: 10px;
     padding: 0 30px;
     line-height: 1.5;
 }
