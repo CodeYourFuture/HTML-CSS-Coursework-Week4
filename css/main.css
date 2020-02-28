@@ -37,6 +37,9 @@
   justify-content: center;
   align-items: center;
 }
+body {
+  font-size: 20px;
+}
 .content {
   width: 100%;
   display: flex;
@@ -94,19 +97,21 @@ h4 {
   margin-right: -15px;
   margin-left: -15px;
 }
-li {
-  display: inline-block;
-  margin-left: 1.4rem;
+li a {
+  // display: inline-block;
+  //text-align: center;
+  text-decoration: none;
+  color: #5a413f;
 }
+
 ul {
   list-style: none;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
 }
 .top {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-items: center;
   align-items: center;
 }
@@ -114,12 +119,14 @@ ul {
   display: flex;
   justify-content: center;
 }
+/*
 .top-navigation {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
+*/
 .shop-now {
   width: 9rem;
   background-color: #f15a29;
@@ -147,7 +154,7 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url("/images/NewBirthdayCake.jpg") center no-repeat;
+  background: url('/images/NewBirthdayCake.jpg') center no-repeat;
 }
 .last-name {
   text-align: left;
@@ -200,10 +207,18 @@ input {
   justify-content: center;
   align-items: center;
 }
+.box {
+  display: flex;
+  margin-left: 80px;
+}
+
 
 .contact-icons-footer .fa {
   width: 30px;
   margin-left: 25px;
+}
+.contact-icons-footer h3 {
+  text-align: center;
 }
 .form-container {
   border-radius: 5px;
@@ -213,5 +228,21 @@ input {
 @media (min-width: 768px) {
   .about-col-6 {
     width: 50%;
+  }
+  .top {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  ul {
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .contact-icons-footer {
+    display: flex;
+    align-items: center;
+    align-content: flex-end;
+    margin-left: 240px;
   }
 }
