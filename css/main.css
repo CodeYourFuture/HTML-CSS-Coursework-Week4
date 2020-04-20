@@ -1,203 +1,200 @@
 
-.hamIcon{
-  position: absolute;
-  right: 10px;
-  top: 20px;
+  .hamIcon{
+    position: absolute;
+    right: 10px;
+    top: 10px;
 }
 
-.header_customize{
-  background-color:#466381;
-  justify-content:space-around;
-  font-family: 'Vast Shadow', cursive;
-  display:flex;
-}
-.logo_img{
-  width:10%;
-}
-.ul_header {
+  .header_customize{
+    background-color:#466381;
+    justify-content:flex-start;
+    font-family: 'Vast Shadow', cursive;
+    display:flex;
+  }
+  .section_header{
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .logo_img{
+    width:10%;
+  }
+  .ul_header{
   list-style-type: none;
-  margin-top: 30px;
-}
-.ul_header_nav{
-  display: flex;
-  list-style-type: none;
-  color: black;
-  margin-top: 50px;
-}
-ul.ul_header_nav a {
-  padding-right: 10px;
-  padding-left: 20px;
-  margin-top: 40px;
-  color: black;
-  text-decoration: none;
-}
+  align-self: center;
+  margin-left: 2%;
+  }
+  
+  .ul_header_nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: black;
+    margin-left: auto;
+    list-style-type: none;
+  }
+  
+  ul.ul_header_nav a {
+    padding-right: 10px;
+    padding-left: 20px;
+    margin-top: 40px;
+    color: black;
+    text-decoration: none;
+  }
+  
+  ul.ul_header_nav a:hover{
+    color: red;
+  }
+  
+  .logo_img{
+    background: url("steve-jobs-nav.jpg");
+  
+  }
+  
+  .hero_image{
+    background: url("../s.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    margin-right:80%;
+  }
+  
+  .fixmargin{
+    margin-left:70%;
+    margin-bottom: 30%;
+  }
+  
+  .font_anton{
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    color:black;
+    font-size: 100px;
+    margin: 30px;
+  }
+  
+  .button{
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: large;
+    cursor: pointer;
+    background-color: brown;
+    margin-left: 150px;
+    padding: 10px 10px;
+  }
+  .font_anton_2{
+    text-align: left;
+    color:black;
+    font-size: 30px;
+    margin-left:20%;
+    padding:5%;
+    background-color:#466381;
+  }
+   .section_two{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: flex-start;
+   }
+  .about_me{
+    width:100%;
+    background:url("apple_sign.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:10px 10px;
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  .button_about_me{
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    background-color:brown;
+    font-size: large;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-left:45%;
+  }
+  .about_im_2{
+    width: 100%;
+  }
+  .section_three{
+    display: flex;
+    font-size: 25px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #466381;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-size: xx-large;
+  
+  }
+  .help_font{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  div.help_font p{
+    margin-top: 10px;
+  }
+  .button_section_three{
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    background-color:brown;
+    font-size: large;
+    cursor: pointer;
+    margin-top: 2px;
 
-ul.ul_header_nav a:hover{
-  color: red;
-}
+  }
+  .footer{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
 
-.logo_img{
-  background: url("steve-jobs-nav.jpg");
+  .footer_style{
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-end;
+    align-items: center; 
+    color: white;
+    background-color:rgb(36, 35, 35);
+    flex: 1;
+  }
 
-}
+  .social_media{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;}
+  
+  i {
+    padding: 0 5px;
+  }
 
-.hero_image{
-  background: url("../s.jpg");
-  background-size:cover;
-  background-position:center;
-  background-repeat: no-repeat;
-  min-height:120vh;
-}
-
-.font_anton{
-  font-family: 'Anton', sans-serif;
-  text-align: center;
-  color: blanchedalmond;
-  font-size: 100px;
-  margin: 0;
-
-}
-
-.section_one{
-  display: flex;
-  flex-direction: column;
-  justify-content:flex-start;
-
-}
-
-
-.font_section_one{
-  display: flex;
-  align-items: flex-start;
-  flex-direction: row;
-  justify-content: center; 
-}
-
-.button{
-  border: none;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  cursor: pointer;
-  background-color: #466381;
-  margin: 0 auto;
-  padding: 10px 10px;
-}
- .p_section2{
-   display: flex;
-   flex-direction:column;
- }
-
-.section_two{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  font-family: 'Rokkitt', serif;
-}
-.about_me{
-  width:100%;
-  background:url("apple_sign.jpg") ;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding:10px 10px;
-  text-align: center;
-  font-size: 20px;
-}
-
-.button_about_me{
-  border: none;
-  color: white;
-  padding: 15px 20px;
-  text-align: center;
-  text-decoration: none;
-  background-color: #466381;
-  cursor: pointer;
-  margin-top: 5px;
-}
-.about_me_img{
-  display: flex;
-  justify-content: flex-start;
-  text-align:flex-start;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 500px;
-
-}
-.about_im_2{
-  width: 100%;
-}
-.section_three{
-  display: flex;
-  font-size: 25px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #466381;
-  background-repeat: no-repeat;
-  background-size: cover;
-  font-family: 'Rokkitt', serif;
-  text-align: center;
-
-}
-.help_font{
-  /* border:3px solid whitesmoke; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-div.help_font p{
-  margin-top: 5px;
-}
-/*.button_section_three{
-  display: flex;
-  border-color: honeydew;
-  color: white;
-  padding: 10px 30px;
-  text-align: center;
-  text-decoration: none;
-  background-color:gray;
-  cursor: pointer;
-  margin-left: 360px;
-  margin-top: 15px;
-  margin-bottom: 5px;
-
-}
-
-.fix{
-  padding: 10px 10px;
-  text-align: center;
-  margin:5px  30px;
-  margin-left: -20px;
-  color: aliceblue;
-  background-color: gray;
-}
-*/
-
-/* .help_border{
-  border:5px solid gray ;
-  border-radius: 2px;
-} */
-/* I cant make it horizontally*/
-.footer_style{
-  display: flex;
-  flex-direction:column;
-  justify-content: flex-end;
-  align-items: center; 
-  background-color:lightblue;
-  flex: 1;
-}
-.social_media{
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  justify-content:center;}
-
-i {
-  padding: 0 5px;
-}
-.fo{
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
+  @media(max-width: 1200px){
+    .ul_header_nav{
+      display: none;
+    }
+    .ul_header_nav .toggleCls{
+      display: block;
+    }
+  }
+  @media(min-width: 1200px){
+    .hamIcon{
+      display: none;
+    }
+  }
