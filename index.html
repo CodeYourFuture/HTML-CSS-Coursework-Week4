@@ -11,18 +11,18 @@
     <link href="https://fonts.googleapis.com/css?family=Ovo&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rokkitt&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Vast+Shadow&display=swap" rel="stylesheet">
+    <script src="/responsive-grid-project/css/grid.js"></script>
     <script src="https://kit.fontawesome.com/0729575a56.js" crossorigin="anonymous"></script>
     <title>
         Steve Jobs
     </title>
 </head>
-<!-- <div class="hamIcon" onclick="toggleClass()">
-            <h1> &#9776; </h1>
-        </div>-->
-
 <body>
-    <header class="header_customize">
-        <img class="logo_img" src="steve_jj.jpeg">
+    <header class="row header_customize">
+        <div class="hamIcon" onclick="toggleClass()">
+            <h1> &#9776; </h1>
+        </div>
+        <img class="section_header logo_img" src="steve_jj.jpeg">
         <ul class="ul_header">
             <li>Steve Jobs</li>
             <br>
@@ -36,19 +36,20 @@
             <li><a href="#contact">Contact</a></li>
             <li><a href="#login"><i class="fas fa-user">Login</i></a></li>
         </ul>
+        </div>
     </header>
     <main>
-        <section class="hero_image section_one">
+        <section class="row hero_image">
+            <div class="fixmargin">
             <h1 class="font_anton">
                 SUCCESS
             </h1>
-            <button class="button col-2">
+            <button class="button">
                 Book Now
             </button>
+            </div>
         </section>
-        <section>
-            <section class="row">
-                <div class="col-12">
+            <section class="row font_anton_2">
                     <h1>Life is about creating and living experiences that are worth sharing."</h1>
                     "We started out to get a computer in the hands of everyday people, and we succeeded beyond our
                     wildest dreams."
@@ -84,31 +85,31 @@
                     <button class="button_about_me">
                         Read More
                     </button>
+                </section>
+                <div class="row">
+                    <img src="https://images.unsplash.com/photo-1562581870-5b61efe35190?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="about_im_2">
                 </div>
-                <div class="col-12 about_me_img">
-                    <img src="product.jpg" class="about_im_2">
-                </div>
-            </section>
-            <section>
-                <div class="section_three">
+                <div class="row section_three">
                     How Can I help?
                     <div class="help_font">
                         <p>
-                            one on one coaching
-                            click here to add you own text and edit more.
+                            1:1 coaching session
                         </p>
                         <button class="button_section_three">
                             Book it
                         </button>
-                        <button class="fix">
+                        <p>    
+                            click here to add you own text and edit more.
+                        </p>
+                        <button class="button_section_three">
                             More services
                         </button>
                     </div>
                 </div>
             </section>
     </main>
-    <footer>
-        <div class="fo">
+    <footer class="row">
+        <div class="footer">
         <div class="footer_style ">
             <h1>Contact</h1>
             <br><br>
@@ -120,7 +121,7 @@
             <br><br>
             info@mysite.com
             <br><br>
-            <ul class="social_media">
+            <ul class="row social_media">
                 <li>
                     <i class="fab fa-facebook-square"></i>
                 </li>
@@ -159,4 +160,3 @@
 </body>
 
 </html>
-© 2020 GitHub, Inc.
