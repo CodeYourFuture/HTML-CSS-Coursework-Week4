@@ -7,9 +7,10 @@ Choose one of the designs below, and re-create the design to perfection, using B
 ## Responsive grid reminder
 
 Follow Boostrap grid rules with care:
-- Apply the `container` class to each of your page sections (unless you have a background image or colour that you want to bleed to the edges of the page at all times, in which case use `container-fluid`)
-- Wrap each set of elements in a `row` class
+- Apply the `container` class to each of your page sections (unless you have a background image or colour that you want to bleed to the edges of the page at all times, in which case you should nest the container inside your full-width section)
+- Wrap each set of elements inside a `row` class (this is your flex container!)
 - Apply a column class (`col-[__]`) to the elements you want to place on the grid.
+- If the column class doesn't specify a breakpoint (e.g. `col-md-6` uses the `md` breakpoint but `col-6` doesn't) then it will apply for all screen sizes (equivalent of `min-width: 0`).
 - Don't change the width, padding or margin of the items that have a `col-[__]` class on them. This would clash with the Boostrap CSS.
 
 
