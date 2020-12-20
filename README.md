@@ -2,6 +2,8 @@
 
 Choose one of the designs below, and re-create the design to perfection, using Bootstrap.
 
+**Note:** Boostrap is already loaded into the `head` of index.html
+
 ## Responsive grid reminder
 
 Follow Boostrap grid rules with care:
@@ -77,5 +79,5 @@ Jade green: #1B7B57
 ## **Crediting**
 
 Very important: please credit the designer in your footer with the sentence 
-"This website was designed with Wix.com"
+"This website was designed by Wix.com"
 
