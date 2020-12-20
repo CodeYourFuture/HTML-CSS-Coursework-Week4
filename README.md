@@ -13,65 +13,69 @@ Follow Boostrap grid rules with care:
 
 ## Style guide
 
-Here are some suggested fonts and colours to use for your chosen projects:
+Here are 3 designs to choose from, along with suggested fonts and colours to use for your chosen projects:
 
 ### **DESIGN 1: Therapy**
 https://www.wix.com/website-template/view/html/2055
 ### Fonts
-**Headings:** Libre Baskeville 400 
-https://fonts.google.com/specimen/Libre+Baskerville
-**Subheadings:** Libre Baskeville Italic 400 
-https://fonts.google.com/specimen/Libre+Baskerville
-**Body:** Quicksand Light 300
-https://fonts.google.com/specimen/Quicksand
+**Headings:** Libre Baskeville 400  
+https://fonts.google.com/specimen/Libre+Baskerville  
+**Subheadings:** Libre Baskeville Italic 400  
+https://fonts.google.com/specimen/Libre+Baskerville  
+**Body:** Quicksand Light 300  
+https://fonts.google.com/specimen/Quicksand  
 
 ### Colors
-Text colour: #2F2F2E
+Text colour: #2F2F2E  
+  
+Lime green: #E2F6CD  
+Light grey: #F2F2F1  
+Light mint: #CFF4EC  
+Medium mint: #94D6C8  
+Dark green: #4D7369  
 
-Lime green: #E2F6CD
-Light grey: #F2F2F1
-Light mint: #CFF4EC
-Medium mint: #94D6C8
-Dark green: #4D7369
-
+=====================================
 
 ### **DESIGN 2: Resume**
-https://www.wix.com/website-template/view/html/2622
+https://www.wix.com/website-template/view/html/2622  
 
 ### Fonts
-**Headings:** Poppins Semi-bold 600
-https://fonts.google.com/specimen/Poppins
-**Body:** Quicksand Light 300
-https://fonts.google.com/specimen/Quicksand
+**Headings:** Poppins Semi-bold 600  
+https://fonts.google.com/specimen/Poppins  
+**Body:** Quicksand Light 300  
+https://fonts.google.com/specimen/Quicksand  
 
 ### Colors
-Text colour: #000
+Text colour: #000  
+  
+Dark beige: #E6DACD  
+Light beige: #F4ECE6  
+Royal blue: #0150FD  
+White: #FFF  
 
-Dark beige: #E6DACD
-Light beige: #F4ECE6
-Royal blue: #0150FD
-White: #FFF
-
+=====================================
 
 ### **DESIGN 3: Festival**
 https://www.wix.com/website-template/view/html/2332
 ### Fonts
-**Headings:** Cinzel Regular 400
-https://fonts.google.com/specimen/Cinzel
-**Body:** Quicksand Light 300
-https://fonts.google.com/specimen/Quicksand
+**Headings:** Cinzel Regular 400  
+https://fonts.google.com/specimen/Cinzel  
+**Body:** Quicksand Light 300  
+https://fonts.google.com/specimen/Quicksand  
 
 ### Colors
-Text colour: #190E40
+Text colour: #190E40  
+  
+Golden brown: #C78003  
+Light pink: #F9A988  
+Powder blue: #5362AC  
+Navy blue: #190F3F  
+Jade green: #1B7B57  
 
-Golden brown: #C78003
-Light pink: #F9A988
-Powder blue: #5362AC
-Navy blue: #190F3F
-Jade green: #1B7B57
-
+=====================================
 
 ## **Crediting**
 
 Very important: please credit the designer in your footer with the sentence 
-"This website was designed with Wix."
+"This website was designed with Wix.com"
+
