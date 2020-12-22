@@ -4,17 +4,227 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&family=Quicksand:wght@300&display=swap" rel="stylesheet">   
     <!-- Here we import the Boostrap CSS stylesheet -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <!-- Add a link to your custom CSS here -->
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/846a6339d9.js" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/main.css">
 
     <title>Responsive grid project</title>
 </head>
 
 <body>
+    <header>
+        <nav class="display-md-col navbar navbar-expand-md">
+            <div class="display-md col-md-4 offset-md-7">
+                <button class="appointment-btn  ">Book an Appointment</button>
+            </div>
+            <div class="container padding-top align-items-center">
+                    <div class="display-sm col-10">
+                        <button class="appointment-btn">Book an Appointment</button>
+                    </div>
+                <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="col-1 navbar-toggler-icon fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse order-1 col-md-6 align-self-baseline" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"> Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <h1 class="padding-top content-center col-12 col-md-6 align-self-baseline">Maria Hope, Ph.D. - Psychologist</h1>
+            </div>
+        </nav> 
+    
+    </header>
+    <main class="content-center container-fluid">
+        <section class="hero row">
+                <img class="p-0 col-12 col-md-6" src="./img/erol-ahmed-aIYFR0vbADk-unsplash.jpg" alt="Succulent plant">
+                <section class="box-sizing col-12 col-md-6">
+                    <h2>Online Therapy for Emotional Health</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur. </p> 
+                </section>
+            </section>
+        </section>
+        <section class="about row">
+            <article class="about-text box-sizing">
+                <div class="col-md-8 offset-md-2" >
+                    <h3 class="col-12">about</h3>
+                    <h2 class="col-12">Maria Hope</h2>
+                    <p class="col-12"> Lorem ipsum dolor sit amet consectetur adipisicing 
+                        elit. Dicta perspiciatis eos, facilis maiores nam consectetur libero 
+                        perferendis, saepe soluta culpa voluptatum minus animi eveniet earum. 
+                        Neque reprehenderit sed dolore omnis?Praesentium fuga consequatur 
+                        vitae ut ex et maiores quisquam id voluptates dolorem!</p> 
+                </div>
+                
+            </article>
+            <img class="col-10 offset-1 box-sizing align-self-center" src="./img/pexels-christina-morillo-1181690.jpg" alt="Image of Maria Hope">
+        </section>
+        <section class="row">
+            <article class="box-sizing indiv-therapy col-12 col-md-4">
+                <h3>01.</h3>
+                <h2>Individual Therapy</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed id 
+                    nemo consequuntur, distinctio quod iste, iusto nesciunt eius quo 
+                    architecto quas atque.</p>
+            </article>
+            <article class="box-sizing group-therapy col-12 col-md-4">
+                <h3>02.</h3>
+                <h2>Group Therapy</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed id 
+                    nemo consequuntur, distinctio quod iste, iusto nesciunt eius quo 
+                    architecto quas atque.</p>
+            </article>
+            <article class="box-sizing couples-therapy col-12 col-md-4">
+                <h3>03.</h3>
+                <h2>Couples Therapy</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed id 
+                    nemo consequuntur, distinctio quod iste, iusto nesciunt eius quo 
+                    architecto quas atque.</p>
+            </article>
+        </section>
+        <section class="article-section row justify-content-center">
+            <h2 class="article-heading">Articles about Psychology</h2>
+            <div id="carouselExampleSlidesOnly" class="display-sm article-carousel carousel slide col-11" data-bs-ride="carousel" data-interval="touch">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="./img/erol-ahmed-aIYFR0vbADk-unsplash.jpg" alt="Succulent Plant">
+                        <h3>Understanding PTSD</h3>
+                        <hr>
+                        <div class="article-details row">
+                            <i class="col-1 far fa-eye"></i>
+                            <p class="col-1">313</p>
+                            <a class="col-8">
+                                <p >Write a comment</p>
+                            </a>
+                            <p class="col-1">12</p>
+                            <a class="col-1">
+                                <i class="far fa-heart"></i>
+                            </a>
+                        </div> 
+                    </div>
+                    <div class="carousel-item">
+                        <img class="col-12" src="./img/jackie-dilorenzo-RyLsRzy9jIA-unsplash.jpg" alt="Various Plants">
+                        <h3>Why it's okay to argue</h3>
+                        <hr>
+                        <div class="article-details row">
+                            <i class="col-1 far fa-eye"></i>
+                            <p class="col-1">313</p>
+                            <a class="col-8">
+                                <p >Write a comment</p>
+                            </a>
+                            <p class="col-1">12</p>
+                            <a class="col-1">
+                                <i class="far fa-heart"></i>
+                            </a>
+                        </div> 
+                    </div>
+                    <div class="carousel-item">
+                        <img class="col-12" src="./img/matt-howard-UCDiLtfDRgU-unsplash.jpg" alt="Aerial view of crashing waves">
+                        <h3>10 ways to de-stress</h3>
+                        <hr>
+                        <div class="article-details row">
+                            <i class="col-1 far fa-eye"></i>
+                            <p class="col-1">313</p>
+                            <a class="col-8">
+                                <p >Write a comment</p>
+                            </a>
+                            <p class="col-1">12</p>
+                            <a class="col-1">
+                                <i class="far fa-heart"></i>
+                            </a>
+                        </div> 
+                    </div>
+                </div>
+                <button class="article-btn col-6">More Articles</button>
+            </div>
+            
 
-    <!-- Add your markup here -->
-
+                <div class="row">
+                    <div class="col-md-4">
+                        <img class="col-12" src="./img/erol-ahmed-aIYFR0vbADk-unsplash.jpg" alt="Succulent Plant">
+                        <h3>Understanding PTSD</h3>
+                        <hr>
+                        <div class="article-details row">
+                            <i class="col-1 far fa-eye"></i>
+                            <p class="col-1">313</p>
+                            <a class="col-8">
+                                <p >Write a comment</p>
+                            </a>
+                            <p class="col-1">12</p>
+                            <a class="col-1">
+                                <i class="far fa-heart"></i>
+                            </a>
+                        </div> 
+                    </div>
+                    <div class="col-md-4">
+                        <img class="col-12" src="./img/jackie-dilorenzo-RyLsRzy9jIA-unsplash.jpg" alt="Various Plants">
+                        <h3>Why it's okay to argue</h3>
+                        <hr>
+                        <div class="article-details row">
+                            <i class="col-1 far fa-eye"></i>
+                            <p class="col-1">313</p>
+                            <a class="col-8">
+                                <p >Write a comment</p>
+                            </a>
+                            <p class="col-1">12</p>
+                            <a class="col-1">
+                                <i class="far fa-heart"></i>
+                            </a>
+                        </div> 
+                    </div>
+                    <div class="col-md-4">
+                        <img class="col-12" src="./img/matt-howard-UCDiLtfDRgU-unsplash.jpg" alt="Aerial view of crashing waves">
+                        <h3>10 ways to de-stress</h3>
+                        <hr>
+                        <div class="article-details row">
+                            <i class="col-1 far fa-eye"></i>
+                            <p class="col-1">313</p>
+                            <a class="col-8">
+                                <p >Write a comment</p>
+                            </a>
+                            <p class="col-1">12</p>
+                            <a class="col-1">
+                                <i class="far fa-heart"></i>
+                            </a>
+                        </div> 
+                    </div>
+                </div>
+        </section>
+        
+        <div class="chat-icon-fixed-padding container fixed-bottom">
+            <div class="chat-icon-cont row">
+                <a href="#" class="chat-icon-cont col-2 col-md-1 offset-md-11">
+                    <i class="chat-icon col-1  fas fa-comment-alt"></i>
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer class="footer-section container">
+        <div class="row justify-content-center ">
+            <p class="col-8 align-self-center">© 2023 by Maria Hope, Ph.D. Proudly created by Wix.com</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>
 
 </html>
