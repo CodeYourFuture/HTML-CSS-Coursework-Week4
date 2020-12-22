@@ -2,13 +2,16 @@
 
 /* Dont' forget to link this file to your HTML in the <head> */
 
-.hero{
-    background-image: url('.././img/flower1.webp');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
 .toppic{
     position: relative;
-    top:200px;
+    top:-15vh;
+    /* right: 25vw; */
 
+}
+.bg-lily{
+    background-color: rgb(161, 201, 201);
+}
+.back{
+    min-height: 70vh;
 }
