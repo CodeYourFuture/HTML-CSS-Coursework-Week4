@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Here we import the Boostrap CSS stylesheet -->
+    <!-- Here we import the Bootstrap CSS stylesheet -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <!-- Add a link to your custom CSS here -->
     <link ref="stylesheet" href="/css/main.css">
@@ -14,29 +14,39 @@
 
 <body>
     <header>
-        <nav class="navbar" role="navigation" >
-            <div>
-                <ul class="navbar-booking">
-                    <li>Book an Appointment</li>
-                </ul>
+        <nav class="navbar navbar-expand-md" role="navigation" >
+                <a class="navbar-brand"><i>Maria Hope, PH.D. - Psychologist</i></a>
+                    <button class="navbar-toggler" type="button" data-toggler="collapse" data-target="#navbarSupportedContent">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+            
+            <div class="row" class="navbar-header" >
+                <div class=".col-6 .col-md-4">
+                    <a class="navbar-booking">Book an Appointment</a>
+                </div>
             </div>
-            <div class="navbar-header">
-                <a class="navbar-brand"><i>Maria Hope, PHD. - Psychologist</i></a>
-            </div> 
-            <div>
-                <ul class="navbar-tabs">
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>Blog</li>
-                    <li>Contact</li>
-                </ul>
-            </div>               
-            </nav>
-        
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- <div class=".col-6 .col-md-4"></div> -->
+                        <ul class="navbar-nav md-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                                <a class="nav-link" href="#">Services</a>
+                                <a class="nav-link" href="#">Blog</a>
+                                <a class="nav-link" href="#">Contact</a>                            
+                            </li>
+                        </ul>
+                    <!-- </div> -->
+                </div>
+                           
         </nav>
+        
+        
     </header>
-    +
+    
     
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
