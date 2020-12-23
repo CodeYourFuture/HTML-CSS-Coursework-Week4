@@ -1,3 +1,41 @@
 /* Add your custom CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
+:root {
+  --text-colour: #000;
+  --dark-beige: #e6dacd;
+  --light-beige: #f4ece6;
+  --royal-blue: #0150fd;
+  --white: #fff;
+}
+
+body {
+  font-family: "Quicksand";
+  border: 1px darkblue solid;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins";
+}
+
+header {
+  border: 1px darkred solid;
+}
+
+main {
+  border: 1px darkred solid;
+  width: auto;
+}
+
+footer {
+  border: 1px darkred solid;
+}
+
+div {
+  border: 1px darkolivegreen dotted;
+}
