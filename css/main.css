@@ -16,6 +16,12 @@ h1, h2, h3 {
     padding: 13px 0;
 }
 
+ /* Nav Bar*/
+
+.hamburguer-menu{
+    padding-right: 15px;
+}
+
 /* Appointment Button*/
 
 .menu-small{
@@ -26,19 +32,17 @@ h1, h2, h3 {
     border: none;
     padding: 10px 20px;
     background-color: rgba(207, 244, 236, 1);
-
+    margin-left: 10px;
     }
     
 .appointment-button:hover {
-    background-color: rgba(94, 94, 93, 1);
+    background-color: rgb(109, 133, 128);
     }
 
 .mint-container{
     padding: 100px 15px 60px 15px;
     background-color: rgba(207, 244, 236, 1);
-    
 }
-
 
  /* Main content */
 
