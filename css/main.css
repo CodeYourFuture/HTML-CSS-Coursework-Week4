@@ -32,3 +32,25 @@ a {
 .therapy div a {
     font-size: 5rem;
 }
+
+.therapy-btn {
+    background-color: #b2fef7;
+}
+
+.articles p {
+    cursor: pointer;
+}
+
+.articles p:hover {
+    color: green;
+}
+
+.comment-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer img {
+    width: 2rem;
+    margin-left: 2rem;
+}
