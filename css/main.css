@@ -9,9 +9,13 @@
     /* right: 25vw; */
 
 }
-.bg-lily{
-    background-color: rgb(161, 201, 201);
-}
+
 .back{
     min-height: 70vh;
+}
+.bg-lightgreen{
+    background-color: rgb(153, 209, 153);
+}
+.bg-lightblue{
+    background: lightblue;
 }
