@@ -1,3 +1,22 @@
-/* Add your custom CSS here */
-
-/* Dont' forget to link this file to your HTML in the <head> */
+/* div {
+  border: 1px solid goldenrod;
+  color: goldenrod;
+  height: 100px;
+  margin-bottom: 20px;
+  text-align: center;
+}*/
+.app-btn {
+  background-color: #cff4ec;
+  border: 0px;
+  width: 100%;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.head-txt {
+  font-size: 20px;
+  font-weight: 200px;
+  text-align: center;
+  font-style: italic;
+}
