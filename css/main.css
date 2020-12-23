@@ -1,3 +1,34 @@
-/* Add your custom CSS here */
+* {
+    /* border: 1px solid #008000; */
+}
 
-/* Dont' forget to link this file to your HTML in the <head> */
+
+.col a {
+    background-color: red;
+}
+
+.hero {
+    background-color: #b2fef7;
+    /* height: 100vh; */
+}
+
+svg {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.therapy-box1 {
+    background-color: #dcedc8;
+}
+
+.therapy-box3 {
+    background-color: #b3e5fc;
+}
+
+.therapy div a {
+    font-size: 5rem;
+}
