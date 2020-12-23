@@ -19,6 +19,9 @@
     display: none;
 }
 
+.menu-button{
+    z-index: 100;
+}
 
 /* Header*/
 body{
@@ -40,12 +43,21 @@ h1, h2, h3 {
     padding-right: 15px;
 }
 
+.desktop-navigation{
+    display: none;
+}
+
+/* Nav Bar*/
+
+.nav-bar-right{
+ display: flex;
+ flex-direction: column;
+ height: 100%;
+ justify-content: space-between;
+}
 
 /* Appointment Button*/
 
-/* .menu-small{
-    display: none;
-    } */
 
 .appointment-button {
     border: none;
@@ -106,6 +118,18 @@ h1, h2, h3 {
      
     padding-top: 15px;
     }
+
+
+.mobile-navigation{
+    display: none;
+}
+
+.desktop-navigation{
+    display: flex;
+    height: 145px;
+    justify-content: space-between;
+}
+
 
 
 }
