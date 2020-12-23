@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Here we import the Boostrap CSS stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- Add a link to your custom CSS here -->
+    <link rel="stylesheet" href="./css/main.css">
+ 
+
+    <title>Responsive grid project</title>
+</head>
+<header>
+	<section id="home">
+		<nav class="navbar navbar-expand-md navbar-dark bg-info">
+			<a class="navbar-brand " href="#">Maria Hope,Ph.D.-Psychologist</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto ">
+					<li class="nav-item">
+						<a class="nav-link  " href="./index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link " href="./about.html">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link  " href="./services.html">Services</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link " href="#">Blog</a>
+					</li>
+				    <li class="nav-item ">
+						<a class="nav-link active" href="#">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</section>
+</header>
+<body>
+<main>
+    <section class="contact">
+        <div class="container bg-light my-5">
+            <div class="row ">
+                <div class="col-12 text-center p-5">
+                    <h2>Contact Us</h2>
+                </div>                
+            </div>
+
+            <form>
+                <div class="row">
+                    <div class=" col-md-6 col-lg-4">
+                        <label for="inputEmail">Email</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                    </div>
+                    <div class=" col-md-6 col-lg-4">
+                        <label for="inputFirstName">First Name</label>
+                        <input type="text" class="form-control" id="inputFirstName" placeholder="First Name">
+                    </div>
+                    <div class=" col-md-6 col-lg-4">
+                        <label for="inputLastName">Last Name</label>
+                        <input type="text" class="form-control" id="inputLastName" placeholder="Last Name">
+                    </div>
+                    <div class=" col-md-6 col-lg-4">
+                        <label for="inputPhoneNumber">Phone Number</label>
+                        <input type="number" class="form-control" id="inputPhoneNumber" placeholder="Phone Number">
+                    </div>
+
+                    <div class="col-md-12 col-lg-8">
+                        <label for="inputAddress">Address</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <label for="inputCity">City</label>
+                        <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="col-md-2 col-lg-4">
+                        <label for="inputPostCode">Post Code</label>
+                        <input type="text" class="form-control" id="inputPostCode">
+                      </div>
+                    
+                     
+                    <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                        I acknowledge data will be saved by the team
+                        </label>
+                    </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary col-4 c offset-4">Submit</button>
+
+                </div>
+          
+              </form>
+                  
+
+        </div>
+
+        
+
+    </section>   
+
+    
+    
+</main>
+
+
+    <!-- Add your markup here -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+</body>
+
+</html>
