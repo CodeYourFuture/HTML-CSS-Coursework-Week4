@@ -1,3 +1,172 @@
-/* Add your custom CSS here */
+/* General CSS */
 
-/* Dont' forget to link this file to your HTML in the <head> */
+body  {
+background: linear-gradient(to bottom, white 0%,white 30%,white 30%, #E6DACD 30%,#E6DACD 100%); 
+text-align:center;
+margin:0px;
+overflow-x: hidden;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+h1{
+    font-weight:700;
+    font-size:2.5em;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 1.8em;
+}
+
+/* CSS for Top Navigation */
+
+.wrapsquare{
+    display:flex;
+    margin: 10px 0px 0px 0px;
+}
+
+.square {
+  height: 16px;
+  width: 16px;
+  background-color:#0150FD;
+  margin:9px;
+}
+
+.toptext{
+    text-align:left;
+}
+
+
+.toptext p{
+    margin:0px 0px 0px 10px;
+}
+
+header a{
+    font-size:.7em;
+}
+
+/* CSS for Profile Section */
+
+
+.float {
+    background-color:#F4ECE6;
+    margin: 2% 10%;
+    filter: drop-shadow(-10px 10px 3px lightgrey);
+}
+
+.roundimage {
+  border-radius: 50%;
+  padding: 20%;
+}
+
+.line{
+  height:2px;
+  width: 20%;
+  background-color:#0150FD ;
+  margin:0px 40%;
+}
+
+.buttonrow{
+    padding:20px;
+}
+
+.button1{
+    background-color: #0150FD;
+    color:white;
+    border-radius: 20px;
+    padding: 3px 20px;
+    border:solid #0150FD 2px;
+    font-weight:600;
+    font-size:1.3em;
+    margin:10px;
+}
+
+.button2{
+    border-radius: 20px;
+    padding: 3px 16px;
+    border:solid black 2px;
+    font-weight:600;
+    font-size:1.3em;
+    margin:10px;
+}
+
+
+.socials {
+    padding: 0px 7px;
+}
+
+.whitebg{
+    background-color: white;
+    margin: 13px;
+    padding: 20px 0px;
+}
+
+
+/* CSS for Blurb */
+
+.blurbwrapper {
+    padding: 0px 0px 20px 0px;
+    margin: 20px 0px 0px 0px;
+}
+
+.blurb{
+    text-align:left;
+}
+
+
+/* CSS for Footer */
+
+
+footer{
+    background-color: white;
+    padding:30px 0px 0px 0px;
+}
+
+.lastline {
+    
+    margin-block-end: 0em;
+    padding-block-end: 1em;
+}
+
+/* Responsive CSS */
+
+
+@media (max-width:768px){
+    .hidesmall{
+    display:none;
+}
+
+.buttonrow2 {
+    display:none;
+}
+}
+
+@media (min-width:768px){
+header{
+    background-color: white;
+}
+body  {
+background: linear-gradient(to left, white 0%,white 70%,white 70%, #E6DACD 70%,#E6DACD 100%); 
+}
+.main {
+margin:100px;
+}
+.buttonrow {
+    display:none;
+}
+}
+
+
+@media (min-width:1050px){
+header a{
+    font-size:.8em;
+}}
+
+@media (min-width:1150px){
+header a{
+    font-size:.9em;
+}}
