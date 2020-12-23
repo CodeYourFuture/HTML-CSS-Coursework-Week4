@@ -3,14 +3,67 @@
 /* Dont' forget to link this file to your HTML in the <head> */
 
 /* Header*/
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin-bottom: 15px;
+}
+
+h1, h2, h3 {
+    padding: 13px 0;
+}
+
+/* Appointment Button*/
 
 .menu-small{
-        background-color: blue;
+    display: none;
     }
 
+.appointment-button {
+    border: none;
+    padding: 10px 20px;
+    background-color: rgba(207, 244, 236, 1);
 
+    }
+    
+.appointment-button:hover {
+    background-color: rgba(94, 94, 93, 1);
+    }
+
+.mint-container{
+    padding: 100px 15px 60px 15px;
+    background-color: rgba(207, 244, 236, 1);
+    
+}
+
+
+ /* Main content */
+
+.primary-content {
+    text-align: center;
+    
+}
+
+.hero-main {
+    background-color: rgba(207, 244, 236, 1);
+}
+
+.center-text{
+    padding-bottom: 120px;
+}
+
+.about-psychologist{
+    background-color: rgb(242, 242, 242);
+    padding-bottom: 75px;
+
+
+}
 /* Footer*/
 
 .footer{
-        align-items: center;
-    }
+    align-items: center;
+    background-color:white;
+}

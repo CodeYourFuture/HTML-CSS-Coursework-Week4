@@ -16,28 +16,36 @@
 <body>
     <header>
         <nav class="manu-medium ">
-            <div class="menu-medium ">
-                <button class="appointment-button">Book an Appointment</button>
-            </div>    
-
-                <div class="menu-small"></div>
-                    <div class="menu-small col-7 offset-sm-4">
-                        <button class="appointment-button">Book an Appointment</button>
-                    </div>
                 
-                    <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="col-1 navbar-toggler-icon fas fa-bars"></i>
-                    </button>
+                   <div class="hamburguer-menu" id="coll-navigation-bar">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-                    <div class="hamburguer-menu" id="coll-navigation-bar">
-                        <ul>
-                            <li class="nav-obj"><a class="nav-link" href="#Home">Home</a></li>
-                            <li class="nav-obj"><a class="nav-link" href="#About">About</a></li>
-                            <li class="nav-obj"><a class="nav-link" href="#Services">Services</a></li>
-                            <li class="nav-obj"><a class="nav-link" href="#Blog">Lessons</a></li>
-                            <li class="nav-obj"><a class="nav-link" href="#Contact">About</a></li>
-                        </ul>
+                        <nav class="navbar navbar-light bg-light">
+                            <form class="form-inline">
+                              <button class="btn btn-outline-success" type="button">Book an appointment</button>
+                            </form>
+                          </nav>
+                    
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                          <div class="navbar-nav">
+                            <a class="nav-item nav-link active" href="#">Home</a>
+                            <a class="nav-item nav-link" href="#">About</a>
+                            <a class="nav-item nav-link" href="#">Services</a>
+                            <a class="nav-item nav-link" href="#">Blog</a>
+                            <a class="nav-item nav-link" href="#">Contact</a>
+                          </div>
+                        </div>
+                      </nav>
                     </div>
+        
+                        <div class="menu-small"></div>
+                            <div class="menu-small col-7 offset-sm-4">
+                                <button class="appointment-button">Book an Appointment</button>
+                            </div>
                     
                     <h1 class="col-12 text-center">Maria Hope, Ph.D. - Psychologist</h1>
 
@@ -49,9 +57,9 @@
 
     <main class="primary-content">
         <section class="hero-main">
-            <img class="INSERT BOOTSTRAP HERE?" src="./img/suculent.webp" alt="Succulent plant">
+            <img class="col-12" src="./img/suculent.webp" alt="Succulent plant">
 
-            <section class="col-12 text-center">
+            <section class="mint-container col-12 col-md-6 text-center">
                 <h3>Online Therapy for Emotional Health</h2>
                 <p>I am a description. Click here to edit.</p> 
             </section>
@@ -59,7 +67,7 @@
 
         <section class="about-maria">
             <article class="about-psychologist">
-                <div class="BOOTSTRAP" >
+                <div class="col-md-8 offset-md-2" >
                     <h3 class="col-12 text-center">About</h3>
                     <h2 class="col-12 text-center">Maria Hope</h2>
                     <p class="col-12 text-center"> I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.</p> 
@@ -76,5 +84,9 @@
         </div>
     </footer>
 </body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </html>
