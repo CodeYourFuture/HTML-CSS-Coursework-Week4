@@ -2,6 +2,24 @@
 
 /* Dont' forget to link this file to your HTML in the <head> */
 
+.navbar-tops {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobile-menu {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: aliceblue;
+  top: 0;
+}
+
+.mobile-menu-hidden{
+    display: none;
+}
+
+
 /* Header*/
 body{
     margin: 0;
@@ -22,17 +40,19 @@ h1, h2, h3 {
     padding-right: 15px;
 }
 
+
 /* Appointment Button*/
 
-.menu-small{
+/* .menu-small{
     display: none;
-    }
+    } */
 
 .appointment-button {
     border: none;
     padding: 10px 20px;
     background-color: rgba(207, 244, 236, 1);
     margin-left: 10px;
+    align-items: flex-end;
     }
     
 .appointment-button:hover {
@@ -70,4 +90,22 @@ h1, h2, h3 {
 .footer{
     align-items: center;
     background-color:white;
+}
+
+
+@media only screen and (min-width: 750px) {
+
+ .navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-left: 500px;
+}
+
+.appointment-button {
+     
+    padding-top: 15px;
+    }
+
+
 }
