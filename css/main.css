@@ -1,3 +1,15 @@
 /* Add your custom CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
+
+section {
+  width: 100%;
+  height: auto;
+}
+.hero {
+  /* background-color: blue; */
+  background-image: url("../img/9c608a_2a78cf5937414d0e9a597504d68daafc_mv2_d_6046_4035_s_4_2.webp");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-bottom: 150%;
+}
