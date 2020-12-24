@@ -1,15 +1,24 @@
 /* Add your custom CSS here */
 
-/* Dont' forget to link this file to your HTML in the <head> */
+@import "font.css"; /* Using a string */
 
+/* Dont' forget to link this file to your HTML in the <head> */
+body{
+background-image: url("/img/bg.jpg");
+ background-repeat: repeat-y ;
+background-size: 40%;
+position: relative;
+
+}
 li,a{
   list-style: none;  
   text-decoration: none;
 }
-.left-column{
-    background-color: #e6dace;
-    height: 100vh;
-}
+a{color: #000;}
+
+
+
+
 
 .skill{
     font-weight: lighter;
@@ -21,14 +30,84 @@ li,a{
     font-weight: 700;
 }
 
-.rec{
-    background-color: blue;
-    height: 20px;
-    width: 20px;
-}
 
 
 .copy-right{
     font-size: 0.8rem;
+}
+
+footer{
+    background-color: #fff;
+}
+
+
+
+.card-right-color{
+    background-color: #f4ece6;
+    box-shadow: -4px 12px 21px -4px rgba(0,0,0,0.75);
+-webkit-box-shadow: -4px 12px 21px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: -4px 12px 21px -4px rgba(0,0,0,0.75);
+}
+
+.hello{
+    font-size: 6rem;
+     font-weight: bold;
+}
+
+.who_i_im{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+
+hr.brd{
+   border-top: 6px solid blue;
+   width: 20%;
+   margin: auto;
+
+}
+
+.project-manager{
+    font-weight: lighter;
+      letter-spacing: 0.4rem;
+      font-size: 1.5rem;
+}
+
+
+.icons_size{
+    font-size: 1.5rem;
+}
+.footer-icons{
+    font-size: 1.2rem;
+}
+
+.btn-resume{
+padding: 7px;
+background-color: blue;
+color: white;
+border-radius: 15px;
+width: 30%;
+border: 0px;
+outline: none;
+font-size: 1rem;
+font-weight: bold;
+
+}
+
+.btn-project{
+border-radius: 15px;
+padding: 7px;
+border: 1px solid #000;
+width: 30%;
+color: #000;
+background-color: white;
+font-size: 1rem;
+font-weight: bold;
+
+}
+
+.maya-name{
+    font-weight: bold;
+    line-height: 25px;
 }
 
