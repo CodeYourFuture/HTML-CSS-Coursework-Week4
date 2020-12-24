@@ -1,26 +1,3 @@
-/* 
-
-**Headings:** Libre Baskeville 400  
-https://fonts.google.com/specimen/Libre+Baskerville  
-**Subheadings:** Libre Baskeville Italic 400  
-https://fonts.google.com/specimen/Libre+Baskerville  
-**Body:** Quicksand Light 300  
-https://fonts.google.com/specimen/Quicksand  
-
-font-family: 'Libre Baskerville', serif;
-font-family: 'Quicksand', sans-serif;
-
-
-Text colour: #2F2F2E  
-  
-Lime green: #E2F6CD secondary
-Light grey: #F2F2F1  neutral
-Light mint: #CFF4EC  primary
-Medium mint: #94D6C8  primary-dark
-Dark green: #4D7369     btn-hover-color  */
-/* Add your custom CSS here */
-
-
 :root {
     --primary: #CFF4EC;
     --primary-dark: #94D6C8;
@@ -33,8 +10,12 @@ Dark green: #4D7369     btn-hover-color  */
 
     --btn-color: #4D7369;
 
-    --white: #ffffff;
+    --white: #d3d3d3;
+
+    --light-gray: #969696;
 }
+
+
 
 body{
     box-sizing: border-box;
@@ -111,39 +92,6 @@ a {
     
 }
 
-/* HERO */
-.hero {
-    background-color: var(--primary);
-}
-
-
-
-/* ABOUT */
-
-.about-text {
-    background-color: var(--neutral);
-    padding-bottom: 120px;
-}
-
-.about>img {
-    margin-top: -180px;
-    height: auto;
-}
-
-/* THERAPY SECTION */
-
-.indiv-therapy {
-    background-color: var(--secondary);
-}
-
-.group-therapy {
-    background-color: var(--neutral);
-}
-
-.couples-therapy {
-    background-color: var(--primary);
-}
-
 /* ARTICLES */
 
 .article-heading {
@@ -152,18 +100,50 @@ a {
     line-height: 1.7em;
     padding-top: 60px;
     padding-bottom: 20px;
+    text-align: center;
 }
 
 .article-section {
     background-color: var(--neutral);
 }
 
-.article-carousel {
-    background-color: var(--white);
-    padding: 30px;
-    margin: 20px;
+.search-box {
+    background-color: var(--primary);
+    color: var(--white);
+}
+.input-box {
+    background: rgba(255, 255, 255, 0);
+    border: none;
+    padding-left: 10px;
 }
 
+input-box:focus{
+    display: none;
+}
+
+.blog-info {
+    margin-top: 40px;
+}
+
+.blogger-details>p {
+    font-size: 0.8em;
+    margin: 0 0 0 20px;
+}
+
+.fa-user:before{
+    background-color: var(--light-gray);
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 0;
+}
+
+.article-details> h2 {
+    font-size: 1.9em
+}
+.article-box {
+    padding-bottom: 15px;
+}
 .article-btn {
     background-color: var(--primary);
     border: none;
@@ -189,12 +169,13 @@ a {
 .chat-icon-fixed-padding {
     padding: 20px 40px;;
 }
-
 /* FOOTER */
 
 .footer-section {
     padding: 60px 0 80px 0;
 }
+
+
 
 @media only screen and (min-width: 768px) {
     section {
@@ -229,27 +210,15 @@ a {
         display: none;
     }
 
-    /* HERO */
-
-    section, article {
-        min-height: 500px;
+    /* BLOG ARTICLES */ 
+    .search-box {
+        background-color: var(--neutral);
+        color: var(--white);
     }
-
-    .hero-text {
-        padding-top: 13em;;
+    .blogger-details {
+        margin-left: -15px;
     }
-
-    .hero-md-img {
-        background-image: url(../img/erol-ahmed-aIYFR0vbADk-unsplash.jpg);
-        background-size: cover;
-        background-position-x: center;
-    }
-
-    /* ARTICLE */
-    .article-md {
-        background-color: var(--white);
-    }
-
+    
     /* CHAT ICON */
 
     .chat-icon-fixed-padding {

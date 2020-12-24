@@ -111,67 +111,32 @@ a {
     
 }
 
-/* HERO */
-.hero {
-    background-color: var(--primary);
-}
+/* CONTACT SECTION */
 
-
-
-/* ABOUT */
-
-.about-text {
-    background-color: var(--neutral);
-    padding-bottom: 120px;
-}
-
-.about>img {
-    margin-top: -180px;
-    height: auto;
-}
-
-/* THERAPY SECTION */
-
-.indiv-therapy {
+.contact-section {
     background-color: var(--secondary);
 }
 
-.group-therapy {
-    background-color: var(--neutral);
-}
-
-.couples-therapy {
-    background-color: var(--primary);
-}
-
-/* ARTICLES */
-
-.article-heading {
-    font-style: italic;
-    font-size: 1.4em;
-    line-height: 1.7em;
-    padding-top: 60px;
-    padding-bottom: 20px;
-}
-
-.article-section {
-    background-color: var(--neutral);
-}
-
-.article-carousel {
-    background-color: var(--white);
-    padding: 30px;
-    margin: 20px;
-}
-
-.article-btn {
-    background-color: var(--primary);
+.contact-btn {
+    background-color: var(--primary-dark);
     border: none;
     margin-top: 30px;
     height: 40px;
 }
-.article-btn:hover {
+
+.contact-btn:hover {
     background-color: var(--btn-color);
+}
+
+.google-maps-img {
+    position: relative;
+    height: 300px;
+    overflow: hidden; 
+}
+
+.google-img {
+    position: absolute;
+    left: -600px
 }
 
 /* CHAT ICON */
@@ -197,9 +162,6 @@ a {
 }
 
 @media only screen and (min-width: 768px) {
-    section {
-        margin-bottom: 50px;
-    }
 
     /* HEADER  */
     header {
@@ -229,25 +191,13 @@ a {
         display: none;
     }
 
-    /* HERO */
-
-    section, article {
-        min-height: 500px;
+    /* GOOGLE MAPS */
+    .google-maps-img {
+        max-height: 250px;
     }
-
-    .hero-text {
-        padding-top: 13em;;
-    }
-
-    .hero-md-img {
-        background-image: url(../img/erol-ahmed-aIYFR0vbADk-unsplash.jpg);
-        background-size: cover;
-        background-position-x: center;
-    }
-
-    /* ARTICLE */
-    .article-md {
-        background-color: var(--white);
+    
+    .google-img {
+        left: 0;
     }
 
     /* CHAT ICON */
