@@ -2,23 +2,38 @@
     /* border: 1px solid #008000; */
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
-.col a {
-    background-color: red;
+body {
+    /* font-family: 'Quicksand', sans-serif; */
 }
 
-.hero {
-    background-color: #b2fef7;
-    /* height: 100vh; */
-}
-
-svg {
+img {
     cursor: pointer;
 }
 
 a {
     text-decoration: none;
     color: #000;
+}
+
+.navbar-menu:hover {
+    color: rgb(238, 186, 168);
+    background-color: #b2fef7;
+    transition: all 0.3s ease;
+}
+
+.appointment-box {
+    background-color: #b2fef7;
+}
+
+.nav-item a:hover {
+    background-color: rgb(233, 179, 159);
+    border-radius: 3px;
+}
+
+.hero {
+    background-color: #b2fef7;
 }
 
 .therapy-box1 {
@@ -50,7 +65,24 @@ a {
     justify-content: space-between;
 }
 
+.articles-btn {
+    background-color: #b2fef7;
+    margin: 3%;
+}
+
 footer img {
     width: 2rem;
-    margin-left: 2rem;
+    margin-left: 1rem;
+}
+
+@media (max-width: 768px) {
+
+    .social-media-icons {
+        text-align: center;
+    }
+
+}
+
+@media (min-width:769px) {
+
 }
