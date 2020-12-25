@@ -2,14 +2,48 @@
 
 /* Dont' forget to link this file to your HTML in the <head> */
 
-section {
+/* section {
   width: 100%;
   height: auto;
+} */
+
+/* height: 100%; */
+/* margin: 0; */
+
+.hero-image {
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
 }
-.hero {
-  /* background-color: blue; */
-  background-image: url("../img/9c608a_2a78cf5937414d0e9a597504d68daafc_mv2_d_6046_4035_s_4_2.webp");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  padding-bottom: 150%;
+.hero-two {
+  text-align: center;
+  background-color: #cff4ec;
+}
+/* this was also achievable through inline html style and using bootstrap spacing properties */
+.down-icon {
+  color: black;
+  width: 30px;
+  height: 30px;
+
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.middle-page {
+  height: 700px;
+  background-color: #f2f2f1;
+}
+.middle-page h2 {
+  font-size: 25px;
+}
+.middle-page h3 {
+  font-size: 2.5rem;
+}
+.middle-page figure {
+  /* width: 300px;
+  max-height: 400px; */
+}
+.middle-page figure img {
+  max-width: 75%;
+  max-height: auto;
+  transform: translate(0%, 10%);
 }
