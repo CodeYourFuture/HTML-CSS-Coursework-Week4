@@ -3,6 +3,7 @@
 @import "font.css"; /* Using a string */
 
 /* Dont' forget to link this file to your HTML in the <head> */
+
 body{
 background-image: url("/img/bg.jpg");
  background-repeat: repeat-y ;
@@ -17,7 +18,10 @@ li,a{
 a{color: #000;}
 
 
-
+.box{
+padding-bottom: 14px; 
+  
+}
 
 
 .skill{
@@ -111,3 +115,27 @@ font-weight: bold;
     line-height: 25px;
 }
 
+@media(max-width:980px){
+  .skill{
+      display: flex;
+      flex-direction: row;
+  }
+
+  .test {
+      position: relative;
+     margin-top: 100px;
+     z-index: 19;
+  }
+
+  .small-bg{
+     background: transparent;
+      
+  }
+
+  body{
+      background-image: url("/img/bg.jpg");
+ background-repeat: repeat-y ;
+background-size: 100%;
+position: relative;
+  }
+} 
