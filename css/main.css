@@ -2,11 +2,11 @@
     /* border: 1px solid #008000; */
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
-
 body {
     /* font-family: 'Quicksand', sans-serif; */
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
 img {
     cursor: pointer;
@@ -96,4 +96,10 @@ footer img {
 
 .experience-container div {
     padding-left: 5%;
+}
+
+/* Services.css */
+
+.therapy p {
+    /* max-width: 80%; */
 }
