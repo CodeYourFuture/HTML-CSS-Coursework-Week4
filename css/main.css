@@ -18,7 +18,7 @@ a {
 }
 
 .navbar-menu:hover {
-    color: rgb(238, 186, 168);
+    color: #7ec7c0;
     background-color: #b2fef7;
     transition: all 0.3s ease;
 }
@@ -27,9 +27,15 @@ a {
     background-color: #b2fef7;
 }
 
+.appointment-box:hover {
+    background-color: rgb(228, 149, 120);
+    transition: all 0.5s ease;
+}
+
 .nav-item a:hover {
-    background-color: rgb(233, 179, 159);
+    background-color: #b2fef7;
     border-radius: 3px;
+    transition: all 0.4s ease;
 }
 
 .hero {
@@ -100,6 +106,12 @@ footer img {
 
 /* Services.css */
 
-.therapy p {
-    /* max-width: 80%; */
+
+/* Blog.css */
+
+
+/* Contact.css */
+
+.contact-container {
+    background-color: #E2F6CD;
 }

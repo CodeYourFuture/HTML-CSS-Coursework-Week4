@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Here we import the Boostrap CSS stylesheet -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet"> -->
+    <title>Responsive grid project</title>
+  </head>
+
+  <body>
+
+    <!-- Navigation Menu -->
+    <header>
+      <div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light pt-lg-0 pb-lg-0">
+        <div class="container-fluid">
+          <div class="col-md-7 offset-md-1">
+            <a class="navbar-brand appointment-box px-3 py-2 border-2 rounded fw-lighter fs-6" href="#">Book an Appointment</a>
+          </div>   
+          <button class="navbar-toggler navbar-menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse navbar-links m-3" id="navbarNav">
+            <ul class="navbar-nav text-center">
+              <li class="nav-item">
+                <a class="nav-link active fw-bold" aria-current="page" href="/html/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link $blue-100" href="/html/about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/html/services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/html/blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/html/contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="text-center m-4">
+        <a class="fst-italic fs-4 fw-lighter" href="#">Maria Hope, Ph.D. -Psychologist</a>
+      </div>
+    </header>
+
+    <!-- Section One -->
+    <section>
+      <div class="container-fluid contact-container">
+        <div class="row text-center">
+          <div class="col-8 mx-auto">
+            <h4 class="p-3 fw-light fst-italic">Contacts</h4>
+            <h1 class="p-md-3">I'm a title. ​Click here to edit me.</h1>
+            <p class="p-md-3">I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+          </div>  
+        </div>
+        <div class="row p-4 justify-content-center">
+          <div class="col-md-4 mb-3">
+            <input type="text" class="form-control" placeholder="Name" aria-label="First name">
+          </div>
+          <div class="col-md-4 mb-3">
+            <input type="email" class="form-control" placeholder="Email"> 
+          </div>
+          <div class="col-md-8 mb-2">
+            <input type="text" class="form-control" placeholder="Subject" aria-label="Subject">
+          </div>
+          <div class="col-md-8 mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label"></label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+          </div>
+          <div class="col-md-8">
+            <button type="button" class="btn btn-success col-12">Send</button>
+          </div>
+        </div>
+      </div>  
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container footer-wrapper mt-3 mb-3">
+        <div class="row">
+          <div class="col-md-6 text-xs-center social-media-icons">
+            <a href="#"><img src="/img/facebook-icon.svg" alt="Facebook"/></a>
+            <a href="#"><img src="/img/twitter-icon.svg" alt="Twiter"/></a>
+          </div>
+          <div class="col-md-6 text-center mt-2">
+            <p>© 2023 by Maria Hope, Ph.D. Proudly created by Wix.com</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  </body>
+</html>
