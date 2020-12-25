@@ -90,3 +90,10 @@ footer img {
 
 /* About.css */
 
+.experience-container {
+    background-color: #CFF4EC;
+}
+
+.experience-container div {
+    padding-left: 5%;
+}
