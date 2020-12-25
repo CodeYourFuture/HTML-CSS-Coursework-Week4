@@ -1,3 +1,51 @@
 /* Add your custom CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
+header{
+  background-color: white;
+}
+ul {
+  list-style-image: url('sqpurple.gif');
+}
+
+.menue1{
+  width: 35px;
+  height: 5px;
+  background-color: blue;
+  margin: 6px 0;
+  
+}
+body{
+  background-color: wheat;
+}
+.backgroundcolortop{
+  background-color:white;
+  height: 200px;
+  width: 100%;
+}
+div.transbox {
+  margin-left: 60px;
+  margin-right: 20px;
+  background-color:antiquewhite;
+  border: 1px solid black;
+  opacity: 0.6;
+  height: 300px;
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+
+.image{
+  border-radius: 50%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.resumebutton{
+  background-color: antiquewhite;
+}
