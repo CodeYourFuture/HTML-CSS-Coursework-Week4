@@ -19,7 +19,7 @@
   align-items: center;
   justify-content: center;
   transition: all 0.5s ease-in-out;
- 
+  z-index: 100;
 }
 .line {
   width: 40px;
@@ -76,6 +76,60 @@
   background-color: #000;
 }
 
+
+.mobile_nav {
+ background-color: #f4ece6;
+  position: fixed;
+  right: 0;
+  bottom: 0px;
+  top: 0;
+  height:0%;
+  transition: all 0.3s ease-out;
+  text-align: center;
+ width: 100%;
+ 
+}
+
+.mobile_nav.openNav {
+ height: 100vh;
+   /* width: 100%; */
+
+  
+}
+
+.mobile_nav.openNav li{
+    opacity: 1;
+display: block;
+
+
+}
+
+.mobile_nav_links li {
+    padding-top: 40px;
+    list-style: none;
+    transition: all 0.8s ease-in-out;
+    opacity: 0;
+   display: none;
+   
+}
+
+.mobile_nav_links li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.3rem;
+  font-weight: bold;
+  
+}
+.links:hover{
+  color: blue;  
+}
+
+.links:active {
+    color: blue;
+}
+.mobile_nav_links{
+    margin-top: 150px;
+}
 
 
   .small-bg{
@@ -137,10 +191,13 @@ font-weight: bold;
     line-height: 25px;
 }
 
-hr.brd{
-   border-top: 6px solid blue;
-   width: 20%;
+.brd{
+   border: 1px solid blue;
+   width: 25%;
    margin: auto;
+
+  
+  
 
 }
 
@@ -262,7 +319,8 @@ border: 0px;
 outline: none;
 font-size: 1rem;
 font-weight: bold;
-
+cursor: pointer;
+transition: all 0.5s ease-in-out;
 }
 
 .btn-project{
@@ -274,10 +332,18 @@ color: #000;
 background-color: white;
 font-size: 1rem;
 font-weight: bold;
-
+cursor: pointer;
+transition: all 0.5s ease-in-out;
 }
 
-
-
+.btn-project:hover{
+    background-color: blue;
+    color: #fff;
+}
+.btn-resume:hover{
+    border: 1px solid blue;
+    color: #000;
+    background-color: #fff;
+}
 
 }
