@@ -9,9 +9,15 @@
 
 /* height: 100%; */
 /* margin: 0; */
+.top-page {
+  height: 800px;
+}
+.hero {
+  height: 100%;
+}
 
 .hero-image {
-  width: 100%;
+  max-width: 100%;
   min-height: 100%;
   object-fit: cover;
 }
@@ -38,12 +44,101 @@
 .middle-page h3 {
   font-size: 2.5rem;
 }
-.middle-page figure {
-  /* width: 300px;
-  max-height: 400px; */
-}
+/* .middle-page figure {
+  width: 300px;
+  max-height: 400px;
+} */
 .middle-page figure img {
-  max-width: 75%;
-  max-height: auto;
+  max-width: 80%;
+  max-height: 600px;
   transform: translate(0%, 10%);
+}
+
+.right-icon {
+  color: black;
+  width: 30px;
+  height: 30px;
+}
+.bottom-page {
+  transform: translate(0, 220px);
+}
+.article-one {
+  height: 600px;
+  background-color: #e2f6cd;
+}
+.article-two {
+  height: 600px;
+  background-color: #f2f2f1;
+}
+.article-three {
+  height: 600px;
+  background-color: #cff4ec;
+}
+.bottom-page a {
+  text-decoration: none;
+  font-size: 2.5rem;
+  color: black;
+  padding: 10px;
+}
+article .view-more {
+  font-size: 1rem;
+  width: 80%;
+  max-height: auto;
+  background-color: #94d6c8;
+}
+
+.blogs-page {
+  height: 700px;
+  /* padding-bottom: 150px; */
+  background-color: #f2f2f1;
+}
+.blogs-page h5 {
+  padding-top: 100px;
+  padding-bottom: 60px;
+}
+.blogs {
+  background-color: white;
+  height: 100%;
+  margin-bottom: 40px;
+}
+
+.blogs figure {
+  width: 290px;
+  height: 165px;
+  margin-bottom: 0;
+}
+.blogs figure img {
+  width: 100%;
+  height: 100%;
+}
+.blogs-border {
+  width: 100%;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid rgb(231, 230, 230);
+}
+.blogs a {
+  text-decoration: none;
+  color: black;
+}
+.blogs-comment {
+  border-top: 1px solid silver;
+  font-size: 0.75rem;
+
+  display: flex;
+  justify-content: space-around;
+
+  padding-top: 15px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.view-article-cont {
+  padding-left: 20px;
+  margin-top: 175px;
+}
+#viewArticle {
+  font-size: 1rem;
+  padding: 12px;
+  background-color: #94d6c8;
 }
