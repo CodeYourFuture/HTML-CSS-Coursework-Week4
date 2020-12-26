@@ -1,20 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- Here we import the Boostrap CSS stylesheet -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <!-- Add a link to your custom CSS here -->
-
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <title>Responsive grid project</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <header class="container">
+      <ul class="row my-row">
+        <li class="col-10 rect">
+          <h4>Maya Nelson</h4>
+          <p>Project manager</p>
+        </li>
+        <!-- <li class="col-6">Project Manager</li> -->
+        <li class="col-2">
+          <img class="hamburger" src="./img/hamburger_menu_159010.png" />
+        </li>
+      </ul>
+    </header>
 
-    <!-- Add your markup here -->
+    <main class="container-fluid main">
+      <div class="container hero-container">
+        <div class="row">
+          <div class="col-12 offset-3">
+            <img
+              class="hero-img"
+              src="https://static.wixstatic.com/media/2e2a49_bd3a1599bc1b4265a01b2754b99b8536~mv2_d_5760_3840_s_4_2.jpeg/v1/crop/x_2703,y_43,w_2199,h_2205/fill/w_240,h_240,al_c,q_80,usm_0.66_1.00_0.01/AdobeStock_230407429.webp"
+              alt=""
+            />
+          </div>
+          <!-- <p class="col-12 col-md-4 offset-md-4 name">random text</p> -->
+          <h1 class="col-12 col-md-4 offset-md-4 name">Maya Nelson</h1>
+        </div>
+        <hr />
+        <div class="row">
+          <button type="button" class="btn btn-primary">Primary</button>
+          <!-- <button class="col-4 offset-1 hero-button">Resume</button> -->
+          <button class="col-4 offset-2 hero-button">Projects</button>
+        </div>
+        <ul class="row">
+          <li class="col"><a href="">F</a></li>
+          <li class="col"><a href="">T</a></li>
+          <li class="col"><a href="">L</a></li>
+          <li class="col"><a href="">I</a></li>
+        </ul>
+      </div>
+    </main>
 
-</body>
+    <!-- <div class="row">
 
+    <h4 class="col name">Maya Nelson</h4>
+    <p class="col"> Project manager</p>
+    </div> -->
+
+    <!-- nav bar for bigger screen-->
+    <!-- <div class="row">
+        <div class="col nav-bar">
+          <ul class="row nav-list">
+            <li class="col-3"><a href="#">About me</a></li>
+            <li class="col-3"><a href="#">Resume</a></li>
+            <li class="col-3"><a href="#">Projects</a></li>
+            <li class="col-3"><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div> -->
+  </body>
 </html>

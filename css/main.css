@@ -1,3 +1,83 @@
 /* Add your custom CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
+
+/* font-family: 'Poppins', sans-serif;  */
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  background-color: aqua;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.my-row {
+  background: rgb(187, 123, 247);
+}
+
+.nav-list {
+  background: pink;
+  display: none;
+}
+
+.hamburger {
+  width: 30px;
+  /* text-align: right; */
+}
+
+/* .blue-rect {
+  width: 20px;
+  height: 20px;
+  background: blue;
+} */
+
+.main {
+  background-color: rgb(235, 180, 109);
+  padding: 3rem 0;
+}
+
+.rect::before {
+  content: "";
+  position: absolute;
+  border: 1px solid blue;
+  background-color: blue;
+  height: 1rem;
+  top: 2.2rem;
+  left: 1.2rem; /* add more for bigger screen */
+  /* margin-top: -1em; */
+  /* transform: rotate(45deg); */
+  width: 1rem;
+}
+
+.hero-container {
+  margin: 0 auto;
+  background-color: rgb(247, 239, 224);
+}
+
+.hero-img {
+  width: 50%;
+  border-radius: 50%;
+  border: 2px solid yellow;
+  text-align: center;
+  margin: 1rem auto;
+}
+
+.name {
+  border: 2px solid yellow;
+  text-align: center;
+}
+
+.hero-button {
+  font-size: 1.4rem;
+}
