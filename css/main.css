@@ -1,3 +1,24 @@
 /* Add your custom CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
+
+body {
+  font-family: "Quicksand", sans-serif;
+  /* font-family: 'Libre Baskerville', serif; */
+}
+
+.button p {
+  font-weight: lighter;
+  padding: 20px 0px;
+  background-color: #cff4ec;
+  font-family: "avenir-lt-w01_35-light1475496", sans-serif;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 16px;
+}
+
+.title p {
+  font-family: "Libre Baskerville", serif;
+  font-size: 16.5px;
+  font-style: italic;
+}
