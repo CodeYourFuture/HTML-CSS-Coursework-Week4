@@ -1,7 +1,7 @@
 /* General CSS */
 
 body  {
-background: linear-gradient(to bottom, white 0%,white 30%,white 30%, #E6DACD 30%,#E6DACD 100%); 
+background: #E6DACD; 
 text-align:center;
 margin:0px;
 overflow-x: hidden;
@@ -27,6 +27,15 @@ h3 {
 .wrapsquare{
     display:flex;
     margin: 10px 0px 0px 0px;
+}
+
+
+.wrapsquare2{
+    display:flex;
+    margin: 10px 0px 0px 0px;
+
+padding: 60px 0px 10px 0px;
+    justify-content:center;
 }
 
 .square {
@@ -61,13 +70,14 @@ header a{
     padding:7px 0px 0px 0px;
 }
 
-/* CSS for Profile Section */
+/* CSS for Form Section */
 
 
 .float {
-    background-color:#F4ECE6;
+    background-color: white;
     margin: 2% 10%;
     filter: drop-shadow(-10px 10px 3px lightgrey);
+    padding: 2%;
 }
 
 .roundimage {
@@ -82,9 +92,12 @@ header a{
   margin:0px 40%;
 }
 
-.buttonrow{
-    padding:20px;
+.whitebg{
+    background-color: white;
+    margin: 13px;
+    padding: 20px 0px;
 }
+
 
 .button1{
     background-color: #0150FD;
@@ -95,40 +108,23 @@ header a{
     font-weight:600;
     font-size:1.3em;
     margin:10px;
+} 
+
+input[type=text] {
+  border: none;
+  border-bottom: 2px solid #0150FD;
+  height: 50px;
+  width:90%;
 }
 
-.button2{
-    border-radius: 20px;
-    padding: 3px 16px;
-    border:solid black 2px;
-    font-weight:600;
-    font-size:1.3em;
-    margin:10px;
+.form{
+    margin:7px 0px;
 }
 
-
-.socials {
-    padding: 0px 7px;
+#message {
+    
+  height: 100px;
 }
-
-.whitebg{
-    background-color: white;
-    margin: 13px;
-    padding: 20px 0px;
-}
-
-
-/* CSS for Blurb */
-
-.blurbwrapper {
-    padding: 0px 0px 20px 0px;
-    margin: 20px 0px 0px 0px;
-}
-
-.blurb{
-    text-align:left;
-}
-
 
 /* CSS for Footer */
 
@@ -161,9 +157,7 @@ footer{
 header{
     background-color: white;
 }
-body  {
-background: linear-gradient(to left, white 0%,white 70%,white 70%, #E6DACD 70%,#E6DACD 100%); 
-}
+
 .main {
 margin:100px;
 }
