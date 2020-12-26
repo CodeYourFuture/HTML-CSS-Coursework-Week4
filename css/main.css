@@ -53,7 +53,7 @@ border-radius: 15px;
 width: 30%;
 border: 0px;
 outline: none;
-font-size: 1rem;
+font-size: 0.7rem;
 font-weight: bold;
 
 }
@@ -65,7 +65,7 @@ border: 1px solid #000;
 width: 30%;
 color: #000;
 background-color: white;
-font-size: 1rem;
+font-size: 0.7rem;
 font-weight: bold;
 
 }
@@ -91,7 +91,7 @@ hr.brd{
     font-size: 1.5rem;
 }
 .footer-icons{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .who_i_im{
@@ -104,7 +104,7 @@ hr.brd{
  body{
 background-image: url("/img/bg.jpg");
 background-repeat: repeat-x ;
-background-size: 100%;
+background-size: cover;
 background-position: 100% 100% ;
 }
 
