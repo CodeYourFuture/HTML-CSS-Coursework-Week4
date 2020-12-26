@@ -3,9 +3,13 @@
 /* Dont' forget to link this file to your HTML in the <head> */
 
 /* font-family: 'Poppins', sans-serif;  */
+:root {
+  --bold-font: "Poppins", sans-serif;
+}
 
 body {
   font-family: "Quicksand", sans-serif;
+  /* font-size: 1.4rem; */
 }
 
 a {
@@ -16,14 +20,18 @@ li {
   list-style: none;
 }
 
-header {
-  background-color: aqua;
+.header {
+  /* background-color: aqua; */
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
-.my-row {
-  background: rgb(187, 123, 247);
+.header-h1 {
+  font-family: var(--bold-font);
+}
+
+.header-p {
+  text-transform: uppercase;
 }
 
 .nav-list {
@@ -36,48 +44,76 @@ header {
   /* text-align: right; */
 }
 
-/* .blue-rect {
-  width: 20px;
-  height: 20px;
-  background: blue;
-} */
-
 .main {
-  background-color: rgb(235, 180, 109);
+  background-color: #e6dace;
   padding: 3rem 0;
 }
 
-.rect::before {
+.header-h1::before {
   content: "";
   position: absolute;
   border: 1px solid blue;
   background-color: blue;
   height: 1rem;
-  top: 2.2rem;
+  top: 2.4rem;
   left: 1.2rem; /* add more for bigger screen */
-  /* margin-top: -1em; */
-  /* transform: rotate(45deg); */
   width: 1rem;
 }
 
 .hero-container {
-  margin: 0 auto;
-  background-color: rgb(247, 239, 224);
+  background-color: #f4ece6;
+  box-shadow: 1px 2px 9px 0px rgba(0, 0, 0, 0.92);
+  width: 80vw;
+  margin: 2rem auto;
 }
 
 .hero-img {
   width: 50%;
   border-radius: 50%;
-  border: 2px solid yellow;
+  /* border: 2px solid yellow; */
   text-align: center;
-  margin: 1rem auto;
+  margin: 3rem auto;
 }
 
 .name {
-  border: 2px solid yellow;
+  /* border: 2px solid yellow; */
   text-align: center;
 }
 
+hr.blue-line {
+  border-top: 1px solid rgb(3, 3, 255);
+  opacity: 1;
+  width: 30vw;
+  margin: 1rem auto;
+}
+
 .hero-button {
-  font-size: 1.4rem;
+  text-align: center;
+  display: inline-block;
+  font-size: 12px;
+  font-family: var(--bold-font);
+  border-radius: 18px;
+  text-transform: uppercase;
+}
+
+.resume-btn {
+  background-color: blue;
+  border: 2px solid blue;
+  color: white;
+}
+
+.resume-btn:hover {
+  background-color: #f4ece6;
+  color: black;
+}
+
+.projects-btn {
+  border: 2px solid black;
+  background-color: inherit;
+}
+
+.projects-btn:hover {
+  background-color: blue;
+  border: 2px solid blue;
+  color: white;
 }
