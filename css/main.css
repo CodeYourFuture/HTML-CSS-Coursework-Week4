@@ -1,5 +1,5 @@
 /* Add your custom CSS here 
- Dont' forget to link this file to your HTML in the <head> */
+ Don't forget to link this file to your HTML in the <head> */
 
 * {
     margin: 0;
@@ -8,4 +8,3 @@
 body {
     font-family: "Arial",Helvetica,sans-serif;
 }
-
