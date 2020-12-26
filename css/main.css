@@ -78,7 +78,7 @@
 
 
 .mobile_nav {
- background-color: #f4ece6;
+ 
   position: fixed;
   right: 0;
   bottom: 0px;
@@ -87,29 +87,27 @@
   transition: all 0.3s ease-out;
   text-align: center;
  width: 100%;
- 
+ overflow: hidden;
+ background-color: #af9178;
 }
 
 .mobile_nav.openNav {
  height: 100vh;
    /* width: 100%; */
-
+background-color: #f4ece6;
   
 }
 
-.mobile_nav.openNav li{
-    opacity: 1;
-display: block;
-
-
-}
+/* .mobile_nav.openNav li{
+    display: block; 
+} */
 
 .mobile_nav_links li {
     padding-top: 40px;
     list-style: none;
     transition: all 0.8s ease-in-out;
-    opacity: 0;
-   display: none;
+  /* display: none; */
+   
    
 }
 
