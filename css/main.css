@@ -8,3 +8,7 @@ font-family: 'Cinzel', serif;
 body {
     font-family: 'Quicksand', sans-serif;
 }
+
+.festival-blob {
+     transform: rotate(180deg);
+}
