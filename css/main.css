@@ -1,3 +1,10 @@
 /* Add your custom CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
+h1, h2, h3 {
+font-family: 'Cinzel', serif;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
