@@ -26,8 +26,10 @@ li {
   padding-bottom: 2rem;
 }
 
-.header-h1 {
+.bold-text {
   font-family: var(--bold-font);
+  text-align: center;
+  border: 2px solid pink;
 }
 
 .header-p {
@@ -64,11 +66,12 @@ li {
   background-color: #f4ece6;
   box-shadow: 1px 2px 9px 0px rgba(0, 0, 0, 0.92);
   width: 80vw;
+  padding-bottom: 0.5rem;
   margin: 2rem auto;
 }
 
 .hero-img {
-  width: 50%;
+  width: 70%;
   border-radius: 50%;
   /* border: 2px solid yellow; */
   text-align: center;
@@ -84,7 +87,7 @@ hr.blue-line {
   border-top: 1px solid rgb(3, 3, 255);
   opacity: 1;
   width: 30vw;
-  margin: 1rem auto;
+  margin: 2rem auto;
 }
 
 .hero-button {
@@ -116,4 +119,21 @@ hr.blue-line {
   background-color: blue;
   border: 2px solid blue;
   color: white;
+}
+
+.social {
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.social-img {
+  width: 100%;
+  /* margin: 1rem auto; */
+}
+
+.intro {
+  background-color: green;
 }
