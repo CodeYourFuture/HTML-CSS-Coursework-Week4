@@ -22,7 +22,7 @@
  
 }
 .line {
-  width: 50px;
+  width: 40px;
   height: 4px;
   border-radius: 5px;
   background-color: rgb(60, 15, 223);
@@ -54,11 +54,28 @@
 
 
 .line::before {
-  transform: translateY(-14px);
+  transform: translateY(-10px);
 }
 .line::after {
-  transform: translateY(14px);
+  transform: translateY(10px);
 }
+
+/* Apply Cross when clicked */
+.hamburger_menu_box.open .line {
+  background: transparent;
+}
+
+.hamburger_menu_box.open .line::before {
+  transform: rotate(45deg);
+  width: 35px;
+  background-color: #000;
+}
+.hamburger_menu_box.open .line::after {
+  transform: rotate(-45deg);
+  width: 35px;
+  background-color: #000;
+}
+
 
 
   .small-bg{
