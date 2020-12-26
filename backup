@@ -1,0 +1,42 @@
+ <!-- <footer class=" bg-white container-fluid">
+    <div class="container-fluid p-3  ">
+        <div class="row text-end    d-sm-flex flex-column-reverse ">
+            <div class=" col col-lg-3  text-start   ">
+                <p class="copy-right">© 2023 by Maya Nelson.<br>
+                Proudly created with Wix.com</p>
+            </div>
+
+
+            <div class="col col-lg-9   ">
+               
+                   <div class="row p-5  ">
+                     <div class="col-lg-3 col-sm-6 col-6   text-center ">
+                         <h5 >Call</h5>
+                         <span >077456789</span>
+                     </div>
+                          <div class="col-lg-3 col-sm-6 col-6 text-center ">
+                                <h5>Write</h5>
+                                <span>info@mysite.com</span>
+                            </div>
+                    
+                    </div>
+                  
+                            
+                     
+                    
+                    <div class="row  ">   
+                     <div class="col-sm-12 col-xs-12 text-center ">
+                         <h5 class="text-start mx-4 c ">Follow</h5>
+                         <ul class="footer-icons text-start " >
+                             <li class="fa fa-facebook mx-1"></li>
+                             <li class="fa fa-twitter mx-1"></li>
+                             <li class="fa fa-linkedin mx-1 "></li>
+                             <li class="fa fa-instagram mx-1"></li>
+                         </ul>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>  -->
+<!-- d-sm-flex   flex-sm-column-reverse   flex-md-column-reverse flex-lg-row -->
