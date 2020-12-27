@@ -218,6 +218,7 @@ font-weight: bold;
 }
 
 
+
 /* Contact Page Styles */
 
 .lets-talk{
@@ -274,6 +275,18 @@ transition: all 0.5s ease-in-out;
     width: 70%;
     margin: 0 auto;
 }
+
+
+/* Projects page Styles */
+.projects{
+    width: 60%;
+}
+
+.projects-box{
+   
+    width: 70%;
+}
+
 @media(max-width:980px){
  body{
 background-image: url("/img/bg.jpg");
@@ -299,6 +312,18 @@ background-size: cover;
 position: relative;
 
 }
+
+.bg-about{
+background-image: url("/img/bg.jpg");
+ background-repeat: repeat-y ;
+background-size: 40%;
+position: relative;
+
+}
+
+
+
+
 li,a{
   list-style: none;  
   text-decoration: none;
