@@ -9,7 +9,6 @@
 
 body {
   font-family: "Quicksand", sans-serif;
-  /* font-size: 1.4rem; */
 }
 
 a {
@@ -39,6 +38,7 @@ h2 {
 
 .header-p {
   text-transform: uppercase;
+  font-size: 1rem;
 }
 
 .nav-list {
@@ -54,7 +54,7 @@ h2 {
   background: linear-gradient(to bottom, #ffffff 25%, #e6dace 25%);
   /* padding: 3rem 0; */
 }
-
+/* 
 .header-h1::before {
   content: "";
   position: absolute;
@@ -62,8 +62,15 @@ h2 {
   background-color: blue;
   height: 1rem;
   top: 2.4rem;
-  left: 1.2rem; /* add more for bigger screen */
+  left: 1.2rem;
   width: 1rem;
+} */
+
+.blue-rect {
+  width: 20px;
+  height: 20px;
+  background-color: blue;
+  margin-right: 0.3rem;
 }
 
 .hero-container {
@@ -72,6 +79,7 @@ h2 {
   width: 85vw;
   padding-bottom: 0.5rem;
   margin-bottom: 1rem;
+  overflow: hidden;
 }
 /* 
 .hero-row {
@@ -117,7 +125,7 @@ hr.blue-line {
 .hero-button {
   text-align: center;
   display: inline-block;
-  font-size: 12px;
+  font-size: 14px;
   font-family: var(--bold-font);
   border-radius: 18px;
   text-transform: uppercase;
