@@ -7,7 +7,7 @@
     <!-- Here we import the Boostrap CSS stylesheet -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <!-- Add a link to your custom CSS here -->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="./css/main.css">
     <title>Responsive grid project</title>
 </head>
 <body>
@@ -45,15 +45,12 @@
                             <div class="transbox">
                                 <img class="image" src="https://www.w3schools.com/w3images/avatar2.png" alt="Avatar">
                                 <div class="row justify-content-center">
-                                    <p class="col-8">Omar Sharif</p>
+                                    <p class="col-5">Omar Sharif</p>
                                     <hr class="col-6 linebreak">
-                                    <button class="col-4 resumebutton" onclick="myFunction()">Resume</button>
-                                    
-                                    <script>
-                                        function myFunction() {
-                                            location.replace("https://www.w3schools.com")
-                                        }
-                                    </script>
+                                <form class="row justify-content-around">
+                                    <input class="col-4 resumebutton" type="button" onclick="window.location.href='https://www.w3docs.com';"value="Resume" />
+                                    <input class="col-4 projectsbutton" type="button" onclick="window.location.href='https://www.w3docs.com';" value="Projects" />
+                                </form>
                                 </div>
                             </div>
                         </div>
