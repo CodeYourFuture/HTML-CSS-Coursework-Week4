@@ -13,17 +13,61 @@
 </head>
 
 <body>
- 
-        <nav class="navbar navbar-inverse navbar-fixed-top"> 
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <div class="row">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>    
+ 
+        <!-- <nav class="navbar navbar-inverse navbar-fixed-top"> 
+            <div class="container-fluid">
+               <div class="row">
                     <div class="col-2 offset-10"><p>Book an Appointment</p></div>
-                </div> 
+                </div>  
             </div>
         
-             <div class="container"> 
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <a class="navbar-brand" href="#"><h1><i>Maria Hope, PH.D. - Psychologist</i></h1>
+                </div>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -41,17 +85,17 @@
                     </ul> 
                 </div> 
             </div>
-        </nav>       
+        </nav>        -->
   
         <div class="container">
             <div class="row">
-                <div class="col-md-6" style="background-color:rgb(207, 244, 236); padding: 430px 0px; text-align: center;"> 
-                    <h1>Online Therapy for Emotional Health</h1>
+                <div class="col-md-6 align-items-center d-flex" style="background-color:rgb(207, 244, 236); text-align: center; "> 
+                    <h1>Online Therapy for Emotional Health</h1> 
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed
                     pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim.
                     Fusce est.</p>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6" style="padding: 0px;">
                     <img src="./css/succulent hero resized.png">
             </div>
         </div>  
@@ -96,11 +140,11 @@
     </div>
 
     <div container>
-        <div row> 
+        <div class="row"> 
             <div class="col-md-10 offset-md-2" style="position: absolute; margin: 10px; padding: 50px 200px 50px 200px; background-color: rgb(245, 245, 245 )">
                 <h5 class="text-center"><i>Articles About Psychology</i></h5>
                     <div container>
-                        <div row style="flex-wrap: nowrap;">
+                        <div class="row">
                             <div class="col-md-4">
                                 <li><a href="#"><img src="./css/succulent - article resize2.jpg"></a></li>
                                     <p><i>Understanding PTSD</i></p>
