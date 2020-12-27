@@ -9,6 +9,17 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 
-.festival-blob {
-     transform: rotate(180deg);
+
+.hero-image {
+    background-image: url(https://images.unsplash.com/photo-1514533450685-4493e01d1fdc?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTk2fHxtdXNpYyUyMGZlc3RpdmFsfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 500px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
+
+h1, h2 {
+color: white;
 }
