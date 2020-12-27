@@ -20,6 +20,11 @@ li {
   list-style: none;
 }
 
+h1,
+h2 {
+  font-family: var(--bold-font);
+}
+
 .header {
   /* background-color: aqua; */
   padding-top: 2rem;
@@ -29,7 +34,7 @@ li {
 .bold-text {
   font-family: var(--bold-font);
   text-align: center;
-  border: 2px solid pink;
+  /* border: 2px solid pink; */
 }
 
 .header-p {
@@ -43,12 +48,11 @@ li {
 
 .hamburger {
   width: 30px;
-  /* text-align: right; */
 }
 
 .main {
-  background-color: #e6dace;
-  padding: 3rem 0;
+  background: linear-gradient(to bottom, #ffffff 25%, #e6dace 25%);
+  /* padding: 3rem 0; */
 }
 
 .header-h1::before {
@@ -64,11 +68,16 @@ li {
 
 .hero-container {
   background-color: #f4ece6;
-  box-shadow: 1px 2px 9px 0px rgba(0, 0, 0, 0.92);
-  width: 80vw;
+  box-shadow: -2px 17px 28px -9px rgba(0, 0, 0, 0.46);
+  width: 85vw;
   padding-bottom: 0.5rem;
-  margin: 2rem auto;
+  margin-bottom: 1rem;
 }
+/* 
+.hero-row {
+  background-color: #f4ece6;
+  box-shadow: -2px 17px 28px -9px rgba(0, 0, 0, 0.46);
+} */
 
 .hero-img {
   width: 70%;
@@ -76,6 +85,21 @@ li {
   /* border: 2px solid yellow; */
   text-align: center;
   margin: 3rem auto;
+}
+
+.hero-text-container {
+  /* background-color: #fff; */
+  /* margin-top: 1.5rem; */
+  padding: 2rem 0;
+  width: 85vw;
+}
+
+.hero-text-greeting {
+  font-size: 3rem;
+}
+
+.hero-text-message {
+  font-size: 1.4rem;
 }
 
 .name {
@@ -135,5 +159,5 @@ hr.blue-line {
 }
 
 .intro {
-  background-color: green;
+  /* background-color: #fff; */
 }

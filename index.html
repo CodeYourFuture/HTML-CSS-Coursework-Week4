@@ -12,12 +12,12 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./css/main.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" /> -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" /> -->
     <link
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap"
       rel="stylesheet"
@@ -28,17 +28,61 @@
   <body>
     <header class="container header">
       <ul class="row my-row">
-        <li class="col-10 rect">
-          <h1 class="header-h1 bold-text">Maya Nelson</h1>
+        <li class="col-8 rect">
+          <h2 class="header-h1 bold-text">Maya Nelson</h2>
           <p class="header-p">Project manager</p>
         </li>
-        <li class="col-2">
+        <li class="col-2 offset-2">
           <img class="hamburger" src="./img/hamburger_menu_159010.png" />
         </li>
       </ul>
+
+
+<!-- nav bar for bigger screen-->
+   
+       <!-- <div class="row">
+        <div class="col nav-bar">
+          <ul class="row nav-list">
+            <li class="col-3"><a href="#">About me</a></li>
+            <li class="col-3"><a href="#">Resume</a></li>
+            <li class="col-3"><a href="#">Projects</a></li>
+            <li class="col-3"><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div> -->
+      <!-- <div class="navbar navbar-expand-md shadow-sm bg-white">
+        <div>
+            <h2>Maya Nelson</h2>
+            <p>Project manager</p>
+        </div>
+        <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+        <div id="navbarSupportedContent" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Testimonials</a></li>
+            </ul>
+            <div class="navbar-text ml-lg-3">
+              <a href="#" class="btn btn-primary text-white shadow">Sign Up</a>
+            </div>
+          </div>
+      </div> -->
+      <!-- <nav class="navbar navbar-light navbar-expand-lg fixed-top shadow-sm bg-white"><a href="index.html" class="navbar-brand">Bootstrap 101</a>
+        <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+        <div id="navbarSupportedContent" class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Testimonials</a></li>
+          </ul>
+          <div class="navbar-text ml-lg-3">
+            <a href="#" class="btn btn-primary text-white shadow">Sign Up</a>
+          </div>
+        </div>
+      </nav> -->
     </header>
 
-    <main class="container main">
+    <main class="container-fluid main">
       <div class="container hero-container">
         <div class="row">
           <div class="col-8 offset-3">
@@ -82,9 +126,9 @@
        </div>
       </div>
 
-     <div class="container intro">
-        <h1>Hello</h1>
-        <p>Here's who I am & what I do</p>
+      <div class="container hero-text-container">
+        <h2 class="hero-text-greeting">Hello</h2>
+        <p class="hero-text-message">Here's who I am & what I do</p>
         <p>
           I'm a paragraph. Click here to add your own text and edit me. It’s
           easy. Just click “Edit Text” or double click me to add your own
@@ -97,22 +141,6 @@
      </div>
     </main>
 
-    <!-- <div class="row">
-
-    <h4 class="col name">Maya Nelson</h4>
-    <p class="col"> Project manager</p>
-    </div> -->
-
-    <!-- nav bar for bigger screen-->
-    <!-- <div class="row">
-        <div class="col nav-bar">
-          <ul class="row nav-list">
-            <li class="col-3"><a href="#">About me</a></li>
-            <li class="col-3"><a href="#">Resume</a></li>
-            <li class="col-3"><a href="#">Projects</a></li>
-            <li class="col-3"><a href="#">Contact</a></li>
-          </ul>
-        </div>
-      </div> -->
+    
   </body>
 </html>
