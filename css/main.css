@@ -279,12 +279,21 @@ transition: all 0.5s ease-in-out;
 
 /* Projects page Styles */
 .projects{
-    width: 60%;
+    font-weight: lighter;
+    font-size: 1.2rem;
+    text-align: left;
+   
 }
 
 .projects-box{
    
     width: 70%;
+}
+
+.blue-box{
+    background-color: blue;
+   width: 8px;
+   
 }
 
 @media(max-width:980px){
