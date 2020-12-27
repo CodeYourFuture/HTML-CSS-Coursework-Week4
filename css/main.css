@@ -218,6 +218,62 @@ font-weight: bold;
 }
 
 
+/* Contact Page Styles */
+
+.lets-talk{
+font-weight: bold;
+font-size: 2.5rem;
+}
+
+.input-txt{
+    padding:10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+   border-bottom: 2px solid dimgray;
+}
+
+.form-names{
+    font-size: 1.2rem;
+    font-weight: lighter;
+    color: dimgray;
+}
+
+.input-txt2{
+     border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    border-bottom: 2px solid dimgray;
+}
+
+.form_btn{
+padding: 7px;
+background-color: blue;
+color: white;
+border-radius: 15px;
+width: 20%;
+border: 0px;
+outline: none;
+font-size: 1rem;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.5s ease-in-out; 
+}
+
+.form_btn:hover{
+   background-color:#fff;
+   color: #000;
+   border:  1px solid blue;
+    
+}
+
+.form-bg{
+
+    width: 70%;
+    margin: 0 auto;
+}
 @media(max-width:980px){
  body{
 background-image: url("/img/bg.jpg");
@@ -236,10 +292,10 @@ margin-top: 15px;
 }
 
 @media (min-width:980px){
-body{
+.bg-pink{
 background-image: url("/img/bg.jpg");
  background-repeat: repeat-y ;
-background-size: 40%;
+background-size: cover;
 position: relative;
 
 }
