@@ -14,82 +14,53 @@
 
 <body>
 
-    <div class="container">
+    <div class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
+            <div class="container-fluid" style="padding-bottom: 50px;">
+                <div class="row">
+                    <div class="col">
+                        <form class="d-flex">
+                            <button class="btn btn-outline-success" type="submit" style="background-color:rgb(207, 244, 236);"">Book an Appointment</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <a class="navbar-brand" href="#"><i>Maria Hope, Ph.D. - Psychologist</i></a>
+                </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="justify-content: space-between;">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                            <a class="nav-link" href="#">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
                         </li>
                     </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+                    <!-- <form class="d-flex">
+                        <button class="btn btn-outline-success" type="submit" style="background-color:rgb(207, 244, 236);"">Book an Appointment</button>
+                    </form> -->
                 </div>
             </div>
         </nav>
     </div>    
  
-        <!-- <nav class="navbar navbar-inverse navbar-fixed-top"> 
-            <div class="container-fluid">
-               <div class="row">
-                    <div class="col-2 offset-10"><p>Book an Appointment</p></div>
-                </div>  
-            </div>
-        
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#"><h1><i>Maria Hope, PH.D. - Psychologist</i></h1>
-                </div>
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#"><h1><i>Maria Hope, PH.D. - Psychologist</i></h1>
-                    </a>
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav navbar-left" class = "list-unstyled">
-                        <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#">About </a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul> 
-                </div> 
-            </div>
-        </nav>        -->
-  
         <div class="container">
             <div class="row">
-                <div class="col-md-6 align-items-center d-flex" style="background-color:rgb(207, 244, 236); text-align: center; "> 
+                <div class="col-md-6" style="background-color:rgb(207, 244, 236); padding-top: 300px; text-align:center; border d-flex align-items-center justify-content-center"> 
                     <h1>Online Therapy for Emotional Health</h1> 
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed
                     pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim.
@@ -139,16 +110,15 @@
         </div>
     </div>
 
-    <div container>
+    <div class="container" style="margin-bottom: 200px;">
         <div class="row"> 
-            <div class="col-md-10 offset-md-2" style="position: absolute; margin: 10px; padding: 50px 200px 50px 200px; background-color: rgb(245, 245, 245 )">
+            <div class="col-md-10 offset-md-2" style="position: absolute; margin: 0px; padding: 50px 200px; list-style-type: none; background-color: rgb(245, 245, 245 )">
                 <h5 class="text-center"><i>Articles About Psychology</i></h5>
-                    <div container>
-                        <div class="row">
+                    <div container style="background-color: white;">
+                        <div class="row" style="padding: 30px 300px 200px 30px; text-align: center; justify-items: flex-start;">
                             <div class="col-md-4">
                                 <li><a href="#"><img src="./css/succulent - article resize2.jpg"></a></li>
                                     <p><i>Understanding PTSD</i></p>
-                               
                             </div>
                             <div class="col-md-4">
                                 <li><a href="#"></a><img src="./css/fern - article resize2.jpg"></a></li>
@@ -157,23 +127,33 @@
                             <div class="col-md-4">
                                 <li><a href="#"></a><img src="./css/pebbles- article resize2.jpg"></a></li>
                                 <p><i>10 ways to de-stress</i></p>
+                                <form class="d-flex">
+                                    <button class="btn btn-outline-success" type="submit" >Write a comment</button>
+                                </form>
+                            </div>
+                            <div class="row" style="margin-top: 50px">
+                                <div class="col">
+                                    <form class="d-flex">
+                                        <button class="btn btn-outline-success" type="submit" style="background-color:rgb(207, 244, 236);">More Articles</button>
+                                    </form>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </div> 
             </div>
         </div>
     </div>
 </main>
 
 <footer>
-    <div container>
-        <div row>
-            <div>
+    <div class="container" style="margin-top: 200px;">
+        <div class="row">
+            <div class="col-md-6">
                 <img src="img/facebook-icon.svg">
                 <img src="img/twitter-icon.svg">
             </div>
-            <div>
-            
+            <div class="col-md-6" style="text-align:justify;">
+                <p>©2023 by Bisi Olajide - This website was designed by Wix.com</p>
             </div>
         </div>
     </div>
