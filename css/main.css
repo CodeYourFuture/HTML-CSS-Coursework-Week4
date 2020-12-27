@@ -296,6 +296,12 @@ transition: all 0.5s ease-in-out;
    
 }
 
+.small-project-font{
+    font-size: 0.9rem;
+    color: rgb(110, 110, 212);
+    font-weight: bolder;
+}
+
 @media(max-width:980px){
  body{
 background-image: url("/img/bg.jpg");
