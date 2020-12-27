@@ -4,7 +4,7 @@
 
 body {
   font-family: "Quicksand", sans-serif;
-  color: #2F2F2E;
+  color: #2f2f2e;
   /* font-family: 'Libre Baskerville', serif; */
 }
 
@@ -16,6 +16,16 @@ body {
   text-align: center;
   font-weight: lighter;
   font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #2f2f2e;
+}
+
+a:hover {
+  color: #94d6c8;
 }
 
 .title p {
@@ -34,11 +44,11 @@ body {
 }
 
 .main-box h1 {
-  text-align: center; 
+  text-align: center;
   font-size: 58px;
   font-family: "Libre Baskerville, serif";
   padding: 0px 95px 50px 95px;
-  color: #2F2F2E;
+  color: #2f2f2e;
   /* font-family: Arial,Helvetica,sans-serif; */
 }
 
@@ -53,34 +63,38 @@ body {
 }
 
 .bio-section {
-  background-color: #F2F2F1;
-  height: 400px;
+  background-color: #f2f2f1;
+  height: 730px;
   margin-top: 120px;
 }
 
 .bio-row {
   padding-top: 100px;
-}  
+}
 
 .about-text {
   padding-top: 15px;
-  font-family: 'Libre Baskerville', serif;
+  font-family: "Libre Baskerville", serif;
   font-style: italic;
   font-size: 22px;
 }
 
 .bio-section p {
   text-align: center;
-  padding-left: 100px;
+  padding-left: 80px;
   /* font-family: 'Libre Baskerville', sans-serif;
   font-style: italic; */
 }
 
 h2 {
-  font-family: 'Libre Baskerville', serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 50px;
 }
 
 .paragraph {
   padding-top: 40px;
+}
+
+.bio-img {
+  width: 500px;
 }
