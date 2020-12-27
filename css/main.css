@@ -2,13 +2,55 @@
 
 /* Dont' forget to link this file to your HTML in the <head> */
 
-/* section {
-  width: 100%;
-  height: auto;
+/* html {
+  font-size: 16px;
 } */
 
-/* height: 100%; */
-/* margin: 0; */
+body {
+  padding-top: 100px;
+}
+
+.booking {
+  background-color: #cff4ec;
+  text-decoration: none;
+  color: black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 15px;
+
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.8rem;
+}
+.booking {
+  transition: 0.5s ease;
+}
+.booking:hover {
+  background-color: #4d7369;
+  color: white;
+}
+.mynav-brand {
+  font-family: "Libre Baskerville", serif;
+  font-style: italic;
+  font-size: 1rem;
+  color: #2f2f2e;
+}
+.mynav-brand:hover {
+  color: #585858;
+}
+
+.mynav-lists a {
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #2f2f2e;
+}
+.mynav-lists a:hover {
+  color: #94d6c8;
+}
+
 .top-page {
   height: 800px;
 }
@@ -25,6 +67,15 @@
   text-align: center;
   background-color: #cff4ec;
 }
+.hero-two h1 {
+  color: #2f2f2e;
+  font-family: "Libre Baskerville", serif;
+}
+.hero-two p {
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
 /* this was also achievable through inline html style and using bootstrap spacing properties */
 .down-icon {
   color: black;
@@ -39,15 +90,21 @@
   background-color: #f2f2f1;
 }
 .middle-page h2 {
-  font-size: 25px;
+  font-family: "Libre Baskerville", serif;
+  font-style: italic;
+  font-size: 1rem;
 }
 .middle-page h3 {
+  font-family: "Libre Baskerville", serif;
   font-size: 2.5rem;
 }
-/* .middle-page figure {
-  width: 300px;
-  max-height: 400px;
-} */
+
+.middle-page p {
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
 .middle-page figure img {
   max-width: 80%;
   max-height: 600px;
@@ -60,7 +117,26 @@
   height: 30px;
 }
 .bottom-page {
-  transform: translate(0, 220px);
+  transform: translate(0, 330px);
+}
+.bottom-page h5 {
+  font-family: "Libre Baskerville", serif;
+  font-style: italic;
+  font-size: 1rem;
+  color: #2f2f2e;
+}
+.bottom-page a {
+  text-decoration: none;
+  font-family: "Libre Baskerville", serif;
+
+  font-size: 2.5rem;
+  color: #2f2f2e;
+  padding: 10px;
+}
+.bottom-page p {
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
 }
 .article-one {
   height: 600px;
@@ -74,19 +150,19 @@
   height: 600px;
   background-color: #cff4ec;
 }
-.bottom-page a {
-  text-decoration: none;
-  font-size: 2.5rem;
-  color: black;
-  padding: 10px;
-}
-article .view-more {
-  font-size: 1rem;
-  width: 80%;
-  max-height: auto;
-  background-color: #94d6c8;
-}
 
+.article-two .view-more {
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+
+  background-color: #94d6c8;
+  transition: 0.5s ease;
+}
+.view-more:hover {
+  background-color: #4d7369;
+  color: white;
+}
 .blogs-page {
   height: 700px;
   /* padding-bottom: 150px; */
@@ -95,6 +171,11 @@ article .view-more {
 .blogs-page h5 {
   padding-top: 100px;
   padding-bottom: 60px;
+
+  font-family: "Libre Baskerville", serif;
+  font-style: italic;
+  font-size: 1rem;
+  color: #2f2f2e;
 }
 .blogs {
   background-color: white;
@@ -120,7 +201,15 @@ article .view-more {
 }
 .blogs a {
   text-decoration: none;
-  color: black;
+
+  font-family: "Libre Baskerville", serif;
+  font-style: italic;
+  font-size: 0.8rem;
+  color: #2f2f2e;
+}
+
+.blogs a:hover {
+  color: #94d6c8;
 }
 .blogs-comment {
   border-top: 1px solid silver;
@@ -132,13 +221,46 @@ article .view-more {
   padding-top: 15px;
   margin-top: 40px;
   margin-bottom: 20px;
+
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-size: 0.6rem;
+}
+.blogs-comment a {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-size: 0.6rem;
 }
 .view-article-cont {
   padding-left: 20px;
-  margin-top: 175px;
+  margin-top: 200px;
 }
-#viewArticle {
-  font-size: 1rem;
+.view-article-cont a {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-size: 0.8rem;
+  font-weight: 700;
+
   padding: 12px;
   background-color: #94d6c8;
+
+  transition: 0.5s ease;
+}
+.view-article-cont a:hover {
+  background-color: #4d7369;
+  color: white;
+}
+
+.media-icons li {
+  list-style-type: none;
+  display: inline-block;
+}
+.media-icons img {
+  width: 30px;
+}
+
+.made-by p {
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
 }
