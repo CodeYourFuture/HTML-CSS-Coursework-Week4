@@ -146,11 +146,11 @@ hr.blue-line {
 }
 
 .social {
-  align-items: center;
-  text-align: center;
+  /* align-items: center; */
+  /* text-align: center; */
   background-color: white;
   margin-top: 1.5rem;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
 }
 
 .social-img {
