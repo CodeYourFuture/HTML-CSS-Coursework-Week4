@@ -2,14 +2,16 @@
 
 /* Dont' forget to link this file to your HTML in the <head> */
 
-/* html {
-  font-size: 16px;
-} */
+/* 1.0 BODY SECTION */
 
+/* 1.1 Adding space to the top of the page to prevent 'navbar' overlapping other elements */
 body {
-  padding-top: 100px;
+  padding-top: 120px;
 }
 
+/* 2.0 HEADER SECTION */
+
+/* 2.1 Adding style to the "Book an Appointment" button and a 'hover' effect */
 .booking {
   background-color: #cff4ec;
   text-decoration: none;
@@ -23,60 +25,76 @@ body {
 
   font-family: "Quicksand", sans-serif;
   font-size: 0.8rem;
-}
-.booking {
+
   transition: 0.5s ease;
 }
+
 .booking:hover {
   background-color: #4d7369;
   color: white;
 }
+
+/* 2.2 Adding style to the brand logo and a 'hover' effect */
 .mynav-brand {
   font-family: "Libre Baskerville", serif;
   font-style: italic;
   font-size: 1rem;
   color: #2f2f2e;
 }
+
 .mynav-brand:hover {
   color: #585858;
 }
 
+/* 2.3 Adding style to the navigation links and a 'hover' effect for each list */
 .mynav-lists a {
   font-family: "Quicksand", sans-serif;
   font-size: 0.8rem;
   font-weight: 600;
   color: #2f2f2e;
 }
+
 .mynav-lists a:hover {
   color: #94d6c8;
 }
 
+/* 3.0 TOP PAGE SECTION */
+
+/* 3.1 Adding a fixed height to the section */
 .top-page {
   height: 800px;
 }
+
+/* 3.1 Adding a responsive height to this container which includes the left and right  parts */
 .hero {
   height: 100%;
 }
 
+/* 3.2 Making the image responsive (object-fit was added as it is the only way to maintain the image ratio) */
 .hero-image {
   max-width: 100%;
   min-height: 100%;
   object-fit: cover;
 }
+
+/* 3.3 Adding style each texts*/
 .hero-two {
   text-align: center;
   background-color: #cff4ec;
 }
+
 .hero-two h1 {
   color: #2f2f2e;
   font-family: "Libre Baskerville", serif;
 }
+
 .hero-two p {
   font-family: "Quicksand", sans-serif;
   font-size: 0.75rem;
   font-weight: 600;
 }
-/* this was also achievable through inline html style and using bootstrap spacing properties */
+
+/* 3.4 Adding position and style to the down arrow icon*/
 .down-icon {
   color: black;
   width: 30px;
@@ -85,46 +103,66 @@ body {
   margin-top: 50px;
   margin-bottom: 50px;
 }
+
+/* 4.0 MIDDLE PART SECTION */
+
+/* 4.1 Adding height and color to the whole section */
 .middle-page {
   height: 700px;
   background-color: #f2f2f1;
 }
+
+/* 4.2 Adding style to each text */
 .middle-page h2 {
   font-family: "Libre Baskerville", serif;
   font-style: italic;
   font-size: 1rem;
+  color: #2f2f2e;
 }
+
 .middle-page h3 {
   font-family: "Libre Baskerville", serif;
   font-size: 2.5rem;
+  color: #2f2f2e;
 }
 
 .middle-page p {
   font-family: "Quicksand", sans-serif;
   font-size: 0.8rem;
   font-weight: 700;
+  color: #2f2f2e;
 }
 
+/* 4.3 Making the image responsive (Maria Hope) */
 .middle-page figure img {
   max-width: 80%;
   max-height: 600px;
   transform: translate(0%, 10%);
 }
 
+/* 4.4 Adding style to the right arrow icon */
 .right-icon {
   color: black;
   width: 30px;
   height: 30px;
 }
+
+/* 5.0 BOTTOM PART SECTION */
+
+/* 5.1 Transforming the whole section (It was overlapping with the section above it) */
 .bottom-page {
-  transform: translate(0, 330px);
+  transform: translate(0, 220px);
 }
+
+/* 5.2 Adding Style all 'h5' elements */
 .bottom-page h5 {
   font-family: "Libre Baskerville", serif;
   font-style: italic;
   font-size: 1rem;
   color: #2f2f2e;
 }
+
+/* 5.3 Adding style to the anchor element which also contains a text */
 .bottom-page a {
   text-decoration: none;
   font-family: "Libre Baskerville", serif;
@@ -133,24 +171,31 @@ body {
   color: #2f2f2e;
   padding: 10px;
 }
+
+/* 5.4 Adding style to all 'p' elements */
 .bottom-page p {
   font-family: "Quicksand", sans-serif;
   font-size: 0.8rem;
   font-weight: 700;
 }
+
+/* 5.5 Adding height and color for each article */
 .article-one {
   height: 600px;
   background-color: #e2f6cd;
 }
+
 .article-two {
   height: 600px;
   background-color: #f2f2f1;
 }
+
 .article-three {
   height: 600px;
   background-color: #cff4ec;
 }
 
+/* 5.6 Adding style and a 'hover' effect to the "View More Services" button */
 .article-two .view-more {
   font-family: "Quicksand", sans-serif;
   font-size: 0.8rem;
@@ -159,15 +204,22 @@ body {
   background-color: #94d6c8;
   transition: 0.5s ease;
 }
+
 .view-more:hover {
   background-color: #4d7369;
   color: white;
 }
+
+/* 6.0 BLOGS PART SECTION */
+
+/* 6.1 Adding height and color to the whole section */
 .blogs-page {
   height: 700px;
   /* padding-bottom: 150px; */
   background-color: #f2f2f1;
 }
+
+/* 6.2 Adding style to the 'h5' element */
 .blogs-page h5 {
   padding-top: 100px;
   padding-bottom: 60px;
@@ -177,21 +229,28 @@ body {
   font-size: 1rem;
   color: #2f2f2e;
 }
+
+/* 6.3 Adding height and color to the blogs container  */
 .blogs {
   background-color: white;
   height: 100%;
   margin-bottom: 40px;
 }
 
+/* 6.4 Adding a fixed dimension to each image container */
 .blogs figure {
   width: 290px;
   height: 165px;
   margin-bottom: 0;
 }
+
+/* 6.5 Making each image fits inside its parents */
 .blogs figure img {
   width: 100%;
   height: 100%;
 }
+
+/* 6.6 Adding border style to each blog */
 .blogs-border {
   width: 100%;
   padding-top: 20px;
@@ -199,6 +258,8 @@ body {
   padding-right: 10px;
   border: 1px solid rgb(231, 230, 230);
 }
+
+/* 6.7 Adding style and a 'hover' effect to the anchor elements inside the blogs */
 .blogs a {
   text-decoration: none;
 
@@ -211,6 +272,8 @@ body {
 .blogs a:hover {
   color: #94d6c8;
 }
+
+/* 6.8 Adding style to the comment container and the "Write a Comment" text */
 .blogs-comment {
   border-top: 1px solid silver;
   font-size: 0.75rem;
@@ -226,15 +289,19 @@ body {
   font-style: normal;
   font-size: 0.6rem;
 }
+
 .blogs-comment a {
   font-family: "Quicksand", sans-serif;
   font-style: normal;
   font-size: 0.6rem;
 }
+
+/* 6.9 Adding space, style and 'hover' effect to the "More Articles" button  */
 .view-article-cont {
   padding-left: 20px;
   margin-top: 200px;
 }
+
 .view-article-cont a {
   font-family: "Quicksand", sans-serif;
   font-style: normal;
@@ -246,19 +313,25 @@ body {
 
   transition: 0.5s ease;
 }
+
 .view-article-cont a:hover {
   background-color: #4d7369;
   color: white;
 }
 
+/* 7.0 FOOTER PART SECTION */
+
+/* 7.1 Adding style to the list of social media icons */
 .media-icons li {
   list-style-type: none;
   display: inline-block;
 }
+
 .media-icons img {
   width: 30px;
 }
 
+/* 7.2 Adding style to the text */
 .made-by p {
   font-family: "Quicksand", sans-serif;
   font-size: 0.8rem;

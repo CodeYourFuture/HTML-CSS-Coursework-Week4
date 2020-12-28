@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Here we import the Boostrap CSS stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!-- Importing Google fonts  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Add a link to your custom CSS here -->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <title>Responsive grid project</title>
+</head>
+
+<body>
+    
+    <header>
+        <section class="fixed-top bg-light">
+            <aside class="d-none d-lg-flex justify-content-end mx-5 pt-3">
+                <a class="booking" href="#">Book an Appointment</a>
+            </aside>
+    
+            <nav class="navbar navbar-expand-lg bg-light  flex-column-reverse flex-lg-row px-lg-5 g-0">
+                <a class="mynav-brand navbar-brand" href="#">Maria Hope, Ph.D - Psychologist</a>
+    
+                <div class="ms-auto pe-1 ">
+    
+                    <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse"
+                        data-target="#navbarMenu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div class="collapse navbar-collapse" id="navbarMenu">
+                        <ul class="mynav-lists navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+    
+                </div>
+    
+            </nav>
+    
+        </section>
+    </header>
+    
+    <main>
+        <Section class="contact-page pt-5">
+            <article class="my-contact row g-0">
+                <h1>Contact Me</h1>
+                <h5>I'm a title. ​Click here to edit me.</h5>
+                <p class="col-lg-4 offset-lg-4 pt-1 pb-lg-4">I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your
+                users know a little more about you.</p>
+            </article>
+       
+            <form action="" target="_blank" class="container my-forms" >
+                <input class="col-12 col-lg-3 offset-lg-3 mb-2 p-2 " type="text" name="name" placeholder="Name" title="Name" required >
+                <input class="col-12 col-lg-3 mb-2 p-2" type="email" name="email" placeholder="Email" title="email" required >
+                <input class="col-12 col-lg-6 offset-lg-3 mb-2 p-2" type="text" name="subject" placeholder="Subject" title="subject" required>
+                <textarea class="col-12 col-lg-6 offset-lg-3 mb-2 p-1" name="Message" placeholder="Message" cols="30" rows="10" required></textarea>
+                <input class="col-12 col-lg-6 offset-lg-3 mb-lg-4 p-1" type="submit" value="Send" title="Join">
+            </form>
+
+            <article class="my-info" >
+                <p class="pt-5 pb-3">
+                    San Francisco, CA 94158 <br>
+                    <a href="#">Email: info@mysite.com</a>  / Tel:<br class="d-lg-none"> 
+                    123-456-7890
+                </p> 
+
+                <ul class="p-0 d-none d-lg-block">
+                    <li><a href="#"><img src="https://static.wixstatic.com/media/c7d035ba85f6486680c2facedecdcf4d.png/v1/fill/w_42,h_42,al_c,q_85,usm_0.66_1.00_0.01/c7d035ba85f6486680c2facedecdcf4d.webp" alt="Twitter Icon"></a></li>
+                    <li><a href="#"><img src="https://static.wixstatic.com/media/0fdef751204647a3bbd7eaa2827ed4f9.png/v1/fill/w_42,h_42,al_c,q_85,usm_0.66_1.00_0.01/0fdef751204647a3bbd7eaa2827ed4f9.webp" alt=""></a></li>
+                </ul>
+
+                <p class="py-lg-3 pt-5">Subscribe to my newsletter</p>
+            </article>    
+
+            <form action="" target="_blank" class="container my-forms">
+                <input class=" col-12 col-lg-5 offset-lg-3 mb-3 p-1" type="email" name="email" placeholder="Enter your email here" title="Enter your email here" required>
+                <input class="col-12 col-lg-1 mb-3 p-1" type="submit" value="Join" title="Join" >
+            </form>
+        </Section>
+
+        <section>
+            <figure id="pageMap" style="width: 100%; height: 400px;"></figure>
+        </section>
+   </main>
+
+    <footer>
+        <section class="footer-content row g-0 mt-4">
+            <aside class="media-icons col-12 col-lg-2 text-center">
+                <ul class="p-0">
+                    <li><a href="#"><img src="https://static.wixstatic.com/media/c7d035ba85f6486680c2facedecdcf4d.png/v1/fill/w_42,h_42,al_c,q_85,usm_0.66_1.00_0.01/c7d035ba85f6486680c2facedecdcf4d.webp" alt="Twitter Icon"></a></li>
+                    <li><a href="#"><img src="https://static.wixstatic.com/media/0fdef751204647a3bbd7eaa2827ed4f9.png/v1/fill/w_42,h_42,al_c,q_85,usm_0.66_1.00_0.01/0fdef751204647a3bbd7eaa2827ed4f9.webp" alt=""></a></li>
+                </ul>
+            </aside>
+
+            <article class="made-by col-12 col-lg-5 offset-lg-5 text-center">
+                <p>&copy; 2020 Hozan Ali, This website was designed by Wix.com </p>
+            </article>
+        </section>
+    </footer>
+
+    
+    <!-- Scripts for Google Maps -->
+    <script>
+        function initMap() {
+            const uluru = { lat: 37.7749, lng: -122.4194 };
+            const map = new google.maps.Map(document.getElementById("pageMap"), {
+                zoom: 15,
+                center: uluru,
+            });
+            const marker = new google.maps.Marker({
+                position: uluru,
+                map: map,
+            });
+        }   
+    </script> 
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALqqy75O333vxOIrORI1ukzpc0LdlVr0M&callback=initMap"></script>
+    
+    <!-- Adding Bootstrap scripts to design the toggler in the nav bar -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

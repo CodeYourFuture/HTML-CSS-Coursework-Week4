@@ -1,0 +1,88 @@
+/* 1.0 CONTACT PAGE SECTION */
+
+/* 1.1 Setting color and space for the whole page */
+.contact-page {
+  background-color: #e2f6cd;
+
+  color: #2f2f2e;
+}
+
+/* 1.2 Setting font properties and colour for the following class elements */
+.my-contact h1 {
+  font-family: "Libre Baskerville", serif;
+  font-style: italic;
+  font-size: 1rem;
+
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.my-contact h5 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 2.5rem;
+
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.my-contact p {
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.9rem;
+
+  text-align: center;
+}
+
+/* 1.3 Adding font style to the forms (This will be applied to both forms) */
+.my-forms {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.1rem;
+}
+
+/* 1.3.1 Adding border style to the input fields with "text" and "email" type  */
+input[type="text"],
+input[type="email"],
+textarea {
+  border: 1px solid black;
+}
+
+/* 1.3.1 Adding the 'focus' effect to the input fields (except "submit" type) and textarea field */
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border: 3px solid black;
+}
+
+/* 1.3.2 Adding style to the input fields with "submit" type and 'hover' effect */
+input[type="submit"] {
+  background-color: #94d6c8;
+  border-style: none;
+
+  transition: 0.5s ease;
+}
+
+input[type="submit"]:hover {
+  color: white;
+  background-color: #4d7369;
+}
+
+/* 1.4 Adding style and positioning to the inside elements inside this class */
+.my-info {
+  font-family: "Libre Baskerville", serif;
+  font-style: italic;
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* 1.4.1 Adding style to the anchor element */
+.my-info a {
+  text-decoration: none;
+  color: #2f2f2e;
+}
+
+/* /* 1.4.2 Adding style to the social media icons */
+.my-info li {
+  display: inline;
+}
+.my-info img {
+  width: 30px;
+}
