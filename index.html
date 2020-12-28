@@ -12,63 +12,60 @@
     <title>Responsive grid project</title>
 </head>
 
+<!-- Home Page -->
 <body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container-fluid" style="padding-bottom: 30px;">
+            <div class="row" >
+                <div class="col-2 offset-10">
+                    <form >
+                        <button class="btn btn-outline-success" type="submit" style="d-flex; background-color:rgb(207, 244, 236);">Book an Appointment</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    
+        <div class="container-brand">
+            <div class="row">
+                <div class="col">
+                    <a class="navbar-brand" href="#"><i>Maria Hope, Ph.D. - Psychologist</i></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="justify-content: space-between;">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
 
-    <!-- <div class="container-fluid"> -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-2 offset-10">
-                        <form class="d-flex">
-                            <button class="btn btn-outline-success" type="submit" style="background-color:rgb(207, 244, 236);">Book an Appointment</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container-brand">
-                <div class="row">
-                    <div class="col-6">
-                        <a class="navbar-brand" href="#"><i>Maria Hope, Ph.D. - Psychologist</i></a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-6">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-                        
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                
-            
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="justify-content: space-between;">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                    </ul>
-                    <!-- <form class="d-flex">
-                        <button class="btn btn-outline-success" type="submit" style="background-color:rgb(207, 244, 236);"">Book an Appointment</button>
-                    </form> -->
-                </div>
-            </div>
-        </nav>
-    <!-- </div>     -->
+    </div>    
  
         <div class="container">
             <div class="row">
@@ -103,6 +100,7 @@
 
     <div class="container">
         <div class="row" style="text-align:center; margin-top: 450px; padding-bottom: 100px;">
+            
             <div class="col-md-4" style="background-color: rgb(203, 250, 234); padding: 100px 5px;">
                 <p><i>01</i></p>
                 <h1>Individual Therapy</h1>
@@ -122,47 +120,61 @@
         </div>
     </div>
 
-    <div class="container" style="margin-bottom: 200px;">
-        <div class="row"> 
-            <div class="col-md-10 offset-md-2" style="position: absolute; margin: 0px; padding: 50px 200px; list-style-type: none; background-color: rgb(245, 245, 245 )">
+    <div class="container" style="background-color: rgb(245, 245, 245 );  padding-bottom: 200px;">
+        <div class="row" style="padding-top: 50px;"> 
+            <div class="col">
                 <h5 class="text-center"><i>Articles About Psychology</i></h5>
-                    <div container style="background-color: white;">
-                        <div class="row" style="padding: 30px 300px 200px 30px; text-align: center; justify-items: flex-start;">
-                            <div class="col-md-4">
-                                <li><a href="#"><img src="./css/succulent - article resize2.jpg"></a></li>
-                                    <p><i>Understanding PTSD</i></p>
-                            </div>
-                            <div class="col-md-4">
-                                <li><a href="#"></a><img src="./css/fern - article resize2.jpg"></a></li>
-                                <P><i>Why it's ok to argue</i></P>
-                            </div>
-                            <div class="col-md-4">
-                                <li><a href="#"></a><img src="./css/pebbles- article resize2.jpg"></a></li>
-                                <p><i>10 ways to de-stress</i></p>
-                                <form class="d-flex">
-                                    <button class="btn btn-outline-success" type="submit" >Write a comment</button>
-                                </form>
-                            </div>
-                            <div class="row" style="margin-top: 50px">
-                                <div class="col">
-                                    <form class="d-flex">
-                                        <button class="btn btn-outline-success" type="submit" style="background-color:rgb(207, 244, 236);">More Articles</button>
-                                    </form>
+                    <div container style="background-color: white; text-align: center; padding-top: 80px; padding-bottom: 200px; list-style-type: none;">
+                        <div class="row" >
+                            <!-- <div class="col">
+                                <div class="container">
+                                    <div class="row" > -->
+                                        
+                                        <div class="col-md-4">
+                                            <li><a href="#"><img src="./css/succulent - article resize3.png"></a></li>
+                                            <p><i>Understanding PTSD</i></p>
+                                            <form style="d-flex">
+                                                <button class="btn btn-outline-success" type="submit">Write a comment</button>
+                                            </form>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <li><a href="#"></a><img src="./css/fern - article resize3.png"></a></li>
+                                            <P><i>Why it's ok to argue</i></P>
+                                            <form class="d-flex">
+                                                <button class="btn btn-outline-success" type="submit">Write a comment</button>
+                                            </form>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <li><a href="#"></a><img src="./css/pebbles - article resize3.png"></a></li>
+                                            <p><i>10 ways to de-stress</i></p>
+                                            <form class="d-flex">
+                                                <button class="btn btn-outline-success" type="submit">Write a comment</button>
+                                            </form>
+                                        </div>
+                                        <div class="row" style="padding-top: 80px; padding-left:20px;">
+                                            <div class="col">
+                                                <form class="d-flex" >
+                                                    <button class="btn btn-outline-success" type="submit" style="background-color:rgb(207, 244, 236)">More Articles</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    <!-- </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div> 
+                            </div> -->
+                        </div>    
+                    </div>
+                    
             </div>
         </div>
     </div>
 </main>
 
 <footer>
-    <div class="container" style="margin-top: 200px;">
-        <div class="row">
+    <div class="container">
+        <div class="row" style="padding: 50px; 20px; ">
             <div class="col-md-6">
-                <img src="img/facebook-icon.svg">
-                <img src="img/twitter-icon.svg">
+                <img src="./css/OIP - fb icon resized.png">
+                <img src="./css/OIP - twitter icon resized.png">
             </div>
             <div class="col-md-6" style="text-align:justify;">
                 <p>©2023 by Bisi Olajide - This website was designed by Wix.com</p>
