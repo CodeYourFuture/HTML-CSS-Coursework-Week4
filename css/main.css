@@ -27,10 +27,8 @@ div.transbox {
   margin-left: 60px;
   margin-right: 20px;
   background-color:antiquewhite;
-  border: 1px solid black;
   opacity: 1;
-  height: 300px;
-  box-shadow: grey;
+  box-shadow: 5px 10px lightgrey;
 }
 
 div.transbox p {
@@ -46,6 +44,9 @@ div.transbox p {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}
+.linebreak{
+  color: blue;
 }
 .projectsbutton{
   background-color: antiquewhite;
@@ -65,4 +66,21 @@ div.transbox p {
 .resumebutton:hover{
   background-color: antiquewhite;
   color: black;
+}
+.size{
+  padding-bottom: 20px;
+}
+.socialmediaicons{
+  padding-bottom: 20px;
+  padding-left: 11px;
+  padding-right: 11px;
+}
+.icons{
+  background-color: white;
+}
+.maintextposition{
+  padding-top: 120px;
+}
+body .footerbackgroundcolor{
+  background-color: white;
 }
