@@ -261,6 +261,7 @@ font-size: 1rem;
 font-weight: bold;
 cursor: pointer;
 transition: all 0.5s ease-in-out; 
+border: 1px solid transparent;
 }
 
 .form_btn:hover{
@@ -269,6 +270,8 @@ transition: all 0.5s ease-in-out;
    border:  1px solid blue;
     
 }
+
+
 
 .form-bg{
 
@@ -316,7 +319,7 @@ transition: all 0.5s ease-in-out;
 
 /* experience font */
 .experience_font{
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bolder;
 }
 .job-position{
@@ -339,6 +342,22 @@ margin-top: 15px;
 }
 .box-small{
    padding-bottom: 5px;
+}
+
+.btn-resume{
+padding: 7px;
+background-color: blue;
+color: white;
+border-radius: 15px;
+border: 0px;
+outline: none;
+font-size: 0.8rem;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.5s ease-in-out;
+border: 1px solid transparent;
+white-space: nowrap;
+min-width: 100%;
 }
 
 }
@@ -434,14 +453,17 @@ padding: 7px;
 background-color: blue;
 color: white;
 border-radius: 15px;
-width: 30%;
 border: 0px;
 outline: none;
-font-size: 1rem;
+font-size: 0.8rem;
 font-weight: bold;
 cursor: pointer;
 transition: all 0.5s ease-in-out;
 border: 1px solid transparent;
+max-width: 30%;
+
+
+
 }
 
 .btn-project{
@@ -478,6 +500,12 @@ transition: all 0.5s ease-in-out;
   color: rgb(71, 67, 67);
   font-weight: lighter;
   font-size: 1rem;
+}
+
+/* experience font */
+.experience_font{
+  font-size: 2rem;
+  font-weight: bolder;
 }
 
 }
