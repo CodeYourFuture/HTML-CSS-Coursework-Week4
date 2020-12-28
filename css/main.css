@@ -8,6 +8,10 @@ body {
   /* font-family: 'Libre Baskerville', serif; */
 }
 
+/* nav {
+  position: fixed;
+} */
+
 .button p {
   font-weight: lighter;
   padding: 20px 0px;
@@ -97,4 +101,54 @@ h2 {
 
 .bio-img {
   width: 500px;
+  position: absolute;
+}
+
+.therapy-options {
+  margin-top: 355px;
+  height: 450px;
+}
+
+.options-row {
+  height: 500px;
+  text-align: center;
+  padding-top: 50px;
+
+}
+
+.individual-therapy,
+.group-therapy,
+.couples-therapy {
+  height: 100%;
+  padding-top: 70px;
+}
+
+.individual-therapy {
+   background-color:#E2F6CD;
+}
+
+.group-therapy {
+  background-color: #f2f2f1;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.couples-therapy {
+  background-color:#cff4ec;
+}
+
+h3 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 50px;
+  padding: 35px 0px;
+}
+
+i {
+  font-size: 25px;
+  font-family: "Libre Baskerville", serif;
+}
+
+.small-paragraph {
+  color: black;
+  padding: 0px 25px;
 }
