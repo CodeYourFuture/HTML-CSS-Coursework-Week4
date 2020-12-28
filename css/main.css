@@ -20,7 +20,8 @@ li {
 }
 
 h1,
-h2 {
+h2,
+h4 {
   font-family: var(--bold-font);
 }
 
@@ -99,7 +100,7 @@ h2 {
   /* background-color: #fff; */
   /* margin-top: 1.5rem; */
   padding: 2rem 0;
-  width: 85vw;
+  /* width: 85vw; */
 }
 
 .hero-text-greeting {
@@ -124,11 +125,11 @@ hr.blue-line {
 
 .hero-button {
   text-align: center;
-  display: inline-block;
+  /* display: inline-block; */
   font-size: 14px;
   font-family: var(--bold-font);
-  border-radius: 18px;
   text-transform: uppercase;
+  /* width: 130px; */
 }
 
 .resume-btn {
@@ -168,4 +169,17 @@ hr.blue-line {
 
 .intro {
   /* background-color: #fff; */
+}
+
+/* footer */
+footer {
+  margin: 2rem 0;
+}
+
+footer h4 {
+  font-size: 0.9rem;
+}
+
+.footer-social {
+  background-color: green;
 }
