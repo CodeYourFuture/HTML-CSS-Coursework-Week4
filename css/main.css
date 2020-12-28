@@ -1,5 +1,6 @@
 :root {
   --bold-font: "Poppins", sans-serif;
+  --bg-color: #e6dace;
 }
 
 body {
@@ -17,7 +18,10 @@ li {
 
 h1,
 h2,
-h4 {
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--bold-font);
 }
 
