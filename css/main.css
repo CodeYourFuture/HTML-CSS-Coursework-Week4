@@ -188,3 +188,27 @@ h4 {
   height: 200px;
   margin: 20px 0px;
 }
+
+/* .text-row {
+  border-style: solid;
+} */
+
+.text-row p {
+  font-size: 17px;
+  font-family: "Libre Baskerville", serif;
+  font-style: italic;
+}
+
+.row.button-row {
+  margin-top: 100px;
+  margin-bottom: 10px;
+}
+
+.footer-container {
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
+
+.socials img {
+  width: 23px;
+}
