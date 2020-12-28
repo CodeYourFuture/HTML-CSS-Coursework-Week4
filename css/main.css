@@ -160,7 +160,7 @@ background-color: #f4ece6;
 
 
 
-.btn-resume{
+.btn-about{
 padding: 7px;
 background-color: blue;
 color: white;
@@ -356,9 +356,12 @@ font-weight: bold;
 cursor: pointer;
 transition: all 0.5s ease-in-out;
 border: 1px solid transparent;
-white-space: nowrap;
 min-width: 100%;
 }
+
+
+
+
 
 }
 
@@ -371,8 +374,6 @@ position: relative;
 
 }
 
-
-
 .bg-about{
 background-image: url("/img/bg.jpg");
  background-repeat: repeat-y ;
@@ -380,9 +381,6 @@ background-size: 40%;
 position: relative;
 
 }
-
-
-
 
 li,a{
   list-style: none;  
@@ -396,7 +394,6 @@ padding-bottom: 14px;
   
 }
 
-
 .skill-large{
     font-weight: lighter;
     font-size: 1rem;
@@ -406,9 +403,6 @@ padding-bottom: 14px;
     font-size: 1.8rem;
     font-weight: 700;
 }
-
-
-
 .copy-right{
     font-size: 0.8rem;
 }
@@ -416,8 +410,6 @@ padding-bottom: 14px;
 footer{
     background-color: #fff;
 }
-
-
 
 .card-right-color{
     background-color: #f4ece6;
@@ -437,8 +429,6 @@ footer{
 }
 
 
-
-
 .project-manager{
     font-weight: lighter;
       letter-spacing: 0.4rem;
@@ -446,23 +436,17 @@ footer{
 }
 
 
-
-
 .btn-resume{
-padding: 7px;
-background-color: blue;
-color: white;
 border-radius: 15px;
-border: 0px;
-outline: none;
-font-size: 0.8rem;
+padding: 7px;
+border: 1px solid #fff;
+width: 30%;
+color: #fff;
+background-color: blue;
+font-size: 1rem;
 font-weight: bold;
 cursor: pointer;
 transition: all 0.5s ease-in-out;
-border: 1px solid transparent;
-max-width: 30%;
-
-
 
 }
 
