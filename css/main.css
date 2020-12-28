@@ -72,8 +72,8 @@ a:hover {
 
 .bio-section {
   background-color: #f2f2f1;
-  height: 730px;
   margin-top: 120px;
+  margin-bottom: 50px;
 }
 
 .bio-row {
@@ -112,9 +112,9 @@ h2 {
   position: absolute;
 }
 
-.container .therapy-options {
-  margin-top: 65px;
-  margin-bottom: 100px;
+.container.therapy-options {
+  margin-top: 45px;
+  margin-bottom: 70px;
 }
 
 .options-row {
