@@ -12,12 +12,12 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./css/main.css" />
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" /> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
       rel="stylesheet"
     />
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" /> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap"
       rel="stylesheet"
@@ -26,17 +26,17 @@
   </head>
 
   <body>
-    <header class="container header">
-      <nav class="navbar navbar-light navbar-expand-sm">
+    <header class="container justify-content-between header">
+      <nav class="navbar navbar-light navbar-expand-md">
         <div class="container">
           <a
             href="index.html"
-            class="navbar-brand d-flex flex-column flex-sm-row"
+            class="navbar-brand d-flex flex-column flex-md-row"
           >
             <h2 class="header-h1 bold-text">
               <span class="blue-rect d-inline-block"></span>Maya Nelson
             </h2>
-            <span class="d-none d-sm-block">/</span>
+            <span class="d-none d-md-block">/</span>
             <p class="header-p">project manager</p>
           </a>
           <button
@@ -50,97 +50,42 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div id="navbarSupportedContent" class="collapse navbar-collapse">
-            <ul class="navbar-nav ml-auto">
+          <!-- navbar for bigger screen -->
+          <div
+            id="navbarSupportedContent"
+            class="collapse navbar-collapse justify-content-end"
+          >
+            <ul class="navbar-nav">
               <li class="nav-item">
-                <a href="#" class="nav-link">About Us</a>
+                <a href="index.html" class="nav-link">About me</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">Features</a>
+                <a href="resume.html" class="nav-link">Resume</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">Testimonials</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a href="contact.html" class="nav-link">Contact</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      <!-- <ul class="row d-flex my-row" class="d-flex flex-column flex-sm-row">
-        <li class="col-8 rect">
-          <h2 class="header-h1 bold-text">
-            <span class="blue-rect d-block"></span>Maya Nelson
-          </h2>
-          <p class="header-p">Project manager</p>
-        </li>
-        <li class="col-2 offset-2">
-          <img class="hamburger" src="./img/hamburger_menu_159010.png" />
-        </li>
-      </ul> -->
-
-      <!-- <a href="#" class="navbar-brand d-flex flex-column flex-sm-row">
-        <h1>Maya Nelson</h1>
-        <span class="d-none d-sm-block">/</span>
-        <h2>project manager</h2>
-      </a> -->
-      <!-- nav bar for bigger screen-->
-
-      <!-- <div class="row">
-        <div class="col nav-bar">
-          <ul class="row nav-list">
-            <li class="col-3"><a href="#">About me</a></li>
-            <li class="col-3"><a href="#">Resume</a></li>
-            <li class="col-3"><a href="#">Projects</a></li>
-            <li class="col-3"><a href="#">Contact</a></li>
-          </ul>
-        </div>
-      </div> -->
-      <!-- <div class="navbar navbar-expand-md shadow-sm bg-white">
-        <div>
-            <h2>Maya Nelson</h2>
-            <p>Project manager</p>
-        </div>
-        <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
-        <div id="navbarSupportedContent" class="collapse navbar-collapse">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Testimonials</a></li>
-            </ul>
-            <div class="navbar-text ml-lg-3">
-              <a href="#" class="btn btn-primary text-white shadow">Sign Up</a>
-            </div>
-          </div>
-      </div> -->
-      <!-- <nav class="navbar navbar-light navbar-expand-lg fixed-top shadow-sm bg-white"><a href="index.html" class="navbar-brand">Bootstrap 101</a>
-        <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
-        <div id="navbarSupportedContent" class="collapse navbar-collapse">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Testimonials</a></li>
-          </ul>
-          <div class="navbar-text ml-lg-3">
-            <a href="#" class="btn btn-primary text-white shadow">Sign Up</a>
-          </div>
-        </div>
-      </nav> -->
     </header>
 
     <main class="container-fluid main">
-      <div class="container d-flex flex-column flex-sm-row">
+      <div class="container d-flex flex-column flex-md-row">
         <div class="hero-container">
-          <div class="row">
-            <div class="col-8 offset-3">
-              <img
-                class="hero-img"
-                src="https://static.wixstatic.com/media/2e2a49_bd3a1599bc1b4265a01b2754b99b8536~mv2_d_5760_3840_s_4_2.jpeg/v1/crop/x_2703,y_43,w_2199,h_2205/fill/w_240,h_240,al_c,q_80,usm_0.66_1.00_0.01/AdobeStock_230407429.webp"
-                alt=""
-              />
-            </div>
-            <h2 class="col-8 offset-2 bold-text">Maya Nelson</h2>
-          </div>
+          <img
+            class="d-flex justify-content-center hero-img"
+            src="https://static.wixstatic.com/media/2e2a49_bd3a1599bc1b4265a01b2754b99b8536~mv2_d_5760_3840_s_4_2.jpeg/v1/crop/x_2703,y_43,w_2199,h_2205/fill/w_240,h_240,al_c,q_80,usm_0.66_1.00_0.01/AdobeStock_230407429.webp"
+            alt=""
+          />
+          <h2 class="d-flex bold-text justify-content-center">Maya Nelson</h2>
           <hr class="blue-line" />
-          <div class="row buttons text-center">
+
+          <div class="row buttons text-center d-md-none">
             <div class="col">
               <button
                 type="button"
@@ -158,52 +103,39 @@
               </button>
             </div>
           </div>
-          <!-- <div class="row">
-            <button class="col-4 offset-1 hero-button resume-btn">
-              Resume
-            </button>
-            <button class="col-4 offset-2 hero-button projects-btn">
-              Projects
-            </button>
-          </div> -->
-
-          <ul class="row social">
-            <li class="col-2 offset-2">
-              <a href="https://www.facebook.com/" target="_blank">
-                <img
-                  class="social-img"
-                  src="https://static.wixstatic.com/media/0fdef751204647a3bbd7eaa2827ed4f9.png/v1/fill/w_40,h_40,al_c,usm_0.66_1.00_0.01/0fdef751204647a3bbd7eaa2827ed4f9.png"
-                />
-              </a>
-            </li>
-            <li class="col-2">
-              <a href="https://twitter.com/?lang=en-gb" target="_blank">
-                <img
-                  class="social-img"
-                  src="https://static.wixstatic.com/media/c7d035ba85f6486680c2facedecdcf4d.png/v1/fill/w_40,h_40,al_c,usm_0.66_1.00_0.01/c7d035ba85f6486680c2facedecdcf4d.png"
-                />
-              </a>
-            </li>
-            <li class="col-2">
-              <a href="https://uk.linkedin.com/" target="_blank">
-                <img
-                  class="social-img"
-                  src="https://static.wixstatic.com/media/6ea5b4a88f0b4f91945b40499aa0af00.png/v1/fill/w_50,h_50,al_c,usm_0.66_1.00_0.01/6ea5b4a88f0b4f91945b40499aa0af00.png"
-                />
-              </a>
-            </li>
-            <li class="col-2">
-              <a href="https://www.instagram.com/" target="_blank">
-                <img
-                  class="social-img"
-                  src="https://static.wixstatic.com/media/01c3aff52f2a4dffa526d7a9843d46ea.png/v1/fill/w_40,h_40,al_c,usm_0.66_1.00_0.01/01c3aff52f2a4dffa526d7a9843d46ea.png"
-                />
-              </a>
-            </li>
-          </ul>
+          <div class="row row-cols-auto social mt-3 justify-content-center">
+            <a href="https://www.facebook.com/" class="col" target="_blank">
+              <img
+                class="social-img"
+                src="https://static.wixstatic.com/media/0fdef751204647a3bbd7eaa2827ed4f9.png/v1/fill/w_40,h_40,al_c,usm_0.66_1.00_0.01/0fdef751204647a3bbd7eaa2827ed4f9.png"
+              />
+            </a>
+            <a
+              href="https://twitter.com/?lang=en-gb"
+              class="col"
+              target="_blank"
+            >
+              <img
+                class="social-img"
+                src="https://static.wixstatic.com/media/c7d035ba85f6486680c2facedecdcf4d.png/v1/fill/w_40,h_40,al_c,usm_0.66_1.00_0.01/c7d035ba85f6486680c2facedecdcf4d.png"
+              />
+            </a>
+            <a href="https://uk.linkedin.com/" class="col" target="_blank">
+              <img
+                class="social-img"
+                src="https://static.wixstatic.com/media/6ea5b4a88f0b4f91945b40499aa0af00.png/v1/fill/w_50,h_50,al_c,usm_0.66_1.00_0.01/6ea5b4a88f0b4f91945b40499aa0af00.png"
+              />
+            </a>
+            <a href="https://www.instagram.com/" class="col" target="_blank">
+              <img
+                class="social-img"
+                src="https://static.wixstatic.com/media/01c3aff52f2a4dffa526d7a9843d46ea.png/v1/fill/w_40,h_40,al_c,usm_0.66_1.00_0.01/01c3aff52f2a4dffa526d7a9843d46ea.png"
+              />
+            </a>
+          </div>
         </div>
 
-        <div class="hero-text-container">
+        <div class="hero-text-container d-flex flex-column">
           <h2 class="hero-text-greeting">Hello</h2>
           <p class="hero-text-message">Here's who I am & what I do</p>
           <p>

@@ -26,7 +26,7 @@ h4 {
 }
 
 .header {
-  /* background-color: aqua; */
+  background-color: aqua;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -34,7 +34,7 @@ h4 {
 .bold-text {
   font-family: var(--bold-font);
   text-align: center;
-  /* border: 2px solid pink; */
+  border: 2px solid pink;
 }
 
 .header-p {
@@ -55,17 +55,6 @@ h4 {
   background: linear-gradient(to bottom, #ffffff 25%, #e6dace 25%);
   /* padding: 3rem 0; */
 }
-/* 
-.header-h1::before {
-  content: "";
-  position: absolute;
-  border: 1px solid blue;
-  background-color: blue;
-  height: 1rem;
-  top: 2.4rem;
-  left: 1.2rem;
-  width: 1rem;
-} */
 
 .blue-rect {
   width: 20px;
@@ -113,13 +102,13 @@ h4 {
 
 .name {
   /* border: 2px solid yellow; */
-  text-align: center;
+  /* text-align: center; */
 }
 
 hr.blue-line {
   border-top: 1px solid rgb(3, 3, 255);
   opacity: 1;
-  width: 30vw;
+  width: 20vw;
   margin: 2rem auto;
 }
 
@@ -158,12 +147,13 @@ hr.blue-line {
   /* align-items: center; */
   /* text-align: center; */
   background-color: white;
-  margin-top: 1.5rem;
+  /* margin-top: 1.5rem; */
   /* margin-bottom: 2rem; */
 }
 
 .social-img {
-  width: 100%;
+  width: 20px;
+  height: 20px;
   /* margin: 1rem auto; */
 }
 
