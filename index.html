@@ -26,18 +26,20 @@
   </head>
 
   <body>
-    <header class="container justify-content-between pt-5 pb-5">
+    <header
+      class="container-fluid bg-white sticky-top justify-content-between pt-5 pb-5"
+    >
       <nav class="navbar navbar-light navbar-expand-md">
         <div class="container">
           <a
             href="index.html"
-            class="navbar-brand d-flex flex-column flex-md-row align-items-center color"
+            class="navbar-brand d-flex flex-column flex-md-row align-items-center"
           >
             <h2 class="header-h1 bold-text color1">
               <span class="blue-rect d-inline-block me-2"></span>Maya Nelson
             </h2>
             <span class="d-none d-md-block px-1">/</span>
-            <span class="header-p color2">project manager</span>
+            <span class="header-p color2 text-uppercase">project manager</span>
           </a>
           <button
             type="button"
@@ -55,7 +57,7 @@
             id="navbarSupportedContent"
             class="collapse navbar-collapse justify-content-end"
           >
-            <ul class="navbar-nav">
+            <ul class="navbar-nav text-uppercase">
               <li class="nav-item">
                 <a href="index.html" class="nav-link">About me</a>
               </li>
@@ -74,40 +76,42 @@
       </nav>
     </header>
 
-    <main class="container-fluid main">
-      <div class="container d-flex flex-column flex-md-row">
+    <main class="container-fluid py-5">
+      <div class="container d-flex flex-column flex-md-row my-5">
         <div class="hero-container w-100 shadow-lg">
           <img
-            class="d-flex justify-content-center hero-img m-auto"
+            class="d-flex justify-content-center hero-img my-3 mx-auto"
             src="https://static.wixstatic.com/media/2e2a49_bd3a1599bc1b4265a01b2754b99b8536~mv2_d_5760_3840_s_4_2.jpeg/v1/crop/x_2703,y_43,w_2199,h_2205/fill/w_240,h_240,al_c,q_80,usm_0.66_1.00_0.01/AdobeStock_230407429.webp"
-            alt=""
+            alt="hero photo"
           />
-          <h2 class="d-flex bold-text justify-content-center">Maya Nelson</h2>
+          <h2 class="d-flex bold-text justify-content-center my-2">
+            Maya Nelson
+          </h2>
           <hr class="blue-line" />
           <!-- hero buttons-->
-          <div class="row buttons text-center d-md-none">
+          <div class="row text-center d-md-none bold-text">
             <div class="col">
               <a
                 href="resume.html"
                 type="button"
-                class="btn btn-primary hero-button resume-btn rounded-pill px-4"
+                class="btn btn-primary resume-btn rounded-pill px-4"
               >
-                Resume
+                RESUME
               </a>
             </div>
             <div class="col">
               <a
                 href="projects.html"
                 type="button"
-                class="btn btn-outline-dark hero-button projects-btn rounded-pill px-4"
+                class="btn btn-outline-dark projects-btn rounded-pill px-4"
               >
-                Projects
+                PROJECTS
               </a>
             </div>
           </div>
           <!-- social media icons row -->
           <div
-            class="row row-cols-auto mt-3 justify-content-center py-1 social w-100"
+            class="row row-cols-auto mt-3 justify-content-center py-1 social overflow-hidden"
           >
             <a href="https://www.facebook.com/" class="col" target="_blank">
               <img
@@ -144,27 +148,27 @@
           </div>
         </div>
 
-        <div class="hero-text-container d-flex flex-column mx-md-5">
-          <h2 class="hero-text-greeting">Hello</h2>
+        <div class="d-flex flex-column mx-md-5 py-5 w-100">
+          <h1 class="hero-text-greeting">Hello</h1>
           <p class="hero-text-message">Here's who I am & what I do</p>
-          <!-- hero buttons-->
-          <div class="row text-left d-none d-md-flex my-md-5">
+          <!-- hero buttons larger screen -->
+          <div class="row text-left d-none d-md-flex my-md-5 bold-text">
             <div class="col-4">
               <a
                 href="resume.html"
                 type="button"
-                class="btn btn-primary hero-button resume-btn rounded-pill px-4"
+                class="btn btn-primary resume-btn rounded-pill px-4"
               >
-                Resume
+                RESUME
               </a>
             </div>
-            <div class="col-4">
+            <div class="col-4 offset-1">
               <a
                 href="projects.html"
                 type="button"
-                class="btn btn-outline-dark hero-button projects-btn rounded-pill px-4"
+                class="btn btn-outline-dark projects-btn rounded-pill px-4"
               >
-                Projects
+                PROJECTS
               </a>
             </div>
           </div>
@@ -222,7 +226,7 @@
           </div>
         </div>
 
-        <div class="col">
+        <div class="col fs-6 lh-1 my-3 my-md-0">
           <p>© 2023 by Maya Nelson.</p>
           <p>Proudly created with Wix.com</p>
         </div>
