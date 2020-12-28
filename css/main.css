@@ -291,16 +291,40 @@ transition: all 0.5s ease-in-out;
 }
 
 .blue-box{
-    background-color: blue;
+    background-color: rgb(89, 89, 202);
    width: 8px;
    
 }
 
+
 .small-project-font{
     font-size: 0.9rem;
-    color: rgb(110, 110, 212);
+    color: rgb(89, 89, 202);
     font-weight: bolder;
 }
+
+.role-title{
+  color: rgb(71, 67, 67);
+  font-weight: lighter;
+  font-size: 1rem;
+}
+
+.project-page-text{
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+/* experience font */
+.experience_font{
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.job-position{
+  color: black;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
 
 @media(max-width:980px){
  body{
@@ -327,6 +351,8 @@ background-size: cover;
 position: relative;
 
 }
+
+
 
 .bg-about{
 background-image: url("/img/bg.jpg");
@@ -415,6 +441,7 @@ font-size: 1rem;
 font-weight: bold;
 cursor: pointer;
 transition: all 0.5s ease-in-out;
+border: 1px solid transparent;
 }
 
 .btn-project{
@@ -435,9 +462,22 @@ transition: all 0.5s ease-in-out;
     color: #fff;
 }
 .btn-resume:hover{
-    border: 1px solid blue;
+   border: solid 1px blue;
     color: #000;
     background-color: #fff;
+}
+
+
+.large-project-font{
+  font-size: 1.3rem;
+    color: rgb(89, 89, 202);
+    font-weight: bolder;
+}
+
+.role-title{
+  color: rgb(71, 67, 67);
+  font-weight: lighter;
+  font-size: 1rem;
 }
 
 }
