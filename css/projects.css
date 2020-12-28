@@ -1,0 +1,59 @@
+/*Projects CSS*/
+body {
+    color: black;
+    font-family: 'Langar', cursive;
+}
+
+header,
+footer {
+    background-color:   rgb(238, 237, 243);
+
+}
+
+a {
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.header-text {
+    font-size: 25px;
+    margin-left: -80px;
+}
+
+span {
+    font-weight: bolder;
+}
+
+.blue {
+    width: 20%;
+    margin-top: 10px;
+}
+
+.social-nav img {
+    height: 20px;
+    width: 20px;
+    border-radius: 25px;
+}
+
+
+.row {
+    padding-top: 50px;
+}
+
+main {
+    margin: 50px 0 140px 0;
+    padding: 120px 0 140px 0;
+}
+
+.container main {
+    padding-top: 200px;
+}
+
+.container header {
+    padding-top: 40px;
+}
+
+.col-md-2 {
+    text-align: center;
+}

@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +7,7 @@
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/contact.css">
 
     <title>Responsive grid project</title>
 </head>
@@ -18,7 +15,7 @@
 <body>
     <section class="container">
         <header class="row">
-            <div class ="col-md-1" >
+            <div class="col-md-1">
                 <img class="blue" src="img/blue.jpg">
             </div>
             <div class="col-md-7">
@@ -34,50 +31,36 @@
     </section>
     <section class="container">
         <main class="row">
-            <div class="col-6">
-                <div id="idcard">
-                    <div class="card">
-                        <img src="img/round.png" alt="Avatar" style="width:80%">
-                        <p style="font-size:26px; width:100px"><b>Maya Nelson</b></p>
-                        <p>Software Engineer</p>
-                        <div class="card-nav">
-                            <a href="https://twitter.com/"><img src="img/twitter-icon.svg" alt="twitter-logo"></a>
-                            <a href="https://www.facebook.com/"><img src="img/facebook-icon.svg" alt="facebook-logo"></a>
-                            <a href="https://www.instagram.com/"><img src="img/instagram-icon.svg" class="social" alt="IG-logo"></a>
-                        </div>
-                    </div>
+            <div class="col-12">
+                <p class="talk" style="font-weight: bolder; font-size:35px;">Let's Talk</p>
+                <div class="card">
+                        <form action="#">
+                            <label for="fname">Full Name</label>
+                            <input type="text" id="fname" name="firstname">
+                            <br><br>
+                            <label for="email">Email</label>
+                            <input id="email" name="email">
+                            <br><br>
+                            <label for="subject">Subject</label>
+                            <input id="subject" name="subject">
+                            <br><br>
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message"></textarea>
+                            <br><br>
+                            <input type="submit" value="Send">
+                        </form>
                 </div>
-            </div>
-            <div class="col-6">
-                <aside>
-                    <h1>Hello</h1>
-                    <h2>Here's who I am & what I do</h2>
-                    <br>
-                    <div>
-                        <button class="resume">Resume</button>
-                        <button class="projects">Projects</button>
-                    </div>
-                    <br>
-                    <div id="main-text">
-                        <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double
-                            click me to
-                            add your own content and make changes to the font.</p>
-                        <br>
-                        <p>I’m a great place for you to tell a story and let your users know a little more about you.</p>
-                    </div>
-                </aside>
             </div>
         </main>
     </section>
-
     <section class="container">
         <footer class="row">
             <div class="col-md-6">
-                <p class="footer" >&copy; 2023 by Maya Nelson.</p>
+                <p class="footer">&copy; 2023 by Maya Nelson.</p>
                 <p>Proudly created with Wix.com</p>
             </div>
             <div class="col-md-2">
-                <a>Call</a> 
+                <a>Call</a>
                 <p>123-456-7890</p>
             </div>
             <div class="col-md-2">
@@ -89,7 +72,8 @@
                 <div class="social-nav">
                     <a href="https://twitter.com/"><img src="img/twitter-icon.svg" alt="twitter-logo"></a>
                     <a href="https://www.facebook.com/"><img src="img/facebook-icon.svg" alt="facebook-logo"></a>
-                    <a href="https://www.instagram.com/"><img src="img/instagram-icon.svg" class="social" alt="IG-logo"></a>
+                    <a href="https://www.instagram.com/"><img src="img/instagram-icon.svg" class="social"
+                            alt="IG-logo"></a>
                 </div>
             </div>
         </footer>

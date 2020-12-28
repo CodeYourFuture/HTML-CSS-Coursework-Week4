@@ -1,3 +1,152 @@
-/* Add your custom CSS here */
+/*Index CSS*/
+body {
+    color: black;
+    font-family: 'Langar', cursive;
+}
 
-/* Dont' forget to link this file to your HTML in the <head> */
+header,
+footer {
+    background-color:   rgb(238, 237, 243);
+
+}
+
+a {
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.header-text {
+    font-size: 25px;
+    margin-left: -80px;
+}
+
+span {
+    font-weight: bolder;
+}
+
+.blue {
+    width: 20%;
+    margin-top: 10px;
+}
+
+#main-text {
+    width: 280px;
+    text-align: justify;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+.resume{
+    border-radius: 8px;
+    background-color: blue;
+    color: white;
+    padding: 6px 21px;
+}
+
+.projects {
+    border-radius: 8px;
+    background-color: white;
+    padding: 6px 21px;
+}
+
+.resume {
+  transition-duration: 0.4s;
+}
+
+.resume:hover {
+  background-color: white;
+  color: black;
+}
+
+.projects {
+  transition-duration: 0.4s;
+}
+
+.projects:hover {
+  background-color: blue;
+  color: white;
+}
+
+.col-md-5 {
+    background-position: contain;
+}
+
+.card img {
+    padding-top: 10px;
+    align-self: center;
+    padding-bottom: 10px;
+}
+
+#idcard {
+    margin-left: 280px;
+}
+
+.card {
+    height: 500px;
+    background-color:rgb(238, 237, 243);
+}
+
+aside {
+    margin-right: 250px;
+}
+
+#main-text {
+  align-self: center;
+}
+
+.card p {
+    align-self: center;
+    text-align: center;
+}
+
+#idcard main {
+    background-color: bisque;
+}
+
+.social-nav img {
+    height: 20px;
+    width: 20px;
+    border-radius: 25px;
+}
+
+.card-nav img {
+    height: 45px;
+    width: 45px;
+}
+
+.card-nav {
+    align-self: center;
+    width: fit-content;
+}
+
+.row {
+    padding-top: 50px;
+}
+
+main {
+    margin: 50px 0 140px 0;
+    padding: 120px 0 140px 0;
+}
+
+.container main {
+    padding-top: 200px;
+}
+
+.container header {
+    padding-top: 40px;
+}
+
+.col-md-2 {
+    text-align: center;
+}
+
+#first {
+    background-color: black;
+}
