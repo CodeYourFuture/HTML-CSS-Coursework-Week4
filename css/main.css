@@ -5,7 +5,7 @@
 }
 html,
 body {
-  /* height: 100%; */
+  height: 100%;
 }
 html {
   box-sizing: border-box;
@@ -13,12 +13,7 @@ html {
 body {
   background-color: #e6dacd;
 }
-.container {
-  /* min-height: 100%; */
-}
-.row {
-  /* overflow: auto; */
-}
+
 /* Menu Bar */
 a {
   color: blue;
@@ -68,21 +63,14 @@ a:hover {
 }
 .menu-icon {
   border: 2px solid red;
-  /* color: blue; */
 }
 
 .profile-card {
   background-color: #f4ece6;
   margin-top: -180px;
   /* position: absolute; */
-  /* top: 70px; */
-  /* right: 15px; */
-  /* bottom: auto; */
-  /* left: 15px; */
-  /* padding-top: 15px; */
-
   width: 80vw;
-  height: 50vh; /*change this to vh or em or rem*/
+  height: 51vh; /*change this to vh or em or rem*/
   text-align: center;
 }
 .photo-wrapper img {
@@ -95,16 +83,17 @@ a:hover {
 .separator-line {
   border-bottom: 3px solid blue;
   margin-bottom: 10px;
-  width: 15%;
+  width: 25%;
 }
 
-.buttons button {
+.btn {
   /* background-color: blue; */
   /* border: 2px solid black; */
-  border: none;
-  border-radius: 15px;
+  border: 1px solid black;
+  border-radius: 25px;
   text-align: center;
-  padding: 10px;
+
+  /* padding: 15px; */
 }
 button:hover {
   background-color: blue;
@@ -118,6 +107,9 @@ button:hover {
   /* position: relative; */
   width: 100%;
   padding: 5px;
+}
+#body-wrapper {
+  width: 100%;
 }
 .contact {
   font-size: 12px;
@@ -165,20 +157,14 @@ button:hover {
   justify-content: center;
   align-items: center;
 } */
-/* .contact-header-class {
-  /* position: absolute; */
-  width: 100%;
-  background-color: white;
-  border: 2px solid blue;
-  /* height: 30vh; */
-  /* top: 0px; */
-  /* bottom: auto; */
-} */
+
 form {
   /* find a better way*/
   /* width: 50%; */
   /* margin: 25px auto; */
-  padding: 15px 5px;
+  /* padding: 15px 5px; */
+  /* border: 2px solid blue; */
+  margin-bottom: 15px;
 }
 
 .form-heading {
@@ -199,13 +185,13 @@ form {
 .contact-form {
   background: white;
 }
-.form-btn {
-  /* border: none; */
+/* .form-btn {
+  border: none; 
   border-radius: 50px;
   background: blue;
   color: white;
   padding: 5px 15px;
-}
+} */
 
 .form-btn:hover {
   outline: 1px solid blue;
@@ -213,21 +199,19 @@ form {
   background: white;
 }
 .btn-container {
-  margin: 25px auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* border:2px solid red; */
 }
 
 /* CSS for projects.html  */
-.projects-header-class .contact-header-class {
+.projects-header-class,
+.contact-header-class,
+.resume-header-class {
   /* position: absolute; */
   width: 100%;
   background-color: white;
   border: 2px solid blue;
-  /* height: 30vh; */
-  /* top: 0px; */
-  /* bottom: auto; */
 }
 
-.project-1-img img {
-  /* width: 100%; */
-  /* height: auto; */
-}
+/* CSS for resume.HTML */
