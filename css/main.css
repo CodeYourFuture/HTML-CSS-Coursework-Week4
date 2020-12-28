@@ -7,6 +7,13 @@ body {
     color: rgb(0,0,0); 
 }
 
+.img-prof {
+    border-radius: 40%;
+}
+a {
+    padding:5px;
+    ;
+}
 
 .flex-nav{
     display: flex;
