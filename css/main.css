@@ -66,6 +66,10 @@ a:hover {
   object-fit: cover;
 }
 
+.container .bio-section {
+  margin-bottom: 400px;
+}
+
 .bio-section {
   background-color: #f2f2f1;
   height: 730px;
@@ -99,18 +103,22 @@ h2 {
   padding-top: 40px;
 }
 
+.bio-img-row{
+  height: 560px;
+}
+
 .bio-img {
   width: 500px;
   position: absolute;
 }
 
-.therapy-options {
-  margin-top: 355px;
-  height: 450px;
+.container .therapy-options {
+  margin-top: 65px;
+  margin-bottom: 100px;
 }
 
 .options-row {
-  height: 500px;
+  height: 600px;
   text-align: center;
   padding-top: 50px;
 
