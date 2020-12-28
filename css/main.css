@@ -15,7 +15,7 @@ ul {
 
 
 .hero-image {
-    background-image: url(https://images.unsplash.com/photo-1514533450685-4493e01d1fdc?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTk2fHxtdXNpYyUyMGZlc3RpdmFsfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+    background-image: url(https://images.unsplash.com/photo-1514533450685-4493e01d1fdc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1934&q=80);
 
     background-color: #cccccc; /* Used if the image is unavailable */
     height: 500px; /* You must set a specified height */
@@ -24,7 +24,41 @@ ul {
     background-size: cover;
 }
 
-h1, h2 {
+/* h1, h2 {
 color: white;
+} */
+
+.line-up-section {
+    background-image: url(../img/festival_lilly-flower.svg), url(../img/festival_blob-shape.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left bottom, center;
+    background-size: 60px, contain;
+    background-color:#5362AC ;
+    color: white;
+ 
+    
+}
+
+.section-three {
+
+    background-image: url(https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1934&q=80);
+    
+    height: 500px; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ticket-section {
+    background-image: url(../img/festival_lilly-flower.svg), url(../img/festival_blob-shape.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right bottom, center;
+    background-size: 60px, contain;
+}
+
+.about {
+    background: url(../img/festival_blob-shape.svg) no-repeat, url(../img/festival_lilly-flower.svg) right bottom no-repeat;
+    background-size: 100px, 100px;
+    background-color:#1B7B57;
 }
 
