@@ -1,3 +1,7 @@
+/* Add your custom CSS here */
+
+/* Dont' forget to link this file to your HTML in the <head> */
+=======
 /* div {
   border: 1px solid goldenrod;
   color: goldenrod;
@@ -5,18 +9,146 @@
   margin-bottom: 20px;
   text-align: center;
 }*/
+
+body {
+  font-family: Quicksand;
+  font-weight: 300;
+}
+
 .app-btn {
   background-color: #cff4ec;
   border: 0px;
-  width: 100%;
   padding-bottom: 10px;
   padding-top: 10px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.head-txt {
+
+.title-txt {
+  font-family: Libre Baskeville;
+  font-size: 65px;
+}
+.nor-txt {
   font-size: 20px;
-  font-weight: 200px;
+}
+
+.mid-txt {
+  font-size: 30px;
+  text-align: center;
+  font-weight: ighter;
+  font-style: italic;
+}
+.head-txt {
+  font-family: Libre Baskeville;
+  font-size: 25px;
   text-align: center;
   font-style: italic;
+}
+.intro-img {
+  margin-top: 40px;
+  width: 100%;
+}
+.intro-txt {
+  font-family: Libre Baskeville;
+  font-weight: lighter;
+  font-size: 50px;
+  background-coor: #cff4ec;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.intro-txt p {
+  font-size: 20px;
+}
+
+.about-txt {
+  font-family: Libre Baskeville;
+  background-color: #f2f2f1;
+  font-weight: lighter;
+  font-size: 50px;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.about-txt h2 {
+  font-style: italic;
+}
+
+.about-img {
+  background-color: #f2f2f1;
+  margin-top: 40px;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.n1 {
+  font-family: Libre Baskeville;
+  background-color: #e2f6cd;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.n2 {
+  font-family: Libre Baskeville;
+  background-color: #f2f2f1;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.n3 {
+  font-family: Libre Baskeville;
+  background-color: #cff4ec;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.numb-title {
+  padding-top: 30px;
+  font-size: 28px;
+  font-style: italic;
+}
+
+.service-btn {
+  background-color: #94d6c8;
+  border: 0px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.article-container {
+  background-color: #f2f2f1;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.article-container {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+.article-container p {
+  font-size: 25px;
+}
+
+.article-btn {
+  background-color: #cff4ec;
+  border: 0px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.footer {
+  padding-top: 50px;
+  padding-bottom: 100px;
 }
