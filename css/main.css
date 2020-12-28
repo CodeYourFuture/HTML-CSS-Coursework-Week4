@@ -4,8 +4,9 @@
 header{
   background-color: white;
 }
-ul {
-  list-style-image: url('icon.png');
+.bulletpoint{
+width: 30px;
+height: 30px;
 }
 .maintop{
   background-color: white;
@@ -86,4 +87,14 @@ div.transbox p {
 }
 body .footerbackgroundcolor{
   background-color: white;
+}
+@media screen and (min-width:450px){
+  .maintextposition {
+    padding-top: 35%;
+}
+}
+@media screen and (min-width:775px){
+  .maintextposition {
+    padding-top: 35%;
+}
 }
