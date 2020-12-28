@@ -7,6 +7,9 @@ header{
 ul {
   list-style-image: url('icon.png');
 }
+.maintop{
+  background-color: white;
+}
 
 .menue1{
   width: 35px;
