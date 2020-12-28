@@ -160,3 +160,31 @@ i {
   color: black;
   padding: 0px 25px;
 }
+
+.container.article-section {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.article-section {
+  background-color: #f2f2f1;
+}
+
+h4 {
+  font-family: "Libre Baskerville", serif;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.row.blog-images {
+  background-color: white;
+  width: 90%;
+  margin: 30px 0px 30px 45px;
+
+}
+
+.blog-images img {
+  width: 100%;
+  height: 200px;
+  margin: 20px 0px;
+}
