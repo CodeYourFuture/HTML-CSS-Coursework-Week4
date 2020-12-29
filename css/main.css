@@ -109,11 +109,10 @@ footer h4 {
 
 /* resume page */
 
-.resume-container {
+.container-width {
   max-width: 800px;
 }
-/* 
-a.nav-link:hover {
-  background-color: red;
-  color: blue;
-} */
+
+.background-main {
+  background-color: var(--bg-color);
+}
