@@ -82,6 +82,17 @@ MENUE -IMPROVISE
 .topnav.responsive a{
   display: flex;
   flex-direction: row;
+  justify-content: start;
+}
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: flex;
+    flex-direction: row;
+
+  }
+  .topnav a.icon {
+    float: right;
+    display: none;
+  }
 }
 }
 /*END OF IMPROVISATION*/
