@@ -228,7 +228,7 @@ body .footerbackgroundcolor{
 @media screen and (min-width:930px){
   .movementofbuttons{
     position: relative;
-    left: 450px;
-    bottom: 135px;
+    left: 140%;
+    bottom: 160px;
   }
 }
