@@ -12,7 +12,6 @@ nav {
   width: 100%;
   top: 0px;
   background-color: white;
-  display: contents;
 
 }
 
@@ -26,14 +25,20 @@ nav {
   font-size: 16px;
 }
 
+.button p:hover, a:hover {
+  background-color: #4D7369;
+  color: #ffffff;
+  cursor: pointer;
+}
+
 a {
   text-decoration: none;
   cursor: pointer;
   color: #2f2f2e;
 }
 
-a:hover {
-  color: #94d6c8;
+a.#href:hover {
+  color: #4D7369;
 }
 
 .title p {
@@ -105,15 +110,6 @@ h2 {
 
 .paragraph {
   padding-top: 40px;
-}
-
-.bio-img-row{
-  height: 560px;
-}
-
-.bio-img {
-  width: 500px;
-  position: absolute;
 }
 
 .container.therapy-options {
