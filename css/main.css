@@ -1,3 +1,32 @@
 /* Add your custom CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
+body{
+ 
+    font-family: Arial,Helvetica,sans-serif;
+    
+}
+.btn-primary {
+    color: #2F2F2E;
+    background-color: rgba(207, 244, 236, 1);
+    border: solid rgba(207, 244, 236, 1) 3px;
+    border-radius: 0%;
+    transition: color 0.4s ease 0s;
+    line-height: 1.5;
+    
+}
+.navbar-brand{
+    font-style: italic;
+    color: #2F2F2E;
+    line-height: 1.4em;
+    font-family: didot-w01-italic, serif;
+    /* white-space: nowrap; */
+}
+
+/* @media(min width:900px){
+    nav-link{
+        align-items: flex-end;
+    }
+
+
+} */
