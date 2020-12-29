@@ -200,9 +200,17 @@ background-color: #ecfcf9;
     margin-top: 10px;
 }
 
-/* Adding media query*/
+/* Adding media query Adding media query Adding media query Adding media query*/
 
 @media only screen and (min-width: 750px) {
+
+body{
+    padding: 60px;
+}
+
+section {
+    margin-bottom: 50px;
+}
 
  .navbar{
     display: flex;
@@ -212,10 +220,8 @@ background-color: #ecfcf9;
 }
 
 .appointment-button {
-     
     padding-top: 15px;
-    }
-
+}
 
 .mobile-navigation{
     display: none;
@@ -225,13 +231,22 @@ background-color: #ecfcf9;
     display: flex;
     height: 145px;
     justify-content: space-between;
+}
+
+.bar-extended{
     word-spacing: 15px;
+}
+
+.maria-phd {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 110px;
+    font-size:x-large
 }
 
 .maria-maria{
     width: 50%;
 }
 
-
-
+ 
 }
