@@ -75,9 +75,9 @@ a.#href:hover {
   object-fit: cover;
 }
 
-.container .bio-section {
+/* .container .bio-section {
   margin-bottom: 400px;
-}
+} */
 
 .bio-section {
   background-color: #f2f2f1;
@@ -99,8 +99,18 @@ a.#href:hover {
 .bio-section p {
   text-align: center;
   padding-left: 80px;
-  /* font-family: 'Libre Baskerville', sans-serif;
-  font-style: italic; */
+
+}
+
+button {
+  font-size:  25px;
+  border: none;
+  background-color: inherit;
+}
+ 
+
+img.img-responsive {
+  width: 100%;
 }
 
 h2 {
@@ -112,7 +122,7 @@ h2 {
   padding-top: 40px;
 }
 
-.container.therapy-options {
+.section.therapy-options {
   margin-top: 45px;
   margin-bottom: 70px;
 }
