@@ -201,7 +201,101 @@
             
             </div>
         </article>
-    </section>  
+    </section> 
+    
+                            <!-- Adding Carousel to the Blogs-Part when it is in mobile view -->
+    <section class="blogs-page d-lg-none">
+        <h5 class="text-center">Articles about Psychology</h5>
+        
+        <div id="blogsCarousel" class="carousel" >
+            <ol class="carousel-indicators">
+                <li data-target="#blogsCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#blogsCarousel" data-slide-to="1"></li>
+                <li data-target="#blogsCarousel" data-slide-to="2"></li>
+            </ol>
+            
+            <div class="container">
+                
+                <div class="carousel-inner row g-0">
+                        
+                    <div class="carousel-item active">
+                        <article class="blog-one col-12 d-flex flex-column align-items-center" id="blogOne">
+                            <figure>
+                                <img src="https://static.wixstatic.com/media/84770f_6ae94823ccef48a5bf0ac4650fe562fa~mv2_d_3000_2000_s_2.jpeg/v1/fit/w_363,h_242,al_c,q_80/file.webp" alt="Picture of green mint coloured succulent plant">
+                                <div class="blogs-border">
+                                    <a href="#">Understanding PTSD</a>
+
+                                    <div class="blogs-comment">
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                                                <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                                                <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                                            </svg>
+                                            <span>100</span>
+                                        </div>
+                                        <a href="#">Write a comment</a>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                            <path d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </figure>
+                        </article>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <article class="blog-two col-12 d-flex flex-column align-items-center" id="blogTwo">
+                            <figure>
+                                <img src="https://static.wixstatic.com/media/03f22a3cb4d543b9b7ffcaae2f53a15f.jpg/v1/fit/w_363,h_242,al_c,q_80/file.webp" alt="picture of green leaves of a tree">
+                                <div class="blogs-border">
+                                    <a href="#">Why it's okay to argue</a>
+                                    <div class="blogs-comment">
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-eye"    viewBox="0 0 16 16">
+                                                <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                                                <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                                            </svg>
+                                            <span>100</span>
+                                        </div>
+                                        <a href="#">Write a comment</a>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart"
+                                            viewBox="0 0 16 16">
+                                            <path d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </figure>
+                        </article>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <article class="blog-three  col-12 d-flex flex-column align-items-center" id="blogThree">
+                            <figure>
+                                <img src="https://static.wixstatic.com/media/40c2397700984377a8d5a841d6b818ef.jpg/v1/fit/w_363,h_228,al_c,q_80/file.webp" alt="picture of a sea wave">
+                                <div class="blogs-border">
+                                    <a href="#">10 ways to de-stress</a>
+                                    <div class="blogs-comment">
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                                                <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                                                <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                                            </svg>
+                                            <span>100</span>
+                                        </div>
+                                        <a href="#">Write a comment</a>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                            <path d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </figure>
+                        </article>                
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 
                         <!-- Adding a footer -->

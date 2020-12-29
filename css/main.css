@@ -337,3 +337,38 @@ body {
   font-size: 0.8rem;
   font-weight: 700;
 }
+
+/* 8.0 BLOGS CAROUSEL */
+
+/* 8.1 Adding style to the anchor element inside this class (e.g "why it's okay to argue") */
+.carousel .blogs-border a {
+  text-decoration: none;
+
+  font-family: "Libre Baskerville", serif;
+  font-style: italic;
+  font-size: 0.8rem;
+  color: #2f2f2e;
+}
+
+.carousel.blogs-border a:hover {
+  color: #94d6c8;
+}
+
+/* 8.2 Adding style to the anchor element inside this class (e.g write a comment) */
+.carousel .blogs-border .blogs-comment a {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-size: 0.8rem;
+}
+
+/* 8.3 Adding style to the carousel-indicators  */
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: black;
+}
+
+.carousel-indicators {
+  bottom: -50px;
+}
