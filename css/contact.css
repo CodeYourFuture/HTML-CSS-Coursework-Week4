@@ -136,7 +136,12 @@ footer{
 
 
 .socials {
-    padding: 0px 7px;
+    padding: 0px 1px;
+}
+
+.socials img {
+    height:20px;
+    width:20px;
 }
 
 
