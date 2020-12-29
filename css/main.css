@@ -1,3 +1,69 @@
 /* Add your custom CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+    color:black;
+    
+}
+
+.appointment-button {
+    padding: 10px;
+    border: none;
+    color: black;
+
+}
+ 
+.appointment-button:hover {
+    background-color: #4D7369;
+    color: white;
+    border: none;
+    transition: all 0.7s ease;
+}
+
+.title {
+    font-family: 'Libre Baskerville', serif;
+}
+
+
+ h1 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 3em;
+    color: black;
+ }
+
+h5 {
+    font-family: 'Libre Baskerville', serif;
+}
+
+
+
+.bg-limegreen {
+    background-color:#E2F6CD;
+}
+.bg-lightgrey {
+    background-color:#F2F2F1;
+}
+
+.bg-lightmint {
+    background-color: #CFF4EC;
+}
+
+.bg-mediummint {
+    background-color:#94D6C8;
+}
+
+.bg-darkgreen {
+    background-color: #4D7369;
+}
+
+.about {
+    min-height: 700px;
+}
+
+.social-media-img {
+    width: 1rem;
+}
