@@ -30,9 +30,8 @@ MENUE -IMPROVISE
 }
 
 /* Add an active class to highlight the current page */
-.active {
-  background-color: #4CAF50;
-  color: white;
+.topnav a.active {
+  color: blue;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
@@ -82,74 +81,26 @@ MENUE -IMPROVISE
 .topnav.responsive a{
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  justify-content: left;
 }
-  .topnav a:not(:first-child), .dropdown .dropbtn {
+  .topnav a:not(:nth-of-type(0)), .dropdown .dropbtn {
     display: flex;
     flex-direction: row;
 
   }
   .topnav a.icon {
-    float: right;
     display: none;
   }
-}
-}
-/*END OF IMPROVISATION*/
-/*further improvisation:*/
-.overlay {
-  height: 0%;
-  width: 100%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0, 0.9);
-  overflow-y: hidden;
-  transition: 0.5s;
-}
-
-.overlay-content {
-  position: relative;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
-}
-
-.overlay a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
-}
-
-.overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-}
-
-@media screen and (max-height: 450px) {
-  .overlay {overflow-y: auto;}
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-  font-size: 40px;
-  top: 15px;
-  right: 35px;
+  .topnav{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
   }
 }
-/*end of improvisation*/
+/*END OF IMPROVISATION*/
 .maintop{
   background-color: white;
+  padding-bottom: 20%;
 }
 
 .menue1{
@@ -222,7 +173,7 @@ div.transbox p {
   background-color: white;
 }
 .maintextposition{
-  padding-top: 120px;
+  padding-top: 30%;
 }
 body .footerbackgroundcolor{
   background-color: white;
@@ -234,7 +185,7 @@ body .footerbackgroundcolor{
 }
 @media screen and (min-width:775px){
   .maintextposition {
-    padding-top: 35%;
+    padding-bottom: 35%;
 }
   .main{
     display: flex;
