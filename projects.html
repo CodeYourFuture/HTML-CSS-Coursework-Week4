@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Here we import the Boostrap CSS stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- Add a link to your custom CSS here -->
+    <link rel="stylesheet" href="./projects.css">
+    <title>Responsive grid project</title>
+</head>
+
+<body>
+    <header>
+        <nav class="container navbackgroundcolor">
+            <div class="row justify-content-center">
+                <div class="col-4">
+                    <img class="bulletpoint" src="/icon.png" alt="bulletpoint">
+                    Omar Sharif
+                </div>
+                <div class="col-8 menueheight">
+                    <div class="row topnav" id="parttopnav">
+                        <a class="col-2" href="./index.html">ABOUT ME</a>
+                        <a class="col-2" href="./resume.html.html">RESUME</a>
+                        <a class="col-2 active" href="./projects.html">PROJECTS</a>
+                        <a class="col-2" href="./Contact-form.html">CONTACT</a>
+                        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()"><img
+                                class="menue" src="./icon.png" alt="menue"></a>
+                    </div>
+                    <script>
+                        function myFunction() {
+                            var x = document.getElementById("parttopnav");
+                            if (x.className === "topnav") {
+                                x.className += " responsive";
+                            } else {
+                                x.className = "topnav";
+                            }
+                        }
+                    </script>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-8">
+                    CYF student
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <h3 class="headerwithicon"><img class="bulletpoint" src="/icon.png" alt="bulletpoint">Projects</h3>
+    <p>
+        I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to
+        add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a
+        little more about you.
+    </p>
+    <br>
+    <section class="container shadow">
+        <div class="row box1">
+            <div class="col-sm-12 col-lg-6 col-md-6">
+                <h4 class="box1header">Project name 01</h4>
+                <h5>Role Title</h5>
+                <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to
+                add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a
+                little more about you.</p>
+            </div>
+            <img class="col-sm-12 col-lg-6 col-md-6" src="./facebook.png" alt="facebook">
+        </div>
+    </section>
+    <br>
+        <section class="container shadow">
+            <div class="row box1">
+                <div class="col-sm-12 col-lg-6 col-md-6">
+                    <h4 class="box1header">Project name 02</h4>
+                    <h5>Role Title</h5>
+                    <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double
+                        click me to
+                        add your own content and make changes to the font. I’m a great place for you to tell a story and let
+                        your users know a
+                        little more about you.</p>
+                </div>
+                <img class="col-sm-12 col-lg-6 col-md-6" src="./instagram.png" alt="facebook">
+            </div>
+        </section>
+        <br>
+        <section class="container shadow">
+            <div class="row box1">
+                <div class="col-sm-12 col-lg-6 col-md-6">
+                    <h4 class="box1header">Project name 03</h4>
+                    <h5>Role Title</h5>
+                    <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double
+                        click me to
+                        add your own content and make changes to the font. I’m a great place for you to tell a story and let
+                        your users know a
+                        little more about you.</p>
+                </div>
+                <img class="col-sm-12 col-lg-6 col-md-6" src="./linkedin.jpg" alt="facebook">
+            </div>
+        </section>
+        <br>
+        <footer class="footerbackgroundcolor">
+            <section class="container largescreenresponsivefooter">
+                <section class="row">
+                    <div class="col-6">
+                        <h5 class="col-1">Call:</h5>
+                        <h6 class="col-5">123-456-7</h6>
+                    </div>
+                    <div class="col-6">
+                        <h5 class="col-2">Write:</h5>
+                        <h6 class="col-4">info@mysite.com</h6>
+                    </div>
+                    <div class="col-6">
+                        <h5 class="col-2">Follow:</h5>
+                        <div class="col">
+                            <a class="icons" href="https://facebook.com"> <img class="col-2" src="/facebook.png"
+                                    alt="Facebook"></a>
+                            <a class="icons" href="https://twitter.com"> <img class="col-2" src="/twitter.png" alt="Twitter">
+                            </a>
+                            <a class="icons" href="https://linkedin.com"> <img class="col-2" src="/linkedin.jpg"
+                                    alt="LinkedIn"></a>
+                            <a class="icons" href="https://instagram.com"> <img class="col-2" src="/instagram.png"
+                                    alt="Instagram"></a>
+                        </div>
+                </section>
+                <section class="row">
+                    <div class="col-12">
+                        © 2023 by Omar Sharif.
+                    </div>
+                    <div class="col-6">
+                        Website design has been taken from Wix.com
+                    </div>
+                </section>
+            </section>
+        </footer>
