@@ -1,3 +1,59 @@
-/* Add your custom CSS here */
-
-/* Dont' forget to link this file to your HTML in the <head> */
+body {
+    color: #2F2F2E
+}
+.buttons {
+    background-color: #CFF4EC;
+    border: #CFF4EC;
+    padding: 10px 30px 10px 30px;
+    font-family: 'Quicksand', sans-serif;
+}
+h1, h2 {
+    font-family: 'Libre Baskerville', serif;
+}
+h3 {
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+}
+p {
+    font-family: 'Quicksand', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: #2F2F2E
+}
+.introduction, .couples {
+    background-color: #CFF4EC;
+    padding: 30px;
+}
+.about-maria, .articles {
+    background-color: #F2F2F1;
+    padding: 30px;
+}
+.individual {
+    background-color: #E2F6CD;
+    padding: 30px;
+}
+.group {
+    background-color: #F2F2F1;
+    padding: 30px;
+}
+#services {
+    background-color: #94D6C8;
+    padding: 10px 40px 10px 40px;
+    margin: 30px;
+}
+.social-icons {
+    width: 40px;
+    padding: 10px;
+}
+img {
+    width: 250px;
+}
+.about-maria {
+    padding-bottom: 150px;
+}
+.maria-photo {
+    margin-top: -120px;
+    padding-bottom: 75px;
+    z-index: 1;
+}
