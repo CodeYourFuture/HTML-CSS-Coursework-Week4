@@ -52,7 +52,7 @@ nav > div > div > a {
   margin-top: -100px;
 }
 .photo-wrapper img {
-  width: 75%;
+  width: 65%;
   margin: 25px auto;
   border-radius: 50%;
 }
@@ -74,16 +74,18 @@ button:hover {
 /* Dont' forget to link this file to your HTML in the <head> */
 .intro-wrapper {
   /* margin-top: -280px; */
-  margin-top: -150px;
+  /* margin-top: -150px; */
 }
 #footer-wrapper {
   background-color: white;
   color: black;
-  width: 100%;
-  padding: 5px;
+  /* border: 2px solid red; */
+  /* width: 100%; */
+  /* padding: 5px auto; */
 }
 #body-wrapper {
   width: 100%;
+  /* border: 2px solid red; */
 }
 .contact {
   font-size: 12px;
