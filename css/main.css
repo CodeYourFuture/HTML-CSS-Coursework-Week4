@@ -1,3 +1,373 @@
 /* Add your custom CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
+
+header {
+  padding-top: 50px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 150px;
+  background-color: white;
+}
+
+.draw-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.main-article {
+  margin-left: 10px;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.sec-article {
+  margin-left: 5px;
+  font-size: 2rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.the-nav {
+  margin-right: 10%;
+  margin-left: 22%;
+}
+
+.blue-square {
+  background-color: blue;
+  min-width: 20px;
+  height: 20px;
+  margin-left: 5%;
+  margin-top: 15px;
+}
+
+.nav-list {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  padding: 2%;
+  justify-content: space-between;
+  list-style-type: none;
+  font-size: 1.2rem;
+}
+
+.burger-menu {
+  display: none;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: lightblue;
+}
+
+a:hover {
+  color: blue;
+  cursor: pointer;
+}
+
+a:active {
+  text-decoration: underline;
+  color: darkblue;
+}
+
+main {
+  margin-top: 200px;
+}
+
+.first-row {
+  height: 150px;
+}
+
+.gray-div {
+  background: rgb(216, 212, 190);
+}
+
+.light-gray-div {
+  background: rgb(240, 237, 224);
+}
+
+.photo-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.my-photo {
+  width: 300px;
+  border-radius: 50%;
+}
+
+.small-seperator {
+  width: 80px;
+  border: 2px solid darkblue;
+}
+
+.small-photos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 5%;
+  padding-left: 20%;
+  padding-right: 20%;
+  background-color: white;
+  width: 100%;
+  margin-bottom: 0px;
+  margin-top: 45px;
+}
+
+.small-photo {
+  width: 25px;
+}
+
+.Intro-div {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+}
+
+.welcome-article {
+  margin-left: 10px;
+  font-size: 6rem;
+  font-weight: 700;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.who-me {
+  margin-left: 10px;
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.div-buttons {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 3%;
+  margin-top: 45px;
+}
+
+.res-btn {
+  background-color: rgb(58, 76, 240);
+  color: white;
+  font-weight: 300;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 150px;
+  border-radius: 15px;
+}
+
+.proj-btn {
+  background-color: white;
+  color: rgb(58, 76, 240);
+  font-weight: 300;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 150px;
+  border-radius: 15px;
+  margin-left: 20px;
+}
+
+.res-btn:hover {
+  background-color: white;
+  color: rgb(58, 76, 240);
+}
+
+.proj-btn:hover {
+  background-color: rgb(58, 76, 240);
+  color: white;
+}
+
+.text-article {
+  font-weight: 200;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 50%;
+  margin-left: 20px;
+  margin-top: 60px;
+}
+
+.footer-big-row {
+  display: flex;
+  font-size: 0.9rem;
+  margin-top: 3%;
+}
+
+.smaler-photos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-left: 30%;
+  padding-right: 30%;
+  background-color: white;
+  width: 100%;
+}
+
+.last-footer-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.smaler-photo {
+  width: 20px;
+}
+
+.footer-small-row {
+  display: none;
+}
+
+@media (max-width: 1140px) {
+  .main-article {
+    margin-left: 5px;
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+
+  .sec-article {
+    margin-left: 3px;
+    font-size: 1.4rem;
+  }
+
+  .the-nav {
+    margin-right: 5%;
+    margin-left: 10%;
+  }
+
+  .nav-list {
+    font-size: 1rem;
+  }
+
+  .blue-square {
+    min-width: 15px;
+    height: 15px;
+    margin-left: 2%;
+    margin-top: 11px;
+  }
+
+  .welcome-article {
+    margin-left: 7px;
+    font-size: 4rem;
+    font-weight: 600;
+  }
+
+  .who-me {
+    margin-left: 7px;
+    font-size: 1.1rem;
+    font-weight: 300;
+  }
+
+  .div-buttons {
+    margin-top: 35px;
+  }
+
+  .res-btn {
+    width: 100px;
+    font-size: 1rem;
+  }
+
+  .proj-btn {
+    width: 100px;
+    font-size: 1rem;
+    margin-left: 10px;
+  }
+
+  .text-article {
+    margin-left: 10px;
+    margin-top: 40px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-article {
+    margin-left: 3px;
+    font-size: 1.1rem;
+  }
+
+  .sec-article {
+    margin-left: 2px;
+    font-size: 1.1rem;
+  }
+
+  .the-nav {
+    display: none;
+  }
+
+  .blue-square {
+    min-width: 10px;
+    height: 10px;
+    margin-top: 9px;
+  }
+
+  .burger-menu {
+    display: inline;
+  }
+  .welcome-article {
+    font-size: 3rem;
+  }
+
+  .who-me {
+    font-size: 0.8rem;
+  }
+
+  .res-btn {
+    width: 80px;
+    font-size: 0.8rem;
+  }
+
+  .proj-btn {
+    width: 80px;
+    font-size: 0.8rem;
+    margin-left: 8px;
+  }
+
+  .text-article {
+    margin-top: 20px;
+    font-size: 0.7rem;
+  }
+
+  .footer-big-row {
+    display: none;
+  }
+
+  .footer-small-row {
+    display: inline;
+    font-size: 0.6rem;
+    margin-left: 1px;
+  }
+
+  .last-footer-col {
+    font-size: 0.5rem;
+    margin-bottom: 30px;
+  }
+
+  .smaler-photos {
+    padding-left: 5%;
+    justify-content: flex-start;
+  }
+
+  .smaler-photo {
+    width: 15px;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 330px) {
+  .main-article {
+    margin-left: 1px;
+    font-size: 0.8rem;
+  }
+
+  .sec-article {
+    font-size: 0.8rem;
+  }
+
+  .blue-square {
+    min-width: 5px;
+    height: 5px;
+    margin-top: 5px;
+  }
+}
