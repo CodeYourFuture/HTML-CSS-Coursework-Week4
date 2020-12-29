@@ -1,6 +1,3 @@
-/* Add your custom CSS here */
-
-/* Dont' forget to link this file to your HTML in the <head> */
 header{
   background-color: white;
   position: fixed;
@@ -81,65 +78,17 @@ height: 20px;
 body{
   background-color: wheat;
 }
-.formbackground{
-    background-color: white;
-    box-shadow:20px 20px 50px grey;
-}
-.contactform{
-    padding-top: 100px;
-}
-/*Contact form structure*/
-
 h3 {
 	text-align: center;
 }
 .headerwithicon{
-    padding-top: 30px;
+    padding-top: 130px;
     padding-bottom: 30px;
 }
 
 label {
 	font-size: 0.85em;
 	margin-left: 12px;
-}
-
-/* Add styles to 'input' and 'textarea' selectors */
-
-input[type=text],input[type=email], textarea {
-    width: 100%;
-    border-bottom: red;
-    padding: 12px;
-    border: 1px solid red;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-}
-
-/* Add styles to show 'focus' of selector */
-
-input[type=text]:focus,input[type=email]:focus, textarea:focus {
-	border: 1px solid green;
-}
-
-/* Add styles to the submit button */
-
-input[type=send] {
-	background: blue;
-	margin: 0 auto;
-	outline: 0;
-	color: white;
-	padding: 12px 24px;
-	border-radius: 40px;
-	transition: all ease-in-out 0.1s;
-	position: relative;
-	display: inline-block;
-	text-align: center;
-}
-/* Align items to center of the 'div' with the class 'center' */
-.center {
-    text-align: center;
 }
 body .footerbackgroundcolor{
   background-color: white;
@@ -153,4 +102,33 @@ body .footerbackgroundcolor{
   footer{
     padding-top: 20px;
   }
+}
+.resumetopcontent{
+    padding-top: 100px;
+}
+.cvbutton{
+    border-radius: 50px;
+    background-color: blue;
+    color: white;
+}
+.cvbutton:hover{
+    background-color: wheat;
+    color: black;
+}
+.box1{
+    background-color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.box1header{
+    color: blue;
+}
+.skillsetstyle{
+    background-color: white;
+}
+.listicon{
+    width: 10px;
+}
+.shadow{
+    box-shadow:20px 20px 50px grey;
 }
