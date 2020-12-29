@@ -67,7 +67,10 @@ header a{
 
 
 /* CSS for Profile Section */
-
+.floatwrapper {
+    
+    margin: 0 auto;
+}
 
 .float {
     background-color:#F4ECE6;
@@ -158,7 +161,7 @@ footer{
 /* Responsive CSS */
 
 
-@media (max-width:768px){
+@media (max-width:767px){
     .hidesmall{
     display:none;
 }
@@ -184,8 +187,6 @@ margin:100px 0px;
 .hamburger{
     display:none;
 }
-}
-
 
 @media (min-width:1050px){
 header a{
