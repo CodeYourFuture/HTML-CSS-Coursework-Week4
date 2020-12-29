@@ -1,3 +1,61 @@
 /* Add your custom CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
+
+/* Navigation bar */
+.navbar {
+  background: #0063B2FF;
+}
+
+.nav-link {
+  color: #EEA47FFF; 
+  cursor: pointer;
+  margin-right: 1em;
+}
+
+.navbar-brand, .navbar-brand:hover {
+  color:  #FFF;
+  margin-left: 20px;
+}
+
+.nav-link:hover {
+  background: #E69A8DFF;
+  color: #5F4B8BFF;
+  border-radius: 5px;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.navbar-toggler {
+  background:#FFF;
+}
+
+/* Main */
+
+.overlay{
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  padding: 0;
+  /* background: rgba(244, 244, 244, 0.79); */
+ }
+
+ /* Section */
+
+ .description{
+   color: #fff;
+  position: absolute;
+  top: 30%;
+  padding: 2em;
+}
+.description h1{
+  color:#F97300;
+}
+
+.description button{
+  border:1px  solid #F97300;
+  background:#F97300;
+  color:#fff;
+}
