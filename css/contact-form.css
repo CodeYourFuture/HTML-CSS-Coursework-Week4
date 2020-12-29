@@ -88,7 +88,6 @@ body{
 .contactform{
     padding-top: 100px;
 }
-/*Contact form structure*/
 
 h3 {
 	text-align: center;
@@ -103,8 +102,6 @@ label {
 	margin-left: 12px;
 }
 
-/* Add styles to 'input' and 'textarea' selectors */
-
 input[type=text],input[type=email], textarea {
     width: 100%;
     border-bottom: red;
@@ -117,13 +114,9 @@ input[type=text],input[type=email], textarea {
     resize: vertical;
 }
 
-/* Add styles to show 'focus' of selector */
-
 input[type=text]:focus,input[type=email]:focus, textarea:focus {
 	border: 1px solid green;
 }
-
-/* Add styles to the submit button */
 
 input[type=send] {
 	background: blue;
@@ -136,8 +129,7 @@ input[type=send] {
 	position: relative;
 	display: inline-block;
 	text-align: center;
-}
-/* Align items to center of the 'div' with the class 'center' */
+} 
 .center {
     text-align: center;
 }
