@@ -5,9 +5,138 @@ header{
   background-color: white;
 }
 .bulletpoint{
-width: 30px;
-height: 30px;
+width: 20px;
+height: 20px;
 }
+.menue{
+  height: 20px;
+  width: 20px;
+}
+MENUE -IMPROVISE
+.topnav {
+  background-color:white;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  display:flex;
+  flex-direction: column;
+  justify-content:right;
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Style the dropdown button to fit inside the topnav */
+/* Style the dropdown content (hidden by default) */
+/* Style the links inside the dropdown */
+/* Add a dark background on topnav links and the dropdown button on hover */
+/* Add a grey background to dropdown links on hover */
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (min-width: 0px) {
+  .topnav a:not(:nth-child(0)), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    display: flex;
+    float: right;
+    justify-content: flex-end;
+    flex-direction: column;
+  }
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    display: block;
+    text-align: left;
+  }
+
+}
+@media screen and (min-width: 600px){
+.topnav.responsive a{
+  display: flex;
+  flex-direction: row;
+}
+}
+/*END OF IMPROVISATION*/
+/*further improvisation:*/
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+/*end of improvisation*/
 .maintop{
   background-color: white;
 }
@@ -17,7 +146,6 @@ height: 30px;
   height: 5px;
   background-color: blue;
   margin: 6px 0;
-  
 }
 body{
   background-color: wheat;
@@ -97,4 +225,38 @@ body .footerbackgroundcolor{
   .maintextposition {
     padding-top: 35%;
 }
+  .main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .maintextposition{
+    padding-top: 0px;
+    padding-bottom: 70px;
+    box-shadow: 5px 10px lightgrey;
+    background-color: white;
+  }
+  .movementofbuttons{
+    position:relative;  
+    left: 375px;
+    bottom: 110px; 
+  }
+  .movementoftext{
+    position: relative;
+    top: 60px;
+  }
+  .maintop{
+    background-color: wheat;
+  }
+  .backgroundcolortop{
+    background-color: wheat;
+  }
+  .largescreenresponsivefooter{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+  footer{
+    padding-top: 20px;
+  }
 }

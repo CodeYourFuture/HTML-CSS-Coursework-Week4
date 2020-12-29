@@ -12,19 +12,32 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div class="container">
+        <nav class="container">
                 <div class="row justify-content-between">
-                        <div class="col-10"> 
+                        <div class="col-6"> 
                             <img class="bulletpoint" src="/icon.png" alt="bulletpoint">
                             Omar Sharif
                         </div>
-                        <div class="col-2 ">
-                            <div>
-                                <div class="menue1"></div>
-                                <div class="menue1"></div>
-                                <div class="menue1"></div>
+                        <div class="col-6 menueheight">
+                            <div class="row topnav" id="parttopnav">
+                                    <a href="#ABOUT ME">ABOUT ME</a>
+                                    <a href="#RESUME">RESUME</a>
+                                    <a href="#PROJECTS">PROJECTS</a>
+                                    <a href="#CONTACT">CONTACT</a>
+                                    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()"><img class="menue" src="./icon.png" alt="menue"></a>
                             </div>
+                            
+                            </nav>
+                            <script>
+                                function myFunction() {
+                                    var x = document.getElementById("parttopnav");
+                                    if (x.className === "topnav") {
+                                        x.className += " responsive";
+                                    } else {
+                                        x.className = "topnav";
+                                    }
+                                }
+                            </script>
                         </div>
                 </div>
                 <div class="row">
@@ -33,60 +46,59 @@
                     </div>
 
                 </div>
-            </div>
         </nav>
     </header>
     <section class="main">
-        <section class="maintop">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 backgroundcolortop">
-                            <div class="col-8 transbox">
-                                <img class="image" src="https://www.w3schools.com/w3images/avatar2.png" alt="Avatar">
-                                <div class="row justify-content-center">
-                                    <p class="col-5">Omar Sharif</p>
-                                    <hr class="col-6 linebreak">
+            <section class="maintop">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-12 backgroundcolortop">
+                                <div class="col-8 transbox">
+                                    <img class="image" src="https://www.w3schools.com/w3images/avatar2.png" alt="Avatar">
+                                    <div class="row justify-content-center">
+                                        <p class="col-5">Omar Sharif</p>
+                                        <hr class="col-6 linebreak">
+                                    </div>
+                                    <div class="row justify-content-around size movementofbuttons">
+                                        <input class="col-4 resumebutton" type="button" onclick="window.location.href='https://www.w3docs.com';"value="Resume" />
+                                        <input class="col-4 projectsbutton" type="button" onclick="window.location.href='https://www.w3docs.com';" value="Projects" />
+                                    </div>
+                                    <div class="row justify-content-center socialmediaicons">
+                                        <a class="col-3 icons" href="https://facebook.com"> <img class="col-6" src="/facebook.png" alt="Facebook"></a>
+                                        <a class="col-3 icons" href="https://twitter.com"> <img class="col-6" src="/twitter.png" alt="Twitter"> </a>
+                                        <a class="col-3 icons" href="https://linkedin.com"> <img class="col-6" src="/linkedin.jpg" alt="LinkedIn"></a>
+                                        <a class="col-3 icons" href="https://instagram.com"> <img class="col-6" src="/instagram.png" alt="Instagram"></a>
+                                    </div>
+                                    
                                 </div>
-                                <div class="row justify-content-around size">
-                                    <input class="col-4 resumebutton" type="button" onclick="window.location.href='https://www.w3docs.com';"value="Resume" />
-                                    <input class="col-4 projectsbutton" type="button" onclick="window.location.href='https://www.w3docs.com';" value="Projects" />
-                                </div>
-                                <div class="row justify-content-center socialmediaicons">
-                                    <a class="col-3 icons" href="https://facebook.com"> <img class="col-6" src="/facebook.png" alt="Facebook"></a>
-                                    <a class="col-3 icons" href="https://twitter.com"> <img class="col-6" src="/twitter.png" alt="Twitter"> </a>
-                                    <a class="col-3 icons" href="https://linkedin.com"> <img class="col-6" src="/linkedin.jpg" alt="LinkedIn"></a>
-                                    <a class="col-3 icons" href="https://instagram.com"> <img class="col-6" src="/instagram.png" alt="Instagram"></a>
-                                </div>
-                                
                             </div>
+                        
                         </div>
-                       
                     </div>
                 </div>
-            </div>
+            </section>
+        <section class="followuptomain boxsize">
+            <section class="container maintextposition">
+                <div class="row textrow1">
+                    <h1 class=" col-12 header">Hello</h1>
+                </div>
+                <div class="row">
+                    <h4 class="col-12" >Here's who I am & what I do</h4>
+                </div>
+                <div class="row movementoftext">
+                    <p class="col-10">
+                        I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to
+                        add your own content and make changes to the font.
+                    </p>
+                    <p class="col-10">
+                        I’m a great place for you to tell a story and let your users know a little more about you
+                    </p>
+                </div>
+            </section>
         </section>
     </section>
-    <section class="container maintextposition">
-        <div class="row textrow1">
-            <h1 class=" col-12 header">Hello</h1>
-        </div>
-        <div class="row">
-            <h4 class="col-12" >Here's who I am & what I do</h4>
-        </div>
-        <div class="row">
-            <p class="col-10">
-                I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to
-                add your own content and make changes to the font.
-            </p>
-            <p class="col-10">
-                I’m a great place for you to tell a story and let your users know a little more about you
-            </p>
-            
-
-        </div>
-    </section>
     <footer class="footerbackgroundcolor">
-        <section class="container">
+        <section class="container largescreenresponsivefooter">
             <section class="row">
                 <div class="col-6">
                     <h5 class="col-1">Call</h5>
@@ -101,16 +113,16 @@
                     <h5 class="col-1">Follow</h5>
             </section>
             <section class="col-6">
-                        <a class="icons" href="https://facebook.com"> <img class="col-2" src="/facebook.png" alt="Facebook"></a>
-                        <a class="icons" href="https://twitter.com"> <img class="col-2" src="/twitter.png" alt="Twitter"> </a>
-                        <a class="icons" href="https://linkedin.com"> <img class="col-2" src="/linkedin.jpg" alt="LinkedIn"></a>
-                        <a class="icons" href="https://instagram.com"> <img class="col-2" src="/instagram.png" alt="Instagram"></a>
+                        <a class="icons" href="https://facebook.com"> <img class="col-1" src="/facebook.png" alt="Facebook"></a>
+                        <a class="icons" href="https://twitter.com"> <img class="col-1" src="/twitter.png" alt="Twitter"> </a>
+                        <a class="icons" href="https://linkedin.com"> <img class="col-1" src="/linkedin.jpg" alt="LinkedIn"></a>
+                        <a class="icons" href="https://instagram.com"> <img class="col-1" src="/instagram.png" alt="Instagram"></a>
             </section>
             <section class="row">
                 <div class="col-12">
                 © 2023 by Omar Sharif.
                 </div>
-                <div class="col-12">
+                <div class="col-6">
                 Website design has been taken from Wix.com
                 </div>
             </section>
