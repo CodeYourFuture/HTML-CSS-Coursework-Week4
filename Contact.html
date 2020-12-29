@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <!-- Add a link to your custom CSS here -->
     <link rel="stylesheet" href="./css/main.css"> 
+    <link rel="stylesheet" href="./css/contact.css"> 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -16,31 +17,113 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top mx-5 py-4">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="./Aboutme.html"><b>Maya Nelson</b> / PROJECT MANAGER</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse " id="navbar">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link active"  href="./Aboutme.html">ABOUT ME</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active"  href="./Resume.html">RESUME</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="./Projects.html">PROJECTS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./Contact.html">CONTACT</a>
-              </li>
-            </ul>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top p-4">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./Aboutme.html"><b>Maya Nelson</b> / PROJECT MANAGER</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active"  href="./Aboutme.html">ABOUT ME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active"  href="./Resume.html">RESUME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="./Projects.html">PROJECTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./Contact.html">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <div id="navholder"></div>
+
+    <main>
+      <div>
+        <h1 class="d-flex justify-content-center my-5 py-3">Let's talk</h1>
+      </div>
+      <div class="d-flex justify-content-center">
+        <form class="card shadow border-0 rounded-0 mb-5 p-5 pb-1 " style="width: 680px; height: 700px;">
+          <!-- 2 column grid layout with text inputs for the first and last names -->
+        <div class="row mb-4">
+          <div class="col">
+            <div class="form-outline">
+              <label class="form-label" for="form3Example1">First name</label>
+              <input type="text" id="form3Example1" class="form-control" />              
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-outline">
+              <label class="form-label" for="form3Example2">Last name</label>          
+              <input type="text" id="form3Example2" class="form-control" />              
+            </div>
           </div>
         </div>
-    </nav>
-     
+      
+        <!-- Email input -->
+        <div class="form-outline mb-4">
+          <label class="form-label" for="form4Example2">Email*</label>
+          <input type="email" id="form4Example2" class="form-control" />
+          
+        </div>
+
+        <!-- Message input -->
+        <div class="form-outline mb-4">
+          <label class="form-label" for="form4Example3">Subject</label>
+          <textarea class="form-control" id="form4Example3" rows="1"></textarea>
+          
+        </div>
+      
+        <!-- Message input -->
+        <div class="form-outline mb-4">
+          <label class="form-label" for="form4Example3">Message</label>
+          <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+          
+        </div>        
+      
+        <!-- Submit button -->
+        <button type="submit" class="btn btn-primary btn-block fw-bold rounded-pill">Send</button>
+      </form>
+
+      </div>
+    </main>
+
+    <footer class="d-flex justify-content-between mt-5">
+          <div class="ms-5 pt-4">
+          © 2023 by Maya Nelson.<br>
+          Proudly created with Wix.com  
+        </div>
+        <div class="column d-flex justify-content-between px-3">
+          <div class="mx-2 footercard">
+            <p class="fw-bold d-flex justify-content-center">Call</p>
+            <p class="d-flex justify-content-center">123-456-7890</p>
+          </div>
+          <div class="mx-2 footercard">
+            <p class="fw-bold d-flex justify-content-center">Write</p>
+            <p class="d-flex justify-content-center">info@mysite.com</p>
+          </div>
+          <div class="mx-2 footercard">
+            <p class="fw-bold d-flex justify-content-center">Follow</p>
+            <div class="socialblock d-flex justify-content-center ">
+              <a href="#" class="socialcontainer"><img class="social" src="./img/twitter-icon.svg" alt="twitter-icon"></a>
+              <a href="#" class="socialcontainer"><img class="social" src="./img/facebook-icon.svg" alt="facebook-icon"></a>
+              <a href="#" class="socialcontainer"><img class="social" src="./img/instagram-icon.svg" alt="instagram-icon"></a>
+              </div>
+          </div>          
+        </div>
+      
+
+  
+      
+
+    </footer>
+
+
 
 
 

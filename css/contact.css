@@ -12,7 +12,7 @@
 
 body{
     font-family: 'Quicksand', sans-serif;
-    background-color: var(--white);
+    background-color: var(--beige);
 }
 
 h3,b{
@@ -21,62 +21,35 @@ h3,b{
 }
 h1{
     font-family: 'Poppins', sans-serif;
-    font-size: 100px;
+    font-size: 60px;
 }
+
 
 .navbar{
     background-color:var(--white);}
 
 #navholder{
-    height: 80px;
+    height: 120px;
 }
-.hero{
-    height:800px ;
-    z-index: 2;
-    position: relative;
-    
-}
-#background {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 42%;
-    height: 900px;
-    background-color: var(--beige);
-    z-index: 1;
-}
-.photoholder{
-    height: 280px;
-}
-.pphoto{
-    border-radius: 50%;
-    height: 200px;
-    width: auto;
-    }
-.left{
-    background-color:var(--lbeige);
-}
-hr{
-    color: var(--blue);
-    width: 50px;
-    margin-left: auto;
-    margin-right: auto;
-}
+
+
+
+
+
 .social {
-    width: 30px; 
+    width: 20px; 
     height: auto;
     margin: 10px;
 }
 .socialblock{
     background-color: var(--white);
-    
+      
 }
 
 footer{
     height: 100px;
     background-color: var(--white);
-    z-index: 2;
-    position: relative;
+   
     
 }
 .footercard{
