@@ -5,12 +5,16 @@
 body {
   font-family: "Quicksand", sans-serif;
   color: #2f2f2e;
-  /* font-family: 'Libre Baskerville', serif; */
 }
 
-/* nav {
+nav {
   position: fixed;
-} */
+  width: 100%;
+  top: 0px;
+  background-color: white;
+  display: contents;
+
+}
 
 .button p {
   font-weight: lighter;
