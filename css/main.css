@@ -12,13 +12,10 @@ height: 20px;
   height: 20px;
   width: 20px;
 }
-MENUE -IMPROVISE
 .topnav {
   background-color:white;
   overflow: hidden;
 }
-
-/* Style the links inside the navigation bar */
 .topnav a {
   display:flex;
   flex-direction: column;
@@ -28,32 +25,12 @@ MENUE -IMPROVISE
   text-decoration: none;
   font-size: 17px;
 }
-
-/* Add an active class to highlight the current page */
 .topnav a.active {
   color: blue;
 }
-
-/* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
   display: none;
 }
-
-/* Dropdown container - needed to position the dropdown content */
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-/* Style the dropdown button to fit inside the topnav */
-/* Style the dropdown content (hidden by default) */
-/* Style the links inside the dropdown */
-/* Add a dark background on topnav links and the dropdown button on hover */
-/* Add a grey background to dropdown links on hover */
-/* Show the dropdown menu when the user moves the mouse over the dropdown button */
-
-
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (min-width: 0px) {
   .topnav a:not(:nth-child(0)), .dropdown .dropbtn {
     display: none;
@@ -64,7 +41,6 @@ MENUE -IMPROVISE
     justify-content: flex-end;
     flex-direction: column;
   }
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
   .topnav.responsive {position: relative;}
   .topnav.responsive a.icon {
     position: absolute;
@@ -97,7 +73,6 @@ MENUE -IMPROVISE
     flex-direction: row;
   }
 }
-/*END OF IMPROVISATION*/
 .maintop{
   background-color: white;
   padding-bottom: 20%;

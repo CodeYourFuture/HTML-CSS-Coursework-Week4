@@ -1,0 +1,156 @@
+/* Add your custom CSS here */
+
+/* Dont' forget to link this file to your HTML in the <head> */
+header{
+  background-color: white;
+  position: fixed;
+  width:100%;
+}
+.bulletpoint{
+width: 40px;
+height: 40px;
+}
+.menue{
+  height: 20px;
+  width: 20px;
+}
+.topnav {
+  background-color:white;
+  overflow: hidden;
+}
+.topnav a {
+  display:flex;
+  flex-direction: column;
+  justify-content:right;
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a.active {
+  color: blue;
+}
+.topnav .icon {
+  display: none;
+}
+@media screen and (min-width: 0px) {
+  .topnav a:not(:nth-child(0)), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    display: flex;
+    float: right;
+    justify-content: flex-end;
+    flex-direction: column;
+  }
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    display: block;
+    text-align: left;
+  }
+
+}
+@media screen and (min-width: 600px){
+.topnav.responsive a{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+  .topnav a:not(:nth-of-type(0)), .dropdown .dropbtn {
+    display: flex;
+    flex-direction: row;
+
+  }
+  .topnav a.icon {
+    display: none;
+  }
+  .topnav{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+}
+
+
+
+body{
+  background-color: wheat;
+}
+.formbackground{
+    background-color: white;
+    box-shadow: 10px 8px grey;
+}
+.contactform{
+    padding-top: 100px;
+}
+/*Contact form structure*/
+
+h3 {
+	text-align: center;
+}
+.headerwithicon{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+label {
+	font-size: 0.85em;
+	margin-left: 12px;
+}
+
+/* Add styles to 'input' and 'textarea' selectors */
+
+input[type=text],input[type=email], textarea {
+    width: 100%;
+    border-bottom: red;
+    padding: 12px;
+    border: 1px solid red;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+/* Add styles to show 'focus' of selector */
+
+input[type=text]:focus,input[type=email]:focus, textarea:focus {
+	border: 1px solid green;
+}
+
+/* Add styles to the submit button */
+
+input[type=send] {
+	background: blue;
+	margin: 0 auto;
+	outline: 0;
+	color: white;
+	padding: 12px 24px;
+	border-radius: 40px;
+	transition: all ease-in-out 0.1s;
+	position: relative;
+	display: inline-block;
+	text-align: center;
+}
+/* Align items to center of the 'div' with the class 'center' */
+.center {
+    text-align: center;
+}
+body .footerbackgroundcolor{
+  background-color: white;
+}
+@media screen and (min-width:775px){
+  .largescreenresponsivefooter{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+  }
+  footer{
+    padding-top: 20px;
+  }
+}
