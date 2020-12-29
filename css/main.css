@@ -162,6 +162,33 @@ background-color: #ecfcf9;
     background-color: #cff4ec;
 }
 
+/* Articles section */
+
+.serv-btn {
+    background-color: #94d6c8;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.appointment-btn:hover {
+    background-color: rgb(109, 133, 128);
+
+}
+
+.article-heading {
+    font-style: italic;
+    font-size: 1.4em;
+    line-height: 1.7em;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+.article-section {
+    background-color: #f2f2f2;
+}
+
 /* Footer*/
 
 .footer{
@@ -198,6 +225,13 @@ background-color: #ecfcf9;
     display: flex;
     height: 145px;
     justify-content: space-between;
+    word-spacing: 15px;
 }
+
+.maria-maria{
+    width: 50%;
+}
+
+
 
 }
