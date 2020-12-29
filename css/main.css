@@ -31,11 +31,11 @@ body {
 
  h1 {
     font-family: 'Libre Baskerville', serif;
-    font-size: 3em;
+    font-size: 2em+2vw;
     color: black;
  }
 
-h5 {
+h6 {
     font-family: 'Libre Baskerville', serif;
 }
 
@@ -61,9 +61,14 @@ h5 {
 }
 
 .about {
-    min-height: 700px;
+    min-height: 600px;
 }
 
+
+.myDIV {
+    transform:translateY(-200px);
+}
+  
 .social-media-img {
     width: 1rem;
 }
