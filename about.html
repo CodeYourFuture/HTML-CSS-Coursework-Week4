@@ -20,12 +20,12 @@
 
 <body>
     <!-- Header -->
-    <header class="container">
+    <header class="container-fluid">
         <div class="row">
-            <nav class="navbar navbar-expand-sm bg-white navbar-light fixed-top">
+            <nav class="navbar navbar-expand-md bg-white navbar-light fixed-top">
                
-                <div class="col-12 col-sm-8 order-sm-2 justify-content-around d-flex flex-sm-column align-items-sm-end"> 
-                    <a class="col-8 col-sm-5 col-md-4 col-lg-2 appointment-button bg-lightmint text-decoration-none text-center" href="#">Book an Appointment</a>
+                <div class="col-12 col-sm-6 order-sm-2 d-sm-flex flex-column align-items-end"> 
+                    <a class="col appointment-button bg-lightmint text-decoration-none" href="#">Book an Appointment</a>
 
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                          <span class="navbar-toggler-icon"></span>
@@ -40,7 +40,7 @@
                                 <a class="nav-link" href="#">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./services.html">Services</a>
+                                <a class="nav-link" href="#">Services</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Blog</a>
@@ -51,7 +51,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-12 col-sm-4 order-sm-1 logo mt-2"> 
+                <div class="col-12 col-sm-6 order-sm-1 mt-2"> 
                     <a class="navbar-brand title fst-italic fs-6 py-3" href="#">Maria Hope, Ph.D. -Psychologist</a>
                 </div>
 
@@ -63,7 +63,7 @@
     <main id="home">
         <!-- Hero Section -->
         <section class="container-fluid my-5">
-            <div class="row my-5 text-center hero">
+            <div class="row my-5 text-center">
                 <div class="col-12 col-sm-6 order-sm-2 p-0 ">
                     <img class="img-fluid w-100 h-100" src="./img/first image.webp" alt="Hero Section Image">
                 </div>
@@ -89,40 +89,38 @@
                 </div>
             </div>
             <div class="myDIV mt-n5" >
-                <img class="img-fluid mx-auto d-block" src="img/Maria Hope.webp" alt="Maria Hope Picture">
+                <img class="img-fluid mx-auto mt-n5 d-block" src="img/Maria Hope.webp" alt="Maria Hope Picture">
             </div>
         </section >
 
         <!-- Services Section -->
-        <section class="container-fluid ">
-            <div class="row mt-5 text-center services">
-                <div class="col-12 col-sm-4 bg-limegreen p-5">
+        <section class="container-fluid">
+            <div class="row my-5 text-center px-5">
+                <div class="col-12 col-sm-4 bg-limegreen ">
                     <h6 class=" fst-italic fw-lighter pt-5">01.</h6>
                     <a class=" text-decoration-none" href="#"><h1 class=" fw-lighter lh-base">Individual Therapy</h1></a>
-                    <p class="mb-5 py-3">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.</p>
+                    <p class="py-3">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.</p>
                 </div>
-                <div class="col-12 col-sm-4 bg-lightgrey p-5">
+                <div class="col-12 col-sm-4 bg-lightgrey">
                     <h6 class=" fst-italic fw-lighter pt-5">02.</h6>
                     <a class=" text-decoration-none" href="#"><h1 class=" fw-lighter lh-base">Group Therapy</h1></a>
                     <p class="py-3">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.</p>
+                    <a href="#">
+                        <button class="appointment-button bg-lightmint my-5">View More Services</button>
+                        <img  src="./img/arrow-icon.svg" alt="Arrow Icon">
+                    </a>  
                 </div>
-                <div class="col-12 col-sm-4 bg-lightmint p-5">
+                <div class="col-12 col-sm-4 bg-lightmint">
                     <h6 class=" fst-italic fw-lighter pt-5">03.</h6>
                     <a class=" text-decoration-none" href="#"><h1 class=" fw-lighter lh-base">Couple Therapy</h1></a>
                     <p class="py-3">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.</p>
                 </div>
-            </div> 
-            <div class="row more-services">
-                <a class="col-6 col-sm-2  mx-auto" href="./services.html">
-                    <button class="appointment-button bg-lightmint my-5">View More Services</button>
-                    <img  src="./img/arrow-icon.svg" alt="Arrow Icon">
-                </a>  
-            </div>
+            </div>  
         </section>
 
         <!-- Articles Section -->
         <section>
-            <div class="container-fluid bg-lightgrey mt-5">
+            <div class="container-fluid bg-lightgrey">
                 <div class="row justify-content-center text-center">
                     <div class="pt-3">
                         <h6 class="fst-italic fw-lighter mt-5 pt-5">Articles about Psychology</h6>

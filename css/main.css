@@ -7,11 +7,13 @@ body {
     -webkit-font-smoothing: antialiased;
     position: relative;
     color:black;
+    margin-left: 15px;
+    margin-right: 15px;
     
 }
 
 .appointment-button {
-    padding: 10px;
+    padding: 5px;
     border: none;
     color: black;
 
@@ -31,7 +33,7 @@ body {
 
  h1 {
     font-family: 'Libre Baskerville', serif;
-    font-size: 2em+2vw;
+    font-size: 2em + 5vw;
     color: black;
  }
 
@@ -64,6 +66,17 @@ h6 {
     min-height: 600px;
 }
 
+.hero {
+    min-height: 400px;
+}
+
+.services {
+    min-height: 500px;
+}
+
+.more-services {
+    margin-top: -150px;
+}
 
 .myDIV {
     transform:translateY(-200px);
@@ -72,3 +85,12 @@ h6 {
 .social-media-img {
     width: 1rem;
 }
+
+@media (max-width: 600px) {
+    .more-services {
+        margin-top: 0px;
+    }
+    .logo {
+        text-align: center;
+    }
+  }
