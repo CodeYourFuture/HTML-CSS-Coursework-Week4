@@ -13,25 +13,32 @@
 
 
 <header class="container-fluid">
-    <nav class="row">
+    <nav class="row navbar">
         <div class="col-md-8 toptext"> 
             <div class="wrapsquare">
                 <div class="square"></div>           
                 <h3>Nigel Pelvin </h3>
-            <h3 class="developer"> / FULL STACK DEVELOPER</h3></div>
+            <h3 class="developer"> / FULL STACK DEVELOPER</h3>
+            
+            <img class="hamburger" src="img/Hamburger_icon.svg.png" alt="hamburger menu" 
+   onclick="myFunction()">
+   </div>
+
 
         </div>
-        <div class="col-md-1 hidesmall">
-            <a href="#">ABOUT ME</a>
+        <div class="col-md-1 hidesmall" id="myDIVx"><button style="margin-left:90%"  onclick="myFunction2()">X</button>
         </div>
-        <div class="col-md-1 hidesmall">            
-            <a href="#">RESUME</a>
+        <div class="col-md-1 hidesmall" id="myDIV">
+            <a href="index.html" class="menuLink">ABOUT ME</a>
         </div>
-        <div class="col-md-1 hidesmall">            
-            <a href="#">PROJECTS</a>
+        <div class="col-md-1 hidesmall" id="myDIV2">            
+            <a href="#" class="menuLink">RESUME</a>
         </div>
-        <div class="col-md-1 hidesmall">            
-            <a href="#">CONTACT</a>
+        <div class="col-md-1 hidesmall" id="myDIV3">            
+            <a href="#" class="menuLink">PROJECTS</a>
+        </div>
+        <div class="col-md-1 hidesmall" id="myDIV4">            
+            <a href="contact.html" class="menuLink">CONTACT</a>
         </div>
     </nav>
 </header>
@@ -131,9 +138,38 @@
     </div>
 </footer>
 
+<script>
+
+    function myFunction() {
+    var element = document.getElementById("myDIVx");
+  element.classList.add("mystyle");
+  var element = document.getElementById("myDIV");
+  element.classList.add("mystyle");
+  var element2 = document.getElementById("myDIV2");
+  element2.classList.add("mystyle");
+  var element3 = document.getElementById("myDIV3");
+  element3.classList.add("mystyle");
+  var element4 = document.getElementById("myDIV4");
+  element4.classList.add("mystyle");
+}
+</script>
 
 
+<script>
 
+    function myFunction2() {
+    var element = document.getElementById("myDIVx");
+  element.classList.remove("mystyle");
+  var element = document.getElementById("myDIV");
+  element.classList.remove("mystyle");
+  var element2 = document.getElementById("myDIV2");
+  element2.classList.remove("mystyle");
+  var element3 = document.getElementById("myDIV3");
+  element3.classList.remove("mystyle");
+  var element4 = document.getElementById("myDIV4");
+  element4.classList.remove("mystyle");
+}
+</script>
 
 </body>
 

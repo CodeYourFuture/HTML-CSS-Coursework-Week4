@@ -24,6 +24,21 @@ h3 {
 
 /* CSS for Top Navigation */
 
+.hamburger{
+    width:35px;
+    height:35px;
+    position:absolute;
+    top: 6px;
+    right:6px;
+}
+
+.myDIVx{
+    
+    width:35px;
+    height:35px;
+
+}
+
 .wrapsquare{
     display:flex;
     margin: 10px 0px 0px 0px;
@@ -170,6 +185,9 @@ margin:100px;
 .buttonrow {
     display:none;
 }
+.hamburger{
+    display:none;
+}
 }
 
 
@@ -182,3 +200,18 @@ header a{
 header a{
     font-size:.9em;
 }}
+
+
+.mystyle {
+  width: 100vw;
+  padding: 25px;
+  background-color: #E6DACD;
+  color: black;
+  font-weight:700;
+  font-size: 25px;
+  display:block;
+  z-index:1000;
+  top:35;
+
+  }
+  }
