@@ -38,10 +38,14 @@ a:hover {
   width: 30px;
 }
 
-.blue-rect {
+.rect {
   width: 20px;
   height: 20px;
-  background-color: blue;
+}
+
+.rect-small {
+  width: 10px;
+  height: 10px;
 }
 
 .hero-container {
@@ -75,40 +79,41 @@ hr.blue-line {
 
 .resume-btn {
   background-color: blue;
-  border: 2px solid blue;
-  color: white;
+  border: 1px solid blue;
 }
 
 .resume-btn:hover {
-  background-color: #f4ece6;
-  color: black;
-}
-
-.projects-btn {
-  border: 2px solid black;
   background-color: inherit;
+  border: 1px solid black;
+  color: black;
 }
 
 .projects-btn:hover {
   background-color: blue;
-  border: 2px solid blue;
+  border: 1px solid blue;
   color: white;
 }
 
-.social {
+/* .social {
   background-color: white;
-}
+} */
 
 .social-img {
   width: 20px;
   height: 20px;
 }
 
-/* footer */
-footer {
-  margin: 4rem 0;
-}
-
 footer h4 {
   font-size: 0.9rem;
 }
+
+/* resume page */
+
+.resume-container {
+  max-width: 800px;
+}
+/* 
+a.nav-link:hover {
+  background-color: red;
+  color: blue;
+} */
