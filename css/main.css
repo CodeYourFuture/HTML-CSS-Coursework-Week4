@@ -145,7 +145,6 @@ div.transbox p {
 .projectsbutton{
   background-color: antiquewhite;
   border-radius: 20px;
-  background-color;
 }
 .projectsbutton:hover{
   background-color: blue;
@@ -180,7 +179,7 @@ body .footerbackgroundcolor{
 }
 @media screen and (min-width:450px){
   .maintextposition {
-    padding-top: 35%;
+    padding-top: 10%;
 }
 }
 @media screen and (min-width:775px){
@@ -220,5 +219,16 @@ body .footerbackgroundcolor{
   }
   footer{
     padding-top: 20px;
+  }
+  .socialmediaicons{
+    flex-direction: row;
+    justify-content: right;
+  }
+}
+@media screen and (min-width:930px){
+  .movementofbuttons{
+    position: relative;
+    left: 450px;
+    bottom: 135px;
   }
 }
