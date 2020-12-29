@@ -33,7 +33,7 @@ h3 {
     height:35px;
     position:absolute;
     top: 6px;
-    right:6px;
+    right: 6px;
 }
 
 
@@ -43,17 +43,16 @@ h3 {
 }
 
 .square {
-  height: 14.5px;
-  width: 14.5px;
+  height: 13.5px;
+  width: 13.5px;
   background-color:#0150FD;
-  margin:7px;
+  margin:9px 0px;
 }
 
 .developer {
     font-weight:400;
     font-size: 0.95em;
     line-height: 2.2;
-    padding-left: 7px;
 }
 
 .toptext{
@@ -61,26 +60,20 @@ h3 {
 }
 
 
-.toptext p{
-    margin:0px 0px 0px 10px;
-}
 
 header a{
     font-size:.7em;
 }
 
-.hidesmall{
-    margin:0px;
-    padding:7px 0px 0px 0px;
-}
 
 /* CSS for Profile Section */
 
 
 .float {
     background-color:#F4ECE6;
-    margin: 2% 10%;
     filter: drop-shadow(-10px 10px 3px lightgrey);
+    max-width:80%;
+    margin: 0 auto;
 }
 
 .roundimage {
@@ -91,8 +84,8 @@ header a{
 .line{
   height:2px;
   width: 20%;
-  background-color:#0150FD ;
-  margin:0px 40%;
+  background-color:#0150FD ;  
+  margin: 0 auto;
 }
 
 .buttonrow{
@@ -107,7 +100,7 @@ header a{
     border:solid #0150FD 2px;
     font-weight:600;
     font-size:1.3em;
-    margin:10px;
+    margin:10px 0px;
 }
 
 .button2{
@@ -116,7 +109,7 @@ header a{
     border:solid black 2px;
     font-weight:600;
     font-size:1.3em;
-    margin:10px;
+    margin:10px 0px;
 }
 
 
@@ -183,7 +176,7 @@ body  {
 background: linear-gradient(to left, white 0%,white 70%,white 70%, #E6DACD 70%,#E6DACD 100%); 
 }
 .main {
-margin:100px;
+margin:100px 0px;
 }
 .buttonrow {
     display:none;
@@ -207,7 +200,7 @@ header a{
 
 .mystyle {
   width: 100vw;
-  padding: 25px;
+  padding: 25px 0px;
   background-color: #E6DACD;
   color: black;
   font-weight:700;
