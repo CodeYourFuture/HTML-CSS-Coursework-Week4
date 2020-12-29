@@ -63,8 +63,10 @@ a {
 }
 
 .box-sizing {
-    padding: 80px 15px 40px 15px;
+    padding-top: 80px;
+    padding-bottom: 40px;
 }
+
 /* NAV */
 
 .nav-padding {
@@ -118,11 +120,11 @@ a {
 
 .about-text {
     background-color: var(--neutral);
-    padding-bottom: 120px;
+    padding-bottom: 35%;
 }
 
 .about>img {
-    margin-top: -180px;
+    margin-top: -55%;
     height: auto;
 }
 
@@ -142,7 +144,8 @@ a {
 /* FOOTER */
 
 .footer-section {
-    padding: 60px 0 80px 0;
+    padding-top: 60px;
+    padding-bottom: 80px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -164,7 +167,6 @@ a {
         flex-direction: column;
     }
 
-
     .display-md {
         display: flex;
         padding-top: 15px;
@@ -176,6 +178,16 @@ a {
 
     .display-sm{
         display: none;
+    }
+
+    /* ABOUT */
+
+    .about-text {
+        padding-bottom: 30%;
+    }
+    
+    .about>img {
+        margin-top: -35%;
     }
 
     /* QUALIFICATION */

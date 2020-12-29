@@ -80,8 +80,10 @@ a {
 }
 
 .box-sizing {
-    padding: 80px 15px 40px 15px;
+    padding-top: 80px;
+    padding-bottom: 40px;
 }
+
 /* NAV */
 
 .nav-padding {
@@ -122,11 +124,11 @@ a {
 
 .about-text {
     background-color: var(--neutral);
-    padding-bottom: 120px;
+    padding-bottom: 35%;
 }
 
 .about>img {
-    margin-top: -180px;
+    margin-top: -50%;
     height: auto;
 }
 
@@ -243,6 +245,16 @@ a {
         background-image: url(../img/erol-ahmed-aIYFR0vbADk-unsplash.jpg);
         background-size: cover;
         background-position-x: center;
+    }
+
+      /* ABOUT */
+
+      .about-text {
+        padding-bottom: 30%;
+    }
+    
+    .about>img {
+        margin-top: -35%;
     }
 
     /* ARTICLE */

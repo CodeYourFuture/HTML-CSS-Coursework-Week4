@@ -57,8 +57,10 @@ a {
 }
 
 .box-sizing {
-    padding: 80px 15px 40px 15px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
+
 /* NAV */
 
 .nav-padding {
@@ -115,7 +117,7 @@ a {
 }
 
 .chat-icon-fixed-padding {
-    padding: 20px 40px;;
+    padding: 20px 40px;
 }
 /* FOOTER */
 
@@ -124,9 +126,6 @@ a {
 }
 
 @media only screen and (min-width: 768px) {
-    section {
-        margin-bottom: 50px;
-    }
 
     /* HEADER  */
     header {

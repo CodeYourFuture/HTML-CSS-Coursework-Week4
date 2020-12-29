@@ -10,7 +10,7 @@
 
     --btn-color: #4D7369;
 
-    --white: #d3d3d3;
+    --white: #ffffff;
 
     --light-gray: #969696;
 }
@@ -123,6 +123,7 @@ input-box:focus{
 
 .blog-info {
     margin-top: 40px;
+    margin-bottom: 20px;
 }
 
 .blogger-details>p {
@@ -141,15 +142,19 @@ input-box:focus{
 .article-details> h2 {
     font-size: 1.9em
 }
+
 .article-box {
+    background-color: var(--white);
     padding-bottom: 15px;
 }
+
 .article-btn {
     background-color: var(--primary);
     border: none;
     margin-top: 30px;
     height: 40px;
 }
+
 .article-btn:hover {
     background-color: var(--btn-color);
 }
@@ -211,6 +216,10 @@ input-box:focus{
     }
 
     /* BLOG ARTICLES */ 
+    .article-section {
+        padding-bottom: 20px;
+    }
+
     .search-box {
         background-color: var(--neutral);
         color: var(--white);
