@@ -62,3 +62,8 @@ color: white;
     background-color:#1B7B57;
 }
 
+.subscribe {
+    background: url(../img/festival_lilly-flower.svg) no-repeat, url(../img/festival_blob-shape.svg) center no-repeat;
+    background-size: 80px, contain;
+    background-color:#5362AC ;
+}
