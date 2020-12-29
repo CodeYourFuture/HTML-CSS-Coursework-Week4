@@ -10,70 +10,70 @@
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <!-- Add a link to your custom CSS here -->
     <link ref="stylesheet" href="/css/main.css">
+    <link ref="stylesheet" href="https://fonts.google.com/specimen/Libre+Baskerville">
+    <link ref="stylesheet" href=https://fonts.google.com/specimen/Libre+Baskerville>
 
     <title>Responsive grid project</title>
 </head>
 
-<!-- Contact Page -->
+<!-- Home Page -->
 
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-        <div class="container-fluid" style="padding-bottom: 50px; margin-right: 20px">
+        <div class="container-fluid" style="padding-bottom: 60px; padding-top: 10px;">
             <div class="row">
-                <div class="col-2 offset-10">
-                    <form>
-                        <button class="btn btn-outline-success" type="submit"
-                            style="d-flex; background-color:#CFF4EC;">Book an Appointment</button>
-                    </form>
+                <div class="col">
+                    <div class="col">
+                        <a class="navbar-brand" href="#"><i>Maria Hope, Ph.D. - Psychologist</i></a>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="container-brand">
-            <div class="row">
-                <div class="col">
-                    <a class="navbar-brand" href="#"><i>Maria Hope, Ph.D. - Psychologist</i></a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
-            </div>
-        </div>
+        <div class="container-brand"></div>
+        <div class="row">
+            <form>
+                <button class="btn btn-outline-success" type="submit" style="background-color:#CFF4EC; width: 15vw;">Book an
+                    Appointment</button>
+            </form>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="justify-content: space-between;">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-            </ul>
+            <div class="col">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="justify-content: space-between;">
+                    <li class="nav-item">
+                        <a href="./home" class="nav-link active" aria-current="page">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./services.html" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./blog.html" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
 <main>
-   <div class="container" style="background-color: #E2F6CD; justify-content: center; text-align: center; padding-top: 30px; margin: 0px">
+   <div class="#" style="background-color: #E2F6CD; text-align: center; padding-top: 30px; padding-bottom: 200px;">
         <div class="row">
             <div class="col">
 
-                <div class="container">
+                <div class="container ">
                     <div class="row" >
                         <div class="col">
                             <p><i>Contact Me</i></p>
@@ -86,10 +86,10 @@
 
                  <div class="container">
                     <div class="row">
-                        <div class="col-3">
+                        <div class="col-3 offset-md-3">
                             <input class="form-control" type="text" placeholder="Name" aria-label="default input">
                         </div>
-                        <div class="col-3">
+                        <div class="col-3 ">
                             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
                         </div>
                     </div>
@@ -97,7 +97,7 @@
     
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-6 offset-md-3">
                             <input class="form-control" type="text" placeholder="Subject" aria-label="default input">
                         </div>
                     </div>
@@ -105,7 +105,7 @@
                    
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-6 offset-md-3">
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Message"></textarea>
                         </div>
                     </div>
@@ -113,7 +113,7 @@
 
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-6 offset-md-3">
                             <input class="form-control" type="text" placeholder="Send" aria-label="default input">
                         </div>
                     </div>
@@ -130,7 +130,7 @@
 
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-6 offset-md-3">
                             <img src="./css/OIP - fb icon resized.png">
                             <img src="./css/OIP - twitter icon resized.png">
                         </div>
@@ -148,14 +148,14 @@
                 <div class="container">
                     <!-- <div class="row"> -->
                         <!-- <div class="col"> -->
-                            <form class="row g-3">
+                            <form class="row g-2">
                                 <!-- <div class="col-auto"> -->
                                     <!-- <label for="staticEmail2" class="visually-hidden">Email</label> -->
                                     <!-- <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com"> -->
                                 <!-- </div> -->
-                                <div class="col-auto">
-                                    <label for="inputPassword2" class="visually-hidden">Enter your email here*</label>
-                                    <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+                                <div class="col-5 offset-3">
+                                    <label for="inputemail2" class="visually-hidden">Enter your email here*</label>
+                                    <input type="email" class="form-control" id="inputemail2" placeholder="Enter your email here">
                                 </div>
                                 <div class="col-auto">
                                     <button type="submit" class="btn btn-primary mb-3">Join</button>
@@ -171,10 +171,12 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <div id="map-container-google-2" class="z-depth-1-half map-container" style="height: 500px">
+                <div id="map-container-google-2" class="z-depth-1-half map-container" style="height: 1000px">
                     <iframe src="https://maps.google.com/maps?q=San Francisco, CA 94158&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
                         style="border:0" allowfullscreen></iframe>
                 </div>
+                
+                
             </div>
         </div>
     </div>                

@@ -9,6 +9,10 @@ body {
     font-family: "Arial",Helvetica,sans-serif;
 }
 
+.bg-light {
+    background-color: white;
+}
+
 /* .map-container-2{
     overflow:hidden;
     padding-bottom:56.25%;

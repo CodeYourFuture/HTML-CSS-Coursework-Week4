@@ -10,63 +10,64 @@
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <!-- Add a link to your custom CSS here -->
     <link ref="stylesheet" href="/css/main.css">
+    <link ref="stylesheet" href="https://fonts.google.com/specimen/Libre+Baskerville">
+    <link ref="stylesheet" href=https://fonts.google.com/specimen/Libre+Baskerville>
 
     <title>Responsive grid project</title>
 </head>
 
+<!-- Home Page -->
 
-<!-- About Page -->
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-        <div class="container-fluid" style="padding-bottom: 30px;">
+        <div class="container-fluid" style="padding-bottom: 60px; padding-top: 10px;">
             <div class="row">
-                <div class="col-2 offset-10">
-                    <form>
-                        <button class="btn btn-outline-success" type="submit"
-                            style="d-flex; background-color:#CFF4EC;">Book an Appointment</button>
-                    </form>
+                <div class="col">
+                    <div class="col">
+                        <a class="navbar-brand" href="#"><i>Maria Hope, Ph.D. - Psychologist</i></a>
+                    </div>
                 </div>
             </div>
         </div>
-    
-        <div class="container-brand">
-            <div class="row">
-                <div class="col">
-                    <a class="navbar-brand" href="#"><i>Maria Hope, Ph.D. - Psychologist</i></a>
-                </div>
+
+        <div class="container-brand"></div>
+        <div class="row">
+            <form>
+                <button class="btn btn-outline-success" type="submit" style="background-color:#CFF4EC; width: 15vw;">Book an
+                    Appointment</button>
+            </form>
+
+            <div class="col">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
-            <div class="row">
-                <div class="col">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="justify-content: space-between;">
+                    <li class="nav-item">
+                        <a href="./home" class="nav-link active" aria-current="page">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./services.html" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./blog.html" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
             </div>
-        </div>
-    
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="justify-content: space-between;">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-            </ul>
         </div>
     </nav>
+
     <main>
         <div class="container">
             <div class="row">
