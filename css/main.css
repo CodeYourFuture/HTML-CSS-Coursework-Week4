@@ -10,18 +10,11 @@
   text-align: center;
 }*/
 
+/* General */
 body {
   font-family: Quicksand;
   font-weight: 300;
-}
-
-.app-btn {
-  background-color: #cff4ec;
-  border: 0px;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  color: #2f2f2e;
 }
 
 .title-txt {
@@ -35,47 +28,90 @@ body {
 .mid-txt {
   font-size: 30px;
   text-align: center;
-  font-weight: ighter;
+  font-weight: lighter;
   font-style: italic;
 }
+
+/* head */
+.app-btn {
+  background-color: #cff4ec;
+  border: 0px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .head-txt {
   font-family: Libre Baskeville;
-  font-size: 25px;
-  text-align: center;
+  font-size: 20px;
   font-style: italic;
 }
+
+/* menu */
+.menu-container {
+  text-align: center;
+}
+
+.menu-container a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu-item {
+  text-decoration: none;
+  font-family: Quicksand Light 300;
+  font-size: 15px;
+  font-weight: lighter;
+}
+nav a:hover {
+  color: #94d6c8;
+}
+
+.menu-container a {
+  display: none;
+}
+
+/*intro*/
 .intro-img {
-  margin-top: 40px;
   width: 100%;
 }
+.no-padding {
+  padding-left: 0 !important;
+}
+
 .intro-txt {
   font-family: Libre Baskeville;
   font-weight: lighter;
   font-size: 50px;
-  background-coor: #cff4ec;
+  background-color: #cff4ec;
   text-align: center;
   padding-top: 40px;
   padding-bottom: 50px;
-  text-align: center;
 }
 
 .intro-txt p {
   font-size: 20px;
 }
 
+/*about*/
 .about-txt {
   font-family: Libre Baskeville;
   background-color: #f2f2f1;
   font-weight: lighter;
   font-size: 50px;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 0x;
   padding-bottom: 10px;
-  text-align: center;
 }
 
-.about-txt h2 {
+.about-title {
+  font-size: 25px;
+  text-align: center;
+  font-weight: lighter;
   font-style: italic;
+  padding-top: 60px;
+  padding-bottom: 0;
 }
 
 .about-img {
@@ -85,6 +121,7 @@ body {
   margin-bottom: 100px;
 }
 
+/*products*/
 .n1 {
   font-family: Libre Baskeville;
   background-color: #e2f6cd;
@@ -121,19 +158,21 @@ body {
   padding-bottom: 10px;
   padding-top: 10px;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
 }
 
+/*article*/
 .article-container {
   background-color: #f2f2f1;
   font-size: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
 
-.article-container {
+  padding-bottom: 20px;
   padding-top: 60px;
   padding-bottom: 40px;
+}
+
+.article-list {
+  background-color: white;
 }
 .article-container p {
   font-size: 25px;
@@ -148,7 +187,19 @@ body {
   margin-bottom: 20px;
 }
 
+/*footer*/
 .footer {
   padding-top: 50px;
   padding-bottom: 100px;
 }
+
+@media (min-width: 540px) {
+  .menu-icon {
+    display: none;
+  }
+
+  /* head*/
+  .menu-container a {
+    display:flex;
+    font-size: 25px;
+  }
