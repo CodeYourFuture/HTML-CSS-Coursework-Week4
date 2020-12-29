@@ -25,7 +25,7 @@ nav {
   font-size: 16px;
 }
 
-.button p:hover, a:hover {
+.button p:hover {
   background-color: #4D7369;
   color: #ffffff;
   cursor: pointer;
@@ -37,7 +37,7 @@ a {
   color: #2f2f2e;
 }
 
-a.#href:hover {
+a:hover {
   color: #4D7369;
 }
 
@@ -74,10 +74,6 @@ a.#href:hover {
   height: 600px;
   object-fit: cover;
 }
-
-/* .container .bio-section {
-  margin-bottom: 400px;
-} */
 
 .bio-section {
   background-color: #f2f2f1;
@@ -125,6 +121,7 @@ h2 {
 .section.therapy-options {
   margin-top: 45px;
   margin-bottom: 70px;
+  height: 700px;
 }
 
 .options-row {
@@ -199,20 +196,12 @@ h4 {
   margin: 20px 0px;
 }
 
-/* .text-row {
-  border-style: solid;
-} */
-
 .text-row p {
   font-size: 17px;
   font-family: "Libre Baskerville", serif;
   font-style: italic;
 }
 
-.row.button-row {
-  margin-top: 100px;
-  margin-bottom: 10px;
-}
 
 .footer-container {
   margin-top: 20px;
