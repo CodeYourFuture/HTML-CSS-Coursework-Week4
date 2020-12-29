@@ -6,7 +6,10 @@
 html,
 body {
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
+
 html {
   box-sizing: border-box;
 }
@@ -15,70 +18,43 @@ body {
 }
 
 /* Menu Bar */
-a {
-  color: blue;
-  font-weight: 100;
-  letter-spacing: 2px;
-  text-decoration: none;
-  /* background: rgba(0, 0, 0, 0.2); */
-  padding: 20px 5px;
-  display: inline-block;
-  width: 100%;
+.navbar-light {
+  padding-bottom: 100px;
+}
+nav > div > div > a {
   text-align: center;
   transition: all 0.5s;
 }
 
-a:hover {
-  background: rgba(0, 0, 0, 0.3);
-}
-.nav-menu {
-  display: block;
-  /* border:5px solid blue; */
-}
-.nav-menu ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 2px;
-}
-.nav-menu li {
-  flex: 1;
+/* .navbar-light .nav-item .active .nav-link,
+.navbar-light .nav-item:focus .nav-link,
+.navbar-light .nav-item:hover .nav-link {
+  color: blue;
+} */
+
+.navbar .navbar-nav .nav-link {
+  color: black;
+  font-weight: bold;
 }
 
-.index-header-class {
-  /* position: absolute; */
-  width: 100%;
-  background-color: white;
-  border: 2px solid blue;
-  height: 30vh;
-  /* top: 0px; */
-  /* bottom: auto; */
-}
 .name {
   font-size: 20px;
 }
 .role {
   font-size: 14px;
 }
-.menu-icon {
-  border: 2px solid red;
-}
 
 .profile-card {
   background-color: #f4ece6;
-  margin-top: -180px;
-  /* position: absolute; */
   width: 80vw;
-  height: 51vh; /*change this to vh or em or rem*/
   text-align: center;
+  position: relative;
+  margin-top: -100px;
 }
 .photo-wrapper img {
   width: 75%;
-  /* border: 5px solid grey; */
   margin: 25px auto;
   border-radius: 50%;
-  /* padding:5px; */
 }
 .separator-line {
   border-bottom: 3px solid blue;
@@ -87,24 +63,22 @@ a:hover {
 }
 
 .btn {
-  /* background-color: blue; */
-  /* border: 2px solid black; */
   border: 1px solid black;
   border-radius: 25px;
   text-align: center;
-
-  /* padding: 15px; */
 }
 button:hover {
   background-color: blue;
   color: white;
 }
 /* Dont' forget to link this file to your HTML in the <head> */
-
+.intro-wrapper {
+  /* margin-top: -280px; */
+  margin-top: -150px;
+}
 #footer-wrapper {
   background-color: white;
   color: black;
-  /* position: relative; */
   width: 100%;
   padding: 5px;
 }
@@ -114,56 +88,47 @@ button:hover {
 .contact {
   font-size: 12px;
 }
+.social-media > a {
+  /* background-color: yellow; */
+}
 .contact > div:first-child,
 .social-media > a {
-  font-weight: bold;
-  font-size: 25px;
   color: black;
 }
 .social-media {
-  margin: 30px auto 5px auto;
+  width: 100%;
+  text-align: center;
+  margin: 10px auto 0 auto;
+  padding: 5px;
   background-color: white;
 }
 .social-media a {
   text-decoration: none;
+  padding: 20px;
 }
 .social-media .fa {
   color: black;
-  font-size: 25px;
-  padding-top: 5px;
-  padding-bottom: 0px;
-}
-/* .p h1 {
   text-align: center;
-} */
-
-.who-am-i p:nth-of-type(1) {
-  font-size: 20px;
-
-  /* margin-top: ; */
+  font-size: 15px; /*this controls the font size*/
 }
-.who-am-i {
-  /* position: absolute; */
-  /* display:block; */
-  /* top: 490px; */
-  /* bottom: -200px; */
-  /* this along with position results in scrolling */
+.footer-social-media {
+  /* width: 50%; */
+  /* border: 2px solid red; */
+  margin: 0;
+  padding: 0;
+}
+.footer-social-media .fa {
+  /* border: 2px solid yellow; */
+}
+.footer-social-media a {
+  /* padding: 10px; */
+  /* border: 10px solid blue; */
 }
 
 /* Css for contact.html */
 /* ----------------------------- */
-/* .contact-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
 
 form {
-  /* find a better way*/
-  /* width: 50%; */
-  /* margin: 25px auto; */
-  /* padding: 15px 5px; */
-  /* border: 2px solid blue; */
   margin-bottom: 15px;
 }
 
@@ -173,7 +138,6 @@ form {
 }
 .contact-form input {
   background: transparent;
-  /* outline: 0px solid royalblue; */
   border-bottom: 1px solid black;
 }
 
@@ -185,13 +149,6 @@ form {
 .contact-form {
   background: white;
 }
-/* .form-btn {
-  border: none; 
-  border-radius: 50px;
-  background: blue;
-  color: white;
-  padding: 5px 15px;
-} */
 
 .form-btn:hover {
   outline: 1px solid blue;
@@ -201,17 +158,16 @@ form {
 .btn-container {
   margin-top: 20px;
   margin-bottom: 20px;
-  /* border:2px solid red; */
 }
 
 /* CSS for projects.html  */
-.projects-header-class,
-.contact-header-class,
-.resume-header-class {
-  /* position: absolute; */
-  width: 100%;
+.projects-header,
+.contact-header,
+.resume-header {
+  /* width: 100%; */
   background-color: white;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
+  padding-bottom: 0;
 }
 
 /* CSS for resume.HTML */
