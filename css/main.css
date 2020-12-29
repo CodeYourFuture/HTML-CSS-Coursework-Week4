@@ -1,3 +1,260 @@
 /* Add your custom CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
+<<<<<<< Updated upstream
+=======
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Header + Body content */
+
+header {
+    margin-bottom: 15px;
+}
+
+h1, h2, h3 {
+    padding: 11px 0;
+}
+
+h1, h3 {
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 20px;
+    
+}
+
+h2 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2.6em;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.text-w-box{
+    padding: 80px 15px 40px 15px;
+}
+
+/* Menu nav bar */
+
+.navbar-tops {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobile-menu {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: aliceblue;
+  top: 0;
+}
+
+.mobile-menu-hidden{
+    display: none;
+}
+
+.menu-button{
+    z-index: 100;
+    margin-right: 10px;
+}
+
+.mobile-navigation div{
+    align-items: center;
+    
+}
+
+.mobile-menu{
+background-color: #ecfcf9;
+}
+
+.mobile-navigation a{
+    margin-top: 20px;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    
+}
+
+.hamburguer-menu{
+    padding-right: 15px;
+}
+
+.desktop-navigation{
+    display: none;
+}
+
+.navbar-tops{
+    margin-top: 10px;
+}
+
+.nav-bar-right{
+ display: flex;
+ flex-direction: column;
+ height: 100%;
+ justify-content: space-between;
+}
+
+/* Appointment Button*/
+
+
+.appointment-button {
+    border: none;
+    padding: 10px 20px;
+    background-color: rgba(207, 244, 236, 1);
+    margin-left: 10px;
+    align-items: flex-end;
+    }
+    
+.appointment-button:hover {
+    background-color: rgb(109, 133, 128);
+    }
+
+ /* Main content */
+
+.primary-content {
+    text-align: center;
+    
+}
+
+.mint-container{
+    padding: 30px 15px 100px 15px;
+    background-color: rgba(207, 244, 236, 1);
+}
+
+.hero-main {
+    background-color: rgba(207, 244, 236, 1);
+}
+
+.center-text{
+    padding-bottom: 120px;
+}
+
+.about-psychologist{
+    background-color: rgb(242, 242, 242);
+    padding-bottom: 175px;
+}
+
+.maria-maria{
+    margin-top: -100px;
+    margin-bottom: 100px;
+}
+
+/* Services */
+
+.box-n-1 {
+    background-color: #e1f6cd;
+}
+
+.box-n-2 {
+    background-color: #f2f2f2;
+}
+
+.box-n-3 {
+    background-color: #cff4ec;
+}
+
+/* Articles section */
+
+.serv-btn {
+    background-color: #94d6c8;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.appointment-btn:hover {
+    background-color: rgb(109, 133, 128);
+
+}
+
+.article-heading {
+    font-style: italic;
+    font-size: 1.4em;
+    line-height: 1.7em;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+.article-section {
+    background-color: #f2f2f2;
+}
+
+/* Footer*/
+
+.footer{
+    align-items: center;
+    background-color:white;
+}
+
+.follow-us{
+    margin-top: 10px;
+}
+
+/* Adding media query Adding media query Adding media query Adding media query*/
+
+@media only screen and (min-width: 750px) {
+
+body{
+    padding: 60px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+ .navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-left: 500px;
+}
+
+.appointment-button {
+    padding-top: 15px;
+}
+
+.appointment-button:hover{
+    color: #51b9a3;
+    text-decoration: none;
+}
+
+.mobile-navigation{
+    display: none;
+}
+
+.desktop-navigation{
+    display: flex;
+    height: 145px;
+    justify-content: space-between;
+}
+
+.bar-extended{
+    word-spacing: 15px;
+}
+
+.maria-phd {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 110px;
+    font-size:x-large
+}
+
+.maria-maria{
+    width: 50%;
+}
+
+ 
+}
+>>>>>>> Stashed changes
