@@ -13,6 +13,10 @@ ul {
     list-style: none;
 }
 
+.li {
+display: flex;
+}
+
 
 .hero-image {
     background-image: url(https://images.unsplash.com/photo-1514533450685-4493e01d1fdc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1934&q=80);
@@ -24,9 +28,9 @@ ul {
     background-size: cover;
 }
 
-/* h1, h2 {
+h1, h2 {
 color: white;
-} */
+}
 
 .line-up-section {
     background-image: url(../img/festival_lilly-flower.svg), url(../img/festival_blob-shape.svg);
@@ -35,6 +39,8 @@ color: white;
     background-size: 60px, contain;
     background-color:#5362AC ;
     color: white;
+    padding-top: 100px;
+    padding-bottom: 100px;
  
     
 }
