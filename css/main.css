@@ -20,8 +20,21 @@ body{
     color: #2F2F2E;
     line-height: 1.4em;
     font-family: didot-w01-italic, serif;
-    /* white-space: nowrap; */
+    
 }
+.first{
+    flex-direction: row-reverse;
+    
+}
+.online{
+    /* justify-content: center;
+    align-items: center;
+    align-content: center; */
+   /* background-size: 100%; */
+    text-align: center;
+    background-color: rgba(207, 244, 236, 1);
+}
+
 
 /* @media(min width:900px){
     nav-link{
