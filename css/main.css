@@ -57,11 +57,6 @@ a:hover {
   border-radius: 50%;
 }
 
-.hero-text-container {
-  /* padding: 2rem 0; */
-  /* width: 85vw; */
-}
-
 .hero-text-greeting {
   font-size: 4rem;
 }
@@ -94,10 +89,6 @@ hr.blue-line {
   color: white;
 }
 
-/* .social {
-  background-color: white;
-} */
-
 .social-img {
   width: 20px;
   height: 20px;
@@ -109,10 +100,31 @@ footer h4 {
 
 /* resume page */
 
+.background-main {
+  background-color: var(--bg-color);
+}
+
 .container-width {
   max-width: 800px;
 }
 
-.background-main {
-  background-color: var(--bg-color);
+/* contact page */
+
+.form-container {
+  max-width: 600px;
+}
+
+input[type="text"],
+input[type="email"],
+.textarea {
+  border-radius: 0;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid rgb(14, 13, 13);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+.textarea:focus {
+  border: 3px solid rgb(37, 37, 37);
 }

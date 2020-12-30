@@ -73,34 +73,54 @@
       </nav>
     </header>
 
-    <main class="container-fluid py-5 background-main">
-      <div class="conatiner mx-auto container-width">
-        <h1 class="text-center py-5">
-          <span class="bg-primary rect d-inline-block me-2"></span>Let's talk
-        </h1>
+    <main class="container-fluid py-3 mx-auto background-main">
+      <h1 class="text-center py-5">
+        <span class="bg-primary rect d-inline-block me-2"></span>Let's talk
+      </h1>
 
-        <form action="" class="container bg-white">
-          <div class="row">
-            <label for="first-name col"
-              >First Name<span class="text-primary">*</span>
-            </label>
-            <input type="text" id="first-name" class="col" required />
-            <label for="last-name"
-              >Last name<span class="text-primary">*</span>
-            </label>
-            <input type="text" id="last-name" required />
-
-            <label for="email">Email<span class="text-primary">*</span></label>
-            <input type="email" id="email" required />
-
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" />
-            <label for="message"> Message</label>
-            <input type="text" id="message" />
-            <button type="submit">Send</button>
+      <form action="" class="container form-container">
+        <div class="row bg-white p-3 p-md-5">
+          <div class="col-12 col-md-6 mb-4">
+            <label for="first-name"
+              >First Name <span class="text-primary">*</span></label
+            >
+            <input type="text" class="form-control" id="first-name" required />
           </div>
-        </form>
-      </div>
+          <div class="col-12 col-md-6 mb-4">
+            <label for="last-name"
+              >Last Name <span class="text-primary">*</span></label
+            >
+            <input type="text" class="form-control" id="last-name" required />
+          </div>
+          <div class="col-12 mb-4">
+            <label for="email">Email<span class="text-primary">*</span></label>
+            <input type="email" class="form-control" id="email" required />
+          </div>
+
+          <div class="col-12 mb-4">
+            <label for="subject">Subject</label>
+            <input type="text" class="form-control" id="subject" />
+          </div>
+
+          <div class="col-12 mb-4">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              class="form-control textarea"
+              rows="4"
+            ></textarea>
+          </div>
+          <div class="col justify-content-center">
+            <button
+              type="submit"
+              class="btn btn-primary px-4 px-md-5 rounded-pill bold-text"
+            >
+              SEND
+            </button>
+          </div>
+        </div>
+      </form>
     </main>
 
     <footer class="container py-5">
