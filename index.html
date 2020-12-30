@@ -21,41 +21,198 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <!-- Add a link to your custom CSS here -->
     <link href="./css/main.css" rel="stylesheet" />
+    <link href="./css/body.css" rel="stylesheet" />
+    <link href="./css/header.css" rel="stylesheet" />
+
     <title>Resume</title>
   </head>
 
-  <body class="row">
-    <header class="container-fluid">
-      <div class="col">
-        <h1 class="col col-md-4">
-          Header Div
-        </h1>
+  <body class="body">
+    <header class="container">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="brand col-8 col-md-6">
+            <div class="row">
+              <div class="col col-md-6">
+                <div class="row justify-content-start">
+                  <div class="col-2 p-0">
+                    <img
+                      style="width: 30px; height: 30px;"
+                      class="img-fluid"
+                      src="./logo.png"
+                      alt="Logo"
+                    />
+                  </div>
+                  <div class="col-8 p-0">
+                    <p class="h1 text-nowrap">Maya Nelson</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col col-md-6">
+                <div class="row">
+                  <div class="col-2 p-0" style="display: none;">
+                    <a href="#">/</a>
+                  </div>
+                  <div class="col-8 p-0">
+                    <p class="h4 text-nowrap">Project Manager</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-2 col-md-6">
+            <nav class="col-12 col-md-8 hamburger">
+              <input type="checkbox" id="check" />
+              <label for="check" class="menubutton">
+                &#9776;
+              </label>
+              <ul class="header-ul">
+                <li>
+                  <a href="index.html" style="color: blue;">About Me</a>
+                </li>
+                <li><a href="#">Resume</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
       </div>
     </header>
 
     <main class="container-fluid">
-      <div class="col">
-        <h2 class="col col-md-4">
-          Main First Div
-        </h2>
-      </div>
-      <div class="col">
-        <h3 class="col col-md-4">
-          Main second Div
-        </h3>
-      </div>
-      <div class="col">
-        <h4 class="col col-md-4">
-          Main third Div
-        </h4>
+      <div
+        class="row justify-content-center"
+        style="background-color: #faefe9;"
+      >
+        <div class="col-11 offset-1 col-md-4">
+          <div
+            class="card shadow mt-3 text-center"
+            style="background-color: #fcf4f4;"
+          >
+            <img
+              src="./img/face.jpg"
+              class="card-img-top rounded-circle mx-auto m-5"
+              alt="Face"
+              style="max-width: 8rem;"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Maya<br />
+                Nelson
+              </h5>
+              <hr />
+              <p class="card-text" style="display: none;">
+                PROJECT MANAGER
+              </p>
+              <button class="btn btn-primary" style="border-radius: 20px;">
+                RESUME
+              </button>
+              <button
+                class="btn btn-outline-primary"
+                style="border-radius: 20px;"
+              >
+                PROJECTS
+              </button>
+              <div
+                class="row justify-content-center mt-3"
+                style="background-color: white;"
+              >
+                <a href="https://twitter.com/CodeYourFuture" class="col-1">
+                  <i
+                    class="fa fa-facebook-f"
+                    style="color: rgb(51, 51, 51);"
+                  ></i>
+                </a>
+                <a href="https://twitter.com/CodeYourFuture" class="col-1">
+                  <i class="fa fa-twitter" style="color: rgb(32, 32, 32);"></i>
+                </a>
+                <a href="https://twitter.com/CodeYourFuture" class="col-1">
+                  <i class="fa fa-linkedin" style="color: rgb(32, 32, 32);"></i>
+                </a>
+                <a href="https://twitter.com/CodeYourFuture" class="col-1">
+                  <i
+                    class="fa fa-instagram"
+                    style="color: rgb(32, 32, 32);"
+                  ></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-11 offset-1 col-md-4">
+          <div class="p-3" style="background-color: transparent;">
+            <p class="h1 display-1 mt-3 mb-3">HELLO</p>
+            <p class="h3 mb-3">Here's who I am & what I do</p>
+            <p class="h6 m-1 text-start">
+              I'm a paragraph. Click here to add your own text and edit me. It’s
+              easy. Just click “Edit Text” or double click me to add your own
+              content and make changes to the font.
+              <br />
+              <br />
+              I’m a great place for you to tell a story and let your users know
+              a little more about you.
+            </p>
+          </div>
+        </div>
       </div>
     </main>
 
-    <footer class="container-fluid">
-      <div class="col">
-        Footer Div
+    <footer class="container">
+      <div class="row m-3">
+        <div class="col-12 col-md-8 mb-3">
+          <div class="row">
+            <div class="col-6">
+              <p class="h5">Call</p>
+              <p>123-456-7890</p>
+            </div>
+            <div class="col-6">
+              <p class="h5">Write</p>
+              <p>info@mysite.com</p>
+            </div>
+            <div class="col-6">
+              <p class="h5">Follow</p>
+              <div
+                class="row justify-content-start"
+                style="background-color: white;"
+              >
+                <a href="https://twitter.com/CodeYourFuture" class="col-1">
+                  <i
+                    class="fa fa-facebook-f"
+                    style="color: rgb(32, 32, 32);"
+                  ></i>
+                </a>
+                <a href="https://twitter.com/CodeYourFuture" class="col-1">
+                  <i class="fa fa-twitter" style="color: rgb(32, 32, 32);"></i>
+                </a>
+                <a href="https://twitter.com/CodeYourFuture" class="col-1">
+                  <i class="fa fa-linkedin" style="color: rgb(32, 32, 32);"></i>
+                </a>
+                <a href="https://twitter.com/CodeYourFuture" class="col-1">
+                  <i
+                    class="fa fa-instagram"
+                    style="color: rgb(32, 32, 32);"
+                  ></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <p class="m-0">© 2023 by Maya Nelson.</p>
+          <p class="m-0">Proudly created with Wix.com</p>
+        </div>
       </div>
     </footer>
 
