@@ -1,0 +1,257 @@
+/* General CSS */
+
+body  {
+background-color: #E6DACD; 
+text-align:left;
+margin:0px;
+overflow-x: hidden;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+h1{
+    font-weight:700;
+    font-size:2.5em;
+    padding-top: 3em;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 1.5em;
+    padding-left:5px;
+}
+
+/* CSS for Top Navigation */
+
+.hidex{
+    display:none;
+}
+
+.hamburger{
+    width:35px;
+    height:35px;
+    position:absolute;
+    top: 6px;
+    right: 6px;
+}
+
+
+.wrapsquare{
+    display:flex;
+    margin: 10px 0px 0px 0px;
+}
+
+.square {
+  height: 13.5px;
+  width: 13.5px;
+  background-color:#0150FD;
+  margin:9px 0px;
+}
+
+.developer {
+    font-weight:400;
+    font-size: 0.95em;
+    line-height: 2.2;
+}
+
+.toptext{
+    text-align:left;
+}
+
+
+
+header a{
+    font-size:.7em;
+}
+
+
+/* CSS for Profile Section */
+.jobposition{
+    font-weight:700;
+}
+.date{
+    color:#0150FD;
+    padding-top:3em;
+    font-weight:700;
+}
+
+.longtext{
+    
+    padding-top:2em;
+}
+.longtext2{
+    
+    padding-bottom:2.5em;
+}
+
+.bluesquare{
+    width:20px;
+    height:20px;
+}
+.bluesquare2{
+    width:10px;
+    height:10px;
+    margin:5px;
+}
+
+ul.bluelist{
+      list-style: none;
+
+}
+
+.wrapsquare{
+
+}
+
+.float {
+    background-color: white;
+    filter: drop-shadow(-10px 10px 3px lightgrey);
+    max-width:80%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.roundimage {
+  border-radius: 50%;
+  padding: 20%;
+}
+
+.line{
+  height:2px;
+  width: 20%;
+  background-color:#0150FD ;  
+  margin: 0 auto;
+}
+
+.buttonrow{
+    padding:20px;
+}
+
+.button1{
+    background-color: #0150FD;
+    color:white;
+    border-radius: 20px;
+    padding: 3px 20px;
+    border:solid #0150FD 2px;
+    font-weight:600;
+    font-size:1.3em;
+    margin:10px 0px;
+}
+
+.button2{
+    border-radius: 20px;
+    padding: 3px 16px;
+    border:solid black 2px;
+    font-weight:600;
+    font-size:1.3em;
+    margin:10px 0px;
+}
+
+
+.socials {
+    padding: 0px 1px;
+}
+
+.socials img {
+    height:20px;
+    width:20px;
+}
+
+.whitebg{
+    background-color: white;
+    margin: 13px;
+    padding: 20px 0px;
+}
+
+.bottomboxtitle{
+    padding-top:2em;
+}
+.lastsquare{
+    padding-bottom:3em;
+}
+
+/* CSS for Blurb */
+
+.blurbwrapper {
+    padding: 0px 0px 20px 0px;
+    margin: 20px 0px 0px 0px;
+}
+
+.blurb{
+    text-align:left;
+}
+
+
+/* CSS for Footer */
+
+
+footer{
+    background-color: white;
+    padding:30px 0px 0px 0px;
+}
+
+.lastline {
+    
+    margin-block-end: 0em;
+    padding-block-end: 1em;
+}
+
+/* Responsive CSS */
+
+
+@media (max-width:767px){
+    .hidesmall{
+    display:none;
+}
+
+.buttonrow2 {
+    display:none;
+}
+}
+
+@media (min-width:768px){
+header{
+    background-color: white;
+}
+.buttonrow {
+    display:none;
+}
+.hamburger{
+    display:none;
+}}
+
+@media (min-width:1050px){
+header a{
+    font-size:.8em;
+}}
+
+@media (min-width:1150px){
+header a{
+    font-size:.9em;
+}}
+
+
+.mystyle {
+  width: 100vw;
+  padding: 25px 0px;
+  background-color: #E6DACD;
+  color: black;
+  font-weight:700;
+  font-size: 25px;
+  display:block;
+  z-index:1000;
+  top:35;
+
+  }
+
+  .button3{
+      
+  background-color: #E6DACD;
+  border:none;
+  font-weight: 700;
+
+  }
+  }
