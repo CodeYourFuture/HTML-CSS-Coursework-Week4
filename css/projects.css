@@ -1,8 +1,8 @@
 /* General CSS */
 
 body  {
-background: #E6DACD; 
-text-align:center;
+background-color: #E6DACD; 
+text-align:left;
 margin:0px;
 overflow-x: hidden;
 }
@@ -14,12 +14,14 @@ a:link {
 h1{
     font-weight:700;
     font-size:2.5em;
+    padding-top: 3em;
 }
 
 h3 {
     font-family: 'Poppins', sans-serif;
     font-weight: 800;
     font-size: 1.5em;
+    padding-left:5px;
 }
 
 /* CSS for Top Navigation */
@@ -35,10 +37,7 @@ h3 {
     top: 6px;
     right: 6px;
 }
-.bluesquare{
-    width:20px;
-    height:20px;
-}
+
 
 .wrapsquare{
     display:flex;
@@ -69,15 +68,50 @@ header a{
 }
 
 
+/* CSS for Profile Section */
+.jobposition{
+    font-weight:700;
+}
+.date{
+    color:#0150FD;
+    padding-top:3em;
+    font-weight:700;
+}
 
-/* CSS for Form Section */
+.longtext{
+    
+    padding-top:2em;
+}
+.longtext2{
+    
+    padding-bottom:2.5em;
+}
 
+.bluesquare{
+    width:20px;
+    height:20px;
+}
+.bluesquare2{
+    width:10px;
+    height:10px;
+    margin:5px;
+}
+
+ul.bluelist{
+      list-style: none;
+
+}
+
+.wrapsquare{
+
+}
 
 .float {
     background-color: white;
-    margin: 2% 10%;
     filter: drop-shadow(-10px 10px 3px lightgrey);
-    padding: 2%;
+    max-width:80%;
+    margin: 0 auto;
+    margin-bottom: 40px;
 }
 
 .roundimage {
@@ -88,16 +122,13 @@ header a{
 .line{
   height:2px;
   width: 20%;
-  background-color:#0150FD ;
-  margin:0px 40%;
+  background-color:#0150FD ;  
+  margin: 0 auto;
 }
 
-.whitebg{
-    background-color: white;
-    margin: 13px;
-    padding: 20px 0px;
+.buttonrow{
+    padding:20px;
 }
-
 
 .button1{
     background-color: #0150FD;
@@ -107,33 +138,24 @@ header a{
     border:solid #0150FD 2px;
     font-weight:600;
     font-size:1.3em;
-    margin:10px;
-} 
-
-input[type=text] {
-  border: none;
-  border-bottom: 2px solid #0150FD;
-  height: 50px;
-  width:90%;
+    margin:10px 0px;
 }
 
-.form{
-    margin:7px 0px;
+.button2{
+    border-radius: 20px;
+    padding: 3px 16px;
+    border:solid black 2px;
+    font-weight:600;
+    font-size:1.3em;
+    margin:10px 0px;
+}
+.capture{
+    width:100%;
+    height:100%;
 }
 
-#message {
-    
-  height: 100px;
+.fullbleed{
 }
-
-/* CSS for Footer */
-
-
-footer{
-    background-color: white;
-    padding:30px 0px 0px 0px;
-}
-
 
 .socials {
     padding: 0px 1px;
@@ -144,6 +166,39 @@ footer{
     width:20px;
 }
 
+.whitebg{
+    background-color: white;
+    margin: 13px;
+    padding: 20px 0px;
+}
+
+.bottomboxtitle{
+    padding-top:2em;
+}
+.lastsquare{
+    padding-bottom:3em;
+    padding-top:3em;
+}
+
+/* CSS for Blurb */
+
+.blurbwrapper {
+    padding: 0px 0px 20px 0px;
+    margin: 20px 0px 0px 0px;
+}
+
+.blurb{
+    text-align:left;
+}
+
+
+/* CSS for Footer */
+
+
+footer{
+    background-color: white;
+    padding:30px 0px 0px 0px;
+}
 
 .lastline {
     
@@ -205,4 +260,5 @@ header a{
   border:none;
   font-weight: 700;
 
+  }
   }

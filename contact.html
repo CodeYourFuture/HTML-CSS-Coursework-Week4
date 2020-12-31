@@ -14,42 +14,50 @@
 
 
 <header class="container-fluid">
-    <nav class="row">
-        <div class="col-md-8 toptext"> 
+    <nav class="row navbar">
+        <div class="col-md-7 toptext"> 
             <div class="wrapsquare">
-                <div class="square">
-                </div>                        <h3>Nigel Pelvin </h3>
-            <h3 class="developer"> / FULL STACK DEVELOPER</h3>
+                <div class="square">   
+                </div>
+                <h3>Nigel Pelvin </h3>
+                <h3 class="developer"> / FULL STACK DEVELOPER</h3>
+                <img class="hamburger" src="img/Hamburger_icon.svg.png" alt="hamburger menu" onclick="myFunction()">
             </div>
         </div>
 
-        <div class="col-md-1 hidesmall">
-           <a href="index.html" class="menuLink">ABOUT ME</a>
-        </div>
+        <div class="col-md-5"> 
+            <div class="row">
+                <div class="col-md-3 hidesmall hidex" id="myDIVx"><button class="button3" style="margin-left:90%"  onclick="myFunction2()">X</button>
+                </div>
 
-        <div class="col-md-1 hidesmall">            
-            <a href="resume.html">RESUME</a>
-        </div>
+                <div class="col-md-3 hidesmall" id="myDIV">
+                    <a href="index.html" class="menuLink">ABOUT ME</a>
+                </div>
 
-        <div class="col-md-1 hidesmall">            
-            <a href="projects.html">PROJECTS</a>
-        </div>
+                <div class="col-md-3 hidesmall" id="myDIV2">            
+                    <a href="resume.html" class="menuLink">RESUME</a>
+                </div>
 
-        <div class="col-md-1 hidesmall">            
-            <a href="#">CONTACT</a>
+                <div class="col-md-3 hidesmall" id="myDIV3">            
+                    <a href="projects.html" class="menuLink">PROJECTS</a>
+                </div>
+
+                <div class="col-md-3 hidesmall" id="myDIV4">            
+                    <a href="contact.html" class="menuLink">CONTACT</a>
+                </div>
+            </div>
         </div>
     </nav>
 </header>
+
 
 
 <div class="container">
     <div class="row text-center"> 
 
         <div class="col-md-12 text-center">
-            <div class="wrapsquare2">
-                <div class="square">
-                </div>           
-                <h3>Let's Talk </h3>
+            <h3> <img class="bluesquare" src="img/0150fd.png">           
+              Let's Talk </h3>
             </div>
         </div>
     </div>
@@ -116,7 +124,38 @@
     </div>
 </footer>
 
+<script>
 
+    function myFunction() {
+    var elementx = document.getElementById("myDIVx");
+  elementx.classList.add("mystyle");
+  var element = document.getElementById("myDIV");
+  element.classList.add("mystyle");
+  var element2 = document.getElementById("myDIV2");
+  element2.classList.add("mystyle");
+  var element3 = document.getElementById("myDIV3");
+  element3.classList.add("mystyle");
+  var element4 = document.getElementById("myDIV4");
+  element4.classList.add("mystyle");
+}
+</script>
+
+
+<script>
+
+    function myFunction2() {
+    var elementx = document.getElementById("myDIVx");
+  elementx.classList.remove("mystyle");
+  var element = document.getElementById("myDIV");
+  element.classList.remove("mystyle");
+  var element2 = document.getElementById("myDIV2");
+  element2.classList.remove("mystyle");
+  var element3 = document.getElementById("myDIV3");
+  element3.classList.remove("mystyle");
+  var element4 = document.getElementById("myDIV4");
+  element4.classList.remove("mystyle");
+}
+</script>
 
 
 </body>
