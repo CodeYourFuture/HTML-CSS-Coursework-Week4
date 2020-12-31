@@ -64,7 +64,7 @@ input[type=text], select, textarea {
   background: transparent;
   border: none;
   border-bottom: 1px solid #000000;
- justify-content: center;
+  margin-left: 50px;
 }
 
 #email,
@@ -74,7 +74,8 @@ input[type=text], select, textarea {
   background: transparent;
   border: none;
   border-bottom: 1px solid #000000;
- justify-content: center;
+  justify-content: center;
+  margin-left: 70px;
 }
 
 
