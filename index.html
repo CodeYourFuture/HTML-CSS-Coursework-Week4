@@ -16,121 +16,195 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
     <title>Responsive grid project</title>
 </head>
-
 <body>
-<!--Book an Appointment Button-->
-<button class = "buttons">
-    Book an Appointment
-</button>
-<!--Navigation Bar-->
-<nav>
-
-</nav>
-<!--Name and Title-->
-<section class = "Psychologist">
-    <a href = "#">
-        <h3>Maria Hope, Ph.D. - Psychologist</h3>
-    </a>
-</section>
-<section class = "introduction">
-    <!--Flower Image-->
-    <img src = "./img/green-flower.png" alt = "Green-Blue Flower">
-    <!--Page Title-->
-        <h1 class = "page-title">
-            Online Therapy for Emotional Health
-        </h1>
-        <!--Intro-->
-        <p class = "description">
-            I am a description. Click here to edit.
-        </p>
-    <!--Scroll down arrow-->
-    <a href = "#">&darr;</a>
-</section>
-<!--About Section-->
-<section class = "about-maria">
-    <h3 class = "About">About</h3>
-    <h2 class = "Psych-name">Maria Hope</h2>
-    <p>
-        I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click "Edit Text" or double click me to add your own content and make changes to the font.
-        Feel free to drag and drop me anywhere you like on your page. I'm a great place for you to tell a story and let your users know a little more about you.
-    </p>
-    <a href = "#">&rarr;</a>
-</section>
-<img class = "maria-photo" src = "./img/maria-hope.png" alt = "Maria Hope">
-<!--Therapies Section-->
-<section class = "therapies">
-    <section class = "individual">
-        <h3>01.</h3>
-        <h2>Individual Therapy</h2>
-        <p>
-            I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click "Edit Text" or double click me to add your own content and make changes to the font.
-        </p>
-    </section>
-    <section class = "group">
-        <h3>02.</h3>
-        <h2>Group Therapy</h2>
-        <p>
-            I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click "Edit Text" or double click me to add your own content and make changes to the font.
-        </p>
-    </section>
-    <section class = "couples">
-        <h3>03.</h3>
-        <h2>Couples Therapy</h2>
-        <p>
-            I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click "Edit Text" or double click me to add your own content and make changes to the font.
-        </p>
-    </section>
-    <button class = "buttons" id = "services">View More Serivces</button>
-    <a href = "#">&rarr;</a>
-</section>
-<!--Articles Section-->
-<section class = "articles">
-    <h3 class = "psych-articles">Articles about Psychology</h3>
-    <article>
-        <a href = "#">
-            <img src = "./img/green-flower.png">
-            <figcaption>
-                <h3>Understanding PTSD</h3>
-            </figcaption>
-        </a>
-    </article>
-    <article>
-        <a href = "#">
-            <img src = "./img/article-argue.png">
-            <figcaption>
-                <h3>Why it's okay to argue</h3>
-            </figcaption>
-        </a>
-    </article>
-    <article>
-        <a href = "#">
-            <img src = "./img/article-de-stress.png">
-            <figcaption>
-                <h3>10 Ways to de-stress</h3>
-            </figcaption>
-        </a>
-    </article>
-    <button class = "buttons">
-        More Articles
-    </button>
-</section>
+    <div class = "container">
+        <div class = "row">
+            <div class = "col">
+                <!--Book an Appointment Button-->
+                <button class = "buttons">
+                    Book an Appointment
+                </button>
+            </div>
+        <div class = "row">
+            <div class = "col">
+                <!--Name and Title-->
+                <section class = "psychologist">
+                    <a href = "#">
+                        <h3>Maria Hope, Ph.D. - Psychologist</h3>
+                    </a>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div class = "container">
+        <div class = "row">
+            <div class = "col">
+                <section class = "introduction">
+                    <!--Flower Image-->
+                    <img src = "./img/green-flower.png" alt = "Green-Blue Flower">
+                     <!--Page Title-->
+                    <h1 class = "page-title">
+                        Online Therapy for Emotional Health
+                    </h1>
+                    <!--Intro-->
+                    <p class = "description">
+                        I am a description. Click here to edit.
+                    </p>
+                    <!--Scroll down arrow-->
+                    <a href = "#">&darr;</a>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div class = "container">
+        <div class = "row">
+            <div class = "col">
+                <!--About Section-->
+                <section class = "about-maria">
+                    <h3 class = "About">About</h3>
+                    <h2 class = "Psych-name">Maria Hope</h2>
+                    <p>
+                        I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click "Edit Text" or double click me to add your own content and make changes to the font.
+                        Feel free to drag and drop me anywhere you like on your page. I'm a great place for you to tell a story and let your users know a little more about you.
+                    </p>
+                    <a href = "#">&rarr;</a>
+                </section>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col">
+                <img class = "maria-photo" src = "./img/maria-hope.png" alt = "Maria Hope">
+            </div>
+        </div>
+    </div>
+    <div class = "container">
+        <!--Therapies Section-->
+        <section class = "therapies">
+        <div class = "row">
+            <div class = "col">
+                <section class = "individual">
+                    <h3>01.</h3>
+                    <h2>Individual Therapy</h2>
+                    <p>
+                        I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click "Edit Text" or double click me to add your own content and make changes to the font.
+                    </p>
+                </section>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col">
+                <section class = "group">
+                    <h3>02.</h3>
+                    <h2>Group Therapy</h2>
+                    <p>
+                        I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click "Edit Text" or double click me to add your own content and make changes to the font.
+                    </p>
+                </section>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col">
+                <section class = "couples">
+                    <h3>03.</h3>
+                    <h2>Couples Therapy</h2>
+                    <p>
+                        I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click "Edit Text" or double click me to add your own content and make changes to the font.
+                    </p>
+                </section>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col">
+                <button class = "buttons" id = "services">View More Serivces</button>
+                <a href = "#">&rarr;</a>
+            </div>
+        </div>
+        </section>
+    </div>
+    <div class = "container">
+        <div class = "row">
+            <div class = "col">
+                <!--Articles Section-->
+                <section class = "articles">
+                    <h3 class = "psych-articles">Articles about Psychology</h3>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col">
+                <article>
+                    <a href = "#">
+                        <img src = "./img/green-flower.png">
+                        <figcaption>
+                            <h3>Understanding PTSD</h3>
+                        </figcaption>
+                    </a>
+                </article>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col">
+                <article>
+                    <a href = "#">
+                        <img src = "./img/article-argue.png">
+                        <figcaption>
+                            <h3>Why it's okay to argue</h3>
+                        </figcaption>
+                    </a>
+                </article>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col">
+                <article>
+                    <a href = "#">
+                        <img src = "./img/article-de-stress.png">
+                        <figcaption>
+                            <h3>10 Ways to de-stress</h3>
+                        </figcaption>
+                    </a>
+                </article>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col">
+                <button class = "buttons">
+                    More Articles
+                </button>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div class = "container">
+        <footer>
+        <div class = "row">
+            <div class = "col">
+                <section class = "social-media">
+                    <a href = "https://www.twitter.com">
+                        <img class = "social-icons" src = "./img/black-twitter-icon.png">
+                    </a>
+                    <a href = "https://www.facebook.com">
+                        <img class = "social-icons" src = "./img/black-facebook-icon.png">
+                    </a>
+                </section>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col">
+                <p>
+                    &copy; 2023 by Maria Hope, Ph.D.
+                </p>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col">
+                <p>
+                    This website was designed by Wix.com
+                </p>
+            </div>
+        </div>
+        </footer>
+    </div>
 </body>
-<footer>
-    <section class = "social-media">
-        <a href = "https://www.twitter.com">
-            <img class = "social-icons" src = "./img/black-twitter-icon.png">
-        </a>
-        <a href = "https://www.facebook.com">
-            <img class = "social-icons" src = "./img/black-facebook-icon.png">
-        </a>
-    </section>
-    <p>
-        &copy; 2023 by Maria Hope, Ph.D.
-    </p>
-    <p>
-        This website was designed by Wix.com
-    </p>
-</footer>
 </html>
 
 
