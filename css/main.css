@@ -1,0 +1,19 @@
+.main-content {
+  background-color: transparent;
+  position: absolute;
+  top: 3%;
+  margin-left: 7%;
+  margin-right: 2%;
+}
+
+.main-background {
+  height: 900px;
+}
+
+@media (min-width: 768px) {
+  .main-content {
+    margin-left: 0;
+    margin-right: 0;
+    top: 20%;
+  }
+}

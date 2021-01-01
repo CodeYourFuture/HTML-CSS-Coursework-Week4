@@ -12,6 +12,7 @@
 body {
   font-family: "Quicksand";
   border: 1px darkblue solid;
+  font-size: 70%;
 }
 
 h1,
@@ -21,6 +22,7 @@ h4,
 h5,
 h6 {
   font-family: "Poppins";
+  font-size: 3em;
 }
 
 header {
@@ -34,6 +36,7 @@ header {
 main {
   border: 1px darkred solid;
   width: auto;
+  position: relative;
 }
 
 footer {

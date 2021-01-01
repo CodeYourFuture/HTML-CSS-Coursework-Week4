@@ -13,12 +13,12 @@
     />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap"
       rel="stylesheet"
     />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
       rel="stylesheet"
     />
     <link
@@ -45,16 +45,13 @@
             <div class="row">
               <div class="col col-md-6">
                 <div class="row justify-content-start">
-                  <div class="col-2 p-0">
-                    <img
-                      style="width: 30px; height: 30px;"
-                      class="img-fluid"
-                      src="./logo.png"
-                      alt="Logo"
-                    />
+                  <div
+                    class="col-2 p-0 d-flex align-items-center justify-content-center"
+                  >
+                    <img class="img-fluid" src="./logo.png" alt="Logo" />
                   </div>
                   <div class="col-8 p-0">
-                    <p class="h1 text-nowrap">Maya Nelson</p>
+                    <h1 class="h1 text-nowrap p-0 m-0">Maya Nelson</h1>
                   </div>
                 </div>
               </div>
@@ -91,27 +88,34 @@
       </div>
     </header>
 
-    <main class="container-fluid">
-      <div
-        class="row justify-content-center"
-        style="background-color: #faefe9;"
-      >
-        <div class="col-11 offset-1 col-md-4">
+    <main class="container-fluid" style="height: auto;">
+      <div class="main-background row">
+        <div
+          class="col-12 col-md-6"
+          style="background-color: #faefe9; height: 50%;"
+        ></div>
+        <div
+          class="col-12 col-md-6"
+          style="background-color: white; height: 50%';"
+        ></div>
+      </div>
+      <div class="main-content row justify-content-center border border-danger">
+        <div class="col-12 col-md-4 border border-danger">
           <div
-            class="card shadow mt-3 text-center"
+            class="card shadow-lg text-center"
             style="background-color: #fcf4f4;"
           >
             <img
               src="./img/face.jpg"
               class="card-img-top rounded-circle mx-auto m-5"
               alt="Face"
-              style="max-width: 8rem;"
+              style="max-width: 60%;"
             />
             <div class="card-body">
-              <h5 class="card-title">
+              <h2 class="card-title">
                 Maya<br />
                 Nelson
-              </h5>
+              </h2>
               <hr />
               <p class="card-text" style="display: none;">
                 PROJECT MANAGER
@@ -151,11 +155,18 @@
             </div>
           </div>
         </div>
-        <div class="col-11 offset-1 col-md-4">
-          <div class="p-3" style="background-color: transparent;">
-            <p class="h1 display-1 mt-3 mb-3">HELLO</p>
-            <p class="h3 mb-3">Here's who I am & what I do</p>
-            <p class="h6 m-1 text-start">
+        <div class="col-12 col-md-4 border border-danger">
+          <div
+            class="d-flex flex-column justify-content-between pt-5 border border-success"
+            style="
+              background-color: transparent;
+              margin-right: 5%;
+              height: 100%;
+            "
+          >
+            <h1 class="col-12 display-1 mb-3">HELLO</h1>
+            <h3 class="col-12 h5 mb-3">Here's who I am & what I do</h3>
+            <p class="col-12 h6 text-start mb-2">
               I'm a paragraph. Click here to add your own text and edit me. It’s
               easy. Just click “Edit Text” or double click me to add your own
               content and make changes to the font.

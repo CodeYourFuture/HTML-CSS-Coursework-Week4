@@ -13,21 +13,6 @@
   --white: #fff;
 }
 
-header .logo {
-  width: 10px;
-  height: 10px;
-
-  display: block;
-
-  background-color: --royal-blue;
-}
-
-.square-box {
-  width: 1rem;
-  height: 1rem;
-  background-color: darkblue;
-}
-
 .logo div {
   display: flex;
 }
