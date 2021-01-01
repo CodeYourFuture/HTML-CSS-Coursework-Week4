@@ -29,20 +29,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  border: 1px darkred solid;
 }
 
 main {
-  border: 1px darkred solid;
   width: auto;
   position: relative;
 }
 
 footer {
-  border: 1px darkred solid;
-}
-
-div {
-  /* border: 1px darkolivegreen dotted; */
+  background-color: white;
 }

@@ -10,10 +10,34 @@
   height: 900px;
 }
 
+.main-background div:nth-child(1) {
+  background-color: white;
+  height: 50%;
+  width: 100%;
+}
+
+.main-background div:nth-child(2) {
+  background-color: #faefe9;
+  height: 50%;
+  width: 100%;
+}
+
 @media (min-width: 768px) {
   .main-content {
     margin-left: 0;
     margin-right: 0;
     top: 20%;
+  }
+
+  .main-background div:nth-child(1) {
+    background-color: #faefe9;
+    width: 45%;
+    height: 100%;
+  }
+
+  .main-background div:nth-child(2) {
+    background-color: white;
+    width: 55%;
+    height: 100%;
   }
 }
