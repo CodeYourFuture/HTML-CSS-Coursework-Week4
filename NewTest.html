@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Here we import the Boostrap CSS stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- Add a link to your custom CSS here -->
+    <link rel="stylesheet" href="./css/main2.css">
+    <title>Domenico DC - Responsive grid project</title>
+</head>
+<style>
+body{margin: 30px;}
+   .my-container{
+    border: 3px solid green;
+}
+.my-row{
+    border: 3px solid red;
+    height: 300px;
+}
+.my-col{
+    border: 3px dotted blue;
+}
+</style>
+<body>
+  <div class="container-fluid my-container">
+    <div class="row align-items-md-center my-row">
+        <div class="col-md-4 my-col">
+            Row 1 - col 1
+        </div>
+        <div class="col-md-8 my-col">
+            Row 1 - col 2
+        </div>
+    </div>
+    <div class="row my-row align-items-md-center justify-content-md-center">
+        <div class="col-md-3 my-col">
+            Row 2 - col 1
+        </div>
+        <div class="col-md-3 my-col">
+            Row 2 - col 2
+        </div>
+    </div>
+  </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script> 
+</body>
+
+</html>
