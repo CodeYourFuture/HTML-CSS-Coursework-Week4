@@ -2,60 +2,120 @@
 
 /* Dont' forget to link this file to your HTML in the <head> */
 
-/* Navigation bar */
-.navbar {
-  background: #0063B2FF;
+/* Body */
+
+body {
+  background-color: #6E7376;
 }
 
-.nav-link {
-  color: #EEA47FFF; 
-  cursor: pointer;
-  margin-right: 1em;
+/* Navigation bar */
+
+.navbar {
+  background: #fff;
+  height: 230px;
+  color: rgb(107, 10, 136);
 }
 
 .navbar-brand, .navbar-brand:hover {
-  color:  #FFF;
-  margin-left: 20px;
+  color:  rgb(107, 10, 136);
 }
 
-.nav-link:hover {
-  background: #E69A8DFF;
-  color: #5F4B8BFF;
+.navbar-nav {
+  float: right;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #49274A; 
+  cursor: pointer;
+  margin-right: 1em;
+  justify-content: space-between;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  padding-left: 10px;
+  padding-right: 10px;
+  /* color: #5F4B8BFF; */
+  font-weight: bolder;
+  /* background: #5F4B8BFF; */
+  /* color: #E69A8DFF; */
+  color: rgb(107, 10, 136);
   border-radius: 5px;
 }
 
-.navbar-collapse {
-  justify-content: flex-end;
+.navbar-light .navbar-toggler {
+  background:rgba(58, 60, 61, 0.062);
+  border-color: #49274A;
 }
 
-.navbar-toggler {
-  background:#FFF;
+/* These don't work... (:active and nav div div a) */
+
+.active {
+  color: #49274A;
+}
+
+nav > div > div > a {
+  text-align: center;
+  transition: all 0.5s;
 }
 
 /* Main */
 
-.overlay{
-  position: absolute;
-  min-height: 100%;
-  min-width: 100%;
-  padding: 0;
-  /* background: rgba(244, 244, 244, 0.79); */
- }
-
- /* Section */
-
- .description{
-   color: #fff;
-  position: absolute;
-  top: 30%;
-  padding: 2em;
-}
-.description h1{
-  color:#F97300;
+.business-card {
+  z-index: 1000;
+  margin-top: -120px;
 }
 
-.description button{
-  border:1px  solid #F97300;
-  background:#F97300;
-  color:#fff;
+.card {
+  background-color: #F5C7B8FF;
 }
+
+h4 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile-pic {
+  width: 120px;
+  height: auto;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.line-wrapper {
+  height:20px;
+  margin-bottom: 50px;
+}
+
+.line {
+  font-size:50px; 
+  color: #49274A;
+  width: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.resume, .portfolio {
+    padding: 7px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 2px;
+    cursor: pointer;
+    border-radius: 18px;
+}
+
+.resume:hover {
+  background-color: #fff;
+  color: #007bff;
+}
+
+.portfolio:hover {
+  background-color: #007bff;
+}
+
+
+/* Social media icons */

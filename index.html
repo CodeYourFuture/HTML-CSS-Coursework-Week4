@@ -1,80 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- Link to Boostrap CSS stylesheet -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <!-- Material Design Bootstrap -->
-    <link rel="stylesheet" href="css/mdb.min.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <!-- Link to jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Link to JS Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+      integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Link for Boostrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+      crossorigin="anonymous"
+    ></script>
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+    />
     <!-- Google Fonts Roboto -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-    <!-- Link to CSS -->
-    <link rel="stylesheet" href="./css/main.css">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    />
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="./css/main.css" />
     <title>Bootstrap - Responsive grid project</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Header -->
     <header>
-      <!-- Navigation bar -->git gui &
-      <nav class="navbar navbar-expand-md navbar-expand-lg fixed-top sticky-top shadow p-2 mb-2">
-        <a class="navbar-brand" href="#">LTM - Trainee</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle Navigation Bar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-4">
-            <li class="nav-item">
-              <a class="nav-link" data-value="about" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-value="resume" href="#">Resume</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-value="portfolio" href="#">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-value="contact" href="#">Contact</a>
-            </li>
-          </ul>
+      <!-- Navigation bar -->
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-light align-items-start"
+      >
+        <div class="container d-inline-flex">
+          <div class="row">
+            <div class="col-sm-8 col-md-6 col-lg-10">
+              <a class="navbar-brand" href="#"
+                ><span style="font-size: 20px; color: rgb(107, 10, 136)"
+                  >&#9639;</span
+                >
+                <b>Laura Menendez</b></a
+              >
+            </div>
+            <div class="row">
+              <div class="col-sm-8 col-md-6 col-lg-10">TRAINEE DEVELOPER</div>
+            </div>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavAltMarkup"
+          >
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >About</a
+              >
+              <a class="nav-link" href="resume.html">Resume</a>
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+              <a class="nav-link" href="contact.html">Contact</a>
+            </div>
+          </div>
         </div>
       </nav>
-      
     </header>
     <!-- Main -->
     <main>
-      <div class="row mb-5 overlay">
-        <div class="col-md-6 mb-4 mb-md-0">
-          <div class="view overlay zoom">
-            <img src="./img/flowery-background.jpg" class="img-fluid" alt="soft background with flowers">
+      <section>
+        <div class="container business-card">
+          <div
+            class="card shadow p-sm-2 mb-sm-5"
+            style="width: 18rem; height: -220px"
+          >
+            <!-- Profile picture -->
+            <div class="row">
+              <div class="col-sm-12">
+                <img
+                  src="img/profile-me.png"
+                  class="profile-pic"
+                  alt="Profile picture"
+                />
+              </div>
+            </div>
+            <!-- Name -->
+            <!-- <div class="card-body"> -->
+            <div class="row">
+              <div class="col-sm-12">
+                <h4
+                  class="card-title text-wrap text-center"
+                  style="width: 8rem">
+                  <b>Laura Menendez</b>
+                </h4>
+              </div>
+              <!-- Line -->
+              <div class="col-sm-12 line-wrapper">
+                <div class="line">&#8212;</div>
+              </div>
+            </div>
+              
+
+              <!-- Buttons -->
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="d-sm-inline">
+                    <!-- Resume button -->
+                    <a href="resume.html" class="btn btn-primary resume"
+                      >RESUME</a
+                    >
+                    <!-- Portfolio button -->
+                    <a
+                      href="portfolio.html"
+                      class="btn btn-outline-primary portfolio"
+                      >PORTFOLIO</a
+                    >
+                  </div>
+                <!-- </div> -->
+              </div>
+              <!-- Social media icons -->
+              
+            </div>
           </div>
         </div>
-        <section class="container">
-          <div class="description">
-            <h1>Trainee</h1>
-            <button class="btn btn-outline-secondary btn-lg">See more</button>
-          </div>
-        </section>
-
-    </div>
+      </section>
     </main>
     <!-- Footer -->
-    <footer class="container">
-      <div class="row">
-        <div class="col-6">
-          Call me! 077 4949 2585
-        </div>
-        <div class="col-6">
-          Email! info@me.com
-        </div>
-      </div>
-    </footer>
-</body>
-
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script> -->
+  </body>
 </html>
 
 <!-- <a href="https://www.freepik.com/vectors/background">Background vector created by coolvector - www.freepik.com</a> -->
