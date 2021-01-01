@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Link to Boostrap CSS stylesheet -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"/>
+    <!-- Link to jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <!-- Link to JS Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+      integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+      crossorigin="anonymous"></script>
+    <!-- Link for Boostrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+      crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"/>
+    <!-- Google Fonts Exo 2 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Bootstrap - Responsive grid project</title>
+  </head>
+
+  <body>
+
+    <header>
+      <!-- Navigation bar  -->
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-white align-items-start"
+      >
+        <div class="container d-inline-flex">
+          <div class="row">
+            <div
+              class="col-xs-12 col-sm-8 col-md-6 col-lg-4 text-nowrap text-center"
+            >
+              <a class="navbar-brand" href="#"
+                ><span style="font-size: 20px; color: rgb(107, 10, 136)"
+                  >&#9639;</span
+                >
+                <b>Laura Menendez</b></a
+              >
+              <p>TRAINEE DEVELOPER</p>
+            </div>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center text-center"
+            id="navbarNavAltMarkup"
+          >
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >About</a
+              >
+              <a class="nav-link" href="resume.html">Resume</a>
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+              <a class="nav-link" href="contact.html">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+<main>
+    <div class="container contact shadow p-sm-3 mt-5">
+      <form action="action_page.php" method="post">
+        <div class="row">
+          <div class="col-25">
+            <label for="fname">First Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="fname" name="firstname" placeholder="Please, enter your first name">
+            <div class="help-block with-errors"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="lname">Last Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="lname" name="lastname" placeholder="Please, enter your last name">
+            <div class="help-block with-errors"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="form_email">Email</label>
+          </div>
+          <div class="col-75">
+            <input id="form_email" type="email" name="email" class="form-control" placeholder="Please, enter your email" required="required" data-error="Valid email is required.">
+            <div class="help-block with-errors"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="subject">Subject</label>
+          </div>
+          <div class="col-75">
+            <textarea id="subject" name="subject" placeholder="What's on your mind?" style="height:50px"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="form_message">Message</label>
+          </div>
+          <div class="col-75 mt-0">
+            <textarea id="form_message" name="message" class="form-control" placeholder="Elaborate on it here" rows="4" required="required" data-error="Please, leave a message"></textarea>
+            <div class="help-block with-errors"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-50 mt-3">
+            <input type="submit" class="btn btn-change btn-send" value="Submit">
+          </div>
+          <div class="col-50">
+            <p class="text-muted text-center">All fields are required.</p>
+          </div>
+        </div>
+      </form>
+    </div>
+    
+  </main>
+<!-- Footer bar -->
+<footer>
+  <div class="container-fluid bg-white text-center text-wrap mt-5">
+    <div class="row p-4">
+      <div class="col-md-3 col-sm-3 col-xs-4 fs-6 mb-2">
+        <p style="margin-bottom: 0px">© 2020 Copyright:</p>
+        <a class="text-dark text-decoration-none">Proudly created by LTM</a>
+      </div>
+      <div class="col-md-3"></div>
+      <div class="col-md-2 col-sm-3 col-xs-4 fs-6">
+        <b>Call</b><br />
+        <a class="fw-light" href="tel:07846268575">
+          <p>P | 07846268575</p>
+        </a>
+      </div>
+      <div class="col-md-2 col-sm-3 col-xs-4 fs-6">
+        <b>Email</b><br />
+        <a href="tel:07846268575">
+          <p class="fw-light">E | info@ltm.com</p>
+        </a>
+      </div>
+      <div class="col-md-2 col-sm-3 col-xs-4 fs-6">
+        <b>Follow</b><br />
+        <ul class="social-media-list">
+          <li>
+            <a href="https://www.facebook.com/contact"
+              ><img
+                src="https://unpkg.com/simple-icons@4.4.0/icons/facebook.svg"
+                alt="facebook"
+                title="facebook"
+            /></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/contact"
+              ><img
+                src="https://unpkg.com/simple-icons@latest/icons/twitter.svg"
+                alt="Twitter"
+                title="Twitter"
+            /></a>
+          </li>
+          <li>
+            <a href="https://safety.linkedin.com/"
+              ><img
+                src="https://unpkg.com/simple-icons@4.4.0/icons/linkedin.svg"
+                alt="LinkedIn"
+                title="LinkedIn"
+            /></a>
+          </li>
+          <li>
+            <a href="https://help.instagram.com/"
+              ><img
+                src="https://unpkg.com/simple-icons@4.4.0/icons/instagram.svg"
+                alt="Instagram"
+                title="Instagram"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+  </body>

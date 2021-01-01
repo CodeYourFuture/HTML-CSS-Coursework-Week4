@@ -35,37 +35,34 @@
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <!-- Google Fonts Roboto -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-    />
+    <!-- Google Fonts Exo 2 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
     <!-- Link to CSS file -->
     <link rel="stylesheet" href="./css/main.css" />
-    <title>Bootstrap - Responsive grid project</title>
+    <title>Bootstrap Trial</title>
   </head>
 
   <body>
-    <!-- Header -->
     <header>
-      <!-- Navigation bar -->
+      <!-- Navigation bar  -->
       <nav
-        class="navbar navbar-expand-lg navbar-light bg-light align-items-start"
+        class="navbar navbar-expand-lg navbar-light bg-white align-items-start"
       >
         <div class="container d-inline-flex">
           <div class="row">
-            <div class="col-sm-8 col-md-6 col-lg-10">
+            <div
+              class="col-xs-12 col-sm-8 col-md-6 col-lg-4 text-nowrap text-center"
+            >
               <a class="navbar-brand" href="#"
                 ><span style="font-size: 20px; color: rgb(107, 10, 136)"
                   >&#9639;</span
                 >
                 <b>Laura Menendez</b></a
               >
-            </div>
-            <div class="row">
-              <div class="col-sm-8 col-md-6 col-lg-10">TRAINEE DEVELOPER</div>
+              <p>TRAINEE DEVELOPER</p>
             </div>
           </div>
           <button
@@ -80,7 +77,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div
-            class="collapse navbar-collapse justify-content-end"
+            class="collapse navbar-collapse justify-content-center text-center"
             id="navbarNavAltMarkup"
           >
             <div class="navbar-nav">
@@ -95,68 +92,177 @@
         </div>
       </nav>
     </header>
-    <!-- Main -->
-    <main>
-      <section>
-        <div class="container business-card">
-          <div
-            class="card shadow p-sm-2 mb-sm-5"
-            style="width: 18rem; height: -220px"
-          >
-            <!-- Profile picture -->
-            <div class="row">
-              <div class="col-sm-12">
-                <img
-                  src="img/profile-me.png"
-                  class="profile-pic"
-                  alt="Profile picture"
-                />
-              </div>
-            </div>
-            <!-- Name -->
-            <!-- <div class="card-body"> -->
-            <div class="row">
-              <div class="col-sm-12">
-                <h4
-                  class="card-title text-wrap text-center"
-                  style="width: 8rem">
-                  <b>Laura Menendez</b>
-                </h4>
-              </div>
-              <!-- Line -->
-              <div class="col-sm-12 line-wrapper">
-                <div class="line">&#8212;</div>
-              </div>
-            </div>
-              
 
-              <!-- Buttons -->
+    <main>
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-offset-4 col-md-5">
+            <!-- Business card-->
+            <div class="container business-card shadow p-sm-3">
               <div class="row">
-                <div class="col-sm-12">
-                  <div class="d-sm-inline">
-                    <!-- Resume button -->
-                    <a href="resume.html" class="btn btn-primary resume"
-                      >RESUME</a
-                    >
-                    <!-- Portfolio button -->
-                    <a
-                      href="portfolio.html"
-                      class="btn btn-outline-primary portfolio"
-                      >PORTFOLIO</a
-                    >
-                  </div>
-                <!-- </div> -->
+                <div
+                  class="col-md-5 d-flex justify-content-center"
+                  style="width: 50%; margin: auto"
+                >
+                  <img
+                    src="img/profile-me.png"
+                    class="profile-pic"
+                    alt="Profile picture"
+                  />
+                </div>
               </div>
-              <!-- Social media icons -->
-              
+              <div class="row">
+                <div
+                  class="col-md-5 justify-content-center"
+                  style="width: 50%; margin: auto"
+                >
+                  <h3 class="card-title text-wrap text-center">
+                    Laura Menendez
+                  </h3>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-5 text-center mx-auto">
+                  <h2 class="line">&#8212;</h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-5" style="width: 60%; margin: auto">
+                  <h5 class="text-nowrap" style="line-height: 1.5em">
+                    TRAINEE DEVELOPER
+                  </h5>
+                </div>
+              </div>
+              <!-- Extra resume and portfolio buttons -->
+              <!-- div class="row">
+              <div
+                class="col-md-5 d-sm-inline d-md-inline"
+                style="width: 60%; margin: auto"
+              >
+                <a href="resume.html" class="btn resume">RESUME</a>
+              </div>
+              <div
+                class="col-md-5 d-sm-inline d-md-inline"
+                style="width: 40%; margin: auto"
+              >
+                <a
+                  href="portfolio.html"
+                  class="btn btn-outline-primary portfolio"
+                  >PORTFOLIO</a
+                >
+              </div>
+            </div-->
+              <div class="row">
+                <div class="bg-white icons">
+                  <i class="fa fa-facebook-f" style="font-size: 24px"></i>
+                  <i class="fa fa-twitter" style="font-size: 24px"></i>
+                  <i class="fa fa-linkedin" style="font-size: 24px"></i>
+                  <i class="fa fa-instagram" style="font-size: 24px"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <!-- Text box on the side -->
+            <div class="container mt-4">
+              <div class="row">
+                <div class="col-md-7">
+                  <p style="font-size: 60px; font-weight: bolder">Welcome!</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-7">
+                  <blockquote>
+                    <h3>Career driven developer</h3>
+                  </blockquote>
+                </div>
+              </div>
+              <div class="row">
+                <div style="width: 20%">
+                  <a href="resume.html" class="btn resume">RESUME</a>
+                </div>
+                <div style="width: 15%">
+                  <a
+                    href="portfolio.html"
+                    class="btn btn-outline-primary portfolio"
+                    >PORTFOLIO</a
+                  >
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-7">
+                  <p>
+                    As a trainee developer, I enjoy using my creativity and
+                    attention to detail to improve users' experience, with high
+                    levels of work ethic and a passion for collaborating
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </main>
-    <!-- Footer -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script> -->
+    <!-- Footer bar -->
+    <footer>
+      <div class="container-fluid bg-white text-center text-wrap mt-5">
+        <div class="row p-4">
+          <div class="col-md-3 col-sm-3 col-xs-4 fs-6 mb-2">
+            <p style="margin-bottom: 0px">© 2020 Copyright:</p>
+            <a class="text-dark text-decoration-none">Proudly created by LTM</a>
+          </div>
+          <div class="col-md-3"></div>
+          <div class="col-md-2 col-sm-3 col-xs-4 fs-6">
+            <b>Call</b><br />
+            <a class="fw-light" href="tel:07846268575">
+              <p>P | 07846268575</p>
+            </a>
+          </div>
+          <div class="col-md-2 col-sm-3 col-xs-4 fs-6">
+            <b>Email</b><br />
+            <a href="tel:07846268575">
+              <p class="fw-light">E | info@ltm.com</p>
+            </a>
+          </div>
+          <div class="col-md-2 col-sm-3 col-xs-4 fs-6">
+            <b>Follow</b><br />
+            <ul class="social-media-list">
+              <li>
+                <a href="https://www.facebook.com/contact"
+                  ><img
+                    src="https://unpkg.com/simple-icons@4.4.0/icons/facebook.svg"
+                    alt="facebook"
+                    title="facebook"
+                /></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/contact"
+                  ><img
+                    src="https://unpkg.com/simple-icons@latest/icons/twitter.svg"
+                    alt="Twitter"
+                    title="Twitter"
+                /></a>
+              </li>
+              <li>
+                <a href="https://safety.linkedin.com/"
+                  ><img
+                    src="https://unpkg.com/simple-icons@4.4.0/icons/linkedin.svg"
+                    alt="LinkedIn"
+                    title="LinkedIn"
+                /></a>
+              </li>
+              <li>
+                <a href="https://help.instagram.com/"
+                  ><img
+                    src="https://unpkg.com/simple-icons@4.4.0/icons/instagram.svg"
+                    alt="Instagram"
+                    title="Instagram"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
-
-<!-- <a href="https://www.freepik.com/vectors/background">Background vector created by coolvector - www.freepik.com</a> -->
