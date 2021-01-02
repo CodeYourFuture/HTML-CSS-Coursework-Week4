@@ -1,117 +1,115 @@
 * {
-    /* border: 1px solid #008000; */
+  /* border: 1px solid #008000; */
 }
 
 body {
-    /* font-family: 'Quicksand', sans-serif; */
+  /* font-family: 'Quicksand', sans-serif; */
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
 
 img {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 a {
-    text-decoration: none;
-    color: #000;
+  text-decoration: none;
+  color: #000;
 }
 
 .navbar-menu:hover {
-    color: #7ec7c0;
-    background-color: #b2fef7;
-    transition: all 0.3s ease;
+  color: #7ec7c0;
+  background-color: #b2fef7;
+  transition: all 0.3s ease;
 }
 
 .appointment-box {
-    background-color: #b2fef7;
+  background-color: #b2fef7;
 }
 
 .appointment-box:hover {
-    background-color: rgb(228, 149, 120);
-    transition: all 0.5s ease;
+  background-color: rgb(228, 149, 120);
+  transition: all 0.5s ease;
 }
 
 .nav-item a:hover {
-    background-color: #b2fef7;
-    border-radius: 3px;
-    transition: all 0.4s ease;
+  background-color: #b2fef7;
+  border-radius: 3px;
+  transition: all 0.4s ease;
 }
 
 .hero {
-    background-color: #b2fef7;
+  background-color: #b2fef7;
+}
+
+.about img {
+    width: rem;
 }
 
 .therapy-box1 {
-    background-color: #dcedc8;
+  background-color: #dcedc8;
 }
 
 .therapy-box3 {
-    background-color: #b3e5fc;
+  background-color: #b3e5fc;
 }
 
 .therapy div a {
-    font-size: 5rem;
+  font-size: 5rem;
 }
 
 .therapy-btn {
-    background-color: #b2fef7;
+  background-color: #b2fef7;
 }
 
 .articles p {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .articles p:hover {
-    color: green;
+  color: green;
 }
 
 .comment-box {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .articles-btn {
-    background-color: #b2fef7;
-    margin: 3%;
+  background-color: #b2fef7;
+  margin: 3%;
 }
 
 footer img {
-    width: 2rem;
-    margin-left: 1rem;
+  width: 2rem;
+  margin-left: 1rem;
 }
 
 @media (max-width: 768px) {
-
-    .social-media-icons {
-        text-align: center;
-    }
-
+  .social-media-icons {
+    text-align: center;
+  }
 }
 
-@media (min-width:769px) {
-
+@media (min-width: 769px) {
 }
-
 
 /* About.css */
 
 .experience-container {
-    background-color: #CFF4EC;
+  background-color: #cff4ec;
 }
 
 .experience-container div {
-    padding-left: 5%;
+  padding-left: 5%;
 }
 
 /* Services.css */
 
-
 /* Blog.css */
-
 
 /* Contact.css */
 
 .contact-container {
-    background-color: #E2F6CD;
+  background-color: #e2f6cd;
 }
