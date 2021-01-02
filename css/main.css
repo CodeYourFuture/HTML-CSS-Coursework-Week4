@@ -57,6 +57,9 @@ a {
     padding-bottom: 75px;
     z-index: 1;
 }
-img {
-    width: 250px;
+#navbarSupportedContent{
+    justify-content: flex-end
+}
+.card-img-top {
+    object-fit: cover;
 }
