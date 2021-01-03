@@ -39,7 +39,7 @@
     <title>Bootstrap - Responsive grid project</title>
   </head>
 
-  <body class="portfolio-body mt-5">
+  <body class="portfolio-body">
 
     <header>
       <!-- Navigation bar  -->
@@ -88,65 +88,74 @@
       </nav>
     </header>
 
-<main>
-    <div class="container contact shadow p-sm-3 mt-5">
-      <form action="action_page.php" method="post">
-        <div class="row">
-          <div class="col-25">
-            <label for="fname">First Name</label>
-          </div>
-          <div class="col-75">
-            <input type="text" id="fname" name="firstname" placeholder="Please, enter your first name">
-            <div class="help-block with-errors"></div>
-          </div>
+<main> 
+  <!-- Page heading  -->
+  <section>
+    <div class="container text-center mt-5 pt-5">
+      <div class="row">
+        <div class="col">
+          <span style="font-size: 20px; color: rgb(107, 10, 136)">&#9639;</span>
+          <b style="font-size: 25px; color: rgb(107, 10, 136)">Portfolio</b>
         </div>
-        <div class="row">
-          <div class="col-25">
-            <label for="lname">Last Name</label>
-          </div>
-          <div class="col-75">
-            <input type="text" id="lname" name="lastname" placeholder="Please, enter your last name">
-            <div class="help-block with-errors"></div>
-          </div>
+      </div>
+      <div class="row text-center">
+        <div class="col my-4">
+          <p style="width: 400px; margin: auto">
+            Here you can see all the projects I have carried out so far.
+            They appear in order, from oldest to newest.
+          </p>
         </div>
-        <div class="row">
-          <div class="col-25">
-            <label for="form_email">Email</label>
-          </div>
-          <div class="col-75">
-            <input id="form_email" type="email" name="email" class="form-control" placeholder="Please, enter your email" required="required" data-error="Valid email is required.">
-            <div class="help-block with-errors"></div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-25">
-            <label for="subject">Subject</label>
-          </div>
-          <div class="col-75">
-            <textarea id="subject" name="subject" placeholder="What's on your mind?" style="height:50px"></textarea>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-25">
-            <label for="form_message">Message</label>
-          </div>
-          <div class="col-75 mt-0">
-            <textarea id="form_message" name="message" class="form-control" placeholder="Elaborate on it here" rows="4" required="required" data-error="Please, leave a message"></textarea>
-            <div class="help-block with-errors"></div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-50 mt-3">
-            <input type="submit" class="btn btn-change btn-send" value="Submit">
-          </div>
-          <div class="col-50">
-            <p class="text-muted text-center">All fields are required.</p>
-          </div>
-        </div>
-      </form>
+      </div>
     </div>
-    
-  </main>
+  </section>
+  <!-- First portfolio card  -->
+<div class="card mb-3 py-2 pe-2 card border-light shadow offset-sm-1 offset-md-2 offset-lg-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <div class="card-body">
+        <h5 class="card-title" style="color:rgb(107, 10, 136)">Cake site (III)</h5>
+        <p class="card-text">This website's main feature is the use of flexbox.</p>
+        <p class="card-text text-muted" style="font-size: small">Completed in Nov 2020</p>
+      </div>
+    </div>
+    <div class="col-md-8 pr-2">
+      <img src="img/cake-web.png" class="card-img-bottom" alt="Cake Website">
+    </div>
+  </div>
+</div>
+
+  <!-- Second portfolio card  -->
+<div class="card mb-3 py-2 pe-2 card border-light shadow offset-md-2 offset-lg-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-5">
+      <div class="card-body pt-1">
+        <h5 class="card-title" style="color:rgb(107, 10, 136)">Karma web (II)</h5>
+        <p class="card-text" style="font-size: small">This website's main feature is the use of HMTL & CSS, particularly flexbox.</p>
+        <p class="card-text text-muted" style="font-size: small">Completed in Dec 2020</p>
+      </div>
+    </div>
+    <div class="col-md-7 pr-2">
+      <img src="img/karma-web.png" class="card-img-bottom" alt="Karma Website">
+    </div>
+  </div>
+</div>
+
+  <!-- Third portfolio card  -->
+  <div class="card mb-3 py-2 pe-2 card border-light shadow offset-md-2 offset-lg-3" style="max-width: 540px;">
+    <div class="row g-0">
+      <div class="col-md-5">
+        <div class="card-body py-1">
+          <h5 class="card-title" style="color:rgb(107, 10, 136)">Spanish web (I)</h5>
+          <p class="card-text">This website's main feature is the use of HMTL & CSS, particularly flexbox.</p>
+          <p class="card-text text-muted" style="font-size: small">Completed in June 2020</p>
+        </div>
+      </div>
+      <div class="col-md-7 pr-2">
+        <img src="img/language-web.png" class="card-img-bottom" alt="Spanglish site">
+      </div>
+    </div>
+  </div>
+
 <!-- Footer bar -->
 <footer>
   <div class="container-fluid bg-white text-center text-wrap mt-5">
@@ -208,4 +217,4 @@
     </div>
   </div>
 </footer>
-  </body>
+</body>

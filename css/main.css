@@ -26,6 +26,13 @@ body:after {
 
 /* Navigation bar */
 
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
 .navbar.center .navbar-inner .nav {
   display: inline-block;
   float: none;
@@ -62,7 +69,7 @@ body:after {
 }
 
 .card-title {
-  font-family: Tahoma;
+  /* font-family: Tahoma; */
   font-weight: bolder;
 }
 
@@ -158,6 +165,10 @@ footer {
 
 /* Contact page */
 
+.portfolio-body {
+  background-color: #e6dace;
+}
+
 input[type=text], #form_email, #form_message, textarea{
   width: 100%;
   padding: 12px;
@@ -235,6 +246,13 @@ input[type=submit] {
   border: 2px solid #49274a;
 }
 
+/* Portfolio */
+
+.size { 
+  width: 50%; 
+  height: auto; 
+}
+
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .col-25, .col-75, input[type=submit] {
@@ -243,3 +261,10 @@ input[type=submit] {
   }
 }
 
+@media screen and (max-width: 500px) {
+  footer {
+    width: 100%;
+    height: 200px;
+    margin-top: 0;
+  }
+}
