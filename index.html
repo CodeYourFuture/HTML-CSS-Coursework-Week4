@@ -40,25 +40,27 @@
 
   <body class="body">
     <header class="container-fluid">
-      <!-- <div class="row border border-danger"> -->
-      <div class="row border border-danger">
+      <div class="row">
         <nav
-          class="navbar navbar-expand-md fixed-top border border-warning"
+          class="navbar navbar-expand-md fixed-top"
           style="background-color: white;"
         >
           <a class="col-6 col-md-4 navbar-brand" href="#">
             <div class="row justify-content-start">
               <div class="col-12 col-md-auto p-0">
                 <div class="d-flex align-items-center">
-                  <i class="fa fa-square m-0" style="font-size: 1.6rem;"></i>
-                  <h5 class="h3 m-0">MAYA NELSON</h5>
+                  <i
+                    class="fa fa-square m-0"
+                    style="font-size: 1.6rem; color: blue;"
+                  ></i>
+                  <h5 class="h3 m-0" style="color: black;">MAYA NELSON</h5>
                 </div>
               </div>
               <div class="col-12 col-md-auto p-0">
-                <div class="d-flex align-items-center">
-                  <h1 class="m-0" style="font-size: 1.4rem;">
+                <div class="d-flex align-items-center" style="color: black;">
+                  <p class="fslash m-0" style="font-size: 1.4rem;">
                     &nbsp;/
-                  </h1>
+                  </p>
                   <p class="m-0">Project Manager</p>
                 </div>
               </div>
@@ -66,7 +68,7 @@
           </a>
 
           <button
-            class="navbar-toggler border border-primary"
+            class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarLinks"
@@ -76,14 +78,17 @@
             <i class="fa fa-bars"></i>
           </button>
           <div
-            class="justify-content-end p-0 collapse navbar-collapse border border-success"
+            class="justify-content-end p-0 collapse navbar-collapse -success"
             id="navbarLinks"
           >
-            <ul
-              class="navbar-nav align-items-end justify-content-end border border-danger"
-            >
+            <ul class="navbar-nav align-items-end justify-content-end">
               <li class="nav-item">
-                <a class="nav-link active" href="#">ABOUT ME</a>
+                <a
+                  class="nav-link"
+                  style="font-weight: bold; color: blue;"
+                  href="#"
+                  >ABOUT ME</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">RESUME</a>
@@ -99,8 +104,6 @@
           </div>
         </nav>
       </div>
-
-      <!-- </div> -->
     </header>
 
     <main class="container-fluid" style="height: auto;">
@@ -108,7 +111,7 @@
         <div class="col-12 col-md-6"></div>
         <div class="col-12 col-md-6"></div>
       </div>
-      <div class="main-content row justify-content-center">
+      <div class="main-content ps-3 pe-1 row justify-content-center">
         <div class="col-12 col-md-4">
           <div
             class="card shadow-lg text-center"
@@ -129,13 +132,10 @@
               <p class="card-text" style="display: none;">
                 PROJECT MANAGER
               </p>
-              <button class="btn btn-primary" style="border-radius: 20px;">
+              <button class="btn btn-primary" style="-radius: 20px;">
                 RESUME
               </button>
-              <button
-                class="btn btn-outline-primary"
-                style="border-radius: 20px;"
-              >
+              <button class="btn btn-outline-primary" style="-radius: 20px;">
                 PROJECTS
               </button>
               <div
@@ -170,7 +170,7 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-4 p-4">
           <div
             class="d-flex flex-column justify-content-between pt-5"
             style="
@@ -196,21 +196,21 @@
     </main>
 
     <footer class="container-fluid">
-      <div class="row m-3">
-        <div class="col-12 col-md-8 mb-3">
+      <div class="row m-3 align-items-center">
+        <div class="col-12 col-md-8 order-md-2 mb-3">
           <div class="row">
-            <div class="col-6">
-              <p class="h5">Call</p>
-              <p>123-456-7890</p>
+            <div class="col-6 col-md-4 p-1 text-center">
+              <p class="m-0" style="font-weight: bold;">Call</p>
+              <p class="m-0">123-456-7890</p>
             </div>
-            <div class="col-6">
-              <p class="h5">Write</p>
-              <p>info@mysite.com</p>
+            <div class="col-6 col-md-4 p-1 text-center">
+              <p class="m-0" style="font-weight: bold;">Write</p>
+              <p class="m-0">info@mysite.com</p>
             </div>
-            <div class="col-6">
-              <p class="h5">Follow</p>
+            <div class="col-6 col-md-4 p-1 text-center">
+              <p class="m-0" style="font-weight: bold;">Follow</p>
               <div
-                class="row justify-content-start"
+                class="m-0 row justify-content-center"
                 style="background-color: white;"
               >
                 <a href="https://twitter.com/CodeYourFuture" class="col-1">
@@ -235,7 +235,7 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-4 order-md-1">
           <p class="m-0">© 2023 by Maya Nelson.</p>
           <p class="m-0">Proudly created with Wix.com</p>
         </div>

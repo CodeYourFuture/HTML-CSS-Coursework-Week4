@@ -25,7 +25,7 @@ h6 {
 }
 header {
   min-height: 1rem;
-  height: 5.4rem;
+  height: 5rem;
   background-color: aquamarine;
 }
 
@@ -36,4 +36,10 @@ main {
 
 footer {
   background-color: white;
+}
+
+@media (min-width: 768px) {
+  header {
+    height: auto;
+  }
 }

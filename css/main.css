@@ -1,13 +1,11 @@
 .main-content {
   background-color: transparent;
   position: absolute;
-  top: 3%;
-  margin-left: 7%;
-  margin-right: 2%;
+  top: 4%;
 }
 
 .main-background {
-  height: 900px;
+  height: 1000px;
 }
 
 .main-background div:nth-child(1) {
@@ -31,13 +29,13 @@
 
   .main-background div:nth-child(1) {
     background-color: #faefe9;
-    width: 45%;
+    width: 46%;
     height: 100%;
   }
 
   .main-background div:nth-child(2) {
     background-color: white;
-    width: 55%;
+    width: 54%;
     height: 100%;
   }
 }

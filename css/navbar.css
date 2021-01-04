@@ -3,6 +3,10 @@ header div {
   padding-right: 3%;
 }
 
+nav a {
+  color: black;
+}
+
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
@@ -12,11 +16,15 @@ header div {
 .navbar-nav {
   background-color: white;
   z-index: 1;
-  font-size: 1.5rem;
+  font-size: 1rem;
+}
+
+.fslash {
+  display: none;
 }
 
 @media (min-width: 768px) {
-  header {
-    height: auto;
+  .fslash {
+    display: flex;
   }
 }
