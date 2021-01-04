@@ -4,6 +4,8 @@
 body{
  
     font-family: Arial,Helvetica,sans-serif;
+   
+
     
 }
 .btn-primary {
@@ -11,35 +13,103 @@ body{
     background-color: rgba(207, 244, 236, 1);
     border: solid rgba(207, 244, 236, 1) 3px;
     border-radius: 0%;
-    transition: color 0.4s ease 0s;
-    line-height: 1.5;
+    border-color:  rgba(207, 244, 236, 1);
+   
+   
+    
     
 }
 .navbar-brand{
     font-style: italic;
+    text-align: center;
     color: #2F2F2E;
     line-height: 1.4em;
     font-family: didot-w01-italic, serif;
     
 }
-.first{
-    flex-direction: row-reverse;
-    
+.ground{
+    background-color: rgba(207, 244, 236, 1); 
 }
-.online{
-    /* justify-content: center;
-    align-items: center;
-    align-content: center; */
-   /* background-size: 100%; */
+
+.therapy{
     text-align: center;
-    background-color: rgba(207, 244, 236, 1);
+    align-self: center;
+    font-size: 34px;
+    font-family: libre baskerville,serif;
+  
 }
 
-
-/* @media(min width:900px){
-    nav-link{
-        align-items: flex-end;
-    }
-
+.therapy p{
+    font-size: 14px;
+}
+.about{
+    text-align: center;
+  
+}
+/* .therapy{
+    text-align: center;
 
 } */
+/* .therapy p{
+    justify-content: center;
+    align-items: center;
+ 
+ 
+} */
+/* .therapy h1{
+    text-align: center;
+
+
+ } */
+
+ .therapy a {
+   
+    text-decoration: none;
+    color: black;
+}
+
+.individual{
+    background-color:rgb(226,246,205);
+    text-align: center;
+    justify-content: center;
+}
+
+.group{
+    background-color:rgb(234,234,232);
+    text-align: center;
+}
+.couples{
+    background-color:rgb(207,244,236);
+    text-align: center;
+}
+
+
+
+.articles p{
+    align-items: center;
+    font-family:  didot-w01-italic,serif;
+    font-size: 22px;
+}
+
+.articles a {
+ 
+    text-decoration: none;
+    color: black;
+}
+.icon-box {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.navbar-brand{
+    justify-content: center;
+    align-self:flex-end;
+    
+}
+.maria a {
+    color: black;
+
+}
+
+
+
