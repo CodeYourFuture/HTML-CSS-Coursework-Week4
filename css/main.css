@@ -18,7 +18,6 @@ li {
 
 h1,
 h2,
-h3,
 h4,
 h5,
 h6 {
@@ -30,9 +29,9 @@ h6 {
   text-align: center;
 }
 
-a:hover {
+/* a:hover {
   color: blue;
-}
+} */
 
 .hamburger {
   width: 30px;
@@ -47,6 +46,8 @@ a:hover {
   width: 10px;
   height: 10px;
 }
+
+/* about me page */
 
 .hero-container {
   background-color: #f4ece6;
@@ -89,6 +90,7 @@ hr.blue-line {
   color: white;
 }
 
+/* footer */
 .social-img {
   width: 20px;
   height: 20px;
@@ -106,6 +108,14 @@ footer h4 {
 
 .container-width {
   max-width: 800px;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.project-container {
+  min-height: 400px;
 }
 
 /* contact page */
@@ -127,12 +137,4 @@ input[type="text"]:focus,
 input[type="email"]:focus,
 .textarea:focus {
   border: 3px solid rgb(37, 37, 37);
-}
-
-.image {
-  object-fit: cover;
-}
-
-.project-container {
-  min-height: 400px;
 }
