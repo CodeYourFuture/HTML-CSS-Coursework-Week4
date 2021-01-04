@@ -1,0 +1,122 @@
+
+
+/* General */
+body {
+  font-family: Quicksand Light 300;
+  font-weight: 300;
+  color: #2f2f2e;
+  text-align: left;
+}
+
+.nor-txt {
+  font-size: 20px;
+  font-weight:300;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.subheading {
+  font-size: 25px;
+  font-family: Libre Baskeville;
+  font-weight: lighter;
+  font-style: italic;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+.heading {
+ font-family: Libre Baskeville;
+ font-size: 60px;
+}
+
+/* head */
+.app-btn {
+  background-color: #cff4ec;
+  border: 0px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.menu-icon{
+  padding-top: 25px;
+}
+
+.head-txt {
+  font-family: Libre Baskeville;
+  font-size: 25px;
+  font-style: italic;
+}
+
+/* menu */
+.menu-container {
+  text-align: center;
+
+}
+
+.menu-container a {
+  text-decoration: none;
+  color: black;
+  
+}
+
+.menu-item {
+  text-decoration: none;
+  font-family: Quicksand Light 300;
+}
+nav a:hover {
+  color: #94d6c8;
+}
+
+.menu-container a {
+  display: none;
+  
+}
+
+/*services*/
+.n1 {
+  background-color:#E2F6CD;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.n2 {
+  background-color: #f2f2f1;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.n3 {
+  background-color: #cff4ec;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.numb-title {
+  font-family: Libre Baskeville;
+  padding-top: 30px;
+  font-size: 28px;
+  font-style: italic;
+}
+
+/*footer*/
+.footer {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+@media (min-width: 540px) {
+  .menu-icon {
+    display: none;
+  }
+
+  /*head*/
+  .menu-container a {
+    display:flex;
+    font-size: 15px;
+  }
