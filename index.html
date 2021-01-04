@@ -11,81 +11,96 @@
       integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
       crossorigin="anonymous"
     />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google Font Quicksand and Poppins -->
     <link
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+
     <!-- Add a link to your custom CSS here -->
     <link href="./css/main.css" rel="stylesheet" />
     <link href="./css/body.css" rel="stylesheet" />
-    <link href="./css/header.css" rel="stylesheet" />
+    <link href="./css/navbar.css" rel="stylesheet" />
 
     <title>Resume</title>
   </head>
 
   <body class="body">
-    <header class="container">
-      <div class="container">
-        <div class="row justify-content-between">
-          <div class="brand col-8 col-md-6">
-            <div class="row">
-              <div class="col col-md-6">
-                <div class="row justify-content-start">
-                  <div
-                    class="col-2 p-0 d-flex align-items-center justify-content-center"
-                  >
-                    <img class="img-fluid" src="./logo.png" alt="Logo" />
-                  </div>
-                  <div class="col-8 p-0">
-                    <h1 class="h1 text-nowrap p-0 m-0">Maya Nelson</h1>
-                  </div>
+    <header class="container-fluid">
+      <!-- <div class="row border border-danger"> -->
+      <div class="row border border-danger">
+        <nav
+          class="navbar navbar-expand-md fixed-top border border-warning"
+          style="background-color: white;"
+        >
+          <a class="col-6 col-md-4 navbar-brand" href="#">
+            <div class="row justify-content-start">
+              <div class="col-12 col-md-auto p-0">
+                <div class="d-flex align-items-center">
+                  <i class="fa fa-square m-0" style="font-size: 1.6rem;"></i>
+                  <h5 class="h3 m-0">MAYA NELSON</h5>
                 </div>
               </div>
-              <div class="col col-md-6">
-                <div class="row">
-                  <div class="col-2 p-0" style="display: none;">
-                    <a href="#">/</a>
-                  </div>
-                  <div class="col-8 p-0">
-                    <p class="h4 text-nowrap">Project Manager</p>
-                  </div>
+              <div class="col-12 col-md-auto p-0">
+                <div class="d-flex align-items-center">
+                  <h1 class="m-0" style="font-size: 1.4rem;">
+                    &nbsp;/
+                  </h1>
+                  <p class="m-0">Project Manager</p>
                 </div>
               </div>
             </div>
-          </div>
+          </a>
 
-          <div class="col-2 col-md-6">
-            <nav class="col-12 col-md-8 hamburger">
-              <input type="checkbox" id="check" />
-              <label for="check" class="menubutton">
-                &#9776;
-              </label>
-              <ul class="header-ul">
-                <li>
-                  <a href="index.html" style="color: blue;">About Me</a>
-                </li>
-                <li><a href="#">Resume</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </nav>
+          <button
+            class="navbar-toggler border border-primary"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarLinks"
+            aria-controls="navbarLinks"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa fa-bars"></i>
+          </button>
+          <div
+            class="justify-content-end p-0 collapse navbar-collapse border border-success"
+            id="navbarLinks"
+          >
+            <ul
+              class="navbar-nav align-items-end justify-content-end border border-danger"
+            >
+              <li class="nav-item">
+                <a class="nav-link active" href="#">ABOUT ME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">RESUME</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">PROJECTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CONTACTS</a>
+              </li>
+            </ul>
           </div>
-        </div>
+        </nav>
       </div>
+
+      <!-- </div> -->
     </header>
 
     <main class="container-fluid" style="height: auto;">
@@ -110,7 +125,7 @@
                 Maya<br />
                 Nelson
               </h2>
-              <hr />
+              <hr style="width: 50%;" />
               <p class="card-text" style="display: none;">
                 PROJECT MANAGER
               </p>
@@ -124,25 +139,31 @@
                 PROJECTS
               </button>
               <div
-                class="row justify-content-center mt-3"
+                class="row justify-content-center mt-2"
                 style="background-color: white;"
               >
-                <a href="https://twitter.com/CodeYourFuture" class="col-1">
+                <a href="https://twitter.com/CodeYourFuture" class="col-2">
                   <i
                     class="fa fa-facebook-f"
-                    style="color: rgb(51, 51, 51);"
+                    style="color: rgb(51, 51, 51); font-size: 2rem;"
                   ></i>
                 </a>
-                <a href="https://twitter.com/CodeYourFuture" class="col-1">
-                  <i class="fa fa-twitter" style="color: rgb(32, 32, 32);"></i>
+                <a href="https://twitter.com/CodeYourFuture" class="col-2">
+                  <i
+                    class="fa fa-twitter"
+                    style="color: rgb(32, 32, 32); font-size: 2rem;"
+                  ></i>
                 </a>
-                <a href="https://twitter.com/CodeYourFuture" class="col-1">
-                  <i class="fa fa-linkedin" style="color: rgb(32, 32, 32);"></i>
+                <a href="https://twitter.com/CodeYourFuture" class="col-2">
+                  <i
+                    class="fa fa-linkedin"
+                    style="color: rgb(32, 32, 32); font-size: 2rem;"
+                  ></i>
                 </a>
-                <a href="https://twitter.com/CodeYourFuture" class="col-1">
+                <a href="https://twitter.com/CodeYourFuture" class="col-2">
                   <i
                     class="fa fa-instagram"
-                    style="color: rgb(32, 32, 32);"
+                    style="color: rgb(32, 32, 32); font-size: 2rem;"
                   ></i>
                 </a>
               </div>
@@ -174,7 +195,7 @@
       </div>
     </main>
 
-    <footer class="container">
+    <footer class="container-fluid">
       <div class="row m-3">
         <div class="col-12 col-md-8 mb-3">
           <div class="row">

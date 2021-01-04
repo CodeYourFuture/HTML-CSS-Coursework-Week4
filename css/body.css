@@ -11,8 +11,7 @@
 
 body {
   font-family: "Quicksand";
-  border: 1px darkblue solid;
-  font-size: 70%;
+  /* font-size: 90%; */
 }
 
 h1,
@@ -24,11 +23,10 @@ h6 {
   font-family: "Poppins";
   font-size: 3em;
 }
-
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  min-height: 1rem;
+  height: 5.4rem;
+  background-color: aquamarine;
 }
 
 main {
