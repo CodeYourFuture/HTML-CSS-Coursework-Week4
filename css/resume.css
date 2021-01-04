@@ -25,6 +25,13 @@
   text-align: right;
 }
 
+.lft-article {
+  font-size: 0.8rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  text-align: left;
+}
+
 .sub-title {
   font-size: 1.2rem;
   font-weight: 500;
