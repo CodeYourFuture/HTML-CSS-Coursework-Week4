@@ -1,0 +1,149 @@
+/* general*/
+body {
+  font-family: Quicksand Light 300;
+  font-weight: 300;
+  color: #2f2f2e;
+}
+  
+.title-txt {
+  font-family: Libre Baskeville;
+  font-size: 65px;
+}
+.nor-txt {
+  font-family:Quicksand Light 300;
+  font-size: 20px;
+  font-weight:300;
+  padding-top: 30px;
+}
+
+.mid-txt {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 300;
+  font-style: italic;
+} 
+
+.bg{
+  background-color: #e2f6cd;
+}
+
+/* head */
+.app-btn {
+  background-color: #cff4ec;
+  border: 0px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.menu-icon{
+  padding-top: 25px;
+}
+
+.head-txt {
+  font-family: Libre Baskeville;
+  font-size: 25px;
+  font-style: italic;
+}
+
+/* menu */
+.menu-container {
+  text-align: center;
+}
+
+.menu-container a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu-item {
+  text-decoration: none;
+  font-family: Quicksand Light 300;
+}
+nav a:hover {
+  color: #94d6c8;
+}
+
+.menu-container a {
+  display: none;
+}
+
+/*contact*/
+.contact-container{
+  text-align: center;
+}
+
+.contact-subhead{
+  font-family: Libre Baskeville;
+  font-size: 25px;
+  font-style: italic;
+  padding-top: 60px;
+}
+
+.contact-heading {
+  font-family: Libre Baskeville;
+  font-size: 50px;
+ }
+
+/*form*/
+.form-control {
+margin-bottom: 10px;
+
+}
+
+.longer-input{
+  padding-bottom: 50px;
+}
+
+.send-btn {
+  background-color: #94d6c8;
+  border: 0px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/*info*/
+.info-txt{
+  font-family: Libre Baskeville;
+  text-align: center;
+  font-size: 25px;
+  font-style: italic;
+  padding-top: 60px;
+}
+
+.join-btn {
+  background-color: #94d6c8;
+  border: 0px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.sub-control {
+  margin-bottom: 10px;
+  }
+.pb{
+  padding-bottom: 100px;
+}
+
+/*footer*/
+.footer {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  background-color: white;
+  margin-top: 40px;
+}
+
+@media (min-width: 540px) {
+  .menu-icon {
+    display: none;
+  }
+
+  /* head*/
+  .menu-container a {
+    display:flex;
+    font-size: 15px;
+  }
