@@ -128,3 +128,11 @@ input[type="email"]:focus,
 .textarea:focus {
   border: 3px solid rgb(37, 37, 37);
 }
+
+.image {
+  object-fit: cover;
+}
+
+.project-container {
+  min-height: 400px;
+}
