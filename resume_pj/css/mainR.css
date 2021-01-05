@@ -1,11 +1,10 @@
 /* Add your custom CSS here */
-*{
-    margin: 0px;
-}
+
 body {
     font-family: "https://fonts.google.com/specimen/Quicksand";
     color: rgb(0,0,0); 
 }
+
 
 .img-prof {
     border-radius: 40%;
@@ -15,21 +14,23 @@ a {
     ;
 }
 
-.flex-nav{
-    display: flex;
-    justify-content: space-between;
-    padding: 5vh;
+
+.hello-section {
+    margin-top: -100px;
+    padding-top: 120px;
+    background-color:  #E6DACD ;
 }
-h1 h2 h3 h4 h5 h6 {
+
+h1, h2, h3, h4, h5, h6 {
     font-family: "https://fonts.google.com/specimen/Poppins";
 }
-.background-beige{
-    background-color: #E6DACD;
-    margin: 0px;
-    height: 50vh;
+.background-beige {
+    background-color:#F4ECE6;
+    height: 18.75rem;
+   
 }
-.container-class{
-    margin: 0px;
+.social-class{
+ background-color: #fff;
 }
 .background {
   background-color: #E6DACD; 
