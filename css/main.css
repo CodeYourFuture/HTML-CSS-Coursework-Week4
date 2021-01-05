@@ -46,21 +46,6 @@ body{
     text-align: center;
   
 }
-/* .therapy{
-    text-align: center;
-
-} */
-/* .therapy p{
-    justify-content: center;
-    align-items: center;
- 
- 
-} */
-/* .therapy h1{
-    text-align: center;
-
-
- } */
 
  .therapy a {
    
@@ -84,9 +69,7 @@ body{
 }
 
 
-
 .articles p{
-    align-items: center;
     font-family:  didot-w01-italic,serif;
     font-size: 22px;
 }
@@ -96,6 +79,9 @@ body{
     text-decoration: none;
     color: black;
 }
+.under{
+    background-color:light;}
+
 .icon-box {
     display: flex;
     justify-content: space-between;
