@@ -20,6 +20,10 @@
       integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
       crossorigin="anonymous"
     ></script>
+    <!-- <script>
+      var offsetHeight = document.getElementById('mcontent').offsetHeight;
+      document.getElementById('mcontentback').style.height = offsetHeight*1.3+'px';
+    </script> -->
     <!-- Google Font Quicksand and Poppins -->
     <link
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap"
@@ -45,24 +49,24 @@
           class="navbar navbar-expand-md fixed-top"
           style="background-color: white; height: 5rem;"
         >
-          <a class="col-6 col-md-4 navbar-brand" href="#">
-            <div class="row justify-content-start">
+          <a class="col-6 col-md-5 navbar-brand" href="#">
+            <div class="row" style="color: black;">
               <div class="col-12 col-md-auto p-0">
-                <div class="d-flex align-items-center">
+                <h5 class="h3 m-0">
                   <i
                     class="fa fa-square m-0"
                     style="font-size: 1.6rem; color: blue;"
                   ></i>
-                  <h5 class="h3 m-0" style="color: black;">MAYA NELSON</h5>
-                </div>
+                  MAYA NELSON
+                </h5>
               </div>
               <div class="col-12 col-md-auto p-0">
-                <div class="d-flex align-items-center" style="color: black;">
-                  <p class="m-0 d-none d-md-block" style="font-size: 1.4rem;">
+                <p class="m-0">
+                  <span class="d-none d-md-inline" style="font-size: 1.4rem;">
                     &nbsp;/
-                  </p>
-                  <p class="m-0">Project Manager</p>
-                </div>
+                  </span>
+                  Project Manager
+                </p>
               </div>
             </div>
           </a>
@@ -107,11 +111,11 @@
     </header>
 
     <main class="container-fluid" style="height: auto;">
-      <div class="main-background row">
+      <div id="mcontentback" class="main-background row">
         <div class="col-12 col-md-6"></div>
         <div class="col-12 col-md-6"></div>
       </div>
-      <div class="main-content ps-3 pe-1 row justify-content-center">
+      <div id="mcontent" class="main-content row justify-content-center">
         <div class="col-12 col-md-4">
           <div
             class="card shadow-lg text-center"
