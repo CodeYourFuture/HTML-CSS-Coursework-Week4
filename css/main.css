@@ -1,11 +1,11 @@
 .main-content {
   background-color: transparent;
   position: absolute;
-  top: 4%;
+  top: 10%;
 }
 
 .main-background {
-  height: 1000px;
+  height: 1050px;
 }
 
 .main-background div:nth-child(1) {

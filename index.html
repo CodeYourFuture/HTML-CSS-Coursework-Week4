@@ -43,7 +43,7 @@
       <div class="row">
         <nav
           class="navbar navbar-expand-md fixed-top"
-          style="background-color: white;"
+          style="background-color: white; height: 5rem;"
         >
           <a class="col-6 col-md-4 navbar-brand" href="#">
             <div class="row justify-content-start">
@@ -58,7 +58,7 @@
               </div>
               <div class="col-12 col-md-auto p-0">
                 <div class="d-flex align-items-center" style="color: black;">
-                  <p class="fslash m-0" style="font-size: 1.4rem;">
+                  <p class="m-0 d-none d-md-block" style="font-size: 1.4rem;">
                     &nbsp;/
                   </p>
                   <p class="m-0">Project Manager</p>
@@ -91,14 +91,14 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">RESUME</a>
+                <a class="nav-link" href="resume.html">RESUME</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#">PROJECTS</a>
+                <a class="nav-link" href="projects.html">PROJECTS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">CONTACTS</a>
+                <a class="nav-link" href="contacts.html">CONTACTS</a>
               </li>
             </ul>
           </div>
@@ -129,15 +129,24 @@
                 Nelson
               </h2>
               <hr style="width: 50%;" />
-              <p class="card-text" style="display: none;">
+              <p class="card-text d-none d-md-block">
                 PROJECT MANAGER
               </p>
-              <button class="btn btn-primary" style="-radius: 20px;">
+              <button
+                class="btn btn-primary d-md-none"
+                style="border-radius: 20px;"
+                onclick="location.href = 'resume.html';"
+              >
                 RESUME
               </button>
-              <button class="btn btn-outline-primary" style="-radius: 20px;">
+              <button
+                class="btn btn-outline-primary d-md-none"
+                style="border-radius: 20px;"
+                onclick="location.href = 'projects.html';"
+              >
                 PROJECTS
               </button>
+
               <div
                 class="row justify-content-center mt-2"
                 style="background-color: white;"
@@ -181,6 +190,23 @@
           >
             <h1 class="col-12 display-1 mb-3">HELLO</h1>
             <h3 class="col-12 h5 mb-3">Here's who I am & what I do</h3>
+            <div class="row justify-content-start">
+              <button
+                class="col-4 btn btn-primary d-none d-md-block"
+                style="border-radius: 20px;"
+                onclick="location.href = 'resume.html';"
+              >
+                RESUME
+              </button>
+              <button
+                class="offset-1 col-4 btn btn-outline-primary d-none d-md-block"
+                style="border-radius: 20px;"
+                onclick="location.href = 'projects.html';"
+              >
+                PROJECTS
+              </button>
+            </div>
+
             <p class="col-12 h6 text-start mb-2">
               I'm a paragraph. Click here to add your own text and edit me. It’s
               easy. Just click “Edit Text” or double click me to add your own

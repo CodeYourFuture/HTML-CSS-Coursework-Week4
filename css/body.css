@@ -11,6 +11,7 @@
 
 body {
   font-family: "Quicksand";
+
   /* font-size: 90%; */
 }
 
@@ -23,23 +24,20 @@ h6 {
   font-family: "Poppins";
   font-size: 3em;
 }
-header {
-  min-height: 1rem;
+/* header {
   height: 5rem;
-  background-color: aquamarine;
-}
+} */
 
 main {
-  width: auto;
   position: relative;
 }
 
-footer {
+/* footer {
   background-color: white;
-}
-
+} */
+/* 
 @media (min-width: 768px) {
   header {
     height: auto;
   }
-}
+} */
