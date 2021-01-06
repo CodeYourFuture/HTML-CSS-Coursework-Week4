@@ -5,16 +5,34 @@ body {
     color: rgb(0,0,0); 
 }
 
+.botton-class {
+    height: 35px;
+   border-radius : 40px;
+   
+}
+
+.horiz-rule{
+    color: #0150FD;
+    width: 20%;
+    height: 15px;
+}
+.botton-class: hover {
+    color: #FFF;
+    background: rgba(58, 133, 191, 0.75);
+    border: 2px solid rgba(58, 133, 191, 0.75);
+  }
 
 .img-prof {
-    border-radius: 40%;
+    border-radius: 50%;
 }
 a {
     padding:5px;
     ;
 }
 
-
+i {
+    color: black;
+}
 .hello-section {
     margin-top: -100px;
     padding-top: 120px;
