@@ -13,9 +13,9 @@ ul {
     list-style: none;
 }
 
-.li {
+/* .li {
 display: flex;
-}
+} */
 
 
 .hero-image {
@@ -26,9 +26,21 @@ display: flex;
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
+    padding-top: 90px;
+    
 }
 
-h1, h2 {
+.ticket-button {
+    color: white;
+    background-color: rgb(83, 98, 172) ;
+    margin-top:20px;
+    font-size: 16px;
+    border: none;
+    padding: 10px;
+
+}
+
+h1, h2, h3, p {
 color: white;
 }
 
@@ -60,12 +72,16 @@ color: white;
     background-repeat: no-repeat, no-repeat;
     background-position: right bottom, center;
     background-size: 60px, contain;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .about {
     background: url(../img/festival_blob-shape.svg) no-repeat, url(../img/festival_lilly-flower.svg) right bottom no-repeat;
     background-size: 100px, 100px;
     background-color:#1B7B57;
+    padding-top:50px;
+    padding-bottom: 50px;
 }
 
 .subscribe {
@@ -73,3 +89,5 @@ color: white;
     background-size: 80px, contain;
     background-color:#5362AC ;
 }
+
+
