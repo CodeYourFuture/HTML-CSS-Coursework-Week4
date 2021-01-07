@@ -63,3 +63,6 @@ a {
 .card-img-top {
     object-fit: cover;
 }
+.card-title {
+    font-size: smaller;
+}
