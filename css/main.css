@@ -1,6 +1,7 @@
 /* Add your custom CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
+
 body{
  
     font-family: Arial,Helvetica,sans-serif;
@@ -11,17 +12,19 @@ body{
 .btn-primary {
     color: #2F2F2E;
     background-color: rgba(207, 244, 236, 1);
-    border: solid rgba(207, 244, 236, 1) 3px;
+    border: 3px solid rgba(207, 244, 236, 1);
     border-radius: 0%;
     border-color:  rgba(207, 244, 236, 1);
-   
-   
-    
-    
+
+ 
 }
+
+.fixed-top{
+    background-color: white;
+}
+
 .navbar-brand{
     font-style: italic;
-    text-align: center;
     color: #2F2F2E;
     line-height: 1.4em;
     font-family: didot-w01-italic, serif;
@@ -31,20 +34,35 @@ body{
     background-color: rgba(207, 244, 236, 1); 
 }
 
+.online{
+    text-align: center;
+    align-items: center;
+   
+  
+}
+.online h1{
+    
+    font-size: 34px
+  
+}
+
+.about{
+    text-align: center;
+  
+}
 .therapy{
     text-align: center;
-    align-self: center;
-    font-size: 34px;
     font-family: libre baskerville,serif;
+    min-height: 500px;;
   
+}
+
+.therapy h4{
+    font-size: 49px;
 }
 
 .therapy p{
     font-size: 14px;
-}
-.about{
-    text-align: center;
-  
 }
 
  .therapy a {
@@ -55,17 +73,16 @@ body{
 
 .individual{
     background-color:rgb(226,246,205);
-    text-align: center;
-    justify-content: center;
+   
 }
 
 .group{
     background-color:rgb(234,234,232);
-    text-align: center;
+   
 }
 .couples{
     background-color:rgb(207,244,236);
-    text-align: center;
+    
 }
 
 
@@ -97,5 +114,22 @@ body{
 
 }
 
+
+/* Contact Page CSS */
+.contact-back{
+    background-color: rgb(226,246,205);
+    justify-content: center;
+    text-align: center;
+
+}
+.send-join{
+    background-color: rgba(207, 244, 236, 1); 
+
+}
+.social-icon{
+    background-color: rgb(226,246,205);
+    
+}
+/* Services Page CSS */
 
 
