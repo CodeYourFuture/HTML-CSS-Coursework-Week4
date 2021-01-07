@@ -83,6 +83,10 @@ footer img {
   .social-media-icons {
     text-align: center;
   }
+
+  .articles-md-screen {
+    display: none;
+  }
 }
 
 /* About.css */
@@ -90,7 +94,6 @@ footer img {
 .experience-container {
   background-color: #cff4ec;
 }
-
 
 /* Contact.css */
 
