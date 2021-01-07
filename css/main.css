@@ -42,10 +42,6 @@ a {
   background-color: #b2fef7;
 }
 
-.about img {
-    width: rem;
-}
-
 .therapy-box1 {
   background-color: #dcedc8;
 }
@@ -77,12 +73,10 @@ a {
 
 .articles-btn {
   background-color: #b2fef7;
-  margin: 3%;
 }
 
 footer img {
   width: 2rem;
-  margin-left: 1rem;
 }
 
 @media (max-width: 768px) {
@@ -91,22 +85,12 @@ footer img {
   }
 }
 
-@media (min-width: 769px) {
-}
-
 /* About.css */
 
 .experience-container {
   background-color: #cff4ec;
 }
 
-.experience-container div {
-  padding-left: 5%;
-}
-
-/* Services.css */
-
-/* Blog.css */
 
 /* Contact.css */
 
