@@ -27,6 +27,7 @@ display: flex;
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
     padding-top: 90px;
+    text-align: left;
     
 }
 
@@ -36,12 +37,18 @@ display: flex;
     margin-top:20px;
     font-size: 16px;
     border: none;
-    padding: 10px;
+    padding: 15px 30px;
 
 }
 
 h1, h2, h3, p {
 color: white;
+}
+
+.navy-blue {
+    color: #190F3F;
+    /* padding-top:5px; */
+    padding-bottom:10px;
 }
 
 .line-up-section {
@@ -74,6 +81,7 @@ color: white;
     background-size: 60px, contain;
     padding-top: 100px;
     padding-bottom: 100px;
+    text-align: center;
 }
 
 .about {
@@ -88,6 +96,34 @@ color: white;
     background: url(../img/festival_lilly-flower.svg) no-repeat, url(../img/festival_blob-shape.svg) center no-repeat;
     background-size: 80px, contain;
     background-color:#5362AC ;
+    padding-top:50px;
+    padding-bottom:50px;
+    text-align: center;
 }
 
+.follow-us {
+    padding-top: 30px;
+    padding-bottom:50px;
+}
 
+.our-sponsors {
+    color: #190F3F;
+opacity: 0.5;
+text-align: center;
+    padding-bottom:30px;
+}
+
+.sponsors {
+    padding-bottom: 50px;
+}
+
+.email {
+    margin-top:5px;
+    margin-bottom: 8px;
+}
+
+.submit {
+     margin-top:5px;
+    margin-bottom: 8px;
+}
+}
