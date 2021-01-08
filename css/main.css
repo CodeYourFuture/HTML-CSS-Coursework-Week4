@@ -24,6 +24,9 @@ a {
     text-decoration: none;
     color: #2F2F2E
 }
+.nav-link:hover {
+    color: #94D6C8;
+  }
 .introduction, .couples {
     background-color: #CFF4EC;
     padding: 30px;
@@ -65,4 +68,7 @@ a {
 }
 .card-title {
     font-size: smaller;
+}
+#home {
+    color: #94D6C8; 
 }
