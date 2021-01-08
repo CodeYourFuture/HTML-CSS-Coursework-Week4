@@ -1,3 +1,263 @@
 /* Add your custom CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Libre Baskerville", serif;
+  padding-top: 120px;
+}
+
+#page{
+  width:90%;
+  margin:auto;
+  
+}
+
+}
+.padding70 {
+  padding-left: 70%;
+}
+.padding40 {
+  padding: 0 0 0 40%;
+}
+
+
+h1{
+  margin-top: 3rem;
+  font-style: italic;
+}
+
+/* #content {
+  width: 90%;
+  margin: auto;
+}
+
+.container header { */
+  /* width: 100%;
+} */
+
+/* .header-row {
+  height: 100px;
+  width: 100%;
+} */
+
+.nav{
+  margin: 0;
+}
+
+.navbar{
+  padding: 20px;
+  background-color: white;
+  width: 93%;
+  margin: auto;
+}
+.nav-link {
+  color:gray;
+  font-weight: lighter;
+  margin-left: 25px;
+}
+
+.nav-link:active{
+  color: #CFF4EC; 
+}
+
+.nav-link:hover{
+  color: #CFF4EC; 
+}
+
+.appt-btn {
+  width: auto;
+  background-color: #cff4ec;
+  color: gray;
+  padding: 10px;
+  text-decoration:none;
+  text-align: center;
+
+}
+
+.appt-btn:hover {
+  background-color: #94d6c8;
+  color: white;
+}
+
+.main-row1 {
+  /* height: 500px; */
+  width: 100%;
+  background-color: #cff4ec;
+  margin-bottom: 100px;
+}
+
+.main-row2 {
+  width: auto;
+  background-color: #f2f2f1;
+  margin-bottom: 100px;
+  height: 600px;
+
+}
+
+h2{
+ text-align: center;
+}
+
+h3{
+  text-align: center;
+  font-style: italic;
+}
+
+h4{
+  text-align: center;
+  font-style: italic;
+}
+
+p{
+  text-align: center;
+}
+.aboutCol{
+  margin-top: 100px;
+}
+.para1{
+  text-align: center;
+}
+
+.main-row3 {
+  height: 600px;
+  width: auto;
+  margin-bottom: 100px;
+  padding-top: 150px;
+  align-items: center;
+}
+
+.main-row4 {
+  height: 500px;
+  width: auto;
+  background-color: #f2f2f1;
+  margin-bottom: 40px;
+}
+
+.flower-img {
+  width: 100%;
+  /* height: 300px; */
+}
+
+.Maria-img {
+  width: auto;
+  height: 450px;
+  transform: translateY(50px);
+ 
+}
+
+.arrow{
+  justify-content: center;
+}
+
+.flower-img-2 {
+  width: auto;
+  height: 200px;
+}
+
+.leaves-img {
+  width: auto;
+  height: 200px;
+}
+
+.waves {
+  width: auto;
+  height: 200px;
+}
+
+.btn-2 { 
+  width: 150px;
+  height: 50px;
+  background-color: #94D6C8;
+  padding: 0px;
+  color:grey;
+  border: none;
+  
+}
+
+#intro {
+  text-align: justify;
+  text-align: center;
+}
+
+.item-1 {
+  background-color: #e2f6cd;
+  height: 400px;
+}
+
+.item-2 {
+  background-color: #f2f2f1;
+  height: 400px;
+    
+}
+
+.item-3 {
+  background-color: #cff4ec;
+  height: 400px;
+}
+
+.item-4 {
+  background-color: #f2f2f1;
+}
+
+.btn-3 {
+  width: auto;
+  background-color: #cff4ec;
+  color: gray;
+  padding: 10px;
+  text-decoration:none;
+  text-align: center;
+}
+
+.card{
+
+ padding: 20px;
+}
+
+.btn-services{
+  background-color: #94D6C8;
+  padding: 0px;
+  color:grey;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+#articles-text{
+  margin-top: 50px;
+}
+
+.hamburger-icon{
+  display: none;
+}
+
+.facebook-icon{
+  width:20px;
+  height:20px ;
+
+}
+
+.twitter-icon{
+  margin-left: 80px;
+  width:20px;
+  height:20px ;
+}
+
+#footer-text{
+  text-align: end;
+  margin-right: 80px;
+ 
+}
+
+@media screen and (max-width:768px){
+  #navbarCollapse{
+    display: none;
+  } 
+    .hamburger-icon{
+    display: block;
+  }

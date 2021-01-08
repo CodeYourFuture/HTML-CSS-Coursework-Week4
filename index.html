@@ -6,15 +6,164 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Here we import the Boostrap CSS stylesheet -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <!-- Add a link to your custom CSS here -->
+    <link href="css/main.css" rel="stylesheet" type="text/css">
 
     <title>Responsive grid project</title>
 </head>
 
-<body>
 
-    <!-- Add your markup here -->
+<body>
+<div id="page">
+  
+    <header class="container">
+        <div class="row">
+            <nav class="navbar navbar-expand-sm fixed-top">
+
+                <div class="col-12 col-sm-4">
+                    <h1 class="navbar-brand">Maria Hope, Ph.D. - Psychologist</h1>
+                </div>
+                <div class="col-12 col-sm-8 justify-content-center d-flex flex-sm-column align-items-sm-end">
+                    <a class="col-8 col-sm-5 col-md-4 col-lg-2 appt-btn" href="#">Book an Appointment</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="hamburger-icon">
+                    <img src="https://lh3.googleusercontent.com/Z4fssiZXxUUhPB_dHCABmQQ-HyCFAu0FGOk7viZuDB8a0pg3D3MuG0OWfX1u-xMtZQeJ9g=s85" alt="hamburger icon">
+                </div>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse"> 
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Services</a>   
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item">       
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>   
+                </div>
+            </nav>
+        </div>    
+    </header>
+
+
+    <div class="comtainer-fluid main">
+        <div class="row align-items-center justify-content-around main-row1">
+            <div class="col-md" id="intro">
+                <h1>Online Therapy for Emotional Health</h1>
+                <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</p>
+            </div>
+            <div class="col-md" style="padding: 0 0;">
+                <img src="https://static.wixstatic.com/media/9c608a_350f9ef8ecf44916abe7927699962ae3~mv2_d_3000_2000_s_2.jpeg/v1/fill/w_872,h_998,al_c,q_85,usm_0.66_1.00_0.01/9c608a_350f9ef8ecf44916abe7927699962ae3~mv2_d_3000_2000_s_2.webp" class="flower-img" alt="flower image" >
+            </div>
+        </div>
+
+        <div class="row justify-content-center main-row2 ">
+            <div class="col-md-4 aboutCol">
+                <h3>About</h3>
+                <h2>Maria Hope</h2>
+                <p class="para1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem deserunt quasi fuga explicabo laboriosam quo nihil doloremque dolores architecto corrupti fugiat pariatur nesciunt saepe consectetur veritatis, tenetur, possimus esse tempore?</p>
+                <div class="col-12 d-flex align-items-center arrow">
+                    <span>&#129058;</span>
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <img class="col Maria-img"
+                        src="https://static.wixstatic.com/media/9c608a_2a78cf5937414d0e9a597504d68daafc~mv2_d_6046_4035_s_4_2.jpg/v1/crop/x_776,y_0,w_3647,h_4035/fill/w_519,h_572,al_c,q_80,usm_0.66_1.00_0.01/9c608a_2a78cf5937414d0e9a597504d68daafc~mv2_d_6046_4035_s_4_2.webp"
+                        alt="image of Maria">
+                    </div>
+                </div>
+                
+ 
+        </div>
+
+        <div class="row main-row3">
+            <div class="col-md-4 item-1">
+                <h4>01.</h4>
+                <p><b>Individual Therapy</b></p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos et sunt reprehenderit labore, odit aliquid maiores ipsa minus consequuntur deleniti iure distinctio impedit a consectetur sequi ut error doloremque omnis?</p>
+            </div>
+            <div class="col-md-4 item-2">
+                <h4>02.</h4>
+                <p ><b>Group Therapy</b></p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex harum itaque doloribus fuga dicta eligendi! Voluptas quaerat debitis officiis repellendus beatae, nostrum rem maiores ipsum a fugiat iste vel commodi?</p>
+                <div class="wrapper">
+                    <button type="button" class="btn-2">View more services</button>
+                    <span id="arrow2">&#129058;</span>
+                </div>
+                
+            </div>
+            <div class="col-md-4 item-3">
+                <h4>03.</h4>
+                <p><b>Couples Therapy</b></p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, voluptatibus quae, voluptatum veniam eveniet consequatur voluptate rerum dolorem suscipit ullam repudiandae. Labore, perspiciatis rerum minima praesentium recusandae molestiae eaque pariatur?</p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center main-row4 item-4">
+            <h3 id="articles-text">Articles about Psychology</h3>
+                <div class="col-md-2 ">
+                    <div class="card" style="width: 18rem;">
+                        <img class="flower-img-2" src="https://static.wixstatic.com/media/84770f_6ae94823ccef48a5bf0ac4650fe562fa~mv2_d_3000_2000_s_2.jpeg/v1/fill/w_740,h_493,al_c,q_90,usm_0.66_1.00_0.01/84770f_6ae94823ccef48a5bf0ac4650fe562fa~mv2_d_3000_2000_s_2.webp"  alt="flower image">
+                        <div class="card-body">
+                            <p class="card-text">Understanding PTSD</p>
+                        </div>
+                    </div>
+                </div>      
+           
+            <div class="col-md-2 ">
+                <div class="card" style="width: 18rem;">
+                    <img class="leaves-img" src="https://static.wixstatic.com/media/03f22a3cb4d543b9b7ffcaae2f53a15f.jpg/v1/fill/w_740,h_494,al_c,q_90,usm_0.66_1.00_0.01/03f22a3cb4d543b9b7ffcaae2f53a15f.webp" alt="leaves image">
+                    <div class="card-body">
+                        <p class="card-text">Why it's okay to argue</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2 ">
+                <div class="card" style="width: 18rem;">
+                    <img class="waves"
+                        src="https://static.wixstatic.com/media/40c2397700984377a8d5a841d6b818ef.jpg/v1/fill/w_740,h_464,al_c,q_90,usm_0.66_1.00_0.01/40c2397700984377a8d5a841d6b818ef.webp"
+                        alt="waves image">
+                    <div class="card-body">
+                        <p class="card-text">10 ways to de-stress</p>
+                    </div>
+                </div>
+            </div>  
+            <div class="wrapper">
+                <button type="button" class="btn-3">More Articles</button>
+            </div>
+            
+        </div>
+       
+    </div>
+</div>
+
+<section class="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col d-flex justify-content-start">
+                <img src="https://lh3.googleusercontent.com/5--zz2oEtVRAnQh3zOl7LTG3AErZh1Re83JalL_Co17kZK9sC9VP8O3jfw4yu7PoucBZkA=s85" alt="twitter icon" class="twitter-icon">
+                <img src="https://lh3.googleusercontent.com/LPNPQ4MdZU3_HUF29sLzKDcrnVWA7P7n4cdH_QDzNGO-L3kmZTQRWC1_f7OzcU6_k40Xeg=s85" alt="facebook icon" class="facebook-icon">  
+            </div>
+            <div class="col">
+                <h6 id="footer-text">© 2023 by Maria Hope, Ph.D. Proudly created by Wix.com</h6>
+            </div>
+        </div>   
+    </div>
+   
+</section>
+
+</div>
 
 </body>
+
 
 </html>
