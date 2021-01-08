@@ -2,7 +2,7 @@
 
 /* Dont' forget to link this file to your HTML in the <head> */
 =======
-
+s
 
 /* General */
 body {
@@ -27,8 +27,7 @@ body {
   font-style: italic;
 } 
 
-/* head */
-.app-btn {
+.standard-btn {
   background-color: #cff4ec;
   border: 0px;
   padding-bottom: 10px;
@@ -36,6 +35,14 @@ body {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+.heading {
+  font-family: Libre Baskeville;
+  font-size: 55px;
+ }
+ 
+
+/* head */
 
 .menu-icon{
   padding-top: 25px;
@@ -50,7 +57,7 @@ body {
 /* menu */
 .menu-container {
   text-align: center;
-
+  padding-bottom: 20px;
 }
 
 .menu-container a {
@@ -79,11 +86,6 @@ nav a:hover {
 .no-padding {
   padding-left: 0 !important;
 }
-
-.intro-heading {
-  font-family: Libre Baskeville;
-  font-size: 55px;
- }
  
 .intro-txt {
   font-family: Libre Baskeville;
@@ -117,11 +119,6 @@ nav a:hover {
   font-style: italic;
   padding-top: 60px;
   padding-bottom: 0;
-}
-
-.about-heading {
- font-family: Libre Baskeville;
- font-size: 55px;
 }
 
 .about-img {
@@ -173,7 +170,6 @@ nav a:hover {
 .article-container {
   background-color: #f2f2f1;
   font-size: 20px;
-
   padding-bottom: 20px;
   padding-top: 60px;
   padding-bottom: 40px;
@@ -184,15 +180,6 @@ nav a:hover {
 }
 .article-container p {
   font-size: 25px;
-}
-
-.article-btn {
-  background-color: #cff4ec;
-  border: 0px;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 
 /*footer*/

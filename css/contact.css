@@ -50,6 +50,7 @@ body {
 /* menu */
 .menu-container {
   text-align: center;
+  padding-bottom: 20px;
 }
 
 .menu-container a {
