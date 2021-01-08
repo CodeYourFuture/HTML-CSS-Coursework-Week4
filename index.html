@@ -30,7 +30,7 @@
       class="container-fluid bg-white sticky-top justify-content-between py-4"
     >
       <nav class="navbar navbar-light navbar-expand-md">
-        <div class="container">
+        <div class="container-fluid">
           <a
             href="index.html"
             class="navbar-brand d-flex flex-column flex-md-row align-items-center"
@@ -44,8 +44,8 @@
           </a>
           <button
             type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
@@ -60,7 +60,9 @@
           >
             <ul class="navbar-nav text-uppercase">
               <li class="nav-item">
-                <a href="index.html" class="nav-link">About me</a>
+                <a href="index.html" class="nav-link active" aria-current="page"
+                  >About me</a
+                >
               </li>
               <li class="nav-item">
                 <a href="resume.html" class="nav-link">Resume</a>
@@ -86,8 +88,11 @@
             alt="hero photo"
           />
           <h2 class="d-flex bold-text justify-content-center my-2">
-            Oksana Kostenko
+            Maya Nelson
           </h2>
+          <p class="d-md-flex d-none justify-content-center text-uppercase">
+            Project Manager
+          </p>
           <hr class="blue-line" />
           <!-- hero buttons-->
           <div class="row text-center d-md-none bold-text mb-4">
