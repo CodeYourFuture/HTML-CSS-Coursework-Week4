@@ -32,6 +32,7 @@ body{
 }
 .ground{
     background-color: rgba(207, 244, 236, 1); 
+    align-items: center;
 }
 
 .online{
@@ -63,6 +64,7 @@ body{
 
 .therapy p{
     font-size: 14px;
+  
 }
 
  .therapy a {
@@ -85,9 +87,15 @@ body{
     
 }
 
+.articles{
+     text-align: center;
+    
+}
+
 
 .articles p{
-    font-family:  didot-w01-italic,serif;
+    font-family:serif;
+    font-style: italic;
     font-size: 22px;
 }
 
@@ -131,5 +139,11 @@ body{
     
 }
 /* Services Page CSS */
+
+.online p{
+  font-family:serif;
+  font-style: italic;
+  font-size: 22px;
+}
 
 
