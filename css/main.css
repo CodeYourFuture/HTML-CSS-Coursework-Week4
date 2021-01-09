@@ -34,7 +34,11 @@ a {
 .nav-link:hover {
     color: #94D6C8;
   }
-.introduction, .couples {
+.introduction {
+    background-color: #CFF4EC;
+    padding: 25% 0 25%;
+}
+.couples {
     background-color: #CFF4EC;
     padding: 30px;
 }
