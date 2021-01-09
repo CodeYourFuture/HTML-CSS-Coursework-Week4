@@ -1,24 +1,27 @@
 import articles from "./data.js";
 
-const myImages = document.querySelector(".card-img-top");
-console.log(myImages);
-const myTitle = document.querySelector(".card-title");
-const myText = document.querySelector(".article-text");
 const cardGroup = document.querySelector(".card-group");
 
-let currentItem = 0;
-//  const ma = articles;
 window.addEventListener("DOMContentLoaded", () => {
-  displayArticles(articles);
-  //   showArticle();
-  //   console.log("dom loaded");
+  var newWidth = window.innerWidth;
+  if (newWidth < 580) {
+    showArticle();
+  } else {
+    displayArticles(articles);
+  }
+});
+window.addEventListener("resize", function (event) {
+  var newWidth = window.innerWidth;
+  console.log(newWidth);
+  if (newWidth < 580) {
+    showArticle();
+  } else {
+    displayArticles(articles);
+  }
 });
 
 const displayArticles = (articleItems) => {
   let article = articleItems.map((singleArticle) => {
-    // console.log(singleArticle);
-    // console.log(singleArticle.text);
-
     return `<div class="card">
                   <img src="${singleArticle.img}" class="card-img-top">
                 <div class="button-container d-flex justify-content-center d-sm-none"> 
@@ -33,29 +36,31 @@ const displayArticles = (articleItems) => {
   article = article.join("");
   cardGroup.innerHTML = article;
 };
-//
 
-// const showArticle = () => {
-//   const item = articles[currentItem];
-//   myImages.src = item.img;
-//   myTitle.textContent = item.title;
-//   myText.textContent = item.text;
-// };
+let index = 0;
 
-// const prevBtn = document.querySelector(".prev-btn");
-// const nextBtn = document.querySelector(".next-btn");
-// console.log(prevBtn);
-// // nextBtn.addEventListener("click", () => {
-// //   currentItem++;
-// //   if (currentItem > articles.length - 1) {
-// //     currentItem = 0;
-// //   }
-// //   showArticle();
-// // });
-// // prevBtn.addEventListener("click", () => {
-// //   currentItem--;
-// //   if (currentItem < 0) {
-// //     currentItem = articles.length - 1;
-// //   }
-//   showArticle();
-// })
+const showArticle = () => {
+  const show = () => {
+    return `<div class="card">
+                  <img src="${articles[index].img}" class="card-img-top">
+                <div class="button-container d-flex justify-content-center d-sm-none">
+                  <a class="prev-btn" id="prev-btn">
+                        <i class="fas fa-chevron-left mx-2"></i>
+                    </a>
+                    <a class="next-btn">
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">${articles[0].title}</h3>
+                    <hr w-75>
+                    <p class="article-text">${articles[0].text}</p>
+                </div>
+            </div>`;
+  };
+  cardGroup.innerHTML = show();
+
+}
+
+//tried to add an eventListener to buttons but it always gives null value for button and I cant add event listener
+
