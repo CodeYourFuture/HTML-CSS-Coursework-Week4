@@ -1,28 +1,4 @@
-const articles = [
-  {
-    id: 1,
-    img: "img/flower1.webp",
-    title: "Why it’s okay to argue",
-    text:
-      "I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse before they sold out chambray pop-up. Shaman humblebrag pickled coloring book salvia hoodie, cold-pressed four dollar toast everyday carry",
-  },
-  {
-    id: 2,
-    img: "img/flower2.webp",
-
-    title: "10 ways to de-stress",
-    text:
-      "I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse before they sold out chambray pop-up. Shaman humblebrag pickled coloring book salvia hoodie, cold-pressed four dollar toast everyday carry",
-  },
-  {
-    id: 3,
-    img: "img/flower3.webp",
-
-    title: "Understanding PTSD",
-    text:
-      "I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse before they sold out chambray pop-up. Shaman humblebrag pickled coloring book salvia hoodie, cold-pressed four dollar toast everyday carry",
-  },
-];
+import articles from "./data.js";
 
 const myImages = document.querySelector(".card-img-top");
 console.log(myImages);
@@ -31,7 +7,7 @@ const myText = document.querySelector(".article-text");
 const cardGroup = document.querySelector(".card-group");
 
 let currentItem = 0;
-
+//  const ma = articles;
 window.addEventListener("DOMContentLoaded", () => {
   displayArticles(articles);
   //   showArticle();
@@ -40,14 +16,12 @@ window.addEventListener("DOMContentLoaded", () => {
 
 const displayArticles = (articleItems) => {
   let article = articleItems.map((singleArticle) => {
-    console.log(singleArticle);
-    console.log(singleArticle.text);
+    // console.log(singleArticle);
+    // console.log(singleArticle.text);
 
     return `<div class="card">
                   <img src="${singleArticle.img}" class="card-img-top">
                 <div class="button-container d-flex justify-content-center d-sm-none"> 
-                    
-                 
                 </div>
                 <div class="card-body">
                     <h3 class="card-title">${singleArticle.title}</h3>
