@@ -12,6 +12,14 @@ a {
   text-decoration: none;
 }
 
+ul.navbar-nav li.nav-item a.nav-link:hover {
+  color: blue;
+}
+
+ul.navbar-nav li.nav-item a.nav-link.active {
+  color: blue;
+}
+
 li {
   list-style: none;
 }
@@ -86,16 +94,6 @@ hr.blue-line {
   color: white;
 }
 
-/* footer */
-.social-img {
-  width: 20px;
-  height: 20px;
-}
-
-footer h4 {
-  font-size: 0.9rem;
-}
-
 /* resume page */
 
 .background-main {
@@ -133,4 +131,21 @@ input[type="text"]:focus,
 input[type="email"]:focus,
 .textarea:focus {
   border: 3px solid rgb(37, 37, 37);
+}
+
+/* projects page */
+
+.blue-line {
+  height: 40px;
+  width: 10px;
+}
+
+/* footer */
+.social-img {
+  width: 20px;
+  height: 20px;
+}
+
+footer h4 {
+  font-size: 0.9rem;
 }
