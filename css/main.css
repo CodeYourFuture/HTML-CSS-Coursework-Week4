@@ -8,6 +8,13 @@ body {
     margin: 30px 0 20px 10px;
     font-family: 'Quicksand', sans-serif;
 }
+.buttons:hover {
+    background-color: #4D7369;
+    color: white;
+}
+#booking{
+    float: right
+}
 h1, h2 {
     font-family: 'Libre Baskerville', serif;
     padding: 20px 0 10px 0;
@@ -48,6 +55,10 @@ a {
     padding: 10px 40px 10px 40px;
     margin: 30px 0 30px 0;
 }
+#services:hover {
+    background-color: #4D7369;
+    color: white;
+}
 .social-icons {
     width: 40px;
     padding: 10px;
@@ -66,8 +77,15 @@ a {
 .card-img-top {
     object-fit: cover;
 }
+a:hover {
+    text-decoration: none;
+    color: #2F2F2E
+}
 .card-title {
-    font-size: smaller;
+    font-size: 18px;
+}
+.card-title:hover {
+    color: #94D6C8;
 }
 #home {
     color: #94D6C8; 
