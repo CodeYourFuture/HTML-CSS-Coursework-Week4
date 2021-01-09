@@ -31,7 +31,14 @@ body {
 }
 
 /* head */
-.app-btn {
+.header{
+  position: fixed;
+  background-color: rgb(255, 255, 255);
+  min-height: 77px;
+  min-width: 100%;
+}
+
+.standard-btn {
   background-color: #cff4ec;
   border: 0px;
   padding-bottom: 10px;
@@ -76,7 +83,8 @@ nav a:hover {
 }
 
 /*about*/
-.bg-grey{
+.about-container{
+padding-top:100px ;
 background-color: #F2F2F1;
 }
 

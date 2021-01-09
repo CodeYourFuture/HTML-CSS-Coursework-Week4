@@ -43,6 +43,12 @@ body {
  
 
 /* head */
+.header{
+  position: fixed;
+  background-color: rgb(255, 255, 255);
+  min-height: 77px;
+  min-width: 100%;
+}
 
 .menu-icon{
   padding-top: 25px;
@@ -80,6 +86,9 @@ nav a:hover {
 }
 
 /*intro*/
+.intro-container{
+  padding-top: 180px;
+}
 .intro-img {
   width: 100%;
 }

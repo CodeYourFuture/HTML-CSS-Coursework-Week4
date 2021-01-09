@@ -23,12 +23,20 @@ body {
   font-style: italic;
 } 
 
-.bg{
+.info-container{
+  padding-top:250px;
   background-color: #e2f6cd;
 }
 
 /* head */
-.app-btn {
+.header{
+  position: fixed;
+  background-color: rgb(255, 255, 255);
+  min-height: 77px;
+  min-width: 100%;
+}
+
+.standard-btn {
   background-color: #cff4ec;
   border: 0px;
   padding-bottom: 10px;
