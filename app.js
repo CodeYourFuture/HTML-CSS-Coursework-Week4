@@ -41,3 +41,21 @@ const showArticle = () => {
   myTitle.textContent = item.title;
   myText.textContent = item.text;
 };
+
+const prevBtn = document.querySelector(".prev-btn");
+const nextBtn = document.querySelector(".next-btn");
+console.log(prevBtn);
+nextBtn.addEventListener("click", () => {
+  currentItem++;
+  if (currentItem > articles.length - 1) {
+    currentItem = 0;
+  }
+  showArticle();
+});
+prevBtn.addEventListener("click", () => {
+  currentItem--;
+  if (currentItem < 0) {
+    currentItem = articles.length - 1;
+  }
+  showArticle();
+});
