@@ -1,0 +1,22 @@
+{
+  "type": "module",
+  "name": "responsive-grid-project",
+  "version": "1.0.0",
+  "description": "Choose one of the designs below, and re-create the design to perfection, using Bootstrap.",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muratdemirtas2001/responsive-grid-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/muratdemirtas2001/responsive-grid-project/issues"
+  },
+  "homepage": "https://github.com/muratdemirtas2001/responsive-grid-project#readme",
+  "type": "module"
+}
