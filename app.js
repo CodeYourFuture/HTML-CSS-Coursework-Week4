@@ -5,14 +5,13 @@ const cardGroup = document.querySelector(".card-group");
 window.addEventListener("DOMContentLoaded", () => {
   var newWidth = window.innerWidth;
   if (newWidth < 580) {
-    showArticle();
+    showArticle();console
   } else {
     displayArticles(articles);
   }
 });
 window.addEventListener("resize", function (event) {
   var newWidth = window.innerWidth;
-  console.log(newWidth);
   if (newWidth < 580) {
     showArticle();
   } else {
@@ -35,6 +34,11 @@ const displayArticles = (articleItems) => {
   });
   article = article.join("");
   cardGroup.innerHTML = article;
+  const x = document.getElementById("button-test");
+  console.log(x);
+  x.addEventListener("click", () => {
+    console.log("hello");
+  });
 };
 
 let index = 0;
@@ -47,20 +51,34 @@ const showArticle = () => {
                   <a class="prev-btn" id="prev-btn">
                         <i class="fas fa-chevron-left mx-2"></i>
                     </a>
-                    <a class="next-btn">
+                    <a class="next-btn" id="next-btn">
                         <i class="fas fa-chevron-right"></i>
                     </a>
                 </div>
                 <div class="card-body">
-                    <h3 class="card-title">${articles[0].title}</h3>
+                    <h3 class="card-title">${articles[index].title}</h3>
                     <hr w-75>
-                    <p class="article-text">${articles[0].text}</p>
+                    <p class="article-text">${articles[index].text}</p>
                 </div>
             </div>`;
   };
   cardGroup.innerHTML = show();
-
-}
-
-//tried to add an eventListener to buttons but it always gives null value for button and I cant add event listener
+  const prevBtn = document.getElementById("prev-btn");
+  prevBtn.addEventListener("click", () => {
+    console.log(index);
+    index--;
+    if (index < 0) {
+      index = articles.length - 1;
+    }
+    showArticle();
+  });
+  const nextBtn = document.getElementById("next-btn");
+  nextBtn.addEventListener("click", () => {
+    index++;
+    if (index > articles.length - 1) {
+      index = 0;
+    }
+    showArticle();
+  });
+};
 
