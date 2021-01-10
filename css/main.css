@@ -33,7 +33,7 @@ display: flex;
 
 .ticket-button {
     color: white;
-    background-color: rgb(83, 98, 172) ;
+    background-color: rgb(84, 72, 187);
     margin-top:20px;
     font-size: 16px;
     border: none;
@@ -55,8 +55,8 @@ color: white;
     background-image: url(../img/festival_lilly-flower.svg), url(../img/festival_blob-shape.svg);
     background-repeat: no-repeat, no-repeat;
     background-position: left bottom, center;
-    background-size: 60px, contain;
-    background-color:#5362AC ;
+    background-size: 90px, contain;
+    background-color: rgb(97, 153, 32);
     color: white;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -75,18 +75,19 @@ color: white;
 }
 
 .ticket-section {
+    background-color: rgb(160, 160, 197);
     background-image: url(../img/festival_lilly-flower.svg), url(../img/festival_blob-shape.svg);
     background-repeat: no-repeat, no-repeat;
     background-position: right bottom, center;
     background-size: 60px, contain;
-    
     padding-top: 100px;
     padding-bottom: 100px;
     text-align: center;
+    
 }
 
 .about {
-    background: url(../img/festival_blob-shape.svg) no-repeat, url(../img/festival_lilly-flower.svg) right bottom no-repeat;
+    background: url(../img/festival_blob-shape.svg) no-repeat, url(../img/festival_lilly-flower.svg) center bottom no-repeat;
     background-size: 100px, 100px;
     background-color:#1B7B57;
     padding-top:50px;
@@ -109,8 +110,8 @@ color: white;
 
 .our-sponsors {
     color: #190F3F;
-opacity: 0.5;
-text-align: center;
+    opacity: 0.5;
+    text-align: center;
     padding-bottom:30px;
 }
 
@@ -130,3 +131,9 @@ text-align: center;
     
 }
 }
+
+/* @media screen and (min-width: 600px) {
+  .line-up-section {
+    height: 100vh; 
+  }
+} */
