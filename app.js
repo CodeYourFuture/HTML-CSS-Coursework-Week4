@@ -5,7 +5,7 @@ const cardGroup = document.querySelector(".card-group");
 window.addEventListener("DOMContentLoaded", () => {
   var newWidth = window.innerWidth;
   if (newWidth < 580) {
-    showArticle();console
+    showArticle();
   } else {
     displayArticles(articles);
   }
@@ -34,11 +34,6 @@ const displayArticles = (articleItems) => {
   });
   article = article.join("");
   cardGroup.innerHTML = article;
-  const x = document.getElementById("button-test");
-  console.log(x);
-  x.addEventListener("click", () => {
-    console.log("hello");
-  });
 };
 
 let index = 0;
@@ -65,7 +60,6 @@ const showArticle = () => {
   cardGroup.innerHTML = show();
   const prevBtn = document.getElementById("prev-btn");
   prevBtn.addEventListener("click", () => {
-    console.log(index);
     index--;
     if (index < 0) {
       index = articles.length - 1;
@@ -81,4 +75,3 @@ const showArticle = () => {
     showArticle();
   });
 };
-
