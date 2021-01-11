@@ -31,9 +31,10 @@
     />
 
     <!-- Add a link to your custom CSS here -->
-    <link href="./css/main.css" rel="stylesheet" />
+    <link href="./css/mainresume.css" rel="stylesheet" />
     <link href="./css/body.css" rel="stylesheet" />
     <link href="./css/navbar.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/mainprojects.css" />
 
     <title>Resume</title>
   </head>
@@ -83,22 +84,23 @@
           >
             <ul class="navbar-nav align-items-end justify-content-end">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">ABOUT ME</a>
+                <a class="nav-link" href="./index.html">ABOUT ME</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="resume.html">RESUME</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="projects.html">PROJECTS</a>
-              </li>
-              <li class="nav-item">
                 <a
                   class="nav-link"
-                  style="font-weight: bold; color: blue;"
-                  href="#"
-                  >CONTACTS</a
+                  href="projects.html"
+                  >PROJECTS</a
                 >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" 
+                style="font-weight: bold; color: blue;"
+                href="#">CONTACTS</a>
               </li>
             </ul>
           </div>
@@ -107,16 +109,54 @@
     </header>
 
     <main class="container-fluid" style="height: auto;">
-      <div class="main-background row">
-        <div class="col-12 col-md-6"></div>
-        <div class="col-12 col-md-6"></div>
-      </div>
-      <div class="main-content ps-3 pe-1 row justify-content-center">
-        <div class="col-12 col-md-4">
-          CONTACTS
+      <div class="main-background row" id="secondDiv"></div>
+      <div id="firstDiv" class="main-content row justify-content-center">
+        <div class="col-12 col-md-7 mb-4 bg-transparent">
+          <h5 class="h3 text-center">
+            <i
+              class="fa fa-square m-0"
+              style="font-size: 1.2rem; color: blue;"
+            ></i>
+            CONTACTS
+          </h5>
         </div>
-        <div class="col-12 col-md-4 p-4">
-          CONTACTS
+        <div class="col-12 col-md-7 content-card">
+          <div class="row justify-content-between align-items-center">
+            <div class="col-12 col-md-6 p-4">
+              <label for="nameinput"
+                >First Name
+                <span style="color: blue; font-size: 1.3rem;">*</i>
+              </label>
+              <input type="text" id="nameinput" class="form-control" />
+            </div>
+            <div class="col-12 col-md-6 p-4">
+                <label for="surnameinput"
+                  >Last Name
+                  <span style="color: blue; font-size: 1.3rem;">*</i>
+                </label>
+                <input type="text" id="surnameinput" class="form-control" />
+            </div>
+            <div class="col-12 p-4">
+                <label for="emailinput"
+                  >Email
+                  <span style="color: blue; font-size: 1.3rem;">*</i>
+                </label>
+                <input type="text" id="emailinput" class="form-control" />
+            </div>
+            <div class="col-12 p-4">
+                <label for="subjectinput"
+                  >Subject
+                </label>
+                <input type="text" id="nameinput" class="form-control" />
+            </div>
+            <div class="col-12 p-4">
+                <label for="messageinput"
+                  >Message
+                </label>
+                <textarea type="text" id="nameinput" class="form-control" rows="3"></textarea>
+            </div>
+            <button type="button" class="col-4 mx-auto m-4 btn btn-primary">SEND</button>
+          </div>
         </div>
       </div>
     </main>
