@@ -7,12 +7,13 @@
 
 .content-card {
   background-color: white;
+
   /* max-width: 376px; */
 }
 
 .main-background {
   background-color: #faefe9;
-  height: 2600px;
+  height: 2000px;
 }
 
 @media (min-width: 768px) {
@@ -26,6 +27,9 @@
   }
   .main-background {
     height: 2200px;
+  }
+  .content-card {
+    min-width: 700px;
   }
 
   /* .main-background div:nth-child(1) {
