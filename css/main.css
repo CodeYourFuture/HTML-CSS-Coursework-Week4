@@ -1,12 +1,13 @@
-* {
-  /* border: 1px solid #008000; */
-}
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+
+/* {
+  border: 1px solid #008000;
+} */
 
 body {
   font-family: "Quicksand", sans-serif;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
 
 img {
   cursor: pointer;
