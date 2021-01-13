@@ -1,6 +1,7 @@
 :root {
   --bold-font: "Poppins", sans-serif;
   --bg-color: #e6dace;
+  --blue: #0000ff;
 }
 
 body {
@@ -13,11 +14,11 @@ a {
 }
 
 ul.navbar-nav li.nav-item a.nav-link:hover {
-  color: blue;
+  color: var(--blue);
 }
 
 ul.navbar-nav li.nav-item a.nav-link.active {
-  color: blue;
+  color: var(--blue);
 }
 
 li {
@@ -37,10 +38,6 @@ h6 {
   text-align: center;
 }
 
-.hamburger {
-  width: 30px;
-}
-
 .rect {
   width: 20px;
   height: 20px;
@@ -52,6 +49,18 @@ h6 {
 }
 
 /* about me page */
+
+/* main {
+  position: relative;
+}
+
+.pinned-background {
+  background-color: #e6dacd;
+  width: 100%;
+  position: absolute;
+  top: 250px;
+  bottom: 0;
+} */
 
 .hero-container {
   background-color: #f4ece6;
@@ -71,26 +80,26 @@ h6 {
 }
 
 hr.blue-line {
-  border-top: 1px solid rgb(3, 3, 255);
+  border-top: 1px solid var(--blue);
   opacity: 1;
   width: 100px;
   margin: 2rem auto;
 }
 
 .resume-btn {
-  background-color: rgb(0, 0, 255);
-  border: 1px solid blue;
+  background-color: var(--blue);
+  border: 2px solid var(--blue);
 }
 
 .resume-btn:hover {
   background-color: inherit;
-  border: 1px solid black;
+  border: 2px solid var(--blue);
   color: black;
 }
 
 .projects-btn:hover {
-  background-color: blue;
-  border: 1px solid blue;
+  background-color: var(--blue);
+  border: 2px solid var(--blue);
   color: white;
 }
 
@@ -130,15 +139,45 @@ input[type="email"],
 input[type="text"]:focus,
 input[type="email"]:focus,
 .textarea:focus {
-  border: 3px solid rgb(37, 37, 37);
+  border-bottom: 2px solid var(--blue);
+  outline: none;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+.textarea:hover {
+  border-bottom: 2px solid var(--blue);
+  outline: none;
+}
+
+.button-filled {
+  background-color: var(--blue);
+  padding: 0.3rem 2rem;
+  border: 1px solid var(--blue);
+  border-radius: 30px;
+  color: white;
+}
+
+.button-filled:hover {
+  color: black;
+  background-color: inherit;
+}
+
+.button-outline {
+  background-color: inherit;
+  padding: 0.3rem 2rem;
+  border: 1px solid black;
+  border-radius: 30px;
+  color: black;
+}
+
+.button-outline:hover {
+  color: white;
+  background-color: var(--blue);
+  border: 1px solid var(--blue);
 }
 
 /* projects page */
-
-.blue-line {
-  height: 40px;
-  width: 10px;
-}
 
 /* footer */
 .social-img {
@@ -149,3 +188,12 @@ input[type="email"]:focus,
 footer h4 {
   font-size: 0.9rem;
 }
+
+/* @media (min-width: 768px) {
+  .pinned-background {
+    display: block;
+    width: 40%;
+    height: 100%;
+    top: 0;
+  }
+} */
