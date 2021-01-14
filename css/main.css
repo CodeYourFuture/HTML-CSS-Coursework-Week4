@@ -2,6 +2,7 @@
   --bold-font: "Poppins", sans-serif;
   --bg-color: #e6dace;
   --blue: #0000ff;
+  --hero-bg: #f4ece6;
 }
 
 body {
@@ -50,7 +51,7 @@ h6 {
 
 /* about me page */
 
-/* main {
+main {
   position: relative;
 }
 
@@ -60,7 +61,17 @@ h6 {
   position: absolute;
   top: 250px;
   bottom: 0;
-} */
+  z-index: -1;
+}
+
+.profile {
+  background-color: var(--hero-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+  box-shadow: rgba(122, 118, 114, 0.23) -11.31px 11.31px 17px;
+}
 
 .hero-container {
   background-color: #f4ece6;
@@ -69,6 +80,12 @@ h6 {
 
 .hero-img {
   border-radius: 50%;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .hero-text-greeting {
@@ -101,6 +118,12 @@ hr.blue-line {
   background-color: var(--blue);
   border: 2px solid var(--blue);
   color: white;
+}
+
+.hero-social-icons {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
 }
 
 /* resume page */
@@ -183,17 +206,18 @@ input[type="email"]:hover,
 .social-img {
   width: 20px;
   height: 20px;
+  margin-right: 1rem;
 }
 
 footer h4 {
   font-size: 0.9rem;
 }
 
-/* @media (min-width: 768px) {
+@media (min-width: 768px) {
   .pinned-background {
     display: block;
     width: 40%;
     height: 100%;
     top: 0;
   }
-} */
+}
