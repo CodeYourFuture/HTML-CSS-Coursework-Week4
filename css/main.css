@@ -25,10 +25,11 @@ padding-left: 15px;
 }
 .big-img-ab {
     z-index: 1;
-    position: absolute;
+    position: absolute center;
     left: 10px;
     top: 10px;
-    width: 200px;
+    height: 500px;
+    transform: rotate(-23deg)
 }
 
 
@@ -36,8 +37,9 @@ padding-left: 15px;
     
     z-index: 2;
     position: absolute;
-    left: 10px;
-    top: 10px;
+    left: 30px;
+    top: 100px;
+   
     
     
 }
@@ -69,7 +71,7 @@ color: white;
     padding-bottom:10px;
 }
 
-.line-up-section {
+.background-shapes {
     background-image: url(../img/festival_lilly-flower.svg), url(../img/festival_blob-shape.svg);
     background-repeat: no-repeat, no-repeat;
     background-position: left bottom, center;
@@ -82,10 +84,13 @@ color: white;
     
 }
 
+.first-section {
+    height: 600px;
+}
+
 .section-three {
 
     background-image: url(https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1934&q=80);
-    
     height: 500px; 
     background-position: center; 
     background-repeat: no-repeat;
