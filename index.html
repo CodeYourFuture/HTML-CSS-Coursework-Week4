@@ -7,13 +7,109 @@
     <!-- Here we import the Boostrap CSS stylesheet -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <!-- Add a link to your custom CSS here -->
-
+    <script src="https://kit.fontawesome.com/d50d8d1a45.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
     <title>Responsive grid project</title>
 </head>
-
 <body>
+   <header>
+     <div class="container-fluid">
+       <div class="row">
+         <div class="col-6">
+           <h1 class="header-title">
+             <div class="square-device"></div>
+                Maya Nelson
+             <span class="title" style="font-size: 25px; font-weight: bolder;margin-left: 7px;">&#47PROJECT MANAGER</span>
+           </h1>
+           
+         </div>
+         <div class="col-6">
+          <nav class="navbar navbar-expand-md ">
+            <i class="fas fa-align-right"></i>
+             <div class="menu">
+              <a href="#">ABOUT ME</a>
+              <a href="#">RESUME</a>
+              <a href="#">PROJECTS</a>
+              <a href="#">CONTACT</a>  
+             </div>
+          </nav>
+         </div>
+       </div>
+     </div>
+   </header>
 
-    <!-- Add your markup here -->
+
+   <main class="container-fluid">
+       <div class="row sec1">
+         <div class="col-12 col-md-4 order-2 order-md-1 box1" style="background-color: #E6DACD;"></div>
+         <div class="col-12 col-md-8 order-1 order-md-2 box2" style="background-color: #FFF;"></div>
+       </div>
+       <div class="row  rowoverlay">
+          <div class=" offset-1 col-10 offset-md-2 col-md-4 coloverlay">
+           <div class="profile-card">
+              <img 
+                 class="profile-img"
+                 src="https://static.wixstatic.com/media/2e2a49_bd3a1599bc1b4265a01b2754b99b8536~mv2_d_5760_3840_s_4_2.jpeg/v1/crop/x_2703,y_43,w_2199,h_2205/fill/w_205,h_205,al_c,q_80,usm_0.66_1.00_0.01/AdobeStock_230407429.webp" 
+                 alt="maya picture">
+              <h1>Maya Nelson</h1>  
+              <div class="divider"></div>
+              <h5 class="title">PROJECT MANAGER</h5> 
+              <div class="button">
+                <h4><button class="btna btn1"> RESUME </button></h4>
+                <h4><button class="btna btn2">PROJECTS</button></h4>
+              </div>
+              <div class="icons">
+                  <a href="#"><i class="fa fa-facebook"></i></a> 
+                  <a href="#"><i class="fa fa-twitter"></i></a>  
+                  <a href="#"><i class="fa fa-linkedin"></i></a>  
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                  
+              </div>
+            </div>  
+          </div>
+          <div class=" offset-1 col-10 col-md-4 coloverlay">
+           <div class="text-block">
+              <h1>Hello</h1>
+              <h4>Here who i'm &amp; what i do</h4>
+              <div class="button">
+                <h4><button class="btna btn1"> RESUME </button></h4>
+                <h4><button class="btna btn2">PROJECTS</button></h4>
+              </div>
+                <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.</p>
+                <p>I’m a great place for you to tell a story and let your users know a little more about you.</p>
+            </div>
+          </div> 
+        </div>
+   </main>
+
+   <footer class="container-fluid footer-content">
+     <div class="row">
+       <div class="col-12 order-2 order-md-1 col-md-6">
+         <p><i class="far fa-copyright"></i>2023 by Maya Nelson</p>
+         <p>proudly created with wix.com</p>
+         <p>This website was designed by <a href="wix.com">wix.com</a></p>
+       </div>
+       <div class="col-12 order-1 order-md-2 col-md-4 content">
+        <div class="call">
+          <p style="padding-left:25px;"><b>Call</b></p>
+          <p>123-456-7890</p>
+         </div>
+         <div class="email">
+           <p style="padding-left:25px;"><b>Write</b></p>
+           <p>info@mysite.com</p>
+         </div>
+         <div class="social-media">
+            <p style="padding-left:25px;"><b>Follow</b></p>
+            <div class="icon">
+                       <a href="#"><i class="fa fa-facebook"></i></a> 
+                       <a href="#"><i class="fa fa-twitter"></i></a>  
+                       <a href="#"><i class="fa fa-linkedin"></i></a>  
+                       <a href="#"><i class="fa fa-instagram"></i></a>
+             </div>
+       </div>
+     </div>
+   </footer>
+       
 
 </body>
 
