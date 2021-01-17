@@ -1,0 +1,73 @@
+/******   header styles  *******/
+header{
+    width: 100%;
+    position: fixed;        
+    background: white;
+    padding-top: 10px ;
+    top: 0;
+    z-index: 1000;     
+  }
+  .header-txt {
+    font-family: "Libre Baskerville", serif;
+    font-style: italic;
+    font-size: 1.4em;
+  }
+  .header-nav a{
+    font-family: "Quicksand", sans-serif;
+    font-size: 1em;
+    color: black;
+  }
+  .header-nav a:hover {
+    color: #4d7369;
+  }
+  header img{
+    width: 25px;
+    height: 25px;
+  }
+  @media (max-width: 768px){
+    .header-nav{
+      display: none;
+    }
+  }
+  @media (min-width:768px){
+    header img{
+      display: none;
+    }
+  }
+  /******   main styles  *******/
+  main{
+    background-color: #E2F6CD;
+    top: 200px;
+    position: relative;
+  }
+  .buttons  {
+    background-color: #94D6C8;
+    border: 0;
+    color: black;
+    font-family: "Quicksand", sans-serif;
+    padding: 12px;
+  }
+  .buttons:hover {
+    background-color: #4d7369;
+    color: #f0f0ec;
+  }
+  
+.contact {
+    font-size: 22px;
+    font-style: italic;
+    font-family: 'Libre Baskerville', serif;
+}
+h1{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 3.1em;
+}
+/******   footer styles  *******/
+  footer{
+    top: 200px;
+    position: relative;
+    
+  }
+  footer img {
+    width: 21px;
+    height: 21px;
+  }
