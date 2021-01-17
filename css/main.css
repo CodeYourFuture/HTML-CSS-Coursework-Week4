@@ -29,7 +29,8 @@ padding-left: 15px;
     left: 10px;
     top: 10px;
     height: 500px;
-    transform: rotate(-23deg)
+    transform: rotate(-125deg) scaleX(-1) skew(-25deg, 23deg);
+ 
 }
 
 
@@ -37,8 +38,8 @@ padding-left: 15px;
     
     z-index: 2;
     position: absolute;
-    left: 30px;
-    top: 100px;
+    left: 10px;
+    top: 114px;
    
     
     
@@ -47,8 +48,10 @@ padding-left: 15px;
 .small-img-ab {
     z-index: 3;
     position: absolute;
-    left: 60px;
-    top: 25px;
+    left: 4px;
+    top: 82px;
+    transform: rotate(174deg);
+    height: 120px;
 }
 
 .ticket-button {
