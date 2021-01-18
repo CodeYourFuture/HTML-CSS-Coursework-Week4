@@ -36,6 +36,9 @@ h2 {
 .second-green {
   background-color: #94d6c8;
 }
+.copy-right {
+  font-size: 0.8rem;
+}
 
 .pinned-bg {
   background-color: white;
