@@ -17,6 +17,19 @@ li {
 padding-left: 15px;
 }
 
+.header-section {
+    position: fixed;
+    overflow: hidden;
+    background-color: white;
+    z-index: 7;
+}
+
+.header-box {
+
+padding-top: 10px;
+
+
+}
 
 
 .relative{
@@ -33,6 +46,14 @@ padding-left: 15px;
  
 }
 
+.date-of-year {
+    position: absolute;
+top:150px;
+left:7px;
+z-index: 4;
+transform: rotate(90deg);
+
+}
 
 .hero-image-ab {
     
@@ -54,13 +75,30 @@ padding-left: 15px;
     height: 120px;
 }
 
+.flower {
+    position: absolute;
+    z-index: 4;
+    left:214px;
+    top:308px;
+    transform: rotate(15deg);
+}
+
+.festival-details {
+  
+    position:absolute;
+    z-index: 4;
+    left: 80px;
+    top: 104px;
+
+}
+
 .ticket-button {
     color: white;
-    background-color: rgb(84, 72, 187);
-    margin-top:20px;
-    font-size: 16px;
+    background-color: rgb(83, 98, 172);
+    margin-top:15px;
+    font-size: 14px;
     border: none;
-    padding: 15px 30px;
+    padding: 11px 22px;
 
 }
 
@@ -79,7 +117,7 @@ color: white;
     background-repeat: no-repeat, no-repeat;
     background-position: left bottom, center;
     background-size: 90px, contain;
-    background-color: rgb(97, 153, 32);
+    background-color:#5362AC;
     color: white;
     padding-top: 100px;
     padding-bottom: 100px;
