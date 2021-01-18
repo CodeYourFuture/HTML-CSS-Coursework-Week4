@@ -1,3 +1,58 @@
 /* Add your custom CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
+* {
+  padding-right: 0;
+}
+.position-absolute {
+  color: aqua;
+  width: 50%;
+  transform: rotate(45deg);
+}
+
+.italic {
+  font-family: "Spectral", serif;
+  font-size: 1.3rem;
+  font-style: italic;
+}
+h1,
+h2 {
+  font-family: "Spectral", serif;
+  font-size: 2.7rem;
+}
+
+.nav-button {
+  border: none;
+}
+.light-green {
+  background-color: #cff4ec;
+}
+.gray {
+  background-color: #f2f3f1;
+}
+.green {
+  background-color: #e2f7cd;
+}
+.second-green {
+  background-color: #94d6c8;
+}
+
+.pinned-bg {
+  background-color: white;
+  width: 100%;
+  position: absolute; /* relative to main */
+  top: 250px;
+  bottom: 0;
+}
+.image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  box-shadow: rgba(138, 131, 124, 0.23) -11.31px 11.31px 17px;
+}
+.profile-img {
+  border-radius: 50%;
+  margin-bottom: 40px;
+}
