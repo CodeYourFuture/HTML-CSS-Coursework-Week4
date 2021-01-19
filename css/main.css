@@ -102,8 +102,17 @@ transform: rotate(90deg);
 
 }
 
-h1, h2, h3, p {
+h1, h2, h3, h4, p {
 color: white;
+}
+
+.line-up-heading {
+    font-size: 13px;
+    padding-bottom: 10px;
+}
+
+.line-up-paragraph {
+    font-size: 15px;
 }
 
 .navy-blue {
@@ -112,21 +121,41 @@ color: white;
     padding-bottom:10px;
 }
 
-.background-shapes {
-    background-image: url(../img/festival_lilly-flower.svg), url(../img/festival_blob-shape.svg);
-    background-repeat: no-repeat, no-repeat;
-    background-position: left bottom, center;
-    background-size: 90px, contain;
+.line-up-section {
     background-color:#5362AC;
-    color: white;
+    padding-top: 32px;
+}
+
+.background-shapes {
     padding-top: 100px;
     padding-bottom: 100px;
- 
+    position: relative;  
+}
+
+.navyblue-blob{
+    background-image: url(../img/festival_blob-shape-navyblue\ -\ Copy.svg);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: contain;
+    height:240px;
+    transform: rotate(122deg);
+   
+
+}
+
+
+.lily-flower {
+    position: absolute;
+    top:287px;
+    left:-8px;
+    height:102px;
+    transform:rotate(-112deg);
     
 }
 
-.first-section {
-    height: 600px;
+.content {
+    position:absolute;
+    
 }
 
 .section-three {
@@ -138,20 +167,56 @@ color: white;
     background-size: cover;
 }
 
+.flower-shape {
+     background-image: url(../img/festival_lilly-flower.svg);
+     background-repeat: no-repeat;
+     background-size: 63px;
+     height: 66px;
+     width: 50px;
+     left:228px;
+     top:322px;
+     transform: rotate(44deg);
+     position: absolute;
+     /* z-index: 1; */
+}
+
+.small-pink-shape {
+    background-image: url(../img/festival_blob-shape.svg);
+    background-repeat: no-repeat;
+     background-size: 95px;
+     height: 95px;
+     width: 97px;
+     top: 103px;
+     left: 15px;
+     position:absolute;
+     transform:rotate(108deg);
+}
+
 .ticket-section {
-    background-color: rgb(160, 160, 197);
-    background-image: url(../img/festival_lilly-flower.svg), url(../img/festival_blob-shape.svg);
-    background-repeat: no-repeat, no-repeat;
-    background-position: right bottom, center;
-    background-size: 60px, contain;
+    /* background-color: rgb(160, 160, 197); */
+    background-image: url(../img/festival_blob-shape-gold.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
     padding-top: 100px;
     padding-bottom: 100px;
     text-align: center;
+    position: relative;
+    z-index: -1;
     
 }
 
+.festival-ticket-sales {
+    /* position: absolute; */
+    z-index: 1;
+    padding-top:62px;
+    
+}
+
+
+
 .about {
-    background: url(../img/festival_blob-shape.svg) no-repeat, url(../img/festival_lilly-flower.svg) center bottom no-repeat;
+    background: url(../img/festival_blob-shape-navyblue\ -\ Copy.svg) no-repeat, url(../img/festival_lilly-flower.svg) center bottom no-repeat;
     background-size: 100px, 100px;
     background-color:#1B7B57;
     padding-top:50px;
