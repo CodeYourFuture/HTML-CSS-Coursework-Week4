@@ -323,7 +323,7 @@ color: white;
 
 .subscribe {
     background-color:#5362AC ;
-    padding-top:50px;
+    padding-top:62px;
     padding-bottom:120px;
     
 }
@@ -331,7 +331,7 @@ color: white;
 
 .subscribe-form {
     position: absolute;
-    padding-top: px;
+    padding-top:56px;
     font-size: 15px;
     text-align: center;
 }
@@ -354,7 +354,9 @@ color: white;
 
 .email-button {
     width: 214px;
+    padding: 2px;
     cursor: pointer;
+    margin-top: 10px;
     
 }
 
@@ -366,6 +368,7 @@ color: white;
     box-shadow: none;
     cursor: pointer;
     border: none;
+    padding:3px;
 }
 
 .subscribe-text {
@@ -378,14 +381,22 @@ font-size: 22px;
 
 .p-text{
 
-    font-size:16px ;
+    font-size:17px ;
 
 }
 
 .wix-text{
 padding-top:50px;
 font-size: 13px;
-color: #190E40;
+color: #0e062c;
+}
+
+.footer-box {
+    background-color: #190F3F;
+    height:40px;
+
+
+}
 
 }
 @media only screen and (min-width: 700px) {
