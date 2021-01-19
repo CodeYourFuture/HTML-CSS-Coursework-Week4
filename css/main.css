@@ -213,15 +213,58 @@ color: white;
     
 }
 
+.festival-blob-three {
+    background: url(../img/festival_blob-shape-navyblue\ -\ Copy.svg);
+    background-size: 48px;
+    background-repeat: no-repeat;
+    height: 48px;
+    width: 48px;
+    top: 5px;
+    left:44px;
+    transform: rotate(-199deg);
+    position: absolute;
+    z-index:1;
+}
 
+.flower-three {
+    background: url(../img/festival_lilly-flower.svg);
+    background-size: 66px;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+    left: 205px;
+    top: 234px;
+    transform:rotate(45deg);
+    position: absolute;
+    z-index: 2;
+}
+
+.background-shapes-three {
+    position: relative;
+    height: 400px;
+    
+}
 
 .about {
-    background: url(../img/festival_blob-shape-navyblue\ -\ Copy.svg) no-repeat, url(../img/festival_lilly-flower.svg) center bottom no-repeat;
-    background-size: 100px, 100px;
     background-color:#1B7B57;
-    padding-top:50px;
-    padding-bottom: 50px;
+    padding-top:65px;
+    padding-bottom: 425px;
+    z-index: -1;
+    
 }
+
+.about-festival {
+    z-index: 3;
+    position: absolute;
+    font-size: 14px;
+}
+
+.h3-headings {
+    font-size: 13px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
 
 .subscribe {
     background: url(../img/festival_lilly-flower.svg) no-repeat, url(../img/festival_blob-shape.svg) center no-repeat;
