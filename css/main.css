@@ -264,27 +264,6 @@ color: white;
     padding-top: 20px;
 }
 
-.big-image-subscribe {
-    background: url(../img/festival_blob-shape-navyblue\ -\ Copy.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 90px;
-    width: 100px;
-}
-
-.small-image-subscribe {
-    background: url(../img/)
-
-}
-
-.subscribe {
-    background: url(../img/festival_lilly-flower.svg) no-repeat, url(../img/festival_blob-shape.svg) center no-repeat;
-    background-size: 80px, contain;
-    background-color:#5362AC ;
-    padding-top:50px;
-    padding-bottom:50px;
-    text-align: center;
-}
 
 .follow-us {
     padding-top: 30px;
@@ -302,19 +281,113 @@ color: white;
     padding-bottom: 50px;
 }
 
+.big-image-subscribe {
+    background: url(../img/festival_blob-shape-navyblue\ -\ Copy.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 290px;
+    height: 290px;
+    transform: rotate(188deg);
+   
+}
+
+.small-image-subscribe {
+    background: url(../img/festival_blob-shape\ -\ green.svg);
+    background-repeat: no-repeat;
+    background-size:77px;
+    height:77px;
+    width: 77px;
+    position: absolute;
+    left: 38px;
+    top: -12px;
+    transform: rotate(176deg);
+
+}
+
+.flower-subscribe{
+    position: absolute;
+    top: -57px;
+    left:45px;
+    /* transform: rotate(50deg); */
+    
+
+}
+
+.flower-subscribe-size {
+    width: 60px;
+}
+
+.background-shapes-subscribe {
+    position: relative;
+}
+
+.subscribe {
+    background-color:#5362AC ;
+    padding-top:50px;
+    padding-bottom:120px;
+    
+}
+
+
+.subscribe-form {
+    position: absolute;
+    padding-top: px;
+    font-size: 15px;
+    text-align: center;
+}
+
 .email {
     margin-top:5px;
     margin-bottom: 8px;
+    padding-top: 35px;
+  
     
 }
 
 .submit {
      margin-top:5px;
     margin-bottom: 8px;
+   
+    
     
 }
 
+.email-button {
+    width: 214px;
+    cursor: pointer;
+    
+}
 
+.submit-button {
+    
+    width: 214px;
+    background-color:#190F3F;
+    color:white;
+    box-shadow: none;
+    cursor: pointer;
+    border: none;
+}
+
+.subscribe-text {
+    font-size: 15px;
+}
+
+.stay-in-lope-text{
+font-size: 22px;
+}
+
+.p-text{
+
+    font-size:16px ;
+
+}
+
+.wix-text{
+padding-top:50px;
+font-size: 13px;
+color: #190E40;
+
+}
 @media only screen and (min-width: 700px) {
   .line-up-section, .ticket-section {
     height: 100vh; 
