@@ -117,8 +117,7 @@ color: white;
 
 .navy-blue {
     color: #190F3F;
-     padding-top:5px;
-    padding-bottom:10px;
+    padding-bottom:2px;
 }
 
 .line-up-section {
@@ -265,6 +264,18 @@ color: white;
     padding-top: 20px;
 }
 
+.big-image-subscribe {
+    background: url(../img/festival_blob-shape-navyblue\ -\ Copy.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 90px;
+    width: 100px;
+}
+
+.small-image-subscribe {
+    background: url(../img/)
+
+}
 
 .subscribe {
     background: url(../img/festival_lilly-flower.svg) no-repeat, url(../img/festival_blob-shape.svg) center no-repeat;
