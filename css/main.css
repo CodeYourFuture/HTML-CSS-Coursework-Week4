@@ -212,6 +212,11 @@ color: white;
     
 }
 
+.dew-festival-heading {
+    font-size: 18px;
+
+}
+
 .festival-blob-three {
     background: url(../img/festival_blob-shape-navyblue\ -\ Copy.svg);
     background-size: 48px;
@@ -398,9 +403,79 @@ color: #0e062c;
 
 }
 
-}
+
+
 @media only screen and (min-width: 700px) {
-  .line-up-section, .ticket-section {
+
+
+  .first-section, .line-up-section, .about, .follow-us, .ticket-section, .subscribe {
     height: 100vh; 
   }
+
+  .header-section{
+      display: none;
+  }
+.first-section{
+    padding-top:70px;
+}
+  .big-img-ab {
+    z-index: 1;
+    position: absolute center;
+    left: 10px;
+    top: 50px;
+    height:500px;
+    transform: rotate(-125deg) scaleX(-1) skew(-25deg, 23deg);
+    
+ 
+}
+
+h1 {
+    font-size: 65px;
+}
+
+h2 {
+    font-size: 17px;
+}
+
+.date-of-year {
+font-size: 20px;
+top:353px;
+left:300px;
+
+
+}
+
+.hero-image-ab {
+    
+    z-index: 2;
+    position: absolute;
+    left: 10px;
+    top: 90px;
+    
+    
+}
+
+.small-img-ab {
+    left: 55px;
+    transform: rotate(149deg);
+    height: 160px;
+}
+
+.flower {
+    position: absolute;
+    z-index: 4;
+    left:214px;
+    top:340px;
+    transform: rotate(15deg);
+}
+
+.festival-details {
+  
+    
+    left: 68px;
+    top: 99px;
+
+}
+
+
 }
