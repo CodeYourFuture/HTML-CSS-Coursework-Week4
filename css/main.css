@@ -66,6 +66,11 @@ transform: rotate(90deg);
     
 }
 
+.hero-image-desktop {
+    display: none;
+
+}
+
 .small-img-ab {
     z-index: 3;
     position: absolute;
@@ -446,13 +451,19 @@ left:300px;
 }
 
 .hero-image-ab {
+    display:none;
     
+    
+    
+}
+
+.hero-image-desktop {
+    display: initial;
     z-index: 2;
     position: absolute;
     left: 10px;
     top: 90px;
-    
-    
+
 }
 
 .small-img-ab {
