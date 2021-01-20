@@ -159,6 +159,7 @@ color: white;
 
 .content {
     position:absolute;
+    padding-top: 35px;
     
 }
 
@@ -181,7 +182,7 @@ color: white;
      top:322px;
      transform: rotate(44deg);
      position: absolute;
-     /* z-index: 1; */
+     z-index: 2;
 }
 
 .small-pink-shape {
@@ -222,6 +223,27 @@ color: white;
 
 }
 
+
+.about {
+    background-color:#1B7B57;
+    padding-top:65px;
+    padding-bottom: 425px;
+    z-index: -1;
+    
+}
+
+.about-festival {
+    z-index: 3;
+    position: absolute;
+    font-size: 14px;
+}
+
+.h3-headings {
+    font-size: 13px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
 .festival-blob-three {
     background: url(../img/festival_blob-shape-navyblue\ -\ Copy.svg);
     background-size: 48px;
@@ -254,25 +276,6 @@ color: white;
     
 }
 
-.about {
-    background-color:#1B7B57;
-    padding-top:65px;
-    padding-bottom: 425px;
-    z-index: -1;
-    
-}
-
-.about-festival {
-    z-index: 3;
-    position: absolute;
-    font-size: 14px;
-}
-
-.h3-headings {
-    font-size: 13px;
-    padding-bottom: 20px;
-    padding-top: 20px;
-}
 
 
 .follow-us {
@@ -423,16 +426,7 @@ color: #0e062c;
 .first-section{
     padding-top:70px;
 }
-  .big-img-ab {
-    z-index: 1;
-    position: absolute center;
-    left: 10px;
-    top: 50px;
-    height:500px;
-    transform: rotate(-125deg) scaleX(-1) skew(-25deg, 23deg);
-    
- 
-}
+
 
 h1 {
     font-size: 65px;
@@ -461,8 +455,8 @@ left:300px;
     display: initial;
     z-index: 2;
     position: absolute;
-    left: 10px;
-    top: 90px;
+    left: 20px;
+    top: 65px;
 
 }
 
@@ -473,20 +467,174 @@ left:300px;
 }
 
 .flower {
-    position: absolute;
-    z-index: 4;
-    left:214px;
-    top:340px;
+    left:298px;
+    top:345px;
     transform: rotate(15deg);
 }
 
 .festival-details {
   
-    
     left: 68px;
     top: 99px;
 
 }
 
+.background-shapes {
+    padding-top: 90px;
+}
+
+.line-up-section{
+    padding-top: 5px;
+}
+
+    
+.navyblue-blob{
+    background-image: url(../img/festival_blob-shape-navyblue\ -\ Copy.svg);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: contain;
+    height:560px;
+    transform: rotate(122deg);
+   
+
+}
+
+
+.lily-flower {
+    top:521px;
+    left:270px;
+    height:185px;
+    transform:rotate(-108deg);
+    
+}
+
+.content {
+    
+    padding-top: 100px;
+
+}
+
+.line-up-paragraph {
+    font-size: 28px;
+}
+
+.line-up-heading {
+    font-size: 16px;
+    padding-bottom: 30px;
+}
+
+.section-three {
+
+    
+    height: 100vh; 
+    
+   
+    
+}
+
+.flower-shape {
+    
+     background-size: 111px;
+     height: 111px;
+     width: 111px;
+     left:890px;
+     top:354px;
+     transform: rotate(35deg);
+    
+     
+}
+
+.small-pink-shape {
+    
+     background-size: 160px;
+     height: 160px;
+     width: 160px;
+     top: 103px;
+     left: 490px;
+     transform:rotate(150deg);
+}
+
+.ticket-section {
+   
+    height: 500px;
+    
+}
+
+.festival-ticket-sales {
+    
+    
+    padding-top:52px;
+
+    
+}
+
+.dew-festival-heading {
+    font-size: 18px;
+    padding-bottom: 15px;
+
+}
+
+.tickets-on-sale {
+    font-size: 45px;
+}
+
+.ticket-paragraph {
+
+    font-size: 14px;
+
+}
+
+.about {
+    background-color:#1B7B57;
+    padding-top:65px;
+    padding-bottom: 425px;
+    z-index: -1;
+    
+}
+
+
+
+.h3-headings {
+    font-size: 14px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+
+.festival-blob-three {
+    background-size: 55px;
+    height: 55px;
+    width: 55px;
+    top:1px;
+    left:3px;
+    
+}
+
+.flower-three {
+    background-size: 150px;
+    height: 150px;
+    width: 150px;
+    left: 605px;
+    top: 314px; 
+}
+
+
+
+.first-about-paragraph{
+    font-size: 30px;
+}
+
+.experience-box {
+    display: inline;
+    float: left;
+    max-width: 70%;
+    padding-top: 20px;
+}
+
+.location-box {
+    display:inline;
+    float: right;
+    padding-top:20px;
+
+}
 
 }
