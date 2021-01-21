@@ -807,7 +807,7 @@ color: #0e062c;
 }
 
 .side-bars {
-    display: inherit;
+    display: block;
     color:#190E40;
 }
 
@@ -816,15 +816,33 @@ color: #0e062c;
     position: fixed;
     top: 60px;
     left:30px;
-    width: 100px;
+    width: 90px;
     font-size: 15px;
     z-index: 5;
     
 
 }
-.social-bar{
-  color:#190E40; 
+
+
+li{
+   
+    width: 100%;
 }
+
+.social-bar{
+    color:#190E40; 
+    position: fixed;
+    top: 150px;
+    left:0;
+    width: 200px;
+    font-size: 22px;
+    z-index: 5;
+    vertical-align: baseline;
+    
+}
+
+
+
 .side-bar-line{
     color:#190E40;
     position: fixed;
