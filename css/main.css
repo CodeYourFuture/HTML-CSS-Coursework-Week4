@@ -2,148 +2,154 @@
 
 /* Dont' forget to link this file to your HTML in the <head> */
 
-body{
- 
-    font-family: Arial,Helvetica,sans-serif;
-   
-
-    
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
 .btn-primary {
-    color: #2F2F2E;
-    background-color: rgba(207, 244, 236, 1);
-    border: 3px solid rgba(207, 244, 236, 1);
-    border-radius: 0%;
-    border-color:  rgba(207, 244, 236, 1);
-
- 
+  color: #2f2f2e;
+  background-color: rgba(207, 244, 236, 1);
+  border: 3px solid rgba(207, 244, 236, 1);
+  border-radius: 0%;
+  border-color: rgba(207, 244, 236, 1);
 }
 
-.fixed-top{
-    background-color: white;
+.fixed-top {
+  background-color: white;
 }
 
-.navbar-brand{
-    font-style: italic;
-    color: #2F2F2E;
-    line-height: 1.4em;
-    font-family: didot-w01-italic, serif;
-    
+.navbar-brand {
+  font-style: italic;
+  color: #2f2f2e;
+  line-height: 1.4em;
+  font-family: didot-w01-italic, serif;
 }
-.ground{
-    background-color: rgba(207, 244, 236, 1); 
-    align-items: center;
-}
-
-.online{
-    text-align: center;
-    align-items: center;
-   
-  
-}
-.online h1{
-    
-    font-size: 34px
-  
+.ground {
+  background-color: rgba(207, 244, 236, 1);
+  align-items: center;
 }
 
-.about{
-    text-align: center;
-  
+.online {
+  text-align: center;
+  align-items: center;
 }
-.therapy{
-    text-align: center;
-    font-family: libre baskerville,serif;
-    min-height: 500px;;
-  
+.online h1 {
+  font-size: 34px;
 }
 
-.therapy h4{
-    font-size: 49px;
+.about {
+  text-align: center;
+}
+.therapy {
+  text-align: center;
+  font-family: libre baskerville, serif;
+  min-height: 500px;
 }
 
-.therapy p{
-    font-size: 14px;
-  
+.therapy h4 {
+  font-size: 49px;
 }
 
- .therapy a {
-   
-    text-decoration: none;
-    color: black;
+.therapy p {
+  font-size: 14px;
 }
 
-.individual{
-    background-color:rgb(226,246,205);
-   
+.therapy a {
+  text-decoration: none;
+  color: black;
 }
 
-.group{
-    background-color:rgb(234,234,232);
-   
-}
-.couples{
-    background-color:rgb(207,244,236);
-    
+.individual {
+  background-color: rgb(226, 246, 205);
 }
 
-.articles{
-     text-align: center;
-    
+.group {
+  background-color: rgb(234, 234, 232);
+}
+.couples {
+  background-color: rgb(207, 244, 236);
 }
 
-
-.articles p{
-    font-family:serif;
-    font-style: italic;
-    font-size: 22px;
+.articles {
+  text-align: center;
 }
 
-.articles a {
- 
-    text-decoration: none;
-    color: black;
-}
-.under{
-    background-color:light;}
-
-.icon-box {
-    display: flex;
-    justify-content: space-between;
-    
-}
-.navbar-brand{
-    justify-content: center;
-    align-self:flex-end;
-    
-}
-.maria a {
-    color: black;
-
-}
-
-
-/* Contact Page CSS */
-.contact-back{
-    background-color: rgb(226,246,205);
-    justify-content: center;
-    text-align: center;
-
-}
-.send-join{
-    background-color: rgba(207, 244, 236, 1); 
-
-}
-.social-icon{
-    background-color: rgb(226,246,205);
-    
-}
-/* Services Page CSS */
-
-.online p{
-  font-family:serif;
+.articles p {
+  font-family: serif;
   font-style: italic;
   font-size: 22px;
 }
 
+.articles a {
+  text-decoration: none;
+  color: black;
+}
+.under {
+  background-color: light;
+}
 
+.icon-box {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-brand {
+  justify-content: center;
+  align-self: flex-end;
+}
+.maria a {
+  color: black;
+}
+
+/* Contact Page CSS */
+.contact-back {
+  background-color: rgb(226, 246, 205);
+  justify-content: center;
+  text-align: center;
+}
+.send-join {
+  background-color: rgba(207, 244, 236, 1);
+}
+.social-icon {
+  background-color: rgb(226, 246, 205);
+}
+/* Services Page CSS */
+
+.online p {
+  font-family: serif;
+  font-style: italic;
+  font-size: 22px;
+}
+
+.services h4 {
+  font-size: 49px;
+}
+
+.services p {
+  font-size: 16px;
+  text-align: center;
+}
+
+.services a {
+  text-decoration: none;
+  color: black;
+}
+
+.first {
+  background-color: rgb(226, 246, 205);
+  min-height: 457px;
+  text-align: center;
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* line-height: 1.7em; */
+}
+
+.second {
+  background-color: rgb(234, 234, 232);
+  min-height: 457px;
+  text-align: center;
+}
+
+.third {
+  background-color: rgb(207, 244, 236);
+  min-height: 457px;
+  text-align: center;
+}
