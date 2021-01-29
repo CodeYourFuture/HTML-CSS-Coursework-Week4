@@ -1,0 +1,184 @@
+:root {
+  --headings: "Libre Baskerville", serif;
+  --text: "Quicksand", sans-serif;
+  --text-color: #2f2f2e;
+  --lime-green: #e2f6cd;
+  --light-grey: #f2f2f1;
+  --light-mint: #cff4ec;
+  --medium-mint: #94d6c8;
+  --dark-green: #4d7369;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+hr {
+  color: var(--text-color);
+  width: 10%;
+}
+
+.cta {
+  position: relative;
+  background-color: var(--light-mint);
+  color: var(--text-color);
+  font-family: var(--text);
+  border: transparent;
+  border-radius: 0;
+  top: 2rem;
+  left: 1rem;
+  width: 70vw;
+}
+
+.cta:hover {
+  background-color: var(--light-mint);
+  color: var(--text-color);
+  font-family: var(--text);
+  border: transparent;
+}
+
+.hamburger {
+  position: absolute;
+  cursor: pointer;
+  font-size: 2rem;
+  top: 2rem;
+  right: 1rem;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  background-color: var(--light-grey);
+}
+
+.overlay-content {
+  position: relative;
+  top: 6rem;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay a {
+  text-decoration: none;
+  font-family: var(--text);
+  color: var(--text-color);
+  font-size: 1.4rem;
+  transition: 0.3s;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  right: 1rem;
+  font-size: 4rem;
+}
+
+.title {
+  font-family: var(--headings);
+  color: var(--text-color);
+  text-align: center;
+  font-style: italic;
+  font-size: 1.3rem;
+}
+
+.margin {
+  margin-top: 10vh;
+}
+
+.aloe-plant {
+  height: 40vh;
+  width: 100%;
+}
+
+.intro {
+  height: 60vh;
+  background-color: var(--light-mint);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.heading {
+  font-family: var(--headings);
+  color: var(--text-color);
+  font-weight: bold;
+  text-align: center;
+  font-size: 2rem;
+}
+
+p {
+  font-family: var(--text);
+  color: var(--text);
+  text-align: center;
+  font-size: 1.1rem;
+  padding: 0 0.5rem;
+  margin-bottom: 0%;
+}
+
+.down-arrow {
+  margin-top: 3rem;
+}
+
+.about {
+  background-color: var(--light-grey);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+h1.heading {
+  font-size: 3rem;
+  padding: 0.5rem;
+}
+
+h4.title {
+  padding-top: 3.5rem;
+}
+
+.arrow {
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.right-arrow {
+  margin-top: 0%;
+}
+
+.doctor-pic {
+  width: 90vw;
+  margin-top: -30vh;
+  margin-left: 5vw;
+  margin-bottom: 15vh;
+}
+
+.individual-therapy {
+  background-color: var(--lime-green);
+}
+
+.group-therapy {
+  background-color: var(--light-grey);
+}
+
+.couples-therapy {
+  background-color: var(--light-mint);
+}

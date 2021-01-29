@@ -1,0 +1,73 @@
+:root {
+  --headings: "Libre Baskerville", serif;
+  --text: "Quicksand", sans-serif;
+  --text-color: #2f2f2e;
+  --lime-green: #e2f6cd;
+  --light-grey: #f2f2f1;
+  --light-mint: #cff4ec;
+  --medium-mint: #94d6c8;
+  --dark-green: #4d7369;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+}
+
+.cta {
+  position: relative;
+  background-color: var(--light-mint);
+  color: var(--text-color);
+  font-family: var(--text);
+  border: transparent;
+  border-radius: 0;
+  top: 2rem;
+  left: 1rem;
+  width: 70vw;
+  padding: 0%;
+}
+
+.hamburger {
+  right: 20px;
+  top: 10px;
+  position: fixed;
+  font-size: 30px;
+  cursor: pointer;
+  background-color: white;
+  padding: 25px;
+  display: inline;
+}
+
+.hamburger a {
+  color: black;
+  text-decoration: none;
+}
+
+.navbar {
+  text-align: center;
+  display: block;
+  padding: 0px;
+}
+.navbar-nav {
+  display: block;
+}
+
+.navbar-nav .fa {
+  padding-right: 20px;
+  padding-bottom: 50px;
+}
+a {
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+}
+.open-sidenav {
+  height: 0%;
+  width: 0%;
+  position: fixed;
+  overflow-x: hidden;
+  transition: 0.5s;
+  top: 0px;
+  background-color: #353b48;
+}
