@@ -225,3 +225,21 @@ hr {
 .card-header {
   padding: 1.6rem 0;
 }
+
+.articles-container {
+  background-color: var(--medium-mint);
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+}
+
+.social-media-icon {
+  height: 2rem;
+  margin: 1rem;
+}
+
+footer {
+  margin: 3rem 0;
+}
