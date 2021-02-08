@@ -207,14 +207,21 @@ button a {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
 }
 
 .card-footer-elem img {
   font-size: 0.7rem;
 }
 
-.slide-card {
+.card-main {
   border: 1px solid darkgray;
+  background-color: whitesmoke;
+  height: 100%;
+}
+
+.article-heading {
+  margin: 2rem 0;
 }
 
 hr {
@@ -222,8 +229,16 @@ hr {
   margin: auto;
 }
 
+.card-carousel {
+  height: 60vh;
+}
+
 .card-header {
   padding: 1.6rem 0;
+}
+
+.more-articles {
+  margin: 2rem 0;
 }
 
 .articles-container {
@@ -242,4 +257,40 @@ hr {
 
 footer {
   margin: 3rem 0;
+  height: 25vh;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Book an appointment page  CSS*/
+
+.all-therapy {
+  background-color: var(--light-grey);
+}
+
+.types-of-therapy {
+  height: 40vh;
+  width: 90vw;
+  margin: 2rem auto;
+  border: 1px solid darkgrey;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.therapy-p {
+  font-size: 1.1rem;
+}
+
+.therapy-h {
+  font-size: 1.6rem;
+}
+
+.headings-therapy {
+  margin: 1rem 0;
 }
