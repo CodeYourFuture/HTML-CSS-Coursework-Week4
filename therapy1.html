@@ -15,18 +15,19 @@
 </head>
 <body>
     <header class="container">
-        <div class="row justify-content-center">
-            <button type="button" class="btn btn-primary cta">Book an Appointment</button>
-            <span class="hamburger col-2 text-right" onclick="openNav()">
+        <div class="row navigation">
+            <button type="button" class="btn btn-primary col-7 offset-1 cta">
+                <a href="#">Book an Appointment</a>
+            </button>
+            <div class="hamburger col-3 offset-1 text-right open-close" onclick="openNav()">
                 <a href="#">&#9776;</a>
-            </span>
+            </div>
             <nav class="navbar navbar-expand-sm bg-custom open-sidenav" id="open">
                 <ul class="navbar-nav">
-                    <li class="nav-item text-right">
-                        <a href="#" class="nav-link text-right" onclick="closeNav()">&times;</a>
+                    <li class="text-right close-nav">
+                        <a href="#" class="close-div nav-link text-right open-close" onclick="closeNav()">&times;</a>
                     </li>
-                    <div class="divider"></div>
-                    <li class="nav-item active">
+                    <li class="nav-item active overlay">
                         <a href="#" class="nav-link">Home</a>
                     </li>
                     <div class="divider"></div>
@@ -47,17 +48,126 @@
                     </li>
                 </ul>
             </nav>
+            <div>
+                <h3 class="headings">Maria Hope, Ph.D. - Psychologist</h1>
+            </div>
+            <div class="first-image">
+            </div>
+            <div class="header-section online">
+                <h1 class="title">Online Therapy for Emotional Health</h1>
+                <p class="header-p">I am a description, click here to edit</p>
+                <div class="arrow">
+                    <a href="#">&#8595;</a>
+                </div>
+            </div>
+            <div class="header-section about">
+                <h3 class="headings">About</h3>
+                <h1 class="title">Maria Hope</h1>
+                <p class="header-p">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text”
+                    or double click me to
+                    add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page.
+                    I’m a
+                    great place for you to tell a story and let your users know a little more about you.</p>
+                <div class="arrow">
+                    <a href="#">&#8594;</a>
+                </div>
+            </div>
         </div>
     </header>
+    <body>
+        <section class="container">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div>
+                        <img src="https://static.wixstatic.com/media/9c608a_2a78cf5937414d0e9a597504d68daafc~mv2_d_6046_4035_s_4_2.jpg/v1/crop/x_776,y_0,w_3647,h_4035/fill/w_365,h_404,al_c,q_80,usm_0.66_1.00_0.01/9c608a_2a78cf5937414d0e9a597504d68daafc~mv2_d_6046_4035_s_4_2.webp" alt="Maria-Hope" class="maria">
+                    </div>
+                </div>
+                <div class="therapy individual">
+                    <h3 class="headings">01.</h3>
+                    <h1 class="title">Individual Therapy</h1>
+                    <p class="header-p">
+                        I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to
+                        add your own content and make changes to the font.
+                    </p>
+                </div>
+                <div class="therapy group">
+                    <h3 class="headings">02.</h3>
+                    <h1 class="title">Group Therapy</h1>
+                    <p class="header-p">
+                        I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to
+                        add your own content and make changes to the font.
+                    </p>
+                </div>
+                <div class="therapy couples">
+                    <h3 class="headings">03.</h3>
+                    <h1 class="title">Couples Therapy</h1>
+                    <p class="header-p">
+                        I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to
+                        add your own content and make changes to the font.
+                    </p>
+                </div>
+                <button type="button" class="btn btn-primary col-8 offset-2 cta view">
+                    <a href="#">View More Services</a>
+                </button>
+                <div class="arrow">
+                    <a href="#">&#8594;</a>
+                </div>
+                <div class="aricles container">
+                    <h3 class="headings">Articles about psychology</h3>
+                    <div class="container">
+                        <div class="row">
+                            <div id="carouselExampleIndicators" class="carousel slide therapy-slides" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active slide-card">
+                                        <img class="d-block w-100 therapy-pics" src="./img/aloe-plant.jpg" alt="understanding">
+                                        <div class="card-main">
+                                            <h3 class="headings card-header">Understanding...</h3>
+                                            <hr>
+                                            <div class="card-footer">
+                                                <div class="card-footer-elem">
+                                                    <img src="./img/eye.svg" alt="views">
+                                                    <p>651</p>
+                                                </div>
+                                                <div class="card-footer-elem">
+                                                    <p>W..</p>
+                                                </div>
+                                                <div class="card-footer-elem">
+                                                    <p>25</p>
+                                                    <img src="./img/heart.svg" alt="likes">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="./img/green-plant.jpg" alt="why-is-ok">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="./img/waves.jpg" alt="10ways">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <footer>
 
-
-
-
-
-
-
-
-
+            </footer>
+        </section>
+    </body>
     <script>
         function openNav() {
             document.getElementById('open').style.height = '100%';

@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+<svg
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:cc="http://creativecommons.org/ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    xmlns:ns1="http://sozi.baierouge.fr"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    id="svg2"
+    viewBox="0 0 512 512"
+    version="1.1"
+  >
+  <g
+      id="layer1"
+      transform="translate(0 -540.36)"
+    >
+    <g
+        id="g3797"
+        transform="translate(-1.4389 1.4389)"
+      >
+      <path
+          id="path2987"
+          d="m33.085 279.89s57.693-135.96 224.35-135.96c163.35-0.00001 224.35 135.96 224.35 135.96s-109.55 85.296-224.35 85.296c-112.95 0-224.35-85.296-224.35-85.296z"
+          transform="translate(0 540.36)"
+      />
+      <path
+          id="path2987-4"
+          d="m47.863 820.53s60.047-107.58 209.58-107.58c146.56-0.00001 209.58 107.58 209.58 107.58s-106.57 75.712-209.58 75.712c-101.34 0-209.58-75.712-209.58-75.712z"
+          fill="#fff"
+      />
+      <path
+          id="path3793"
+          d="m302.75 165.84c0 40.528-35.95 73.382-80.297 73.382s-80.297-32.854-80.297-73.382 35.95-73.382 80.297-73.382 80.297 32.854 80.297 73.382z"
+          fill-rule="evenodd"
+          transform="matrix(1.2803 0 0 1.4009 -27.362 568.16)"
+      />
+      <path
+          id="path3795"
+          d="m182.11 133.18c0 11.882-9.6326 21.515-21.515 21.515s-21.515-9.6326-21.515-21.515 9.6326-21.515 21.515-21.515 21.515 9.6326 21.515 21.515z"
+          fill-rule="evenodd"
+          transform="matrix(1.0714 0 0 1.0714 26.949 616.14)"
+          fill="#fff"
+      />
+    </g
+    >
+  </g
+  >
+  <metadata
+    >
+    <rdf:RDF
+      >
+      <cc:Work
+        >
+        <dc:format
+          >image/svg+xml</dc:format
+        >
+        <dc:type
+            rdf:resource="http://purl.org/dc/dcmitype/StillImage"
+        />
+        <cc:license
+            rdf:resource="http://creativecommons.org/licenses/publicdomain/"
+        />
+        <dc:publisher
+          >
+          <cc:Agent
+              rdf:about="http://openclipart.org/"
+            >
+            <dc:title
+              >Openclipart</dc:title
+            >
+          </cc:Agent
+          >
+        </dc:publisher
+        >
+        <dc:title
+          >Eye</dc:title
+        >
+        <dc:date
+          >2013-11-11T01:25:34</dc:date
+        >
+        <dc:description
+          >black-and-white stylized image of a human eye</dc:description
+        >
+        <dc:source
+          >https://openclipart.org/detail/188640/eye-by-sumitomohiko-188640</dc:source
+        >
+        <dc:creator
+          >
+          <cc:Agent
+            >
+            <dc:title
+              >SumiTomohiko</dc:title
+            >
+          </cc:Agent
+          >
+        </dc:creator
+        >
+        <dc:subject
+          >
+          <rdf:Bag
+            >
+            <rdf:li
+              >eye</rdf:li
+            >
+          </rdf:Bag
+          >
+        </dc:subject
+        >
+      </cc:Work
+      >
+      <cc:License
+          rdf:about="http://creativecommons.org/licenses/publicdomain/"
+        >
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Reproduction"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Distribution"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#DerivativeWorks"
+        />
+      </cc:License
+      >
+    </rdf:RDF
+    >
+  </metadata
+  >
+</svg
+>

@@ -16,32 +16,43 @@
 }
 
 .cta {
-  position: relative;
   background-color: var(--light-mint);
   color: var(--text-color);
   font-family: var(--text);
   border: transparent;
   border-radius: 0;
-  top: 2rem;
-  left: 1rem;
-  width: 70vw;
-  padding: 0%;
+  display: block;
+}
+
+.cta:hover {
+  background-color: var(--light-mint);
+  color: var(--text-color);
+  font-family: var(--text);
+  border: transparent;
+  border-radius: 0;
+}
+
+.cta:active {
+  background-color: var(--light-mint);
+  color: var(--text-color);
+  font-family: var(--text);
+  border: transparent;
+  border-radius: 0;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hamburger {
-  right: 20px;
-  top: 10px;
-  position: fixed;
+  position: relative;
   font-size: 30px;
   cursor: pointer;
-  background-color: white;
+  background-color: transparent;
   padding: 25px;
-  display: inline;
-}
-
-.hamburger a {
-  color: black;
-  text-decoration: none;
+  display: block;
 }
 
 .navbar {
@@ -49,25 +60,168 @@
   display: block;
   padding: 0px;
 }
+
 .navbar-nav {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.navbar-nav .fa {
-  padding-right: 20px;
-  padding-bottom: 50px;
-}
 a {
-  font-size: 40px;
-  color: #fff;
+  color: var(--text-color);
   text-align: center;
+  text-decoration: none;
 }
+
 .open-sidenav {
   height: 0%;
   width: 0%;
   position: fixed;
   overflow-x: hidden;
-  transition: 0.5s;
+  transition: 0.2s;
   top: 0px;
-  background-color: #353b48;
+  background-color: var(--light-grey);
+}
+
+.overlay {
+  margin-top: 20vh;
+}
+
+.nav-link {
+  font-size: 1.3rem;
+}
+
+.close-div {
+  position: absolute;
+  font-size: 3rem;
+  right: 2rem;
+  top: 1rem;
+}
+
+.divider {
+  background: var(--text-color);
+  height: 0.1rem;
+  width: 10vw;
+  margin: 1rem;
+}
+
+.first-image {
+  background-image: url(https://static.wixstatic.com/media/9c608a_350f9ef8ecf44916abe7927699962ae3~mv2_d_3000_2000_s_2.jpeg/v1/fill/w_417,h_317,al_c,q_80,usm_0.66_1.00_0.01/9c608a_350f9ef8ecf44916abe7927699962ae3~mv2_d_3000_2000_s_2.webp);
+  background-size: cover;
+  background-position: center center;
+  height: 55vh;
+  width: 100vw;
+  margin-top: 1rem;
+}
+
+.headings {
+  font-family: var(--headings);
+  font-style: italic;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.title {
+  font-family: var(--headings);
+  font-weight: 600;
+  text-align: center;
+}
+
+.arrow {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.header-p {
+  text-align: center;
+}
+
+.online {
+  height: 55vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--light-mint);
+}
+
+.title {
+  font-size: 2.3rem;
+  padding: 1rem;
+}
+
+.about {
+  height: 90vh;
+  background: var(--light-grey);
+  padding: 1rem;
+}
+
+.maria {
+  width: 90vw;
+  margin-top: -30vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20vh;
+}
+
+.therapy {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.individual {
+  background: var(--lime-green);
+}
+
+.group {
+  background: var(--light-grey);
+}
+
+.couples {
+  background: var(--light-mint);
+}
+
+.view {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+button a {
+  font-size: 1.2rem;
+}
+
+.therapy-pics {
+  width: 100%;
+  height: 25vh;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 1.7rem 0;
+}
+
+.card-footer-elem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-footer-elem img {
+  font-size: 0.7rem;
+}
+
+.slide-card {
+  border: 1px solid darkgray;
+}
+
+hr {
+  width: 80%;
+  margin: auto;
+}
+
+.card-header {
+  padding: 1.6rem 0;
 }
