@@ -40,6 +40,14 @@
   border-radius: 0;
 }
 
+cta:visited {
+  background-color: var(--light-mint);
+  color: var(--text-color);
+  font-family: var(--text);
+  border: transparent;
+  border-radius: 0;
+}
+
 .navigation {
   display: flex;
   justify-content: center;
@@ -484,4 +492,48 @@ p {
   display: flex;
   justify-content: start;
   align-items: center;
+}
+
+/* Contact page */
+
+.contact-page {
+  background-color: var(--lime-green);
+}
+
+.contact-p {
+  font-size: 1.2rem;
+}
+
+input {
+  margin: 1rem 0;
+  padding: 0.5rem;
+}
+
+textarea {
+  margin: 1rem 0;
+  padding: 0.5rem;
+}
+
+.contact-btn {
+  margin: 1rem 0 2rem 0;
+  height: 3rem;
+  font-weight: 700;
+  font-family: var(--text);
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#map {
+  height: 50vh;
+  width: 100%;
+}
+
+.contact-head {
+  padding: 4rem 0 1rem 0;
+}
+
+.contact-title {
+  padding-bottom: 2rem;
 }
