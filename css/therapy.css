@@ -106,9 +106,11 @@ a {
   margin: 1rem;
 }
 
-.maria-home {
-  height: 55vh;
-  margin-top: 1rem;
+.plant-aloe {
+  background-image: url(https://static.wixstatic.com/media/84770f_6ae94823ccef48a5bf0ac4650fe562fa~mv2_d_3000_2000_s_2.jpeg/v1/fit/w_418,h_279,al_c,q_80/file.jpeg);
+  background-size: cover;
+  background-position: center center;
+  height: 40vh;
 }
 
 .headings {
@@ -401,4 +403,85 @@ p {
 .online-p {
   letter-spacing: 0.1rem;
   padding-bottom: 3rem;
+}
+
+/* blog webpage */
+
+.blog-articles {
+  margin: 0;
+  padding: 0;
+}
+
+.blog-img {
+  background-size: cover;
+  background-position: center center;
+  height: 40vh;
+}
+
+.first-img {
+  background-image: url(https://static.wixstatic.com/media/84770f_6ae94823ccef48a5bf0ac4650fe562fa~mv2_d_3000_2000_s_2.jpeg/v1/fit/w_418,h_279,al_c,q_80/file.jpeg);
+}
+
+.second-img {
+  background-image: url(https://static.wixstatic.com/media/03f22a3cb4d543b9b7ffcaae2f53a15f.jpg/v1/fit/w_418,h_279,al_c,q_80/file.jpg);
+}
+
+.third-img {
+  background-image: url(https://static.wixstatic.com/media/40c2397700984377a8d5a841d6b818ef.jpg/v1/fit/w_418,h_262,al_c,q_80/file.jpg);
+}
+
+.fourth-img {
+  background-image: url(https://static.wixstatic.com/media/7a9d48d5a156481da91fa3f74432133d.jpg/v1/fit/w_418,h_264,al_c,q_80/file.jpg);
+}
+
+.fifth-img {
+  background-image: url(https://static.wixstatic.com/media/4a0f937437b84a25a12e219fd8a576c7.jpg/v1/fit/w_418,h_279,al_c,q_80/file.jpg);
+}
+
+.sixth-img {
+  background-image: url(https://static.wixstatic.com/media/2edcc15bd8774c919bee28b4f4053f2e.jpg/v1/fit/w_418,h_279,al_c,q_80/file.jpg);
+}
+
+.user-pic {
+  border-radius: 50%;
+  height: 2.4rem;
+  background-color: darkgray;
+}
+
+.crown {
+  height: 0.8rem;
+}
+
+.dialog-icon {
+  height: 1rem;
+}
+
+.heart-icon {
+  height: 1rem;
+}
+
+.interact-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.hor-line {
+  margin-bottom: 2rem;
+}
+
+.article-description {
+  font-size: 1.2rem;
+}
+
+.info-about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-side {
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
