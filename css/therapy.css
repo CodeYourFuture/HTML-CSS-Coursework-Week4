@@ -248,6 +248,7 @@ hr {
 .social-media {
   display: flex;
   justify-content: center;
+  padding: 3rem 0 1rem 0;
 }
 
 .social-media-icon {
@@ -256,14 +257,14 @@ hr {
 }
 
 footer {
-  margin: 3rem 0;
-  height: 25vh;
-}
-
-footer {
+  margin-top: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.footer-p {
+  padding: 0 0 2.5rem 0;
 }
 
 /* Book an appointment page  CSS*/
@@ -293,4 +294,41 @@ footer {
 
 .headings-therapy {
   margin: 1rem 0;
+}
+
+/* Couple therapy */
+
+.couple-heading {
+  padding: 5rem 0 3rem 0;
+  font-size: 2rem;
+}
+
+.book-now {
+  background-color: var(--light-grey);
+  margin-bottom: 2rem;
+}
+
+.therapy-title {
+  font-size: 1.8rem;
+  font-weight: 100;
+  text-align: left;
+}
+
+.therapy-p {
+  text-align: center;
+  font-family: var(--text);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.therapy-info {
+  font-family: var(--text);
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding-bottom: 1.5rem;
+}
+
+.footer-divider {
+  border: 1px solid var(--dark-green);
 }
