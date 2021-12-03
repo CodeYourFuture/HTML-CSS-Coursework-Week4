@@ -14,7 +14,7 @@ Here are 3 designs to choose from, along with suggested fonts and colours to use
 ### **DESIGN 1: Prickles & Co**
 **An e-commerce site selling plants**
 
-![Prickles & Co homepage](./img/Cactus%20shop.png)
+![Prickles & Co homepage](./designs/Cactus%20shop.png)
 
 Live demo here: https://www.wix.com/website-template/view/html/1995
 ### Fonts
@@ -37,7 +37,7 @@ Transparent White: rgba(0,0,0,0.75)
 ### **DESIGN 2: Resume**
 **A website to showcase skills and projects**
 
-![Business resume homepage](./img/Business%20portfolio.png)
+![Business resume homepage](./designs/Business%20portfolio.png)
 
 Live demo here: https://www.wix.com/website-template/view/html/2622  
 
@@ -59,7 +59,7 @@ White: #FFF
 ### **DESIGN 3: Juice Bar**
 **An e-commerce site for fruit juices**
 
-![Juice Bar homepage](./img/Juice%20bar.png)
+![Juice Bar homepage](./designs/Juice%20bar.png)
 
 Live demo here: https://www.wix.com/website-template/view/html/2962  
 ### Fonts
