@@ -1,84 +1,87 @@
-# Make a website using Bootstrap's 12-column grid system
+# Make a multi-page responsive website using CSS Grid
 
-Choose one of the designs below, and re-create the design to perfection, using Bootstrap.
+Choose one of the designs below, and re-create the design to perfection, using CSS Grid, and media queries to make the site fully responsive.
+## Requirements
 
-**Note:** Boostrap is already loaded into the `head` of index.html
-
-## Responsive grid reminder
-
-Follow Boostrap grid rules with care:
-- Apply the `container` class to each of your page sections (unless you have a background image or colour that you want to bleed to the edges of the page at all times, in which case you should nest the container inside your full-width section)
-- Wrap each set of elements inside a `row` class (this is your flex container!)
-- Apply a column class (`col-[__]`) to the elements you want to place on the grid.
-- If the column class doesn't specify a breakpoint (e.g. `col-md-6` uses the `md` breakpoint but `col-6` doesn't) then it will apply for all screen sizes (equivalent of `min-width: 0`).
-- Don't change the width, padding or margin of the items that have a `col-[__]` class on them. This would clash with the Boostrap CSS.
-
+1) Create a mobile-first, responsive website
+2) Use CSS Grid and flexbox for layouts and alignment
+3) Save fonts and colours in CSS variables
 
 ## Style guide
 
 Here are 3 designs to choose from, along with suggested fonts and colours to use for your chosen projects:
 
-### **DESIGN 1: Therapy**
-https://www.wix.com/website-template/view/html/2055
+### **DESIGN 1: Prickles & Co**
+**An e-commerce site selling plants**
+
+![Prickles & Co homepage](./designs/Cactus%20shop.png)
+
+Live demo here: https://www.wix.com/website-template/view/html/1995
 ### Fonts
-**Headings:** Libre Baskeville 400  
-https://fonts.google.com/specimen/Libre+Baskerville  
-**Subheadings:** Libre Baskeville Italic 400  
-https://fonts.google.com/specimen/Libre+Baskerville  
-**Body:** Quicksand Light 300  
-https://fonts.google.com/specimen/Quicksand  
+**Headings:** Fjalla One - Regular 400  
+https://fonts.google.com/specimen/Fjalla+One  
+**Subheadings:** Outfit - Extra-light 200  
+https://fonts.google.com/specimen/Outfit  
+**Body:** Outfit - Extra-light 200  
+https://fonts.google.com/specimen/Outfit  
 
 ### Colors
-Text colour: #2F2F2E  
-  
-Lime green: #E2F6CD  
-Light grey: #F2F2F1  
-Light mint: #CFF4EC  
-Medium mint: #94D6C8  
-Dark green: #4D7369  
+Red Brown: #A05941  
+Green Black: #133032  
+Light Grey: #EDEDEE  
+White: #FFF  
+Transparent White: rgba(0,0,0,0.75)
 
 =====================================
 
 ### **DESIGN 2: Resume**
-https://www.wix.com/website-template/view/html/2622  
+**A website to showcase skills and projects**
+
+![Business resume homepage](./designs/Business%20portfolio.png)
+
+Live demo here: https://www.wix.com/website-template/view/html/2622  
 
 ### Fonts
-**Headings:** Poppins Semi-bold 600  
+**Headings:** Poppins - Semi-bold 600  
 https://fonts.google.com/specimen/Poppins  
-**Body:** Quicksand Light 300  
+**Body:** Quicksand - Light 300  
 https://fonts.google.com/specimen/Quicksand  
 
 ### Colors
-Text colour: #000  
-  
 Dark beige: #E6DACD  
 Light beige: #F4ECE6  
 Royal blue: #0150FD  
+Black: #000  
 White: #FFF  
 
 =====================================
 
-### **DESIGN 3: Festival**
-https://www.wix.com/website-template/view/html/2332
+### **DESIGN 3: Juice Bar**
+**An e-commerce site for fruit juices**
+
+![Juice Bar homepage](./designs/Juice%20bar.png)
+
+Live demo here: https://www.wix.com/website-template/view/html/2962  
 ### Fonts
-**Headings:** Cinzel Regular 400  
-https://fonts.google.com/specimen/Cinzel  
-**Body:** Quicksand Light 300  
-https://fonts.google.com/specimen/Quicksand  
+**Headings and subheadings:** Questrial - Regular 400  
+https://fonts.google.com/specimen/Questrial  
+**Buttons:** Raleway - Regular 400  
+https://fonts.google.com/specimen/Raleway  
+**Body:** Roboto - Light 300  
+https://fonts.google.com/specimen/Roboto  
 
 ### Colors
-Text colour: #190E40  
-  
-Golden brown: #C78003  
-Light pink: #F9A988  
-Powder blue: #5362AC  
-Navy blue: #190F3F  
-Jade green: #1B7B57  
+Black: #000  
+White: #FFF  
+Lylac: #f5e8ff  
+Light Green: #E6FAC0  
+Medium Green: #5E7D1F  
+Dark Green: #394B2A  
 
 =====================================
 
 ## **Crediting**
 
 Very important: please credit the designer in your footer with the sentence 
-"This website was designed by Wix.com"
+"This website design was created by Wix.com, and is used here for strictly educational purposes."
 
