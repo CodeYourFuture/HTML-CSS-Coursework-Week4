@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Add a link to your custom CSS here -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="variables.css">
+    <link rel="stylesheet" href="main.css">
 
     <title>Responsive grid project</title>
 </head>
@@ -12,10 +16,139 @@
 <body>
 
     <!-- Add your markup here -->
+    <header>
+        <input type="text" placeholder="Search...">
+        <a href="#"><img src="./images/shopping-cart.svg" alt="shopping-bag"></a>
+        <h3>Prickles & Co.</h3>
+        <section id="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </section>
+        <p class="changing-text">We Deliver to Your Doorstep</p>
+    </header>
+    <main>
+        <section class="home-background">
+            <section class="underlined-text">
+                <p>ESTB</p>
+                <hr>
+            </section>
+            <img src="./images/logo.svg" alt="Company Logo">
+            <section class="underlined-text">
+                <p>2023</p>
+                <hr>
+            </section>
+            <h2>Prickles & Co</h2>
+            <h3>Bring nature indoors</h3>
+            <button>Shop Now</button>
+        </section>
+        <section class="products-links">
+            <h3>Cacti</h3>
+            <hr class="small-divider">
+            <form action="#">
+                <button>Shop Collection</button>
+            </form>
+        </section>
+        <section class="products-links">
+            <h3>Plants</h3>
+            <hr class="small-divider">
+            <form action="#">
+                <button>Shop Collection</button>
+            </form>
+        </section>
+        <section class="products-links">
+            <h3>Succulents</h3>
+            <hr class="small-divider">
+            <form action="#">
+                <button>Shop Collection</button>
+            </form>
+        </section>
+        <section>
+            <h4>About us</h4>
+            <hr class="small-divider">
+            <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great
+                place for you to tell a story and let your users know a little more about you.</p>
+            <p>This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide.
+            </p>
+        </section>
+        <section class="random-pictures">
+            <img src="./images/wheelbarrow.webp" alt="Wheelbarrow in greenhouse">
+            <img src="./images/leaf.webp" alt="Leaf in foreground">
+            <img src="./images/woman.webp" alt="Woman standing by plants">
+        </section>
+        <section>
+            <h1>Buy online now & get 10% off !</h1>
+            <form action="#">
+                <button>Shop Now</button>
+            </form>
+        </section>
+        <section class="form">
+            <form action="#">
+                <h4>For special requests & orders</h4>
+                <hr class="small-divider">
+                <fieldset>
+                    <label for="firstName">First Name *</label>
+                    <input type="text" name="first-name" id="first-name" class="input-field" required>
+                </fieldset>
+                <fieldset>
+                    <label for="last-name">Last Name *</label>
+                    <input type="text" name="last-name" id="last-name" class="input-field" required>
+                </fieldset>
+                <fieldset>
+                    <label for="email">Email *</label>
+                    <input type="text" name="email" id="email" class="input-field" required>
+                </fieldset>
+                <fieldset>
+                    <label for="phone">Phone</label>
+                    <input type="tel" name="phone" id="phone" class="input-field" required>
+                </fieldset>
+                <fieldset>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </fieldset>
+                <input type="submit" value="Send">
+            </form>
+            <img src="./images/last-plant.webp" alt="plants">
+        </section>
+        <section>
+            <h4>Our store</h4>
+            <p>Address: 500 Terry Francois Street San</p>
+            <p>Francisco, CA 94158</p>
+            <p>Phone: 123-456-7890</p>
+            <p>Email: info@mysite.com</p>
+            <h4>Opening hours</h4>
+            <p>Mon - Fri: 7am - 10pm</p>
+            <p>Saturday: 8am - 10pm</p>
+            <p>Sunday: 8am - 11pm</p>
+            <h4>Help</h4>
+            <a href="#">Shipping & Returns</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">FAQ</a>
+            <h4>Subscribe</h4>
+            <form action="#">
+                <fieldset>
+                    <label for="subscribe-email">Enter your email here *</label>
+                    <input type="email" name="subscribe-email" id="subscribe-email" class="input-field" required>
+                </fieldset>
+                <input type="submit" value="Subscribe Now">
+            </form>
+            <section class="icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </section>
+        </section>
+        <section class="map">
 
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 by Prickles & Co. Proudly created with
+            <a href="#"></a>Wix.com</p>
 
-    <!-- Please leave this in to credit the creators of this design -->
-    <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
+        <!-- Please leave this in to credit the creators of this design -->
+        <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
+    </footer>
 </body>
 
 </html>
