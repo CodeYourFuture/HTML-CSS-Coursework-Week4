@@ -1,3 +1,15 @@
 /* Add your CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
+
+:root {
+    --dBeige: #E6DACD;
+    --lBeige: #F4ECE6;
+    --rBlue: #0150FD;
+    --black: #000;
+    --white: #FFF;
+}
+
+/* font-family: 'Poppins', sans-serif;
+
+font-family: 'Quicksand', sans-serif; */
