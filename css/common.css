@@ -1,0 +1,14 @@
+:root {
+  /* Colours */
+  --red-brown: #a05941;
+  --green-black: #133032;
+  --light-grey: #ededee;
+  --white: #fff;
+  --transparent-white: rgba(0, 0, 0, 0.75);
+
+  /* Fonts */
+  --headings: font-family: 'Rochester', cursive;
+  --subheadings: font-family: 'Outfit', sans-serif;
+  --body: font-family: 'Outfit', sans-serif;
+;
+}
