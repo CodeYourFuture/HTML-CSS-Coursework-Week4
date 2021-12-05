@@ -1,0 +1,52 @@
+/* Header */
+
+
+header {
+    width: 100%;
+    color: #A05941;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 30% 40% 30%;
+    grid-template-areas: 
+    "search bag-icon"
+    "heading hamburger-icon"
+    "advert .";
+    
+    align-items:center;
+}
+
+.search {
+    grid-area: search;
+    align-self: center;
+    justify-self: left;
+}
+
+.bag-icon {
+    grid-area: bag-icon;
+    align-self: center;
+    justify-self: center;
+}
+
+.hamburger-icon {
+    grid-area: hamburger-icon;
+    align-self: center;
+    justify-self: center;
+   
+}
+
+.heading {
+    grid-area: heading;    
+}
+
+.advert {
+    grid-area: advert;
+}
+
+nav ul{
+    display: none;
+}
+
+.login-icon {
+    display: none;
+}
+

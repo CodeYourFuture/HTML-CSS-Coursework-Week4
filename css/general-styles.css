@@ -1,8 +1,40 @@
-html {    
+:root {
+    --red-brown: #A05941;
+}
+
+* {
+    outline: 1px solid red;
+}
+
+html, body {    
     width: 100%;
 }
 body {
     background-color: #EDEDEE;
-    
+    margin: 0 auto;
+    /* display: grid;     */
+    color: var(--red-brown);
    
 }
+main {
+    width: 100%;
+    margin: 0 auto;
+}
+img {
+    display: block;
+    max-width: 100%;    
+    height: auto;
+}
+
+input {
+    display: block;
+}
+
+/* @media screen and (max-width: 600px) {
+
+    header {
+        display: grid;
+        grid-template-columns: 80% 20%;
+    }
+    
+} */
