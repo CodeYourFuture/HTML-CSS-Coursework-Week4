@@ -8,4 +8,60 @@
     height: 80vh;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Section flex-container */
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-item {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.h3-btn {
+    width: 80%;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Section grid-container */
+
+.advert-container {
+    background: #fff;
+    text-align: center;
+    width: 100%;
+    /* margin: 0 auto; */   
+}
+
+.grid-container h3 {
+    text-transform: uppercase;
+}
+
+.paragraph {
+    padding: 20px;
+}
+
+.advert {
+    background-color: var(--dark-green);
+    color: #fff;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
