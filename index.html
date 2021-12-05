@@ -1,21 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Add a link to your custom CSS here -->
 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Add a link to your custom CSS here -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="./css/hamburgermenu.css" />
     <title>Responsive grid project</title>
+
+    <script src="./JS/hamburger.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 
 <body>
+    <header>
+        <input type="text" placeholder="Search..." />
+        <img src="./Images/bagCart1.svg" />
+        <h1>PRICKLES & CO.</h1>
+        <div class="topnav">
+            <a href="#home" class="active"></a>
+            <div id="hamburger">
+                <a href=".">Home</a>
+                <a href="#img">Photo</a>
+                <a href="#main">Main</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
 
-    <!-- Add your markup here -->
+        <p>We Deliver to Your Dorstep Call Us Now 123-456-7890</p>
+    </header>
+    <main>
+        <p class="est">E S T B</p>
+        <img src="./Images/logo.svg" />
+        <p class="year">2 0 2 3</p>
+        <h2>PRICKLES & CO</h2>
+        <h3>BRING NATURE INDOORS</h3>
+        <button>Shop Now</button>
+    </main>
+    <section>
+        <div>
+            <p>CA<u>C</u>TI
+
+            </p>
+            <button>Shop Collection</button>
+
+            <img
+                src="https://static.wixstatic.com/media/697bc8_8bf7131cfd3547e9bd54d9f4f57f3e74~mv2_d_1920_1920_s_2.jpg/v1/fill/w_573,h_565,al_c,q_80,usm_0.66_1.00_0.01/697bc8_8bf7131cfd3547e9bd54d9f4f57f3e74~mv2_d_1920_1920_s_2.webp">
+        </div>
+        <div>
+            <p>PL<u>AN</u>TS</p>
+            <button>Shop Collection</button>
+            <img
+                src="https://static.wixstatic.com/media/697bc8_8267510d9e19448297fc161a522881f1~mv2_d_1920_1920_s_2.jpg/v1/fill/w_573,h_565,al_c,q_80,usm_0.66_1.00_0.01/697bc8_8267510d9e19448297fc161a522881f1~mv2_d_1920_1920_s_2.webp">
+        </div>
+        <div>
+            <p>SUCC<u>UL</u>ENTS</p>
+            <button>Shop Collection</button>
+            <img
+                src="https://static.wixstatic.com/media/697bc8_b067d0a4b500479b8a3930782976779e~mv2_d_1920_1920_s_2.jpg/v1/fill/w_320,h_400,al_c,q_80,usm_0.66_1.00_0.01/697bc8_b067d0a4b500479b8a3930782976779e~mv2_d_1920_1920_s_2.webp">
+        </div>
 
 
-    <!-- Please leave this in to credit the creators of this design -->
-    <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
+
+
+
+
+    </section>
+    <div class="container-aboutus">
+        <div class="aboutus">
+
+            <h2>ABOUT US</h2>
+            <div>
+                I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or
+                double
+                click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere
+                you
+                like on your page. I’m a great place for you to tell a story and let your users know a little more about
+                you.
+            </div>
+            <div>
+
+                This is a great space to write long text about your company and your services. You can use this space to
+                go
+                into a little more detail about your company. Talk about your team and what services you provide.
+            </div>
+        </div>
+        <img class="img1"
+            src="https://static.wixstatic.com/media/697bc8_a83b11aa652d4394aadc4aca1f80d567~mv2_d_2000_1391_s_2.jpg/v1/fill/w_320,h_223,al_c,q_80,usm_0.66_1.00_0.01/697bc8_a83b11aa652d4394aadc4aca1f80d567~mv2_d_2000_1391_s_2.webp">
+        <img class="img2"
+            src="https://static.wixstatic.com/media/697bc8_84ed4273c730421d954cfe88af4d7c1c~mv2_d_2000_1333_s_2.jpg/v1/fill/w_320,h_223,al_c,q_80,usm_0.66_1.00_0.01/697bc8_84ed4273c730421d954cfe88af4d7c1c~mv2_d_2000_1333_s_2.webp">
+        <img class="img3"
+            src="https://static.wixstatic.com/media/697bc8_3aa8eb7ac760486bb63b30f98dc220c8~mv2_d_2000_1333_s_2.jpg/v1/fill/w_320,h_223,al_c,q_80,usm_0.66_1.00_0.01/697bc8_3aa8eb7ac760486bb63b30f98dc220c8~mv2_d_2000_1333_s_2.webp">
+        <div class="buyNow">
+            BUY ONLINE NOW & GET 10% OFF !
+            <button>Shop Now</button>
+        </div>
+
+
+    </div>
+    <form action="">
+        <fieldset>
+            <h2>FOR SPECIAL REQUESTS & ORDERS</h2>
+            <div>
+                <label for="name">First Name *</label>
+                <input type="text" id="name" minlength="2" name="name" required>
+            </div>
+            <div>
+                <label for="lastname">Last Name *</label>
+                <input type="text" id="lastname" name="lastname" required>
+            </div>
+            <div>
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div>
+                <label for="message">Message</label>
+                <textarea class="messageinput" type="texf" id="message" name="message" required></textarea>
+            </div>
+
+            <div>
+                <input class="sub" type="submit">
+            </div>
+        </fieldset>
+    </form> 
+    <footer class="footer">
+        <img src="https://static.wixstatic.com/media/697bc8_4ea3867c24544ad6b0d299b5d93a7fd5~mv2_d_3000_2150_s_2.jpg/v1/fill/w_320,h_194,al_t,q_80,usm_0.66_1.00_0.01/697bc8_4ea3867c24544ad6b0d299b5d93a7fd5~mv2_d_3000_2150_s_2.webp">
+        <div class="ourstore">
+            <h2>OUR STORE</h2>
+
+            Address: 500 Terry Francois Street San Francisco, CA 94158
+            Phone: 123-456-7890
+
+            Email: info@mysite.com</p>
+        </div>
+        <div class="openinghours">
+            <h2>OPENING HOURS</h2>
+
+            <p>Mon - Fri: 7am - 10pm</p>
+            <p>​​Saturday: 8am - 10pm</p>
+            <p>​Sunday: 8am - 11pm</p>
+
+
+
+
+        </div>
+        <div class="help">HELP
+
+            <a href="#">Shipping & Returns</a>
+
+            <a href="#">Privacy Policy</a>
+
+            <a href="#">FAQ</a>
+        </div>
+        <div class="subscribe">
+            <h2>SUBSCRIBE</h2>
+            Enter your email here *
+            <input type="text">
+            <input type="button" value="Subscribe Now">
+        </div>
+        <div class="share-logos">
+            <img alt="Facebook" style="width: 25px; height: 25px; object-fit: cover;"
+                src="https://static.wixstatic.com/media/23fd2a2be53141ed810f4d3dcdcd01fa.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01/23fd2a2be53141ed810f4d3dcdcd01fa.webp">
+            <img alt="Pinterest" style="width: 25px; height: 25px; object-fit: cover;"
+                src="https://static.wixstatic.com/media/9c486556465843c5850fabfd68dfae49.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01/9c486556465843c5850fabfd68dfae49.webp">
+            <img alt="Instagram" style="width: 25px; height: 25px; object-fit: cover;"
+                src="https://static.wixstatic.com/media/81af6121f84c41a5b4391d7d37fce12a.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01/81af6121f84c41a5b4391d7d37fce12a.webp">
+
+        </div>
+        <iframe class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.838876338627!2d-122.38931884887795!3d37.77037602008565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7fe9c9d67655%3A0x845d94e8bfcc1fdd!2sTop%20Deals%20USA!5e0!3m2!1sen!2suk!4v1638733440823!5m2!1sen!2suk"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="copyright">
+            &copy; 2023 by Prickles & Co. Proudly created with Wix.com
+
+        </div>
+    </footer>
 </body>
 
 </html>

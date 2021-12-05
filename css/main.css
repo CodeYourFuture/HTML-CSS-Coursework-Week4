@@ -1,3 +1,350 @@
-/* Add your CSS here */
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
 
-/* Dont' forget to link this file to your HTML in the <head> */
+:root {
+  --Red-Brown: #a05941;
+  --Green-Black: #133032;
+  --Light-Grey: #ededee;
+  --White: #fff;
+  --Dancing-script-header: "Fjalla One", sans-serif;
+  --Outfit: "Outfit", sans-serif;
+}
+
+body {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(8, auto);
+  grid-template-areas:
+    "h h h h h h h h h h h h"
+    "m m m m m m m m m m m m"
+    "s s s s s s s s s s s s"
+    "a a a a a a a a a a a a"
+    "c c c c c c c c c c c c"
+    "f f f f f f f f f f f f"
+    "fo fo fo fo fo fo fo fo fo fo fo fo ";
+}
+
+/* header */
+
+header {
+  grid-area: h;
+  padding: 1.2rem;
+  background-color: var(--Light-Grey);
+  color: var(--Red-Brown);
+  font-family: var(--Dancing-script-header);
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(8, auto);
+  column-gap: 10px;
+  grid-template-areas:
+    "in in in in in in in in . . im im"
+    ". . . . . . . . . . . ."
+    "h h h h h h h h . . m m"
+    "p p p p p p p p p p p p";
+}
+
+header input {
+  grid-area: in;
+  height: 2rem;
+  border: 0.1rem solid #a05941;
+  background-color: var(--Light-Grey);
+}
+header input::placeholder {
+  color: var(--Red-Brown);
+}
+
+header img {
+  grid-area: im;
+}
+header h1 {
+  padding-top: 1rem;
+  grid-area: h;
+  font-size: 1.7rem;
+}
+header .topnav {
+  grid-area: m;
+}
+header p {
+  grid-area: p;
+  font-size: 0.9rem;
+}
+
+/* main */
+
+main {
+  font-family: var(--Outfit);
+  grid-area: m;
+  background-image: url("https://static.wixstatic.com/media/697bc8_ee5e15509a8c468f96ec8b15a13e0daf~mv2_d_2000_1809_s_2.jpg/v1/fill/w_1820,h_792,al_b,q_85,usm_0.66_1.00_0.01/697bc8_ee5e15509a8c468f96ec8b15a13e0daf~mv2_d_2000_1809_s_2.webp");
+ background-size:cover;
+  height: 500px;
+  width: 100%;
+  display: grid;
+  color: var(--White);
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-areas:
+    ". . . . . . . . . . . ."
+    "e e e e i i i i y y y y"
+    "p p p p p p p p p p p p"
+    ". . . b b b b b b . . ."
+    ". . . . s s s s . . . .";
+}
+main .est {
+  grid-area: e;
+  text-align: center;
+  padding-top: 2rem;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+}
+main img {
+  grid-area: i;
+  width: 100%;
+}
+main .year {
+  grid-area: y;
+  padding-top: 2rem;
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+}
+main h2 {
+  grid-area: p;
+  text-align: center;
+  font-size: 2.5rem;
+}
+main h3 {
+  grid-area: b;
+  text-align: center;
+}
+main button {
+  grid-area: s;
+  background-color: var(--Red-Brown);
+  color: var(--White);
+  border: 0px;
+}
+
+/* section */
+
+section {
+  font-family: var(--Outfit);
+  grid-area: s;
+  display: grid;
+  background-color: var(--Light-Grey);
+}
+section div {
+  background-color: var(--White);
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(4, auto);
+  margin: 1rem 0rem;
+  grid-template-areas:
+    "p p p p p p p p p p p p"
+    ". . . b b b b b b . . ."
+    "i i i i i i i i i i i i"
+    "a a a a a a a a a a a a";
+}
+
+section div p {
+  grid-area: p;
+  text-align: center;
+  text-underline-offset: 0.7rem;
+  color: var(--Red-Brown);
+}
+section button {
+  grid-area: b;
+
+  display: block;
+  text-align: center;
+  background-color: var(--Red-Brown);
+  color: var(--White);
+  border: 0px;
+  padding: 1rem;
+}
+section div img {
+  grid-area: i;
+  width: 100%;
+}
+.container-aboutus {
+  font-family: var(--Outfit);
+  grid-area: c;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(8, auto);
+
+  grid-template-areas:
+    "ca ca ca ca ca ca ca ca ca ca ca ca"
+    "ca ca ca ca ca ca ca ca ca ca ca ca"
+    "ca ca ca ca ca ca ca ca ca ca ca ca"
+    "i1 i1 i1 i1 i1 i1 i1 i1 i1 i1 i1 i1"
+    "i2 i2 i2 i2 i2 i2 i2 i2 i2 i2 i2 i2"
+    "i3 i3 i3 i3 i3 i3 i3 i3 i3 i3 i3 i3"
+    "cb cb cb cb cb cb cb cb cb cb cb cb"
+    "cb cb cb cb cb cb cb cb cb cb cb cb";
+}
+
+.aboutus {
+  grid-area: ca;
+  color: var(--Red-Brown);
+  padding: 1rem;
+  text-align: center;
+  line-height: 2rem;
+  font-size: 14px;
+}
+.img1 {
+  grid-area: i1;
+  width: 100%;
+}
+.img2 {
+  grid-area: i2;
+  width: 100%;
+}
+.img3 {
+  grid-area: i3;
+  width: 100%;
+}
+.buyNow {
+  grid-area: cb;
+
+  display: flex;
+  flex-direction: column;
+  background-color: var(--Green-Black);
+  color: var(--White);
+  font-size: 3rem;
+  text-align: center;
+  padding: 3rem;
+}
+.buyNow button {
+  height: 3rem;
+}
+
+/* form    */
+form {
+  font-family: var(--Outfit);
+  grid-area: f;
+}
+.fieldset {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+fieldset h2 {
+  color: var(--Red-Brown);
+  text-align: center;
+  padding: 1rem;
+}
+fieldset label {
+  padding: 0.5rem 0rem;
+}
+fieldset input {
+  height: 2rem;
+}
+
+fieldset div {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0rem;
+}
+
+.sub {
+  text-align: center;
+  background-color: var(--Red-Brown);
+  color: var(--White);
+  padding: 1.5rem;
+}
+.messageinput {
+  height: 8rem;
+}
+/* fieldset label.required:after {
+  content: "*";
+  color: red;
+} */
+/* footer */
+.footer {
+    font-family: var(--Outfit);
+  grid-area: fo;
+  display: grid;
+  background-color: var(--Green-Black);
+  color: var(--White);
+  text-align: center;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(4, auto);
+
+  grid-template-areas:
+    "im im im im im im im im im im im im "
+    "ou ou ou ou ou ou ou ou ou ou ou ou"
+    "op op op op op op op op op op op op"
+    "he he he he he he he he he he he he"
+    "su su su su su su su su su su su su"
+    "sl sl sl sl sl sl sl sl sl sl sl sl"
+    "ma ma ma ma ma ma ma ma ma ma ma ma"
+    "co co co co co co co co co co co co"
+
+    ;
+}
+.footer img{
+    grid-area: im;
+    width: 100%;
+}
+.ourstore {
+  grid-area: ou;
+  padding: 2rem;
+}
+.openinghours {
+  grid-area: op;
+  display: flex;
+  flex-direction: column;
+
+  padding: 2rem;
+ 
+}
+.openinghours p{
+    margin: 0px;
+    padding: 0.3rem;
+}
+.help {
+    padding: 1rem;
+  grid-area: he;
+  display: flex;
+  flex-direction: column;
+
+  padding: 2rem;
+  
+}
+.help a{
+    color: var(--White);
+
+    padding: 0.3rem;
+}
+.subscribe {
+    text-align: left;
+  grid-area: su;
+  display: flex;
+  flex-direction: column;
+
+  padding: 2rem;
+}
+.subscribe h2{
+    text-align: center;
+}
+.subscribe input{
+    height: 2rem;
+    
+}
+.share-logos{
+    grid-area: sl;
+    padding: 2rem;
+}
+.map{
+    grid-area: ma;
+
+}
+.copyright{
+    grid-area: co;
+    background-color: var(--Light-Grey);
+    width: 100%;
+    font-size: 0.8rem;
+    color: var(--Red-Brown);
+    width: 100%;
+    padding: 2rem 0rem;
+}
+
