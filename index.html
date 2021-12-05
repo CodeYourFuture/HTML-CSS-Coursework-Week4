@@ -1,21 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- Add a link to your custom CSS here -->
-
+    <link rel="stylesheet" href="css/main.css" />
     <title>Responsive grid project</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- Add your markup here -->
+    <header class="header">
+      <input type="text" id="search" name="search" />
+      <a
+        ><img
+          src="img/shopping-bag.png"
+          alt="shopping cart"
+          class="shopping-cart"
+        />
+      </a>
+      <h1>PRICKLES & CO.</h1>
+      <img src="img/menu.png" class="hamburger" />
+      <p>We deliver to your Doorstep</p>
+    </header>
 
+    <main class="main">
+      <section class="intro">
+        <h1>PRICKLES & CO</h1>
+        <p>BRING NATURE INDOORS</p>
+        <button class="shop-now-button">Shop Now</button>
+      </section>
 
+      <section class="products">
+        <div class="cacti">
+          <h2>CACTI</h2>
+          <button class="shop-collection-button">Shop Collection</button>
+        </div>
+
+        <div class="plants">
+          <h2>PLANTS</h2>
+          <button class="shop-collection-button">Shop Collection</button>
+        </div>
+
+        <div class="scculents">
+          <h2>SCCULENTS</h2>
+          <button class="shop-collection-button">Shop Collection</button>
+        </div>
+      </section>
+
+      <section class="about-us">
+        <h3>ABOUT US</h3>
+        <p>
+          I'm a paragraph. Click here to add your own text and edit me. It’s
+          easy. Just click “Edit Text” or double click me to add your own
+          content and make changes to the font. Feel free to drag and drop me
+          anywhere you like on your page. I’m a great place for you to tell a
+          story and let your users know a little more about you. This is a great
+          space to write long text about your company and your services. You can
+          use this space to go into a little more detail about your company.
+          Talk about your team and what services you provide.
+        </p>
+
+        <div class="about-grid">
+          <!-- Image 1 -->
+          <!-- Image 2 -->
+          <!-- Image 3 -->
+
+          <div class="promo">
+            <p class="promo-text">BUY ONLINE NOW & GET 10% OFF !</p>
+            <button>Shop Now</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="form-container">
+        <form class="form">
+          <p>FOR SPECIAL REQUESTS & ORDERS</p>
+          <label for="first-name">First Name *</label>
+          <input type="text" id="first-name" name="first-name" />
+          <label for="last-name">Last Name *</label>
+          <input type="text" id="last-name" name="last-name" />
+          <label for="email">Email *</label>
+          <input type="text" id="email" name="email" />
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" />
+          <label for="message">Message</label>
+          <textarea id="message" name="message" cols="30" rows="10"></textarea>
+          <input type="button" id="send" name="send" value="Send" />
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <section class="contact">
+        <div class="address">
+          <p>OUR STORE</p>
+          <p>
+            Address: 500 Terry Francois Street San Francisco, CA 94158 Phone:
+            123-456-7890 Email: info@mysite.com
+          </p>
+        </div>
+
+        <div class="timings">
+          <p>OPENING HOURS</p>
+          <p>
+            Mon - Fri: 7am - 10pm ​​Saturday: 8am - 10pm ​Sunday: 8am - 11pm
+          </p>
+        </div>
+
+        <div class="help">
+          <p>HELP</p>
+          <a>Shipping & returns</a>
+          <a>Privacy Policy</a>
+          <a>FAQ</a>
+        </div>
+
+        <div class="subscribe">
+          <label for="subscription-email"> Enter your email here* </label>
+          <input
+            type="email"
+            id="subscription-email"
+            name="subscription-email"
+          />
+          <input
+            type="button"
+            id="subscribe"
+            name="subscribe-now"
+            value="Subscribe Now"
+          />
+        </div>
+
+        <div class="social-links">
+          <img
+            src="img/facebook.png"
+            alt="facebook-link"
+            class="social-links"
+          />
+          <img
+            src="img/pinterest.png"
+            alt="pinterest-link"
+            class="social-links"
+          />
+          <img
+            src="img/instagram.png"
+            alt="instagram-link"
+            class="socail-links"
+          />
+        </div>
+      </section>
+
+      <section class="map">
+        <img src="img/london.png" alt="map" class="map-image" />
+      </section>
+
+      <section class="copyright">
+        <p>
+          &copy; 2023 by Pricles & Co. Proudly created with
+          <a href="https://www.wix.com">Wix.com</a>
+        </p>
+      </section>
+    </footer>
     <!-- Please leave this in to credit the creators of this design -->
-    <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
-</body>
-
+    <p>
+      This website design was created by Wix.com, and is used here for strictly
+      educational purposes.
+    </p>
+  </body>
 </html>
