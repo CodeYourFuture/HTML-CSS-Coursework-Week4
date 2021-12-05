@@ -8,7 +8,7 @@
     <!-- Add a link to your custom CSS here -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Outfit:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Outfit:wght@200;300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/variables.css">
     <link rel="stylesheet" href="./css/main.css">
@@ -38,19 +38,23 @@
     </header>
     <main>
         <section class="hero">
-            <section class="underlined-text">
-                <p>ESTB</p>
-                <hr>
-            </section>
-            <img src="./images/logo.svg" alt="Company Logo">
-            <section class="underlined-text">
-                <p>2023</p>
-                <hr>
+            <section class="overlay"></section>
+            <section class="logo-details">
+                <section class="underlined-text">
+                    <h4 class="logo-text">ESTB</h4>
+                    <div class="line"></div>
+                </section>
+                <img src="./images/logo.svg" alt="Company Logo" class="logo">
+                <section class="underlined-text">
+                    <h4 class="logo-text">2023</h4>
+                    <div class="line"></div>
+                </section>
             </section>
             <h2>Prickles & Co</h2>
-            <h3>Bring nature indoors</h3>
+            <h4 class="slogan">Bring nature indoors</h4>
             <button>Shop Now</button>
         </section>
+
         <section class="products-links">
             <h3>Cacti</h3>
             <hr class="small-divider">

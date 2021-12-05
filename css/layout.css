@@ -11,6 +11,18 @@ header {
     grid-template-areas: "i i t t t t t t t t t t";
 }
 
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-details {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
 .search-img {
     grid-area: i;
 }

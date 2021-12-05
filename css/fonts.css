@@ -33,9 +33,6 @@ h3 {
     letter-spacing: 0.07rem;
 }
 
-
-/* margin-left: 39px; */
-
 ::placeholder {
     color: var(--redBrown);
 }
@@ -47,4 +44,20 @@ h3 {
     font-weight: lighter;
     font-size: 0.875rem;
     word-spacing: 0.1rem;
+}
+
+.logo-text {
+    font-size: 13px;
+}
+
+.logo-text,
+.slogan {
+    color: var(--white);
+    font-weight: 400;
+    letter-spacing: 0.45em;
+}
+
+.slogan {
+    font-size: 0.9375rem;
+    text-align: center;
 }
