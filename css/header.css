@@ -1,0 +1,22 @@
+.header {
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.search_basket {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.search {
+    border: 1px solid rgba(173, 56, 13, 0.363);
+
+}
+
+.search input {
+    padding: 2px 2px;
+}
