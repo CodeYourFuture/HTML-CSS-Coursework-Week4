@@ -13,6 +13,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Outfit:wght@200&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/main.css" />
 
     <title>Responsive grid project</title>
@@ -20,27 +26,30 @@
 
   <body>
     <!-- Add your markup here -->
-    <header>
-      <div class="search-bag">
-        <div class="search-container">
-          <form>
+    <div class="master-page">
+      <header class="header-site">
+        <div class="header-search-bag">
+          <div class="search-container">
             <input type="text" placeholder="Search.." name="search" />
-          </form>
+            <i class="fas fa-search"></i>
+          </div>
+          <div class="bag">
+            <img src="img/bag.svg" alt="" />
+          </div>
         </div>
-        <div class="bag"></div>
-      </div>
-      <div class="logo_title_menu_burger">
-        <div class="logo_title"></div>
-        <div class="menu_burger"></div>
-      </div>
-      <div class="number">
-        <p>We Delivery to Your Doorstep</p>
-      </div>
-    </header>
-    <!-- Please leave this in to credit the creators of this design -->
-    <p>
-      This website design was created by Wix.com, and is used here for strictly
-      educational purposes.
-    </p>
+        <div class="header-logo_title_menu_burger">
+          <div class="logo_title"></div>
+          <div class="menu_burger"></div>
+        </div>
+        <div class="header-number">
+          <p>We Delivery to Your Doorstep</p>
+        </div>
+      </header>
+      <!-- Please leave this in to credit the creators of this design -->
+      <p>
+        This website design was created by Wix.com, and is used here for
+        strictly educational purposes.
+      </p>
+    </div>
   </body>
 </html>
