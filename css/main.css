@@ -65,3 +65,27 @@
     justify-content: center;
     align-items: center;
 }
+
+/* Section: form */
+
+.form {
+   
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin: 0 auto;
+   
+}
+
+.form h3 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+form button {
+    width: 100%;
+    background-color: var(--red-brown);
+    color: var(--white);
+}
+

@@ -10,8 +10,7 @@ header {
     grid-template-areas: 
     "search bag-icon"
     "heading hamburger-icon"
-    "advert .";
-    
+    "call-us-now .";    
     align-items:center;
 }
 
@@ -25,14 +24,14 @@ header {
     grid-area: bag-icon;
     align-self: center;
     justify-self: center;
-    color: var(--red-brown);
+    
 }
 
 .hamburger-icon {
     grid-area: hamburger-icon;
     align-self: center;
     justify-self: center;
-    color: var(--red-brown);
+    
    
 }
 
@@ -40,8 +39,8 @@ header {
     grid-area: heading;    
 }
 
-.advert {
-    grid-area: advert;
+.call-us-now {
+    grid-area: call-us-now;
 }
 
 nav ul{
