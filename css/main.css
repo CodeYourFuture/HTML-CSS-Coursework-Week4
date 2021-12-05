@@ -12,14 +12,14 @@
   --red_brown: #a05941;
   --green_black: #133032;
   --light_grey: #ededee;
+  --white: #ffffff;
   --transparent_white: rgba(0, 0, 0, 0.75);
-  --heading_font-family: "Fjalla One", sans-serif;
-  --body_subheading_font-family: "Outfit", sans-serif;
+  --heading_font-family: "Fjalla One", "Roboto", sans-serif;
+  --body_subheading_font-family: "Outfit", "Roboto", sans-serif;
 }
 
 html {
   box-sizing: border-box;
-  font-family: var(--body_subheading_font-family);
   color: var(--red_brown);
   margin: 0;
   padding: 0;
@@ -27,53 +27,181 @@ html {
 
 body {
   background: var(--light_grey);
+  font-family: var(--body_subheading_font-family);
 }
 
 .master-page {
-  height: 100vh;
+  /* height: 100vh; */
   border: 2px solid red;
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: auto;
   grid-gap: 2px;
-  grid-area: "header" "main" "footer";
+  grid-template-areas: "header" "main" "footer";
 }
+
+/* HEADER-SITE */
 
 .header-site {
-  height: 200px;
-  padding: 0 1rem;
+  grid-area: header;
+  /* height: 200px; Remove at the end */
+  padding: 1rem 1rem 0 1rem;
 }
 
+/* HEADER-SEARCH-BAG */
+
 .header-search-bag {
-  border: 2px solid rgb(61, 230, 230);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-.bag img {
+.bag {
   width: 1.5rem;
+  height: 1.9rem;
+  background-image: url("/home/marina/Desktop/CodeYouFuture/responsive-grid-project/img/bag.svg");
+  background-size: cover;
+  filter: invert(43%) sepia(6%) saturate(4186%) hue-rotate(329deg)
+    brightness(89%) contrast(91%);
 }
 
 .search-container {
-  border: 2px solid black;
+  border: 1px solid var(--red_brown);
+  outline: none;
   position: relative;
-  background: #ddd;
   /* direction: rtl; rigth to left */
-  width: 240px;
+  width: 15rem;
+  background-color: var(--light_grey);
+  color: var(--red_brown);
 }
 
 .search-container input {
-  height: 40px;
-  padding-left: 30px;
+  height: 2.5rem;
+  padding: 0 32px;
+  border: none;
+}
+
+.search-container input[type="text"] {
+  background-color: var(--light_grey);
+}
+
+.search-container ::placeholder {
+  color: var(--red_brown);
+  font-size: 1.2rem;
+  font-weight: 200;
+  padding-left: 10px;
 }
 
 .search-container .fa-search {
   position: absolute;
-  bottom: 6px;
-  right: 171px;
-  width: 28px;
-  height: 24px;
+  bottom: 0.5rem;
+  right: 12.8rem;
+  width: 1.5rem;
+  height: 1.4rem;
 }
+
+/* HEADER-LOGO-TITLE-MENU-BURGER */
+.header-logo_title_menu_burger {
+  margin: 2rem 0 1.5rem 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.logo_title h1 {
+  font-family: var(--heading_font-family);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.logo_title p {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* MAIN */
+.main {
+  grid-area: main;
+  text-align: center;
+}
+
+.hero-image {
+  width: 100%;
+  height: 560px;
+  background-image: url("../img/mobile-big-img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* opacity: 0.9; */
+}
+
+.hero-content {
+  position: relative;
+  bottom: 515px;
+  color: var(--white);
+}
+
+.logo-icon-words {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.logo-icon img {
+  height: 10rem;
+  filter: invert(100%) sepia(4%) saturate(139%) hue-rotate(198deg)
+    brightness(117%) contrast(100%);
+}
+
+.logo-words {
+  border-bottom: 2px solid var(--white);
+  width: 4rem;
+  margin-bottom: 2.3rem;
+}
+
+.logo-words p {
+  font-size: 1rem;
+  font-weight: bolder;
+  letter-spacing: 0.5rem;
+  margin-bottom: 7px;
+}
+
+.hero-content h1 {
+  font-size: 2.7rem;
+  margin-bottom: 1rem;
+  margin-top: 0.7rem;
+}
+
+.hero-content h3 {
+  font-size: 1.5rem;
+  font-weight: 200;
+  letter-spacing: 0.2rem;
+  padding: 0 2.5rem;
+  margin-bottom: 2.4rem;
+}
+
+.btn {
+  font-size: 1.1rem;
+  background-color: var(--red_brown);
+  color: var(--white);
+  border: none;
+  padding: 0.8rem 2.8rem;
+}
+
+/* .hero-image img {
+  width: 320px;
+  height: 475px;
+  object-fit: cover;
+  object-position: 50% 100%;
+} */
+
+.footer {
+  grid-area: footer;
+}
+
 /* Dont' forget to link this file to your HTML in the <head> */
