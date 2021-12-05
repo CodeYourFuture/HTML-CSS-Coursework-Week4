@@ -1,3 +1,78 @@
-/* Add your CSS here */
+* {
+    margin: 0;
+    padding: 0;
+}
 
-/* Dont' forget to link this file to your HTML in the <head> */
+
+/* HEADER */
+
+header {
+    background-color: var(--lightGrey);
+    padding: 15px 20px 25px;
+}
+
+.search-wrapper {
+    margin-bottom: 35px;
+    width: 216px;
+    height: 40px;
+    border: 1px solid var(--redBrown);
+    box-sizing: border-box;
+}
+
+.search-wrapper:focus-within,
+.search-wrapper:hover {
+    border: 2px solid var(--redBrown);
+    box-sizing: border-box;
+}
+
+.search-wrapper:focus-within .search-img,
+.search-wrapper:hover .search-img {
+    display: none;
+}
+
+.search-img {
+    align-self: center;
+    justify-self: center;
+}
+
+.search {
+    color: var(--redBrown);
+    background: var(--lightGrey);
+    padding-left: 0;
+    border: none;
+    outline: none;
+}
+
+.header-text {
+    margin-bottom: 15px;
+}
+
+.bag-image {
+    padding-top: 7px;
+}
+
+.bar {
+    width: 23px;
+    height: 2px;
+    background: var(--redBrown);
+    margin-bottom: 6px;
+}
+
+.bar:first-of-type {
+    margin-top: 2px;
+}
+
+.bar:last-of-type {
+    margin-bottom: 0;
+}
+
+
+/* MAIN */
+
+
+/* HERO */
+
+.hero {
+    background-image: url("../images/home-background.webp");
+    background-size: auto;
+}

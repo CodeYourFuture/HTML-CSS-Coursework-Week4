@@ -1,0 +1,50 @@
+/*  */
+
+* {
+    font-family: "Outfit", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Fjalla One", sans-serif;
+    text-transform: uppercase;
+}
+
+h3,
+h4,
+p {
+    color: var(--redBrown);
+}
+
+h4 {
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    word-spacing: 0.4rem;
+}
+
+.search {
+    font-size: 0.9em;
+    color: var(--redBrown);
+}
+
+h3 {
+    font-size: 1.315rem;
+    letter-spacing: 0.07rem;
+}
+
+
+/* margin-left: 39px; */
+
+::placeholder {
+    color: var(--redBrown);
+}
+
+.changing-text {
+    text-transform: capitalize;
+    letter-spacing: 0.17rem;
+    font-family: "Fjalla One", sans-serif;
+    font-weight: lighter;
+    font-size: 0.875rem;
+    word-spacing: 0.1rem;
+}

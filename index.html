@@ -6,9 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Add a link to your custom CSS here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Outfit:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <link rel="stylesheet" href="variables.css">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/images.css">
 
     <title>Responsive grid project</title>
 </head>
@@ -17,18 +23,21 @@
 
     <!-- Add your markup here -->
     <header>
-        <input type="text" placeholder="Search...">
-        <a href="#"><img src="./images/shopping-cart.svg" alt="shopping-bag"></a>
-        <h3>Prickles & Co.</h3>
-        <section id="hamburger-menu">
+        <section class="search-wrapper">
+            <img src="./images/search.svg" alt="Search Image" class="search-img">
+            <input type="search" placeholder="Search..." class="search">
+        </section>
+        <a href="#" class="bag"><img src="./images/shopping-cart.svg" alt="shopping-bag" class="bag-image"></a>
+        <h3 class="header-text">Prickles & Co.</h3>
+        <section class="hamburger-menu">
             <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
         </section>
-        <p class="changing-text">We Deliver to Your Doorstep</p>
+        <h4 class="changing-text">We Deliver to Your Doorstep</h4>
     </header>
     <main>
-        <section class="home-background">
+        <section class="hero">
             <section class="underlined-text">
                 <p>ESTB</p>
                 <hr>
@@ -144,7 +153,8 @@
     </main>
     <footer>
         <p>&copy; 2023 by Prickles & Co. Proudly created with
-            <a href="#"></a>Wix.com</p>
+            <a href="#"></a>Wix.com
+        </p>
 
         <!-- Please leave this in to credit the creators of this design -->
         <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>

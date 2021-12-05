@@ -1,0 +1,36 @@
+header {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: "s s s s s s s s s . . b" "h h h h h h h . . . . m" "c c c c c c c c c c c .";
+}
+
+.search-wrapper {
+    grid-area: s;
+    display: grid;
+    grid-template-columns: inherit;
+    grid-template-areas: "i i t t t t t t t t t t";
+}
+
+.search-img {
+    grid-area: i;
+}
+
+.search {
+    grid-area: t;
+}
+
+.bag {
+    grid-area: b;
+}
+
+.header-text {
+    grid-area: h;
+}
+
+.hamburger-menu {
+    grid-area: m;
+}
+
+.changing-text {
+    grid-area: c;
+}
