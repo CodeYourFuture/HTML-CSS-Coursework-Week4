@@ -30,7 +30,7 @@ header svg {
 .search-box input:focus ~ .magnifying-glass{
     display:none;
 }
-.login {
+.hidden {
     display:none;
 }
 .corner-links{
@@ -38,10 +38,20 @@ header svg {
     display: flex;
     align-items: center;
 }
+.login {
+    display: none;
+    align-items: center;
+}
+.login span {
+    margin-left: 0.2rem;
+}
+.corner-links a {
+    text-decoration: none;
+}
 .item-counter {
     color:var(--white);
     position: relative;
-    left:19px;
+    left:18px;
     top:-4px;
     font-size:0.8rem;
 }
@@ -74,9 +84,19 @@ header svg {
 
 @media screen and (min-width:900px){
     .login{
-        display: block;
+        display: flex;
     }
     body {
         padding: 0 2rem;
+    }
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        height: 2rem;
+        position: static;
+        width: 40%;
+        top:auto;
+        right: auto;
+        padding: 0;
     }
 }
