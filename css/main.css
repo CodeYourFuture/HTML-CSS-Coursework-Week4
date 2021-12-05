@@ -1,3 +1,11 @@
-/* Add your CSS here */
+/* Main */
 
-/* Dont' forget to link this file to your HTML in the <head> */
+/* Hero */
+.hero {
+    background-image: url('../img/hero.webp');
+    width: 100%;
+    color:#fff;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
