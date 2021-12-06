@@ -34,7 +34,8 @@ body {
 
 button {
   font-family: "Raleway";
-  padding: 0.8rem 1.9rem;
+  width: 170px;
+  height: 48px;
   margin: 2rem auto 1.2rem auto;
   font-size: 15px;
   border-radius: 0;
@@ -49,13 +50,8 @@ button {
   margin-bottom: 2rem;
 }
 
-.main-top h1,
-h3 {
-  width: 85%;
-}
-
 .main-top-item {
-  margin: 0.8rem auto;
+  margin: 0.8rem 1.7rem;
 }
 
 .main-hero-img {
@@ -68,6 +64,7 @@ h3 {
 
 .main-middle {
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 .icons img {
@@ -93,10 +90,12 @@ h3 span {
 }
 
 p {
-  font-family: "helvetica";
+  font-family:"HelveticaNeueW01-45Ligh";
   font-weight: 50;
-  text-align: center;
-  padding:0 1rem;
+  text-align: center !important;
+  padding:0 2.8rem;
+  line-height: 1.7;
+  letter-spacing: normal;
 }
 
 header .order-btn {
@@ -116,11 +115,20 @@ header .order-btn {
 .main-article {
   background-color: var(--light-green);
 }
+
 .main-article img {
   width: 280px;
   height: 377px;
   object-fit: cover;
   object-position: 80% 50%;
+}
+
+ .article-btn {
+  background-color: transparent;
+  color: var(--black);
+  width: 160px;
+  height: 42px;
+  
 }
 
 .main-top-try {
