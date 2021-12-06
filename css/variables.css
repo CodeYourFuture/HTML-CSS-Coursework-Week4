@@ -2,6 +2,9 @@
     --redBrown: #a05941;
     --greenBlack: #133032;
     --lightGrey: #ededee;
+    --lighterGrey: #fbfbfb;
     --white: #fff;
-    --transparentWhite: rgba(0, 60, 68, 0.288);
+    --transparentWhite: rgba(18, 49, 50, 0.35);
+    --black: #000;
+    --red: #f00;
 }

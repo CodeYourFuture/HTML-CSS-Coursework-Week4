@@ -30,9 +30,13 @@
         <a href="#" class="bag"><img src="./images/shopping-cart.svg" alt="shopping-bag" class="bag-image"></a>
         <h3 class="header-text">Prickles & Co.</h3>
         <section class="hamburger-menu">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
+            <form action="#">
+                <button class="menu-button">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </button>
+            </form>
         </section>
         <h4 class="changing-text">We Deliver to Your Doorstep</h4>
     </header>
@@ -56,7 +60,7 @@
         </section>
         <section class="product-links-wrapper">
             <section class="product-links">
-                <img src="./images/cacti.webp" alt="A hand holding a cactus">
+                <img src="./images/cacti.png" alt="A hand holding a cactus">
                 <section class="product-links-content">
                     <h3>Cacti</h3>
                     <hr class="small-divider">
@@ -66,7 +70,7 @@
                 </section>
             </section>
             <section class="product-links">
-                <img src="./images/plants.webp" alt="A hand holding a plant">
+                <img src="./images/plants.png" alt="A hand holding a plant">
                 <section class="product-links-content">
                     <h3>Plants</h3>
                     <hr class="small-divider">
@@ -76,7 +80,7 @@
                 </section>
             </section>
             <section class="product-links">
-                <img src="./images/succlents.webp" alt="A hand holding a succulent plant">
+                <img src="./images/succlents.png" alt="A hand holding a succulent plant">
                 <section class="product-links-content">
                     <h3>Succulents</h3>
                     <hr class="small-divider">
@@ -86,7 +90,7 @@
                 </section>
             </section>
         </section>
-        <section>
+        <section class="about">
             <h4>About us</h4>
             <hr class="small-divider">
             <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great
@@ -95,73 +99,83 @@
             </p>
         </section>
         <section class="random-pictures">
-            <img src="./images/wheelbarrow.webp" alt="Wheelbarrow in greenhouse">
-            <img src="./images/leaf.webp" alt="Leaf in foreground">
-            <img src="./images/woman.webp" alt="Woman standing by plants">
+            <img src="./images/wheelbarrow.png" alt="Wheelbarrow in greenhouse">
+            <img src="./images/leaf.png" alt="Leaf in foreground">
+            <img src="./images/woman.png" alt="Woman standing by plants">
         </section>
-        <section>
+        <section class="offer">
             <h1>Buy online now & get 10% off !</h1>
             <form action="#">
                 <button>Shop Now</button>
             </form>
         </section>
         <section class="form">
-            <form action="#">
+            <form action="#" class="contact-form">
                 <h4>For special requests & orders</h4>
-                <hr class="small-divider">
+                <hr class="large-divider">
                 <fieldset>
                     <label for="firstName">First Name *</label>
-                    <input type="text" name="first-name" id="first-name" class="input-field" required>
+                    <input type="text" name="first-name" id="first-name" class="input-field" placeholder=" " required>
                 </fieldset>
                 <fieldset>
                     <label for="last-name">Last Name *</label>
-                    <input type="text" name="last-name" id="last-name" class="input-field" required>
+                    <input type="text" name="last-name" id="last-name" class="input-field" placeholder=" " required>
                 </fieldset>
                 <fieldset>
                     <label for="email">Email *</label>
-                    <input type="text" name="email" id="email" class="input-field" required>
+                    <input type="email" name="email" id="email" class="input-field" placeholder=" " required>
                 </fieldset>
                 <fieldset>
                     <label for="phone">Phone</label>
-                    <input type="tel" name="phone" id="phone" class="input-field" required>
+                    <input type="tel" name="phone" id="phone" class="input-field">
                 </fieldset>
                 <fieldset>
                     <label for="message">Message</label>
-                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    <textarea name="message" id="message" cols="30" rows="8"></textarea>
                 </fieldset>
                 <input type="submit" value="Send">
             </form>
-            <img src="./images/last-plant.webp" alt="plants">
+
         </section>
-        <section>
-            <h4>Our store</h4>
-            <p>Address: 500 Terry Francois Street San</p>
-            <p>Francisco, CA 94158</p>
-            <p>Phone: 123-456-7890</p>
-            <p>Email: info@mysite.com</p>
-            <h4>Opening hours</h4>
-            <p>Mon - Fri: 7am - 10pm</p>
-            <p>Saturday: 8am - 10pm</p>
-            <p>Sunday: 8am - 11pm</p>
-            <h4>Help</h4>
-            <a href="#">Shipping & Returns</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">FAQ</a>
-            <h4>Subscribe</h4>
-            <form action="#">
-                <fieldset>
-                    <label for="subscribe-email">Enter your email here *</label>
-                    <input type="email" name="subscribe-email" id="subscribe-email" class="input-field" required>
-                </fieldset>
-                <input type="submit" value="Subscribe Now">
-            </form>
+
+        <img src="./images/last-plant.png" alt="plants" class="last-plant">
+        <section class="find-us">
+            <section class="contact">
+                <h4>Our store</h4>
+                <p>Address: 500 Terry Francois Street San</p>
+                <p>Francisco, CA 94158</p>
+                <p>Phone: 123-456-7890</p>
+                <p>Email: info@mysite.com</p>
+            </section>
+            <section class="open">
+                <h4>Opening hours</h4>
+                <p>Mon - Fri: 7am - 10pm</p>
+                <p>Saturday: 8am - 10pm</p>
+                <p>Sunday: 8am - 11pm</p>
+            </section>
+            <section class="help">
+                <h4>Help</h4>
+                <a href="#">Shipping & Returns</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">FAQ</a>
+            </section>
+            <section class="subscribe">
+                <h4>Subscribe</h4>
+                <form action="#">
+                    <fieldset>
+                        <label for="subscribe-email">Enter your email here *</label>
+                        <input type="email" name="subscribe-email" id="subscribe-email" class="input-field" placeholder=" " required>
+                    </fieldset>
+                    <input type="submit" value="Subscribe Now">
+                </form>
+            </section>
             <section class="icons">
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                 <a href="#"><i class="fab fa-pinterest-p"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
             </section>
         </section>
-        <section class="map">
+        <section id="map" class="map">
 
         </section>
     </main>
@@ -173,6 +187,8 @@
         <!-- Please leave this in to credit the creators of this design -->
         <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
     </footer>
+
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

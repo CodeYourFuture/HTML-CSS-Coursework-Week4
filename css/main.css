@@ -33,6 +33,7 @@ header {
 .search-img {
     align-self: center;
     justify-self: center;
+    width: auto;
 }
 
 .search {
@@ -43,12 +44,25 @@ header {
     outline: none;
 }
 
+.search:focus-within {
+    border: none;
+}
+
 .header-text {
     margin-bottom: 15px;
 }
 
 .bag-image {
     padding-top: 7px;
+    width: auto;
+}
+
+.menu-button {
+    background-color: transparent;
+    width: fit-content;
+    height: fit-content;
+    padding: 0;
+    cursor: pointer;
 }
 
 .bar {
@@ -74,14 +88,19 @@ header {
 
 .hero {
     position: relative;
-    background-image: url("../images/home-background.webp");
+    background-image: url("../images/home-background.png");
     background-size: cover;
+    background-position: center;
     padding: 80px 0 100px;
 }
 
 .logo-details {
     margin-bottom: 35px;
     z-index: 2;
+}
+
+.logo {
+    max-width: fit-content;
 }
 
 .logo-text {
@@ -111,9 +130,11 @@ h2 {
     margin: 0 auto 40px;
     z-index: 2;
     font-weight: 200;
+    font-family: ;
 }
 
-button {
+button,
+input[type="submit"] {
     width: 140px;
     border: none;
     background: var(--redBrown);
@@ -150,6 +171,13 @@ button {
     height: 400px;
 }
 
+.product-links>img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+}
+
 .product-links-content {
     position: absolute;
     top: 25px;
@@ -165,10 +193,189 @@ button {
     margin-bottom: 10px;
 }
 
-.small-divider {
+.small-divider,
+.large-divider {
     width: 10px;
     background-color: var(--redBrown);
     height: 3px;
     border: none;
     margin-bottom: 15px;
+}
+
+
+/* ABOUT */
+
+.about {
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* OFFER */
+
+.offer {
+    padding: 80px 45px;
+    background: var(--greenBlack);
+    color: var(--white);
+    align-items: center;
+}
+
+.offer button {
+    background: var(--white);
+    color: var(--greenBlack);
+    padding: 15px 0;
+}
+
+
+/* FORM */
+
+.form {
+    padding: 40px 10px 0;
+    background: var(--lightGrey);
+}
+
+.contact-form {
+    padding: 25px 10px 35px;
+    background: var(--lighterGrey);
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+    padding: 8px;
+    border: 1px solid var(--black);
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+    height: 35px;
+}
+
+textarea {
+    height: 153px;
+}
+
+input:focus-within,
+textarea:focus-within,
+input[type="text"]:hover,
+input[type="tel"]:hover,
+input[type="email"]:hover,
+textarea:hover {
+    border: 3px solid var(--black);
+    box-sizing: border-box;
+}
+
+input:not(:focus):not(:placeholder-shown):invalid {
+    border: 3px solid var(--red);
+    box-sizing: border-box;
+}
+
+input:not(:focus):not(:placeholder-shown):valid {
+    border-color: var(--black);
+}
+
+.form h4 {
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input[type="submit"] {
+    width: 100%;
+}
+
+.large-divider {
+    width: 18px;
+    height: 4px;
+    margin: 0 auto 20px;
+}
+
+label {
+    font-weight: 200;
+    margin-bottom: 12px;
+}
+
+
+/* FIND US */
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.find-us {
+    background: var(--greenBlack);
+    padding: 75px 30px 40px;
+}
+
+.find-us label {
+    align-self: start;
+}
+
+.find-us input[type="email"] {
+    background: var(--greenBlack);
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+
+.find-us input[type="email"]:focus-within,
+.find-us input[type="email"]:hover {
+    border: 3px solid var(--white);
+}
+
+input[type="submit"]:not(:focus):not(:placeholder-shown):valid {
+    border-color: var(--white);
+}
+
+.find-us input[type="submit"] {
+    background: var(--white);
+    color: var(--greenBlack);
+    margin-bottom: 70px;
+}
+
+.find-us p:last-of-type,
+.help a:last-of-type {
+    margin-bottom: 60px;
+}
+
+.subscribe {
+    width: 100%;
+    max-width: 400px;
+}
+
+.find-us a {
+    line-height: 1.5rem;
+    font-weight: 200;
+}
+
+i {
+    font-size: 20px;
+    margin: 7px;
+}
+
+
+/* MAP */
+
+.map {
+    height: 400px;
+    width: 100%;
+    background: var(--greenBlack);
+}
+
+
+/* FOOTER */
+
+footer {
+    background: var(--lightGrey);
+    text-align: center;
+    padding: 20px 0 30px;
 }

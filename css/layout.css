@@ -11,7 +11,8 @@ header {
     grid-template-areas: "i i t t t t t t t t t t";
 }
 
-.hero {
+.hero,
+.offer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,6 +22,31 @@ header {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
+}
+
+.random-pictures {
+    display: flex;
+    flex-direction: column;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+.find-us,
+.help {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .search-img {
