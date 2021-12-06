@@ -1,15 +1,175 @@
 /* Add your CSS here */
 
-/* Dont' forget to link this file to your HTML in the <head> */
+/* Don't forget to link this file to your HTML in the <head> */
 
 :root {
-    --dBeige: #E6DACD;
-    --lBeige: #F4ECE6;
-    --rBlue: #0150FD;
-    --black: #000;
-    --white: #FFF;
+  --dBeige: #e6dacd;
+  --lBeige: #f4ece6;
+  --rBlue: #0150fd;
+  --black: #000;
+  --white: #fff;
+  --menu-speed: 0.75s;
 }
 
 /* font-family: 'Poppins', sans-serif;
-
 font-family: 'Quicksand', sans-serif; */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hamburger Menu Position */
+
+.menu-wrap {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.menu-wrap .toggler {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+}
+
+.menu-wrap .hamburger {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  padding: 1rem;
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hamburger Menu Design */
+
+.menu-wrap .hamburger > div {
+  position: relative;
+  width: 100%;
+  height: 3px;
+  background-color: var(--rBlue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+
+.menu-wrap .hamburger > div:before,
+.menu-wrap .hamburger > div:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  left: 0;
+  width: 50%;
+  height: 3px;
+  background: inherit;
+}
+
+.menu-wrap .hamburger > div:after {
+  top: 10px;
+  left: 14px;
+}
+
+/* Toggler Animate */
+
+.menu-wrap .toggler:checked + .hamburger > div {
+  background: var(--black);
+  transform: rotate(-45deg);
+}
+
+.menu-wrap .toggler:checked + .hamburger > div:before,
+.menu-wrap .toggler:checked + .hamburger > div:after {
+  top: -6px;
+  left: 7px;
+  transform: rotate(-90deg);
+  transition: all 0.4s ease;
+}
+
+.menu-wrap .toggler:checked + .hamburger > div:after {
+  top: 6px;
+}
+
+/* Show Menu */
+
+.menu-wrap .toggler:checked ~ .menu {
+  visibility: visible;
+}
+
+.menu-wrap .toggler:checked ~ .menu > div {
+  transform: scale(1);
+  transition-duration: var(--menu-speed);
+}
+
+.menu-wrap .toggler:checked ~ .menu > div > div {
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+
+.menu-wrap .toggler:checked ~ .hamburger {
+  background: var(--dBeige);
+  transition-duration: var(--menu-speed) ease;
+}
+
+/* Menu Overlay */
+
+.menu-wrap .menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-wrap .menu > div {
+  background: var(--dBeige);
+  width: 200vw;
+  height: 200vh;
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+  transition: all 0.4s ease;
+}
+
+.menu-wrap .menu > div > div {
+  text-align: center;
+  max-width: 90vw;
+  max-height: 100vh;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+/* Nav Menu Styling */
+
+.menu-wrap .menu > div > div > ul > li {
+  list-style: none;
+  color: var(--black);
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.menu-wrap .menu > div > div > ul > li > a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.4s ease;
+}
