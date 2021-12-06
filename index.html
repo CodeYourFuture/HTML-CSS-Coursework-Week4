@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/media-queries.css">
 </head>
 
 <body>
@@ -77,11 +78,11 @@
                 <p>This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide.</p></p>
             </div>  
 
-
-          
-                <img src="img/home.webp" alt="">
-                <img src="img/leaf.webp" alt="">
-                <img src="img/greenhouse.webp" alt="">
+                <div class="advert-img"><img src="img/home.webp" alt="" class="home"></div>
+                <div class="advert-img"><img src="img/leaf.webp" alt="" class="leaf"></div>
+                <div class="advert-img"><img src="img/greenhouse.webp" alt="" class="greenhouse"></div>
+                
+                
          
             <div class="advert">
                 <p>BUY ONLINE <br> NOW & GET <br> 10% OFF !</p>
@@ -114,24 +115,27 @@
 
     </main>
     <footer>
-        <div>
-            <h4>OUR STORE</h4>
-            <p>Address: 500 Terry Francois Street San Francisco, CA 94158</p>
-            <p>Phone: 123-456-7890</p>
-            <p>Email:  info@mysite.com</p>            
+        <div class="flex-footer">
+            <div class="flex-footer-item">
+                <h4>OUR STORE</h4>
+                <p>Address: 500 Terry Francois Street San Francisco, CA 94158</p>
+                <p>Phone: 123-456-7890</p>
+                <p>Email:  info@mysite.com</p>            
+            </div>
+            <div class="flex-footer-item">
+                <h4>OPENING HOURS</h4>
+                <p>Mon - Fri: 7am - 10pm</p>
+                <p>Saturday: 8am - 10pm</p>
+                <p>Sunday: 8am - 11pm</p>
+            </div>
+            <div class="flex-footer-item">
+                <h4>HELP</h4>
+                <p>Shipping & Returns</p>
+                <p>Privacy Policy</p>
+                <p>FAQ</p>
+            </div>
         </div>
-        <div>
-            <h4>OPENING HOURS</h4>
-            <p>Mon - Fri: 7am - 10pm</p>
-            <p>Saturday: 8am - 10pm</p>
-            <p>Sunday: 8am - 11pm</p>
-        </div>
-        <div>
-            <h4>HELP</h4>
-            <p>Shipping & Returns</p>
-            <p>Privacy Policy</p>
-            <p>FAQ</p>
-        </div>
+        
         <div>
             <h4>SUBSCRIBE</h4>
             <p>Enter your email here</p>

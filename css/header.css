@@ -2,7 +2,8 @@
 
 
 header {
-    width: 100%;
+    box-sizing: border-box;
+    max-width: 100%;
     color: #A05941;
     display: grid;
     grid-template-columns: 80% 20%;

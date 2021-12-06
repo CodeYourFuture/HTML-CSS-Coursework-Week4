@@ -5,20 +5,26 @@
     --white: #fff;
 }
 
-/* * {
+* {
     outline: 1px solid red;
-} */
+}
 
-html, body {    
-    width: 100%;
+html {    
+    width : 100vw;   
 }
 body {
+    overflow-x: hidden;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding: 0;
     background-color: #EDEDEE;
     margin: 0 auto;
     /* display: grid;   
     align-items: center;  */
     color: var(--red-brown);
     font-family: 'Outfit', sans-serif;
+    margin: 0 auto;
    
 }
 

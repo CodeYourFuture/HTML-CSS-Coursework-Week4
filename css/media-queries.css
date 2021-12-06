@@ -1,0 +1,78 @@
+
+@media screen and (min-width: 768px) {
+
+    nav ul{
+        display: block;
+    }
+
+    .hamburger-icon {
+        display: none;
+    }
+    header {
+        display: grid;
+        grid-template-columns: 10% 65% 25%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: 
+        "search . bag-icon"        
+        "heading nav call-us-now";    
+        align-items:center;
+        justify-content: center;
+    }
+
+    nav {
+        grid-area: nav;
+        align-self: center;
+    }
+
+    .call-us-now {
+        justify-self: center;
+    }
+
+    nav ul li{
+        float: left;
+        list-style: none;
+    }
+    nav ul li {
+        width: 100px;
+        text-align: center;
+    }
+
+    /* Section: flex-container */
+
+    .flex-container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    /* Section:advert-container  */
+
+    .advert-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: 
+        "paragraph paragraph home leaf"
+        "advert advert greenhouse greenhouse";
+    }
+
+    .paragraph {
+        grid-area: paragraph;
+    }
+    
+    .home {
+        grid-area: home;
+    }
+
+    .leaf {
+        grid-area: leaf;
+    }
+
+    .advert {
+        grid-area: advert;
+    }
+
+    .greenhouse {
+        grid-area: greenhouse;
+    }
+    
+}
