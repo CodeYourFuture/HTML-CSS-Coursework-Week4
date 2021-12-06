@@ -13,6 +13,7 @@ h3 {
 
 h3,
 h4,
+.changing-text,
 p {
     color: var(--redBrown);
 }

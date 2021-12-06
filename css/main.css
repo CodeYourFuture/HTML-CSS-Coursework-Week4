@@ -50,6 +50,7 @@ header {
 
 .header-text {
     margin-bottom: 15px;
+    text-decoration: none;
 }
 
 .bag-image {
