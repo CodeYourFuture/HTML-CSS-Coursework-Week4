@@ -7,14 +7,13 @@
 
     header {
         display: grid;
-        grid-template-columns: 20% 50% 10% 10% 10%;
+        grid-template-columns: 20% 60% 5% 10% 5%;
         grid-template-rows: 50% 50%;
         grid-template-areas: 
-        "search . login-icon log-in bag-icon"        
+        "search search login-icon log-in bag-icon"        
         "heading nav call-us-now call-us-now call-us-now";    
         align-items:center;
-        justify-content: center;  
-      
+        justify-content: center;   
     }   
 
     .hamburger-icon {
@@ -25,19 +24,18 @@
         display: block;
     }  
 
-
     .login-icon {
         display: block;
         grid-area: login-icon;
-        justify-self: right;
+        justify-self: left;
     }
 
     .log-in {
+        display: block;
         grid-area: log-in;
-        justify-self: right;
+        justify-self: center;
         font-family: 'Outfit', sans-serif; ;
     }
-
 
     nav {
         grid-area: nav;
@@ -101,5 +99,21 @@
     .greenhouse {
         grid-area: greenhouse;
     }
-    
+
+    /* Footer */
+
+    footer {
+        font-weight: 200;
+        font-size: 0.9rem;
+    }
+
+    .flex-footer {
+        width: 100%;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 50px;
+    }
+
+   
 }

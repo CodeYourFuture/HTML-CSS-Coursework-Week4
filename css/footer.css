@@ -1,7 +1,7 @@
 /* Footer */
 
 footer {
-    background-color: var(--dark-green);
+    background-color: var(--green-black);
     color: var(--white);
     display: flex;
     flex-direction: column;
@@ -11,3 +11,30 @@ footer {
     padding: 20px;
 }
 
+.flex-footer-item {
+    width: 270px;  
+    padding: 20px; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+footer h4 {
+    font-size: 1.1rem;
+    letter-spacing: 0.4rem;
+    font-weight: 200;
+    padding-bottom: 30px;
+}
+
+footer p {
+    line-height: 1.8em;
+    letter-spacing: 0.05rem;
+}
+
+.subscribe, .subscribe input, .subscribe button{
+    width: 90%;
+}
+
+.subscribe input {
+    margin: 0 auto;  
+}

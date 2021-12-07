@@ -1,13 +1,14 @@
 /* Main */
 
 /* Hero */
-.hero {
-    background-image: url('../img/hero.webp');
-    width: 100%;
+.hero {    
     color:#fff;
     height: 80vh;
+    background-color: var(--dark-green);
+    background-image: url('../img/hero.webp');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -88,7 +89,7 @@
 }
 
 .advert {
-    background-color: var(--dark-green);
+    background-color: var(--green-black);
     color: #fff;
     height: 70vh;
     display: flex;
