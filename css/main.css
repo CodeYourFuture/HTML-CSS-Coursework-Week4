@@ -1,12 +1,3 @@
-/* Add your CSS here */
-/* .header-grid-container {
-  position: static;
-  display: grid;
-  height: auto;
-  width: 100%;
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: 100%;
-} */
 /* CCS Variables */
 :root {
   --red_brown: #a05841;
@@ -32,8 +23,6 @@ body {
 }
 
 .master-page {
-  /* height: 100vh; */
-  border: 2px solid red;
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: auto;
@@ -45,8 +34,6 @@ body {
 
 .header-site {
   grid-area: header;
-  /* height: 200px; Remove at the end */
-  padding: 1rem 1rem 0 1rem;
 }
 
 /* HEADER-SEARCH-BAG */
@@ -54,8 +41,10 @@ body {
 .header-search-bag {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  background-color: var(--white);
+  padding: 17px 0;
 }
 
 .bag {
@@ -68,42 +57,45 @@ body {
 }
 
 .search-container {
-  border: 1px solid var(--red_brown);
   outline: none;
   position: relative;
   /* direction: rtl; rigth to left */
   width: 15rem;
-  background-color: var(--light_grey);
+  background-color: var(--white);
   color: var(--red_brown);
+}
+
+.search-container:hover {
+  border: 1px solid var(--red_brown);
 }
 
 .search-container input {
   height: 2.5rem;
   padding: 0 32px;
   border: none;
+  background: var(--white);
 }
 
-.search-container input[type="text"] {
-  background-color: var(--light_grey);
-}
-
-.search-container ::placeholder {
+.search-container input::placeholder {
   color: var(--red_brown);
   font-size: 1.2rem;
-  font-weight: 200;
+  font-weight: 100;
   padding-left: 10px;
 }
 
-.search-container .fa-search {
+.search-icon img {
   position: absolute;
-  bottom: 0.5rem;
-  right: 12.8rem;
-  width: 1.5rem;
-  height: 1.4rem;
+  width: 17px;
+  height: 16px;
+  top: 12px;
+  left: 13px;
+  filter: invert(38%) sepia(49%) saturate(567%) hue-rotate(329deg)
+    brightness(92%) contrast(89%);
 }
 
 /* HEADER-LOGO-TITLE-MENU-BURGER */
 .header-logo_title_menu_burger {
+  padding: 1rem 1rem 0 1rem;
   margin: 2rem 0 1.5rem 0;
   display: flex;
   flex-direction: row;
@@ -121,6 +113,11 @@ body {
 .logo_title p {
   font-size: 1.1rem;
   font-weight: 600;
+}
+
+rect {
+  fill: var(--red_brown);
+  border-radius: 2px;
 }
 
 /* MAIN */
@@ -265,9 +262,13 @@ body {
   padding-top: 80px;
 }
 
-.offer-btn {
+.offer-btn,
+.footer-subscribe-btn {
   background-color: var(--white);
   color: var(--green_black);
+}
+
+.offer-btn {
   margin-top: 60px;
   padding: 0.9rem 3rem;
 }
@@ -301,6 +302,10 @@ body {
 
 .form-section input {
   padding: 10px 2px;
+}
+
+.form-section input,
+.form-section textarea {
   border: 1px solid #000;
 }
 
@@ -318,8 +323,90 @@ body {
   margin: -2px 0;
 }
 
-.footer {
+.footer-green-background {
   grid-area: footer;
+  background-color: var(--green_black);
+  color: var(--white);
+  text-align: center;
+  margin: -5px 0;
+}
+
+footer section {
+  padding-top: 70px;
+}
+
+.footer-our-store h3,
+.footer-hours h3,
+.footer-help h3,
+.footer-subscribe h3 {
+  font-size: 23px;
+  letter-spacing: 5px;
+  font-weight: initial;
+}
+
+.footer-our-store p,
+.footer-hours p {
+  margin: 3px;
+}
+
+.footer-our-store p,
+.footer-hours p,
+.footer-help li a {
+  font-size: 18px;
+}
+
+.footer-help ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-help li {
+  margin-top: 7px;
+}
+
+.footer-help li a {
+  text-decoration: underline;
+  color: var(--white);
+}
+
+.footer-subscribe .subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: left;
+  padding: 0 12px;
+}
+
+.footer-subscribe label {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.footer-subscribe input {
+  padding: 15px 10px;
+  margin-bottom: 10px;
+  background: transparent;
+  border: 1px solid var(--white);
+}
+
+.social-medias img {
+  width: 25px;
+  height: 25px;
+  padding-bottom: 30px;
+}
+
+.footer-google-maps img {
+  width: 100%;
+}
+
+.footer-bottom-page {
+  padding: 0 30px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.footer-bottom-page a {
+  color: var(--red_brown);
 }
 
 /* Dont' forget to link this file to your HTML in the <head> */

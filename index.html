@@ -31,10 +31,11 @@
         <div class="header-search-bag">
           <div class="search-container">
             <input type="text" placeholder="Search.." name="search" />
-            <i class="fas fa-search"></i>
+            <div class="search-icon">
+              <img src="/home/marina/Desktop/CodeYouFuture/responsive-grid-project/img/search.png" alt="search icon">
+            </div>
           </div>
-          <div class="bag">
-            <!-- <img src="img/bag.svg" alt="" /> -->
+          <div class="bag" title="bag with count items">
           </div>
         </div>
         <div class="header-logo_title_menu_burger">
@@ -43,7 +44,11 @@
             <p>We Delivery to Your Doorstep</p>
           </div>
           <div class="menu_burger">
-            <i class="fas fa-bars fa-2x"></i>
+            <svg viewBox="0 0 100 80" width="40" height="40">
+              <rect width="75" height="7"></rect>
+              <rect y="30" width="75" height="7"></rect>
+              <rect y="60" width="75" height="7"></rect>
+          </svg>
           </div>
         </div>
       </header>
@@ -188,11 +193,57 @@
           />
         </div>
       </main>
-      <!-- Please leave this in to credit the creators of this design -->
-      <p>
-        This website design was created by Wix.com, and is used here for
-        strictly educational purposes.
-      </p>
+      <footer>
+        <div class="footer-green-background">
+          <section class="footer-our-store">
+            <h3>OUR STORE</h3>
+            <p>Address: 500 Terry Francois Street San</p>
+            <p>Francisco, CA 94158</p>
+            <p>Phone: 123-456-7890</p>
+            <p>Email: info@mysite.com</p>
+          </section>
+          <section class="footer-hours">
+            <h3>OPENING HOURS</h3>
+            <p>Mon - Fri: 7am - 10pm</p>
+            <p>Saturday: 8am - 10pm</p>
+            <p>Sunday: 8am - 11pm</p>
+          </section>
+          <section class="footer-help">
+            <h3>HELP</h3>
+            <ul>
+              <li><a href="#">Shipping & Returns</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </section>
+          <section class="footer-subscribe">
+            <h3>SUBSCRIBE</h3>
+            <form class="subscribe">
+              <label for="email">Enter your email here *</label>
+              <input type="email" name="email" id="email">
+              <button class="btn footer-subscribe-btn">Subscribe Now</button>
+  
+            </form>
+            </section>
+  
+            <section class="social-medias">
+              <img src="/home/marina/Desktop/CodeYouFuture/responsive-grid-project/img/facebook.png" alt="">
+              <img src="/home/marina/Desktop/CodeYouFuture/responsive-grid-project/img/pinterest.png" alt="">
+              <img src="/home/marina/Desktop/CodeYouFuture/responsive-grid-project/img/intagram.png" alt="">
+            </section>
+          </section>
+
+        </div>
+        <div class="footer-google-maps">
+          <img src="/home/marina/Desktop/CodeYouFuture/responsive-grid-project/img/mobile-map.jpg" alt="">
+        </div>
+
+        <div class="footer-bottom-page">
+          <span>© 2023 by Prickles &amp; Co. Proudly created with </span>
+          <span><a href="http://wix.com?utm_campaign=vir_created_with" target="_blank">Wix.com</a></span>
+        </div>
+      </footer>
     </div>
+    </script>
   </body>
 </html>
