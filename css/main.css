@@ -217,6 +217,8 @@ a:link {
 
 footer {
   background-color: var(--dark-green);
+  color: var(--white);
+  text-align: left;
 }
 
 .follow-us {
@@ -264,36 +266,81 @@ footer img {
 .footer-nav {
   display: flex;
   justify-content: space-between;
-  color: var(--white);
   padding: 25px;  
 }
 
-ul {
+ul, label{
   font-family:"HelveticaNeueW01-45Ligh";
   list-style-type:none;
-  text-align: left;
   padding-left: 0;
   line-height: 2;
-   font-weight: 50;  
+  font-weight: 50;  
 }
 
 .footer-email {
-  color:var(--white);
-  text-align: left;
   padding: 1.5rem;
-  margin-bottom: 20px;
 }
+
 .email-submit {
   display: flex;
   flex-direction: row;
+  align-items: end;
+  margin: 2rem 0;
+  bottom: 0;
 }
+
 .submit-btn {
   background-color: transparent;
-  border:3px solid var(--white);
-  /* width: 200px; */  
+  border:2px solid var(--white);
+  width: 160px;  
 }
 
+.email-submit input {
+  width: 120px;
+  bottom: 0;
+  border: none;
+  border-bottom: 2px solid var(--white) ;
+  background-color: transparent;
+}
 
+.juice-bar-logo {
+  width: 60px;
+  height: 60px;
+  border: 2px solid var(--white);
+  border-radius: 50%;
+  line-height: 1;
+}
+
+.juice-bar-logo .p-j{
+padding-left: 1.1rem;
+  text-align: left;
+  margin: 0;
+}
+
+.juice-bar-logo .p-b{
+  padding-right: 1.1rem;
+  margin: 0;
+  text-align: right;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0 1.3rem;
+  height: 250px;
+}
+
+.footer-bottom .footer-note{
+  line-height: 1.1;
+  font-size: 14px;
+  margin: 0;
+  text-align: left;
+}
+
+a {
+  color: var(--white);
+}
 
 
 
