@@ -12,6 +12,7 @@ function showMenu() {
     } else {
         x.style.display = "none";
         document.getElementById("bar-two").style.opacity = "1";
+        document.getElementById("body").style.overflow = "scroll";
         document.getElementById("bar-one").style.transform =
             "translateY(0) translateY(0) rotate(0)";
         document.getElementById("bar-three").style.transform =
