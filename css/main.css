@@ -9,9 +9,9 @@ https://fonts.google.com/specimen/Raleway
 **Body:** Roboto - Light 300  
 https://fonts.google.com/specimen/Roboto  
 
-*/
 
 /* Add your CSS here */
+
 
 body {
   --black: #000;
@@ -32,47 +32,6 @@ body {
   text-align: center;
 }
 
-button {
-  font-family: "Raleway";
-  width: 170px;
-  height: 48px;
-  margin: 2rem auto 1.2rem auto;
-  font-size: 15px;
-  border-radius: 0;
-  background-color: var(--black);
-  color: var(--white);
-}
-
-.main-top {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 2rem;
-}
-
-.main-top-item {
-  margin: 0.8rem 1.7rem;
-}
-
-.main-hero-img {
-  margin-top: 1rem;
-  width: 320px;
-  height: 200px;
-  object-fit: cover;
-  object-position: 50% 50%;
-}
-
-.main-middle {
-  margin-bottom: 2rem;
-  text-align: center;
-}
-
-.icons img {
-  width: 4rem;
-  height: auto;
-  margin: 1rem auto;
-}
-
 h1,
 h2,
 h3 {
@@ -85,17 +44,29 @@ h2 {
   font-size: 32px;
 }
 
-h3 span {
+h3 {
   font-size: 22px;
 }
 
 p {
   font-family:"HelveticaNeueW01-45Ligh";
-  font-weight: 50;
-  text-align: center !important;
-  padding:0 2.8rem;
+  font-size: 15px;
+  font-weight: 70;
+  margin: 0.5rem 2.2rem;
   line-height: 1.7;
-  letter-spacing: normal;
+  letter-spacing:0.2px;
+}
+
+/* Header */
+
+button {
+  font-family: "Raleway";
+  width: 170px;
+  height: 48px;
+  font-size: 15px;
+  border-radius: 0;
+  background-color: var(--black);
+  color: var(--white);
 }
 
 header .order-btn {
@@ -109,26 +80,32 @@ header .order-btn {
   flex-direction: row;
   justify-content: space-between;
   text-align: left;
-  padding: 0.3rem 1.3rem 1rem 1.3rem;
+  padding: 1rem 1.3rem;
 }
 
-.main-article {
-  background-color: var(--light-green);
+/* main / main-top  */
+
+.main-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
 }
 
-.main-article img {
-  width: 280px;
-  height: 377px;
+.main-top-item {
+  margin: 0.8rem 1.7rem;
+}
+
+.main-top-img {
+  margin-top: 1rem;
+  width: 320px;
+  height: 200px;
   object-fit: cover;
-  object-position: 80% 50%;
+  object-position: 50% 50%;
 }
 
- .article-btn {
-  background-color: transparent;
-  color: var(--black);
-  width: 160px;
-  height: 42px;
-  
+.main-top-try p {
+  padding: 0;
 }
 
 .main-top-try {
@@ -142,8 +119,47 @@ a:link {
   color: var(--black);
 }
 
+/*  main / main-middle */
+
+.main-middle {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.icons img {
+  width: 4.5rem;
+  height: auto;
+  margin: 1rem auto;
+}
+
+/* main / main-article */
+
+.main-article {
+  background-color: var(--light-green);
+}
+
+.main-article img {
+  width: 280px;
+  height: 377px;
+  object-fit: cover;
+  object-position: 80% 50%;
+  margin: 1.5rem;
+}
+
+ .article-btn {
+  background-color: transparent;
+  color: var(--black);
+  width: 160px;
+  height: 48px;
+  margin-top: 10px;
+  margin-bottom: 25px; 
+}
+
+/* main / features-article-1 */
+
 .features-article-1 {
   background-color: var(--lylac);
+  padding: 1.2rem 0;
 }
 
 .features-article-1 img {
@@ -151,24 +167,134 @@ a:link {
   height: 274px;
   object-fit: cover;
   object-position: 50% 50%;
+  margin: 1.5rem 0;
+  
 }
+
+/* main / features-article-2 */
 
 .features-article-2 img {
   width: 280px;
   height: 371px;
   object-fit: cover;
   object-position: 50% 50%;
+  margin-top: 25px;
+  margin-bottom: 30px;
 }
 
-.delivery-options-container {
+/* article/ delivery-article */
+
+.delivery-options {
   background-color: var(--light-green);
+  margin: auto;
+  text-align: center;
+}
+
+.delivery-options .option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
+
+.option-number {
+  width: 44px;
+  height: 41.1px;
+  border: 1px solid var(--black);
+  border-radius: 50%;
+  margin-bottom: 0.7rem;
+  text-align: center;
+}
+
+.option-number p{
+  padding: 0.5rem 0;
+  margin: 0;
+
+}
+
+/* footer */
+
+footer {
+  background-color: var(--dark-green);
+}
+
+.follow-us {
+  background-color: var(--white);
+  height: 180px;
+  padding-top: 2rem;
 }
 
 footer img {
+  position: relative;
   width: 131px;
   height: 159px;
   object-fit: cover;
   object-position: 50% 50%;
 }
+
+.image-container {
+  height: 250px;
+}
+
+.img-1 {
+  transform: rotate(-20deg);  
+  left: 75px;
+  top: 70px;
+
+}
+.img-2 {
+  transform: rotate(20deg);
+  right: 115px;
+  bottom: 20px;
+}
+
+.img-3 {
+  transform: rotate(-20deg);
+  left: 50px;
+  bottom: 260px;
+  }
+
+.img-4 {
+  transform: rotate(20deg);
+  right: 13px;
+  bottom: 170px;
+  }
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  color: var(--white);
+  padding: 25px;  
+}
+
+ul {
+  font-family:"HelveticaNeueW01-45Ligh";
+  list-style-type:none;
+  text-align: left;
+  padding-left: 0;
+  line-height: 2;
+   font-weight: 50;  
+}
+
+.footer-email {
+  color:var(--white);
+  text-align: left;
+  padding: 1.5rem;
+  margin-bottom: 20px;
+}
+.email-submit {
+  display: flex;
+  flex-direction: row;
+}
+.submit-btn {
+  background-color: transparent;
+  border:3px solid var(--white);
+  /* width: 200px; */  
+}
+
+
+
+
 
 /* Dont' forget to link this file to your HTML in the <head> */
