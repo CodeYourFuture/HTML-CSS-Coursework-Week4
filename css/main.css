@@ -1,0 +1,143 @@
+.hero {
+  width: calc(100% + 4rem);
+  background: url("../img/hero-background.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 -2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 600);
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.25);
+}
+.hero > * {
+  color: var(--white);
+  fill: var(--white);
+  margin-bottom: 2rem;
+}
+.hero div {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.hero div p {
+  font-weight: 400;
+  padding-bottom: 0.5rem;
+  border-bottom: var(--white) 2px solid;
+}
+.hero div svg {
+  margin: 2rem 2rem 0;
+}
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+.hero h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.hero .button {
+  margin-bottom: 6rem;
+}
+.featured {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem -2rem;
+  min-height: 60vh;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+.product img {
+  pointer-events: none;
+  position: absolute;
+  height: 60vh;
+  width: auto;
+  z-index: -1;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+.product h4,
+.product a {
+  margin-top: 2rem;
+}
+.product h4 {
+  font-size: 2rem;
+  letter-spacing: 0.4rem;
+  color: var(--red-brown);
+}
+.product h4:after,
+h2:after {
+  position: relative;
+  left: -50%;
+  transform: translateX(-50%);
+  bottom: -1rem;
+  content: "..";
+  height: 0.1rem;
+  width: 0.3rem;
+  font-size: 0.21rem;
+  background-color: var(--red-brown);
+}
+.about-us {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0;
+}
+.about-us > * {
+  grid-column: auto / span 4;
+}
+.about-us img {
+  width: calc(100% + 4rem);
+  margin: -0.2rem -2rem;
+}
+.about-text {
+  margin: 2rem 0;
+  text-align: center;
+  color: var(--red-brown);
+}
+.about-text h2 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-family: var(--heading-font);
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+h2:after {
+  left: -20%;
+}
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+}
+
+@media screen and (min-width: 900px) {
+  .hero {
+    width: calc(100% + 8rem);
+    margin: 0 -4rem;
+  }
+  .featured {
+    padding: 0 2rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .product {
+    width: 30%;
+  }
+  .product h4 {
+    padding-left: 1.5rem;
+  }
+  .product img {
+    width: 30%;
+  }
+}

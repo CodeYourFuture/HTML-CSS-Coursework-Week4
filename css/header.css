@@ -1,102 +1,184 @@
-
-
 .header-row {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center;
-    height:5rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  height: 5rem;
+  font-family: var(--heading-font);
+  font-weight: 400;
+  color: var(--red-brown);
 }
+
 header svg {
-    height: 1.5rem;
+  height: 2rem;
+  fill: var(--red-brown);
 }
-.search-box input{
-    width:15rem;
-    padding: 0.8rem 0 0.8rem 2rem;
-    border:1px solid var(--red-brown);
+
+.search-box input {
+  width: 15rem;
+  padding: 0.8rem 0 0.8rem 2rem;
+  border: 1px solid var(--red-brown);
 }
-.search-box input:hover, 
-.search-box input:focus{
-    border:2px solid var(--red-brown);
-    outline:none;
+
+.search-box input:hover,
+.search-box input:focus {
+  border: 2px solid var(--red-brown);
+  outline: none;
 }
-.magnifying-glass{
-    position: relative;
-    left:-14.6rem;
-    color:var(--red-brown);
-    opacity: 0.5;
+
+.magnifying-glass {
+  position: relative;
+  left: -14.6rem;
+  color: var(--red-brown);
+  opacity: 0.5;
 }
-.search-box input:hover ~ .magnifying-glass, 
-.search-box input:focus ~ .magnifying-glass{
-    display:none;
-}
+
 .hidden {
-    display:none;
+  display: none;
 }
-.corner-links{
-    height: 100%;
-    display: flex;
-    align-items: center;
+
+.corner-links {
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
+
 .login {
-    display: none;
-    align-items: center;
+  display: none;
+  align-items: center;
+  z-index: 2;
 }
+
 .login span {
-    margin-left: 0.2rem;
+  margin-left: 0.3rem;
 }
+
 .corner-links a {
-    text-decoration: none;
+  text-decoration: none;
 }
+
+.login {
+  color: var(--red-brown);
+  font-size: 1.5rem;
+}
+
 .item-counter {
-    color:var(--white);
-    position: relative;
-    left:18px;
-    top:-4px;
-    font-size:0.8rem;
+  color: var(--white);
+  position: relative;
+  left: 21px;
+  top: -8px;
+  font-size: 0.8rem;
+}
+
+.navigation-row {
+  width: 100%;
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-areas:
+    "logo logo . hamb"
+    "dtext dtext dtext dtext";
+}
+.logo {
+  grid-area: logo;
+  padding: 0.5rem 0;
+  color: var(--red-brown);
+  font-size: 2rem;
+}
+.hamburger {
+  grid-area: hamb;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+  z-index: 2;
+  color: var(--red-brown);
+}
+.dynamic-text {
+  grid-area: dtext;
+  color: var(--red-brown);
+  letter-spacing: 0.2rem;
 }
 .navigation {
-    position:absolute;
-    top:0;
-    right:0;
-    background-color:var(--light-grey);
-    display:none;
-    width:100vw;
-    height: 100vh;
-    flex-direction: column;
-    align-items: center;
-    list-style: none;
-    padding:3rem 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--light-grey);
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  padding: 3rem 0;
+}
+.open {
+  display: flex;
+  animation-name: fadein;
+  animation-duration: 1s;
 }
 .navigation.open {
-    display: flex;
+  padding-top: 7rem;
 }
-.navigation li{
-    width: 100%;
-    height: 15vh;
-    text-align: center;;
+.login.open {
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
-.navigation li a{
-    text-align: center;
-    padding:1rem;
-    width:100%;
+.login.open svg {
+  height: 2rem;
+  margin-right: 0.7rem;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.navigation li {
+  width: 100%;
+  height: 10vh;
+  text-align: center;
 }
 
-@media screen and (min-width:900px){
-    .login{
-        display: flex;
-    }
-    body {
-        padding: 0 2rem;
-    }
-    .navigation {
-        display: flex;
-        flex-direction: row;
-        height: 2rem;
-        position: static;
-        width: 40%;
-        top:auto;
-        right: auto;
-        padding: 0;
-    }
+.navigation li a {
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+  text-decoration: none;
+  color: var(--red-brown);
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 900px) {
+  .login {
+    display: flex;
+  }
+  .navigation-row {
+    grid-template-areas: "logo nav nav nav . . dtext dtext";
+  }
+  .dynamic-text {
+    text-align: right;
+  }
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    height: 2rem;
+    position: static;
+    width: 40%;
+    top: auto;
+    right: auto;
+    padding: 0;
+  }
+  .navigation li {
+    height: 100%;
+    justify-self: flex-start;
+  }
+  .hamburger {
+    display: none;
+  }
 }
