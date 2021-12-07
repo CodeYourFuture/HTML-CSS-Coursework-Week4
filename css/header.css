@@ -1,15 +1,79 @@
 /* Add your CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
-:root{
-    --first-color-dark-beige: #E6DACD;
-    --second-color-light-beige:#F4ECE6;
-    --third-color-light-beige:#0150FD;
-    --color-black:#000;
-    --color-white: #FFF;
-
-    
+:root {
+  --first-color-dark-beige: #e6dacd;
+  --second-color-light-beige: #f4ece6;
+  --third-color-light-beige: #0150fd;
+  --color-black: #000;
+  --color-white: #fff;
 }
- 
 
-    
+p {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: grid;
+  padding: 1rem;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 0.5fr);
+  grid-template-areas:
+    "nb nb nb nb . ."
+    "j  j  j  j . h";
+}
+
+.name__box__container {
+  display: flex;
+  grid-area: nb;
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.blue__box {
+  margin-right: 0.5rem;
+  height: 0.75rem;
+  width: 0.75rem;
+  background-color: var(--third-color-light-beige);
+}
+
+.job__title_container {
+  grid-area: j;
+  font-size: 0.75rem;
+  padding-top: 0.3rem;
+}
+
+.hamburger__container {
+  width: 1.2rem;
+  height: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  grid-area: h;
+}
+
+.hamburger__top__line {
+  border-radius: 1.5px;
+  width: 50%;
+  height: 3px;
+  background-color: var(--third-color-light-beige);
+  border-radius: 1.5px;
+}
+
+.hamburger__middle__line {
+  border-radius: 1.5px;
+  width: 100%;
+  height: 3px;
+  background-color: var(--third-color-light-beige);
+  border-radius: 1.5px;
+}
+
+.hamburger__bottom__line {
+  border-radius: 1.5px;
+  width: 50%;
+  height: 3px;
+  background-color: var(--third-color-light-beige);
+  border-radius: 1.5px;
+  align-self: flex-end;
+}
