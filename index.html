@@ -19,7 +19,7 @@
     <title>Responsive grid project</title>
 </head>
 
-<body>
+<body id="body">
 
     <!-- Add your markup here -->
     <header class="grey-background">
@@ -32,33 +32,27 @@
             <h3>Prickles & Co.</h3>
         </a>
         <section class="hamburger-menu">
-            <form action="#">
-                <button id="menu-button" class="menu-button" onclick="showMenu()">
-                        <div class="bar" id="bar-one"></div>
-                        <div class="bar" id="bar-two"></div>
-                        <div class="bar" id="bar-three"></div>
-                    </button>
-            </form>
-            <section class="menu-list" id="menu-list">
-                <nav>
-                    <ul>
-                        <li class="nav-items"><img><a href="#">Log In</a></li>
-                        <li class="nav-items"><a href="#">Shop</a></li>
-                        <li class="nav-items"><a href="#">About</a></li>
-                        <li class="nav-items"><a href="#">FAQ</a></li>
-                        <li class="nav-items"><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
-                <!-- <form action="#">
-                    <button id="side-menu-button" class="menu-button" onclick="showMenu()">
-                            <div class="bar cross-bar"></div>
-                            <div class="bar cross-bar"></div>
-                        </button>
-                </form> -->
-            </section>
+
+            <button id="menu-button" class="menu-button" onclick="showMenu()">
+                    <div class="bar" id="bar-one"></div>
+                    <div class="bar" id="bar-two"></div>
+                    <div class="bar" id="bar-three"></div>
+                </button>
         </section>
         <section class="changing-text" id="changing-text"></section>
     </header>
+    <section class="menu-list" id="menu-list">
+        <nav>
+            <ul>
+                <li class="nav-items"><img><a href="#">Log In</a></li>
+                <li class="nav-items"><a href="#">Shop</a></li>
+                <li class="nav-items"><a href="#about">About</a></li>
+                <li class="nav-items"><a href="#">FAQ</a></li>
+                <li class="nav-items"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+    </section>
     <main class="grey-background">
         <section class="hero">
             <section class="overlay"></section>
@@ -109,7 +103,7 @@
                 </section>
             </section>
         </section>
-        <section class="about">
+        <section class="about" id="about">
             <h4>About us</h4>
             <hr class="small-divider">
             <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great
@@ -128,7 +122,7 @@
                 <button>Shop Now</button>
             </form>
         </section>
-        <section class="form">
+        <section class="form" id="contact">
             <form action="#" class="contact-form">
                 <h4>For special requests & orders</h4>
                 <hr class="large-divider">

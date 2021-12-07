@@ -1,16 +1,23 @@
 // BRING UP MENU
-// function showMenu() {
-//     var x = document.getElementById("menu-list");
-//     if (x.style.display === "none") {
-//         x.style.display = "flex";
-//         document.getElementById("bar-two").style.opacity = "0";
-//         document.getElementById("bar-three").style.transform =
-//             "translateY(-10px) translateY(50%) rotate(45deg);";
-//     } else {
-//         x.style.display = "none";
-//         document.getElementById("bar-two").style.opacity = "1";
-//     }
-// }
+function showMenu() {
+    var x = document.getElementById("menu-list");
+    if (x.style.display === "none") {
+        x.style.display = "flex";
+        document.getElementById("bar-two").style.opacity = "0";
+        document.getElementById("body").style.overflow = "hidden";
+        document.getElementById("bar-one").style.transform =
+            " translateY(8px) rotate(-45deg)";
+        document.getElementById("bar-three").style.transform =
+            "translateY(-8px) rotate(45deg)";
+    } else {
+        x.style.display = "none";
+        document.getElementById("bar-two").style.opacity = "1";
+        document.getElementById("bar-one").style.transform =
+            "translateY(0) translateY(0) rotate(0)";
+        document.getElementById("bar-three").style.transform =
+            "translateY(0) translateY(0) rotate(0)";
+    }
+}
 
 // CHANGING TEXT
 var text = ["We Deliver to Your Doorstep", "Call Us Now! 123-456-7890"];
