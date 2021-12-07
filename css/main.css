@@ -1,3 +1,84 @@
-/* Add your CSS here */
+body {
+    display: grid;
+    grid-template-columns: repeat(4 1fr);
+    grid-template-rows: 150px 560px 470px 470px 470px 550px 260px 260px 260px 430px 150px 250px 150px;
+    grid-template-areas: 
+    "header        header        header        header"
+    "hero          hero          hero          hero"
+    "cacti         cacti         cacti         cacti"
+    "plants        plants        plants        plants"
+    "succulents    succulents    succulents    succulents"
+    "about         about         about         about"
+    "img           img           img           img"
+    "img2          img2          img2          img2"
+    "img3          img3          img3          img3"
+    "offer         offer         offer         offer"
+    "order         order         order         order"
+    "img4          img4          img4          img4"
+    "footer        footer        footer        footer";
+}
 
-/* Dont' forget to link this file to your HTML in the <head> */
+.header {
+    background-color: rgb(134, 132, 132);
+    grid-area: header;
+}
+
+.hero {
+    background-image: url("../images/prickles-hero-img.png");
+    grid-area: hero;
+}
+
+.shop-cacti {
+    background-image: url("../images/cactus.png");
+    grid-area: cacti;
+}
+
+.shop-plants {
+    background-image: url("../images/plants.png");
+    grid-area: plants;
+}
+
+.shop-succulents {
+    background-image: url("../images/succulents.png");
+    grid-area: succulents;
+}
+
+.about-us {
+    background-color: rgb(170, 185, 177);
+    grid-area: about;
+}
+
+.greenhouse-img {
+    background-image: url("../images/wheelbarrow.png");
+    grid-area: img;
+}
+
+.leaf-img {
+    background-image: url("../images/leaf.png");
+    grid-area: img2;
+}
+
+.foliage-img {
+    background-image: url("../images/woman-foliage.png");
+    grid-area: img3;
+}
+
+.offer {
+    background-color: rgb(1, 26, 13);
+    grid-area: offer;
+}
+
+.order {
+    background-color: rgb(92, 116, 103);
+    grid-area: order;
+}
+
+.end-page-img {
+    background-image: url("../images/background-plant.png");
+    grid-area: img4;
+}
+
+.footer {
+    background-color: rgb(9, 59, 33);
+    grid-area: footer;
+}
