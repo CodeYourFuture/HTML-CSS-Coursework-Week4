@@ -1,3 +1,17 @@
-/* Add your CSS here */
-
-/* Dont' forget to link this file to your HTML in the <head> */
+:root {
+  --black: #000;
+  --white: #fff;
+  --lilac: #f5e8ff;
+  --light-Green: #e6fac0;
+  --medium-Green: #5e7d1f;
+  --dark-Green: #394b2a;
+  --headings-font: "Questrial", sans-serif;
+  --buttons-font: "Raleway", sans-serif;
+  --body-font: "Roboto", sans-serif;
+}
+.hamburger {
+  max-width: 30px;
+}
+.hamburger img {
+  width: 100%;
+}
