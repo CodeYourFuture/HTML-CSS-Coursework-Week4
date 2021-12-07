@@ -36,6 +36,10 @@ body {
   height: 50px;
 }
 
+.nav {
+  display: none;
+}
+
 .hamburger {
   margin-top: 0.7rem;
 }
@@ -48,9 +52,10 @@ body {
 /* Main Section */
 .intro {
   background-image: url("https://static.wixstatic.com/media/697bc8_ee5e15509a8c468f96ec8b15a13e0daf~mv2_d_2000_1809_s_2.jpg/v1/fill/w_1305,h_928,al_b,q_85,usm_0.66_1.00_0.01/697bc8_ee5e15509a8c468f96ec8b15a13e0daf~mv2_d_2000_1809_s_2.webp");
+  background-size: cover;
   text-align: center;
   color: var(--white);
-  padding-bottom: 2rem;
+  padding-bottom: 10rem;
 }
 
 .intro-title {
@@ -88,7 +93,7 @@ body {
   background-size: contain;
   text-align: center;
   width: 100%;
-  height: 70vh;
+  height: 45rem;
 }
 
 .shop-collection-button {
@@ -103,15 +108,11 @@ body {
   text-align: center;
   margin-top: 0;
   padding-top: 2.5rem;
+  display: grid;
 }
 
 .about-text {
   margin: 0 1.5rem;
-}
-
-.about-grid {
-  display: grid;
-  margin-top: 5rem;
 }
 
 .about-image {
@@ -137,7 +138,9 @@ body {
 
 .form-container {
   background-image: url("https://static.wixstatic.com/media/697bc8_4ea3867c24544ad6b0d299b5d93a7fd5~mv2_d_3000_2150_s_2.jpg/v1/fill/w_1305,h_928,al_t,q_85,usm_0.66_1.00_0.01/697bc8_4ea3867c24544ad6b0d299b5d93a7fd5~mv2_d_3000_2150_s_2.webp");
-  padding-bottom: 15rem;
+  background-size: cover;
+  padding-bottom: 10rem;
+  padding-top: 10rem;
 }
 
 .form {
@@ -167,12 +170,12 @@ body {
 }
 
 /* Footer Section */
-.contact {
+.contacts {
   color: var(--white);
   background-color: var(--green-black);
   text-align: center;
   margin: 0;
-  padding: 2rem 0;
+  padding: 3rem 0;
 }
 
 .address,
@@ -220,4 +223,56 @@ body {
 
 .wix {
   color: var(--red-brown);
+}
+
+@media screen and (min-width: 900px) {
+  .products {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .about {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .about-text {
+    grid-column: 1 / 3;
+  }
+
+  .facility {
+    grid-column: 3 / 4;
+  }
+
+  .leaf {
+    grid-column: 4 / 5;
+  }
+
+  .woman {
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+  }
+
+  .promo {
+    grid-column: 3 / 5;
+  }
+
+  .form {
+    width: 50%;
+    margin: 0 25rem;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  .contacts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .subscribe,
+  .social-links {
+    grid-column: 2 / 3;
+  }
+
+  .social-links {
+    grid-row: 3 / 4;
+  }
 }
