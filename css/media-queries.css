@@ -13,7 +13,7 @@
         "search search login-icon log-in bag-icon"        
         "heading nav call-us-now call-us-now call-us-now";    
         align-items:center;
-        justify-content: center;   
+        justify-content: center;  
     }   
 
     .hamburger-icon {
@@ -40,7 +40,7 @@
     nav {
         grid-area: nav;
         align-self: left;
-        font-family: Outfit, sans-serif;
+        font-family: Outfit, sans-serif;        
     }
 
     .call-us-now {
@@ -113,7 +113,5 @@
         flex-direction: row;
         justify-content: space-evenly;
         padding: 50px;
-    }
-
-   
+    }   
 }

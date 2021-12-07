@@ -8,7 +8,7 @@
     background-image: url('../img/hero.webp');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -101,13 +101,12 @@
 /* Section: form */
 
 .form {
-   
+   width: 80%;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   margin: 0 auto;
-   
+   margin: 0 auto;   
 }
 
 .form h3 {

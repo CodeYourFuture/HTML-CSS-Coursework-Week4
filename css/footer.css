@@ -32,9 +32,17 @@ footer p {
 }
 
 .subscribe, .subscribe input, .subscribe button{
-    width: 90%;
+    width: 100%;
+    margin: 10px auto;  
 }
 
 .subscribe input {
-    margin: 0 auto;  
+    background: var(--green-black);  
+    border-color: white;   
+}
+
+.subscribe button {
+    background: white;
+    color: var(--green-black);
+    font-family: 'Outfit', sans-serif; 
 }
