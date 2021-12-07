@@ -1,39 +1,61 @@
+/* Media Queries */
 
-@media screen and (min-width: 768px) {
 
-    nav ul{
-        display: block;
-    }
+@media screen and (min-width: 994px) {      
+    
+    /* Header */     /* Navbar */
+
+    header {
+        display: grid;
+        grid-template-columns: 20% 50% 10% 10% 10%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: 
+        "search . login-icon log-in bag-icon"        
+        "heading nav call-us-now call-us-now call-us-now";    
+        align-items:center;
+        justify-content: center;  
+      
+    }   
 
     .hamburger-icon {
         display: none;
     }
-    header {
-        display: grid;
-        grid-template-columns: 10% 65% 25%;
-        grid-template-rows: 50% 50%;
-        grid-template-areas: 
-        "search . bag-icon"        
-        "heading nav call-us-now";    
-        align-items:center;
-        justify-content: center;
+
+    nav ul{
+        display: block;
+    }  
+
+
+    .login-icon {
+        display: block;
+        grid-area: login-icon;
+        justify-self: right;
     }
+
+    .log-in {
+        grid-area: log-in;
+        justify-self: right;
+        font-family: 'Outfit', sans-serif; ;
+    }
+
 
     nav {
         grid-area: nav;
-        align-self: center;
+        align-self: left;
+        font-family: Outfit, sans-serif;
     }
 
     .call-us-now {
-        justify-self: center;
+        justify-self: right;        
     }
 
     nav ul li{
         float: left;
         list-style: none;
     }
+
     nav ul li {
-        width: 100px;
+        width: 70px;
         text-align: center;
     }
 
@@ -41,7 +63,7 @@
 
     .flex-container {
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
     .flex-item {
@@ -53,12 +75,12 @@
 
     .advert-container {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: auto;
         grid-template-rows: 50% 50%;
         grid-template-areas: 
         "paragraph paragraph home leaf"
-        "advert advert greenhouse greenhouse";
-    }
+        "greenhouse greenhouse advert advert";
+    } 
 
     .paragraph {
         grid-area: paragraph;

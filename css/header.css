@@ -1,62 +1,61 @@
 /* Header */
 
-
-header {
-    box-sizing: border-box;
-    max-width: 100%;
-    color: #A05941;
+header {  
     display: grid;
     grid-template-columns: 80% 20%;
     grid-template-rows: 30% 40% 30%;
+    grid-gap: 6px;
     grid-template-areas: 
     "search bag-icon"
     "heading hamburger-icon"
     "call-us-now .";    
     align-items:center;
-    padding: 5px;
+    padding: 20px 20px 30px 20px;    
     font-family: 'Fjalla One', sans-serif;
 }
 
-.search {
-    grid-area: search;
+.search {    
+    grid-area: search;     
     align-self: center;
-    justify-self: left;  
-    background-color: var(--light-grey);
+    justify-self: left;         
+}
+
+.hamburger-icon {
+    grid-area: hamburger-icon;   
+    justify-self: right;       
+}
+
+.heading {
+    grid-area: heading; 
+    font-size: 1.4rem; 
+    font-weight: 400;
+}
+
+.call-us-now {
+    grid-area: call-us-now;
+    font-size: 0.9rem; 
+    font-weight: 200;  
+    letter-spacing: 0.2rem;  
 }
 
 header input {
     background-color: var(--light-grey);
 }
 
-input::after {
+::placeholder {
     color: var(--red-brown);
 }
+
 .bag-icon {
     grid-area: bag-icon;
-    align-self: center;
-    justify-self: center;    
-}
-
-.hamburger-icon {
-    grid-area: hamburger-icon;
-    align-self: center;
-    justify-self: center;    
-   
-}
-
-.heading {
-    grid-area: heading;    
-}
-
-.call-us-now {
-    grid-area: call-us-now;
+    justify-self: right;    
 }
 
 nav ul{
     display: none;
 }
 
-.login-icon {
+.login-icon, .log-in {
     display: none;
 }
 
