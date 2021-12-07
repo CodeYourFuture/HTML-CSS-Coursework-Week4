@@ -1,3 +1,133 @@
 /* Add your CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
+
+body {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif,sans-serif,monospace;
+    padding : 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+header {
+    height: 100px;
+    width: 100%;
+    position: relative;
+    top: 0;
+    background-color: white;
+    margin: 0;
+    padding-top: 3%;
+}
+
+nav {
+    display: flex;
+    padding: 0 3%;
+}
+
+nav p {
+    display: grid;
+    float: left;
+    align-items: center;
+}
+nav ul {
+ 
+    display: none;
+    list-style-type: none;
+    list-style: none;
+}
+
+nav ul li {
+    
+    margin-right: 35px;
+}
+nav a:hover {
+    color: blue;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+.title_large {
+    font-weight: bold;
+    font-size: 30px;
+    margin-right: 10px;
+    align-items: center;
+}
+
+.profile_box {
+    display: grid;
+    justify-content: center;
+
+    position: sticky;
+    grid-template-rows: repeat(4, min-content) 1fr;
+    background-image: linear-gradient(rgb(223, 220, 250), white);
+    box-shadow: -5px 6px 16px -1px gray;
+   
+    margin-top: 10px;
+    margin-left: 30px;
+    padding: 10px;
+   
+    width: 83%;
+    height: auto;
+    min-height: auto;
+
+    text-align: center;
+}
+
+.profile_box img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin-top: 20px;
+}
+
+.profile_box p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+.square {
+  height: 20px;
+  width: 20px;
+  background-color: #5600ff;
+  margin-top: 26px;
+  margin-right: 10px;
+  margin-left: 38px;
+}
+
+section {
+    margin-top: -120px;
+    margin-left: 0;
+    margin-right: 0;
+    padding : 200px 40px 10px 40px;    
+    background-color: #e6dbcd;
+}
+section p {
+    font-size: 16px;
+    line-height: 20pt;
+}
+
+@media screen and (min-width : 540px) {
+    header {
+        height: 100px;
+        position: fixed;
+ 
+    }
+    nav {
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav ul {
+        display: flex;
+    }
+    nav p {
+        display: flex;
+    }
+ 
+}
