@@ -2,37 +2,35 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- Add a link to your custom CSS here -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Outfit:wght@200;300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/variables.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="/css/fonts.css">
-    <link rel="stylesheet" href="./css/layout.css">
-    <link rel="stylesheet" href="./css/images.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Outfit:wght@200;300;400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/variables.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/images.css" />
 
     <title>Responsive grid project</title>
 </head>
 
 <body id="body">
-
     <!-- Add your markup here -->
     <header class="grey-background">
         <section class="search-wrapper">
-            <img src="./images/search.svg" alt="Search Image" class="search-img">
-            <input type="search" placeholder="Search..." class="search">
+            <img src="./images/search.svg" alt="Search Image" class="search-img" />
+            <input type="search" placeholder="Search..." class="search" />
         </section>
-        <a href="#" class="bag"><img src="./images/shopping-cart.svg" alt="shopping-bag" class="bag-image"></a>
+        <a href="#" class="bag"><img src="./images/shopping-cart.svg" alt="shopping-bag" class="bag-image" /></a>
         <a href="#" class="header-text">
             <h3>Prickles & Co.</h3>
         </a>
         <section class="hamburger-menu">
-
             <button id="menu-button" class="menu-button" onclick="showMenu()">
                     <div class="bar" id="bar-one"></div>
                     <div class="bar" id="bar-two"></div>
@@ -44,14 +42,17 @@
     <section class="menu-list" id="menu-list">
         <nav>
             <ul>
-                <li class="nav-items"><img><a href="#">Log In</a></li>
+                <li class="nav-items"><img /><a href="#">Log In</a></li>
                 <li class="nav-items"><a href="#">Shop</a></li>
-                <li class="nav-items" onclick="hideMenu()"><a href="#about">About</a></li>
+                <li class="nav-items" onclick="hideMenu()">
+                    <a href="#about">About</a>
+                </li>
                 <li class="nav-items"><a href="#">FAQ</a></li>
-                <li class="nav-items"><a href="#contact" onclick="hideMenu()">Contact</a></li>
+                <li class="nav-items">
+                    <a href="#contact" onclick="hideMenu()">Contact</a>
+                </li>
             </ul>
         </nav>
-
     </section>
     <main class="grey-background">
         <section class="hero">
@@ -61,7 +62,7 @@
                     <h4 class="logo-text">ESTB</h4>
                     <div class="line"></div>
                 </section>
-                <img src="./images/logo.svg" alt="Company Logo" class="logo">
+                <img src="./images/logo.svg" alt="Company Logo" class="logo" />
                 <section class="underlined-text">
                     <h4 class="logo-text">2023</h4>
                     <div class="line"></div>
@@ -73,30 +74,30 @@
         </section>
         <section class="product-links-wrapper">
             <section class="product-links">
-                <img src="./images/cacti.png" alt="A hand holding a cactus">
+                <img src="./images/cacti.png" alt="A hand holding a cactus" />
                 <section class="product-links-content">
                     <h3>Cacti</h3>
-                    <hr class="small-divider">
+                    <hr class="small-divider" />
                     <form action="#">
                         <button>Shop Collection</button>
                     </form>
                 </section>
             </section>
             <section class="product-links">
-                <img src="./images/plants.png" alt="A hand holding a plant">
+                <img src="./images/plants.png" alt="A hand holding a plant" />
                 <section class="product-links-content">
                     <h3>Plants</h3>
-                    <hr class="small-divider">
+                    <hr class="small-divider" />
                     <form action="#">
                         <button>Shop Collection</button>
                     </form>
                 </section>
             </section>
             <section class="product-links">
-                <img src="./images/succlents.png" alt="A hand holding a succulent plant">
+                <img src="./images/succlents.png" alt="A hand holding a succulent plant" />
                 <section class="product-links-content">
                     <h3>Succulents</h3>
-                    <hr class="small-divider">
+                    <hr class="small-divider" />
                     <form action="#">
                         <button>Shop Collection</button>
                     </form>
@@ -105,16 +106,19 @@
         </section>
         <section class="about" id="about">
             <h4>About us</h4>
-            <hr class="small-divider">
-            <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great
-                place for you to tell a story and let your users know a little more about you.</p>
-            <p>This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide.
+            <hr class="small-divider" />
+            <p>
+                I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for
+                you to tell a story and let your users know a little more about you.
+            </p>
+            <p>
+                This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide.
             </p>
         </section>
         <section class="random-pictures">
-            <img src="./images/wheelbarrow.png" alt="Wheelbarrow in greenhouse">
-            <img src="./images/leaf.png" alt="Leaf in foreground">
-            <img src="./images/woman.png" alt="Woman standing by plants">
+            <img src="./images/wheelbarrow.png" alt="Wheelbarrow in greenhouse" />
+            <img src="./images/leaf.png" alt="Leaf in foreground" />
+            <img src="./images/woman.png" alt="Woman standing by plants" />
         </section>
         <section class="offer">
             <h1>Buy online now & get 10% off !</h1>
@@ -125,33 +129,32 @@
         <section class="form" id="contact">
             <form action="#" class="contact-form">
                 <h4>For special requests & orders</h4>
-                <hr class="large-divider">
+                <hr class="large-divider" />
                 <fieldset>
                     <label for="firstName">First Name *</label>
-                    <input type="text" name="first-name" id="first-name" class="input-field" placeholder=" " required>
+                    <input type="text" name="first-name" id="first-name" class="input-field" placeholder=" " required />
                 </fieldset>
                 <fieldset>
                     <label for="last-name">Last Name *</label>
-                    <input type="text" name="last-name" id="last-name" class="input-field" placeholder=" " required>
+                    <input type="text" name="last-name" id="last-name" class="input-field" placeholder=" " required />
                 </fieldset>
                 <fieldset>
                     <label for="email">Email *</label>
-                    <input type="email" name="email" id="email" class="input-field" placeholder=" " required>
+                    <input type="email" name="email" id="email" class="input-field" placeholder=" " required />
                 </fieldset>
                 <fieldset>
                     <label for="phone">Phone</label>
-                    <input type="tel" name="phone" id="phone" class="input-field">
+                    <input type="tel" name="phone" id="phone" class="input-field" />
                 </fieldset>
                 <fieldset>
                     <label for="message">Message</label>
                     <textarea name="message" id="message" cols="30" rows="8"></textarea>
                 </fieldset>
-                <input type="submit" value="Send">
+                <input type="submit" value="Send" />
             </form>
-
         </section>
 
-        <img src="./images/last-plant.png" alt="plants" class="last-plant">
+        <img src="./images/last-plant.png" alt="plants" class="last-plant" />
         <section class="find-us">
             <section class="contact">
                 <h4>Our store</h4>
@@ -177,9 +180,9 @@
                 <form action="#">
                     <fieldset>
                         <label for="subscribe-email">Enter your email here *</label>
-                        <input type="email" name="subscribe-email" id="subscribe-email" class="input-field" placeholder=" " required>
+                        <input type="email" name="subscribe-email" id="subscribe-email" class="input-field" placeholder=" " required />
                     </fieldset>
-                    <input type="submit" value="Subscribe Now">
+                    <input type="submit" value="Subscribe Now" />
                 </form>
             </section>
             <section class="icons">
@@ -190,16 +193,19 @@
         </section>
         <section id="map" class="map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12615.359272442083!2d-122.3958356107621!3d37.77035393951142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7fc4fe5e0af3%3A0x11c548b59491f791!2s500%20Terry%20A%20Francois%20Blvd%206th%20floor%2C%20San%20Francisco%2C%20CA%2094158%2C%20USA!5e0!3m2!1sen!2suk!4v1638823906588!5m2!1sen!2suk"
-                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                width="100%" height="400" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
         </section>
     </main>
     <footer>
-        <p>&copy; 2023 by Prickles & Co. Proudly created with
+        <p>
+            &copy; 2023 by Prickles & Co. Proudly created with
             <a href="#"></a>Wix.com
         </p>
 
         <!-- Please leave this in to credit the creators of this design -->
-        <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
+        <p>
+            This website design was created by Wix.com, and is used here for strictly educational purposes.
+        </p>
     </footer>
 
     <script src="./js/script.js"></script>
