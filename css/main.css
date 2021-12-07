@@ -14,7 +14,7 @@ body {
   color: var(--red-brown);
   margin: 0;
   font-size: 20px;
-  font-family: "Outfit", sans-serif;
+  font-family: "Fjalla One", sans-serif;
 }
 
 /* Header Section */
@@ -60,6 +60,12 @@ body {
   margin-top: 0.7rem;
 }
 
+.header-title {
+  font-family: "Outfit", sans-serif;
+  color: var(--red-brown);
+  text-decoration: none;
+}
+
 .header-message {
   grid-column: 1 / 3;
   margin-top: -2.5rem;
@@ -76,6 +82,8 @@ body {
 
 .intro-title {
   padding-top: 10rem;
+  font-family: "Outfit", sans-serif;
+  font-size: 5rem;
 }
 
 .shop-now-button {
@@ -106,7 +114,7 @@ body {
 
 .product {
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   text-align: center;
   width: 100%;
   height: 45rem;
@@ -172,6 +180,10 @@ body {
   text-align: center;
   margin-bottom: 2rem;
   color: var(--red-brown);
+}
+
+label {
+  margin-top: 1.5rem;
 }
 
 .message {
@@ -272,7 +284,12 @@ body {
 
   .products {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+  }
+
+  .product {
+    padding-top: 5rem;
+    height: 70vh;
   }
 
   .about {
@@ -301,9 +318,14 @@ body {
     grid-column: 3 / 5;
   }
 
+  .form-container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
   .form {
     width: 50%;
-    margin: 0 25rem;
+
     background-color: rgba(255, 255, 255, 0.8);
   }
 

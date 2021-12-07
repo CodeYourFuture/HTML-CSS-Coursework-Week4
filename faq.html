@@ -2,10 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- Add a link to your custom CSS here -->
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/faq.css" />
     <title>Responsive grid project</title>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,9 +15,7 @@
       rel="stylesheet"
     />
   </head>
-
   <body>
-    <!-- Add your markup here -->
     <header class="header">
       <input
         type="text"
@@ -49,100 +47,23 @@
     </header>
 
     <main class="main">
-      <section class="intro">
-        <h1 class="intro-title">PRICKLES & CO</h1>
-        <p class="intro-message">BRING NATURE INDOORS</p>
-        <button class="shop-now-button">Shop Now</button>
-      </section>
-
-      <section class="products">
-        <div class="product cacti">
-          <h2 class="product-heading">CACTI</h2>
-          <button class="shop-collection-button">Shop Collection</button>
+      <div class="container">
+        <p class="title">FAQ</p>
+        <p class="frequently-asked-questions">Freqently asked questions</p>
+        <input type="text" class="faq-input" />
+        <div class="faq-question-container">
+          <p class="faq-question">How do I add a new question?</p>
         </div>
-
-        <div class="product plants">
-          <h2 class="product-heading">PLANTS</h2>
-          <button class="shop-collection-button">Shop Collection</button>
+        <div class="faq-question-container">
+          <p class="faq-question">Can I insert pictures in my FAQ?</p>
         </div>
-
-        <div class="product scculents">
-          <h2 class="product-heading">SCCULENTS</h2>
-          <button class="shop-collection-button">Shop Collection</button>
+        <div class="faq-question-container">
+          <p class="faq-question">Can I insert a vide in my FAQ?</p>
         </div>
-      </section>
-
-      <section class="about">
-        <div class="about-text">
-          <h3>ABOUT US</h3>
-          <p>
-            I'm a paragraph. Click here to add your own text and edit me. It’s
-            easy. Just click “Edit Text” or double click me to add your own
-            content and make changes to the font. Feel free to drag and drop me
-            anywhere you like on your page. I’m a great place for you to tell a
-            story and let your users know a little more about you.
-          </p>
-
-          <p>
-            This is a great space to write long text about your company and your
-            services. You can use this space to go into a little more detail
-            about your company. Talk about your team and what services you
-            provide.
-          </p>
+        <div class="faq-question-container">
+          <p class="faq-question">How do I edit or remove the "FAQ title"?</p>
         </div>
-
-        <img
-          src="https://static.wixstatic.com/media/697bc8_a83b11aa652d4394aadc4aca1f80d567~mv2_d_2000_1391_s_2.jpg/v1/fill/w_320,h_223,al_c,q_80,usm_0.66_1.00_0.01/697bc8_a83b11aa652d4394aadc4aca1f80d567~mv2_d_2000_1391_s_2.webp"
-          alt="facility"
-          class="about-image facility"
-        />
-
-        <img
-          src="https://static.wixstatic.com/media/697bc8_84ed4273c730421d954cfe88af4d7c1c~mv2_d_2000_1333_s_2.jpg/v1/fill/w_320,h_223,al_c,q_80,usm_0.66_1.00_0.01/697bc8_84ed4273c730421d954cfe88af4d7c1c~mv2_d_2000_1333_s_2.webp"
-          alt="leaf"
-          class="about-image leaf"
-        />
-
-        <img
-          src="https://static.wixstatic.com/media/697bc8_3aa8eb7ac760486bb63b30f98dc220c8~mv2_d_2000_1333_s_2.jpg/v1/fill/w_320,h_223,al_c,q_80,usm_0.66_1.00_0.01/697bc8_3aa8eb7ac760486bb63b30f98dc220c8~mv2_d_2000_1333_s_2.webp"
-          alt="woman standing"
-          class="about-image woman"
-        />
-
-        <div class="promo">
-          <p class="promo-text">BUY ONLINE NOW & GET 10% OFF !</p>
-          <button class="promo-button">Shop Now</button>
-        </div>
-      </section>
-
-      <section class="form-container">
-        <form class="form">
-          <p class="form-text">FOR SPECIAL REQUESTS & ORDERS</p>
-          <label for="first-name">First Name *</label>
-          <input type="text" id="first-name" name="first-name" />
-          <label for="last-name">Last Name *</label>
-          <input type="text" id="last-name" name="last-name" />
-          <label for="email">Email *</label>
-          <input type="text" id="email" name="email" />
-          <label for="phone">Phone</label>
-          <input type="tel" id="phone" name="phone" />
-          <label for="message">Message</label>
-          <textarea
-            id="message"
-            class="message"
-            name="message"
-            cols="30"
-            rows="10"
-          ></textarea>
-          <input
-            type="button"
-            id="send"
-            name="send"
-            value="Send"
-            class="send"
-          />
-        </form>
-      </section>
+      </div>
     </main>
 
     <footer class="footer">
@@ -222,10 +143,5 @@
         </p>
       </section>
     </footer>
-    <!-- Please leave this in to credit the creators of this design -->
-    <p>
-      This website design was created by Wix.com, and is used here for strictly
-      educational purposes.
-    </p>
   </body>
 </html>
