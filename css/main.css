@@ -10,12 +10,18 @@
   --color-white: #fff;
 }
 
+body {
+  margin: 0;
+  
+}
+
 h1 {
   font-family: Poppins;
 }
 
 main {
   font-family: Quicksand;
+  background-color: var(--first-color-dark-beige);
 }
 
 h3 {
@@ -46,17 +52,20 @@ p {
 
 .circle__profile__image {
   border-radius: 50%;
-  height: 7.5rem;
+  height: 7rem;
 }
 
 .main__blue__line {
-  width: 4rem;
+  width: 5rem;
   height: 0.05rem;
   background-color: var(--third-color-light-beige);
   border-radius: 1.5px;
   display: flex;
   justify-content: center;
-  margin: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
 }
 
 .main__button__container {
@@ -87,14 +96,14 @@ p {
 .social__icons__center__container {
   display: flex;
   justify-content: center;
-  justify-content: space-evenly;
-  padding-top: 1rem;
+  padding-top: 1.5rem;
   background-color: white;
 }
 
 .social__icons__center {
   height: 1.2rem;
   width: 1.2rem;
+  padding-inline: 0.5rem;
 }
 
 .hello__container {
@@ -102,11 +111,96 @@ p {
   background-color: var(--first-color-dark-beige);
 }
 
+.hello__container h1 {
+  font-weight: 800;
+  font-style: bold;
+}
+
 .I__paragraph__text {
   font-family: Poppins;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: var(--color-black);
   font-weight: 600;
   line-height: 1.5rem;
   padding-bottom: 1.2rem;
+}
+
+/* Contact Form*/
+
+.blue__letstalk_container  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+.blue__box__contact {
+  margin-right: 0.5rem;
+  height: 0.9rem;
+  width: 0.9rem;
+  background-color: var(--third-color-light-beige);
+  display:flex
+  align:
+}
+
+.fieldset__container{
+  
+
+}
+
+fieldset {
+  border: none;
+  background-color: white;
+  display:grid;
+  justify-content: center;
+  
+}
+
+.form_row {
+  display: flex;
+  flex-direction: row;
+}
+
+.form_column {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+}
+
+input {
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: black;
+  width:70%;
+}
+input:focus {
+  border-color: blue;
+}
+
+textarea{
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: black;
+  width:75%;
+  height: 3rem;
+  margin-bottom:0.5rem;
+
+}
+
+textarea:focus {
+  border-color: blue;
+}
+
+.send__button {
+  background-color: var(--third-color-light-beige);
+  border-radius: 100px 100px 100px 100px;
+  color: white;
+  padding: 0.2rem 1.4rem 0.2rem 1.4rem;
+  margin: 0.3rem;
+  font-weight: 600;
+  font-size: 0.8rem;
+ 
 }
