@@ -44,7 +44,7 @@ body {
   justify-content: space-around;
   align-items: center;
   background-color: var(--white);
-  padding: 17px 12px;
+  padding: 1.4rem 1rem;
 }
 
 .bag {
@@ -67,7 +67,7 @@ body {
   width: 100%;
   background-color: var(--white);
   color: var(--red_brown);
-  padding: 0 15px;
+  padding: 0 1.3rem;
 }
 
 .search-container:hover {
@@ -76,7 +76,7 @@ body {
 
 .search-container input {
   height: 2.5rem;
-  padding: 0 32px;
+  padding: 0 1.3rem;
   border: none;
   background: var(--white);
 }
@@ -85,7 +85,7 @@ body {
   color: var(--red_brown);
   font-size: 1.2rem;
   font-weight: 100;
-  padding-left: 10px;
+  padding-left: 1rem;
 }
 
 .search-icon img {
@@ -140,22 +140,21 @@ rect {
 }
 
 .hero {
-  height: 560px;
+  height: 35rem;
 }
 
 .hero-image {
   width: 100%;
-  height: 560px;
+  height: 35rem;
   background-image: url("../img/mobile-big-img.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /* opacity: 0.9; */
 }
 
 .hero-content {
   position: relative;
-  bottom: 515px;
+  bottom: 33rem;
   color: var(--white);
 }
 
@@ -164,7 +163,7 @@ rect {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  margin-top: 20px;
+  margin-top: 2rem;
 }
 
 .logo-icon img {
@@ -183,7 +182,7 @@ rect {
   font-size: 1rem;
   font-weight: bolder;
   letter-spacing: 0.5rem;
-  margin-bottom: 7px;
+  margin-bottom: 0.4rem;
 }
 
 .hero-content h1 {
@@ -218,7 +217,7 @@ rect {
 
 .feature-img img {
   width: 100%;
-  height: 480px;
+  height: 30rem;
   object-position: center;
   object-fit: cover;
   position: relative;
@@ -227,52 +226,59 @@ rect {
 .feature-title-btn {
   position: absolute;
   width: 100%;
-  padding: 23px 0;
+  padding: 1rem 0;
   z-index: 1;
 }
 
 .feature-title-btn h2 {
   margin-bottom: 0;
-  letter-spacing: 2px;
+  letter-spacing: 0.1rem;
 }
 
 .border-bottom-h2 {
   width: 1rem;
   background-color: var(--red_brown);
-  padding: 3px 0;
-  margin: 10px auto;
+  padding: 0.1rem 0.2rem;
+  margin: 1rem auto;
 }
 
 .about {
-  padding: 34px 11px;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.7rem;
 }
 
 .about-us {
   font-weight: 100;
-  font-size: 20px;
-  letter-spacing: 10px;
-  padding: 8px 0;
+  font-size: 1.2rem;
+  letter-spacing: 0.7rem;
+  padding: 0;
+}
+
+.about-us-text {
+  padding: 4rem 1rem;
 }
 
 .img-about .img-area-about,
-.img-about .img-leaf-about,
+.img-about .img-leaf-about {
+  width: 100%;
+  margin: -1rem 0;
+}
+
 .offer .offer-img {
   width: 100%;
-  margin: -2px 0;
+  margin: -1.8rem 0;
 }
 
 .offer-online {
-  height: 450px;
+  height: 25rem;
   background-color: var(--green_black);
   color: var(--white);
 }
 
 .offer-online .offer-online-h1 {
-  font-size: 50px;
-  margin: -4px 0;
-  padding-top: 80px;
+  font-size: 3.2rem;
+  margin: -0.2rem 0;
+  padding-top: 4rem;
 }
 
 .offer-btn,
@@ -282,7 +288,7 @@ rect {
 }
 
 .offer-btn {
-  margin-top: 60px;
+  margin-top: 3rem;
   padding: 0.9rem 3rem;
 }
 
@@ -290,14 +296,14 @@ rect {
   background-color: var(--off_white);
   display: flex;
   flex-direction: column;
-  padding: 0 12px;
+  padding: 0 1rem;
 }
 
 .form h3 {
-  font-size: 21px;
+  font-size: 1.2rem;
   font-weight: 100;
-  padding: 0 32px;
-  letter-spacing: 8px;
+  padding: 0 3rem;
+  letter-spacing: 0.4rem;
 }
 
 .form-section,
@@ -310,12 +316,12 @@ rect {
 }
 
 .form-section label {
-  padding: 10px 0;
-  font-size: 23px;
+  padding: 1rem 0;
+  font-size: 1.3rem;
 }
 
 .form-section input {
-  padding: 10px 2px;
+  padding: 1rem 0;
 }
 
 .form-section input,
@@ -354,14 +360,14 @@ footer section {
 .footer-hours h3,
 .footer-help h3,
 .footer-subscribe h3 {
-  font-size: 23px;
-  letter-spacing: 5px;
+  font-size: 1.3rem;
+  letter-spacing: 0.4rem;
   font-weight: initial;
 }
 
 .footer-our-store p,
 .footer-hours p {
-  margin: 3px;
+  margin: 0.2rem;
 }
 
 .footer-our-store p,
@@ -543,7 +549,6 @@ nav,
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* opacity: 0.9; */
   }
 
   .logo-icon-words {
