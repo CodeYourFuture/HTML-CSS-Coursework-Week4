@@ -44,7 +44,7 @@ body {
   justify-content: space-around;
   align-items: center;
   background-color: var(--white);
-  padding: 17px 0;
+  padding: 17px 12px;
 }
 
 .bag {
@@ -57,12 +57,17 @@ body {
 }
 
 .search-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   outline: none;
   position: relative;
   /* direction: rtl; rigth to left */
-  width: 15rem;
+  width: 100%;
   background-color: var(--white);
   color: var(--red_brown);
+  padding: 0 15px;
 }
 
 .search-container:hover {
@@ -88,7 +93,7 @@ body {
   width: 17px;
   height: 16px;
   top: 12px;
-  left: 13px;
+  left: 26px;
   filter: invert(38%) sepia(49%) saturate(567%) hue-rotate(329deg)
     brightness(92%) contrast(89%);
 }
@@ -99,6 +104,14 @@ body {
   margin: 2rem 0 1.5rem 0;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo_title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
 }
@@ -287,7 +300,8 @@ rect {
   letter-spacing: 8px;
 }
 
-.form-section {
+.form-section,
+.name {
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -315,7 +329,8 @@ rect {
 }
 
 .form-btn {
-  margin: 13px 0;
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
 }
 
 .img-last-section {
@@ -352,7 +367,7 @@ footer section {
 .footer-our-store p,
 .footer-hours p,
 .footer-help li a {
-  font-size: 18px;
+  font-size: 1.2rem;
 }
 
 .footer-help ul {
@@ -361,7 +376,7 @@ footer section {
 }
 
 .footer-help li {
-  margin-top: 7px;
+  margin-top: 0.4rem;
 }
 
 .footer-help li a {
@@ -374,25 +389,25 @@ footer section {
   flex-direction: column;
   align-items: stretch;
   text-align: left;
-  padding: 0 12px;
+  padding: 0 1rem;
 }
 
 .footer-subscribe label {
-  font-size: 20px;
-  margin-bottom: 5px;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
 }
 
 .footer-subscribe input {
-  padding: 15px 10px;
-  margin-bottom: 10px;
+  padding: 15px 6.6rem;
   background: transparent;
+  margin-bottom: 0.5rem;
   border: 1px solid var(--white);
 }
 
 .social-medias img {
-  width: 25px;
-  height: 25px;
-  padding-bottom: 30px;
+  width: 2rem;
+  height: 2rem;
+  padding-bottom: 2.5rem;
 }
 
 .footer-google-maps img {
@@ -400,13 +415,314 @@ footer section {
 }
 
 .footer-bottom-page {
-  padding: 0 30px;
+  padding: 0 6rem;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 2rem;
 }
 
 .footer-bottom-page a {
   color: var(--red_brown);
+}
+
+.login,
+nav,
+.desktop-image-map {
+  display: none;
+}
+
+@media (min-width: 700px) {
+  .master-page {
+    margin: 0 20px;
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "header header header header"
+      "main    main    main   main"
+      "footer  footer footer footer";
+  }
+
+  /* Header */
+
+  .header-site {
+    grid-area: header;
+  }
+
+  .search-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+  }
+
+  .search-icon img {
+    left: 55px;
+  }
+
+  .login-bag {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .login {
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .login img {
+    width: 25px;
+    height: 25px;
+    filter: invert(43%) sepia(6%) saturate(4186%) hue-rotate(329deg)
+      brightness(89%) contrast(91%);
+  }
+
+  .login a {
+    color: var(--red_brown);
+    text-decoration: none;
+    margin-left: 15px;
+  }
+
+  .menu_burger,
+  .mobile-image-map {
+    display: none;
+  }
+
+  .header-logo_title_menu_burger {
+    margin: 0;
+    padding: 0;
+  }
+
+  nav {
+    display: block;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding-left: 7px;
+  }
+
+  nav li a {
+    text-decoration: none;
+    color: var(--red_brown);
+    padding-left: 20px;
+  }
+
+  .logo-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .logo_title {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  /* Main */
+
+  .main {
+    grid-area: main;
+  }
+
+  .hero-image {
+    width: 100%;
+    /* height: 560px; */
+    background-image: url("../img/big-image.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* opacity: 0.9; */
+  }
+
+  .logo-icon-words {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo-icon img {
+    height: 6rem;
+    padding: 0 16px 0 14px;
+  }
+
+  .logo-words {
+    width: 3.4rem;
+  }
+
+  .logo-words p {
+    font-size: 0.7rem;
+  }
+
+  .hero-content h1 {
+    font-size: 4.7rem;
+  }
+
+  .hero-content h2 {
+    font-size: 1rem;
+    letter-spacing: 0.4rem;
+  }
+
+  .btn.shop-now {
+    font-size: 0.9rem;
+    padding: 0.6rem 3.2rem;
+  }
+
+  .feature-and-image {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+
+  .feature-title-btn {
+    position: absolute;
+    width: auto;
+    padding: 14px 102px;
+    z-index: 1;
+  }
+
+  .image-products {
+    padding: 0 106px;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+  }
+
+  .img-about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .img-about .img-area-about,
+  .img-about .img-leaf-about {
+    width: auto;
+    object-fit: contain;
+  }
+
+  .offer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    grid-template-areas: "offer-img offer-online";
+  }
+
+  .offer-img {
+    grid-area: offer-img;
+  }
+
+  .offer-online {
+    grid-area: offer-online;
+    height: auto;
+    padding: 18px 223px;
+  }
+
+  .offer-online .offer-online-h1 {
+    font-size: 74px;
+  }
+
+  .form {
+    position: absolute;
+    z-index: 1;
+    left: 30%;
+    top: 271%;
+    background-color: rgba(255, 255, 255, 0.75);
+  }
+
+  .last-section .img-last-section {
+    position: relative;
+    margin: -56px 0;
+  }
+
+  .border-bottom-h2 {
+    padding: 2px 7px;
+  }
+
+  .fname-lname {
+    padding-top: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form-section input {
+    padding: 10px 81px;
+  }
+
+  .form-section label {
+    font-size: 19px;
+  }
+
+  /* Footer */
+
+  footer {
+    grid-area: footer;
+  }
+
+  .store-hours-help {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
+
+  .footer-subscribe .subscribe {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .form-subscribe {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+  }
+
+  .footer-subscribe input {
+    margin-bottom: 0;
+    padding: 15px 60px;
+  }
+
+  .social-medias img {
+    width: 37px;
+    height: 37px;
+  }
+
+  .social-medias .pinterest-icon {
+    padding: 0 25px 30px;
+  }
+
+  .desktop-image-map {
+    display: block;
+  }
+
+  .footer-bottom-page {
+    font-size: 14px;
+  }
 }
 
 /* Dont' forget to link this file to your HTML in the <head> */
