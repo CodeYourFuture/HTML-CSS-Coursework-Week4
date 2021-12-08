@@ -1,5 +1,17 @@
+:root {
+    --red-brown: #A05941;
+    --green-black: #133032;
+    --light-grey: #EDEDEE;
+    --white: #FFF;
+    --transparent-white: rgba(0,0,0,0.75);
+}
+
 body {
+    background-color: var(--light-grey);
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Outfit', sans-serif;
     display: grid;
+    margin: 0;
     grid-template-columns: repeat(4 1fr);
     grid-template-rows: 150px 560px 470px 470px 470px 550px 260px 260px 260px 430px 150px 250px 150px;
     grid-template-areas: 
@@ -18,9 +30,80 @@ body {
     "footer        footer        footer        footer";
 }
 
+/* HEADER  */
 .header {
-    background-color: rgb(134, 132, 132);
-    grid-area: header;
+    grid-area: header;  
+}
+
+/* SEARCH BAR */
+.header-top-half {
+    background-color: #ffffff;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.search-container {
+    max-width: 80%;
+    cursor: pointer;
+    height: 20px;
+    padding: 8px 6px 8px 11px;    
+}
+
+.search-container:hover {
+    border: 1px solid var(--red-brown);
+}
+
+.container {
+    height: 40px;
+    width: auto;
+}
+
+.search-icon {
+    height: 30px;
+    width: auto;
+}
+
+.fa {
+    color: var(--red-brown);
+}
+
+.fa .fa-search {
+    cursor: pointer;
+    position: absolute;
+    top: 47%;
+    left: 0;
+    transform: translateY(-50%);
+    padding: 13px 15px 13px 11px;
+}
+
+.input-field {
+    border: 0;
+    height: 20px;
+    background: var(--white);
+    max-width: 80%;
+}
+
+::placeholder {
+    color:var(--red-brown);
+}
+
+/* SHOPPING BASKET ICON */
+.shopping-basket {
+    width: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 15px;
+}
+
+.svg-color {
+    filter: invert(38%) sepia(12%) 
+    saturate(2170%) hue-rotate(329deg) 
+    brightness(100%) contrast(88%);
 }
 
 .hero {
