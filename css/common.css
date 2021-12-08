@@ -1,0 +1,134 @@
+:root {
+  --black: #000;
+  --white: #fff;
+  --lilac: #f5e8ff;
+  --light-Green: #e6fac0;
+  --medium-Green: #5e7d1f;
+  --dark-Green: #394b2a;
+  --headings-font: "Questrial", sans-serif;
+  --buttons-font: "Raleway", sans-serif;
+  --body-font: "Roboto", sans-serif;
+}
+.pad_main {
+  padding: 30px 20px;
+}
+.pad_bot {
+  padding-bottom: 24px;
+}
+.flex_space {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.flex_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.col {
+  flex-direction: column;
+}
+.no_underline {
+  text-decoration: none;
+}
+.text_center {
+  text-align: center;
+}
+.font_1 {
+  color: var(--black);
+  font-family: var(--headings-font);
+  font-size: 2rem;
+  line-height: 1.3em;
+}
+
+.font_2 {
+  font-family: var(--headings-font);
+  font-size: 1.5rem;
+  color: var(--black);
+  line-height: 1.3em;
+}
+
+.font_3 {
+  color: var(--black);
+  font-family: var(--body-font);
+  font-size: 1rem;
+  line-height: 1.8em;
+}
+.font_4 {
+  font-family: var(--headings-font);
+  color: var(--white);
+  font-size: 1.5rem;
+}
+.font_5 {
+  font-family: var(--body-font);
+  color: var(--white);
+  font-size: 1rem;
+  line-height: 2em;
+}
+.margin_auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.width_adjust {
+  width: 75%;
+}
+
+body {
+  margin: 0;
+}
+
+.button_black {
+  background: var(--black);
+  color: var(--white);
+  font-family: var(--buttons-font);
+  font-size: 1rem;
+  padding: 20px;
+}
+
+.button_tr {
+  font-family: var(--buttons-font);
+  color: var(--black);
+  width: max-content;
+  font-size: 1rem;
+  min-width: 40%;
+  border: solid 2px var(--black);
+  background-color: none;
+  line-height: 2.5rem;
+}
+
+.hamburger img {
+  display: none;
+}
+.hamburger span {
+  display: block;
+  height: 2px;
+  width: 1.5rem;
+  background-color: var(--black);
+  margin-bottom: 10px;
+}
+header button {
+  display: none;
+}
+footer {
+  background: var(--dark-Green);
+}
+.footer_menu {
+  display: flex;
+}
+.footer_box {
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+}
+.copyright {
+  line-height: 1.3em;
+}
+.logo {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  border: var(--white) 2px solid;
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+}

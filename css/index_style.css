@@ -1,0 +1,76 @@
+main section a {
+  width: max-content;
+}
+
+.hero img {
+  width: 100%;
+}
+.discount {
+  background-color: var(--lilac);
+  padding: 20px;
+  margin-top: -5px;
+}
+
+.feature-img {
+  width: 70px;
+}
+.feature-img img {
+  width: 100%;
+}
+.vision {
+  background-color: var(--light-Green);
+  padding-top: 30px;
+}
+.vision img,
+.wellness_path img,
+.discover img {
+  width: 100%;
+}
+
+.wellness_path {
+  background-color: var(--lilac);
+  padding: 30px 20px;
+}
+.wellness_path h2 {
+  padding-top: 33px;
+  margin-top: 0;
+}
+.get_juice_background {
+  background-color: var(--light-Green);
+}
+.circle_border {
+  width: 44px;
+  height: 44px;
+  border: solid 1px var(--black);
+  border-radius: 50%;
+}
+.follow {
+  width: 100vw;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, min-content) 1fr;
+}
+.image_1 {
+  transform: rotate(333.85071717456117deg);
+  grid-area: 1 / 2 / 3 / -1;
+  width: 131px;
+  margin-top: 50px;
+}
+.image_2 {
+  grid-area: 1 / 1 / 5 / 2;
+  transform: rotate(16.69666345366653deg);
+  width: 131px;
+}
+.image_3 {
+  grid-area: 1 / 2 / 4 / 2;
+  transform: rotate(347.34482520820825deg);
+  width: 131px;
+}
+.image_4 {
+  grid-area: 1 / 3 / 2 / 3;
+  transform: rotate(17.142845342601447deg);
+  width: 131px;
+}
+.follow img {
+  width: 100%;
+}
