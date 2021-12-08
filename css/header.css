@@ -24,10 +24,17 @@ header {
   margin: 1rem 1rem 0.4rem 1rem;
   padding: 0.3rem;
   grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "nb nb nb nb . h"
+    ".  .  .  .  . h"
+    "j  j  j  j  . .";
+
+  /*  grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(4, 0.5fr);
   grid-template-areas:
     "nb nb nb nb . ."
-    "j  j  j  j . h";
+    "j  j  j  j . h";*/
 }
 
 .name__box__container {
