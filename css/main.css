@@ -1,3 +1,45 @@
 /* Add your CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
+:root {
+    --red-brown: #A05941; 
+    --green-black: #133032;  
+    --light-grey: #EDEDEE; 
+    --white: #FFF; 
+    --transparent-white: rgba(0,0,0,0.75);
+    --black: #000;
+}
+
+body{
+    background-color: var(--light-grey);
+    margin: 0; 
+}
+/*
+main{
+    text-align: center;
+    background-color: var(--white);
+    padding: 2.5rem 0;
+    display: flex;
+    justify-content: center;
+}*/
+
+
+/* font-family: 'Fjalla One', sans-serif;
+font-family: 'Outfit', sans-serif; */
+
+/* header */
+.header-image {
+    background-image: url("../img/header-img.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 475px;
+    width:auto;
+    object-position: 50% 100%;
+}
+
+
+
+
+
+/* main */
+
