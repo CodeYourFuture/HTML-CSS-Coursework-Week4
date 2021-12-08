@@ -15,8 +15,9 @@ p {
 }
 
 header {
+  font-family: Quicksand;
   display: grid;
-  padding: 1rem;
+  padding: 0.3rem;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(6, 0.5fr);
   grid-template-areas:
@@ -33,8 +34,9 @@ header {
 
 .blue__box {
   margin-right: 0.5rem;
-  height: 0.75rem;
-  width: 0.75rem;
+  margin-top: 0.35rem;
+  height: 0.8rem;
+  width: 0.8rem;
   background-color: var(--third-color-light-beige);
 }
 
@@ -56,23 +58,21 @@ header {
 .hamburger__top__line {
   border-radius: 1.5px;
   width: 50%;
-  height: 3px;
+  height: 5px;
   background-color: var(--third-color-light-beige);
-  border-radius: 1.5px;
 }
 
 .hamburger__middle__line {
   border-radius: 1.5px;
   width: 100%;
-  height: 3px;
+  height: 5px;
   background-color: var(--third-color-light-beige);
-  border-radius: 1.5px;
 }
 
 .hamburger__bottom__line {
   border-radius: 1.5px;
   width: 50%;
-  height: 3px;
+  height: 5px;
   background-color: var(--third-color-light-beige);
   border-radius: 1.5px;
   align-self: flex-end;

@@ -9,7 +9,22 @@
   --color-white: #fff;
 }
 
+footer {
+  font-family: Quicksand;
+}
+
 p {
   margin: 0;
   padding: 0;
+}
+
+.call__write__container {
+  display: flex;
+  padding: 0.5rem;
+  justify-content: space-between;
+}
+
+.social__icons {
+  height: 1.5rem;
+  width: 1.5rem;
 }

@@ -2,18 +2,111 @@
 
 /* Dont' forget to link this file to your HTML in the <head> */
 
-:root{
-    --first-color-dark-beige: #E6DACD;
-    --second-color-light-beige:#F4ECE6;
-    --third-color-light-beige:#0150FD;
-    --color-black:#000;
-    --color-white: #FFF;
+:root {
+  --first-color-dark-beige: #e6dacd;
+  --second-color-light-beige: #f4ece6;
+  --third-color-light-beige: #0150fd;
+  --color-black: #000;
+  --color-white: #fff;
+}
 
-    
+h1 {
+  font-family: Poppins;
+}
+
+main {
+  font-family: Quicksand;
+}
+
+h3 {
+  font-family: Poppins;
+  padding: 0;
+  margin: 0;
+  font-weight: 800;
 }
 
 p {
-    margin:0;
-    padding:0;
+  margin: 0;
+  padding: 0;
 }
 
+.image__name__container {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.circle__profile__image__container {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.circle__profile__image {
+  border-radius: 50%;
+  height: 7.5rem;
+}
+
+.main__blue__line {
+  width: 4rem;
+  height: 0.05rem;
+  background-color: var(--third-color-light-beige);
+  border-radius: 1.5px;
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem;
+}
+
+.main__button__container {
+  display: flex;
+  justify-content: center;
+}
+
+.resume__button {
+  background-color: var(--third-color-light-beige);
+  border-radius: 100px 100px 100px 100px;
+  color: white;
+  padding: 0.3rem 1.2rem 0.3rem 1.2rem;
+  margin: 0.3rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.projects__button {
+  background-color: white;
+  border-radius: 100px 100px 100px 100px;
+  border: 1px solid black;
+  padding: 0.3rem 1.2rem 0.3rem 1.2rem;
+  margin: 0.3rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.social__icons__center__container {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  padding-top: 1rem;
+  background-color: white;
+}
+
+.social__icons__center {
+  height: 1.2rem;
+  width: 1.2rem;
+}
+
+.hello__container {
+  padding: 0 1.5rem 2rem 1.5rem;
+  background-color: var(--first-color-dark-beige);
+}
+
+.I__paragraph__text {
+  font-family: Poppins;
+  font-size: 0.85rem;
+  color: var(--color-black);
+  font-weight: 600;
+  line-height: 1.5rem;
+  padding-bottom: 1.2rem;
+}
