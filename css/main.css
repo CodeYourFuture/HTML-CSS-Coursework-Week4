@@ -1,3 +1,111 @@
-/* Add your CSS here */
+:root {
+    --red-brown: #A05941;
+    --green-black: #133032;
+    --light-grey: #EDEDEE;
+    --white: #FFF;
+    --transparent-white: rgba(0,0,0,0.75);
+}
 
-/* Dont' forget to link this file to your HTML in the <head> */
+/* need to fix it*/
+:root {
+    --headings-font: Fjalla One - Regular 400;
+    --subheadings-font: Extra-light 200;
+    --body-font: Extra-light 200;
+}
+
+body{
+    background-color: var(--light-grey);
+}
+
+.header-first{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--white);
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.search-logo {
+    width: 1rem;
+    height: auto;
+    padding-top: 5px;
+}
+.button{
+    background-color: rgb(255, 255, 255);
+    border-color: var(--red-brown);
+}
+
+.basket {
+    width: 1.2rem;
+}
+
+/*CHANGE COLOR TO RED-BROWN*/
+
+.login-basket {   
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 1rem;
+}
+
+.login{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2rem;
+    color: var(--red-brown);
+}
+
+.login img {
+    margin-right: 2rem;
+    color: var(--red-brown);
+}
+
+.header-second {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.name-nav {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 25px;
+    color: var(--red-brown);
+    
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+.nav-item {
+    padding: 2px 15px;
+}
+.navigation a{
+    text-decoration: none;
+}
+
+.delivery-text {
+    padding-right: 25px;
+    color: var(--red-brown);
+}
+
+.hero {
+    border: 2px red  solid;
+   
+    text-align: center;
+    
+    background-color: rgb(148, 168, 148);
+    background-image: url("/images/713WNlUPYML._AC_SL1000_.jpg");
+ 
+}
+
+.button-hero {
+    background-color: var(--red-brown);
+    color: white;
+    font-weight: bolder;
+    padding: 10px 45px;
+    margin-bottom: 20px;
+}
+
