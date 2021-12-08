@@ -11,17 +11,20 @@
     background-position: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     margin-bottom: 20px;
+    font-family: 'Fjalla One', sans-serif;    
 }
+
+
 
 /* Section flex-container */
 
 .flex-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
@@ -54,13 +57,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    text-transform: uppercase;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-self: flex-start;
-    max-width: 200px; */
-  
+    text-transform: uppercase; 
 }
 
 /* Section grid-container */
@@ -106,7 +103,7 @@
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   margin: 0 auto;   
+   margin: 0 auto;     
 }
 
 .form h3 {

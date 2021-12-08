@@ -8,12 +8,16 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 20px;
+    padding: 40px;
+}
+
+footer div:not(:last-child) {
+    padding-bottom: 50px;
 }
 
 .flex-footer-item {
     width: 270px;  
-    padding: 20px; 
+    padding: 40px 0 0 0; 
     display: flex; 
     flex-direction: column;
     justify-content: flex-start;
@@ -31,18 +35,78 @@ footer p {
     letter-spacing: 0.05rem;
 }
 
-.subscribe, .subscribe input, .subscribe button{
+.subscribe, .subscribe input {
     width: 100%;
     margin: 10px auto;  
 }
 
-.subscribe input {
+.subscribe input[type=text] {
     background: var(--green-black);  
     border-color: white;   
 }
 
-.subscribe button {
+.subscribe input[type=submit] {
     background: white;
     color: var(--green-black);
     font-family: 'Outfit', sans-serif; 
 }
+
+.required:after {
+    content:" *";    
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-between;
+    width: 130px;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 768px) {
+
+    .subscribe {
+        width: 70%;
+    }
+    
+    .form-subscribe {
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }   
+
+    .form-subscribe label {
+        min-width: 180px;
+        display: block;
+    }
+
+    .subscribe input[type=text]  {     
+        width: 50%;   
+        margin-right: 10px;  
+    }    
+
+    .subscribe input[type=submit] {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 994px) {
+
+     /* Footer */
+
+    footer {
+        font-weight: 200;
+        font-size: 0.9rem;
+    }
+
+    .flex-footer {
+        width: 100%;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-evenly;       
+    } 
+}
+
+   
