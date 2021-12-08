@@ -261,6 +261,7 @@ header {
 
 .p-name {
   text-align: center;
+  font-family: "Poppins", sans-serif;
 }
 .p-name:after {
   display: flex;
@@ -269,11 +270,60 @@ header {
   width: 4.5rem;
   margin-left: 8rem;
   margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 86%;
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-bottom: 2rem;
+}
+
+.button1 {
+  width: 8rem;
+  height: 2rem;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border: var(--rBlue) 1px solid;
+  background-color: var(--rBlue);
+  color: var(--white);
+  font-weight: bold;
+}
+
+.button2 {
+  width: 8rem;
+  height: 2rem;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border: var(--black) 1px solid;
+  background-color: var(--lBeige);
+  font-weight: bold;
+}
+
+.p-logos {
+  display: flex;
+  justify-content: space-around;
+  background: var(--white);
+  height: 3rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .bBox-text {
   padding-top: 15rem;
   padding-left: 3rem;
+  font-family: "Quicksand", sans-serif;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
 }
 
 /* FOOTER */
@@ -291,6 +341,7 @@ header {
   width: 50%;
   height: 3.5rem;
   justify-content: space-between;
+  font-family: "Quicksand", sans-serif;
 }
 
 .write {
@@ -299,12 +350,19 @@ header {
   width: 50%;
   height: 3.5rem;
   justify-content: space-between;
+  font-family: "Quicksand", sans-serif;
+}
+
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
 }
 
 .follow {
   display: flex;
   padding-top: 1.5rem;
   padding-left: 1.5rem;
+  font-family: "Poppins", sans-serif;
 }
 
 .logos {
@@ -328,6 +386,8 @@ header {
 .footnote {
   display: flex;
   flex-direction: column;
-  padding-top: 1.5rem;
+  padding-top: 1rem;
   padding-left: 1.5rem;
+  font-family: "Quicksand", sans-serif;
+  font-size: 12px;
 }
