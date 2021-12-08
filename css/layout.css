@@ -1,7 +1,7 @@
 header {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-areas: "s s s s s s s s s . . b" "h h h h h h h . . . . m" "c c c c c c c c c c c .";
+    grid-template-areas: "w w w w w w w w w w w w" "h h h h h h h . . . . m" "c c c c c c c c c c c .";
 }
 
 .search-wrapper {
@@ -9,6 +9,41 @@ header {
     display: grid;
     grid-template-columns: inherit;
     grid-template-areas: "i i t t t t t t t t t t";
+}
+
+.white-background {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: "s s s s s s s s s . . b";
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shop {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.shop-wrapper {
+    width: calc(50% + 18px);
+    display: grid;
+    grid-template-columns: auto 12px;
+    grid-template-areas: "shop down";
+    align-items: center;
+}
+
+.shop a {
+    grid-area: shop;
+    justify-self: left;
+}
+
+.down {
+    grid-area: down;
 }
 
 .hero,
@@ -47,6 +82,10 @@ fieldset {
     flex-direction: column;
     align-items: center;
     text-align: center;
+}
+
+.white-background {
+    grid-area: w;
 }
 
 .search-img {

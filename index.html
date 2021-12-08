@@ -22,11 +22,13 @@
 <body id="body">
     <!-- Add your markup here -->
     <header class="grey-background">
-        <section class="search-wrapper">
-            <img src="./images/search.svg" alt="Search Image" class="search-img" />
-            <input type="search" placeholder="Search..." class="search" />
+        <section class="white-background">
+            <section class="search-wrapper">
+                <img src="./images/search.svg" alt="Search Image" class="search-img" />
+                <input type="search" placeholder="Search..." class="search" />
+            </section>
+            <a href="#" class="bag"><img src="./images/shopping-cart.svg" alt="shopping-bag" class="bag-image" /></a>
         </section>
-        <a href="#" class="bag"><img src="./images/shopping-cart.svg" alt="shopping-bag" class="bag-image" /></a>
         <a href="#" class="header-text">
             <h3>Prickles & Co.</h3>
         </a>
@@ -42,8 +44,16 @@
     <section class="menu-list" id="menu-list">
         <nav>
             <ul>
-                <li class="nav-items"><img /><a href="#">Log In</a></li>
-                <li class="nav-items"><a href="#">Shop</a></li>
+                <li class="nav-items login"><img src="./images/profile.svg" alt="Profile SVG Image" /><a href="#">Log
+                            In</a></li>
+                <li class="nav-items shop">
+                    <div class="shop-wrapper"><a href="#">Shop</a><button class="down" onclick="showShopItems()"><img src="./images/down.svg" alt="Down Arrow"></button></div>
+                </li>
+                <ul class="hidden" id="hidden">
+                    <li><a href="#">Cacti</a></li>
+                    <li><a href="#">Plants</a></li>
+                    <li><a href="#">Succulents</a></li>
+                </ul>
                 <li class="nav-items" onclick="hideMenu()">
                     <a href="#about">About</a>
                 </li>

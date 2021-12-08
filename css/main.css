@@ -14,28 +14,21 @@ body {
 
 /* HEADER */
 
-header {
-    background-color: var(--lightGrey);
-    padding: 15px 20px 25px;
-}
-
 .search-wrapper {
-    margin-bottom: 35px;
     width: 216px;
     height: 40px;
-    border: 1px solid var(--redBrown);
     box-sizing: border-box;
+}
+
+.white-background {
+    background: var(--white);
+    padding: 15px 20px 10px;
 }
 
 .search-wrapper:focus-within,
 .search-wrapper:hover {
-    border: 2px solid var(--redBrown);
     box-sizing: border-box;
-}
-
-.search-wrapper:focus-within .search-img,
-.search-wrapper:hover .search-img {
-    display: none;
+    border: 1px solid var(--redBrown);
 }
 
 .search-img {
@@ -46,7 +39,7 @@ header {
 
 .search {
     color: var(--redBrown);
-    background: var(--lightGrey);
+    background: var(--white);
     padding-left: 0;
     border: none;
     outline: none;
@@ -57,7 +50,8 @@ header {
 }
 
 .header-text {
-    margin-bottom: 15px;
+    padding: 20px;
+    padding-bottom: 15px;
     text-decoration: none;
 }
 
@@ -66,7 +60,13 @@ header {
     width: auto;
 }
 
-.menu-button {
+.bag {
+    justify-self: end;
+    padding-right: 2px;
+}
+
+.menu-button,
+.down {
     background-color: transparent;
     width: fit-content;
     height: fit-content;
@@ -74,12 +74,21 @@ header {
     z-index: 51;
 }
 
-button {
+button,
+.down {
     cursor: pointer;
 }
 
-.hamburger-menu {
+.changing-text {
+    padding: 0 0 20px 20px;
+}
+
+.hamburger-menu,
+button {
     z-index: 5;
+    -webkit-tap-highlight-color: transparent;
+    padding: 20px;
+    padding-bottom: 15px;
 }
 
 .bar {
@@ -92,7 +101,6 @@ button {
 
 .bar:first-of-type {
     margin-top: 2px;
-    /* transform: translateY(10px) translateY(-50%) rotate(-45deg); */
 }
 
 .bar:last-of-type {
@@ -432,4 +440,22 @@ footer p {
     text-decoration: none;
     color: var(--redBrown);
     font-weight: 200;
+}
+
+.menu-list nav {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.login img {
+    width: 30px;
+    margin-right: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.down img {
+    width: 12px;
 }

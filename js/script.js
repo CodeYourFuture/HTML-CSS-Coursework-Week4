@@ -47,6 +47,15 @@ function changeText() {
 }
 
 changeText();
+// SHOW SHOP DROPDOWN
+function showShopItems() {
+    var x = document.getElementById("hidden");
+    if (x.style.display === "none" || x.style.display === "") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
 
 // MAP
 // function initMap() {
