@@ -70,7 +70,7 @@ body {
   padding: 0 1.3rem;
 }
 
-.search-container:hover {
+.search-container input:hover {
   border: 1px solid var(--red_brown);
 }
 
