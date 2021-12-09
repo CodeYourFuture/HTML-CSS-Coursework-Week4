@@ -3,6 +3,9 @@
     --green-black: #133032;
     --light-grey: #EDEDEE ; 
     --white: #fff;
+    --transparent-white: rgba(0,0,0,0.75);
+    --fjalla-one: "Fjalla One", sans-serif;
+    --outfit: 'Outfit', sans-serif;
 }
 
 * {
@@ -18,7 +21,7 @@ body {
     color: var(--red-brown);
     margin: 0 auto;
     color: var(--red-brown);
-    font-family: 'Outfit', sans-serif;  
+    font-family: var(--outfit);  
 }
 
 main {   

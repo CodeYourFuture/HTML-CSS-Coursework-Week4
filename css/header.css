@@ -11,7 +11,7 @@ header {
     "call-us-now .";    
     align-items:center;
     padding: 20px 20px 30px 20px;    
-    font-family: 'Fjalla One', sans-serif;
+    font-family: var(--fjalla-one);
 }
 
 .search {    

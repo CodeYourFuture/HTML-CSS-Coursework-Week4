@@ -60,7 +60,6 @@
 
 /* Section grid-container */
 
-
 .grid-container {   
     margin: 0 auto;
 }
@@ -91,65 +90,3 @@
     align-items: center;
 }
 
-/* Section: form */
-
-.form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto; 
-    margin: 30px 0;
-}
-
-.section-form {
-    background-color: #fff;
-    width: 70%;
-    margin: 0 auto;
-    padding: 30px 20px;
-    color: #000;
-}
-
-.section-form input{
-    width: 100%;
-}
-
-label {
-    display: block;
-    margin-bottom: 20px;
-}
-
-.fname-lname {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.fname, .lname{
-    width: 49%;
-}
-
-input {
-    margin-bottom: 20px;
-}
-textarea {
-    width: 100%;
-    margin-bottom: 10px;
-}
-.form h3 {
-    text-transform: uppercase;
-    text-align: center;
-}
-
-form button {
-    width: 100%;
-    background-color: var(--red-brown);
-    color: var(--white);
-}
-
-
-@media screen and (min-width: 994px) {
-    .form {
-        margin: 60px 0;
-    }
-}

@@ -42,17 +42,23 @@ footer p {
 
 .subscribe input[type=text] {
     background: var(--green-black);  
-    border-color: white;   
+    border-color: white;  
+    border: 1px solid #fff; 
 }
 
 .subscribe input[type=submit] {
     background: white;
     color: var(--green-black);
     font-family: 'Outfit', sans-serif; 
+    border-style: none;
 }
 
 .required:after {
     content:" *";    
+}
+
+.subscribe input[type=text]:hover,  input[type=text]:focus {
+    border: 3px solid #fff;
 }
 
 .social-media {
@@ -84,11 +90,11 @@ footer p {
 
     .subscribe input[type=text]  {     
         width: 50%;   
-        margin-right: 10px;  
+        margin-right: 10px;       
     }    
 
     .subscribe input[type=submit] {
-        width: 40%;
+        width: 40%;        
     }
 }
 

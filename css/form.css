@@ -1,0 +1,99 @@
+/* Section: form */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+    margin: 30px 0;
+}
+
+h3, hr {
+    margin-bottom: 30px;
+}
+
+.section-form {
+    background-color: #fff;
+    width: 70%;
+    margin: 0 auto;
+    padding: 30px 20px;
+    color: #000;
+}
+
+.section-form input{
+    width: 100%;
+}
+
+.required:after {
+    content:" *";    
+}
+
+label {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.fname-lname {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fname, .lname{
+    width: 49%;
+}
+
+input {
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    resize: none;
+}
+
+.form h3 {
+    color: var(--red-brown);
+    text-align: center;
+}
+
+form button {
+    width: 100%;
+    background-color: var(--red-brown);
+    color: var(--white);
+}
+
+/* Media query */
+
+@media screen and (min-width: 994px) {
+    .form {
+        margin: 60px 0;
+    }
+}
+
+/* <section class="form">
+           
+<form action="" class="section-form">
+    <h3>for special requests & orders</h3>
+    <hr>
+    <div class="fname-lname">
+        <div  class="fname">
+            <label for="">First Name</label>
+            <input type="text">
+        </div>
+       <div class="lname">
+        <label for="">Last Name</label>
+        <input type="text">
+       </div>                    
+    </div>              
+    <label for="">Email</label>               
+    <input type="email">
+    <label for="">Phone</label>             
+    <input type="phone">
+    <label for="">Message</label>
+    <textarea name="" id="" rows="10"></textarea>
+    <button>Send</button>
+</form>
+</section> */
