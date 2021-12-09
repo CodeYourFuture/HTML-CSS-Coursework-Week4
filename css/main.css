@@ -187,7 +187,6 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     max-width: 100vw;
-    
 }
 
 .shop-succulents .desc {
@@ -229,8 +228,6 @@ body {
     padding: 13px 20px;
     margin-top: 0.4em;
 }
-
-
 
 .end-page-img {
     background-image: url("../images/background-plant.png");
