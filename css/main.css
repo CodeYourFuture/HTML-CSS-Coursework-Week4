@@ -12,7 +12,7 @@
 
 body {
   margin: 0;
-  background-color: var(--first-color-dark-beige);
+  background: linear-gradient(white 18%, #e6dacd 18% 100%);
 }
 
 .div{
@@ -44,12 +44,21 @@ p {
   padding:0;
 }
 
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
 .image__name__container {
   display: flex;
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  background-color: var(--second-color-light-beige);
 }
 
 .circle__profile__image__container {
@@ -65,7 +74,7 @@ p {
 
 .main__blue__line {
   width: 5rem;
-  height: 0.05rem;
+  height: 0.1rem;
   background-color: var(--third-color-light-beige);
   border-radius: 1.5px;
   display: flex;
@@ -87,25 +96,28 @@ p {
   color: white;
   padding: 0.3rem 1.2rem 0.3rem 1.2rem;
   margin: 0.3rem;
-  font-weight: 600;
-  font-size: 0.9rem;
+  font-weight: 800;
+  font-size: 0.7rem;
 }
 
 .projects__button {
   background-color: white;
   border-radius: 100px 100px 100px 100px;
   border: 1px solid black;
-  padding: 0.3rem 1.2rem 0.3rem 1.2rem;
+  padding: 0.3rem 1rem 0.3rem 1rem;
   margin: 0.3rem;
-  font-weight: 600;
-  font-size: 0.9rem;
+  font-weight: 800;
+  font-size: 0.7rem;
 }
 
 .social__icons__center__container {
   display: flex;
   justify-content: center;
-  padding-top: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-top:1rem;
   background-color: white;
+  align-items: center;
 }
 
 .social__icons__center {
@@ -265,4 +277,39 @@ textarea:focus {
 .project__images{
   object-fit: cover;
   width: 100%;
+}
+
+
+/* Desktop Version */
+
+@media only screen and (min-width: 600px) {
+  
+  body{
+    background-color:white;
+  }
+  .image__name__container{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin: 0;
+    padding-inline: 4rem;
+  }
+
+
+  .hello__container{
+    background-color: white;
+    width:30%;
+  }
+  .main__button__container{
+    display:none;
+  } 
+ 
+  .main__container{
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    margin:0;
+    padding-top:5rem;
+    padding-bottom:4rem;
+  }
+  
 }
