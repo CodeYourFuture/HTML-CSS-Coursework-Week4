@@ -17,6 +17,7 @@
     margin: 0;
     list-style-type: none;
     text-decoration: none;
+    
 } 
 
 img {
@@ -39,23 +40,31 @@ h1, h2 {
 
 
 /*   Button styles  */
-
 button {
-    border: none;
+    background-color: transparent;
 }
-.button-header-main {
+.button-color-hover {
+    border: none;
     background-color: var(--secondary-color);
     grid-column: span 12;
     padding: 1rem;
 }
-.button-header-main a {
+.button-color-hover a {
     color: var(--main-color);
 }
-.button-header-main:hover {
+.button-color-hover:hover {
     background-color: var(--button-hover);
 }
-
-
+.button-no-hover {
+    border: solid 2px;
+    padding: 1rem 3rem;
+}
+.submit-button {
+    border: 2px solid var(--main-color);
+    color:var(--main-color);
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+}
 
 
 
@@ -66,14 +75,12 @@ body {
     text-align: center;
     line-height: 1.6rem;
 }
-
 header {
-    display: grid;
     grid-column: span 12;
+    display: grid;
     grid-template-rows: 50px 50px; 
     align-items: center;
 }
-
 .header-user-icon {
     width: auto;
     height: 100%; 
@@ -82,11 +89,11 @@ header {
 .header-logo {
     grid-column: span 11;
     font-family: var(--heading-font);
+    text-align: left;
     font-weight: 400;
     font-size: 1.25rem;
     padding-left: 0.5rem;
 }
-
 .header-hamburger-icon {
     width: 100%;
    
@@ -107,30 +114,28 @@ header > div > a > img {
 /*   section-hero   */
 
 main {
-    display: grid;
     grid-column: span 12;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 1rem;
 }
-
 .hero-section {
+    grid-column: span 12;
     text-align: center;
  }
-
  .hero-image {
     background-image: url(../images/image1.png);
     padding: 7rem;
     background-size: cover;  
     margin-top: 1rem;
 }
-
 h1 {
-    padding: 0 1rem;
-    
+    padding: 0 1rem;  
 }
 .hero-section > p {
     font-size: 1.25rem;
     padding: 1rem 3rem;
 }
-
 .hero-section > div > p {
     background-color: var(--background-color-1);
     padding: 0.5rem 2rem;
@@ -140,19 +145,204 @@ h1 {
 }
 
 
+
+
 /* Promo-section */
 
 .promo-section {
+    grid-column: span 12;
     padding: 1rem 1.5rem;
+    align-items: center;
+}
+.promo-section > h3 {
+    margin: 1rem 0;
+}
+.promo-section-image {
+    height: 100px;
+    margin: 1rem 0;
+}
+.promo-section > p {
+    padding: 0 2rem;
 }
 
-.promo-section > div {
+
+
+
+/* Section background-color-2 */
+
+.background-color-2-section {
+    grid-column: span 12;
+    grid-gap: 1rem;
+    background-color: var(--background-color-2);
+    padding: 0.5rem 1rem;
+}
+.background-color-2-section-img {  
+    background-image: url(../images/image2.png);
+    padding: 10rem;
+    background-size: cover;   
+}
+.background-color-2-section > h2 {
+    padding: 0 1rem;
+}
+
+.background-color-2-section > p {
+    padding: 0 1rem;
+}
+
+.background-color-2-section > button {
+    margin: 0 5rem;
+    background-color: var(--background-color-2);
+}
+
+
+
+/* Background Color 1 Section*/
+.background-color-1-section {
+    grid-column: span 12;
+    grid-gap: 1rem;
+    background-color: var(--background-color-1);
+}
+.background-color-1-section-img-1 {
+    background-image: url(../images/image3.png);
+   
+    padding: 10rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.background-color-1-section-img-2 {
+    background-image: url(../images/image4.png);
+   
+    padding: 10rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.background-color-1-section-img-3 {
+    background-image: url(../images/image5.png);
+    padding: 10rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+/* Delivery Section  */
+
+.delivery-section {
+    grid-column: span 12;
+    background-color: var(--background-color-2);
     display: grid;
-    grid-column: 6/7;
+    grid-template-columns: repeat(11, 1fr);
+    grid-gap: 0.5rem;
+    padding: 1rem;
+}
+.delivery-section-num { 
+    grid-column: 6;
+    width:40px;
+    height: 40px;
+    padding-top: 0.4rem;
+    border: 0.2px solid var(--secondary-color);
+    border-radius: 50%;  
+}
+
+.delivery-p {
+    grid-column: span 11;
+    margin-bottom: 1rem;
+}
+.delivery-section > h3 {
+    grid-column: span 11;
+}
+
+/*  Main Color Section */
+
+.background-main-color-section {
+    grid-column: span 12;
+}
+.background-main-color-section-img {
+    background-image: url(../images/image6.png);
+    background-size: cover;
+    padding:10rem;
+}
+
+
+/*  Follow Section  */
+
+.follow-section {
+    grid-column: span 12;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 80px repeat(9, auto);
+}
+.follow-section > h3 {
+    grid-column: span 12;
+    font-size: 2rem;
+}
+.follow-section-img-1 {
+    background-image: url(../images/image7.png);
+    width: 150px;
+    height: 200px;
+    background-size: contain;
+    transform: rotate(-20deg);
+    grid-column: 5/9;
+    grid-row: 4/6;
+}
+.follow-section-img-2 {
+    background-image: url(../images/image8.png);
+    width: 150px;
+    height: 200px;
+    background-size: cover;
+    transform: rotate(20deg);
+    grid-column: 3/9;
+    grid-row:3/5;
+}
+.follow-section-img-3 {
+    background-image: url(../images/image9.png);
+    width: 150px;
+    height: 200px;
+    background-size: cover;
+    transform: rotate(-20deg);
+    grid-column: 5/9;
+    grid-row: 2 / 4;
 
 }
-.promo-section > div > img {
-    
+.follow-section-img-4 {
+    background-image: url(../images/image10.png);
+    width: 150px;
+    height: 200px;
+    background-size: cover;
+    transform: rotate(20deg);
+    grid-column: 7/12;
+    grid-row:3/5;
+}
+.follow-section-get-started {
+    grid-column: 1/6;
+    grid-row: 8/10;
+    text-align: left;
+}
+.follow-section-connect {
+    grid-column: 8/12;
+    grid-row: 8/10;
+    text-align: left;
+}
+fieldset {
+    border: none;
+}
+
+input[type=email] {
+    border: none;
+    border-bottom: var(--main-color) 3px solid;
+    background-color: transparent;  
+}
+
+input[type=email]:hover {
+    color: var(--button-hover);
+}
+
+
+/*  Footer */
+
+footer {
+    grid-column: span 12;
+    background-color: var(--footer-color);
+    color: var(--main-color);
 }
 
 
@@ -162,6 +352,8 @@ h1 {
 
 
 
+
+/* Media queries */
 
 @media screen and (max-width: 430px) {
     .header-user-icon {
