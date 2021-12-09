@@ -7,3 +7,17 @@
   --White: #FFF;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+}
