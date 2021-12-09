@@ -222,5 +222,64 @@ hr {
     grid-column: 3 / -1;
     grid-row: 2 / 3;
     border: 2px solid blue;
+    background-color: var(--green-black);
+    color: white;
+    text-align: center;
+    padding: 50px 0;
 }
 
+.buy-online h2{
+    font-size: 4rem;
+    font-weight: bolder;    
+}
+
+.buy-online button {
+    padding: 10px 50px;
+    background-color: white;
+    color: var(--green-black);
+}
+
+/*it doesn't work*/
+.buy-online button :hover {
+    background-color: red;
+
+}
+
+.form {
+    margin-top: 40px;
+}
+
+.form-backgr{
+    background-image: url("../images/background-2.png");
+    border: 2px solid orange;
+    background-size: cover;
+    opacity: 70%;
+    height: 100vh;
+    margin-left: 30px;
+    margin-right: 35px;
+}
+
+fieldset {
+    margin: 0 auto;
+    width: 600px;
+}
+
+.name {
+    display: flex;
+    flex-direction: row; 
+     
+}
+
+.firstname {
+    padding-right: 10px;
+    height: 50px;
+    
+}
+
+texarea {
+    height: 350px;
+}
+
+#email {
+    width: 350px;
+}
