@@ -34,10 +34,6 @@ img {
     height: auto;
 }
 
-h3 {
-    text-transform: uppercase;
-}
-
 input {
     padding: 10px;
     border: 1px solid var(--red-brown);
@@ -45,7 +41,7 @@ input {
 }
 
 button {
-    padding: 10px 30px;
+    padding: 12px 35px;
     background: var(--red-brown);
     color: var(--white);
     border-style: none;
