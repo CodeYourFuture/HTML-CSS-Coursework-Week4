@@ -8,12 +8,12 @@
 
 body {
     background-color: var(--light-grey);
-    font-family: 'Fjalla One', sans-serif;
-    font-family: 'Outfit', sans-serif;
+    /* font-family: 'Fjalla One', sans-serif;
+    font-family: 'Outfit', sans-serif; */
     display: grid;
     margin: 0;
     grid-template-columns: repeat(4 1fr);
-    grid-template-rows: 150px 560px 470px 470px 470px 550px 260px 260px 260px 430px 150px 250px 150px;
+    grid-template-rows: 200px 530px 360px 370px 370px 550px 260px 260px 260px 430px 150px 250px 150px;
     grid-template-areas: 
     "header        header        header        header"
     "hero          hero          hero          hero"
@@ -38,7 +38,7 @@ body {
 /* SEARCH BAR */
 .header-top-half {
     background-color: #ffffff;
-    height: 40px;
+    height: 70px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -49,7 +49,8 @@ body {
     max-width: 80%;
     cursor: pointer;
     height: 20px;
-    padding: 8px 6px 8px 11px;    
+    padding: 24px 0 0 35px; 
+     
 }
 
 .search-container:hover {
@@ -84,10 +85,12 @@ body {
     height: 20px;
     background: var(--white);
     max-width: 80%;
+    padding-left: 0.7em;
 }
 
 ::placeholder {
     color:var(--red-brown);
+    font-size: 1.2em;
 }
 
 /* SHOPPING BASKET ICON */
@@ -97,34 +100,292 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
-    margin-right: 15px;
+    padding-right: 1.4em;
 }
 
-.svg-color {
+header .svg-color {
     filter: invert(38%) sepia(12%) 
     saturate(2170%) hue-rotate(329deg) 
     brightness(100%) contrast(88%);
 }
 
+/* LOGO & NAVBAR */
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+header h1 {
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 100;
+    font-size: 1.6em;
+    color: var(--red-brown);
+    padding-left: 1em;
+    padding-top: 0.5em;
+}
+
+.nav-icon {
+  margin: 1em;
+  width: 30px;
+}
+
+.nav-icon:after, 
+.nav-icon:before, 
+.nav-icon div {
+  background-color: var(--red-brown);
+  border-radius: 3px;
+  content: '';
+  display: block;
+  height: 3px;
+  margin: 11px 0;
+  transition: all .2s ease-in-out;
+}
+
+.nav-icon:hover:before {
+  transform: translateY(12px) rotate(135deg);
+}
+
+.nav-icon:hover:after {
+  transform: translateY(-12px) rotate(-135deg);
+}
+
+.nav-icon:hover div {
+  transform: scale(0);
+}
+
+header h2 {
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 100;
+    font-size: 1em;
+    color: var(--red-brown);
+    padding-left: 1.6em;
+    letter-spacing: 0.2em;
+    margin-top: 0;   
+}
+
+/* HERO SECTION */
 .hero {
     background-image: url("../images/prickles-hero-img.png");
     grid-area: hero;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.shop-cacti {
-    background-image: url("../images/cactus.png");
+.logo-img {
+    margin-top: 70px;
+}
+
+.logo-est-year {
+    color: var(--white); 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.est-title, .year-title {
+    margin-top: 60px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 200;
+    letter-spacing: 0.4em;
+
+}
+
+.est-title {
+    margin-right: 20px;
+}
+
+.year-title {
+    margin-left: 20px;
+}
+
+hr {
+    height: 3px;
+    border: none;
+    background-color: white;
+    width: 60px;
+}
+
+.svg-color {
+    filter: invert(100%) sepia(6%) 
+    saturate(0%) hue-rotate(115deg) 
+    brightness(108%) contrast(108%);
+}
+
+.logo-title {
+    font-size: 2.7em;
+    font-family: 'Fjalla One', sans-serif;
+    letter-spacing: 0.2em;
+    font-weight: 400;
+    color: var(--white);
+    margin: 0;
+    padding-left: 0.3em;
+}
+
+.hero-subheading {
+    font-family: 'Outfit', sans-serif;
+    color: var(--white);
+    font-weight: 200;
+    text-align: center;
+    font-size: 1.3em;
+    letter-spacing: 0.3em; 
+}
+
+.text1 {
+    padding-top: 10px;
+    margin-bottom: 0;
+}
+
+.text2 {
+    margin: 0;
+}
+
+.hero-button {
+    text-align: center;
+}
+
+.button {
+    background-color: var(--red-brown);
+    font-family: 'Outfit', sans-serif;
+    color:var(--white);
+    padding: 13px 40px;
+    border: none;
+    margin-top: 1.7em;
+    font-size: 1em;
+}
+
+
+/* SHOP */
+/* cacti */
+.shop-cacti {  
     grid-area: cacti;
+    margin-top: 1.6em;
 }
 
+.shop-cacti, .shop-plants, .shop-succulents {
+    position: relative; 
+    display: inline-block;
+}
+
+.shop-cacti img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    max-width: 100vw; 
+}
+
+.shop-cacti .desc {
+    position: absolute;
+    top: 5vw;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #000;
+}
+
+.cacti {
+    margin: 0em;
+    padding-top: 0.3em;
+}
+
+/* plants */
 .shop-plants {
-    background-image: url("../images/plants.png");
     grid-area: plants;
+    margin-top: 2.9em;
 }
 
-.shop-succulents {
-    background-image: url("../images/succulents.png");
-    grid-area: succulents;
+.shop-plants img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    max-width: 100vw;
+    padding-top: 1.3em;
 }
+
+.shop-plants .desc {
+    position: absolute;
+    top: 5vw;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #000;
+}
+
+.plants {
+    margin: 0em;
+    padding-top: 1.4em;
+}
+
+/* succulents */
+.shop-succulents {
+    grid-area: succulents;
+    margin-top: 2.9em;
+}
+
+.shop-succulents img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    max-width: 100vw;
+    padding-top: 3.2em;
+}
+
+.shop-succulents .desc {
+    position: absolute;
+    top: 5vw;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #000;
+}
+
+.succulents {
+    margin: 0em;
+    padding-top: 3em;
+}
+
+/* shared classes for shop section*/
+.title-name {
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 200;
+    letter-spacing: 0.3em;
+    font-size: 1.3em;
+    color:var(--red-brown);
+}
+
+.title-underline {
+    height: 3px;
+    border: none;
+    background-color: #a05941;
+    width: 12px;
+}
+
+.button-text {
+    background-color: var(--red-brown);
+    font-family: 'Outfit', sans-serif;
+    color: var(--white);
+    padding: 13px 20px;
+    border: none;
+    margin-top: 0.4em;
+    font-size: 1em;
+}
+
+
+
+
+
+
+
 
 .about-us {
     background-color: rgb(170, 185, 177);
