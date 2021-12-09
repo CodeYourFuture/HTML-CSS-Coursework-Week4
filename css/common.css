@@ -1,0 +1,20 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+:root {
+  --red: #a05941;
+  --gray: #ededee;
+  --white: #fff;
+  --green: #133032;
+  --whitet: rgba(0, 0, 0, 0.75);
+}
+.btn {
+  padding: 0.5em 1em;
+  color: var(--white);
+  background: var(--red);
+  font-size: 5vw;
+}
