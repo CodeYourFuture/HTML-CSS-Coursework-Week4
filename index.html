@@ -6,18 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- Add a link to your custom CSS here -->
     <link
-      rel="icon"
-      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ49X7lvqLaR_PC2nXmyDilqz6ljG9IG9Ow8A&usqp=CAU"
-      type="image/x-icon"
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
     />
     <link
-      href="/your-path-to-fontawesome/css/fontawesome.css"
+      href="https://fonts.googleapis.com/css2?family=Questrial&family=Raleway&family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://static.parastorage.com/services/third-party/fonts/Helvetica/fontFace.css"
-    />
+
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/footer.css" />
@@ -27,35 +25,39 @@
     <div class="container">
       <header>
         <button class="order-button">Order Online</button>
-        <h1>Juice Bar</h1>
-        <div class="hamburger-menu"></div>
-        <div></div>
+        <h1 class="title">Juice Bar</h1>
+        <div id="hamburger-menu" class="hamburger-menu">
+          <div class="hamburger top"></div>
+          <div class="hamburger middle"></div>
+        </div>
+
+        <div id="navbar" class="hide sidebar">
+          <nav>
+            <ul class="nav-menu">
+              <li class="list-item">
+                <a href="./index.html" class="nav-link nav-active">Home</a>
+              </li>
+              <li class="list-item">
+                <a href="#" class="nav-link">Story</a>
+              </li>
+              <li class="list-item">
+                <a href="#" class="nav-link">Menu</a>
+              </li>
+              <li class="list-item">
+                <a href="#" class="nav-link">Order Online</a>
+              </li>
+              <li class="list-item">
+                <a href="#" class="nav-link">Locations & Hours</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="#" class="login-button">
+            <i class="fa fa-user"></i>
+            Log In
+          </a>
+        </div>
       </header>
-      <sidebar>
-        <nav>
-          <ul class="nav-menu">
-            <li class="list-item">
-              <a href="#" class="nav-link nav-active">Home</a>
-            </li>
-            <li class="list-item">
-              <a href="#" class="nav-link">Story</a>
-            </li>
-            <li class="list-item">
-              <a href="#" class="nav-link">Menu</a>
-            </li>
-            <li class="list-item">
-              <a href="#" class="nav-link">Order Online</a>
-            </li>
-            <li class="list-item">
-              <a href="#" class="nav-link">Locations & Hours</a>
-            </li>
-          </ul>
-        </nav>
-        <button class="login-button">
-          <span class="login-icon"><i class="fas fa-user-circle"></i></span> Log
-          In
-        </button>
-      </sidebar>
+
       <main>
         <section class="home">
           <h1>Fuel Your Body. Balance Your Mind.</h1>
@@ -256,5 +258,6 @@
       educational purposes.
     </p> -->
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
