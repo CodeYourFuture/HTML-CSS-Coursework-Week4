@@ -3,82 +3,8 @@
 
 @media screen and (min-width: 994px) {      
     
-    /* Header */     /* Navbar */
-
-    header {
-        display: grid;
-        grid-template-columns: 20% 60% 5% 10% 5%;
-        grid-template-rows: 50% 50%;
-        grid-template-areas: 
-        "search search login-icon log-in bag-icon"        
-        "heading nav call-us-now call-us-now call-us-now";    
-        align-items:center;
-        justify-content: center;  
-    }   
-
-    .hamburger-icon {
-        display: none;
-    }
-
-    nav ul{
-        display: block;
-    }  
-
-    .login-icon {
-        display: block;
-        grid-area: login-icon;
-        justify-self: left;
-    }
-
-    .log-in {
-        display: block;
-        grid-area: log-in;
-        justify-self: center;
-        font-family: 'Outfit', sans-serif; ;
-    }
-
-    nav {
-        grid-area: nav;
-        align-self: left;
-        font-family: Outfit, sans-serif;        
-    }
-
-    .call-us-now {
-        justify-self: right;        
-    }
-
-    nav ul li{
-        float: left;
-        list-style: none;
-    }
-
-    nav ul li {
-        width: 70px;
-        text-align: center;
-    }
-    /* Hero */
-
-    .hero {
-        height: 100vh;
-    }
-
-    .hero p {
-        font-size: 1.3rem;
-        font-weight: 200;
-        font-family: 'Outfit', sans-serif;
-    }
     
-    .hero h1 {
-        font-size: 6.2rem;
-        font-weight: 200;
-        letter-spacing: 1.1rem;
-    }
-    
-    .hero h2 {
-        font-size: 1.2rem;
-        font-weight: 200;
-        font-family: 'Outfit', sans-serif;
-    }
+
     /* Section: flex-container */
 
     .flex-container {
@@ -96,7 +22,7 @@
     .advert-container {
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: 50% 50%;
+        grid-template-rows: auto;
         grid-template-areas: 
         "paragraph paragraph home leaf"
         "greenhouse greenhouse advert advert";
@@ -120,7 +46,12 @@
 
     .greenhouse {
         grid-area: greenhouse;
+       
     }
+
+    /* .greenhouse img {
+        object-fit: cover;
+    } */
 
    
 }

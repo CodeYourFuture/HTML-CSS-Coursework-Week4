@@ -59,3 +59,58 @@ nav ul{
     display: none;
 }
 
+@media screen and (min-width: 994px) {
+        /* Header */     /* Navbar */
+
+        header {
+            display: grid;
+            grid-template-columns: 20% 60% 5% 10% 5%;
+            grid-template-rows: 50% 50%;
+            grid-template-areas: 
+            "search search login-icon log-in bag-icon"        
+            "heading nav call-us-now call-us-now call-us-now";    
+            align-items:center;
+            justify-content: center;  
+        }   
+    
+        .hamburger-icon {
+            display: none;
+        }
+    
+        nav ul{
+            display: block;
+        }  
+    
+        .login-icon {
+            display: block;
+            grid-area: login-icon;
+            justify-self: left;
+        }
+    
+        .log-in {
+            display: block;
+            grid-area: log-in;
+            justify-self: center;
+            font-family: 'Outfit', sans-serif; ;
+        }
+    
+        nav {
+            grid-area: nav;
+            align-self: left;
+            font-family: Outfit, sans-serif;        
+        }
+    
+        .call-us-now {
+            justify-self: right;        
+        }
+    
+        nav ul li{
+            float: left;
+            list-style: none;
+        }
+    
+        nav ul li {
+            width: 70px;
+            text-align: center;
+        }
+}

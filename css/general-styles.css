@@ -9,7 +9,7 @@
 }
 
 * {
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -28,11 +28,11 @@ main {
     margin: 0 auto;
 }
 
-img {
+/* img {
     display: block;
     max-width: 100%;    
     height: auto;
-}
+} */
 
 input {
     padding: 10px;
