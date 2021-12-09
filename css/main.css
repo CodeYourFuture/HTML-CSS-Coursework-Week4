@@ -93,19 +93,118 @@ body{
 
 .hero {
     border: 2px red  solid;
-   
+    min-height: 800px;
+    
     text-align: center;
     
     background-color: rgb(148, 168, 148);
-    background-image: url("/images/713WNlUPYML._AC_SL1000_.jpg");
- 
+    background-image: url("../images/backgr.png");
 }
 
-.button-hero {
+/*Change color of svg*/
+
+.logo {
+    color: white;
+}
+
+.button-general {
     background-color: var(--red-brown);
     color: white;
     font-weight: bolder;
     padding: 10px 45px;
     margin-bottom: 20px;
+
 }
 
+.three-plants {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-areas: 
+    "one two three";
+    margin: 40px;
+   
+}
+    
+
+.plant-one {
+    background-image: url("../images/plant1.png");
+    grid-area: one;
+    width: 90%;
+    background-size: cover;
+    text-align: center;
+   
+}
+    
+
+
+.plant-two {
+    background-image: url("../images/plant2.png");
+    min-height: 500px;
+    
+    grid-area: two; 
+    width: 90%;
+    background-size: cover;
+    text-align: center;
+}
+
+.plant-three {
+    background-image: url("../images/plant3.png");
+    grid-column: three;
+    width: 90%;
+    background-size: cover;
+    text-align: center;
+}
+
+.plant-name {
+    color: var(--red-brown);
+    font-size: 1.5rem;
+    padding-top: 20px;
+    
+}
+
+hr {
+    width: 20px;
+    
+    border: 2px solid;
+    border-color: var(--red-brown);
+}
+
+.about-us {
+   width: 100%;
+    display: grid;
+    grid-template-columns: (4, 1fr);
+    grid-template-rows: (2, 1fr);
+    grid-template-areas: 
+    "about about windows leaf"
+    "girl girl buy buy";
+    grid-gap: 0px;
+}
+
+.paragraph {
+    grid-area: about;
+    border: 2px solid red;
+    width: 500px;
+}
+
+.img-window {
+    background-image: url("../images/plants-window.png");
+    background-size: cover;
+    grid-area: windows; 
+    border: 2px solid green;
+}
+
+.img-leaf {
+    grid-area: leaf;
+    border: 2px solid rgb(20, 95, 20);
+}
+
+.img-girl {
+    grid-area: girl;
+    border: 2px solid purple;
+    width: 50%;
+}
+
+.buy-online {
+    grid-area: buy;
+    border: 2px solid blue;
+}
