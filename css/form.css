@@ -1,0 +1,61 @@
+.form {
+    display: flex;
+    justify-content: center;
+}
+
+.prickles-and-co-form {
+    border: 0;
+    width: 100%;
+}
+
+.registration {
+    background-color: var(--white);
+    grid-area: order;
+    margin: 1.6em 1em;
+    text-align: center;
+    padding-top: 2em;
+}
+
+.registration--header {
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+    color: var(--red-brown);
+    font-size: 1em;
+    letter-spacing: 0.5em;
+    line-height: 1.4em;
+    font-weight: 400;
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 1.5em;
+}
+
+.field-title {
+    font-family: 'Outfit', sans-serif;
+    padding-bottom: 0.8em;
+}
+
+.form input[type=text], 
+     [type=email], 
+     [type=tel], 
+     textarea {
+        border: 1px solid #000;
+        border-radius: 2px;
+        font-size: 18pt;
+        height: 42px;
+        width: 100%;
+        padding: 12px;
+        box-sizing: border-box;
+        resize: vertical;
+} 
+
+.btn-form {
+    display: block;
+    width: 100%;
+    margin: 0;
+}
+/* font-family: 'Fjalla One', sans-serif;
+    font-family: 'Outfit', sans-serif; */
