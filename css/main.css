@@ -13,7 +13,8 @@ body {
     display: grid;
     margin: 0;
     grid-template-columns: repeat(4 1fr);
-    grid-template-rows: 200px 530px 360px 370px 370px 550px 260px 260px 260px 430px 150px 250px 150px;
+    grid-template-rows: auto;
+    /* grid-template-rows: 200px 530px 360px 370px 370px 550px 260px 260px 260px 430px 150px 250px 150px; */
     grid-template-areas: 
     "header        header        header        header"
     "hero          hero          hero          hero"
@@ -30,141 +31,6 @@ body {
     "footer        footer        footer        footer";
 }
 
-/* HEADER  */
-.header {
-    grid-area: header;  
-}
-
-/* SEARCH BAR */
-.header-top-half {
-    background-color: #ffffff;
-    height: 70px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 5px;
-}
-
-.search-container {
-    max-width: 80%;
-    cursor: pointer;
-    height: 20px;
-    padding: 24px 0 0 35px; 
-     
-}
-
-.search-container:hover {
-    border: 1px solid var(--red-brown);
-}
-
-.container {
-    height: 40px;
-    width: auto;
-}
-
-.search-icon {
-    height: 30px;
-    width: auto;
-}
-
-.fa {
-    color: var(--red-brown);
-}
-
-.fa .fa-search {
-    cursor: pointer;
-    position: absolute;
-    top: 47%;
-    left: 0;
-    transform: translateY(-50%);
-    padding: 13px 15px 13px 11px;
-}
-
-.input-field {
-    border: 0;
-    height: 20px;
-    background: var(--white);
-    max-width: 80%;
-    padding-left: 0.7em;
-}
-
-::placeholder {
-    color:var(--red-brown);
-    font-size: 1.2em;
-}
-
-/* SHOPPING BASKET ICON */
-.shopping-basket {
-    width: 20px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-around;
-    padding-right: 1.4em;
-}
-
-header .svg-color {
-    filter: invert(38%) sepia(12%) 
-    saturate(2170%) hue-rotate(329deg) 
-    brightness(100%) contrast(88%);
-}
-
-/* LOGO & NAVBAR */
-.header-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-}
-
-header h1 {
-    font-family: 'Fjalla One', sans-serif;
-    font-weight: 100;
-    font-size: 1.6em;
-    color: var(--red-brown);
-    padding-left: 1em;
-    padding-top: 0.5em;
-}
-
-.nav-icon {
-  margin: 1em;
-  width: 30px;
-}
-
-.nav-icon:after, 
-.nav-icon:before, 
-.nav-icon div {
-  background-color: var(--red-brown);
-  border-radius: 3px;
-  content: '';
-  display: block;
-  height: 3px;
-  margin: 11px 0;
-  transition: all .2s ease-in-out;
-}
-
-.nav-icon:hover:before {
-  transform: translateY(12px) rotate(135deg);
-}
-
-.nav-icon:hover:after {
-  transform: translateY(-12px) rotate(-135deg);
-}
-
-.nav-icon:hover div {
-  transform: scale(0);
-}
-
-header h2 {
-    font-family: 'Fjalla One', sans-serif;
-    font-weight: 100;
-    font-size: 1em;
-    color: var(--red-brown);
-    padding-left: 1.6em;
-    letter-spacing: 0.2em;
-    margin-top: 0;   
-}
-
 /* HERO SECTION */
 .hero {
     background-image: url("../images/prickles-hero-img.png");
@@ -174,6 +40,7 @@ header h2 {
     align-items: center;
     background-size: cover;
     background-repeat: no-repeat;
+    padding-bottom: 5em;
 }
 
 .logo-img {
@@ -192,7 +59,6 @@ header h2 {
     font-family: 'Outfit', sans-serif;
     font-weight: 200;
     letter-spacing: 0.4em;
-
 }
 
 .est-title {
@@ -203,7 +69,7 @@ header h2 {
     margin-left: 20px;
 }
 
-hr {
+.hero-line-decoration {
     height: 3px;
     border: none;
     background-color: white;
@@ -244,11 +110,7 @@ hr {
     margin: 0;
 }
 
-.hero-button {
-    text-align: center;
-}
-
-.button {
+.btn {
     background-color: var(--red-brown);
     font-family: 'Outfit', sans-serif;
     color:var(--white);
@@ -258,17 +120,10 @@ hr {
     font-size: 1em;
 }
 
-
 /* SHOP */
 /* cacti */
 .shop-cacti {  
-    grid-area: cacti;
-    margin-top: 1.6em;
-}
-
-.shop-cacti, .shop-plants, .shop-succulents {
-    position: relative; 
-    display: inline-block;
+    grid-area: cacti;   
 }
 
 .shop-cacti img {
@@ -291,13 +146,11 @@ hr {
 
 .cacti {
     margin: 0em;
-    padding-top: 0.3em;
 }
 
 /* plants */
 .shop-plants {
     grid-area: plants;
-    margin-top: 2.9em;
 }
 
 .shop-plants img {
@@ -307,7 +160,6 @@ hr {
     background-size: contain;
     background-repeat: no-repeat;
     max-width: 100vw;
-    padding-top: 1.3em;
 }
 
 .shop-plants .desc {
@@ -320,14 +172,12 @@ hr {
 }
 
 .plants {
-    margin: 0em;
-    padding-top: 1.4em;
+    margin: 0em;  
 }
 
 /* succulents */
 .shop-succulents {
-    grid-area: succulents;
-    margin-top: 2.9em;
+    grid-area: succulents;  
 }
 
 .shop-succulents img {
@@ -337,7 +187,7 @@ hr {
     background-size: contain;
     background-repeat: no-repeat;
     max-width: 100vw;
-    padding-top: 3.2em;
+    
 }
 
 .shop-succulents .desc {
@@ -350,11 +200,16 @@ hr {
 }
 
 .succulents {
-    margin: 0em;
-    padding-top: 3em;
+    margin: 0em;  
 }
 
 /* shared classes for shop section*/
+.shop-cacti, .shop-plants, .shop-succulents {
+    position: relative; 
+    display: inline-block;
+    margin-top: 1.6em;
+}
+
 .title-name {
     font-family: 'Fjalla One', sans-serif;
     font-weight: 200;
@@ -370,52 +225,12 @@ hr {
     width: 12px;
 }
 
-.button-text {
-    background-color: var(--red-brown);
-    font-family: 'Outfit', sans-serif;
-    color: var(--white);
+.btn-section {
     padding: 13px 20px;
-    border: none;
     margin-top: 0.4em;
-    font-size: 1em;
 }
 
 
-
-
-
-
-
-
-.about-us {
-    background-color: rgb(170, 185, 177);
-    grid-area: about;
-}
-
-.greenhouse-img {
-    background-image: url("../images/wheelbarrow.png");
-    grid-area: img;
-}
-
-.leaf-img {
-    background-image: url("../images/leaf.png");
-    grid-area: img2;
-}
-
-.foliage-img {
-    background-image: url("../images/woman-foliage.png");
-    grid-area: img3;
-}
-
-.offer {
-    background-color: rgb(1, 26, 13);
-    grid-area: offer;
-}
-
-.order {
-    background-color: rgb(92, 116, 103);
-    grid-area: order;
-}
 
 .end-page-img {
     background-image: url("../images/background-plant.png");
