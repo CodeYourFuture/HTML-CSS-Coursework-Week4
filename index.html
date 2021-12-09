@@ -5,7 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Responsive grid project</title>
+        <link rel="stylesheet" href="./css/header.css"/>
         <link rel="stylesheet" href="./css/main.css"/>
+        <link rel="stylesheet" href="./css/about-us.css"/>
+        <link rel="stylesheet" href="./css/form.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Outfit:wght@200&display=swap" rel="stylesheet">
@@ -46,14 +49,14 @@
             <div class="logo-est-year">
                 <div class="est-title">
                     <span>ESTB</span>
-                    <hr>
+                    <hr class="hero-line-decoration">
                 </div>    
                 <div class="logo-img">
                     <img src="./icons/logo-img.svg" class="svg-color" alt="logo image"/>
                 </div>
                 <div class="year-title">
                     <span>2023</span>
-                    <hr>
+                    <hr class="hero-line-decoration">
                 </div>
             </div>
 
@@ -63,10 +66,9 @@
                 <h2 class="hero-subheading text1">BRING NATURE</h2>
                 <h2 class="hero-subheading text2">INDOORS</h2>
             </div>
+
+            <button class="btn">Shop Now</button>
             
-            <div class="hero-button">
-                <button class="button">Shop Now</button>
-            </div>
         </div>
 
         <!-- SHOP -->
@@ -74,7 +76,7 @@
             <div class="desc">
                 <h1 class="title-name cacti">CACTI</h1>
                 <hr class="title-underline">
-                <button class="button-text">Shop collection</button>
+                <button class="btn btn-section">Shop collection</button>
             </div>
             <img src="./images/cactus.png" alt="hand holding cactus plant pot"/>
         </section>
@@ -83,7 +85,7 @@
             <div class="desc">
                 <h1 class="title-name plants">PLANTS</h1>
                 <hr class="title-underline">
-                <button class="button-text">Shop collection</button>
+                <button class="btn btn-section">Shop collection</button>
             </div>
             <img src="./images/plants.png" alt="hand holding plant pot"/>
         </section>
@@ -92,32 +94,114 @@
             <div class="desc">
                 <h1 class="title-name succulents">SUCCULENTS</h1>
                 <hr class="title-underline">
-                <button class="button-text">Shop collection</button>
+                <button class="btn btn-section">Shop collection</button>
             </div>
             <img src="./images/succulents.png" alt="hand holding plant pot"/>
         </section>
 
-    
+        <!-- ABOUT US PAGE -->
+        <!-- about us -->
+        <section class="about-us">
+                <h1 class="title">ABOUT US</h1>
+                <hr class="title-underline">
 
-       
+                <div class="about-us--description">
+                    <p class="about-us--description__p1">I'm a paragraph. 
+                    Click here to add your own text and edit me. 
+                    It’s easy. Just click “Edit Text” or double 
+                    click me to add your own content and make changes 
+                    to the font. Feel free to drag and drop me 
+                    anywhere you like on your page. I’m a great 
+                    place for you to tell a story and let your 
+                    users know a little more about you. </p>
 
-        <section class="about-us"></section>
+                    <p class="about-us--description__p2">This is a 
+                    great space to write long text about your company 
+                    and your services. You can use this space to go 
+                    into a little more detail about your company. 
+                    Talk about your team and what services you provide.</p>
+                </div>
+        </section>
 
-        <div class="greenhouse-img">
-            <img>
+        <!-- about us images -->
+        <div class="greenhouse">
+            <img src="./images/wheelbarrow.png" class="greenhouse--img" alt="greenhouse with plants and wheelbarrow inside"/>
         </div>
 
-        <div class="leaf-img">
-            <img>
+        <div class="leaf">
+            <img src="./images/leaf.png" class="leaf--img" alt="hand holding small leaf between two fingers">
         </div>
 
-        <div class="foliage-img">
-            <img>
+        <div class="foliage">
+            <img src="./images/woman-foliage.png" class="foliage--img" alt="woman standing in front of window surrounded by plants">
         </div>
 
-        <section class="offer"></section>
+        <!-- about us offer -->
+        <section class="offer">
+            <h1 class="offer--heading">BUY ONLINE NOW & GET 10% OFF !</h1>
+        
+            <button class="btn btn-offer">Shop Now</button> 
+        </section>
 
-        <form class="order"></form>
+        <!-- ORDERS -->
+        <div class="registration">
+            <h1 class="registration--header">FOR SPECIAL</h1> 
+            <h1 class="registration--header">REQUESTS &</h1> 
+            <h1 class="registration--header">ORDERS</h1>
+            <hr class="title-underline">
+
+            <!-- form -->
+            <form class="form">
+                <fieldset class="prickles-and-co-form">
+                    <!-- first/last name -->
+                    <div>
+                        <label for="first-name" class="field-title" >First name *</label>
+                        <input type="text" name="first-name" class="fst-name" required>
+                    </div>
+                    
+                
+                    <!-- last name -->
+                    <div>
+                        <label for="last-name" class="field-title">Last name *</label>
+                        <input type="text" name="last-name" class="lst-name" required>
+                    </div>
+                    
+
+                    <!-- email -->
+                    <div>
+                        <label for="email">Email *</label>
+                        <input type="email" name="email" class="email" required>
+                    </div>
+                    
+
+                    <!-- phone -->
+                    <div>
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    </div>
+                   
+
+                    <!-- message box -->
+                    <div>
+                        <label for="message">Message</label>
+                        <textarea class="message" name="message" style="height:200px"></textarea>
+                    </div>
+                    
+
+
+                            
+                                
+                </fieldset>
+            </form>
+        </div>
+        
+
+
+
+
+
+
 
         <div class="end-page-img">
             <img>
