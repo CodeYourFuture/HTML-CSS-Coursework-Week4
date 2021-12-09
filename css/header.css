@@ -1,0 +1,134 @@
+/* HEADER  */
+.header {
+    grid-area: header;  
+    padding-bottom: 0.7em;
+}
+
+/* SEARCH BAR */
+.header-top-half {
+    background-color: #ffffff;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.search-container {
+    max-width: 80%;
+    cursor: pointer;
+    height: 20px;
+    padding: 24px 0 0 35px;      
+}
+
+.search-container:hover {
+    border: 1px solid var(--red-brown);
+}
+
+.container {
+    height: 40px;
+    width: auto;
+}
+
+.search-icon {
+    height: 30px;
+    width: auto;
+}
+
+.fa {
+    color: var(--red-brown);
+}
+
+.fa .fa-search {
+    cursor: pointer;
+    position: absolute;
+    top: 47%;
+    left: 0;
+    transform: translateY(-50%);
+    padding: 13px 15px 13px 11px;
+}
+
+.input-field {
+    border: 0;
+    height: 20px;
+    background: var(--white);
+    max-width: 80%;
+    padding-left: 0.7em;
+}
+
+::placeholder {
+    color:var(--red-brown);
+    font-size: 1.2em;
+}
+
+/* SHOPPING BASKET ICON */
+.shopping-basket {
+    width: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-right: 1.4em;
+}
+
+header .svg-color {
+    filter: invert(38%) sepia(12%) 
+    saturate(2170%) hue-rotate(329deg) 
+    brightness(100%) contrast(88%);
+}
+
+/* LOGO & NAVBAR */
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+header h1 {
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 100;
+    font-size: 1.6em;
+    color: var(--red-brown);
+    padding-left: 1em;
+    padding-top: 0.5em;
+}
+
+.nav-icon {
+  margin: 1em;
+  width: 30px;
+}
+
+.nav-icon:after, 
+.nav-icon:before, 
+.nav-icon div {
+  background-color: var(--red-brown);
+  border-radius: 3px;
+  content: '';
+  display: block;
+  height: 3px;
+  margin: 11px 0;
+  transition: all .2s ease-in-out;
+}
+
+.nav-icon:hover:before {
+  transform: translateY(12px) rotate(135deg);
+}
+
+.nav-icon:hover:after {
+  transform: translateY(-12px) rotate(-135deg);
+}
+
+.nav-icon:hover div {
+  transform: scale(0);
+}
+
+header h2 {
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 100;
+    font-size: 1em;
+    color: var(--red-brown);
+    padding-left: 1.6em;
+    letter-spacing: 0.2em;
+    margin-top: 0;   
+}
