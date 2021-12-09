@@ -80,7 +80,7 @@
         margin: 0 auto;
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: 370px auto;
+        grid-template-rows: auto auto;
         grid-template-areas: 
         "paragraph paragraph home leaf"
         "greenhouse greenhouse advert advert";
@@ -107,7 +107,7 @@
     }
 
     .advert p {
-        font-size: 5rem;
+        font-size: 4.8rem;
     }  
 }
    
