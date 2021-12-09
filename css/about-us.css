@@ -1,0 +1,99 @@
+/* ABOUT US */
+.about-us {
+    background-color:var(--white);
+    grid-area: about;
+    margin-top: 1.6em;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.title {
+    margin-top: 4em;
+    font-family: 'Outfit', sans-serif;
+    color: var(--red-brown);
+    font-size: 1em;
+    letter-spacing: 0.3em;
+}
+
+.title-underline {
+    color: var(--red-brown);
+    height: 3px;
+    border: none;
+    width: 12px;
+    margin-top: 1.5em;
+}
+
+.about-us--description p {
+    font-family: 'Outfit', sans-serif;
+    margin: 0; 
+    line-height: 160%;
+    font-size: 0.92em;
+}
+
+.about-us--description__p1 {
+    padding: 1em 1.6em 0 1.6em;
+}
+
+.about-us--description__p2 {
+    padding: 2.2em 1.6em 3em 1.6em;
+}
+
+/* ABOUT US IMAGES */
+.greenhouse {
+    grid-area: img;
+    width: 100%;
+}
+
+.greenhouse--img {
+    object-fit: fill;
+    width: 100%;
+    height: auto;
+}
+
+.leaf {
+    grid-area: img2;
+    width: 100%;  
+}
+
+.leaf--img {
+    object-fit: fill;
+    width: 100%;
+    height: auto;
+}
+
+.foliage {
+   grid-area: img3;
+   width: 100%; 
+}
+
+.foliage--img {
+    object-fit: fill;
+    width: 100%;
+    height: auto;
+}
+
+/* ABOUT US OFFER */
+.offer {
+    grid-area: offer;
+    background-color:var(--green-black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5em;
+}
+
+.offer--heading {
+    font-family: 'Fjalla One', sans-serif;
+    color:var(--white);
+    text-align: center;
+    font-size: 4em;
+    font-weight: 400;
+    margin: 0;
+    padding-top: 1.3em;
+    padding-bottom: 0.4em;
+}
+
+.btn-offer {
+    background-color: var(--white);
+    color: var(--green-black);
+}
