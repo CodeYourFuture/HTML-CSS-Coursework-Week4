@@ -143,7 +143,7 @@
             <button class="btn btn-offer">Shop Now</button> 
         </section>
 
-        <!-- ORDERS -->
+        <!-- ORDER FORM -->
         <div class="registration">
             <h1 class="registration--header">FOR SPECIAL</h1> 
             <h1 class="registration--header">REQUESTS &</h1> 
@@ -154,55 +154,41 @@
             <form class="form">
                 <fieldset class="prickles-and-co-form">
                     <!-- first/last name -->
-                    <div>
-                        <label for="first-name" class="field-title" >First name *</label>
-                        <input type="text" name="first-name" class="fst-name" required>
+                    <div class="form-section">
+                        <label for="first-name" class="fst-name field-title"  >First Name *</label>
+                        <input type="text" name="first-name" required>
                     </div>
                     
-                
                     <!-- last name -->
-                    <div>
-                        <label for="last-name" class="field-title">Last name *</label>
-                        <input type="text" name="last-name" class="lst-name" required>
+                    <div class="form-section">
+                        <label for="last-name" class="lst-name field-title">Last Name *</label>
+                        <input type="text" name="last-name" required>
                     </div>
                     
-
                     <!-- email -->
-                    <div>
-                        <label for="email">Email *</label>
-                        <input type="email" name="email" class="email" required>
+                    <div class="form-section">
+                        <label for="email" class="email field-title">Email *</label>
+                        <input type="email" name="email" required>
                     </div>
                     
-
                     <!-- phone -->
-                    <div>
-                        <label for="phone">Phone</label>
-                        <input type="tel" id="phone" name="phone"
+                    <div class="form-section">
+                        <label for="phone" class="phone field-title">Phone</label>
+                        <input type="tel" name="phone"
                         pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
                     </div>
-                   
 
                     <!-- message box -->
-                    <div>
-                        <label for="message">Message</label>
-                        <textarea class="message" name="message" style="height:200px"></textarea>
-                    </div>
-                    
-
-
-                            
-                                
+                    <div class="form-section">
+                        <label class="message field-title" for="message">Message</label>
+                        <textarea name="message" style="height:200px"></textarea>
+                    </div>   
+                    <button class="btn btn-form">Send</button>           
                 </fieldset>
             </form>
         </div>
         
-
-
-
-
-
-
-
+        <!-- END PAGE IMG -->
         <div class="end-page-img">
             <img>
         </div>
