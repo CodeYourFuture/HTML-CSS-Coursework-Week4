@@ -1,3 +1,152 @@
 /* Add your CSS here */
-
+/* font-family: 'Fjalla One', sans-serif;
+font-family: 'Outfit', sans-serif; */
 /* Dont' forget to link this file to your HTML in the <head> */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  font-family: "Outfit", sans-serif;
+}
+/* hack how to make humburger logo using checkbox */
+input[type="checkbox"] {
+  display: none;
+}
+
+.looking {
+  padding: 15px;
+}
+/* change color of basket */
+.basket {
+  /* background-color:var(--red-brown); */
+  padding-top: 6px;
+  margin-right: 8px;
+}
+
+.search {
+  /* position: static; */
+  display: flex;
+  height: 3rem;
+  width: 100%;
+  min-height: auto;
+  justify-content: space-between;
+}
+
+.search__input {
+  border: none;
+  width: 12rem;
+  margin-left: 8px;
+  padding-left: 20px;
+}
+
+.info_main {
+  background-color: var(--light-grey);
+  width: 100%;
+  height: 100px;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+}
+
+.info {
+  grid-column: 1 / span 3;
+}
+
+.menu {
+  grid-column: 4/4;
+}
+/* .dropdown {
+    display: none;
+    position: absolute; 
+} */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: var(--light-grey);
+}
+
+ul li {
+  display: block;
+  position: relative;
+  line-height: 21px;
+  text-align: left;
+}
+
+ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: var(--red-brown);
+}
+
+.dropdown:hover {
+  display: block;
+}
+
+.main {
+  background-image: url("../img/background\ for\ last\ week\ html.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  width: 100%;
+  height: 620px;
+}
+
+.estb_2023 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  color: var(--white);
+  font-size: 20px;
+  letter-spacing: 4px;
+}
+
+.centercontent {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 100px;
+}
+.brand_logo {
+  color: var(--white);
+  margin: 0 20px;
+}
+
+.brand_name h1 {
+  font-family: "Fjalla One", sans-serif;
+  color: var(--white);
+  font-size: 44px;
+  letter-spacing: 0.17em;
+  margin-bottom: 20px;
+  padding-left: 42px;
+}
+
+.brand_name p {
+  font-family: "Outfit", sans-serif;
+  color: var(--white);
+  font-size: 16px;
+  letter-spacing: 0.35em;
+  /* margin-bottom: 43px;  use margin-top for button*/
+  margin: 0 65px;
+  text-align: center;
+}
+
+.shop {
+  background-color: var(--red-brown);
+  color: var(--white);
+  padding: 15px 30px;
+  margin-top: 43px;
+  font-size: 18px;
+  font-family: "Outfit", sans-serif;
+  letter-spacing: 2px;
+}
