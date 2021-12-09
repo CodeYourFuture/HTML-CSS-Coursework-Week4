@@ -21,3 +21,130 @@ body {
 h1 {
   font-family: 'Poppins', sans-serif;
 }
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+/* Header */
+
+header {
+  background-color: var(--White);
+  position: fixed;
+  width: 100%;
+}
+
+.logo > img {
+  position: absolute;
+  left: 20px;
+  top: 23px;
+}
+
+img + p {
+  margin-left: 45px;
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+img + p + p {
+  margin-left: 20px;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+/* Navigation */
+
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 1em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  background-color: var(--Royal-blue);
+  height: 5px;
+  width: 2.2em;
+  border-radius: 2px;
+  position: relative;
+  margin: 4px 0;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: "";
+  position: absolute;
+}
+
+.nav-toggle-label span::before {
+  bottom: 7px;
+  width: 1em;
+}
+
+.nav-toggle-label span::after {
+  top: 7px;
+  width: 1em;
+  margin-left: 20px;
+}
+
+nav {
+position: absolute;
+text-align: center;
+top: 0;
+left: 0;
+background-color: var(--Light-beige);
+padding-top: 7em;
+width: 100%;
+height: 100vh;
+transform: scale(1, 0);
+transform-origin: top;
+transition: transform 900ms ease-in-out;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  margin: 2em 0;
+  /* margin-left: 1em; */
+}
+
+nav a {
+  color: var(--Black);
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+}
+
+nav a:hover {
+  color: var(--Royal-blue);
+}
+
+.nav-toggle:checked ~ nav {
+  transform: scale(1, 1);
+}
+
+.nav-toggle:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 550ms ease-in-out 250ms;
+}
