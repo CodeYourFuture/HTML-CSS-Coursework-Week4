@@ -1,57 +1,20 @@
 /* Media Queries */
 
 
-@media screen and (min-width: 994px) {      
-    
-    
+@media screen and (min-width: 994px) {        
 
     /* Section: flex-container */
 
     .flex-container {
         flex-direction: row;
         justify-content: space-between;
+        width: 90%;
+        margin: 0 auto;
     }
 
     .flex-item {
         margin-bottom: 0;
         margin: 0;
     }
-
-    /* Section:advert-container  */
-
-    .advert-container {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        grid-template-areas: 
-        "paragraph paragraph home leaf"
-        "greenhouse greenhouse advert advert";
-    } 
-
-    .paragraph {
-        grid-area: paragraph;
-    }
-    
-    .home {
-        grid-area: home;
-    }
-
-    .leaf {
-        grid-area: leaf;
-    }
-
-    .advert {
-        grid-area: advert;
-    }
-
-    .greenhouse {
-        grid-area: greenhouse;
-       
-    }
-
-    /* .greenhouse img {
-        object-fit: cover;
-    } */
-
-   
 }
+    

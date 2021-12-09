@@ -43,35 +43,5 @@
     text-transform: uppercase; 
 }
 
-/* Section grid-container */
 
-.grid-container {   
-    margin: 0 auto;
-}
-
-.advert-container {
-    width: 100%;
-    background: #fff;
-    text-align: center;
-    display: flex;
-    flex-direction: column;  
-}
-
-.grid-container h3 {
-    text-transform: uppercase;
-}
-
-.paragraph {
-    padding: 20px;
-}
-
-.advert {
-    background-color: var(--green-black);
-    color: #fff;
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 

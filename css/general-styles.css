@@ -28,11 +28,11 @@ main {
     margin: 0 auto;
 }
 
-/* img {
+img {
     display: block;
     max-width: 100%;    
     height: auto;
-} */
+}
 
 input {
     padding: 10px;

@@ -1,0 +1,71 @@
+/* Section grid-container */
+
+.advert-container {
+    
+    width: 100%;
+    background: #fff;
+    text-align: center;
+    /* display: grid;
+    grid-template-columns: 1fr; */
+    /* grid-template-rows: 50vh 30vh 30vh 30vh 80vh 80vh; */
+}
+
+.paragraph {
+    padding: 20px;
+}
+
+.advert {
+    width: 100%;
+    background-color: var(--green-black);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.3rem;
+    font-family: var(--fjalla-one);
+    letter-spacing: 0.2rem;
+    padding: 70px 0;
+}
+
+@media screen and (min-width: 994px) {
+    /* Section:advert-container  */
+
+    .advert-container {  
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "paragraph paragraph home leaf"
+        "greenhouse greenhouse advert advert";
+    } 
+
+    .paragraph {
+        grid-area: paragraph;
+    }
+    
+    .home {
+        grid-area: home;
+    }
+
+    .leaf {
+        grid-area: leaf;
+    }
+
+    .advert {
+        grid-area: advert;       
+    }
+
+    .greenhouse {
+        grid-area: greenhouse;       
+    }
+
+    .advert p {
+        font-size: 5rem;
+    }
+
+  
+}
+   
