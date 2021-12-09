@@ -24,14 +24,14 @@ h1 {
 
 .container {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(5, 1fr);
 }
 
 /* Header */
 
 header {
   background-color: var(--White);
-  position: fixed;
+  position: absolute;
   width: 100%;
 }
 
@@ -148,3 +148,147 @@ nav a:hover {
   opacity: 1;
   transition: opacity 550ms ease-in-out 250ms;
 }
+
+/* Hero */
+.hero {
+  grid-column: 1 / span 6;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+/* Underlay White */
+.underlay-white {
+  min-height: 300px;
+  grid-column: 1 / -1;
+  background-color: var(--White);
+}
+
+/* Underlay Beige */
+.underlay-beige {
+  background-color: var(--Dark-beige);
+  /* position: absolute; */
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 11em;
+  grid-column: 1 / -1;
+}
+
+/* Personal Intro */
+.personal-intro {
+  
+  padding: 25px;
+}
+
+.personal-intro > p:first-child {
+  font-size: 40px;
+  margin-bottom: 0;
+}
+
+.personal-intro > p:nth-child(2) {
+  font-size: 19px;
+}
+
+.personal-intro > p:nth-child(3) {
+  font-size: 16px;
+}
+
+/* Personal Details */
+.personal-details {
+  background-color: var(--Light-beige);
+  text-align: center;
+  width: 85%;
+  margin: 0 auto;
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  align-self: center;
+  position: absolute;
+  top: 6em;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+}
+
+.personal-details, .underlay-white {
+  grid-row: 1 / 2;
+} 
+
+.personal-details > img {
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  margin-top: 2em;
+}
+
+.personal-details > h1 {
+ padding: 0 3em;
+ text-align: center;
+ margin-top: 0;
+}
+
+.under-line {
+  position: relative;
+  height: 2px;
+  background-color: var(--Royal-blue);
+  width: 30%;
+  
+  margin: 0 auto;
+
+}
+
+.personal-details > button {
+  width: 120px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  /* border: transparent; */
+  margin: 2em 5px;
+}
+
+
+.personal-details > button a {
+  text-transform: uppercase;
+  text-decoration: none;
+  /* grid-column: 1 / span 6; */
+}
+
+.btn-blue {
+  background-color: var(--Royal-blue);
+  border: transparent;
+}
+
+.btn-blue a {
+  color: var(--White);
+}
+
+.btn-beige {
+  border: 1px solid black;
+}
+
+.btn-beige a {
+  color: var(--Black);
+  background-color: transparent;
+}
+
+/* Personal-detail Footer */
+.social-media {
+  background-color: var(--White);
+  margin-bottom: 1em;
+}
+
+.social-media ul {
+  display: flex;
+  padding-left: 0;
+  justify-content: center;
+  padding: 5px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.social-media li {
+  margin: 0 5px;
+}
+
