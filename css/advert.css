@@ -1,7 +1,6 @@
 /* Section grid-container */
 
-.advert-container {    
-
+.advert-container {  
     background: #fff;
     text-align: center; 
     display: flex;
@@ -36,19 +35,18 @@
 
 @media screen and (min-width: 280px) {
     .advert-container {
-        width: 50%;
-    }
-   
+        width: 48%;
+    }   
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 614px) {
 
     .advert-container {
         margin: 0 auto;
         width: 60%;
         display: grid;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 26% 18% 28% auto;        
+        grid-template-rows:  auto 18% 28% auto;        
     }
 
     .paragraph {
@@ -82,7 +80,7 @@
         margin: 0 auto;
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: auto;
+        grid-template-rows: 370px auto;
         grid-template-areas: 
         "paragraph paragraph home leaf"
         "greenhouse greenhouse advert advert";

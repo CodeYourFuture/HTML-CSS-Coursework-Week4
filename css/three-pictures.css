@@ -1,0 +1,40 @@
+/* Section flex-container */
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-item {
+    position: relative;    
+    margin-bottom: 20px;    
+    width: 315px;
+    height: 394px;   
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+
+.cactus {
+    background-image: url('../img/cactus-1.webp');
+}
+
+.plant {
+    background-image: url('../img/plant.webp');
+}
+
+.succulent {
+    background-image: url('../img/succulent.webp');
+}
+
+
+.h3-btn {
+    width: 80%;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-transform: uppercase; 
+}

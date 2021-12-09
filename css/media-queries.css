@@ -1,20 +1,2 @@
-/* Media Queries */
 
-
-@media screen and (min-width: 994px) {        
-
-    /* Section: flex-container */
-
-    .flex-container {
-        flex-direction: row;
-        justify-content: space-between;
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    .flex-item {
-        margin-bottom: 0;
-        margin: 0;
-    }
-}
     
