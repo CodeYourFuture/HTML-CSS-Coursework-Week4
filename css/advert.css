@@ -1,17 +1,22 @@
 /* Section grid-container */
 
-.advert-container {
-    
-    width: 100%;
+.advert-container {    
+
     background: #fff;
-    text-align: center;
-    /* display: grid;
-    grid-template-columns: 1fr; */
-    /* grid-template-rows: 50vh 30vh 30vh 30vh 80vh 80vh; */
+    text-align: center; 
+    display: flex;
+    flex-direction: column;   
+    justify-items: center;
+    margin: 0 auto;
+    
 }
 
 .paragraph {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .advert {
@@ -28,7 +33,48 @@
     padding: 70px 0;
 }
 
+
+@media screen and (min-width: 280px) {
+    .advert-container {
+        width: 50%;
+    }
+   
+}
+
+@media screen and (min-width: 600px) {
+
+    .advert-container {
+        margin: 0 auto;
+        width: 60%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 26% 18% 28% auto;        
+    }
+
+    .paragraph {
+        grid-column: 1/3;
+       
+    }
+    .home {
+        grid-column: 1/2;
+    }
+
+    .leaf {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    .greenhouse {
+        grid-column: 1/-1;
+    }
+
+    .advert {
+        grid-column: 1/-1;
+    }
+}
+
 @media screen and (min-width: 994px) {
+    
     /* Section:advert-container  */
 
     .advert-container {  
@@ -64,8 +110,6 @@
 
     .advert p {
         font-size: 5rem;
-    }
-
-  
+    }  
 }
    
