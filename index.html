@@ -29,7 +29,7 @@
             </section>
             <a href="#" class="bag"><img src="./images/shopping-cart.svg" alt="shopping-bag" class="bag-image" /></a>
         </section>
-        <a href="#" class="header-text">
+        <a href="./index.html" class="header-text">
             <h3>Prickles & Co.</h3>
         </a>
         <section class="hamburger-menu">
@@ -44,20 +44,21 @@
     <section class="menu-list" id="menu-list">
         <nav>
             <ul>
-                <li class="nav-items login"><img src="./images/profile.svg" alt="Profile SVG Image" /><a href="#">Log
+                <li class="nav-items login"><img src="./images/profile.svg" alt="Profile SVG Image" /><a href="#" onclick="hideMenu()">Log
                             In</a></li>
                 <li class="nav-items shop">
-                    <div class="shop-wrapper"><a href="#">Shop</a><button class="down" onclick="showShopItems()"><img src="./images/down.svg" alt="Down Arrow"></button></div>
+                    <div class="shop-wrapper"><a href="./shop.html" onclick="hideMenu()">Shop</a><button class="down" onclick="showShopItems()"><img src="./images/down.svg"
+                                    alt="Down Arrow"></button></div>
                 </li>
                 <ul class="hidden" id="hidden">
-                    <li><a href="#">Cacti</a></li>
-                    <li><a href="#">Plants</a></li>
-                    <li><a href="#">Succulents</a></li>
+                    <li><a href="./cactus.html" onclick="hideMenu()">Cacti</a></li>
+                    <li><a href="./plants.html" onclick="hideMenu()">Plants</a></li>
+                    <li><a href="./succulents.html" onclick="hideMenu()">Succulents</a></li>
                 </ul>
                 <li class="nav-items" onclick="hideMenu()">
                     <a href="#about">About</a>
                 </li>
-                <li class="nav-items"><a href="#">FAQ</a></li>
+                <li class="nav-items"><a href="./faq.html" onclick="hideMenu()">FAQ</a></li>
                 <li class="nav-items">
                     <a href="#contact" onclick="hideMenu()">Contact</a>
                 </li>
@@ -88,7 +89,7 @@
                 <section class="product-links-content">
                     <h3>Cacti</h3>
                     <hr class="small-divider" />
-                    <form action="#">
+                    <form action="./cactus.html">
                         <button>Shop Collection</button>
                     </form>
                 </section>
@@ -98,7 +99,7 @@
                 <section class="product-links-content">
                     <h3>Plants</h3>
                     <hr class="small-divider" />
-                    <form action="#">
+                    <form action="./plants.html">
                         <button>Shop Collection</button>
                     </form>
                 </section>
@@ -108,7 +109,7 @@
                 <section class="product-links-content">
                     <h3>Succulents</h3>
                     <hr class="small-divider" />
-                    <form action="#">
+                    <form action="./succulents.html">
                         <button>Shop Collection</button>
                     </form>
                 </section>
@@ -132,7 +133,7 @@
         </section>
         <section class="offer">
             <h1>Buy online now & get 10% off !</h1>
-            <form action="#">
+            <form action="./shop.html">
                 <button>Shop Now</button>
             </form>
         </section>
@@ -183,7 +184,7 @@
                 <h4>Help</h4>
                 <a href="#">Shipping & Returns</a>
                 <a href="#">Privacy Policy</a>
-                <a href="#">FAQ</a>
+                <a href="./faq.html">FAQ</a>
             </section>
             <section class="subscribe">
                 <h4>Subscribe</h4>
@@ -205,11 +206,35 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12615.359272442083!2d-122.3958356107621!3d37.77035393951142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7fc4fe5e0af3%3A0x11c548b59491f791!2s500%20Terry%20A%20Francois%20Blvd%206th%20floor%2C%20San%20Francisco%2C%20CA%2094158%2C%20USA!5e0!3m2!1sen!2suk!4v1638823906588!5m2!1sen!2suk"
                 width="100%" height="400" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
         </section>
+        <button class="chat" id="chat" onclick="showChat()">
+                <div class="chat-circle"><img src="./images/chat.svg" alt="Message Symbol"></div>
+            </button>
+        <section class="chat-page" id="chat-page">
+            <section class="top-chat">
+                <section class="logo-on">
+                    <img src="./images/chat-logo.png" alt="Company logo">
+                    <div class="green"></div>
+                </section>
+                <section class="chat-text">
+                    <h3>Prickles & co.</h3>
+                    <p>We'll reply as soon as we can</p>
+                </section>
+                <button class="close" id="close" onclick="showChat()">
+                        <img src="./images/close.svg" alt="Close button">
+                    </button>
+            </section>
+            <section class="chat-message">
+                <form action="" class="chat-form">
+                    <input type="text" name="message" class="chat-input" id="chat-input" placeholder="Type your message...">
+                </form>
+            </section>
+        </section>
+
     </main>
     <footer>
         <p>
             &copy; 2023 by Prickles & Co. Proudly created with
-            <a href="#"></a>Wix.com
+            <a href="http://www.wix.com">Wix.com</a>.
         </p>
 
         <!-- Please leave this in to credit the creators of this design -->

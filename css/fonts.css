@@ -14,7 +14,8 @@ h3 {
 h3,
 h4,
 .changing-text,
-p {
+p,
+ol {
     color: var(--redBrown);
 }
 
@@ -71,7 +72,8 @@ h3 {
     letter-spacing: 0.3rem;
 }
 
-p {
+p,
+ol {
     font-weight: 300;
     font-size: 0.875rem;
     line-height: 1.4rem;
@@ -95,4 +97,35 @@ h1 {
 .find-us a,
 .find-us label {
     color: var(--white);
+}
+
+
+/* PRODUCTS */
+
+.hero-products a,
+.hero-products p {
+    color: var(--white);
+    z-index: 2;
+}
+
+
+/* CHAT TEXT */
+
+.chat-text h3,
+.chat-text p {
+    color: var(--white);
+}
+
+
+/* FAQ */
+
+.text-button {
+    color: var(--redBrown);
+    font-size: 1rem;
+}
+
+.faq-wrapper h3 {
+    font-size: 1rem;
+    color: var(--black);
+    text-transform: none;
 }

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Add a link to your custom CSS here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Outfit:wght@200;300;400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/variables.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/images.css" />
+    <link rel="stylesheet" href="./css/products.css">
+
+    <title>Responsive grid project</title>
+</head>
+
+<body id="body">
+    <!-- Add your markup here -->
+    <header class="grey-background">
+        <section class="white-background">
+            <section class="search-wrapper">
+                <img src="./images/search.svg" alt="Search Image" class="search-img" />
+                <input type="search" placeholder="Search..." class="search" />
+            </section>
+            <a href="#" class="bag"><img src="./images/shopping-cart.svg" alt="shopping-bag" class="bag-image" /></a>
+        </section>
+        <a href="./index.html" class="header-text">
+            <h3>Prickles & Co.</h3>
+        </a>
+        <section class="hamburger-menu">
+            <button id="menu-button" class="menu-button" onclick="showMenu()">
+                    <div class="bar" id="bar-one"></div>
+                    <div class="bar" id="bar-two"></div>
+                    <div class="bar" id="bar-three"></div>
+                </button>
+        </section>
+        <section class="changing-text" id="changing-text"></section>
+    </header>
+    <section class="menu-list" id="menu-list">
+        <nav>
+            <ul>
+                <li class="nav-items login"><img src="./images/profile.svg" alt="Profile SVG Image" /><a href="#" onclick="hideMenu()">Log
+                            In</a></li>
+                <li class="nav-items shop">
+                    <div class="shop-wrapper"><a href="./shop.html" onclick="hideMenu()">Shop</a><button class="down" onclick="showShopItems()"><img src="./images/down.svg"
+                                    alt="Down Arrow"></button></div>
+                </li>
+                <ul class="hidden" id="hidden">
+                    <li><a href="./cactus.html" onclick="hideMenu()">Cacti</a></li>
+                    <li><a href="./plants.html" onclick="hideMenu()">Plants</a></li>
+                    <li><a href="./succulents.html" onclick="hideMenu()">Succulents</a></li>
+                </ul>
+                <li class="nav-items" onclick="hideMenu()">
+                    <a href="./index.html#about">About</a>
+                </li>
+                <li class="nav-items"><a href="./faq.html" onclick="hideMenu()">FAQ</a></li>
+                <li class="nav-items">
+                    <a href="./index.html#contact" onclick="hideMenu()">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    <main class="grey-background">
+        <section class="hero hero-products cactus">
+            <section class="overlay overlay-cactus"></section>
+            <a href="./shop.html">&lt; Shop All</a>
+            <h2>Have yourself a cactus</h2>
+            <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little
+                more about you.</p>
+            <a href="#cactus"><img src="./images/down-circle.gif" alt="Down Logo" class="down-circle"></a>
+        </section>
+        <section class="buy-these">
+            <h3 id="cactus">Cacti</h3>
+            <section class="products">
+                <img src="./images/cacti-1.webp" alt="Cactus Plant" class="product-image" />
+                <section>
+                    <p>I'm a product</p>
+                    <p><s>$15.00</s> $13.50</p>
+                    <button>Add to Cart</button>
+                </section>
+            </section>
+            <section class="products">
+                <img src="./images/cacti-2.webp" alt="Cactus Plant" class="product-image" />
+                <section>
+                    <p>I'm a product</p>
+                    <p>$20.00</p>
+                    <button>Add to Cart</button>
+                </section>
+            </section>
+            <section class="products">
+                <img src="./images/cacti-3.webp" alt="Cactus Plant" class="product-image" />
+                <section>
+                    <p>I'm a product</p>
+                    <p>$15.00</p>
+                    <button>Add to Cart</button>
+                </section>
+            </section>
+            <section class="products">
+                <img src="./images/cacti-4.webp" alt="Cactus Plant" class="product-image" />
+                <section>
+                    <p>I'm a product</p>
+                    <p>$20.00</p>
+                    <button>Add to Cart</button>
+                </section>
+            </section>
+            <section class="products">
+                <p class="extra">New Arrival</p>
+                <img src="./images/cacti-5.webp" alt="Cactus Plant" class="product-image" />
+                <section>
+                    <p>I'm a product</p>
+                    <p>$23.00</p>
+                    <button>Add to Cart</button>
+                </section>
+            </section>
+            <section class="products">
+                <img src="./images/cacti-6.webp" alt="Cactus Plant" class="product-image" />
+                <section>
+                    <p>I'm a product</p>
+                    <p>$10.00</p>
+                    <button>Add to Cart</button>
+                </section>
+            </section>
+        </section>
+
+
+        <section class="find-us">
+            <section class="contact">
+                <h4>Our store</h4>
+                <p>Address: 500 Terry Francois Street San</p>
+                <p>Francisco, CA 94158</p>
+                <p>Phone: 123-456-7890</p>
+                <p>Email: info@mysite.com</p>
+            </section>
+            <section class="open">
+                <h4>Opening hours</h4>
+                <p>Mon - Fri: 7am - 10pm</p>
+                <p>Saturday: 8am - 10pm</p>
+                <p>Sunday: 8am - 11pm</p>
+            </section>
+            <section class="help">
+                <h4>Help</h4>
+                <a href="#">Shipping & Returns</a>
+                <a href="#">Privacy Policy</a>
+                <a href="./faq.html">FAQ</a>
+            </section>
+            <section class="subscribe">
+                <h4>Subscribe</h4>
+                <form action="#">
+                    <fieldset>
+                        <label for="subscribe-email">Enter your email here *</label>
+                        <input type="email" name="subscribe-email" id="subscribe-email" class="input-field" placeholder=" " required />
+                    </fieldset>
+                    <input type="submit" value="Subscribe Now" />
+                </form>
+            </section>
+            <section class="icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </section>
+        </section>
+        <section id="map" class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12615.359272442083!2d-122.3958356107621!3d37.77035393951142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7fc4fe5e0af3%3A0x11c548b59491f791!2s500%20Terry%20A%20Francois%20Blvd%206th%20floor%2C%20San%20Francisco%2C%20CA%2094158%2C%20USA!5e0!3m2!1sen!2suk!4v1638823906588!5m2!1sen!2suk"
+                width="100%" height="400" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+        <button class="chat" id="chat" onclick="showChat()">
+                <div class="chat-circle"><img src="./images/chat.svg" alt="Message Symbol"></div>
+            </button>
+        <section class="chat-page" id="chat-page">
+            <section class="top-chat">
+                <section class="logo-on">
+                    <img src="./images/chat-logo.png" alt="Company logo">
+                    <div class="green"></div>
+                </section>
+                <section class="chat-text">
+                    <h3>Prickles & co.</h3>
+                    <p>We'll reply as soon as we can</p>
+                </section>
+                <button class="close" id="close" onclick="showChat()">
+                        <img src="./images/close.svg" alt="Close button">
+                    </button>
+            </section>
+            <section class="chat-message">
+                <form action="" class="chat-form">
+                    <input type="text" name="message" class="chat-input" id="chat-input" placeholder="Type your message...">
+                </form>
+            </section>
+        </section>
+
+    </main>
+    <footer>
+        <p>
+            &copy; 2023 by Prickles & Co. Proudly created with
+            <a href="#">Wix.com</a>.
+        </p>
+
+        <!-- Please leave this in to credit the creators of this design -->
+        <p>
+            This website design was created by Wix.com, and is used here for strictly educational purposes.
+        </p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

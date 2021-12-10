@@ -57,15 +57,38 @@ function showShopItems() {
     }
 }
 
-// MAP
-// function initMap() {
-//     const prickles = { lat: 37.77115113296127, lng: -122.38714525546828 };
-//     const map = new google.maps.Map(document.getElementById("map"), {
-//         zoom: 15,
-//         center: prickles,
-//     });
-//     const marker = new google.maps.Marker({
-//         position: prickles,
-//         map: map,
-//     });
-// }
+// SHOW CHAT SCREEN
+function showChat() {
+    var x = document.getElementById("chat-page");
+    var y = document.getElementById("chat");
+    var z = document.getElementById("close");
+    if (x.style.display === "none" || x.style.display === "") {
+        x.style.display = "block";
+        y.style.display = "none";
+        z.style.display = "block";
+        document.getElementById("body").style.overflow = "hidden";
+    } else {
+        x.style.display = "none";
+        y.style.display = "block";
+        z.style.display = "none";
+        document.getElementById("body").style.overflow = "scroll";
+    }
+}
+
+// LOAD MORE SHOP PRODUCTS
+function loadMore() {
+    var x = document.getElementById("load-products");
+    var y = document.getElementById("load");
+    x.style.display = "block";
+    y.style.display = "none";
+}
+
+// SHOW HIDDEN FAQ
+function showHiddenFAQ(a) {
+    var x = document.getElementById(`${a}`);
+    if (x.style.display === "none" || x.style.display === "") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}

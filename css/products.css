@@ -1,0 +1,107 @@
+/* HERO */
+
+.hero-products {
+    padding: 40px 25px 70px;
+    text-align: center;
+}
+
+.cactus {
+    background: url(../images/cactus-background.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.plants {
+    background: url(../images/plants-background.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.succulents {
+    background: url(../images/succulents-background.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.shop-products {
+    background: url(../images/shop-background.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-products a:first-of-type {
+    text-decoration: none;
+    margin-bottom: 70px;
+}
+
+.hero-products h2 {
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+}
+
+.down-circle {
+    margin-top: 30px;
+    width: 50px;
+    z-index: 2;
+}
+
+.overlay-products {
+    background: var(--transparentBlack);
+}
+
+.hero-products a:only-of-type {
+    margin-bottom: 0;
+}
+
+
+/* PRODUCTS */
+
+.buy-these {
+    padding: 10px;
+    text-align: center;
+}
+
+.buy-these h3 {
+    color: var(--greenBlack);
+    margin: 20px;
+    margin-bottom: 30px;
+    font-size: 1.7em;
+    text-transform: uppercase;
+}
+
+.products {
+    position: relative;
+}
+
+.products img,
+.products button {
+    margin-bottom: 20px;
+}
+
+.products p:last-of-type {
+    margin-bottom: 15px;
+}
+
+.products button {
+    width: 100%;
+}
+
+.products:last-of-type button {
+    margin-bottom: 0;
+}
+
+.extra {
+    background: var(--greenBlack);
+    color: var(--white);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 7px 10px;
+    width: fit-content;
+    font-size: 1em;
+    z-index: 2;
+}
+
+.load-products {
+    display: none;
+}
