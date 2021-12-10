@@ -1,0 +1,132 @@
+/* Add your CSS here */
+
+/* Dont' forget to link this file to your HTML in the <head> */
+:root {
+  --first-color-dark-beige: #e6dacd;
+  --second-color-light-beige: #f4ece6;
+  --third-color-light-beige: #0150fd;
+  --color-black: #000;
+  --color-white: #fff;
+}
+
+body {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  font-family: Quicksand;
+  background-color: white;
+  display: grid;
+  margin: 1rem 1rem 0.4rem 1rem;
+  padding: 0.3rem;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "nb nb nb nb . h"
+    ".  .  .  .  . h"
+    "j  j  j  j  . .";
+}
+
+.header__name__spacer {
+  display: none;
+}
+
+nav {
+  display: none;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.name__box__container {
+  display: flex;
+  grid-area: nb;
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.blue__box {
+  margin-right: 0.5rem;
+  margin-top: 0.35rem;
+  height: 0.9rem;
+  width: 0.9rem;
+  background-color: var(--third-color-light-beige);
+}
+
+.job__title_container {
+  grid-area: j;
+  font-size: 0.75rem;
+  padding-top: 0.3rem;
+}
+
+.hamburger__container {
+  width: 1.2rem;
+  height: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  grid-area: h;
+}
+
+.hamburger__top__line {
+  border-radius: 1.5px;
+  width: 50%;
+  height: 5px;
+  background-color: var(--third-color-light-beige);
+}
+
+.hamburger__middle__line {
+  border-radius: 1.5px;
+  width: 100%;
+  height: 5px;
+  background-color: var(--third-color-light-beige);
+}
+
+.hamburger__bottom__line {
+  border-radius: 1.5px;
+  width: 50%;
+  height: 5px;
+  background-color: var(--third-color-light-beige);
+  border-radius: 1.5px;
+  align-self: flex-end;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 0.7rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+li {
+  padding-inline: 0.25rem;
+}
+
+@media only screen and (min-width: 1000px) {
+  nav {
+    display: flex;
+  }
+
+  .hamburger__container {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .job__title_container {
+    margin-right: auto;
+    margin-left: 0.5rem;
+  }
+
+  .header__name__spacer {
+    display: block;
+    margin-left: 1rem;
+  }
+}
