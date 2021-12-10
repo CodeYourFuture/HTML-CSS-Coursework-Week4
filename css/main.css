@@ -224,7 +224,7 @@ body {
     height: 3px;
     border: none;
     background-color: #a05941;
-    width: 12px;
+    width: 0.4px;
 }
 
 .btn-section {
@@ -247,7 +247,8 @@ body {
 /* COPYRIGHT SECTION */
 
 .copyright {
-    grid-area: copyright;padding: 0.6em 2.2em 3em 3.2em;
+    grid-area: copyright;
+    padding: 0.6em 2.2em 3em 3.2em;
     display: flex;
     flex-direction: column;
     align-items: center;
