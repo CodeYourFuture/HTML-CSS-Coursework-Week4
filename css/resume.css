@@ -1,0 +1,180 @@
+:root {
+--dark-beige: #E6DACD;  
+--light-beige: #F4ECE6;  
+--royal-blue: #0150FD; 
+--black: #000;  
+--purple: #a90fe6; 
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Poppins', sans-serif;
+}
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  
+}
+body{
+  
+   font-family: 'Quicksand', sans-serif; 
+  background: var(--dark-beige);
+}
+.grid-container{
+  display:grid;
+  grid-template-areas: "h h h h h h h h h h h h"
+    "m m m m m m m m m m m m "
+    "f f f f f f f f f f f f";
+  grid-template-rows: 100px 2fr 300px;
+  
+} 
+
+.navbar{
+  display: grid;
+  /* grid-template-rows:100px; */
+  grid-template-areas:"name .  nav";
+  margin: 1rem 1rem;
+   line-height:2rem;
+}
+
+ .lists{
+    grid-area:nav;
+    display:flex;
+   justify-content:flex-end;
+   display: none;
+  }
+
+  #square{
+  color:blue;
+  padding-right:0.5rem;
+}
+
+
+
+ header{
+  display: grid;
+  grid-area:h;
+  background: #fff;
+   position: relative;
+   z-index: 1; 
+  
+}
+
+.navbar ul{
+  list-style:none;
+}
+
+.hamburger{
+ background: transparent;
+ margin-left: 6rem;
+ border: none;
+ margin-bottom: 5rem;
+ color: var(--royal-blue); 
+ width: 4rem;
+
+}
+
+ .hamburger a{
+ color: var(--royal-blue);
+}
+
+.nav ul li{
+ list-style:none;
+   display: none;
+    
+}
+
+.name {
+  grid-area: name;
+  
+}
+
+main{
+  grid-area:m;
+  /* grid-template-rows: 800px; */
+  background: var(--dark-beige);
+   padding:1em;
+
+}
+
+.fas-resume{
+  text-align: center;
+  list-style: none;
+  margin: 2rem;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+/* .jobs{
+  border: 1px solid black;
+  background: #fff;
+  width: 100%;
+  margin-left: 0.5rem;
+}
+
+ .jobs p{
+  padding-bottom: 1rem;
+  padding-right: 1rem ;
+  padding-left: 1rem;
+  line-height: 1.5rem;
+}  */
+/* .job-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+
+/* footer{
+  grid-area:f;
+  background-color: #fff;
+
+}
+
+.contacts2{
+  margin-top:1.55rem;
+  display: flex;
+ 
+  
+}
+.number-info{
+  margin-top:0.5rem;
+}
+
+.call{
+  margin-left: 1.75rem;
+
+  
+}
+.write{
+  margin-left: 3rem;
+ 
+}
+.socials-links{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 1rem;
+  list-style: none;
+}
+
+.socials-links a{
+  font-size: 20px;
+  color: var(--black);
+  text-decoration:none;
+  margin:5px 10px;
+  padding-bottom: 1.5rem;
+  
+
+}
+.socials p{
+  margin-left: 1.75rem;
+  padding-top: 1.8rem;
+  font-weight: bold;
+}
+
+.footer-info {
+  margin-top:1.5rem;
+  margin-left: 1.55rem;
+   line-height:0.1rem;
+} */

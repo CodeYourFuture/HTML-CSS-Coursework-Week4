@@ -52,7 +52,7 @@ Dark beige: #E6DACD
 Light beige: #F4ECE6  
 Royal blue: #0150FD  
 Black: #000  
-White: #FFF  
+--purple:#a90fe6 
 
 =====================================
 
