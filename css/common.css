@@ -10,15 +10,17 @@
   --body-font: "Roboto", sans-serif;
 }
 .pad_main {
-  padding: 30px 20px;
-}
-.pad_bot {
-  padding-bottom: 24px;
+  padding: 0 30px;
 }
 .mar_bot {
   margin-bottom: 30px;
 }
-
+.pad_bot {
+  padding-bottom: 24px;
+}
+.pad_top {
+  padding-top: 33px;
+}
 .flex_space {
   display: flex;
   justify-content: space-between;
@@ -73,7 +75,7 @@
   margin-right: auto;
 }
 .width_adjust {
-  width: 75%;
+  width: 80%;
 }
 
 body {
@@ -85,51 +87,91 @@ body {
   color: var(--white);
   font-family: var(--buttons-font);
   font-size: 1rem;
-  padding: 20px;
+  width: 160px;
+  height: 42px;
 }
 
 .button_tr {
   font-family: var(--buttons-font);
   color: var(--black);
-  width: max-content;
   font-size: 1rem;
-  min-width: 40%;
+  width: 160px;
+  height: 42px;
   border: solid 2px var(--black);
   background-color: none;
-  line-height: 2.5rem;
 }
 
+header {
+  position: fixed;
+  width: 100%;
+  background-color: var(--white);
+  display: grid;
+  grid-template-columns: 150px auto 150px;
+  grid-template-rows: repeat(2, 44px);
+  grid-template-areas:
+    "order order order"
+    "bar . hamburger";
+  align-items: center;
+}
+.hamburger {
+  grid-area: hamburger;
+  justify-self: end;
+  padding-right: 20px;
+}
 .hamburger img {
+  max-width: 25px;
+}
+.order {
+  grid-area: order;
+}
+.order .button_black {
+  width: 100%;
+  height: 44px;
+}
+.bar {
+  grid-area: bar;
+  padding-left: 20px;
+}
+.login {
   display: none;
 }
-.hamburger span {
-  display: block;
-  height: 2px;
-  width: 1.5rem;
-  background-color: var(--black);
-  margin-bottom: 10px;
+main {
+  padding-top: 88px;
 }
-header button {
-  display: none;
-}
+/*footer*/
+
 footer {
   background: var(--dark-Green);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "fmenu fmenu social social"
+    "form form form form"
+    "logo logo logo logo"
+    "cop cop cop cop";
 }
 .footer_menu {
-  display: flex;
+  grid-area: fmenu;
 }
-.footer_box {
-  text-align: start;
-  display: flex;
-  flex-direction: column;
+.footer_social {
+  grid-area: social;
+  justify-self: end;
 }
-
-.footer_box a {
-  line-height: 2em;
+.footer_form {
+  grid-area: form;
 }
-
-footer .form_box {
-  padding: 50px 0;
+.footer_form div {
+  padding-right: 20px;
+}
+footer form input {
+  height: 100%;
+}
+.footer_serv_logo {
+  grid-area: logo;
+}
+.footer_menu a,
+.footer_social a {
+  padding-bottom: 10px;
 }
 footer .button_tr {
   background-color: transparent;
@@ -162,7 +204,6 @@ footer .button_tr {
   background-color: transparent;
   border: none;
   border-bottom: solid var(--white) 2px;
-  line-height: 2em;
 }
 .required:after {
   content: " *";
@@ -170,5 +211,101 @@ footer .button_tr {
 }
 
 .copyright {
+  grid-area: cop;
   line-height: 1.3em;
+}
+@media screen and (min-width: 769px) {
+  .pad_main {
+    padding: 0 50px;
+  }
+  .mar_bot {
+    margin-bottom: 35px;
+  }
+  .pad_bot {
+    padding-bottom: 35px;
+  }
+  .pad_top {
+    padding-top: 50px;
+  }
+  .font_1 {
+    font-size: 55px;
+  }
+
+  .font_2 {
+    font-size: 35px;
+  }
+
+  .font_3 {
+    font-size: 18px;
+  }
+  .font_4 {
+    font-size: 24px;
+  }
+  .font_5 {
+    font-size: 17px;
+  }
+  .button_black {
+    font-size: 18px;
+    width: 245px;
+    height: 70px;
+  }
+
+  .button_tr {
+    font-size: 17px;
+    width: 245px;
+    height: 70px;
+  }
+  /* header*/
+  header {
+    grid-template-columns: 400px auto 400px;
+    grid-template-areas:
+      "hamburger bar order"
+      "hamburger bar order";
+  }
+  .hamburger {
+    justify-self: start;
+  }
+  .hamburger img {
+    max-width: 50px;
+    padding-left: 50px;
+  }
+  .bar {
+    justify-self: center;
+  }
+  .login {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+  }
+  .order {
+    display: flex;
+    justify-self: end;
+  }
+  .order .button_black {
+    width: 202px;
+    height: 88px;
+  }
+  .order span {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /*footer*/
+
+  footer {
+    grid-template-columns: repeat(4, auto);
+    grid-template-areas:
+      "fmenu social form logo"
+      "fmenu social form logo"
+      "fmenu social form logo"
+      "cop cop cop cop";
+    justify-items: center;
+  }
+  .footer_social {
+    justify-self: center;
+  }
+  footer form {
+    min-width: 376px;
+  }
 }

@@ -5,9 +5,13 @@ main section a {
 .hero img {
   width: 100%;
 }
+
+.explore {
+  padding-bottom: 33px;
+}
+
 .discount {
   background-color: var(--lilac);
-  padding: 20px;
   margin-top: -5px;
 }
 
@@ -19,7 +23,10 @@ main section a {
 }
 .vision {
   background-color: var(--light-Green);
-  padding-top: 30px;
+}
+.vision .flex_col {
+  align-items: center;
+  text-align: center;
 }
 .vision img,
 .wellness_path img,
@@ -29,13 +36,32 @@ main section a {
 
 .wellness_path {
   background-color: var(--lilac);
-  padding: 30px 20px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
-.wellness_path h2 {
-  padding-top: 33px;
-  margin-top: 0;
+.wellness_selection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "coldpr coldpr coldpr"
+    "smooth smooth smooth"
+    "shot shot shot"
+    "button button button";
 }
-.get_juice_background {
+.wellness_coldpr {
+  grid-area: coldpr;
+}
+.wellness_smoothie {
+  grid-area: smooth;
+}
+.wellness_shots {
+  grid-area: shot;
+}
+.wellness_selection a {
+  grid-area: button;
+  justify-self: center;
+}
+.get_juice {
   background-color: var(--light-Green);
 }
 .circle_border {
@@ -45,7 +71,6 @@ main section a {
   border-radius: 50%;
 }
 .follow {
-  width: 100vw;
   display: grid;
   grid-template-rows: auto 1fr 1fr;
   grid-template-columns: repeat(12, 1fr);
@@ -97,4 +122,85 @@ main section a {
 }
 .follow img {
   width: 100%;
+}
+@media screen and (min-width: 481px) {
+  .explore {
+    padding: 65px 0;
+  }
+  .explore .font_2 {
+    font-size: 24px;
+  }
+  .discount .font_3 {
+    font-size: 22px;
+  }
+  .features {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+  }
+  .feature-img {
+    width: 101px;
+    height: 101px;
+  }
+  .feature {
+    width: 236px;
+    margin: 0 20px;
+    justify-content: start;
+    align-items: flex-start;
+  }
+  .vision {
+    display: flex;
+    padding-top: 70px;
+    justify-content: center;
+  }
+  .vision div {
+    width: 50%;
+  }
+  .vision .flex_col {
+    align-items: flex-start;
+    text-align: left;
+    width: 490px;
+  }
+  .vision img {
+    width: 557px;
+    margin-bottom: -100px;
+  }
+  .wellness_path {
+    background-color: var(--white);
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 100px;
+  }
+  .wellness_path h2 {
+    margin-bottom: 200px;
+  }
+  .wellness_selection {
+    background-color: var(--lilac);
+    grid-template-areas:
+      "coldpr smooth shot"
+      "button button button";
+  }
+  .wellness_coldpr {
+    margin-top: -50px;
+    width: 326px;
+    grid-area: coldpr;
+    justify-self: end;
+  }
+  .wellness_smoothie {
+    margin-top: -106px;
+    width: 326px;
+    grid-area: smooth;
+    justify-self: center;
+  }
+  .wellness_shots {
+    margin-top: -50px;
+    width: 326px;
+    grid-area: shot;
+    justify-self: start;
+  }
+
+  .get_juice {
+    display: flex;
+    justify-content: space-around;
+  }
 }
