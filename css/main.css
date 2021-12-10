@@ -44,7 +44,6 @@ p {
   padding:0;
 }
 
-
 a:link {
   text-decoration: none;
 }
@@ -145,6 +144,17 @@ a:visited {
   padding-bottom: 1.2rem;
 }
 
+.resume__button:hover {
+  background-color: white;
+  color:black;
+  border: 2px solid var(--third-color-light-beige)
+}
+
+.projects__button:hover{
+  background-color: var(--third-color-light-beige);
+  color:white;
+}
+
 /* Contact Form*/
 
 .blue__letstalk__container  {
@@ -153,10 +163,6 @@ a:visited {
   align-items: center;
 }
 
-
-
-
-
 .blue__box__contact {
   margin-right: 0.5rem;
   height: 0.9rem;
@@ -164,11 +170,6 @@ a:visited {
   background-color: var(--third-color-light-beige);
   display:flex
   align:
-}
-
-.fieldset__container{
-  
-
 }
 
 fieldset {
@@ -225,10 +226,7 @@ textarea:focus {
  
 }
 
-
-
 /* Projects Page*/
-
 
 .project__card{
   background-color: white;
@@ -275,6 +273,14 @@ textarea:focus {
   padding-bottom: 0.75rem;
   line-height:1.4rem;
 }
+
+.project__page__text{
+  margin-inline: 1rem;
+  font-size: 0.9rem;
+  padding-bottom: 0.75rem;
+  line-height:1.4rem;
+}
+
 .project__images{
   object-fit: cover;
   width: 100%;
@@ -285,7 +291,6 @@ textarea:focus {
 
 }
 
-
 nav a:hover {
   color:var(--third-color-light-beige)
 }
@@ -294,16 +299,16 @@ nav a:hover {
 
 @media only screen and (min-width: 1000px) {
   
-  body{
-    background-color:white;
+  main{
+    background: linear-gradient(to right, #e6dacd 40%, white 40% 100%);
   }
+
   .image__name__container{
     padding-bottom: 0;
     margin-bottom: 0;
     margin: 0;
     padding-inline: 0;
   }
-
 
   .hello__container{
     background-color: white;
@@ -323,6 +328,7 @@ nav a:hover {
   .main__button__container{
     display:none;
   } 
+
   .main__button__container__hidden{
     display:flex;
     padding-bottom: 2rem;
@@ -332,8 +338,8 @@ nav a:hover {
 
   .main__button__container__hidden p {
     letter-spacing: 0.2rem;
-
   }
+
   .social__icons__center__container{
     width:100;
     padding-inline: 4rem;
@@ -381,6 +387,7 @@ nav a:hover {
     padding-bottom: 1rem;
     
   }
+
   .blue__letstalk__container h1{
     font-size:1rem;
     font-style:Poppins;
@@ -390,26 +397,38 @@ nav a:hover {
 
   .project__images__container{
     object-fit:cover;
-
-  }
-  .project__card{
-    display:flex;
-    width:60%;
-    margin-left:auto;
-    margin-right:auto;
-  }
-
-  .project__card__text{
-    font-size:0.75rem;
-  }
-  .project__card__text p {
-    width:50%;
+    height:100%;
   }
 
   .project__images{
     object-fit:cover;
-    object-position: 50% 50%;
+    width:100%;
+  }
+  
+  .side__by__side{
+    width:50%;
+    height:100%;
   }
 
+  .project__card{
+    width:70%;
+    margin-left:auto;
+    margin-right:auto;
+    display:flex;
+    height:15rem;
+  }
 
+  .project__card__text{
+    font-size:0.75rem;
+    padding-right:0;
+  }
+  
+  .project__page__text{
+  width:60%;
+  text-align: center;
+  font-size: 0.8rem;
+  margin-left:auto;
+  margin-right:auto;
+  display: flex;
+  }
 }

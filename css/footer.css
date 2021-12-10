@@ -59,9 +59,6 @@ p {
   footer {
     display: flex;
   }
-  .copyright__text:nth-of-type(1) {
-    order: ;
-  }
 
   .follow__icons {
     display: flex;
@@ -94,5 +91,10 @@ p {
   .call__write__container div {
     margin-inline: 1rem;
     text-align: center;
+  }
+
+  .copyright__text {
+    align-self: end;
+    padding-bottom: 1rem;
   }
 }
