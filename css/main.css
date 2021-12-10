@@ -1,3 +1,224 @@
-/* Add your CSS here */
+*:root {
+  --main-bg-color: #fff;
+  --primary: #e6dacd; /*dark beige*/
+  --secondary: #f4ece6; /*light beige*/
+  --accent-colour: #0150fd; /*royal beige*/
+  --body-color: #000;
+}
 
-/* Dont' forget to link this file to your HTML in the <head> */
+body {
+  font-family: "Quicksand", sans-serif;
+  margin: 20px;
+  padding: 0;
+}
+
+.homepage-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.square-h1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.homepage-hero {
+  background-color: var(--secondary);
+  box-shadow: var(--secondary);
+  justify-content: center;
+  align-content: center;
+}
+.homepage-content {
+  background-color: var(--primary);
+}
+
+.homepage-footer {
+  background-color: pink;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+}
+
+.contact {
+  display: flex;
+}
+
+.social-footer {
+  width: 20px;
+  height: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  display: inline-flex;
+  flex-flow: row;
+  flex-wrap: nowrap;
+  list-style: none;
+  padding: 5px;
+  margin: 5px;
+}
+
+.ul {
+  width: 451px;
+  height: 35px;
+}
+
+hr {
+  color: var(--accent-colour);
+  size: 10px;
+}
+
+.font-0 {
+  font-size: 40px;
+  font-family: "Poppins";
+}
+
+.navbar {
+  display: none;
+}
+
+.blue-square {
+  background-color: var(--accent-colour);
+  height: 16px;
+  width: 16px;
+  margin-top: 30px;
+}
+
+img {
+  border-radius: 50%;
+}
+
+.bgc {
+  background-color: var(--main-bg-color);
+}
+
+.btn {
+  width: 120px;
+  height: 33px;
+}
+
+.button {
+  background-color: var(--accent-colour);
+  color: var(--main-bg-color);
+}
+/*
+
+
+ <div class="hero-image">
+            <img src="img/2e2a49_bd3a1599bc1b4265a01b2754b99b8536~mv2_d_5760_3840_s_4_2.jpeg" width="205px" height="205px" alt="profile picture">
+        </div>
+.homepage-main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 126.4px 952px 100px 80px;
+
+  grid-template-areas:
+    "navbar navbar navbar navbar "
+    "hero   here  hero   hero "
+    "content   content  content   content "
+    "footer footer footer footer";
+}
+
+.homepage-navbar {
+  grid-row: 1;
+  grid-template-areas: "navbar navbar navbar navbar ";
+}
+
+
+.homepage-content {
+  background-color: var(--primary);
+  width: 50%;
+  grid-column-start: 3;
+  grid-column-end: -1;
+  grid-row: 2;
+}
+
+
+
+.homepage-footer {
+  grid-row: 4;
+}
+
+.profile-display {
+  height: 375px;
+  width: 280px;
+}
+
+.column {
+  width: 641px;
+  flex-direction: row;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  display: inline-flex;
+  flex-flow: row;
+  flex-wrap: nowrap;
+  list-style: none;
+  padding: 5px;
+  margin: 5px;
+}
+
+.ul {
+  width: 451px;
+  height: 35px;
+}
+
+
+
+
+.font-0 {
+  font-size: 100px;
+  font-family: "Poppins";
+}
+
+.font-5 {
+  font-size: 25px;
+}
+
+.two-containers {
+  display: flex;
+  gap: 20px;
+  width: 1282px;
+  height: 647.5px;
+}
+
+.hello-display {
+  width: 369px;
+}
+
+
+
+/*@media screen and (min-width: 480px) {
+  .homepage-main {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 126.4px 952px 107px;
+
+    grid-template-areas:
+      "navbar navbar navbar navbar navbar navbar "
+      "hero hero hero hero hero hero"
+      "content   content  content   content content ."
+      "footer footer footer footer footer footer";
+  }
+}
+
+.homepage-navbar {
+  background-color: coral;
+  grid-row: 1;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  display: flex;
+}
+
+
+*/
