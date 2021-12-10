@@ -28,7 +28,9 @@ body {
     "offer         offer         offer         offer"
     "order         order         order         order"
     "img4          img4          img4          img4"
-    "footer        footer        footer        footer";
+    "footer        footer        footer        footer"
+    "copyright     copyright     copyright     copyright"
+    "credit        credit        credit        credit";
 }
 
 /* HERO SECTION */
@@ -133,7 +135,7 @@ body {
     align-items: center;
     background-size: contain;
     background-repeat: no-repeat;
-    max-width: 100vw; 
+    max-width: 100%;
 }
 
 .shop-cacti .desc {
@@ -160,7 +162,7 @@ body {
     align-items: center;
     background-size: contain;
     background-repeat: no-repeat;
-    max-width: 100vw;
+    max-width: 100%;
 }
 
 .shop-plants .desc {
@@ -186,8 +188,8 @@ body {
     flex-direction: column;
     align-items: center;
     background-size: contain;
-    background-repeat: no-repeat;
-    max-width: 100vw;
+    background-repeat: no-repeat;    
+    max-width: 100%;
 }
 
 .shop-succulents .desc {
@@ -230,12 +232,39 @@ body {
     margin-top: 0.4em;
 }
 
-.end-page-img {
-    background-image: url("../images/background-plant.png");
+/* END PAGE IMG */
+.end-page {
     grid-area: img4;
 }
+.end-page--img {
+    padding: 100px;
+    background-repeat: no-repeat;
+    background: url(../images/background-plant.png) no-repeat center center/50px 50px fixed;
+    background-size: cover;
+}
 
-.footer {
-    background-color: rgb(9, 59, 33);
-    grid-area: footer;
+
+/* COPYRIGHT SECTION */
+
+.copyright {
+    grid-area: copyright;padding: 0.6em 2.2em 3em 3.2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+}
+
+.copyright--text {
+    color: var(--red-brown);
+    text-align: center;
+}
+
+.copyright--text a {
+    text-decoration: underline;
+    color: var(--red-brown);
+}
+
+.credit {
+    grid-area: credit;
+    font-size: 0.7em;
 }
