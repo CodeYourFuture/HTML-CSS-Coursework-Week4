@@ -1,0 +1,150 @@
+:root {
+    --red-brown: #A05941;
+    --green-black: #133032;
+    --light-grey: #EDEDEE;
+    --white: #FFF;
+    --transparent-white: rgba(0,0,0,0.75);
+}
+
+/* FOOTER */
+.footer {
+    background-color:var(--green-black);
+    grid-area: footer;
+    padding-top: 4em;
+    margin-bottom: 1.5em;
+}
+
+.footer--store {
+    padding: 0.6em 2em 0 2em;
+}
+
+.footer--subscribe {
+    margin: 0px 0px 57px 0;
+}
+
+.footer--heading {
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+    color:var(--white);
+    font-size: 1em;
+    letter-spacing: 0.5em;
+    line-height: 1.4em;
+    font-weight: 400;
+    padding: 0.5em 0;
+    text-align: center;
+    
+}
+
+.footer--text {
+    padding: 0.6em 0 3em 0;
+    font-size: 0.96em;
+    text-align: center;
+    
+}
+
+.footer--span {
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+    color:var(--white);
+    text-align: center;
+    
+}
+
+.footer--span a {
+    text-decoration: underline;
+    color:var(--white);
+}
+
+
+
+.form-subscribe--email {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.email-label {
+    padding-bottom: 10px;
+}
+
+.form-subscribe input[type="email"] {
+    background-color:var(--green-black);
+    border: 1px solid #FFF;
+    border-radius: 2px;
+    font-size: 18pt;
+    height: 42px;
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+label {
+    font-family: 'Outfit', sans-serif;
+    color: var(--white);
+}
+
+.btn-footer {
+    background-color: var(--white);
+    color:var(--green-black);
+    margin-top: 0.7em;
+    
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-between;
+    margin: 0px 0px 33px 0
+}
+
+.footer-content a {
+    cursor: pointer;
+    text-decoration: none;
+}
+/* .social-media-icons {
+        width: 25px;
+    height: 25px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+} */
+
+.social {
+    max-height: 20px;
+    width: 20px;
+    padding: 4px;
+    border-radius: 50px;
+    margin: 4px;
+}
+
+.social-media-icons {
+    max-height: 20px;
+    width: auto;
+    
+}
+
+
+.map-container {
+    margin: 0px 0px 10px 0;
+}
+
+
+.google-map {
+    border:0;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    width: 100%;
+    min-height: 343px;
+}
+
+
+
+/* font-family: 'Fjalla One', sans-serif;
+    font-family: 'Outfit', sans-serif; */
