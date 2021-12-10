@@ -183,6 +183,7 @@ font-family: 'Quicksand', sans-serif; */
 header {
   width: 100%;
   background: var(--white);
+  height: 6rem;
   position: fixed;
   z-index: 9;
 }
@@ -238,10 +239,10 @@ header {
   top: 6rem;
   left: 2.5rem;
   width: 80%;
-  height: 25rem;
+  height: 26rem;
   position: absolute;
   z-index: 8;
-  box-shadow: -5px 10px 20px rgb(139, 139, 139);
+  box-shadow: -5px 5px 15px var(--black);
 }
 
 .p-pic {
