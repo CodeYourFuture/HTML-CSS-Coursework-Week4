@@ -1,3 +1,207 @@
-/* Add your CSS here */
+main {
+  width: 100%;
+  background: var(--gray);
+}
+.hero {
+  width: 100%;
+  background: url("../img/hero.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10em 0;
+}
+.hero_overlay {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.007);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+}
+.first_hero_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero_estb,
+.hero_year {
+  border-bottom: 5px solid var(--white);
+  padding: 10px 0px;
+  margin: 0px 20px;
+}
+.hero_logo {
+  width: 45%;
+}
+.hero_logo img {
+  max-width: 100%;
+}
+.second_hero_section h1 {
+  text-align: center;
+  font-size: 10vw;
+  font-weight: bolder;
+}
+.third_hero_section h2 {
+  text-align: center;
+  font-size: 7vw;
+  color: var(--white);
 
-/* Dont' forget to link this file to your HTML in the <head> */
+  font-weight: 300;
+}
+
+.hero_section {
+  margin: 1em auto;
+  text-align: center;
+}
+/*====================================PRODUCTS===================== */
+.products {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.product_item {
+  width: 100%;
+  margin: 1em auto;
+
+  min-height: 80vh;
+  text-align: center;
+}
+.product_contents {
+  display: inline-flex;
+  flex-direction: column;
+  margin-top: 10px;
+  color: var(--red);
+  padding-top: 1em;
+}
+.product_underline {
+  width: 1em;
+  border: 3px solid var(--red);
+  margin: 1em auto;
+}
+.cacti {
+  background: url("../img/cacti.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.plants {
+  background: url("../img/plants.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.succulents {
+  background: url("../img/succulents.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* =============================About Us========================== */
+
+.aboutus {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  text-align: center;
+  color: var(--red);
+  line-height: 1.5em;
+  font-size: 5vw;
+}
+.aboutus img {
+  width: 100%;
+  max-width: 100%;
+}
+.aboutus_text {
+  grid-row: 1/3;
+  grid-column: 1/-1;
+  padding: 2em 1em;
+  background: var(--white);
+}
+.first_small_section {
+  grid-column: 1/-1;
+  grid-row: 3/4;
+  background: url("../img/first_small.webp");
+  background-size: cover;
+}
+.second_small_section {
+  grid-column: 1/-1;
+  grid-row: 4/5;
+  background: url("../img/second_small.webp");
+  background-size: cover;
+}
+.first_big_section {
+  grid-column: 1/-1;
+  grid-row: 5/6;
+  background: url("../img/big.webp");
+  background-size: cover;
+}
+.second_big_section {
+  grid-column: 1/-1;
+  grid-row: 6/8;
+  background: var(--black);
+  color: var(--white);
+}
+.second_big_section h1 {
+  margin: 2em auto 1em auto;
+  font-size: 14vw;
+  line-height: 1.5em;
+}
+.aboutus_text h1 {
+  font-size: 8vw;
+}
+.about_btn {
+  padding: 1em 1.5em;
+  background: var(--white);
+  color: var(--black);
+}
+@media screen and (min-width: 481px) {
+  .hero {
+    background: url("../img/big_hero.webp");
+  }
+  .second_hero_section h1 {
+    font-size: 8vw;
+  }
+  .third_hero_section h2 {
+    font-size: 5vw;
+  }
+  .cacti,
+  .plants,
+  .succulents {
+    width: 30%;
+    padding: 1em 0;
+    background-position: center;
+  }
+  .products {
+    flex-direction: row;
+  }
+  .aboutus {
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    font-size: 1.5vw;
+    padding: 1em;
+  }
+  .aboutus_text {
+    grid-row: 1/3;
+    grid-column: 1/3;
+  }
+  .first_small_section {
+    grid-row: 1/3;
+    grid-column: 3/4;
+    background-size: contain;
+  }
+  .second_small_section {
+    grid-row: 1/3;
+    grid-column: 4/5;
+  }
+  .first_big_section {
+    grid-row: 3/6;
+    grid-column: 1/3;
+  }
+  .second_big_section {
+    grid-row: 3/6;
+    grid-column: 3/5;
+    padding: 2em 0;
+  }
+  .aboutus_text h1 {
+    font-size: 3vw;
+  }
+  .second_big_section h1 {
+    font-size: 7vw;
+    margin: 0;
+  }
+}
