@@ -1,3 +1,394 @@
 /* Add your CSS here */
 
-/* Dont' forget to link this file to your HTML in the <head> */
+/* Don't forget to link this file to your HTML in the <head> */
+
+:root {
+  --dBeige: #e6dacd;
+  --lBeige: #f4ece6;
+  --rBlue: #0150fd;
+  --black: #000;
+  --white: #fff;
+  --menu-speed: 0.75s;
+}
+
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Quicksand', sans-serif; */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hamburger Menu Position */
+
+.menu-wrap {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.menu-wrap .toggler {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+}
+
+.menu-wrap .hamburger {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  padding: 1rem;
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hamburger Menu Design */
+
+.menu-wrap .hamburger > div {
+  position: relative;
+  width: 100%;
+  height: 3px;
+  background-color: var(--rBlue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+
+.menu-wrap .hamburger > div:before,
+.menu-wrap .hamburger > div:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  left: 0;
+  width: 50%;
+  height: 3px;
+  background: inherit;
+}
+
+.menu-wrap .hamburger > div:after {
+  top: 10px;
+  left: 14px;
+}
+
+/* Toggler Animate */
+
+.menu-wrap .toggler:checked + .hamburger > div {
+  background: var(--black);
+  transform: rotate(-45deg);
+}
+
+.menu-wrap .toggler:checked + .hamburger > div:before,
+.menu-wrap .toggler:checked + .hamburger > div:after {
+  top: -6px;
+  left: 7px;
+  transform: rotate(-90deg);
+  transition: all 0.4s ease;
+}
+
+.menu-wrap .toggler:checked + .hamburger > div:after {
+  top: 6px;
+}
+
+/* Show Menu */
+
+.menu-wrap .toggler:checked ~ .menu {
+  visibility: visible;
+}
+
+.menu-wrap .toggler:checked ~ .menu > div {
+  transform: scale(1);
+  transition-duration: var(--menu-speed);
+}
+
+.menu-wrap .toggler:checked ~ .menu > div > div {
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+
+.menu-wrap .toggler:checked ~ .hamburger {
+  background: var(--dBeige);
+  transition-duration: 0.5s;
+}
+
+.menu-wrap .toggler:checked ~ .menu > div > div a:hover {
+  color: var(--rBlue);
+}
+
+/* Menu Overlay */
+
+.menu-wrap .menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-wrap .menu > div {
+  background: var(--dBeige);
+  width: 200vw;
+  height: 200vh;
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+  transition: all 0.4s ease;
+}
+
+.menu-wrap .menu > div > div {
+  text-align: center;
+  max-width: 90vw;
+  max-height: 100vh;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+/* Nav Menu Styling */
+
+.menu-wrap .menu > div > div > ul > li {
+  list-style: none;
+  color: var(--black);
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.menu-wrap .menu > div > div > ul > li > a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.4s ease;
+}
+
+/* Header Text */
+
+header {
+  width: 100%;
+  background: var(--white);
+  height: 6rem;
+  position: fixed;
+  z-index: 9;
+}
+
+.h-container {
+  display: inline-flex;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.square {
+  background-color: var(--rBlue);
+  margin-top: 10px;
+  width: 18px;
+  height: 18px;
+  margin-right: 1rem;
+  margin-bottom: 10px;
+}
+
+.name {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5em;
+}
+
+.title {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.1em;
+}
+
+/* MAIN */
+
+.m-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.white-box {
+  background-color: var(--white);
+  width: 100%;
+  height: 20rem;
+}
+
+.beige-box {
+  background-color: var(--dBeige);
+  width: 100%;
+  height: 50rem;
+}
+
+.profile {
+  background-color: var(--lBeige);
+  top: 6rem;
+  left: 2.5rem;
+  width: 80%;
+  height: 26rem;
+  position: absolute;
+  z-index: 8;
+  box-shadow: -5px 5px 15px var(--black);
+}
+
+.p-pic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.pic {
+  border-radius: 50%;
+  width: 8rem;
+  height: auto;
+}
+
+.p-name {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+.p-name:after {
+  display: flex;
+  content: "";
+  border-bottom: var(--rBlue) solid 3px;
+  width: 4.5rem;
+  margin-left: 8rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 86%;
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-bottom: 2rem;
+}
+
+.button1 {
+  width: 8rem;
+  height: 2rem;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border: var(--rBlue) 1px solid;
+  background-color: var(--rBlue);
+  color: var(--white);
+  font-weight: bold;
+}
+
+.button2 {
+  width: 8rem;
+  height: 2rem;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border: var(--black) 1px solid;
+  background-color: var(--lBeige);
+  font-weight: bold;
+}
+
+.p-logos {
+  display: flex;
+  justify-content: space-around;
+  background: var(--white);
+  height: 3rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.bBox-text {
+  padding-top: 15rem;
+  padding-left: 3rem;
+  font-family: "Quicksand", sans-serif;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+}
+
+/* FOOTER */
+
+.footer-text {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.call {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 3.5rem;
+  justify-content: space-between;
+  font-family: "Quicksand", sans-serif;
+}
+
+.write {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 3.5rem;
+  justify-content: space-between;
+  font-family: "Quicksand", sans-serif;
+}
+
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+}
+
+.follow {
+  display: flex;
+  padding-top: 1.5rem;
+  padding-left: 1.5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.logos {
+  display: flex;
+  padding-top: 0.5rem;
+  padding-left: 1.3rem;
+  width: 10rem;
+  justify-content: space-between;
+}
+
+.f-img {
+  width: 1.3rem;
+  height: auto;
+}
+
+.f-img1 {
+  width: 0.8rem;
+  height: auto;
+}
+
+.footnote {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+  padding-left: 1.5rem;
+  font-family: "Quicksand", sans-serif;
+  font-size: 12px;
+}
