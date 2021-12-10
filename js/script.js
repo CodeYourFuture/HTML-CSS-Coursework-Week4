@@ -20,18 +20,6 @@ function showMenu() {
     }
 }
 
-// HIDE MENU TO SHOW LINK
-function hideMenu() {
-    var y = document.getElementById("menu-list");
-    y.style.display = "none";
-    document.getElementById("bar-two").style.opacity = "1";
-    document.getElementById("body").style.overflow = "scroll";
-    document.getElementById("bar-one").style.transform =
-        "translateY(0) translateY(0) rotate(0)";
-    document.getElementById("bar-three").style.transform =
-        "translateY(0) translateY(0) rotate(0)";
-}
-
 // CHANGING TEXT
 var text = ["We Deliver to Your Doorstep", "Call Us Now! 123-456-7890"];
 var counter = 0;
@@ -84,11 +72,34 @@ function loadMore() {
 }
 
 // SHOW HIDDEN FAQ
-function showHiddenFAQ(a) {
-    var x = document.getElementById(`${a}`);
-    if (x.style.display === "none" || x.style.display === "") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
+// function showHiddenFAQ() {
+var x = document.getElementsByClassName("faq");
+
+for (var i = 0; i < x.length; i++) {
+    x[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var hidden = this.nextElementSibling;
+        if (hidden.style.maxHeight) {
+            hidden.style.maxHeight = null;
+        } else {
+            hidden.style.maxHeight = hidden.scrollHeight + "px";
+        }
+    });
 }
+// }
+
+/* 
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+} */

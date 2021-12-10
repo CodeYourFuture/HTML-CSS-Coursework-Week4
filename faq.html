@@ -45,177 +45,180 @@
     <section class="menu-list" id="menu-list">
         <nav>
             <ul>
-                <li class="nav-items login"><img src="./images/profile.svg" alt="Profile SVG Image" /><a href="#" onclick="hideMenu()">Log
+                <li class="nav-items login"><img src="./images/profile.svg" alt="Profile SVG Image" /><a href="#" onclick="showMenu()">Log
                             In</a></li>
                 <li class="nav-items shop">
-                    <div class="shop-wrapper"><a href="./shop.html" onclick="hideMenu()">Shop</a><button class="down" onclick="showShopItems()"><img src="./images/down.svg"
+                    <div class="shop-wrapper"><a href="./shop.html" onclick="showMenu()">Shop</a><button class="down" onclick="showShopItems()"><img src="./images/down.svg"
                                     alt="Down Arrow"></button></div>
                 </li>
                 <ul class="hidden" id="hidden">
-                    <li><a href="./cactus.html" onclick="hideMenu()">Cacti</a></li>
-                    <li><a href="./plants.html" onclick="hideMenu()">Plants</a></li>
-                    <li><a href="./succulents.html" onclick="hideMenu()">Succulents</a></li>
+                    <li><a href="./cactus.html" onclick="showMenu()">Cacti</a></li>
+                    <li><a href="./plants.html" onclick="showMenu()">Plants</a></li>
+                    <li><a href="./succulents.html" onclick="showMenu()">Succulents</a></li>
                 </ul>
-                <li class="nav-items" onclick="hideMenu()">
+                <li class="nav-items" onclick="showMenu()">
                     <a href="./index.html#about">About</a>
                 </li>
-                <li class="nav-items"><a href="./faq.html" onclick="hideMenu()">FAQ</a></li>
+                <li class="nav-items"><a href="./faq.html" onclick="showMenu()">FAQ</a></li>
                 <li class="nav-items">
-                    <a href="./index.html#contact" onclick="hideMenu()">Contact</a>
+                    <a href="./index.html#contact" onclick="showMenu()">Contact</a>
                 </li>
             </ul>
         </nav>
     </section>
-    <section class="faq-wrapper">
-        <h4>Faq</h4>
-        <hr class="small-divider" />
-        <h3>Frequently asked questions</h3>
-        <section class="search-wrapper">
-            <img src="./images/search.svg" alt="Search Image" class="search-img" />
-            <input type="search" placeholder="Looking for something?" class="search faq-search" />
-        </section>
-
-        <ul>
-            <li class="nav-items shop faq-list">
-                <section class="faq">
-                    <button class="down text-button" onclick="showHiddenFAQ(question)">How do I add a new
-                            question?<img src="./images/down.svg" alt="Down Arrow"></button>
-                </section>
-
-                <section class="hidden-faq">
-                    <p>To add a new question go to app settings and press "Manage Questions" button.</p>
-                    <section class="hidden-faq-img">
-                        <img src="./images/facebook.svg" alt="facebook">
-                        <img src="./images/twitter.svg" alt="twitter">
-                    </section>
-                </section>
-                <hr>
-            </li>
-
-            <li class="nav-items shop faq-list">
-                <section class="faq">
-                    <button class="down text-button" onclick="showHiddenFAQ(picture)">Can I insert pictures in my
-                            FAQ?<img src="./images/down.svg" alt="Down Arrow"></button>
-                </section>
-                <section class="hidden-faq">
-                    <p>Yes! To add a picture follow these simple steps:</p>
-
-                    <ol>
-                        <li>Enter App Settings</li>
-                        <li>Click the "Manage Questions" button</li>
-                        <li>Click on the question you would like to attach a picture to</li>
-                        <li>When editing your answer, click on the picture icon and then add an image from your library
-                        </li>
-                    </ol>
-                    <section class="hidden-faq-img">
-                        <img src="./images/facebook.svg" alt="facebook">
-                        <img src="./images/twitter.svg" alt="twitter">
-                    </section>
-                </section>
-                <hr>
-            </li>
-            <li class="nav-items shop faq-list">
-                <section class="faq">
-                    <button class="down text-button" onclick="showHiddenFAQ(video)">Can I insert a video in my
-                            FAQ?<img src="./images/down.svg" alt="Down Arrow"></button>
-                </section>
-                <section class="hidden-faq">
-                    <p>Yes! Users can add video from YouTube or Vimeo with ease:</p>
-
-                    <ol>
-                        <li>Enter App Settings</li>
-                        <li>Click the "Manage Questions" button</li>
-                        <li>Click on the question you would like to attach a video to</li>
-                        <li>When editing your answer, click on the video icon and then paste the YouTube or Vimeo video URL
-                        </li>
-                        <li>That's it! A thumbnail of your video will appear in answer text box</li>
-                    </ol>
-                    <section class="hidden-faq-img">
-                        <img src="./images/facebook.svg" alt="facebook">
-                        <img src="./images/twitter.svg" alt="twitter">
-                    </section>
-                </section>
-                <hr>
-            </li>
-            <li class="nav-items shop faq-list">
-                <section class="faq"><button class="down text-button" onclick="showHiddenFAQ(edit)">How do
-                            I edit or remove the "FAQ title"?<img src="./images/down.svg" alt="Down Arrow">
-                        </button>
-                </section>
-                <section class="hidden-faq">
-                    <p>The FAQ title can be adjusted in the settings tab of the App Settings. You can also remove the title by unchecking its checkbox in the settings tab.</p>
-                    <section class="hidden-faq-img">
-                        <img src="./images/facebook.svg" alt="facebook">
-                        <img src="./images/twitter.svg" alt="twitter">
-                    </section>
-                </section>
-                <hr>
-            </li>
-        </ul>
-    </section>
-    <section class="find-us">
-        <section class="contact">
-            <h4>Our store</h4>
-            <p>Address: 500 Terry Francois Street San</p>
-            <p>Francisco, CA 94158</p>
-            <p>Phone: 123-456-7890</p>
-            <p>Email: info@mysite.com</p>
-        </section>
-        <section class="open">
-            <h4>Opening hours</h4>
-            <p>Mon - Fri: 7am - 10pm</p>
-            <p>Saturday: 8am - 10pm</p>
-            <p>Sunday: 8am - 11pm</p>
-        </section>
-        <section class="help">
-            <h4>Help</h4>
-            <a href="#">Shipping & Returns</a>
-            <a href="#">Privacy Policy</a>
-            <a href="./faq.html">FAQ</a>
-        </section>
-        <section class="subscribe">
-            <h4>Subscribe</h4>
-            <form action="#">
-                <fieldset>
-                    <label for="subscribe-email">Enter your email here *</label>
-                    <input type="email" name="subscribe-email" id="subscribe-email" class="input-field" placeholder=" " required />
-                </fieldset>
-                <input type="submit" value="Subscribe Now" />
-            </form>
-        </section>
-        <section class="icons">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-pinterest-p"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-        </section>
-    </section>
-    <section id="map" class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12615.359272442083!2d-122.3958356107621!3d37.77035393951142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7fc4fe5e0af3%3A0x11c548b59491f791!2s500%20Terry%20A%20Francois%20Blvd%206th%20floor%2C%20San%20Francisco%2C%20CA%2094158%2C%20USA!5e0!3m2!1sen!2suk!4v1638823906588!5m2!1sen!2suk"
-            width="100%" height="400" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
-    </section>
-    <button class="chat" id="chat" onclick="showChat()">
-            <div class="chat-circle"><img src="./images/chat.svg" alt="Message Symbol"></div>
-        </button>
-    <section class="chat-page" id="chat-page">
-        <section class="top-chat">
-            <section class="logo-on">
-                <img src="./images/chat-logo.png" alt="Company logo">
-                <div class="green"></div>
+    <main>
+        <section class="faq-wrapper">
+            <h4>Faq</h4>
+            <hr class="small-divider" />
+            <h3>Frequently asked questions</h3>
+            <section class="search-wrapper">
+                <img src="./images/search.svg" alt="Search Image" class="search-img" />
+                <input type="search" placeholder="Looking for something?" class="search faq-search" />
             </section>
-            <section class="chat-text">
-                <h3>Prickles & co.</h3>
-                <p>We'll reply as soon as we can</p>
+
+            <ul>
+                <li class="nav-items shop faq-list">
+                    <section class="faq">
+                        <button class="down text-button" onclick="showHiddenFAQ()">How do I add a new
+                                question?<img src="./images/down.svg" alt="Down Arrow"></button>
+                    </section>
+
+                    <section class="hidden-faq">
+                        <p>To add a new question go to app settings and press "Manage Questions" button.</p>
+                        <section class="hidden-faq-img">
+                            <img src="./images/facebook.svg" alt="facebook">
+                            <img src="./images/twitter.svg" alt="twitter">
+                        </section>
+                    </section>
+                    <hr>
+                </li>
+
+                <li class="nav-items shop faq-list">
+                    <section class="faq">
+                        <button class="down text-button" onclick="showHiddenFAQ()">Can I insert pictures in
+                                my
+                                FAQ?<img src="./images/down.svg" alt="Down Arrow"></button>
+                    </section>
+                    <section class="hidden-faq">
+                        <p>Yes! To add a picture follow these simple steps:</p>
+
+                        <ol>
+                            <li>Enter App Settings</li>
+                            <li>Click the "Manage Questions" button</li>
+                            <li>Click on the question you would like to attach a picture to</li>
+                            <li>When editing your answer, click on the picture icon and then add an image from your library
+                            </li>
+                        </ol>
+                        <section class="hidden-faq-img">
+                            <img src="./images/facebook.svg" alt="facebook">
+                            <img src="./images/twitter.svg" alt="twitter">
+                        </section>
+                    </section>
+                    <hr>
+                </li>
+                <li class="nav-items shop faq-list">
+                    <section class="faq">
+                        <button class="down text-button" onclick="showHiddenFAQ()">Can I insert a video in my
+                                FAQ?<img src="./images/down.svg" alt="Down Arrow"></button>
+                    </section>
+                    <section class="hidden-faq">
+                        <p>Yes! Users can add video from YouTube or Vimeo with ease:</p>
+
+                        <ol>
+                            <li>Enter App Settings</li>
+                            <li>Click the "Manage Questions" button</li>
+                            <li>Click on the question you would like to attach a video to</li>
+                            <li>When editing your answer, click on the video icon and then paste the YouTube or Vimeo video URL
+                            </li>
+                            <li>That's it! A thumbnail of your video will appear in answer text box</li>
+                        </ol>
+                        <section class="hidden-faq-img">
+                            <img src="./images/facebook.svg" alt="facebook">
+                            <img src="./images/twitter.svg" alt="twitter">
+                        </section>
+                    </section>
+                    <hr>
+                </li>
+                <li class="nav-items shop faq-list">
+                    <section class="faq">
+                        <button class="down text-button">How do
+                                I edit or remove the "FAQ title"?<img src="./images/down.svg" alt="Down Arrow">
+                            </button>
+                    </section>
+                    <section class="hidden-faq">
+                        <p>The FAQ title can be adjusted in the settings tab of the App Settings. You can also remove the title by unchecking its checkbox in the settings tab.</p>
+                        <section class="hidden-faq-img">
+                            <img src="./images/facebook.svg" alt="facebook">
+                            <img src="./images/twitter.svg" alt="twitter">
+                        </section>
+                    </section>
+                    <hr>
+                </li>
+            </ul>
+        </section>
+        <section class="find-us">
+            <section class="contact">
+                <h4>Our store</h4>
+                <p>Address: 500 Terry Francois Street San</p>
+                <p>Francisco, CA 94158</p>
+                <p>Phone: 123-456-7890</p>
+                <p>Email: info@mysite.com</p>
             </section>
-            <button class="close" id="close" onclick="showChat()">
-                    <img src="./images/close.svg" alt="Close button">
-                </button>
+            <section class="open">
+                <h4>Opening hours</h4>
+                <p>Mon - Fri: 7am - 10pm</p>
+                <p>Saturday: 8am - 10pm</p>
+                <p>Sunday: 8am - 11pm</p>
+            </section>
+            <section class="help">
+                <h4>Help</h4>
+                <a href="#">Shipping & Returns</a>
+                <a href="#">Privacy Policy</a>
+                <a href="./faq.html">FAQ</a>
+            </section>
+            <section class="subscribe">
+                <h4>Subscribe</h4>
+                <form action="#">
+                    <fieldset>
+                        <label for="subscribe-email">Enter your email here *</label>
+                        <input type="email" name="subscribe-email" id="subscribe-email" class="input-field" placeholder=" " required />
+                    </fieldset>
+                    <input type="submit" value="Subscribe Now" />
+                </form>
+            </section>
+            <section class="icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </section>
         </section>
-        <section class="chat-message">
-            <form action="" class="chat-form">
-                <input type="text" name="message" class="chat-input" id="chat-input" placeholder="Type your message...">
-            </form>
+        <section id="map" class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12615.359272442083!2d-122.3958356107621!3d37.77035393951142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7fc4fe5e0af3%3A0x11c548b59491f791!2s500%20Terry%20A%20Francois%20Blvd%206th%20floor%2C%20San%20Francisco%2C%20CA%2094158%2C%20USA!5e0!3m2!1sen!2suk!4v1638823906588!5m2!1sen!2suk"
+                width="100%" height="400" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
         </section>
-    </section>
+        <button class="chat" id="chat" onclick="showChat()">
+                <div class="chat-circle"><img src="./images/chat.svg" alt="Message Symbol"></div>
+            </button>
+        <section class="chat-page" id="chat-page">
+            <section class="top-chat">
+                <section class="logo-on">
+                    <img src="./images/chat-logo.png" alt="Company logo">
+                    <div class="green"></div>
+                </section>
+                <section class="chat-text">
+                    <h3>Prickles & co.</h3>
+                    <p>We'll reply as soon as we can</p>
+                </section>
+                <button class="close" id="close" onclick="showChat()">
+                        <img src="./images/close.svg" alt="Close button">
+                    </button>
+            </section>
+            <section class="chat-message">
+                <form action="" class="chat-form">
+                    <input type="text" name="message" class="chat-input" id="chat-input" placeholder="Type your message...">
+                </form>
+            </section>
+        </section>
 
     </main>
     <footer>
