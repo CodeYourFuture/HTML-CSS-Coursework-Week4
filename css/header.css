@@ -1,0 +1,49 @@
+.header {
+    display: flex;
+    height: 4.5rem;
+    padding: 0 1rem;
+}
+
+.header__col1--item1 {
+    display: flex;
+}
+
+.header__col1 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-left: .375rem;
+}
+
+.header__col2 {
+    display: flex;
+    width: auto;
+    align-items: center;
+}
+
+.header__square {
+    background-color: var(--clr-royal-blue);
+    height: 16px;
+    width: 16px;
+    margin-top: .1875rem
+}
+
+.header__name {
+    padding-left: .8125rem;
+    font-family: var(--font-poppins);
+    font-size: var(--font-size--20px);
+    font-weight: var(--font-weight--700);
+}
+
+.header__role {
+    font-family: var(--font-quicksand);
+    font-size: var(--font-size--14px);
+    font-weight: var(--font-weight--400);
+    font-style: bold;
+    letter-spacing: 0.02em;
+    margin-left: -1.875rem;
+}
+
+.header__nav {
+    width: 40px;
+}
