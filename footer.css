@@ -15,36 +15,29 @@ footer {
 .our_store {
   grid-area: our_store;
   background-color: var(--green_black);
-  border: 2px solid black;
 }
 .opening {
   grid-area: opening;
   background-color: var(--green_black);
-  border: 2px solid black;
 }
 .help {
   grid-area: help;
   background-color: var(--green_black);
-  border: 2px solid black;
 }
 .subscribe {
   grid-area: subscribe;
   background-color: var(--green_black);
-  border: 2px solid black;
 }
 .social_media {
   grid-area: social_media;
   background-color: var(--green_black);
-  border: 2px solid black;
 }
 .map {
   grid-area: map;
   background-color: var(--green_black);
-  border: 2px solid black;
 }
 .copyrights {
   grid-area: copyrights;
-  border: 2px solid black;
 }
 /*formatting each grid area */
 .our_store > h1,
