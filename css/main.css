@@ -2,6 +2,7 @@
 
 /* Dont' forget to link this file to your HTML in the <head> */
 .main {
+  width: 100%;
   text-align: center;
   background: var(--gray);
 }
@@ -14,21 +15,33 @@
   align-items: center;
   padding: 4em 2em;
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .hero_header_logo {
-  margin: auto 2em;
+  margin: auto 10px;
+}
+.hero_header_logo img {
+  width: 100%;
+  max-width: 100%;
 }
 .hero_header {
+  width: 100%;
   display: flex;
   align-items: center;
 }
+.hero h1 {
+  font-size: 8vw;
+}
+
 .hero_header_text {
   border-bottom: 4px solid var(--white);
   padding-bottom: 1.5em;
 }
-.hero h1 {
-}
+
 .hero h3 {
+  font-family: fantasy;
+  font-size: 5vw;
 }
 .hero_header,
 .hero_header_text,
@@ -49,6 +62,8 @@
   height: 80vh;
   padding-top: 1em;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .collection h1 {
@@ -64,11 +79,34 @@
   height: 80vh;
   padding-top: 1em;
   background-position: center;
-  margin: 2em 0;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .collection_succulents {
   background: url(../img/succulent.webp);
   height: 80vh;
   padding-top: 1em;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (min-width: 481px) {
+  .hero {
+    background: url(../img/hero.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  .collection {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .collection_cacti,
+  .collection_plants,
+  .collection_succulents {
+    padding: 0em 2em;
+    width: 30%;
+  }
 }
