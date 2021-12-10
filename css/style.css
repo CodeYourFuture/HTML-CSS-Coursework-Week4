@@ -232,7 +232,8 @@ img {
   padding: 0.5rem 3rem;
 }
 
-.offers {
+.offers,
+.delivery {
   grid-column: 1/-1;
   padding-bottom: 1rem;
 }
@@ -246,6 +247,26 @@ img {
 .offers p {
   grid-column: 2/12;
   padding: 0.5rem 1rem;
+}
+
+.delivery-content {
+  grid-column: 1/-1;
+  background-color: rgb(224, 248, 201);
+  padding: 1rem 4rem;
+}
+
+.delivery h1 {
+  padding-bottom: 1rem;
+}
+
+.delivery-options {
+  padding-top: 1rem;
+}
+
+.delivery-options span {
+  border: 1px solid #000;
+  padding: 12px;
+  border-radius: 50%;
 }
 
 @media screen and (min-width: 650) {
