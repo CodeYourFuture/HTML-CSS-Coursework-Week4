@@ -186,8 +186,8 @@ header svg {
     margin-right: 2rem;
   }
   .navigation-row {
-    grid-template-columns: auto repeat(7, 1fr);
-    grid-template-areas: "logo nav nav nav nav . dtext dtext";
+    grid-template-columns: auto auto repeat(3, 1fr);
+    grid-template-areas: "logo nav dtext dtext dtext";
     margin-bottom: 0rem;
   }
   .login {
