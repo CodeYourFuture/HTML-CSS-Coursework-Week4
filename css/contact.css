@@ -1,4 +1,5 @@
 .contact {
+  scroll-snap-align: start;
   width: calc(100% + 4rem);
   margin: 0 -2rem;
   min-height: 100vh;

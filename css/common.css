@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Outfit:wght@200&display=swap");
-
+html {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  scroll-snap-type: y;
+  scroll-padding: 15vh;
+}
 :root {
   --red-brown: #a05941;
   --red-light: #d0b0a6;

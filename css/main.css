@@ -72,6 +72,7 @@
   font-size: 3rem;
 }
 .about-us {
+  scroll-snap-align: start;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 0;
