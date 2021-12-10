@@ -69,6 +69,7 @@ img + p + p {
   height: 100%;
   display: flex;
   align-items: center;
+  z-index: 1;
 }
 
 .nav-toggle-label span,
@@ -112,6 +113,7 @@ height: 100vh;
 transform: scale(1, 0);
 transform-origin: top;
 transition: transform 900ms ease-in-out;
+z-index: 1;
 }
 
 nav ul {
@@ -122,7 +124,6 @@ nav ul {
 
 nav li {
   margin: 2em 0;
-  /* margin-left: 1em; */
 }
 
 nav a {
@@ -142,6 +143,7 @@ nav a:hover {
 
 .nav-toggle:checked ~ nav {
   transform: scale(1, 1);
+  z-index: 1;
 }
 
 .nav-toggle:checked ~ nav a {
@@ -166,7 +168,6 @@ nav a:hover {
 /* Underlay Beige */
 .underlay-beige {
   background-color: var(--Dark-beige);
-  /* position: absolute; */
   top: 0;
   width: 100%;
   height: 100%;
@@ -176,13 +177,13 @@ nav a:hover {
 
 /* Personal Intro */
 .personal-intro {
-  
   padding: 25px;
 }
 
 .personal-intro > p:first-child {
   font-size: 40px;
   margin-bottom: 0;
+  font-family: "Poppins";
 }
 
 .personal-intro > p:nth-child(2) {
@@ -202,10 +203,8 @@ nav a:hover {
   grid-column: 1 / -1;
   grid-row: 1 / 2;
   align-self: center;
-  position: absolute;
+  position: relative;
   top: 6em;
-  left: 0; 
-  right: 0; 
   margin-left: auto; 
   margin-right: auto; 
 }
@@ -242,7 +241,6 @@ nav a:hover {
   width: 120px;
   padding: 10px 20px;
   border-radius: 20px;
-  /* border: transparent; */
   margin: 2em 5px;
 }
 
@@ -250,7 +248,6 @@ nav a:hover {
 .personal-details > button a {
   text-transform: uppercase;
   text-decoration: none;
-  /* grid-column: 1 / span 6; */
 }
 
 .btn-blue {
@@ -281,7 +278,7 @@ nav a:hover {
   display: flex;
   padding-left: 0;
   justify-content: center;
-  padding: 5px;
+  margin: 4px 0;
 }
 
 ul {
@@ -289,6 +286,61 @@ ul {
 }
 
 .social-media li {
+  margin: 5px;
+}
+
+/* Footer */
+
+footer {
+  grid-column: 1 / -1;
+}
+.contacts-container {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(4, auto);
+  padding: 20px;
+}
+
+.tel-container p:first-child {
+  font-family: "sans-serif";
+  font-weight: 600;
+}
+
+.mail-container p:first-child {
+  font-family: "sans-serif";
+  font-weight: 600;
+}
+
+
+.tel-container p:not(:first-child) {
+  font-size: 14px;
+}
+
+.mail-container p:not(:first-child) {
+  font-size: 14px;
+}
+
+.footer-social-media {
+  display: grid;
+  grid-column: 1 / -1;
+}
+
+
+.footer-social-media p {
+  font-family: "sans-serif";
+  font-weight: 600;
+}
+
+.footer-social-media-container {
+  display: flex;
+  padding-left: 0;
+}
+
+.footer-social-media-container li:not(:first-child)  {
   margin: 0 5px;
+}
+
+.credits {
+  grid-column: 1 / 3;
 }
 
