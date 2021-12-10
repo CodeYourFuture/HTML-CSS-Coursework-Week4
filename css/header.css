@@ -25,16 +25,6 @@
     border: 1px solid var(--red-brown);
 }
 
-.container {
-    height: 40px;
-    width: auto;
-}
-
-.search-icon {
-    height: 30px;
-    width: auto;
-}
-
 .fa {
     color: var(--red-brown);
 }
@@ -95,32 +85,32 @@ header h1 {
 }
 
 .nav-icon {
-  margin: 1em;
-  width: 30px;
+    margin: 1em;
+    width: 30px;
 }
 
 .nav-icon:after, 
 .nav-icon:before, 
 .nav-icon div {
-  background-color: var(--red-brown);
-  border-radius: 3px;
-  content: '';
-  display: block;
-  height: 3px;
-  margin: 11px 0;
-  transition: all .2s ease-in-out;
+    background-color: var(--red-brown);
+    border-radius: 3px;
+    content: '';
+    display: block;
+    height: 3px;
+    margin: 11px 0;
+    transition: all .2s ease-in-out;
 }
 
 .nav-icon:hover:before {
-  transform: translateY(12px) rotate(135deg);
+    transform: translateY(12px) rotate(135deg);
 }
 
 .nav-icon:hover:after {
-  transform: translateY(-12px) rotate(-135deg);
+    transform: translateY(-12px) rotate(-135deg);
 }
 
 .nav-icon:hover div {
-  transform: scale(0);
+    transform: scale(0);
 }
 
 header h2 {
