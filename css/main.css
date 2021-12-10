@@ -543,6 +543,7 @@ footer a {
     top: 0;
     left: 0;
     padding-top: 0;
+    z-index: 6;
 }
 
 .close {
