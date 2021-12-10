@@ -1,0 +1,22 @@
+* {
+  /* Reset browser's padding and margin */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+* {
+    font-family: "Outfit", sans-serif;
+}
+
+:root {
+    --redBrown: #A05841;
+    --greenBlack: #133032;
+    --lightGrey: #ededee;
+    --lighterGrey: #fbfbfb;
+    --white: #fff;
+    --transparentWhite: rgba(0, 60, 68, 0.212);
+    --black: #000;
+    --red: #f00;
+}
+

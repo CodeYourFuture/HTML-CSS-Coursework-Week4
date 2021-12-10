@@ -1,3 +1,400 @@
-/* Add your CSS here */
 
-/* Dont' forget to link this file to your HTML in the <head> */
+body {
+    background-color: var(--lightGrey);
+    font-family: "Fjalla One",sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+    color: var(--redBrown);
+}
+
+.little-line {
+    background-color: var(--redBrown);
+    width: 20px;
+    height: 7px;
+    border: none;
+    margin: 20px 0;
+}
+
+.hero-image button,
+.product-shop button,
+.request-form button{
+    background-color: var(--redBrown);
+    border: none;
+    padding: 1.2rem 3rem;
+    font-weight: 200;
+    color: var(--white);
+    font-size: 1.4rem;
+}
+
+/*Header***************************************************************/
+
+header {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    margin-top: 0.4rem;
+    background: var(--white);
+    height: 5.4rem;    
+}
+
+.search-container {
+    grid-column: 2/10;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.1rem;
+    height: 3rem;
+}
+
+.search-container:hover {
+    border: 1px solid var(--redBrown);
+}
+
+.search-container input {
+    border: 0px none;
+    outline: none; 
+    padding-left: 1rem; 
+    padding-top: 0.4rem; 
+}
+
+::placeholder { 
+  color: var(--redBrown);
+  opacity: 1; 
+  letter-spacing: 0.07rem;
+  font-size: 1.5rem;
+}
+
+.search-container img {
+  width:25px;
+ 
+}
+.basket-container {
+    grid-column: 12/13; 
+}
+
+.basket-container img {
+ width: 30px;
+ padding-top: 1.3rem;    
+}
+
+/*Nav***************************************************************/
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(2,auto);
+}
+.company-name a {
+    color: var(--redBrown);
+    text-decoration: none;
+}
+
+.company-name h1 {
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.company-name {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1/11;
+    text-transform: capitalize;
+    padding: 2rem; 
+    color:var(--white);
+}
+
+.company-name h2 {
+    font-size: 1.2rem;
+    word-spacing: 0.1rem;
+    letter-spacing: 0.2rem;
+}
+
+.hambergur-menu {
+    grid-column: 12/13;
+    padding-top: 2rem;
+}
+
+.hambergur-menu div {
+    width: 35px;
+    height: 5px;
+    background-color: var(--redBrown);
+    margin: 6px 0;
+}
+
+.animated-text {
+  color: var(--redBrown);
+}
+
+.animated-text:before {
+  content: "we deliver to your doorstep";
+  animation: topToBottom 8s infinite 0s;
+}
+
+@keyframes topToBottom {
+  100% {
+    content: "Call us now! 123-456-7890";
+  }
+}
+/*Main***************************************************************/
+
+.hero-image {
+    background-image: url(../img/hero.png);
+    background-size: cover;
+    background-position: center;
+    height: 81vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    
+}
+
+.hero-image img {
+   max-width: fit-content;
+}
+
+.hero-image h2,
+h3 {
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    font-size: 2.9rem;
+    text-align: center;
+}
+
+.hero-image h3 {
+    font-weight: 200;
+    font-size: 2.5rem;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--transparentWhite);
+}
+   
+/*Product******************************************************************************/
+
+.product-container {
+    position: relative;
+    padding-top: 2.5rem;
+}
+
+.product-container img {
+    width: 100%;
+}
+
+.product-shop {
+    position: absolute;
+    top: 4rem;
+    left: 50%;
+    transform: translateX(-50%);   
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    letter-spacing: 0.8rem;
+    align-items: center;
+}
+
+/*About-Us******************************************************************************/
+
+.about-us {
+    grid-row: 1/2;
+    grid-column: 1/13;
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 1.6rem;
+    background-color: var(--white);   
+}
+
+ .about-us p {
+    font-size: 1.8rem;
+    line-height: 2.9rem;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 3rem; 
+ }
+
+.about-us h1 {
+    text-transform: uppercase;
+    letter-spacing: 0.8rem;
+    font-size: 2rem;
+    font-weight: 300;
+    word-spacing: 0.3rem;
+    margin-bottom: 1rem;
+}
+
+
+/*Picture****************************************************************************************/
+
+.page-picture{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(3,auto);  
+}
+
+.page-picture img {
+    width: 100%;
+}
+
+.page-picture img:nth-child(1) { 
+    grid-row: 1/2;
+    grid-column: 1/13;
+}
+    .page-picture img:nth-child(2) { 
+    grid-row: 2/3;
+    grid-column: 1/13;
+}
+.page-picture img:nth-child(3) { 
+    grid-row: 3/4;
+    grid-column: 1/13;
+}
+/*BuyOnlineOffer************************************************************************************************/
+
+.buy-online-offer{
+    padding:7rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--greenBlack);
+    text-align: center; 
+}
+
+.buy-online-offer button{
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 4rem;
+    padding: 1.5rem 3.3rem;
+    color: var(--greenBlack);
+    background-color: var(--white);
+    border: none;
+    padding: 1.1rem 3rem;
+    font-weight: 200;
+    font-size: 1.3rem;
+}
+
+.buy-online-offer h1{
+    color: var(--white);
+    font-size: 5rem;
+    text-transform: uppercase; 
+}
+
+.request-form{
+   display: flex;
+   flex-direction: column;
+   margin-top: 3rem;
+   margin-left: 1.5rem;
+   border: none;
+   background-color: var(--white);
+   padding: 2rem 1rem 3rem 1.5rem;
+   font-size: 2rem;
+   font-weight: 200;
+}
+
+.request-form textarea{
+    width: 100%;
+    height: 350px;
+}
+
+form >*{
+    padding: 2rem 0;  
+}
+
+.request-form hr{
+    padding: 0;
+    margin: auto;
+}
+
+input[type="text"],
+input[type="tel"], 
+input[type="email"],
+textarea {
+border: black 2px solid;  
+}
+
+.request-form button {
+    margin-top: 2rem;
+}
+
+.request-form h4 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1.2rem;
+}
+
+.leaf-picture {
+    width: 100%;
+}
+
+/*Footer***********************************************************************************************/
+
+.help {
+    display: flex;
+    flex-direction: column;
+}
+
+.store-detail,
+ .opening-time, 
+ .help ,
+ .suscribe {
+ padding-top: 8rem;
+}    
+
+footer {
+    text-align: center;
+    background-color: var(--greenBlack);
+    padding: 60px 20px 10px 40px;  
+}
+
+footer h3,
+footer p,
+footer label, 
+footer a {
+    color: var(--white);
+    font-weight: 200;
+}
+
+footer h3 {
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    padding-bottom: 3.5rem;
+    font-size: 1.8rem;   
+}
+
+footer a, 
+footer p {
+    font-size: 1.7rem;
+    line-height: 1.5;
+}
+
+.suscribe form {
+    display: flex;
+    flex-direction: column;
+   text-align: left;
+   padding-right: 1rem;
+   font-size: 1.8rem;
+}
+.suscribe button {
+    color: var(--greenBlack);
+    margin-top: 2rem;
+    font-size: 1.8rem;
+}
+
+.suscribe input {
+    background-color: var(--greenBlack);
+    border: 1px solid var(--white);
+}
+
+.social-media  {
+    margin: 4.5rem 0 3rem;
+}
+
