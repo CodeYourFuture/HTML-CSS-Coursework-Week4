@@ -38,6 +38,16 @@ header {
     "j  j  j  j . h";*/
 }
 
+.header__name__spacer {
+  display: none;
+}
+
+nav {
+  display: none;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
 .name__box__container {
   display: flex;
   grid-area: nb;
@@ -89,4 +99,41 @@ header {
   background-color: var(--third-color-light-beige);
   border-radius: 1.5px;
   align-self: flex-end;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 0.7rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+li {
+  padding-inline: 0.25rem;
+}
+
+@media only screen and (min-width: 1000px) {
+  nav {
+    display: flex;
+  }
+
+  .hamburger__container {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .job__title_container {
+    margin-right: auto;
+    margin-left: 0.5rem;
+  }
+
+  .header__name__spacer {
+    display: block;
+    margin-left: 1rem;
+  }
+  
 }

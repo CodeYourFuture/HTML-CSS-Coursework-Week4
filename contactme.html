@@ -22,7 +22,7 @@
 </head>
 <body>
 
-<header>
+    <header  >
         <div class = "hamburger__container">
             <div class = "hamburger__top__line"></div>
             <div class = "hamburger__middle__line"></div>
@@ -30,92 +30,103 @@
         </div>
         <div class = "name__box__container">
             <div class = "blue__box"></div>
-            <div><h3><a href="/index.html">Maya Nelson</a></h3></div>
+            <div><h3>Maya Nelson</h3></div>
+        </div>
+        <div class= "header__name__spacer">
+            <p>/</p>
         </div>
         <div class = "job__title_container">
             <p>PROJECT MANAGER</p>
         </div>
-</header>
+        <nav>
+            <ul>
+                <li>ABOUT ME</li>
+                <li>RESUME</li>
+                <li><a href="/projects.html">PROJECTS</a></li>
+                <li><a href="/contactme.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<main>
+    <main>
 
 
-    <div class = "blue__letstalk_container">
-        <div class = "blue__box__contact"></div>
-        <h1>Let's talk</h1>
-    </div>
-    <div class ="fieldset__container">
-        <fieldset>
-                <div>
+        <div class = "blue__letstalk__container">
+            <div class = "blue__box__contact"></div>
+            <h1>Let's talk</h1>
+        </div>
+        <div class ="fieldset__container">
+            <fieldset>
+                    <div>
+                        <div class = "form_column">
+                            <label for="firstname">First name*</label>
+                            <input id="firstname" type="text" required size ="12"name="firstname"/><br>
+                        </div>
+                        <div class = "form_column">
+                            <label for="lastname">Last name*</label>
+                            <input id="lastname" type="text" required size ="12" name="lastname"/>
+                        </div>
+                    </div> 
                     <div class = "form_column">
-                        <label for="firstname">First name*</label>
-                        <input id="firstname" type="text" required size ="12"name="firstname"/><br>
+                        <label for="address">Email*</label>
+                        <input id="address" type="text" required size ="20" name="email"/><br>
+                        <label for="address2">Subject</label>
+                        <input id="address2" type="text" size ="20" name="address2"/>  
                     </div>
-                    <div class = "form_column">
-                        <label for="lastname">Last name*</label>
-                        <input id="lastname" type="text" required size ="12" name="lastname"/>
-                    </div>
-                </div> 
-                <div class = "form_column">
-                    <label for="address">Email*</label>
-                    <input id="address" type="text" required size ="20" name="email"/><br>
-                    <label for="address2">Subject</label>
-                    <input id="address2" type="text" size ="20" name="address2"/>  
-                </div>
-                <div class = "form_row ">
-                    <div class = "form_column">
-                        <label for="postcode">Message</label>
-                        <textarea id="postcode" type="text" required size ="30"name = "messagebox">
+                    <div class = "form_row ">
+                        <div class = "form_column">
+                            <label for="postcode">Message</label>
+                            <textarea id="postcode" type="text" required size ="30"name = "messagebox">
 
-                        </textarea>
-                    </div>
-                </div> 
-                <div>
-                    <btn class = "send__button">SEND</btn>
-                 </div> 
+                            </textarea>
+                        </div>
+                    </div> 
+                    <div>
+                        <btn class = "send__button">SEND</btn>
+                    </div> 
+                
+            </fieldset>
+                
+        </div>
+
+
+
+
+
+
+
+
+
+    </main>
+
+
+
+    <footer>
+        <div class = "call__write__container">
+            <div>
+                <p class = footer__contact ><b>Call</b></p>
+                <p>123-456-7890 </p>
+            </div>
+            <div>
+                <p class = footer__contact><b>Write</b></p>
+                <p>info@mysite.com</p>
+            </div>
+        </div>
             
-        </fieldset>
-             
-    </div>
-
-
-
-
-
-
-
-
-
-</main>
-
-
-
-<footer>
-    <div class = "call__write__container">
-        <div>
-            <p class = footer__contact ><b>Call</b></p>
-            <p>123-456-7890 </p>
+        <div class = "follow__icons">
+            <div>
+                <p>Follow</p>
+                <img class = "social__icons" src = "images/facebook.webp"/>
+                <img class = "social__icons" src = "images/twitter.webp"/>
+                <img class = "social__icons" src = "images/linkedin.webp"/>
+                <img class = "social__icons" src = "images/instagram.webp"/>
+            </div>
         </div>
-        <div>
-            <p class = footer__contact><b>Write</b></p>
-            <p>info@mysite.com</p>
+        <div class = "copyright__text">
+            <p>&#x24B8; 2013 by Maya Nelson</p>
+                    <!-- Please leave this in to credit the creators of this design -->
+            <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
         </div>
-    </div>
-        
-    <div class = "follow__icons">
-        <div>
-            <p>Follow</p>
-            <img class = "social__icons" src = "images/facebook.webp"/>
-            <img class = "social__icons" src = "images/twitter.webp"/>
-            <img class = "social__icons" src = "images/linkedin.webp"/>
-            <img class = "social__icons" src = "images/instagram.webp"/>
-        </div>
-    </div>
-    <div class = "copyright__text">
-        <p>&#x24B8; 2013 by Maya Nelson</p>
-                <!-- Please leave this in to credit the creators of this design -->
-        <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
-    </div>
-</footer>
+    </footer>
 </body>
 </html>

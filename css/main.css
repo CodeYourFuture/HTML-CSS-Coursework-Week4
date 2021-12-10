@@ -147,7 +147,7 @@ a:visited {
 
 /* Contact Form*/
 
-.blue__letstalk_container  {
+.blue__letstalk__container  {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -233,6 +233,7 @@ textarea:focus {
 .project__card{
   background-color: white;
   padding-top:1rem;
+  margin-bottom: 1rem;
 }
 
 .project__title_container{
@@ -279,10 +280,19 @@ textarea:focus {
   width: 100%;
 }
 
+.main__button__container__hidden{
+  display:none;
+
+}
+
+
+nav a:hover {
+  color:var(--third-color-light-beige)
+}
 
 /* Desktop Version */
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 1000px) {
   
   body{
     background-color:white;
@@ -291,18 +301,45 @@ textarea:focus {
     padding-bottom: 0;
     margin-bottom: 0;
     margin: 0;
-    padding-inline: 4rem;
+    padding-inline: 0;
   }
 
 
   .hello__container{
     background-color: white;
     width:30%;
+    padding-bottom: 0;
   }
+
+  .hello__container h2{
+    font-size: 1rem;
+
+  }
+
+  .circle__profile__image {
+    padding:1rem;
+  }
+
   .main__button__container{
     display:none;
   } 
- 
+  .main__button__container__hidden{
+    display:flex;
+    padding-bottom: 2rem;
+    margin-block-end: 0;
+    justify-content: center;
+  }
+
+  .main__button__container__hidden p {
+    letter-spacing: 0.2rem;
+
+  }
+  .social__icons__center__container{
+    width:100;
+    padding-inline: 4rem;
+    
+  }
+
   .main__container{
     display:flex;
     justify-content: center;
@@ -312,4 +349,67 @@ textarea:focus {
     padding-bottom:4rem;
   }
   
+  .image__name__container{
+    padding-top: 2rem;
+  }
+
+  h1{
+    font-size: 3.5rem;
+    padding-top: 2rem;
+    font-weight:900;
+    font-family: Poppins;
+    text-shadow: 0px 2px, 2px 0px, 2px 2px;
+    letter-spacing: 2px;
+    margin:0;
+  }
+
+  .I__paragraph__text{
+    font-size: 0.6rem;
+    padding-bottom:0;
+  }
+
+  .fieldset__container{
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .blue__letstalk__container {
+    font-size:1rem;
+    align-content:center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    
+  }
+  .blue__letstalk__container h1{
+    font-size:1rem;
+    font-style:Poppins;
+    padding-top: 0;
+    
+  }
+
+  .project__images__container{
+    object-fit:cover;
+
+  }
+  .project__card{
+    display:flex;
+    width:60%;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .project__card__text{
+    font-size:0.75rem;
+  }
+  .project__card__text p {
+    width:50%;
+  }
+
+  .project__images{
+    object-fit:cover;
+    object-position: 50% 50%;
+  }
+
+
 }
