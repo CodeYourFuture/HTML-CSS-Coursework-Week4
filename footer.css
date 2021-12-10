@@ -1,0 +1,121 @@
+/*adding grid display to the footer */
+footer {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 300px 300px 300px 270px 100px 400px 150px;
+  grid-template-areas:
+    "our_store"
+    "opening"
+    "help"
+    "subscribe"
+    "social_media"
+    "map"
+    "copyrights";
+}
+.our_store {
+  grid-area: our_store;
+  background-color: var(--green_black);
+  border: 2px solid black;
+}
+.opening {
+  grid-area: opening;
+  background-color: var(--green_black);
+  border: 2px solid black;
+}
+.help {
+  grid-area: help;
+  background-color: var(--green_black);
+  border: 2px solid black;
+}
+.subscribe {
+  grid-area: subscribe;
+  background-color: var(--green_black);
+  border: 2px solid black;
+}
+.social_media {
+  grid-area: social_media;
+  background-color: var(--green_black);
+  border: 2px solid black;
+}
+.map {
+  grid-area: map;
+  background-color: var(--green_black);
+  border: 2px solid black;
+}
+.copyrights {
+  grid-area: copyrights;
+  border: 2px solid black;
+}
+/*formatting each grid area */
+.our_store > h1,
+.opening > h1,
+.help > h1,
+.subscribe > h1 {
+  color: var(--white);
+  font-size: 25px;
+  font-family: var(--subheadings);
+  text-align: center;
+  font-weight: 200;
+  margin-top: 10%;
+  letter-spacing: 8px;
+}
+.our_store > p,
+.opening > p {
+  color: var(--white);
+  font-size: 20px;
+  text-align: center;
+}
+.help > p {
+  color: var(--white);
+  font-size: 20px;
+  text-align: center;
+  text-decoration: underline;
+}
+.subscribe {
+  display: flex;
+  flex-direction: column;
+}
+.subscribe > label {
+  color: var(--white);
+  font-size: 18px;
+  margin-left: 10%;
+}
+.subscribe > input[type="text"] {
+  width: 80%;
+  height: 40px;
+  background-color: var(--green_black);
+  border: 1px solid var(--white);
+  margin-left: 10%;
+}
+.subscribe > input[type="text"]:hover {
+  border: 3px solid var(--white);
+}
+.subscribe > input[type="button"] {
+  width: 82%;
+  height: 45px;
+  background-color: var(--white);
+  border: 1px solid var(--green_black);
+  color: var(--green_black);
+  font-size: 17px;
+  margin-left: 10%;
+  margin-top: 2%;
+}
+.social_media > div {
+  margin-left: 40%;
+  margin-top: 8%;
+}
+.copyrights > p {
+  font-size: 15px;
+  color: var(--red_brown);
+  text-align: center;
+}
+.copyrights {
+  background-color: var(--light_grey);
+}
+.wix {
+  text-decoration: underline;
+}
+iframe {
+  width: 100%;
+  height: 400px;
+}
