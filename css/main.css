@@ -3,94 +3,93 @@
 /* Dont' forget to link this file to your HTML in the <head> */
 
 body {
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif,sans-serif,monospace;
-    padding : 0;
-    margin: 0;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif, sans-serif, monospace;
+  padding: 0;
+  margin: 0;
 }
 
 h1 {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 header {
-    height: 100px;
-    width: 100%;
-    position: relative;
-    top: 0;
-    background-color: white;
-    margin: 0;
-    padding-top: 3%;
+  height: 100px;
+  width: 100%;
+  position: relative;
+  top: 0;
+  background-color: white;
+  margin: 0;
+  padding-top: 3%;
 }
 
 nav {
-    display: flex;
-    padding: 0 3%;
+  display: flex;
+  padding: 0 3%;
 }
 
 nav p {
-    display: grid;
-    float: left;
-    align-items: center;
+  display: grid;
+  float: left;
+  align-items: center;
 }
 nav ul {
- 
-    display: none;
-    list-style-type: none;
-    list-style: none;
+  display: none;
+  list-style-type: none;
+  list-style: none;
 }
 
 nav ul li {
-    
-    margin-right: 35px;
+  margin-right: 35px;
 }
 nav a:hover {
-    color: blue;
+  color: blue;
 }
 
 nav a {
-    color: black;
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 .title_large {
-    font-weight: bold;
-    font-size: 30px;
-    margin-right: 10px;
-    align-items: center;
+  font-weight: bold;
+  font-size: 30px;
+  margin-right: 10px;
+  align-items: center;
 }
 
 .profile_box {
-    display: grid;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 
-    position: sticky;
-    grid-template-rows: repeat(4, min-content) 1fr;
-    background-image: linear-gradient(rgb(223, 220, 250), white);
-    box-shadow: -5px 6px 16px -1px gray;
-   
-    margin-top: 10px;
-    margin-left: 30px;
-    padding: 10px;
-   
-    width: 83%;
-    height: auto;
-    min-height: auto;
+  position: sticky;
+  grid-template-rows: repeat(4, min-content) 1fr;
+  /* background-image: linear-gradient(#f4ece6,#f4ece0); */
+  background-color: #f4ece6;
+  box-shadow: -13px 5px 37px -4px grey;
 
-    text-align: center;
+  margin-top: 10px;
+  margin-left: 30px;
+
+  width: 83%;
+  height: auto;
+  min-height: auto;
+
+  text-align: center;
 }
 
 .profile_box img {
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    margin-top: 20px;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  margin-top: 20px;
 }
 
 .profile_box p {
-    text-align: center;
-    font-weight: bold;
-    font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
 }
 .square {
   height: 20px;
@@ -102,32 +101,132 @@ nav a {
 }
 
 section {
-    margin-top: -120px;
-    margin-left: 0;
-    margin-right: 0;
-    padding : 200px 40px 10px 40px;    
-    background-color: #e6dbcd;
+  margin-top: -120px;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 140px 40px 10px 40px;
+  background-color: #e6dbcd;
 }
 section p {
-    font-size: 16px;
-    line-height: 20pt;
+  font-size: 16px;
+  line-height: 20pt;
 }
 
-@media screen and (min-width : 540px) {
-    header {
-        height: 100px;
-        position: fixed;
- 
-    }
-    nav {
-        justify-content: space-between;
-        align-items: center;
-    }
-    nav ul {
-        display: flex;
-    }
-    nav p {
-        display: flex;
-    }
- 
+.blue_line {
+  width: 25%;
+  border-style: solid;
+  border-color: blue;
+  border-width: 1px;
+}
+
+.button_div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 15px;
+}
+
+button {
+  color: white;
+  background-color: blue;
+
+  font-weight: bold;
+
+  border-style: none;
+  border-radius: 15px;
+
+  width: 120px;
+  height: 33px;
+  margin: 10px;
+}
+
+button:hover {
+  color: black;
+  background-color: white;
+  border-style: solid;
+  border-color: black;
+}
+
+.social_div {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  margin: 10px 0 10px 0;
+  box-shadow: 0px 1px 16px -5px grey;
+}
+
+.social_div img {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  margin: 5px;
+}
+/*  */
+
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+}
+
+footer h1 {
+  font-size: 20px;
+}
+
+footer p {
+  font-size: 16px;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer img {
+  padding: 5px;
+  width: 25px; 
+  height: 25px; 
+  object-fit: cover;
+}
+
+footer div {
+  padding: 15px;
+}
+.call_div {
+  grid-column: 1 / 2;
+}
+
+.write_div {
+  grid-column: 2 / -1;
+}
+
+.follow_div {
+  grid-column: 1 / -1;
+}
+
+.copyright_div {
+  grid-column: 1 / -1;
+}
+
+/*  */
+
+@media screen and (min-width: 540px) {
+  header {
+    height: 100px;
+    position: fixed;
+  }
+  nav {
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav ul {
+    display: flex;
+  }
+  nav p {
+    display: flex;
+  }
 }
