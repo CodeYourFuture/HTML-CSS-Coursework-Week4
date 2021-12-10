@@ -1,3 +1,286 @@
-/* Add your CSS here */
+/* Adding body background color */
+body {
+  font-family: url(https://fonts.google.com/specimen/Outfit);
+  background-color: #ededee;
+}
 
-/* Dont' forget to link this file to your HTML in the <head> */
+.main {
+  width: 100%;
+  height: 650px;
+  margin-bottom: 25px;
+  margin-top: 30px;
+}
+h3 {
+  color: var(--white);
+  font-size: 45px;
+  font-family: var(--headings);
+  margin-left: 10px;
+}
+.prickles {
+  position: absolute;
+  margin-top: -400px;
+  margin-bottom: 400px;
+}
+.logo {
+  stroke: white;
+  position: absolute;
+  margin-top: -550px;
+  margin-left: 130px;
+}
+.logo > img {
+  height: 150px;
+  width: 150px;
+}
+.slogan {
+  color: var(--white);
+  font-family: var(--subheadings);
+  font-size: 20px;
+  text-align: center;
+  width: 200px;
+  margin-left: 90px;
+  margin-bottom: 14px;
+  letter-spacing: 4px;
+}
+.shop_now {
+  padding: 13px 50px 13px 50px;
+  margin-left: 120px;
+  margin-top: 30px;
+  background-color: var(--red_brown);
+  border-style: none;
+  color: var(--white);
+}
+.line {
+  position: absolute;
+  width: 55px;
+  height: 20px;
+  margin-top: -500px;
+  margin-left: 50px;
+}
+.line_two {
+  position: absolute;
+  width: 55px;
+  height: 20px;
+  margin-top: -500px;
+  margin-left: 300px;
+}
+.estb,
+.year {
+  color: var(--white);
+  letter-spacing: 5px;
+  margin-bottom: 2px;
+}
+hr {
+  border: 1px solid white;
+  margin-top: 10px;
+}
+/* Adding grid for the plants picture section */
+.plants {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 550px 550px 550px;
+  grid-gap: 25px;
+  grid-template-areas:
+    "plant_one"
+    "plant_two"
+    "plant_three";
+  margin-bottom: 25px;
+}
+.plant_one {
+  background-color: var(--white);
+  grid-area: plant_one;
+}
+.plant_two {
+  grid-area: plant_two;
+}
+.plant_three {
+  grid-area: plant_three;
+}
+/* formatting pictures and adding buttons with text */
+.cactus,
+.plant,
+.succulent {
+  height: 100%;
+  width: 100%;
+}
+#plant_one,
+#plant_two,
+#plant_three {
+  position: absolute;
+  margin-top: -135%;
+  margin-left: 30%;
+  text-align: center;
+}
+#cactus,
+#plant,
+#succulent {
+  font-family: var(--headings);
+  font-size: 25px;
+  color: var(--red_brown);
+}
+#plant_one > hr {
+  border: 2px solid var(--red_brown);
+  width: 10px;
+  margin-bottom: 30px;
+}
+#plant_one > button {
+  background-color: var(--red_brown);
+  border-style: none;
+  padding: 10px 25px 10px 25px;
+  font-size: 15px;
+  color: var(--white);
+}
+#plant_two > hr {
+  border: 2px solid var(--red_brown);
+  width: 10px;
+  margin-bottom: 30px;
+}
+#plant_two > button {
+  background-color: var(--red_brown);
+  border-style: none;
+  padding: 10px 25px 10px 25px;
+  font-size: 15px;
+  color: var(--white);
+}
+#plant_three > hr {
+  border: 2px solid var(--red_brown);
+  width: 10px;
+  margin-bottom: 30px;
+}
+#plant_three > button {
+  background-color: var(--red_brown);
+  border-style: none;
+  padding: 10px 25px 10px 25px;
+  font-size: 15px;
+  color: var(--white);
+}
+/* adding section with about us and more pictures */
+.about_us {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 520px 250px 250px 250px 500px 700px 250px;
+  grid-template-areas:
+    "about"
+    "green_house"
+    "leaf"
+    "women"
+    "buy"
+    "form"
+    "dracena";
+}
+.about {
+  grid-area: about;
+}
+.green_house {
+  grid-area: green_house;
+}
+.leaf {
+  grid-area: leaf;
+}
+.women {
+  grid-area: women;
+}
+.buy {
+  grid-area: buy;
+  background-color: var(--green_black);
+}
+.form {
+  grid-area: form;
+}
+.dracena {
+  grid-area: dracena;
+}
+#green_house,
+#leaf,
+#women,
+#dracena {
+  width: 100%;
+  height: 100%;
+}
+#us {
+  color: var(--red_brown);
+  font-family: var(--headings);
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 4px;
+}
+.about > hr {
+  border: 2px solid var(--red_brown);
+  width: 10px;
+  margin-bottom: 30px;
+}
+#first_par,
+#second_par {
+  text-align: center;
+  font-size: 17px;
+  color: var(--red_brown);
+  width: 90%;
+  margin-left: 13px;
+  line-height: 25px;
+}
+#second_par {
+  margin-top: 70px;
+}
+#buy {
+  color: var(--white);
+  font-size: 50px;
+  font-family: var(--headings);
+  text-align: center;
+  width: 80%;
+  font-weight: 800;
+  margin-left: 35px;
+  line-height: 90px;
+}
+.buy > button {
+  background-color: var(--white);
+  padding: 15px 35px;
+  color: var(--green_black);
+  margin-left: 130px;
+  border-style: none;
+  font-size: 15px;
+}
+/* form section */
+
+.request {
+  font-size: 20px;
+  font-family: var(--headings);
+  color: var(--red_brown);
+  text-align: center;
+  width: 50%;
+  line-height: 30px;
+  margin-left: 95px;
+}
+fieldset {
+  border: none;
+  background-color: whitesmoke;
+}
+fieldset > hr {
+  border: 2px solid var(--red_brown);
+  width: 10px;
+  margin-bottom: 30px;
+}
+form > div {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 10px;
+}
+form > div > label {
+  margin-bottom: 10px;
+}
+form > div > input {
+  height: 30px;
+}
+form > div > input:hover {
+  border: 3px solid black;
+}
+form > input[type="button"] {
+  width: 90%;
+  height: 30px;
+  background-color: var(--red_brown);
+  color: var(--white);
+  border-style: none;
+  margin-left: 5%;
+  margin-top: 10%;
+}
+
