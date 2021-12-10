@@ -97,7 +97,7 @@ h1 {
   overflow: hidden;
 }
 
-.home-image img {
+img {
   width: 100%;
   object-fit: cover;
 }
@@ -118,17 +118,20 @@ h1 {
 }
 
 .cards {
-  grid-column: 4/10;
-  margin-top: 1rem;
+  padding: 0 1rem;
+  grid-column: 3/11;
   font-family: questrial, sans-serif;
   text-align: center;
   overflow: hidden;
-  width: 270px;
-  height: auto;
+  width: 100%;
+}
+
+.intro-card {
+  margin-bottom: 1rem;
 }
 
 .intro-section h1 {
-  margin-top: 1.8rem;
+  margin: 1.8rem 0;
   display: flex;
   flex-direction: column;
 }
@@ -147,6 +150,7 @@ h1 {
 .cards p {
   font-size: 16px;
   line-height: 1.7em;
+  margin-bottom: 1rem;
 }
 
 .about-us {
@@ -162,11 +166,6 @@ h1 {
   padding: 1.5rem;
 }
 
-.aboutUs-image img {
-  width: 100%;
-  object-fit: cover;
-}
-
 .about-text {
   grid-column: 1/-1;
   width: 100%;
@@ -174,7 +173,6 @@ h1 {
 }
 
 .about-text h1 {
-  padding: 0 2rem;
   display: flex;
   flex-direction: column;
 }
@@ -214,8 +212,35 @@ h1 {
 }
 
 .products {
+  padding-bottom: 1.5rem;
+
   grid-column: 1/-1;
   background-color: rgb(235, 224, 245);
+}
+
+.products h1 {
+  display: flex;
+  flex-direction: column;
+  padding-top: 0.5rem;
+}
+
+.product-card {
+  grid-column: 1/-1;
+}
+.product-image {
+  width: 100%;
+  max-height: 380px;
+  overflow: hidden;
+  padding: 0.5rem;
+}
+.product-card h3 {
+  display: flex;
+  flex-direction: column;
+  padding-top: 0.5rem;
+}
+
+.product-card p {
+  padding: 0.5rem 3rem;
 }
 
 @media screen and (min-width: 650) {
