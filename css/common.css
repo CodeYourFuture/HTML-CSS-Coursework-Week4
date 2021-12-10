@@ -2,10 +2,13 @@
 
 :root {
   --red-brown: #a05941;
+  --red-light: #d0b0a6;
   --green-black: #133032;
+  --green-light: #3e5a5b;
   --light-grey: #ededee;
   --white: #fff;
-  --transparent-white: rgba(0, 0, 0, 0.75);
+  --black: #000;
+  --transparent-white: rgba(255, 255, 255, 0.75);
   --heading-font: "Fjalla One", sans-serif;
   --body-font: "Outfit", sans-serif;
 }
@@ -25,6 +28,18 @@ body {
   text-decoration: none;
   font-size: 1.1rem;
   color: var(--white);
+  transition: 0.4s all ease-in-out;
+  cursor: pointer;
+}
+.button:hover {
+  color: var(--black);
+  background-color: var(--red-light);
+}
+.underline {
+  color: var(--red-brown);
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 0;
 }
 
 @media screen and (min-width: 900px) {

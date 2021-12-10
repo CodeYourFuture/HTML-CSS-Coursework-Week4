@@ -9,6 +9,7 @@
     <link href="./css/header.css" rel="stylesheet" />
     <link href="./css/footer.css" rel="stylesheet" />
     <link href="./css/main.css" rel="stylesheet" />
+    <link href="./css/contact.css" rel="stylesheet" />
     <script src="./scripts/script.js"></script>
     <link
       rel="stylesheet"
@@ -71,7 +72,7 @@
         </div>
       </div>
       <div class="navigation-row">
-        <h2 class="logo">PRICKLES & CO.</h2>
+        <a href="./" class="logo"><h2>PRICKLES & CO.</h2></a>
         <a href="#" class="hamburger">
           <i class="fas fa-bars" id="hamburger"></i>
         </a>
@@ -124,42 +125,54 @@
       </section>
       <section class="featured">
         <div class="product">
-          <h4>CACTI</h4>
-          <a class="button" href="#">Shop Collection</a>
           <img src="./img/cacti.png" alt="Shop Cacti plants" />
-        </div>
-        <div class="product plants">
-          <h4>PLANTS</h4>
+          <a href="#" class="product-name"><h4>CACTI</h4></a>
+          <span class="underline">_</span>
           <a class="button" href="#">Shop Collection</a>
+        </div>
+        <div class="product">
           <img src="./img/plants.png" alt="Shop plants" />
-        </div>
-        <div class="product succulents">
-          <h4>SUCCULENTS</h4>
+          <a href="#" class="product-name"><h4>PLANTS</h4></a>
+          <span class="underline">_</span>
           <a class="button" href="#">Shop Collection</a>
+        </div>
+        <div class="product">
           <img src="./img/succulents.png" alt="Shop Succulents" />
+          <a href="#" class="product-name"><h4>SUCCULENTS</h4></a>
+          <span class="underline">_</span>
+          <a class="button" href="#">Shop Collection</a>
         </div>
       </section>
       <section class="about-us">
         <div class="about-text">
           <h2>About us</h2>
+          <span class="underline">_</span>
+          <br />
           <p>
             I'm a paragraph. Click here to add your own text and edit me. It’s
             easy. Just click “Edit Text” or double click me to add your own
             content and make changes to the font. Feel free to drag and drop me
             anywhere you like on your page. I’m a great place for you to tell a
-            story and let your users know a little more about you.</p><br> <p>This is a
-            great space to write long text about your company and your services.
-            You can use this space to go into a little more detail about your
-            company. Talk about your team and what services you provide.
+            story and let your users know a little more about you.
+          </p>
+          <br />
+          <p>
+            This is a great space to write long text about your company and your
+            services. You can use this space to go into a little more detail
+            about your company. Talk about your team and what services you
+            provide.
           </p>
         </div>
-        <div>
-          <img src="./img/plants_in_bathroom.png" alt="Plants in your bathroom" />
+        <div class="one-column img-container">
+          <img
+            src="./img/plants_in_bathroom.png"
+            alt="Plants in your bathroom"
+          />
         </div>
-        <div>
+        <div class="one-column img-container">
           <img src="./img/holding_a_leaf.png" alt="Green leaf" />
         </div>
-        <div>
+        <div class="img-container">
           <img src="./img/girl-in-garden.png" alt="Lady in green garden" />
         </div>
         <div class="special-offer">
@@ -170,18 +183,29 @@
       <section class="contact">
         <div class="form-container">
           <h3>FOR SPECIAL REQUESTS & ORDERS</h3>
+          <span class="underline">_</span>
           <form>
-            <label for="first-name">First Name</label>
-            <input type="text" name="first-name" id="first-name" required />
-            <label for="last-name">Last Name</label>
-            <input type="text" name="last-name" id="last-name" required />
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" required />
-            <label for="phone">Phone</label>
-            <input type="number" name="phone" id="phone" required />
-            <label for="message">Message</label>
-            <textarea name="message" id="message" required></textarea>
-            <button type="submit">Send</button>
+            <label class="half-width">
+              First Name *
+              <input type="text" name="first-name" id="first-name" required />
+            </label>
+            <label class="half-width">
+              Last Name *
+              <input type="text" name="last-name" id="last-name" required />
+            </label>
+            <label>
+              Email *
+              <input type="email" name="email" id="email" required />
+            </label>
+            <label>
+              Phone
+              <input type="number" name="phone" id="phone" />
+            </label>
+            <label>
+              Message
+              <textarea name="message" id="message"></textarea>
+            </label>
+            <button type="submit" class="button">Send</button>
           </form>
         </div>
       </section>
@@ -203,25 +227,34 @@
         </section>
         <section>
           <h4>HELP</h4>
-          <a href="#">Shipping & Returns</a>
-          <a href="#">Privacy Policy</a>
-          <a href="#">FAQ</a>
+          <ul class="footer-nav">
+            <li><a href="#">Shipping & Returns</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
         </section>
       </div>
-      <div class="subscription">
+      <div class="subscription-box">
         <h4>Subscribe</h4>
         <form>
           <label>
             Enter your email here *
+            <br />
             <input type="email" name="email" />
           </label>
           <button type="submit" class="button">Subscribe Now</button>
         </form>
       </div>
       <div class="social-container">
-        <a href="#"></a>
-        <a href="#"></a>
-        <a href="#"></a>
+        <a href="https://www.facebook.com/wix" target="_blank">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://pinterest.com/wixcom/" target="_blank">
+          <i class="fab fa-pinterest-p"></i>
+        </a>
+        <a href="https://instagram.com/wix" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
       </div>
       <div class="map-container">
         <iframe
@@ -233,9 +266,9 @@
           loading="lazy"
         ></iframe>
       </div>
-      <p>
+      <p class="footer-text">
         © 2023 by Prickles & Co. Proudly created with
-        <a href="https://wix.com">Wix.com</a>
+        <a href="https://wix.com" target="_blank">Wix.com</a>
       </p>
     </footer>
   </body>

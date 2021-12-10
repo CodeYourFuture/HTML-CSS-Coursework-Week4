@@ -8,18 +8,15 @@
   font-weight: 400;
   color: var(--red-brown);
 }
-
 header svg {
   height: 2rem;
   fill: var(--red-brown);
 }
-
 .search-box input {
   width: 15rem;
   padding: 0.8rem 0 0.8rem 2rem;
   border: 1px solid var(--red-brown);
 }
-
 .search-box input:hover,
 .search-box input:focus {
   border: 2px solid var(--red-brown);
@@ -72,7 +69,7 @@ header svg {
 
 .navigation-row {
   width: 100%;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   display: grid;
   grid-template-areas:
     "logo logo . hamb"
@@ -82,7 +79,16 @@ header svg {
   grid-area: logo;
   padding: 0.5rem 0;
   color: var(--red-brown);
+  text-decoration: none;
+  transition: all 0.3s ease-in;
+}
+.logo h2 {
+  font-family: var(--heading-font);
+  font-weight: 400;
   font-size: 2rem;
+}
+.logo:hover{
+  color:var(--black);
 }
 .hamburger {
   grid-area: hamb;
@@ -97,7 +103,9 @@ header svg {
 .dynamic-text {
   grid-area: dtext;
   color: var(--red-brown);
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.3rem;
+  font-family: var(--heading-font);
+  font-weight: 400;
 }
 .navigation {
   position: absolute;
@@ -127,6 +135,9 @@ header svg {
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
+.login:hover {
+  color: var(--red-light);
+}
 .login.open svg {
   height: 2rem;
   margin-right: 0.7rem;
@@ -152,31 +163,57 @@ header svg {
   text-decoration: none;
   color: var(--red-brown);
   font-size: 1.5rem;
+  transition: all 0.3s ease-in;
+}
+.navigation li a:hover {
+  color: black;
 }
 
 @media screen and (min-width: 900px) {
+  header {
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: 0 -4rem;
+    padding: 0 4rem;
+    background-color: var(--light-grey);
+  }
   .login {
     display: flex;
   }
+  .logo {
+    margin-right: 2rem;
+  }
   .navigation-row {
-    grid-template-areas: "logo nav nav nav . . dtext dtext";
+    grid-template-columns: auto repeat(7, 1fr);
+    grid-template-areas: "logo nav nav nav nav . dtext dtext";
+    margin-bottom: 0rem;
+  }
+  .login {
+    font-size: 1.3rem;
   }
   .dynamic-text {
-    text-align: right;
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
   }
   .navigation {
     display: flex;
     flex-direction: row;
-    height: 2rem;
+    align-items: center;
+    height: 100%;
     position: static;
-    width: 40%;
-    top: auto;
-    right: auto;
+    width: 100%;
     padding: 0;
   }
   .navigation li {
     height: 100%;
     justify-self: flex-start;
+    display: flex;
+  }
+  .navigation li a {
+    font-size: 1.3rem;
   }
   .hamburger {
     display: none;
