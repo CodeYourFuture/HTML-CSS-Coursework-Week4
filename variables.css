@@ -1,0 +1,11 @@
+/* Adding variables with colours and fonts */
+:root {
+  --red_brown: #a05941;
+  --green_black: #133032;
+  --light_grey: #ededee;
+  --white: #fff;
+  --trans_white: rgba(0, 0, 0, 0.75);
+
+  --headings: url(https://fonts.google.com/specimen/Fjalla+One);
+  --subheadings: url(https://fonts.google.com/specimen/Outfit);
+}
