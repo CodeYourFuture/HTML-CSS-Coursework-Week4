@@ -1,0 +1,56 @@
+:root {
+    --red-brown: #A05941;
+    --green-black: #133032;
+    --light-grey: #EDEDEE ; 
+    --white: #fff;
+    --transparent-white: rgba(0,0,0,0.75);
+    --fjalla-one: "Fjalla One", sans-serif;
+    --outfit: 'Outfit', sans-serif;
+}
+
+* {
+    /* outline: 1px solid red; */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;  
+    background-color: var(--light-grey);
+    color: var(--red-brown);
+    margin: 0 auto;
+    color: var(--red-brown);
+    font-family: var(--outfit);  
+}
+
+main {   
+    margin: 0 auto;
+}
+
+img {
+    display: block;
+    max-width: 100%;    
+    height: auto;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid var(--red-brown);
+    display: block;    
+}
+
+button {
+    padding: 12px 35px;
+    background: var(--red-brown);
+    color: var(--white);
+    border-style: none;
+}
+
+hr {
+    background-color: var(--red-brown);
+    height: 4px;
+    width: 20px;
+    border-style: none;
+    margin: 0 auto;
+}

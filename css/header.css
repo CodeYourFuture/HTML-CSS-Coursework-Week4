@@ -1,0 +1,116 @@
+/* Header */
+
+header {  
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 30% 40% 30%;
+    grid-gap: 6px;
+    grid-template-areas: 
+    "search bag-icon"
+    "heading hamburger-icon"
+    "call-us-now .";    
+    align-items:center;
+    padding: 20px 20px 30px 20px;    
+    font-family: var(--fjalla-one);
+}
+
+.search {    
+    grid-area: search;     
+    align-self: center;
+    justify-self: left;         
+}
+
+.hamburger-icon {
+    grid-area: hamburger-icon;   
+    justify-self: right;       
+}
+
+.heading {
+    grid-area: heading; 
+    font-size: 1.4rem; 
+    font-weight: 400;
+}
+
+.call-us-now {
+    grid-area: call-us-now;
+    font-size: 0.9rem; 
+    font-weight: 200;  
+    letter-spacing: 0.2rem;  
+}
+
+header input {
+    background-color: var(--light-grey);
+}
+
+::placeholder {
+    color: var(--red-brown);
+}
+
+.bag-icon {
+    grid-area: bag-icon;
+    justify-self: right;    
+}
+
+nav ul{
+    display: none;
+}
+
+.login-icon, .log-in {
+    display: none;
+}
+
+@media screen and (min-width: 994px) {
+        /* Header */     /* Navbar */
+
+        header {
+            display: grid;
+            grid-template-columns: 20% 60% 5% 10% 5%;
+            grid-template-rows: 50% 50%;
+            grid-template-areas: 
+            "search search login-icon log-in bag-icon"        
+            "heading nav call-us-now call-us-now call-us-now";    
+            align-items:center;
+            justify-content: center;  
+        }   
+    
+        .hamburger-icon {
+            display: none;
+        }
+    
+        nav ul{
+            display: block;
+        }  
+    
+        .login-icon {
+            display: block;
+            grid-area: login-icon;
+            justify-self: left;
+        }
+    
+        .log-in {
+            display: block;
+            grid-area: log-in;
+            justify-self: center;
+            font-family: 'Outfit', sans-serif; ;
+        }
+    
+        nav {
+            grid-area: nav;
+            align-self: left;
+            font-family: Outfit, sans-serif;        
+        }
+    
+        .call-us-now {
+            justify-self: right;        
+        }
+    
+        nav ul li{
+            float: left;
+            list-style: none;
+        }
+    
+        nav ul li {
+            width: 70px;
+            text-align: center;
+        }
+}

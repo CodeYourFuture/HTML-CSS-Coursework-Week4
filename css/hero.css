@@ -1,0 +1,62 @@
+/* Hero */
+.hero {    
+    color:#fff;
+    height: 80vh;
+    background-color: var(--dark-green);
+    background-image: url('../img/hero.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+    margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Fjalla One', sans-serif;    
+}
+
+.hero p {
+    font-family: var(--outfit);
+    font-size: 0.9rem;
+    text-decoration: underline;
+    padding: 60px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 200;
+    letter-spacing: 0.6rem;
+    padding-bottom: 25px;
+}
+
+.hero h2 {
+    font-family: var(--outfit);
+    font-size: 1.1rem;
+    font-weight: 200;
+    padding-bottom: 32px;
+}
+
+@media screen and (min-width: 994px) {
+  
+        /* Hero */
+
+        .hero {
+            height: 100vh;
+        }
+    
+        .hero p {
+            font-size: 1.3rem;
+        }
+        
+        .hero h1 {
+            font-size: 6.2rem;
+            letter-spacing: 1.1rem;
+        }
+        
+        .hero h2 {
+            font-size: 1.2rem;
+        }
+}
+
+
