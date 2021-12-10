@@ -1,3 +1,112 @@
 /* Add your CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
+.main {
+  width: 100%;
+  text-align: center;
+  background: var(--gray);
+}
+.hero {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: url(../img/hero.webp);
+  color: var(--white);
+  align-items: center;
+  padding: 4em 2em;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero_header_logo {
+  margin: auto 10px;
+}
+.hero_header_logo img {
+  width: 100%;
+  max-width: 100%;
+}
+.hero_header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.hero h1 {
+  font-size: 8vw;
+}
+
+.hero_header_text {
+  border-bottom: 4px solid var(--white);
+  padding-bottom: 1.5em;
+}
+
+.hero h3 {
+  font-family: fantasy;
+  font-size: 5vw;
+}
+.hero_header,
+.hero_header_text,
+.hero h1,
+.hero h3 {
+  margin: 1em auto;
+}
+.collection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+  font-size: 2em;
+  color: var(--gray);
+}
+.collection_cacti {
+  background: url(../img/CACTI.webp);
+  height: 80vh;
+  padding-top: 1em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.collection h1 {
+  color: var(--red);
+}
+.collection hr {
+  border: 5px solid var(--red);
+  margin: 1em auto;
+  width: 1em;
+}
+.collection_plants {
+  background: url(../img/plants.webp);
+  height: 80vh;
+  padding-top: 1em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.collection_succulents {
+  background: url(../img/succulent.webp);
+  height: 80vh;
+  padding-top: 1em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (min-width: 481px) {
+  .hero {
+    background: url(../img/hero.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  .collection {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .collection_cacti,
+  .collection_plants,
+  .collection_succulents {
+    padding: 0em 2em;
+    width: 30%;
+  }
+}
