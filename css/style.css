@@ -36,14 +36,11 @@ html {
 
 h1 {
   grid-column: 1/-1;
-  padding: 0 1rem;
   margin-top: 1rem;
   font-family: "Questrial", sans-serif;
   font-weight: 400;
   line-height: 1.3em;
   font-size: 32px;
-  display: flex;
-  flex-direction: column;
 }
 
 .button {
@@ -71,6 +68,10 @@ h1 {
   padding: 0;
   text-align: center;
 }
+.home h1 {
+  display: flex;
+  flex-direction: column;
+}
 
 .home p {
   grid-column: 1/-1;
@@ -89,9 +90,8 @@ h1 {
 
 .home-image {
   grid-column: 1/-1;
-  height: 300px;
   width: 100%;
-  min-height: 250px;
+  min-height: 200px;
   margin-top: 2rem;
   overflow: hidden;
 }
@@ -99,12 +99,13 @@ h1 {
 .home-image img {
   width: 100%;
   object-fit: cover;
+  object-fit: cover;
 }
 
 .online-order {
   grid-row: 5/-1;
   grid-column: 1/-1;
-  padding: 0.7rem 0;
+  padding: 0.6rem 0;
   background-color: rgb(235, 224, 245);
   display: flex;
   flex-direction: column;
@@ -117,15 +118,37 @@ h1 {
 }
 
 .cards {
-  grid-column: 1/-1;
-  padding: 0 1rem;
+  grid-column: 2/3;
   margin-top: 1rem;
   font-family: questrial, sans-serif;
   text-align: center;
+  overflow: hidden;
+  width: 270px;
+  height: auto;
+}
+
+.intro-section h1 {
+  grid-column: 2/3;
+  width: auto;
+  margin-top: 1.8rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.intro-card span svg {
+  width: 80px;
+  height: 80px;
 }
 
 .cards h3 {
-  font-size: 1.5rem;
+  margin-top: 1rem;
+  line-height: 1.3em;
+  font-size: 1.4rem;
+}
+
+.cards p {
+  font-size: 16px;
+  line-height: 1.7em;
 }
 
 @media screen and (min-width: 650) {
