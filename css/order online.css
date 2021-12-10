@@ -1,0 +1,25 @@
+
+:root {
+    --heading-font: 'Questrial', sans-serif;
+    --button-font: 'Raleway', sans-serif;
+    --body-font:'Roboto', sans-serif;
+    --main-color: #fff;
+    --secondary-color: #000;
+    --background-color-1: #f5e8ff;
+    --background-color-2 :#E6FAC0;
+    --footer-color: #304B2A;
+    --button-hover: #5E7D1F;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+} 
+
+main {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(14, 150px);
+}

@@ -333,7 +333,7 @@ input[type=email] {
 }
 
 input[type=email]:hover {
-    color: var(--button-hover);
+    border-bottom: var(--button-hover) 3px solid;
 }
 
 
