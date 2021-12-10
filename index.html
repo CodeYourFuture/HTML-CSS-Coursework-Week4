@@ -16,86 +16,91 @@
 
     <title>Responsive grid project</title>
 </head>
+   <!-- Add your markup here -->
+<body class="containers">
 
-<body>
-
-    <!-- Add your markup here -->
-    <!-- header -->
-    <header class="navbar">
-        <input id="search" type="text" name="search" placeholder="search...">
-         <img src="#" alt="basket" class="basket"/>
-         <div class="subhead">
+       <nav class="navbar"> <!-- container 1 -->
+            <input id="search" type="search" name="search" placeholder="search...">
+            <img src="#" alt="basket" class="basket"/>
+            <div class="subhead">
             <h1>PRICKLES & CO.</h1>
             <i class="fas fa-bars fa-2x"></i>
             <p>We deliver to Your Doorstep</p>
             <div class="header-image"></div>
+        </nav>
 
-    </header>
-    <main class="grid-homepage">
-
-        <section class="products"> <!-- one -->
+        <main class="products"> <!-- container 2 -->
             <img class="cacti-image" src="img/cacti.webp" alt="flower header image"/>
             <img class="plant-image" src="img/plants.webp" alt="flower header image"/>
             <img class="succullent-image" src="img/succulents.webp" alt="flower header image"/>
-        </section>
+        </main>
 
-        <section class="features"> <!-- two -->
-            <h2>ABOUT US</h2>
-            <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.</p>
-            <p>This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide.</p>
-            <img class="wheel-image" src="img/wheelbarrow.webp" alt="flower header image"/>
+        <section id="features"> <!-- container 3 -->
+            <div>
+                <h3 class="about-topic">ABOUT US</h3>
+                <p class="about-message">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+                <p class="about-message">This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide.</p>
+            </div>
+            
+            <img class="wheel-image" src="img/wheelbarrow.webp" alt="wheel barow image"/>
             <img class="leaf-image" src="img/leaf.webp" alt="flower header image"/>
             <img class="lady-image" src="img/lady.webp" alt="flower header image"/>
-            <div><p>BUY ONLINE NOW & GET 10% OFF!</p>
-            <BUTTON>Shop Now</BUTTON>
+            <div>
+                <p>BUY ONLINE NOW & GET 10% OFF!</p>
+                <button class="button 2">Shop Now</button>
             </div>
         </section>
-        <section class="form">
-            <h3></h3>
-            <form action="/action_page.php" target="_blank">
+
+        <section id="form"><!-- container 4 -->
+            <h3>FOR SPECIAL REQUESTS & ORDERS</h3>
+            <form class="form" action="/action_page.php" target="_blank">
                 <label for="fname" class="label">First name *</label>
-                <p><input id="fname" type="text" name="Name" required></p>
+                <p><input id="fname" type="text" name="name" required></p>
                 <label for="lname" class="label">Last name *</label>
-                <p><input id="lname" type="text" name="Name" required></p>
+                <p><input id="lname" type="text" name="name" required></p>
                 <label for="email" class="label">Email *</label>
-                <p><input id="email" type="text" name="Email" required></p>
+                <p><input id="email" type="text" name="email" required></p>
                 <label for="phone" class="label">Phone *</label>
                 <p><input id="phone" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required></p>
                 <label for="message" class="label">Message *</label>
-                <p><textarea id="message" cols="30" rows="10"></textarea>
+                <p><textarea id="message" type="text" cols="30" rows="10"></textarea>
                 <p><button type="submit" class="submit">Send</button></p>
+            </form>
+                <!-- <img class="leaves-image" src="img/leaves.webp" alt="plant leaves"/> -->
         </section>
-    </main>
 
+    <footer class="footer"> <!-- container 5 -->
+        <div class="store">
+            <h3>OUR STORE</h3>
+            <p>Address: 500 Terry Francois Street San</p>
+            <p>Francisco, CA 94158</p>
+            <p>Phone: 123-456-7890</p>
+            <p>Email:  info@mysite.com</p>
+        </div>
+        <div class="store">
+            <h3>OPENING HOURS</h3>
+            <p>Mon - Fri: 7am - 10pm</p>
+            <p>​​Saturday: 8am - 10pm</p>
+            <p>​Sunday: 8am - 11pm</p>
+        </div>
+        <div class="store">
+            <h3>HELP</h3>
+            <p>Shipping & Returns</p>
+            <p>​​Privacy Policy</p>
+            <p>​FAQ</p>
+        </div>
+        <div class="store">
+            <h3>SUBSCRIBE</h3>
+            <p><label for="email" class="label">Enter your email  here *</label></p>
+            <p>​​<input id="email" class="enter-mail" type="text" name="email" required></p>
+            <p>​<button type="submit" class="subscribe">Subscribe Now</button></p>
+        </div>
+        <div class="store">social icons</div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.840347814382!2d-122.38929098474847!3d37.770341520187756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7fc4fe5e0af3%3A0x11c548b59491f791!2s500%20Terry%20A%20Francois%20Blvd%206th%20floor%2C%20San%20Francisco%2C%20CA%2094158%2C%20USA!5e0!3m2!1sen!2suk!4v1639046417862!5m2!1sen!2suk" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </footer>    
     <!-- Please leave this in to credit the creators of this design -->
 </body>
-<footer class="footer">
-    <div class="store">
-        <h4>OUR STORE</h4>
-        <p>Adress: 500 Terry Francois</p>
-        <p>Street San Francisco, CA 94158</p>
-        <p>Phone: 123-456-7890</p>
-        <p>Email:  info@mysite.com</p>
-    </div>
-    <div>
-        <h4>OPENING HOURS</h4>
-        <p>Mon - Fri: 7am - 10pm</p>
-        <p>​​Saturday: 8am - 10pm</p>
-        <p>​Sunday: 8am - 11pm</p>
-    </div>
-    <div>
-        <h4>HELP</h4>
-        <p>Shipping & Returns</p>
-        <p>​​Privacy Policy</p>
-        <p>​FAQ</p>
-    </div>
-    <div>
-        <h4>SUBSCRIBE</h4>
-        <p><label for="email" class="label">Enter your email  here *</label></p>
-        <p>​​<input id="email" type="text" name="Email" required></p>
-        <p>​<button type="submit" class="submit">Send</button></p>
-    </div>
-    <div>social icons</div>
-</footer>
+     <span >© 2023 by Prickles & Co. Proudly created with <a href="https://manage.wix.com/account/sites">Wix.com</a></span>
+
 
 </html>

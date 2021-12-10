@@ -8,20 +8,22 @@
     --white: #FFF; 
     --transparent-white: rgba(0,0,0,0.75);
     --black: #000;
+
 }
 
 body{
     background-color: var(--light-grey);
-    margin: 0; 
+    margin: 0;
+    font-family: 'outfit', 'sans-serif';
 }
-/*
+
 main{
-    text-align: center;
-    background-color: var(--white);
-    padding: 2.5rem 0;
-    display: flex;
-    justify-content: center;
-}*/
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+}
 
 
 /* font-family: 'Fjalla One', sans-serif;
@@ -29,17 +31,168 @@ font-family: 'Outfit', sans-serif; */
 
 /* header */
 .header-image {
-    background-image: url("../img/header-img.webp");
+    background-image: url("img/header-img.jpeg");
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 475px;
-    width:auto;
-    object-position: 50% 100%;
 }
 
+/* body */
 
+.containers {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 2.2fr 1.2fr 1.2fr 1fr;
+    grid-template-areas:
+      "nav"
+      "main"
+      "features"
+      "form"
+      "footer";
+    /*grid-gap: 1rem; take out*/
+    /* add font family here */
+    font-weight: 800;
+    font-size: 12px;
+    background: var(--light-grey);
+    color: var(--red-brown);
+    
+  }
 
+  /* container 1 */
+  nav { 
+    grid-area: nav;
+    text-align: center;
+  }
 
+  /* container 1 end */
+  
+  /* container 2 */
+  main {
+    grid-area: main;
+    
+  }
 
-/* main */
+  .products{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+/*
+  .products > img {
+      margin: 3rem 0 ;
+  } */
+  /* container 2 end */
+  
+  /* container 3 */
+  #features {
+    grid-area: features;
+    text-align: center;
+  }
 
+    .about-topic {
+    font-family: 'outfit', 'sans-serif';
+    /*font-size: 4.5rem;
+    letter-spacing: 1rem;*/
+  }
+
+   .about-message {
+    font-family: 'outfit', 'sans-serif';
+    font-size: 1rem;
+    box-sizing: border-box;
+    padding: 1rem 5rem;
+    line-height: 1.2rem;
+  }
+  /* container 3 end */
+  
+  /* container 4 */
+  #form {
+    grid-area: form;
+    color: var(--black);
+    padding: 10%;
+    background: var(--white);
+  }
+
+  .form > label {
+    /*font-family: 'outfit', 'sans-serif';*/
+    font-weight: 200;
+    font-size: 1.2rem; 
+  }
+
+  input[type=text],
+  input[type=tel] {
+      width:80%;
+      padding: 1rem;
+      border: 2px solid var(--black);
+      color: var(--black);
+  }
+
+  textarea{
+    border: 2px solid var(--black);
+  }
+  .submit{
+      border: none;
+      width: 97%;
+      padding: 40px 30px;
+      background:var(--red-brown);
+      color: var(--white);
+      font-size: 1rem;
+  }
+
+  
+  /* container 4 end */
+  
+  /* container 5 */
+  footer {
+    grid-area: footer;
+    background: var(--green-black);
+    color: var(--white);
+    text-align: center;
+}
+
+  .store{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3rem 0;
+}
+
+.store > p{
+    font-family: 'outfit', 'sans-serif';
+    font-size: 1rem;
+   line-height: 0;
+}
+.store > h3 {
+    font-family: 'outfit', 'sans-serif';
+    font-size: 2rem;
+    letter-spacing: 1rem;
+}
+
+.enter-mail {
+    width:90%;
+    padding: 5rem;
+    background-color: var(--green-black);
+    border: 3px solid var(--white);
+    color:var(--white);
+}
+
+.subscribe{
+    border: none;
+    width: 97%;
+    padding: 40px;
+    margin-top: 0;
+    background: var(--white);
+    color: var(--green-black);
+    font-size: 3rem;
+  }
+  /* container 5 end */
+
+  /* copyright */
+  span > a {
+    text-align: center;
+    display: block;
+    font-family: inherit;
+    text-decoration: none;
+    font-weight: bold;
+    /* margin: 1rem; */
+  }
