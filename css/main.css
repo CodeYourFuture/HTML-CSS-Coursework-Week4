@@ -1,5 +1,10 @@
 /* Profile */
 
+.header__nav img {
+    display: unset;
+    background-color: tomato;
+}
+
 .profile {
     display: flex;
     justify-content: center;
@@ -115,4 +120,15 @@
     font-size: var(--font-size--15px);
     font-weight: var(--font-weight--400);
     line-height: 1.5em;
+}
+
+
+/* HIDED */
+
+.intro .buttons {
+    display: none;
+}
+
+.header__nav--link {
+    display: none;
 }

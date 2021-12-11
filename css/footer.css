@@ -1,3 +1,7 @@
+.footer {
+    padding: 1rem 1rem;
+}
+
 .footer__container {
     padding: 0;
     margin: 0;
@@ -50,5 +54,5 @@
     font-family: var(--font-quicksand);
     font-size: var(--font-size--14px);
     font-weight: var(--font-weight--400);
-    margin: 2rem 1rem;
+    margin: 2rem 0rem;
 }
