@@ -1,0 +1,15 @@
+.footer {
+    background-color: rgb(6, 63, 57);
+    color: white;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+
+
+.footer form input[type=submit] {
+    background-color: white;
+    color: black;
+
+
+}
