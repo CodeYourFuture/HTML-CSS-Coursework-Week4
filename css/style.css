@@ -269,6 +269,71 @@ img {
   border-radius: 50%;
 }
 
+.social-media {
+  grid-column: 1/-1;
+}
+
+.social-media h1 {
+  padding: 2rem 0;
+}
+
+.social-media .background-wrapper {
+  margin-top: -120px;
+  grid-column: 1/-1;
+  height: 200px;
+  background-color: rgb(76, 92, 63);
+}
+
+.footer-image {
+  width: 131px;
+}
+
+#lettuce {
+  transform: rotate(15deg);
+  -webkit-transform: rotate(15deg);
+  height: 159px;
+}
+#cherry {
+  transform: rotate(345deg);
+  -webkit-transform: rotate(345deg);
+  height: 148px;
+}
+#papaya {
+  transform: rotate(15deg);
+  -webkit-transform: rotate(15deg);
+  height: 150px;
+}
+#orange {
+  padding-bottom: 50px;
+  transform: rotate(345deg);
+  -webkit-transform: rotate(345deg);
+}
+.social-media .image-wrapper {
+  padding: 0 10px;
+  z-index: 10;
+  grid-column: 1/-1;
+  display: inline-flex;
+}
+
+footer {
+  background-color: rgb(76, 92, 63);
+  grid-column: 1/-1;
+  color: #fff;
+}
+
+footer a,
+footer .nav-link {
+  color: #fff;
+}
+
+.navbar-access {
+  grid-column: 2/8;
+}
+
+.footer-media {
+  grid-column: 2/8;
+}
+
 @media screen and (min-width: 650) {
   h1 {
     font-size: 55px;
