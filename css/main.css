@@ -1,3 +1,399 @@
-/* Add your CSS here */
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Outfit:wght@200&display=swap');
+:root {
+    --red-brown: #A05941;
+    --green-black: #133032;
+    --light-grey: #EDEDEE;
+    --white: #FFF;
+    --transparent-white: rgba(0,0,0,0.75);
+    --primary-text: 'Fjalla One', sans-serif;
+    --secondary-text: 'Outfit', sans-serif;
 
-/* Dont' forget to link this file to your HTML in the <head> */
+}
+.text_1 {
+    font-family: var(--primary-text);
+}
+.text_2 {
+    font-family: var(--secondary-text);
+}
+.btn {
+    background: var(--red-brown);
+    color: var(--white);
+    padding: 5%;
+    border: none;
+    /* width: ; */
+
+}
+.tc {
+    text-align: center;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    margin: 0;
+    background: var(--light-grey);
+    font-family: var(--primary-text);
+    
+}
+
+header {
+    color: var(--red-brown);
+    background: var(--white);
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 0 40px;
+    
+    
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    height: 100%;
+    width: 25vw;
+    justify-content: space-between;
+
+  
+    
+}
+.search-icon {
+    font-size: 1.5rem;
+    /* height: 100%; */
+}
+.search-bar::placeholder {
+    color: var(--red-brown);
+    font-size: 1rem;
+}
+.search-bar {
+    border: none;
+    height: 40px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    color: var(--red-brown);
+}
+.links{
+    display: none;
+    
+}
+ul li {
+    list-style: none;
+    font-family: var(--secondary-text);
+    
+}
+a {
+    font-size: 1.5rem;
+}
+
+
+
+
+.hamburger {
+
+    height: 20px;
+    width: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.line {
+    background-color: var(--red-brown);
+    height: 2px;
+}
+.main {
+    background-image: url('../images/main-bg.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75vh;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.logo-text1 {
+    border-bottom: 2px solid white;
+    position: absolute;
+    transform: translate(-195%, 73%);
+    transform: translateY(-15%);
+} 
+.logo-text2 {
+    border-bottom: 2px solid white;
+    position: absolute;
+    transform: translate(49%, 73%);
+    /* transform: translateY(-15%); */
+} 
+.main {
+    position: relative;
+}
+.dark-bg {
+    background: black;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    opacity: 0.1;;
+}
+.main h2{
+   font-size: 2.25rem;
+   letter-spacing: 0.5rem;
+   
+}
+.main p {
+    font-size: 1.25rem;
+    font-weight: 100;
+    color: white;
+}
+.images {
+    display: flex;
+    flex-direction: column;
+    /* position: relative; */
+}
+.images div {
+    /* position: relative; */
+    margin: 25px 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--red-brown);
+    font-size: 1.25rem;
+    letter-spacing: 5px;
+    /* border-bottom: 2px solid var(--red-brown); */
+}
+/* .image-texts {
+    position: absolute;
+    top: 25%
+}  */
+
+img {
+    width: 100%;
+    height: 100%;
+    
+}
+
+/* .logo-image::before {
+    content: "hi";
+    display: block;
+    height: 30px;
+    width: ;
+
+}
+.logo-image::after {
+    content:"2023";
+    display: inline-block;
+    color: white;
+    
+} */
+.about-us {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+    "txt txt txt txt txt txt" 
+    "img1 img1 img1 img1 img1 img1"
+    "img2 img2 img2 img2 img2 img2"
+    "img3 img3 img3 img3 img3 img3"
+    "banner banner banner banner banner banner";
+    color: var(--red-brown);
+    font-family: var(--secondary-text);
+    background: var(--white);
+    margin: 0 0;
+    text-align: center;
+}
+.abt {
+    grid-area: txt;
+    /* height: fit-content; */
+}
+.abt p {
+    margin: 2%;
+}
+.img1 {
+    grid-area: img1;
+    /* height: fit-content; */
+}
+.img2 {
+    grid-area: img2;
+    /* height: fit-content; */
+}
+.img3 {
+    grid-area: img3;
+    
+
+}
+.buy-online {
+    background: var(--green-black);
+    color: var(--white);
+    text-align: center;
+    font-family: var(--primary-text);
+    font-size: 3.5rem;
+    padding: 0 ;
+    grid-area: banner;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buy-online button {
+    padding: 5%;
+    /* letter-spacing: 1%; */
+}
+.form {
+    background: url('../images/bg-img2.webp');
+    height: 100vh;
+    /* padding: 3%; */
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+form {
+    display: flex;
+    flex-direction: column;
+    background: var(--white);
+    justify-content: space-between;
+    font-family: var(--secondary-text);
+    opacity: 0.9;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding: 2%; */
+    height: 80%;
+}
+.form-heading {
+    text-align: center;
+}
+form input {
+    height: 20px;
+    /* padding: 3%; */
+}
+
+input[id="message"] {
+    height: 200px;
+}
+.store-info h4{
+    letter-spacing: 0.5rem;
+}
+
+.info-box {
+    margin-bottom: 5rem;
+}
+.info-box:nth-of-type(3) p{
+    text-decoration: underline;
+}
+.store-info {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 5%;
+   
+}
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    padding: 3%;
+    margin: 3%;
+
+}
+.subscribe input {
+    width: 80%;
+    height: 50px;
+    padding: 3%;
+    margin: 3%;
+}
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 3% 40%;
+    width: 150px;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    font-family: var(--secondary-text);
+    background: var(--green-black);
+    margin-top: 20%;
+}
+.map-pic {
+    width: 100vw;
+    opacity: 0.5;
+}
+
+.chat {
+    position: sticky;
+    bottom: 10px;
+    z-index: 2;
+    left: 100%;
+    width: 50px;
+    background: blue;
+    height: 50px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+}
+.copyright {
+    background: var(--light-grey);
+    color: var(--red-brown);
+}
+
+
+/* .overlay {
+	position: absolute;
+	top: 4000px;
+	left: 0;
+	background: #0f3a20;
+    z-index: 2;
+	width: 100%;
+	height: 100%;
+	mix-blend-mode: overlay;
+} */
+
+@media (min-width: 540px) {
+    .links{
+        display: flex;
+        flex-direction: row;
+
+        width: 70vw;
+        justify-content: space-between;
+        padding-left: 3vw;
+        padding-right: 30vw;
+
+    }
+    .hamburger {
+        display: none;
+    }
+    .images {
+        flex-direction: row;
+    }
+    .images div {
+        margin: 0 3%
+    }
+    .about-us {
+        
+        grid-template-areas:
+        "txt txt img1 img1 img2 img2" 
+        "img3 img3 img3 banner banner banner";
+        margin-top: 20%;
+    }
+}
