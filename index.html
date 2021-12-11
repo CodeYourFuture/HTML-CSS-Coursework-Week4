@@ -1,21 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Add a link to your custom CSS here -->
-
+    <link rel="stylesheet" href="css/main.css">
     <title>Responsive grid project</title>
 </head>
+<!-- Add your markup here -->
+<!-- Please leave this in to credit the creators of this design -->
+
 
 <body>
 
-    <!-- Add your markup here -->
+
+    <header class="header-container">
+
+        <div class="search-input">
+            <img src="./plant img/search.png" alt="search" class="search" />
+            <input type="text" id="search" class="search" name="search" placeholder="Search..." />
+
+        </div>
+
+        <div class="login">
+            <div>
+                <img src="./icon-item/login-icon.svg" alt="log in" class="log-in" />
+            </div>
+            <p>Log in</p>
+        </div>
+        <div class="shopping-cart">
+            <img src="./plant img/shopping.png" alt="shopping" class="shopping" />
+        </div>
+        <div class="hamburger"></div>
+        <img src="./plant img/hamburger.png" alt="hamburger" class="hamburger">
 
 
-    <!-- Please leave this in to credit the creators of this design -->
+
+        <nav>
+
+            <ul class="nav-list">
+                <li> <a href="#">Shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">FQA</a></li>
+                <li><a href="#">Contact</a></li>
+
+            </ul>
+        </nav>
+        <div class="header-text">
+
+            <h1 class="website-logo">PRICKLES & CO.</h1>
+            
+                <p class="contuct-number">Call Us Now! 123 - 456 -7890</p>
+
+        </div>
+
+    </header>
+    <main class="main">
+        <article class="hero">
+        <section class="welcome">
+
+            <img src="./plant img/background-img.jpeg" alt="background-img" class="background-img">
+
+            <h3 class="esbt">E S B T</h3>
+            <div class="welcome-logo">
+            <img src="./plant img/first-icon.png" alt="first-icon" class="first-icon">
+            </div>
+            <h3 class="year">2023</h3>
+            <p class="prickles">PRICKLES & CO</p>
+            <p class="indoor">BRING NATURE INDOORS</p>
+            <button class="main-btn">Shop Now</button>
+        </section>
+        </article>
+
+        <section class="product">
+            <div class="cacti">
+                <img src="./plant img/shop-cacti.jpeg" alt="cacti" class="cacti" />
+                <h2 class="heading">CACTI</h2>
+                <button class="shop-btn">Shop Collection</button>
+                
+                
+            </div>
+
+            <div class="plants">
+                <h2 class="heading">PLANTS</h2>
+                <img src="./plant img/shop-plants.jpeg" alt="shop-plants" class="shop-plants" />
+                <button class="shop-btn">Shop Collection</button>
+            </div>
+
+            <div class="succulent">
+                <h2 class="heading">SUCCULENT</h2>
+                <img src="plant img/shop-succulent.jpeg" alt="-shop-succulent" class="-shop-succulent" />
+                <button class="shop-btn">Shop Collection</button>
+            </div>
+        </section>
+
+        <section class="online-container">
+
+            <div class="paragraph">
+                <h1>ABOUT US</h1>
+                <article class="text">I'm a paragraph. Click here to add your own text and edit me. It’s easy.
+                    Just click “Edit Text” or double click me to
+                    add your own content and make changes to the font. Feel free to drag and drop me anywhere you like
+                    on
+                    your page.
+                    I’m a great place for you to tell a story and let your users know a little more about you.</article>
+                <article class="text2">This is a great space to write long text about your company and your services.
+                    You can use this space to go into a
+                    little more detail about your company. Talk about your team and what services you provide.</article>
+            </div>
+
+            <img src="./plant img/shop-inside.jpeg" alt="shop-inside" class="shop-inside">
+            <img src="./plant img/shop-leaf.jpeg" alt="shop-leaf" class="shop-leaf">
+            <img src="./plant img/shop-girl.jpeg" alt="shop-girl" class="shop-girl">
+            
+            <div class="sale">
+                <p class="online">BUY ONLINE NOW & GET 10% OFF</p>
+                <button class="sale-btn">Shop Now</button>
+            </div>
+        </section>
+
+        <section class="form-container">
+            <form>
+                <div class="orders">
+                    <p class="text">FOR SPECIAL REQUESTS & ORDERS</p>
+                </div>
+                <fieldset class="name">
+
+                    <label for="firstname">First Name<span class="requiredstar">*</span></label>
+                    <input id="firstname" type="firstname" name="firstname" />
+
+                    <div class="lastname">
+                        <label for="lastame">Last Name<span class="requiredstar">*</span></label>
+                        <input id="lastname" type="lastname" name="lastname" />
+                    </div>
+                    <div class="email">
+                        <label for="email">Email<span class="requiredstar">*</span></label>
+                        <input id="email" type="email" name="email" />
+                    </div>
+
+                    <div class="phone">
+                        <label for="phone">Phone</label>
+                        <input id="phone" type="phone" name="phone" />
+                    </div>
+                    <div class="message">
+                        <label for="message">Message</label>
+                        <input id="message" type="message" name="message" />
+                    </div>
+                </fieldset>
+            </form>
+            <button>Send</button>
+            <p class="form">Thanks for submitting!</p>
+
+            <div class="plant-form">
+                <img src="./plant img/form-plant.jpeg" alt="form-plant" class="form-plant" />
+
+
+            </div>
+    </main>
+    <footer class="footer">
+
+        <section class="info-footer">
+            <div class="info">
+                <h1>OUR STORE</h1>
+                <ul>
+                    <li>Address: 500 Terry Francois Street San </li>
+                    <li>Francisco, CA 94158</li>
+                    <li>Phone: 123-456-7890</li>
+                    <li>Email: info@mysite.com</li>
+                </ul>
+            </div>
+            <div class="info">
+                <h1>OPENING HOURS</h1>
+                <ul>
+                    <li>Mon - Friday: 7am - 10pm</li>
+                    <li>Saturday: 8am - 10pm</li>
+                    <li>Sunday: 8am - 11pm</li>
+                </ul>
+            </div>
+            <div class="info">
+                <h1> HELP</h1>
+
+                <ul>
+                    <li><a href="#">Shipping & Returns </a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="footer-form">
+            <h1>SUBSCRIBE</h1>
+            <div class="from-email">
+                <label for="email">Enter your email here<span class="requiredstar">*</span></label>
+                <input id="email" type="enter your email here" name="email" />
+            </div>
+            <button class="footer-btn">Subscribe Now </button>
+        </section>
+
+        <section class="social-icon">
+            <img src="./icon-item/facebook-icon.png" alt="facebook-icon" class="facebook-icon" />
+            <img src="./icon-item/pinterest-icon.png" alt="pinterest-icon" class="pinterest-icon" />
+            <img src="./icon-item/instagram-icon.png" alt="instagram-icon" class="instagram-icon" />
+        </section>
+        <div class="location-map">
+            <img src="./plant img/map.jpeg" alt="map">
+        </div>
+        <h6>&#169;2023 by Prickles & Co.Proudly</h6>
+        <p>created with <a href="https://wix.com">Wix.com</a></p>
+    </footer>
+
     <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
+
+
 </body>
 
 </html>
