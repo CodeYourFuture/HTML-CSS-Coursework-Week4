@@ -1,0 +1,154 @@
+.vision-home {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+    "top top top top"
+    "hr hr hr hr"
+
+    "cpj cpj cpj cpj"
+    "info1 info1 info1 info1"
+   
+    "smooth smooth smooth smooth"
+    "info2 info2 info2 info2"
+    
+    "ws ws ws ws"
+    "info3 info3 info3 info3"
+    
+    "ck ck ck ck"
+    "info4 info4 info4 info4"
+    
+    "footer footer footer footer";
+    
+}
+
+
+.home-header {
+    grid-area: top;
+}
+
+.vision-home-hr {
+    grid-area: hr;
+}
+
+.green-area {
+    margin: var(--fm-2em) 0;
+    background-color: var(--light-green);
+}
+
+.header3format {
+    margin-top: var(--fm-1em);
+    font-family: 'Questrial', sans-serif; 
+    font-size: var(--fs-36px);
+    line-height: var(--fm-3rem);
+    text-align: center;
+}
+
+
+/* For the underline I used the solution found at https://stackoverflow.com/questions/23502675/css-underline-less-than-width-of-headline & 
+                                                  http://jsfiddle.net/2k64vs0e/ */
+
+.header3format span {
+        display: inline-block;
+        padding-bottom: 4px;
+        position: relative;
+}
+
+.header3format span::before{
+          content: "";
+          position: absolute;
+          width: 30%;
+          height: 1px;
+          bottom: 0;
+          left: 35%;
+          border-bottom: 2px solid var(--black);
+}
+
+.cpjhr {
+    grid-area: cpj;
+}
+
+.info1-data {
+    grid-area: info1;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.smoothhr {
+    grid-area: smooth;
+}
+
+.info2-data {
+    grid-area: info2;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.wshr {
+    grid-area: ws;
+}
+
+.info3-data {
+    grid-area: info3;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.ckhr {
+    grid-area: ck;
+}
+
+.info4-data {
+    grid-area: info4;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.TwelvePicts {
+    /* 232px X 232px*/
+    width:14.5em;
+    height:14.5em;
+    margin: 2em auto;
+    display:block; /* Necessary in order to centre images */
+}
+
+.uline, .money {
+    margin-top: var(--fm-1em);
+    font-family: 'Questrial', sans-serif; 
+    font-size: var(--fs-24px);
+    line-height: var(--fm-3rem);
+    text-align: center;
+}
+
+/* For the underline I used the solution found at https://stackoverflow.com/questions/23502675/css-underline-less-than-width-of-headline & 
+                                                  http://jsfiddle.net/2k64vs0e/ */
+
+.uline span {
+        display: inline-block;
+        padding-bottom: 4px;
+        position: relative;
+}
+
+.uline span::before{
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 1px;
+          bottom: 0;
+          right: 0%;
+          border-bottom: 2px solid var(--black);
+  
+}
+
+.paragraphtext6 {
+    margin-top: var(--fm-1em);
+    margin-bottom: var(--fm-1em);
+    font-size: var(--fm-1rem);
+    text-align:center;
+    line-height: var(--fm-1p6rem);
+}
+
+.paragraphtext6 span::after {
+    content: "I’m a dish description. Click “Edit\A Menu” to open the Restaurant\A Menu editor and change my text.";
+    white-space: pre;
+}
