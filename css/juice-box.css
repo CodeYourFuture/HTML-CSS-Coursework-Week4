@@ -1,0 +1,49 @@
+.juice-box {
+  background-color: var(--color_0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box img {
+  margin-top: 30px;
+  width: 280px;
+  height: 371px;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.box-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.box-text h1 {
+  font-size: 32px;
+  width: 270px;
+  text-align: center;
+  font-weight: lighter;
+}
+
+.box-text p {
+  width: 255px;
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+.try-it {
+  background-color: rgb(var(--color_0));
+  padding: 20px 55px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: solid;
+  font-size: larger;
+}

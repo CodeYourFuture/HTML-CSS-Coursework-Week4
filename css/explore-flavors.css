@@ -1,0 +1,49 @@
+/* explore-flavors area css */
+
+.explore-flavors {
+  display: flex;
+  flex-direction: column;
+}
+
+.first {
+  align-self: center;
+}
+
+.first h1 {
+  font-size: xx-large;
+  font-weight: normal;
+  text-align: center;
+  width: 300px;
+}
+
+.second {
+  align-self: center;
+}
+
+.second h2 {
+  margin-top: 0;
+  font-size: x-large;
+  font-weight: normal;
+  text-align: center;
+  width: 250px;
+}
+
+.explore-button {
+  display: flex;
+  align-self: center;
+}
+
+.explore-flavors-button {
+  font-size: large;
+  font-weight: lighter;
+  background-color: black;
+  color: seashell;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+.explore-flavors-button:hover {
+  cursor: pointer;
+}

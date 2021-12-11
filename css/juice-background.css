@@ -1,0 +1,27 @@
+.juice-background {
+  background-color: rgb(var(--color_21));
+  margin-bottom: 0;
+}
+
+.juice-background img {
+  width: 100%;
+}
+
+.first-order {
+  background-color: rgb(var(--color_21));
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.first-order p {
+  font-size: 16px;
+  font-weight: normal;
+  text-align: center;
+  width: 250px;
+}
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}

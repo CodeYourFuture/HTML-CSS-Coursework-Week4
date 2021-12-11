@@ -1,0 +1,34 @@
+.green-part {
+  background-color: rgb(var(--color_16));
+}
+.juice-bar-green {
+  display: flex;
+  justify-content: center;
+}
+
+.juice-bar-green img {
+  width: 280px; /* width of container */
+  height: 380px; /* height of container */
+  object-fit: cover;
+  object-position: 70% 0%; /* try 20px 10px */
+}
+
+.boosting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.boosting h1 {
+  width: 195px;
+  text-align: center;
+}
+
+.our-vision {
+  background-color: rgb(var(--color_16));
+  padding: 20px 55px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: solid;
+  font-size: larger;
+}

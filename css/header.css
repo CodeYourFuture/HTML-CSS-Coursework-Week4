@@ -1,0 +1,52 @@
+/*font-family: "Roboto", sans-serif;*/
+
+header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 50px 50px;
+  grid-template-areas:
+    "order order"
+    "juice hamburger";
+}
+
+.hamburger-menu {
+  grid-area: hamburger;
+  display: flex;
+  justify-content: right;
+  padding-right: 30px;
+}
+
+/*.hamburger-menu img {
+}
+
+/* mobile */
+.log-in {
+  display: none;
+}
+
+.juice-bar {
+  grid-area: juice;
+  display: flex;
+  align-items: center;
+}
+
+.juice-bar h1 {
+  text-align: left;
+  font-size: x-large;
+  font-weight: lighter;
+  padding-left: 20px;
+}
+
+.order-online {
+  grid-area: order;
+  font-size: x-large;
+  font-weight: lighter;
+  background-color: black;
+  color: seashell;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.order-online:hover {
+  cursor: pointer;
+}
