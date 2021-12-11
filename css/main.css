@@ -1,10 +1,5 @@
 /* Profile */
 
-.header__nav img {
-    display: unset;
-    background-color: tomato;
-}
-
 .profile {
     display: flex;
     justify-content: center;
@@ -129,6 +124,14 @@
     display: none;
 }
 
-.header__nav--link {
+.profile__role {
+    display: none;
+}
+
+.header__col2 a {
+    display: none;
+}
+
+.header__desktop {
     display: none;
 }
