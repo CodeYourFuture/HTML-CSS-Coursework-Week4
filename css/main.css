@@ -11,7 +11,7 @@ body {
   width: 100%;
   height: auto;
   margin: 0 auto;
-  font-family: "Outfit", sans-serif;
+  font-family: var(--body);
 }
 /* hack how to make humburger logo using checkbox */
 input[type="checkbox"] {
@@ -50,19 +50,43 @@ input[type="checkbox"] {
   height: 100px;
   display: grid;
   grid-template-columns: repeat(4, auto);
+  
 }
 
 .info {
   grid-column: 1 / span 3;
 }
 
+.info a {
+ font-size: 30px;
+ font-family:var(--subheading); 
+ color: var(--red-brown);
+ text-decoration: none;
+ 
+}
+
+.info p{
+  font-size: 20px;
+ font-family:var(--subheading); 
+ color: var(--red-brown);
+ margin-top: 15px;
+ letter-spacing: 3px;
+ /* font-weight: 900; */
+}
+.humburger {
+  width:30px;
+  height:30px;
+  color:var(--red-brown);
+}
+
 .menu {
   grid-column: 4/4;
+  display:none;
 }
-/* .dropdown {
-    display: none;
+.dropdown {
+    display: block;
     position: absolute; 
-} */
+}
 ul {
   list-style: none;
   margin: 0;
@@ -86,6 +110,8 @@ ul li a {
 
 .dropdown:hover {
   display: block;
+  cursor:pointer;
+  
 }
 
 .main {
@@ -128,7 +154,7 @@ ul li a {
   font-size: 44px;
   letter-spacing: 0.17em;
   margin-bottom: 20px;
-  padding-left: 42px;
+  padding-left:30px;
 }
 
 .brand_name p {
@@ -149,4 +175,16 @@ ul li a {
   font-size: 18px;
   font-family: "Outfit", sans-serif;
   letter-spacing: 2px;
+}
+
+.wrapper_photo {
+  display: grid;
+  
+  gap:20px;
+}
+
+.photo img {
+  width: 100%;
+  height:auto;
+  object-fit: cover;
 }

@@ -21,7 +21,8 @@ https://fonts.google.com/specimen/Outfit  */
   }
 
   :root{
-      --font-family:'Fjalla One', sans-serif;
-      --font-family: 'Outfit', sans-serif;
+      --heading:'Fjalla One', sans-serif;
+      --subheading: 'Outfit', sans-serif;
+      --body:'Outfit', sans-serif;
 
   }
