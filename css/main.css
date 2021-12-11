@@ -7,6 +7,7 @@
   --White: #fff;
   --Dancing-script-header: "Fjalla One", sans-serif;
   --Outfit: "Outfit", sans-serif;
+  --Transparent-White: rgba(0,0,0,0.75)
 }
 
 body {
@@ -41,12 +42,15 @@ header {
     "h h h h h h h h . . m m"
     "p p p p p p p p p p p p";
 }
-
+nav{
+    display: none;
+}
 header input {
   grid-area: in;
   height: 2rem;
   border: 0.1rem solid #a05941;
   background-color: var(--Light-Grey);
+  width: 100%;
 }
 header input::placeholder {
   color: var(--Red-Brown);
@@ -80,7 +84,7 @@ main {
   display: grid;
   color: var(--White);
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(8, 1fr);
+  grid-template-rows: repeat(5, 1fr);
   grid-template-areas:
     ". . . . . . . . . . . ."
     "e e e e i i i i y y y y"
@@ -127,7 +131,8 @@ main button {
 section {
   font-family: var(--Outfit);
   grid-area: s;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   background-color: var(--Light-Grey);
 }
 section div {
@@ -193,9 +198,17 @@ section div img {
   grid-area: i1;
   width: 100%;
 }
+.img1mobile{
+  grid-area: i1;
+  display: none;
+}
 .img2 {
   grid-area: i2;
   width: 100%;
+}
+.img2mobile{
+  display:none;
+  grid-area: i2;
 }
 .img3 {
   grid-area: i3;
@@ -281,7 +294,7 @@ fieldset div {
 
     ;
 }
-.footer img{
+.footer .plant{
     grid-area: im;
     width: 100%;
 }
@@ -320,8 +333,14 @@ fieldset div {
   grid-area: su;
   display: flex;
   flex-direction: column;
+  
 
   padding: 2rem;
+}
+.subscribe div{
+  display: flex;
+  flex-direction: column;
+width: 100%;
 }
 .subscribe h2{
     text-align: center;
@@ -348,3 +367,159 @@ fieldset div {
     padding: 2rem 0rem;
 }
 
+@media screen and (min-width: 900px) {
+    body{
+        padding: 0.6rem;
+        background-color: var(--Light-Grey
+        );
+    }
+header{
+    grid-template-areas:
+    "in in in . . . . . . . . im"
+    "h h h n n n n p p p p p";
+    padding: 0rem 0rem;
+    position: absolute;
+    width: 100%;
+    top: 0px;
+}
+header p{
+  text-align: end;
+  padding-right: 2rem;
+}
+header img{
+  justify-self: end;
+  padding-right: 2rem;
+
+}
+header h1 {
+    padding: 1rem 0rem;
+    margin: 0px;
+}
+.topnav{
+    display: none;
+}
+nav{
+    display: block;
+    grid-area: n;
+    padding: 1rem;
+    color: var(--Red-Brown);
+}
+nav a {
+
+    color: var(--Red-Brown);
+    padding: 0.6rem 0.7rem;
+}
+main{
+    height: 50rem;
+    grid-template-areas:
+    ". . . . . . . . . . . ."
+    ". . . . e i i y . . . ."
+    "p p p p p p p p p p p p"
+    ". . . b b b b b b . . ."
+    ". . . . . s s . . . . .";
+    background-attachment: fixed;
+}
+main h2 {
+
+    font-size: 5.5rem;
+    margin: 0px;
+}
+main h3 {
+font-size: 1.7rem;
+justify-content: center;
+}
+main button{
+    height: 3rem;
+}
+section {
+flex-direction: row;
+width: 100%;
+justify-content: space-around;
+gap: 1rem;
+
+}
+.container-aboutus {
+    grid-template-areas:
+    "ca ca ca ca ca ca i1 i1 i1 i2 i2 i2"
+    "ca ca ca ca ca ca i1 i1 i1 i2 i2 i2"
+    "ca ca ca ca ca ca i1 i1 i1 i2 i2 i2"
+    "i3 i3 i3 i3 i3 i3 cb cb cb cb cb cb"
+    "i3 i3 i3 i3 i3 i3 cb cb cb cb cb cb"
+    "i3 i3 i3 i3 i3 i3 cb cb cb cb cb cb";
+
+
+}
+.img1{
+    display: none;
+}
+.img1mobile{
+  display:block;
+  width: 100%;
+}
+.img2{
+  display:none;
+    height: 100%;
+}
+.img2mobile{
+display:block;
+height: 100%;
+}
+section div {
+    
+    grid-template-areas:
+      "p p p p p p p p p p p p"
+      ". . . b b b b b b . . ."
+      "i i i i i i i i i i i i"
+      "a a a a a a a a a a a a"
+      "a a a a a a a a a a a a";
+  }
+  form{
+      background-image: url(https://static.wixstatic.com/media/697bc8_4ea3867c24544ad6b0d299b5d93a7fd5~mv2_d_3000_2150_s_2.jpg/v1/fill/w_1891,h_842,al_t,q_85,usm_0.66_1.00_0.01/697bc8_4ea3867c24544ad6b0d299b5d93a7fd5~mv2_d_3000_2150_s_2.webp);
+      background-size:100%;
+      padding: 2.5rem;
+      
+      
+  
+    }
+    form fieldset {
+        border: 0px solid transparent;
+
+        
+    }
+.footer{
+    grid-template-areas:
+    "ou ou ou ou op op op op he he he he"
+    "ou ou ou ou op op op op he he he he"
+    "ou ou ou ou op op op op he he he he"
+   
+    ". . . su su su su su su . . ."
+    "sl sl sl sl sl sl sl sl sl sl sl sl"
+    "ma ma ma ma ma ma ma ma ma ma ma ma"
+    "co co co co co co co co co co co co"
+
+    ;
+}
+    .help{
+        padding: 3rem;
+    }
+
+footer .plant{
+    display: none;
+    
+}
+.subscribe{
+  flex-direction: row;
+  align-items: flex-end;
+}
+.subscribe div{
+  padding-right: 1rem;
+}
+.subscribe div input{
+  height: 2rem;
+}
+.subscribe  input{
+  height: 2.3rem;
+}
+
+
+}
