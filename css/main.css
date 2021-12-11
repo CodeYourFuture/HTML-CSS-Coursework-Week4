@@ -1,3 +1,87 @@
 /* Add your CSS here */
 
+/* Variables */
+:root {
+    --dark-beige: #E6DACD;
+    --light-beige: #F4ECE6;
+    --royal-blue: #0150FD;
+         --black: #000;
+         --white: #FFF;
+}
+/* reset */
+body {
+    border: solid 1px black;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.grid-container {
+     display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 100px 1000px 100px;
+     grid-template-areas:
+    "header header header header"
+    "main main main main"
+    "footer footer footer footer"
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* button blue*/ 
+.button-blue {
+    text-transform: uppercase;
+    border-radius: 20px;
+    padding: 6px 12px;
+
+}
+.button-blue:hover {
+color: white;
+background: var(--royal-blue);
+
+}
+
+header {
+    display: flex;
+    grid-area: header;
+    grid-column: 1/-1;
+    height: 100px;
+    width: auto;
+    border: solid 1px black;
+    padding: 1rem;
+}
+
+.square {
+    height: 20px;
+    width: 20px;
+    background-color: var(--royal-blue);
+    margin: 0.5rem;
+}
+
+main {
+    display: flex;
+    grid-area: main;
+    grid-column: 1/-1;
+}
+
+footer {
+    display: flex;
+    grid-area: footer;
+    grid-column: 1/-1;
+    height: 100px;
+    width: auto;
+    border: solid 1px red;
+    padding: 1rem;
+}
+
+
+
+
+
+
+
+
 /* Dont' forget to link this file to your HTML in the <head> */
