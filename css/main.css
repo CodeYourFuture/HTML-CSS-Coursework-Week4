@@ -25,17 +25,8 @@ img{
     width: 100%;
 }
 
-
 /* font-family: 'Fjalla One', sans-serif;
 font-family: 'Outfit', sans-serif; */
-
-/* header */
-.header-image {
-    background-image: url("img/header-img.jpeg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 /* body */
 
@@ -56,21 +47,58 @@ font-family: 'Outfit', sans-serif; */
     font-size: 12px;
     background: var(--light-grey);
     color: var(--red-brown);
-    
   }
 
-  /* container 1 */
+  /*----- container 1 -----*/
+  /* header */
   nav { 
     grid-area: nav;
-    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
   }
 
-  /* container 1 end */
+  .search {
+    background: var(--white);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
   
-  /* container 2 */
+  #search{
+    box-shadow: none;
+    border: 1px solid var(--red-brown);
+    background: var(--white);
+    color: var(--red-brown);
+    display: inline-block;
+    padding-right: 8rem;
+  }
+  
+  .basket{
+    width: 5%;
+    height: auto;
+    padding-top: 5px;
+    margin-bottom: 0;
+  }  
+
+  .subhead{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .hero{
+    letter-spacing: 3px;
+  }
+
+  /* header image */
+
+  
+  /*----- container 1 end -----*/
+  
+  /*----- container 2 -----*/
   main {
     grid-area: main;
-    
   }
 
   .products{
@@ -78,13 +106,13 @@ font-family: 'Outfit', sans-serif; */
       flex-direction: column;
       align-items: center;
   }
-/*
+
   .products > img {
-      margin: 3rem 0 ;
-  } */
-  /* container 2 end */
+    margin: 1rem;
+  }
+  /*----- container 2 end -----*/
   
-  /* container 3 */
+  /*----- container 3 ------*/
   #features {
     grid-area: features;
     text-align: center;
@@ -100,54 +128,57 @@ font-family: 'Outfit', sans-serif; */
     font-family: 'outfit', 'sans-serif';
     font-size: 1rem;
     box-sizing: border-box;
-    padding: 1rem 5rem;
-    line-height: 1.2rem;
+    padding: 1rem 3rem;
+    line-height: 1.4rem;
   }
   /* container 3 end */
   
-  /* container 4 */
+  /*----- container 4 -----*/
   #form {
     grid-area: form;
     color: var(--black);
     padding: 10%;
     background: var(--white);
+    margin: 15px 15px 0;
   }
 
   .form > label {
     /*font-family: 'outfit', 'sans-serif';*/
-    font-weight: 200;
+    
     font-size: 1.2rem; 
   }
 
   input[type=text],
   input[type=tel] {
-      width:80%;
+      width: 89%;
       padding: 1rem;
-      border: 2px solid var(--black);
-      color: var(--black);
+      border: 1px solid var(--black);
   }
 
   textarea{
-    border: 2px solid var(--black);
+    width: 96%;
+    border: 1px solid var(--black);
   }
+  
   .submit{
-      border: none;
-      width: 97%;
-      padding: 40px 30px;
-      background:var(--red-brown);
-      color: var(--white);
-      font-size: 1rem;
-  }
+    border: none;
+    width: 98%;
+    padding: 20px 30px;
+    background:var(--red-brown);
+    color: var(--white);
+    font-size: 1rem;
+}
 
   
-  /* container 4 end */
+  /*----- container 4 end -----*/
   
-  /* container 5 */
+  /*----- container 5 -----*/
   footer {
     grid-area: footer;
     background: var(--green-black);
     color: var(--white);
     text-align: center;
+    box-sizing: border-box;
 }
 
   .store{
@@ -160,32 +191,41 @@ font-family: 'Outfit', sans-serif; */
 .store > p{
     font-family: 'outfit', 'sans-serif';
     font-size: 1rem;
-   line-height: 0;
+    line-height: 0;
 }
 .store > h3 {
     font-family: 'outfit', 'sans-serif';
-    font-size: 2rem;
+    font-size: 1rem;
     letter-spacing: 1rem;
 }
 
+input > #email {
+  border: 2px solid var(--black);
+  color:var(--black);
+  color:var(--black);
+}
+
+/*
+
 .enter-mail {
-    width:90%;
+    width:85%;
     padding: 5rem;
     background-color: var(--green-black);
     border: 3px solid var(--white);
     color:var(--white);
 }
+*/
 
 .subscribe{
-    border: none;
-    width: 97%;
-    padding: 40px;
-    margin-top: 0;
-    background: var(--white);
-    color: var(--green-black);
-    font-size: 3rem;
-  }
-  /* container 5 end */
+  border: none;
+  width: 85%;
+  padding: 15px 0;
+  font-size: 1rem;
+  background: var(--white);
+}
+
+  
+  /*----- container 5 end -----*/
 
   /* copyright */
   span > a {
