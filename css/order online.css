@@ -17,8 +17,54 @@
     list-style-type: none;
     text-decoration: none;
 } 
+button {
+    background-color: transparent;
+}
+a {
+    color:var(--secondary-color);
+}
+img {
+    height: 100%;
+    object-fit: cover;
+}
+h1, h2 {
+    font-family: var(--heading-font);
+    font-weight: 100;
+    line-height: 2.3rem;
+    font-size: 2rem;
+}
+body {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 120px 100px;
+    background-color: var(--background-color-2);
+}
+header {
+    grid-column: span 12;
+    background-color: var(--main-color);
+}
+.header-user-icon {
+    grid-column: 6/8;
+    width: auto;
+    height: 100%; 
+    display: inline;
+}
+.header-logo {
+    grid-column: span 6;
+    font-family: var(--heading-font);
+    text-align: left;
+    font-weight: 400;
+    font-size: 1.25rem;
+    padding-left: 0.5rem;
+}
+.header-hamburger-icon {
+    grid-column: 11/ 12;
+    width: auto;
+    height: 100%; 
+} 
 
 main {
+    grid-column: span 12;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(14, 150px);

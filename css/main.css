@@ -21,7 +21,6 @@
 } 
 
 img {
-    width: auto;
     height: 100%;
     object-fit: cover;
 }
@@ -87,7 +86,7 @@ header {
     display: inline;
 }
 .header-logo {
-    grid-column: span 11;
+    grid-column: span 6;
     font-family: var(--heading-font);
     text-align: left;
     font-weight: 400;
@@ -95,6 +94,7 @@ header {
     padding-left: 0.5rem;
 }
 .header-hamburger-icon {
+    grid-column: 12/13;
     width: 100%;
    
 } 
@@ -117,7 +117,6 @@ main {
     grid-column: span 12;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-gap: 1rem;
 }
 .hero-section {
     grid-column: span 12;
@@ -174,7 +173,7 @@ h1 {
     grid-column: span 12;
     grid-gap: 1rem;
     background-color: var(--background-color-2);
-    padding: 0.5rem 1rem;
+    padding: 1rem 1rem;
 }
 .background-color-2-section-img {  
     background-image: url(../images/image2.png);
@@ -190,7 +189,7 @@ h1 {
 }
 
 .background-color-2-section > button {
-    margin: 0 5rem;
+    margin: 1rem 5rem;
     background-color: var(--background-color-2);
 }
 
@@ -201,26 +200,41 @@ h1 {
     grid-column: span 12;
     grid-gap: 1rem;
     background-color: var(--background-color-1);
+    display: grid;
+    padding: 1rem 0;
+}
+.background-color1-section, h2, h3, p {
+    grid-column: span 12;
+}
+.background-color-1-section > p {
+    padding: 0 5rem;
 }
 .background-color-1-section-img-1 {
+    grid-column: 2/12;
     background-image: url(../images/image3.png);
-   
     padding: 10rem;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    margin-bottom: 1rem;
 }
 .background-color-1-section-img-2 {
+    grid-column: 2/12;
     background-image: url(../images/image4.png);
-   
     padding: 10rem;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    margin-bottom: 1rem;
 }
 .background-color-1-section-img-3 {
+    grid-column: 2/12;
     background-image: url(../images/image5.png);
     padding: 10rem;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    margin-bottom: 1rem;   
+}
+.background-color-1-section > button {
+    grid-column: 5/7;
 }
 
 
@@ -344,8 +358,30 @@ footer {
     background-color: var(--footer-color);
     color: var(--main-color);
 }
-
-
+footer a {
+    color: var(--main-color);
+    text-decoration: underline;
+}
+.logo-jb {
+    font-weight: 600;
+    display: grid;
+    grid-template-columns: 20px 20px;
+    grid-template-rows: 20px 20px;
+    grid-template-areas: "j ."
+    ". b";
+    width: 70px;
+    height: 70px;
+    padding-left: 0.7rem;
+    padding-top: 0.5rem;
+    border: 3px solid var(--main-color);
+    border-radius: 50%;
+}
+.logo-j{
+    grid-area: j;
+}
+.logo-b {
+    grid-area: b;
+}
 
 
 
