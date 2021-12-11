@@ -1,0 +1,52 @@
+.choose-your-path {
+  background-color: rgb(var(--color_21));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.choose-your-path h1 {
+  text-align: center;
+  font-size: xx-large;
+  width: 210px;
+  font-weight: lighter;
+}
+
+.juice img {
+  width: 280px;
+  height: 274px;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.path-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.path {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.path h2 {
+  width: 200px;
+  font-size: 22px;
+}
+
+.path p {
+  width: 255px;
+  font-size: 15px;
+}
+
+.view-all {
+  background-color: rgb(var(--color_21));
+  padding: 20px 55px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: solid;
+  font-size: larger;
+}

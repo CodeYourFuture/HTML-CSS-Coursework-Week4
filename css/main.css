@@ -1,3 +1,87 @@
-/* Add your CSS here */
+:root {
+  --color_0: 255, 255, 255;
+  --color_1: 255, 255, 255;
+  --color_2: 0, 0, 0;
+  --color_3: 237, 28, 36;
+  --color_4: 0, 136, 203;
+  --color_5: 255, 203, 5;
+  --color_6: 114, 114, 114;
+  --color_7: 176, 176, 176;
+  --color_8: 255, 255, 255;
+  --color_9: 114, 114, 114;
+  --color_10: 176, 176, 176;
+  --color_11: 255, 255, 255;
+  --color_12: 232, 230, 230;
+  --color_13: 199, 199, 199;
+  --color_14: 153, 153, 151;
+  --color_15: 0, 0, 0;
+  --color_16: 230, 250, 192;
+  --color_17: 212, 247, 147;
+  --color_18: 94, 125, 31;
+  --color_19: 80, 101, 64;
+  --color_20: 57, 75, 42;
+  --color_21: 245, 232, 255;
+  --color_22: 235, 203, 247;
+  --color_23: 192, 110, 255;
+  --color_24: 126, 55, 189;
+  --color_25: 71, 32, 105;
+  --color_26: 252, 185, 146;
+  --color_27: 252, 137, 71;
+  --color_28: 201, 76, 3;
+  --color_29: 148, 55, 1;
+  --color_30: 84, 46, 24;
+  --color_31: 195, 205, 240;
+  --color_32: 162, 176, 224;
+  --color_33: 92, 119, 209;
+  --color_34: 61, 79, 139;
+  --color_35: 31, 40, 70;
+  --font_0: normal normal normal 55px/1.4em questrial, sans-serif;
+  --font_1: normal normal normal 16px/1.4em din-next-w01-light,
+    din-next-w02-light, din-next-w10-light, sans-serif;
+  --font_2: normal normal normal 40px/1.4em questrial, sans-serif;
+  --font_3: normal normal normal 35px/1.4em questrial, sans-serif;
+  --font_4: normal normal normal 30px/1.4em questrial, sans-serif;
+  --font_5: normal normal normal 28px/1.4em questrial, sans-serif;
+  --font_6: normal normal normal 26px/1.4em helvetica-w01-light,
+    helvetica-w02-light, sans-serif;
+  --font_7: normal normal normal 24px/1.4em questrial, sans-serif;
+  --font_8: normal normal normal 17px/1.4em helvetica-w01-light,
+    helvetica-w02-light, sans-serif;
+  --font_9: normal normal normal 14px/1.4em proxima-n-w01-reg, proxima-n-w05-reg,
+    sans-serif;
+  --font_10: normal normal normal 12px/1.4em din-next-w01-light,
+    din-next-w02-light, din-next-w10-light, sans-serif;
+  --wix-ads-height: 0px;
+  --wix-ads-top-height: 0px;
+  --site-width: 320px;
+  --above-all-z-index: 100000;
+  --portals-z-index: 100001;
+  --minViewportSize: 320;
+  --maxViewportSize: 1920;
+}
 
-/* Dont' forget to link this file to your HTML in the <head> */
+body {
+  font-family: "Questrial", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+p {
+  line-height: 22px;
+  text-align: center;
+  width: 250px;
+}
+
+h1 {
+  font-weight: lighter;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: lighter;
+  text-align: center;
+  width: 200px;
+}
+
+a:hover {
+  cursor: pointer;
+}
