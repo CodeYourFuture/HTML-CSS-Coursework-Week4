@@ -54,6 +54,7 @@ font-family: 'Outfit', sans-serif; */
   nav { 
     grid-area: nav;
     font-family: 'Fjalla One', sans-serif;
+    box-sizing: border-box;
   }
 
   .search {
@@ -92,7 +93,20 @@ font-family: 'Outfit', sans-serif; */
   }
 
   /* header image */
-
+  
+  .centered {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 45px;
+    color: var(--white);
+    width: 50vh;
+    font-weight: normal;
+    /*mask-border-width: 70%;*/
+    letter-spacing: 10px;
+  }
   
   /*----- container 1 end -----*/
   
@@ -130,6 +144,25 @@ font-family: 'Outfit', sans-serif; */
     box-sizing: border-box;
     padding: 1rem 3rem;
     line-height: 1.4rem;
+  }
+
+  .discount{
+    background: var(--green-black);
+    margin: 0;
+    font-family: 'Fjalla One', sans-serif;
+    color: var(--white);
+    font-size: 50px;
+    padding: 10px 30px;
+  }
+
+  .discount > button{
+    background: var(--white);
+    border: none;
+    width: 30%;
+    padding: 15px 20px;
+    margin-bottom: 65px;
+    font-size: 1rem;
+    color: rgb(65, 83, 27);
   }
   /* container 3 end */
   
