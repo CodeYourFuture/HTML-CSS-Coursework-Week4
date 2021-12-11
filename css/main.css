@@ -12,15 +12,12 @@ body {
     font-family: 'Outfit', sans-serif; */
     display: grid;
     margin: 0;
-    grid-template-columns: repeat(4 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
-    /* grid-template-rows: 200px 530px 360px 370px 370px 550px 260px 260px 260px 430px 150px 250px 150px; */
     grid-template-areas: 
     "header        header        header        header"
     "hero          hero          hero          hero"
-    "cacti         cacti         cacti         cacti"
-    "plants        plants        plants        plants"
-    "succulents    succulents    succulents    succulents"
+    "shop          shop          shop          shop"
     "about         about         about         about"
     "img           img           img           img"
     "img2          img2          img2          img2"
@@ -124,9 +121,16 @@ body {
 }
 
 /* SHOP */
+.shop-container {
+    grid-area: shop;
+    display: flex;
+    flex-direction: column; 
+}
+
 /* cacti */
 .shop-cacti {  
-    grid-area: cacti;   
+    display: flex;
+    flex-direction: column;  
 }
 
 .shop-cacti img {
@@ -153,7 +157,8 @@ body {
 
 /* plants */
 .shop-plants {
-    grid-area: plants;
+    display: flex;
+    flex-direction: column;  
 }
 
 .shop-plants img {
@@ -180,7 +185,8 @@ body {
 
 /* succulents */
 .shop-succulents {
-    grid-area: succulents;  
+    display: flex;
+    flex-direction: column;  
 }
 
 .shop-succulents img {
@@ -268,4 +274,36 @@ body {
 .credit {
     grid-area: credit;
     font-size: 0.7em;
+}
+
+
+/* MEDIA QUERIES */
+
+
+/* tablet */
+@media screen and (min-width: 900px) {
+    body {
+        padding: 0 2em;
+    }
+
+    /* SHOP */
+    .shop-container {
+        grid-area: shop;
+        display: flex;
+        flex-direction: row;
+    }
+    .shop-plants{
+        padding:0 1.5em;
+    }
+    .shop-cacti .desc {
+        top: 2vw;
+    }
+
+    .shop-plants .desc {
+        top: 2vw;
+    }
+
+    .shop-succulents .desc {
+        top: 2vw;
+    }
 }
