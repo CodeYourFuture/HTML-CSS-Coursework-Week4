@@ -1,0 +1,28 @@
+/* Red Brown: #A05941  
+Green Black: #133032  
+Light Grey: #EDEDEE  
+White: #FFF  
+Transparent White: rgba(0,0,0,0.75)
+
+### Fonts
+**Headings:** Fjalla One - Regular 400  
+https://fonts.google.com/specimen/Fjalla+One  
+**Subheadings:** Outfit - Extra-light 200  
+https://fonts.google.com/specimen/Outfit  
+**Body:** Outfit - Extra-light 200  
+https://fonts.google.com/specimen/Outfit  */
+
+:root {
+    --red-brown: #A05941;
+    --green-black: #133032;
+    --light-grey: #EDEDEE ;
+    --white: #FFF;
+    --transparent-white: rgba(0,0,0,0.75);
+  }
+
+  :root{
+      --heading:'Fjalla One', sans-serif;
+      --subheading: 'Outfit', sans-serif;
+      --body:'Outfit', sans-serif;
+
+  }
