@@ -27,22 +27,53 @@
                 </div>
 
                 <!-- SHOPPING BASKET -->
-                <div class="shopping-basket">
-                    <img src="./icons/shopping-basket.svg" class="svg-color" alt="shopping basket icon"/>
+                <div class=account-container>
+                    <div class="profile">
+                        <img src="./icons/profile.svg" class="svg-color profile-svg" alt="login icon"/>
+                        <a href="#" class="login-link">Log In</a>
+                    </div>
+                    <div class="shopping-basket">
+                        <img src="./icons/shopping-basket.svg" class="svg-color" alt="shopping basket icon"/>
+                    </div>
                 </div>
             </div>
 
             <!-- LOGO -->
-            <div class=header-nav>
-                 <h1>PRICKLES & CO.</h1>
-            
-                 <!-- HAMBURGER -->
-                <div class="nav-icon">
-                    <div class="line"></div>
+            <div class="nav-container">
+                    <div class=header-nav>
+                    <h1 class="header-nav--logo">PRICKLES & CO.</h1>
+
+                    <!-- MENU BAR FOR DESKTOP VERSION -->
+                    <nav class="nav">
+                        <div class="nav--bar">
+                            <ul class="nav--menu">
+                                <li class="nav--item">
+                                    <a href="#" class="nav--link">Shop</a>
+                                </li>
+                                <li class="nav--item">
+                                    <a href="#" class="nav--link">About</a>
+                                </li>
+                                <li class="nav--item">
+                                    <a href="#" class="nav--link">FAQ</a>
+                                </li>
+                                <li class="nav--item">
+                                    <a href="#" class="nav--link">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+
+                    <!-- HAMBURGER MOBILE VERSION-->
+                    <div class="nav-icon">
+                        <div class="line"></div>
+                    </div>
                 </div>
+            
+                <h2 class="header-nav--subheading">We Deliver to Your Doorstep</h2>
             </div>
-          
-            <h2>We Deliver to Your Doorstep</h2>   
+            
+            
+            
         </header>
 
         <!-- HERO -->
@@ -72,33 +103,37 @@
             
         </div>
 
-        <!-- SHOP -->
-        <section class="shop-cacti">
-            <div class="desc">
-                <h1 class="title-name cacti">CACTI</h1>
-                <hr class="title-underline">
-                <button class="btn btn-section">Shop collection</button>
-            </div>
-            <img src="./images/cactus.png" alt="hand holding cactus plant pot"/>
-        </section>
-                
-        <section class="shop-plants">
-            <div class="desc">
-                <h1 class="title-name plants">PLANTS</h1>
-                <hr class="title-underline">
-                <button class="btn btn-section">Shop collection</button>
-            </div>
-            <img src="./images/plants.png" alt="hand holding plant pot"/>
-        </section>
 
-        <section class="shop-succulents">
-            <div class="desc">
-                <h1 class="title-name succulents">SUCCULENTS</h1>
-                <hr class="title-underline">
-                <button class="btn btn-section">Shop collection</button>
-            </div>
-            <img src="./images/succulents.png" alt="hand holding plant pot"/>
-        </section>
+        <div class="shop-container">
+
+            <!-- SHOP -->
+            <section class="plant shop-cacti">
+                <div class="desc">
+                    <h1 class="title-name cacti">CACTI</h1>
+                    <hr class="title-underline">
+                    <button class="btn btn-section">Shop collection</button>
+                </div>
+                <img src="./images/cactus.png" alt="hand holding cactus plant pot"/>
+            </section>
+                    
+            <section class="plant shop-plants">
+                <div class="desc">
+                    <h1 class="title-name plants">PLANTS</h1>
+                    <hr class="title-underline">
+                    <button class="btn btn-section">Shop collection</button>
+                </div>
+                <img src="./images/plants.png" alt="hand holding plant pot"/>
+            </section>
+
+            <section class="plant shop-succulents">
+                <div class="desc">
+                    <h1 class="title-name succulents">SUCCULENTS</h1>
+                    <hr class="title-underline">
+                    <button class="btn btn-section">Shop collection</button>
+                </div>
+                <img src="./images/succulents.png" alt="hand holding plant pot"/>
+            </section>
+        </div>
 
         <!-- ABOUT US PAGE -->
         <!-- about us -->
@@ -290,7 +325,5 @@
     
         </div>
 
-        </body>
-
-
+    </body>
 </html>
