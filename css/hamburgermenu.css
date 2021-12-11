@@ -1,0 +1,29 @@
+
+.topnav {
+    overflow: hidden;
+    background-color: transparent;
+  }
+  
+  .topnav #hamburger {
+    display: none;
+  }
+  
+  .topnav a {
+    color: var(--Red-Brown);
+    padding: 9px 5px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .topnav a.icon {
+    background: transparent;
+    display: block;
+    right: 0;
+    top: 0;
+  }
+  
+  .topnav a:hover {
+    background-color: transparent;
+    color: #000;
+  }

@@ -1,0 +1,26 @@
+.x{
+    background-color: aqua;
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center top; 
+  height: 1000px;
+}
+
+.xx{
+    background-image: url("../designs/Business\ portfolio.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top; 
+    
+    height: 100%;
+    width: 100%;
+    padding-top:500px;
+}
+.xxx{
+    background-image: url('../designs/Cactus\ shop.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top; 
+    height: 5000px;
+    width: 100%;
+}
