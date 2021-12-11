@@ -51,6 +51,17 @@
     font-size: 1.2em;
 }
 
+.account-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.profile {
+    visibility: hidden;
+}
+
 /* SHOPPING BASKET ICON */
 .shopping-basket {
     width: 20px;
@@ -75,7 +86,7 @@ header .svg-color {
     
 }
 
-header h1 {
+.header-nav--logo {
     font-family: 'Fjalla One', sans-serif;
     font-weight: 100;
     font-size: 1.6em;
@@ -113,7 +124,7 @@ header h1 {
     transform: scale(0);
 }
 
-header h2 {
+.header-nav--subheading {
     font-family: 'Fjalla One', sans-serif;
     font-weight: 100;
     font-size: 1em;
@@ -121,4 +132,127 @@ header h2 {
     padding-left: 1.6em;
     letter-spacing: 0.2em;
     margin-top: 0;   
+}
+
+.nav {
+    visibility: hidden;
+}
+
+/* MEDIA QUERIES */
+
+/* tablet */
+@media screen and (min-width: 900px) {
+    body {
+       background-color: var(--light-grey);
+        /* font-family: 'Fjalla One', sans-serif;
+        font-family: 'Outfit', sans-serif; */
+        display: grid;
+        margin: 0;
+        padding: 0 2em;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "header      header     header      header      header     header"
+        "hero        hero       hero        hero        hero       hero"
+        "shop        shop       shop        shop        shop       shop"
+        "about       about      about       about       about      about"
+        "order       order      order       order       order      order"
+        "footer      footer     footer      footer      footer     footer"
+        "copyright   copyright  copyright   copyright   copyright  copyright"
+        "credit      credit     credit      credit      credit     credit";
+        }
+
+
+
+
+        /* header */
+        
+
+        .account-container {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        .profile {
+            display: flex;
+            flex-direction: row;
+            padding-right: 1.4em;
+            align-items: center;
+            justify-content: space-between;
+            width: 4.8em;
+            visibility: visible;
+        }
+
+        .profile-svg {
+            width: 26px;
+            height: 50px;
+            
+        }
+
+        .login-link {
+            font-family: 'Outfit', sans-serif;
+            color: var(--red-brown);
+            font-size: 0.9em;
+            text-decoration: none;
+        }
+
+        .header {
+            padding: 0;
+        }
+
+        .nav-icon {
+            visibility: hidden;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+             
+        }
+
+        .header-nav {
+            display: flex;
+            
+        }
+
+        .header-nav--logo {
+            font-family: 'Fjalla One', sans-serif;
+            font-weight: 100;
+            font-size: 1.6em;
+            color: var(--red-brown);
+            padding: 0;  
+        }
+
+        .nav {
+            visibility: visible;
+        }
+
+        .nav--bar {
+            
+        }
+
+        .nav--menu {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+        
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .nav--link {
+            font-family: 'Outfit', sans-serif;
+            color: var(--red-brown);
+            font-size: 0.9em;
+        }
+
+        .header-nav--subheading {
+            margin-top: 2em;
+        }
 }
