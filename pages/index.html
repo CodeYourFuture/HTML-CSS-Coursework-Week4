@@ -24,7 +24,7 @@
         <section class="search_basket">
             <div class="input-wrapper">
                 <div class="fa fa-search"></div>
-                <input type="text" placeholder="Search..." />
+                <input type="text" placeholder="Search..." class="header_input" />
             </div>
             <div>
                 <i class="fas fa-shopping-bag"></i>
@@ -48,8 +48,8 @@
         <h2 class="slogan">We Deliever to Your Doorstep</h2>
 
     </header>
-    <!----------------------------------------- Main -->
-    <main>
+    <!----------------------------------------- Main----------------------------------->
+    <main class="main">
         <article class="hero">
             <section class="hero_container" class="overlay">
                 <div class="hero_logo_est">
@@ -107,6 +107,8 @@
                 </div>
             </section>
         </article>
+
+        <!--------------------------------------------- about us-------------------------------->
         <article class="about_us">
             <section class="info">
                 <h2>ABOUT US</h2>
@@ -122,18 +124,18 @@
             <section class="first_small_img">
 
                 <img src="https://static.wixstatic.com/media/697bc8_a83b11aa652d4394aadc4aca1f80d567~mv2_d_2000_1391_s_2.jpg/v1/fill/w_480,h_335,al_c,q_80,usm_0.66_1.00_0.01/697bc8_a83b11aa652d4394aadc4aca1f80d567~mv2_d_2000_1391_s_2.webp"
-                    alt="">
+                    alt="about us images">
             </section>
             <section class="second_small_img">
                 <img src="https://static.wixstatic.com/media/697bc8_84ed4273c730421d954cfe88af4d7c1c~mv2_d_2000_1333_s_2.jpg/v1/fill/w_480,h_335,al_c,q_80,usm_0.66_1.00_0.01/697bc8_84ed4273c730421d954cfe88af4d7c1c~mv2_d_2000_1333_s_2.webp"
-                    alt="">
+                    alt="about us images">
             </section>
             <section class="big_img">
                 <img src="https://static.wixstatic.com/media/697bc8_3aa8eb7ac760486bb63b30f98dc220c8~mv2_d_2000_1333_s_2.jpg/v1/fill/w_480,h_335,al_c,q_80,usm_0.66_1.00_0.01/697bc8_3aa8eb7ac760486bb63b30f98dc220c8~mv2_d_2000_1333_s_2.webp"
-                    alt="">
+                    alt="about us images">
             </section>
             <section class="about_us_shop">
-                <h1>BUY ONLINE NOW AND GET 10% OFF!</h1>
+                <h1>BUY ONLINE NOW & GET 10% OFF!</h1>
                 <button>Shop Now</button>
             </section>
         </article>
@@ -142,58 +144,61 @@
 
     </main>
 
-    <!---------------------------------------- Footer -->
+    <!---------------------------------------- Footer ------------------------------------------->
     <footer class="footer">
-        <div class="footer_details">
-            <h2>OUR STORE</h2>
-            <ul>
-                <li>Address: 500 Terry Francois Street San</li>
-                <li>Francisco, CA 94158</li>
-                <li>Phone: 123-456-7890</li>
-                <li>Email: info@mysite.com</li>
-            </ul>
-        </div>
+        <section class="footer_info">
+            <div class="footer_details">
+                <h2>OUR STORE</h2>
+                <ul>
+                    <li>Address: 500 Terry Francois Street San</li>
+                    <li>Francisco, CA 94158</li>
+                    <li>Phone: 123-456-7890</li>
+                    <li>Email: info@mysite.com</li>
+                </ul>
+            </div>
 
-        <div class="footer_hours">
-            <h2>OPENING HOURS</h2>
-            <ul>
-                <li>Mon - Fri: 7am - 10pm</li>
-                <li>​​Saturday: 8am - 10pm</li>
-                <li>​Sunday: 8am - 11pm</li>
-            </ul>
-        </div>
+            <div class="footer_hours">
+                <h2>OPENING HOURS</h2>
+                <ul>
+                    <li>Mon - Fri: 7am - 10pm</li>
+                    <li>​​Saturday: 8am - 10pm</li>
+                    <li>​Sunday: 8am - 11pm</li>
+                </ul>
+            </div>
 
-        <div class="footer_help">
-            <h2>HELP</h2>
-            <ul>
-                <li>Mon - Fri: 7am - 10pm</li>
-                <li>​​Saturday: 8am - 10pm</li>
-                <li>​Sunday: 8am - 11pm</li>
-            </ul>
-        </div>
-
-        <div class="footer_subscribe">
+            <div class="footer_help">
+                <h2>HELP</h2>
+                <ul>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="footer_form">
             <h2>SUBSCRIBE</h2>
             <form>
                 <label for="email">Enter your email here*</label>
-                <input type="email" id="email" name="email">
-                <br>
-                <div class="subscribe_container">
-                    <input type="submit" value="Subscribe">
-                </div>
-            </form>
-        </div>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Subscribe</button>
 
-        <div class="socialmedia_icons">
+            </form>
+        </section>
+
+        <section class="socialmedia_icons">
             <img src="https://static.wixstatic.com/media/23fd2a2be53141ed810f4d3dcdcd01fa.png/v1/fill/w_38,h_38,al_c,q_85,usm_0.66_1.00_0.01/23fd2a2be53141ed810f4d3dcdcd01fa.webp"
                 alt="">
             <img src="https://static.wixstatic.com/media/9c486556465843c5850fabfd68dfae49.png/v1/fill/w_38,h_38,al_c,q_85,usm_0.66_1.00_0.01/9c486556465843c5850fabfd68dfae49.webp"
                 alt="">
             <img src="https://static.wixstatic.com/media/81af6121f84c41a5b4391d7d37fce12a.png/v1/fill/w_38,h_38,al_c,q_85,usm_0.66_1.00_0.01/81af6121f84c41a5b4391d7d37fce12a.webp"
                 alt="">
-        </div>
+        </section>
 
+        <div class="footer_ends">
+            <p>© 2023 by Prickles & Co. Proudly created with <a href="https://wix.com"> Wix.com</a></p>
+        </div>
     </footer>
+
 
 </body>
 

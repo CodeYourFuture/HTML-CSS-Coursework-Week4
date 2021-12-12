@@ -3,7 +3,7 @@
 }
 
 .header {
-    width: 100%;
+    grid-area: header;
     padding: 1em;
     display: flex;
     flex-direction: column;
@@ -31,12 +31,10 @@
 
 }
 
-input {
+.header_input {
     margin: 0 0.5rem;
     width: 80%;
-    border: none;
-    outline: none;
-    background: none;
+    background: transparent;
 }
 
 .fa.fa-search {
