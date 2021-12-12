@@ -18,6 +18,7 @@
     text-decoration: none;
 } 
 button {
+    font-family: var(--button-font);
     background-color: transparent;
 }
 a {
@@ -34,6 +35,7 @@ h1, h2 {
     font-size: 2rem;
 }
 body {
+    font-family: var(--body-font);
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 120px 100px;
@@ -67,5 +69,119 @@ main {
     grid-column: span 12;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(14, 150px);
+    grid-template-rows: repeat(14, auto);
+}
+
+.menu-section {
+    grid-column: span 12;
+}
+
+
+.cold-pressed {
+    grid-column: span 12;
+}
+
+.smoothies {
+    grid-column: span 12;
+}
+.wellness-shots {
+    grid-column: span 12;
+}
+
+.cleanse-kit {
+    grid-column: span 12;
+}
+
+footer {
+    grid-column: span 12;
+}
+
+.cold-pressed-img1 {
+    background-image: url(../images/store1.jpg);
+    padding: 3rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.cold-pressed-img2 {
+    background-image: url(../images/store2.jpg); 
+    padding: 3rem;
+    background-size: contain;
+    background-repeat: no-repeat;  
+}
+.cold-pressed-img3 {
+    background-image: url(../images/store3.jpg);
+    padding: 3rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.smoothies-img1 {
+    background-image: url(../images/store4.jpg);
+    padding: 3rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.smoothies-img1 {
+    background-image: url(../images/store5.jpg);
+    padding: 3rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.smoothies-img1 {
+    background-image: url(../images/store6.jpg);
+    padding: 3rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.wellness-shots {
+    background-image: url(../images/store7.jpg);
+    padding: 3rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.wellness-shots {
+    background-image: url(../images/store8.jpg);
+    padding: 3rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.wellness-shots {
+    background-image: url(../images/store9.jpg);
+    padding: 3rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.cleanse-img1 {
+    background-image: url(../images/store10.jpg);
+    padding: 3rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.cleanse-img1 {
+    background-image: url(../images/store11.jpg);
+    padding: 3rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.cleanse-img1 {
+    background-image: url(../images/store12.jpg);
+    padding: 3rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+
+@media screen and (max-width: 430px) {
+    main > section> ul, p {
+        display: none;
+    }
+
+    header {
+        background-color: var(--background-color-2);
+    }
+    .cart-section {
+        display: none;
+    }
 }
