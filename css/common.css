@@ -1,0 +1,52 @@
+:root {
+  --gray: #ededee;
+  --red: #a05941;
+  --black: #133032;
+  --white: #fff;
+  --transwhite: rgba(0, 0, 0, 0.75);
+}
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Outfit", sans-serif;
+}
+.btn {
+  padding: 0.5em 1em;
+  font-size: 5vw;
+  background: var(--red);
+  color: var(--white);
+}
+h1 {
+  font-size: 6vw;
+  font-family: "Fjalla One", sans-serif;
+}
+h2 {
+  font-size: 4.5vw;
+  font-family: "Outfit", sans-serif;
+}
+input {
+  padding: 0.5em 1em;
+}
+/* ============================Media Queries========================= */
+@media screen and (min-width: 481px) {
+  h1 {
+    font-size: 2.5vw;
+  }
+  h2 {
+    font-size: 2vw;
+  }
+  h3 {
+    font-size: 1vw;
+  }
+  .btn {
+    font-size: 2vw;
+  }
+}
