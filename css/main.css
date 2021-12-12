@@ -17,7 +17,6 @@
     margin: 0;
     list-style-type: none;
     text-decoration: none;
-    
 } 
 
 img {
@@ -41,6 +40,8 @@ h1, h2 {
 /*   Button styles  */
 button {
     background-color: transparent;
+    font-family: var(--button-font);
+    font-size: 18px;
 }
 .button-color-hover {
     border: none;
@@ -61,8 +62,12 @@ button {
 .submit-button {
     border: 2px solid var(--main-color);
     color:var(--main-color);
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 2rem;
     background-color: transparent;
+    margin-left: 0.5rem;
+    font-size: 16px;
+    font-family: var(--button-font);
+    text-transform: uppercase;
 }
 
 
@@ -97,21 +102,11 @@ header {
     grid-column: 12/13;
     width: 100%;
    
-} 
-/*
-header > div > a > img {
-   width: auto;
-   height: 100%;
-   
-    border: 1px solid pink; 
 }
-*/
 
 
 
-
-
-/*   section-hero   */
+/*   Hero Section   */
 
 main {
     grid-column: span 12;
@@ -234,7 +229,27 @@ h1 {
     margin-bottom: 1rem;   
 }
 .background-color-1-section > button {
-    grid-column: 5/7;
+    grid-column: 6/8;
+}
+
+
+
+/*  Main Color Section */
+
+.background-main-color-section {
+    grid-column: span 12;
+}
+.background-main-color-section-img {
+    background-image: url(../images/image6.png);
+    background-size: cover;
+    padding:10rem;
+}
+.background-main-color-section > p {
+    margin-bottom: 1rem;
+}
+.background-main-color-section > h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
 
@@ -246,7 +261,7 @@ h1 {
     display: grid;
     grid-template-columns: repeat(11, 1fr);
     grid-gap: 0.5rem;
-    padding: 1rem;
+    padding: 1rem 4rem;
 }
 .delivery-section-num { 
     grid-column: 6;
@@ -259,22 +274,13 @@ h1 {
 
 .delivery-p {
     grid-column: span 11;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 .delivery-section > h3 {
     grid-column: span 11;
 }
 
-/*  Main Color Section */
 
-.background-main-color-section {
-    grid-column: span 12;
-}
-.background-main-color-section-img {
-    background-image: url(../images/image6.png);
-    background-size: cover;
-    padding:10rem;
-}
 
 
 /*  Follow Section  */
@@ -283,11 +289,12 @@ h1 {
     grid-column: span 12;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 80px repeat(9, auto);
+    grid-template-rows: 80px repeat(6, auto) 50px auto auto;
 }
 .follow-section > h3 {
-    grid-column: span 12;
+    grid-column: 1/13;
     font-size: 2rem;
+    padding-top: 1rem;
 }
 .follow-section-img-1 {
     background-image: url(../images/image7.png);
@@ -326,43 +333,89 @@ h1 {
     grid-column: 7/12;
     grid-row:3/5;
 }
+.follow-section-background {
+    grid-column: 1/13;
+    grid-row: 4/11;
+    background-color: var(--footer-color);
+    
+}
 .follow-section-get-started {
     grid-column: 1/6;
-    grid-row: 8/10;
+    grid-row: 9/11;
     text-align: left;
+    color: var(--main-color);
+    padding-left: 1rem;
+}
+.follow-section-get-started > ul  {
+    padding-left: 0;
 }
 .follow-section-connect {
-    grid-column: 8/12;
-    grid-row: 8/10;
+    grid-column: 9/12;
+    grid-row: 9/11;
     text-align: left;
+    color: var(--main-color);
+    padding-left: 1rem;
 }
-fieldset {
-    border: none;
+.follow-section-connect > ul {
+    padding-left: 0;
 }
+
+
+
+/*  Footer  */
 
 input[type=email] {
     border: none;
     border-bottom: var(--main-color) 3px solid;
     background-color: transparent;  
 }
-
 input[type=email]:hover {
     border-bottom: var(--button-hover) 3px solid;
 }
-
-
-/*  Footer */
 
 footer {
     grid-column: span 12;
     background-color: var(--footer-color);
     color: var(--main-color);
+    text-align: left;
+    font-weight: 600;
+    padding: 0 1rem;
 }
-footer a {
+footer > a {
     color: var(--main-color);
     text-decoration: underline;
+    font-size: 26px;
 }
-.logo-jb {
+.footer-a {
+    color: var(--main-color);
+    text-decoration: underline;
+    font-size: 14px;
+}
+footer > p {
+    font-size: 14px;
+    font-weight: 300;
+    padding-bottom: 2rem;
+}
+footer > h3 {
+    text-align: left;
+    padding: 4rem 0 2rem 0;
+}
+footer > form {
+    text-align: left;
+    margin-bottom: 5rem;
+}
+.fieldset-column {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0.5rem;
+}
+footer > form > fieldset {
+    border: none;
+    display: flex;
+    flex-direction: row;
+}
+footer > .logo-jb {
+    text-align: center;
     font-weight: 600;
     display: grid;
     grid-template-columns: 20px 20px;
@@ -375,6 +428,7 @@ footer a {
     padding-top: 0.5rem;
     border: 3px solid var(--main-color);
     border-radius: 50%;
+    margin: 2rem 0;
 }
 .logo-j{
     grid-area: j;
