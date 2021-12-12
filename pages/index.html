@@ -5,6 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Outfit:wght@100&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/common.css" />
   <link rel="stylesheet" href="../css/header.css" />
   <link rel="stylesheet" href="../css/main.css" />
@@ -38,6 +41,13 @@
     <h3 class="slogan">We Deliver To Your Doorstep</h3>
   </header>
   <main class="main">
+    <!-- =================Float BTNs=================== -->
+  <div class="float_btn btn">
+    ^
+  </div>
+  <div class="float_btn2 btn">
+    <img src="../icons/chat.svg" alt="chat icon">
+  </div>
     <article class="hero">
       <section class="hero_overlay">
         <section class="first_hero_section hero_section">
@@ -128,16 +138,17 @@
     </article>
 
   </main>
+  
   <footer class="footer">
     <section class="footer_info">
       <div class="footer_item">
         <h1>Our Store</h2>
-        <ul>
-          <li>Address: 500 Terry Francois Street San</li>
-          <li>Francisco, CA 94158</li>
-          <li>Phone: 123-456-7890</li>
-          <li>Email: info@mysite.com</li>
-        </ul>
+          <ul>
+            <li>Address: 500 Terry Francois Street San</li>
+            <li>Francisco, CA 94158</li>
+            <li>Phone: 123-456-7890</li>
+            <li>Email: info@mysite.com</li>
+          </ul>
       </div>
       <div class="footer_item">
         <h1>Opening Hours</h1>
@@ -162,9 +173,11 @@
       <h1>SUBSCRIBE</h1>
       <form>
         <label for="formEmail">Enter your email here *
-          <input type="text" id="formEmail" required>
         </label>
-        <button class="btn form_submit">Subscribe Now</button>
+
+          <input type="text" id="formEmail" required>
+          <button class="btn form_submit">Subscribe Now</button>
+       
       </form>
     </section>
     <section class="social_icons">
@@ -174,18 +187,18 @@
             <img src="../icons/facebook.svg" alt="facebook icon">
           </a>
         </li>
-    
-      <li>
-        <a href="https://pinterest.com">
-          <img src="../icons/pinterest.svg" alt="pinterest icon">
-        </a>
-      </li>
-      <li>
-        <a href="https://twitter.com">
-          <img src="../icons/twitter.svg" alt="instagram icon">
-        </a>
-      </li>
-    </ul>
+
+        <li>
+          <a href="https://pinterest.com">
+            <img src="../icons/pinterest.svg" alt="pinterest icon">
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com">
+            <img src="../icons/twitter.svg" alt="instagram icon">
+          </a>
+        </li>
+      </ul>
     </section>
     <section class="map">
       <img src="../img/map.png" alt="map image">
@@ -195,6 +208,7 @@
       <p>created with <a href="https://wix.com">Wix.com</a></p>
     </section>
   </footer>
+ 
 </body>
 
 </html>

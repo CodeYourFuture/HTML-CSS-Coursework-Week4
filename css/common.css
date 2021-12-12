@@ -16,6 +16,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  font-family: "Outfit", sans-serif;
 }
 .btn {
   padding: 0.5em 1em;
@@ -25,9 +26,14 @@ body {
 }
 h1 {
   font-size: 6vw;
+  font-family: "Fjalla One", sans-serif;
 }
 h2 {
   font-size: 4.5vw;
+  font-family: "Outfit", sans-serif;
+}
+input {
+  padding: 0.5em 1em;
 }
 /* ============================Media Queries========================= */
 @media screen and (min-width: 481px) {

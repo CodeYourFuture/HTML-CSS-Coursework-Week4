@@ -6,6 +6,10 @@ footer {
   font-weight: bolder;
   color: var(--white);
 }
+.footer h1 {
+  letter-spacing: 0.3em;
+  font-weight: 100;
+}
 .footer_info {
   width: 100%;
   display: flex;
@@ -32,27 +36,40 @@ footer {
 .footer_form {
   margin-top: 3em;
   padding: 0 1em;
+  display: flex;
+  flex-direction: column;
 }
-.footer_form input {
-  display: block;
+
+.footer_item h1 {
+  font-size: 5.5vw;
+}
+.footer_form form {
   width: 100%;
-  margin: 0 auto;
+  margin-top: 1em;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_form input {
   background: transparent;
   border: 1px solid var(--white);
-  padding: 1em;
-  margin-top: 5px;
+  padding: 2em 0;
+  margin: 0.5em 0 1em;
+  font-size: 2vw;
 }
+
 .footer_form h1 {
   text-align: center;
 }
-.footer_form form {
-  margin-top: 1em;
+.footer_form label {
+  display: block;
 }
 .form_submit {
   background: var(--white);
   color: var(--black);
-  width: 100%;
-  margin-top: 0.5em;
+  padding: 1em;
+  cursor: pointer;
 }
 .social_icons {
   width: 100%;
@@ -61,38 +78,63 @@ footer {
 .social_icons ul {
   display: flex;
   text-align: center;
+  width: 80%;
+  margin: 0 auto;
 }
 .social_icons ul li {
   list-style: none;
 }
+.social_icons ul li a {
+  display: block;
+}
 .social_icons ul li a img {
-  width: 100%;
-  max-width: 40%;
+  width: 50%;
+  max-width: 100%;
 }
 .map {
   width: 100%;
   background: var(--gray);
 }
 .map img {
-  width: 100%;
   max-width: 100%;
+  width: 70%;
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
 }
 .copyright {
   width: 100%;
   background: var(--gray);
   color: var(--red);
   text-align: center;
-  padding: 3em 0;
-  font-size: 4vw;
+  padding: 2em 0;
+  font-size: 2vw;
 }
 .copyright a {
   color: var(--red);
 }
 @media screen and (min-width: 481px) {
-  .footer_info {
-    flex-direction: row;
+  footer {
+    font-size: 1.5vw;
   }
   .footer_item h1 {
     font-size: 2.5vw;
+  }
+  .footer_info {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .footer_form label {
+    font-size: 2vw;
+  }
+  .footer_form form {
+    display: block;
+    text-align: center;
+  }
+  .footer_form input {
+    padding: 1em 0;
+  }
+  .social_icons ul {
+    width: 30%;
   }
 }
