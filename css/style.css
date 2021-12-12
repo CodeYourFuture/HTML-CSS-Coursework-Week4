@@ -92,7 +92,6 @@ h6 {
     font-weight: 650;
     margin: 20px  0px 10px 0px;
     color: var(--font-pr-color);
-    /* border: 1rem solid red; */
     width: 400px;
 }
 
@@ -446,16 +445,68 @@ button:hover {
     background-color: var(--bg2-secondary-color);
 }
 
-/* order form */
+/* order form ---------------------------------------------------- */
 .of1 {
     grid-area: hdl;
     grid-column: 1 / 13;
     grid-row: 13;
-    height: 500px;
+    /* height: 500px; */
     padding: 30px;
     text-align: center;
     background-color: var(--bg3-highlight-color);
 }
+
+/* form  ---------------------------------------------*/
+form {
+    /* display: grid; */
+    padding: 1em;
+    background: var(--bg1-primary-color);   
+    margin: 2rem auto 0 auto;
+  /*   max-width: 600px;  if no limit on the HTML */
+    padding: 1em;
+  }
+
+  form button {
+    padding: 0.7em;
+    width: 100%;
+    border: 0;
+  }
+  
+
+  #message{
+     height: 200px;
+     padding: 10px 10px; 
+     border: 0.1rem solid var(--bg2-secondary-color); 
+     width: 100%;
+  }
+  
+  /* learn more button  */
+  .send {
+      margin: 20px 0px 10px 0px;
+  
+      width: 100%;
+      height: 40px;
+  
+      border: none;
+      transition: 0.6s;
+      overflow: hidden;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 16px;
+  
+      background-color: var(--bg4-accent-color);  /* text brown*/
+      color: var(--bg3-Tertiary-color)      /* text white*/
+  }
+  
+  /* send button */  
+  send:hover {
+      background-color: var(--bg4-accent-color);  /* text brown*/
+          color: var(--bg4-accent-color);  /* text brown*/
+  }
+  
+
+
+/* end order form  ------------------------------------------------*/
 
 /* background image */
 .bg2 {
@@ -542,6 +593,8 @@ button:hover {
 .label {
     margin-bottom: -1rem;
     align-self: end;
+
+    font-size: 16px;
 }
 
 input {
@@ -558,7 +611,6 @@ input:hover {
     transition: 0.5s;
     background-color: var(--bg2-secondary-color);
     border: 0.2rem solid white;
-
 }
 
 /* learn more button  */
