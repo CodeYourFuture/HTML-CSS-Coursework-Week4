@@ -66,25 +66,26 @@
 
 .profile__card .profile__social_icons {
     display: flex;
-    align-items: center;
     justify-content: center;
     background-color: var(--clr-white);
+    align-items: center;
 }
 
 .profile .profile__social_icons {
     width: 100%;
-    margin-top: 20px;
-    margin-bottom: 0.625rem;
+    margin-top: 21px;
+    /* margin-bottom: 20.625rem; */
+    height: 53px;
 }
 
 .profile-link {
     text-align: center;
     width: 12%;
-    padding-top: .5rem;
+    /* padding-top: .5rem; */
 }
 
 .profile-link img {
-    width: 1.25rem;
+    height: 18px;
 }
 
 

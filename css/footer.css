@@ -25,10 +25,16 @@
 
 .footer__social_icons {
     display: flex;
+    margin-left: -24px;
 }
 
 .footer__social_icons img {
-    height: 100%;
+    padding-left: 20px;
+    height: 10px;
+}
+
+.footer__social_icons img {
+    height: 18px;
 }
 
 .footer--title {
