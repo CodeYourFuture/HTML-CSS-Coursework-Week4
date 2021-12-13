@@ -64,14 +64,14 @@
     border: .125rem solid var(--clr-black)
 }
 
-.profile__card .profile__links {
+.profile__card .profile__social_icons {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: var(--clr-white);
 }
 
-.profile .profile__links {
+.profile .profile__social_icons {
     width: 100%;
     margin-top: 20px;
     margin-bottom: 0.625rem;
