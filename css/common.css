@@ -218,6 +218,12 @@
          .header__mobile {
              display: none;
          }
+         .header__col1 {
+             width: 49%;
+         }
+         .header__col2 {
+             width: 57%;
+         }
          /* NAV */
          .header__nav--link,
          a {
