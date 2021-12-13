@@ -15,21 +15,27 @@
 
 .header__col1 {
     display: flex;
-    width: 100%;
+    width: 49%;
     align-items: center;
     margin-left: .375rem;
+    justify-content: flex-start;
 }
 
 .header__col2 {
     display: flex;
-    width: 66%;
+    width: 57%;
     align-items: center;
     margin-left: 0 auto;
     flex-direction: row;
+    justify-content: flex-end;
 }
 
 .header__col2 a {
     padding-left: 42px;
+}
+
+.header__nav a:nth-child(1) {
+    padding-left: 0px;
 }
 
 .header__mobile {

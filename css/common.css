@@ -41,7 +41,7 @@
      
      @media screen and (min-width: 481px) {}
      
-     @media screen and (min-width: 721px) {
+     @media screen and (min-width: 950px) {
          nav {
              display: unset;
          }
