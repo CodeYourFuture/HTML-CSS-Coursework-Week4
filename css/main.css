@@ -10,6 +10,70 @@ body {
   font-family: "Quicksand", sans-serif;
   margin: 0;
   padding: 0;
+  background-color: var(--primary);
+}
+
+.homepage-main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 400px auto auto 250px;
+  /*  grid-template-areas must follow the exact number of columns and rows defined above (4 columns and 4 rows)  */
+  grid-template-areas:
+    "hero     hero    hero     hero" /* one for each column */
+    "feature  feature feature feature"
+    "content content content content"
+    "footer   footer   footer footer "; /* the dot is used to skip a column */
+}
+
+.homepage-hero {
+  background-color: var(--main-bg-color);
+  grid-area: hero;
+  position: absolute;
+  width: 100vmax;
+}
+
+span {
+  position: relative;
+  bottom: -2px;
+}
+
+.homepage-feature {
+  grid-area: feature;
+  background-color: var(--secondary);
+  width: 280px;
+  box-shadow: var(--shd, 0 1px 5px rgba(0, 0, 0, 0.6));
+  position: absolute;
+  padding: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 100px;
+}
+
+.parent {
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  align-content: center;
+  justify-content: center;
+  display: flex;
+}
+
+.homepage-content {
+  background-color: var(--primary);
+  box-shadow: var(--shd, 0 1px 5px rgba(0, 0, 0, 0.6));
+  grid-area: content;
+  margin-top: 100px;
+  width: 100vw;
+  margin-top: 180px;
+  padding: 20px;
+  padding-right: 20px;
+}
+
+.homepage-footer {
+  grid-area: footer;
+  background-color: var(--main-bg-color);
 }
 
 .square-h1 {
@@ -18,57 +82,9 @@ body {
   gap: 5px;
 }
 
-.homepage-main {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 126.4px 952px;
-
-  grid-template-areas:
-    "header header "
-    "content  aside"
-    "footer footer";
-}
-
-.homepage-header {
-  background-color: var(--main-bg-color);
-  grid-column-end: -1;
-  grid-column-start: 1;
-  grid-row: 1;
-}
-
-.homepage-content {
-  background-color: var(--secondary);
-  margin-left: 10px;
-  grid-column-start: 1;
-  grid-column-end: -1;
-  padding: 10px;
-  width: 100vw;
-  margin: 20px;
-  width: 280px;
-  height: 375px;
-  grid-row: 2;
-}
-
-.homepage-aside {
-  background-color: var(--primary);
-  grid-column-start: 1;
-  grid-column-end: -1;
-  margin: -500px 0 0 0;
-  padding: 10px;
-}
-
-.homepage-footer {
-  grid-column-start: 1;
-  grid-column-end: -1;
-  background-color: var(--main-bg-color);
-}
-
-h1 {
-  font-family: "Poppins", sans-serif;
-}
-
 .contact {
   display: flex;
+  gap: 100px;
 }
 
 .social-footer {
@@ -89,6 +105,9 @@ li {
   margin: 5px;
 }
 
+h1 {
+  font-family: "Poppins";
+}
 .ul {
   width: 451px;
   height: 35px;
@@ -133,6 +152,8 @@ hr {
   width: 120px;
   height: 33px;
   border-radius: 10px;
+  display: inline;
+  margin: 5px;
 }
 
 .button {
@@ -140,11 +161,66 @@ hr {
   color: var(--main-bg-color);
 }
 
-.ham {
-  display: flex;
-  width: 50px;
-  height: 50px;
+.lines {
+  width: 26px;
+  height: 3px;
+  background: var(--accent-colour);
+  margin: 20px 0 0 20px;
 }
+
+.lines:before {
+  display: block;
+  content: "";
+  width: 13px;
+  height: 3px;
+  box-shadow: 0 -8px 0 0 var(--accent-colour), 0 8px 0 0 var(--accent-colour);
+  position: right;
+}
+
+.footer1 {
+  padding-right: 100px;
+}
+
+.p-footer {
+  font-weight: bold;
+}
+
+.profile-lines {
+  width: 26px;
+  height: 3px;
+  background: var(--accent-colour);
+  margin: 20px 0 0 20px;
+}
+/*
+
+.homepage-main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto auto;
+
+  grid-template-areas:
+    "header    header   header   header" 
+    "content content content content "
+    "aside aside aside aside"
+    "footer   footer  footer   footer";
+}
+
+.homepage-header {
+  background-color: var(--main-bg-color);
+  grid-area: "header";
+}
+
+.homepage-content {
+  
+  grid-area: "content";
+}
+
+.homepage-footer {
+  grid-area: "footer";
+  background-color: var(--main-bg-color);
+}
+
+
 
 /*
 
