@@ -14,7 +14,7 @@ By choosing the Prickles website, using CSS Grid, and media queries to make the 
 
 **An e-commerce site selling plants**
 
-![Prickles & Co homepage](https://www.wix.com/website-template/view/html/1995)
+![Prickles & Co homepage]('https://www.wix.com/website-template/view/html/1995')
 
 =====================================
 
