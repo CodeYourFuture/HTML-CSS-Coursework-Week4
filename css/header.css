@@ -1,4 +1,5 @@
-.hide {
+.hide,
+#login-button-desktop {
   display: none;
 }
 
@@ -73,12 +74,13 @@ header {
   padding: 2rem 5rem;
   text-decoration: none;
   color: rgb(32, 31, 31);
+  display: flex;
 }
 
 .login-button span svg {
   height: 25px;
   width: 25px;
-  margin-bottom: 5px;
+  margin-right: 8px;
 }
 
 .hamburger-menu {
@@ -114,11 +116,48 @@ header {
   background-color: red;
   height: 2px;
 }
-/* i {
-  font-size: 1rem;
-  background-color: rgb(19, 18, 18);
-  border-radius: 50%;
-  border: rgb(19, 18, 18);
-  margin-right: 10px;
-  padding: 5px;
-} */
+
+@media screen and (min-width: 900px) {
+  header {
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .order-button {
+    grid-column: 12/-1;
+    width: 240px;
+    height: 105px;
+    font-size: 22px;
+  }
+
+  .title {
+    grid-column: 6/9;
+    grid-row: 1;
+    text-align: center;
+    font-size: 40px;
+    margin: auto;
+    padding-top: 5px;
+  }
+
+  .hamburger-menu {
+    padding-left: 2rem;
+    grid-column: 1/2;
+    grid-row: 1;
+  }
+
+  .login-button {
+    grid-column: 10/12;
+    grid-row: 1;
+    font-size: 20px;
+    margin: auto;
+    padding: 0;
+    padding-left: 5rem;
+  }
+
+  .hamburger-menu {
+    margin: auto;
+  }
+  .hamburger {
+    width: 2rem;
+  }
+}

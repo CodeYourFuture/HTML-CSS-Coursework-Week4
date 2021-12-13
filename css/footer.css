@@ -31,6 +31,7 @@ form legend {
 
 footer fieldset {
   margin-bottom: 4rem;
+  border: none;
 }
 
 footer a,
@@ -124,7 +125,7 @@ form {
 .footer-logo span:nth-of-type(2) {
   margin-left: 2rem;
 }
-footer p,
-.down-footer a {
+.wix p,
+.wix a {
   font-size: 14px;
 }

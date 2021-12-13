@@ -25,13 +25,10 @@ html {
 }
 
 .container {
-  display: grid;
-  grid-template-columns: 100%;
   width: 100%;
   margin: 0;
+  grid-column: 100%;
   padding: 0;
-  align-items: start;
-  justify-content: stretch;
 }
 
 h1 {
@@ -62,6 +59,7 @@ h1 {
   position: static;
   overflow: hidden;
 }
+
 .sections-container {
   display: grid;
   grid-template-rows: repeat(3, min-content) 1fr;
@@ -315,7 +313,13 @@ img {
   -webkit-transform: rotate(345deg);
 }
 
-@media screen and (min-width: 650) {
+@media screen and (min-width: 500px) {
+  h1 {
+    font-size: 45px;
+  }
+}
+
+@media screen and (min-width: 900px) {
   h1 {
     font-size: 55px;
   }
