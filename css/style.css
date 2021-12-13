@@ -38,7 +38,7 @@ html {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 480px;
+    max-width: 380px;
 
 }
 
@@ -458,7 +458,7 @@ button:hover {
 
 /* form  ---------------------------------------------*/
 form {
-    /* display: grid; */
+    display: grid;
     padding: 1em;
     background: var(--bg1-primary-color);   
     margin: 2rem auto 0 auto;
@@ -470,8 +470,7 @@ form {
     padding: 0.7em;
     width: 100%;
     border: 0;
-  }
-  
+  }  
 
   #message{
      height: 200px;
