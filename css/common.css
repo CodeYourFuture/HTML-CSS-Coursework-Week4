@@ -99,9 +99,9 @@
          .profile {
              grid-column: 1/7;
              justify-content: flex-end;
-             background: linear-gradient(to right, #E6DACD 97%, #FFF 23%);
+             background: linear-gradient(to right, #E6DACD 87%, #FFF 32%);
              padding-bottom: 133px;
-             margin-right: 45px;
+             margin-right: 76px;
              padding-top: 147px;
          }
          .profile__card {
@@ -151,7 +151,7 @@
              background-color: transparent;
              flex-direction: row;
              margin-top: 2px;
-             margin-left: -24px;
+             margin-left: -61px;
              width: 471px;
          }
          .intro__title {
