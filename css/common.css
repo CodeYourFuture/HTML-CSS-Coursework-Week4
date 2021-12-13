@@ -53,7 +53,6 @@
              justify-content: center;
              display: grid;
              grid-template-columns: repeat(12, 1fr);
-             grid-template-rows: repeat(2, 1fr);
              padding-top: 128px;
          }
          /* HEADER */
@@ -111,8 +110,6 @@
          .profile__card {
              width: 375px;
              height: 524px;
-             /* margin-top: 189px; */
-             /* margin-left: 203px; */
              right: 200px;
              left: 212px;
          }
@@ -185,12 +182,10 @@
          /* footer */
          .footer {
              grid-column: 1/-1;
-             margin-left: 1rem;
-             margin-top: 1rem;
          }
-         .credits {
+         /* .credits {
              grid-column: 1/-1;
-         }
+         } */
          .header__mobile {
              display: none;
          }
