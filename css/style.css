@@ -230,7 +230,7 @@ input,
     align-items: center;
     justify-content: center;
     /*   minimised for mobile view */
-        max-width: 480px;
+        /* max-width: 480px; */
 }
 
 /* shop Now  */
