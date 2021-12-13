@@ -17,10 +17,14 @@ header {
   grid-row: 1/2;
   height: 48px;
   background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
   border: none;
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
+}
+
+.order-button a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
 
 .title {
@@ -93,7 +97,8 @@ header {
 }
 
 .hamburger {
-  border: 1px solid rgb(27, 26, 26);
+  border: 1px solid;
+  border-color: rgb(27, 26, 26);
   width: 1.4rem;
   margin-top: 8px;
 }
@@ -125,13 +130,16 @@ header {
 
   .order-button {
     grid-column: 12/-1;
-    width: 240px;
+    width: 230px;
     height: 105px;
+  }
+
+  .order-button a {
     font-size: 22px;
   }
 
   .title {
-    grid-column: 6/9;
+    grid-column: 5/8;
     grid-row: 1;
     text-align: center;
     font-size: 40px;
@@ -145,19 +153,53 @@ header {
     grid-row: 1;
   }
 
-  .login-button {
-    grid-column: 10/12;
+  #login-button-desktop {
+    display: flex;
+    justify-content: center;
+    width: 116px;
+    height: 40px;
+    grid-column: 11/12;
     grid-row: 1;
     font-size: 20px;
     margin: auto;
     padding: 0;
-    padding-left: 5rem;
+  }
+
+  .navbar .login-button {
+    display: none;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 32%;
+    height: 100%;
+    z-index: 10;
+    background-color: #000;
+  }
+
+  nav {
+    margin: auto;
+  }
+
+  .nav-link {
+    font-size: 2.2rem;
+    color: #fff;
   }
 
   .hamburger-menu {
-    margin: auto;
+    margin-top: 2rem;
+    text-align: right;
+    margin-left: 2rem;
+    z-index: 12;
   }
+
   .hamburger {
-    width: 2rem;
+    width: 1.9rem;
+    z-index: 11;
   }
 }
