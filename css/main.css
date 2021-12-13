@@ -10,8 +10,9 @@
     flex-direction: column;
     align-items: center;
     background-color: var(--clr-light-beige);
-    width: 17.5rem;
+    width: 100%;
     box-shadow: -8px 6px 16px -4px #acacac;
+    margin: 0 1.5rem;
 }
 
 .profile__card--img {
