@@ -82,11 +82,15 @@
     color: var(--white);
 }
 
-.btn-footer {
+.btn-white {
+    font-family: 'Outfit', sans-serif;
+    padding: 13px 40px;
+    border: none;
+    margin-top: 1.7em;
+    font-size: 1em;
+    cursor: pointer;
     background-color: var(--white);
     color:var(--green-black);
-    margin-top: 0.7em;
-    
 }
 
 .footer-content {
@@ -125,4 +129,31 @@
     filter: grayscale(100%);
     width: 100%;
     min-height: 343px;
+}
+
+
+/* COPYRIGHT SECTION */
+
+.copyright {
+    grid-area: copyright;
+    padding: 0.6em 2.2em 3em 3.2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+}
+
+.copyright--text {
+    color: var(--red-brown);
+    text-align: center;
+}
+
+.copyright--text a {
+    text-decoration: underline;
+    color: var(--red-brown);
+}
+
+.credit {
+    grid-area: credit;
+    font-size: 0.7em;
 }
