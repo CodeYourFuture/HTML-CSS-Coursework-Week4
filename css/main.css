@@ -1,94 +1,25 @@
-/* Add your CSS here */
-:root {
---dark-beige: #E6DACD;  
---light-beige: #F4ECE6;  
---royal-blue: #0150FD; 
---black: #000;  
---purple: #a90fe6; 
-}
-h1,h2,h3,h4,h5,h6{
-  font-family: 'Poppins', sans-serif;
-}
-* {
-  box-sizing: border-box;
-  margin:0;
-  padding:0;
-  
-}
-body{
-  
-   font-family: 'Quicksand', sans-serif; 
-  background: var(--dark-beige);
-}
 .grid-container{
-  display:grid;
+  display: grid;
   grid-template-areas: "h h h h h h h h h h h h"
     "m m m m m m m m m m m m "
     "f f f f f f f f f f f f";
   grid-template-rows: 1fr 2fr 300px;
- 
-  
-} 
- .navbar{
-  display: grid;
-  grid-template-rows:100px;
-  grid-template-areas:"name .  nav";
-  margin: 1rem 1rem;
-   line-height:2rem;
 }
- .lists{
-    grid-area:nav;
-    display:flex;
-   justify-content:flex-end;
-   display: none;
-  }
-  #square{
-  color:blue;
-  padding-right:0.5rem;
-}
- header{
-  display: grid;
-  grid-area:h;
-  background: #fff;
-  position: relative;
-  z-index: 1;
-  
-}
-.navbar ul{
-  list-style:none;
-}
-.hamburger{
-background: transparent;
- margin-left: 6rem;
-border: none;
- margin-bottom: 5rem;
- color: var(--royal-blue); 
- width: 4rem;
-}
- .hamburger a{
- filter:  blue (100%);
-}
-main{
-  grid-area:m;
-  background: var(--dark-beige);
-  padding:1em;
-}
-footer{
-  grid-area:f;
-  background-color: #fff;
-}
+
+
+
 /* This is for the big screen*/
 .lists{
-  
+
 }
 .nav ul li{
  list-style:none;
    display: none;
-    
+
 }
 .name {
   grid-area: name;
-  
+
 }
 .my-image{
     background: var(--light-beige);
@@ -101,15 +32,15 @@ footer{
     left: 1.5rem;
 }
 .my-image img{
-   border-radius: 50%; 
+   border-radius: 50%;
    width:50%;
-  
+
 }
 h1{
   font-size: 3.5rem;
   margin-top: 18px;
-    
-} 
+
+}
  hr.line {
    border: 2px solid var(--royal-blue) ;
   width: 35%;
@@ -120,7 +51,7 @@ h1{
   align-items: center;
 }
 .contacts{
-  
+
   background: #fff;
   color: var(--black);
   margin-top: 2rem;
@@ -132,17 +63,17 @@ h1{
   padding: 1rem;
   list-style: none;
   margin-bottom: 0.75rem;
-  
+
 }
 .contact-links a{
   font-size: 20px;
   color: var(--black);
   text-decoration:none;
   margin:5px 10px;
-  padding: 0 0.25rem 
+  padding: 0 0.25rem
 }
 .btn{
-  margin-top: 2.5rem;  
+  margin-top: 2.5rem;
 }
  .resume{
    background: var(--royal-blue);
@@ -151,9 +82,9 @@ h1{
   padding: 10px 20px;
   border-radius: 2rem;
   margin-right: 1.5rem;
-   font-weight: bold; 
+   font-weight: bold;
   font-size: 1.2rem;
-  
+
 }
 .resume a{
   text-decoration: none;
@@ -165,7 +96,7 @@ h1{
   font-weight: bold;
   font-size: 1.2rem;
   background: var(--light-beige);
-} 
+}
 .profile{
   margin-top: 22rem;
   margin-left: 1.25rem;
@@ -187,19 +118,19 @@ h2{
 .contacts2{
   margin-top:1.55rem;
   display: flex;
- 
-  
+
+
 }
 .number-info{
   margin-top:0.5rem;
 }
 .call{
   margin-left: 1.75rem;
-  
+
 }
 .write{
   margin-left: 3rem;
- 
+
 }
 .socials-links{
   display: flex;
@@ -215,7 +146,7 @@ h2{
   text-decoration:none;
   margin:5px 10px;
   padding-bottom: 1.5rem;
-  
+
 }
 .socials p{
   margin-left: 1.75rem;
@@ -227,5 +158,5 @@ h2{
   margin-left: 1.55rem;
    line-height:0.1rem;
 }
-    
+
 /* Dont' forget to link this file to your HTML in the <head> */
