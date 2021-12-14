@@ -233,7 +233,7 @@ body {
     width: 0.4px;
 }
 
-.btn-section {
+.btn--collection {
     padding: 13px 20px;
     margin-top: 0.4em;
 }
@@ -250,31 +250,6 @@ body {
 }
 
 
-/* COPYRIGHT SECTION */
-
-.copyright {
-    grid-area: copyright;
-    padding: 0.6em 2.2em 3em 3.2em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Outfit', sans-serif;
-}
-
-.copyright--text {
-    color: var(--red-brown);
-    text-align: center;
-}
-
-.copyright--text a {
-    text-decoration: underline;
-    color: var(--red-brown);
-}
-
-.credit {
-    grid-area: credit;
-    font-size: 0.7em;
-}
 
 
 /* MEDIA QUERIES */
