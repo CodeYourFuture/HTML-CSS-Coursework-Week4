@@ -46,15 +46,26 @@ button {
 .button-color-hover {
     border: none;
     background-color: var(--secondary-color);
-    grid-column: span 12;
-    padding: 1rem;
-}
-.button-color-hover a {
-    color: var(--main-color);
 }
 .button-color-hover:hover {
     background-color: var(--button-hover);
 }
+.button-color-hover a {
+    color: var(--main-color);
+}
+.hero-button-color-hover {
+    border: none;
+    background-color: var(--secondary-color);
+    padding: 1rem 2rem;
+}
+.hero-button-color-hover a {
+    color: var(--main-color);
+}
+.hero-button-color-hover:hover {
+    background-color: var(--button-hover);
+}
+
+
 .button-no-hover {
     border: solid 2px;
     padding: 1rem 3rem;
@@ -71,7 +82,6 @@ button {
 }
 
 
-
 body {
     display: grid;
     grid-template-columns: repeat(12, 1fr);  
@@ -83,25 +93,24 @@ header {
     grid-column: span 12;
     display: grid;
     grid-template-rows: 50px 50px; 
-    align-items: center;
-}
-.header-user-icon {
-    width: auto;
-    height: 100%; 
-    display: inline;
 }
 .header-logo {
     grid-column: span 6;
     font-family: var(--heading-font);
     text-align: left;
     font-weight: 400;
-    font-size: 1.25rem;
+    font-size: 1.75rem;
     padding-left: 0.5rem;
 }
 .header-hamburger-icon {
-    grid-column: 12/13;
-    width: 100%;
-   
+    grid-column: 12/13;  
+}
+.header-hamburger-icon > a > img {
+    width: 30px;
+    height: 30px;
+}
+.button-color-hover {
+    grid-column: span 12;
 }
 
 
@@ -119,8 +128,9 @@ main {
  }
  .hero-image {
     background-image: url(../images/image1.png);
-    padding: 7rem;
-    background-size: cover;  
+    padding: 10rem;
+    background-size: cover; 
+    background-position: center; 
     margin-top: 1rem;
 }
 h1 {
@@ -137,6 +147,7 @@ h1 {
 .hero-section > div > p > a {
     text-decoration: underline;
 }
+
 
 
 
@@ -300,7 +311,9 @@ h1 {
     background-image: url(../images/image7.png);
     width: 150px;
     height: 200px;
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     transform: rotate(-20deg);
     grid-column: 5/9;
     grid-row: 4/6;
@@ -453,12 +466,49 @@ footer > .logo-jb {
     
 
 
-@media screen and (min-width: 780px) {
-    /*
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-     align-items: center;
-   */
+@media screen and (min-width: 431px) {
+    header {
+        grid-template-rows: 100px;
+        column-gap: 0.5rem;
+        position: sticky;
+        top: 0;
+        background-color: var(--main-color);
+    }
+    .button-color-hover {
+        grid-column: 11/13;
+        grid-row: 1;
+    }
+    .header-user-icon {
+        grid-column: 10/11;
+        align-items: center; 
+        grid-row: 1; 
+        align-self: center; 
+    }
+    .header-user-icon > a {
+        display: flex;
+        flex-direction: row;
+        white-space: nowrap;
+        justify-content: right;
+    }
+    .header-user-icon > a > img {
+        width: 30px;
+        height: 30px;
+    }
+    .header-hamburger-icon {
+        grid-column: 1/2;
+        align-self: center; 
+        grid-row: 1;
+    }
+    .header-logo {
+        grid-column: 8/10;
+        align-self: center; 
+        grid-row: 1;
+        justify-self: center;  
+    }
+   
+    .hero-section {
+        margin-top: 5rem;
+    }
+   
 }
     
