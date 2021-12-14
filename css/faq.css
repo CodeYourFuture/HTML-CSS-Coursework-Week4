@@ -28,7 +28,7 @@ body {
 .faq {
     background-color:var(--white);
     grid-area: faq;
-    margin-top: 1.6em;
+    margin-top: 1em;
     text-align: center;
     padding-bottom: 30px;
 }
@@ -51,30 +51,31 @@ body {
 }
 
 .faq-subheading {
-    font-family: 'Outfit', sans-serif;
-    font-size: 1.2em;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.1em;
     color:var(--dark-grey);
     margin: 2.5em 0;
+    font-weight: 200;
 }
 
 /* FAQ SEARCH */
 .faq-search {
     display: flex;
-    align-items: baseline;
+    
 }
 
 .search-line {
-    width: 16em;
+    width: 19em;
     background-color: var(--red-brown);
     height: 1.3px;
     border: none;
+    margin: 1.6em 0 1.8em 2.5em;
 }
 
 .faq-search-container {
     max-width: 80%;
     cursor: pointer;
-    height: 20px;
-    padding-right: 1.8em;     
+    height: 20px;   
 }
 
 .search-container:hover {
@@ -110,13 +111,13 @@ body {
 
 /* FAQ DROPDOWN Q'S */
 .faq-questions {
-    padding-top: 3em;
+    padding-top: 2em;
 }
 
 .question {
     display: flex;
     flex-direction: row;
-    justify-content: space-around; 
+    padding-left: 2.3em;
 }
 
 .question-text {
@@ -128,6 +129,25 @@ body {
 
 .arrow-icon {
     width: 16px;
+    filter: invert(37%) sepia(52%) 
+            saturate(539%) hue-rotate(329deg) 
+            brightness(94%) contrast(89%);
+}
+
+.position1 {
+    padding-left: 7em;
+}
+
+.position2 {
+    padding-left: 4.2em;
+}
+
+.position3 {
+    padding-left: 4.5em;
+}
+
+.position4 {
+    padding-left: 0.8em;
 }
 
 .line-break {
@@ -136,6 +156,7 @@ body {
     height: 1.3px;
     border: none;
 }
+
 
 
 
