@@ -39,7 +39,6 @@ body {
     font-family: var(--body-font);
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 120px 100px;
     background-color: var(--background-color-2);
 }
 header {
@@ -67,117 +66,270 @@ header {
     width: auto;
     height: 100%; 
 } 
-
 main {
     grid-column: span 12;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(6, auto);
 }
-
 .menu-section {
     grid-column: span 12;
 }
 
-
+/*  Cold pressed section  */
 .cold-pressed {
     grid-column: span 12;
     display:grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(8, auto);
-    grid-gap: 1rem;
-    
+    grid-template-rows: repeat(7, auto);
+    grid-gap: 1rem; 
+    margin-bottom: 3rem;
 }
-
-.smoothies {
+h1 {
     grid-column: span 12;
+    border-bottom: 2px solid var(--store-page-box-color);
+    box-shadow: 1px 1px 3px var(--store-page-box-color);
+    padding: 0.5rem;
+    text-align: center;
 }
-.wellness-shots {
-    grid-column: span 12;
+.product-header {
+    grid-column: 1/13;
+    grid-row: 1;
+    border-bottom: 1px solid var(--store-page-box-color);
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
 }
-
-.cleanse-kit {
-    grid-column: span 12;
+.up-icon {
+    grid-column: 11/13;
+    grid-row: 1;
+    background-image: url(../images/chevron-up-solid.svg);
+    background-repeat: no-repeat;
+    width: 20px;
+    margin-top: 0.5rem;
 }
-
-footer {
-    grid-column: span 12;
-}
-
 .cold-pressed-img1 {
     background-image: url(../images/store1.jpg);
     padding: 3rem;
     background-size: contain;
     background-repeat: no-repeat;
+    grid-column: 1/3;
+    grid-row: 2/4;
 }
 .cold-pressed-img2 {
     background-image: url(../images/store2.jpg); 
     padding: 3rem;
     background-size: contain;
-    background-repeat: no-repeat;  
+    background-repeat: no-repeat; 
+    grid-column: 1/3;
+    grid-row: 4/6; 
 }
 .cold-pressed-img3 {
     background-image: url(../images/store3.jpg);
     padding: 3rem;
     background-size: contain;
     background-repeat: no-repeat;
+    grid-column: 1/3;
+    grid-row: 6/8;
+}
+.product-name {
+    grid-column: 4/9;
+}
+.product-description {
+    grid-column: 4/ 11;
+    border-bottom: var(--store-page-box-color) 1px solid;
+}
+.product-price {
+    grid-column: 12/13;
+    text-align: right;
 }
 
+
+
+/*   Smoothies section   */
+.smoothies {
+    grid-column: span 12;
+    display:grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(8, auto);
+    grid-gap: 1rem; 
+    margin-bottom: 3rem;
+}
 .smoothies-img1 {
     background-image: url(../images/store4.jpg);
     padding: 3rem;
     background-size: contain;
     background-repeat: no-repeat;
+    grid-column: 1/3;
+    grid-row: 2/4;
 }
 .smoothies-img2 {
     background-image: url(../images/store5.jpg);
     padding: 3rem;
     background-size: contain;
     background-repeat: no-repeat;
+    grid-column: 1/3;
+    grid-row: 4/6; 
 }
 .smoothies-img3 {
     background-image: url(../images/store6.jpg);
     padding: 3rem;
     background-size: contain;
     background-repeat: no-repeat;
+    grid-column: 1/3;
+    grid-row: 6/8;
+}
+
+/*   Wellness shots section*/
+.wellness-shots {
+    grid-column: span 12;
+    display:grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(8, auto);
+    grid-gap: 1rem; 
+    margin-bottom: 3rem;
 }
 .wellness-img1 {
     background-image: url(../images/store7.jpg);
     padding: 3rem;
     background-size: contain;
     background-repeat: no-repeat;
+    grid-column: 1/3;
+    grid-row: 2/4;
 }
 .wellness-img2 {
     background-image: url(../images/store8.jpg);
     padding: 3rem;
     background-size: contain;
     background-repeat: no-repeat;
+    grid-column: 1/3;
+    grid-row: 4/6; 
 }
 .wellness-img3 {
     background-image: url(../images/store9.jpg);
     padding: 3rem;
     background-size: contain;
     background-repeat: no-repeat;
+    grid-column: 1/3;
+    grid-row: 6/8;
 }
 
+
+/*    Cleanse kit section  */
+.cleanse-kit {
+    grid-column: span 12;
+    display:grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(8, auto);
+    grid-gap: 1rem; 
+    padding-bottom: 3rem;
+}
 .cleanse-img1 {
     background-image: url(../images/store10.jpg);
     padding: 3rem;
     background-size: contain;
     background-repeat: no-repeat;
+    grid-column: 1/3;
+    grid-row: 2/4;
 }
 .cleanse-img2 {
     background-image: url(../images/store11.jpg);
     padding: 3rem;
     background-size: contain;
     background-repeat: no-repeat;
+    grid-column: 1/3;
+    grid-row: 4/6; 
 }
 .cleanse-img3 {
     background-image: url(../images/store12.jpg);
     padding: 3rem;
     background-size: contain;
     background-repeat: no-repeat;
+    grid-column: 1/3;
+    grid-row: 6/8;
 }
+.line {
+    grid-column: span 12;
+    border-bottom: var(--store-page-box-color) 1px solid;
+}
+
+
+/*    Footer    */
+
+input[type=email] {
+    border: none;
+    border-bottom: var(--main-color) 3px solid;
+    background-color: transparent;  
+}
+input[type=email]:hover {
+    border-bottom: var(--button-hover) 3px solid;
+}
+
+footer {
+    grid-column: span 12;
+    background-color: var(--footer-color);
+    color: var(--main-color);
+    text-align: left;
+    font-weight: 600;
+    padding: 0 1rem;
+}
+footer > a {
+    color: var(--main-color);
+    text-decoration: underline;
+    font-size: 26px;
+}
+.footer-a {
+    color: var(--main-color);
+    text-decoration: underline;
+    font-size: 14px;
+}
+footer > p {
+    font-size: 14px;
+    font-weight: 300;
+    padding-bottom: 2rem;
+}
+footer > h3 {
+    text-align: left;
+    padding: 4rem 0 2rem 0;
+}
+footer > form {
+    text-align: left;
+    margin-bottom: 5rem;
+}
+.fieldset-column {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0.5rem;
+}
+footer > form > fieldset {
+    border: none;
+    display: flex;
+    flex-direction: row;
+}
+footer > .logo-jb {
+    text-align: center;
+    font-weight: 600;
+    display: grid;
+    grid-template-columns: 20px 20px;
+    grid-template-rows: 20px 20px;
+    grid-template-areas: "j ."
+    ". b";
+    width: 70px;
+    height: 70px;
+    padding-left: 0.7rem;
+    padding-top: 0.5rem;
+    border: 3px solid var(--main-color);
+    border-radius: 50%;
+    margin: 2rem 0;
+}
+.logo-j{
+    grid-area: j;
+}
+.logo-b {
+    grid-area: b;
+}
+
+
+
 
 
 
@@ -197,48 +349,63 @@ footer {
     footer {
         display: none;
     }
-    .cold-pressed > h1 {
-        grid-column: span 12;
-        border-bottom: 2px solid var(--store-page-box-color);
-        box-shadow: 1px 1px 3px var(--store-page-box-color);
-        padding: 0.5rem;
-        text-align: center;
-    }
-    .cold-pressed > h2 {
-        grid-column: 1/11;
-        border-bottom: 1px solid var(--store-page-box-color) ;
-    }
-    .up-icon {
-        grid-column: 11/13;
-        width: 30px;
-        border-bottom: 1px solid var(--store-page-box-color) ;
-    }
-    .cold-pressed-img1 {
-        grid-column: 1/3;
-        grid-row: 3/5;
-       
-    }
-    .cold-pressed-img2 {
-        grid-column: 1/3;
-        grid-row: 5/7;
-        
-    }
-     .cold-pressed-img3 {
-        grid-column: 1/3;
-        grid-row: 7/9;
-    
-    }
-    .product-name {
-        grid-column: 4/8;
-    }
-    .product-description {
-        grid-column: 4/ 11;
-    }
-    .product-price {
-        grid-column: 12/13;
-    }
     .full-text {
         display: none;
     }
 
+}
+
+@media screen and (min-width: 431px) {
+    main {
+        grid-column: span 12;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+    }
+
+header {
+    grid-column: span 12;
+    display: grid;
+    grid-template-rows: 50px 50px; 
+    align-items: center;
+}
+.header-user-icon {
+    width: auto;
+    height: 100%; 
+    display: inline;
+}
+.header-logo {
+    grid-column: span 6;
+    font-family: var(--heading-font);
+    text-align: left;
+    font-weight: 400;
+    font-size: 1.25rem;
+    padding-left: 0.5rem;
+}
+.header-hamburger-icon {
+    grid-column: 12/13;
+    width: 100%;
+   
+}
+
+
+    .menu-section {
+        grid-column: 1;
+    }
+    .cold-pressed {
+        grid-column: 2;
+    }
+    .cart-section {
+        grid-column: 3;
+    }
+    .smoothies {
+        display: none;
+    }
+    .wellness-shots {
+        display: none;
+    }
+    .cleanse-kit {
+        display: none;
+    }
+}
+    
 }
