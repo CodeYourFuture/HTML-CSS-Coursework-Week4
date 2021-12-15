@@ -356,12 +356,11 @@ footer > .logo-jb {
 }
 
 @media screen and (min-width: 431px) {
-    main {
-        grid-column: span 12;
-        display: grid;
-        grid-template-columns: repeat(3, auto);
-    }
-
+main {
+    grid-column: span 12;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
 header {
     grid-column: span 12;
     display: grid;
@@ -383,29 +382,26 @@ header {
 }
 .header-hamburger-icon {
     grid-column: 12/13;
-    width: 100%;
-   
+    width: 100%; 
+}
+.menu-section {
+    grid-column: 1;
+}
+.cold-pressed {
+    grid-column: 2;
+}
+.cart-section {
+    grid-column: 3;
+}
+.smoothies {
+    display: none;
+}
+.wellness-shots {
+    display: none;
+}
+.cleanse-kit {
+    display: none;
 }
 
-
-    .menu-section {
-        grid-column: 1;
-    }
-    .cold-pressed {
-        grid-column: 2;
-    }
-    .cart-section {
-        grid-column: 3;
-    }
-    .smoothies {
-        display: none;
-    }
-    .wellness-shots {
-        display: none;
-    }
-    .cleanse-kit {
-        display: none;
-    }
-}
     
 }
