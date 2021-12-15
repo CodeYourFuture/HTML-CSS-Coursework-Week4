@@ -16,17 +16,20 @@
     <link rel="stylesheet" href="./css/layout.css" />
     <link rel="stylesheet" href="./css/images.css" />
 
+    <link rel="stylesheet" href="./css/desktop.css" />
     <title>Responsive grid project</title>
 </head>
 
 <body id="body">
     <!-- Add your markup here -->
-    <header class="grey-background">
+    <header class="grey-background header">
         <section class="white-background">
             <section class="search-wrapper">
                 <img src="./images/search.svg" alt="Search Image" class="search-img" />
                 <input type="search" placeholder="Search..." class="search" />
             </section>
+            <section class="search-login"><img src="./images/profile.svg" alt="Profile SVG Image" /><a href="#">Log
+                        In</a></section>
             <a href="#" class="bag"><img src="./images/shopping-cart.svg" alt="shopping-bag" class="bag-image" /></a>
         </section>
         <a href="./index.html" class="header-text">
@@ -40,31 +43,33 @@
                 </button>
         </section>
         <section class="changing-text" id="changing-text"></section>
-    </header>
-    <section class="menu-list" id="menu-list">
-        <nav>
-            <ul>
-                <li class="nav-items login"><img src="./images/profile.svg" alt="Profile SVG Image" /><a href="#" onclick="showMenu()">Log
-                            In</a></li>
-                <li class="nav-items shop">
-                    <div class="shop-wrapper"><a href="./shop.html" onclick="showMenu()">Shop</a><button class="down" onclick="showShopItems()"><img src="./images/down.svg"
-                                    alt="Down Arrow"></button></div>
-                </li>
-                <ul class="hidden" id="hidden">
-                    <li><a href="./cactus.html" onclick="showMenu()">Cacti</a></li>
-                    <li><a href="./plants.html" onclick="showMenu()">Plants</a></li>
-                    <li><a href="./succulents.html" onclick="showMenu()">Succulents</a></li>
+        <section class="menu-list" id="menu-list">
+            <section class="login"><img src="./images/profile.svg" alt="Profile SVG Image" /><a href="#" onclick="showMenu()">Log
+                        In</a></section>
+            <nav>
+                <ul>
+                    <li class="nav-items shop" onmouseover="showHidden()">
+                        <div class="shop-wrapper"><a href="./shop.html" onclick="showMenu()">Shop</a><button class="down" onclick="showShopItems()"><img src="./images/down.svg"
+                                        alt="Down Arrow"></button></div>
+                    </li>
+                    <ul class="hidden" id="hidden">
+                        <li><a href="./cactus.html" onclick="showMenu()">Cacti</a></li>
+                        <li><a href="./plants.html" onclick="showMenu()">Plants</a></li>
+                        <li><a href="./succulents.html" onclick="showMenu()">Succulents</a></li>
+                    </ul>
+                    <li class="nav-items" onclick="showMenu()">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="nav-items"><a href="./faq.html" onclick="showMenu()">FAQ</a></li>
+                    <li class="nav-items">
+                        <a href="#contact" onclick="showMenu()">Contact</a>
+                    </li>
                 </ul>
-                <li class="nav-items" onclick="showMenu()">
-                    <a href="#about">About</a>
-                </li>
-                <li class="nav-items"><a href="./faq.html" onclick="showMenu()">FAQ</a></li>
-                <li class="nav-items">
-                    <a href="#contact" onclick="showMenu()">Contact</a>
-                </li>
-            </ul>
-        </nav>
-    </section>
+            </nav>
+        </section>
+    </header>
+
+
     <main class="grey-background">
         <section class="hero">
             <section class="overlay"></section>
@@ -115,40 +120,42 @@
                 </section>
             </section>
         </section>
-        <section class="about" id="about">
-            <h4>About us</h4>
-            <hr class="small-divider" />
-            <p>
-                I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for
-                you to tell a story and let your users know a little more about you.
-            </p>
-            <p>
-                This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide.
-            </p>
-        </section>
-        <section class="random-pictures">
-            <img src="./images/wheelbarrow.png" alt="Wheelbarrow in greenhouse" />
-            <img src="./images/leaf.png" alt="Leaf in foreground" />
-            <img src="./images/woman.png" alt="Woman standing by plants" />
-        </section>
-        <section class="offer">
-            <h1>Buy online now & get 10% off !</h1>
-            <form action="./shop.html">
-                <button>Shop Now</button>
-            </form>
+        <section class="about-wrapper">
+            <section class="about" id="about">
+                <h4>About us</h4>
+                <hr class="small-divider" />
+                <p>
+                    I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for
+                    you to tell a story and let your users know a little more about you.
+                </p>
+                <p>
+                    This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide.
+                </p>
+            </section>
+            <img src="./images/wheelbarrow.png" alt="Wheelbarrow in greenhouse" class="wheelbarrow" />
+            <img src="./images/leaf.png" alt="Leaf in foreground" class="leaf" />
+            <img src="./images/woman.png" alt="Woman standing by plants" class="woman" />
+            <section class="offer">
+                <h1>Buy online now & get 10% off !</h1>
+                <form action="./shop.html">
+                    <button>Shop Now</button>
+                </form>
+            </section>
         </section>
         <section class="form" id="contact">
             <form action="#" class="contact-form">
                 <h4>For special requests & orders</h4>
                 <hr class="large-divider" />
-                <fieldset>
-                    <label for="firstName">First Name *</label>
-                    <input type="text" name="first-name" id="first-name" class="input-field" placeholder=" " required />
-                </fieldset>
-                <fieldset>
-                    <label for="last-name">Last Name *</label>
-                    <input type="text" name="last-name" id="last-name" class="input-field" placeholder=" " required />
-                </fieldset>
+                <section class="name-wrapper">
+                    <fieldset class="names">
+                        <label for="firstName">First Name *</label>
+                        <input type="text" name="first-name" id="first-name" class="input-field" placeholder=" " required />
+                    </fieldset>
+                    <fieldset class="names">
+                        <label for="last-name">Last Name *</label>
+                        <input type="text" name="last-name" id="last-name" class="input-field" placeholder=" " required />
+                    </fieldset>
+                </section>
                 <fieldset>
                     <label for="email">Email *</label>
                     <input type="email" name="email" id="email" class="input-field" placeholder=" " required />
@@ -163,28 +170,30 @@
                 </fieldset>
                 <input type="submit" value="Send" />
             </form>
+            <img src="./images/last-plant.png" alt="plants" class="last-plant" />
         </section>
 
-        <img src="./images/last-plant.png" alt="plants" class="last-plant" />
+
         <section class="find-us">
-            <section class="contact">
-                <h4>Our store</h4>
-                <p>Address: 500 Terry Francois Street San</p>
-                <p>Francisco, CA 94158</p>
-                <p>Phone: 123-456-7890</p>
-                <p>Email: info@mysite.com</p>
-            </section>
-            <section class="open">
-                <h4>Opening hours</h4>
-                <p>Mon - Fri: 7am - 10pm</p>
-                <p>Saturday: 8am - 10pm</p>
-                <p>Sunday: 8am - 11pm</p>
-            </section>
-            <section class="help">
-                <h4>Help</h4>
-                <a href="#">Shipping & Returns</a>
-                <a href="#">Privacy Policy</a>
-                <a href="./faq.html">FAQ</a>
+            <section class="find-us-wrapper">
+                <section class="contact">
+                    <h4>Our store</h4>
+                    <p>Address: 500 Terry Francois Street San Francisco, CA 94158</p>
+                    <p>Phone: 123-456-7890</p>
+                    <p>Email: info@mysite.com</p>
+                </section>
+                <section class="open">
+                    <h4>Opening hours</h4>
+                    <p>Mon - Fri: 7am - 10pm</p>
+                    <p>Saturday: 8am - 10pm</p>
+                    <p>Sunday: 8am - 11pm</p>
+                </section>
+                <section class="help">
+                    <h4>Help</h4>
+                    <a href="#">Shipping & Returns</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="./faq.html">FAQ</a>
+                </section>
             </section>
             <section class="subscribe">
                 <h4>Subscribe</h4>

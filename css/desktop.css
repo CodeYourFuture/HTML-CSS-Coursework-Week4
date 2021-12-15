@@ -1,0 +1,122 @@
+@media screen and (min-width: 980px) {
+    body {
+        padding: 0 50px;
+        background: var(--lightGrey);
+    }
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 3;
+        width: auto;
+        height: 115px;
+    }
+    .white-background {
+        padding: 7px;
+    }
+    .menu-list {
+        display: flex;
+        height: fit-content;
+        width: 100%;
+        padding-top: 0;
+        align-self: center;
+    }
+    .menu-list nav {
+        width: 100%;
+        margin: 0;
+    }
+    .menu-list li {
+        margin-bottom: 0;
+    }
+    .menu-list nav>ul {
+        display: flex;
+    }
+    .shop {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    .hidden {
+        position: absolute;
+        top: 115px;
+        background: var(--lightGrey);
+        text-align-last: left;
+        padding: 10px;
+    }
+    .down {
+        display: none;
+    }
+    .hamburger-menu {
+        display: none;
+    }
+    .header-text {
+        padding: 19px 0;
+    }
+    .login {
+        display: none;
+    }
+    .login img {
+        width: 25px;
+        margin-right: 13px;
+    }
+    .search-login img {
+        width: 25px;
+        margin-right: 13px;
+    }
+    .bag {
+        justify-self: end;
+        margin-left: 36px;
+    }
+    .hero {
+        background-attachment: fixed;
+        background-position: bottom;
+        height: 100vh;
+        padding: 180px 305px 265px;
+    }
+    .logo-details {
+        justify-content: center;
+    }
+    .logo {
+        margin: 0 20px;
+    }
+    .product-links {
+        margin: 50px 0;
+        width: calc((100vw - 200px) / 3);
+    }
+    .wheelbarrow,
+    .leaf {
+        height: 100%;
+    }
+    .wheelbarrow,
+    .leaf,
+    .woman {
+        object-fit: cover;
+        object-position: center;
+    }
+    .woman {
+        height: 100%;
+    }
+    .offer {
+        padding: 130px 150px 200px;
+    }
+    .about {
+        padding: 85px 95px;
+    }
+    .form img {
+        display: none;
+    }
+    .form {
+        background: url("../images/last-plant.png");
+        background-attachment: fixed;
+        background-position: top;
+        background-size: cover;
+        padding: 100px 0;
+    }
+    .contact-form {
+        background: var(--transparentGrey);
+        width: 60%;
+    }
+    input[type="submit"]:hover,
+    input[type="submit"]:active {
+        opacity: 0.7;
+    }
+}

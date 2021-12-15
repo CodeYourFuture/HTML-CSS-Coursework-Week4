@@ -129,3 +129,31 @@ h1 {
     color: var(--black);
     text-transform: none;
 }
+
+@media screen and (min-width: 980px) {
+    .changing-text {
+        font-size: 1.2em;
+    }
+    .header-text {
+        font-size: 1.2em;
+    }
+    .hero h2 {
+        font-size: 7rem;
+    }
+    .offer h1 {
+        font-size: 5rem;
+    }
+    .about p {
+        font-size: 1rem;
+    }
+    .find-us h4 {
+        font-size: 1.3rem;
+    }
+    .find-us p {
+        font-size: 1.1rem;
+        font-weight: 200;
+    }
+    .find-us a {
+        font-size: 1.1rem;
+    }
+}

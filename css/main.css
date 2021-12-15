@@ -227,6 +227,7 @@ input[type="submit"] {
     font-size: 0.875rem;
     font-weight: 200;
     z-index: 2;
+    cursor: pointer;
 }
 
 .overlay {
@@ -348,7 +349,9 @@ textarea {
     height: 153px;
 }
 
-input:focus-within,
+input[type="text"]:focus-within,
+input[type="tel"]:focus-within,
+input[type="email"]:focus-within,
 textarea:focus-within,
 input[type="text"]:hover,
 input[type="tel"]:hover,
@@ -415,10 +418,6 @@ img {
 .find-us input[type="email"]:focus-within,
 .find-us input[type="email"]:hover {
     border: 3px solid var(--white);
-}
-
-input[type="submit"]:not(:focus):not(:placeholder-shown):valid {
-    border-color: var(--white);
 }
 
 .find-us input[type="submit"] {
@@ -496,7 +495,8 @@ footer a {
     text-align: center;
 }
 
-.menu-list a {
+.menu-list a,
+.search-login a {
     text-decoration: none;
     color: var(--redBrown);
     font-weight: 200;
@@ -507,9 +507,18 @@ footer a {
     margin: 0 auto;
 }
 
-.login img {
+.login img,
+.search-login img {
     width: 30px;
     margin-right: 20px;
+}
+
+.search-login {
+    display: none;
+}
+
+.login {
+    margin-bottom: 30px;
 }
 
 .hidden {
