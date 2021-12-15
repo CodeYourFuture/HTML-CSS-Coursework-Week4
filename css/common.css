@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+        'header'
+        'main'
+        'footer';
+
+    background-color: #8080803b;
+}
+
+.btn {
+    padding: 1em;
+    font-size: 3vw;
+}
