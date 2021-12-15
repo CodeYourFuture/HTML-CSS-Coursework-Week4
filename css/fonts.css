@@ -156,4 +156,7 @@ h1 {
     .find-us a {
         font-size: 1.1rem;
     }
+    .faq-wrapper button {
+        font-size: 1.2rem;
+    }
 }

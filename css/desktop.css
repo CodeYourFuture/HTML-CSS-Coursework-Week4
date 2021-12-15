@@ -1,7 +1,6 @@
 @media screen and (min-width: 980px) {
-    body {
-        padding: 0 50px;
-        background: var(--lightGrey);
+    main {
+        padding: 80px 40px 0;
     }
     header {
         position: sticky;
@@ -9,6 +8,7 @@
         z-index: 3;
         width: auto;
         height: 115px;
+        padding: 0 40px;
     }
     .white-background {
         padding: 7px;
@@ -119,5 +119,8 @@
     }
     .white {
         background: var(--white);
+    }
+    .faq-wrapper {
+        padding: 0 40px 160px;
     }
 }
