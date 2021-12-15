@@ -31,15 +31,41 @@ html {
   padding: 0;
 }
 
+.sections-container {
+  display: grid;
+  grid-template-rows: repeat(3, min-content) 1fr;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+section {
+  height: auto;
+  width: 100%;
+  padding: 0;
+  text-align: center;
+}
+
+.home {
+  position: static;
+  overflow: hidden;
+}
+
 h1 {
-  grid-column: 1/-1;
-  display: flex;
-  flex-direction: column;
   margin-top: 1rem;
   font-family: "Questrial", sans-serif;
   font-weight: 400;
   line-height: 1.3em;
   font-size: 32px;
+}
+
+.home-content {
+  grid-column: 1/-1;
+  margin: auto;
+  justify-items: center;
+  padding: 0 3rem;
+}
+
+.home-content p {
+  padding: 0 3rem;
 }
 
 .button {
@@ -55,23 +81,7 @@ h1 {
   color: rgb(255, 255, 255);
 }
 
-.home {
-  position: static;
-  overflow: hidden;
-}
-
-.sections-container {
-  display: grid;
-  grid-template-rows: repeat(3, min-content) 1fr;
-  grid-template-columns: repeat(12, 1fr);
-  height: auto;
-  width: 100%;
-  padding: 0;
-  text-align: center;
-}
-
 .home p {
-  grid-column: 1/-1;
   display: flex;
   flex-direction: column;
   padding: 0 1rem;
@@ -81,8 +91,7 @@ h1 {
 }
 
 .home button {
-  grid-column: 5/9;
-  margin-top: 0.5rem;
+  margin-top: 1.5rem;
 }
 
 .home-image {
@@ -124,10 +133,16 @@ img {
 
 .intro-card {
   margin-bottom: 1rem;
+  padding: 0 5rem;
+}
+
+.intro-section {
+  display: flex;
+  flex-direction: column;
 }
 
 .intro-section h1 {
-  margin: 1.8rem 0;
+  margin: 1.8rem 3rem;
 }
 
 .intro-card span svg {
@@ -136,9 +151,10 @@ img {
 }
 
 .cards h3 {
-  margin-top: 1rem;
+  margin: 1rem 0;
   line-height: 1.3em;
   font-size: 1.4rem;
+  font-weight: 500;
 }
 
 .cards p {
@@ -160,13 +176,21 @@ img {
   padding: 1.5rem;
 }
 
-.about-text {
-  grid-column: 1/-1;
+.about-content {
   width: 100%;
   padding: 0 2.5rem;
+  margin-bottom: 1.3rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
-.about-text p,
+.about-content h1 {
+  padding: 0 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-content p,
 .offers p {
   line-height: 1.9em;
   font-size: 16px;
@@ -174,11 +198,10 @@ img {
 }
 
 .about-button {
-  margin-bottom: 1.5rem;
+  margin: 1.5rem 0;
 }
 
 .secondary-button {
-  grid-column: 5/9;
   height: 48px;
   width: 160px;
   background-color: transparent;
@@ -208,7 +231,8 @@ img {
 }
 
 .products h1 {
-  padding-top: 0.5rem;
+  grid-column: 1/-1;
+  padding: 0.5rem 4rem;
 }
 
 .product-card {
@@ -223,11 +247,13 @@ img {
 .product-card h3 {
   display: flex;
   flex-direction: column;
-  padding-top: 0.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+  padding: 0 5rem;
 }
 
 .product-card p {
-  padding: 0.5rem 3rem;
+  padding: 0.5rem 3.5rem;
 }
 
 .offers,
@@ -235,26 +261,31 @@ img {
   grid-column: 1/-1;
   padding-bottom: 1rem;
 }
-
+.offer-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
 .offers-image {
-  grid-column: 1/-1;
+  width: 100%;
   overflow: hidden;
   padding: 1.5rem;
 }
 
+.delivery h1 {
+  margin: 1rem auto;
+}
+
 .offers p {
   grid-column: 2/12;
-  padding: 0.5rem 1rem;
+  padding: 1rem;
 }
 
 .delivery-content {
-  grid-column: 1/-1;
   background-color: rgb(224, 248, 201);
   padding: 1rem 4rem;
-}
-
-.delivery h1 {
-  padding-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 .delivery-options {
@@ -273,6 +304,7 @@ img {
 
 .social-media h1 {
   padding: 2rem 0;
+  grid-column: 2/12;
 }
 
 .social-media .background-wrapper {
@@ -319,8 +351,184 @@ img {
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1050px) {
+  /* main {
+    position: relative;
+    margin-top: 112px;
+  } */
   h1 {
-    font-size: 55px;
+    font-size: 66px;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5rem;
+  }
+
+  h1 span:nth-of-type(2),
+  .home p span:nth-of-type(2) {
+    margin-left: 10px;
+  }
+
+  .home p {
+    flex-direction: row;
+    justify-content: center;
+    line-height: 1.5em;
+    text-align: center;
+    font-size: 36px;
+    margin: 2rem 0;
+  }
+
+  .home .primary-button {
+    grid-column: 1/-1;
+    margin: 2rem auto;
+    width: 350px;
+    height: 100px;
+  }
+
+  .button {
+    font-size: 24px;
+  }
+
+  .online-order {
+    flex-direction: row;
+    justify-content: center;
+    padding: 2rem 0;
+    font-size: 1.6rem;
+  }
+  .online-order a {
+    padding-left: 5px;
+  }
+
+  .intro-section h1 {
+    text-align: center;
+    padding: 3.5rem;
+  }
+
+  .card-content {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0 3rem;
+  }
+  .intro-card,
+  .delivery-options {
+    text-align: left;
+    max-width: 350px;
+    padding: 0.5rem;
+  }
+  .card-content h3 {
+    font-size: 2.2rem;
+    padding-right: 6rem;
+  }
+
+  .card-content p,
+  .about-us p,
+  .offer-content p {
+    font-size: 1.4rem;
+    text-align: justify;
+  }
+
+  .intro-card span svg {
+    width: 110px;
+    height: 110px;
+  }
+
+  .about-us {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: -30px;
+    max-height: 800px;
+  }
+
+  .aboutUs-image {
+    width: 727px;
+    height: 917px;
+    padding-top: 2.5rem;
+    margin-left: 5rem;
+  }
+  .about-content {
+    max-width: 620px;
+    text-align: left;
+    align-items: flex-start;
+    margin-right: 8rem;
+  }
+
+  .about-content h1,
+  .offer-content h1 {
+    padding: 0;
+  }
+
+  .secondary-button {
+    height: 78px;
+    width: 270px;
+    margin-bottom: 1rem;
+  }
+
+  .products h1 {
+    background-color: #fff;
+    height: 500px;
+    display: flex;
+    align-items: center;
+  }
+
+  .product-image {
+    min-height: 520px;
+    width: 410px;
+  }
+
+  .product-card {
+    text-align: left;
+    padding: 0 2rem;
+  }
+
+  .product-card h3,
+  .product-card p {
+    margin-left: 0.5rem;
+    margin-right: 4.5rem;
+    text-align: left;
+    padding: 0;
+  }
+
+  .product-button {
+    margin: 2rem auto;
+  }
+
+  .card-content .product-card:nth-of-type(1),
+  .card-content .product-card:nth-of-type(3) {
+    margin-top: -70px;
+  }
+  .card-content .product-card:nth-of-type(2) {
+    margin-top: -130px;
+  }
+
+  .offers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1rem;
+  }
+  .offers-image {
+    width: 650px;
+  }
+
+  .offer-content {
+    max-width: 620px;
+    align-items: start;
+    margin-right: 8rem;
+  }
+
+  .offer-content h1,
+  .offer-content p {
+    text-align: left;
+  }
+  .offer-button {
+    margin-left: 1rem;
+  }
+  .delivery-options {
+    padding: 4rem 1rem;
+  }
+  .delivery-options h3 {
+    margin-top: 1rem;
   }
 }

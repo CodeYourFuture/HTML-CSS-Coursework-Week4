@@ -25,6 +25,5 @@ hamburgerMenu.addEventListener("click", function () {
     hamburgerTop.style.borderColor = "#000";
     hamburgerMiddle.style.borderColor = "#000";
     navbar.classList.add("hide");
-    hamburgerMenu.style.gridColumn = "1/2";
   }
 });
