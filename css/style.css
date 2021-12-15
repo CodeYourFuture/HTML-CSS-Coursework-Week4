@@ -1,0 +1,798 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+/*heading*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import '~material-icons/iconfont/material-icons.css';
+/* material icon  */
+
+
+/* global variablies  */
+:root {
+    /* Colours */
+    --bg1-primary-color: #ededee;/* light grey  */    
+    --bg2-secondary-color: #123132; /* gark green*/
+    --bg3-Tertiary-color: #ffff;/* white  */    
+    --bg3-highlight-color: #565656; /* dark grey  */   
+    --bg3-highlight-color: #e4e5e5;  /* light grey  */  
+    --bg4-accent-color: #a05841; /*  brown  */
+   
+    /* Font */
+    --font-primary: 'Roboto', sans-serif;
+    /* font colour */
+    --font-pr-color: #a05841;
+    /*  brown  */
+
+
+}
+
+
+/* Global reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 380px;
+
+}
+
+
+body {
+    font-size: 1.2em;
+    font-weight: 300;
+    font-family: var(--font-primary);
+    /*font*/
+    color: var(--font-pr-color);
+}
+
+
+h1 {
+    font-family: var(--font-primary);
+    font-size: 2.3em;
+    font-weight: 100px;
+    padding: 1em 0em 0em 0em;
+}
+
+h2 {
+    font-size: 1.1em;
+    /*   text-align: justify; */
+    font-family: inherit;
+    line-height: 1.6em;
+    /*   padding: 0.5rem 0.2rem 10rem 0.2rem;  */
+}
+
+h3 {
+    font-size: 1.2em;
+    line-height: 1.6em;
+    margin: 1rem;
+    font-family: inherit;
+    place-items: center;
+}
+
+h4 {
+    font-size: 0.9em;
+    font-family: inherit;
+}
+
+h5 {
+    font-size: 20px;
+    font-weight: 450;
+    padding: 10px  0px 0px 0px;
+    color: var(--bg3-Tertiary-color);
+}
+
+h6 {
+    font-size: 20px;
+    font-weight: 650;
+    margin: 20px  0px 10px 0px;
+    color: var(--font-pr-color);
+    width: 300px;
+}
+
+h7 {
+    font-size: 16px;
+    font-weight: 350;
+    margin: 10px  0px 0px 0px;
+}
+p {
+    display: block;
+    font-family: inherit;
+    /* line-height: 1.6em; */
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+li {
+    display: flex;
+    list-style: none;
+}
+/* Grid -------------------------------------------------------------------------*/
+
+/* the body of the document  */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(30px, 437px));
+    /* background-color: var(--bg3-highlight-color); */
+}
+
+
+/* Line 1  */
+.sh {
+    grid-area: sh;
+    grid-column: 1 / 11;
+    grid-row: 1;
+
+    float: none;
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    background-color: var(--bg3-Tertiary-color);
+}
+
+/* search ----------------------- */
+
+input,
+#search {
+    margin: 30px 10px 10px 10px;
+    padding: 10px;
+    width: 15rem;
+    /* standard  appearance */
+    background-color: var(--bg3-Tertiary-color);
+    border: 0.1rem solid var(--bg3-Tertiary-color);
+}
+
+input,
+#search:hover {
+    border: 0.1rem solid var(--bg4-accent-color);
+}
+
+/* end of search  */
+
+/* reposition for desktop */
+.bk {
+    grid-area: bk;
+    grid-column: 11 / 13;
+    grid-row: 1;
+    margin: 30px 8px 10px 30px;
+
+    align-items: right; 
+}
+
+/* Line 2  */
+.l {
+    grid-area: l;
+    grid-column: 1 / 11;
+    grid-row: 2;
+    padding: 10px 0px 10px 20px;
+    background-color: var(--bg3-highlight-color);
+}
+
+.nv {
+    grid-area: nv;
+    grid-column: 11/ 13;
+    grid-row: 2;
+    padding: 10px 8px 20px 0px;
+
+    float: none;
+    display: block;
+    text-align: right;
+    width: 100%;
+    margin: 0;
+    background-color: var(--bg3-highlight-color);
+
+}
+
+/* Line 3  */
+.st {
+    grid-area: st;
+    grid-column: 1/ 13;
+    grid-row: 3;
+    padding: 10px 0px 15px 8px;
+    background-color: var(--bg3-highlight-color);
+
+}
+
+/* image Line 4  background1 Hero - bring in in CSS  */
+.bg1 {
+    grid-area: bg1;
+    grid-column: 1/ 13;
+    grid-row: 4;
+    height: 500px;
+    padding: 60px 30px 10px 30px;
+    color: var(--bg3-Tertiary-color);
+
+    text-align: center;
+    color: var(--bg3-Tertiary-color);
+    background-color: var(--bg2-secondary-color);
+
+    background-image: url("../img/background1.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /*   background-position: bottom; fixes to the back grpund */
+    background-attachment: fixed;
+    /* keeps the image in place as scroll  */
+   
+    align-items: center;
+    justify-content: center;
+    /*   minimised for mobile view */
+        /* max-width: 480px; */
+}
+
+/* shop Now  */
+.shop,
+button {
+    margin: 10px 10px 10px 10px;
+
+    width: 10rem;
+    height: 30px;
+
+    border: none;
+    transition: 0.6s;
+    overflow: hidden;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 16px;
+    color: var(--bg4-accent-color);
+    /* text brown*/
+
+}
+
+/* shop now */
+.shop,
+button:hover {
+    background-color: var(--bg4-accent-color);  /* text brown*/
+    color: var(--bg3-Tertiary-color)      /* text white*/
+}
+
+/* shop Collection button */
+.collection  {
+    margin: 10px 10px 10px 10px;
+
+    width: 10rem;
+    height: 30px;
+
+    border: none;
+    transition: 0.6s;
+    overflow: hidden;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 14px;
+    color: var(--bg3-Tertiary-color);
+    /* text brown*/
+
+}
+
+/* shop button hover - to be sorted out  */
+/* .shop,
+.collection:hover {
+    background-color: var(--bg4-accent-color);
+    /* text brown*/
+    /* color: var(--bg3-Tertiary-color) */
+        /* text white
+} */
+
+/* image Line 5 */
+.i1a {
+    grid-area: i1a;
+    grid-column: 1 / 13;
+    grid-row: 5;
+    height: 500px;
+    padding: 30px;
+
+    text-align: center;
+    color: var(--bg2-secondary-color);
+
+    background-image: url("../img/1.jpg");
+    background-repeat: no-repeat;
+     -webkit-background-size: cover; 
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: bottom;
+}
+
+/* image Line 6 */
+.i2a {
+    grid-area: i2a;
+    grid-column: 1 / 13;
+    grid-row: 6;
+    height: 500px;
+    padding: 30px;
+
+    text-align: center;
+    color: var(--bg2-secondary-color);
+
+    background-image: url("../img/13.jpg");
+    background-repeat: no-repeat;
+   -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+    background-position: bottom;
+}   
+
+/* image Line 7 */
+.i3a {
+    grid-area: i3a;
+    grid-column: 1 / 13;
+    grid-row: 7;
+    height: 500px;
+    padding: 30px;
+
+    text-align: center;
+    color: var(--bg2-secondary-color);
+
+    background-image: url("../img/14.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+    background-position: bottom;
+    
+}
+
+/* Copy Line 8 */
+.cp {
+    grid-area: cp;
+    grid-column: 1 / 13;
+    grid-row: 8;
+    height: 500px;
+    padding: 30px;
+
+    text-align: center;
+    color: var(--font-pr-color);
+    background-color: var(--bg3-Tertiary-color);
+}
+
+/* image */
+.i4a {
+    grid-area: i4a;
+    grid-column: 1 / 13;
+    grid-row: 9;
+    height: 300px;
+    padding: 30px;
+
+    text-align: center;
+    color: var(--bg2-secondary-color);
+
+    background-image: url("../img/4a.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: bottom;
+
+}
+
+/* image */
+.i5a {
+    grid-area: i5a;
+    grid-column: 1 / 13;
+    grid-row: 10;
+    height: 300px;
+    padding: 30px;
+
+    text-align: center;
+    color: var(--bg2-secondary-color);
+
+    background-image: url("../img/5a.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: bottom;
+  
+}
+
+/* image */
+.i6a {
+    grid-area: i6a;
+    grid-column: 1 / 13;
+    grid-row: 11;
+    height: 300px;
+    padding: 30px;
+
+    text-align: center;
+    color: var(--bg2-secondary-color);
+
+    background-image: url("../img/6a.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: bottom;
+    /*fixes to the back grpund -*/
+    /* background-attachment: fixed;  keeps the image in place as scroll  */
+}
+
+/*  headline */
+.hdl {
+    grid-area: hdl;
+    grid-column: 1 / 13;
+    grid-row: 12;
+    height: 500px;
+    padding: 150px 30px 30px 20px;
+
+    font-size: 60px;
+    font-weight: 400;
+
+    text-align: center;
+    color: var(--bg3-Tertiary-color);
+    background-color: var(--bg2-secondary-color);
+}
+
+/* order form ---------------------------------------------------- */
+.of1 {
+    grid-area: hdl;
+    grid-column: 1 / 13;
+    grid-row: 13;
+    /* height: 500px; */
+    padding: 30px;
+    text-align: center;
+    background-color: var(--bg3-highlight-color);
+}
+
+/* form  ---------------------------------------------*/
+form {
+    display: grid;
+    padding: 1em;
+    background: var(--bg1-primary-color);   
+    margin: 2rem auto 0 auto;
+  /*   max-width: 600px;  if no limit on the HTML */
+    padding: 1em;
+  }
+
+  form button {
+    padding: 0.7em;
+    width: 100%;
+    border: 0;
+  }  
+
+  #message{
+     height: 200px;
+     padding: 10px 10px; 
+     border: 0.1rem solid var(--bg2-secondary-color); 
+     width: 100%;
+  }
+  
+  /* learn more button  */
+  .send {
+      margin: 20px 0px 10px 0px;
+  
+      width: 100%;
+      height: 40px;
+  
+      border: none;
+      transition: 0.6s;
+      overflow: hidden;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 16px;
+  
+      background-color: var(--bg4-accent-color);  /* text brown*/
+      color: var(--bg3-Tertiary-color)      /* text white*/
+  }
+  
+  /* send button */  
+  send:hover {
+      background-color: var(--bg4-accent-color);  /* text brown*/
+          color: var(--bg4-accent-color);  /* text brown*/
+  }
+  
+
+
+/* end order form  ------------------------------------------------*/
+
+/* background image */
+.bg2 {
+    grid-area: bg2;
+    grid-column: 1 / 13;
+    grid-row: 14;
+    height: 300px;
+    padding: 30px;
+
+    background-image: url("../img/background2.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /*   background-position: bottom; fixes to the back grpund */
+    background-attachment: fixed;
+    /* keeps the image in place as scroll  */
+}
+
+/* store address */
+.sa {
+    grid-area: sa;
+    grid-column: 1 / 13;
+    grid-row: 15;
+    height: 250px;
+    padding: 20px;
+
+    text-align: center;
+    line-height: 1.6;
+
+    color: var(--bg3-Tertiary-color);
+    background-color: var(--bg2-secondary-color);
+}
+
+/* store opening hours */
+.so {
+    grid-area: so;
+    grid-column: 1 / 13;
+    grid-row: 16;
+    height: 250px;
+    padding: 20px;
+
+    text-align: center;
+    line-height: 1.6;
+
+    color: var(--bg3-Tertiary-color);
+    background-color: var(--bg2-secondary-color);
+}
+
+/* help */
+.hp {
+    grid-area: hp;
+    grid-column: 1 / 13;
+    grid-row: 17;
+    /* height: 250px; */
+    padding: 20px;
+
+    text-align: center;
+    line-height: 1.6;
+
+    color: var(--bg3-Tertiary-color);
+    background-color: var(--bg2-secondary-color);
+}
+
+/* subcribe  */
+.sb {
+    grid-area: sb;
+    grid-column: 1 / 13;
+    grid-row: 18;
+    /* height: 300px; */
+    padding: 30px;
+    line-height: 1.6px;
+    /*   display: flex; */
+    align-items: center;
+    /*   justify-content: center; */
+
+    text-align: center;
+    color: var(--bg3-Tertiary-color);
+    background-color: var(--bg2-secondary-color);
+}
+
+/* subscribe ----------------------- */
+.label {
+    margin-bottom: -1rem;
+    align-self: end;
+
+    font-size: 16px;
+}
+
+input {
+    margin: 30px 10px 10px 10px;
+    padding: 10px;
+    width: 19rem;
+    /* standard  appearance */
+    background-color: var(--bg2-secondary-color);
+    border: 0.1rem solid white;
+}
+
+/* input change on hover */
+input:hover {
+    transition: 0.5s;
+    background-color: var(--bg2-secondary-color);
+    border: 0.2rem solid white;
+}
+
+/* learn more button  */
+.subscribe,
+button {
+    margin: 10px 10px 10px 10px;
+
+    width: 19rem;
+    height: 40px;
+    background-color: var(--bg3-Tertiary-color);
+    /*brown*/
+
+    border: none;
+    transition: 0.6s;
+    overflow: hidden;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 18px;
+
+}
+
+/* learn more button hover */
+button:hover {
+    background-color: var(--bg2-secondary-color);
+    /*white*/
+    color: var(--bg3-Tertiary-color);
+    /*brown*/
+}
+
+/* social media */
+.sm {
+    grid-area: sm;
+    grid-column: 1 / 13;
+    grid-row: 19;
+    height: 100px;
+    padding: 30px;
+    /*   text-align: center; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg2-secondary-color);
+}
+
+/* social meduia ------*/
+/* i.fa-twitter, */
+/* i.fa-instagram,
+i.fa-facebook,
+i.fa-pinterest {
+    font-size: 30px;
+    display: inline-block;
+    /* color: var(--bg3-Tertiary-color); 
+       color: white;
+    margin: 0 0px 0 10px;
+    padding: 0px 10px 0px 0px;
+} */
+
+/* social meduia - navigation*/
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+li {
+    display: inline-block;
+}
+
+/* location map */
+.lm {
+    grid-area: lm;
+    grid-column: 1 / 13;
+    grid-row: 20;
+    overflow: hidden;
+
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* location map */
+iframe {
+    border: 0;
+    /*   display: block; */
+    width: 100%;
+    height: 20em;
+    margin: 0;
+}
+
+.ft {
+    grid-area: ft;
+    grid-column: 1 / 13;
+    grid-row: 21;
+    text-align: center;
+    color: white;
+    background-color: var(--bg2-secondary-color);
+    /*   box-shadow: 0px 0px 3px var(--bg2-secondary-color);  */
+    line-height: 1.6;
+    padding: 50px 0px 30px 0px;
+}
+
+
+
+
+/* chatbot */
+#chat-circle {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background: #BF2024;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: white;
+    padding: 12px;
+    cursor: pointer;
+    box-shadow: 0px 3px 16px 0px rgb(0 0 0 / 60%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+}
+
+.chatbot__close-button {
+    fill: white;
+
+    &.icon-speech {
+        width: 20px;
+        display: none;
+
+        .chatbot--closed & {
+            display: block;
+        }
+    }
+
+    &.icon-close {
+        width: 14px;
+
+        .chatbot--closed & {
+            display: none;
+        }
+    }
+}
+
+/* remove  for issue 1  */
+/* return to the top  */
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    /*     background: rgb(0, 0, 0); */
+    background: brown;
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+
