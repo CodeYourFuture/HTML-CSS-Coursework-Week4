@@ -233,4 +233,9 @@ fieldset {
     .help {
         width: calc(100% / 5);
     }
+    .products-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 50px;
+    }
 }
