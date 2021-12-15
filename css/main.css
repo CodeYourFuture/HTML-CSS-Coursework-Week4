@@ -154,7 +154,7 @@
 .about_us {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(7, 1fr);
+    grid-template-rows: repeat(7, auto);
     text-align: center;
     grid-column: 1/13;
 }
@@ -206,7 +206,7 @@
     background-color: rgb(6, 63, 57);
     width: 100%;
     text-align: center;
-    padding: 14em 2em 0;
+    padding: 5em 2em;
     text-align: center;
 }
 
