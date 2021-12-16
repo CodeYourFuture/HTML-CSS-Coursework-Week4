@@ -1,15 +1,18 @@
 /* ABOUT US */
+.about-us-container {
+    grid-area: about;
+}
+
 .about-us {
     background-color:var(--white);
-    grid-area: about;
     margin-top: 1.6em;
     text-align: center;
     padding-bottom: 30px;
 }
 
 .title {
-    margin-top: 4em;
     font-family: 'Outfit', sans-serif;
+    padding-top: 5em;
     color: var(--red-brown);
     font-size: 1em;
     letter-spacing: 0.3em;
@@ -43,23 +46,25 @@
 .greenhouse {
     grid-area: img;
     width: 100%;
+    object-fit: cover;
 }
 
 .greenhouse--img {
-    object-fit: fill;
+    object-fit: cover;
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 .leaf {
+    object-fit: cover;
     grid-area: img2;
     width: 100%;  
 }
 
 .leaf--img {
-    object-fit: fill;
+    object-fit: cover;
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 .foliage {
@@ -98,3 +103,39 @@
     background-color: var(--white);
     color: var(--green-black);
 }
+
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 900px) {
+    body {
+        padding: 0 2em;
+    }
+
+    .about-us-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-us-wrapper {
+        display: flex;
+        margin-top: 1.6em;
+    }
+
+   .about-us {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0;
+        margin-top: 0;
+   } 
+
+   .title {
+       padding-top: 1em;
+       font-size: 1.4vw;
+   }
+
+   .about-us--description {
+       font-size: 1.4vw;
+        padding: 0 3em;
+   }
+
+}    

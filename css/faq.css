@@ -1,17 +1,5 @@
-:root {
-    --red-brown: #A05941;
-    --green-black: #133032;
-    --light-grey: #EDEDEE;
-    --white: #FFF;
-    --transparent-white: rgba(0,0,0,0.75);
-    --dark-grey: #383636;
-    --light-brown: #a059414a;
-}
-
 body {
     background-color: var(--light-grey);
-    /* font-family: 'Fjalla One', sans-serif;
-    font-family: 'Outfit', sans-serif; */
     display: grid;
     margin: 0;
     grid-template-columns: repeat(4 1fr);
@@ -156,10 +144,6 @@ body {
     height: 1.3px;
     border: none;
 }
-
-
-
-
 
 /* 'Fjalla One', sans-serif;
 'Outfit', sans-serif; */

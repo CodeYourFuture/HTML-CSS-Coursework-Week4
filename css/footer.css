@@ -1,12 +1,3 @@
-:root {
-    --red-brown: #A05941;
-    --green-black: #133032;
-    --light-grey: #EDEDEE;
-    --white: #FFF;
-    --transparent-white: rgba(0,0,0,0.75);
-}
-
-/* FOOTER */
 .footer {
     background-color:var(--green-black);
     grid-area: footer;
