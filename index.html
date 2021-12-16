@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Responsive grid project</title>
+        <link rel="stylesheet" href="./css/shared.css"/>
         <link rel="stylesheet" href="./css/header.css"/>
         <link rel="stylesheet" href="./css/main.css"/>
         <link rel="stylesheet" href="./css/about-us.css"/>
@@ -13,20 +14,19 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Outfit:wght@200&display=swap" rel="stylesheet">
-        
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
     </head>
 
     <body>
         <header class="header">
             <div class="header-top-half">
                 <!-- SEARCH BAR -->
-                <div class="search-container">
-                    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+                <form class="search-container">
                     <i class="fa fa-search" aria-hidden="true" ></i>
                     <input class="input-field" type="text" placeholder="Search..." name="search">
-                </div>
+                </form>
 
-                <!-- SHOPPING BASKET -->
+                <!-- HEADER ICONS-->
                 <div class=account-container>
                     <div class="profile">
                         <img src="./icons/profile.svg" class="svg-color profile-svg" alt="login icon"/>
@@ -70,10 +70,7 @@
                 </div>
             
                 <h2 class="header-nav--subheading">We Deliver to Your Doorstep</h2>
-            </div>
-            
-            
-            
+            </div> 
         </header>
 
         <!-- HERO -->
@@ -105,7 +102,6 @@
 
 
         <div class="shop-container">
-
             <!-- SHOP -->
             <section class="plant shop-cacti">
                 <div class="desc">
@@ -137,47 +133,53 @@
 
         <!-- ABOUT US PAGE -->
         <!-- about us -->
-        <section class="about-us">
-                <h1 class="title">ABOUT US</h1>
-                <hr class="title-underline">
+        <div class="about-us-container">
+            <div class=about-us-wrapper>
+                <div class="about-us">
+                    <h1 class="title">ABOUT US</h1>
+                    <hr class="title-underline">
 
-                <div class="about-us--description">
-                    <p class="about-us--description__p1">I'm a paragraph. 
-                    Click here to add your own text and edit me. 
-                    It’s easy. Just click “Edit Text” or double 
-                    click me to add your own content and make changes 
-                    to the font. Feel free to drag and drop me 
-                    anywhere you like on your page. I’m a great 
-                    place for you to tell a story and let your 
-                    users know a little more about you. </p>
+                    <div class="about-us--description">
+                        <p class="about-us--description__p1">I'm a paragraph. 
+                        Click here to add your own text and edit me. 
+                        It’s easy. Just click “Edit Text” or double 
+                        click me to add your own content and make changes 
+                        to the font. Feel free to drag and drop me 
+                        anywhere you like on your page. I’m a great 
+                        place for you to tell a story and let your 
+                        users know a little more about you. </p>
 
-                    <p class="about-us--description__p2">This is a 
-                    great space to write long text about your company 
-                    and your services. You can use this space to go 
-                    into a little more detail about your company. 
-                    Talk about your team and what services you provide.</p>
+                        <p class="about-us--description__p2">This is a 
+                        great space to write long text about your company 
+                        and your services. You can use this space to go 
+                        into a little more detail about your company. 
+                        Talk about your team and what services you provide.</p>
+                    </div>
                 </div>
-        </section>
 
-        <!-- about us images -->
-        <div class="greenhouse">
-            <img src="./images/wheelbarrow.png" class="greenhouse--img" alt="greenhouse with plants and wheelbarrow inside"/>
-        </div>
+                <!-- about us images -->
+                <div class="greenhouse">
+                    <img src="./images/wheelbarrow.png" class="greenhouse--img" alt="greenhouse with plants and wheelbarrow inside"/>
+                </div>
 
-        <div class="leaf">
-            <img src="./images/leaf.png" class="leaf--img" alt="hand holding small leaf between two fingers">
-        </div>
+                <div class="leaf">
+                    <img src="./images/leaf.png" class="leaf--img" alt="hand holding small leaf between two fingers">
+                </div>
+            </div>
+            
+            <div class="about-us-offer">
+                <div class="foliage">
+                    <img src="./images/woman-foliage.png" class="foliage--img" alt="woman standing in front of window surrounded by plants">
+                </div>
 
-        <div class="foliage">
-            <img src="./images/woman-foliage.png" class="foliage--img" alt="woman standing in front of window surrounded by plants">
-        </div>
-
-        <!-- about us offer -->
-        <section class="offer">
-            <h1 class="offer--heading">BUY ONLINE NOW & GET 10% OFF !</h1>
-        
-            <button class="btn btn-white">Shop Now</button> 
-        </section>
+                <!-- about us offer -->
+                <div class="offer">
+                    <h1 class="offer--heading">BUY ONLINE NOW & GET 10% OFF !</h1>
+                
+                    <button class="btn btn-white">Shop Now</button> 
+                </div>
+            </div>   
+        </div>   
 
         <!-- ORDER FORM -->
         <div class="registration">
@@ -262,7 +264,6 @@
              
             </div>
             
-
             <div class="footer--subscribe">
                 <h1 class="footer--heading">SUBSCRIBE</h1>
 
@@ -296,6 +297,7 @@
                     </a>
                 </div>
             </div>  
+
             
             <!-- MAP DISPLAY -->
             <div class="map-container">
@@ -315,7 +317,6 @@
                     target="_blank">Wix.com</a>
             </span>
         </div>
-
 
         <div class="credit">
             <!-- Please leave this in to credit the creators of this design -->
