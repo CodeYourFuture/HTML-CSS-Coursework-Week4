@@ -78,8 +78,11 @@
     .hero {
         background-attachment: fixed;
         background-position: bottom;
-        height: 100vh;
-        padding: 180px 305px 265px;
+        height: 90vh;
+        padding: 50px 110px 0px;
+    }
+    .hero h2 {
+        margin-top: 50px;
     }
     .logo-details {
         justify-content: center;
@@ -89,7 +92,6 @@
     }
     .product-links {
         margin: 50px 0;
-        width: calc((100vw - 200px) / 3);
     }
     .wheelbarrow,
     .leaf {
@@ -105,7 +107,7 @@
         height: 100%;
     }
     .offer {
-        padding: 130px 150px 200px;
+        padding: 90px 30px 200px;
     }
     .about {
         padding: 85px 95px;

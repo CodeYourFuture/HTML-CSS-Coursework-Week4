@@ -137,9 +137,7 @@ h1 {
     .header-text {
         font-size: 1.2em;
     }
-    .hero h2 {
-        font-size: 7rem;
-    }
+    .hero h2,
     .offer h1 {
         font-size: 5rem;
     }
