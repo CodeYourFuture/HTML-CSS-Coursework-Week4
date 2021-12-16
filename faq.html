@@ -7,6 +7,7 @@
         <title>Responsive grid project</title>
         <link rel="stylesheet" href="./css/header.css"/>
         <link rel="stylesheet" href="./css/faq.css"/>
+        <link rel="stylesheet" href="./css/shared.css"/>
         <link rel="stylesheet" href="./css/footer.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,28 +20,55 @@
             <div class="header-top-half">
                 <!-- SEARCH BAR -->
                 <div class="search-container">
-                    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
                     <i class="fa fa-search" aria-hidden="true" ></i>
                     <input class="input-field" type="text" placeholder="Search..." name="search">
                 </div>
 
-                <!-- SHOPPING BASKET -->
-                <div class="shopping-basket">
-                    <img src="./icons/shopping-basket.svg" class="svg-color" alt="shopping basket icon"/>
+                <!-- HEADER ICONS-->
+                <div class=account-container>
+                    <div class="profile">
+                        <img src="./icons/profile.svg" class="svg-color profile-svg" alt="login icon"/>
+                        <a href="#" class="login-link">Log In</a>
+                    </div>
+                    <div class="shopping-basket">
+                        <img src="./icons/shopping-basket.svg" class="svg-color" alt="shopping basket icon"/>
+                    </div>
                 </div>
             </div>
 
             <!-- LOGO -->
-            <div class=header-nav>
-                 <h1 class="header-nav--logo">PRICKLES & CO.</h1>
-            
-                 <!-- HAMBURGER -->
-                <div class="nav-icon">
-                    <div class="line"></div>
+            <div class="nav-container">
+                    <div class=header-nav>
+                    <h1 class="header-nav--logo">PRICKLES & CO.</h1>
+
+                    <!-- MENU BAR FOR DESKTOP VERSION -->
+                    <nav class="nav">
+                        <div class="nav--bar">
+                            <ul class="nav--menu">
+                                <li class="nav--item">
+                                    <a href="#" class="nav--link">Shop</a>
+                                </li>
+                                <li class="nav--item">
+                                    <a href="#" class="nav--link">About</a>
+                                </li>
+                                <li class="nav--item">
+                                    <a href="#" class="nav--link">FAQ</a>
+                                </li>
+                                <li class="nav--item">
+                                    <a href="#" class="nav--link">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+
+                    <!-- HAMBURGER MOBILE VERSION-->
+                    <div class="nav-icon">
+                        <div class="line"></div>
+                    </div>
                 </div>
-            </div>
-          
-            <h2 class="header-nav--subheading">We Deliver to Your Doorstep</h2>   
+            
+                <h2 class="header-nav--subheading">We Deliver to Your Doorstep</h2>
+            </div> 
         </header>
 
         <!-- FAQ -->
@@ -90,7 +118,7 @@
             </div>
         </section>
 
-         <!-- FOOTER -->
+        <!-- FOOTER -->
         <footer class="footer">
             <div class="footer--store">
                 <h1 class="footer--heading">OUR STORE</h1>
@@ -123,7 +151,6 @@
              
             </div>
             
-
             <div class="footer--subscribe">
                 <h1 class="footer--heading">SUBSCRIBE</h1>
 
@@ -177,11 +204,8 @@
             </span>
         </div>
 
-
         <div class="credit">
             <!-- Please leave this in to credit the creators of this design -->
             <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
         </div>
-
-
     </body>
