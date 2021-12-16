@@ -67,7 +67,7 @@ function showChat() {
 function loadMore() {
     var x = document.getElementById("load-products");
     var y = document.getElementById("load");
-    x.style.display = "block";
+    x.style.display = "grid";
     y.style.display = "none";
 }
 

@@ -48,15 +48,15 @@
                         In</a></section>
             <nav>
                 <ul>
-                    <li class="nav-items shop" onmouseover="showHidden()">
-                        <div class="shop-wrapper"><a href="./shop.html" onclick="showMenu()">Shop</a><button class="down shop-down" onclick="showShopItems()"><img src="./images/down.svg"
-                                        alt="Down Arrow"></button></div>
+                    <li class="nav-items shop">
+                        <section class="shop-wrapper"><a href="./shop.html" onclick="showMenu()">Shop</a><button class="down shop-down"><img src="./images/down.svg" alt="Down Arrow"></button>
+                        </section>
+                        <ul class="hidden" id="hidden">
+                            <li><a href="./cactus.html" onclick="showMenu()">Cacti</a></li>
+                            <li><a href="./plants.html" onclick="showMenu()">Plants</a></li>
+                            <li><a href="./succulents.html" onclick="showMenu()">Succulents</a></li>
+                        </ul>
                     </li>
-                    <ul class="hidden" id="hidden">
-                        <li><a href="./cactus.html" onclick="showMenu()">Cacti</a></li>
-                        <li><a href="./plants.html" onclick="showMenu()">Plants</a></li>
-                        <li><a href="./succulents.html" onclick="showMenu()">Succulents</a></li>
-                    </ul>
                     <li class="nav-items" onclick="showMenu()">
                         <a href="./index.html#about">About</a>
                     </li>
@@ -68,7 +68,6 @@
             </nav>
         </section>
     </header>
-
     <main class="white">
         <section class="faq-wrapper">
             <h4>Faq</h4>
@@ -125,7 +124,8 @@
                                 FAQ?<img src="./images/down.svg" alt="Down Arrow"></button>
                     </section>
                     <section class="hidden-faq">
-                        <p>Yes! Users can add video from YouTube or Vimeo with ease:</p>
+                        <p>Yes! Users can add video from YouTube or Vimeo with ease:
+                        </p>
 
                         <ol>
                             <li>Enter App Settings</li>
@@ -163,7 +163,8 @@
             <section class="find-us-wrapper">
                 <section class="contact">
                     <h4>Our store</h4>
-                    <p>Address: 500 Terry Francois Street San Francisco, CA 94158</p>
+                    <p>Address: 500 Terry Francois Street San Francisco, CA 94158
+                    </p>
                     <p>Phone: 123-456-7890</p>
                     <p>Email: info@mysite.com</p>
                 </section>

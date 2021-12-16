@@ -48,15 +48,15 @@
                         In</a></section>
             <nav>
                 <ul>
-                    <li class="nav-items shop" onmouseover="showHidden()">
-                        <div class="shop-wrapper"><a href="./shop.html" onclick="showMenu()">Shop</a><button class="down shop-down" onclick="showShopItems()"><img src="./images/down.svg"
-                                        alt="Down Arrow"></button></div>
+                    <li class="nav-items shop">
+                        <section class="shop-wrapper"><a href="./shop.html" onclick="showMenu()">Shop</a><button class="down shop-down"><img src="./images/down.svg" alt="Down Arrow"></button>
+                        </section>
+                        <ul class="hidden" id="hidden">
+                            <li><a href="./cactus.html" onclick="showMenu()">Cacti</a></li>
+                            <li><a href="./plants.html" onclick="showMenu()">Plants</a></li>
+                            <li><a href="./succulents.html" onclick="showMenu()">Succulents</a></li>
+                        </ul>
                     </li>
-                    <ul class="hidden" id="hidden">
-                        <li><a href="./cactus.html" onclick="showMenu()">Cacti</a></li>
-                        <li><a href="./plants.html" onclick="showMenu()">Plants</a></li>
-                        <li><a href="./succulents.html" onclick="showMenu()">Succulents</a></li>
-                    </ul>
                     <li class="nav-items" onclick="showMenu()">
                         <a href="./index.html#about">About</a>
                     </li>
@@ -78,183 +78,400 @@
         </section>
         <section class="buy-these">
             <h3 id="shop">Shop all</h3>
-            <section class="products">
-                <img src="./images/cacti-1.webp" alt="Cactus Plant" class="product-image" />
-                <section>
-                    <p>I'm a product</p>
-                    <p><s>$15.00</s> $13.50</p>
-                    <button>Add to Cart</button>
-                </section>
-            </section>
-            <section class="products">
-                <p class="extra">Best Seller</p>
-                <img src="./images/succulents-1.webp" alt="Succulent Plant" class="product-image" />
-                <section>
-                    <p>I'm a product</p>
-                    <p>$30.00</p>
-                    <button>Add to Cart</button>
-                </section>
-            </section>
-            <section class="products">
-                <img src="./images/cacti-2.webp" alt="Cactus Plant" class="product-image" />
-                <section>
-                    <p>I'm a product</p>
-                    <p>$20.00</p>
-                    <button>Add to Cart</button>
-                </section>
-            </section>
-            <section class="products">
-                <img src="./images/cacti-4.webp" alt="Cactus Plant" class="product-image" />
-                <section>
-                    <p>I'm a product</p>
-                    <p>$20.00</p>
-                    <button>Add to Cart</button>
-                </section>
-            </section>
-            <section class="products">
-                <img src="./images/plants-2.webp" alt="Plant Image" class="product-image" />
-                <section>
-                    <p>I'm a product</p>
-                    <p><s>$15.00</s> $10.00</p>
-                    <button>Add to Cart</button>
-                </section>
-            </section>
-            <section class="products">
-                <p class="extra">New Arrival</p>
-                <img src="./images/cacti-5.webp" alt="Cactus Plant" class="product-image" />
-                <section>
-                    <p>I'm a product</p>
-                    <p>$23.00</p>
-                    <button>Add to Cart</button>
-                </section>
-            </section>
-            <section class="products">
-                <img src="./images/plants-4.webp" alt="Plant Image" class="product-image" />
-                <section>
-                    <p>I'm a product</p>
-                    <p>$20.00</p>
-                    <button>Add to Cart</button>
-                </section>
-            </section>
-            <section class="products">
-                <img src="./images/plants-3.webp" alt="Plant Image" class="product-image" />
-                <section>
-                    <p>I'm a product</p>
-                    <p>$20.00</p>
-                    <button>Add to Cart</button>
-                </section>
-            </section>
-            <section class="products">
-                <img src="./images/succulents-4.webp" alt="Succulent Plant" class="product-image" />
-                <section>
-                    <p>I'm a product</p>
-                    <p>$20.00</p>
-                    <button>Add to Cart</button>
-                </section>
-            </section>
-            <section class="products">
-                <img src="./images/plants-6.webp" alt="Plant Image" class="product-image" />
-                <section>
-                    <p>I'm a product</p>
-                    <p>$10.00</p>
-                    <button>Add to Cart</button>
-                </section>
-            </section>
-            <button class="load" id="load" onclick="loadMore()">Load More</button>
-            <section class="load-products" id="load-products">
+            <section class="products-grid">
                 <section class="products">
-                    <img src="./images/cacti-6.webp" alt="Cactus Plant" class="product-image" />
+                    <section class="view-wrapper">
+                        <p class="view">Quick View</p>
+                        <img src="./images/cacti-1.webp" alt="Cactus Plant" class="product-image" />
+                    </section>
                     <section>
                         <p>I'm a product</p>
-                        <p>$10.00</p>
-                        <button>Add to Cart</button>
+                        <p><s>$15.00</s> $13.50</p>
+                        <button class="products-button">Add to Cart</button>
                     </section>
                 </section>
                 <section class="products">
-                    <img src="./images/cacti-3.webp" alt="Cactus Plant" class="product-image" />
+                    <section class="view-wrapper">
+                        <p class="view">Quick View</p>
+                        <p class="extra">Best Seller</p>
+                        <img src="./images/succulents-1.webp" alt="Succulent Plant" class="product-image" />
+                    </section>
                     <section>
                         <p>I'm a product</p>
-                        <p>$15.00</p>
-                        <button>Add to Cart</button>
+                        <p>$30.00</p>
+                        <button class="products-button">Add to Cart</button>
                     </section>
                 </section>
                 <section class="products">
-                    <p class="extra">Best Seller</p>
-                    <img src="./images/plants-5.webp" alt="Plant Image" class="product-image" />
-                    <section>
-                        <p>I'm a product</p>
-                        <p>$28.00</p>
-                        <button>Add to Cart</button>
+                    <section class="view-wrapper">
+                        <p class="view">Quick View</p>
+                        <img src="./images/cacti-2.webp" alt="Cactus Plant" class="product-image" />
                     </section>
-                </section>
-                <section class="products">
-                    <img src="./images/succulents-2.webp" alt="Succulent Plant" class="product-image" />
-                    <section>
-                        <p>I'm a product</p>
-                        <p><s>$25.00</s>$23.75</p>
-                        <button>Add to Cart</button>
-                    </section>
-                </section>
-                <section class="products">
-                    <img src="./images/succulents-6.webp" alt="Succulent Plant" class="product-image" />
-                    <section>
-                        <p>I'm a product</p>
-                        <p>$10.00</p>
-                        <button>Add to Cart</button>
-                    </section>
-                </section>
-                <section class="products">
-                    <img src="./images/succulents-5.webp" alt="Succulent Plant" class="product-image" />
                     <section>
                         <p>I'm a product</p>
                         <p>$20.00</p>
-                        <button>Add to Cart</button>
+                        <button class="products-button">Add to Cart</button>
                     </section>
                 </section>
                 <section class="products">
-                    <img src="./images/plants-1.webp" alt="Plant Image" class="product-image" />
+                    <section class="view-wrapper">
+                        <p class="view">Quick View</p>
+                        <img src="./images/cacti-4.webp" alt="Cactus Plant" class="product-image" />
+                    </section>
+                    <section>
+                        <p>I'm a product</p>
+                        <p>$20.00</p>
+                        <button class="products-button">Add to Cart</button>
+                    </section>
+                </section>
+                <section class="products">
+                    <section class="view-wrapper">
+                        <p class="view">Quick View</p>
+                        <img src="./images/plants-2.webp" alt="Plant Image" class="product-image" />
+                    </section>
+                    <section>
+                        <p>I'm a product</p>
+                        <p><s>$15.00</s> $10.00</p>
+                        <button class="products-button">Add to Cart</button>
+                    </section>
+                </section>
+                <section class="products">
+                    <section class="view-wrapper">
+                        <p class="view">Quick View</p>
+                        <p class="extra">New Arrival</p>
+                        <img src="./images/cacti-5.webp" alt="Cactus Plant" class="product-image" />
+                    </section>
+                    <section>
+                        <p>I'm a product</p>
+                        <p>$23.00</p>
+                        <button class="products-button">Add to Cart</button>
+                    </section>
+                </section>
+                <section class="products">
+                    <section class="view-wrapper">
+                        <p class="view">Quick View</p>
+                        <img src="./images/plants-4.webp" alt="Plant Image" class="product-image" />
+                    </section>
+                    <section>
+                        <p>I'm a product</p>
+                        <p>$20.00</p>
+                        <button class="products-button">Add to Cart</button>
+                    </section>
+                </section>
+                <section class="products">
+                    <section class="view-wrapper">
+                        <p class="view">Quick View</p>
+                        <img src="./images/plants-3.webp" alt="Plant Image" class="product-image" />
+                    </section>
+                    <section>
+                        <p>I'm a product</p>
+                        <p>$20.00</p>
+                        <button class="products-button">Add to Cart</button>
+                    </section>
+                </section>
+                <section class="products">
+                    <section class="view-wrapper">
+                        <p class="view">Quick View</p>
+                        <img src="./images/succulents-4.webp" alt="Succulent Plant" class="product-image" />
+                    </section>
+                    <section>
+                        <p>I'm a product</p>
+                        <p>$20.00</p>
+                        <button class="products-button">Add to Cart</button>
+                    </section>
+                </section>
+                <section class="products">
+                    <section class="view-wrapper">
+                        <p class="view">Quick View</p>
+                        <img src="./images/plants-6.webp" alt="Plant Image" class="product-image" />
+                    </section>
+                    <section>
+                        <p>I'm a product</p>
+                        <p>$10.00</p>
+                        <button class="products-button">Add to Cart</button>
+                    </section>
+                </section>
+                <section class="products desktop-products">
+                    <section class="view-wrapper">
+                        <p class="view">Quick View</p>
+                        <img src="./images/cacti-6.webp" alt="Cactus Plant" class="product-image" />
+                    </section>
+                    <section>
+                        <p>I'm a product</p>
+                        <p>$10.00</p>
+                        <button class="products-button">Add to
+                                Cart</button>
+                    </section>
+                </section>
+                <section class="products desktop-products">
+                    <section class="view-wrapper">
+                        <p class="view">Quick View</p>
+                        <img src="./images/cacti-3.webp" alt="Cactus Plant" class="product-image" />
+                    </section>
                     <section>
                         <p>I'm a product</p>
                         <p>$15.00</p>
-                        <button>Add to Cart</button>
+                        <button class="products-button">Add to
+                                Cart</button>
                     </section>
                 </section>
-                <section class="products">
-                    <img src="./images/succulents-3.webp" alt="Succulent Plant" class="product-image" />
+                <section class="products desktop-products">
+                    <section class="view-wrapper">
+                        <p class="view">Quick View</p>
+                        <p class="extra">Best Seller</p>
+                        <img src="./images/plants-5.webp" alt="Plant Image" class="product-image" />
+                    </section>
+                    <section>
+                        <p>I'm a product</p>
+                        <p>$28.00</p>
+                        <button class="products-button">Add to
+                                Cart</button>
+                    </section>
+                </section>
+                <section class="products desktop-products">
+                    <section class="view-wrapper">
+                        <p class="view">Quick View</p>
+                        <img src="./images/succulents-2.webp" alt="Succulent Plant" class="product-image" />
+                    </section>
+                    <section>
+                        <p>I'm a product</p>
+                        <p><s>$25.00</s>$23.75</p>
+                        <button class="products-button">Add
+                                to Cart</button>
+                    </section>
+                </section>
+                <section class="products desktop-products">
+                    <section class="view-wrapper">
+                        <p class="view">Quick View</p>
+                        <img src="./images/succulents-6.webp" alt="Succulent Plant" class="product-image" />
+                    </section>
+                    <section>
+                        <p>I'm a product</p>
+                        <p>$10.00</p>
+                        <button class="products-button">Add
+                                to Cart</button>
+                    </section>
+                </section>
+                <section class="products desktop-products">
+                    <section class="view-wrapper">
+                        <p class="view">Quick View</p>
+                        <img src="./images/succulents-5.webp" alt="Succulent Plant" class="product-image" />
+                    </section>
+                    <section>
+                        <p>I'm a product</p>
+                        <p>$20.00</p>
+                        <button class="products-button">Add
+                                to Cart</button>
+                    </section>
+                </section>
+                <section class="products desktop-products">
+                    <section class="view-wrapper">
+                        <p class="view">Quick View
+                        </p>
+                        <img src="./images/plants-1.webp" alt="Plant Image" class="product-image" />
+                    </section>
+                    <section>
+                        <p>I'm a product</p>
+                        <p>$15.00</p>
+                        <button class="products-button">Add
+                                to Cart</button>
+                    </section>
+                </section>
+                <section class="products desktop-products">
+                    <section class="view-wrapper">
+                        <p class="view">Quick View
+                        </p>
+                        <img src="./images/succulents-3.webp" alt="Succulent Plant" class="product-image" />
+                    </section>
                     <section>
                         <p>I'm a product</p>
                         <p>$8.00</p>
-                        <button>Add to Cart</button>
+                        <button class="products-button">Add
+                                to Cart</button>
                     </section>
+                </section>
+            </section>
+        </section>
+        <button class="load" id="load" onclick="loadMore()">Load
+                More</button>
+        <section class="load-products products-grid" id="load-products">
+            <section class="products">
+                <section class="view-wrapper">
+                    <p class="view">Quick View
+                    </p>
+                    <img src="./images/cacti-6.webp" alt="Cactus Plant" class="product-image" />
+                </section>
+                <section>
+                    <p>I'm a product</p>
+                    <p>$10.00</p>
+                    <button class="products-button">Add
+                            to Cart</button>
+                </section>
+            </section>
+            <section class="products">
+                <section class="view-wrapper">
+                    <p class="view">
+                        Quick View</p>
+                    <img src="./images/cacti-3.webp" alt="Cactus Plant" class="product-image" />
+                </section>
+                <section>
+                    <p>I'm a product
+                    </p>
+                    <p>$15.00</p>
+                    <button class="products-button">Add
+                            to
+                            Cart</button>
+                </section>
+            </section>
+            <section class="products">
+                <section class="view-wrapper">
+                    <p class="view">
+                        Quick View
+                    </p>
+                    <p class="extra">
+                        Best Seller
+                    </p>
+                    <img src="./images/plants-5.webp" alt="Plant Image" class="product-image" />
+                </section>
+                <section>
+                    <p>I'm a product
+                    </p>
+                    <p>$28.00
+                    </p>
+                    <button class="products-button">Add
+                            to
+                            Cart</button>
+                </section>
+            </section>
+            <section class="products">
+                <section class="view-wrapper">
+                    <p class="view">
+                        Quick View
+                    </p>
+                    <img src="./images/succulents-2.webp" alt="Succulent Plant" class="product-image" />
+                </section>
+                <section>
+                    <p>I'm a product
+                    </p>
+                    <p><s>$25.00</s>$23.75
+                    </p>
+                    <button class="products-button">Add
+                            to
+                            Cart</button>
+                </section>
+            </section>
+            <section class="products">
+                <section class="view-wrapper">
+                    <p class="view">
+                        Quick View
+                    </p>
+                    <img src="./images/succulents-6.webp" alt="Succulent Plant" class="product-image" />
+                </section>
+                <section>
+                    <p>I'm a product
+                    </p>
+                    <p>$10.00
+                    </p>
+                    <button class="products-button">Add
+                            to
+                            Cart</button>
+                </section>
+            </section>
+            <section class="products">
+                <section class="view-wrapper">
+                    <p class="view">
+                        Quick View
+                    </p>
+                    <img src="./images/succulents-5.webp" alt="Succulent Plant" class="product-image" />
+                </section>
+                <section>
+                    <p>I'm a product
+                    </p>
+                    <p>$20.00
+                    </p>
+                    <button class="products-button">Add
+                            to
+                            Cart</button>
+                </section>
+            </section>
+            <section class="products">
+                <section class="view-wrapper">
+                    <p class="view">
+                        Quick View
+                    </p>
+                    <img src="./images/plants-1.webp" alt="Plant Image" class="product-image" />
+                </section>
+                <section>
+                    <p>I'm a product
+                    </p>
+                    <p>$15.00
+                    </p>
+                    <button class="products-button">Add
+                            to
+                            Cart</button>
+                </section>
+            </section>
+            <section class="products">
+                <section class="view-wrapper">
+                    <p class="view">
+                        Quick View
+                    </p>
+                    <img src="./images/succulents-3.webp" alt="Succulent Plant" class="product-image" />
+                </section>
+                <section>
+                    <p>I'm a product
+                    </p>
+                    <p>$8.00
+                    </p>
+                    <button class="products-button">Add
+                            to
+                            Cart</button>
                 </section>
             </section>
         </section>
         <section class="find-us">
             <section class="find-us-wrapper">
                 <section class="contact">
-                    <h4>Our store</h4>
-                    <p>Address: 500 Terry Francois Street San Francisco, CA 94158</p>
-                    <p>Phone: 123-456-7890</p>
-                    <p>Email: info@mysite.com</p>
+                    <h4>Our store
+                    </h4>
+                    <p>Address: 500 Terry Francois Street San Francisco, CA 94158
+                    </p>
+                    <p>Phone: 123-456-7890
+                    </p>
+                    <p>Email: info@mysite.com
+                    </p>
                 </section>
                 <section class="open">
-                    <h4>Opening hours</h4>
-                    <p>Mon - Fri: 7am - 10pm</p>
-                    <p>Saturday: 8am - 10pm</p>
-                    <p>Sunday: 8am - 11pm</p>
+                    <h4>Opening hours
+                    </h4>
+                    <p>Mon - Fri: 7am - 10pm
+                    </p>
+                    <p>Saturday: 8am - 10pm
+                    </p>
+                    <p>Sunday: 8am - 11pm
+                    </p>
                 </section>
                 <section class="help">
-                    <h4>Help</h4>
-                    <a href="#">Shipping & Returns</a>
-                    <a href="#">Privacy Policy</a>
+                    <h4>Help
+                    </h4>
+                    <a href="#">Shipping
+                            &
+                            Returns</a>
+                    <a href="#">Privacy
+                            Policy</a>
                     <a href="./faq.html">FAQ</a>
                 </section>
             </section>
             <section class="subscribe">
-                <h4>Subscribe</h4>
+                <h4>Subscribe
+                </h4>
                 <form action="#">
                     <fieldset>
-                        <label for="subscribe-email">Enter your email here *</label>
+                        <label for="subscribe-email">Enter
+                                your
+                                email
+                                here
+                                *</label>
                         <input type="email" name="subscribe-email" id="subscribe-email" class="input-field" placeholder=" " required />
                     </fieldset>
                     <input type="submit" value="Subscribe Now" />
@@ -271,17 +488,22 @@
                 width="100%" height="400" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
         </section>
         <button class="chat" id="chat" onclick="showChat()">
-                <div class="chat-circle"><img src="./images/chat.svg" alt="Message Symbol"></div>
+                <div class="chat-circle">
+                    <img src="./images/chat.svg" alt="Message Symbol">
+                </div>
             </button>
         <section class="chat-page" id="chat-page">
             <section class="top-chat">
                 <section class="logo-on">
                     <img src="./images/chat-logo.png" alt="Company logo">
-                    <div class="green"></div>
+                    <div class="green">
+                    </div>
                 </section>
                 <section class="chat-text">
-                    <h3>Prickles & co.</h3>
-                    <p>We'll reply as soon as we can</p>
+                    <h3>Prickles & co.
+                    </h3>
+                    <p>We'll reply as soon as we can
+                    </p>
                 </section>
                 <button class="close" id="close" onclick="showChat()">
                         <img src="./images/close.svg" alt="Close button">

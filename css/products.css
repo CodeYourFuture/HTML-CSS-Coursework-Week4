@@ -105,3 +105,8 @@
 .load-products {
     display: none;
 }
+
+.desktop-products,
+.view {
+    display: none;
+}
