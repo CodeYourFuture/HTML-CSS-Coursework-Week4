@@ -261,11 +261,7 @@ input > #email {
   /*----- container 5 end -----*/
 
   /* copyright */
-  span > a {
+  .copyright {
     text-align: center;
-    display: block;
-    font-family: inherit;
-    text-decoration: none;
-    font-weight: bold;
-    /* margin: 1rem; */
+    padding: 30px 0;
   }
