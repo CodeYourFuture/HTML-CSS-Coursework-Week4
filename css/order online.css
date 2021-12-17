@@ -33,9 +33,11 @@ h1, h2 {
     font-size: 2rem;
     line-height: 3rem;
 }
+
 h3 {
 font-family: var(--heading-font);
 }
+
 body {
     display: grid;
     grid-template-columns: repeat(12, 1fr);  
@@ -77,6 +79,14 @@ button {
     background-color: var(--main-color);
     color: var(--secondary-color);
 }
+.cart-button {
+    border: none;
+    color: var(--background-color-2);
+    background-color: var(--footer-color);
+    grid-column: span 3;
+    justify-self: center;
+    padding: 0.5rem 1rem;
+}
 
 /*     HEADER      */
 header {
@@ -103,18 +113,28 @@ header {
     grid-column: span 12;
 }
 
-
-
+/*    main   */
+main {
+    grid-column: span 12;
+}
 
 
 /*  Cold pressed section  */
-.cold-pressed {
+.cold-pressed-section {
+    grid-column: span 12;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 1rem; 
+    margin-bottom: 3rem;
+}
+.product-wrapper {
     grid-column: span 12;
     display:grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(7, auto);
-    grid-gap: 1rem; 
-    margin-bottom: 3rem;
+    grid-template-rows: repeat(3, auto);
+    border-bottom: var(--store-page-box-color) 1px solid;
+    padding: 1rem 0;
 }
 h1 {
     grid-column: span 12;
@@ -131,7 +151,7 @@ h1 {
     padding-bottom: 1rem;
 }
 .up-icon {
-    grid-column: 11/13;
+    grid-column: 12;
     grid-row: 1;
     background-image: url(../images/chevron-up-solid.svg);
     background-repeat: no-repeat;
@@ -144,7 +164,7 @@ h1 {
     background-size: contain;
     background-repeat: no-repeat;
     grid-column: 1/3;
-    grid-row: 2/4;
+    grid-row: 1/4;
 }
 .cold-pressed-img2 {
     background-image: url(../images/store2.jpg); 
@@ -152,7 +172,7 @@ h1 {
     background-size: contain;
     background-repeat: no-repeat; 
     grid-column: 1/3;
-    grid-row: 4/6; 
+    grid-row: 1/4;
 }
 .cold-pressed-img3 {
     background-image: url(../images/store3.jpg);
@@ -160,14 +180,14 @@ h1 {
     background-size: contain;
     background-repeat: no-repeat;
     grid-column: 1/3;
-    grid-row: 6/8;
+    grid-row: 1/4;
 }
 .product-name {
     grid-column: 4/9;
 }
 .product-description {
     grid-column: 4/ 11;
-    border-bottom: var(--store-page-box-color) 1px solid;
+    grid-row: 2;
 }
 .product-price {
     grid-column: 12/13;
@@ -177,11 +197,11 @@ h1 {
 
 
 /*   Smoothies section   */
-.smoothies {
+.smoothies-section {
     grid-column: span 12;
-    display:grid;
+    display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(8, auto);
+    grid-template-rows: repeat(3, auto);
     grid-gap: 1rem; 
     margin-bottom: 3rem;
 }
@@ -191,7 +211,7 @@ h1 {
     background-size: contain;
     background-repeat: no-repeat;
     grid-column: 1/3;
-    grid-row: 2/4;
+    grid-row: 1/4;
 }
 .smoothies-img2 {
     background-image: url(../images/store5.jpg);
@@ -199,7 +219,7 @@ h1 {
     background-size: contain;
     background-repeat: no-repeat;
     grid-column: 1/3;
-    grid-row: 4/6; 
+    grid-row: 1/4;
 }
 .smoothies-img3 {
     background-image: url(../images/store6.jpg);
@@ -207,15 +227,23 @@ h1 {
     background-size: contain;
     background-repeat: no-repeat;
     grid-column: 1/3;
-    grid-row: 6/8;
+    grid-row: 1/4;
 }
 
 /*   Wellness shots section*/
-.wellness-shots {
+.wellness-section {
     grid-column: span 12;
-    display:grid;
+    display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(8, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 1rem; 
+    margin-bottom: 3rem;
+}
+.wellness-section {
+    grid-column: span 12;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, auto);
     grid-gap: 1rem; 
     margin-bottom: 3rem;
 }
@@ -225,7 +253,7 @@ h1 {
     background-size: contain;
     background-repeat: no-repeat;
     grid-column: 1/3;
-    grid-row: 2/4;
+    grid-row: 1/4;
 }
 .wellness-img2 {
     background-image: url(../images/store8.jpg);
@@ -233,7 +261,7 @@ h1 {
     background-size: contain;
     background-repeat: no-repeat;
     grid-column: 1/3;
-    grid-row: 4/6; 
+    grid-row: 1/4; 
 }
 .wellness-img3 {
     background-image: url(../images/store9.jpg);
@@ -241,18 +269,18 @@ h1 {
     background-size: contain;
     background-repeat: no-repeat;
     grid-column: 1/3;
-    grid-row: 6/8;
+    grid-row: 1/4;
 }
 
 
 /*    Cleanse kit section  */
-.cleanse-kit {
+.clense-kit-section {
     grid-column: span 12;
-    display:grid;
+    display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(8, auto);
+    grid-template-rows: repeat(3, auto);
     grid-gap: 1rem; 
-    padding-bottom: 3rem;
+    margin-bottom: 3rem;
 }
 .cleanse-img1 {
     background-image: url(../images/store10.jpg);
@@ -260,7 +288,7 @@ h1 {
     background-size: contain;
     background-repeat: no-repeat;
     grid-column: 1/3;
-    grid-row: 2/4;
+    grid-row: 1/4;
 }
 .cleanse-img2 {
     background-image: url(../images/store11.jpg);
@@ -268,7 +296,7 @@ h1 {
     background-size: contain;
     background-repeat: no-repeat;
     grid-column: 1/3;
-    grid-row: 4/6; 
+    grid-row: 1/4; 
 }
 .cleanse-img3 {
     background-image: url(../images/store12.jpg);
@@ -276,11 +304,7 @@ h1 {
     background-size: contain;
     background-repeat: no-repeat;
     grid-column: 1/3;
-    grid-row: 6/8;
-}
-.line {
-    grid-column: span 12;
-    border-bottom: var(--store-page-box-color) 1px solid;
+    grid-row: 1/4;
 }
 
 
@@ -401,15 +425,15 @@ footer > .logo-jb {
     .full-text {
         display: none;
     }
+    
 
 }
 
 @media screen and (min-width: 431px) {
-    p {
-        font-size: 1.15rem;
-    }
     h1 {
         font-size: 2rem;
+        grid-column: 2;
+        box-shadow: none;
     }
     h2 {
         font-size: 2rem;
@@ -421,8 +445,11 @@ footer > .logo-jb {
     main {
         grid-column: span 12;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: auto auto 300px;
     }
+
+
+    /*   Header      */
     header {
         grid-template-rows: 100px;
         column-gap: 0.5rem;
@@ -459,24 +486,22 @@ footer > .logo-jb {
         grid-column: 8/9;
         align-self: center; 
         grid-row: 1;  
-    }
-    h1 {
-        grid-column: 2;
-        grid-row: 1;
-        box-shadow: none;
-    }
+    } 
+
+    /*      */
     .menu-section {
         grid-column: 1;
         grid-row: 2;
         padding-left: 3rem;
+        padding-right: 5rem;
+        border-right: 1px solid var(--store-page-box-color);
     }
-    .user-icon {
-        background-image: url(../images/user-circle-solid.svg);
-        width: 35px;
-        height: 35px;
+    .menu-section > .header-user-icon > a {
+        justify-content: left;
     }
     .menu-section > ul{
         padding: 0;
+        border-top: 1px solid var(--store-page-box-color);
     }
     .menu-section > ul >li {
         padding: 0.6rem 0;
@@ -484,25 +509,54 @@ footer > .logo-jb {
     .menu-section > ul > li:hover {
         background-color: var(--store-hover);
     }
-    .cold-pressed {
+    .cold-pressed-section {
         grid-column: 2;
         grid-row: 2;
-        padding: ;
     }
-    .cart-section {
-        grid-column: 3;
-        grid-row: 2;
-    }
-    .smoothies {
+    .smoothies-section {
         display: none;
     }
-    .wellness-shots {
+    .wellness-section {
         display: none;
     }
-    .cleanse-kit {
+    .cleanse-kit-section {
+        display: none;
+    }
+    .product-description-dots {
         display: none;
     }
 
+    /* Cart section  */
+    .cart-section {
+        grid-column: 3;
+        grid-row: 2;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 50px auto 50px 50px 50px 50px 50px auto;
+        border-left: 1px solid var(--store-page-box-color);
+        border-right: 1px solid var(--store-page-box-color);
+        padding: 0 1rem;
+        align-items: center;
+    }
+    .cart-section > p {
+        grid-column: span 12;
+    }
+    .cart-wrapper {
+        grid-column: span 12;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--store-page-box-color);
+    }
+    .cart-section > p {
+        border-bottom: 1px solid var(--store-page-box-color);
+    }
+    .special-request {
+        font-size: 1.25rem;
+    }
+
+
+    /*    foooter      */
     footer >  div > h3 {
         font-size: 1.55rem;
     }
@@ -510,6 +564,7 @@ footer > .logo-jb {
         display: grid;
         grid-template-columns: repeat(12,1fr);
         grid-template-rows: repeat(3, auto);
+        padding-top: 2rem;
     }
     .footer-get-started {
         grid-column: 1/4;
@@ -537,7 +592,7 @@ footer > .logo-jb {
         text-align: center;
     }
     .logo-jb {
-        grid-column: 12/13;
+        grid-column: 11;
     }
 
     
