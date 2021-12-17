@@ -1,3 +1,770 @@
-/* Add your CSS here */
+/*  General  styles   */
 
-/* Dont' forget to link this file to your HTML in the <head> */
+:root {
+    --heading-font: 'Questrial', sans-serif;
+    --button-font: 'Raleway', sans-serif;
+    --body-font:'Roboto', sans-serif;
+    --main-color: #fff;
+    --secondary-color: #000;
+    --background-color-1: #f5e8ff;
+    --background-color-2 :#E6FAC0;
+    --footer-color: #304B2A;
+    --button-hover: #5E7D1F;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+    line-height: 2.3rem;
+} 
+
+img {
+    height: 100%;
+    object-fit: cover;
+}
+
+a {
+    color:var(--secondary-color);
+}
+
+h1, h2 {
+    font-family: var(--heading-font);
+    font-weight: 100;
+    font-size: 2rem;
+    line-height: 3rem;
+}
+h3 {
+    font-family: var(--heading-font);
+}
+
+
+
+/*   Button styles  */
+button {
+    background-color: transparent;
+    font-family: var(--button-font);
+    font-size: 18px;
+}
+.button-color-hover {
+    border: none;
+    background-color: var(--secondary-color);
+}
+.button-color-hover:hover {
+    background-color: var(--button-hover);
+}
+.button-color-hover a {
+    color: var(--main-color);
+}
+.hero-button-color-hover {
+    border: none;
+    background-color: var(--secondary-color);
+    padding: 1rem 2rem;
+}
+.hero-button-color-hover a {
+    color: var(--main-color);
+}
+.hero-button-color-hover:hover {
+    background-color: var(--button-hover);
+}
+.button-no-hover {
+    border: solid 2px;
+}
+.submit-button {
+    border: 2px solid var(--main-color);
+    color:var(--main-color);
+    padding: 0.5rem 2rem;
+    background-color: transparent;
+    margin-left: 0.5rem;
+    font-size: 16px;
+    font-family: var(--button-font);
+    text-transform: uppercase;
+}
+.submit-button:hover {
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);  
+    font-family: var(--body-font);
+    text-align: center;
+    line-height: 1.6rem;
+}
+header {
+    grid-column: span 12;
+    display: grid;
+    grid-template-rows: 50px 50px; 
+}
+.header-logo {
+    grid-column: span 6;
+    font-family: var(--heading-font);
+    text-align: left;
+    font-weight: 400;
+    font-size: 1.75rem;
+    padding-left: 0.5rem;
+}
+.header-hamburger-icon {
+    grid-column: 12/13;  
+}
+.header-hamburger-icon > a > img {
+    width: 30px;
+    height: 30px;
+}
+.button-color-hover {
+    grid-column: span 12;
+}
+
+
+
+/*   Hero Section   */
+
+main {
+    grid-column: span 12;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+.hero-section {
+    grid-column: span 12;
+    text-align: center;
+ }
+ .hero-image {
+    background-image: url(../images/image1.png);
+    padding: 10rem;
+    background-size: cover; 
+    background-position: center; 
+    margin-top: 1rem;
+}
+h1 {
+    padding: 0 1rem;  
+}
+.hero-section > p {
+    font-size: 1.25rem;
+    padding: 1rem 3rem;
+}
+.hero-section > div > p {
+    background-color: var(--background-color-1);
+    padding: 1.5rem 2rem;
+}
+.hero-section > div > p > a {
+    text-decoration: underline;
+}
+
+
+
+
+
+/* Promo-section */
+
+.promo-section {
+    grid-column: span 12;
+    padding: 1rem 1.5rem;
+    align-items: center;
+}
+.promo-section > h3 {
+    margin: 1rem 0;
+}
+.promo-section-image {
+    height: 110px;
+    margin: 1rem 0;
+}
+.promo-section > p {
+    padding: 0 2rem;
+}
+
+
+
+
+/* Section background-color-2 */
+
+.background-color-2-section {
+    grid-column: span 12;
+    background-color: var(--background-color-2);
+    padding: 1rem 0;
+}
+.background-color-2-section-img {  
+    background-image: url(../images/image2.png);
+    padding: 7rem;
+    background-size: cover; 
+    background-position: center;
+}
+.background-color-2-section > h2 {
+    padding: 0 1rem;
+}
+.background-color-2-section > p {
+    padding: 0 1rem;
+}
+.background-color-2-section > button {
+    margin: 1rem 5rem;
+    padding: 0.5rem 1.5rem;
+    
+    
+}
+
+
+
+/* Background Color 1 Section*/
+.background-color-1-section {
+    grid-column: span 12;
+    background-color: var(--background-color-1);
+    display: grid;
+}
+.background-color-1-section > p {
+    padding: 0 5rem;
+}
+.background-color-1-section-img-1 {
+    grid-column: 2/13;
+    background-image: url(../images/image3.png);
+    padding: 10rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 1rem;
+}
+.background-color-1-section-img-2 {
+    grid-column: 2/13;
+    background-image: url(../images/image4.png);
+    padding: 10rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 1rem;
+}
+.background-color-1-section-img-3 {
+    grid-column: 2/13;
+    background-image: url(../images/image5.png);
+    padding: 10rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 1rem;   
+}
+.background-color-1-section > button {
+    grid-column: 6/8;
+}
+
+
+
+/*  Main Color Section */
+
+.background-main-color-section {
+    grid-column: span 12;
+}
+.background-main-color-section-img {
+    background-image: url(../images/image6.png);
+    background-size: cover;
+    padding:10rem;
+}
+.background-main-color-section > p {
+    margin-bottom: 1rem;
+}
+.background-main-color-section > h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+/* Delivery Section  */
+
+.delivery-section {
+    display: grid;
+    grid-column: span 12;
+    background-color: var(--background-color-2);
+    gap: 0.5rem;
+    padding: 1rem 4rem;
+}
+.delivery-section-num { 
+    grid-column: 6;
+    width:40px;
+    height: 40px;
+    padding-top: 0.1rem;
+    border: 0.2px solid var(--secondary-color);
+    border-radius: 50%; 
+    justify-self: center; 
+}
+.delivery-p {
+    grid-column: span 11;
+    margin-bottom: 2rem;
+}
+.delivery-section > h3 {
+    grid-column: span 11;
+}
+
+
+
+
+/*  Follow Section  */
+
+.follow-section {
+    grid-column: span 12;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 80px repeat(6, auto) 50px auto auto;
+}
+.follow-section > h3 {
+    grid-column: 1/13;
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+.follow-section-img-1 {
+    background-image: url(../images/image7.png);
+    width: 150px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotate(-20deg);
+    grid-column: 5/9;
+    grid-row: 4/6;
+}
+.follow-section-img-2 {
+    background-image: url(../images/image8.png);
+    width: 150px;
+    height: 200px;
+    background-size: cover;
+    transform: rotate(20deg);
+    grid-column: 3/9;
+    grid-row:3/5;
+}
+.follow-section-img-3 {
+    background-image: url(../images/image9.png);
+    width: 150px;
+    height: 200px;
+    background-size: cover;
+    transform: rotate(-20deg);
+    grid-column: 5/9;
+    grid-row: 2 / 4;
+}
+.follow-section-img-4 {
+    background-image: url(../images/image10.png);
+    width: 150px;
+    height: 200px;
+    background-size: cover;
+    transform: rotate(20deg);
+    grid-column: 7/12;
+    grid-row:3/5;
+}
+.follow-section-background {
+    grid-column: 1/13;
+    grid-row: 4/11;
+    background-color: var(--footer-color);   
+}
+
+
+
+/*  Footer  */
+
+input[type=email] {
+    border: none;
+    border-bottom: var(--main-color) 3px solid;
+    background-color: transparent;  
+}
+input[type=email]:hover {
+    border-bottom: var(--button-hover) 3px solid;
+}
+
+footer {
+    grid-column: span 12;
+    background-color: var(--footer-color);
+    color: var(--main-color);
+    text-align: left;
+    font-weight: 600;
+    padding: 0 1rem;
+}
+
+.footer-get-started {
+    text-align: left;
+    color: var(--main-color);
+    padding-left: 1rem;
+    font-weight: 300;
+}
+.footer-get-started > ul  {
+    padding-left: 0;
+}
+.footer-connect {    
+    text-align: left;
+    color: var(--main-color);
+    padding-left: 1rem;
+    font-weight: 300;
+}
+.footer-connect > ul {
+    padding-left: 0;
+}
+footer > a {
+    color: var(--main-color);
+    text-decoration: underline;
+    font-size: 26px;
+}
+.footer-a {
+    color: var(--main-color);
+    text-decoration: underline;
+    font-size: 14px;
+}
+footer > p {
+    font-size: 14px;
+    font-weight: 300;
+    padding-bottom: 2rem;
+}
+footer > h3 {
+    text-align: left;
+    padding: 4rem 0 2rem 0;
+}
+footer > form {
+    text-align: left;
+    margin-bottom: 5rem;
+}
+.fieldset-column {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0.5rem;
+}
+footer > form > fieldset {
+    border: none;
+    display: flex;
+    flex-direction: row;
+}
+footer > .logo-jb {
+    text-align: center;
+    font-weight: 600;
+    display: grid;
+    grid-template-columns: 20px 20px;
+    grid-template-rows: 20px 20px;
+    grid-template-areas: "j ."
+    ". b";
+    width: 70px;
+    height: 70px;
+    padding-left: 0.7rem;
+    padding-top: 0.5rem;
+    border: 3px solid var(--main-color);
+    border-radius: 50%;
+    margin: 2rem 0;
+}
+.logo-j{
+    grid-area: j;
+}
+.logo-b {
+    grid-area: b;
+}
+
+
+
+
+
+
+
+/* Media queries */
+
+@media screen and (max-width: 430px) {
+    .header-user-icon {
+        display: none;
+    }
+    .background-color-1-section  > h2{
+    grid-column: span 12;
+    }
+    .background-color-1-section  > h3{
+        grid-column: span 12;
+    }
+    .background-color-1-section  > p{
+        grid-column: span 12;
+    }
+}
+    
+
+
+@media screen and (min-width: 431px) {
+    p {
+        font-size: 1.15rem;
+    }
+    h1 {
+        font-size: 3.4rem;
+    }
+    h2 {
+        font-size: 3.4rem;
+    }
+    h3 {
+        font-size: 2.25rem;
+        font-weight: 300;
+    }
+
+    header {
+        grid-template-rows: 100px;
+        column-gap: 0.5rem;
+        position: sticky;
+        top: 0;
+        background-color: var(--main-color);
+    }
+    .button-color-hover {
+        grid-column: 11/13;
+        grid-row: 1;
+    }
+    .header-user-icon {
+        grid-column: 10/11;
+        align-items: center; 
+        grid-row: 1; 
+        align-self: center; 
+    }
+    .header-user-icon > a {
+        display: flex;
+        flex-direction: row;
+        white-space: nowrap;
+        justify-content: right;
+    }
+    .header-user-icon > a > img {
+        width: 30px;
+        height: 30px;
+    }
+    .header-hamburger-icon {
+        grid-column: 1/2;
+        align-self: center; 
+        grid-row: 1;
+    }
+    .header-logo {
+        grid-column: 8/9;
+        align-self: center; 
+        grid-row: 1;  
+    }
+    .hero-section {
+        margin-top: 5rem;
+    }
+    .hero-image {
+        padding: 20rem;
+    }
+    .promo-section {
+        grid-column: span 12;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+    }
+    .promo-section > h2 {
+        grid-column: span 12;
+    }
+    .promo-wrapper {
+        grid-column: 1;
+        text-align: left;
+        padding: 1rem 2rem;
+    }
+    .promo-wrapper-2 {
+       grid-column: 2;
+       text-align: left;
+       padding: 1rem 2rem;
+   }
+    .promo-wrapper-3 {
+        grid-column: 3;
+        text-align: left;
+        padding: 1rem 2rem;
+   }
+   .promo-section > div > p{
+       margin-top: 1rem;
+   }
+   .background-color-2-section {
+       background-color: var(--main-color);
+       grid-column: span 12;
+       display: grid;
+       grid-template-columns: repeat(12, 1fr);
+       grid-template-rows: 100px auto auto auto auto 100px;
+       text-align: left;
+       gap: 1rem;
+   }
+   .background-color-2-section-background {
+       grid-column: 1/13;
+       grid-row: 1/6;
+       background-color: var(--background-color-2);
+   }
+   .background-color-2-section-img {
+       grid-column: 2/7;
+       grid-row: 2/7;
+   }
+   .background-color-2-section > h2 {
+       grid-column: 7/13;
+       grid-row: 2;
+       padding: 1rem 0;
+   }
+   .background-color-2-section > p {
+       grid-column: 7/13;
+       grid-row: 3;
+       padding: 2rem 0;
+   }
+   .background-color-2-section > button {
+       margin: 0 0 2rem 0;
+       grid-column: 7/10;
+       grid-row: 5;
+   }
+   .background-color-1-section {
+       gap: 1rem;
+       text-align: left;
+       grid-template-rows: repeat(6, 100px) repeat(2, auto) 80px;
+   }
+   .background-color-1-section > h2 {
+       grid-column: 1/13;
+       grid-row: 1;    
+       padding-top: 3rem;   
+       background-color: var(--main-color);
+       justify-self: center;
+   }
+   .background-color-1-section > p {
+       padding: 2rem 0;
+   }
+   .background-color-1-section-background{
+       grid-column: 1/13;
+       grid-row: 1/4;
+       background-color: var(--main-color);
+   }
+   .background-color-1-section-img-1 {
+       grid-column: 1/5;
+       grid-row: 3/6;
+   }
+   .background-color-1-section-img-2 {
+        grid-column: 5/9;
+        grid-row: 2/5;
+   }
+   .background-color-1-section-img-3 {
+       grid-column: 9/13;
+       grid-row: 3/6;
+   }
+   .color-1-section-img-1-header {
+       grid-column: 1/5 ;
+       grid-row: 7;
+   }
+   .color-1-section-img-1-p {
+       grid-column: 1/5;
+       grid-row: 8;
+   }
+   .color-1-section-img-2-header {
+       grid-column: 5/9;
+       grid-row: 7;
+   }
+   .color-1-section-img-2-p {
+       grid-column: 5/9;
+       grid-row: 8;
+   }
+   .color-1-section-img-3-header {
+       grid-column: 9/13;
+       grid-row: 7 ;
+   }
+   .color-1-section-img-3-p {
+       grid-column: 9/13;
+       grid-row: 8;
+   }
+   .background-color-1-section > button{
+        grid-column: 5/9;
+        grid-row: 9;
+   }
+    .background-main-color-section {
+       background-color: var(--main-color);
+       grid-column: span 12;
+       display: grid;
+       grid-template-columns: repeat(12, 1fr);
+       grid-template-rows: repeat(6, auto);
+       text-align: left;
+       gap: 1rem;
+   }
+   .background-main-color-section-img {
+       grid-column: 2/7;
+       grid-row: span 5;
+   }
+   .background-main-color-section > h2 {
+       grid-column: 7/13;
+       padding: 1rem 0;
+   }
+   .background-main-color-section > p {
+       grid-column: 7/13;
+       grid-row: 2;
+       padding: 2rem 0;
+   }
+   .background-main-color-section > button {
+       margin: 0 0 2rem 0;
+       grid-column: 7/10;
+       grid-row: 3;
+   }
+   .background-main-color-section > h3 {
+       grid-column: span 12;
+       grid-row: 6;
+       justify-self: center;
+       padding: 4rem 0;
+   }
+
+   .delivery-section {
+       display: grid;
+       gap: 1rem;
+       grid-template-columns: repeat(3, 1fr);
+       grid-template-rows: repeat(3, auto);
+       padding: 4rem 1rem; 
+   }
+    .delivery-section-num { 
+        grid-column: span 1;
+        grid-row: 1;
+        justify-self: left;
+    }
+    .delivery-p {
+        grid-column: span 1;
+        grid-row: 3;
+        text-align: left;
+    }
+    .delivery-section > h3 {
+        grid-column: span 1;
+        grid-row: 2;
+        text-align: left;
+    }
+    .follow-section-img-1 {
+        grid-column: 2/5 ;
+        grid-row: 3/5; 
+        width: 250px;
+        height: 300px;  
+    }
+    .follow-section-img-2 {
+        grid-column: 5/8 ;
+        width: 250px;
+        height: 300px;  
+    }
+    .follow-section-img-3 {
+        grid-column: 8/11 ;
+        grid-row: 3/5; 
+        width: 250px;
+        height: 300px;  
+    }
+    .follow-section-img-4 {
+        grid-column: 11 ; 
+        width: 250px;
+        height: 300px;  
+    }
+
+
+    footer >  div > h3 {
+        font-size: 1.55rem;
+    }
+    footer {
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+        grid-template-rows: repeat(3, auto);
+    }
+    .footer-get-started {
+        grid-column: 1/4;
+        grid-row: span 3;
+    }
+    footer > h3 {
+        padding: 0;
+        grid-column: 6/10;
+        grid-row: 1;
+        font-size: 1.55rem;
+    }
+    .footer-connect {
+        grid-column: 4/6;
+    }
+    footer > form{
+        grid-column: 6/10;
+        grid-row: 2/3;
+    }
+    footer > a {
+        grid-column: 11/13;
+        font-size: 1.55rem;
+    }
+    .copyright {
+        grid-column: span 12;
+        text-align: center;
+    }
+    .logo-jb {
+        grid-column: 11;
+    }
+
+    
+    
+}
+    
