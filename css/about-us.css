@@ -129,13 +129,41 @@
    } 
 
    .title {
-       padding-top: 1em;
-       font-size: 1.4vw;
+        padding-top: 1em;
+        font-size: 1.4vw;
    }
 
    .about-us--description {
-       font-size: 1.4vw;
+        font-size: 1.4vw;
         padding: 0 3em;
    }
 
+   .about-us-offer {
+        display: flex;
+   }
+
+   .foliage--img {
+        width: 100%;
+        height:100%;
+   }
+
+   .offer {
+        width: 100%;
+        padding-bottom: 0;
+   }
+
+   .offer--heading {    
+        padding-left: 4em;
+        padding-right: 4em;
+        font-size: 3.5vw;
+        padding-bottom: 0;
+        padding-top: 2em;
+   }
+
+   .btn-white {
+        padding: 3px 13px;
+        font-size: 0.8em; 
+   }
 }    
+
+

@@ -2,14 +2,14 @@ body {
     background-color: var(--light-grey);
     display: grid;
     margin: 0;
-    grid-template-columns: repeat(4 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-template-rows: auto;
     grid-template-areas: 
-    "header        header        header        header"
-    "faq           faq           faq           faq"
-    "footer        footer        footer        footer"
-    "copyright     copyright     copyright     copyright"
-    "credit        credit        credit        credit";
+    "header        header        header        header        header        header"
+    "faq           faq           faq           faq           faq           faq"
+    "footer        footer        footer        footer        footer        footer"
+    "copyright     copyright     copyright     copyright     copyright     copyright"
+    "credit        credit        credit        credit        credit        credit";
 }
 
 /* FAQ title */
@@ -18,9 +18,8 @@ body {
     grid-area: faq;
     margin-top: 1em;
     text-align: center;
-    padding-bottom: 30px;
+    padding-bottom: 98px;
 }
-
 
 .faq-title {
     margin-top: 4em;
@@ -46,10 +45,15 @@ body {
     font-weight: 200;
 }
 
+.faq-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
 /* FAQ SEARCH */
 .faq-search {
     display: flex;
-    
+    justify-content: center; 
 }
 
 .search-line {
@@ -69,7 +73,6 @@ body {
 .search-container:hover {
     border: 1px solid var(--red-brown);
 }
-
 
 .fa {
     color: var(--red-brown);
@@ -97,6 +100,12 @@ body {
     font-size: 1.2em;
 }
 
+.questions-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    
 /* FAQ DROPDOWN Q'S */
 .faq-questions {
     padding-top: 2em;
@@ -106,6 +115,7 @@ body {
     display: flex;
     flex-direction: row;
     padding-left: 2.3em;
+    justify-content: space-between;
 }
 
 .question-text {
@@ -122,28 +132,33 @@ body {
             brightness(94%) contrast(89%);
 }
 
-.position1 {
-    padding-left: 7em;
-}
-
-.position2 {
-    padding-left: 4.2em;
-}
-
-.position3 {
-    padding-left: 4.5em;
-}
-
-.position4 {
-    padding-left: 0.8em;
-}
-
 .line-break {
     width: 19em;
     background-color:var(--light-brown);
     height: 1.3px;
     border: none;
+    margin: 1.6em 0 1.8em 2.5em;
 }
 
-/* 'Fjalla One', sans-serif;
-'Outfit', sans-serif; */
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 900px) {
+    body {
+        padding: 0 2em;
+    }
+
+    .questions-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .faq-question-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 58vw;
+    }
+
+    .line-break {
+        width: 56vw;
+    }
+}
