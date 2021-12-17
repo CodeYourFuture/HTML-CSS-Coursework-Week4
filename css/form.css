@@ -1,3 +1,11 @@
+.end-page--img {
+    grid-area: img4;
+    background-repeat: no-repeat;
+    background: url(../images/background-plant.png); 
+    background-size: cover;
+    min-height: 50vw;
+}
+
 .form {
     display: flex;
     justify-content: center;
@@ -24,6 +32,7 @@
     letter-spacing: 0.5em;
     line-height: 1.4em;
     font-weight: 400;
+    padding: 0 2em 1em 2em;
 }
 
 .form-section {
@@ -38,9 +47,7 @@
     padding-bottom: 0.8em;
 }
 
-.form input[type=text], 
-     [type=email], 
-     [type=tel], 
+.form input[type=text], [type=email], [type=tel], 
      textarea {
         border: 1px solid #000;
         border-radius: 2px;
@@ -57,3 +64,68 @@
     width: 100%;
     margin: 0;
 }
+
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 900px) {
+    body {
+        padding: 0 2em;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "header        header        header        header         header        header"
+        "hero          hero          hero          hero           hero          hero"
+        "shop          shop          shop          shop           shop          shop"
+        "about         about         about         about          about         about"
+        "img           img           img           img            img           img"
+        "img2          img2          img2          img2           img2          img2"
+        "img3          img3          img3          img3           img3          img3"
+        "offer         offer         offer         offer          offer         offer"
+        "order         order         order         order          order         order"
+        "footer        footer        footer        footer         footer        footer"
+        "copyright     copyright     copyright     copyright      copyright     copyright"
+        "credit        credit        credit        credit         credit        credit";
+    }
+    
+    .end-page--img {
+        grid-area: order;
+        background-position: center;
+        position: relative;
+        min-height: 81vw;
+        background-repeat: no-repeat;
+        background: url(../images/background-plant.png); 
+        background-size: cover;
+        z-index: -1;
+    }
+
+    .registration {
+        background-color:var(--transparent-white-form);
+        padding-top: 5em;
+    }
+
+    .prickles-and-co-form {
+        border: 0;
+        width: 100%;
+        margin: 0 5vw;
+    }
+
+    .frst-lst-name {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .form input[type=text] {
+        padding: 0 44px;
+    }
+
+    .field-title {
+        font-family: 'Outfit', sans-serif;
+        padding-bottom: 0.8em;
+    }
+
+    .btn-form {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+}    

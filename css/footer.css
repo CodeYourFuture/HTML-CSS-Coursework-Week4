@@ -22,15 +22,13 @@
     line-height: 1.4em;
     font-weight: 400;
     padding: 0.5em 0;
-    text-align: center;
-    
+    text-align: center; 
 }
 
 .footer--text {
     padding: 0.6em 0 3em 0;
     font-size: 0.96em;
-    text-align: center;
-    
+    text-align: center; 
 }
 
 .footer--span {
@@ -38,7 +36,6 @@
     margin: 0;
     color:var(--white);
     text-align: center;
-    
 }
 
 .footer--span a {
@@ -73,7 +70,7 @@
     color: var(--white);
 }
 
-.btn-white {
+footer .btn-white {
     font-family: 'Outfit', sans-serif;
     padding: 13px 40px;
     border: none;
@@ -82,6 +79,7 @@
     cursor: pointer;
     background-color: var(--white);
     color:var(--green-black);
+    width: 100%;
 }
 
 .footer-content {
@@ -122,9 +120,7 @@
     min-height: 343px;
 }
 
-
 /* COPYRIGHT SECTION */
-
 .copyright {
     grid-area: copyright;
     padding: 0.6em 2.2em 3em 3.2em;
@@ -147,4 +143,55 @@
 .credit {
     grid-area: credit;
     font-size: 0.7em;
+}
+
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 900px) {
+    body {
+        padding: 0 2em;
+    }
+
+    .footer-info {
+        display: flex;
+        justify-content: space-around;
+        padding-right: 3em;
+    }
+
+    .footer--store {
+        padding-top: 0;
+    }
+    
+    .footer--subscribe {
+        margin: 0;
+    }
+
+    .footer--heading, .footer--text {
+        font-size: 0.8em;
+    }
+
+    .footer--hours {
+        padding-right: 2em;
+    }
+
+    .email-label {
+        padding-right: 15.6em;
+        text-align: center;
+    }
+
+    .field-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .form-subscribe input[type="email"] {
+        width: 24%;
+        margin-right: 0.4em;
+    }
+    
+    footer .btn-white {
+        margin: 0;
+        width: 18%;
+        font-size: 0.8em;
+    }
 }
