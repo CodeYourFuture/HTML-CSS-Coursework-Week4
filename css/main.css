@@ -1,3 +1,268 @@
-/* Add your CSS here */
+body {
+    background-color: var(--light-grey);
+    display: grid;
+    margin: 0;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header        header        header        header         header        header"
+    "hero          hero          hero          hero           hero          hero"
+    "shop          shop          shop          shop           shop          shop"
+    "about         about         about         about          about         about"
+    "img           img           img           img            img           img"
+    "img2          img2          img2          img2           img2          img2"
+    "img3          img3          img3          img3           img3          img3"
+    "offer         offer         offer         offer          offer         offer"
+    "order         order         order         order          order         order"
+    "img4          img4          img4          img4           img4          img4"
+    "footer        footer        footer        footer         footer        footer"
+    "copyright     copyright     copyright     copyright      copyright     copyright"
+    "credit        credit        credit        credit         credit        credit";
+}
 
-/* Dont' forget to link this file to your HTML in the <head> */
+/* HERO SECTION */
+.hero {
+    background-image: url("../images/prickles-hero-img.png");
+    grid-area: hero;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 5em;
+}
+
+.logo-img {
+    margin-top: 70px;
+}
+
+.logo-est-year {
+    color: var(--white); 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.est-title, .year-title {
+    margin-top: 60px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 200;
+    letter-spacing: 0.4em;
+}
+
+.est-title {
+    margin-right: 20px;
+}
+
+.year-title {
+    margin-left: 20px;
+}
+
+.hero-line-decoration {
+    height: 3px;
+    border: none;
+    background-color: white;
+    width: 60px;
+}
+
+.svg-color {
+    filter: invert(100%) sepia(6%) 
+    saturate(0%) hue-rotate(115deg) 
+    brightness(108%) contrast(108%);
+}
+
+.logo-title {
+    font-size: 2.7em;
+    font-family: 'Fjalla One', sans-serif;
+    letter-spacing: 0.2em;
+    font-weight: 400;
+    color: var(--white);
+    margin: 0;
+    padding-left: 0.3em;
+}
+
+.hero-subheading {
+    font-family: 'Outfit', sans-serif;
+    color: var(--white);
+    font-weight: 200;
+    text-align: center;
+    font-size: 1.3em;
+    letter-spacing: 0.3em; 
+}
+
+.text1 {
+    padding-top: 10px;
+    margin-bottom: 0;
+}
+
+.text2 {
+    margin: 0;
+}
+
+.btn {
+    background-color: var(--red-brown);
+    font-family: 'Outfit', sans-serif;
+    color:var(--white);
+    padding: 13px 40px;
+    border: none;
+    margin-top: 1.7em;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+/* SHOP */
+.shop-container {
+    grid-area: shop;
+    display: flex;
+    flex-direction: column; 
+    grid-gap: 1.6em;
+    margin-top: 1.6em;
+}
+
+.shop-cacti {  
+    display: flex;
+    flex-direction: column;  
+}
+
+.shop-cacti img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    max-width: 100%;
+}
+
+.desc {
+    position: absolute;
+    top: 5vw;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #000;
+}
+
+.cacti {
+    margin: 0em;
+}
+
+.shop-plants {
+    display: flex;
+    flex-direction: column; 
+}
+
+.shop-plants img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    max-width: 100%;
+}
+
+.plants {
+    margin: 0em;  
+}
+
+.shop-succulents {
+    display: flex;
+    flex-direction: column;  
+}
+
+.shop-succulents img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: contain;
+    background-repeat: no-repeat;    
+    max-width: 100%;
+}
+
+.succulents {
+    margin: 0em;  
+}
+
+/* shared classes for shop section*/
+.shop-cacti, .shop-plants, .shop-succulents {
+    position: relative; 
+    display: inline-block;
+}
+
+.title-name {
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 200;
+    letter-spacing: 0.3em;
+    font-size: 1.3em;
+    color:var(--red-brown);
+}
+
+.title-underline {
+    height: 3px;
+    border: none;
+    background-color: #a05941;
+    width: 0.4px;
+}
+
+.btn--collection {
+    padding: 13px 20px;
+    margin-top: 0.4em;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 900px) {
+    body {
+        padding: 0 2em;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "header        header        header        header         header        header"
+        "hero          hero          hero          hero           hero          hero"
+        "shop          shop          shop          shop           shop          shop"
+        "about         about         about         about          about         about"
+        "img           img           img           img            img           img"
+        "img2          img2          img2          img2           img2          img2"
+        "img3          img3          img3          img3           img3          img3"
+        "offer         offer         offer         offer          offer         offer"
+        "img4          img4          img4          img4           img4          img4"
+        "order         order         order         order          order         order"
+        "footer        footer        footer        footer         footer        footer"
+        "copyright     copyright     copyright     copyright      copyright     copyright"
+        "credit        credit        credit        credit         credit        credit";
+    }
+
+    /* SHOP */
+    .shop-container {
+        grid-area: shop;
+        display: flex;
+        flex-direction: row;
+        grid-gap: 1.6em;
+        margin-top: 1.6em;
+    }
+    
+    .shop-cacti {
+        flex-direction: column;
+        grid-column: 1/3;
+    }
+
+    .shop-plants {
+        flex-direction: column; 
+        grid-column: 3/5; 
+    }
+
+    .shop-succulents  {
+        flex-direction: column;  
+        grid-column: 5/-1;
+    }
+
+    .desc {
+        top: 2vw;
+    }
+
+    .title-name {
+        font-size: 1.1em;
+    }
+
+    .btn--collection {
+        padding: 5px 15px;
+    }
+}

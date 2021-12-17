@@ -1,21 +1,322 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Add a link to your custom CSS here -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Responsive grid project</title>
+        <link rel="stylesheet" href="./css/shared.css"/>
+        <link rel="stylesheet" href="./css/header.css"/>
+        <link rel="stylesheet" href="./css/main.css"/>
+        <link rel="stylesheet" href="./css/about-us.css"/>
+        <link rel="stylesheet" href="./css/form.css"/>
+        <link rel="stylesheet" href="./css/footer.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Outfit:wght@200&display=swap" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    </head>
 
-    <title>Responsive grid project</title>
-</head>
+    <body>
+        <header class="header">
+            <div class="header-top-half">
+                <!-- SEARCH BAR -->
+                <form class="search-container">
+                    <i class="fa fa-search" aria-hidden="true" ></i>
+                    <input class="input-field" type="text" placeholder="Search..." name="search">
+                </form>
 
-<body>
+                <!-- HEADER ICONS-->
+                <div class=account-container>
+                    <div class="profile">
+                        <img src="./icons/profile.svg" class="svg-color profile-svg" alt="login icon"/>
+                        <a href="#" class="login-link">Log In</a>
+                    </div>
+                    <div class="shopping-basket">
+                        <img src="./icons/shopping-basket.svg" class="svg-color" alt="shopping basket icon"/>
+                    </div>
+                </div>
+            </div>
 
-    <!-- Add your markup here -->
+            <!-- LOGO -->
+            <div class="nav-container">
+                <div class=header-nav>
+                    <h1 class="header-nav--logo">PRICKLES & CO.</h1>
 
+                    <!-- MENU BAR FOR DESKTOP VERSION -->
+                    <nav class="nav">
+                        <div class="nav--bar">
+                            <ul class="nav--menu">
+                                <li class="nav--item">
+                                    <a href="#" class="nav--link">Shop</a>
+                                </li>
+                                <li class="nav--item">
+                                    <a href="#" class="nav--link">About</a>
+                                </li>
+                                <li class="nav--item">
+                                    <a href="#" class="nav--link">FAQ</a>
+                                </li>
+                                <li class="nav--item">
+                                    <a href="#" class="nav--link">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
 
-    <!-- Please leave this in to credit the creators of this design -->
-    <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
-</body>
+                    <!-- HAMBURGER MOBILE VERSION-->
+                    <div class="nav-icon">
+                        <div class="line"></div>
+                    </div>
+                </div>
+            
+                <h2 class="header-nav--subheading">We Deliver to Your Doorstep</h2>
+            </div> 
+        </header>
 
+        <!-- HERO -->
+        <div class="hero">
+            <div class="logo-est-year">
+                <div class="est-title">
+                    <span>ESTB</span>
+                    <hr class="hero-line-decoration">
+                </div>    
+                <div class="logo-img">
+                    <img src="./icons/logo-img.svg" class="svg-color" alt="logo image"/>
+                </div>
+                <div class="year-title">
+                    <span>2023</span>
+                    <hr class="hero-line-decoration">
+                </div>
+            </div>
+
+            <h1 class="logo-title">PRICKLES & CO</h1>
+
+            <div class="hero-subheading-container">
+                <h2 class="hero-subheading text1">BRING NATURE</h2>
+                <h2 class="hero-subheading text2">INDOORS</h2>
+            </div>
+
+            <button class="btn">Shop Now</button> 
+        </div>
+
+        <!-- SHOP -->
+        <section class="shop-container">
+            <div class="plant shop-cacti">
+                <div class="desc">
+                    <h1 class="title-name cacti">CACTI</h1>
+                    <hr class="title-underline">
+                    <button class="btn btn--collection">Shop collection</button>
+                </div>
+                <img src="./images/cactus.png" alt="hand holding cactus plant pot"/>
+            </div>
+                    
+            <div class="plant shop-plants">
+                <div class="desc">
+                    <h1 class="title-name plants">PLANTS</h1>
+                    <hr class="title-underline">
+                    <button class="btn btn--collection">Shop collection</button>
+                </div>
+                <img src="./images/plants.png" alt="hand holding plant pot"/>
+            </div>
+
+            <div class="plant shop-succulents">
+                <div class="desc">
+                    <h1 class="title-name succulents">SUCCULENTS</h1>
+                    <hr class="title-underline">
+                    <button class="btn btn--collection">Shop collection</button>
+                </div>
+                <img src="./images/succulents.png" alt="hand holding plant pot"/>
+            </div>
+        </section>
+
+        <!-- ABOUT US PAGE -->
+        <div class="about-us-container">
+            <div class=about-us-wrapper>
+                <div class="about-us">
+                    <h1 class="title">ABOUT US</h1>
+                    <hr class="title-underline">
+
+                    <div class="about-us--description">
+                        <p class="about-us--description__p1">I'm a paragraph. 
+                        Click here to add your own text and edit me. 
+                        It’s easy. Just click “Edit Text” or double 
+                        click me to add your own content and make changes 
+                        to the font. Feel free to drag and drop me 
+                        anywhere you like on your page. I’m a great 
+                        place for you to tell a story and let your 
+                        users know a little more about you. </p>
+
+                        <p class="about-us--description__p2">This is a 
+                        great space to write long text about your company 
+                        and your services. You can use this space to go 
+                        into a little more detail about your company. 
+                        Talk about your team and what services you provide.</p>
+                    </div>
+                </div>
+
+                <!-- about us images -->
+                <div class="greenhouse">
+                    <img src="./images/wheelbarrow.png" class="greenhouse--img" alt="greenhouse with plants and wheelbarrow inside"/>
+                </div>
+
+                <div class="leaf">
+                    <img src="./images/leaf.png" class="leaf--img" alt="hand holding small leaf between two fingers">
+                </div>
+            </div>
+            
+            <div class="about-us-offer">
+                <div class="foliage">
+                    <img src="./images/woman-foliage.png" class="foliage--img" alt="woman standing in front of window surrounded by plants">
+                </div>
+
+                <div class="offer">
+                    <h1 class="offer--heading">BUY ONLINE NOW & GET 10% OFF !</h1>
+                                   
+                    <button class="btn btn-white">Shop Now</button> 
+                </div>
+            </div>   
+        </div>   
+
+        <!-- ORDER FORM -->
+        <div class="end-page--img"></div>
+        
+        <div class="registration">
+            <h1 class="registration--header">FOR SPECIAL REQUESTS & ORDERS</h1> 
+            <hr class="title-underline">
+
+            <!-- form -->
+            <form class="form">
+                <fieldset class="prickles-and-co-form">
+                    <!-- first/last name -->
+                    <div class="frst-lst-name">
+                        <div class="form-section">
+                            <label for="first-name" class="fst-name field-title"  >First Name *</label>
+                            <input type="text" name="first-name" required>
+                        </div>
+                    
+                        <!-- last name -->
+                        <div class="form-section">
+                            <label for="last-name" class="lst-name field-title">Last Name *</label>
+                            <input type="text" name="last-name" required>
+                        </div>
+                    </div>
+                    
+                    <!-- email -->
+                    <div class="form-section">
+                        <label for="email" class="email field-title">Email *</label>
+                        <input type="email" name="email" required>
+                    </div>
+                    
+                    <!-- phone -->
+                    <div class="form-section">
+                        <label for="phone" class="phone field-title">Phone</label>
+                        <input type="tel" name="phone"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    </div>
+
+                    <!-- message box -->
+                    <div class="form-section">
+                        <label class="message field-title" for="message">Message</label>
+                        <textarea name="message" style="height:200px"></textarea>
+                    </div>   
+                    <button class="btn btn-form">Send</button>           
+                </fieldset>
+            </form>
+        </div>
+        
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer-info">
+                <div class="footer--store">
+                    <h1 class="footer--heading">OUR STORE</h1>
+                    <div class="footer--text">
+                        <span class="footer--span">Address: 500 Terry Francois <br> Street San Francisco, CA 94158</span><br>
+                        <span class="footer--span">Phone: 123-456-7890</span><br>
+                        <span class="footer--span">Email: info@mysite.com</span>
+                    </div>
+                </div>
+                
+                <div class="footer--hours">
+                    <h1 class="footer--heading">OPENING HOURS</h1>
+                    <div class="footer--text">
+                        <span class="footer--span">Mon - Fri: 7am - 10pm</span><br>
+                        <span class="footer--span">​​Saturday: 8am - 10pm</span><br>
+                        <span class="footer--span">​Sunday: 8am - 11pm</span>
+                    </div>
+                </div>
+                
+                <div class="footer--help">
+                    <h1 class="footer--heading">HELP</h1>
+                    <div class="footer--text">
+                        <span class="footer--span">
+                            <a href="#">Shipping & Returns</a></span><br>
+                        <span class="footer--span"><a href="#">Privacy Policy</a></span><br>
+                        <span class="footer--span"><a href="#">FAQ</a></span>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="footer--subscribe">
+                <h1 class="footer--heading">SUBSCRIBE</h1>
+
+                <form class="form-subscribe">
+                    <div class="form-subscribe--email">
+                        <label class="email-label" for="email">Enter your email here *</label>
+
+                        <div class="field-wrapper">
+                            <input class="email-subscribe" type="email" name="email" required>
+                            <button class="btn btn-white" type="submit" value="Subscribe now">Subscribe Now</button>
+                        </div>
+                        
+                    </div>  
+                </form>
+            </div>
+
+            <!-- SOCIAL MEDIA ICONS -->
+            <div class="footer-content">
+                <div class="social">
+                    <a target="_blank" href="#">
+                        <img class="social-media-icons" src="./icons/facebook-icon.svg" alt="facebook logo"/>
+                    </a>
+                </div>
+
+                <div class="social">
+                    <a target="_blank" href="#">
+                        <img class="social-media-icons" src="./icons/pinterest-svgrepo-com.svg" alt="pinterest logo"/>
+                    </a>
+                </div>
+
+                <div class="social">
+                    <a target="_blank" href="#">
+                        <img class="social-media-icons" src="./icons/instagram-icon.svg" alt="instagram logo"/>
+                    </a>
+                </div>
+            </div>  
+
+            
+            <!-- MAP DISPLAY -->
+            <div class="map-container">
+                <iframe 
+                    class="google-map" 
+                    loading="lazy"  
+                    allowfullscreen 
+                    src="https://www.google.com/maps/embed/v1/place?q=%20500%20Terry%20Francois%20Street%20San%20Francisco%2C%20CA%2094158&zoom=13&key=AIzaSyCoM_KN-tSL30ne7EUFbMA6PG-nNn-NoxI">
+                </iframe>
+            </div>
+        </footer>
+
+        <div class="copyright">
+            <span class="copyright--text">
+                © 2023 by Prickles &amp; Co. Proudly created with
+                    <a href="http://wix.com?utm_campaign=vir_created_with" 
+                    target="_blank">Wix.com</a>
+            </span>
+        </div>
+
+        <div class="credit">
+            <!-- Please leave this in to credit the creators of this design -->
+            <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
+        </div>
+    </body>
 </html>
