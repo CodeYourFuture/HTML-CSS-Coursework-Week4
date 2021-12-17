@@ -170,4 +170,40 @@
         display: block;
         width: auto;
     }
+    .chat-circle {
+        border-radius: unset;
+        display: flex;
+        padding: 10px 42px;
+        align-items: center;
+        width: auto;
+    }
+    .chat-circle img {
+        width: auto;
+        margin-right: 9px;
+    }
+    .chat-circle p {
+        display: block;
+        color: white;
+        font-size: 1.1em;
+        letter-spacing: 0;
+    }
+    .chat-page {
+        display: block;
+        width: 340px;
+        right: 20px;
+        bottom: 30px;
+        height: 500px;
+        left: auto;
+        top: auto;
+    }
+    .top-chat {
+        display: flex;
+    }
+    .close {
+        position: unset;
+        display: block;
+        align-self: start;
+        margin-left: auto;
+        margin-right: 15px;
+    }
 }

@@ -203,8 +203,9 @@ fieldset {
         flex-direction: row;
     }
     .product-links-wrapper {
-        flex-direction: row;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 50px;
         height: auto;
     }
     .menu-list ul {

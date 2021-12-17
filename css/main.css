@@ -637,3 +637,7 @@ input.faq-search[type="search"]::placeholder {
 ol {
     margin-left: 3rem;
 }
+
+.chat-circle p {
+    display: none;
+}
