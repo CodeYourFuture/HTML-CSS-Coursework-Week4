@@ -12,17 +12,16 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Outfit:wght@200&display=swap" rel="stylesheet">
-        
     </head>
 
     <body>
         <header class="header">
             <div class="header-top-half">
                 <!-- SEARCH BAR -->
-                <div class="search-container">
+                <form class="search-container">
                     <i class="fa fa-search" aria-hidden="true" ></i>
                     <input class="input-field" type="text" placeholder="Search..." name="search">
-                </div>
+                </form>
 
                 <!-- HEADER ICONS-->
                 <div class=account-container>
@@ -38,7 +37,7 @@
 
             <!-- LOGO -->
             <div class="nav-container">
-                    <div class=header-nav>
+                <div class=header-nav>
                     <h1 class="header-nav--logo">PRICKLES & CO.</h1>
 
                     <!-- MENU BAR FOR DESKTOP VERSION -->
@@ -79,77 +78,92 @@
             <h2 class="faq-subheading">Frequently asked questions</h2>
         
             <!-- FAQ search bar -->
-            <div class="faq-search">
-                <hr class="search-line">
-                <div class="faq-search-container">
+            <div class="faq-wrapper">
+                <div class="faq-search">
+                    <hr class="search-line">
+                    <div class="faq-search-container">
                         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
                         <i class="fa fa-search" aria-hidden="true" ></i>       
+                    </div>
                 </div>
-            </div>
 
-            <!-- FAQ dropdown q's -->
-            <div class="faq-questions">
-                <div class="question">
-                    <p class="question-text">How do I add a question?</p>
-                    <img class="arrow-icon position1" src="./icons/down-arrow-svgrepo-com.svg" alt="dropdown arrow icon"> 
-                </div>
-                <hr class="line-break">
-
-                <div class="faq-questions">
-                <div class="question">
-                    <p class="question-text">Can I insert pictures in my FAQ?</p>
-                    <img class="arrow-icon position2" src="./icons/down-arrow-svgrepo-com.svg" alt="dropdown arrow icon">
-                </div>
-                <hr class="line-break">
-
-                <div class="faq-questions">
-                <div class="question">
-                    <p class="question-text">Can I insert a video in my FAQ?</p>
-                    <img class="arrow-icon position3" src="./icons/down-arrow-svgrepo-com.svg" alt="dropdown arrow icon">
-                </div>
-                <hr class="line-break">
-
-                <div class="faq-questions">
-                <div class="question">
-                    <p class="question-text">How do I edit or remove the "FAQ title"?</p>
-                    <img class="arrow-icon position4" src="./icons/down-arrow-svgrepo-com.svg" alt="dropdown arrow icon">
-                </div>
-                <hr class="line-break">
+                <div class="questions-wrapper">
+                    <!-- FAQ dropdown q's -->
+                    <div class="faq-question-wrapper">
+                        <div class="faq-questions">
+                            <div class="question">
+                                <p class="question-text">How do I add a question?</p>
+                                <img class="arrow-icon" src="./icons/down-arrow-svgrepo-com.svg" alt="dropdown arrow icon"> 
+                            </div>    
+                        </div>
+                        <hr class="line-break">
+                    </div>
+                    
+                    <div class="faq-question-wrapper">
+                        <div class="faq-questions">
+                            <div class="question">
+                                <p class="question-text">Can I insert pictures in my FAQ?</p>
+                                <img class="arrow-icon" src="./icons/down-arrow-svgrepo-com.svg" alt="dropdown arrow icon">
+                            </div>
+                        </div>    
+                        <hr class="line-break">
+                    </div>
+                    
+                    <div class="faq-question-wrapper">
+                        <div class="faq-questions">
+                            <div class="question">
+                                <p class="question-text">Can I insert a video in my FAQ?</p>
+                                <img class="arrow-icon" src="./icons/down-arrow-svgrepo-com.svg" alt="dropdown arrow icon">
+                            </div>
+                        </div>    
+                        <hr class="line-break">
+                    </div>
+                    
+                    <div class="faq-question-wrapper">
+                        <div class="faq-questions">
+                            <div class="question">
+                                <p class="question-text">How do I edit or remove the "FAQ title"?</p>
+                                <img class="arrow-icon" src="./icons/down-arrow-svgrepo-com.svg" alt="dropdown arrow icon">
+                            </div>
+                        </div>    
+                        <hr class="line-break">
+                    </div>
+                </div>    
             </div>
         </section>
 
         <!-- FOOTER -->
         <footer class="footer">
-            <div class="footer--store">
-                <h1 class="footer--heading">OUR STORE</h1>
-                <div class="footer--text">
-                    <span class="footer--span">Address: 500 Terry Francois Street San <br> Francisco, CA 94158</span><br>
-                    <span class="footer--span">Phone: 123-456-7890</span><br>
-                    <span class="footer--span">Email: info@mysite.com</span>
+            <div class="footer-info">
+                <div class="footer--store">
+                    <h1 class="footer--heading">OUR STORE</h1>
+                    <div class="footer--text">
+                        <span class="footer--span">Address: 500 Terry Francois <br> Street San Francisco, CA 94158</span><br>
+                        <span class="footer--span">Phone: 123-456-7890</span><br>
+                        <span class="footer--span">Email: info@mysite.com</span>
+                    </div>
                 </div>
                 
-            </div>
-            
-            <div class="footer--hours">
-                <h1 class="footer--heading">OPENING HOURS</h1>
-                <div class="footer--text">
-                    <span class="footer--span">Mon - Fri: 7am - 10pm</span><br>
-                    <span class="footer--span">​​Saturday: 8am - 10pm</span><br>
-                    <span class="footer--span">​Sunday: 8am - 11pm</span>
+                <div class="footer--hours">
+                    <h1 class="footer--heading">OPENING HOURS</h1>
+                    <div class="footer--text">
+                        <span class="footer--span">Mon - Fri: 7am - 10pm</span><br>
+                        <span class="footer--span">​​Saturday: 8am - 10pm</span><br>
+                        <span class="footer--span">​Sunday: 8am - 11pm</span>
+                    </div>
                 </div>
                 
+                <div class="footer--help">
+                    <h1 class="footer--heading">HELP</h1>
+                    <div class="footer--text">
+                        <span class="footer--span">
+                            <a href="#">Shipping & Returns</a></span><br>
+                        <span class="footer--span"><a href="#">Privacy Policy</a></span><br>
+                        <span class="footer--span"><a href="#">FAQ</a></span>
+                    </div>
+                </div>
             </div>
             
-            <div class="footer--help">
-                <h1 class="footer--heading">HELP</h1>
-                <div class="footer--text">
-                    <span class="footer--span">
-                        <a href="#">Shipping & Returns</a></span><br>
-                    <span class="footer--span"><a href="#">Privacy Policy</a></span><br>
-                    <span class="footer--span"><a href="#">FAQ</a></span>
-                </div>
-             
-            </div>
             
             <div class="footer--subscribe">
                 <h1 class="footer--heading">SUBSCRIBE</h1>
@@ -157,10 +171,13 @@
                 <form class="form-subscribe">
                     <div class="form-subscribe--email">
                         <label class="email-label" for="email">Enter your email here *</label>
-                        <input class="email-subscribe" type="email" name="email" required>
-                        <button class="btn btn-white" type="submit" value="Subscribe now">Subscribe Now</button>
-                    </div>
-                    
+
+                        <div class="field-wrapper">
+                            <input class="email-subscribe" type="email" name="email" required>
+                            <button class="btn btn-white" type="submit" value="Subscribe now">Subscribe Now</button>
+                        </div>
+                        
+                    </div>  
                 </form>
             </div>
 
@@ -172,7 +189,7 @@
                     </a>
                 </div>
 
-                 <div class="social">
+                    <div class="social">
                     <a target="_blank" href="#">
                         <img class="social-media-icons" src="./icons/pinterest-svgrepo-com.svg" alt="pinterest logo"/>
                     </a>
@@ -184,7 +201,7 @@
                     </a>
                 </div>
             </div>  
-            
+
             <!-- MAP DISPLAY -->
             <div class="map-container">
                 <iframe 
@@ -209,3 +226,4 @@
             <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
         </div>
     </body>
+</html>    
