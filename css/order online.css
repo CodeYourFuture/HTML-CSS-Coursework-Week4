@@ -10,6 +10,7 @@
     --background-color-2 :#E6FAC0;
     --footer-color: #304B2A;
     --button-hover: #5E7D1F;
+    --store-hover: #d5e8b1;
 }
 
 * {
@@ -18,10 +19,6 @@
     list-style-type: none;
     text-decoration: none;
 } 
-button {
-    font-family: var(--button-font);
-    background-color: transparent;
-}
 a {
     color:var(--secondary-color);
 }
@@ -34,47 +31,67 @@ h1, h2 {
     font-weight: 100;
     line-height: 2.3rem;
     font-size: 2rem;
+    line-height: 3rem;
+}
+h3 {
+font-family: var(--heading-font);
 }
 body {
-    font-family: var(--body-font);
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(12, 1fr);  
+    font-family: var(--body-font);
+    text-align: left;
+    line-height: 1.6rem;
     background-color: var(--background-color-2);
 }
+
+
+
+/*   Button styles  */
+button {
+    background-color: transparent;
+    font-family: var(--button-font);
+    font-size: 18px;
+}
+.button-color-hover {
+    border: none;
+    background-color: var(--secondary-color);
+}
+.button-color-hover:hover {
+    background-color: var(--button-hover);
+}
+.button-color-hover a {
+    color: var(--main-color);
+}
+
+/*     HEADER      */
 header {
     grid-column: span 12;
-    background-color: var(--main-color);
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-}
-.header-user-icon {
-    grid-column: 6/8;
-    width: auto;
-    height: 100%; 
-    display: inline;
+    grid-template-rows: 50px 50px; 
 }
 .header-logo {
     grid-column: span 6;
     font-family: var(--heading-font);
     text-align: left;
     font-weight: 400;
-    font-size: 1.25rem;
+    font-size: 1.75rem;
     padding-left: 0.5rem;
 }
 .header-hamburger-icon {
-    grid-column: 11/ 12;
-    width: auto;
-    height: 100%; 
-} 
-main {
-    grid-column: span 12;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(6, auto);
+    grid-column: 12/13;  
 }
-.menu-section {
+.header-hamburger-icon > a > img {
+    width: 30px;
+    height: 30px;
+}
+.button-color-hover {
     grid-column: span 12;
 }
+
+
+
+
 
 /*  Cold pressed section  */
 .cold-pressed {
@@ -356,52 +373,90 @@ footer > .logo-jb {
 }
 
 @media screen and (min-width: 431px) {
-main {
-    grid-column: span 12;
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-}
-header {
-    grid-column: span 12;
-    display: grid;
-    grid-template-rows: 50px 50px; 
-    align-items: center;
-}
-.header-user-icon {
-    width: auto;
-    height: 100%; 
-    display: inline;
-}
-.header-logo {
-    grid-column: span 6;
-    font-family: var(--heading-font);
-    text-align: left;
-    font-weight: 400;
-    font-size: 1.25rem;
-    padding-left: 0.5rem;
-}
-.header-hamburger-icon {
-    grid-column: 12/13;
-    width: 100%; 
-}
-.menu-section {
-    grid-column: 1;
-}
-.cold-pressed {
-    grid-column: 2;
-}
-.cart-section {
-    grid-column: 3;
-}
-.smoothies {
-    display: none;
-}
-.wellness-shots {
-    display: none;
-}
-.cleanse-kit {
-    display: none;
-}
+    main {
+        grid-column: span 12;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    header {
+        grid-template-rows: 100px;
+        column-gap: 0.5rem;
+        position: sticky;
+        top: 0;
+        background-color: var(--main-color);
+    }
+    .button-color-hover {
+        grid-column: 11/13;
+        grid-row: 1;
+    }
+    .header-user-icon {
+        grid-column: 10/11;
+        align-items: center; 
+        grid-row: 1; 
+        align-self: center; 
+    }
+    .header-user-icon > a {
+        display: flex;
+        flex-direction: row;
+        white-space: nowrap;
+        justify-content: right;
+    }
+    .header-user-icon > a > img {
+        width: 30px;
+        height: 30px;
+    }
+    .header-hamburger-icon {
+        grid-column: 1/2;
+        align-self: center; 
+        grid-row: 1;
+    }
+    .header-logo {
+        grid-column: 8/9;
+        align-self: center; 
+        grid-row: 1;  
+    }
+    h1 {
+        grid-column: 2;
+        grid-row: 1;
+        box-shadow: none;
+    }
+    .menu-section {
+        grid-column: 1;
+        grid-row: 2;
+        padding-left: 3rem;
+    }
+    .user-icon {
+        background-image: url(../images/user-circle-solid.svg);
+        width: 35px;
+        height: 35px;
+        
+    }
+    .menu-section > ul{
+        padding: 0;
+    }
+    .menu-section > ul >li {
+        padding: 0.6rem 0;
+    }
+    .menu-section > ul > li:hover {
+        background-color: var(--store-hover);
+    }
+    .cold-pressed {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .cart-section {
+        grid-column: 3;
+        grid-row: 2;
+    }
+    .smoothies {
+        display: none;
+    }
+    .wellness-shots {
+        display: none;
+    }
+    .cleanse-kit {
+        display: none;
+    }
 
     
 }
