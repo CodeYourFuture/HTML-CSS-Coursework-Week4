@@ -61,6 +61,10 @@ main section a {
   grid-area: button;
   justify-self: center;
 }
+.discover .flex_col {
+  align-items: center;
+}
+
 .get_juice {
   background-color: var(--light-Green);
 }
@@ -120,9 +124,7 @@ main section a {
   transform: rotate(17.142845342601447deg);
   width: 100%;
 }
-.follow img {
-  width: 100%;
-}
+
 @media screen and (min-width: 481px) {
   .explore {
     padding: 65px 0;
@@ -202,5 +204,48 @@ main section a {
   .get_juice {
     display: flex;
     justify-content: space-around;
+  }
+
+  .discover {
+    display: flex;
+    justify-content: center;
+  }
+  .discover div {
+    width: 50%;
+    text-align: left;
+  }
+  .discover .flex_col {
+    align-items: flex-start;
+    width: 490px;
+  }
+  .discover img {
+    width: 550px;
+  }
+
+  .follow_green {
+    grid-row: 3 / 4;
+    grid-column: 1 / -1;
+  }
+  .img_apples {
+    align-self: flex-end;
+    grid-row: 1 / 4;
+    grid-column: 3 / 5;
+  }
+  .img_papaya {
+    align-self: center;
+    grid-row: 1 / 4;
+    grid-column: 5 / 7;
+  }
+
+  .img_bag {
+    align-self: flex-start;
+    grid-row: 1 / 4;
+    grid-column: 7 / 9;
+  }
+
+  .img_kale {
+    align-self: center;
+    grid-row: 1 / 4;
+    grid-column: 9 / 11;
   }
 }

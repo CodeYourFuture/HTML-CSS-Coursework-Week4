@@ -90,6 +90,9 @@ body {
   width: 160px;
   height: 42px;
 }
+.button_black:hover {
+  background: var(--medium-Green);
+}
 
 .button_tr {
   font-family: var(--buttons-font);
@@ -100,7 +103,10 @@ body {
   border: solid 2px var(--black);
   background-color: none;
 }
-
+.button_tr:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
 header {
   position: fixed;
   width: 100%;
@@ -179,6 +185,11 @@ footer .button_tr {
   color: var(--white);
 }
 
+footer .button_tr:hover {
+  color: var(--black);
+  background-color: var(--white);
+}
+
 .logo {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -204,6 +215,10 @@ footer .button_tr {
   background-color: transparent;
   border: none;
   border-bottom: solid var(--white) 2px;
+}
+
+.input_box:hover {
+  border-bottom: solid var(--light-Green) 4px;
 }
 .required:after {
   content: " *";
@@ -307,5 +322,15 @@ footer .button_tr {
   }
   footer form {
     min-width: 376px;
+  }
+
+  .input_box {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .logo {
+    width: 80px;
+    height: 80px;
   }
 }
