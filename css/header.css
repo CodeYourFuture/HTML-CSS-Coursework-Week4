@@ -137,3 +137,110 @@ header .svg-color {
     visibility: hidden;
 }
 
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 900px) {
+    body {
+        padding: 0 2em;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "header        header        header        header         header        header"
+        "hero          hero          hero          hero           hero          hero"
+        "shop          shop          shop          shop           shop          shop"
+        "about         about         about         about          about         about"
+        "img           img           img           img            img           img"
+        "img2          img2          img2          img2           img2          img2"
+        "img3          img3          img3          img3           img3          img3"
+        "offer         offer         offer         offer          offer         offer"
+        "img4          img4          img4          img4           img4          img4"
+        "order         order         order         order          order         order"
+        "footer        footer        footer        footer         footer        footer"
+        "copyright     copyright     copyright     copyright      copyright     copyright"
+        "credit        credit        credit        credit         credit        credit";
+    }
+
+    .account-container {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .profile {
+        display: flex;
+        flex-direction: row;
+        padding-right: 1.4em;
+        align-items: center;
+        justify-content: space-between;
+        width: 4.8em;
+        visibility: visible;
+    }
+
+    .profile-svg {
+        width: 26px;
+        height: 50px;
+        
+    }
+
+    .login-link {
+        font-family: 'Outfit', sans-serif;
+        color: var(--red-brown);
+        font-size: 0.9em;
+        text-decoration: none;
+    }
+
+    .header {
+        padding: 0;
+    }
+
+    .nav-icon {
+        visibility: hidden;
+    }
+
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+            
+    }
+
+    .header-nav {
+        display: flex;
+        
+    }
+
+    .header-nav--logo {
+        font-family: 'Fjalla One', sans-serif;
+        font-weight: 100;
+        font-size: 1.6em;
+        color: var(--red-brown);
+        padding: 0;  
+    }
+
+    .nav {
+        visibility: visible;
+    }
+
+    .nav--menu {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    li {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .nav--link {
+        font-family: 'Outfit', sans-serif;
+        color: var(--red-brown);
+        font-size: 0.9em;
+    }
+
+    .header-nav--subheading {
+        margin-top: 2em;
+    }
+}        
