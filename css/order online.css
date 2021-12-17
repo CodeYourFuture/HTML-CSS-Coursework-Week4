@@ -63,6 +63,20 @@ button {
 .button-color-hover a {
     color: var(--main-color);
 }
+.submit-button {
+    border: 2px solid var(--main-color);
+    color:var(--main-color);
+    padding: 0.5rem 2rem;
+    background-color: transparent;
+    margin-left: 0.5rem;
+    font-size: 16px;
+    font-family: var(--button-font);
+    text-transform: uppercase;
+}
+.submit-button:hover {
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+}
 
 /*     HEADER      */
 header {
@@ -289,6 +303,24 @@ footer {
     font-weight: 600;
     padding: 0 1rem;
 }
+.footer-get-started {
+    text-align: left;
+    color: var(--main-color);
+    padding-left: 1rem;
+    font-weight: 300;
+}
+.footer-get-started > ul  {
+    padding-left: 0;
+}
+.footer-connect {    
+    text-align: left;
+    color: var(--main-color);
+    padding-left: 1rem;
+    font-weight: 300;
+}
+.footer-connect > ul {
+    padding-left: 0;
+}
 footer > a {
     color: var(--main-color);
     text-decoration: underline;
@@ -373,6 +405,19 @@ footer > .logo-jb {
 }
 
 @media screen and (min-width: 431px) {
+    p {
+        font-size: 1.15rem;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.8rem;
+        font-weight: 300;
+    }
     main {
         grid-column: span 12;
         display: grid;
@@ -429,7 +474,6 @@ footer > .logo-jb {
         background-image: url(../images/user-circle-solid.svg);
         width: 35px;
         height: 35px;
-        
     }
     .menu-section > ul{
         padding: 0;
@@ -443,6 +487,7 @@ footer > .logo-jb {
     .cold-pressed {
         grid-column: 2;
         grid-row: 2;
+        padding: ;
     }
     .cart-section {
         grid-column: 3;
@@ -456,6 +501,43 @@ footer > .logo-jb {
     }
     .cleanse-kit {
         display: none;
+    }
+
+    footer >  div > h3 {
+        font-size: 1.55rem;
+    }
+    footer {
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+        grid-template-rows: repeat(3, auto);
+    }
+    .footer-get-started {
+        grid-column: 1/4;
+        grid-row: span 3;
+    }
+    footer > h3 {
+        padding: 0;
+        grid-column: 6/10;
+        grid-row: 1;
+        font-size: 1.55rem;
+    }
+    .footer-connect {
+        grid-column: 4/6;
+    }
+    footer > form{
+        grid-column: 6/10;
+        grid-row: 2/3;
+    }
+    footer > a {
+        grid-column: 11/13;
+        font-size: 1.55rem;
+    }
+    .copyright {
+        grid-column: span 12;
+        text-align: center;
+    }
+    .logo-jb {
+        grid-column: 12/13;
     }
 
     

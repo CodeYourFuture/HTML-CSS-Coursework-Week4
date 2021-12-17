@@ -81,7 +81,10 @@ button {
     font-family: var(--button-font);
     text-transform: uppercase;
 }
-
+.submit-button:hover {
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+}
 
 body {
     display: grid;
