@@ -1,0 +1,172 @@
+header{
+    background-color: black;
+   text-align: center;
+   height: 40px;
+   padding-top: 11px;
+         }
+.top{
+       color: white;
+       font-size: 20px;
+    
+  }
+section{
+   display: flex;
+   align-items: center;
+}
+.juice-bar{
+    font-size: 20px;
+    color:black;
+    padding-right: 300px;
+    text-decoration: none;
+  
+}
+#menu{
+	width: 35px;
+	height: 30px;
+	margin: 30px 0 20px 20px;
+	cursor: pointer;
+   
+  
+}
+.bar{
+	height: 5px;
+	width: 100%;
+	background-color: black;
+	display: block;
+	border-radius: 5px;
+	transition: 0.3s ease;   
+}
+#bar1{
+	transform: translateY(-4px);
+}
+#bar3{
+	transform: translateY(4px);
+}
+.nav li a{
+	color:black;
+	text-decoration: none;
+}
+.nav li a:hover{
+	font-weight: bold;
+}
+.nav li{
+	list-style: none;
+	padding: 16px 0;
+}
+.nav{
+	padding: 0;
+	margin: 0 20px;
+	transition: 0.3s ease;
+	display: none;
+}
+.menu-bg, #menu-bar{
+	top: 0;
+	left: 0;
+}
+.menu-bg{
+	z-index: 1;
+	
+	margin: 30px 0 20px 20px;
+	
+	
+	transition: 0.3s ease;
+}
+#menu-bar{
+	z-index: 2;	
+}
+.change-bg{
+	width: 550px;
+	height: 540px;
+	transform: translate(-60%,-30%);
+}
+.change .bar{
+	background-color:black;
+}
+.change #bar1{
+	transform: translateY(4px) rotateZ(-45deg);
+}
+.change #bar3{
+	transform: translateY(-6px) rotate(45deg);
+}
+
+.change{
+	display: block;
+}
+h1{text-align: center;
+}
+h2{text-align: center;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    button{
+        padding:15px 30px 15px 30px;
+        color: white;
+     font-size: 18px;   
+        background-color: black;
+    }
+
+#logo1{
+    border-radius:50%;
+    width: 50px;
+    height: 50px;}
+    
+.visionbtn button{
+    background-color: lightcyan;
+    padding:15px 30px 15px 30px;
+    color:black;
+    font-size: 18px;
+}
+.greenbackground {
+    background-color: rgb(192, 212, 125);
+   }
+.pinkbackground {
+    background-color: rgb(247, 204, 242);
+   }
+   .viewallbtn button{
+    background-color: rgb(247, 204, 242);
+    padding:15px 30px 15px 30px;
+    color:black;
+    font-size: 18px;}
+
+    .tryitbtn button{
+    padding:15px 30px 15px 30px;
+    color:black;
+    background-color:white;
+    font-size: 18px;}
+    
+    h5{
+border-style: solid;
+width:30px;
+height: 30px;
+padding-top: 8px;
+text-align: center;
+border-radius: 50%;
+    }
+    .greenbox{
+        background-color: rgb(187, 202, 131);
+    }
+    .container{
+        display:grid;
+        align-items: center;
+    }
+@media only screen and (min-width: 768px) 
+{ body header{
+ display: grid; 
+align-items: center;       }
+          }
+footer{
+    background-color: rgb(23, 77, 23);
+    color:white;}
+
+    .footerlist1{
+        float: left;
+    }
+.footerlist2{
+    float: right;
+}
+.userform{
+    display: flex;
+}
