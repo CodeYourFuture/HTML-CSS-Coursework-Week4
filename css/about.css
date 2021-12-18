@@ -40,6 +40,10 @@ body{
 
 .nav-list a{
   text-decoration: none;
+  color: var(--black);
+}
+
+.about-me a{
   color: var(--royal-blue);
 }
 

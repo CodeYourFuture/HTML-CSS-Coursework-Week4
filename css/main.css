@@ -1,241 +1,219 @@
 /* Add your CSS here */
 :root {
---dark-beige: #E6DACD;  
---light-beige: #F4ECE6;  
---royal-blue: #0150FD; 
---black: #000;  
---purple: #a90fe6; 
+  --dark-beige: #e6dacd;
+  --light-beige: #f4ece6;
+  --royal-blue: #0150fd;
+  --black: #000;
+  --purple: #a90fe6;
 }
-h1,h2,h3,h4,h5,h6{
-  font-family: 'Poppins', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
 }
 * {
   box-sizing: border-box;
-  margin:0;
-  padding:0;
-  
+  margin: 0;
+  padding: 0;
 }
 
-body{
-  
-   font-family: 'Quicksand', sans-serif; 
+body {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
   background: var(--dark-beige);
 }
-.grid-container{
-  display:grid;
-  grid-template-areas: "h h h h h h h h h h h h"
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "h h h h h h h h h h h h"
     "m m m m m m m m m m m m "
     "f f f f f f f f f f f f";
   grid-template-rows: 1fr 2fr 300px;
- 
-  
-} 
- .navbar{
+}
+.navbar {
   display: grid;
-  grid-template-rows:100px;
-  grid-template-areas:"name .  nav";
+  grid-template-rows: 100px;
+  grid-template-areas: "name .  nav";
   margin: 1rem 1rem;
-   line-height:2rem;
+  line-height: 2rem;
 }
 
- .lists{
-    grid-area:nav;
-    display:flex;
-   justify-content:flex-end;
-   display: none;
-  }
-
-  #square{
-  color:blue;
-  padding-right:0.5rem;
+.lists {
+  grid-area: nav;
+  display: flex;
+  justify-content: flex-end;
+  display: none;
 }
 
+#square {
+  color: blue;
+  padding-right: 0.5rem;
+}
 
-
- header{
+header {
   display: grid;
-  grid-area:h;
+  grid-area: h;
   background: #fff;
   position: relative;
   z-index: 1;
-  
 }
 
-.navbar ul{
-  list-style:none;
+.navbar ul {
+  list-style: none;
 }
 
-
-.hamburger{
-background: transparent;
- margin-left: 6rem;
-border: none;
- margin-bottom: 5rem;
- color: var(--royal-blue); 
- width: 3rem;
-
+.hamburger {
+  background: transparent;
+  margin-left: 6rem;
+  border: none;
+  margin-bottom: 5rem;
+  margin-top: 1rem;
+  color: var(--royal-blue);
+  width: 3.2rem;
 }
 
- .hamburger a{
- filter:  blue (100%);
-}
-
-main{
-  grid-area:m;
+main {
+  grid-area: m;
   background: var(--dark-beige);
-  padding:1em;
-
+  padding: 1em;
 }
-footer{
-  grid-area:f;
+footer {
+  grid-area: f;
   background-color: #fff;
-
 }
 /* This is for the big screen*/
-.lists{
-  
+.lists {
 }
 
-.nav ul li{
- list-style:none;
-   display: none;
-    
+.nav ul li {
+  list-style: none;
+  display: none;
 }
-
 
 .name {
   grid-area: name;
-  
+  font-size: 1.5rem;
+  font-weight: 900;
 }
 
-
-.my-image{
-    background: var(--light-beige);
-    width: 92%;
-     padding-top: 2em;
-    text-align: center;
-    position: absolute;
-    top: 7rem;
-    z-index: 2;
-    left: 1.5rem;
+.my-image {
+  background: var(--light-beige);
+  width: 92%;
+  padding-top: 2em;
+  text-align: center;
+  position: absolute;
+  top: 7rem;
+  z-index: 2;
+  left: 1.5rem;
 }
 
-.my-image img{
-   border-radius: 50%; 
-   width:50%;
-  
+.my-image img {
+  border-radius: 50%;
+  width: 50%;
 }
 
-h1{
-  font-size: 2rem;
-  margin-top: 18px;
-  
-} 
+h1 {
+  font-size: 2.5rem;
+  margin-top: 2rem;
+}
 
- hr.line {
-   border: 2px solid var(--royal-blue) ;
+hr.line {
+  border: 2px solid var(--royal-blue);
   width: 35%;
- margin-left: 7rem;
- margin-top: 2rem;
-
+  margin-left: 7rem;
+  margin-top: 2rem;
 }
-.my-image h1{
+.my-image h1 {
   align-items: center;
 }
 
-.contacts{
-  
+.contacts {
   background: #fff;
   color: var(--black);
   margin-top: 2rem;
-
 }
-.contact-links{
+.contact-links {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   padding: 1rem;
   list-style: none;
   margin-bottom: 0.75rem;
-  
 }
-.contact-links a{
+.contact-links a {
   font-size: 20px;
   color: var(--black);
-  text-decoration:none;
-  margin:5px 10px;
-  padding: 0 0.25rem 
+  text-decoration: none;
+  margin: 5px 10px;
+  padding: 0 0.25rem;
 }
 
-.btn{
-  margin-top: 2.5rem;  
+.btn {
+  margin-top: 2.5rem;
 }
 
- .resume{
-   background: var(--royal-blue);
-   color: #fff;
-   border: 0;
+.resume {
+  background: var(--royal-blue);
+  color: #fff;
+  border: 0;
   padding: 10px 20px;
   border-radius: 2rem;
   margin-right: 1.5rem;
-   font-weight: bold; 
+  font-weight: bold;
   font-size: 1.2rem;
-  
 }
 
-.resume a{
+.resume a {
   text-decoration: none;
-  color:#fff;
+  color: #fff;
 }
 
-.projects{
+.projects {
   padding: 5px 10px;
   border-radius: 2rem;
   font-weight: bold;
   font-size: 1.2rem;
   background: var(--light-beige);
-} 
-.profile{
-  margin-top: 22rem;
+}
+.profile {
+  margin-top: 18rem;
   margin-left: 1.25rem;
   margin-right: 2rem;
 }
 
-h2{
-  font-size: 40px;
+h2 {
+  font-size: 45px;
 }
 
-.profile-info{
-   font-size: 19px;
+.profile-info {
+  font-size: 19px;
   font-weight: bold;
   margin-top: 1rem;
 }
 
-.profile p{
+.profile p {
   margin-top: 1rem;
   line-height: 1.9rem;
-  font-size: 16px;
+  font-size: 17px;
 }
-.contacts2{
-  margin-top:1.55rem;
+.contacts2 {
+  margin-top: 1.55rem;
   display: flex;
- 
-  
 }
-.number-info{
-  margin-top:0.5rem;
+.number-info {
+  margin-top: 0.5rem;
 }
 
-.call{
+.call {
   margin-left: 1.75rem;
-
-  
 }
-.write{
+.write {
   margin-left: 3rem;
- 
 }
-.socials-links{
+.socials-links {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -244,32 +222,23 @@ h2{
   list-style: none;
 }
 
-.socials-links a{
+.socials-links a {
   font-size: 20px;
   color: var(--black);
-  text-decoration:none;
-  margin:5px 10px;
+  text-decoration: none;
+  margin: 5px 10px;
   padding-bottom: 1.5rem;
-  
-
 }
-.socials p{
+.socials p {
   margin-left: 1.75rem;
   padding-top: 1.8rem;
   font-weight: bold;
 }
 
 .footer-info {
-  margin-top:1.5rem;
+  margin-top: 1.5rem;
   margin-left: 1.55rem;
-   line-height:0.1rem;
+  line-height: 0.1rem;
 }
 
-
-
-
-
-
-
-    
 /* Dont' forget to link this file to your HTML in the <head> */
