@@ -18,10 +18,14 @@ body{
 }
 
 header {
-    height: auto;    
+    height: auto; 
+    width: 100%;   
 }
 
+
+
 .header-first{
+    width: 1000px;
     display: flex;
     justify-content: space-between;
     background-color: var(--white);
@@ -45,7 +49,6 @@ header {
     width: 1.2rem;
 }
 
-
 .search-field {
     height: 40px;
     border: none;    
@@ -59,7 +62,7 @@ header {
 }
 
 .login{
-    display: flex;
+    display: none;
     justify-content: space-between;
     margin-right: 2rem;
     color: var(--red-brown);
@@ -73,15 +76,21 @@ header {
 
 .header-second {
     display: hidden;
+    width: 1000px;
     justify-content: space-between;
     flex-direction: row;
+
 }
 
 .name-nav {
-    display: hidden;
+    display: flex;
     justify-content: space-between;
     padding-left: 25px;
     color: var(--red-brown);    
+    margin-bottom: -40px;
+}
+.name-nav p{
+    font-size: 3rem;
 }
 
 .navigation {
@@ -99,9 +108,15 @@ header {
 }
 
 .delivery-text {
-    padding-right: 25px;
+    padding-left: 25px;
     color: var(--red-brown);
+    
 }
+
+.delivery-text p {
+    font-size: 2rem;
+}
+
 
 .hero {   
     min-height: 800px;    
@@ -111,6 +126,7 @@ header {
     margin-left: 25px;
     margin-right: 30px;
     background-size: cover;
+    width: 1000px;
 }
 
 .hero p {
@@ -142,36 +158,49 @@ header {
 .three-plants {
     display: grid;
     grid-column-gap: 20px;
-    grid-template-areas: 
-    "one two three";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    
     margin-top: 40px; 
     margin-bottom: 40px;
     margin-left: 25px;   
+    width: 900px;
 }
     
 .plant-one {
     background-image: url("../images/plant1.png");
-    grid-area: one;
-    width: 90%;
+    grid-column: 1 / -1;
+    
     background-size: cover;
     text-align: center;   
+    min-height: 900px; 
+  
+    margin-bottom: 30px;
+    margin-left: 80px;
 }   
 
 .plant-two {
     background-image: url("../images/plant2.png");
-    min-height: 500px;    
-￼   grid-area: two; 
-    width: 90%;
+    min-height: 900px;    
+￼   grid-column: 1 / -1;
+    
     background-size: cover;
     text-align: center;
+    
+    margin-bottom: 30px;
+    margin-left: 80px;
 }
 
 .plant-three {
     background-image: url("../images/plant3.png");
-    grid-column: three;
-    width: 90%;
+    grid-column: 1 / -1;
+ 
     background-size: cover;
     text-align: center;
+    min-height: 900px; 
+    
+    margin-bottom: 30px;
+    margin-left: 80px;
 }
 
 .plant-name {
@@ -188,12 +217,434 @@ hr {
 }
 
 .about-us{
+       display: flex;
+      flex-direction: column;
+      
+       margin-left: 60px;
+       margin-right: 60px;
+       width: 900px;
+        
+}
+
+.paragraph {
+  
+    padding: 70px 90px;
+    min-height: 500px;
+    color: var(--red-brown);
+    text-align: center;
+    background-color: var(--white);   
+   
+}   
+
+
+.img-window {
+ 
+    background-image: url("../images/plants-window.png");
+    background-size: cover;  
+    min-height: 500px;
+    width: 100%;
+}
+   
+
+.img-leaf {
+   
+    background-image: url("../images/leaf.png");
+    background-size: cover; 
+    min-height: 500px;
+}
+   
+
+
+.img-girl {
+    background-image: url("../images/plants-girl.png");
+    background-size: cover;   
+    
+
+    min-height: 500px;    
+  
+}
+
+.buy-online {   
+
+       
+    background-color: var(--green-black);
+    color: white;
+    min-height: 900px;
+    text-align: center;
+    padding: 50px 0;
+    
+
+}
+
+.buy-online h2{
+    font-size: 4rem;
+    font-weight: bolder;    
+}
+
+.buy-online button {
+    padding: 10px 50px;
+    background-color: white;
+    color: var(--green-black);
+}
+
+/*it doesn't work*/
+.buy-online button :hover {
+    background-color: red;
+}
+
+.form {
+    margin-top: 40px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+.form-backgr{
+    background-image: url("../images/background-2.png");  
+    background-size: cover;
+    opacity: 70%;
+    height: 80vh;
+    margin-left: 30px;
+    margin-right: 35px;
+}
+
+fieldset {
+    padding-left: 3rem;
+    padding-top: 3rem;
+    margin: 0 auto;
+    width: 800px;
+    background: var(--transparent-white);
+    height: auto;
+    border: none;
+}
+
+.name {
+    display: flex;
+    flex-direction: row;            
+}
+
+.firstname {
+    padding-right: 10px;
+    padding-bottom: 5px;   
+}
+
+#firstname {
+    width: 350px;
+    height: 25px;
+    margin-bottom: 10px;
+}
+
+#firstname:hover {
+    border: 3px black solid;
+}
+
+#lastname {
+    height: 25px; 
+    width: 350px;
+    margin-bottom: 10px;
+}
+
+#lastname:hover {
+    border: 3px black solid;
+}
+
+textarea {
+    height: 200px;
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+#textarea:hover {
+    border: 3px black solid;
+}
+
+#email {
+    width: 90%;
+    height: 25px; 
+    margin-bottom: 10px;
+}   
+
+#email:hover {
+    border: 3px black solid;
+}
+
+#phone {
+    width: 90%;
+    height: 25px;
+    margin-bottom: 10px;
+}
+
+#phone:hover {
+    border: 3px black solid;
+}
+
+.input-button {
+    background-color: var(--red-brown);
+    color: var(--white);
+    width: 90%;
+    padding: 8px 20px;
+    margin-bottom: 10px;
+}
+
+.input-button:hover {
+    background-color: rgb(168, 121, 93);
+}
+
+.white-form h2 {
+    text-align: center;
+}
+
+.brown-text {
+    color: var(--red-brown);
+    font-size: 1.2rem;
+    font-family: var(--headings-font);
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+footer {
+    background-color: var(--green-black);
+    color: var(--white);
+    padding: 3rem 5rem;
+    margin-left: 25px;
+    margin-right: 30px;
+    margin-top: 20px;
+    width: 800px;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    padding: 1rem 5rem;
+}
+
+.footer-h3 {
+    margin: 20px auto;
+    padding-bottom: 2rem;
+}
+
+.subscribe {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.footer-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer-email {
+    margin-right: 1rem;
+}
+
+#footer-email {
+    background-color: var(--green-black);
+    height: 25px;
+    border: 2px white solid;
+    width: 90%;
+    patting-top: 10px;
+}
+
+.tooter-button {
+    padding: 2px 30px;
+    margin-top: 15px;
+} 
+
+.help p {
+    color: white;
+    text-decoration: underline;
+}
+
+
+@media screen and (min-width: 600px) {
+
+
+.header-first{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--white);
+    margin-left: 2rem;
+    margin-right: 2rem;
+    width: 95%;
+}
+
+.search-logo {
+    width: 1rem;
+    height: auto;
+    padding-top: 15px;
+}
+
+.button{
+    background-color: rgb(255, 255, 255);
+    border-color: var(--red-brown);
+    border: white;
+}
+
+.basket {
+    width: 1.2rem;
+}
+
+
+.header-second {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 95%;
+}
+    .name-nav {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 25px;
+        color: var(--red-brown);    
+    }
+    
+    .navigation {
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+    }
+    
+    .nav-item {
+        padding: 2px 15px;
+    }
+    
+    .navigation a{
+        text-decoration: none;
+    }
+    
+   
+
+    .delivery-text {
+        padding-right: 25px;
+        color: var(--red-brown);   
+        
+    }
+
+    .delivery-text p {
+        font-size: 1.5rem;    
+    }
+
+.login-basket {   
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 1rem;
+}
+
+.login{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2rem;
+    color: var(--red-brown);
+    height: 2rem;
+}
+
+.login img {
+    margin-right: 2rem;
+    color: var(--red-brown);
+}
+
+.hero {   
+    min-height: 800px;    
+    text-align: center;
+    background-color: rgb(148, 168, 148);
+    background-image: url("../images/backgr.png");
+    margin-left: 25px;
+    margin-right: 30px;
+    background-size: cover;
+    width: 95%;
+}
+
+.hero p {
+    color: white;
+    font-size: 20px;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 70px;
+}
+/*Change color of svg*/
+
+.logo {
+    margin-top: 60px;
+    color: white;
+    width: 10%;
+}
+
+
+
+.three-plants {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+ 
+    margin-top: 40px; 
+    margin-bottom: 40px;
+    margin-left: 15px;
+    width: 95%;  
+    
+}
+    
+.plant-one {
+    background-image: url("../images/plant1.png");
+    grid-column: 1 / 2;
+  width: 80%;
+  height: 80%;
+background-size: cover;
+    border: 2px solid brown;
+    
+    text-align: center;   
+}   
+
+.plant-two {
+    background-image: url("../images/plant2.png");
+    width: 80%;
+￼  grid-column: 2/3;
+border: 2px solid green;
+    background-size: cover;
+   
+   
+    text-align: center;
+}
+
+
+.plant-three {
+    background-image: url("../images/plant3.png");
+   grid-column: 3/4;
+    width: 80%;
+    background-size: cover;
+    text-align: center;
+    border: 2px solid purple;
+    
+}
+
+.plant-name {
+    color: var(--red-brown);
+    font-size: 1.5rem;
+    padding-top: 20px;    
+}
+
+
+hr {
+    width: 20px;    
+    border: 2px solid;
+    border-color: var(--red-brown);
+    margin-bottom: 20px;
+}
+
+.about-us{
        display: grid;
        grid-template-columns: repeat(4, 1fr);
        grid-template-rows: repeat (2, 1fr);
        margin-left: 30px;
         margin-right: 30px;
        grid-gap: 0px;    
+       width: 95%;
 }
 
 .paragraph {
@@ -247,10 +698,8 @@ hr {
     color: var(--green-black);
 }
 
-/*it doesn't work*/
-.buy-online button :hover {
-    background-color: red;
-}
+
+
 
 .form {
     margin-top: 40px;
@@ -366,6 +815,7 @@ footer {
     padding: 3rem 5rem;
     margin-left: 25px;
     margin-right: 30px;
+    width: 95%;
 }
 
 .info {
@@ -415,38 +865,7 @@ footer {
 }
 
 
-@media screen and (min-width: 600px) {
 
 
-.header-second {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-}
-    .name-nav {
-        display: flex;
-        justify-content: space-between;
-        padding-left: 25px;
-        color: var(--red-brown);    
-    }
+} 
     
-    .navigation {
-        display: flex;
-        justify-content: space-around;
-        list-style-type: none;
-    }
-    
-    .nav-item {
-        padding: 2px 15px;
-    }
-    
-    .navigation a{
-        text-decoration: none;
-    }
-    
-    .delivery-text {
-        padding-right: 25px;
-        color: var(--red-brown);
-    }
-    
-}
