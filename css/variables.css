@@ -1,0 +1,16 @@
+:root {
+    --redBrown: #a05941;
+    --opaqueRedBrown: #b15f44e0;
+    --transparentRedBrown: #94513b9a;
+    --greenBlack: #133032;
+    --darkGrey: #747474;
+    --lightGrey: #ededee;
+    --lighterGrey: #fbfbfb;
+    --transparentGrey: #fbfbfbc5;
+    --white: #fff;
+    --transparentWhite: rgba(0, 60, 68, 0.212);
+    --black: #000;
+    --red: #f00;
+    --transparentBlack: rgba(9, 59, 73, 0.404);
+    --green: rgb(13, 172, 7);
+}

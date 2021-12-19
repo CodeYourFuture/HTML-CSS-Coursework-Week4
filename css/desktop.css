@@ -1,0 +1,209 @@
+@media screen and (min-width: 980px) {
+    .main-faq {
+        padding: 80px 40px 0;
+    }
+    main {
+        padding: 0 40px;
+    }
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 3;
+        width: auto;
+        height: 115px;
+        padding: 0 40px;
+    }
+    .white-background {
+        padding: 7px;
+    }
+    .menu-list {
+        display: flex;
+        height: fit-content;
+        width: 100%;
+        padding-top: 0;
+        align-self: center;
+    }
+    .menu-list nav {
+        width: 100%;
+        margin: 0;
+    }
+    .menu-list li {
+        margin-bottom: 0;
+    }
+    .menu-list nav>ul {
+        display: flex;
+    }
+    .menu-list a:hover {
+        color: var(--greenBlack);
+    }
+    .shop {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    .hidden {
+        position: absolute;
+        top: 20px;
+        left: -10px;
+        background: var(--lightGrey);
+        text-align-last: left;
+        padding: 10px;
+        padding-top: 20px;
+    }
+    .hidden li:nth-of-type(2) {
+        margin: 7px 0;
+    }
+    .shop-down,
+    .hamburger-menu {
+        display: none;
+    }
+    .header-text {
+        padding: 19px 0;
+    }
+    .login {
+        display: none;
+    }
+    .login img {
+        width: 25px;
+        margin-right: 13px;
+    }
+    .search-login img {
+        width: 25px;
+        margin-right: 13px;
+    }
+    .bag {
+        justify-self: end;
+        margin-left: 36px;
+    }
+    .hero {
+        background-attachment: fixed;
+        background-position: bottom;
+        height: 90vh;
+        padding: 50px 110px 0px;
+    }
+    .hero h2 {
+        margin-top: 50px;
+    }
+    .logo-details {
+        justify-content: center;
+    }
+    .logo {
+        margin: 0 20px;
+    }
+    .product-links {
+        margin: 50px 0;
+    }
+    .wheelbarrow,
+    .leaf {
+        height: 100%;
+    }
+    .wheelbarrow,
+    .leaf,
+    .woman {
+        object-fit: cover;
+        object-position: center;
+    }
+    .woman {
+        height: 100%;
+    }
+    .offer {
+        padding: 90px 30px 200px;
+    }
+    .about {
+        padding: 85px 95px;
+    }
+    .form img {
+        display: none;
+    }
+    .form {
+        background: url("../images/last-plant.png");
+        background-attachment: fixed;
+        background-position: top;
+        background-size: cover;
+        padding: 100px 0;
+    }
+    .contact-form {
+        background: var(--transparentGrey);
+        width: 60%;
+    }
+    input[type="submit"]:hover,
+    input[type="submit"]:active {
+        opacity: 0.7;
+    }
+    .white {
+        background: var(--white);
+        padding: 80px 40px 0;
+    }
+    .faq-wrapper {
+        padding: 0 40px 160px;
+    }
+    .load {
+        display: none;
+    }
+    .desktop-products {
+        display: block;
+    }
+    .buy-these {
+        padding: 0;
+    }
+    .products-button:hover {
+        opacity: 0.7;
+    }
+    .products:hover .view {
+        display: block;
+        background: var(--white);
+        color: var(--redBrown);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        text-align: center;
+        width: -webkit-fill-available;
+        font-size: 1em;
+        z-index: 2;
+        padding: 7px;
+        margin-bottom: 0;
+    }
+    .view-wrapper {
+        position: relative;
+    }
+    .shop:hover .hidden {
+        display: block;
+        width: auto;
+    }
+    .chat-circle {
+        border-radius: unset;
+        display: flex;
+        padding: 10px 42px;
+        align-items: center;
+        width: auto;
+    }
+    .chat-circle img {
+        width: auto;
+        margin-right: 9px;
+    }
+    .chat-circle p {
+        display: block;
+        color: white;
+        font-size: 1.1em;
+        letter-spacing: 0;
+    }
+    .chat-page {
+        display: block;
+        width: 340px;
+        right: 20px;
+        bottom: 30px;
+        height: 500px;
+        left: auto;
+        top: auto;
+    }
+    .top-chat {
+        display: flex;
+    }
+    .close {
+        position: unset;
+        display: block;
+        align-self: start;
+        margin-left: auto;
+        margin-right: 15px;
+    }
+}

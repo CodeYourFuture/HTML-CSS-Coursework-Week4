@@ -1,0 +1,9 @@
+<svg preserveAspectRatio="xMidYMid meet" data-bbox="20 20 160 160" xmlns="http://www.w3.org/2000/svg" viewBox="20 20 160 160" height="100%" width="100%" data-type="color" role="presentation" aria-hidden="true"><defs><style>#BACK_TO_TOP_BUTTON svg [data-color="1"] {fill: #A05841;}
+#BACK_TO_TOP_BUTTON svg [data-color="2"] {fill: #FFFFFF;}
+#BACK_TO_TOP_BUTTON svg [data-color="3"] {fill: #A05841;}</style></defs>
+    <g fill-rule="evenodd">
+        <path fill-rule="nonzero" fill="#FFFFFF" d="M180 100c0 44.183-35.817 80-80 80s-80-35.817-80-80 35.817-80 80-80 80 35.817 80 80z" data-color="1"></path>
+        <path fill-rule="nonzero" fill="#566FB8" d="M72.087 116.163a7.23 7.23 0 0 1-10.265-.642c-2.66-3.036-2.374-7.67.637-10.351l32.939-29.333a7.228 7.228 0 0 1 9.663.031l32.515 29.333c2.994 2.7 3.25 7.337.571 10.355a7.23 7.23 0 0 1-10.269.576l-27.697-24.987-28.094 25.018z" data-color="2"></path>
+        <path fill-rule="nonzero" fill="#6D8FF1" d="M100 24c-41.974 0-76 34.026-76 76s34.026 76 76 76 76-34.026 76-76-34.026-76-76-76zm0-4c44.183 0 80 35.817 80 80s-35.817 80-80 80-80-35.817-80-80 35.817-80 80-80z" data-color="3"></path>
+    </g>
+</svg>

@@ -1,0 +1,160 @@
+/*  */
+
+* {
+    font-family: "Outfit", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Fjalla One", sans-serif;
+    text-transform: uppercase;
+}
+
+h3,
+h4,
+.changing-text,
+p,
+ol {
+    color: var(--redBrown);
+}
+
+h4 {
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    word-spacing: 0.4rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.search {
+    font-size: 0.9em;
+    color: var(--redBrown);
+}
+
+h3 {
+    font-size: 1.315rem;
+}
+
+::placeholder {
+    color: var(--redBrown);
+}
+
+.changing-text {
+    text-transform: capitalize;
+    letter-spacing: 0.17rem;
+    font-family: "Fjalla One", sans-serif;
+    font-size: 0.875rem;
+    word-spacing: 0.1rem;
+}
+
+.logo-text {
+    font-size: 13px;
+}
+
+.logo-text,
+.slogan {
+    color: var(--white);
+    font-weight: 400;
+    letter-spacing: 0.45em;
+}
+
+.slogan {
+    font-size: 0.9375rem;
+    text-align: center;
+    font-weight: 300;
+}
+
+.product-links-content h3 {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    letter-spacing: 0.3rem;
+}
+
+p,
+ol {
+    font-weight: 300;
+    font-size: 0.875rem;
+    line-height: 1.4rem;
+    letter-spacing: 0.01rem;
+}
+
+.about p:first-of-type {
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+
+.find-us p,
+.find-us h4,
+.find-us a,
+.find-us label {
+    color: var(--white);
+}
+
+
+/* PRODUCTS */
+
+.hero-products a,
+.hero-products p {
+    color: var(--white);
+    z-index: 2;
+}
+
+
+/* CHAT TEXT */
+
+.chat-text h3,
+.chat-text p {
+    color: var(--white);
+}
+
+
+/* FAQ */
+
+.text-button {
+    color: var(--redBrown);
+    font-size: 1rem;
+}
+
+.faq-wrapper h3 {
+    font-size: 1rem;
+    color: var(--black);
+    text-transform: none;
+}
+
+@media screen and (min-width: 980px) {
+    .changing-text {
+        font-size: 1.2em;
+    }
+    .header-text {
+        font-size: 1.2em;
+    }
+    .hero h2,
+    .offer h1 {
+        font-size: 5rem;
+    }
+    .about p {
+        font-size: 1rem;
+    }
+    .find-us h4 {
+        font-size: 1.3rem;
+    }
+    .find-us p {
+        font-size: 1.1rem;
+        font-weight: 200;
+    }
+    .find-us a {
+        font-size: 1.1rem;
+    }
+    .faq-wrapper button {
+        font-size: 1.2rem;
+    }
+}

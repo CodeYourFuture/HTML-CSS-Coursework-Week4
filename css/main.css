@@ -1,3 +1,643 @@
-/* Add your CSS here */
+* {
+    margin: 0;
+    padding: 0;
+}
 
-/* Dont' forget to link this file to your HTML in the <head> */
+.grey-background {
+    background: var(--lightGrey);
+}
+
+body {
+    position: relative;
+}
+
+
+/* HEADER */
+
+.search-wrapper {
+    width: 216px;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+.white-background {
+    background: var(--white);
+    padding: 15px 20px 10px;
+}
+
+.search-wrapper:focus-within,
+.search-wrapper:hover {
+    box-sizing: border-box;
+    border: 1px solid var(--redBrown);
+}
+
+.search-img {
+    align-self: center;
+    justify-self: center;
+    width: auto;
+}
+
+.search {
+    color: var(--redBrown);
+    background: var(--white);
+    padding-left: 0;
+    border: none;
+    outline: none;
+}
+
+.search:focus-within {
+    border: none;
+}
+
+.header-text {
+    padding: 20px;
+    padding-bottom: 15px;
+    text-decoration: none;
+}
+
+.bag-image {
+    padding-top: 7px;
+    width: auto;
+}
+
+.bag {
+    justify-self: end;
+    padding-right: 2px;
+}
+
+.menu-button,
+.down,
+.chat {
+    background-color: transparent;
+    width: fit-content;
+    height: fit-content;
+    padding: 0;
+    z-index: 5;
+}
+
+.chat-form {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+input.chat-input[type="text"] {
+    border: none;
+    width: 100%;
+    padding: 30px;
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+input.chat-input[type="text"]::placeholder {
+    color: var(--darkGrey);
+}
+
+input.chat-input[type="text"]:focus-within {
+    border: none;
+}
+
+.logo-on>img {
+    width: 50px;
+    border: 1px solid var(--lightGrey);
+    border-radius: 50%;
+    margin-left: 20px;
+    top: 20px;
+    left: 0;
+}
+
+.green {
+    position: relative;
+    width: 9px;
+    height: 9px;
+    background: var(--green);
+    top: -13px;
+    left: 61px;
+    border-radius: 50%;
+}
+
+.chat-text {
+    margin-left: 20px;
+}
+
+.top-chat {
+    background: var(--opaqueRedBrown);
+    padding: 20px 0 10px;
+}
+
+button,
+.down,
+.chat {
+    cursor: pointer;
+}
+
+.changing-text {
+    padding: 0 0 20px 20px;
+}
+
+.hamburger-menu,
+button {
+    z-index: 5;
+    -webkit-tap-highlight-color: transparent;
+    padding: 20px;
+    padding-bottom: 15px;
+}
+
+.bar {
+    width: 23px;
+    height: 2px;
+    background: var(--redBrown);
+    margin-bottom: 6px;
+    z-index: 5;
+    transition: 0.3s ease-out;
+}
+
+.bar:first-of-type {
+    margin-top: 2px;
+}
+
+.bar:last-of-type {
+    margin-bottom: 0;
+}
+
+.active {
+    color: var(--greenBlack);
+}
+
+
+/* MAIN */
+
+
+/* HERO */
+
+.hero {
+    position: relative;
+    background-image: url("../images/home-background.png");
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0 100px;
+}
+
+.logo-details {
+    margin-bottom: 35px;
+    z-index: 2;
+}
+
+.logo {
+    max-width: fit-content;
+}
+
+.logo-text {
+    margin-bottom: 10px;
+}
+
+.underlined-text {
+    padding-top: 10px;
+}
+
+.line {
+    width: 100%;
+    background: var(--white);
+    height: 2px;
+}
+
+h2 {
+    color: var(--white);
+    font-size: 2.1875rem;
+    letter-spacing: 0.5rem;
+    margin-bottom: 25px;
+    z-index: 2;
+}
+
+.slogan {
+    width: 70%;
+    margin: 0 auto 40px;
+    z-index: 2;
+    font-weight: 200;
+}
+
+button,
+input[type="submit"] {
+    width: 140px;
+    border: none;
+    background: var(--redBrown);
+    color: var(--white);
+    padding: 10px 0;
+    font-size: 0.875rem;
+    font-weight: 200;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: var(--transparentWhite);
+}
+
+
+/*  */
+
+.product-links-wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--lightGrey);
+    justify-content: space-evenly;
+    height: 1280px;
+}
+
+.product-links {
+    position: relative;
+    height: 400px;
+}
+
+.product-links>img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+}
+
+.product-links-content {
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-links-content h3 {
+    margin-bottom: 10px;
+}
+
+.small-divider,
+.large-divider {
+    width: 10px;
+    background-color: var(--redBrown);
+    height: 3px;
+    border: none;
+    margin-bottom: 15px;
+}
+
+
+/* ABOUT */
+
+.about {
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: var(--white);
+}
+
+
+/* OFFER */
+
+.offer {
+    padding: 80px 45px;
+    background: var(--greenBlack);
+    color: var(--white);
+    align-items: center;
+}
+
+.offer button {
+    background: var(--white);
+    color: var(--greenBlack);
+    padding: 15px 0;
+}
+
+
+/* FORM */
+
+.form {
+    padding: 40px 10px 0;
+    background: var(--lightGrey);
+}
+
+.contact-form {
+    padding: 25px 10px 35px;
+    background: var(--lighterGrey);
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+    padding: 8px;
+    border: 1px solid var(--black);
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+    height: 35px;
+}
+
+textarea {
+    height: 153px;
+}
+
+input[type="text"]:focus-within,
+input[type="tel"]:focus-within,
+input[type="email"]:focus-within,
+textarea:focus-within,
+input[type="text"]:hover,
+input[type="tel"]:hover,
+input[type="email"]:hover,
+textarea:hover {
+    border: 3px solid var(--black);
+    box-sizing: border-box;
+}
+
+input:not(:focus):not(:placeholder-shown):invalid {
+    border: 3px solid var(--red);
+    box-sizing: border-box;
+}
+
+input:not(:focus):not(:placeholder-shown):valid {
+    border-color: var(--black);
+}
+
+.form h4 {
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input[type="submit"] {
+    width: 100%;
+}
+
+.large-divider {
+    width: 18px;
+    height: 4px;
+    margin: 0 auto 20px;
+}
+
+label {
+    font-weight: 200;
+    margin-bottom: 12px;
+}
+
+
+/* FIND US */
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.find-us {
+    background: var(--greenBlack);
+    padding: 75px 30px 40px;
+}
+
+.find-us label {
+    align-self: start;
+}
+
+.find-us input[type="email"] {
+    background: var(--greenBlack);
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+
+.find-us input[type="email"]:focus-within,
+.find-us input[type="email"]:hover {
+    border: 3px solid var(--white);
+}
+
+.find-us input[type="submit"] {
+    background: var(--white);
+    color: var(--greenBlack);
+    margin-bottom: 70px;
+}
+
+.find-us p:last-of-type,
+.help a:last-of-type {
+    margin-bottom: 60px;
+}
+
+.subscribe {
+    width: 100%;
+    max-width: 400px;
+}
+
+.find-us a {
+    line-height: 1.5rem;
+    font-weight: 200;
+}
+
+i {
+    font-size: 20px;
+    margin: 7px;
+}
+
+
+/* MAP */
+
+.map {
+    height: 400px;
+    width: 100%;
+    background: var(--greenBlack);
+}
+
+
+/* FOOTER */
+
+footer {
+    background: var(--lightGrey);
+    text-align: center;
+    padding: 20px 0 30px;
+}
+
+footer p {
+    width: 80%;
+    margin: auto;
+}
+
+footer a {
+    color: var(--redBrown);
+}
+
+
+/* HIDDEN NAV */
+
+.menu-list,
+.chat-page {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    z-index: 3;
+    flex-direction: column;
+    align-items: center;
+    overflow: none;
+}
+
+.menu-list li {
+    list-style-type: none;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.menu-list a,
+.search-login a {
+    text-decoration: none;
+    color: var(--redBrown);
+    font-weight: 200;
+}
+
+.menu-list nav {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.login img,
+.search-login img {
+    width: 30px;
+    margin-right: 20px;
+}
+
+.search-login {
+    display: none;
+}
+
+.login {
+    margin-bottom: 30px;
+}
+
+.hidden {
+    display: none;
+}
+
+.down img {
+    width: 12px;
+}
+
+.chat {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+.chat-circle {
+    border-radius: 50%;
+    background: var(--redBrown);
+    padding: 10px;
+}
+
+.menu-list {
+    background: var(--lightGrey);
+    top: 0;
+    left: 0;
+}
+
+.chat-page {
+    background: rgb(0, 0, 0);
+    background: linear-gradient( 0deg, rgba(0, 0, 0, 1) 0%, rgba(160, 89, 65, 1) 75%);
+    top: 0;
+    left: 0;
+    padding-top: 0;
+    z-index: 6;
+}
+
+.close {
+    top: 25px;
+    right: 25px;
+    width: 25px;
+    display: none;
+    position: fixed;
+    z-index: 8;
+    padding: 0;
+    background: transparent;
+}
+
+.close img {
+    width: 100%;
+}
+
+
+/* FAQ */
+
+.text-button {
+    width: 100%;
+    display: contents;
+}
+
+.faq-wrapper {
+    padding: 20px;
+    padding-top: 60px;
+}
+
+.faq-wrapper ul,
+.faq,
+.faq-list hr {
+    width: 100%;
+}
+
+.faq {
+    margin: 30px 0;
+    transition: 0.4s;
+}
+
+.faq-list hr {
+    height: 1px;
+    background: var(--transparentRedBrown);
+    border: none;
+}
+
+.faq-wrapper h3 {
+    margin: 30px 0 10px;
+}
+
+.faq-wrapper .search-wrapper {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--redBrown);
+}
+
+input.faq-search[type="search"] {
+    border: none;
+    width: 100%;
+    padding: 8px;
+}
+
+input.faq-search[type="search"]::placeholder {
+    color: var(--transparentRedBrown);
+}
+
+.hidden-faq {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.hidden-faq img {
+    height: 15px;
+    padding: 5px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+ol {
+    margin-left: 3rem;
+}
+
+.chat-circle p {
+    display: none;
+}
