@@ -22,8 +22,8 @@ header {
 
 .header-container {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 1rem 1rem 1rem 1rem 1rem 1rem;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
 }
 
 
