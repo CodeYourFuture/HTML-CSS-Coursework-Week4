@@ -1,0 +1,238 @@
+.shop-hero {
+    min-height: 600px; 
+     
+    text-align: center;
+    background-color: rgb(148, 168, 148);
+    background-image: url("../images/cactus.png");
+    margin-left: 25px;
+    opacity: 90%;    
+    margin-right: 30px;
+    background-size: cover;
+    color: white;
+    width: 700px;
+}
+
+.name-nav a {
+    text-decoration: none;
+}
+   
+
+.shop-all {
+    padding: 20px;
+}
+
+.shop-hero h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    padding-top: 6rem;    
+    padding-bottom: 2rem;
+}
+
+.shop-hero p {
+    padding-top: 30px;
+}
+
+.cacti {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.six-pots {
+    display: grid;
+    grid-column-gap: 5px;
+    grid-template-areas: 
+    "one"
+    "two"
+    "three"
+    "four"
+    "five"
+    "six";
+    margin-top: 40px; 
+    margin-bottom: 40px;
+    margin-left: 25px; 
+    margin-right: 5px;
+}
+
+.six-pots p{
+    color: var(--red-brown);
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.six-pots button {
+    color: white;
+    background-color: var(--red-brown);
+    width: 90%;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+
+.cactus-one {
+    grid-area: one;
+    width: 90%;
+    margin-left: 60px;
+    margin-bottom: 30px;
+}
+.cactus-two {
+    grid-area: two;
+    margin-left: 60px;
+    margin-bottom: 30px;
+}
+
+.cactus-three {
+    grid-area: three;
+    margin-left: 60px;
+    margin-bottom: 30px;
+}
+
+.cactus-four {
+    grid-area: four;
+    margin-left: 60px;
+    margin-bottom: 30px;
+}
+
+.cactus-five {
+    grid-area: five;
+    margin-left: 60px;
+    margin-bottom: 30px;
+}
+
+.cactus-six {
+    grid-area: six;
+    margin-left: 60px;
+}
+
+.cactus-button {
+    background-color: var(--red-brown);
+    color: rgb(255, 255, 255);
+    padding: 15px 25px;
+    margin-left: 30px;
+    margin-bottom: 30px;    
+}
+
+.cactus-img {    
+    width: 600px;
+}
+
+@media screen and (min-width: 600px) {
+
+    .six-pots {
+        display: grid;
+        grid-column-gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "one two three"
+        "four five six";
+        margin-top: 40px; 
+        margin-bottom: 40px;
+        margin-left: 25px; 
+    }
+    .cactus-img {    
+        width: 400px;
+        margin-left: 30px;
+    }
+
+    .shop-hero {
+        min-height: 800px;    
+       min-width: 1500px;
+        text-align: center;
+       
+       position: relative;
+        
+        margin-left: 25px;
+          
+        margin-right: 30px;
+        
+       
+        color: white;
+    }
+
+    .shop-hero::before {
+       
+        top: 0px;
+        background-image: url("../images/cactus.png");
+        background-size: cover;
+        opacity: 0.55;
+        position: absolute;
+   
+
+    }
+    
+    .shop-all {
+        padding: 20px;
+    
+    }
+    
+    .shop-hero h1 {
+        font-size: 4rem;
+        font-weight: bold;
+        padding-top: 6rem;
+        padding-bottom: 2rem;
+    }
+    
+    .shop-hero p {
+        padding-top: 30px;
+    }
+    
+    .cacti {
+        text-align: center;
+        font-size: 3rem;    
+    }
+    
+      
+    .six-pots p{
+        color: var(--red-brown);
+        text-align: center;
+        margin-bottom: 0;
+    }
+        
+    
+    .six-pots button {
+        color: white;
+        background-color: var(--red-brown);
+        width: 90%;
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+    }
+    
+    
+    .cactus-one {
+        grid-area: one;
+        width: 90%;       
+    }
+
+    .cactus-two {
+        grid-area: two;
+    }
+
+    .cactus-three {
+        grid-area: three;
+    }
+    
+    .cactus-four {
+        grid-area: four;
+    }
+    
+    .cactus-five {
+        grid-area: five;
+    }
+    
+    .cactus-six {
+        grid-area: six;
+    }
+
+    .cactus-button {
+        background-color: var(--red-brown);
+        color: rgb(255, 255, 255);
+        padding: 15px 25px;
+        margin-left: 30px;
+        margin-bottom: 30px; 
+    }
+    
+    
+    
+
+}
