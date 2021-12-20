@@ -9,20 +9,22 @@
     margin-right: 30px;
     background-size: cover;
     color: white;
+    width: 700px;
 }
+
 .name-nav a {
     text-decoration: none;
+}
    
 
 .shop-all {
     padding: 20px;
-
 }
 
 .shop-hero h1 {
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: bold;
-    padding-top: 6rem;
+    padding-top: 6rem;    
     padding-bottom: 2rem;
 }
 
@@ -33,7 +35,6 @@
 .cacti {
     text-align: center;
     font-size: 3rem;
-
 }
 
 .six-pots {
@@ -48,7 +49,7 @@
     "six";
     margin-top: 40px; 
     margin-bottom: 40px;
-    margin-left: 5px; 
+    margin-left: 25px; 
     margin-right: 5px;
 }
 
@@ -56,7 +57,9 @@
     color: var(--red-brown);
     text-align: center;
     margin-bottom: 0;
-    }
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
 
 .six-pots button {
     color: white;
@@ -66,30 +69,52 @@
     padding-bottom: 0.8rem;
 }
 
-
 .cactus-one {
     grid-area: one;
     width: 90%;
+    margin-left: 60px;
+    margin-bottom: 30px;
 }
 .cactus-two {
     grid-area: two;
+    margin-left: 60px;
+    margin-bottom: 30px;
 }
+
 .cactus-three {
     grid-area: three;
+    margin-left: 60px;
+    margin-bottom: 30px;
 }
 
 .cactus-four {
     grid-area: four;
+    margin-left: 60px;
+    margin-bottom: 30px;
 }
 
 .cactus-five {
     grid-area: five;
+    margin-left: 60px;
+    margin-bottom: 30px;
 }
 
 .cactus-six {
     grid-area: six;
+    margin-left: 60px;
 }
 
+.cactus-button {
+    background-color: var(--red-brown);
+    color: rgb(255, 255, 255);
+    padding: 15px 25px;
+    margin-left: 30px;
+    margin-bottom: 30px;    
+}
+
+.cactus-img {    
+    width: 600px;
+}
 
 @media screen and (min-width: 600px) {
 
@@ -105,17 +130,35 @@
         margin-bottom: 40px;
         margin-left: 25px; 
     }
+    .cactus-img {    
+        width: 400px;
+        margin-left: 30px;
+    }
 
     .shop-hero {
-        min-height: 600px;    
+        min-height: 800px;    
+       min-width: 1500px;
         text-align: center;
-        background-color: rgb(148, 168, 148);
-        background-image: url("../images/cactus.png");
+       
+       position: relative;
+        
         margin-left: 25px;
-        opacity: 90%;    
+          
         margin-right: 30px;
-        background-size: cover;
+        
+       
         color: white;
+    }
+
+    .shop-hero::before {
+       
+        top: 0px;
+        background-image: url("../images/cactus.png");
+        background-size: cover;
+        opacity: 0.55;
+        position: absolute;
+   
+
     }
     
     .shop-all {
@@ -136,8 +179,7 @@
     
     .cacti {
         text-align: center;
-        font-size: 3rem;
-    
+        font-size: 3rem;    
     }
     
       
@@ -145,7 +187,8 @@
         color: var(--red-brown);
         text-align: center;
         margin-bottom: 0;
-        }
+    }
+        
     
     .six-pots button {
         color: white;
@@ -158,11 +201,13 @@
     
     .cactus-one {
         grid-area: one;
-        width: 90%;
+        width: 90%;       
     }
+
     .cactus-two {
         grid-area: two;
     }
+
     .cactus-three {
         grid-area: three;
     }
@@ -178,6 +223,16 @@
     .cactus-six {
         grid-area: six;
     }
+
+    .cactus-button {
+        background-color: var(--red-brown);
+        color: rgb(255, 255, 255);
+        padding: 15px 25px;
+        margin-left: 30px;
+        margin-bottom: 30px; 
+    }
+    
+    
     
 
 }

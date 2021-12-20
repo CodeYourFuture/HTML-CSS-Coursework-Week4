@@ -22,6 +22,17 @@ header {
     width: 100%;   
 }
 
+.nav-mob {
+  
+    text-align: right;
+    padding-top: 50px;
+    position: relative;
+    overflow: hidden;
+    margin-right: 60px;   
+}
+
+
+    
 
 
 .header-first{
@@ -164,7 +175,8 @@ header {
     margin-top: 40px; 
     margin-bottom: 40px;
     margin-left: 25px;   
-    width: 900px;
+    
+   height: 400px;
 }
     
 .plant-one {
@@ -173,7 +185,7 @@ header {
     
     background-size: cover;
     text-align: center;   
-    min-height: 900px; 
+   
   
     margin-bottom: 30px;
     margin-left: 80px;
@@ -181,7 +193,7 @@ header {
 
 .plant-two {
     background-image: url("../images/plant2.png");
-    min-height: 900px;    
+  
 ￼   grid-column: 1 / -1;
     
     background-size: cover;
@@ -197,7 +209,7 @@ header {
  
     background-size: cover;
     text-align: center;
-    min-height: 900px; 
+    
     
     margin-bottom: 30px;
     margin-left: 80px;
@@ -505,6 +517,7 @@ footer {
         display: flex;
         justify-content: space-around;
         list-style-type: none;
+        padding-top: 20px;
     }
     
     .nav-item {
@@ -515,7 +528,9 @@ footer {
         text-decoration: none;
     }
     
-   
+   .nav-mob {
+       display: none;
+   }
 
     .delivery-text {
         padding-right: 25px;
@@ -596,7 +611,7 @@ footer {
   width: 80%;
   height: 80%;
 background-size: cover;
-    border: 2px solid brown;
+   
     
     text-align: center;   
 }   
@@ -605,7 +620,7 @@ background-size: cover;
     background-image: url("../images/plant2.png");
     width: 80%;
 ￼  grid-column: 2/3;
-border: 2px solid green;
+
     background-size: cover;
    
    
@@ -619,7 +634,7 @@ border: 2px solid green;
     width: 80%;
     background-size: cover;
     text-align: center;
-    border: 2px solid purple;
+    
     
 }
 
@@ -864,7 +879,9 @@ footer {
     text-decoration: underline;
 }
 
-
+.name-nav p{
+    font-size: 1.5rem;
+}
 
 
 } 

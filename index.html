@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Add a link to your custom CSS here -->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>Responsive grid project</title>
 </head>
@@ -16,6 +17,7 @@
 
     <body>
       <header>
+      
           
         <div class="header-first"> 
         <!-- how to change color -->
@@ -47,16 +49,26 @@
                     <p>PRICKLES & CO.</p>
                     <ul class="navigation">
                         <a href="shop.html"><li class="nav-item">Shop</li></a>
-                        <a href="#"><li class="nav-item"> About</li></a>
+                        <a href="#about"><li class="nav-item"> About</li></a>
                         <a href="#"><li class="nav-item">FAQ</li></a>
-                        <a href="#"><li class="nav-item">Contact</li></a>
+                        <a href="#contact"><li class="nav-item">Contact</li></a>
                     </ul>
+                    <div class="nav-mob">                   
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction();">
+                        <i class="fa fa-bars"></i>
+                        </a>
+                    </div>
+    
                 </div>
+               
             
             
                 <div class="delivery-text">
                  <p>We Deliver To Your Doorsite</p>
                 </div>
+
+               
+               
           </div>
 
          
@@ -98,8 +110,8 @@
 
           <section class="about-us">
              
-                    <div class="paragraph">
-                        <h2>ABOUT US</h2>
+                    <div  class="paragraph">
+                        <h2 id="about">ABOUT US</h2>
                         <hr>
                         <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.</p><br>
                         <p>This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide.</p>
@@ -140,7 +152,7 @@
                     <fieldset>
                         
 
-                        <h2 class="brown-text">FOR SPECIAL REQUESTS & ORDERS</h2>
+                        <h2 id="contact" class="brown-text">FOR SPECIAL REQUESTS & ORDERS</h2>
                         <hr>
                         <div class="name"> 
                             <div class="firstname">
