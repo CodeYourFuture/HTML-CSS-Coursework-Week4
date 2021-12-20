@@ -11,3 +11,17 @@ p {
     padding: 0;
 }
 
+header {
+    border: solid 2px black;
+    grid-area: header;
+    grid-column: 1/-1;
+    width: auto;
+    padding: 1rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+

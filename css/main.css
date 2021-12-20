@@ -10,26 +10,23 @@
 }
 /* reset */
 body {
-    border: solid 1px black;
+    border: solid 2px black;
     margin: 0%;
     padding: 0%;
     font-family: 'Quicksand', sans-serif;
-}
-/*
-.grid-container {
-     display: grid;
+    display: grid;
     grid-gap: 1rem;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 100px 1000px 100px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows:  10rem 50rem 10rem;
      grid-template-areas:
     "header header header header"
     "main main main main"
     "footer footer footer footer"
 }
 
-h1,h2,h3,h4,h5,h6 {
-    font-family: 'Poppins', sans-serif;
-}
+/*
+
+
 
 
 .button-blue {

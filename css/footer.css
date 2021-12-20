@@ -10,3 +10,12 @@ p {
     margin: 0;
     padding: 0;
 }
+
+footer {
+    border: solid 2px rgb(241, 8, 8);
+    grid-area: footer;
+    grid-column: 1/-1;
+    width: auto;
+    padding: 1rem;
+    font-family: 'Quicksand', sans-serif;
+}
