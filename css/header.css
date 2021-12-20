@@ -20,8 +20,28 @@ header {
     font-family: 'Quicksand', sans-serif;
 }
 
+.header-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1rem 1rem 1rem 1rem 1rem 1rem;
+}
+
+
+
 h1,h2,h3,h4,h5,h6 {
     font-family: 'Poppins', sans-serif;
+}
+
+.squareplus-name {
+    display:flex;
+
+}
+
+.blue-square {
+    height: 1.2rem;
+    width: 1.2rem;
+    background-color: var(--royal-blue);
+    margin: 0.60rem;
 }
 
 
