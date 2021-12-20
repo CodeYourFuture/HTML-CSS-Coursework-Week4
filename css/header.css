@@ -20,12 +20,12 @@ header {
     font-family: 'Quicksand', sans-serif;
 }
 
-.header-container {
+/*.header-container {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 0.25fr);
 }
-
+*/
 
 
 h1,h2,h3,h4,h5,h6 {
@@ -34,7 +34,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .squareplus-name {
     display:flex;
-
+    font-weight: 500;
 }
 
 .blue-square {
@@ -42,6 +42,15 @@ h1,h2,h3,h4,h5,h6 {
     width: 1.2rem;
     background-color: var(--royal-blue);
     margin: 0.60rem;
+}
+.align-name {
+    margin-top: -1rem;
+    font-weight: 500;
+}
+
+.align-title {
+    margin-left: 0.5rem;
+    margin-top: -0.5rem;
 }
 
 
