@@ -6,7 +6,7 @@
     --light-beige: #F4ECE6;
     --royal-blue: #0150FD;
          --black: #000;
-         --white: #FFF;
+         --white: #fff;
 }
 /* reset */
 body {
@@ -15,7 +15,7 @@ body {
     padding: 0%;
     font-family: 'Quicksand', sans-serif;
 }
-
+/*
 .grid-container {
      display: grid;
     grid-gap: 1rem;
@@ -31,7 +31,7 @@ h1,h2,h3,h4,h5,h6 {
     font-family: 'Poppins', sans-serif;
 }
 
-/* button blue*/ 
+
 .button-blue {
     text-transform: uppercase;
     border-radius: 20px;
@@ -78,7 +78,7 @@ footer {
 }
 
 
-
+*/
 
 
 
