@@ -16,8 +16,8 @@ body {
     font-family: 'Quicksand', sans-serif;
     display: grid;
     grid-gap: 1rem;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows:  10rem 50rem 10rem;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 10rem 50rem 10rem;
      grid-template-areas:
     "header header header header"
     "main main main main"
@@ -41,37 +41,10 @@ background: var(--royal-blue);
 
 }
 
-header {
-    display: flex;
-    grid-area: header;
-    grid-column: 1/-1;
-    height: 100px;
-    width: auto;
-    border: solid 1px black;
-    padding: 1rem;
-}
-
-.square {
-    height: 20px;
-    width: 20px;
-    background-color: var(--royal-blue);
-    margin: 0.5rem;
-}
-
 main {
     display: flex;
     grid-area: main;
     grid-column: 1/-1;
-}
-
-footer {
-    display: flex;
-    grid-area: footer;
-    grid-column: 1/-1;
-    height: 100px;
-    width: auto;
-    border: solid 1px red;
-    padding: 1rem;
 }
 
 

@@ -1,0 +1,12 @@
+:root {
+  --dark-beige: #e6dacd;
+  --light-beige: #f4ece6;
+  --royal-blue: #0150fd;
+  --black: #000;
+  --white: #fff;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
