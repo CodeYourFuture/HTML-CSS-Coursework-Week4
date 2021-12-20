@@ -55,17 +55,13 @@ form {
 }
 
 .form-content {
-  display: grid;
+  display: flex;
   height: auto;
   width: 100%;
   min-height: auto;
-  grid-template-rows: min-content 1fr;
-  grid-template-columns: 100%;
 }
 
 .form-content .label-input {
-  grid-area: 1 / 1 / 1 / 2;
-  justify-self: start;
   align-self: start;
 }
 
@@ -75,9 +71,7 @@ form {
 }
 
 .form-content button {
-  grid-area: 1 / 1 / 2 / 2;
-  justify-self: end;
-  margin-right: 1.5rem;
+  margin-left: 1.5rem;
   padding: 0.5rem 2.5rem;
   background-color: transparent;
   border: 1px solid #fff;
@@ -97,13 +91,13 @@ form {
   outline: none;
 }
 
-.down-footer {
+.serving-logo {
   grid-column: 1/-1;
   padding: 1rem;
   margin-bottom: 1.5rem;
 }
 
-.down-footer a {
+.serving-logo a {
   line-height: 1.4em;
   font-size: 22px;
   text-decoration: underline;
@@ -125,7 +119,74 @@ form {
 .footer-logo span:nth-of-type(2) {
   margin-left: 2rem;
 }
-.wix p,
-.wix a {
+
+.down-footer {
+  grid-column: 1/-1;
+}
+
+.down-footer p,
+.wix {
   font-size: 14px;
+}
+
+@media screen and (min-width: 900px) {
+  footer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .navbar-access {
+    grid-column: 1/2;
+    margin: 0 auto;
+  }
+
+  .footer-media {
+    grid-column: 2/3;
+    margin: 0 auto;
+  }
+
+  form {
+    margin-top: 0;
+    grid-column: 3/4;
+    margin-left: 3rem;
+  }
+  .serving-logo {
+    padding-top: 0;
+    grid-column: 4/-1;
+    margin-left: 3rem;
+  }
+
+  .down-footer {
+    text-align: center;
+  }
+  footer h2 {
+    font-size: 26px;
+    font-weight: 400;
+  }
+
+  footer a,
+  .footer-menu .nav-link {
+    font-size: 18px;
+  }
+  .footer-logo {
+    width: 90px;
+    font-size: 24px;
+  }
+
+  .form-content button {
+    padding: 1rem 3rem;
+    font-size: 18px;
+  }
+
+  .footer-logo span:nth-of-type(1) {
+    margin-left: 1rem;
+  }
+
+  .footer-logo span:nth-of-type(2) {
+    margin-left: 2.6rem;
+  }
+
+  .down-footer p,
+  .wix {
+    font-size: 18px;
+  }
 }
