@@ -1,23 +1,23 @@
 :root {
-    --dark-beige: #E6DACD;
-    --light-beige: #F4ECE6;
-    --royal-blue: #0150FD;
-         --black: #000;
-         --white: #fff;
+  --dark-beige: #e6dacd;
+  --light-beige: #f4ece6;
+  --royal-blue: #0150fd;
+  --black: #000;
+  --white: #fff;
 }
 
 p {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 header {
-    border: solid 2px black;
-    grid-area: header;
-    grid-column: 1/-1;
-    width: auto;
-    padding: 1.5rem;
-    font-family: 'Quicksand', sans-serif;
+  border: solid 2px black;
+  grid-area: header;
+  grid-column: 1/-1;
+  width: auto;
+  padding: 1.5rem;
+  font-family: "Quicksand", sans-serif;
 }
 
 /*.header-container {
@@ -27,42 +27,54 @@ header {
 }
 */
 
-h1,h2,h3,h4,h5,h6 {
-    font-family: 'Poppins', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
 }
+
+/* blue square */
 .squareplus-name-container {
-    display:flex;
+  display: flex;
 }
 .blue-square {
-    display: flex;
-    height: 1.2rem;
-    width: 1.2rem;
-    background-color: var(--royal-blue);
-    margin: 0.60rem;
+  display: flex;
+  height: 1.2rem;
+  width: 1.2rem;
+  background-color: var(--royal-blue);
+  margin: 0.6rem;
 }
+
+/* profile name */
 .align-name {
-    display:flex;
-    margin-top: -1.20rem;
+  display: flex;
+  margin-top: -1.2rem;
 }
+
+/* job title */
 .align-title {
-    display: flex;
-    margin-left: 0.5rem;
-    margin-top: -0.5rem;
-    font-size: 1.25rem;
+  display: flex;
+  margin-left: 0.5rem;
+  margin-top: -0.5rem;
+  font-size: 1.25rem;
 }
 
 /* nav menu */
 .align-menu {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: -4.5rem;
+  display: flex;
+  justify-content:center;
+  margin-top: -4.5rem;
+  margin-left: 10rem;
 }
 .menu-container {
   display: inline-block;
   cursor: pointer;
 }
 .top-line {
-    width: 35px;
+  width: 35px;
   height: 5px;
   background-color: var(--royal-blue);
   margin: 6px 0;
@@ -87,12 +99,14 @@ h1,h2,h3,h4,h5,h6 {
 .change .top-line {
   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
   transform: rotate(-45deg) translate(-9px, 6px);
+  background-color: black;
 }
-.change .mid-line {opacity: 0;}
+.change .mid-line {
+  opacity: 0;
+}
 
 .change .bottom-line {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
+  background-color: black;
 }
-
-

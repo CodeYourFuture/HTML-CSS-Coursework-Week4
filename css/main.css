@@ -17,17 +17,20 @@ body {
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 10rem 50rem 10rem;
+    grid-template-rows: 10rem 60rem 10rem;
      grid-template-areas:
     "header header header header"
     "main main main main"
     "footer footer footer footer"
 }
 
+main {
+    background-color: var(--dark-beige);
+
+
+}
+
 /*
-
-
-
 
 .button-blue {
     text-transform: uppercase;

@@ -1,12 +1,37 @@
 :root {
-    --dark-beige: #E6DACD;
-    --light-beige: #F4ECE6;
-    --royal-blue: #0150FD;
-         --black: #000;
-         --white: #fff;
+  --dark-beige: #e6dacd;
+  --light-beige: #f4ece6;
+  --royal-blue: #0150fd;
+  --black: #000;
+  --white: #fff;
 }
 
 p {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.profile-box {
+  width: 250px;
+  height: 400px;
+  padding: 50px;
+  margin-left: 2rem;
+  border: 1px solid rgb(0, 89, 255);
+  
+}
+
+.profile-name-img-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile-img {
+    text-align: center;
+
+}
+
+.round-profile-img {
+    border-radius: 10rem;
 }
