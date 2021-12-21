@@ -17,6 +17,7 @@ p {
   padding: 50px;
   margin-left: 2rem;
   border: 1px solid rgb(0, 89, 255);
+  background-color: var(--light-beige);
   
 }
 
@@ -29,9 +30,17 @@ p {
 
 .profile-img {
     text-align: center;
-
 }
 
 .round-profile-img {
-    border-radius: 10rem;
+     border-radius: 10rem;
+}
+
+.profile-blue-line {
+    width: 5rem;
+    height: 0.15rem;
+    background-color: var(--royal-blue);
+    margin-left: auto;
+    margin-right: auto;
+    
 }
