@@ -18,6 +18,7 @@
 
 .resume-wrapper{
   display:flex; 
+ 
 }
 
 .experience{
@@ -59,8 +60,40 @@ main h3{
   width: 95%;
   margin-top:2rem;
   padding: 1rem;
-  
 }
+
+
+.nav ul li{
+ list-style:none;
+   display: none;
+}
+​
+​
+.jobs{
+  border: 1px solid black;
+  background: #fff;
+  width: 100%;
+  margin-left: 0.5rem;
+}
+​
+ .jobs p{
+  padding-bottom: 1rem;
+  padding-right: 1rem ;
+  padding-left: 1rem;
+  line-height: 1.5rem;
+}
+
+.contacts2{
+  margin-top:1.55em;
+  display:flex;
+
+}
+
+
+.number-info{
+  margin-top:0.5rem;
+}
+
 .job-position{
   margin-bottom: 2rem;
   font-size: 16px;
@@ -76,10 +109,12 @@ main h3{
 .more-info{
   margin-top: 2rem;
 }
+
 h2{
   padding-top:2rem;
   margin-left:0.5rem;
 }
+
 .education{
   padding-top:1rem;
   display: flex;
@@ -125,6 +160,7 @@ h2{
   padding-bottom: 1.5rem;
   color: rgba(0,0,0,1);
 }
+
 
 
 

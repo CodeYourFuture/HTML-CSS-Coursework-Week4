@@ -24,7 +24,7 @@
   position: absolute;
   top: 6rem;
   z-index: 2;
-  left: 1rem;
+  left:1rem;
 }
 .my-image img {
   border-radius: 50%;
@@ -42,11 +42,24 @@ hr.line {
   margin-left: 8.5rem;
   margin-top: 1rem;
 }
+
 .my-image h1 {
   align-items: center;
 }
 
-.contacts {
+.name {
+  grid-area: name;
+}
+
+
+h1{
+  font-size: 3.5rem;
+  margin-top: 18px;
+
+}
+ 
+.contacts{
+
   background: #fff;
   color: var(--black);
   margin-top: 2rem;
@@ -59,6 +72,7 @@ hr.line {
   padding: 1rem;
   list-style: none;
   margin-bottom: 0.75rem;
+
 }
 .contact-links a {
   font-size: 20px;
@@ -68,8 +82,15 @@ hr.line {
   padding: 0 0.25rem;
 }
 .btn {
+  text-decoration:none;
+  margin:5px 10px;
+  padding: 0 0.25rem
+}
+
+.btn{
   margin-top: 2.5rem;
 }
+
 .resume {
   background: var(--royal-blue);
   color: #fff;
@@ -79,11 +100,16 @@ hr.line {
   margin-right: 1.5rem;
   font-weight: bold;
   font-size: 1.2rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+
 }
+
 .resume a {
   text-decoration: none;
   color: #fff;
 }
+
 .projects {
   padding: 5px 10px;
   border-radius: 2rem;
@@ -91,24 +117,40 @@ hr.line {
   font-size: 1.2rem;
   background: var(--light-beige);
 }
-.profile {
+
+
+.profile{
   margin-top: 15rem;
-  margin-left: 1.2rem;
+  margin-left: 1.25rem;
   margin-right: 2rem;
 }
+
 h2 {
   font-size: 40px;
+ 
 }
+
 .profile-info {
   font-size: 19px;
   font-weight: bold;
   margin-top: 1rem;
 }
+
 .profile p {
   margin-top: 1rem;
   line-height: 1.9rem;
   font-size: 16px;
 }
+
+.contacts2{
+  margin-top:1.55rem;
+  display: flex;
+}
+
+.number-info{
+  margin-top:0.5rem;
+}
+
 
 
 /* Dont' forget to link this file to your HTML in the <head> */

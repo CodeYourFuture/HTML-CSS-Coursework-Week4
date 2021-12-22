@@ -8,9 +8,11 @@
 --black: #000;  
 --purple: #a90fe6; 
 }
+
 h1,h2,h3,h4,h5,h6{
   font-family: 'Poppins', sans-serif;
 }
+
 * {
   box-sizing: border-box;
   margin:0;
@@ -22,24 +24,27 @@ body{
   background: var(--dark-beige);
 }
 
-
- .navbar{
+.navbar {
   display: grid;
   grid-template-rows:100px;
   grid-template-areas:"name .  nav";
   margin: 1rem 1rem;
   line-height:2rem;
 }
+
  .lists{
    grid-area:nav;
    display:flex;
    justify-content:flex-end;
    display: none;
   }
+
   #square{
   color:blue;
   padding-right:0.5rem;
 }
+
+
  header{
   display: grid;
   grid-area:h;
@@ -49,9 +54,11 @@ body{
   top:-1.2rem;
 
 }
+
 .navbar ul{
   list-style:none;
 }
+
 .name {
   grid-area: name;
   font-size:20px;
@@ -69,14 +76,18 @@ body{
  color: var(--royal-blue); 
  width: 4rem;
 }
+
  .hamburger a{
  filter:  blue (100%);
 }
+
+
 main{
   grid-area:m;
   background: var(--dark-beige);
   padding:1em;
 }
+
 footer{
   grid-area:f;
   background-color: #fff;
@@ -87,15 +98,19 @@ footer{
   margin-top: 1.55rem;
   display: flex;
 }
+
 .number-info {
   margin-top: 0.5rem;
 }
+
 .call {
   margin-left: 1.75rem;
 }
+
 .write {
   margin-left: 3rem;
 }
+
 .socials-links {
   display: flex;
   flex-direction: row;
@@ -104,6 +119,7 @@ footer{
   padding: 1rem;
   list-style: none;
 }
+
 .socials-links a {
   font-size: 20px;
   color: var(--black);
@@ -111,11 +127,13 @@ footer{
   margin: 5px 10px;
   padding-bottom: 1.5rem;
 }
+
 .socials p {
   margin-left: 1.75rem;
   padding-top: 1.8rem;
   font-weight: bold;
 }
+
 .footer-info {
   margin-top: 1.5rem;
   margin-left: 1.55rem;
