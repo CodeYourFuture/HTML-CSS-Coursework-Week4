@@ -16,6 +16,18 @@ footer {
     grid-area: footer;
     grid-column: 1/-1;
     width: auto;
-    padding: 1rem;
+    /*padding: 1rem;*/
     font-family: 'Quicksand', sans-serif;
+}
+.write-and-call-box {
+    border: solid 2px rgb(241, 8, 8);
+    width: 22rem;
+    display: flex;
+    justify-content: space-around;
+  
+}
+
+.contact-details {
+    border: solid 2px rgb(241, 8, 8);
+    width: 21rem;
 }

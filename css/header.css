@@ -87,7 +87,6 @@ h6 {
   margin: 6px 0;
   transition: 0.4s;
 }
-
 .bottom-line {
   width: 35px;
   height: 5px;
@@ -104,7 +103,6 @@ h6 {
 .change .mid-line {
   opacity: 0;
 }
-
 .change .bottom-line {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
