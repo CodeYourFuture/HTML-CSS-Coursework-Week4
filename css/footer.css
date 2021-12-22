@@ -27,7 +27,18 @@ footer {
   
 }
 
-.contact-details {
+/* footer */
+.footer-follow-box {
     border: solid 2px rgb(241, 8, 8);
-    width: 21rem;
+    width: 22rem;
+    height: 4rem;
+    margin-left: 2rem;
+}
+
+.social-media-icons-follow {
+    margin: 0.5rem;
+}
+
+.text-copyright {
+    margin-left: 2rem;
 }
