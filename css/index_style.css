@@ -1,0 +1,251 @@
+main section a {
+  width: max-content;
+}
+
+.hero img {
+  width: 100%;
+}
+
+.explore {
+  padding-bottom: 33px;
+}
+
+.discount {
+  background-color: var(--lilac);
+  margin-top: -5px;
+}
+
+.feature-img {
+  width: 70px;
+}
+.feature-img img {
+  width: 100%;
+}
+.vision {
+  background-color: var(--light-Green);
+}
+.vision .flex_col {
+  align-items: center;
+  text-align: center;
+}
+.vision img,
+.wellness_path img,
+.discover img {
+  width: 100%;
+}
+
+.wellness_path {
+  background-color: var(--lilac);
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.wellness_selection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "coldpr coldpr coldpr"
+    "smooth smooth smooth"
+    "shot shot shot"
+    "button button button";
+}
+.wellness_coldpr {
+  grid-area: coldpr;
+}
+.wellness_smoothie {
+  grid-area: smooth;
+}
+.wellness_shots {
+  grid-area: shot;
+}
+.wellness_selection a {
+  grid-area: button;
+  justify-self: center;
+}
+.discover .flex_col {
+  align-items: center;
+}
+
+.get_juice {
+  background-color: var(--light-Green);
+}
+.circle_border {
+  width: 44px;
+  height: 44px;
+  border: solid 1px var(--black);
+  border-radius: 50%;
+}
+.follow {
+  display: grid;
+  grid-template-rows: auto 1fr 1fr;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.follow_green {
+  background-color: var(--dark-Green);
+  grid-row: 3 / 4;
+  grid-column: 1 / -1;
+}
+.img_apples {
+  align-self: flex-end;
+  grid-row: 3 / 4;
+  grid-column: 5 / 9;
+}
+.img_papaya {
+  align-self: center;
+  grid-row: 2 / 4;
+  grid-column: 3 / 7;
+}
+
+.img_bag {
+  align-self: flex-start;
+  grid-row: 1 / 3;
+  grid-column: 4 / 8;
+}
+
+.img_kale {
+  align-self: center;
+  grid-row: 2 / 4;
+  grid-column: 7 / 11;
+}
+
+.img_apples img {
+  transform: rotate(333.85071717456117deg);
+  width: 100%;
+}
+.img_papaya img {
+  transform: rotate(16.69666345366653deg);
+  width: 100%;
+}
+.img_bag img {
+  transform: rotate(347.34482520820825deg);
+  width: 100%;
+}
+.img_kale img {
+  transform: rotate(17.142845342601447deg);
+  width: 100%;
+}
+
+@media screen and (min-width: 481px) {
+  .explore {
+    padding: 65px 0;
+  }
+  .explore .font_2 {
+    font-size: 24px;
+  }
+  .discount .font_3 {
+    font-size: 22px;
+  }
+  .features {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+  }
+  .feature-img {
+    width: 101px;
+    height: 101px;
+  }
+  .feature {
+    width: 236px;
+    margin: 0 20px;
+    justify-content: start;
+    align-items: flex-start;
+  }
+  .vision {
+    display: flex;
+    padding-top: 70px;
+    justify-content: center;
+  }
+  .vision div {
+    width: 50%;
+  }
+  .vision .flex_col {
+    align-items: flex-start;
+    text-align: left;
+    width: 490px;
+  }
+  .vision img {
+    width: 557px;
+    margin-bottom: -100px;
+  }
+  .wellness_path {
+    background-color: var(--white);
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 100px;
+  }
+  .wellness_path h2 {
+    margin-bottom: 200px;
+  }
+  .wellness_selection {
+    background-color: var(--lilac);
+    grid-template-areas:
+      "coldpr smooth shot"
+      "button button button";
+  }
+  .wellness_coldpr {
+    margin-top: -50px;
+    width: 326px;
+    grid-area: coldpr;
+    justify-self: end;
+  }
+  .wellness_smoothie {
+    margin-top: -106px;
+    width: 326px;
+    grid-area: smooth;
+    justify-self: center;
+  }
+  .wellness_shots {
+    margin-top: -50px;
+    width: 326px;
+    grid-area: shot;
+    justify-self: start;
+  }
+
+  .get_juice {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .discover {
+    display: flex;
+    justify-content: center;
+  }
+  .discover div {
+    width: 50%;
+    text-align: left;
+  }
+  .discover .flex_col {
+    align-items: flex-start;
+    width: 490px;
+  }
+  .discover img {
+    width: 550px;
+  }
+
+  .follow_green {
+    grid-row: 3 / 4;
+    grid-column: 1 / -1;
+  }
+  .img_apples {
+    align-self: flex-end;
+    grid-row: 1 / 4;
+    grid-column: 3 / 5;
+  }
+  .img_papaya {
+    align-self: center;
+    grid-row: 1 / 4;
+    grid-column: 5 / 7;
+  }
+
+  .img_bag {
+    align-self: flex-start;
+    grid-row: 1 / 4;
+    grid-column: 7 / 9;
+  }
+
+  .img_kale {
+    align-self: center;
+    grid-row: 1 / 4;
+    grid-column: 9 / 11;
+  }
+}
