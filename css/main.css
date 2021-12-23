@@ -1,11 +1,13 @@
 /* Add your CSS here */
-/* Dont' forget to link this file to your HTML in the <head> */
+/* Don't forget to link this file to your HTML in the <head> */
 :root {
   --dark-beige: #e6dacd;
   --light-beige: #f4ece6;
   --royal-blue: #0150fd;
   --black: #000;
   --white: #fff;
+  --font-headings: "Poppins", sans-serif;
+  --font-body: "Quicksand", sans-serif;
 }
 
 body {
@@ -32,17 +34,22 @@ header {
   padding-top: 4%;
   margin-bottom: 36%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   grid-auto-rows: auto;
   grid-template-areas:
-    "par par par ham"
-    ". . .  ham";
+    "par par par . . ham"
+    ". . . . .  ham";
+}
+.navbar {
+  display: none;
 }
 .hamburger-menu {
+  display: flex;
+  justify-content: end;
   grid-area: ham;
   padding-top: 18%;
   height: 20px;
-  padding-left: 20px;
+  padding-left: 45px;
 }
 
 main {
@@ -60,7 +67,7 @@ main {
 header > p:nth-child(1) {
   margin: 0;
   grid-area: par;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-headings);
   line-height: 1em;
   font-size: 20px;
 }
@@ -189,9 +196,35 @@ h5 {
   padding: 10px;
 }
 
-@media screen and (min-width: 540px) {
+@media screen and (min-width: 1024px) {
+  header {
+    padding-left: 6%;
+    padding-top: 4%;
+    margin-bottom: 36%;
+    display: grid;
+    grid-template-columns: 520px 1fr;
+    grid-auto-rows: auto;
+  }
   .navbar {
     display: flex;
+    list-style: none;
+    margin: 12px 25px 5px 25px;
+  }
+
+  .nav-item {
+    padding: 0.5rem 0.4rem;
+  }
+
+  .nav-link {
+    font-family: var(--font-body);
+    text-decoration: none;
+    font-size: 0.7rem;
+    padding: 4px 10px;
+    transition: background-color 2s;
+  }
+  .nav-link:hover {
+    color: var(--royal-blue);
+    cursor: pointer;
   }
   .hamburger-menu {
     display: none;
