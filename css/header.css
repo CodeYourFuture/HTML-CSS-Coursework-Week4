@@ -12,7 +12,7 @@ p {
 }
 
 header {
-  border: solid 2px black;
+  /*border: solid 2px black;*/
   grid-area: header;
   grid-column: 1/-1;
   width: auto;
@@ -74,25 +74,28 @@ h6 {
   cursor: pointer;
 }
 .top-line {
-  width: 35px;
-  height: 5px;
+  width: 18px;
+  height: 0.25rem;
   background-color: var(--royal-blue);
   margin: 6px 0;
   transition: 0.4s;
+  border-radius: 0.5rem;
 }
 .mid-line {
   width: 35px;
-  height: 5px;
+  height: 0.25rem;
   background-color: var(--royal-blue);
   margin: 6px 0;
   transition: 0.4s;
+  border-radius: 0.5rem;
 }
 .bottom-line {
   width: 35px;
-  height: 5px;
+  height: 0.25rem;
   background-color: var(--royal-blue);
   margin: 6px 0;
   transition: 0.4s;
+  border-radius: 0.5rem;
 }
 
 .change .top-line {

@@ -2,59 +2,30 @@
 
 /* Variables */
 :root {
-    --dark-beige: #E6DACD;
-    --light-beige: #F4ECE6;
-    --royal-blue: #0150FD;
-         --black: #000;
-         --white: #fff;
+  --dark-beige: #e6dacd;
+  --light-beige: #f4ece6;
+  --royal-blue: #0150fd;
+  --black: #000;
+  --white: #fff;
 }
 /* reset */
 body {
-    border: solid 2px black;
-    margin: 0%;
-    padding: 0%;
-    font-family: 'Quicksand', sans-serif;
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 10rem 60rem 10rem;
-     grid-template-areas:
+  /*border: solid 2px black;*/
+  margin: 0%;
+  padding: 0%;
+  font-family: "Quicksand", sans-serif;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 10rem 60rem 10rem;
+  grid-template-areas:
     "header header header header"
     "main main main main"
-    "footer footer footer footer"
+    "footer footer footer footer";
 }
 
 main {
-    background-color: var(--dark-beige);
-
-
+  background-color: var(--dark-beige);
 }
-
-/*
-
-.button-blue {
-    text-transform: uppercase;
-    border-radius: 20px;
-    padding: 6px 12px;
-
-}
-.button-blue:hover {
-color: white;
-background: var(--royal-blue);
-
-}
-
-main {
-    display: flex;
-    grid-area: main;
-    grid-column: 1/-1;
-}
-
-
-*/
-
-
-
-
 
 /* Dont' forget to link this file to your HTML in the <head> */
