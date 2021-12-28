@@ -1,0 +1,26 @@
+.order-button,
+.hamburger-menu {
+  display: none;
+}
+
+header {
+  display: grid;
+  grid-template-rows: minmax(60px, 1fr);
+  height: 60px;
+  background-color: transparent;
+}
+
+#title {
+  grid-column: 3/5;
+  grid-row: 1;
+}
+
+.user-order-online {
+  display: inline-flex;
+  grid-column: 6/-1;
+  height: 50px;
+}
+
+.user-order-online span {
+  color: antiquewhite;
+}
