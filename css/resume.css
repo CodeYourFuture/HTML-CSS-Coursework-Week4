@@ -55,7 +55,7 @@ main h3{
 }
 
 .jobs{
-  /* border: 1px solid black; */
+  
   background: #fff;
   width: 95%;
   margin-top:2rem;
@@ -67,15 +67,14 @@ main h3{
  list-style:none;
    display: none;
 }
-​
-​
+
 .jobs{
-  border: 1px solid black;
+ 
   background: #fff;
   width: 100%;
   margin-left: 0.5rem;
 }
-​
+
  .jobs p{
   padding-bottom: 1rem;
   padding-right: 1rem ;
@@ -123,7 +122,7 @@ h2{
    
 } 
 .edu-background{
-  /* border: 1px solid black; */
+ 
   background: #fff;
   width: 95%;
   margin-top:2rem;

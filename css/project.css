@@ -1,0 +1,105 @@
+
+
+:root {
+--dark-beige: #E6DACD;  
+--light-beige: #F4ECE6;  
+--royal-blue: #0150FD; 
+--black: #000;  
+--purple: #a90fe6; 
+}
+
+ /* .grid-container{
+  display:grid;
+  grid-template-areas: "h h h h h h h h h h h h"
+    "m m m m m m m m m m m m "
+    "f f f f f f f f f f f f";
+  grid-template-rows: 100px 2fr 300px;  
+} 
+   */
+header{
+   padding-top:2rem;
+   grid-template-rows:100px; 
+}
+
+.fas-project{
+  text-align: center;
+  list-style: none;
+  margin: 2rem;
+  font-size: 29px;
+  font-weight: bolder;
+}
+
+.pro-details{
+    line-height: 1.8em;
+    font-size:16px;
+    margin: 2rem;   
+}
+
+.pro-details1{
+    background-color: white;
+    line-height: 1.8em;
+    font-size:16px;
+    margin: 1.8rem;
+    padding-top:13px;
+}
+   
+
+.pro-details1 h2{
+    color: var(--royal-blue);
+    font-size: 15px;   
+}
+
+.role-title{
+    font-size: 12px;
+    padding-bottom: 0.7em;
+  
+}
+
+.name-title{
+    border-left: 10px blue solid;
+    padding-left:1rem;    
+}
+
+.para-pro{
+    padding-left:1.8rem;
+    padding-bottom: 1em;
+    padding-right: 1.8rem;
+
+}
+.leaflet{
+    object-fit:cover;
+    width:100%;
+    margin-bottom: -1rem;
+}
+.pro-details2{
+    background-color: white;
+    line-height: 1.8em;
+    font-size:16px;
+    margin: 1.8rem;
+    padding-top:13px;
+}
+
+.pro-details3{
+    background-color: white;
+    line-height: 1.8em;
+    font-size:16px;
+    margin: 1.8rem;
+    padding-top:13px;
+}
+
+.pro-details2 h2{
+    color: var(--royal-blue);
+    font-size: 15px;   
+}
+
+.pro-details3 h2{
+    color: var(--royal-blue);
+    font-size: 15px;   
+}
+.contacts2{
+    padding-top: 1rem;
+}
+
+.socials-contact{
+    padding-bottom: 3rem;
+}
