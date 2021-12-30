@@ -1,0 +1,15 @@
+/* hero-product section */
+.hero-product {
+  background-image: linear-gradient(
+      to right,
+      rgba(204, 204, 204, 0.6) 0%,
+      rgba(79, 109, 34, 0.6) 100%
+    ),url("../secculents-product-img/secculent-hero.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+

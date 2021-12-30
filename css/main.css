@@ -1,3 +1,304 @@
-/* Add your CSS here */
+/* imported google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap');
+    body{
+        font-family: 'Outfit', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: var(--Ligh-Grey);
+    }
+    :root{
+        /* colours */
+        --Red-Brown: #A05941;
+        --Green-Black: #133032;
+        --Ligh-Grey: #EDEDEE;
+        --White: #FFF;
+        --Transparent-White: rgba(0,0,0,0.75);
+        /* fonts */
+        --fjalla: 'Fjalla One', sans-serif;
+        --outfit-light: 'Outfit', sans-serif;
+    }
+/* hero section */
+    .hero{
+        background-image: linear-gradient(to right,rgba(45, 63, 39, 0.3) 0%,rgba(43, 56, 35, 0.35)100%),
+        url('../plant-img/downloaded-hero.png');
+        background-size:cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-blend-mode:multiply;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 550px;
+    }
+/* logo  */
+    .main-logo-and-hero-texts{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -16rem;
+        color: var(--White);
+        gap: .8rem;
+    }
+    .main-logo-and-hero-texts svg{
+        width: 10rem;
+        height: auto;
+    }
+    .main-logo-and-hero-texts p{
+        border-bottom: .2rem solid var(--White);
+        letter-spacing: 5px;
+        font-weight: 800;
+        font-size: .9rem;
+    }
+/* h1 and button */
+    .heroh1-and-button{
+        margin-top: -21rem;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        color: var(--White);
+    }
+    .heroh1-and-button h1{
+        font-family: var(--fjalla);
+        letter-spacing: .4rem;
+        font-size: 2.8rem;
+        font-weight: 400;
+    }
+    .heroh1-and-button p{
+        font-family: var(--outfit-light);
+        text-align: center;
+        letter-spacing: .8rem;
+        font-weight:800;
+        margin-top: -1rem;
+    }
+/* buttons */
+    .heroh1-and-button button, .shop button{
+        background-color: var(--Red-Brown);
+        width: 9.5rem;
+        height: 3rem;
+        text-align: center;
+        color: var(--White);
+        border: none;
+        font-family: var(--outfit-light);
+        font-weight:600;
+        letter-spacing: 1px;
+    }
+    .heroh1-and-button button:hover, .shop button:hover{
+        background-color: #b48a7c;
+        color: black;
+        opacity: .9;
+        transition: .7s ease-out;
+    }
+/* 2nd part of main products and images */
+    .shop-aboutUs-specialOrder-container{
+        display: grid;
+    }
+    .shop{
+        margin-top: 1rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:repeat(3, 35rem) ;
+        justify-content: center;
+        grid-gap: 1rem;
+        text-align: center;
+        font-family: var(--fjalla);
+    }
+    .products-1{
+        background-image: url('../plant-img/cacti.webp');
+    }
+    .products-2{
+        background-image: url('../plant-img/plants.webp');
+    }
+    .products-3{
+        background-image: url('../plant-img/secculents.webp');
+    }
+    .products, .aboutUsText{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .shop div{
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .shop h3, .aboutUsText h3 {
+        font-size: 1.5rem;
+        color: var(--Red-Brown);
+        font-weight: 100;
+        letter-spacing: 4px;
+    }
+    .shop .line, .aboutUsText .line, .specialOrder-form .line{
+        height: .3rem;
+        background-color: var(--Red-Brown);
+        width: .8rem;
+        margin-top: -1rem;
+    }
 
-/* Dont' forget to link this file to your HTML in the <head> */
+/* about us  */
+    .aboutUs{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-flow: row dense; /* or 'row', 'row dense', 'column dense' */
+    }
+    .aboutUsText{
+    text-align:center;
+    font-family: var(--outfit-light);
+    padding: 1.5rem;
+    color:var(--Red-Brown);
+    background-color: var(--White);
+    }
+/* about us image  */
+    .aboutUs-image img{
+    height: 100%;
+    width: 100%;
+    }
+    .discount{
+    background-color: var(--Green-Black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .discount h3{
+    padding: 1rem;
+    font-size: 4rem;
+    color:var(--White);
+    font-family: var(--fjalla);
+    text-align: center;
+    letter-spacing:5px;
+    font-weight: lighter;
+    }
+/* discount white button */
+    .discount button{
+    background-color: whitesmoke;
+    color: black;
+    width: 11rem;
+    height: 3rem;
+    text-align: center;
+    border: none;
+    margin-bottom: 3.5rem;
+    margin-top: -3rem;
+    }
+    .discount button:hover{
+    background-color: rgb(47, 63, 20);
+    color: var(--White);
+    transition: .8s ease-out;
+    }
+/* order form */
+.specialOrder-form{
+    padding:1.5rem 0;
+    background-image: url('../plant-img/form-background.webp');
+    background-position: right;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 10rem;
+}
+
+.specialOrder-form .line{
+    margin: 0 auto;
+}
+.specialOrder-form form{
+    background-color: var(--White);
+}
+.specialOrder-form legend{
+    padding:1rem 0 ;
+    width: 11rem;
+    font-family: var(--fjalla);
+    font-size: 1.4rem;
+    letter-spacing: 3px;
+    color: var(--Red-Brown);
+    text-align: center;
+}
+.specialOrder-form fieldset{
+    border: none;
+}
+.specialOrder-form label{
+    font-size: 1.2rem;
+    margin-bottom: 11rem;
+}
+.names{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+    grid-gap: 1rem;
+}
+.specialOrder-form input{
+    width: 100%;
+    height: 2.5rem;
+    font-size: 1.2rem;
+}
+.message textarea{
+    width: 100%;
+    resize: none; 
+}
+.specialOrder-form .send{
+    width:102%;
+    background-color: var(--Red-Brown);
+    color:var(--White);
+    height: 4rem;
+    border: none;
+}
+@media screen and (min-width: 1100px){
+    /* main */
+    .hero{
+    margin-top: 14%;
+    }
+    .main-logo-and-hero-texts{
+    font-size: 1.2em;
+    gap: 1rem;
+    }
+    .heroh1-and-button h1{
+    margin-top: -1.5rem;
+    font-size: 6rem;
+    color: var(--White);
+    letter-spacing: .5rem;
+    }
+    .heroh1-and-button p{
+    margin-top: -4rem;
+    }
+/* products and order part of the main */
+    .shop{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows:40rem ;
+    justify-content: space-between;
+    grid-gap: 1.5rem;
+    }
+    .aboutUs{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-flow: row dense; /* or 'row', 'row dense', 'column dense' */
+    }
+    .aboutUsText{
+    grid-column: 1/ 3;
+    }
+    .aboutus-girl{
+    grid-column: 1/3;
+    }
+    .discount{
+    grid-column: 3/ -1;
+    }
+    .discount h3{
+    font-size: 5.5rem;
+    }
+/* order form */
+    .specialOrder-form {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    }
+    .specialOrder-form form{
+    grid-column: 3/11;
+    }
+    .specialOrder-form legend{
+        font-size: 1.8rem;
+    }
+    .names{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    }
+    .specialOrder-form input{
+    height: 3.5rem;
+    }
+}
