@@ -150,7 +150,10 @@ h2 {
 .number-info{
   margin-top:0.5rem;
 }
-
+.project-btn{
+  text-decoration: none;
+  color: var(--black);
+}
 
 
 /* Dont' forget to link this file to your HTML in the <head> */
