@@ -1,0 +1,100 @@
+
+.vision-home {
+
+    grid-area: top;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+    "top top top top"
+    "body1 body1 body1 body1"
+    "green green green green"
+    "body2 body2 body2 body2"
+    "picts4 picts4 picts4 picts4"
+    "footer footer footer footer";
+
+}
+
+
+.home-header {
+    grid-area: top;
+}
+
+.vision-home-body1 {
+    grid-area: body1;
+}
+
+.paragraphtext4, .paragraphtext5 {
+    margin-bottom: var(--fm-1em);
+    font-size: var(--fm-1rem);
+    text-align:center;
+    line-height: var(--fm-1p6rem);
+}
+
+.paragraphtext4 span::after {
+    content: "This is a great space to write a long text\A about your company and your services.\A You can use this space to go into a little\A more detail about your company. Talk\A about your team and what services you\A provide. Tell your visitors the story of\A how you came up with the idea for your\A business and what makes you different\A from your competitors. Make your\A company stand out and show your\A visitors who you are.";
+    white-space: pre;
+}
+
+
+
+.GreenPicture2 {
+    grid-area: green;
+    /* 320px X 200px */
+    width: var(--fs-320px);
+    height: var(--fs-200px);
+    margin: var(--fm-2em);
+
+    margin-bottom: var(--fm-2em);
+}
+
+.vision-home-body2 {
+    grid-area: body2;
+}
+
+.paragraphtext5 span::after {
+    content: "I'm a paragraph. Click here to add your\A own text and edit me. It’s easy. Just click\A “Edit Text” or double click me to add your\A own content and make changes to the\A font. Feel free to drag and drop me\A anywhere you like on your page. I’m a\A great place for you to tell a story and let\A your users know a little more about you.";
+    white-space: pre;
+}
+
+.FourPictures {
+    grid-area: picts4;
+    padding-left:2em;
+    padding-right:2em;
+    margin-bottom: var(--fm-2em);    
+}
+
+.WPicts4{
+    /* 100px X 149px */
+    width: 6.25em;
+    height: 9.313em;
+}
+.PictsRow {
+    display:flex;
+    flex-direction: row;
+    gap:1em;
+
+}
+
+.PictsColumn1 {
+    display:flex;
+    flex-direction: column;
+    gap:1em;
+    padding-left:4em;
+}
+
+.PictsColumn2 {
+    display:flex;
+    flex-direction: column;
+    gap:1em;
+    padding-right:4em;
+}
+
+.PushDown {
+    margin-top:3em;
+}
+
+
+.GetStartedConnect {
+    margin-top: var(--fm-2em);
+    margin-bottom: var(--fm-4em);
+}
