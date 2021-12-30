@@ -1,74 +1,68 @@
 :root {
+  /* colors */
+  --black: #000000;
+  --white: #ffffff;
+  --lilac: #f5e8ff;
+  --light-green: #e6fac0;
+  --medium-green: #5e7d1f;
+  --dark-green: #394b2a;
 
-    /* colors */
-    --black: #000000;
-    --white: #ffffff;
-    --lilac: #f5e8ff;
-    --light-green: #E6FAC0;
-    --medium-green: #5E7D1F;
-    --dark-green: #394B2A;
-    
-    /*  fw-fonts-weight */
-    --fw-400: 400;
-    --fw-500: 600;
-    --fw-700: 700;
-    --fw-900: 900;
-   
-    /* fs-font-size */
-    
+  /*  fw-fonts-weight */
+  --fw-400: 400;
+  --fw-500: 600;
+  --fw-700: 700;
+  --fw-900: 900;
 
-    --fs-2px:   0.125rem;
-    --fs-12px:  0.75rem;
-    --fs-14px:  0.875rem;
-    --fs-15px:  0.938rem;
-    --fs-20px:  1.25rem;
-    --fs-24px:  1.5rem;
-    --fs-28px:  1.75rem;
-    --fs-32px:  2rem;
-    --fs-36px:  2.25rem;
-    --fs-200px: 12.5rem;
-    --fs-320px: 20rem;
+  /* fs-font-size */
 
-    /* other sizes */
-    --fm-1em:   1em;
-    --fm-2em:   2em;
-    --fm-4em:   4em;
-    --fm-16em: 16em;
+  --fs-2px: 0.125rem;
+  --fs-12px: 0.75rem;
+  --fs-14px: 0.875rem;
+  --fs-15px: 0.938rem;
+  --fs-20px: 1.25rem;
+  --fs-24px: 1.5rem;
+  --fs-28px: 1.75rem;
+  --fs-32px: 2rem;
+  --fs-36px: 2.25rem;
+  --fs-200px: 12.5rem;
+  --fs-320px: 20rem;
 
-    --fm-1rem:   1rem;
-    --fm-1p2rem: 1.2rem;
-    --fm-1p3rem: 1.3rem;
-    --fm-1p4rem: 1.4rem;
-    --fm-1p6rem: 1.6rem;
-    --fm-1p8rem: 1.8rem;
-    --fm-3rem:   3rem;
-    --fm-5rem:   5rem;
+  /* other sizes */
+  --fm-1em: 1em;
+  --fm-2em: 2em;
+  --fm-4em: 4em;
+  --fm-16em: 16em;
+
+  --fm-1rem: 1rem;
+  --fm-1p2rem: 1.2rem;
+  --fm-1p3rem: 1.3rem;
+  --fm-1p4rem: 1.4rem;
+  --fm-1p6rem: 1.6rem;
+  --fm-1p8rem: 1.8rem;
+  --fm-3rem: 3rem;
+  --fm-5rem: 5rem;
 }
-
 
 /* RESET */
 
 *,
 html {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: 0;
-    border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  border: 0;
 }
-
 
 /* Fonts */
 body {
-    font-family: 'Roboto', sans-serif;   
+  font-family: "Roboto", sans-serif;
 }
 
-
 .home {
-
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas:
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
     "top top top top"
     "body1 body1 body1 body1"
     "orange orange orange orange"
@@ -81,7 +75,6 @@ body {
     "nums3 nums3 nums3 nums3"
     "follow follow follow follow"
     "footer footer footer footer";
-
 }
 
 /*
@@ -90,584 +83,657 @@ https://www.w3schools.com/howto/howto_css_block_buttons.asp
 */
 
 .blockbutton {
-    font-family: 'Raleway', sans-serif; 
-    display: block;
-    width: 100%;
-    border: none;
-    background-color: var(--black);
-    color: var(--white);
-    padding: var(--fs-14px) var(--fs-28px);
-    font-size: var(--fm-1em);
-    cursor: pointer;
-    text-align: center;
-    margin-bottom: var(--fm-1em);
+  font-family: "Raleway", sans-serif;
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: var(--black);
+  color: var(--white);
+  padding: var(--fs-14px) var(--fs-28px);
+  font-size: var(--fm-1em);
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: var(--fm-1em);
 }
 
 .AButton {
-    font-family: 'Raleway', sans-serif; 
-    background-color: var(--black);
-    color: var(--white);
-    border: none;
-    padding: var(--fs-15px) var(--fs-32px); 
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: var(--fm-1rem);
-    margin: var(--fm-2em) 0;    
-    cursor: pointer;
+  font-family: "Raleway", sans-serif;
+  background-color: var(--black);
+  color: var(--white);
+  border: none;
+  padding: var(--fs-15px) var(--fs-32px);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: var(--fm-1rem);
+  margin: var(--fm-2em) 0;
+  cursor: pointer;
 }
 
 .leftinset {
-    padding-left: var(--fm-1em);
+  padding-left: var(--fm-1em);
 }
 
 .rightinset {
-    padding-right: var(--fm-1em);
+  padding-right: var(--fm-1em);
 }
-  
+
 .pagetopflex {
-    display:flex; 
-    justify-content: space-between;
-    font-size: var(--fm-1p8rem);
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--fm-1p8rem);
 }
 
 .home-header {
-    grid-area: top;
+  grid-area: top;
 }
 
 .home-body1 {
-    grid-area: body1;
+  grid-area: body1;
 }
 
 .header1format {
-    margin-top: var(--fm-1em);
-    font-family: 'Questrial', sans-serif; 
-    font-size: var(--fs-36px);
-    line-height: var(--fm-3rem);
-    text-align: center;
+  margin-top: var(--fm-1em);
+  font-family: "Questrial", sans-serif;
+  font-size: var(--fs-36px);
+  line-height: var(--fm-3rem);
+  text-align: center;
 }
 
 .subheader1format {
-    margin-top: var(--fm-1em);
-    font-family: 'Questrial', sans-serif; 
-    font-size: var(--fm-1p8rem);
-    line-height: var(--fs-32px);
-    text-align: center;
+  margin-top: var(--fm-1em);
+  font-family: "Questrial", sans-serif;
+  font-size: var(--fm-1p8rem);
+  line-height: var(--fs-32px);
+  text-align: center;
 }
 
 /* NO margin-top */
 .subheader2format {
-    font-family: 'Questrial', sans-serif; 
-    font-size: var(--fm-1p8rem);
-    line-height: var(--fs-32px);
-    text-align: center;
+  font-family: "Questrial", sans-serif;
+  font-size: var(--fm-1p8rem);
+  line-height: var(--fs-32px);
+  text-align: center;
 }
 
-.header1format span::after, .subheader1format span::after  {
-    content: '\a';
-    white-space: pre;
+.header1format span::after,
+.subheader1format span::after {
+  content: "\a";
+  white-space: pre;
 }
 
-.text span::after, .subheader2format span::after {
-    content: '\a';
-    white-space: pre;
+.text span::after,
+.subheader2format span::after {
+  content: "\a";
+  white-space: pre;
 }
 
 .centre {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .OrangePictures {
-    grid-area: orange;
+  grid-area: orange;
 }
 
 .Desktop-OrangePict {
-
-    display:none;
+  display: none;
 }
 
 .OrangePict {
-    
-    width: var(--fs-320px);
-    height: var(--fs-200px);
-    /* I had this working fine, filling space, from left to right;
+  width: var(--fs-320px);
+  height: var(--fs-200px);
+  /* I had this working fine, filling space, from left to right, on the mobile view;
        For some reason, which I can figure out why, it no longers works.
-       So instead I have centred it */
-    margin: 0 var(--fm-2em);
-    display:block;
+    */
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
 }
 
 .format-whattitle {
-    font-size: var(--fm-1p4rem);
-    grid-area: whattitle; 
+  font-size: var(--fm-1p4rem);
+  grid-area: whattitle;
 }
 
 .display-3icons {
-    font-size: var(--fm-1p4rem);
-    grid-area: icons3;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--fm-1em);
+  font-size: var(--fm-1p4rem);
+  grid-area: icons3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--fm-1em);
 }
-
 
 .flex-3icons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--fm-1em);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--fm-1em);
 }
 
-.ThreeIcons{
-    /* 70px X 70px */
-    width:4.375em;
-    height:4.375em;
+.ThreeIcons {
+  /* 70px X 70px */
+  width: 4.375em;
+  height: 4.375em;
 }
 
 .tenpercent-para {
-    padding: 1em 0;
-    background-color: var(--lilac);
-    text-align: center;
+  padding: 1em 0;
+  background-color: var(--lilac);
+  text-align: center;
 }
 
-
-.paragraphtext1, .paragraphtext2, .paragraphtext3 {
-    margin-bottom: var(--fm-1em);
-    font-size: var(--fm-1rem);
-    text-align:center;
-    line-height: var(--fm-1p6rem);
+.paragraphtext1,
+.paragraphtext2,
+.paragraphtext3 {
+  margin-bottom: var(--fm-1em);
+  font-size: var(--fm-1rem);
+  text-align: center;
+  line-height: var(--fm-1p6rem);
 }
 
 .paragraphtext1 span::after {
-    content: "I'm a paragraph. Click here to\A add your own text and edit me. Let\A your users get to know you.";
-    white-space: pre;
+  content: "I'm a paragraph. Click here to\A add your own text and edit me. Let\A your users get to know you.";
+  white-space: pre;
 }
 
 .GreenArea {
-    grid-area:green;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
+  grid-area: green;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
     "greenpict"
     "greenhr"
     "greenbutton";
-    background-color: var(--light-green);
+  background-color: var(--light-green);
 }
 
-.GreenDisplay {
-    grid-area: greenpict;
+.GreenPictures {
+  grid-area: greenpict;
 }
 
-.GreenPicture {
-    /* 280px X 377px */
-    width:17.5em;
-    height:23.563em;
-    margin: 2em auto;
-    display:block; /* Necessary in order to centre images */
+.GreenPict {
+  /* 280px X 377px */
+  width: 17.5em;
+  height: 23.563em;
+  margin: 2em auto;
+  display: block; /* Necessary in order to centre images */
+}
+
+.Desktop-GreenPict {
+  display: none;
 }
 
 .GreenHeader {
-    grid-area: greenhr;
-    font-family: 'Questrial', sans-serif; 
-    font-size: var(--fm-1p8rem);
-    line-height: var(--fs-32px);
-    text-align: center;    
+  grid-area: greenhr;
+  font-family: "Questrial", sans-serif;
+  font-size: var(--fm-1p8rem);
+  line-height: var(--fs-32px);
+  text-align: center;
 }
 
 .paragraphtext2 span::after {
-    content: "I'm a paragraph. Click here to add\A your own text and edit me. It’s easy.\A Just click “Edit Text” or double click\A me to add your own content and make\A changes to the font. I’m a great place\A for you to tell a story and let your users\A know a little more about you.";
-    white-space: pre;
+  content: "I'm a paragraph. Click here to add\A your own text and edit me. It’s easy.\A Just click “Edit Text” or double click\A me to add your own content and make\A changes to the font. I’m a great place\A for you to tell a story and let your users\A know a little more about you.";
+  white-space: pre;
 }
 
 .OurVisionButton {
-    grid-area:greenbutton;
+  grid-area: greenbutton;
 }
 
 .GButton {
-    font-family: 'Raleway', sans-serif; 
-    background-color: var(--light-green);
-    color: var(--black);
-    border: var(--fs-2px) solid  var(--black) ;
-    margin: 2em 0;
-    width:50%;
+  font-family: "Raleway", sans-serif;
+  background-color: var(--light-green);
+  color: var(--black);
+  border: var(--fs-2px) solid var(--black);
+  margin: 2em 0;
+  width: 50%;
 }
 
 .LilacArea {
-    grid-area:body2;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
+  grid-area: body2;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
     "lilacheader"
     "lilactable"
     "lilacbutton";
-    background-color: var(--lilac);
+  background-color: var(--lilac);
 }
 
 .LilacHeader {
-    grid-area: lilacheader;
+  grid-area: lilacheader;
 }
 
 .LilacTable {
-    grid-area: lilactable;
+  grid-area: lilactable;
 }
 
 .BottlesPicture {
-    /* 280px X 274px */
-    width:17.5em;
-    height:17.125em;
-    margin: 2em auto;
-    display:block; /* Necessary in order to centre images */
+  /* 280px X 274px */
+  width: 17.5em;
+  height: 17.125em;
+  margin: 2em auto;
+  display: block; /* Necessary in order to centre images */
 }
 
 .ViewAllButton {
-    grid-area:lilacbutton;
+  grid-area: lilacbutton;
 }
 
 .LButton {
-    font-family: 'Raleway', sans-serif; 
-    background-color: var(--lilac);
-    color: var(--black);
-    border: var(--fs-2px) solid  var(--black) ;
-    margin: 2em 0;
-    width:50%;
+  font-family: "Raleway", sans-serif;
+  background-color: var(--lilac);
+  color: var(--black);
+  border: var(--fs-2px) solid var(--black);
+  margin: 2em 0;
+  width: 50%;
 }
 
 .WhiteArea {
-    grid-area:body3;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
+  grid-area: body3;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
     "whitepict"
     "whitehr"
     "whitebutton";
-    background-color: var(--white);
+  background-color: var(--white);
 }
 
 .WhiteDisplay {
-    grid-area: whitepict;
+  grid-area: whitepict;
 }
 
 .WhitePicture {
-    /* 280px X 371px */
-    width:17.5em;
-    height:23.188em;
-    margin: 2em auto;
-    display:block; /* Necessary in order to centre images */
+  /* 280px X 371px */
+  width: 17.5em;
+  height: 23.188em;
+  margin: 2em auto;
+  display: block; /* Necessary in order to centre images */
 }
 
 .WhiteHeader {
-    grid-area: whitehr;
-    font-family: 'Questrial', sans-serif; 
-    font-size: var(--fm-1p8rem);
-    line-height: var(--fs-32px);
-    text-align: center;    
+  grid-area: whitehr;
+  font-family: "Questrial", sans-serif;
+  font-size: var(--fm-1p8rem);
+  line-height: var(--fs-32px);
+  text-align: center;
 }
 
 .WButton {
-    font-family: 'Raleway', sans-serif; 
-    background-color: var(--white);
-    color: var(--black);
-    border: var(--fs-2px) solid  var(--black);
-    margin: var(--fm-2em) 0;
-    width:50%;
+  font-family: "Raleway", sans-serif;
+  background-color: var(--white);
+  color: var(--black);
+  border: var(--fs-2px) solid var(--black);
+  margin: var(--fm-2em) 0;
+  width: 50%;
 }
 
 .GetJuiceBarHeader {
-    grid-area: gjbhr;
+  grid-area: gjbhr;
 }
 
 .display-3items-flexrow {
-    grid-area: nums3;
+  grid-area: nums3;
 }
 
 .display-3numbers {
-    font-size: var(--fm-1p4rem);
+  font-size: var(--fm-1p4rem);
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--fm-1em);
-    background-color: var(--light-green);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--fm-1em);
+  background-color: var(--light-green);
 }
 
-.Circle { 
-    /* Circular Border 
+.Circle {
+  /* Circular Border 
     see https://css-tricks.com/almanac/properties/b/border-radius/
     For a circle, 50% */
-    border-radius: 50%;
-    border: var(--fs-2px) solid  var(--black);
-    padding: var(--fm-1rem);
-    margin: var(--fm-1rem);
-} 
+  border-radius: 50%;
+  border: var(--fs-2px) solid var(--black);
+  padding: var(--fm-1rem);
+  margin: var(--fm-1rem);
+}
 
 .paragraphtext3 span::after {
-    content: "I'm a paragraph. Click here to add\A your own text and edit me.";
-    white-space: pre;
+  content: "I'm a paragraph. Click here to add\A your own text and edit me.";
+  white-space: pre;
 }
 
 .gap1 {
-    margin: 1em 0;
+  margin: 1em 0;
 }
 
 .FollowUs {
-    grid-area: follow;
-    height: var(--fm-16em);
-    text-align: center;
-    background-color: var(--white)
+  grid-area: follow;
+  height: var(--fm-16em);
+  text-align: center;
+  background-color: var(--white);
 }
 
 .FButton {
-    border:none;
-    font-size: var(--fs-36px);
-    padding: 0;
+  border: none;
+  font-size: var(--fs-36px);
+  padding: 0;
 }
 
 .FooterArea {
-    grid-area: footer;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
+  grid-area: footer;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
     "picts"
     "gsc"
     "form"
     "serving"
     "logo"
     "copyright";
-    background-color: var(--dark-green);
-    color: var(--white);
+  background-color: var(--dark-green);
+  color: var(--white);
 }
 
 .fourpicts {
-    grid-area: picts;
-    height: var(--fm-16em);
+  grid-area: picts;
+  height: var(--fm-16em);
+  display: none;
+}
+
+.Desktop-fourpicts {
+  display: none;
 }
 
 .Transf-Pict4 {
-    position: relative;
-    /* 131px X 159px */
-    height: 8.188rem;
-    margin: 9.938rem;
-    z-index:1;
-    bottom: 8rem;
-    left: -2rem;
-    transform: rotate(350deg);
+  position: relative;
+  /* 123px X 148px */
+  width: 7.688rem;
+  height: 9.25rem;
+  z-index: 1;
+  top: 4rem;
+  left: 6rem;
+  transform: rotate(330deg);
 }
 
 .Transf-Pict3 {
-    position: relative;
-    /* 131px X 159px */
-    height: 8.188rem;
-    margin: 9.938rem;
-    z-index:2;
-    left: -3rem;
-    bottom:41rem;
-    transform: rotate(30deg);
+  position: relative;
+  /* 123px X 150px */
+  width: 7.688rem;
+  height: 9.375rem;
+  z-index: 2;
+  bottom: 0.6rem;
+  left: -5rem;
+  transform: rotate(16deg);
 }
 
 .Transf-Pict2 {
-    position: relative;
-    /* 131px X 159px */
-    height: 8.188rem;
-    margin: 9.938rem;
-    z-index:2;
-    left: -1rem;
-    bottom:70rem;
-    transform: rotate(340deg);
+  position: relative;
+  /* 131px X 154px */
+  width: 8.188rem;
+  height: 9.625rem;
+  z-index: 3;
+  bottom: 5rem;
+  left: -10rem;
+  transform: rotate(345deg);
 }
 
 .Transf-Pict1 {
-    position: relative;
-    /* 131px X 159px */
-    height: 8.188rem;
-    margin: 9.938rem;
-    z-index:2;
-    left: 2rem;
-    bottom:94rem;
-    transform: rotate(20deg);
+  position: relative;
+  /* 131px X 159px */
+  width: 8.188rem;
+  height: 9.938rem;
+  z-index: 4;
+  bottom: 10rem;
+  left: 10rem;
+  transform: rotate(20deg);
 }
 
 .GetStartedConnect {
-    margin-left: 1rem; 
-    margin-right: 4rem; 
-    margin-bottom: var(--fm-4em);
+  margin-left: 1rem;
+  margin-right: 4rem;
+  margin-bottom: var(--fm-4em);
 }
 
 .Label {
-    font-size: var(--fm-1p6rem);
-    margin-bottom: var(--fm-1em);
+  font-size: var(--fm-1p6rem);
+  margin-bottom: var(--fm-1em);
+}
+
+.gsc-container {
+  grid-area: gsc;
 }
 
 .Row {
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: center;
-    font-size: var(--fm-1rem);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  font-size: var(--fm-1rem);
 }
 
 .Column {
-    display:flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .ALink {
-    color: var(--white);
-    padding-bottom: var(--fm-1em);
+  color: var(--white);
+  padding-bottom: var(--fm-1em);
 }
 
- .ALink a:link {
-    text-decoration: none;
+.ALink a:link {
+  text-decoration: none;
 }
-  
+
 .ALink a:visited {
-    text-decoration: none;
+  text-decoration: none;
 }
-  
+
 .ALink a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
-  
+
 .ALink a:active {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .email-control {
-    width:40%;
-    padding-bottom: var(--fm-1em);
-    margin-right: var(--fm-1em);
-    background-color: var(--dark-green);
-    border-bottom: var(--fs-2px) solid var(--white);
+  width: 40%;
+  padding-bottom: var(--fm-1em);
+  margin-right: var(--fm-1em);
+  background-color: var(--dark-green);
+  border-bottom: var(--fs-2px) solid var(--white);
 }
 
 .form-container {
-    grid-area:form;    
-    margin-bottom: var(--fm-4em);
+  grid-area: form;
+  margin-bottom: var(--fm-4em);
 }
 
-.form-container p  {
-    font-size: var(--fm-1p8rem);
-    margin-bottom: var(--fm-1em);
+.form-container p {
+  font-size: var(--fm-1p8rem);
+  margin-bottom: var(--fm-1em);
 }
 
-.form-container input[type=submit] {
-        background-color: var(--dark-green);
-        color: var(--white);
-        padding: var(--fs-12px) var(--fs-20px);
-        border: var(--fs-2px) solid var(--white); 
-        margin-bottom: var(--fm-2em);
-        cursor: pointer;
+.form-container input[type="submit"] {
+  background-color: var(--dark-green);
+  color: var(--white);
+  padding: var(--fs-12px) var(--fs-20px);
+  border: var(--fs-2px) solid var(--white);
+  margin-bottom: var(--fm-2em);
+  cursor: pointer;
 }
 
-.serving-container { 
-    grid-area:serving;
-    font-size: var(--fm-1p8rem);
-    color: var(--white);
-    margin-bottom: var(--fm-2em);
+.serving-container {
+  grid-area: serving;
+  font-size: var(--fm-1p8rem);
+  color: var(--white);
+  margin-bottom: var(--fm-2em);
 }
 
 .serving-container a {
-    color: var(--white);
+  color: var(--white);
 }
 
 /* I adopted the answer from https://stackoverflow.com/questions/4861224/how-to-use-css-to-surround-a-number-with-a-circle */
 
 .JBLogo {
-    grid-area: logo;
-    border-radius: 50%;
-    width: var(--fm-5rem);
-    height: var(--fm-5rem);
-    padding-top:0.5em;
-    border: var(--fs-2px) solid var(--white);
-    color: var(--white);
-    text-align: center;
-    font-size: var(--fm-1p3rem);
-    font-weight:bold;
-    margin-bottom: var(--fm-1em);
+  grid-area: logo;
+  border-radius: 50%;
+  width: var(--fm-5rem);
+  height: var(--fm-5rem);
+  padding-top: 0.5em;
+  border: var(--fs-2px) solid var(--white);
+  color: var(--white);
+  text-align: center;
+  font-size: var(--fm-1p3rem);
+  font-weight: bold;
+  margin-bottom: var(--fm-1em);
 }
 
 .copyright {
-    grid-area:copyright;
-    margin-top: var(--fm-2em);
-    font-size: var(--fm-1p2rem);
-    color: var(--white);
-    margin-bottom: var(--fm-2em);
+  grid-area: copyright;
+  margin-top: var(--fm-2em);
+  font-size: var(--fm-1p2rem);
+  color: var(--white);
+  margin-bottom: var(--fm-2em);
 }
 
-
-  /* MEDIA QUERY FOR LARGER DISPLAY: */
-  @media screen and (min-width: 769px) {
-
-
-    .OrangePict {
-        display:none;
-    }
-
-    .Desktop-OrangePict {
-        grid-area: orange;
-        width: 100%;
-        display:block;
-    }
-
-    .tenpercent-para {
-        margin: 0 auto;
-        display:flex;
-        justify-content: center;
-    }
-
-
-    .display-3icons {
-        flex-direction: row;
-        align-items: center;
-        gap: var(--fm-1em);
-    }
-
-    .flex-3icons {
-        display: block;
-        margin-left:8rem;
-    }
-
-
-    .GreenArea {
-        grid-area:green;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas: 
-        "greenpict greenhr"
-        "greenpict greenhr"
-        "greenpict greenbutton";
-        background-color: var(--light-green);
-    }
-
-
-    .row-flexdisplay {
-        display:flex;
-        flex-direction:row;
-        justify-content: space-between;
-  
-    }
-
-    .FooterArea {
-        grid-area: footer; 
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows:    1fr 1fr 1fr 1fr;
-        grid-template-areas:
-        "picts picts picts"
-        "gsc form serving"
-        "gsc form logo"
-        "copyright copyright copyright";
-    }
-
-
-    .display-3items-flexrow {
-        display:flex;
-    }
-
-    .fourpicts{
-        display:none;
-    }
+/* MEDIA QUERY FOR LARGER DISPLAY: */
+@media screen and (min-width: 769px) {
+  .OrangePict {
+    display: none;
   }
+
+  .Desktop-OrangePict {
+    /* 1776px X 800px */
+    width: 111em;
+    height: 50em;
+    display: block;
+  }
+
+  .tenpercent-para {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .display-3icons {
+    flex-direction: row;
+    align-items: center;
+    gap: var(--fm-1em);
+  }
+
+  .flex-3icons {
+    display: block;
+    margin-left: 8rem;
+  }
+
+  .GreenArea {
+    grid-area: green;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "greenpict greenhr"
+      "greenpict greenhr"
+      "greenpict greenbutton";
+    background-color: var(--light-green);
+  }
+
+  .GreenPict {
+    display: none;
+  }
+
+  .Desktop-GreenPict {
+    /* 557px X 749px */
+    width: 34.813em;
+    height: 46.813em;
+    display: block;
+  }
+
+  .row-flexdisplay {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+  }
+
+  .FooterArea {
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "picts picts picts"
+      "gsc form serving"
+      "gsc form logo"
+      "copyright copyright copyright";
+  }
+
+  .fourpicts {
+    display: none;
+  }
+
+  .Desktop-fourpicts {
+    grid-area: picts;
+    /* height: var(--fm-16em); DG */
+    /* height: 48em; */
+    display: block;
+  }
+
+  .Desktop-fourpicts img:nth-of-type(1) {
+    position: relative;
+    /* 239px X 291px */
+    width: 14.938rem;
+    height: 18.188rem;
+    z-index: 1;
+    bottom: 7rem;
+    left: 25%;
+    transform: rotate(325deg);
+  }
+
+  .Desktop-fourpicts img:nth-of-type(2) {
+    position: relative;
+    /* 241px X 297px */
+    width: 15.063rem;
+    height: 18.563rem;
+    z-index: 2;
+    left: 14rem;
+    bottom: 8rem;
+    transform: rotate(22deg);
+  }
+
+  .Desktop-fourpicts img:nth-of-type(3) {
+    position: relative;
+    /* 259px X 310px */
+    width: 16.188rem;
+    height: 19.375rem;
+    z-index: 3;
+    left: 15rem;
+    bottom: 8rem;
+    transform: rotate(345deg);
+  }
+
+  .Desktop-fourpicts img:nth-of-type(4) {
+    position: relative;
+    /* 250px X 308px */
+    width: 15.625rem;
+    height: 19.25rem;
+    z-index: 4;
+    left: 15rem;
+    bottom: 7rem;
+    transform: rotate(20deg);
+  }
+
+  .display-3items-flexrow {
+    display: flex;
+  }
+}
