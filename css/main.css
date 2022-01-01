@@ -30,6 +30,8 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 550px;
+        height: inherit;
+        position: relative;
     }
 /* logo  */
     .main-logo-and-hero-texts{
