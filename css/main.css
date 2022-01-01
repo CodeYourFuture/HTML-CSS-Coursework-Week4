@@ -9,12 +9,8 @@
     --secondary-text: 'Outfit', sans-serif;
 
 }
-.text_1 {
-    font-family: var(--primary-text);
-}
-.text_2 {
-    font-family: var(--secondary-text);
-}
+
+
 .btn {
     background: var(--red-brown);
     color: var(--white);
@@ -23,20 +19,57 @@
     /* width: ; */
 
 }
-.tc {
-    text-align: center;
+
+
+
+.padding {
+    padding: 0 3%;
 }
+
+/* navigation for mobile view  that only show up with javascript effect*/
+#responsive-display{
+    height: 100vh; /*to cover the screen */
+    background: var(--light-grey);
+    width: 100vw;
+    z-index: 300;
+    position: fixed;
+    top: 0;
+    padding: 20px;
+    color: var(--red-brown);
+    display: none; /* changes to flex after clicking the hamburger */
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: space-between;
+}
+.responsive-nav {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.responsive-nav ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+/* ********************************************** */
+
+
+/* all pages container */
 .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100vw;
-    margin: 0;
     background: var(--light-grey);
     font-family: var(--primary-text);
+   
+
     
 }
 
+/* the topmost search bar  */
 header {
     color: var(--red-brown);
     background: var(--white);
@@ -46,7 +79,9 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 50px;
-    padding: 0 40px;
+    position: static;
+    top: 0;
+    z-index: 5;
     
     
 }
@@ -59,14 +94,13 @@ header {
     height: 100%;
     width: 25vw;
     justify-content: space-between;
-
-  
-    
 }
+
 .search-icon {
     font-size: 1.5rem;
-    /* height: 100%; */
 }
+
+
 .search-bar::placeholder {
     color: var(--red-brown);
     font-size: 1rem;
@@ -75,33 +109,125 @@ header {
     border: none;
     height: 40px;
 }
+
+.shopping-cart {
+    
+    margin-left: auto;
+}
+
+/* title, and navigations below the searchbar  */
 nav {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 40px;
     color: var(--red-brown);
-}
-.links{
-    display: none;
+    height: 10rem;
+    z-index: 35;
     
 }
+h1>a{
+    font-size: 1.5rem;
+    font-weight: 1rem;
+}
+
+	/* style start for dropdown menu */
+		/* the dropdown button takes some of button tag css because it is button */
+        .dropbtn {
+            background-size: cover;
+            font-size: 1rem;
+            font-weight: normal;
+            text-transform: capitalize;
+            color: var(--red-brown);
+            background: var(--light-grey);
+            border: none;
+            cursor: pointer;
+        }
+        
+                /* the list of links within dropdown wont appear because of display:none  */
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1
+        }
+                /* style for anchor elements inside list of dropdown menu */
+        .dropdown-content a {
+          float: none;
+          color: black;
+          font-weight: bold;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          text-align: left;
+          background: var(--light-grey);
+        }
+        
+        .dropdown-content a:hover {
+          background-color: #ddd;
+        }
+        
+                /* when hovered to .dropdown, change display of dropdown-content from none to block  */
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+        
+.toggle .line1 {
+    transform: rotate(45deg) translate(15px, 16px);
+}
+.toggle .line2 {
+    transform: rotate(-55deg) translate(-5px, 3px);
+}
+.toggle .line3 {
+    display: none;
+}  
+/* .box {
+    font-weight: bolder;
+    font-size: 50px;
+    text-align: center;
+} */
+
+
+        /* css for text changing  */
+.box div:after {
+    content: 'Call us on 020-55-991-07';
+    animation: text 5s infinite
+}
+@keyframes text {
+    100% {
+        content: 'We Deliver To Your Doorstep'
+    }
+    
+}
+        /* **********  */
+
+
+.links{
+    display: none;
+}
+
 ul li {
     list-style: none;
     font-family: var(--secondary-text);
-    
+    cursor: pointer;
 }
 a {
-    font-size: 1.5rem;
+    font-size: 1rem;
+    text-decoration: none;
+    font-family: var(--secondary-text);
+    cursor: pointer;
+    color: var(--red-brown);
+    
 }
 
 
 
 
 .hamburger {
-
+    cursor: pointer;
     height: 20px;
     width: 25px;
+    /* z-index: 500; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -110,72 +236,149 @@ a {
     background-color: var(--red-brown);
     height: 2px;
 }
+.side-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 150px;
+   
+}
+.profile {
+    z-index: 5;
+    display: none;
+    z-index: 25;
+    font-family: var(--secondary-text);
+}
+        /* used for shopping bag icon size  */
+.sm {
+    font-size: 0.5rem;
+    margin-left: 10px;
+}
+/* start of the banner for individual pages  */
 .main {
-    background-image: url('../images/main-bg.webp');
+    position: relative;
+    height: 100vh;
+}
+.main-image {
+    background: url('../images/main-bg.webp');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 75vh;
-    color: var(--white);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0
+}
+.cacti-bg {
+    background: url('../images/cacti-bg.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.succulents-bg {
+    background: url('../images/succulents-bg.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.main-logo {
+    position: absolute;
+    background: rgba(0,0,0,0.5);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.logo-image {
+    width: 10rem;
+    height: 10rem;
     
+}
+
+.main-logo-box {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo-text1 {
     border-bottom: 2px solid white;
-    position: absolute;
-    transform: translate(-195%, 73%);
-    transform: translateY(-15%);
+    color: white;
+    margin-right: 1rem;
+    text-align: center;
 } 
+
 .logo-text2 {
     border-bottom: 2px solid white;
-    position: absolute;
-    transform: translate(49%, 73%);
-    /* transform: translateY(-15%); */
+    color: white;
+    margin-left: 1rem;
+    text-align: center;
 } 
-.main {
-    position: relative;
-}
-.dark-bg {
-    background: black;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    opacity: 0.1;;
-}
-.main h2{
-   font-size: 2.25rem;
+
+
+.main-text{
    letter-spacing: 0.5rem;
+   text-align: center;
+   font-size: 1rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
    
 }
-.main p {
-    font-size: 1.25rem;
+
+.main-text h2{
+    color: var(--white);
+
+}
+
+.main-text-para {
+    font-size: 1rem;
     font-weight: 100;
+    width: 100%;
     color: white;
 }
+
+.cacti-text-para {
+    font-size: 0.75em;
+    width: 80%;
+    color: white;
+}
+/* **********end of main banner ***** */
+
+
 .images {
     display: flex;
-    flex-direction: column;
-    /* position: relative; */
-}
-.images div {
-    /* position: relative; */
-    margin: 25px 0;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    z-index: 0;
+    background: var(--light-grey);
+}
+
+.image-card {
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
     text-align: center;
     color: var(--red-brown);
-    font-size: 1.25rem;
+    font-size: 0.80em;
     letter-spacing: 5px;
-    /* border-bottom: 2px solid var(--red-brown); */
+    background: var(--white);
 }
-/* .image-texts {
-    position: absolute;
-    top: 25%
-}  */
+
+.image-card-cacti {
+    background: var(--light-grey);
+}
+
 
 img {
     width: 100%;
@@ -183,19 +386,6 @@ img {
     
 }
 
-/* .logo-image::before {
-    content: "hi";
-    display: block;
-    height: 30px;
-    width: ;
-
-}
-.logo-image::after {
-    content:"2023";
-    display: inline-block;
-    color: white;
-    
-} */
 .about-us {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -210,25 +400,25 @@ img {
     background: var(--white);
     margin: 0 0;
     text-align: center;
+    z-index: 5;
 }
 .abt {
     grid-area: txt;
-    /* height: fit-content; */
+    
 }
 .abt p {
     margin: 2%;
 }
 .img1 {
     grid-area: img1;
-    /* height: fit-content; */
+    
 }
 .img2 {
     grid-area: img2;
-    /* height: fit-content; */
+    
 }
 .img3 {
-    grid-area: img3;
-    
+    grid-area: img3;  
 
 }
 .buy-online {
@@ -237,7 +427,6 @@ img {
     text-align: center;
     font-family: var(--primary-text);
     font-size: 3.5rem;
-    padding: 0 ;
     grid-area: banner;
     height: 100%;
     display: flex;
@@ -245,20 +434,26 @@ img {
     align-items: center;
 }
 
-.buy-online button {
-    padding: 5%;
-    /* letter-spacing: 1%; */
+.white-button {
+    margin-bottom: 15%;
+    min-width: 100px;
+    height: auto;
+    min-height: 70px;
+    align-self: center;
 }
+ 
+/* ******start of the form part in the home page  */
 .form {
-    background: url('../images/bg-img2.webp');
     height: 100vh;
-    /* padding: 3%; */
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-    
+    z-index: 25;
+    position: relative;
+    background: var(--light-grey);
 }
+
+.form-bg-image {
+    height: 100%;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -268,26 +463,38 @@ form {
     opacity: 0.9;
     margin-left: auto;
     margin-right: auto;
-    /* padding: 2%; */
-    height: 80%;
+    width: 70%;
+    position: absolute;
+    top: 0;
+    left: 10vw;
 }
+
 .form-heading {
     text-align: center;
+    color: var(--red-brown);
+    font-size: 1.25rem;
 }
 form input {
-    height: 20px;
+    max-height: 50px; 
     /* padding: 3%; */
 }
 
 input[id="message"] {
-    height: 200px;
+    height: 5000px;
+    
 }
-.store-info h4{
+ /* ****** end of the form part in the home page  */
+
+
+ .store-info h4{
     letter-spacing: 0.5rem;
+    
 }
 
 .info-box {
     margin-bottom: 5rem;
+    width: 300px;
+    
 }
 .info-box:nth-of-type(3) p{
     text-decoration: underline;
@@ -304,25 +511,37 @@ input[id="message"] {
     display: flex;
     flex-direction: column;
     height: 100px;
-    justify-content: space-around;
+    justify-content: center ;
     align-items: flex-start;
     width: 100%;
-    padding: 3%;
+    font-size: 1.25rem;
     margin: 3%;
 
 }
+.subs-form h4 {
+    letter-spacing: 0.5rem;
+    font-size: 1.25rem;
+    text-align: center;
+}
 .subscribe input {
-    width: 80%;
-    height: 50px;
-    padding: 3%;
+    width: 90%;
+    height: 150px;
+    background: var(--green-black);
+    border: 2px solid white;
+    padding: 15px;
     margin: 3%;
 }
 .social {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 3% 40%;
+    align-items: center;
+    padding: 0 10px;
     width: 150px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 
 footer {
@@ -330,18 +549,19 @@ footer {
     color: white;
     font-family: var(--secondary-text);
     background: var(--green-black);
-    margin-top: 20%;
+    
+    z-index: 25;
 }
 .map-pic {
-    width: 100vw;
+    width: 100%;
     opacity: 0.5;
 }
 
+/* small chat icon  */
 .chat {
-    position: sticky;
-    bottom: 10px;
-    z-index: 2;
-    left: 100%;
+    position: fixed; /*make the chat icon stay as user scrolls */
+    top: 85vh;
+    left: 75%;
     width: 50px;
     background: blue;
     height: 50px;
@@ -358,18 +578,7 @@ footer {
 }
 
 
-/* .overlay {
-	position: absolute;
-	top: 4000px;
-	left: 0;
-	background: #0f3a20;
-    z-index: 2;
-	width: 100%;
-	height: 100%;
-	mix-blend-mode: overlay;
-} */
-
-@media (min-width: 540px) {
+@media (min-width: 640px) {
     .links{
         display: flex;
         flex-direction: row;
@@ -383,17 +592,48 @@ footer {
     .hamburger {
         display: none;
     }
-    .images {
-        flex-direction: row;
-    }
-    .images div {
-        margin: 0 3%
-    }
-    .about-us {
+    .profile {
+        display: block;
+        z-index: 55;
         
+    }
+   
+   header {
+       position: fixed;
+       top: 0;
+       width: 100%;
+       z-index: 100; 
+       
+   }
+   nav {
+        position: fixed;
+        top: 6vh;
+        height: 25vh;
+        z-index: 100;
+        background: var(--light-grey)
+        
+   }
+   .main-image {
+       position: fixed;
+       height: 100%;
+   }
+   
+    .images {
+        
+        z-index: 20;
+        
+    }
+    .image-card {
+        width: 300px;
+        margin: 3%;
+       
+    }
+    
+    .about-us {
+        z-index: 5;
         grid-template-areas:
         "txt txt img1 img1 img2 img2" 
         "img3 img3 img3 banner banner banner";
-        margin-top: 20%;
     }
+
 }
