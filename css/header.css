@@ -161,7 +161,6 @@ text {
 /* main  */
 .main {
   grid-area: m;
-  position: relative;
 }
 /* footer */
 .footer{
