@@ -1,9 +1,9 @@
 let toggle = false;
 
-var hamburgerMenu = document.getElementById("hamburger-menu");
-var navbar = document.getElementById("navbar");
-let hamburgerTop = document.getElementById("top");
-let hamburgerMiddle = document.getElementById("middle");
+const hamburgerMenu = document.getElementById("hamburger-menu");
+const navbar = document.getElementById("navbar");
+const hamburgerTop = document.getElementById("top");
+const hamburgerMiddle = document.getElementById("middle");
 
 hamburgerMenu.addEventListener("click", function () {
   // console.log("hello");

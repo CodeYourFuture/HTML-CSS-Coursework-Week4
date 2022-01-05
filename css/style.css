@@ -166,7 +166,7 @@ img {
 
 .about-us {
   grid-column: 1/-1;
-  background-color: rgb(224, 248, 201);
+  background-color: var(--main-bg-color);
 }
 
 .aboutUs-image {
@@ -284,7 +284,7 @@ img {
 }
 
 .delivery-content {
-  background-color: rgb(224, 248, 201);
+  background-color: var(--main-bg-color);
   padding: 1rem 4rem;
   margin-top: 1rem;
 }
