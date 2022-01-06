@@ -21,70 +21,88 @@
 
        <nav class="navbar"> <!-- container 1 -->
             <div class ="search">
-                <!-- 
-                <input id="search" type="search" name="search" placeholder="Search...">
-                <img src="#" alt="basket" class="basket"/> -->
-                <button id="search" ><img src="img/searchicon.svg"/>Search...</button>
+                <button id="search"><i class="fas fa-search"></i> Search...</button>
                 <img src="img/basket.svg" alt="basket" class="basket"/>
             </div>
             
             <div class="subhead">
                 <div class="hero">
-                    <h1>PRICKLES & CO.</h1>
-                    <p>We Deliver To Your Doorstep</p>
+                    <span>PRICKLES & CO.</span>
+                    <a class="nav_icon" href="#shop">Shop</a>
+                    <a class="nav_icon" href="#about">About</a>
+                    <a class="nav_icon" href="#faq">FAQ</a>
+                    <a class="nav_icon contact" href="#contact">Contact</a>
+                    <div class="deliver-message">We Deliver To Your Doorstep</div> <!-- this is displayed in mobile size -->
                 </div>
 
-                <div class="hero">
-                    <i class="fas fa-bars fa-2x"></i>
+                <div class="delivery-message"> <!-- this is displayed in desktop size -->
+                    <div>We Deliver To Your Doorstep</div>
+                </div>
+
+                <div class="bar">
+                    <i class="fas fa-bars fa-3x"></i>
                 </div>
             </div>
             
-            <div class="container">
-                <img class="header-image" src="img/header-img.jpeg" alt="green leaves and pink flowers">
-                <div class="bottom-left"></div>
-                <div class="centered">PRICKLES&CO</div>
-                <div class="top-right"></div>
-                <div class="bottom-right"></div>
-                <div class="centered"></div>
-              </div>
+            <div class="bg-container">
+                <div class="bg-image" alt="green leaves and pink flowers">
+                    <img src="img/mushroom.svg" alt="center mushroom icon" class="mushroom">
+                    <div class="">
+                        <h1>PRICKLES & CO</h1>
+                        <p class="sub-text">BRING NATURE INDOORS</p>
+                        <button class="shop-now-btn btn">Shop Now</button>
+                    </div>
+                </div> 
+            </div>
         </nav>
 
         <main class="products"> <!-- container 2 -->
-            <img class="cacti-image" src="img/cacti.webp" alt="flower header image"/>
-            <img class="plant-image" src="img/plants.webp" alt="flower header image"/>
-            <img class="succullent-image" src="img/succulents.webp" alt="flower header image"/>
+            <div class="cacti-image image">
+           <!-- <h2 class="product-header">CACTI</h2> -->
+                <img src="img/cacti.webp" alt="flower header image"/>
+            </div>
+
+            <div class="plant-image image">
+          <!--  <h2 class="product-header">PLANT</h2> -->
+                <img src="img/plants.webp" alt="flower header image"/>
+            </div>
+
+            <div class="succullent-image image">
+           <!-- <h2 class="product-header">SUCCULLENT</h2> -->
+                <img src="img/succulents.webp" alt="flower header image"/>
+            </div>
         </main>
 
         <section id="features"> <!-- container 3 -->
-            <div>
+            <div class="about-page">
                 <h3 class="about-topic">ABOUT US</h3>
                 <p class="about-message">I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.</p>
                 <p class="about-message">This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide.</p>
             </div>
             
-            <img class="wheel-image" src="img/wheelbarrow.webp" alt="wheel barow image"/>
+            <img class="wheel-image" src="img/wheelbarrow.webp" alt="wheel barrow image"/>
             <img class="leaf-image" src="img/leaf.webp" alt="flower header image"/>
             <img class="lady-image" src="img/lady.webp" alt="flower header image"/>
             <div class="discount">
-                <p>BUY ONLINE NOW & GET 10% OFF!</p>
-                <button class="button 2">Shop Now</button>
+                <p class="discount-text">BUY ONLINE NOW & GET 10% OFF !</p>
+                <button class="shop-btn btn">Shop Now</button>
             </div>
         </section>
 
         <section id="form"><!-- container 4 -->
-            <h3>FOR SPECIAL REQUESTS & ORDERS</h3>
+            <h3 class="form-header">FOR SPECIAL REQUESTS & ORDERS</h3>
             <form class="form" action="/action_page.php" target="_blank">
-                <label for="fname" class="label">First name *</label>
+                <label for="fname" class="label">First Name *</label>
                 <p><input id="fname" type="text" name="name" required></p>
-                <label for="lname" class="label">Last name *</label>
+                <label for="lname" class="label">Last Name *</label>
                 <p><input id="lname" type="text" name="name" required></p>
                 <label for="mail" class="label">Email *</label>
                 <p><input id="mail" type="text" name="email" required></p>
-                <label for="phone" class="label">Phone *</label>
-                <p><input id="phone" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required></p>
-                <label for="message" class="label">Message *</label>
-                <p><textarea id="message" type="text" cols="30" rows="10"></textarea>
-                <p><button type="submit" class="submit">Send</button></p>
+                <label for="phone" class="label">Phone</label>
+                <p><input id="phone" type="tel" name="phone"></p>
+                <label for="message" class="label">Message</label>
+                <p></p><textarea id="message" type="text"></textarea>
+                <p><button type="submit" class="submit-button button">Send</button></p>
             </form>
                 <!-- <img class="leaves-image" src="img/leaves.webp" alt="plant leaves"/> -->
         </section>
@@ -111,12 +129,13 @@
         </div>
         <div class="store">
             <h3>SUBSCRIBE</h3>
-            <p><label for="email" class="label">Enter your email  here *</label></p>
+            <p class="email-text" for="email" class="">Enter your email  here *</p>
             <p>​​<input id="email" class="email" type="email" name="email" required></p>
-            <p>​<button type="button" class="subscribe">Subscribe Now</button></p>
+            <p>​<button type="button" class="subscribe-button button">Subscribe Now</button></p>
         </div>
         <div class="store">social icons</div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.840347814382!2d-122.38929098474847!3d37.770341520187756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7fc4fe5e0af3%3A0x11c548b59491f791!2s500%20Terry%20A%20Francois%20Blvd%206th%20floor%2C%20San%20Francisco%2C%20CA%2094158%2C%20USA!5e0!3m2!1sen!2suk!4v1639046417862!5m2!1sen!2suk" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div></div>
     </footer>    
     <!-- Please leave this in to credit the creators of this design -->
 </body>

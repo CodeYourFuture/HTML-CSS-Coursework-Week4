@@ -2,16 +2,26 @@
 
 /* Dont' forget to link this file to your HTML in the <head> */
 :root {
+  --red-brown: #A05941; 
     --red-brown: #A05941; 
+  --red-brown: #A05941; 
+  --green-black: #133032;  
     --green-black: #133032;  
+  --green-black: #133032;  
+  --light-grey: #EDEDEE; 
     --light-grey: #EDEDEE; 
+  --light-grey: #EDEDEE; 
+  --white: #FFF; 
     --white: #FFF; 
-    --transparent-white: rgba(0,0,0,0.75);
-    --black: #000;
-
+  --white: #FFF; 
+  --transparent-white: rgba(0,0,0,0.75);
+  --black: #000;
 }
 
+
+
 body{
+    
     background-color: var(--light-grey);
     margin: 0;
     font-family: 'outfit', 'sans-serif';
@@ -20,11 +30,6 @@ body{
 main{
     box-sizing: border-box;
 }
-
-img{
-    width: 100%;
-}
-
 /* font-family: 'Fjalla One', sans-serif;
 font-family: 'Outfit', sans-serif; */
 
@@ -41,11 +46,6 @@ font-family: 'Outfit', sans-serif; */
       "features"
       "form"
       "footer";
-    /*grid-gap: 1rem; take out*/
-    /* add font family here */
-    font-weight: 800;
-    font-size: 12px;
-    background: var(--light-grey);
     color: var(--red-brown);
   }
 
@@ -61,22 +61,25 @@ font-family: 'Outfit', sans-serif; */
     background: var(--white);
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 10px;
+    margin: 0;
   }
   
   #search{
     box-shadow: none;
-    border: 1px solid var(--red-brown);
+    border: 1px solid var(--white);
     background: var(--white);
     color: var(--red-brown);
     display: inline-block;
-    padding-right: 8rem;
+    padding-left: 2rem;
+    font-size: 1.2rem;
   }
   
   .basket{
     width: 5%;
     height: auto;
     padding-top: 5px;
+    padding-right: 30px;
     margin-bottom: 0;
   }  
 
@@ -85,28 +88,71 @@ font-family: 'Outfit', sans-serif; */
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    margin: 15px 40px;
   }
 
   .hero{
     letter-spacing: 3px;
+
+  }
+  .delivery-message{
+    display: none;
+    font-size: 1.5rem;
+  }
+
+  span{
+    font-size: 2.5rem;
+  }
+
+  .nav_icon{
+    display: none;
   }
 
   /* header image */
   
-  .centered {
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 45px;
-    color: var(--white);
-    width: 50vh;
-    font-weight: normal;
-    /*mask-border-width: 70%;*/
-    letter-spacing: 10px;
+  .bg-image{
+    padding: 100px 0px;
+    background-size: 100%;
+    background-image: url("../img/header-img.jpeg");
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
   }
+
+  .welcome-page {
+    text-align: center;
+  }
+
+  h1{
+    font-size: 5rem;
+    font-weight: 400;
+    letter-spacing: 10px;
+    margin: 0;
+  }
+
+  .sub-text{
+    font-family: 'Outfit', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    letter-spacing: 11px;
+    padding: 0 60px;
+    /*width: 55%;*/
+    /*margin: 45px 25%;
+    text-align: center;*/
+  }
+
+ .btn{
+   font-family: 'Outfit',sans-serif;
+    border: none;
+    padding: 20px 80px;
+    font-size: 1.8rem;
+  }
+
+  .shop-now-btn{
+    background-color: var(--red-brown);
+    color: var(--white);
+  }
+
   
   /*----- container 1 end -----*/
   
@@ -116,14 +162,10 @@ font-family: 'Outfit', sans-serif; */
   }
 
   .products{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    align-items: center;
   }
 
-  .products > img {
-    margin: 1rem;
-  }
+  
   /*----- container 2 end -----*/
   
   /*----- container 3 ------*/
@@ -132,75 +174,87 @@ font-family: 'Outfit', sans-serif; */
     text-align: center;
   }
 
-    .about-topic {
+  h3{
+    font-size: 2rem;
+    letter-spacing: 15px;
     font-family: 'outfit', 'sans-serif';
-    /*font-size: 4.5rem;
-    letter-spacing: 1rem;*/
+  }
+
+  .about-page {
+    width: 100%;
+    background: var(--white);
   }
 
    .about-message {
     font-family: 'outfit', 'sans-serif';
-    font-size: 1rem;
+    font-size: 1.8rem;
     box-sizing: border-box;
-    padding: 1rem 3rem;
-    line-height: 1.4rem;
+    padding: 1rem 3.7rem;
+    line-height: 2.5rem;
   }
 
   .discount{
     background: var(--green-black);
     margin: 0;
-    font-family: 'Fjalla One', sans-serif;
-    color: var(--white);
-    font-size: 50px;
-    padding: 10px 30px;
+    padding: 50px 60px 150px;
   }
 
-  .discount > button{
-    background: var(--white);
-    border: none;
-    width: 30%;
-    padding: 15px 20px;
-    margin-bottom: 65px;
-    font-size: 1rem;
-    color: rgb(65, 83, 27);
+  .discount-text{
+    font-family: 'Fjalla One', sans-serif;
+    color: var(--white);
+    font-size: 110px;
+    letter-spacing: 3px;
+    margin: 75px 0;
   }
+
+  
   /* container 3 end */
   
   /*----- container 4 -----*/
   #form {
     grid-area: form;
     color: var(--black);
-    padding: 10%;
+    padding: 5px 5%;
     background: var(--white);
     margin: 15px 15px 0;
+    
+  }
+
+  .form-header{
+    color:var(--red-brown);
+    text-align: center;
+    padding: 10px 10%;
   }
 
   .form > label {
-    /*font-family: 'outfit', 'sans-serif';*/
-    
-    font-size: 1.2rem; 
+    font-size: 2rem; 
   }
 
   input[type=text],
   input[type=tel] {
-      width: 89%;
-      padding: 1rem;
-      border: 1px solid var(--black);
+      width: 90%;
+      padding: 1.5rem;
+      border: 2px solid var(--black);
   }
 
   textarea{
-    width: 96%;
-    border: 1px solid var(--black);
-  }
-  
-  .submit{
-    border: none;
     width: 98%;
+    border: 2px solid var(--black);
+    height: 350px;
+  }
+
+ .button{
+    border: none;
     padding: 20px 30px;
-    background:var(--red-brown);
-    color: var(--white);
-    font-size: 1rem;
-}
+    font-size: 1.8rem;
+    font-family: 'outfit', 'sans-serif';
+  }
+
+.submit-button{
+  width: 99%;
+  background:var(--red-brown);
+  color: var(--white);
+  }
 
   
   /*----- container 4 end -----*/
@@ -222,46 +276,103 @@ font-family: 'Outfit', sans-serif; */
 }
 
 .store > p{
-    font-family: 'outfit', 'sans-serif';
-    font-size: 1rem;
+    font-size: 2rem;
     line-height: 0;
 }
-.store > h3 {
-    font-family: 'outfit', 'sans-serif';
-    font-size: 1rem;
-    letter-spacing: 1rem;
+
+.email-text{
+  text-align: left;
+  margin: 20px 5%;
 }
 
-input > #email {
-  border: 2px solid var(--black);
-  color:var(--black);
-  color:var(--black);
+#email{
+  background-color: var(--green-black);
+  border: 2px solid var(--white);
+  width: 80%;
+  padding: 2rem;
 }
 
-/*
-
-.enter-mail {
-    width:85%;
-    padding: 5rem;
-    background-color: var(--green-black);
-    border: 3px solid var(--white);
-    color:var(--white);
+.subscribe-button{
+ width: 90%;
 }
-*/
-
-.subscribe{
-  border: none;
-  width: 85%;
-  padding: 15px 0;
-  font-size: 1rem;
-  background: var(--white);
-}
-
-  
   /*----- container 5 end -----*/
 
   /* copyright */
   .copyright {
+    font-size: 1.8rem;
     text-align: center;
-    padding: 30px 0;
+    padding: 0 15%;
+    margin: 60px 0;
+  }
+  a{
+    color: inherit;
+  }
+
+  @media screen and (min-width: 800px){
+    .containers{
+      margin: 0 60px;
+    }
+
+    /* container 1 */
+    .basket{
+      max-width: 30px;
+    }
+
+    .bar{
+      display: none;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      text-align: right;
+      align-items: center;
+      padding: 20px 0;
+    }
+
+    span {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    a.nav_icon {
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-family: 'outfit', 'sans-serif';
+    }
+
+    .nav_icon {
+      display: block;
+      padding: 0 10px;
+    }
+
+    .deliver-message{
+      display: none;
+    }
+
+   .delivery-message {
+      font-size: 1rem;
+      display: block;
+    }
+
+    /* container 1 end */
+    /* container 2 */
+
+  
+    .products{
+      /*max-width: 80vw;*/
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; 
+    }
+     
+     /*container 2 end */
+    /* container 3 */
+    /* container 3 end */
+    /* container 4 */
+    /* container 4 end */
+    /* container 5 */
+    /* container 5 end */
+
   }
