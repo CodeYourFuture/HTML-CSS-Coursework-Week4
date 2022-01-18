@@ -1,0 +1,225 @@
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  height: 5rem;
+  font-family: $heading-font;
+  font-weight: 400;
+  color: $red-brown;
+}
+header svg {
+  height: 2rem;
+  fill: $red-brown;
+}
+.search-box input {
+  width: 15rem;
+  padding: 0.8rem 0 0.8rem 2rem;
+  border: 1px solid $red-brown;
+}
+.search-box input:hover,
+.search-box input:focus {
+  border: 2px solid $red-brown;
+  outline: none;
+}
+
+.magnifying-glass {
+  position: relative;
+  left: -14.6rem;
+  color: $red-brown;
+  opacity: 0.5;
+}
+
+.hidden {
+  display: none;
+}
+
+.corner-links {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.login {
+  display: none;
+  align-items: center;
+  z-index: 2;
+}
+
+.login span {
+  margin-left: 0.3rem;
+}
+
+.corner-links a, .corner-links button {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.login {
+  color: $red-brown;
+  font-size: 1.5rem;
+}
+
+.item-counter {
+  color: $white;
+  position: relative;
+  left: 20px;
+  top: -8px;
+  font-size: 0.8rem;
+}
+
+.navigation-row {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  display: grid;
+  grid-template-areas:
+    "logo logo . hamb"
+    "dtext dtext dtext dtext";
+}
+.logo {
+  grid-area: logo;
+  padding: 0.5rem 0;
+  color: $red-brown;
+  text-decoration: none;
+  transition: all 0.3s ease-in;
+}
+.logo h2 {
+  font-family: $heading-font;
+  font-weight: 400;
+  font-size: 2rem;
+}
+.logo:hover{
+  color:$black;
+}
+.hamburger {
+  grid-area: hamb;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+  z-index: 2;
+  color: $red-brown;
+}
+.dynamic-text {
+  grid-area: dtext;
+  color: $red-brown;
+  letter-spacing: 0.3rem;
+  font-family: $heading-font;
+  font-weight: 400;
+}
+.navigation {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: $light-grey;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  padding: 3rem 0;
+}
+.open {
+  display: flex;
+  animation-name: fadein;
+  animation-duration: 1s;
+}
+.navigation.open {
+  padding-top: 7rem;
+}
+.login.open {
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.login:hover {
+  color: $red-light;
+}
+.login.open svg {
+  height: 2rem;
+  margin-right: 0.7rem;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.navigation li {
+  width: 100%;
+  height: 10vh;
+  text-align: center;
+}
+
+.navigation li a {
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+  text-decoration: none;
+  color: $red-brown;
+  font-size: 1.5rem;
+  transition: all 0.3s ease-in;
+}
+.navigation li a:hover {
+  color: black;
+}
+.navigation li a.active {
+  color: black;
+}
+
+@media screen and (min-width: 900px) {
+  header {
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: 0 -4rem;
+    padding: 0 4rem;
+    background-color: $light-grey;
+  }
+  .login {
+    display: flex;
+  }
+  .logo {
+    margin-right: 2rem;
+  }
+  .navigation-row {
+    grid-template-columns: auto auto repeat(3, 1fr);
+    grid-template-areas: "logo nav dtext dtext dtext";
+    margin-bottom: 0rem;
+  }
+  .login {
+    font-size: 1.3rem;
+  }
+  .dynamic-text {
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+  }
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    position: static;
+    width: 100%;
+    padding: 0;
+  }
+  .navigation li {
+    height: 100%;
+    justify-self: flex-start;
+    display: flex;
+  }
+  .navigation li a {
+    font-size: 1.3rem;
+  }
+  .hamburger {
+    display: none;
+  }
+}

@@ -1,0 +1,128 @@
+footer {
+    margin: 0 -2rem;
+    width: calc(100% + 4rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-row,
+  .subscription-box {
+    background-color: $green-black;
+    width: 100%;
+    padding: 0 2rem;
+  }
+  .footer-row section {
+    padding: 3rem 0;
+    color: $white;
+  }
+  .footer-row section h4 {
+    font-family: $heading-font;
+    font-weight: 400;
+    font-size: 1.6rem;
+    letter-spacing: 0.7rem;
+    padding-bottom: 1.2rem;
+  }
+  .footer-row section p {
+    letter-spacing: 0.1rem;
+    line-height: 1.6rem;
+  }
+  .footer-nav {
+    list-style: none;
+    padding: 0;
+  }
+  .footer-nav li a {
+    font-family: $body-font;
+    color: $white;
+  }
+  .subscription-box form {
+    display: flex;
+    flex-direction: column;
+    color: $white;
+  }
+  .subscription-box h4 {
+    font-size: 1.6rem;
+    letter-spacing: 0.7rem;
+    text-transform: uppercase;
+    font-family: $heading-font;
+    font-weight: 400;
+    color: $white;
+    margin: 1rem 0;
+  }
+  .subscription-box form label {
+    text-align: left;
+    font-size: 1.2rem;
+  }
+  .subscription-box input {
+    background-color: $green-black;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    outline: none;
+    border: $white 1px solid;
+    font-size: 1.5rem;
+    color: $white;
+    margin: 1rem 0;
+  }
+  .subscription-box input:focus {
+    border: $white 2px solid;
+  }
+  .subscription-box input:invalid {
+    border: $red-brown 2px solid;
+  }
+  .subscription-box .button {
+    background-color: $white;
+    color: $black;
+    font-size: 1.3rem;
+  }
+  .social-container {
+    width: 100%;
+    background-color: $green-black;
+    display: flex;
+    justify-content: center;
+  }
+  .social-container a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: $white;
+    margin: 4rem 2rem;
+  }
+  .map-container {
+    width: 100%;
+    height: 45vh;
+    margin-bottom: 2rem;
+  }
+  .footer-text {
+    color: $red-brown;
+    font-family: $body-font;
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+  }
+  .footer-text a {
+    color: $red-brown;
+  }
+  @media screen and (min-width: 900px) {
+    .footer-row {
+      display: flex;
+      justify-content: space-around;
+    }
+    footer {
+      width: 100%;
+      margin: 0;
+    }
+    .subscription-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .subscription-box form {
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-end;
+    }
+    .subscription-box button {
+      margin: 0 0 1rem 2rem;
+      padding-top: 0.7rem;
+      padding-bottom: 0.7rem;
+    }
+  }
+  
