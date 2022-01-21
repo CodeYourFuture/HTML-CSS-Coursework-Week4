@@ -11,6 +11,10 @@
 2. Working shopping cart that utilizes state and localStorage
 3. React router
 
+## About: 
+The project has been created to learn more abuout react and TypeScript, this is a replica of a WIX.com template (https://www.wix.com/website-template/view/html/1995). It is not to be used for commercial purposes. \
+[Link to the live demo of this project](https://react-plants.netlify.app/). 
+
 # Make a multi-page responsive website using CSS Grid
 
 Choose one of the designs below, and re-create the design to perfection, using CSS Grid, and media queries to make the site fully responsive.
