@@ -11,48 +11,42 @@ body {
   padding: 0;
 }
 
-.main {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto auto auto auto;
-  /*  grid-template-areas must follow the exact number of columns and rows defined above (4 columns and 4 rows)  */
-  grid-template-areas:
-    "hero hero hero hero hero hero" /* one for each column */
-    ".   . content content . ."
-    "footer   footer  footer footer   footer footer"; /* the dot is used to skip a column */
-}
-
 .homepage-hero {
-  grid-template-areas: hero;
   position: fixed;
   height: 126px;
-  display: inline-flex;
 }
 
-.homepage-content {
-  grid-column-start: 3;
-  grid-column-end: 5;
-  grid-row: 2;
+.projects {
+  width: 100vw;
 }
 
-.each-project {
-  background-color: var(--main-bg-color);
-  display: flex;
+
+
+.content {
+  display: grid;
   width: 750px;
+  height: 404;
+  justify-content: center;
+}
+.each-project {
   gap: 10px;
   object-fit: cover;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: row;
 }
 
 img {
   object-fit: cover;
   width: 100%;
-  height: 100%;
   object-position: center top;
 }
 
 .footer {
   grid-template-areas: footer;
-  position: absolute;
+  object-position: bottom;
   background-color: var(--main-bg-color);
   grid-column-start: 1;
   grid-column-end: -1;
