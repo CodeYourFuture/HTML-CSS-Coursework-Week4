@@ -1,0 +1,175 @@
+@import 'variables';
+
+.hero.home {
+    background: url("../img/hero-background.png");
+    background-attachment: fixed;
+  }
+  
+  .hero div {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+  .hero div p {
+    font-weight: 400;
+    padding-bottom: 0.5rem;
+    border-bottom: $white 2px solid;
+  }
+  .hero div svg {
+    margin: 2rem 2rem 0;
+  }
+  
+  .hero h3 {
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .hero .button {
+    margin-bottom: 6rem;
+  }
+  .featured {
+    margin: 2rem -2rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    align-items: center;
+    width: calc(100% + 4rem);
+  }
+  .category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    object-fit: cover;
+  }
+  .category img {
+    width: 100%;
+    height: auto;
+  }
+  .category .category-name,
+  .category .underline,
+  .category a {
+    position: absolute;
+    top: 2rem;
+  }
+  .category a {
+    position: absolute;
+    top: 7rem;
+  }
+  .category-name {
+    text-transform: uppercase;
+    margin-top: -2rem;
+    text-decoration: none;
+    font-size: 2rem;
+    letter-spacing: 0.4rem;
+    color: $red-brown;
+    transition: 0.3s all ease-in;
+  }
+  .category-name:hover {
+    color: $black;
+  }
+  .category .underline {
+    top: 3.4rem;
+    font-size: 3rem;
+  }
+  .about-us {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0;
+  }
+  .about-us > * {
+    grid-column: auto / span 4;
+  }
+  .about-us img {
+    width: calc(100% + 4rem);
+    margin: -0.2rem -2rem;
+  }
+  .about-text,
+  .special-offer {
+    height: 100%;
+    width: calc(100% + 4rem);
+    margin: 0 -2rem;
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+  .about-text {
+    background-color: $white;
+    color: $red-brown;
+  }
+  .special-offer {
+    padding: 4rem;
+    font-size: 3rem;
+    font-weight: 800;
+    color: $white;
+    background-color: $green-black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .special-offer .button {
+    margin-top: 3rem;
+    background-color: $white;
+    color: $green-black;
+    transition: all 0.4s ease-in-out;
+  }
+  .special-offer .button:hover,
+  .subscription-box .button:hover {
+    background-color: $green-light;
+    color: $white;
+  }
+  .about-text h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font-family: $heading-font;
+    font-weight: 400;
+  }
+  .about-text p {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    margin-top: 1.5rem;
+  }
+  @media screen and (min-width: 900px) {
+    .featured {
+      padding: 0 2rem;
+      grid-template-columns: repeat(3, 1fr);
+      height: 60vh;
+      width: calc(100% + 4rem);
+      grid-gap: 2rem;
+    }
+    .category {
+      height: 60vh;
+      overflow: hidden;
+    }
+    .category img {
+      height: 100%;
+      width: auto;
+    }
+    .about-us {
+      grid-template-rows: 1fr 1.3fr;
+      min-height: 150vh;
+    }
+    .about-us > * {
+      grid-column: auto / span 2;
+      margin: 0;
+      width: 100%;
+    }
+    .one-column {
+      grid-column: auto / span 1;
+    }
+    .img-container {
+      height: 100%;
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+    .img-container img {
+      object-fit: cover;
+      height: 102%;
+    }
+  }
+  

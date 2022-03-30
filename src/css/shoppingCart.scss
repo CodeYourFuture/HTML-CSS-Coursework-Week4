@@ -1,0 +1,120 @@
+@import 'variables';
+
+.cart-container {
+    display: none; 
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0,0, 0.25);
+    position: fixed;
+    top:0;
+    z-index: 11;
+    margin: 0 -2rem;
+    justify-content: flex-end;
+    transition: all 1s ease-in-out;
+    color:$red-brown;
+    overflow: hidden;
+}
+.cart-container.seen {
+    display: flex;
+}
+.shopping-cart {
+    overflow-y: scroll;
+    width: 100%;
+    background-color: $white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.single-item {
+    width: 100%;
+    padding: 0 0.5rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid $red-brown;
+    img {
+        height: 8rem; 
+        width: auto;
+        margin-right: 1rem;
+    }
+    .product-details {
+        font-size: 1rem;
+        color: $red-brown;
+        h6 {
+            font-size: 1.4rem;
+            color: $red-brown;
+        }
+        .count-display {
+            border: 1px solid $red-brown;
+            height: 1.5rem;
+            padding: 0.1rem;
+            input {
+                width: 2rem;
+                height: 1.2rem;
+                font-size: 1.2rem;
+                text-align: center;
+                &:focus {
+                    outline: none;
+                }
+            }
+            button {
+                font-size: 1.5rem;
+                color: $red-brown;
+                cursor: pointer;
+                background-color: transparent;
+            }
+        }   
+        
+    }
+    & > button { 
+        padding: 0.5rem;
+        cursor: pointer;
+        margin-left: 0.3rem;
+    }
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+      -webkit-appearance: none; 
+      margin: 0; 
+}
+.cart-header {
+    height: 20%;
+    display: flex;
+    width: 100%;
+    button { 
+        background-color: transparent;
+        width: 20%;
+        font-size: 3rem;
+        cursor: pointer;
+        color: $red-brown;
+        display: block;
+        text-align: center;
+    }
+    h5 {
+        font-size: 2rem;
+        margin: auto;
+    }
+}
+@media screen and (min-width:900px) {
+    .cart-container {
+        margin: 0 -4rem;
+    }
+
+    .shopping-cart {
+        width: 30%;
+        transform:translateX(100%);
+        animation: slideCartIn 0.7s ease;
+        animation-fill-mode: forwards;
+    }
+    @keyframes slideCartIn {
+        0%{
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(0%);
+        }
+    }
+    .disabler {
+        width: 100%;
+        height: 100%;
+    }
+}
