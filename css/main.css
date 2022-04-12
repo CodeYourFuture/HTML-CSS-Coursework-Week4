@@ -216,6 +216,7 @@ section {
 section p {
   font-size: 16px;
   line-height: 20pt;
+  width: 90%;
 }
 
 .blue_line {
@@ -279,19 +280,23 @@ footer {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
   padding-left: 15px;
-}
+  text-align: left;
+  }
 
 footer h1 {
   font-size: 20px;
-}
+  text-align: left;
+  }
 
 footer p {
   font-size: 16px;
-}
+  text-align: left;
+  }
 
 footer a {
   text-decoration: none;
-}
+  text-align: left;
+  }
 
 footer img {
   padding-right: 10px;
