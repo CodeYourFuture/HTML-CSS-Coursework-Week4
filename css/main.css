@@ -277,10 +277,7 @@ button:hover {
 
 footer {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto;
-  padding-left: 15px;
-  text-align: left;
+  grid-template-columns: repeat(2, 0.45fr);
   }
 
 footer h1 {
@@ -305,7 +302,7 @@ footer img {
 }
 
 footer div {
-  padding: 15px;
+  padding-left: 16px;
 }
 .call_div {
   grid-column: 1 / 2;
