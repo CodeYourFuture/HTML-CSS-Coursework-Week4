@@ -2,20 +2,152 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Add a link to your custom CSS here -->
-
-    <title>Responsive grid project</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <title>PRICKLES & CO.</title>
 </head>
 
 <body>
 
-    <!-- Add your markup here -->
+    <!--GRID CONTAINER-->
+    <div class="gc"> 
 
+        <!--HEADER-->
+        <header class="gi-header">
 
-    <!-- Please leave this in to credit the creators of this design -->
-    <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
+            <section class="white-background">
+
+                    <!-- SEARCH BAR -->
+                    <div class="searchbar">
+                        <img src="images/magnifyingglass.svg" alt="magnifying glass" class="searchbar-svg">
+                        <input type="search" class="searchbar-input" placeholder="Search..." label="Search...">
+                    </div>
+                    
+                    <!-- BASKET -->
+                    <div class="positioned">
+                        <button class="basket-button">
+                            <img src="images/basket.svg" alt="basket" class="basket-svg">
+                        </button>
+                        <p class="basket-counter">0</p>
+                    </div>
+
+            </section>
+
+            <section class="beige-background">
+
+                    <!-- COMPANY NAME -->
+                    <p class="sh margin-bottom margin-top">PRICKLES & CO.</p>
+
+                    <!-- HAMBURGER MENU -->
+                    <img src="images/hamburger.svg" alt="menu icon" class="hamburger">
+
+                    <!-- CTA -->
+                    <p class="sh margin2">Call Us Now! 123-456-7890</p>
+
+            </section>
+
+        </header>
+        <!--END OF HEADER-->
+
+        <!-- HERO --> 
+        <!--I used a darker overlay for sake of visibility, the original design's colours were not accessible as the contrast was to low-->
+        <section class="gi-hero">
+
+            <span>
+                <p class="icon-text-top">ESTB</p>
+            </span>
+
+            <div class="spade-svg">
+                <img  src="images/spade.svg" alt="">    
+            </div>
+
+            <span>
+                <p class="icon-text-top">2023</p>
+            </span>
+
+            <div class="hero-underline"></div>
+
+            <div class="hero-underline"></div>
+
+            <span class="hero-title margin-bottom">
+                PRICKLES & CO
+            </span>
+
+            <span class="hero-subtitle">
+                BRING NATURE INDOORS
+            </span>
+
+            <button class="hero-btn btn">
+                <a class="btn-a" href="#">
+                    Shop Now
+                </a>
+            </button>
+
+        </section>
+        <!-- END OF HERO -->
+
+        <!-- SHOP -->
+        <div class="gi-shop">
+
+            <div class="shop-fi top-shop-fi cacti">
+                <h2 class="sh shop-fi-title">CACTI</h2>
+                <div class="underline"></div>
+                <button class="btn">
+                    <a class="btn-a" href="#">
+                        Shop Collection
+                    </a>
+                </button>
+            </div>
+
+            <div class="shop-fi plants">
+                <h2 class="sh shop-fi-title">PLANTS</h2>
+                <div class="underline"></div>
+                <button class="btn">
+                    <a class="btn-a" href="#">
+                        Shop Collection
+                    </a>
+                </button>
+            </div>
+
+            <div class="shop-fi bottom-shop-fi succulents">
+                <h2 class="sh shop-fi-title">SUCCULENTS</h2>
+                <div class="underline"></div>
+                <button class="btn">
+                    <a class="btn-a" href="#">
+                        Shop Collection
+                    </a>
+                </button>
+            </div>
+
+        </div>
+        <!-- END OF SHOP -->
+
+        <div class="article-grid-container">
+            <article>
+                <h1 class="about-us-header">About Us</h1>
+                <div class="unerline"></div>
+                <p>
+                    I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to
+                    add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a
+                    great place for you to tell a story and let your users know a little more about you.
+                </p>
+                <p>
+                    This is a great space to write long text about your company and your services. You can use this space to go into a
+                    little more detail about your company. Talk about your team and what services you provide.
+                </p>
+            </article>
+            <div class="article-images wheelbarrow"></div>
+            <div class="article-images leaf"></div>
+            <div class="article-images ladyw"></div>
+<!-- comment left for change -->
+        </div>
+    </div>
 </body>
-
 </html>
