@@ -351,12 +351,12 @@ a {
   padding: 10px;
 }
 
-@media screen and (min-width: 800px) {
+/* @media screen and (min-width: 800px) {
   .containers {
     margin: 0 60px;
   }
 
-  /* container 1 */
+  /* container 1 
   .basket {
     max-width: 30px;
   }
@@ -370,7 +370,7 @@ a {
     flex-direction: row;
     justify-content: flex-end;
     text-align: right;
-    align-items: center; */
+    align-items: center; 
     padding: 20px 0;
   }
 
@@ -401,23 +401,22 @@ a {
   .delivery-message {
     font-size: 1rem;
     display: block;
-  }
+  } */
 
-  /* container 1 end */
-  /* container 2 */
-
+/* container 1 end */
+/* container 2 */
+/* 
   .products-wrapper {
     /* display: flex; */
-    /* flex-direction: row; */
-    /* justify-content: space-around;  */
-  }
-  /*max-width: 80vw; */
+/* flex-direction: row; */
+/* justify-content: space-around;  
+  } 
+  /* max-width: 80vw; */
 
-  /*container 2 end */
-  /* container 3 */
-  /* container 3 end */
-  /* container 4 */
-  /* container 4 end */
-  /* container 5 */
-  /* container 5 end */
-}
+/*container 2 end */
+/* container 3 */
+/* container 3 end */
+/* container 4 */
+/* container 4 end */
+/* container 5 */
+/* container 5 end */
