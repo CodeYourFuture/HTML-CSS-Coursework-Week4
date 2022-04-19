@@ -329,14 +329,18 @@ textarea {
 
 /*----- container 6 start -----*/
 /* footer */
-.copyright {
+.copyyear {
   grid-area: store;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   text-align: center;
-  padding-bottom: 40px;
-  margin: 60px 0;
+  margin: 20px 0;
   background-color: var(--light-grey);
-  font-size: 20px;
+  font-size: 15px;
+}
+
+.copyright-two {
+  text-align: center;
+  font-size: 1.2rem;
 }
 a {
   color: inherit;
@@ -344,6 +348,7 @@ a {
 
 .footer {
   grid-area: footer;
+  padding: 10px;
 }
 
 @media screen and (min-width: 800px) {
