@@ -116,15 +116,17 @@ footer {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-top: 2rem;
+  margin-left: 7rem;
+  margin-right: 7rem;
 }
 
 hr.line {
   border: 2px solid var(--royal-blue);
   width: 35%;
   margin-left: 7rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 .my-image h1 {
   align-items: center;
@@ -158,12 +160,12 @@ hr.line {
 .resume {
   background: var(--royal-blue);
   color: #fff;
-  border: 0;
-  padding: 10px 20px;
+  border: none;
+  padding: 10px 35px;
   border-radius: 2rem;
-  margin-right: 1.5rem;
+  margin-right: 1rem;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .resume a {
@@ -172,14 +174,21 @@ hr.line {
 }
 
 .projects {
-  padding: 5px 10px;
+  padding: 7.5px 25px;
   border-radius: 2rem;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1rem;
   background: var(--light-beige);
+  text-align: center;
+  margin-right: 0.5rem;
+}
+
+.projects a{
+  text-decoration: none;
+  color: var(--black)
 }
 .profile {
-  margin-top: 18rem;
+  margin-top: 19rem;
   margin-left: 1.25rem;
   margin-right: 2rem;
 }
@@ -236,9 +245,13 @@ h2 {
 }
 
 .footer-info {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   margin-left: 1.55rem;
-  line-height: 0.1rem;
+  line-height: 1rem;
+}
+.footer-info-p{
+   margin-left: 1.55rem;
+  
 }
 
 /* Dont' forget to link this file to your HTML in the <head> */
