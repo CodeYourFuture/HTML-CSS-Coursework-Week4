@@ -49,9 +49,16 @@ margin-right: 1rem;
 border-top:none;
 border-left:none;
 border-right:none;
-border-bottom:var(--royal-blue) solid 2px;
-outline:none;
+border-bottom:black solid 2px;
+outline:none; 
 
+}
+.box:hover{
+   border-bottom:var(--royal-blue) solid 2px; 
+}
+.star{
+    color:var(--royal-blue);
+    font-size:20px;
 }
 
 button{
@@ -62,5 +69,5 @@ button{
     color:white;
     border-style: none;
     margin-top:20px;
-    display:flex;
+    margin-left:5rem;
 }

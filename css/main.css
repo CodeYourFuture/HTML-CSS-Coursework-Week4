@@ -157,3 +157,9 @@ h2 {
 
 
 /* Dont' forget to link this file to your HTML in the <head> */
+
+@media screen and (min-width: 480px) {
+  body {
+   
+  }
+}

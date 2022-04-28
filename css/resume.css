@@ -18,16 +18,16 @@
 
 .resume-wrapper{
   display:flex; 
- 
 }
 
 .experience{
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
+  margin-left: 2rem;
 }
 
 .download{ 
- margin-left: 5rem;
+ margin-left: 7rem;
  background-color: #0150FD;
  border-radius: 15px;
  padding:8px;
@@ -76,7 +76,7 @@ main h3{
 }
 
  .jobs p{
-  padding-bottom: 1rem;
+  /* padding-bottom: 1rem; */
   padding-right: 1rem ;
   padding-left: 1rem;
   line-height: 1.5rem;
@@ -161,7 +161,12 @@ h2{
 }
 
 
-
+@media screen and (min-width: 480px) {
+  .jobs-wrapper {
+    display:flex;
+   
+  }
+}
 
 
 
