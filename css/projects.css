@@ -1,0 +1,54 @@
+*:root {
+  --main-bg-color: #fff;
+  --primary: #e6dacd; /*dark beige*/
+  --secondary: #f4ece6; /*light beige*/
+  --accent-colour: #0150fd; /*royal beige*/
+  --body-color: #000;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.homepage-hero {
+  position: fixed;
+  height: 126px;
+}
+
+.projects {
+  width: 100vw;
+}
+
+
+
+.content {
+  display: grid;
+  width: 750px;
+  height: 404;
+  justify-content: center;
+}
+.each-project {
+  gap: 10px;
+  object-fit: cover;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: row;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  object-position: center top;
+}
+
+.footer {
+  grid-template-areas: footer;
+  object-position: bottom;
+  background-color: var(--main-bg-color);
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row: 3;
+}

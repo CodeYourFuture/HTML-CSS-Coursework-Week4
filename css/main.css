@@ -1,3 +1,301 @@
-/* Add your CSS here */
+:root {
+  --red-brown: #a05941;
+  --black-green: #133032;
+  --main-bg-color: #ededee;
+  --third-colour: #fff;
+  --light-grey: #ededee;
+}
 
-/* Dont' forget to link this file to your HTML in the <head> */
+body {
+  background-color: var(--light-grey);
+  font-family: "Outfit", sans-serif;
+  color: var(--red-brown);
+  margin: 20px;
+}
+
+.one {
+  margin-top: 40px;
+}
+
+nav {
+  display: none;
+}
+
+.login-link {
+  display: none;
+}
+
+.icon-login {
+  display: none;
+}
+
+p {
+  line-height: 1.6em;
+  text-align: center;
+  font-size: 14px;
+  color: var(--red-brown);
+}
+
+.pheader {
+  text-align: left;
+  font-size: 16px;
+}
+
+h2 {
+  font-family: "Fjalla One", sans-serif;
+  text-align: center;
+}
+
+.header-span {
+  font-weight: bold;
+}
+.hamburger-item {
+  width: 22px;
+  height: 2px;
+  background-color: var(--red-brown);
+  margin: 5px;
+}
+
+.hamburger {
+  margin: 20px 0 0 0;
+}
+
+.about-us-text2 {
+  background-color: var(--black-green);
+  height: 393px;
+  font-weight: bold;
+}
+.search-input {
+  width: 214px;
+  height: 38px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.search-container {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  height: 61px;
+  margin-top: 5px;
+}
+
+.shopping-bag {
+  width: 20.96px;
+  height: 20.8px;
+  margin-top: 20px;
+}
+
+.containerh2 {
+  color: var(--main-bg-color);
+}
+
+.description {
+  margin-top: -20px;
+}
+
+.established-since {
+  width: 100%;
+  height: 475px;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  color: white;
+  gap: 20px;
+}
+
+.class1 {
+  justify-content: center;
+  gap: 20px;
+}
+
+img {
+  width: 128px;
+  height: 128px;
+  color: white;
+}
+
+button {
+  background-color: var(--red-brown);
+  width: 181px;
+  height: 40px;
+  color: var(--main-bg-color);
+  border-radius: var(--red-brown);
+}
+
+.underline {
+  width: 50px;
+  height: 2px;
+  background-color: var(--main-bg-color);
+}
+
+.span-content {
+  color: var(--third-colour);
+  text-align: center;
+}
+
+label {
+  width: 280px;
+  height: 38px;
+  margin: 5px;
+}
+
+.green-p {
+  font-size: 20px;
+  font-size: 40px;
+  color: var(--main-bg-color);
+}
+
+form {
+  color: var(--secondary);
+}
+
+.main {
+  background-color: darkorange;
+}
+.header-container {
+  background-color: var(--secondary);
+}
+
+.year-container {
+  background-image: url("../img/697bc8_ee5e15509a8c468f96ec8b15a13e0daf~mv2_d_2000_1809_s_2.jpg");
+}
+
+.title-container {
+  display: flex;
+  justify-content: space-between;
+}
+.main-image-container {
+  background-image: url("image7.jpg");
+}
+
+.cacti-container,
+.cacti-container-grid {
+  background-image: url(../img/plant1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  height: 565px;
+  width: 361;
+}
+
+.plant-container,
+.plant-container-grid {
+  background-image: url(../img/plant2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  height: 565px;
+  width: 361;
+}
+
+.succelent-container,
+.succelent-container-grid {
+  background-image: url(../img/plant3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  height: 565px;
+  width: 361;
+}
+
+.each-plant {
+  background-position: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.images {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.footer {
+  position: absolute;
+}
+
+@media screen and (min-width: 900px) {
+  .plant-container {
+    display: flex;
+  }
+  .plant-container-grid {
+    display: grid;
+    grid-template-areas: "cacti flower succelent";
+  }
+  .cacti-container-grid {
+    grid-area: cacti;
+  }
+  .flower-container-grid {
+    grid-area: flower;
+  }
+  .succelent-container-grid {
+    grid-area: succelent;
+  }
+
+  .about-us-container {
+    display: grid;
+    grid-template-areas:
+      "text1 text1 image1 image2"
+      "image3 image3 text2 text2";
+  }
+  .about-us-text1 {
+    grid-area: text1;
+  }
+  .image1-container {
+    grid-area: image1;
+  }
+  .image2-container {
+    grid-area: image2;
+  }
+  .image3-container {
+    grid-area: image3;
+  }
+  .about-us-text2 {
+    grid-area: text2;
+  }
+
+  input {
+    width: 209px;
+    height: 38px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+  }
+
+  ul {
+    display: flex;
+    gap: 40px;
+    margin-right: 700px;
+    list-style-type: none;
+    color: var(--red-brown);
+  }
+
+  a {
+    text-decoration: none !important;
+  }
+
+  .icons {
+    display: flex;
+    margin: 20px;
+    gap: 20px;
+  }
+
+  .title-container {
+    display: flex;
+  }
+
+  .description {
+    margin-left: 1050px;
+  }
+
+  /*.each-plant {
+         width: 200px
+     }*/
+}
