@@ -1,3 +1,137 @@
-/* Add your CSS here */
+/* Profile */
 
-/* Dont' forget to link this file to your HTML in the <head> */
+.profile {
+  display: flex;
+  justify-content: center;
+}
+
+.profile__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--clr-light-beige);
+  width: 100%;
+  box-shadow: -8px 6px 16px -4px #acacac;
+  margin: 0 1.5rem;
+}
+
+.profile__card--img {
+  border-radius: 100%;
+  width: 7.5625rem;
+  margin: 1.75rem 0 0.625rem 0;
+}
+
+.profile__card--name {
+  line-height: 1.2em;
+  text-align: center;
+  font-family: var(--font-poppins);
+  font-size: var(--font-size--21px);
+  font-weight: var(--font-weight--700);
+}
+
+.profile__card--divider {
+  justify-content: center;
+  height: 2px;
+  background-color: var(--clr-royal-blue);
+  padding-top: 4px;
+  width: 4.25rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin: 1.75rem 0 1.5625rem 0;
+}
+
+.button {
+  font-family: var(--font-poppins);
+  font-size: var(--font-size--14px);
+  font-weight: var(--font-weight--400);
+  background-color: var(--clr-royal-blue);
+  border: none;
+  color: white;
+  padding: 0.1875rem 0.9375rem;
+  text-decoration: none;
+  font-size: 1rem;
+  margin: 0.25rem 0.4375rem;
+  border-radius: 1.25rem;
+  width: 7.56rem;
+  height: 2.125rem;
+}
+
+.button--off {
+  background-color: transparent;
+  color: var(--clr-black);
+  border: 0.125rem solid var(--clr-black);
+}
+
+.profile__card .profile__social_icons {
+  display: flex;
+  justify-content: center;
+  background-color: var(--clr-white);
+  align-items: center;
+}
+
+.profile .profile__social_icons {
+  width: 100%;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  height: 53px;
+}
+
+.profile-link {
+  text-align: center;
+  width: 12%;
+  /* padding-top: .5rem; */
+}
+
+.profile-link img {
+  height: 18px;
+}
+
+/* Intro */
+
+.intro {
+  background-color: var(--clr-dark-beige);
+  width: 100%;
+  margin-top: -11.875rem;
+  padding: 15rem 1.7rem 2rem 1.7rem;
+}
+
+.intro__title {
+  font-family: var(--font-poppins);
+  font-size: var(--font-size--40px);
+  font-weight: var(--font-weight--700);
+}
+
+.intro__subtitle {
+  font-family: var(--font-quicksand);
+  font-size: var(--font-size--19px);
+  font-weight: var(--font-weight--400);
+  padding: 2.2rem 0 1.5rem 0;
+}
+
+.intro__text-description {
+  font-family: var(--font-quicksand);
+  font-size: var(--font-size--15px);
+  font-weight: var(--font-weight--400);
+  line-height: 1.5em;
+}
+
+/* HIDED */
+
+.intro .buttons {
+  display: none;
+}
+
+.profile__role {
+  display: none;
+}
+
+.header__col2 a {
+  display: none;
+}
+
+.header__desktop {
+  display: none;
+}
