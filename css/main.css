@@ -1,3 +1,38 @@
 /* Add your CSS here */
-
+:root{
+    --first-color:#16f;
+    --second-color:#ff7;
+}
+#firstparagraf{
+    background-color: var(--first-color);
+    color: var(--second-color);
+}
 /* Dont' forget to link this file to your HTML in the <head> */
+body{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: 
+    "h h h h h h h h h h h h"
+    "m m m m m m m m m m m m"
+    "f f f f f f f f f f f f";
+}
+header{
+    grid-area: h;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+main{
+    grid-area: m;
+}
+footer{
+    grid-area: f;
+}
+.nav-mobile{
+    display: none;
+    list-style: none;
+}
+.hamburger-menu{
+    width: 20px;
+}
