@@ -1,8 +1,8 @@
 /* HEADINGS FONT  */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
 
 /* BODY FONTS */
-@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
 
 :root {
   --darkbeige: #e6dacd;
@@ -43,13 +43,19 @@ nav {
 
 .logo {
   background-color: var(--royalblue);
-  border: #0150fd solid 2px;
-  height: 20px;
-  width: 20px;
+  height: 15px;
+  width: 15px;
+  margin: 10px 10px;
 }
 
 .nav-title {
   display: flex;
+}
+
+.nav-title h2 {
+  font-size: 7vw;
+  margin-top: 5px;
+  font-weight: 900;
 }
 
 .navbar span {
