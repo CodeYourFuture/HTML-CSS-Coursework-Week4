@@ -1,3 +1,67 @@
-/* Add your CSS here */
+/* HEADINGS FONT  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 
-/* Dont' forget to link this file to your HTML in the <head> */
+/* BODY FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
+:root {
+  --darkbeige: #e6dacd;
+  --lightbeige: #f4ece6;
+  --royalblue: #0150fd;
+  --black: #000;
+  --white: #fff;
+
+  --bodyfont: "Quicksand", sans-serif;
+  --headingsfont: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--black);
+  font-family: var(--bodyfont);
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+li {
+  list-style: none;
+}
+
+/* NAVIGATION */
+
+nav {
+  border: #0150fd solid 2px;
+}
+
+.logo {
+  background-color: var(--royalblue);
+  border: #0150fd solid 2px;
+  height: 20px;
+  width: 20px;
+}
+
+.nav-title {
+  display: flex;
+}
+
+.navbar span {
+  display: none;
+}
+.navbar a.icon {
+  display: block;
+  position: absolute;
+  right: 8px;
+  top: 5px;
+}
+
+.navbar #links {
+  display: none;
+}
