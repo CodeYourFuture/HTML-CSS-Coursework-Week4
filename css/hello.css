@@ -1,0 +1,42 @@
+:root {
+  --dark-beige: #e6dacd;
+  --light-beige: #f4ece6;
+  --royal-blue: #0150fd;
+  --black: #000;
+  --white: #fff;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.hello-box {
+  width: 250px;
+  height: 350px;
+  padding: 3rem 3rem 3rem 3rem;
+  margin-left: 1rem;
+  background-color: var(--dark-beige);
+ /* border: 2px solid rgb(255, 0, 149);*/
+}
+
+.hello-title {
+  font-size: 1.5rem;
+  margin-top: -3rem;
+  margin-left: -1rem;
+}
+
+.hello-sub-title {
+  font-size: 1.25rem;
+  margin-left: -1rem;
+}
+
+.hello-paragraph {
+  margin-top: 2rem;
+  margin-left: -1rem;
+}
+
+.hello-paragraph-2 {
+  margin-top: 2rem;
+  margin-left: -1rem;
+}

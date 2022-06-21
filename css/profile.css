@@ -1,0 +1,96 @@
+:root {
+  --dark-beige: #e6dacd;
+  --light-beige: #f4ece6;
+  --royal-blue: #0150fd;
+  --black: #000;
+  --white: #fff;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* img, name */
+.profile-box {
+  width: 250px;
+  height: 400px;
+  padding: 50px;
+  margin-left: 2rem;
+  /*border: 1px solid rgb(0, 89, 255);*/
+  background-color: var(--light-beige);
+}
+.profile-name-img-container {
+  display: flex;
+  flex-direction: column;
+}
+.profile-img {
+  text-align: center;
+}
+.round-profile-img {
+  border-radius: 10rem;
+}
+
+/* blue line */
+.profile-blue-line {
+  width: 5rem;
+  height: 0.15rem;
+  background-color: var(--royal-blue);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* resume and projects buttons */
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+  margin-left: -1.25rem;
+  width: 300px;
+  height: 50px;
+  /*border: 1px solid rgb(0, 89, 255);*/
+}
+.resume-btn {
+  background-color: var(--royal-blue);
+  transition-duration: 0.4s;
+  color: white;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 1rem 1rem 1rem 1rem;
+  margin: 0.50rem;
+}
+.projects-btn {
+  background-color: var(--light-beige);
+  transition-duration: 0.4s;
+  color: var(--black);
+  border: solid 2px var(--black);
+  padding: 0.5rem 1.2rem 0.5rem 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 1rem 1rem 1rem 1rem;
+  margin: 0.50rem;
+}
+
+.social-media-icons-container {
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+  margin-left: -3.05rem;
+  width: 350px;
+  height: 50px;
+  /*border: 1px solid rgb(0, 89, 255);*/
+}
+
+.media-icons-align {
+    width: 2rem;
+    height: 2rem;
+    margin: 0.5rem;
+}

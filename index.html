@@ -1,21 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Add a link to your custom CSS here -->
+    <link rel="stylesheet" href="css\main.css">
+    <link rel="stylesheet" href="css\header.css">
+    <link rel="stylesheet" href="css\footer.css">
+    <link rel="stylesheet" href="css\profile.css">
+    <link rel="stylesheet" href="css\hello.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@600&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@600&family=Quicksand:wght@300&display=swap"
+        rel="stylesheet">
 
     <title>Responsive grid project</title>
 </head>
 
 <body>
 
-    <!-- Add your markup here -->
+    <header class="header-container">
 
+        <div class="squareplus-name-container">
+            <div class="blue-square"></div>
+            
+            <div class="align-name">
+                <h2 >Maya Nelson</h2>
+            </div>
+        </div>
+        
+        <div class="align-title">
+            <p>PROJECT MANAGER</p>
+        </div>
 
-    <!-- Please leave this in to credit the creators of this design -->
-    <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
+        <!-- menu nav icon -->
+        <div class="align-menu">
+            <div class="menu-container" onclick="myFunction(this)">
+                <div class="top-line"></div>
+                <div class="mid-line"></div>
+                <div class="bottom-line"></div>
+            </div>
+        </div>
+            
+        <script>
+            function myFunction(x) {
+                x.classList.toggle("change");
+            }
+        </script>
+
+    </header>
+
+    <main>
+        <div class="profile-box"> 
+            <div class="profile-name-img-container">
+                <div class="profile-img">
+                    <Img class="round-profile-img" src="css\img\AdobeStock_230407429.webp"></Img>
+                        <h2><b>Maya<br>Nelson</b></h2>
+                        <div class="profile-blue-line"></div>
+                </div>
+            </div>
+
+            <div class="buttons-container">
+                <btn class="resume-btn" type="button">RESUME</btn>
+                <btn class="projects-btn">PROJECTS</btn>
+            </div>
+
+            <div class="social-media-icons-container">
+                <img class="media-icons-align" src="css\img\facebook.webp" alt="">
+                <img class="media-icons-align" src="css\img\twitter.webp" alt="">
+                <img class="media-icons-align" src="css\img\linkedin.webp" alt="">
+                <img class="media-icons-align" src="css\img\instagram.webp" alt="">
+            </div>
+        </div>
+        
+        <div class="hello-box">
+            <div class="hello-title">
+                <h1>Hello</h1>
+            </div>
+
+            <div>
+                <div class="hello-sub-title">
+                    <p><b>Here's who I am & what I do</b></p>
+                </div>
+            </div>
+
+            <div>
+                <p class="hello-paragraph">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit
+                    Text” or double click me to
+                    add your own content and make changes to the font.</p>
+            </div>
+            <div>
+                <p class="hello-paragraph-2">I’m a great place for you to tell a story and let your users know a little more about you.
+                </p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer-container">
+
+        <div class="write-and-call-box">
+            <div>
+                <p><b>Call</b></p>
+                <p>123-456-789</p>
+            </div>
+           
+            <div >
+                <p><b>Write</b> </p>
+                <p>info@mysite.com</p>
+            </div>
+        </div>
+
+        <div class="footer-follow-box">
+            <p><b>Follow</b></p>
+            <img  class="social-media-icons-follow" src="css\img\facebook.webp" alt="">
+            <img  class="social-media-icons-follow" src="css\img\twitter.webp" alt="">
+            <img  class="social-media-icons-follow" src="css\img\linkedin.webp" alt="">
+            <img  class="social-media-icons-follow" src="css\img\instagram.webp" alt="">
+        </div>
+        
+        <div class="text-copyright">
+            <p>&#x24B8; 2023 by Maya Nelson</p>
+        </div>
+        
+    </footer>
+
 </body>
 
 </html>
+
+<!-- Please leave this in to credit the creators of this design 
+This website design was created by Wix.com, and is used here for strictly educational purposes -->
