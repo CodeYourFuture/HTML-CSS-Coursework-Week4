@@ -1,5 +1,5 @@
 /* HEADINGS FONT  */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap");
 
 /* BODY FONTS */
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
@@ -37,15 +37,12 @@ li {
 
 /* NAVIGATION */
 
-nav {
-  border: #0150fd solid 2px;
-}
-
-.logo {
-  background-color: var(--royalblue);
-  height: 15px;
-  width: 15px;
-  margin: 10px 10px;
+.logo img {
+  margin: 16px 4px 0 6px;
+  width: 6vw;
+  max-height: 20px;
+  max-width: 20px;
+  min-width: 20px;
 }
 
 .nav-title {
@@ -53,9 +50,14 @@ nav {
 }
 
 .nav-title h2 {
-  font-size: 7vw;
-  margin-top: 5px;
+  font-size: 1.3rem;
   font-weight: 900;
+  margin-top: 13px;
+}
+
+.navbar p {
+  margin: 3px 0 10px 5px;
+  font-size: 1.1rem;
 }
 
 .navbar span {
@@ -64,10 +66,67 @@ nav {
 .navbar a.icon {
   display: block;
   position: absolute;
-  right: 8px;
-  top: 5px;
+  right: 12px;
+  top: 25px;
+  color: var(--royalblue);
 }
 
 .navbar #links {
   display: none;
+}
+
+.nav-title-item {
+  display: inline-flex;
+}
+/* END OF NAVIGATION */
+
+/* welcome */
+
+.blank {
+  background: linear-gradient(180deg, #fff 30%, #e6dacd 0.1%, #e6dacd 70%);
+  /* background: -webkit-linear-gradient(180deg, #fff 30%, #e6dacd 70%); */
+  /* background-position: fixed; */
+  height: 200vw;
+  width: auto;
+}
+
+.welcome {
+  background-color: var(--lightbeige);
+  height: 380px;
+  width: 93%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 5rem;
+  left: 1rem;
+}
+
+.welcome h1 {
+  font-weight: 900;
+  width: 98%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.welcome-block img {
+  border-radius: 50%;
+  margin-top: 25px;
+  height: 8rem;
+}
+
+/* About */
+
+.about {
+  background-color: var(--darkbeige);
+  height: 70vh;
+}
+.social-media {
+  display: flex;
+  justify-content: center;
+  border: 2px solid red;
+  background-color: var(--white);
+}
+.social-media img {
+  margin: 0 auto;
 }
