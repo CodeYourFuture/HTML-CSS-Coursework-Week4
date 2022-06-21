@@ -1,3 +1,40 @@
 /* Add your CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
+
+/*******************************General styles**********************************/
+
+
+:root{
+  --Black: #000;
+  --White: #FFF;
+  --Lylac: #f5e8ff;
+  --Light-Green: #E6FAC0;
+  --Medium-Green: #5E7D1F;
+  --Dark-Green: #394B2A;
+}
+
+*, *::before, *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+body{
+  font-size: 1.1rem;
+  font-family: 'Roboto', sans-serif;
+}
