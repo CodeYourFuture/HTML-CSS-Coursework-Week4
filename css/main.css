@@ -45,6 +45,7 @@ body{
 
 /************************************header***********************************************/
 
+/*********************************top div****************************************/
 header .top-div{
   display: flex;
   align-items: center;
@@ -72,9 +73,6 @@ header .top-div{
   margin-left: 1rem;
 }
 
-
-
-
 .login{
   display: flex;
   justify-content: space-around;
@@ -82,4 +80,11 @@ header .top-div{
 
 .login div{
   margin: 0 10px;
+}
+
+/*************bottom div**************/
+
+.bottom-div {
+  padding: 1rem;
+  background-color: var(--White);
 }
