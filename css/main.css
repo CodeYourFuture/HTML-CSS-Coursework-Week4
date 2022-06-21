@@ -37,6 +37,15 @@ img {
 body{
     font-size: 1.1rem;
     color: var(--Dark-Green);
+    max-width: 1200px;
+    margin: 0 auto;
     background-color: var(--Lylac);
     font-family: 'Roboto', sans-serif;
+}
+
+/************************************header***********************************************/
+
+header .top-div {
+  height: 90%;
+  
 }
