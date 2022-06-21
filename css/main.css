@@ -36,5 +36,7 @@ img {
 
 body{
   font-size: 1.1rem;
+  color: var(--White);
+  background-color: var(--Lylac);
   font-family: 'Roboto', sans-serif;
 }
