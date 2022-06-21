@@ -45,7 +45,41 @@ body{
 
 /************************************header***********************************************/
 
-header .top-div {
-  height: 90%;
-  
+header .top-div{
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding: 1rem;
+  display: none;
+  background-color: var(--White);
+  justify-content: space-between;
+}
+.search{
+  padding: .6rem;
+}
+.search:hover{
+  cursor: pointer;
+  border: 1px solid var(--Medium-Green);
+}
+
+.search .searchinput{
+  border: none;
+  outline: none;
+}
+
+.search .searchinput::placeholder{
+  font-size: 1.3rem;
+  margin-left: 1rem;
+}
+
+
+
+
+.login{
+  display: flex;
+  justify-content: space-around;
+}
+
+.login div{
+  margin: 0 10px;
 }
