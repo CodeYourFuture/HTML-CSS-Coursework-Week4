@@ -86,6 +86,91 @@ header .top-div{
 
 .bottom-div {
   padding: 1rem;
+  display: flex;
+  justify-content: space-between;
   background-color: var(--White);
 }
 
+.bottom-div .text{
+  font-size: 1.2rem;
+  padding-top: .858rem;
+  color: var(--Medium-Green);
+}
+
+.bottom-div .navcontact{
+  display: none;
+}
+
+.bottom-div .divcontact{
+ display: flex;
+ justify-content: space-between;
+ align-items: flex-end;
+ flex-direction: column;
+}
+
+.divcontact .hamburger{
+  font-size: 1.2rem;
+
+}
+.hamburger .fa-bars {
+  font-size: 1.9rem;
+}
+
+.divcontact .contactnumber {
+  display: flex;
+  justify-content: center;
+}
+.contactnumber p{
+  width: 100%;
+  margin-right: 7rem;
+}
+
+/*************************************main section******************************************************/
+
+main {
+  padding: 1rem;
+  position: relative;
+}
+
+.backimg1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+   background-image: url("https://media.houseandgarden.co.uk/photos/61893e50f6acdd8ba4456048/16:9/w_2580,c_limit/1d7a3524075x.jpg");
+   min-height: 100vh;
+   margin: 0 auto;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+} 
+
+.main-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--White);
+}
+
+.main-center h1{
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-family: "roboto" sans-serif;
+}
+
+.main-center p{
+  margin-bottom: 1.5rem;
+  letter-spacing: 1.9;
+  font-size: 1.3rem;
+  font-family: "open+Sans" sans-serif;
+}
+.main-center .btnmain{
+  font-size: .85rem;
+  padding: .55rem 1.8rem;
+  color: var(--White);
+  background-color: var(--Medium-Green);
+  font-family: "roboto" sans-serif;
+  outline: none;
+  border: 1px solid var(--Black);
+
+}
