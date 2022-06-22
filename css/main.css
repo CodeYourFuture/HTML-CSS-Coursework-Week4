@@ -1,5 +1,5 @@
 /* HEADINGS FONT  */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&display=swap");
 
 /* BODY FONTS */
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
@@ -57,7 +57,7 @@ li {
 }
 
 .navbar p {
-  margin: 0px 0 10px 5px;
+  margin: 0px 0 0px 5px;
   font-size: 1.1rem;
 }
 
@@ -85,49 +85,54 @@ li {
 
 .blank {
   background: linear-gradient(180deg, #fff 30%, #e6dacd 0.1%, #e6dacd 70%);
-  height: 200vw;
+  height: 245vw;
   width: auto;
+  margin-top: 0;
 }
 
-.welcome {
+.welcome-block {
   background-color: var(--lightbeige);
+  width: 93%;
   height: 375px;
-  width: auto;
-  display: flex;
+  display: flex; /*Flex*/
   flex-direction: column;
   align-items: center;
   position: absolute;
-  top: 6rem;
-  left: 1rem;
+  top: 5.3rem;
+  left: 0.9rem;
+  margin-top: 0;
+  margin-top: 0px;
 }
 
 .welcome h1 {
   font-weight: 900;
-  width: 95%;
   text-align: center;
   margin: 0 auto;
+  width: 95%;
 }
 
 .welcome-block img {
   border-radius: 50%;
-  margin-top: 25px;
+  margin-top: 15px;
   height: 8rem;
 }
 
 .social-media {
-  display: flex;
-  width: 16.7rem;
+  display: inline-flex;
   justify-content: center;
+  width: 100%;
+
   background-color: var(--white);
   margin-top: 20px;
 }
 
 .welcome-sm {
-  display: block;
+  padding: 10px 10px;
 }
 
 .welcome-sm img {
-  padding: 8px 8px;
+  height: 1.3rem;
+  margin: 0;
 }
 
 .block button {
@@ -168,3 +173,13 @@ li {
   width: 70px;
   margin: 15px auto;
 }
+
+.about {
+  position: absolute;
+  top: 460px;
+  margin: 0 0px 0 13px;
+  padding: 0 5px;
+  text-align: start;
+}
+
+/* FOOTER */
