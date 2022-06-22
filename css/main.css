@@ -1,3 +1,119 @@
-/* Add your CSS here */
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Quicksand:wght@300&display=swap');
 
-/* Dont' forget to link this file to your HTML in the <head> */
+/* config */
+@import url(../css/config.css);
+
+/* Default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.header > nav > div > h1,
+.footer > div > h1 {
+    font-family: 'poppins', sans-serif;
+}
+
+/* header */
+.header {
+    padding: 1.2em;
+}
+
+/* navigation */
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav > div {
+    display: grid;
+    grid-template-areas: "square name" "career career";
+    align-items: center;
+    column-gap: .5em;
+}
+
+.fa-square {
+    grid-area: square;
+    font-size: 1.5em;
+}
+
+.name {
+    grid-area: name;
+    font-size: 1.6em;
+    font-size: 600;
+}
+
+.career {
+    grid-area: career;
+}
+
+/* icons */
+.fa-square,
+.fa-bars {
+    color: var(--royal-blue);
+}
+
+.fa-bars {
+    font-size: 2.2em;
+}
+
+/* not to be displayed on mobile */
+.nav-list,
+.career > span {
+    display: none;
+}
+
+
+
+/* footer */
+.footer {
+    padding: 1.2em;
+    display: grid;
+    justify-content: center;
+    grid-template-areas: "call email" "socials socials" "p p";
+    gap: 2em
+}
+
+.call {
+    grid-area: call;
+}
+.email {
+    grid-area: email;
+}
+.socials {
+    grid-area: socials;
+}
+.footer > p {
+    grid-area: p;
+}
+
+.footer > div > h1 {
+    font-size: 1.5em;
+    margin-bottom: .5em;
+}
+
+
+.footer > p {
+    font-size: 1.1em;
+    letter-spacing: .5px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 2em;
+}
+
+.social-icons > i {
+    font-size: 2em;
+}
+
+.social-icons > i:hover {
+    color:  #0150FD;
+}
