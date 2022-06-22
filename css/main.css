@@ -16,12 +16,12 @@
 }
 
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
 body {
+  margin: 0;
+  padding: 0;
   color: var(--black);
   font-family: var(--bodyfont);
 }
@@ -53,10 +53,11 @@ li {
   font-size: 1.3rem;
   font-weight: 900;
   margin-top: 13px;
+  margin-bottom: 5px;
 }
 
 .navbar p {
-  margin: 3px 0 10px 5px;
+  margin: 0px 0 10px 5px;
   font-size: 1.1rem;
 }
 
@@ -84,27 +85,25 @@ li {
 
 .blank {
   background: linear-gradient(180deg, #fff 30%, #e6dacd 0.1%, #e6dacd 70%);
-  /* background: -webkit-linear-gradient(180deg, #fff 30%, #e6dacd 70%); */
-  /* background-position: fixed; */
   height: 200vw;
   width: auto;
 }
 
 .welcome {
   background-color: var(--lightbeige);
-  height: 380px;
-  width: 93%;
+  height: 375px;
+  width: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: absolute;
-  top: 5rem;
+  top: 6rem;
   left: 1rem;
 }
 
 .welcome h1 {
   font-weight: 900;
-  width: 98%;
+  width: 95%;
   text-align: center;
   margin: 0 auto;
 }
@@ -115,18 +114,57 @@ li {
   height: 8rem;
 }
 
-/* About */
-
-.about {
-  background-color: var(--darkbeige);
-  height: 70vh;
-}
 .social-media {
   display: flex;
+  width: 16.7rem;
   justify-content: center;
-  border: 2px solid red;
   background-color: var(--white);
+  margin-top: 20px;
 }
-.social-media img {
-  margin: 0 auto;
+
+.welcome-sm {
+  display: block;
+}
+
+.welcome-sm img {
+  padding: 8px 8px;
+}
+
+.block button {
+  padding: 8px;
+  margin: 12px 8px;
+  color: var(--black);
+  background-color: var(--royalblue);
+  border-radius: 25px;
+  width: 100px;
+  color: var(--white);
+  border: none;
+}
+
+.block button:hover {
+  background-color: var(--lightbeige);
+  border: black solid 1px;
+  color: var(--black);
+  cursor: pointer;
+}
+
+.block button.projects {
+  background-color: var(--lightbeige);
+  border: black solid 1px;
+  color: var(--black);
+}
+
+.block button.projects:hover {
+  color: var(--black);
+  background-color: var(--royalblue);
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+}
+
+.welcome hr {
+  background-color: var(--royalblue);
+  border: var(--royalblue) solid 1px;
+  width: 70px;
+  margin: 15px auto;
 }
