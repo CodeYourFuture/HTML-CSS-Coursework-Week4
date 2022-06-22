@@ -179,13 +179,13 @@ body {
     align-items: center;
     flex-direction: column;
     grid-template-rows: repeat(4, min-content) 1fr;
-    background: linear-gradient(#ebebeb, #ced1f5);
+    background: #F4ECE6;
     box-shadow: -21px 20px 43px -23px grey;
     position: sticky;
     margin-top: -19px;
     margin-left: 30px;
   
-    width: 85%;
+    width: 50%;
     height: auto;
     min-height: auto;
   
@@ -193,7 +193,7 @@ body {
   }
   
   .profile_box img {
-    border-radius: 50%;
+    border-radius: 100%;
     width: 120px;
     height: 120px;
     margin-top: 20px;
@@ -500,7 +500,7 @@ body {
       z-index: -1;
       height: 800px;
       width: 40%;
-      background-color: #cfcde6;
+      background-color: #E6DACD;
     }
   }
 /* Dont' forget to link this file to your HTML in the <head> */
