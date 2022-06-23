@@ -87,16 +87,30 @@ main::before {
     text-transform: uppercase;
     font-size: 1.2em;
     cursor: pointer;
+    transition: var(--trans-one);
 }
 
 .intro-btn h2:first-child {
     background-color: var(--royal-blue);
-    color: var(--white);
     border: 1px solid var(--royal-blue);
+    color: var(--white);
+}
+
+.intro-btn h2:first-child:hover {
+    border: 1px solid var(--black);
+    background-color: transparent;
+    color: var(--black);
 }
 
 .intro-btn h2:last-child {
     border: 1px solid var(--black);
+}
+
+.intro-btn h2:last-child:hover {
+    border: none;
+    background-color: var(--royal-blue);
+    border: 1px solid var(--royal-blue);
+    color: var(--white);
 }
 
 /* intro section two */
