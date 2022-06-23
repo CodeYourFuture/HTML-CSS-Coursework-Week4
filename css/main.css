@@ -95,6 +95,7 @@ header .top-div{
   font-size: 1.2rem;
   padding-top: .858rem;
   color: var(--Medium-Green);
+  font-family: 'Fjalla One', sans-serif;
 }
 
 .bottom-div .navcontact{
@@ -134,29 +135,33 @@ main {
 
 .backimg1{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
    background-image: url("https://media.houseandgarden.co.uk/photos/61893e50f6acdd8ba4456048/16:9/w_2580,c_limit/1d7a3524075x.jpg");
    min-height: 100vh;
-   margin: 0 auto;
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center center;
 } 
 
+
 .main-center {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  margin: 0 auto;
   color: var(--White);
 }
 
 .main-center h1{
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  font-family: "roboto" sans-serif;
-}
+ 
+    margin-bottom: 1rem;
+    letter-spacing: 2.8;
+    font-size: 4rem;
+    margin: 0 auto;
+    font-family: 'Quicksand', sans-serif;
+  }
 
 .main-center p{
   margin-bottom: 1.5rem;
@@ -173,3 +178,5 @@ main {
   outline: none;
   border: 1px solid var(--Black);
 }
+
+/*********************************************section1**************************************************/
