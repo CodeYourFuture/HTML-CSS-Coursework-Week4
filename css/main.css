@@ -1,5 +1,5 @@
 /* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 /* config */
 @import url(../css/config.css);
@@ -22,7 +22,7 @@ body {
 
 /* header */
 .header {
-    padding: 1.2em;
+    padding: 7.25%;
 }
 
 /* navigation */
@@ -52,6 +52,7 @@ body {
 
 .career {
     grid-area: career;
+    font-weight: 300;
 }
 
 /* icons */
@@ -71,10 +72,9 @@ body {
 }
 
 
-
 /* footer */
 .footer {
-    padding: 1.2em;
+    padding: 7.25%;
     display: grid;
     justify-content: center;
     grid-template-areas: "call email" "socials socials" "p p";
@@ -97,6 +97,7 @@ body {
 .footer > div > h1 {
     font-size: 1.5em;
     margin-bottom: .5em;
+    font-weight: 500;
 }
 
 
