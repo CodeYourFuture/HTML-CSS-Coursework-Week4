@@ -137,11 +137,12 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-   background-image: url("https://media.houseandgarden.co.uk/photos/61893e50f6acdd8ba4456048/16:9/w_2580,c_limit/1d7a3524075x.jpg");
-   min-height: 100vh;
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center center;
+  margin-bottom: 1rem;
+  background-image: url("https://media.houseandgarden.co.uk/photos/61893e50f6acdd8ba4456048/16:9/w_2580,c_limit/1d7a3524075x.jpg");
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 } 
 
 
@@ -158,8 +159,8 @@ main {
  
     margin-bottom: 1rem;
     letter-spacing: 2.8;
-    font-size: 4rem;
-    margin: 0 auto;
+    font-size: 2.7rem;
+    text-align: center;
     font-family: 'Quicksand', sans-serif;
   }
 
@@ -167,16 +168,104 @@ main {
   margin-bottom: 1.5rem;
   letter-spacing: 1.9;
   font-size: 1.3rem;
+  font-weight: 400;
   font-family: "open+Sans" sans-serif;
 }
 .main-center .btnmain{
-  font-size: .85rem;
-  padding: .55rem 1.8rem;
-  color: var(--White);
+  padding: .65rem 1.5rem;
   background-color: var(--Medium-Green);
+  border:0;
+  color: var(--White);
+  outline: 0;
+  font-size: 1.02rem;
+  border-radius: 4px;
+  text-transform: capitalize;
   font-family: "roboto" sans-serif;
   outline: none;
   border: 1px solid var(--Black);
 }
 
 /*********************************************section1**************************************************/
+
+.section-1{
+
+display: grid;
+gap: 1rem;
+margin-bottom: 1rem;
+
+}
+
+.section-1 .divimg{
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+ align-items: center;
+ min-height: 100vh;
+ background-position: center center;
+ background-repeat: no-repeat;
+ background-size: cover;
+
+}
+
+.divimg1 {
+  background-image: url("https://static.wixstatic.com/media/697bc8_8bf7131cfd3547e9bd54d9f4f57f3e74~mv2_d_1920_1920_s_2.jpg/v1/fill/w_383,h_565,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/697bc8_8bf7131cfd3547e9bd54d9f4f57f3e74~mv2_d_1920_1920_s_2.jpg");
+}
+
+.divimg2 {
+  background-image: url("https://static.wixstatic.com/media/697bc8_8267510d9e19448297fc161a522881f1~mv2_d_1920_1920_s_2.jpg/v1/fill/w_383,h_565,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/697bc8_8267510d9e19448297fc161a522881f1~mv2_d_1920_1920_s_2.jpg");
+}
+
+.divimg3 {
+  background-image: url("https://static.wixstatic.com/media/697bc8_b067d0a4b500479b8a3930782976779e~mv2_d_1920_1920_s_2.jpg/v1/fill/w_383,h_565,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/697bc8_b067d0a4b500479b8a3930782976779e~mv2_d_1920_1920_s_2.jpg");
+}
+
+.divimg h2{
+
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: var(--Medium-Green);
+  padding: 1.2rem;
+
+}
+
+h2::after {
+  content: '';
+  width: 30px;
+  display: block;
+  height: 3px;
+  margin: 10px auto;
+  font-weight: 500;
+  background-color: var(--Medium-Green);
+}
+
+.divimg button{
+
+  padding: .65rem 1rem;
+  color: var(--White);
+  border:0;
+  outline: 0;
+  font-size: 1.02rem;
+  border-radius: 4px;
+  text-transform: capitalize;
+  font-family: "roboto" sans-serif;
+  background-color: var(--Medium-Green);
+
+}
+
+.section2 {
+
+  display: grid;
+  gap: 1rem;
+  padding: .5rem;
+}
+
+.section2 .about {
+
+  display: grid;
+  gap: 1rem;
+}
+
+.about .aboutus {
+
+  text-align: center;
+}
