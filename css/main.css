@@ -251,12 +251,13 @@ h2::after {
   background-color: var(--Medium-Green);
 
 }
-
+/***************************************************section2*****************************************************/
 .section2 {
 
   display: grid;
   gap: 1rem;
   padding: .5rem;
+  margin-bottom: 1rem;
 }
 
 .section2 .about {
@@ -268,4 +269,37 @@ h2::after {
 .about .aboutus {
 
   text-align: center;
+  letter-spacing: 1.7;
+}
+
+.aboutus p {
+  margin: 8x;
+}
+
+/*********************************************back imgae 2***********************************************************************/
+
+
+.backimg2 {
+min-height: 100vh;
+background-image: url("https://media.architecturaldigest.com/photos/626aab7c3eb88382e12961b4/3:2/w_4737,h_3158,c_limit/16%20Backyard%20Vegetable%20Garden%20Ideas.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+}
+
+
+.backimg2 .formdiv{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formdiv form {
+
+  width: 70vw;
+  height: auto;
+  text-align: left;
+  padding: 1rem;
 }
