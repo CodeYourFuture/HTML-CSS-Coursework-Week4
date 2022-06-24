@@ -239,7 +239,6 @@ h2::after {
 }
 /***************************************************section2*****************************************************/
 .section2 {
-
   display: grid;
   gap: 1rem;
   padding: .5rem;
@@ -247,19 +246,53 @@ h2::after {
 }
 
 .section2 .about {
-
   display: grid;
   gap: 1rem;
 }
 
 .about .aboutus {
-
   text-align: center;
   letter-spacing: 1.7;
 }
 
 .aboutus p {
   margin: 8x;
+}
+
+.flowers .online{
+
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+color: var(--White);
+min-height: 100vh;
+background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAAA1BMVEUAAACnej3aAAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC");
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+.text h1{
+
+font-size: 5rem;
+text-align: center;
+letter-spacing: .12rem;
+}
+
+.text .click {
+
+  padding: .65rem 1.9rem;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 3px;
+  color: var(--White);
+  background-color: var(--Medium-Green);
+  text-transform: capitalize;
+  font-family: 'roboto' sans-serif;
+
+
 }
 
 /*********************************************back imgae 2***********************************************************************/
@@ -308,7 +341,6 @@ form input, .submit, textarea{
 }
 
 form .submit {
-
   font-size: 1rem;
   color: var(--White);
   padding: .25rem;
@@ -360,7 +392,6 @@ form .inp {
   display: flex;
   justify-content: center;
   gap: 10px;
-
 }
 
 
@@ -392,7 +423,6 @@ form .inp {
  }
 
  .sociomedia li {
-
   margin: 6px;
  }
 /**********************************************************************************************************************************************************************************/
@@ -402,7 +432,7 @@ form .inp {
 /*************Media query 540px******************/
 
 
-@media(min-width: 540px) {
+@media(min-width: 564px) {
 
   /************************* topdiv*************/
 
@@ -465,8 +495,8 @@ form .inp {
 
   .bottom-div .divcontact{
     grid-column: span 2;
-   display: flex;
-   justify-content: flex-end;
+    display: flex;
+    justify-content: flex-end;
    }
 
    .divcontact .hamburger{
@@ -485,5 +515,57 @@ form .inp {
 
     margin-right: .2rem;
   }
+
+
+  /***************************************************************************/
+     /*****************main area**********/
+  /*****************************************************************************/
   
+
+.backimg1, .backimg2{
+  background-attachment: fixed;
+}
+
+
+
+.formdiv form{
+
+grid-template-columns: repeat(2, 1fr);
+gap: 5px;
+width: 75vw;
+max-width: 600px;
+background-color: rgba(94, 125, 31. 4);
+}
+.span1 {
+
+  grid-column: 1 / -1;
+  width: 100%;
+}
+.span2 {
+  grid-column: 2 / 3;
+}
+
+.text h1 {
+  text-transform: capitalize;
+}
+
+.footer .firstview {
+
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer .secondview {
+
+  place-items: center;
+}
+
+.secondview h3 {
+  font-size: 1.4rem;
+}
+
+.secondview p {
+
+  text-align: left;
+}
+
 }
