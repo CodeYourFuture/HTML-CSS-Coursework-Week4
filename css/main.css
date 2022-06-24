@@ -1,3 +1,266 @@
-/* Add your CSS here */
+/* @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
-/* Dont' forget to link this file to your HTML in the <head> */
+
+*{
+    box-sizing: border-box;
+     margin: 0;
+      padding: 0;
+  }
+
+  body {
+    background-color:#FFF ;
+}
+
+/* HEADER */
+
+header{
+    /* overflow: hidden; */
+     /* position: fixed;
+    top: 0;  */
+     display:flex;
+    justify-content: space-between;
+    align-items:baseline;
+    padding: 30px 5%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 2;
+    background-color: #FFF ;
+    top: 0;
+    
+}
+
+.name{
+    display: flex;
+    align-items: baseline;
+    
+}
+
+.blue{
+    width:15px;
+    height: 15px;
+    background-color: #0150FD ;
+    margin-right: 10px;
+  
+}
+
+
+.header_p{
+    font-family: 'Quicksand', sans-serif;
+}
+/* NAV */
+
+ li,a {
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.links {
+    list-style: none;
+}
+
+.link{
+    color: #000;
+}
+.links li {
+  display: inline-block;  
+  padding: 0 10px;
+} 
+ .link:hover{
+    color: #0150FD;
+}
+
+/* HEADINGS */
+
+h1{
+    font-size: 6rem;
+    font-weight:bolder;
+    font-family: 'Poppins', sans-serif;
+}
+
+h2{
+    color: #000;
+    margin-right: 10px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+  
+}
+
+h3{
+  font-size: 25px; 
+   margin: 1rem 0;
+   font-family: 'Quicksand', sans-serif;
+}
+
+
+/* BUTTONS */
+
+button{
+    text-decoration: none;
+    padding: 8px 35px;
+    border-radius: 18px;
+    margin: 1rem 2px;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
+}
+
+.resume_btn{
+    border: 2px solid #0150FD;
+    background-color: #0150FD;
+    color:#FFF
+}
+.resume_btn:hover{
+    border: 2px solid #0150FD;
+    color: #000;
+    background-color: #FFF;
+}
+.project_btn{
+    border: 1px solid #000;
+    background-color: #FFF;
+    color: #000;
+}
+.project_btn:hover{
+ border: none;
+ background-color: #0150FD;
+ color: #FFF;
+}
+  /* MAIN */
+
+  
+.content{
+    display: flex;
+   justify-content: space-between;
+   margin-top: 8rem; 
+  
+}
+.pic{
+    position: relative;
+    z-index: 2;
+    width: 42rem;
+    height:450px;
+    background-color:#F4ECE6;
+    margin: 1rem 0 0 12rem;
+    text-align: center;
+    box-shadow:-5px 20px 19px rgba(0,0,0,0.3);
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   padding: 2rem 0 1rem 0;
+    width: 60%;
+    border-radius: 50%;
+}
+   
+.p_pic {
+    padding-top: 1rem;
+    font-weight:bold;
+}
+.text{
+ margin: 1rem 0;
+ font-family: 'Quicksand', sans-serif;
+ font-size: 17px;
+ font-weight:500;
+}
+hr{
+    text-decoration: none;
+    width: 15%;
+    margin: 1rem auto;
+    border: 1px solid #0150FD ;
+    background-color: #0150FD ;
+}
+
+.contact{
+    margin-top: 2rem;
+    background-color: #FFF;
+    display: flex;
+    height: 50px;
+    display: flex;
+    padding: 0 80px;
+    justify-content: space-around;
+   align-items: center;
+   /* box-shadow: 0 17px 50px 0 rgba(0,0,0,0.19); */
+    
+}
+
+.icons{
+    font-size: 22px;
+    cursor: pointer;
+}
+ .empty{
+    width: 10%;
+}
+
+.ugh{
+    display: grid;
+    grid-template-columns: 60% 20%;
+} 
+
+.info{
+    float: left; 
+    padding-left: 3rem;
+    padding-top: 2rem;
+}
+
+#background {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 40%;
+    height: 100%;
+    background-color:#E6DACD ;
+   z-index: 1;}
+
+   /* FOOTER */
+
+   
+footer{
+    /* margin: 8rem 1rem; */
+    margin-top: 10rem;
+    position: relative;
+    z-index: 2;
+    background-color: #FFF;
+   padding: 2rem ;
+    /* bottom: 0;
+    left: 0; */
+    font-family: 'Quicksand', sans-serif;
+}
+ .footer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    text-align: center;
+
+ }
+.cc{
+    float:left;
+    width:50%;
+    
+}
+.ftr{
+   padding: 0 5px;
+   cursor: pointer;
+}
+
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 540px){
+   
+    footer{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        
+     
+     }
+     .footer{
+         display: grid;
+         grid-template-columns: auto auto;
+     }
+     .cc{
+         padding-top: 20px;
+     }
+    }

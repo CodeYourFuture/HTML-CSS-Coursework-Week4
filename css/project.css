@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+     margin: 0;
+      padding: 0;
+  }
+
+body{
+    background-color:#E6DACD;
+}
+/* HEADER */
+
+
+.name{
+    display: flex;
+    align-items: baseline;
+    
+}
+
+header{
+    /* overflow: hidden; */
+     /* position: fixed;
+    top: 0;  */
+     display:flex;
+    justify-content: space-between;
+    align-items:baseline;
+    padding: 30px 5%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 2;
+    background-color: #FFF ;
+    top: 0;
+    
+}
+.header_p{
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+/* HEADINGS */
+
+h2{
+    color: #000;
+    margin-right: 10px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+  
+}
+
+h3{
+    font-family: 'Poppins', sans-serif;
+    color: #0150FD;
+    margin-top: 4rem;
+    padding-left: 2rem;
+}
+
+
+/* BLUE BOXES */
+
+.blue{
+    width:15px;
+    height: 15px;
+    background-color: #0150FD ;
+    margin-right: 10px;
+  
+}
+
+.box2{
+    width: 20px;
+    height: 20px;
+    background-color: #0150FD ;
+    margin-right: 10px;
+    
+}
+
+.rect{
+    width: 10px;
+    height: 50px;
+    background-color: #0150FD;
+    margin-top: 4rem;
+}
+
+
+/* NAV BAR */
+
+ li,a {
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+}
+.links {
+    list-style: none;
+}
+
+.link{
+    color: #000;
+}
+.links li {
+  display: inline-block;  
+  padding: 0 10px;
+} 
+ .link:hover{
+    color: #0150FD;
+}
+
+/* MAIN */
+/* SECTION */
+.title {
+    display:flex;
+    justify-content: center;
+    font-size: 25px;
+    align-items: baseline;
+    margin-top: 7rem;
+}
+
+
+.firstp {
+    text-align: center;
+    padding: 0 20rem;
+    margin: 2.5rem 0;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.5em;
+    
+}
+/* ARTICLES */
+
+.art1{
+    background-color: #FFF;
+    display: grid;
+    grid-template-columns: auto auto auto;
+   margin: 4rem 17rem;
+   line-height: 1.5em;
+   height: 404px;
+   box-shadow: -5px 10px 10px rgba(0,0,0,0.2);
+}
+#leaflet{
+    height: 66%;
+}
+.role{
+    padding-left: 2rem;
+    font-family: 'Quicksand', sans-serif;
+}
+.pjt{
+    padding: 2rem 1rem;
+    font-size: 15px;
+    text-align:left;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* FOOTER */
+
+footer{
+    /* margin: 8rem 1rem; */
+    margin-top: 10rem;
+    position: relative;
+    z-index: 2;
+    background-color: #FFF;
+   padding: 2rem ;
+    /* bottom: 0;
+    left: 0; */
+    font-family: 'Quicksand', sans-serif;
+}
+ .footer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    text-align: center;
+
+ }
+.cc{
+    float:left;
+    width:50%;
+    
+}
+
+.ftr{
+    padding: 0 5px;
+    cursor: pointer;
+ }
+
+ /* MEDIA QUERIES */
+@media only screen and (max-width: 540px){
+   
+footer{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    
+ 
+ }
+ .footer{
+     display: grid;
+     grid-template-columns: auto auto;
+ }
+ .cc{
+     padding-top: 20px;
+ }
+}
