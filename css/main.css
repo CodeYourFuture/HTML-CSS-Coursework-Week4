@@ -46,7 +46,27 @@ padding: 5px;
 color: black;
 }
 
-/* SECOND CV */
+/* RIGHT CV */
+.cv-right {
+    margin-top: 50px;
+}
+.resume {
+    background-color: #0150FD;
+    color: white;
+    text-decoration: none;
+    border-radius: 40px;
+    padding: 10px;
+    border-style: solid;
+    border-color: black;
+}
+.projects {
+    color:black;
+    text-decoration: none;
+    border-radius: 40px;
+    padding: 10px;
+    border-style: solid;
+    border-color: black;
+}
 
 
 @media screen and (min-width: 620px){
