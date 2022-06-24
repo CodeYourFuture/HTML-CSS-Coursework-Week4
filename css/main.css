@@ -297,35 +297,34 @@ background-position: center center;
 }
 
 .formdiv form {
-  display: flex;
-  flex: 1;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 70vw;
+  display: grid;
   height: auto;
+  width: 75vw;
+  max-width: 500px;
   text-align: left;
   padding: 1rem;
-  border: 1px solid red;
-  background-color: var(--Light-Green);
-}
-
- .form-controls-1 {
-  display: flex;
-  gap: 10px;
+  background-color: var(--Lylac);
 }
 
 label {
   display: block;
   font-size: 1.1rem;
-  margin-bottom: .35rem;
+  margin: .35rem;
   text-align: left;
   text-transform: capitalize;
 }
 input{
-  padding: .20rem;
+  padding: .28rem;
 }
 
-.form-controls{
+form input, button, textarea{
+  width: 100%;
+}
 
+form button {
+
+  font-size: 1rem;
+  color: var(--White);
+  padding: .25rem;
+  background-color: var(--Medium-Green);
 }

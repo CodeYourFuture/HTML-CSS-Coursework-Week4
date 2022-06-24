@@ -120,30 +120,29 @@
 
         <div class="backimg2">
             <div class="formdiv">
-                <form action="#" >
-                    <div class="form-controls-1">
-                        <div>
-                            <label for="fname">first name</label>
-                            <input type="text" id="fname" name="fname" value="">
-                        </div>
-                        <div>
-                            <label for="lname">last name</label>
-                            <input type="text" id="lname" name="lname" value="">
-                        </div>
-                    </div>
-                    <div class="form-controls">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" value="">
-                    </div>
-                    <div class="form-controls">
+                <form action="#">
+                    <p>
+                        <label for="fname">first name *</label>
+                        <input type="text" id="fname" name="fname" value="" required>
+                    </p>
+                    <p>
+                        <label for="lname">last name *</label>
+                        <input type="text" id="lname" name="lname" value="" required>
+                    </p>
+                
+                    <p>
+                        <label for="email">Email *</label>
+                        <input type="email" name="email" id="email" value="" required>
+                    </p>
+                    <p>
                         <label for="phonenum">Phone</label>
                         <input type="tel" name="phonenum" id="phonenum" value="">
-                    </div>
-                    <div class="form-controls">
+                    </p>
+                    <p>
                         <label for="mssg">Message</label>
                         <textarea name="text" id="mssg" cols="30" rows="10"></textarea>
-                    </div>
-                    <button class="submit">Send</button>     
+                    </p>
+                    <button class="submit">Send</button>
                 </form>
             </div>
         </div>
