@@ -10,12 +10,51 @@ h1 {
 h2 {
     font-family: 'Poppins', sans-serif;
     font-weight: 100;
+    font-size: 20px;
 }
 p {
     font-family: 'Poppins', sans-serif;
     font-weight: lighter;
     width: 300px;
     text-align: left;
+}
+
+.logo {
+    margin-left: 10px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+    color: black;
+    font-size: 10px;
+}
+
+.nav-list {
+    margin-left: 10px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+    color: black;
+    font-size: 10px;
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    margin-top: 10px;
+}
+.main-container {
+    display: grid;
+    grid-template-columns: 3fr;
+    background-color: #E6DACD;
+    width: 150px;
+    height: 380px;
+    padding-left: 60px;
+    margin-top: 60px;
 }
 
 /* LEFT CV */
@@ -28,7 +67,9 @@ justify-items: center;
 text-align: center;
 }
 .cv-left {
-
+background-color: #F4ECE6;
+width: 300px;
+margin-top: 30px;
 }
 
 img {
@@ -47,25 +88,25 @@ color: black;
 }
 
 /* RIGHT CV */
+button {
+    background-color: #0150FD;
+    color: white;
+    border-color: #0150FD;
+    border-radius: 40px;
+    padding: 5px 20px;
+}
 .cv-right {
     margin-top: 50px;
 }
 .resume {
-    background-color: #0150FD;
-    color: white;
-    text-decoration: none;
-    border-radius: 40px;
-    padding: 10px;
-    border-style: solid;
-    border-color: black;
+    border-radius: 400px;
+    font-size: 15px;
+    padding: 5px 5px;
 }
 .projects {
-    color:black;
     text-decoration: none;
-    border-radius: 40px;
-    padding: 10px;
-    border-style: solid;
-    border-color: black;
+    border-radius: 400px;
+    padding: 5px 5px;
 }
 
 
