@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+     margin: 0;
+      padding: 0;
+  }
+
+body{
+    background-color:#E6DACD;
+}
+/* HEADER */
+
+header{
+    /* overflow: hidden; */
+     /* position: fixed;
+    top: 0;  */
+     display:flex;
+    justify-content: space-between;
+    align-items:baseline;
+    padding: 30px 5%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 2;
+    background-color: #FFF ;
+    top: 0;
+    
+}
+
+.name{
+    display: flex;
+    align-items: baseline;
+    
+}
+
+.header_p{
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* NAV BAR */
+
+ li,a {
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.links {
+    list-style: none;
+}
+
+.link{
+    color: #000;
+}
+.links li {
+  display: inline-block;  
+  padding: 0 10px;
+} 
+ .link:hover{
+    color: #0150FD;
+}
+
+/* HEADINGS */
+
+.headings{
+    display:flex;
+    justify-content: space-around;
+    padding: 5rem 0;
+    margin: 0 2rem;
+   
+}
+
+h2{
+    color: #000;
+    margin-right: 10px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+  
+}
+
+#edu{
+    margin: 6rem 0 4rem 15.8rem;
+    
+}
+
+h3{
+    font-family: 'Poppins', sans-serif;
+    color: #0150FD;
+    padding-bottom: 1rem;
+}
+
+/* BUTTONS */
+
+.dwnload_btn{
+    text-decoration: none;
+    border-radius: 18px;
+    padding: 10px 20px;
+    border: 2px solid #0150FD;
+    background-color: #0150FD;
+    color: #FFF;
+}
+.dwnload_btn:hover{
+    border: 2px solid #0150FD;
+    color: #000;
+    background-color: #E6DACD;
+}
+
+/* BLUE BOXES */
+
+.box2{
+    width: 20px;
+    height: 20px;
+    background-color: #0150FD ;
+    margin-right: 10px;
+    
+}
+
+.blue{
+    width:15px;
+    height: 15px;
+    background-color: #0150FD ;
+    margin-right: 10px;
+  
+}
+
+.title {
+    display:flex;
+    justify-content: center;
+    font-size: 25px;
+    align-items: baseline;
+    margin-top: 7rem;
+}
+
+
+/* ARTICLES */
+.art1, .art2{
+    display: flex;
+    justify-content: space-around;
+    background-color: #FFF;
+    width: 60%;
+    margin: auto;
+    padding: 4rem 1rem;
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 3rem;
+    box-shadow:-5px 10px 10px rgba(0,0,0,0.2);
+}
+.art3{
+    background-color: #FFF;
+    width: 60%;
+    margin: auto;
+    padding: 4rem 3rem;
+    box-shadow:-5px 10px 10px rgba(0,0,0,0.2);
+}
+.art3 h2{
+    padding-top: 2rem;
+}
+.art3 p{
+    font-family: 'Quicksand', sans-serif;
+            font-size: 15px}
+
+.art1_p{
+  width:50%;
+  padding: 2rem 0;
+  display: grid;
+  gap:15px;
+  margin-top: 1rem;
+  font-size: 17px;
+ 
+}
+.art p{
+   padding-bottom: 1rem;
+}
+
+
+.sec {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+ display: grid;
+ grid-template-columns:auto 60%;
+ gap: 1rem;
+}
+.sec p{
+    padding: 5px 0;
+}
+.last{
+    display: flex;
+    align-items: baseline;
+    
+}
+
+/* FOOTER */
+
+footer{
+    /* margin: 8rem 1rem; */
+    margin-top: 10rem;
+    position: relative;
+    z-index: 2;
+    background-color: #FFF;
+   padding: 2rem ;
+    /* bottom: 0;
+    left: 0; */
+    font-family: 'Quicksand', sans-serif;
+}
+ .footer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    text-align: center;
+
+ }
+.cc{
+    float:left;
+    width:50%;
+    
+}
+
+.ftr{
+    padding: 0 5px;
+    cursor: pointer;
+ }
+
+ /* MEDIA QUERIES */
+
+@media only screen and (max-width: 540px){
+    .art1, .art2{
+        display: grid;
+        grid-template-rows:auto ; 
+        font-size: 20px;
+        width: 90%;
+        padding-left: 2rem;
+
+    }
+    .art1_p p{
+        width: 200%;
+        text-align: left;
+        gap:0;
+    }
+    .art{
+        width: 100%;
+    }
+    .sec{
+        display: flex;
+        flex-direction:column;
+    
+    }
+.art3{
+    width: 90%;
+}
+#edu{
+    margin:0 0 20px 25px;
+}
+
+footer{
+   display: flex;
+   flex-direction: column-reverse;
+   justify-content: center;
+   
+
+}
+.footer{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.cc{
+    padding-top: 20px;
+}
+}
