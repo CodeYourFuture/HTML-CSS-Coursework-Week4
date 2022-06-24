@@ -317,14 +317,111 @@ input{
   padding: .28rem;
 }
 
-form input, button, textarea{
+form input, .submit, textarea{
   width: 100%;
 }
 
-form button {
+form .submit {
 
   font-size: 1rem;
   color: var(--White);
   padding: .25rem;
   background-color: var(--Medium-Green);
+}
+
+/****************************************************************footer styles*************************************************************/
+
+.footer {
+
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: var(--Light-Green);
+}
+
+.footer .firstview {
+
+  display: grid;
+  padding: 1rem;
+}
+
+.div1, .div2, .div3 {
+  margin: 8px;
+}
+
+h3 {
+  margin-bottom: .55rem;
+}
+
+.footer .secondview {
+  display: grid;
+  width: 100%;
+}
+
+.secondview h3 {
+  font-size: 1.2rem;
+}
+
+.secondview p {
+  margin: .35rem;
+}
+
+.secondview form {
+  padding: .15rem;
+  max-width: 425px;
+}
+
+form .inp {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+}
+
+
+
+.subscrib .inp .val {
+
+  width: 40vw;
+  padding: .35rem;
+  color: var(--White);
+  font-size: 1rem;
+  text-transform: capitalize;
+  font-family: 'roboto' sans-serif;
+  background-color: var(--Medium-Green);
+}
+ 
+
+ /*************************************************************************socio links styles******************************************************/
+
+ .links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+ }
+
+ .links .sociomedia {
+  display: flex;
+  margin: 10px;
+ }
+
+ .sociomedia li {
+
+  margin: 6px;
+ }
+/**********************************************************************************************************************************************************************************/
+                                    /*Media queries*/
+/**********************************************************************************************************************************************************************************/
+
+/*************Media query 540px******************/
+
+
+@media(min-width: 540px) {
+
+  /**************** topdiv*************/
+body {
+
+  background-color: red;
+}
+
 }
