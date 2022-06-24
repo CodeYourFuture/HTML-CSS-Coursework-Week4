@@ -1,3 +1,202 @@
 /* Add your CSS here */
 
+.tab-nav {
+    outline: none;
+    display: none;
+}
+
+.label {
+    display: none;
+}
+
+.burger {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin-top: 5px;
+}
+
+.cvlinks {
+    grid-column: 3;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+a {
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.cvlinks li {
+
+    display: inline-block;
+    padding-right: 10px;
+
+}
+
+.cvlinks li a {
+
+    text-decoration: none;
+    color: black;
+
+}
+
+.cvlinks a:hover {
+    color: rgb(43, 0, 255);
+}
+
+
+@media screen and (max-width: 770px) {
+
+    .label {
+
+        display: grid;
+        cursor: pointer;
+        padding-left: 60px;
+
+    }
+
+    .cvlinks {
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column: 1/4;
+        text-align: center;
+        max-height: 0;
+        overflow: hidden;
+        transition: all ease-in-out 0.6s;
+    }
+
+}
+
+
+.navbar {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 3;
+    margin: auto;
+    padding: 3em;
+
+}
+
+
+.about-content {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.back-content {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 1em;
+
+    /* grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); */
+}
+
+.img-content {
+    display: grid;
+    background: linear-gradient(to bottom, #f0ece2 90%, white 10%);
+
+}
+
+
+.title {
+    text-align: center;
+    justify-content: center;
+}
+
+hr {
+    border: solid blue;
+    width: 50px;
+}
+
+.small-card {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+i {
+    margin: 5px;
+}
+
+.text-content {
+    margin: 10px;
+    padding: 10px;
+}
+
+.foot-card {
+    /* background-color: white; */
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+    /* width: 100%; */
+    /* grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); */
+}
+
+.two{
+    border-radius: 50px;
+    margin: 0;
+    padding: 10px;
+    width: 25%;
+    border: 1px solid;
+    white-space: normal;
+    word-wrap: break-word;
+    
+}
+.two:hover{
+    background-color: rgb(45, 45, 249);
+    color: white;
+}
+.one{
+    border-radius: 50px;
+    margin: 0;
+    padding: 10px;
+    width: 25%;
+    background-color: rgb(45, 45, 249);
+    border: none;
+    border: 2px solid rgb(45, 45, 249);
+    color: aliceblue;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    white-space: normal;
+    word-wrap: break-word;
+}
+.one:hover{
+    background-color: aliceblue;
+    color: black;
+}
+.foot-con{
+    padding: auto;
+}
+
+.icons {
+    display: grid;
+    grid-template-columns: 65% auto auto auto;
+   
+}
+
 /* Dont' forget to link this file to your HTML in the <head> */
