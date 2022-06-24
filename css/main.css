@@ -47,20 +47,10 @@ body{
 
 /*********************************top div****************************************/
 header .top-div{
-  display: flex;
-  align-items: center;
-  height: 50px;
-  padding: 1rem;
   display: none;
-  background-color: var(--White);
-  justify-content: space-between;
 }
 .search{
   padding: .6rem;
-}
-.search:hover{
-  cursor: pointer;
-  border: 1px solid var(--Medium-Green);
 }
 
 .search .searchinput{
@@ -68,10 +58,6 @@ header .top-div{
   outline: none;
 }
 
-.search .searchinput::placeholder{
-  font-size: 1.3rem;
-  margin-left: 1rem;
-}
 
 .login{
   display: flex;
@@ -111,8 +97,8 @@ header .top-div{
 
 .divcontact .hamburger{
   font-size: 1.2rem;
-
 }
+
 .hamburger .fa-bars {
   font-size: 1.9rem;
 }
@@ -418,10 +404,86 @@ form .inp {
 
 @media(min-width: 540px) {
 
-  /**************** topdiv*************/
-body {
+  /************************* topdiv*************/
 
-  background-color: red;
-}
+  header .top-div{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding: 1rem;
+    background-color: var(--White);
+    justify-content: space-between;
+  }
+  .search{
+    max-width: 300px;
+    padding: .6rem;
+  }
 
+  .search form {
+    display: flex;
+    gap: 5px;
+  }
+
+  .search:hover{
+    cursor: pointer;
+    border: 1px solid var(--Medium-Green);
+  }
+
+  .search .searchinput::placeholder{
+    font-size: 1.2rem;
+    margin-left: 1rem;
+  }
+
+  /******************************bottomdiv**************************************************************/
+  
+  .bottom-div {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: var(--White);
+  }
+  
+  .bottom-div .text{
+    font-size: 1rem;
+    grid-column: span 1;
+    color: var(--Medium-Green);
+    font-family: 'Fjalla One', sans-serif;
+  }
+
+  .bottom-div .navcontact{
+    grid-column: span 2;
+    display: block;
+  }
+
+  .bottom-div .navcontact  ul {
+    display: flex;
+  }
+
+  .navcontact ul li{
+    margin: 5px;
+  }
+
+  .bottom-div .divcontact{
+    grid-column: span 2;
+   display: flex;
+   justify-content: flex-end;
+   }
+
+   .divcontact .hamburger{
+     display: none;
+  }
+
+  .hamburger .fa-bars {
+    display: none;
+  }
+
+  .divcontact .contactnumber {
+    display: flex;
+    justify-content: center;
+  }
+  .contactnumber p{
+
+    margin-right: .2rem;
+  }
+  
 }
