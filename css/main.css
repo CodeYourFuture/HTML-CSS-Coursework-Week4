@@ -144,10 +144,10 @@ main {
 .main-center h1{
  
     margin-bottom: 1rem;
-    letter-spacing: 2.8;
+    letter-spacing: 1.8;
     font-size: 2.7rem;
     text-align: center;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
   }
 
 .main-center p{
@@ -257,6 +257,11 @@ h2::after {
 
 .aboutus p {
   margin: 8x;
+}
+
+.flowers {
+
+  display: grid;
 }
 
 .flowers .online{
@@ -583,14 +588,64 @@ background-color: rgba(94, 125, 31. 4);
 
  /******header****/
 
+ .bottom-div .text {
+
+  font-size: 1.6rem;
+ }
+
  .navcontact ul li {
 
   margin: 12px;
  }
 
+ .navcontact ul li a {
+  color: var(--Black);
+  padding: .785rem;
+
+ }
+
+ .navcontact ul li a:hover{
+
+  color: var(--White);
+  background-color: var(--Medium-Green);
+ }
+
  /***************************************************************************/
      /*****************main area**********/
   /*****************************************************************************/
-  
-  .backimg1
+  .main-center h1 {
+
+    font-size: 7rem;
+  }
+
+  .main-center p {
+
+    margin-bottom: 1.8rem;
+    font-size: 1.6rem;
+  }
+
+  .main-center .btnmain {
+
+    padding: .85rem 2rem;
+    font-size: 1.1rem;
+  }
+
+  .section-1 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+.section2 {
+  grid-template-columns: repeat(2. 1fr);
+}
+.about{
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 450px;
+}
+
+.flowers {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 400px;
+  overflow: hidden;
+}
+
 }
