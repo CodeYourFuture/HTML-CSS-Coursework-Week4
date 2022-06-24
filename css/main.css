@@ -104,7 +104,18 @@
   padding: 0 2rem;
   background-color: #F9F7F3
   }
- 
+}
+.contact-links a {
+color: #007;
+font-size: 2.2rem;
+margin: 0 30px;
+text-decoration: none;
+text-shadow: 1px 1px 1px #1f1f1f;
+transition: transform 0.3s ease-out;
+}
+ .contact-links:hover {
+ transform: translateY(8px);
+ }
   
 
 /* Dont' forget to link this file to your HTML in the <head> */
