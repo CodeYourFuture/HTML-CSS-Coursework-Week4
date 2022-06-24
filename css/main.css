@@ -289,17 +289,43 @@ background-position: center center;
 
 
 .backimg2 .formdiv{
-
   display: flex;
   flex-direction: column;
   justify-content: center;
+  min-height: 100vh;
   align-items: center;
 }
 
 .formdiv form {
-
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 70vw;
   height: auto;
   text-align: left;
   padding: 1rem;
+  border: 1px solid red;
+  background-color: var(--Light-Green);
+}
+
+ .form-controls-1 {
+  display: flex;
+  gap: 10px;
+}
+
+label {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: .35rem;
+  text-align: left;
+  text-transform: capitalize;
+}
+input{
+  padding: .20rem;
+}
+
+.form-controls{
+
 }
