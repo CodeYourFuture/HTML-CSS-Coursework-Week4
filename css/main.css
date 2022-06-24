@@ -1,3 +1,60 @@
-/* Add your CSS here */
+body {
+    min-height: 100vh;
+    height: 1020px;
+    width: 480px;
 
-/* Dont' forget to link this file to your HTML in the <head> */
+}
+h1 {
+    font-family: 'Poppins', sans-serif;
+}
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+}
+p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+    width: 300px;
+    text-align: left;
+}
+
+/* LEFT CV */
+
+.container {
+display: grid;
+grid-template-columns: 1fr;
+justify-content: center;
+justify-items: center;
+text-align: center;
+}
+.cv-left {
+
+}
+
+img {
+    border-radius: 100%;
+    margin: 20px;
+    width: 200px;
+}
+hr {
+    width: 40px;
+    border-color: #0150FD;
+}
+.fa {
+text-decoration: none;
+padding: 5px;
+color: black;
+}
+
+/* SECOND CV */
+
+
+@media screen and (min-width: 620px){
+
+}
+@media screen and (min-width: 920px){
+    
+}
+@media screen and (min-width: 1200px){
+    
+}
