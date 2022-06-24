@@ -366,6 +366,7 @@ form .submit {
 
   display: grid;
   padding: 1rem;
+  place-items: center;
 }
 
 .div1, .div2, .div3 {
@@ -661,6 +662,11 @@ background-color: rgba(94, 125, 31. 4);
   cursor: pointer;
   color: var(--Black);
   background-color: var(--Light-Green);
+
+}
+
+.footer {
+
 
 }
 
