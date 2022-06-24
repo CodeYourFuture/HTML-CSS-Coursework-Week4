@@ -1,0 +1,40 @@
+:root {
+  --red-brown: #a05941;
+  --green-black: #133032;
+  --light-grey: #ededee;
+  --white: #fff;
+  --transparent-white: rgba(0, 0, 0, 0.75);
+  --transparent-white-form: #ffffff6e;
+}
+
+body {
+  background-color: var(--light-grey);
+  display: grid;
+  margin: 0;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header        header        header        header         header        header"
+    "hero          hero          hero          hero           hero          hero"
+    "shop          shop          shop          shop           shop          shop"
+    "about         about         about         about          about         about"
+    "img           img           img           img            img           img"
+    "img2          img2          img2          img2           img2          img2"
+    "img3          img3          img3          img3           img3          img3"
+    "offer         offer         offer         offer          offer         offer"
+    "order         order         order         order          order         order"
+    "img4          img4          img4          img4           img4          img4"
+    "footer        footer        footer        footer         footer        footer"
+    "copyright     copyright     copyright     copyright      copyright     copyright"
+    "credit        credit        credit        credit         credit        credit";
+}
+
+.header-container {
+  position: static;
+  display: grid;
+  height: auto;
+  width: 100%;
+  min-height: auto;
+  grid-template-rows: min-content 1fr;
+  grid-template-columns: 100%;
+}
