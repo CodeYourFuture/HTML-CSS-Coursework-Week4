@@ -18,7 +18,6 @@ p {
     width: 300px;
     text-align: left;
 }
-
 .logo {
     margin-left: 10px;
     text-decoration: none;
@@ -26,6 +25,9 @@ p {
     font-weight: lighter;
     color: black;
     font-size: 10px;
+}
+.logo:hover {
+    color: #0150FD;
 }
 
 .nav-list {
@@ -35,6 +37,7 @@ p {
     font-weight: lighter;
     color: black;
     font-size: 10px;
+    color: #0150FD;
 }
 .nav {
     display: flex;
@@ -54,7 +57,10 @@ p {
     width: 150px;
     height: 380px;
     padding-left: 60px;
-    margin-top: 60px;
+    margin-top: 80px;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
 }
 
 /* LEFT CV */
