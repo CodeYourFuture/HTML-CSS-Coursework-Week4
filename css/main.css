@@ -146,6 +146,11 @@ li {
   border: none;
 }
 
+.welcome-buttons {
+  display: flex;
+  justify-content: center;
+}
+
 .block button:hover {
   background-color: var(--lightbeige);
   border: black solid 1px;
@@ -183,3 +188,25 @@ li {
 }
 
 /* FOOTER */
+
+footer {
+  font-size: 1.099rem;
+  height: 355px;
+  margin: 5px;
+  padding: 15px;
+}
+
+.footer-line-1 h5 {
+  margin-top: 5px;
+  line-height: 0.1;
+}
+
+.footer-social-media p {
+  margin-top: 20px;
+  font-size: 0.8rem;
+  line-height: 0.5;
+}
+
+.footer-social-media a {
+  text-decoration: underline;
+}
