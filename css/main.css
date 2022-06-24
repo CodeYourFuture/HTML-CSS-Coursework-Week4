@@ -138,7 +138,6 @@ li {
 .block button {
   padding: 8px;
   margin: 12px 8px;
-  color: var(--black);
   background-color: var(--royalblue);
   border-radius: 25px;
   width: 100px;
@@ -210,3 +209,4 @@ footer {
 .footer-social-media a {
   text-decoration: underline;
 }
+/* END OF MAIN PAGE MOBILE VIEW */
