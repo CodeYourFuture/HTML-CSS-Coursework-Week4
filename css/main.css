@@ -588,6 +588,11 @@ background-color: rgba(94, 125, 31. 4);
 
  /******header****/
 
+ html {
+
+  scroll-behavior: smooth;
+ }
+
  .bottom-div .text {
 
   font-size: 1.6rem;
@@ -639,13 +644,24 @@ background-color: rgba(94, 125, 31. 4);
 }
 .about{
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 450px;
+  grid-template-rows: 300px;
+}
+.garden{
+
+  display: flex;
 }
 
 .flowers {
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 400px;
+  grid-template-rows: 550px;
   overflow: hidden;
+}
+
+.text .click:hover {
+  cursor: pointer;
+  color: var(--Black);
+  background-color: var(--Light-Green);
+
 }
 
 }
