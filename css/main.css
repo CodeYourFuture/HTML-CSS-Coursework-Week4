@@ -270,6 +270,7 @@ min-height: 100vh;
 background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAAA1BMVEUAAACnej3aAAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC");
 background-position: center;
 background-size: cover;
+padding: 1rem;
 background-repeat: no-repeat;
 }
 
@@ -568,4 +569,28 @@ background-color: rgba(94, 125, 31. 4);
   text-align: left;
 }
 
+}
+
+
+/**********************************************************************************************************************************************************************************/
+                                    /*Media queries*/
+/**********************************************************************************************************************************************************************************/
+
+/*************Media query 870px******************/
+
+
+@media(min-width: 870px) {
+
+ /******header****/
+
+ .navcontact ul li {
+
+  margin: 12px;
+ }
+
+ /***************************************************************************/
+     /*****************main area**********/
+  /*****************************************************************************/
+  
+  .backimg1
 }
