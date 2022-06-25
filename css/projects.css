@@ -24,6 +24,7 @@ body {
   padding: 0;
   color: var(--black);
   font-family: var(--bodyfont);
+  background-color: var(--darkbeige);
 }
 
 a {
@@ -36,6 +37,12 @@ li {
 }
 
 /* NAVIGATION */
+
+nav {
+  background-color: var(--white);
+  padding: 10px;
+  height: 90px;
+}
 
 .logo img {
   margin: 16px 4px 0 6px;
@@ -68,7 +75,7 @@ li {
   display: block;
   position: absolute;
   right: 12px;
-  top: 25px;
+  top: 35px;
   color: var(--royalblue);
 }
 
@@ -80,6 +87,65 @@ li {
   display: inline-flex;
 }
 /* END OF NAVIGATION */
+
+/* START OF MAIN */
+
+.main {
+  margin-top: 45px;
+  text-align: center;
+  height: 100%;
+}
+
+.main-content img {
+  margin: 16px 9px 0 6px;
+  width: 6vw;
+  max-height: 19px;
+  max-width: 19px;
+  min-width: 19px;
+}
+
+.main p {
+  padding: 10px;
+}
+
+.project-box {
+  background-color: var(--white);
+  width: 92%;
+  margin-left: 20px;
+  margin-top: 40px;
+  text-align: left;
+  box-shadow: -3px 4px 8px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: -3px 4px 8px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: -3px 4px 8px 0px rgba(0, 0, 0, 0.5);
+}
+
+.projectsTitle {
+  display: flex;
+}
+
+.projectsTitle img {
+  margin: 16px 9px 0 0px;
+  max-height: 50px;
+  min-height: 50px;
+  max-width: 11px;
+  min-width: 11px;
+}
+
+.projectsTitle p {
+  line-height: 0.5rem;
+}
+
+/* 
+
+
+
+
+
+
+
+
+
+ */
 
 /* FOOTER */
 
