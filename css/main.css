@@ -1,3 +1,120 @@
 /* Add your CSS here */
 
+/* Importing Fonts from Google */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Quicksand:wght@300&display=swap");
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Quicksand', sans-serif; */
+
+/* CSS Reset */
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+em,
+strong,
+i,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+article,
+footer,
+header,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+footer,
+header,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+
+/* General Styling */
+
+body {
+  background-color: #e6dacd;
+  color: #000;
+  font-family: "Quicksand", sans-serif;
+}
+
+/* Header Styling */
+
+header {
+  background-color: #fff;
+  padding: 1.5em 1em;
+}
+
+.headersquare {
+  background-color: #0150fd;
+  width: 1em;
+  height: 1em;
+  margin-right: 1em;
+}
+
+.logoname {
+  display: flex;
+}
+
+h1 {
+  font-size: 1.25em;
+  font-family: "Poppins", sans-serif;
+}
+
+.logocontainer p {
+  font-size: 0.8em;
+  padding: 0.5em 0;
+}
+
+.navmenu {
+  position: absolute;
+  left: -100%;
+}
+
+.bar {
+  width: 26px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #0150fd;
+}
+
+.bar:nth-child(1) {
+  width: 13px;
+  text-align: right;
+}
+
+.hero {
+  background-color: #f4ece6;
+}
+
+footer {
+  background-color: #fff;
+}
+
 /* Dont' forget to link this file to your HTML in the <head> */
