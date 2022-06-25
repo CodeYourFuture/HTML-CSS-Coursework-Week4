@@ -161,8 +161,11 @@ nav {
 
 .experience .experience-block h4:nth-child(4) {
   line-height: 0.1rem;
-  margin: ;
   margin-top: 0px;
+}
+
+.experience-block p {
+  font-size: 1.15rem;
 }
 
 /* START OF EDUCATION */
@@ -183,7 +186,7 @@ nav {
   -moz-box-shadow: -3px 4px 8px 0px rgba(0, 0, 0, 0.5);
 }
 
-.education .education-block h3 {
+.education-block h3 {
   font-size: 1rem;
   color: var(--royalblue);
 }
@@ -205,7 +208,6 @@ nav {
 
 .education .education-block h4:nth-child(4) {
   line-height: 0.1rem;
-  margin: ;
   margin-top: 0px;
 }
 
@@ -214,22 +216,34 @@ nav {
   font-size: 1.2rem;
 }
 
-/* 
+.education-block p {
+  font-size: 1.2rem;
+  width: 100%;
+}
 
+.skillset img {
+  max-height: 13px;
+  max-width: 13px;
+  min-width: 13px;
+  margin-right: 12px;
+}
 
+.languages img {
+  margin-right: 12px;
+  max-height: 13px;
+  max-width: 13px;
+  min-width: 13px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
- */
+.last-block .skillset-title {
+  color: #000;
+  font-size: 1.3rem;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.last-block {
+  margin-bottom: 55px;
+}
 
 /* FOOTER */
 
@@ -237,23 +251,59 @@ footer {
   font-size: 1.099rem;
   height: 355px;
   margin: 0;
-  padding: 15px;
+  padding: 10px 10px 0px 25px;
   background-color: var(--white);
+  width: 100%;
+  height: 330px;
+}
+
+.footer-line-1 {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0px 0px 0;
+  margin-top: 20px;
+  margin-left: 0px;
+  margin-bottom: 10px;
   width: 100%;
 }
 
 .footer-line-1 h5 {
-  margin-top: 5px;
+  margin-top: 0px;
   line-height: 0.1;
 }
 
+.line-1-content {
+  width: 100%;
+}
+
+.line-1-content p {
+  font-size: 0.9rem;
+}
+
+.footer-social-media {
+  padding: 2px;
+}
+
+.footer-social-media img {
+  margin-bottom: 20px;
+  margin-top: 0;
+  line-height: 0.5;
+}
+
+.footer-social-media h5 {
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+
 .footer-social-media p {
-  margin-top: 20px;
   font-size: 0.8rem;
   line-height: 0.5;
 }
 
 .footer-social-media a {
   text-decoration: underline;
+  line-height: 0.5;
+  margin-top: 0;
 }
+
 /* END OF MAIN PAGE MOBILE VIEW */
