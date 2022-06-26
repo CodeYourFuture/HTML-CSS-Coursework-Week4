@@ -74,6 +74,21 @@ li {
 
 .navbar #links {
   display: none;
+  text-align: center;
+  background-color: darkblue;
+  height: auto;
+  width: 100%;
+  padding: 50px;
+  z-index: 1;
+}
+
+.navbar #links ul {
+  width: 100%;
+}
+
+ul li {
+  padding: 15px;
+  color: white;
 }
 
 .nav-title-item {

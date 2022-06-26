@@ -80,6 +80,20 @@ nav {
 
 .navbar #links {
   display: none;
+  text-align: center;
+  background-color: var(--darkbeige);
+  height: auto;
+  width: 100%;
+  padding: 50px;
+  z-index: 1;
+}
+
+.navbar #links ul {
+  width: 100%;
+}
+
+ul li {
+  padding: 15px;
 }
 
 .nav-title-item {
