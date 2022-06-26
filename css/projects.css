@@ -82,10 +82,13 @@ nav {
 .navbar #links {
   display: none;
   text-align: center;
-  background-color: darkblue;
-  height: auto;
-  width: 100%;
+  background-color: var(--darkbeige);
+  height: 100vh;
+  width: 100vw;
   padding: 50px;
+  position: absolute;
+  left: 0;
+  margin: 0;
 }
 
 .navbar #links ul {
@@ -93,8 +96,13 @@ nav {
 }
 
 ul li {
-  padding: 15px;
-  color: white;
+  padding: 15px 0;
+  margin: 0;
+  text-align: center;
+}
+
+ul li:hover {
+  color: var(--royalblue);
 }
 
 .nav-title-item {
