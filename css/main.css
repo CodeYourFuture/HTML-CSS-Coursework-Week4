@@ -1,3 +1,691 @@
 /* Add your CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
+
+/*******************************General styles**********************************/
+
+
+:root{
+  --Black: #000;
+  --White: #FFF;
+  --Lylac: #f5e8ff;
+  --Light-Green: #E6FAC0;
+  --Medium-Green: #5E7D1F;
+  --Dark-Green: #394B2A;
+}
+
+*, *::before, *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+body{
+    font-size: 1.1rem;
+    color: var(--Dark-Green);
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: var(--Lylac);
+    font-family: 'Roboto', sans-serif;
+}
+
+/************************************header***********************************************/
+
+/*********************************top div****************************************/
+header .top-div{
+  display: none;
+}
+.search{
+  padding: .6rem;
+}
+
+.search .searchinput{
+  border: none;
+  outline: none;
+}
+
+
+.login{
+  display: flex;
+  justify-content: space-around;
+}
+
+.login div{
+  margin: 0 10px;
+}
+
+/*************bottom div**************/
+
+.bottom-div {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--White);
+}
+
+.bottom-div .text{
+  font-size: 1.2rem;
+  padding-top: .858rem;
+  color: var(--Medium-Green);
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.bottom-div .navcontact{
+  display: none;
+}
+
+.bottom-div .divcontact{
+ display: flex;
+ justify-content: space-between;
+ align-items: flex-end;
+ flex-direction: column;
+}
+
+.divcontact .hamburger{
+  font-size: 1.2rem;
+}
+
+.hamburger .fa-bars {
+  font-size: 1.9rem;
+}
+
+.divcontact .contactnumber {
+  display: flex;
+  justify-content: center;
+}
+.contactnumber p{
+  width: 100%;
+  margin-right: 7rem;
+}
+
+/*************************************main section******************************************************/
+
+main {
+  padding: 1rem;
+  position: relative;
+}
+
+.backimg1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  background-image: url("https://media.houseandgarden.co.uk/photos/61893e50f6acdd8ba4456048/16:9/w_2580,c_limit/1d7a3524075x.jpg");
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+} 
+
+
+.main-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  color: var(--White);
+}
+
+.main-center h1{
+ 
+    margin-bottom: 1rem;
+    letter-spacing: 1.8;
+    font-size: 2.7rem;
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+  }
+
+.main-center p{
+  margin-bottom: 1.5rem;
+  letter-spacing: 1.9;
+  font-size: 1.3rem;
+  font-weight: 400;
+  font-family: "open+Sans" sans-serif;
+}
+.main-center .btnmain{
+  padding: .65rem 1.5rem;
+  background-color: var(--Medium-Green);
+  border:0;
+  color: var(--White);
+  outline: 0;
+  font-size: 1.02rem;
+  border-radius: 4px;
+  text-transform: capitalize;
+  font-family: "roboto" sans-serif;
+  outline: none;
+  border: 1px solid var(--Black);
+}
+
+/*********************************************section1**************************************************/
+
+.section-1{
+
+display: grid;
+gap: 1rem;
+margin-bottom: 1rem;
+
+}
+
+.section-1 .divimg{
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+ align-items: center;
+ min-height: 100vh;
+ background-position: center center;
+ background-repeat: no-repeat;
+ background-size: cover;
+
+}
+
+.divimg1 {
+  background-image: url("https://static.wixstatic.com/media/697bc8_8bf7131cfd3547e9bd54d9f4f57f3e74~mv2_d_1920_1920_s_2.jpg/v1/fill/w_383,h_565,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/697bc8_8bf7131cfd3547e9bd54d9f4f57f3e74~mv2_d_1920_1920_s_2.jpg");
+}
+
+.divimg2 {
+  background-image: url("https://static.wixstatic.com/media/697bc8_8267510d9e19448297fc161a522881f1~mv2_d_1920_1920_s_2.jpg/v1/fill/w_383,h_565,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/697bc8_8267510d9e19448297fc161a522881f1~mv2_d_1920_1920_s_2.jpg");
+}
+
+.divimg3 {
+  background-image: url("https://static.wixstatic.com/media/697bc8_b067d0a4b500479b8a3930782976779e~mv2_d_1920_1920_s_2.jpg/v1/fill/w_383,h_565,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/697bc8_b067d0a4b500479b8a3930782976779e~mv2_d_1920_1920_s_2.jpg");
+}
+
+.divimg h2{
+
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: var(--Medium-Green);
+  padding: 1.2rem;
+
+}
+
+h2::after {
+  content: '';
+  width: 30px;
+  display: block;
+  height: 3px;
+  margin: 10px auto;
+  font-weight: 500;
+  background-color: var(--Medium-Green);
+}
+
+.divimg button{
+
+  padding: .65rem 1rem;
+  color: var(--White);
+  border:0;
+  outline: 0;
+  font-size: 1.02rem;
+  border-radius: 4px;
+  text-transform: capitalize;
+  font-family: "roboto" sans-serif;
+  background-color: var(--Medium-Green);
+
+}
+/***************************************************section2*****************************************************/
+.section2 {
+  display: grid;
+  gap: 1rem;
+  padding: .5rem;
+  margin-bottom: 1rem;
+}
+
+.section2 .about {
+  display: grid;
+  gap: 1rem;
+}
+
+.about .aboutus {
+  text-align: center;
+  letter-spacing: 1.7;
+}
+
+.aboutus p {
+  margin: 8x;
+}
+
+.flowers {
+
+  display: grid;
+}
+
+.flowers .online{
+
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+color: var(--White);
+min-height: 100vh;
+background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAAA1BMVEUAAACnej3aAAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC3AcUIAAFkqh/QAAAAAElFTkSuQmCC");
+background-position: center;
+background-size: cover;
+padding: 1rem;
+background-repeat: no-repeat;
+}
+
+.text h1{
+
+font-size: 5rem;
+text-align: center;
+letter-spacing: .12rem;
+}
+
+.text .click {
+
+  padding: .65rem 1.9rem;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 3px;
+  color: var(--White);
+  background-color: var(--Medium-Green);
+  text-transform: capitalize;
+  font-family: 'roboto' sans-serif;
+
+
+}
+
+/*********************************************back imgae 2***********************************************************************/
+
+
+.backimg2 {
+min-height: 100vh;
+background-image: url("https://media.architecturaldigest.com/photos/626aab7c3eb88382e12961b4/3:2/w_4737,h_3158,c_limit/16%20Backyard%20Vegetable%20Garden%20Ideas.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+}
+
+
+.backimg2 .formdiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.formdiv form {
+  display: grid;
+  height: auto;
+  width: 75vw;
+  max-width: 500px;
+  text-align: left;
+  padding: 1rem;
+  background-color: var(--Lylac);
+}
+
+label {
+  display: block;
+  font-size: 1.1rem;
+  margin: .35rem;
+  text-align: left;
+  text-transform: capitalize;
+}
+input{
+  padding: .28rem;
+}
+
+form input, .submit, textarea{
+  width: 100%;
+}
+
+form .submit {
+  font-size: 1rem;
+  color: var(--White);
+  padding: .25rem;
+  background-color: var(--Medium-Green);
+}
+
+/****************************************************************footer styles*************************************************************/
+
+.footer {
+
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: var(--Light-Green);
+}
+
+.footer .firstview {
+
+  display: grid;
+  padding: 1rem;
+  place-items: center;
+}
+
+.div1, .div2, .div3 {
+  margin: 8px;
+}
+
+h3 {
+  margin-bottom: .55rem;
+}
+
+.footer .secondview {
+  display: grid;
+  width: 100%;
+}
+
+.secondview h3 {
+  font-size: 1.2rem;
+}
+
+.secondview p {
+  margin: .35rem;
+}
+
+.secondview form {
+  padding: .15rem;
+  max-width: 425px;
+}
+
+form .inp {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+
+
+.subscrib .inp .val {
+
+  width: 40vw;
+  padding: .35rem;
+  color: var(--White);
+  font-size: 1rem;
+  text-transform: capitalize;
+  font-family: 'roboto' sans-serif;
+  background-color: var(--Medium-Green);
+}
+ 
+
+ /*************************************************************************socio links styles******************************************************/
+
+ .links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+ }
+
+ .links .sociomedia {
+  display: flex;
+  margin: 10px;
+ }
+
+ .sociomedia li {
+  margin: 6px;
+ }
+/**********************************************************************************************************************************************************************************/
+                                    /*Media queries*/
+/**********************************************************************************************************************************************************************************/
+
+/*************Media query 540px******************/
+
+
+@media(min-width: 564px) {
+
+  /************************* topdiv*************/
+
+  header .top-div{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding: 1rem;
+    background-color: var(--White);
+    justify-content: space-between;
+  }
+  .search{
+    max-width: 300px;
+    padding: .6rem;
+  }
+
+  .search form {
+    display: flex;
+    gap: 5px;
+  }
+
+  .search:hover{
+    cursor: pointer;
+    border: 1px solid var(--Medium-Green);
+  }
+
+  .search .searchinput::placeholder{
+    font-size: 1.2rem;
+    margin-left: 1rem;
+  }
+
+  /******************************bottomdiv**************************************************************/
+  
+  .bottom-div {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: var(--White);
+  }
+  
+  .bottom-div .text{
+    font-size: 1rem;
+    grid-column: span 1;
+    color: var(--Medium-Green);
+    font-family: 'Fjalla One', sans-serif;
+  }
+
+  .bottom-div .navcontact{
+    grid-column: span 2;
+    display: block;
+  }
+
+  .bottom-div .navcontact  ul {
+    display: flex;
+  }
+
+  .navcontact ul li{
+    margin: 5px;
+  }
+
+  .bottom-div .divcontact{
+    grid-column: span 2;
+    display: flex;
+    justify-content: flex-end;
+   }
+
+   .divcontact .hamburger{
+     display: none;
+  }
+
+  .hamburger .fa-bars {
+    display: none;
+  }
+
+  .divcontact .contactnumber {
+    display: flex;
+    justify-content: center;
+  }
+  .contactnumber p{
+
+    margin-right: .2rem;
+  }
+
+
+  /***************************************************************************/
+     /*****************main area**********/
+  /*****************************************************************************/
+  
+
+.backimg1, .backimg2{
+  background-attachment: fixed;
+}
+
+
+
+.formdiv form{
+
+grid-template-columns: repeat(2, 1fr);
+gap: 5px;
+width: 75vw;
+max-width: 600px;
+background-color: rgba(94, 125, 31. 4);
+}
+.span1 {
+  grid-column: 1 / -1;
+ 
+}
+.span2 {
+  grid-column: 2 / 3;
+
+}
+
+.text h1 {
+  text-transform: capitalize;
+}
+
+form .submit {
+  font-size: 1.2rem;
+  padding: .35rem;
+  cursor: pointer;
+}
+
+form .submit:hover {
+
+  color: var(--Medium-Green);
+  background-color: var(--Light-Green);
+}
+
+.footer .firstview {
+
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer .secondview {
+
+  place-items: center;
+}
+
+.secondview h3 {
+  font-size: 1.4rem;
+}
+
+.secondview p {
+
+  text-align: left;
+}
+
+}
+
+
+/**********************************************************************************************************************************************************************************/
+                                    /*Media queries*/
+/**********************************************************************************************************************************************************************************/
+
+/*************Media query 870px******************/
+
+
+@media(min-width: 870px) {
+
+ /******header****/
+
+ html {
+
+  scroll-behavior: smooth;
+ }
+
+ body{
+  width: 100%;
+ }
+
+
+ .bottom-div .text {
+
+  font-size: 1.6rem;
+ }
+
+ .navcontact ul li {
+
+  margin: 12px;
+ }
+
+ .navcontact ul li a {
+  color: var(--Black);
+  padding: .785rem;
+
+ }
+
+ .navcontact ul li a:hover{
+
+  color: var(--White);
+  background-color: var(--Medium-Green);
+ }
+
+ /***************************************************************************/
+     /*****************main area**********/
+  /*****************************************************************************/
+  
+  .main-center h1 {
+
+    font-size: 7rem;
+  }
+
+  .main-center p {
+
+    margin-bottom: 1.8rem;
+    font-size: 1.6rem;
+  }
+
+  .main-center .btnmain {
+
+    padding: .85rem 2rem;
+    font-size: 1.1rem;
+  }
+
+  .section-1 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+.section2 {
+  grid-template-columns: repeat(2. 1fr);
+}
+.about{
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 300px;
+}
+.garden{
+
+  display: flex;
+}
+
+.flowers {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 550px;
+  overflow: hidden;
+}
+
+.text .click:hover {
+  cursor: pointer;
+  color: var(--Black);
+  background-color: var(--Light-Green);
+
+}
+
+.footer {
+
+
+}
+
+}
