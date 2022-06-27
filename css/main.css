@@ -15,8 +15,8 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 
-.header > nav > div > h1,
-.footer > div > h1 {
+.header>nav>div>h1,
+.footer>div>h1 {
     font-family: 'poppins', sans-serif;
 }
 
@@ -32,9 +32,9 @@ body {
     align-items: center;
 }
 
-.header-nav > div {
+.header-nav>div {
     display: grid;
-    grid-template-areas: "square name" "career career";
+    grid-template-areas: "square name""career career";
     align-items: center;
     column-gap: .5em;
 }
@@ -67,7 +67,7 @@ body {
 
 /* not to be displayed on mobile */
 .nav-list,
-.career > span {
+.career>span {
     display: none;
 }
 
@@ -77,31 +77,34 @@ body {
     padding: 7.25%;
     display: grid;
     justify-content: center;
-    grid-template-areas: "call email" "socials socials" "p p";
+    grid-template-areas: "call email""socials socials""p p";
     gap: 2em
 }
 
 .call {
     grid-area: call;
 }
+
 .email {
     grid-area: email;
 }
+
 .socials {
     grid-area: socials;
 }
-.footer > p {
+
+.footer>p {
     grid-area: p;
 }
 
-.footer > div > h1 {
+.footer>div>h1 {
     font-size: 1.5em;
     margin-bottom: .5em;
     font-weight: 500;
 }
 
 
-.footer > p {
+.footer>p {
     font-size: 1.1em;
     letter-spacing: .5px;
 }
@@ -111,10 +114,62 @@ body {
     gap: 2em;
 }
 
-.social-icons > i {
+.social-icons>i {
     font-size: 2em;
 }
 
-.social-icons > i:hover {
-    color:  #0150FD;
+.social-icons>i:hover {
+    color: #0150FD;
+}
+
+
+/* Media Query */
+/* Desktop */
+@media screen and (min-width: 760px) {
+
+    /* header */
+    .header {
+        padding: 1em 7.25%;
+    }
+
+    /* navigation menu */
+    .nav-list{
+        display: flex;
+        gap: 2em;
+    }
+
+    .career > span {
+        display: inline-block;
+    }
+
+    .header-nav > div {
+        grid-template-areas: "square name career";
+    }
+
+    .nav-item {
+        list-style: none;
+    }
+
+    .nav-item > a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: black;
+    }
+
+    .nav-item > a:focus {
+        color: var(--royal-blue);
+    }
+    
+    /* menu button */
+    .header-nav > i {
+        display: none;
+    }
+
+
+    /* footer */
+    .footer {
+        padding: 1em 7.25%;
+        grid-template-areas: "p . . call email socials";
+        font-size: .6em;
+    }
 }
