@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- Add a link to your custom CSS here -->
-
+    <link rel="stylesheet" href="css/main.css" />
     <title>Responsive grid project</title>
   </head>
 
@@ -13,7 +13,7 @@
     <header>
       <div class="navbar">
         <div class="logo">
-          <p>Maya Nelson</p>
+          <p class="logo__name">Maya Nelson</p>
           <p>PROJECT MANAGER</p>
         </div>
         <div class="navbar__menu">
@@ -21,7 +21,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="resume.html">Resume</a></li>
             <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html"></a>Contact</li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -29,10 +29,12 @@
     <main>
       <section class="hero__section">
         <div class="profile">
-          <h1>Maya Nelson</h1>
+          <img src="/images/profile-image-elipse.png" alt="Photo of woman in white shirt" class="profile__img">
+          <h1>Maya <br> Nelson</h1>
+          <hr>
           <div class="hero__btn">
-            <button class="resume">RESUME</button>
-            <button class="projects">PROJECTS</button>
+            <button class="resume__btn">RESUME</button>
+            <button class="projects__btn">PROJECTS</button>
           </div>
           <div class="socialmedia__set"></div>
         </div>
@@ -54,9 +56,11 @@
       </section>
     </main>
     <footer>
-      <p>Call 123-456-7890</p>
-      <p>Write info@mysite.com</p>
-      <div class="socialmedia__icons">Follow</div>
+      <p class="call"><span>Call</span> <br> 123-456-7890</p>
+      <p class="email"><span> Write</span> <br> info@mysite.com</p>
+      <div class="socialmedia__icons">
+        <p>Follow</p> 
+      </div>
     </footer>
 
     <!-- Add your markup here -->
