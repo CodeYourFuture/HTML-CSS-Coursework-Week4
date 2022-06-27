@@ -129,6 +129,9 @@ ul li:hover {
   left: 0.9rem;
   margin-top: 0;
   margin-top: 0px;
+  box-shadow: -3px 4px 8px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: -3px 4px 8px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: -3px 4px 8px 0px rgba(0, 0, 0, 0.5);
 }
 
 .welcome h1 {
