@@ -45,6 +45,10 @@ li {
   min-width: 20px;
 }
 
+.navbar {
+  max-height: 5rem;
+}
+
 .nav-title {
   display: flex;
 }
@@ -140,6 +144,10 @@ ul li:hover {
   height: 8rem;
 }
 
+.block .hide {
+  display: none;
+}
+
 .social-media {
   display: inline-flex;
   justify-content: center;
@@ -195,18 +203,22 @@ ul li:hover {
 }
 
 .welcome hr {
-  background-color: var(--royalblue);
-  border: var(--royalblue) solid 1px;
+  background-color: var(--royalblue) !important;
+  border: var(--royalblue) solid 1px !important;
   width: 70px;
   margin: 15px auto;
 }
 
 .about {
   position: absolute;
-  top: 460px;
-  margin: 0 0px 0 13px;
+  top: 500px;
+  margin: 0px 0px 0 13px;
   padding: 0 5px;
   text-align: start;
+}
+
+.about button {
+  display: none;
 }
 
 /* FOOTER */
@@ -271,3 +283,195 @@ footer {
 }
 
 /* END OF MAIN PAGE MOBILE VIEW */
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 540px) {
+  /* NAVIGATION BAR*/
+
+  .active {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav-title {
+    margin-right: 0;
+  }
+
+  .navbar p {
+    font-size: 1rem;
+    margin: 6px 0;
+    margin-left: 0;
+    margin-right: 110px;
+    padding: 10px 0 0 5px;
+  }
+
+  ul li {
+    display: inline-flex;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 0px;
+    font-size: 0.9rem;
+    margin-right: 0;
+  }
+
+  ul a:first-child {
+    color: var(--royalblue);
+  }
+
+  .navbar p span {
+    display: contents;
+  }
+
+  nav .navbar .icon {
+    display: none;
+  } /*END OF NAV BAR*/
+
+  /* START OF MAIN */
+
+  .blank {
+    height: 90vh;
+    background: linear-gradient(270deg, #fff 60%, #e6dacd 0.1%, #e6dacd 40%);
+    margin-top: 2rem;
+  }
+  article {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    padding-left: 45px;
+  }
+  .about {
+    padding: 10px;
+    position: static;
+    min-width: 200px;
+    max-width: 400px;
+    text-align: start;
+  }
+
+  .about h2 {
+    font-size: 5rem;
+    margin: 0 auto;
+  }
+
+  .about button {
+    display: inline-block;
+    padding: 8px;
+    margin: 12px 8px;
+    background-color: var(--royalblue);
+    border-radius: 25px;
+    width: 100px;
+    color: var(--white);
+    border: none;
+  }
+
+  .about button:hover {
+    background-color: var(--white);
+    border: black solid 1px;
+    color: var(--black);
+    cursor: pointer;
+  }
+
+  .about button.projects {
+    background-color: var(--white);
+    border: black solid 1px;
+    color: var(--black);
+  }
+
+  .about button.projects:hover {
+    color: var(--black);
+    background-color: var(--royalblue);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+  }
+
+  .welcome-block {
+    position: static;
+    width: 100vw;
+    min-height: 32rem;
+    max-height: 42rem;
+    min-width: 250px;
+    max-width: 350px;
+  }
+  .welcome-block .photo {
+    margin-top: 35px;
+    min-height: 13rem;
+    max-height: 13rem;
+  }
+
+  .block h1 {
+    font-size: 1.6rem;
+    width: 9rem;
+    font-weight: 900;
+    text-align: center;
+  }
+
+  .block hr {
+    background-color: var(--royalblue);
+    border: var(--royalblue) solid 1px;
+    width: 3.5rem;
+    margin: 15px auto;
+  }
+
+  .social-media {
+    margin-top: auto;
+  }
+
+  .welcome-block button {
+    display: none;
+  }
+
+  .welcome-block p {
+    font-size: 1.1rem;
+    letter-spacing: 0.3rem;
+    padding-bottom: 25px;
+    padding-top: 0px;
+  }
+
+  .welcome-sm {
+    padding: 11px 12px;
+  }
+
+  .flex-box {
+    margin-top: 10rem;
+    margin-left: 0px;
+    margin-right: 5px;
+  }
+}
+
+/* FOOTER */
+
+footer {
+}
+
+.footer-social-media {
+}
+
+.footer-social-media .copyright-text {
+}
+
+/* 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   */
+
+/* END OF NAVIGATION */
+
+/* end of media query*/

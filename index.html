@@ -29,7 +29,7 @@
           </div>
           <p><span>/</span> PROJECT MANAGER</p>
 
-          <ul id="links">
+          <ul id="links push">
             <a href="#">
               <li>ABOUT ME</li>
             </a>
@@ -56,9 +56,21 @@
     <main>
       <section class="blank">
         <article>
-          <div class="about">
+          <div class="about flex-box">
             <h2>Hello</h2>
             <h3>Here's who I am & what I do</h3>
+
+            <div class="about-buttons">
+              <a href="/resume.html" target="_blank"
+                ><button>
+                  <strong> RESUME</strong>
+                </button></a
+              >
+              <a href="/projects.html" target="_blank">
+                <button class="projects"><strong>PROJECTS</strong></button></a
+              >
+            </div>
+
             <p>
               I'm a paragraph. Click here to add your own text and edit me. It’s
               easy. Just click “Edit Text” or double click me to add your own
@@ -70,32 +82,36 @@
               a little more about you.
             </p>
           </div>
-        </article>
-      </section>
 
-      <section class="welcome">
-        <div class="welcome-block">
-          <div>
-            <img
-              src="/photo AdobeStock_230407429.jpeg"
-              alt="Maya Nelson with a broad smile"
-            />
-          </div>
-          <div class="block">
-            <h1>Maya Nelson</h1>
-            <hr />
-          </div>
-          <div class="block">
-            <div class="welcome-buttons">
-              <a href="/resume.html" target="_blank"
-                ><button>
-                  <strong> RESUME</strong>
-                </button></a
-              >
-              <a href="/projects.html" target="_blank">
-                <button class="projects"><strong>PROJECTS</strong></button></a
-              >
+          <div class="welcome-block flex-box">
+            <div>
+              <img
+                class="photo"
+                src="/photo AdobeStock_230407429.jpeg"
+                alt="Maya Nelson with a broad smile"
+              />
             </div>
+            <div class="block">
+              <h1>Maya Nelson</h1>
+              <hr />
+            </div>
+
+            <div class="block">
+              <div class="welcome-buttons">
+                <a href="/resume.html" target="_blank"
+                  ><button>
+                    <strong> RESUME</strong>
+                  </button></a
+                >
+                <a href="/projects.html" target="_blank">
+                  <button class="projects"><strong>PROJECTS</strong></button></a
+                >
+              </div>
+              <!-- welcome buttons-->
+
+              <p class="hide">PROJECT MANAGER</p>
+            </div>
+            <!--Block-->
 
             <div class="social-media">
               <div class="welcome-sm">
@@ -111,11 +127,11 @@
                 <a href="#"><img src="instagram.png" alt="instagram logo" /></a>
               </div>
             </div>
+            <!--social media-->
           </div>
-        </div>
+          <!--Welcome-Block-->
+        </article>
       </section>
-
-      <section></section>
     </main>
 
     <!-- Please leave this in to credit the creators of this design -->
@@ -140,8 +156,10 @@
         <a href="#"><img src="twitter.png" alt="twitter logo" /></a>
         <a href="#"><img src="linkedin.png" alt="linkedin logo" /></a>
         <a href="#"><img src="instagram.png" alt="instagram logo" /></a>
-        <p>© 2023 by Maya Nelson.</p>
-        <p>proudly created with <a href="#">Wix.com</a></p>
+        <p class="copyright-text">© 2023 by Maya Nelson.</p>
+        <p class="copyright-text">
+          proudly created with <a href="#">Wix.com</a>
+        </p>
         <h6>
           This website design was created by Wix.com, and is used here for
           strictly educational purposes.
