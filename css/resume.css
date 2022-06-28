@@ -262,12 +262,22 @@ ul li:hover {
   min-width: 13px;
 }
 
-.last-block .skillset-title {
-  color: #000;
+.last-block p {
+  font-size: 1rem !important;
+}
+
+.last-block .skillset-title-1 {
   font-size: 1.3rem;
   margin-top: 50px;
   margin-bottom: 30px;
+  color: var(--black);
 }
+
+.last-block .skillset-title-2 {
+  font-size: 1.3rem;
+  color: var(--black);
+}
+
 .last-block {
   margin-bottom: 55px;
 }
@@ -429,6 +439,7 @@ footer {
   .exp-box {
     margin: 0px;
     width: 100%;
+    padding: 5px;
   }
 
   .exp-box p:nth-child(2) {
@@ -459,6 +470,130 @@ footer {
   .experience .experience-titles:nth-child(4) {
     line-height: 1.8 !important;
   }
+
+  /* EDUCATION */
+
+  .education {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0;
+    padding: 0;
+    padding-left: 100px;
+  }
+
+  .education h2 {
+    font-size: 2rem;
+  }
+
+  .education-block {
+    height: 40vh;
+  }
+
+  .edu-content {
+    display: flex;
+  }
+
+  .edu-box {
+    margin: 0px;
+    width: 100%;
+    padding: 5px;
+  }
+
+  .edu-box p:nth-child(2) {
+    margin-top: 30px;
+  }
+
+  .edu-box .education-text {
+    font-size: 1.1rem;
+    margin-top: 100px;
+  }
+
+  .education .education-titles {
+    line-height: 1px;
+    margin-top: 35px;
+    margin-left: 12px;
+    font-size: 1rem;
+    padding: 5px;
+  }
+
+  .education .education-titles:first-child {
+    font-size: 1.4rem !important;
+  }
+
+  .education .education-titles:nth-child(2) {
+    font-size: 1.2rem !important;
+  }
+
+  .education .education-titles:nth-child(4) {
+    line-height: 1.8 !important;
+  }
+  .education .last-block {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+
+  .last-block-box-1 {
+    margin-left: 5px;
+  }
+  .last-block-box-2 {
+    margin-left: 5px;
+  }
+
+  .education .last-block .split-1 {
+    width: fit-content;
+  }
+
+  .education .last-block .split-2 {
+    width: fit-content;
+    position: relative;
+    bottom: 87px;
+    left: 20rem;
+  }
+
+  .education .last-block .split-4 {
+    width: fit-content;
+    position: relative;
+    bottom: 87px;
+    left: 20rem;
+  }
+
+  /* .education .last-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "a a"
+      "b c"
+      "d e f";
+  }
+
+  .skillset-title-1 {
+    grid-area: ;
+  }
+
+  .skillset-title-2 {
+    grid-area: ;
+  }
+
+  .split-1 {
+    grid-area: ;
+  }
+
+  .split-2 {
+    grid-area: a; 1
+  }
+
+  .split-3 {
+    grid-area: ;
+  }
+
+  .split-4 {
+    grid-area: ;
+  } */
 
   /* 
 
