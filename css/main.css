@@ -1,3 +1,112 @@
-/* Add your CSS here */
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+/*font-family: 'Lora', serif*/
 
-/* Dont' forget to link this file to your HTML in the <head> */
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+/*font-family: 'Lora', serif;*/
+
+body{
+  background: linear-gradient(360deg, #E6DACD 71%, #FFFFFF 72%, #FFFF 100%);
+  margin: 0 auto;
+}
+
+h1{
+  font-family: 'Lora', serif
+}
+
+p, h2, h3{
+  font-family: 'Lora', serif;
+}
+ 
+.body_text{
+  padding: 2rem 3rem
+}
+
+.blue_block{
+  border:1rem solid blue;
+  width: 0.2px;
+  height: 0.2px;
+}
+
+.name{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: ;
+  width: 50%
+
+  
+}
+
+
+
+.picture_section {
+  background-color: #F4ECE6;
+  text-align: center;
+  margin-left: 1em;
+  margin-right: 1em;
+  max-width: 600px;
+  -ms-flex-align : center;
+}
+
+.profile_image {
+  border: #F4ECE6 solid 1px;
+  border-radius: 50%;
+  height: 30%;
+  width: 30%;
+  
+}
+hr{
+ display: block;
+ width: 20%;
+ border-top: 1px solid blue;
+ align-items: center;
+ font-weight: bolder;
+}
+
+.btns{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+}
+
+.resume_btn{
+  border: 3px solid royalblue;
+  border-radius: 20px;
+  margin: 2rem 1rem;
+  padding: 0.5rem 0;
+  background-color: royalblue;
+  
+}
+
+.projects_btn{
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: 2rem 1rem;
+  padding: 0.5rem 0;
+ 
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  font-family: 'Lora', serif;
+}
+
+.resume_btn a{
+  color: white;
+  font-family: 'Lora', serif;
+}
+.social_media{
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align:center;
+  width: 100%
+}
+
+.icon{
+  height: 2rem;
+  width: 2rem;
+
+}
