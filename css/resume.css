@@ -392,6 +392,11 @@ footer {
     margin-bottom: 60px;
   }
 
+  .main h2 {
+    font-size: 2rem !important;
+    margin-left: 100px;
+  }
+
   .main button {
     padding: 0.8rem 1rem;
     font-size: 0.9rem;
@@ -405,29 +410,56 @@ footer {
     margin-right: 3.5rem;
   }
 
-  .experience .experience-block {
-    margin-top: 30px;
-    max-width: 40rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
   .experience {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0;
+    padding: 0;
+    padding-left: 100px;
   }
 
-  .experience-titles {
-    grid-area: headings / 1;
-    padding: 6rem;
+  .experience-block {
+    height: 40vh;
   }
 
-  .experience-text {
-    grid-area: text / 2;
+  .exp-content {
     display: flex;
-    align-items: center;
-    justify-content: center;
   }
+
+  .exp-box {
+    margin: 0px;
+    width: 100%;
+  }
+
+  .exp-box p:nth-child(2) {
+    margin-top: 30px;
+  }
+
+  .exp-box .experience-text {
+    font-size: 1.1rem;
+    margin-top: 100px;
+  }
+
+  .experience .experience-titles {
+    line-height: 1px;
+    margin-top: 35px;
+    margin-left: 12px;
+    font-size: 1rem;
+    padding: 5px;
+  }
+
+  .experience .experience-titles:first-child {
+    font-size: 1.4rem !important;
+  }
+
+  .experience .experience-titles:nth-child(2) {
+    font-size: 1.2rem !important;
+  }
+
+  .experience .experience-titles:nth-child(4) {
+    line-height: 1.8 !important;
+  }
+
   /* 
 
 
