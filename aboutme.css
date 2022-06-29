@@ -9,12 +9,13 @@ body{
 	"header"
 	"main"
 	"footer";
+	font-family: 'Quicksand', sans-serif;
 }
 
 #header{
 	grid-area: header;
 	background-color: red;
-	height: 15vh;
+	height: 12vh;
 	display: grid;
 	grid-template-areas:
 	"name_plate navbar";
@@ -24,9 +25,9 @@ body{
 	grid-area: name_plate;
 	background-color: orange;
 	width: 70vw;
-	height: 15vh;
+	height: 12vh;
 	display: grid;
-	grid-template-rows: 10vh 5vh;
+	grid-template-rows: 7vh 5vh;
 	grid-template-areas:
 	"name_header"
 	"job_title";
@@ -34,16 +35,39 @@ body{
 
 #name_header{
 	margin: 0%;
+
+	margin-left: 9vw;
 	grid-area: name_header;
 	background-color: brown;
-	height: 10vh;
+	height: 7vh;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.5em;
+	font-weight: ;
+	display: flex;
+	/* justify-content: center; */
+	align-items: flex-end;
+}
+
+#blue_cube{
+	background-color: #0150FD;
+	height: 20px;
+	width: 20px;
+	margin-right: 2vw;
+	margin-bottom: 1vh;
+}
+
+#slash{
+	display: none;
 }
 
 #job_title{
 	margin: 0%;
+	margin-left: 9vw;
 	grid-area: job_title;
 	background-color: coral;
 	height: 5vh;
+	font-size: 1em;
+	padding-top: 2%;
 }
 
 
