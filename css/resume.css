@@ -41,7 +41,7 @@ li {
 nav {
   background-color: var(--white);
   padding: 10px;
-  height: 90px;
+  height: max-content;
 }
 
 .logo img {
@@ -91,10 +91,6 @@ nav {
   margin: 0;
 }
 
-.navbar #links ul {
-  width: 100%;
-}
-
 ul li {
   padding: 15px 0;
   margin: 0;
@@ -103,10 +99,6 @@ ul li {
 
 ul li:hover {
   color: var(--royalblue);
-}
-
-.nav-title-item {
-  display: inline-flex;
 }
 /* END OF NAVIGATION */
 
@@ -343,27 +335,97 @@ footer {
 
 /* MEDIA QUERIES */
 
-@media only screen and (max-width: 695px) {
+@media only screen and (max-width: 690px) {
+  p {
+    font-size: 1rem !important;
+  }
+
+  .active {
+    align-items: center !important;
+  }
   .nav-title h2 {
-    width: max-content;
-    padding: 0;
+    padding: 0 !important;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 662px) {
+  p {
+    font-size: 1rem !important;
   }
 
-  .nav-title p {
-    width: max-content;
-    padding: 0;
-    margin: auto;
+  .nav-title h2 {
+    padding: 0 !important;
+    margin: 0;
+    font-size: 0.99rem;
+  }
+}
+
+/* 
+
+
+
+
+
+
+
+
+
+
+
+
+ */
+
+@media only screen and (max-width: 726px) {
+  p {
+    font-size: 1rem !important;
   }
 
-  ul {
-    padding: 0;
+  .active {
+    padding: 5px;
+    align-items: center !important;
+  }
+  .nav-title h2 {
+    padding: 0 !important;
+    margin-top: 2px !important;
+  }
+
+  .nav-title img {
+    margin-top: 5px !important;
+  }
+
+  .nav-title a {
+    margin: 0 !important;
+  }
+
+  .nav-title-text {
+    width: max-content;
+    margin: 0;
+    padding: 0 !important;
   }
 
   .navbar li {
-    padding: 0;
+    padding: 2px;
+    margin: 0 3px;
     font-size: 0.9rem;
   }
 }
+
+/* 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ */
 
 @media only screen and (min-width: 540px) {
   /* NAVIGATION BAR*/
@@ -372,14 +434,16 @@ footer {
     display: flex;
     align-items: center;
     width: 100%;
-    max-height: 100px;
+    max-height: max-content;
   }
 
   .nav-title {
     margin-right: 0;
-    width: 70vw;
   }
 
+  .nav-title-text {
+    font-size: 0.9rem !important;
+  }
   .navbar p {
     font-size: 1rem;
     margin: 6px 0;
@@ -387,22 +451,21 @@ footer {
     padding: 10px 0 0 5px;
   }
 
+  ul {
+    margin-left: auto;
+  }
+
   .navbar #links {
     display: contents;
-    width: auto;
   }
 
   ul li {
     display: inline-flex;
     padding: 10px;
-    margin-left: auto;
-    margin-right: 0px;
     font-size: 0.9rem;
-    width: auto;
-    height: auto;
   }
 
-  ul a:first-child {
+  ul a:nth-child(2) {
     color: var(--royalblue);
   }
 
