@@ -1,0 +1,104 @@
+html, body{
+	margin: 0;
+	
+}
+
+body{
+	display: grid;
+	grid-template-areas:
+	"header"
+	"main"
+	"footer";
+}
+
+#header{
+	grid-area: header;
+	background-color: red;
+	height: 15vh;
+	display: grid;
+	grid-template-areas:
+	"name_plate navbar";
+}
+
+#name_plate{
+	grid-area: name_plate;
+	background-color: orange;
+	width: 70vw;
+	height: 15vh;
+
+
+
+}
+
+#navbar{
+	grid-area: navbar;
+	background-color: yellow;
+	width: 30vw;
+	height: 15vh;
+
+}
+
+#main{
+	grid-area: main;
+	background-color: green;
+	height: 90vh;
+	display: flex;
+	justify-content: flex-end;
+	/* align-items: center; */
+}
+
+#aboutme{
+	background-color: purple;
+	height: 90vh;
+	width: 85vw;
+}
+
+#footer{
+	grid-area: footer;
+	background-color: blue;
+	height: 25vh;
+}
+
+@media (min-width: 540px) {
+	html, body{
+		margin: 0;
+		
+	}
+	
+	body{
+		display: grid;
+		grid-template-areas:
+		"header"
+		"main"
+		"footer";
+	}
+	
+	#header{
+		grid-area: header;
+		background-color: red;
+		height: 15vh;
+	}
+	
+	#main{
+		grid-area: main;
+		background-color: green;
+		height: 110vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	#aboutme{
+		background-color: purple;
+		height: 65vh;
+		width: 50vw;
+	}
+	
+	#footer{
+		grid-area: footer;
+		background-color: blue;
+		height: 15vh;
+	}
+	
+
+}
