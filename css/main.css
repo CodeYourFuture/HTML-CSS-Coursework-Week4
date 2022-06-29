@@ -1,3 +1,166 @@
-/* Add your CSS here */
+:root {
+  /* COLORS */
+  --Darkbeige: #e6dacd;
+  --Lightbeige: #f4ece6;
+  --Royalblue: #0150fd;
+  --Black: #000;
+  --White: #fff;
 
-/* Dont' forget to link this file to your HTML in the <head> */
+  /* Headings */
+  --Headings-font-family: "Poppins", sans-serif;
+  --Body-font-family: "Quicksand", sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: var(--White);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 150px;
+}
+
+.logo p {
+  font-family: var(--Headings-font-family);
+}
+
+.nav {
+  margin-right: 2rem;
+  color: var(--Black);
+}
+.nav-links a {
+  text-decoration: none;
+  padding: 1rem;
+  color: var(--Black);
+}
+
+.nav-links a:hover {
+  color: var(--Royalblue);
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  margin-bottom: -670px;
+}
+
+.color-blank {
+  background-color: var(--Darkbeige);
+  grid-column: 1/5;
+  grid-row: 1/6;
+}
+
+.card {
+  background-color: var(--Lightbeige);
+  grid-column: 3/6;
+  grid-row: 2/5;
+  margin-right: 60px;
+  box-shadow: -10px 10px 29px -12px rgba(0, 0, 0, 0.77);
+  -webkit-box-shadow: -10px 10px 29px -12px rgba(0, 0, 0, 0.77);
+  -moz-box-shadow: -10px 10px 29px -12px rgba(0, 0, 0, 0.77);
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  column-gap: -30px;
+}
+
+.card img {
+  border-radius: 100%;
+  margin-top: 20px;
+}
+
+h4 {
+  padding: 0 0 -90px 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrapS;
+}
+
+.hello {
+  grid-column: 6/9;
+  grid-row: 2/5;
+  font-family: var(--Body-font-family);
+  margin-top: -60px;
+}
+
+h1 {
+  font-size: 100px;
+  font-weight: bolder;
+  margin-bottom: -20px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icons i {
+  padding: 0 10px;
+}
+
+.call {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.follow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.write {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.footer-sub {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright {
+  margin-left: 50px;
+}
+
+.buttons {
+  background-color: var(--White);
+  padding: 10px 60px;
+  border-radius: 30px;
+  align-items: center;
+  box-sizing: border-box;
+  color: var(--Black);
+  font-family: var(--Headings-font-family);
+  border-color: var(--Black);
+  font-size: larger;
+}
+
+.buttons:hover {
+  background-color: var(--Royalblue);
+  color: var(--White);
+}
+
+.hello p {
+  color: var(--Black);
+  font-size: larger;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 25px;
+}
