@@ -40,7 +40,8 @@ li {
 
 nav {
   background-color: var(--white);
-  padding: 13px;
+  padding: 10px;
+  height: 90px;
 }
 
 .logo img {
@@ -49,10 +50,6 @@ nav {
   max-height: 20px;
   max-width: 20px;
   min-width: 20px;
-}
-
-.navbar {
-  max-height: 5rem;
 }
 
 .nav-title {
@@ -78,7 +75,7 @@ nav {
   display: block;
   position: absolute;
   right: 12px;
-  top: 25px;
+  top: 35px;
   color: var(--royalblue);
 }
 
@@ -92,7 +89,6 @@ nav {
   position: absolute;
   left: 0;
   margin: 0;
-  z-index: 2;
 }
 
 .navbar #links ul {
@@ -347,6 +343,28 @@ footer {
 
 /* MEDIA QUERIES */
 
+@media only screen and (max-width: 695px) {
+  .nav-title h2 {
+    width: max-content;
+    padding: 0;
+  }
+
+  .nav-title p {
+    width: max-content;
+    padding: 0;
+    margin: auto;
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  .navbar li {
+    padding: 0;
+    font-size: 0.9rem;
+  }
+}
+
 @media only screen and (min-width: 540px) {
   /* NAVIGATION BAR*/
 
@@ -354,27 +372,34 @@ footer {
     display: flex;
     align-items: center;
     width: 100%;
+    max-height: 100px;
   }
 
   .nav-title {
     margin-right: 0;
+    width: 70vw;
   }
 
   .navbar p {
     font-size: 1rem;
     margin: 6px 0;
     margin-left: 0;
-    margin-right: 110px;
     padding: 10px 0 0 5px;
+  }
+
+  .navbar #links {
+    display: contents;
+    width: auto;
   }
 
   ul li {
     display: inline-flex;
     padding: 10px;
-    margin-left: 10px;
+    margin-left: auto;
     margin-right: 0px;
     font-size: 0.9rem;
-    margin-right: 0;
+    width: auto;
+    height: auto;
   }
 
   ul a:first-child {
@@ -560,40 +585,6 @@ footer {
     bottom: 87px;
     left: 20rem;
   }
-
-  /* .education .last-block {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:
-      "a a"
-      "b c"
-      "d e f";
-  }
-
-  .skillset-title-1 {
-    grid-area: ;
-  }
-
-  .skillset-title-2 {
-    grid-area: ;
-  }
-
-  .split-1 {
-    grid-area: ;
-  }
-
-  .split-2 {
-    grid-area: a; 1
-  }
-
-  .split-3 {
-    grid-area: ;
-  }
-
-  .split-4 {
-    grid-area: ;
-  } */
 
   /* 
 

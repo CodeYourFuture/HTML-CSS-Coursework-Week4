@@ -37,16 +37,18 @@ li {
 
 /* NAVIGATION */
 
+nav {
+  background-color: var(--white);
+  padding: 10px;
+  height: 90px;
+}
+
 .logo img {
   margin: 16px 4px 0 6px;
   width: 6vw;
   max-height: 20px;
   max-width: 20px;
   min-width: 20px;
-}
-
-.navbar {
-  max-height: 5rem;
 }
 
 .nav-title {
@@ -72,7 +74,7 @@ li {
   display: block;
   position: absolute;
   right: 12px;
-  top: 25px;
+  top: 35px;
   color: var(--royalblue);
 }
 
@@ -84,9 +86,9 @@ li {
   width: 100vw;
   padding: 50px;
   position: absolute;
+  z-index: 2;
   left: 0;
   margin: 0;
-  z-index: 2;
 }
 
 .navbar #links ul {
@@ -308,6 +310,10 @@ footer {
     margin-left: 0;
     margin-right: 110px;
     padding: 10px 0 0 5px;
+  }
+
+  .navbar #links {
+    display: contents;
   }
 
   ul li {
