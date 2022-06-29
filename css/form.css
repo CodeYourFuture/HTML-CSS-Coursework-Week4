@@ -190,6 +190,12 @@ span {
   margin: 0 auto;
 }
 
+.formContent button:hover {
+  color: var(--black);
+  background-color: var(--white);
+  border: 2px solid var(--royalblue);
+}
+
 /* 
 
 
