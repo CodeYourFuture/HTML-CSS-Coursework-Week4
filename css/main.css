@@ -1,3 +1,235 @@
 /* Add your CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Outfit:wght@200&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Fjalla One','outfit';
+    background-color: #EDEDEE ;
+}
+
+.searchbar {
+    padding: 20px;
+    background-color: white
+}   
+
+h1 {
+    color: #A05941;
+    font-family: 'Fjalla One';
+    font-size: 26px;
+}
+
+/*Section1*/
+.main-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.introtext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.name-section1{
+    color: white;
+    font-family: 'Fjalla One';
+    font-size: 20px;
+    text-align: center
+}
+
+.subheading-section1 {
+    color: white;
+    font-family: 'Fjalla One';
+    font-size: 15px;
+    text-align: center;
+}
+
+.section1-button {
+    padding: 14px;
+    background-color: #A05941;
+    width: 100px;
+    border: none;
+    align-items: center;
+    color: white;
+}
+
+/*Section2*/
+.image {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/*Section3*/
+.section3-intro {
+    width: 100%;
+    height: auto;
+    padding: 40px 0;
+    background-color: white;
+    align-self: start;
+    margin-bottom: 0;
+}
+
+.section3-intro , h3, p {
+    color: #A05941;
+    font-family: 'outfit';
+    text-align: center;
+}
+
+.aboutusline {
+    padding: 5px;
+    background-color:#A05941;
+    width: 10px;
+    align-items: center;
+}
+
+.image1 {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;  
+}
+
+.image11 {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;  
+}
+
+.image111 {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;  
+}
+#section3-content {
+    background-color: #133032;
+    padding: 150px;
+}
+
+.call-to-action {
+    text-align: center;
+    color: white;
+}
+
+.section3-button {
+    padding: 14px;
+    background-color: white;
+    width: 100px;
+    border: none;
+    align-items: center;
+    color: white;
+}
+
+/*Form*/
+.image2 {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;  
+}
+
+/*Footer*/
+footer {
+    background-color: #133032;
+    
+ }
+#map {
+    width: 100%;
+}
+
+.google-map {
+    width: 100%;
+    height:600px;
+    display:block;
+    background-color:#133032 ;
+}
+
+/*Media Queries*/
+@media (min-width:700px) {
+    body {
+    margin: 0 15px;
+    }
+
+    #section2 {
+        display: flex;
+        flex-direction: rows;
+        justify-content: space-around;
+    }
+
+    .section3-intro {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        width: 400px;
+        height: 300px;
+        padding: 1em;
+    }
+
+    #section3 {
+        display: grid;
+        grid-template-columns: repeat(3, );
+        grid-template-rows: repeat(2, );
+        row-gap: none;
+        column-gap: none;
+        justify-items: stretch;
+
+        /*display:flex;
+        flex-wrap:wrap;
+        flex: 1 1 1;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0;*/
+    }
+
+ 
+    .image1 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+    }
+
+    .image11 {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+
+    }
+    .image111 {
+        grid-column-start: 3;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 2;
+        width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+
+    }
+
+    #section3-content {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        padding: 1em;
+        object-fit: cover;
+
+    }
+}
