@@ -159,7 +159,35 @@ body{
 	grid-area: footer;
 	background-color: blue;
 	height: 25vh;
+	display: grid;
+	grid-template-rows: 10vh 10vh 5vh;
+	grid-template-areas: 
+	"contact"
+	"social_footer"
+	"copyright";
 }
+
+#contact{
+	grid-area: contact;
+	background-color: chocolate;
+	margin: 0%;
+}
+
+#social_footer{
+	grid-area: social_footer;
+	background-color: teal;
+	margin: 0%;
+	
+
+}
+
+#copyright{
+	grid-area: copyright;
+	background-color: fuchsia;
+	margin: 0%;
+
+}
+
 
 @media (min-width: 540px) {
 	html, body{
