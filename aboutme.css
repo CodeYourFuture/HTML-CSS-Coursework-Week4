@@ -25,10 +25,27 @@ body{
 	background-color: orange;
 	width: 70vw;
 	height: 15vh;
-
-
-
+	display: grid;
+	grid-template-rows: 10vh 5vh;
+	grid-template-areas:
+	"name_header"
+	"job_title";
 }
+
+#name_header{
+	margin: 0%;
+	grid-area: name_header;
+	background-color: brown;
+	height: 10vh;
+}
+
+#job_title{
+	margin: 0%;
+	grid-area: job_title;
+	background-color: coral;
+	height: 5vh;
+}
+
 
 #navbar{
 	grid-area: navbar;
@@ -41,17 +58,102 @@ body{
 #main{
 	grid-area: main;
 	background-color: green;
-	height: 90vh;
-	display: flex;
-	justify-content: flex-end;
+	margin: 0%;
+	height: 145.5vh;
+	/* display: flex; */
+	/* justify-content: flex-end; */
+	/* margin: 5vw; */
 	/* align-items: center; */
 }
 
 #aboutme{
 	background-color: purple;
-	height: 90vh;
+	margin: 0%;
+	margin-left: 9vw;
+	/* padding-right: 5%; */
+	height: 145.5vh;
 	width: 85vw;
+	display: grid;
+	grid-template-rows: 25vh 10vh 0.5vh 15vh 10vh 20vh 10vh 30vh 25vh ;
+	grid-template-areas: 
+	"img_container"
+	"name_main"
+	"rule"
+	"portfolio"
+	"social_main"
+	"title"
+	"subtitle"
+	"ramble1"
+	"ramble2";
 }
+
+#img_container{
+	grid-area: img_container;
+	background-color: red;
+	margin: 0%;
+	height: 25vh;
+
+
+}
+
+#headshot{
+
+}
+
+#name_main{
+	grid-area: name_main;
+	background-color: orange;
+	margin: 0%;
+
+}
+
+#rule{
+	margin: 0%;
+	background-color: blue;
+	border: none;
+
+}
+
+#portfolio{
+	grid-area: portfolio;
+	background-color: yellowgreen;
+	margin: 0%;
+
+}
+
+#social_main{
+	grid-area: social_main;
+	background-color: blue;
+	margin: 0%;
+
+}
+
+#title{
+	grid-area: title;
+	background-color: red;
+	margin: 0%;
+}
+
+#subtitle{
+	grid-area: subtitle;
+	background-color: orange;
+	margin: 0%;
+
+}
+
+#ramble1{
+	grid-area: ramble1;
+	background-color: yellowgreen;
+	margin: 0%;
+}
+
+#ramble2{
+	grid-area: ramble2;
+	background-color: pink;
+	margin: 0%;
+
+}
+
 
 #footer{
 	grid-area: footer;
