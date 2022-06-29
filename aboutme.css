@@ -42,7 +42,6 @@ body{
 	height: 7vh;
 	font-family: 'Poppins', sans-serif;
 	font-size: 1.5em;
-	font-weight: ;
 	display: flex;
 	/* justify-content: center; */
 	align-items: flex-end;
@@ -98,7 +97,7 @@ body{
 	height: 145.5vh;
 	width: 85vw;
 	display: grid;
-	grid-template-rows: 25vh 10vh 0.5vh 15vh 10vh 20vh 10vh 30vh 25vh ;
+	grid-template-rows: 25vh 10vh 0.5vh 12vh 8vh 20vh 10vh 30vh 25vh ;
 	grid-template-areas: 
 	"img_container"
 	"name_main"
@@ -116,12 +115,16 @@ body{
 	background-color: red;
 	margin: 0%;
 	height: 25vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
 
 }
 
 #headshot{
-
+	height: 20vh;
+	border-radius: 50%;
 }
 
 #name_main{
@@ -131,14 +134,23 @@ body{
 
 }
 
+.name_heading{
+	margin: 0%;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.5em;
+	text-align: center;
+}
+
 #jobtitle_main{
 	display: none;
 }
 
 #rule{
 	margin: 0%;
-	background-color: blue;
+	background-color: #0150FD;
 	border: none;
+	width: 20vw;
+	justify-self: center;
 
 }
 
@@ -146,7 +158,32 @@ body{
 	grid-area: portfolio;
 	background-color: yellowgreen;
 	margin: 0%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 
+}
+
+button{
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 700;
+	font-size: 1em;
+	border-radius: 2em;
+	padding: 2% 8%;
+	height: 5vh;
+	width: 35vw;
+
+}
+
+#resume{
+	color: white;
+	background-color: #0150FD;
+	border: none;
+
+}
+
+#projects{
+	background-color: #F4ECE6;
 }
 
 #social_main{
@@ -154,6 +191,31 @@ body{
 	background-color: blue;
 	margin: 0%;
 
+
+}
+
+#white_bar_socials{
+	height: 6vh;
+	width: 100%;
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+}
+
+#socials{
+	height: 6vh;
+	width: 40vw;
+	margin: 0%;
+	background-color: #fff;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+
+}
+
+.socials{
+	height: 2vh;
 }
 
 #title{
