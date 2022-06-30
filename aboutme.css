@@ -253,9 +253,9 @@ button{
 #footer{
 	grid-area: footer;
 	background-color: blue;
-	height: 25vh;
+	height: 28vh;
 	display: grid;
-	grid-template-rows: 10vh 10vh 5vh;
+	grid-template-rows: 10vh 10vh 8vh;
 	grid-template-areas: 
 	"contact"
 	"social_footer"
@@ -266,21 +266,71 @@ button{
 	grid-area: contact;
 	background-color: chocolate;
 	margin: 0%;
+	margin-left: 5vw;
+	display: grid;
+	grid-template-areas: "contact_call	contact_write";
 }
+
+h4{
+	font-family: 'Poppins', sans-serif;
+}
+
+#contact_call{
+	grid-area: contact_call;
+	background-color: aqua;
+	margin: 0%;
+	/* display: flex; */
+	/* flex-direction: column; */
+}
+
+#contact_write{
+	grid-area: contact_write;
+	margin: 0%;
+	background-color: crimson;
+}
+
+.contact_footer{
+	margin: 3% 0%;
+	/* margin-left: 10%; */
+}
+
+
 
 #social_footer{
 	grid-area: social_footer;
 	background-color: teal;
 	margin: 0%;
+	margin-left: 5vw;
 	
+}
 
+#follow{
+	margin: 3% 0%;
+}
+
+#socials2{
+	width: 40vw;
+	display: flex;
+	justify-content: space-between;
+}
+
+.socials_footer{
+	height: 3vh;
 }
 
 #copyright{
 	grid-area: copyright;
 	background-color: fuchsia;
 	margin: 0%;
+	margin-left: 5vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 
+}
+
+small > p{
+	margin: 0;
 }
 
 
