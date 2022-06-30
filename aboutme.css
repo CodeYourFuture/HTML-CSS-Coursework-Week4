@@ -116,8 +116,8 @@ body{
 	background: linear-gradient(0deg,  #E6DACD 75%, #FFF 25%);
 	margin: 0%;
 	height: 110vh;
-	display: flex;
-	justify-content: center;
+	/* display: flex; */
+	/* justify-content: flex-end; */
 	/* margin: 5vw; */
 	/* align-items: center; */
 }
@@ -128,7 +128,7 @@ body{
 	margin-left: 9vw;
 	/* padding-right: 5%; */
 	height: 110vh;
-	max-width: 450px;
+	width: 85vw;
 	display: grid;
 	grid-template-rows: 30vh 10vh 0.5vh 12vh 8vh 11vh 6vh 17vh 10vh ;
 	grid-template-areas: 
@@ -213,7 +213,7 @@ button{
 	border-radius: 2em;
 	padding: 2% 8%;
 	height: 5vh;
-	max-width: 200px;
+	width: 35vw;
 
 }
 
