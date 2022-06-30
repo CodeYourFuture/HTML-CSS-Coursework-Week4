@@ -128,7 +128,7 @@ body{
 	margin-left: 9vw;
 	/* padding-right: 5%; */
 	height: 110vh;
-	width: 450px;
+	max-width: 450px;
 	display: grid;
 	grid-template-rows: 30vh 10vh 0.5vh 12vh 8vh 11vh 6vh 17vh 10vh ;
 	grid-template-areas: 
@@ -213,7 +213,7 @@ button{
 	border-radius: 2em;
 	padding: 2% 8%;
 	height: 5vh;
-	width: 200px;
+	max-width: 200px;
 
 }
 
