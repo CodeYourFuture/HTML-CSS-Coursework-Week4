@@ -211,7 +211,7 @@ button{
 	font-weight: 700;
 	font-size: 1em;
 	border-radius: 2em;
-	padding: 2% 8%;
+	/* padding: 2% 8%; */
 	height: 5vh;
 	width: 35vw;
 
@@ -221,13 +221,13 @@ button{
 	color: white;
 	background-color: #0150FD;
 	border: none;
-	padding: 1% 0;
+	padding: 2% 8%;
 
 }
 
 #projects{
 	background-color: #F4ECE6;
-	padding: 1% 0;
+	padding: 2% 8%;
 }
 
 #social_main{
