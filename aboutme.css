@@ -376,7 +376,7 @@ small > p{
 }
 
 
-@media (min-width: 540px) {
+@media (min-width: 900px) {
 	html, body{
 		margin: 0;
 		
@@ -415,12 +415,13 @@ small > p{
 		margin-left: 5vw;
 		grid-area: name_header;
 		background-color: brown;
-		width:fit-content;
+		width:min-content;
 		height: 15vh;
 		font-family: 'Poppins', sans-serif;
 		font-size: 1.9em;
 		display: flex;
 		align-items: center;
+		white-space: nowrap;
 	}
 
 	#blue_cube{
@@ -445,11 +446,12 @@ small > p{
 		margin: 0%;
 		grid-area: job_title;
 		background-color: coral;
-		width: 20vw;
+		width: min-content;
 		height: 15vh;
 		display: flex;
 		align-items: center;
 		padding: 0%;
+		white-space: nowrap;
 	}
 
 
@@ -457,12 +459,14 @@ small > p{
 	
 	#navbar{
 		grid-area: navbar;
+		margin: 0%;
 		background-color: yellow;
-		width: 50vw;
+		width: 45vw;
 		height: 15vh;
 		display: flex;
 		justify-content: flex-end;
-	
+		white-space: nowrap;
+		justify-self: end;
 	}
 
 	.menu{
@@ -471,15 +475,17 @@ small > p{
 	
 	#navigation{
 		margin-right: 2vw;
-		width: 25vw;
+		width: min-content;
 		display: flex;
-		justify-content: space-between;
+		/* justify-content: space-between; */
+		
 		
 	}
 	
 	a{
 		text-decoration: none;
 		color: black;
+		margin: 1vw;
 	}
 
 
@@ -490,8 +496,10 @@ small > p{
 	#main{
 		grid-area: main;
 		background-color: green;
+		background: linear-gradient(90deg,  #E6DACD 50%, #FFF 50%);
 		margin: 0%;
-		height: 90vh;
+		height: 130vh;
+		
 		display: flex;
 		justify-content: center;
 		/* margin: 5vw; */
@@ -503,96 +511,192 @@ small > p{
 		margin: 0%;
 		margin-left: 9vw;
 		/* padding-right: 5%; */
-		height: 60vh;
-		width: 50vw;
+		height: 80vh;
+		width: 750px;
 		display: grid;
-		grid-template-rows: repeat(12, 5vh) ;
-		grid-template-columns: repeat(2, 25vw);
+		grid-template-rows: repeat(16, 5vh) ;
+		grid-template-columns: repeat(2,  375px);
 		grid-template-areas: 
 		"img_container	title"
 		"img_container	title"
 		"img_container	title"
+		"img_container	title"
+		"img_container	subtitle"
 		"img_container	subtitle"
 		"img_container	portfolio"
+		"img_container	portfolio"
 		"name_main		portfolio"
-		"name_main		portfolio"
+		"name_main		ramble1"
+		"name_main		ramble1"
 		"rule			ramble1"
-		"jobtitle_main	ramble1"
 		"jobtitle_main	ramble1"
 		"jobtitle_main	ramble2"
 		"social_main	ramble2"
+		"social_main	ramble2";
 	}
 	
 	#img_container{
 		grid-area: img_container;
 		background-color: red;
 		margin: 0%;
-		height: 25vh;
-	
+		height: 40vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	
 	}
 	
 	#headshot{
-	
+		height: 30vh;
+		border-radius: 50%;
 	}
 	
 	#name_main{
 		grid-area: name_main;
 		background-color: orange;
 		margin: 0%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	#rule_container{
+		grid-area: rule;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: #F4ECE6;
+	}
 	
+	#rule{
+		margin: 0%;
+		background-color: #0150FD;
+		border: none;
+		width: 5vw;
+		height: 4px;
+	}
+
+	.name_heading{
+		margin: 0%;
+		font-family: 'Poppins', sans-serif;
+		font-size: 1.8em;
+		text-align: center;
 	}
 
 	#jobtitle_main{
 		grid-area: jobtitle_main;
 		background-color: grey;
+		font-size: 1.3em;
+		padding-top: 3vh;
 		display: flex;
+		justify-content: center;
+
 	}
-	
-	#rule{
-		margin: 0%;
-		background-color: blue;
-		border: none;
-	
-	}
-	
-	#portfolio{
-		grid-area: portfolio;
-		background-color: yellowgreen;
-		margin: 0%;
-	
-	}
-	
+
 	#social_main{
 		grid-area: social_main;
 		background-color: blue;
+		/* background-color: #F4ECE6; */
 		margin: 0%;
+		display: flex;
+		align-items: flex-end;
+	
 	
 	}
+	
+	#white_bar_socials{
+		height: 6vh;
+		width: 100%;
+		background-color: #fff;
+		display: flex;
+		justify-content: center;
+	}
+	
+	#socials{
+		height: 6vh;
+		width: 40vw;
+		margin: 0%;
+		background-color: #fff;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	
+	
+	}
+	
 	
 	#title{
 		grid-area: title;
-		background-color: red;
+		background-color: chartreuse;
 		margin: 0%;
+		font-family: 'Poppins', sans-serif;
+		font-size: 6em;
+		padding-left: 2vw;
 	}
-	
+
 	#subtitle{
 		grid-area: subtitle;
 		background-color: orange;
 		margin: 0%;
+		font-family: 'Poppins', sans-serif;
+		font-size: 1.4em;
+		padding-left: 2vw;
+		display: flex;
+		align-items: center;
+	}
+	
+	
+	#portfolio{
+		grid-area: portfolio;
+		background-color: hotpink;
+		margin: 0%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-left: 2vw;
+		max-width: 275px;
 	
 	}
+
+	button{
+		font-family: 'Quicksand', sans-serif;
+		font-weight: 700;
+		font-size: 1em;
+		border-radius: 2em;
+		/* padding: 2% 8%; */
+		height: 5vh;
+		width: 135px;
+	
+	}
+	
+	#resume{
+		color: white;
+		background-color: #0150FD;
+		border: none;
+	
+	}
+	
+	#projects{
+		background-color: #F4ECE6;
+	}
+	
 	
 	#ramble1{
 		grid-area: ramble1;
 		background-color: yellowgreen;
 		margin: 0%;
+		padding-left: 2vw;
+		display: flex;
+		align-items: center;
 	}
 	
 	#ramble2{
 		grid-area: ramble2;
 		background-color: pink;
 		margin: 0%;
+		padding-left: 2vw;
+		display: flex;
+		align-items: center;
 	
 	}
 	
