@@ -105,6 +105,10 @@ body{
 	margin-left: 17.5px;
 }
 
+#navigation{
+	display: none;		
+}
+
 #main{
 	grid-area: main;
 	/* background-color: green; */
@@ -400,34 +404,87 @@ small > p{
 		background-color: orange;
 		width: 50vw;
 		height: 15vh;
-		display: grid;
+		/* display: grid;
 		grid-template-areas:
-		"name_header job_title";
+		"name_header slash job_title"; */
+		display: flex
 	}
 	
 	#name_header{
 		margin: 0%;
+		margin-left: 5vw;
 		grid-area: name_header;
 		background-color: brown;
-		width: 30vw;
+		width:fit-content;
 		height: 15vh;
+		font-family: 'Poppins', sans-serif;
+		font-size: 1.9em;
+		display: flex;
+		align-items: center;
 	}
-	
+
+	#blue_cube{
+		background-color: #0150FD;
+		height: 22px;
+		width: 22px;
+		margin-right: 1vw;
+		/* margin-bottom: 1vh; */
+	}
+
+	#slash{
+		grid-area: slash;
+		height: 15vh;
+		margin: 0%;
+		background-color: blue;
+		display: flex;
+		align-items: center;
+		
+	}
+
 	#job_title{
 		margin: 0%;
 		grid-area: job_title;
 		background-color: coral;
 		width: 20vw;
 		height: 15vh;
+		display: flex;
+		align-items: center;
+		padding: 0%;
 	}
-	
+
+
+
 	
 	#navbar{
 		grid-area: navbar;
 		background-color: yellow;
 		width: 50vw;
 		height: 15vh;
+		display: flex;
+		justify-content: flex-end;
 	
+	}
+
+	.menu{
+		display: none;
+	}
+	
+	#navigation{
+		margin-right: 2vw;
+		width: 25vw;
+		display: flex;
+		justify-content: space-between;
+		
+	}
+	
+	a{
+		text-decoration: none;
+		color: black;
+	}
+
+
+	#nav_about_me{
+		color: #0150FD;
 	}
 	
 	#main{
