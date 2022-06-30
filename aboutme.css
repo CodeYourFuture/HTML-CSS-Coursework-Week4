@@ -82,7 +82,7 @@ body{
 	grid-area: main;
 	background-color: green;
 	margin: 0%;
-	height: 145.5vh;
+	height: 105vh;
 	/* display: flex; */
 	/* justify-content: flex-end; */
 	/* margin: 5vw; */
@@ -94,10 +94,10 @@ body{
 	margin: 0%;
 	margin-left: 9vw;
 	/* padding-right: 5%; */
-	height: 145.5vh;
+	height: 105vh;
 	width: 85vw;
 	display: grid;
-	grid-template-rows: 25vh 10vh 0.5vh 12vh 8vh 20vh 10vh 30vh 25vh ;
+	grid-template-rows: 25vh 10vh 0.5vh 12vh 8vh 11vh 6vh 17vh 10vh ;
 	grid-template-areas: 
 	"img_container"
 	"name_main"
@@ -222,12 +222,16 @@ button{
 	grid-area: title;
 	background-color: red;
 	margin: 0%;
+	font-family: 'Poppins', sans-serif;
+	font-size: 3em;
 }
 
 #subtitle{
 	grid-area: subtitle;
 	background-color: orange;
 	margin: 0%;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.2em;
 
 }
 
@@ -235,6 +239,7 @@ button{
 	grid-area: ramble1;
 	background-color: yellowgreen;
 	margin: 0%;
+	
 }
 
 #ramble2{
