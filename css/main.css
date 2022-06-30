@@ -1,3 +1,175 @@
-/* Add your CSS here */
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap');
 
-/* Dont' forget to link this file to your HTML in the <head> */
+/* config */
+@import url(../css/config.css);
+
+/* Default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.header>nav>div>h1,
+.footer>div>h1 {
+    font-family: 'poppins', sans-serif;
+}
+
+/* header */
+.header {
+    padding: 7.25%;
+}
+
+/* navigation */
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav>div {
+    display: grid;
+    grid-template-areas: "square name""career career";
+    align-items: center;
+    column-gap: .5em;
+}
+
+.fa-square {
+    grid-area: square;
+    font-size: 1.5em;
+}
+
+.name {
+    grid-area: name;
+    font-size: 1.6em;
+    font-size: 600;
+}
+
+.career {
+    grid-area: career;
+    font-weight: 300;
+}
+
+/* icons */
+.fa-square,
+.fa-bars {
+    color: var(--royal-blue);
+}
+
+.fa-bars {
+    font-size: 2.2em;
+}
+
+/* not to be displayed on mobile */
+.nav-list,
+.career>span {
+    display: none;
+}
+
+
+/* footer */
+.footer {
+    padding: 7.25%;
+    display: grid;
+    justify-content: center;
+    grid-template-areas: "call email""socials socials""p p";
+    gap: 2em
+}
+
+.call {
+    grid-area: call;
+}
+
+.email {
+    grid-area: email;
+}
+
+.socials {
+    grid-area: socials;
+}
+
+.footer>p {
+    grid-area: p;
+}
+
+.footer>div>h1 {
+    font-size: 1.5em;
+    margin-bottom: .5em;
+    font-weight: 500;
+}
+
+
+.footer>p {
+    font-size: 1.1em;
+    letter-spacing: .5px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 2em;
+}
+
+.social-icons>i {
+    font-size: 2em;
+}
+
+.social-icons>i:hover {
+    color: #0150FD;
+}
+
+
+/* Media Query */
+/* Desktop */
+@media screen and (min-width: 760px) {
+
+    /* header */
+    .header {
+        padding: 1em 7.25%;
+    }
+
+    /* navigation menu */
+    .nav-list{
+        display: flex;
+        gap: 2em;
+    }
+
+    .career > span {
+        display: inline-block;
+    }
+
+    .header-nav > div {
+        grid-template-areas: "square name career";
+    }
+
+    .nav-item {
+        list-style: none;
+    }
+
+    .nav-item > a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: black;
+    }
+
+    .nav-item > a:focus {
+        color: var(--royal-blue);
+    }
+    
+    /* menu button */
+    .header-nav > i {
+        display: none;
+    }
+
+
+    /* footer */
+    .footer {
+        padding: 1em 7.25%;
+        grid-template-areas: "p . . call email socials";
+        font-size: .6em;
+    }
+}
