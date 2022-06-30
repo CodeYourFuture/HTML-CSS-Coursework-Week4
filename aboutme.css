@@ -10,6 +10,7 @@ body{
 	"main"
 	"footer";
 	font-family: 'Quicksand', sans-serif;
+	font-weight: 600;
 }
 
 #header{
@@ -115,8 +116,8 @@ body{
 	background: linear-gradient(0deg,  #E6DACD 75%, #FFF 25%);
 	margin: 0%;
 	height: 110vh;
-	/* display: flex; */
-	/* justify-content: flex-end; */
+	display: flex;
+	justify-content: center;
 	/* margin: 5vw; */
 	/* align-items: center; */
 }
@@ -127,7 +128,7 @@ body{
 	margin-left: 9vw;
 	/* padding-right: 5%; */
 	height: 110vh;
-	width: 85vw;
+	width: 450px;
 	display: grid;
 	grid-template-rows: 30vh 10vh 0.5vh 12vh 8vh 11vh 6vh 17vh 10vh ;
 	grid-template-areas: 
@@ -190,7 +191,7 @@ body{
 	margin: 0%;
 	background-color: #0150FD;
 	border: none;
-	width: 20vw;
+	width: 40px;
 	height: 4px;
 }
 
@@ -212,7 +213,7 @@ button{
 	border-radius: 2em;
 	padding: 2% 8%;
 	height: 5vh;
-	width: 35vw;
+	width: 200px;
 
 }
 
@@ -220,11 +221,13 @@ button{
 	color: white;
 	background-color: #0150FD;
 	border: none;
+	padding: 1% 0;
 
 }
 
 #projects{
 	background-color: #F4ECE6;
+	padding: 1% 0;
 }
 
 #social_main{
@@ -371,6 +374,12 @@ h4{
 
 }
 
+#copyright > p > a{
+	text-decoration: underline;
+	margin: 0;
+	color: #000;
+}
+
 small > p{
 	margin: 0;
 }
@@ -392,7 +401,7 @@ small > p{
 	
 	#header{
 		grid-area: header;
-		background-color: red;
+		/* background-color: red; */
 		height: 15vh;
 		display: grid;
 		grid-template-areas:
@@ -401,7 +410,7 @@ small > p{
 	
 	#name_plate{
 		grid-area: name_plate;
-		background-color: orange;
+		/* background-color: orange; */
 		width: 50vw;
 		height: 15vh;
 		/* display: grid;
@@ -414,7 +423,7 @@ small > p{
 		margin: 0%;
 		margin-left: 5vw;
 		grid-area: name_header;
-		background-color: brown;
+		/* background-color: brown; */
 		width:min-content;
 		height: 15vh;
 		font-family: 'Poppins', sans-serif;
@@ -436,16 +445,17 @@ small > p{
 		grid-area: slash;
 		height: 15vh;
 		margin: 0%;
-		background-color: blue;
+		/* background-color: blue; */
 		display: flex;
 		align-items: center;
+		padding: 0	2%;
 		
 	}
 
 	#job_title{
 		margin: 0%;
 		grid-area: job_title;
-		background-color: coral;
+		/* background-color: coral; */
 		width: min-content;
 		height: 15vh;
 		display: flex;
@@ -454,13 +464,10 @@ small > p{
 		white-space: nowrap;
 	}
 
-
-
-	
 	#navbar{
 		grid-area: navbar;
 		margin: 0%;
-		background-color: yellow;
+		/* background-color: yellow; */
 		width: 45vw;
 		height: 15vh;
 		display: flex;
@@ -495,7 +502,7 @@ small > p{
 	
 	#main{
 		grid-area: main;
-		background-color: green;
+		/* background-color: green; */
 		background: linear-gradient(90deg,  #E6DACD 50%, #FFF 50%);
 		margin: 0%;
 		height: 130vh;
@@ -507,7 +514,7 @@ small > p{
 	}
 	
 	#aboutme{
-		background-color: purple;
+		/* background-color: purple; */
 		margin: 0%;
 		margin-left: 9vw;
 		/* padding-right: 5%; */
@@ -537,7 +544,8 @@ small > p{
 	
 	#img_container{
 		grid-area: img_container;
-		background-color: red;
+		/* background-color: red; */
+		background-color: #F4ECE6;
 		margin: 0%;
 		height: 40vh;
 		display: flex;
@@ -553,11 +561,19 @@ small > p{
 	
 	#name_main{
 		grid-area: name_main;
-		background-color: orange;
+		/* background-color: orange; */
+		background-color: #F4ECE6;
 		margin: 0%;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+	}
+
+	.name_heading{
+		margin: 0%;
+		font-family: 'Poppins', sans-serif;
+		font-size: 1.8em;
+		text-align: center;
 	}
 
 	#rule_container{
@@ -576,16 +592,10 @@ small > p{
 		height: 4px;
 	}
 
-	.name_heading{
-		margin: 0%;
-		font-family: 'Poppins', sans-serif;
-		font-size: 1.8em;
-		text-align: center;
-	}
-
 	#jobtitle_main{
 		grid-area: jobtitle_main;
-		background-color: grey;
+		/* background-color: grey; */
+		background-color: #F4ECE6;
 		font-size: 1.3em;
 		padding-top: 3vh;
 		display: flex;
@@ -595,13 +605,11 @@ small > p{
 
 	#social_main{
 		grid-area: social_main;
-		background-color: blue;
-		/* background-color: #F4ECE6; */
+		/* background-color: blue; */
+		background-color: #F4ECE6;
 		margin: 0%;
 		display: flex;
-		align-items: flex-end;
-	
-	
+		align-items: flex-end;	
 	}
 	
 	#white_bar_socials{
@@ -627,7 +635,7 @@ small > p{
 	
 	#title{
 		grid-area: title;
-		background-color: chartreuse;
+		/* background-color: chartreuse; */
 		margin: 0%;
 		font-family: 'Poppins', sans-serif;
 		font-size: 6em;
@@ -636,7 +644,7 @@ small > p{
 
 	#subtitle{
 		grid-area: subtitle;
-		background-color: orange;
+		/* background-color: orange; */
 		margin: 0%;
 		font-family: 'Poppins', sans-serif;
 		font-size: 1.4em;
@@ -648,7 +656,8 @@ small > p{
 	
 	#portfolio{
 		grid-area: portfolio;
-		background-color: hotpink;
+		/* background-color: hotpink; */
+		background-color: #fff;
 		margin: 0%;
 		display: flex;
 		justify-content: space-between;
@@ -677,13 +686,13 @@ small > p{
 	}
 	
 	#projects{
-		background-color: #F4ECE6;
+		background-color: #FFF;
 	}
 	
 	
 	#ramble1{
 		grid-area: ramble1;
-		background-color: yellowgreen;
+		/* background-color: yellowgreen; */
 		margin: 0%;
 		padding-left: 2vw;
 		display: flex;
@@ -692,7 +701,7 @@ small > p{
 	
 	#ramble2{
 		grid-area: ramble2;
-		background-color: pink;
+		/* background-color: pink; */
 		margin: 0%;
 		padding-left: 2vw;
 		display: flex;
@@ -703,35 +712,96 @@ small > p{
 	
 	#footer{
 		grid-area: footer;
-		background-color: blue;
+		/* background-color: blue; */
 		height: 15vh;
 		display: grid;
-		grid-template-columns: 70vw 15vw 15vw;
+		grid-template-columns: 40vw 40vw 20vw;
 		grid-template-areas: 
-		"contact social_footer copyright";
+		"copyright contact social_footer";
 	}
+
+	#copyright{
+		grid-area: copyright;
+		/* background-color: fuchsia; */
+		margin: 0%;
+		height: 15vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding-left: 5vw;
+	}
+
+	small > p{
+		margin: 0;
+	}
+	
 	
 	#contact{
 		grid-area: contact;
-		background-color: chocolate;
+		/* background-color: chocolate; */
 		margin: 0%;
 		height: 15vh;
+		display: grid;
+		grid-template-areas: "contact_call	contact_write";
+	}
+	
+	h4{
+		font-family: 'Poppins', sans-serif;
+	}
+	
+	#contact_call{
+		grid-area: contact_call;
+		/* background-color: aqua; */
+		margin: 0%;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	
+	#contact_write{
+		grid-area: contact_write;
+		margin: 0%;
+		text-align: center;
+		/* background-color: crimson; */
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	
+	.contact_footer{
+		margin: 0%;
 	}
 	
 	#social_footer{
 		grid-area: social_footer;
-		background-color: teal;
+		/* background-color: teal; */
 		margin: 0%;
 		height: 15vh;
-		
-	
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
 	}
 	
-	#copyright{
-		grid-area: copyright;
-		background-color: fuchsia;
+	
+	#follow{
 		margin: 0%;
-		height: 15vh;
-	
+		text-align: center;
+		padding-bottom: 1%;
 	}
+	
+	#socials2{
+		margin: 0%;
+		width: 10vw;
+		/* display: flex;
+		justify-content: space-between; */
+	}
+	
+	.socials_footer{
+		height: 2vh;
+	}
+	
+	
 }
