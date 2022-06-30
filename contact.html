@@ -8,16 +8,16 @@
     <link rel="stylesheet" href="css/main.css">
 
     <title>Responsive grid project</title>
-
   </head>
-
   <body>
-    <!-- Add your markup here -->
+    <!-- step 1: Basic Skeleton -->
+
+
     <header>
       <div class="logocontainer">
         <div class="logoname">
           <div class="headersquare"></div>
-           <h1><strong>Maya Nelson</strong></h1>
+          <h1><strong>Maya Nelson</strong></h1>
         </div>
         <p>PROJECT MANAGER</p>
       </div>
@@ -25,9 +25,8 @@
         <ul class="navmenu">
           <li><a href="index.html">ABOUT ME</a></li>
           <li><a href="resume.html">RESUME</a></li>
-          <li><a href="#">PROJECTS</a></li>
-          <li><a href="#">CONTACT</a></li>
-          
+          <li><a href="projects.html">PROJECTS</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
         </ul>
         <ul class="hamburger">
           <span class="bar"></span>
@@ -35,31 +34,46 @@
           <span class="bar"></span>
         </ul>
       </nav>
-    </header>
     <main>
-      <div class="hero">
-        <img src="images/profilepic.JPG" alt="" class="profilepic" />
-        <h2>Maya Nelson</h2>
-        <hr class="blueline" />
-        <a href="#">RESUME</a>
-        <a href="#">PROJECTS</a>
-        <div class="socialmediabar">
-          <i class="socialicon"></i>
-          <i class="socialicon"></i>
-          <i class="socialicon"></i>
-          <i class="socialicon"></i>
+         <div class="pageheadingcontainer">
+             <div class="bluesquare"></div> 
+             <h2 class="pageheading">Let's talk</h2>
         </div>
-      </div>
-      <h2 class="mainheader">Hello</h2>
-      <p class="mainintro">Here's who I am & what I do</p>
-      <p>
-        I'm a paragraph. Click here to add your own text and edit me. It’s easy.
-        Just click “Edit Text” or double click me to add your own content and
-        make changes to the font. <br /><br />
-        I’m a great place for you to tell a story and let your users know a
-        little more about you.
-      </p>
+        <form>
+            <label for="firstname"  class="contactlabelstyle">
+                First Name <span class="bluestar">*</span>  
+            </label>
+            <input type="text" id="firstname" class="contactinputstyle">
+
+            <label for="lastname"  class="contactlabelstyle">
+                Last Name <span class="bluestar">*</span>  
+            </label>
+            <input type="text" id="lastname" class="contactinputstyle">
+
+             <label for="email"  class="contactlabelstyle">
+                Email <span class="bluestar">*</span>  
+            </label>
+            <input type="email" id="email" class="contactinputstyle">
+           
+            <label for="subject"  class="contactlabelstyle">
+                Subject <span class="bluestar">*</span>  
+            </label>
+            <input type="text" id="subject" class="contactinputstyle">
+             <label for="message"  class="contactlabelstyle">
+                Message <span class="bluestar">*</span>  
+            </label>
+            <input type="text" id="message" class="contactinputstyle">
+            <submit class="sendbutton"></submit>  
+        </form>
+          
+        
     </main>
+
+
+
+
+
+
     <footer>
       <div class="contactarticles">
         <article>
