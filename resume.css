@@ -147,6 +147,9 @@ body{
 	margin: 2.25vh;
 }
 
+.heading{
+	font-family: 'Poppins', sans-serif;
+}
 /* First Section of Resume */
 
 #resume_section1{
