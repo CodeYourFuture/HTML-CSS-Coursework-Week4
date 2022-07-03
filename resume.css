@@ -432,7 +432,7 @@ button{
 
 */
 #resume_section3{
-	width: 100vw;
+	/* width: 100vw; */
 	grid-area: resume_section3;
 	/* background-color: black; */
 	background-color: #fff;
@@ -448,7 +448,7 @@ button{
 }
 
 #subheading3-1{
-	width: 90vw;
+	/* width: 90vw; */
 	grid-area: subheading3-1;
 	/* background-color: indianred; */
 	font-size: 1.25em;
