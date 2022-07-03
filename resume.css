@@ -5,6 +5,7 @@ html, body{
 }
 
 body{
+	width: 100vw;
 	display: grid;
 	grid-template-areas:
 	"header"
@@ -15,6 +16,7 @@ body{
 }
 
 #header{
+	width: 100vw;
 	grid-area: header;
 	/* background-color: red; */
 	height: 12vh;
@@ -120,6 +122,7 @@ body{
 */
 
 #main{
+	width: 100vw;
 	grid-area: main;
 	background-color: #E6DACD;
 	/* background: linear-gradient(0deg,  #E6DACD 75%, #FFF 25%); */
@@ -140,6 +143,7 @@ body{
 
 
 #main_heading{
+	width: 100vw;
 	margin: 0%;
 	grid-area: main_heading;
 	/* background-color: purple; */
@@ -170,6 +174,7 @@ body{
 */
 
 #resume_section1{
+	width: 100vw;
 	grid-area: resume_section1;
 	/* background-color: black; */
 	background-color: #E6DACD;
@@ -310,6 +315,7 @@ button{
 */
 
 #resume_section2{
+	width: 100vw;
 	grid-area: resume_section2;
 	/* background-color: black; */
 	background-color: #E6DACD;
@@ -426,6 +432,7 @@ button{
 
 */
 #resume_section3{
+	width: 100vw;
 	grid-area: resume_section3;
 	/* background-color: black; */
 	background-color: #fff;
@@ -441,6 +448,7 @@ button{
 }
 
 #subheading3-1{
+	width: 90vw;
 	grid-area: subheading3-1;
 	/* background-color: indianred; */
 	font-size: 1.25em;
@@ -460,10 +468,11 @@ li{
 }
 
 #list3-1{
+	width: 90vw;
 	grid-area: list3-1;
 	/* background-color: lime; */
 	display: grid;
-	grid-template-columns: 8vw 90vw;
+	grid-template-columns: 8vw 82vw;
 	grid-template-areas: 
 	"blue_cube_list1	list1";
 }
@@ -497,7 +506,7 @@ li{
 	grid-area: list3-2;
 	/* background-color: navy; */
 	display: grid;
-	grid-template-columns: 8vw 90vw;
+	grid-template-columns: 8vw 82vw;
 	grid-template-areas: 
 	"blue_cube_list2	list2";
 }
@@ -524,6 +533,7 @@ li{
 
 
 #footer{
+	width: 100vw;
 	grid-area: footer;
 	/* background-color: blue; */
 	height: 28vh;
