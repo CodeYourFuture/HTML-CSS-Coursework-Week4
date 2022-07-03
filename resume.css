@@ -6,6 +6,7 @@ html, body{
 
 body{
 	width: 100vw;
+	/* background-color: #000; */
 	display: grid;
 	grid-template-areas:
 	"header"
@@ -468,7 +469,7 @@ li{
 }
 
 #list3-1{
-	width: 90vw;
+	/* width: 90vw; */
 	grid-area: list3-1;
 	/* background-color: lime; */
 	display: grid;
@@ -533,7 +534,7 @@ li{
 
 
 #footer{
-	width: 100vw;
+	/* width: 100vw; */
 	grid-area: footer;
 	/* background-color: blue; */
 	height: 28vh;
