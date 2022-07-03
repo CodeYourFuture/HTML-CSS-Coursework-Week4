@@ -1,5 +1,6 @@
 html, body{
 	margin: 0;
+	width: 100vw;
 	
 }
 
@@ -15,7 +16,7 @@ body{
 
 #header{
 	grid-area: header;
-	background-color: red;
+	/* background-color: red; */
 	height: 12vh;
 	display: grid;
 	grid-template-areas:
@@ -24,7 +25,7 @@ body{
 
 #name_plate{
 	grid-area: name_plate;
-	background-color: orange;
+	/* background-color: orange; */
 	width: 70vw;
 	height: 12vh;
 	display: grid;
@@ -39,7 +40,7 @@ body{
 
 	padding-left: 4vw;
 	grid-area: name_header;
-	background-color: brown;
+	/* background-color: brown; */
 	height: 7vh;
 	font-family: 'Poppins', sans-serif;
 	font-size: 1.5em;
@@ -64,7 +65,7 @@ body{
 	margin: 0%;
 	padding-left: 4vw;
 	grid-area: job_title;
-	background-color: coral;
+	/* background-color: coral; */
 	height: 5vh;
 	font-size: 1em;
 	padding-top: 2%;
@@ -72,14 +73,15 @@ body{
 
 
 #navbar{
+	
 	grid-area: navbar;
-	background-color: yellow;
+	/* background-color: yellow; */
 	width: 30vw;
-	height: 15vh;
+	height: 12vh;
 	display: flex;
 	justify-content: center;
 	/* align-items: center; */
-	padding-top: 4vh;
+
 
 }
 
@@ -88,6 +90,7 @@ body{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	padding-top: 4vh;
 }
 
 .menu{
@@ -95,6 +98,7 @@ body{
 	width: 35px;
 	height: 3px;
 	margin: 2% 0%;
+
 }
 
 #menu_top{
@@ -110,15 +114,20 @@ body{
 	display: none;		
 }
 
+/* Main Details 
+
+
+*/
+
 #main{
 	grid-area: main;
-	background-color: green;
+	background-color: #E6DACD;
 	/* background: linear-gradient(0deg,  #E6DACD 75%, #FFF 25%); */
 	margin: 0%;
 	padding: 6vh 2vw 6vh 6vw;
-	height: 400vh;
+	height: 335vh;
 	display: grid;
-	grid-template-rows: 8vh 100vh 100vh 100vh;
+	grid-template-rows: 8vh 117vh 117vh 71vh;
 	grid-row-gap: 6vh;
 	grid-template-areas: 
 	"main_heading"
@@ -127,11 +136,13 @@ body{
 	"resume_section3";
 }
 
+/* End of Main Details */
+
 
 #main_heading{
 	margin: 0%;
 	grid-area: main_heading;
-	background-color: purple;
+	/* background-color: purple; */
 	font-family: 'Poppins', sans-serif;
 	font-size: 2.25em;
 	display: flex;
@@ -150,14 +161,21 @@ body{
 .heading{
 	font-family: 'Poppins', sans-serif;
 }
-/* First Section of Resume */
+
+/* End of Main */
+
+/* First Section of Resume 
+
+
+*/
 
 #resume_section1{
 	grid-area: resume_section1;
-	background-color: black;
+	/* background-color: black; */
+	background-color: #E6DACD;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: 10vh 39vh 39vh;
+	grid-template-rows: 5vh 50vh 50vh;
 	grid-row-gap: 6vh;
 	grid-template-areas: 
 	"subheading1			cv_button"
@@ -167,59 +185,84 @@ body{
 
 #subheading1{
 	grid-area: subheading1;
-	background-color: aquamarine;
+	/* background-color: aquamarine; */
+	background-color: #E6DACD;
+	font-size: 1.25em;
 }
 
 #cv_button{
 	grid-area: cv_button;
-	background-color: brown;
+	/* background-color: brown; */
+	background-color: #E6DACD;
+	
 }
 
+button{
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 700;
+	font-size: 1em;
+	border-radius: 2em;
+	padding: 2% 10%;
+	height: 5vh;
+	border: none;
+	background-color: #0150FD;
+	color: white;
 
+}
 
 #resume_section1-1{
 	grid-area: resume_section1-1;
-	background-color: yellow;
+	/* background-color: yellow; */
+	background-color: #fff;
+	padding: 5vh 2vw 2vh 5vw;
 	display: grid;
-	grid-template-rows: 6vh 6vh 5vh 5vh 17vh;
+	grid-template-rows: 4vh 6vh 3vh 3vh 25vh;
 	grid-template-areas: 
 	"year1"
 	"section_title1"
 	"section_subtitle1-1"
 	"section_subtitle1-2"
-	"section_paragraph1";
+	"section_paragraph1"
+	"section_paragraph2";
 }
 
 #year1{
 	grid-area: year1;
-	background-color: coral;
+	/* background-color: coral; */
+	color: #0150FD;
+	font-size: 1.15em;
+	font-weight: bolder;
 }
 
 #section_title1{
 	grid-area: section_title1;
-	background-color: dodgerblue;
+	/* background-color: dodgerblue; */
+	display: flex;
+	align-items: center;
 }
 
 #section_subtitle1-1{
 	grid-area: section_subtitle1-1;
-	background-color: fuchsia;
+	/* background-color: fuchsia; */
 }
 
 #section_subtitle1-2{
 	grid-area: section_subtitle1-2;
-	background-color: gold;
+	/* background-color: gold; */
 }
 
 #section_paragraph1{
 	grid-area: section_paragraph1;
-	background-color: hotpink;
+	/* background-color: hotpink; */
 }
 
 #resume_section1-2{
 	grid-area: resume_section1-2;
-	background-color: violet;
+	/* background-color: violet; */
+	background-color: #fff;
+	padding: 5vh 2vw 2vh 5vw;
 	display: grid;
-	grid-template-rows: 6vh 6vh 5vh 5vh 17vh;
+	grid-template-rows: 4vh 6vh 3vh 3vh 25vh;
 	grid-template-areas: 
 	"year2"
 	"section_title2"
@@ -230,38 +273,48 @@ body{
 
 #year2{
 	grid-area: year2;
-	background-color: coral;
+	/* background-color: coral; */
+	color: #0150FD;
+	font-size: 1.15em;
+	font-weight: bolder;
 }
+
 #section_title2{
 	grid-area: section_title2;
-	background-color: dodgerblue;
+	/* background-color: dodgerblue; */
+	display: flex;
+	align-items: center;
 }
 
 #section_subtitle2-1{
 	grid-area: section_subtitle2-1;
-	background-color: fuchsia;
+	/* background-color: fuchsia; */
 }
 
 #section_subtitle2-2{
 	grid-area: section_subtitle2-2;
-	background-color: gold;
+	/* background-color: gold; */
 }
 
 #section_paragraph2{
 	grid-area: section_paragraph2;
-	background-color: hotpink;
+	/* background-color: hotpink; */
 }
 
 /* End First Section of Resume */
 
 
-/* Second Section of Resume */
+/* Second Section of Resume
+
+
+*/
 
 #resume_section2{
 	grid-area: resume_section2;
-	background-color: black;
+	/* background-color: black; */
+	background-color: #E6DACD;
 	display: grid;
-	grid-template-rows: 10vh 39vh 39vh;
+	grid-template-rows: 5vh 50vh 50vh;
 	grid-row-gap: 6vh;
 	grid-template-areas: 
 	"subheading2"
@@ -272,13 +325,17 @@ body{
 #subheading2{
 	grid-area: subheading2;
 	background-color: aquamarine;
+	background-color: #E6DACD;
+	font-size: 1.25em;
 }
 
 #resume_section2-1{
 	grid-area: resume_section2-1;
-	background-color: yellow;
+	/* background-color: yellow; */
+	background-color: #fff;
+	padding: 5vh 2vw 2vh 5vw;
 	display: grid;
-	grid-template-rows: 6vh 6vh 5vh 5vh 17vh;
+	grid-template-rows: 4vh 6vh 3vh 3vh 25vh;
 	grid-template-areas: 
 	"year3"
 	"section_title3"
@@ -289,33 +346,41 @@ body{
 
 #year3{
 	grid-area: year3;
-	background-color: coral;
+	/* background-color: coral; */
+	color: #0150FD;
+	font-size: 1.15em;
+	font-weight: bolder;
 }
+
 #section_title3{
 	grid-area: section_title3;
-	background-color: dodgerblue;
+	/* background-color: dodgerblue; */
+	display: flex;
+	align-items: center;
 }
 
 #section_subtitle3-1{
 	grid-area: section_subtitle3-1;
-	background-color: fuchsia;
+	/* background-color: fuchsia; */
 }
 
 #section_subtitle3-2{
 	grid-area: section_subtitle3-2;
-	background-color: gold;
+	/* background-color: gold; */
 }
 
 #section_paragraph3{
 	grid-area: section_paragraph3;
-	background-color: hotpink;
+	/* background-color: hotpink; */
 }
 
 #resume_section2-2{
 	grid-area: resume_section2-2;
-	background-color: violet;
+	/* background-color: violet; */
+	background-color: #fff;
+	padding: 5vh 2vw 2vh 5vw;
 	display: grid;
-	grid-template-rows: 6vh 6vh 5vh 5vh 17vh;
+	grid-template-rows: 4vh 6vh 3vh 3vh 25vh;
 	grid-template-areas: 
 	"year4"
 	"section_title4"
@@ -326,36 +391,48 @@ body{
 
 #year4{
 	grid-area: year4;
-	background-color: coral;
+	/* background-color: coral; */
+	color: #0150FD;
+	font-size: 1.15em;
+	font-weight: bolder;
 }
 
 #section_title4{
 	grid-area: section_title4;
-	background-color: dodgerblue;
+	/* background-color: dodgerblue; */
+	display: flex;
+	align-items: center;
 }
 
 #section_subtitle4-1{
 	grid-area: section_subtitle4-1;
-	background-color: fuchsia;
+	/* background-color: fuchsia; */
 }
 
 #section_subtitle4-2{
 	grid-area: section_subtitle4-2;
-	background-color: gold;
+	/* background-color: gold; */
 }
 
 #section_paragraph4{
 	grid-area: section_paragraph4;
-	background-color: hotpink;
+	/* background-color: hotpink; */
 }
 
 /* End Second Section of Resume */
 
+/* Start Third Section of Resume 
+
+
+*/
 #resume_section3{
 	grid-area: resume_section3;
-	background-color: deeppink;
+	/* background-color: black; */
+	background-color: #fff;
+	padding: 5vh 5vw 2vh 5vw;
 	display: grid;
-	grid-template-rows: 10vh 40vh 10vh 40vh;
+	grid-template-rows: 5vh 25vh 5vh 20vh;
+	grid-row-gap: 3vh;
 	grid-template-areas: 
 	"subheading3-1"
 	"list3-1"
@@ -365,24 +442,85 @@ body{
 
 #subheading3-1{
 	grid-area: subheading3-1;
-	background-color: indianred;
+	/* background-color: indianred; */
+	font-size: 1.25em;
+}
+
+li{
+	list-style: none;
+	margin: 0%;
+	padding: 3% 0%;
+}
+
+.blue_cube_list{
+	height: 15px;
+	width: 15px;
+	margin: 42% 0%;
+	
 }
 
 #list3-1{
 	grid-area: list3-1;
-	background-color: lime;
+	/* background-color: lime; */
+	display: grid;
+	grid-template-columns: 8vw 90vw;
+	grid-template-areas: 
+	"blue_cube_list1	list1";
+}
+
+#blue_cube_list1{
+	grid-area: blue_cube_list1;
+	/* background-color: firebrick; */
+	margin: 0%;
+	display: flex;
+	flex-direction: column;
+	
+}
+
+#list1{
+	grid-area: list1;
+	/* background-color: darkgrey; */
+	margin:0%;
+	padding: 0%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
 }
 
 #subheading3-2{
 	grid-area: subheading3-2;
-	background-color: maroon;
+	/* background-color: maroon; */
+	font-size: 1.25em;
 }
 
 #list3-2{
 	grid-area: list3-2;
-	background-color: navy;
+	/* background-color: navy; */
+	display: grid;
+	grid-template-columns: 8vw 90vw;
+	grid-template-areas: 
+	"blue_cube_list2	list2";
 }
 
+#blue_cube_list2{
+	grid-area: blue_cube_list2;
+	/* background-color: firebrick; */
+	margin: 0%;
+	display: flex;
+	flex-direction: column;
+	
+}
+
+#list2{
+	grid-area: list2;
+	/* background-color: darkgrey; */
+	margin:0%;
+	padding: 0%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+/* End Third Section of Resume */
 
 
 #footer{
