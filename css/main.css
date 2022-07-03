@@ -364,7 +364,7 @@ footer {
 
 .download__cv {
   font-family: var(--font-family-body--);
-  font-size: 1em;
+  font-size: 0.8em;
   font-weight: 600;
   color: var(--White--);
   background-color: var(--Royal-blue--);
@@ -476,4 +476,52 @@ footer {
 .proj1 {
   width: 100%;
   padding: 0px;
+}
+
+.contact__section h1 {
+  color: var(--Black--);
+  font-family: var(--font-family-headings--);
+  font-size: 2rem;
+}
+
+main {
+  background-color: var(--Dark-beige--);
+  margin-bottom: 2rem;
+}
+
+.contact__content {
+  background-color: var(--White--);
+  /* position: absolute;  */
+  display: flex;
+  flex-direction: column;
+  justify-items: space-between;
+  width: 20rem;
+  margin: 0rem 0rem 1rem 1rem;
+  box-shadow: -10px 10px 40px -20px rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  /* margin-bottom: 2rem; */
+}
+
+.send {
+  font-family: var(--font-family-headings--);
+  font-size: 1em;
+  color: var(--White--);
+  background-color: var(--Royal-blue--);
+  border: none;
+  border-radius: 30px;
+  width: 7rem;
+  height: 2rem;
+  display: inline-block;
+  align-self: center;
+}
+
+.contact__star {
+  color: var(--Royal-blue--);
+  margin: 0.5rem;
+}
+
+.contact__line {
+  width: 10rem;
+  margin: 2rem 0 2rem 0;
+  justify-items: center;
 }
