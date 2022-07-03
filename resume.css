@@ -464,7 +464,7 @@ li{
 .blue_cube_list{
 	height: 15px;
 	width: 15px;
-	margin: 42% 0%;
+	margin: 36% 0%;
 	
 }
 
@@ -473,7 +473,7 @@ li{
 	grid-area: list3-1;
 	/* background-color: lime; */
 	display: grid;
-	grid-template-columns: 8vw 82vw;
+	grid-template-columns: 8vw 72vw;
 	grid-template-areas: 
 	"blue_cube_list1	list1";
 }
@@ -507,7 +507,7 @@ li{
 	grid-area: list3-2;
 	/* background-color: navy; */
 	display: grid;
-	grid-template-columns: 8vw 82vw;
+	grid-template-columns: 8vw 72vw;
 	grid-template-areas: 
 	"blue_cube_list2	list2";
 }
