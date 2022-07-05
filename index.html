@@ -1,21 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- Add a link to your custom CSS here -->
-
+    <link rel="stylesheet" href="aboutme.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Quicksand:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <title>Responsive grid project</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- Add your markup here -->
-
+    <header id="header">
+      <section id="name_plate">
+        <div id="name_header">
+          <div id="blue_cube"></div>
+          Maya Nelson
+        </div>
+        <p id="slash">/</p>
+        <p id="job_title">PROJECT MANAGER</p>
+      </section>
+      <nav id="navbar">
+        <section id="menu_icon">
+          <div class="menu" id="menu_top"></div>
+          <div class="menu" id="menu_middle"></div>
+          <div class="menu" id="menu_bottom"></div>
+        </section>
+        <section id="navigation">
+          <p class="nav_links"><a id="nav_about_me" href="#">ABOUT ME</a></p>
+          <p class="nav_links"><a href="#">RESUME</a></p>
+          <p class="nav_links"><a href="#">PROJECTS</a></p>
+          <p class="nav_links"><a href="#">CONTACT</a></p>
+        </section>
+      </nav>
+    </header>
+    <main id="main">
+      <section id="aboutme">
+        <div id="img_container">
+          <img
+            id="headshot"
+            src="/css/images/profile_pic.jfif"
+            alt="Profile Picture"
+          />
+        </div>
+        <div id="name_main">
+          <p class="name_heading">Maya</p>
+          <p class="name_heading">Nelson</p>
+        </div>
+        <div id="rule_container">
+          <hr id="rule" />
+        </div>
+        <div id="jobtitle_main">PROJECT MANAGER</div>
+        <div id="portfolio">
+          <a href="/resume.html">
+            <button id="resume">RESUME</button>
+          </a>
+          <button id="projects">PROJECTS</button>
+        </div>
+        <div id="social_main">
+          <div id="white_bar_socials">
+            <div id="socials">
+              <img
+                class="socials"
+                src="/css/images/socials/facebook.png"
+                alt="Facebook Icon"
+              />
+              <img
+                class="socials"
+                src="/css/images/socials/twitter.png"
+                alt="Twitter Icon"
+              />
+              <img
+                class="socials"
+                src="/css/images/socials/linkedin.png"
+                alt="LinkedIn Icon"
+              />
+              <img
+                class="socials"
+                src="/css/images/socials/instagram.png"
+                alt="Instagram Icon"
+              />
+            </div>
+          </div>
+        </div>
+        <h1 id="title">Hello</h1>
+        <h3 id="subtitle">Here's who I am & what I do</h3>
+        <p id="ramble1">
+          I'm a paragraph. Click here to add your own text and edit me. It’s
+          easy. Just click “Edit Text” or double click me to add your own
+          content and make changes to the font.
+        </p>
+        <p id="ramble2">
+          I’m a great place for you to tell a story and let your users know a
+          little more about you.
+        </p>
+      </section>
+    </main>
+    <footer id="footer">
+      <div id="contact">
+        <div id="contact_call">
+          <h4 class="contact_footer">Call</h4>
+          <p class="contact_footer">123-456-7890</p>
+        </div>
+        <div id="contact_write">
+          <h4 class="contact_footer">Write</h4>
+          <p class="contact_footer">info@mysite.com</p>
+        </div>
+      </div>
+      <div id="social_footer">
+        <h4 id="follow">Follow</h4>
+        <div id="socials2">
+          <img
+            class="socials_footer"
+            src="/css/images/socials/facebook.png"
+            alt="Facebook Icon"
+          />
+          <img
+            class="socials_footer"
+            src="/css/images/socials/twitter.png"
+            alt="Twitter Icon"
+          />
+          <img
+            class="socials_footer"
+            src="/css/images/socials/linkedin.png"
+            alt="LinkedIn Icon"
+          />
+          <img
+            class="socials_footer"
+            src="/css/images/socials/instagram.png"
+            alt="Instagram Icon"
+          />
+        </div>
+      </div>
+      <small id="copyright">
+        <p>© 2023 by Maya Nelson.</p>
+        <p>Proudly created with <a href="https://www.wix.com/">Wix.com</a></p>
+      </small>
+    </footer>
 
     <!-- Please leave this in to credit the creators of this design -->
-    <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
-</body>
-
+    <p>
+      This website design was created by Wix.com, and is used here for strictly
+      educational purposes.
+    </p>
+  </body>
 </html>
