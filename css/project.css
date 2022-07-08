@@ -1,0 +1,84 @@
+#resume-hero {
+  width: 100%;
+  background-color: #e6dacd;
+  padding: 50px;
+}
+
+.title-container {
+  display: flex;
+  width: 100%;
+  align-items: baseline;
+  justify-content: center;
+}
+.title-container p {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.project-container {
+  width: 800px;
+  margin: 50px auto;
+}
+
+.project-title {
+  display: flex;
+  width: 100%;
+  font-size: 1rem;
+  margin: 50px 0;
+  text-align: center;
+}
+
+.project-card {
+  display: flex;
+  width: 800px;
+  height: 400px;
+  margin: 50px auto;
+  background-color: #fff;
+}
+
+.project-card h3 {
+  color: #0150fd;
+  margin-bottom: 10px;
+}
+
+.project-card h5 {
+  margin-bottom: 20px;
+}
+
+.Project-content {
+  position: relative;
+  width: 60%;
+  padding: 50px;
+}
+
+.blue-bar {
+  position: absolute;
+  left: 0;
+  top: 50px;
+  width: 10px;
+  height: 50px;
+  background-color: #0150fd;
+}
+.project-img1 {
+  background-image: url(../images/Leaflet.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 40%;
+}
+
+.project-img2 {
+  background-image: url(../images/Website_Mockup.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 40%;
+}
+
+.project-img3 {
+  background-image: url(../images/App\ Screen.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 40%;
+}
