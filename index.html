@@ -6,51 +6,56 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- Add a link to your custom CSS here -->
     <link rel="stylesheet" href="css/main.css">
-
+    <script src="https://kit.fontawesome.com/5077b611f9.js" crossorigin="anonymous"></script>
     <title>Responsive grid project</title>
 
   </head>
 
   <body>
     <!-- Add your markup here -->
-    <header>
-      <div class="logocontainer">
-        <div class="logoname">
-          <div class="headersquare"></div>
-           <h1><strong>Maya Nelson</strong></h1>
+    <header class="headerMain">
+      <nav class="navbar">
+        <div class="logocontainer">
+          <div class="logoname">
+            <div class="headersquare"></div>
+            <h1><strong>Maya Nelson</strong></h1>
+          </div>
+          <p>PROJECT MANAGER</p>
         </div>
-        <p>PROJECT MANAGER</p>
-      </div>
-      <nav class="navcontainer">
-        <ul class="navmenu">
-          <li><a href="index.html">ABOUT ME</a></li>
-          <li><a href="resume.html">RESUME</a></li>
-          <li><a href="#">PROJECTS</a></li>
-          <li><a href="#">CONTACT</a></li>
-          
+        <ul class="nav-menu nav-menuHome">
+          <li class="nav-item"><a href="index.html" class="nav-link nav-linkHome">ABOUT ME</a></li>
+          <li class="nav-item"><a href="resume.html" class="nav-link nav-linkHome">RESUME</a></li>
+          <li class="nav-item"><a href="projects.html" class="nav-link nav-linkHome">PROJECTS</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link nav-linkHome">CONTACT</a></li>
         </ul>
-        <ul class="hamburger">
+        <div class="hamburger hamburgerHome">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
-        </ul>
+        </div>
       </nav>
     </header>
-    <main>
-      <div class="hero">
-        <img src="images/profilepic.JPG" alt="" class="profilepic" />
+    <div class="whitesec"></div>
+    
+    <section class="hero cardstyling">
+        <img src="images/heropic.png" alt="" class="profilepic" class="heropic" />
         <h2>Maya Nelson</h2>
         <hr class="blueline" />
-        <a href="#">RESUME</a>
-        <a href="#">PROJECTS</a>
-        <div class="socialmediabar">
-          <i class="socialicon"></i>
-          <i class="socialicon"></i>
-          <i class="socialicon"></i>
-          <i class="socialicon"></i>
+        <div class="samelinebuttons">
+          <a href="resume.html" class="btnblue">RESUME</a>
+          <a href="projects.html" class="btnoutline">PROJECTS</a>
         </div>
-      </div>
-      <h2 class="mainheader">Hello</h2>
+        
+       <div class="socialmediabar">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-linkedin-in"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+      </section>
+      
+    <main class="profilemove">
+      <h2 class="mainheading">Hello</h2>
       <p class="mainintro">Here's who I am & what I do</p>
       <p>
         I'm a paragraph. Click here to add your own text and edit me. It’s easy.
@@ -60,24 +65,26 @@
         little more about you.
       </p>
     </main>
-    <footer>
+     <footer>
       <div class="contactarticles">
+        <div class="contactdeets">
         <article>
-          <h3>Call</h3>
-          <p>123-456-7890</p>
-        </article>
-        <article>
-          <h3>Write</h3>
-          <p>info@mysite.com</p>
-        </article>
-        <article>
+            <h3>Call</h3>
+            <p>123-456-7890</p>
+          </article>
+          <article>
+            <h3>Write</h3>
+            <p>info@mysite.com</p>
+          </article>
+        </div>
+        <article class="socialdeets">
           <h3>Follow</h3>
-          <div class="socialmediabar">
-            <i class="socialicon"></i>
-            <i class="socialicon"></i>
-            <i class="socialicon"></i>
-            <i class="socialicon"></i>
-          </div>
+          <div class="socialmediadeets">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
         </article>
       </div>
         <p class="copyright">
@@ -87,9 +94,10 @@
       </article>
     </footer>
     <!-- Please leave this in to credit the creators of this design -->
-    <p>
+    <p class="wixcredit">
       This website design was created by Wix.com, and is used here for strictly
       educational purposes.
     </p>
+    <script src="script.js"></script>  
   </body>
 </html>
