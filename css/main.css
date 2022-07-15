@@ -24,6 +24,20 @@ html {
 /* General Styling */
 .gencardheading {
   color: #0150fd;
+  padding: 0.5rem 0;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+article h5 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+}
+
+.expcompanydetails {
+  padding: 0.5rem 0;
+  font-size: 1rem;
 }
 
 body {
@@ -32,7 +46,6 @@ body {
   font-family: "Quicksand", sans-serif;
   line-height: 1;
   font-weight: 700;
-  height: 1580px;
 }
 
 li {
@@ -86,9 +99,13 @@ h1 {
   font-family: "Poppins", sans-serif;
 }
 
+.hero h2{
+   width: 3em; 
+}
+
 h2 {
   padding: 1em 0 0.5em;
-  width: 3em;
+s
   text-align: center;
   /* margin: 0 auto; */
   font-size: 1.25em;
@@ -223,7 +240,6 @@ h2 {
 
 .samelinebuttons {
   display: flex;
-  justify-content: space-around;
   align-items: baseline;
   padding-bottom: 2rem;
 }
@@ -236,6 +252,7 @@ h2 {
 
 .samelinebuttons h3 {
   font-weight: 800;
+  margin-right: 2.25rem;
 }
 
 .btnblue {
@@ -244,6 +261,7 @@ h2 {
   margin: 5px;
   border-radius: 15px;
   color: #fff;
+  text-transform: uppercase;
 }
 
 .btnoutline {
@@ -291,11 +309,14 @@ main p {
 }
 
 footer {
-  position: relative;
-  top: -180px;
   background-color: #fff;
   padding: 1rem;
   padding-bottom: 100px;
+}
+
+.mainfooter {
+  position: relative;
+  top: -180px;
 }
 
 .contactdeets {
@@ -336,11 +357,36 @@ article p {
   padding-bottom: 0;
 }
 
-.wixcredit {
+.wixcreditmain {
   position: relative;
   top: -160px;
 }
 
+/* 
+Resume   */
+.resheadings {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 2rem;
+}
+
+.smallbluesquare {
+  background-color: #0150fd;
+  width: 1rem;
+  height: 1rem;
+}
+
+.resextras {
+  padding-top: 1rem;
+  display: grid;
+  grid-template-columns: 2rem 1fr;
+  gap: 1rem 0.5rem;
+}
+
+.profskillset p {
+  font-size: 1rem;
+  font-weight: 600;
+}
 /* 
 Contact   */
 
