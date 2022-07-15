@@ -390,17 +390,19 @@ Resume   */
 /* 
 Contact   */
 
-form {
+.formsize {
   background-color: #fff;
-  padding: 2rem 1rem;
+  padding: 2rem 1rem 8rem;
 }
 
-form submit {
-  margin-top: 1rem;
+.formsize submit {
+  position: relative;
+  top: 3rem;
+  left:40%;
 }
 
 label {
-  font-weight: 600;
+  font-weight:800;
 }
 
 .bluestar {
@@ -408,7 +410,8 @@ label {
 }
 
 input {
-  margin: 1rem 0 0 0;
+  margin: 1rem 0 0.5rem 0;
+  height:2rem;
   width: 100%;
   border: none;
   border-bottom: #000 solid 2px;
