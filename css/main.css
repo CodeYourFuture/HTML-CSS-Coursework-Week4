@@ -118,6 +118,10 @@ s
   padding: 0.5em 0;
 }
 
+.largeslash{
+  display: none;
+}
+
 /* Navigation Styling */
 .navbar {
   display: flex;
@@ -508,8 +512,58 @@ Projects */
 }
 
 
+@media only screen and (min-width: 768px) {
 
+/* 
+All Pages */
+  .largeslash{
+  display:inline;
+  padding: 0 0.5rem;
+}
 
+.logocontainer{ 
+  display: flex;
+}
 
+footer {
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contactarticles {
+  display: flex;
+}
+
+/* 
+Contact */
+.pageheading {
+ display: inline;
+ width:fit-content;
+}
+.cardstyling {
+  width: 50%;
+  margin: auto;
+  padding: 3rem 3rem 5rem ;
+}
+
+.formchangelarge {
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3rem;
+}
+
+.inputfirstname{
+    grid-area: 2 / 1 / 2 / 1;
+}
+
+.inputmessage {
+  height: 5rem;
+}
+
+}
 
 /* Dont' forget to link this file to your HTML in the <head> */
