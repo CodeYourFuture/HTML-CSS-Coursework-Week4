@@ -588,7 +588,7 @@ Main Home page*/
     display: flex;
     width: 50rem;
     margin: auto;
-    height: 70%;
+    height: 90%;
     z-index: 20;
   }
 
@@ -599,15 +599,31 @@ Main Home page*/
     height: 100%;
     margin: 0;
     width: 40%;
+    padding: 1rem;
+    position: relative;
   }
 
   .middleprofile .samelinebuttons {
     width: 50%;
     gap: 2rem;
     position: relative;
-    bottom: 8rem;
+    bottom: 10rem;
     left: 19rem;
     z-index: 30;
+    padding: 0;
+  }
+
+  .showtitle {
+    display: block;
+    padding-top: 1rem;
+  }
+
+  .socialmediabar {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    bottom: 0%;
+    position: absolute;
   }
 
   .mainheading {
