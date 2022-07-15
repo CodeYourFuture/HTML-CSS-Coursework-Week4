@@ -26,10 +26,10 @@ html {
   color: #0150fd;
   padding: 0.5rem 0;
   font-size: 1.5rem;
-  font-weight: 800;
+  font-weight: 700;
 }
 
-article h5 {
+.res h5 {
   text-transform: uppercase;
   font-size: 1rem;
   padding: 0.5rem 0;
@@ -45,7 +45,7 @@ body {
   color: #000;
   font-family: "Quicksand", sans-serif;
   line-height: 1;
-  font-weight: 700;
+
 }
 
 li {
@@ -327,12 +327,12 @@ footer {
   padding: 1rem;
 }
 
-article h3 {
+.deets h3 {
   padding: 20px 0;
   font-weight: 800;
 }
 
-article p {
+.deets p {
   font-weight: 600;
 }
 
@@ -414,6 +414,38 @@ input {
   border-bottom: #000 solid 2px;
 }
 
+/* 
+Projects */
+
+.projintro {
+  padding: 0 1rem 1rem 1rem;
+  text-align:center;
+}
+
+.project {
+  padding: 0;
+  padding-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+
+.project p {
+  padding:  1rem;
+}
+
+.project img {
+ display: block;
+ /* fitted images perfectly in parent */
+}
+
+.blueborder {
+  margin: 1rem 0 0 0;
+  padding: 0 0 0 1rem;
+  border-left: #0150fd 10px solid;
+  text-transform: none;
+}
+
+
 /* Media Queries */
 
 @media only screen and (max-width: 768px) {
@@ -471,5 +503,10 @@ input {
     transform: translateY(-8px) rotate(-45deg);
   }
 }
+
+
+
+
+
 
 /* Dont' forget to link this file to your HTML in the <head> */
