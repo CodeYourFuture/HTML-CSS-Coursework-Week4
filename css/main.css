@@ -45,7 +45,6 @@ body {
   color: #000;
   font-family: "Quicksand", sans-serif;
   line-height: 1;
-
 }
 
 li {
@@ -99,15 +98,13 @@ h1 {
   font-family: "Poppins", sans-serif;
 }
 
-.hero h2{
-   width: 3em; 
+.hero h2 {
+  width: 3em;
 }
 
 h2 {
   padding: 1em 0 0.5em;
-s
   text-align: center;
-  /* margin: 0 auto; */
   font-size: 1.25em;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
@@ -118,7 +115,7 @@ s
   padding: 0.5em 0;
 }
 
-.largeslash{
+.largeslash {
   display: none;
 }
 
@@ -183,9 +180,8 @@ s
   position: relative;
   left: 2rem;
   padding: 2rem 1rem 1rem;
-  /* margin: 0 0.5rem 1rem 2.5rem; */
   margin-bottom: 1rem;
-
+  width: 90%;
   box-shadow: 0px 0.9px 6.6px rgba(0, 0, 0, 0.026),
     0px 2.1px 16.3px rgba(0, 0, 0, 0.042), 0px 3.9px 31.5px rgba(0, 0, 0, 0.053),
     0px 6.9px 57.1px rgba(0, 0, 0, 0.063), 0px 13px 107.3px rgba(0, 0, 0, 0.069),
@@ -224,17 +220,6 @@ s
 .socialmediabar i {
   padding: 5px;
   font-size: 1.5rem;
-}
-
-.cardstyling {
-  /* padding: 2rem 1rem 1rem; */
-  /* margin: 0 0.5rem 1rem 2.5rem; */
-  width: 90%;
-  box-shadow: 0px 0.9px 6.6px rgba(0, 0, 0, 0.026),
-    0px 2.1px 16.3px rgba(0, 0, 0, 0.042), 0px 3.9px 31.5px rgba(0, 0, 0, 0.053),
-    0px 6.9px 57.1px rgba(0, 0, 0, 0.063), 0px 13px 107.3px rgba(0, 0, 0, 0.069),
-    0px 31px 227px rgba(0, 0, 0, 0.07);
-  /* background-color: #fff; */
 }
 
 .blueline {
@@ -402,11 +387,11 @@ Contact   */
 .formsize submit {
   position: relative;
   top: 3rem;
-  left:40%;
+  left: 40%;
 }
 
 label {
-  font-weight:800;
+  font-weight: 800;
 }
 
 .bluestar {
@@ -415,7 +400,7 @@ label {
 
 input {
   margin: 1rem 0 0.5rem 0;
-  height:2rem;
+  height: 2rem;
   width: 100%;
   border: none;
   border-bottom: #000 solid 2px;
@@ -426,7 +411,7 @@ Projects */
 
 .projintro {
   padding: 0 1rem 1rem 1rem;
-  text-align:center;
+  text-align: center;
 }
 
 .project {
@@ -435,14 +420,13 @@ Projects */
   margin-bottom: 1rem;
 }
 
-
 .project p {
-  padding:  1rem;
+  padding: 1rem;
 }
 
 .project img {
- display: block;
- /* fitted images perfectly in parent */
+  display: block;
+  /* fitted images perfectly in parent */
 }
 
 .blueborder {
@@ -451,7 +435,6 @@ Projects */
   border-left: #0150fd 10px solid;
   text-transform: none;
 }
-
 
 /* Media Queries */
 
@@ -511,59 +494,113 @@ Projects */
   }
 }
 
-
 @media only screen and (min-width: 768px) {
-
-/* 
+  /* 
 All Pages */
-  .largeslash{
-  display:inline;
-  padding: 0 0.5rem;
-}
 
-.logocontainer{ 
-  display: flex;
-}
+  .largeslash {
+    display: inline;
+    padding: 0 0.5rem;
+  }
 
-footer {
-  padding-bottom: 0;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  align-items: center;
-}
+  .logocontainer {
+    display: flex;
+  }
+  .pageheadingcontainer {
+    justify-content: center;
+  }
 
-.contactarticles {
-  display: flex;
-}
+  .pageheading {
+    width: fit-content;
+  }
 
-/* 
+  footer {
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .contactarticles {
+    display: flex;
+  }
+
+  .cardstyling {
+    width: 50%;
+    margin: auto;
+    padding: 3rem 3rem 5rem;
+  }
+
+  /* 
+Resume*/
+  .samelinebuttons {
+    justify-content: center;
+    gap: 200px;
+  }
+
+  .res {
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 1rem;
+  }
+
+  .resextras {
+    display: grid;
+    grid-template-columns: 3rem 1fr 3rem 1fr;
+    column-gap: 1rem;
+  }
+
+  .resheadingsedu {
+    padding: 2rem 0;
+    text-align: center;
+    position: relative;
+    right: 20%;
+  }
+
+  .finalreshead {
+    text-align: left;
+  }
+
+  /* 
+Projects */
+
+  .projintro {
+    width: 45%;
+    margin: 2rem auto;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .project {
+    padding: 0;
+    padding-top: 0.5rem;
+    margin-bottom: 3rem;
+    display: flex;
+    padding-top: 0;
+  }
+
+  .projdetails p {
+    font-size: 1rem;
+  }
+
+  /* 
 Contact */
-.pageheading {
- display: inline;
- width:fit-content;
-}
-.cardstyling {
-  width: 50%;
-  margin: auto;
-  padding: 3rem 3rem 5rem ;
-}
 
-.formchangelarge {
-  
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 3rem;
-}
+  .formchangelarge {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+  }
 
-.inputfirstname{
-    grid-area: 2 / 1 / 2 / 1;
-}
+  .inputfirstname {
+    grid-area: 2 / 1 / 2 / 2;
+  }
 
-.inputmessage {
-  height: 5rem;
-}
-
+  .inputmessage {
+    height: 5rem;
+  }
 }
 
 /* Dont' forget to link this file to your HTML in the <head> */
