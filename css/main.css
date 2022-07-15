@@ -209,6 +209,10 @@ h2 {
   margin: 0 auto;
 }
 
+.showtitle {
+  display: none;
+}
+
 .socialmediabar {
   background-color: #fff;
   width: 100%;
@@ -267,7 +271,6 @@ h2 {
 
 main {
   background-color: #e6dacd;
-  padding: 2rem 0;
 }
 
 .profilemove {
@@ -532,6 +535,91 @@ All Pages */
     padding: 3rem 3rem 5rem;
   }
 
+  /* 
+Main Home page*/
+
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mainlayout {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding: 0;
+  }
+
+  .whitesec {
+    grid-area: 1 / 2 / 2 / 3;
+    height: 100%;
+  }
+
+  .profilemove {
+    top: 0;
+    background-color: #fff;
+    width: 60%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .mainparagraph {
+    font-size: 1rem;
+    position: relative;
+    margin-top: 4rem;
+    padding-left: 1rem;
+  }
+
+  .mainheading {
+    padding: 1rem;
+  }
+
+  .mainintro {
+    width: fit-content;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    font-size: 1rem;
+  }
+
+  .middleprofile {
+    position: relative;
+    left: 300px;
+    display: flex;
+    width: 50rem;
+    margin: auto;
+    height: 70%;
+    z-index: 20;
+  }
+
+  .hero {
+    top: 0;
+    left: 0;
+    padding: 0;
+    height: 100%;
+    margin: 0;
+    width: 40%;
+  }
+
+  .middleprofile .samelinebuttons {
+    width: 50%;
+    gap: 2rem;
+    position: relative;
+    bottom: 8rem;
+    left: 19rem;
+    z-index: 30;
+  }
+
+  .mainheading {
+    text-align: left;
+  }
+
+  .mainfooter {
+    top: 0;
+  }
+  .wixcreditmain {
+    top: 0;
+  }
   /* 
 Resume*/
   .samelinebuttons {
