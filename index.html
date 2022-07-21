@@ -6,28 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- Add a link to your custom CSS here -->
     <link rel="stylesheet" href="css/main.css" />
+    <script src="https://kit.fontawesome.com/159ab1957a.js" crossorigin="anonymous"></script>
     <title>Responsive grid project</title>
   </head>
 
   <body>
     <header>
-      <div class="navbar">
+      <nav class="navbar">
         <div class="logo">
-          <div class="square"></div>
           <div class="logo__block">
+            <div class="square"></div>
             <p class="logo__name">Maya Nelson</p>
-            <p>PROJECT MANAGER</p>
           </div>
+          <p>PROJECT MANAGER</p>
         </div>
-        <div class="navbar__menu">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
+        <ul class="nav-menu">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
-      </div>
+      </nav>
     </header>
     <main>
       <section class="hero__section">
@@ -47,7 +51,12 @@
               <button class="resume__btn">RESUME</button>
               <button class="projects__btn">PROJECTS</button>
             </div>
-            <div class="socialmedia__set"></div>
+            <div class="socialmedia__set">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
           </div>
           <h2 class="about">Hello</h2>
           <p>Here's who I am & what I do</p>
@@ -76,6 +85,10 @@
       </p>
       <div class="socialmedia__icons">
         <p>Follow</p>
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+        <i class="fa-brands fa-instagram"></i>
       </div>
     </footer>
 
@@ -86,5 +99,6 @@
       © This website design was created by Wix.com, and is used here for
       strictly educational purposes.
     </p>
+    <script src="script.js"></script>
   </body>
 </html>
