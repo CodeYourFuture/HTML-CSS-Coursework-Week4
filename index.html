@@ -17,13 +17,24 @@
   </head>
 
   <body>
-    <header>
-      <div class="logo">
-        <div class="logo__icon"></div>
-        <a class="logo__title" href="#">Saadia El fekak</a>
-        <p class="logo__subtitle">Software developer</p>
+    <header class="header">
+        <!-- Header brand -->
+      <div class="header__brand">
+        <div class="header__brand__icon"></div>
+        <a class="header__brand__title" href="#">Saadia El fekak</a>
+        <p class="header__brand__subtitle">Software developer</p>
       </div>
-      <nav></nav>
+      <!-- Hamburger icon -->
+      <input class="header__side-menu" type="checkbox" id="header__side-menu" />
+      <label class="heder__hamb" for="header__side-menu"><span class="header__hamb-line"></span></label>
+      <nav class="header__nav">
+        <ul class="header__nav__menu">
+          <li><a href="#">About me</a></li>
+          <li><a href="#">Resume</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
     </header>
     <main></main>
     <footer>
