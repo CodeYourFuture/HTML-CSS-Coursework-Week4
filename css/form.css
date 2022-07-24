@@ -1,0 +1,273 @@
+/* HEADINGS FONT  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&display=swap");
+
+/* BODY FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+
+:root {
+  --darkbeige: #e6dacd;
+  --lightbeige: #f4ece6;
+  --royalblue: #0150fd;
+  --black: #000;
+  --white: #fff;
+
+  --bodyfont: "Quicksand", sans-serif;
+  --headingsfont: "Poppins", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--black);
+  font-family: var(--bodyfont);
+  background-color: var(--darkbeige);
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+li {
+  list-style: none;
+}
+
+/* NAVIGATION */
+
+nav {
+  background-color: var(--white);
+  padding: 10px;
+  height: 90px;
+}
+
+.logo img {
+  margin: 16px 4px 0 6px;
+  width: 6vw;
+  max-height: 20px;
+  max-width: 20px;
+  min-width: 20px;
+}
+
+.nav-title {
+  display: flex;
+}
+
+.nav-title h2 {
+  font-size: 1.3rem;
+  font-weight: 900;
+  margin-top: 13px;
+  margin-bottom: 5px;
+}
+
+.navbar p {
+  margin: 0px 0 0px 5px;
+  font-size: 1.1rem;
+}
+
+.navbar span {
+  display: none;
+}
+.navbar a.icon {
+  display: block;
+  position: absolute;
+  right: 12px;
+  top: 35px;
+  color: var(--royalblue);
+}
+
+.navbar #links {
+  display: none;
+  text-align: center;
+  background-color: var(--darkbeige);
+  height: 100vh;
+  width: 100vw;
+  padding: 50px;
+  position: absolute;
+  left: 0;
+  margin: 0;
+}
+
+.navbar #links ul {
+  width: 100%;
+}
+
+ul li {
+  padding: 15px 0;
+  margin: 0;
+  text-align: center;
+}
+
+ul li:hover {
+  color: var(--royalblue);
+}
+
+.nav-title-item {
+  display: inline-flex;
+}
+/* END OF NAVIGATION */
+
+/* START OF MAIN PAGE */
+
+.main {
+  margin-top: 45px;
+  text-align: center;
+  height: 100px;
+}
+
+.main-content img {
+  margin: 16px 9px 0 6px;
+  width: 6vw;
+  max-height: 19px;
+  max-width: 19px;
+  min-width: 19px;
+}
+
+/* START OF FORM */
+
+input {
+  border: none;
+  border-bottom: var(--black) solid 2px;
+}
+
+input:hover {
+  border-bottom: var(--royalblue) 2px solid;
+}
+
+.formContainer {
+  height: auto;
+  background-color: var(--white);
+  width: 92.5%;
+  margin-left: 17px;
+  margin-top: 40px;
+  padding: 10px;
+  box-shadow: -3px 4px 8px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: -3px 4px 8px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: -3px 4px 8px 0px rgba(0, 0, 0, 0.5);
+}
+
+.formItems {
+  padding: 10px;
+  padding-left: 0;
+  text-align: start;
+  margin-left: 13px;
+}
+input {
+  width: 100%;
+  padding: 10px;
+  padding-left: 0;
+  color: var(--royalblue);
+  font-size: 1.2rem;
+}
+
+input:focus {
+  outline: none;
+  color: var(--royalblue);
+  font-size: 1.2rem;
+}
+
+span {
+  color: var(--royalblue);
+}
+
+.forButton {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 10px;
+}
+
+.formContent button {
+  color: var(--white);
+  background-color: #0150fd;
+  padding: 5px 10px;
+  width: 100px;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.1rem;
+  margin: 0 auto;
+}
+
+.formContent button:hover {
+  color: var(--black);
+  background-color: var(--white);
+  border: 2px solid var(--royalblue);
+}
+
+/* 
+
+
+
+
+
+
+
+
+
+
+ */
+
+/* FOOTER */
+
+footer {
+  font-size: 1.099rem;
+  height: auto;
+  margin: 0;
+  margin-top: 25px;
+  padding: 10px 10px 0px 25px;
+  background-color: var(--white);
+  width: 100%;
+}
+
+.footer-line-1 {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0px 0px 0;
+  margin-top: 20px;
+  margin-left: 0px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.footer-line-1 h5 {
+  margin-top: 0px;
+  line-height: 0.1;
+}
+
+.line-1-content {
+  width: 100%;
+}
+
+.line-1-content p {
+  font-size: 0.9rem;
+}
+
+.footer-social-media {
+  padding: 2px;
+}
+
+.footer-social-media img {
+  margin-bottom: 20px;
+  margin-top: 0;
+  line-height: 0.5;
+}
+
+.footer-social-media h5 {
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+
+.footer-social-media p {
+  font-size: 0.8rem;
+  line-height: 0.5;
+}
+
+.footer-social-media a {
+  text-decoration: underline;
+  line-height: 0.5;
+  margin-top: 0;
+}
+
+/* END OF FORM MOBILE VIEW */
