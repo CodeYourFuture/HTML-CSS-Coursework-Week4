@@ -19,6 +19,46 @@
     font-family: var(--body-font);
 }
 
-body {
+/* Header */
+
+.header {
     background-color: var(--white);
+    height: 10vh;
+}
+
+.header__brand {
+    display: grid;
+    grid-template-columns: 20px 200px;
+    grid-template-rows: auto;
+    grid-template-areas: "icon title"
+        "subtitle subtitle";
+    margin: 0.5em 1em;
+}
+
+.header__brand__icon {
+    grid-area: icon;
+    width: 16px;
+    height: 16px;
+    align-self:  center;
+    background-color: var(--royal-blue);
+}
+
+.header__brand__title {
+    grid-area: title;
+    padding-left: 10px;
+    font-family: var(--heading-font);
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.header__brand__subtitle {
+    grid-area: subtitle;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.header__side-menu,
+.header__nav {
+    display: none;
 }
