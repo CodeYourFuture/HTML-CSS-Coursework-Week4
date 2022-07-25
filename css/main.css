@@ -1,3 +1,14 @@
-/* Add your CSS here */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
-/* Dont' forget to link this file to your HTML in the <head> */
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+   
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+   
+}
