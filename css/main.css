@@ -132,6 +132,40 @@
 
 }
 
+/* Footer */
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.f__sections {
+    display: grid;
+    grid-template-columns: 40vw 60vw;
+    grid-template-rows: auto;
+}
+
+.f__section {
+    margin: 10px;
+    font-size: 14px;
+}
+
+.f__section__title {
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+
+.f__section__mail {
+    text-decoration: none;
+}
+.fa-brands{
+padding-right: 10px;
+}
+.f__text {
+    padding: 10px;
+    font-size: 14px;
+}
+
 /* Navigation menu */
 .h__nav {
     position: absolute;
@@ -229,7 +263,8 @@
         font-size: 14px;
         font-weight: normal;
     }
-    .h__nav__menu a:hover{
+
+    .h__nav__menu a:hover {
         color: var(--royal-blue);
     }
 }
