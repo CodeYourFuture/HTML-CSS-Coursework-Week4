@@ -33,8 +33,6 @@
 /* Header brand */
 .h__brand {
     display: grid;
-    grid-template-columns: 20px 200px;
-    grid-template-rows: auto;
     grid-template-areas: "icon title"
         "subtitle subtitle";
     margin: 20px;
@@ -55,6 +53,10 @@
     font-size: 20px;
     font-weight: 600;
     text-decoration: none;
+}
+
+.h__brand__span {
+    display: none;
 }
 
 .h__brand__subtitle {
@@ -167,4 +169,34 @@
 
 .h__nav__menu a:active {
     color: var(--royal-blue);
+}
+
+@media screen and (min-width:600px) {
+
+    /* Header */
+    /* Header brand */
+    .h__brand {
+        display: flex;
+        align-items: center;
+    }
+
+    .h__brand__title {
+        font-size: 25px;
+        margin-right: 10px;
+    }
+
+    .h__brand__span {
+        display: inline;
+        margin-right: 10px;
+
+    }
+
+    .h__brand__subtitle {
+        font-size: 17px;
+    }
+
+    /* Hamburger icon */
+    .h__hamb {
+        display: none;
+    }
 }
