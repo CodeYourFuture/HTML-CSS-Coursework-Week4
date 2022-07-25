@@ -1,5 +1,40 @@
 /* Add your CSS here */
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400;700&family=Poppins:wght@600&family=Quicksand:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
+    /* background-color: blue; */
+    font-family: Quicksand;
+    font-weight: 300;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    'header header'
+    'main main'
+    'footer footer';
+    gap: 2rem;
+}
+/* header  */
+header {
+    grid-area: header;
+    background-color: blueviolet;
+}
+.container {
+    margin: 1rem;
+}
+ 
+/* main */
+main {
+    grid-area: main;
+    background-color: brown;
+}
+/* footer */
+footer {
+    grid-area: footer;
     background-color: blue;
 }
 /* Dont' forget to link this file to your HTML in the <head> */
