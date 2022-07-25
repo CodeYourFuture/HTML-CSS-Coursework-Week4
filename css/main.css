@@ -219,6 +219,7 @@
     width: 85vw;
     height: 45vh;
     margin-left: 40px;
+    box-shadow: -6px 6px 18px -9px rgba(0, 0, 0, 0.75);
     background-color: var(--light-beige);
     z-index: 0;
 }
