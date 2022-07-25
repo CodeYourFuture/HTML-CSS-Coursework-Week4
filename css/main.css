@@ -1,3 +1,5 @@
 /* Add your CSS here */
-
+body {
+    background-color: blue;
+}
 /* Dont' forget to link this file to your HTML in the <head> */
