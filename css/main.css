@@ -22,20 +22,25 @@
 /* Header */
 
 .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
     background-color: var(--white);
     height: 10vh;
 }
 
-.header__brand {
+/* Header brand */
+.h__brand {
     display: grid;
     grid-template-columns: 20px 200px;
     grid-template-rows: auto;
     grid-template-areas: "icon title"
         "subtitle subtitle";
-    margin: 0.5em 1em;
+    margin: 20px;
 }
 
-.header__brand__icon {
+.h__brand__icon {
     grid-area: icon;
     width: 16px;
     height: 16px;
@@ -43,7 +48,7 @@
     background-color: var(--royal-blue);
 }
 
-.header__brand__title {
+.h__brand__title {
     grid-area: title;
     padding-left: 10px;
     font-family: var(--heading-font);
@@ -52,17 +57,84 @@
     text-decoration: none;
 }
 
-.header__brand__subtitle {
+.h__brand__subtitle {
     grid-area: subtitle;
     text-transform: uppercase;
     font-size: 14px;
 }
 
-.header__side-menu {
+/* Hamburger icon */
+
+#h__side-menu {
     display: none;
 }
 
-.header__nav {
+.h__hamb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+}
+
+.h__hamb-line__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    height: 21px;
+    width: 26px;
+    z-index: 2;
+
+}
+
+.h__hamb-line {
+    position: relative;
+    display: block;
+    height: 3px;
+    border-radius: 4px;
+    background: var(--royal-blue);
+}
+
+.h__hamb-line:nth-child(1) {
+    width: 13px;
+}
+
+.h__hamb-line:nth-child(3) {
+    width: 13px;
+    align-self: flex-end;
+}
+
+/* Toggle menu icon */
+
+#h__side-menu:checked~.h__nav {
+    max-height: 100%;
+}
+
+#h__side-menu:checked~.h__hamb .h__hamb-line {
+    background-color: var(--black);
+    transition-duration: 0.5s;
+}
+
+#h__side-menu:checked~.h__hamb .h__hamb-line:nth-child(1) {
+    transform: rotateZ(-135deg) translate(-4px, -2px);
+
+}
+
+#h__side-menu:checked~.h__hamb .h__hamb-line:nth-child(2) {
+    transform: rotate(-45deg);
+
+}
+
+#h__side-menu:checked~.h__hamb .h__hamb-line:nth-child(3) {
+    transform: rotate(-135deg) translate(-4px, 11px);
+    align-self: flex-start;
+
+}
+
+/* Navigation menu */
+.h__nav {
     position: absolute;
     top: 0;
     width: 100%;
@@ -71,18 +143,20 @@
     color: var(--black);
     background-color: var(--light-beige);
     text-align: center;
+    max-height: 0;
+    transition: max-height .5s ease-out;
 }
 
-.header__nav__menu {
+.h__nav__menu {
     list-style-type: none;
     margin-top: 10em;
 }
 
-.header__nav__menu li {
+.h__nav__menu li {
     margin: 30px;
 }
 
-.header__nav__menu a {
+.h__nav__menu a {
     cursor: pointer;
     font-family: var(--heading-font);
     font-weight: 600;
@@ -91,6 +165,6 @@
     text-decoration: none;
 }
 
-.header__nav__menu a:active {
+.h__nav__menu a:active {
     color: var(--royal-blue);
 }
