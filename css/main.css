@@ -48,7 +48,6 @@
 .h__brand__title {
     grid-area: title;
     align-self: center;
-
     padding-left: 10px;
     font-family: var(--heading-font);
     font-size: 20px;
@@ -172,11 +171,6 @@
 }
 
 /* Main */
-.main {
-    position: absolute;
-    top: 20vh;
-}
-
 /* hero */
 .m__hero {
     position: absolute;
@@ -186,6 +180,7 @@
     z-index: -1;
     background-color: var(--dark-beige);
 }
+
 /* Buttons */
 .m__buttons {
     z-index: 1;
@@ -253,6 +248,10 @@
     background-color: var(--royal-blue);
 }
 
+.m__card__subtitle {
+    display: none;
+}
+
 .m__card__links {
     display: flex;
     width: 100%;
@@ -290,8 +289,6 @@
 
 /* Footer */
 .footer {
-    position: fixed;
-    bottom: 0;
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -395,6 +392,13 @@
         color: var(--royal-blue);
     }
 
+    /* Main */
+    .m__hero {
+        top: 0;
+        width: 50vw;
+        height: 100%;
+    }
+
     /* Footer */
     .footer {
         flex-direction: row-reverse;
@@ -417,4 +421,5 @@
     .f__section {
         text-align: center;
     }
+
 }
