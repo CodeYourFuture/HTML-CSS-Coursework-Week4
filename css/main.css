@@ -191,7 +191,9 @@
 
 .f__section__title {
     padding-bottom: 10px;
+    font-family: var(--heading-font);
     font-size: 15px;
+    font-weight: 600;
 }
 
 .f__section__mail {
