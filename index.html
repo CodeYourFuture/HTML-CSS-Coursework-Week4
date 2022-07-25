@@ -5,13 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Add a link to your custom CSS here -->
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>Responsive grid project</title>
 </head>
 
-<body>
+    <body>
+        <div class="grid-container">
+              <!-- Search -->   
+        <div id="search">
+            <div id="search-box">
 
-    <!-- Add your markup here -->
+            </div>
+            <div id="basket">
+
+            </div>
+        </div>
+            <!-- Header -->   
+           <header id="header" class="grid">
+               <!-- Top Navigation Mobile Menu -->
+               <div class="top-nav">
+                   <!-- Navigation links (hidden by default) -->
+                   <div class="navmenu">
+                        <nav id="myLinks">
+                            <ul class="navbar">
+                                <li><a href="#">Shop</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </nav>
+                        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                        <a href="javascript:void(0);" id="ham-button" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                     </div>
+                </div>
+            </header>   
+       
+           <!-- New Navigation Row) -->
+           <section class="desktop_nav" class="grid">
+               
+           </section>
+         
+           <!-- Section A -->
+           <section id="section-a" class="grid">
+                
+           </section>
+           <!-- Section B -->
+           <section id="section-b" class="grid">
+              
+           </section>
+       
+           <!-- Section C -->
+           <section id="section-c" >
+   
+           </section>
+            <!-- Footer -->
+           <section id="footer" class="grid">
+              
+          
+           </section>
+           <script>
+            function myFunction() {
+              var x = document.getElementById("myLinks");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+            }
+            </script>
 
 
     <!-- Please leave this in to credit the creators of this design -->

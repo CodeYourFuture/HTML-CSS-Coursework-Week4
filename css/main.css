@@ -1,3 +1,17 @@
 /* Add your CSS here */
 
-/* Dont' forget to link this file to your HTML in the <head> */
+/* Don't forget to link this file to your HTML in the <head> */
+ /* Style the hamburger menu */
+button {
+        margin: 10px 10px;
+}
+/* Hide the links inside the navigation menu (except for logo/home) */
+.top-nav #myLinks {
+    display: none;
+    text-align: right;
+    margin-right: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
