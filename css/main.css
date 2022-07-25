@@ -39,14 +39,16 @@
 
 .h__brand__icon {
     grid-area: icon;
+    align-self: center;
     width: 16px;
     height: 16px;
-    align-self: center;
     background-color: var(--royal-blue);
 }
 
 .h__brand__title {
     grid-area: title;
+    align-self: center;
+
     padding-left: 10px;
     font-family: var(--heading-font);
     font-size: 20px;
@@ -250,7 +252,7 @@
 }
 
 .f__text {
-    margin: 10px;
+    margin: 10px 20px 10px 10px;
     font-size: 14px;
 }
 
