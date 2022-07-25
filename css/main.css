@@ -17,6 +17,7 @@ body{
     height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: var(--white);
 }
 
 /* header menu */
@@ -132,6 +133,51 @@ body{
     border-radius: 1em;
     background-color: #A9B4C2;
 }
+/* Main section*/
+.main{
+    height: auto; /* bezaram roy auto bad azafe kardan aks ha */
+    background: linear-gradient(
+        to right,
+        var(--light-beige) 0%,
+        var(--light-beige) 40%,
+        white 40%,
+        white 100%
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+.main-content{
+    display: flex;
+    
+}
+.profile-img-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-beige);
+}
+.profile-img-container img{
+    height: auto;
+    width: 100%;
+    max-width: 150px;
+    border-radius: 8em;
+    
+   
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* Footer section*/
 .footer{
