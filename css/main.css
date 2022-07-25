@@ -1,3 +1,276 @@
 /* Add your CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+/* desktop styles */
+@media screen and (min-width: 1024px) {
+  .desktop {
+    display: block;
+    margin-right: 2rem;
+  }
+
+  .title {
+    text-align: left;
+    font-size: 1.5rem;
+    font-family: "Raleway", sans-serif;
+    margin-top: 2rem;
+    margin-left: 3rem;
+    white-space: nowrap;
+    font-weight: 900;
+  }
+
+  .slogan {
+    margin-right: 20px;
+    text-align: end;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .hamburger-menu {
+    display: none;
+  }
+
+  .nav_list {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    margin: auto;
+    background-color: none;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .nav_list li {
+    list-style-type: none;
+  }
+  .nav_link {
+    background-color: none;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+}
+.hero {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 1rem;
+  padding: 0;
+  margin: 1.5rem auto;
+  display: grid;
+  grid-template-columns: 1120px 1120px;
+  grid-column-gap: 250px;
+}
+
+.background {
+  background: #e6dacd;
+}
+
+.welcome {
+  font-size: 10rem;
+  text-align: left;
+  margin-top: -4rem;
+  margin-right: -47rem;
+  margin-left: 40rem;
+  color: rgb(0, 0, 0);
+}
+
+.subtitle {
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  margin-right: -47rem;
+  margin-left: 40rem;
+}
+
+.resume {
+  font-size: 1.2rem;
+  background-color: blue;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 3rem;
+  color: white;
+  width: 12rem;
+}
+.projects {
+  font-size: 1.2rem;
+  background-color: white;
+  padding: 10px 10px;
+  border-color: black;
+  border-radius: 3rem;
+  color: black;
+  width: 12rem;
+  margin: 4rem 0 0 0;
+}
+
+.text_content {
+  text-align: justify;
+  font-size: 1.7rem;
+  margin-top: 1rem;
+  margin-right: -47rem;
+  margin-left: 40rem;
+}
+.hero_img {
+  border-radius: 50%;
+
+  margin-left: 8rem;
+  width: 60%;
+  height: 65%;
+}
+
+.name {
+  margin-left: 2rem;
+  margin-top: 4rem;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+.bck {
+  background-color: #f4ece6;
+  margin-top: 20rem;
+  margin-right: -10rem;
+  margin-left: 40rem;
+  padding: 4rem;
+}
+.footer_links {
+  display: flex;
+  justify-content: right;
+  gap: 1.5rem;
+}
+
+.square {
+  height: 30px;
+  width: 30px;
+  background-color: blue;
+  margin-top: 2rem;
+  margin-left: 4rem;
+}
+
+/* Resume */
+
+.resume_body {
+  background-color: #e6dacd;
+}
+.resume_head {
+  font-size: 3rem;
+  margin-top: -0.7rem;
+  margin-left: 2.2rem;
+}
+
+.resume_hero {
+  display: flex;
+  justify-content: center;
+}
+
+.resume_hero {
+  display: grid;
+  grid-template-rows: 200px 200px 200px;
+}
+
+.header {
+  background-color: white;
+  padding: 2rem 2rem 2rem 2rem;
+}
+
+.download_cv {
+  font-size: 1.2rem;
+  background-color: blue;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 3rem;
+  color: white;
+  width: 12rem;
+  height: 3rem;
+  font-family: sans-serif;
+}
+
+.div_experience {
+  display: flex;
+  justify-content: center;
+  gap: 45rem;
+}
+
+.paragraph1 {
+  justify-content: left;
+  font-size: 1.5rem;
+  margin-top: -7rem;
+}
+
+.jobposition1 {
+  font-size: 1.5rem;
+  margin-top: -7rem;
+  margin-left: 2rem;
+}
+
+.section1 {
+  display: grid;
+  grid-template-columns: 55fr 95fr;
+  gap: 10rem;
+  margin-left: 50rem;
+  margin-right: 55rem;
+  background-color: white;
+  padding: 15rem 6rem 15rem 6rem;
+}
+
+.paragraph2 {
+  justify-content: left;
+  font-size: 1.5rem;
+  margin-top: -7rem;
+}
+
+.jobposition2 {
+  font-size: 1.5rem;
+  margin-top: -7rem;
+  margin-left: 2rem;
+}
+
+.section2 {
+  display: grid;
+  grid-template-columns: 55fr 95fr;
+  gap: 10rem;
+  margin-left: 50rem;
+  margin-right: 55rem;
+  background-color: white;
+  padding: 15rem 6rem 5rem 6rem;
+  margin-top: 20rem;
+}
+
+* {
+  font-family: "Raleway", sans-serif;
+  color: black;
+}
+
+/*projects */
+
+.projects_hero {
+  text-align: center;
+}
+
+.projects_head {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 12rem;
+  margin-left: 10rem;
+  font-size: 3rem;
+  font-weight: 3500;
+}
+
+.projects_paragraph {
+  font-size: 1.5rem;
+  font-weight: 1500rem;
+  text-align: center;
+  margin: 6rem 55rem 2rem 55rem;
+}
+
+.square1 {
+  height: 30px;
+  width: 30px;
+  background-color: blue;
+  margin-left: 75rem;
+}
