@@ -136,6 +136,8 @@
 .h__nav {
     position: absolute;
     top: 0;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
     color: var(--black);
     background-color: var(--light-beige);
@@ -202,6 +204,8 @@
     /* Navigation */
     .h__nav {
         position: sticky;
+        width: auto;
+        height: auto;
         align-items: center;
         overflow: initial;
         max-height: none;
@@ -224,5 +228,8 @@
         font-family: var(--body-font);
         font-size: 14px;
         font-weight: normal;
+    }
+    .h__nav__menu a:hover{
+        color: var(--royal-blue);
     }
 }
