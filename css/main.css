@@ -165,11 +165,9 @@
     text-transform: uppercase;
     text-decoration: none;
 }
-
-.h__nav__menu a:active {
-    color: var(--royal-blue);
+.active-link{
+    color:var(--royal-blue)
 }
-
 /* Main */
 /* hero */
 .m__hero {
