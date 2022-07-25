@@ -186,9 +186,33 @@
     z-index: -1;
     background-color: var(--dark-beige);
 }
-
+/* Buttons */
 .m__buttons {
     z-index: 1;
+}
+
+.btn {
+    width: 120px;
+    padding: 5px 20px;
+    margin: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 20px;
+
+}
+
+.btn--primary {
+    color: var(--white);
+    background-color: var(--royal-blue);
+    border: 1px solid var(--royal-blue);
+}
+
+.btn--secondary {
+    color: var(--black);
+    background-color: transparent;
+    border: 1px solid var(--black);
+
 }
 
 /* Card */
@@ -197,9 +221,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 90vw;
-    height: 50vh;
-    margin-left: 30px;
+    width: 85vw;
+    height: 45vh;
+    margin-left: 40px;
     background-color: var(--light-beige);
     z-index: 0;
 }
@@ -224,7 +248,7 @@
     width: 68px;
     height: 3px;
     margin: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     align-self: center;
     background-color: var(--royal-blue);
 }
@@ -234,7 +258,7 @@
     width: 100%;
     justify-content: center;
     padding: 10px;
-    margin-top: 80px;
+    margin-top: 20px;
     background-color: var(--white);
 }
 
