@@ -119,32 +119,79 @@ button{
 .products {
  display: flex;
  flex-direction: column;
- border: 2px solid green;
  margin-top: 2em;
+}
+
+.products p{
+ color: #A05941;
+ font-size: 1.5em;
+ margin-top: 0.7em;
+ margin-bottom: 0;
+ font-weight: bold;
+ letter-spacing: 3px;
+ text-align: center;
+}
+
+.product button {
+ display: block;
+margin: auto;
+height: 35px;
+font-size: 0.9em;
+
+}
+
+.bar{
+ width:12px;
+ background-color: #A05941;
+ height: 5px;
+ margin: 12px auto;
 }
 
 .product {
  height: 420px;
- border: 2px solid yellow;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ margin-bottom: 1.5em;
 }
 
 #cacti {
- background: url(/Images/4.png) no-repeat center/cover;
+ background-image: url(/Images/4.png);
+}
+
+#plant {
+ background-image: url(/Images/2.png);
+}
+
+#succulent {
+ background-image: url(/Images/3.png)
 }
 
 /* About section */
 
+.about{
+ background: white;
+ color: #A05941;
+ 
+}
+
 h2{
  text-align: center;
+ letter-spacing: 2px;
+ margin: 0;
+ padding-top: 1.5em;
 }
 
 .about_para {
- border: 2px solid black;
  width: 90%;
- margin: 1.5em auto;
+ margin: 2em auto;
  text-align: center;
  line-height: 1.8em;
  font-size: 1em;
+}
+
+#second_para{
+ margin-bottom: 3em;
 }
 
 .about img{
