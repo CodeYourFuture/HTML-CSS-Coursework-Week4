@@ -102,7 +102,7 @@ main .center {
     padding-right: 50px;
     background-color: white;
     height: 50px;
-     text-decoration: none;
+    text-decoration: none;
  }
  
  .fa-facebook {
@@ -132,7 +132,8 @@ main .center {
    position: absolute;
    z-index: 1;
    top: 250px;
- }article h1 {
+ }
+ article h1 {
    font-size: 15vw;
    margin-bottom: 1rem;
  }
@@ -150,5 +151,14 @@ article p {
 
 footer{
     grid-area: footer;
-    background-color: blue;
+    background-color: white;
+    top: 1100px;
+    position: absolute;
+    height: 227px;
+    width: 100%;
+    
+}
+.contact{
+    display: flex;
+    justify-content: space-around;
 }
