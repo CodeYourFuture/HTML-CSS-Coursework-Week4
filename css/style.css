@@ -192,7 +192,7 @@ body button {
 
 .img-vision {
     object-fit: contain;
-    border: 1rem;
+    /* border: 1rem; */
     width: 100%;
     height: auto;
     /* max-height: 100vw; */
@@ -228,7 +228,71 @@ body button {
 
 .catalog {
     background-color: var(--clr-lilac);
-    
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* .catalog h2 {
+    font-size: 1.9rem;
+    font-weight: 100;
+    line-height: 2.6rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem;
+    width: 15.5rem;
+} */
+
+.catalog h2 {
+    font-size: 2rem;
+    font-weight: 100;
+    width: 14rem;
+    margin: 0.5rem 0 0.7rem;
+    line-height: 2.5rem;
+}
+
+.catalog h3 {
+    font-size: 1.4rem;
+    font-weight: 100;
+    line-height: 1.7rem;
+    margin-top: 1.8rem;
+    margin-bottom: 0.5rem;
+    width: 13rem;
+}
+
+.img-catalog {
+    object-fit: cover;
+    /* border: 1rem; */
+    width: 100%;
+    height: 90vw;
+}
+
+.catalog p {
+    /* font-size: 0.9rem; */
+    line-height: 1.6rem;
+    width: 16.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn-view {
+    background-color: var(--clr-lilac);
+    color: var(--clr-black);
+    border: 2px solid var(--clr-black);
+    padding: 0.7rem 3rem;
+    margin-bottom: 1.2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.9rem;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.btn-view:active {
+    background-color: var(--clr-black);
+    color: var(--clr-white);
 }
 
 /* Discover our ... */
@@ -253,5 +317,14 @@ body button {
 
 .footer {
     
+}
+
+.content-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
 }
 
