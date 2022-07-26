@@ -93,7 +93,7 @@ body button {
     background-color: var(--clr-white);
     color: var(--clr-black);
     border: 2px solid var(--clr-black);
-    padding: 0.8rem 2rem;
+    padding: 0.9rem 2rem;
     margin: 1.3rem;
     text-align: center;
     text-decoration: none;
@@ -160,7 +160,7 @@ body button {
 
 .differences p {
     line-height: 1.6rem;
-    width: 14.6rem;
+    width: 15rem;
     margin-bottom: 1.5rem;
 }
 
@@ -173,6 +173,55 @@ body button {
 
 .vision {
     background-color: var(--clr-light-green);
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.vision h2 {
+    font-size: 1.9rem;
+    font-weight: 100;
+    line-height: 2.6rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem;
+    width: 15.5rem;
+}
+
+.img-vision {
+    object-fit: contain;
+    border: 1rem;
+    width: 100%;
+    height: auto;
+    /* max-height: 100vw; */
+}
+
+.vision p {
+    /* font-size: 0.9rem; */
+    line-height: 1.6rem;
+    width: 16.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn-vision {
+    background-color: var(--clr-light-green);
+    color: var(--clr-black);
+    border: 2px solid var(--clr-black);
+    padding: 0.9rem 3rem;
+    /* margin-top: 0.3rem; */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.9rem;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.btn-vision:active {
+    background-color: var(--clr-black);
+    color: var(--clr-white);
 }
 
 /* Choose your wellness path */
