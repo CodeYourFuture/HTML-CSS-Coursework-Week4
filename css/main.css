@@ -3,7 +3,21 @@
 /* Dont' forget to link this file to your HTML in the <head> */
 
 
-/* color= #a05841 /*/
+/* color= #a05841 
+
+### **DESIGN 1: Prickles & Co** **An e-commerce site selling plants** ![Prickles & Co homepage](./designs/Cactus%20shop.png) Live demo here: https: //www.wix.com/website-template/view/html/1995
+### Fonts **Headings:** Fjalla One - Regular 400 https: //fonts.google.com/specimen/Fjalla+One  
+**Subheadings:** Outfit - Extra-light 200 https: //fonts.google.com/specimen/Outfit  
+**Body:** Outfit - Extra-light 200 https: //fonts.google.com/specimen/Outfit  
+
+### Colors Red Brown: #A05941 
+Green Black: #133032
+ Light Grey: #EDEDEE
+  White: #FFF 
+  Transparent White: rgba(0, 0, 0, 0.75)
+
+
+/*/
 
 .header {
 
@@ -14,6 +28,6 @@ color: #a05841;
 }
 
 .section-1 {
-background-image: url("https://github.com/jwillson2022/responsive-grid-project/blob/master/img/main.png");
+
 height: 100%;
 }

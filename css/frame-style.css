@@ -1,0 +1,45 @@
+
+:root {
+
+--red-brown: #A05941;
+--Green-black: #133032;
+ --Light-grey: #EDEDEE;
+--White: #FFF;
+--Transparent-white: rgba(0, 0, 0, 0.75);
+}
+body {
+    background-color: black;
+}
+
+.main-container {
+    background-color: cornflowerblue;
+    }
+
+.plants-sec {
+    display: grid;
+   grid-gap: 5px;
+  grid-template-columns: repeat(minmax(400px, 1fr));
+   }    
+
+.plants , .cacti , .succulent  {
+    background-color: aquamarine;
+    min-height: 400px;
+    padding: 10px;
+
+} 
+
+.about-sec {
+display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(minmax(400px, 1fr));
+}
+
+.about-txt , .about-img {
+    background-color: lightgreen;
+        min-height: 400px;
+        padding: 10px;
+}
+
+.img{
+ width: auto;   
+}
