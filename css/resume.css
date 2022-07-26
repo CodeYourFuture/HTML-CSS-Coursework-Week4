@@ -2,7 +2,7 @@
 .main {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
     background-color: var(--dark-beige);
     padding: 60px 20px;
 }
@@ -31,10 +31,11 @@
 .m__subtitle__container {
     display: flex;
     align-items: center;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 .m__subtitle {
+    margin: 30px 0;
     font-size: 18px;
     font-family: var(--heading-font);
     font-weight: 600;
@@ -45,4 +46,13 @@
     width: 120px;
     font-size: 12px;
     font-weight: bold;
+}
+
+/* Articles */
+.m__article {
+    min-height: 200px;
+    margin: 20px 0;
+    background-color: var(--white);
+    box-shadow: -6px 6px 18px -9px rgba(0, 0, 0, 0.75);
+
 }
