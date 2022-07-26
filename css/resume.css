@@ -34,6 +34,12 @@
 a:link {
   text-decoration: none;
 }
+a:hover{
+  color: #0050ff;
+}
+#onlink {
+  color: #0050ff;
+}
 
 .menu-button-container {
   display: none;
@@ -242,4 +248,30 @@ a:link {
   margin-top: 3rem;
   margin-right: 10rem;
  }
+ .hero button {
+  margin-top: 3rem;
+ }
+  article {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 60%;
+    padding: 2rem;
+
+ }
+ article a{
+  font-size: 2vw;
+ }
+ article .job {
+  font-size: 1.5vw;
+ }
+ .company-info p {
+  font-size: 2vw;
+ }
+ .article-p {
+  font-size: 2vw;
+  width: 60%;
+  margin-top: 2.5rem;
+ }
+
 }

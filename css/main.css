@@ -51,6 +51,12 @@ header {
 a:link {
   text-decoration: none;
 }
+a:hover{
+  color: #0050ff;
+}
+#onlink {
+  color: #0050ff;
+}
 
 .menu-button-container {
   display: none;
@@ -198,6 +204,9 @@ main {
   /* border-radius: 5px; */
 
   }
+  /* .resume a {
+    color: white;
+  } */
   .project {
     background-color: white;
     /* font-size: 4vw; */
@@ -303,18 +312,5 @@ footer {
   background: white;
   color: black;
  }
-@media (min-width: 700px) {
-  main {
-   display: flex;
-  width: 50%;
-  }
-  main .hero
-    {
-   flex: 1;
-  border: 2px solid blueviolet;
-  margin: 10px;
-  }
-  main article {
-   margin-right: 20px;
-  }
-}
+@media (min-width: 700px) 
+   
