@@ -107,7 +107,6 @@
     align-self: flex-end;
 }
 
-/* Toggle menu icon */
 #h__side-menu:checked~.h__nav {
     max-height: 100%;
 }
@@ -451,7 +450,9 @@
         font-size: 17px;
         text-transform: uppercase;
     }
-
+.m__card__links{
+    padding: 20px;
+}
     /* Buttons */
     .m__buttons {
         left: 700px;
