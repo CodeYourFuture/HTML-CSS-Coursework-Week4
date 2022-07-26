@@ -8,20 +8,23 @@ header {
     color: aqua;
     background-color: rgb(82, 80, 80);
     padding: 5em 0;
-    
+    position: absolute;
 }
 
 main {
     color: blueviolet;
     background-color: aquamarine;
     padding: 5em 0;
-    
+    position: absolute;
+    margin-top: 2em;
+    margin-left: 4em;
 }
 
 footer {
     color: coral;
     background-color: rgb(163, 243, 247);
     padding: 5em 0;
+    position: initial;
 }
 
 
