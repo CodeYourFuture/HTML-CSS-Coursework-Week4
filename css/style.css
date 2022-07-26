@@ -94,7 +94,7 @@ body button {
     color: var(--clr-black);
     border: 2px solid var(--clr-black);
     padding: 0.8rem 2rem;
-    margin: 1.2rem;
+    margin: 1.3rem;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -104,22 +104,34 @@ body button {
 }
 
 .btn-explore:active {
-  background-color: var(--clr-black);
-  color: var(--clr-white);
+    background-color: var(--clr-black);
+    color: var(--clr-white);
 }
 
 /* Orange picture */
 
 .showcase {
-    background-color: orange;
-    
+    background-image: url(../img/hero.png);
+    background-size: cover;
+    background-position: center;
 }
 
 /* Discount section */
 
 .discount {
     background-color: var(--clr-lilac);
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 500;
+}
+
+.discount a:link,
+.discount a:visited,
+.discount a:hover,
+.discount a:active {
+    color: var(--clr-black);
 }
 
 /* Differences section */
