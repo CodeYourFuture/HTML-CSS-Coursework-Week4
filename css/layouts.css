@@ -1,0 +1,99 @@
+.container {
+  display: grid;
+  gap: 5rem;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 170px 140px 100px 80px 100px 100px 100px 100px 100px 100px 100px 100px;
+  grid-template-areas:
+    "or or or or or or or or or or or or"
+    "hd hd hd hd hd hd hd hd hd hd hd hd"
+    "hr hr hr hr hr hr hr hr hr hr hr hr"
+    "sc sc sc sc sc sc sc sc sc sc sc sc"
+    "ds ds ds ds ds ds ds ds ds ds ds ds"
+    "df df df df df df df df df df df df"
+    "vs vs vs vs vs vs vs vs vs vs vs vs"
+    "ct ct ct ct ct ct ct ct ct ct ct ct"
+    "kt kt kt kt kt kt kt kt kt kt kt kt"
+    "sp sp sp sp sp sp sp sp sp sp sp sp"
+    "nt nt nt nt nt nt nt nt nt nt nt nt"
+    "ft ft ft ft ft ft ft ft ft ft ft ft";
+}
+
+.order {
+    grid-area: or;
+}
+
+/* Header */
+
+.header {
+    grid-area: hd;
+    
+}
+
+/* Hero */
+
+.hero {
+    grid-area: hr;
+    
+}
+
+/* Orange picture */
+
+.showcase {
+    grid-area: sc;
+    
+}
+
+/* Discount section */
+
+.discount {
+    grid-area: ds;
+    
+}
+
+/* Differences section */
+
+.differences {
+    grid-area: df;
+    
+}
+
+/* Boosting immunity section */
+
+.vision {
+    grid-area: vs;
+    
+}
+
+/* Choose your wellness path */
+
+.catalog {
+    grid-area: ct;
+    
+}
+
+/* Discover our ... */
+
+.kit {
+    grid-area: kt;
+    
+}
+
+/* Get juice bar */
+
+.supply {
+    grid-area: sp;
+    
+}
+
+/* follow us */
+
+.networks {
+    grid-area: nt;
+    
+}
+
+/* Footer */
+
+.footer {
+    grid-area: ft;
+}
