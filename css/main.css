@@ -1,15 +1,12 @@
-/* Add your CSS here */
 @import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400;700&family=Poppins:wght@600&family=Quicksand:wght@300&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body {
-    /* background-color: blue; */
-    font-family: Quicksand;
-    font-weight: 300;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
@@ -17,35 +14,33 @@ body {
     'main main'
     'footer footer';
     gap: 2rem;
-}
-/* header  */
-header {
-    grid-area: header;
-    background-color: blueviolet;
-}
-.container {
-    margin: 1rem;
-}
- 
-/* main */
-main {
-    grid-area: main;
-    background-color: brown;
-    position: relative;
+    font-family: Quicksand;
+    font-weight: 300;
 
 }
- main .hero {
-   background-color: #f4ece6;
-   width: 80%;
-   height: 375px;
-   /* margin-left: 3rem; 
-   margin-right: 3rem;  */
+header {
+    grid-area: header;
+    /* background-color: blue; */
+    margin: 1.5rem;
+}
+main {
+    grid-area: main;
+    /* background-color: blueviolet; */
+    position: relative;
+}
+.hero {
+     gap: 1rem;
+  background-color: #f4ece6;
+  width: 80%;
+   /* height: 375px; */
+   margin-left: 3rem; 
+   margin-right: 3rem; 
    margin: 0 2.5em;
    z-index: 2;
    position: absolute;
-  }
-  .hero-info img {
-    /* background-color: #0050ff; */
+}
+.hero-info img {
+    background-color: #0050ff;
    display: block;
   margin-left: auto;
   margin-right: auto;
@@ -53,53 +48,59 @@ main {
   border-radius: 100%;
   margin-top: 2rem;
    }
-   .hero-info h1 {
+.hero-info h1 {
     text-align: center;
-   }
-   .underline {
-    margin-top: 4rem;
-    border-bottom: 3px solid white;
 }
-   .hero button {
-    margin-top: 2rem;
-    font-size: 4vw;
-    font-weight: bold;
-    padding: 0.5rem 1rem;
-    border-radius: 1rem;
-    background-color: #0050ff;
-  }
-  .hero button:active {
-    background-color: #0050ff;
-  }
- main .container { 
-  /* height: 200px; */
-  position: relative;
-  /* border: 3px solid green; */
-   
+.btn-container {
+    position: relative;
+    /* align-items: center; */
+    margin: 1.5rem;
+    background-color: black;
+  margin-bottom: 4rem;
 }
+.center {
+   position: absolute;
+   display: inline-block;
+    justify-content: space-around;
 
-main .center {
-  margin: 0;
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  /* display: inline-block; */
-  display: flex;
-  
- }
- .hero-social {
+}
+.resume {
+    background-color: #0050ff;
+    color: white;
+/* font-size: 4vw; */
+    font-weight: bold;
+     padding: 0.5rem 1rem;
+   border-radius: 1rem;
+     box-shadow: none;
+  border-style: none;
+  padding: 10px 20px;
+  /* border-radius: 5px; */
+
+  }
+  .project {
+    background-color: white;
+    /* font-size: 4vw; */
+     font-weight: bold;
+     padding: 0.5rem 1rem;
+     border-radius: 1rem;
+     box-shadow: none;
+
+  }
+  .hero-social {
     display: flex;
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
-    top: 80%;
+    /* top: 10vh; */
+    margin-bottom: 2rem;
     background-color: white;
     justify-content: space-around;
     align-items: center;
     padding-left: 50px;
     padding-right: 50px;
-    height: 50px;
+    height: 6vh;
+ }
+ .fa {
+  font-size: 30px;
  }
  .fa-facebook {
   background: white;
@@ -117,18 +118,19 @@ main .center {
   background: white;
   color: black;
 }
- article {
-   grid-area: article;
-   background-color: #e6dace;
+article {
+    background-color: #e6dace;
    width: 100%;
    /* height: 613px; */
    padding-top: 15rem;
-   position: absolute;
+   /* position: absolute; */
    z-index: 1;
-   top: 250px;
- }
- article h1 {
+   /* top: 300px; */
+   margin-top: 17rem;
+}
+article h1 {
    font-size: 15vw;
+   font-weight: bold;
    margin-bottom: 1rem;
  }
  article h3 {
@@ -140,12 +142,43 @@ main .center {
    font-size: 5vw;
  }
  article h1, h3, p {
-   padding: 0 2rem;
+   padding: 0 2rem 2rem
+   ;
  }
- 
-/* footer */
 footer {
     grid-area: footer;
-    background-color: blue;
+    /* background-color: brown; */
+    /* position: relative; */
+    /* padding: 2.5rem; */
 }
-/* Dont' forget to link this file to your HTML in the <head> */
+.contact {
+    display: flex;
+    margin-bottom: 1rem;
+    justify-content: space-around;
+ }
+ footer h2 {
+  padding: 0 1.5rem;
+}
+  
+ /* .hero-social {
+    margin: 1rem auto;
+ } */
+ .social a{
+    padding: 1rem;
+  }
+  .social .fa-facebook {
+  background: white;
+  color: black;
+}
+.social .fa-twitter {
+  background: white;
+  color: black;
+}
+.social .fa-linkedin {
+  background: white;
+  color: black;
+}
+.social .fa-instagram {
+  background: white;
+  color: black;
+ }
