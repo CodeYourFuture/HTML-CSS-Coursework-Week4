@@ -4,33 +4,121 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: var(--clr-white);
+    color: var(--clr-black);
+    font-family: var(--font-body);
+}
+
+body h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-headings);
+}
+
+body button {
+    font-family: var(--font-buttons);
+}
+
 /* Order button */
 
 .order {
 
 }
 
+.btn-order {
+    background-color: var(--clr-black);
+    color: var(--clr-white);
+    border: none;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
 /* Header */
 
 .header {
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 2rem;
+    margin-right: 2.2rem;
+}
+
+.header h1 {
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.img-hamburger {
+    width: 30px;
 }
 
 /* Hero */
 
 .hero {
-    
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero h2, h3 {
+    text-align: center;
+    margin: 0.5rem;
+}
+
+.hero h2 {
+    font-size: 2.1rem;
+    font-weight: 100;
+}
+
+.hero h3 {
+    font-size: 1.4rem;
+    font-weight: 100;
+}
+
+.hero-h2-box {
+    margin: 0.3rem;
+}
+
+.hero-h3-box {
+    margin: 1rem;
+}
+
+.btn-explore {
+    background-color: var(--clr-white);
+    color: var(--clr-black);
+    border: 2px solid var(--clr-black);
+    padding: 0.8rem 2rem;
+    margin: 1.2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.9rem;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.btn-explore:active {
+  background-color: var(--clr-black);
+  color: var(--clr-white);
 }
 
 /* Orange picture */
 
 .showcase {
+    background-color: orange;
     
 }
 
 /* Discount section */
 
 .discount {
+    background-color: var(--clr-lilac);
     
 }
 
@@ -43,12 +131,13 @@
 /* Boosting immunity section */
 
 .vision {
-    
+        background-color: var(--clr-light-green);
 }
 
 /* Choose your wellness path */
 
 .catalog {
+    background-color: var(--clr-lilac);
     
 }
 
