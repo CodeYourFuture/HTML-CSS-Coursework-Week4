@@ -8,7 +8,7 @@ body {
   background-color: #EDEDEE;
  display: grid;
  grid-template-columns: 100%;
- grid-template-rows: 4.5% 87% auto 40%;
+ grid-template-rows: 4.5% auto auto auto;
 }
 
 /* Header Styles */
@@ -120,18 +120,16 @@ button{
  display: flex;
  flex-direction: column;
  border: 2px solid green;
- margin-top: 1em;
+ margin-top: 2em;
 }
 
 .product {
- height: 500px;
+ height: 420px;
  border: 2px solid yellow;
 }
 
 #cacti {
- background-image: url(/Images/4.png);
- border: 2px solid black;
- background-size: contain;
+ background: url(/Images/4.png) no-repeat center/cover;
 }
 
 /* About section */
@@ -207,9 +205,81 @@ input, form button{
 
 .form_section img {
  width: 101%;
+ min-height: 50%;
  margin: 0;
  padding: 0;
 }
+
+/* Footer Styles */
+
+footer {
+ background-color: #133032;
+ color: white;
+ text-align: center;
+ padding-bottom: 1.5em;
+}
+
+h3{
+ width: 100%;
+ margin: 3em auto 1.5em auto;
+ letter-spacing: 5px;
+}
+
+footer a{
+ color: white;
+}
+
+.help_links{
+ display: flex;
+ flex-direction: column;
+}
+
+.subscribe h3 {
+ text-align: center;
+}
+
+.subscribe {
+ width: 90%;
+margin: 1em auto;
+ text-align: left;
+}
+
+ footer input {
+background-color: transparent;
+border: 1px solid white;
+ }
+
+ footer button {
+  width: 100%;
+  margin-top: 1em;
+  height: 40px;
+  background-color: white;
+  color: black;
+ }
+
+ .social_media{
+  display: flex;
+  justify-content: center;
+  gap: 3%;
+  margin-top: 3.5em;
+  margin-bottom: 1em;
+ }
+
+ i{
+color: white;
+ }
+
+ iframe{
+  width: 100%;
+  height: 400px;
+ filter: invert(100%) grayscale(60%);
+ }
+ 
+
+
+
+
+
 
 
 
