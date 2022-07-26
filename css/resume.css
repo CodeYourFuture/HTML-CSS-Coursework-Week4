@@ -15,6 +15,12 @@
     justify-content: center;
 }
 
+.m__icon {
+    width: 19px;
+    height: 19px;
+    background-color: var(--royal-blue);
+}
+
 .m__title {
     padding: 0 10px;
     font-size: 29px;
@@ -22,11 +28,6 @@
     font-weight: 600;
 }
 
-.m__icon {
-    width: 19px;
-    height: 19px;
-    background-color: var(--royal-blue);
-}
 
 /* Subtitles */
 .m__subtitle__container {
@@ -36,7 +37,7 @@
 }
 
 .m__subtitle {
-    margin: 30px 0;
+    margin: 20px 0;
     font-size: 18px;
     font-family: var(--heading-font);
     font-weight: 600;
@@ -55,7 +56,7 @@
     flex-direction: column;
     min-height: 200px;
     margin: 20px 0;
-    padding: 40px 20px;
+    padding: 40px;
     background-color: var(--white);
     box-shadow: -6px 6px 18px -9px rgba(0, 0, 0, 0.75);
 }
@@ -97,6 +98,56 @@
     background-color: var(--royal-blue);
 }
 
-.m__item{
+.m__item {
     padding-left: 10px;
+    font-size: 14px;
+}
+
+@media screen and (min-width:600px) {
+
+    /* Main */
+    .main {
+        padding: 100px 300px;
+    }
+
+    /* Main title */
+    .m__title__container {
+        padding: 20px;
+    }
+
+    .m__icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .m__title {
+        font-size: 35px;
+    }
+
+    /* Subtitles */
+    .m__subtitle {
+        font-size: 25px;
+    }
+
+    /* Button */
+    .btn--primary {
+        padding: 10px;
+        width: 150px;
+        font-size: 14px;
+    }
+
+    /* Articles */
+    .m__article {
+        margin: 40px 0;
+    }
+
+    /* Last article */
+    .m__article__section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        padding-right: 150px;
+    }
+
+
 }
