@@ -62,8 +62,7 @@ main {
    position: absolute;
    display: inline-block;
     justify-content: space-around;
-
-}
+ }
 .resume {
     background-color: #0050ff;
     color: white;
