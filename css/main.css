@@ -1,3 +1,22 @@
 /* Add your CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+}
+
+header {
+  background-color: rgb(244, 243, 243);
+}
+
+.blue-box {
+  height: 20px;
+  width: 20px;
+  background-color: #0150fd;
+  border: 1px solid #0150fd;
+}
