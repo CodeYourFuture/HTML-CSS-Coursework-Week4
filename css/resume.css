@@ -1,5 +1,48 @@
 /* Main */
 .main {
+    display: flex;
+    flex-direction: column;
     height: 100vh;
     background-color: var(--dark-beige);
+    padding: 60px 20px;
+}
+
+/* Main title */
+.m__title__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.m__title {
+    padding: 0 10px;
+    font-size: 29px;
+    font-family: var(--heading-font);
+    font-weight: 600;
+}
+
+.m__icon {
+    width: 19px;
+    height: 19px;
+    background-color: var(--royal-blue);
+}
+
+/* Subtitles */
+.m__subtitle__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.m__subtitle {
+    font-size: 18px;
+    font-family: var(--heading-font);
+    font-weight: 600;
+}
+
+/* Button */
+.btn--primary {
+    width: 120px;
+    font-size: 12px;
+    font-weight: bold;
 }

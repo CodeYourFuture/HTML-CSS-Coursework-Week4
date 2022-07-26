@@ -190,11 +190,10 @@
 
 .btn {
     width: 120px;
-    padding: 5px 20px;
+    padding: 5px;
     margin: 5px;
-    font-family: var(--heading-font);
     font-size: 14px;
-    font-weight: 600;
+    font-weight: bolder;
     text-transform: uppercase;
     border-radius: 20px;
     transition: 0.4s ease 0s;
