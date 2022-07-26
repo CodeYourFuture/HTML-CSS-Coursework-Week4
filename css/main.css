@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;800&family=Poppins&display=swap');
 
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 :root {
@@ -13,35 +17,15 @@
 	--black: #000;
 	--white: #fff;
 	--font_0: normal normal bold 100px/1.4em poppins-semibold, poppins, sans-serif;
-	--font_1: normal normal normal 16px/1.4em din-next-w01-light,
-		din-next-w02-light, din-next-w10-light, sans-serif;
-	--font_2: normal normal bold 35px/1.4em poppins-semibold, poppins, sans-serif;
-	--font_3: normal normal bold 27px/1.4em poppins-semibold, poppins, sans-serif;
-	--font_4: normal normal bold 25px/1.4em poppins-semibold, poppins, sans-serif;
-	--font_5: normal normal bold 25px/1.4em avenir-lt-w01_35-light1475496,
-		avenir-lt-w05_35-light, sans-serif;
-	--font_6: normal normal bold 20px/1.4em poppins-semibold, poppins, sans-serif;
-	--font_7: normal normal normal 17px/1.4em avenir-lt-w01_35-light1475496,
-		avenir-lt-w05_35-light, sans-serif;
-	--font_8: normal normal normal 14px/1.4em avenir-lt-w01_85-heavy1475544,
-		avenir-lt-w05_85-heavy, sans-serif;
-	--font_9: normal normal normal 14px/1.4em avenir-lt-w01_35-light1475496,
-		avenir-lt-w05_35-light, sans-serif;
-	--font_10: normal normal normal 12px/1.4em din-next-w01-light,
-		din-next-w02-light, din-next-w10-light, sans-serif;
-
-	--wix-font-stack: Madefor, 'Helvetica Neue', Helvetica, Arial, 'メイリオ',
-		'meiryo', 'ヒラギノ角ゴ pro w3', 'hiragino kaku gothic pro', sans-serif;
-	--wix-font-weight-regular: 400;
-	--wix-font-weight-medium: 530;
-	--wix-font-weight-bold: 700;
-	--wix-font-weight-xbold: 800;
+	--font_1: normal normal bold 35px/1.4em poppins-semibold, poppins, sans-serif;
+	--font_2: normal normal bold 27px/1.4em poppins-semibold, poppins, sans-serif;
+	--font_3: normal normal bold 25px/1.4em poppins-semibold, poppins, sans-serif;
+	--font_4: normal normal bold 20px/1.4em poppins-semibold, poppins, sans-serif;
 }
 
 /* header */
 .header {
 	display: flex;
-	/* position: fixed; */
 	width: 100%;
 	justify-content: space-between;
 	align-items: center;
@@ -62,12 +46,13 @@
 	background-color: var(--royal-blue);
 }
 .name {
-	font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.75rem;
 	font-weight: 600;
 }
 .field {
-	font-family: 'Poppins', sans-serif;
-	font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
+	font-weight: 100;
 }
 
 /* hamburger menu */
@@ -96,7 +81,7 @@
 	width: 36px;
 	height: 36px;
 	cursor: pointer;
-	z-index: 1;
+	z-index: 10;
 }
 .menu__btn > span,
 .menu__btn > span::before,
@@ -128,16 +113,19 @@
 	height: fit-content;
 	height: 100%;
 	margin: 0;
-	padding: 80px 0;
+	padding: 8rem 0;
 	list-style: none;
 	background-color: var(--dark-beige);
 	box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
 	transition-duration: 0.25s;
 	text-align: center;
+  z-index: 2;
+ 
 }
 .menu__item {
 	display: block;
 	padding: 12px 24px;
+  margin-top: 0.75rem;
 	color: #333;
 	font-size: 20px;
 	font-weight: 500;
@@ -152,6 +140,7 @@
 /* hero section */
 .hero {
 	position: relative;
+  z-index: 0;
 }
 .hero_left {
 	position: absolute;
@@ -164,6 +153,7 @@
 }
 .hero_left h1 {
 	font-family: var(--font_1);
+  font-family: 'Montserrat', sans-serif;
 	font-weight: 900;
 	font-size: 2rem;
 	width: 150px;
@@ -187,10 +177,11 @@
 }
 .resume,
 .projects {
-	padding: 0.5rem 2rem;
+	padding: 0.25rem 1.5rem;
 	text-transform: uppercase;
-	font-family: 'Poppins', sans-serif;
-	font-size: 1.25rem;
+  font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	font-size: 1rem;
 	border-radius: 48px;
 }
 .resume {
@@ -210,24 +201,25 @@
 	background-color: var(--white);
 	margin-top: 3rem;
 	margin-bottom: -1rem;
-	z-index: 100;
 }
 .fa {
-	font-size: 30px;
+	font-size: 24px;
 	color: var(--black);
+	text-decoration: none;
 }
 
 .hero_right {
 	position: absolute;
-	top: 16rem;
+	top: 14rem;
 	width: 100%;
 	background-color: var(--dark-beige);
 	padding: 22rem 0 2.5rem 0;
-	z-index: 0;
+	margin-bottom: 2.5rem;
 }
 
 .hello {
 	font: var(--font_0);
+  font-family: 'Montserrat', sans-serif;
 }
 .text_content {
 	width: 90%;
@@ -235,19 +227,72 @@
 	color: rgba(0, 0, 0, 1);
 }
 .subtitle {
-	font: var(--font_5);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
 	margin-bottom: 1.5rem;
 }
 .description {
-	font: var(--font_7);
+  font-family: 'Montserrat', sans-serif;
+	font-weight: 200;
+	font-size: 1rem;
+	font-weight: lighter;
 	line-height: 1.5em;
 	margin-right: 3%;
 }
 
 /* footer section */
 .footer {
-  display: grid;
+	display: grid;
+	position: absolute;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-areas: 'call_us email_us' 'follow_us follow_us' 'credit credit';
+	background-color: var(--white);
+	margin-top: 1.5rem;
+	padding-top: 1.5rem;
+	padding-bottom: 2.5rem;
+	margin-bottom: -10%;
+	gap: 2rem;
+	top: 100%;
+	bottom: 0;
 }
-.contact {
-  display: flex;
+
+.call_us {
+	grid-area: call_us;
 }
+.email_us {
+	grid-area: email_us;
+}
+.follow_us {
+	grid-area: follow_us;
+}
+.credit {
+	grid-area: credit;
+	margin-right: 2rem;
+	padding-bottom: 2rem;
+}
+.call,
+.write,
+.follow {
+	font: var(--font_4);
+}
+.call_us,
+.follow_us,
+.credit {
+	margin-left: 2.5rem;
+}
+.call_us p,
+.email_us p,
+.credit p {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 200;
+}
+.call,
+.write,
+.follow {
+	margin-bottom: 0.5rem;
+}
+.icons .fa {
+  margin-right: 1rem;
+}
+
