@@ -44,22 +44,20 @@ header{
  }
 main{
  background-color: #EDEDEE;
- border: 2px solid red;}
+ }
 
 .hero {
- background-image: url(/Images/1.png);
- height: 665px;
+ background: url(/Images/1.png) no-repeat center/cover;
+ height: 11%;
  margin-bottom: 1.5em;
- background-size: 100% 100%;
- background-repeat: no-repeat;
  color: white;
  border: 2px solid red;
 }
 
 svg{
  fill: white;
- width: 60%;
- height: 180%
+ width:50%;
+ height: 170%
  
 }
 
@@ -69,13 +67,14 @@ svg{
  gap: 5%;
  width: 80%;
  height: 18%;
+ 
  margin: 2.5em auto;
 }
 
 .logo > p {
  align-self: flex-end;
  text-decoration: underline;
- font-size: 1.5em;
+ font-size: 1.2em;
  letter-spacing: 2.5px;
  text-underline-offset: 12px;
 
@@ -87,15 +86,17 @@ h1, .hero > p{
 
 h1{
  margin-top: 1.5em;
- font-size: 2.5rem;
- font-weight: bolder;
- letter-spacing: 2.5px;
+ border: 2px solid red;
+ font-weight: 200;
+ font-size: 2.25rem;
+ letter-spacing: 0.2em;
+ font-family: 'Fjalla One', sans-serif;
 }
 
 .hero > p {
- width: 60%;
+ width: 65%;
  font-size:1.5rem;
- margin: 1.5em auto 1em auto;
+ margin: 1em auto;
  letter-spacing: 2.8px;
 }
 
