@@ -1,7 +1,7 @@
 .container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 3rem 4.4rem 17.4rem 9.6rem 4rem auto auto auto 100px 100px 100px 100px;
+  grid-template-rows: 3rem 4.4rem 17.4rem 9.6rem 4rem auto auto auto auto 100px 100px 100px;
   grid-template-areas:
     "or or or or or or or or or or or or"
     "hd hd hd hd hd hd hd hd hd hd hd hd"
