@@ -50,9 +50,35 @@
 
 /* Articles */
 .m__article {
+    display: flex;
+    flex-direction: column;
     min-height: 200px;
     margin: 20px 0;
+    padding: 40px 20px;
     background-color: var(--white);
     box-shadow: -6px 6px 18px -9px rgba(0, 0, 0, 0.75);
+}
 
+.m__article__headings {
+    margin: 10px 0;
+}
+
+.m__article__heading {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.m__article__heading:nth-child(1) {
+    font-family: var(--heading-font);
+    color: var(--royal-blue);
+    font-weight: 600;
+}
+
+.m__article__heading:nth-child(2) {
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+.m__article__content p {
+    padding: 0 10px 10px 0;
 }
