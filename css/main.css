@@ -183,6 +183,9 @@
 
 /* Buttons */
 .m__buttons {
+    position: absolute;
+    top: 400px;
+    left: 80px;
     z-index: 1;
 }
 
@@ -190,24 +193,25 @@
     width: 120px;
     padding: 5px 20px;
     margin: 5px;
-    font-size: 15px;
+    font-family: var(--heading-font);
+    font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
     border-radius: 20px;
+    transition: 0.4s ease 0s;
 
 }
 
 .btn--primary {
     color: var(--white);
     background-color: var(--royal-blue);
-    border: 1px solid var(--royal-blue);
+    border: 2px solid var(--royal-blue);
 }
 
 .btn--secondary {
     color: var(--black);
     background-color: transparent;
     border: 1px solid var(--black);
-
 }
 
 /* Card */
@@ -250,7 +254,7 @@
     width: 68px;
     height: 3px;
     margin: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     align-self: center;
     background-color: var(--royal-blue);
 }
@@ -264,7 +268,7 @@
     width: 100%;
     justify-content: center;
     padding: 10px;
-    margin-top: 10px;
+    margin-top: 40px;
     background-color: var(--white);
 }
 
@@ -293,7 +297,6 @@
 .m__content {
     margin-left: 30px;
     margin-bottom: 50px;
-
 }
 
 .m__content p {
@@ -409,7 +412,7 @@
     .main {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 40vh 60vh;
         height: 100vh;
     }
 
@@ -438,16 +441,38 @@
         height: 205px;
     }
 
+    .m__card__title {
+        width: 120px;
+        font-size: 27px;
+    }
+
     .m__card__subtitle {
         display: block;
         font-size: 17px;
         text-transform: uppercase;
     }
 
-    /* Content */
+    /* Buttons */
+    .m__buttons {
+        left: 700px;
+    }
+
+    .btn--primary:hover {
+        color: var(--royal-blue);
+        background-color: var(--white);
+    }
+
+    .btn--secondary:hover {
+        color: var(--white);
+        background-color: var(--royal-blue);
+        border: 2px solid var(--royal-blue);
+    }
+
+    /* Main content */
     .m__heading {
         grid-column: 2/3;
         grid-row: 1/2;
+        margin-top: 40px;
     }
 
     .m__heading h1 {
@@ -461,6 +486,14 @@
     .m__content {
         grid-column: 2/3;
         grid-row: 2/3;
+        width: 30vw;
+        margin-top: 120px;
+        font-size: 17px;
+    }
+
+    .m__content p {
+        padding-bottom: 20px;
+        left: 400px;
     }
 
     /* Footer */
