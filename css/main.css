@@ -92,7 +92,7 @@ header {
 }
 
 #menu-toggle:checked + .menu-button-container .menu-button {
-  /* background: rgba(255, 255, 255, 0); */
+  background: rgba(255, 255, 255, 0);
 }
 
 #menu-toggle:checked + .menu-button-container .menu-button::after {
