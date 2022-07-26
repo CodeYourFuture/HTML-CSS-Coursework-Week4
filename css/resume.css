@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     height: 100%;
+    width: 100%;
     background-color: var(--dark-beige);
     padding: 60px 20px;
 }
@@ -81,4 +82,21 @@
 
 .m__article__content p {
     padding: 0 10px 10px 0;
+}
+
+/* Last article */
+.m__item__container {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.m__item__icon {
+    width: 13px;
+    height: 13px;
+    background-color: var(--royal-blue);
+}
+
+.m__item{
+    padding-left: 10px;
 }
