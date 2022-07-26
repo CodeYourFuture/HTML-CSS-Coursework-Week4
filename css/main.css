@@ -48,35 +48,43 @@ main{
 
 .hero {
  background: url(/Images/1.png) no-repeat center/cover;
- height: 11%;
- margin-bottom: 1.5em;
+ padding-top: 1.4em;
+ display: grid;
+ grid-template-columns: 1fr;
+ grid-template-rows: 30% 13% 18% 38px;
+ grid-template-areas: 
+ "logo"
+ "h1"
+ "p"
+ "button";
+ row-gap: 1.5em;
+ height: 12%;
  color: white;
- border: 2px solid red;
 }
 
 svg{
  fill: white;
  width:50%;
- height: 170%
+ height: 100%
  
 }
 
 .logo {
  display: flex;
  justify-content: center;
+ align-items: flex-end;
  gap: 5%;
  width: 80%;
- height: 18%;
- 
- margin: 2.5em auto;
+ grid-area: logo;
+ margin: 0 auto;
 }
 
 .logo > p {
- align-self: flex-end;
  text-decoration: underline;
  font-size: 1.2em;
  letter-spacing: 2.5px;
- text-underline-offset: 12px;
+ text-underline-offset: 10px;
+ align-self: center;
 
 }
 
@@ -85,26 +93,29 @@ h1, .hero > p{
 }
 
 h1{
- margin-top: 1.5em;
- border: 2px solid red;
+ grid-area: h1;
  font-weight: 200;
  font-size: 2.25rem;
  letter-spacing: 0.2em;
  font-family: 'Fjalla One', sans-serif;
+ margin: 0;
+ padding: 0;
 }
 
 .hero > p {
  width: 65%;
+
  font-size:1.5rem;
- margin: 1em auto;
+ text-align: center;
+ margin: 0 auto;
  letter-spacing: 2.8px;
+ grid-area: p;
 }
 
  .hero > div:last-child {
 display: flex;
 justify-content: center;
-margin-top: 3em;
-height: 8%
+grid-area: button;
 }
 
 button{
