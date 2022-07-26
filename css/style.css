@@ -137,13 +137,42 @@ body button {
 /* Differences section */
 
 .differences {
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.differences h2 {
+    font-size: 2rem;
+    font-weight: 100;
+    width: 14rem;
+    margin: 2.1rem 0 0.6rem;
+    line-height: 2.5rem;
+}
+
+.differences h3 {
+    font-size: 1.4rem;
+    font-weight: 100;
+    margin-bottom: 0.8rem;
+}
+
+.differences p {
+    line-height: 1.6rem;
+    width: 14.6rem;
+    margin-bottom: 1.5rem;
+}
+
+.img-differences {
+    width: 4.5rem;
+    margin: 0.6rem;
 }
 
 /* Boosting immunity section */
 
 .vision {
-        background-color: var(--clr-light-green);
+    background-color: var(--clr-light-green);
 }
 
 /* Choose your wellness path */
