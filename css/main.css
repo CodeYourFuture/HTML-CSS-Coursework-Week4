@@ -8,7 +8,12 @@
 .header {
 
 color: #a05841;
- background-image: url("\img\1.png");
+ 
     background-color: #cccccc;
+    height: 100%;
 }
 
+.section-1 {
+background-image: url("https://github.com/jwillson2022/responsive-grid-project/blob/master/img/main.png");
+height: 100%;
+}
