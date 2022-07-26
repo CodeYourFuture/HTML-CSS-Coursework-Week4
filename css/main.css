@@ -243,3 +243,11 @@
 	line-height: 1.5em;
 	margin-right: 3%;
 }
+
+/* footer section */
+.footer {
+  display: grid;
+}
+.contact {
+  display: flex;
+}
