@@ -152,7 +152,10 @@ body{
 .main-content{
     display: flex;
     flex-direction: column;
-    
+    box-shadow: 50px var(--rotal-blue); 
+    -webkit-box-shadow: 5px 5px 10px 5px #b8b8b8;
+    box-shadow: 5px 5px 10px 5px #b8b8b8;
+    margin-bottom: 0.2rem;
 }
 .profile-img-container{
     display: flex;
@@ -162,6 +165,17 @@ body{
     background-color: var(--light-beige);
     font-family: 'Quicksand', sans-serif;
     box-shadow: #363a40;
+    min-width: 15rem;
+}
+@media screen and (max-width:280px) {
+    .profile-img-container{
+        min-width: 10rem;
+    }   
+}
+@media screen and (max-width:05px) {
+    .profile-img-container {
+        min-width: 6rem;
+    }
 }
 .profile-img-container img{
     height: auto;
@@ -195,11 +209,41 @@ body{
 }
 
 .profile-text-container{
-    width: 100%;
+    max-width: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    font-family: 'Quicksand', sans-serif;
+    border: solid 1px rgb(156, 156, 156);
 }
-
-
-
+.hello{
+    font-size: 3rem;
+    font-weight: 600;
+}
+.profile-text-container > p{
+    font-size: 1.4rem;
+    text-align: center;
+}
+.btn1{
+    background-color: var(--rotal-blue);
+    border-radius: 4rem;
+    font-weight: lighter;
+    border-width: 2px;
+    color: var(--white);
+    border-style: none;
+    min-height: 1.5rem;
+    max-height: 1.5rem;
+}
+.btn2{
+    background-color: var(--white);
+    border-radius: 4rem;
+    font-weight: lighter;
+    border-width: 2px;
+    min-height: 1.5rem;
+    max-height: 1.5rem;
+}
 
 
 
