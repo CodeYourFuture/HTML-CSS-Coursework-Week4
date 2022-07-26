@@ -1,3 +1,14 @@
 /* Add your CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
+
+
+/* color= #a05841 /*/
+
+.header {
+
+color: #a05841;
+ background-image: url("\img\1.png");
+    background-color: #cccccc;
+}
+
