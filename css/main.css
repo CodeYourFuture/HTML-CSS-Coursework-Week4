@@ -16,6 +16,9 @@
     margin-right: 2rem;
   }
 
+  button {
+    font-family: sans-serif;
+  }
   .title {
     text-align: left;
     font-size: 1.5rem;
@@ -76,16 +79,17 @@
   font-size: 10rem;
   text-align: left;
   margin-top: -4rem;
-  margin-right: -47rem;
-  margin-left: 40rem;
+
   color: rgb(0, 0, 0);
 }
 
 .subtitle {
   font-size: 2.5rem;
   margin-top: 2rem;
-  margin-right: -47rem;
-  margin-left: 40rem;
+}
+
+.content {
+  margin-left: 80rem;
 }
 
 .resume {
@@ -109,11 +113,8 @@
 }
 
 .text_content {
-  text-align: justify;
   font-size: 1.7rem;
   margin-top: 1rem;
-  margin-right: -47rem;
-  margin-left: 40rem;
 }
 .hero_img {
   border-radius: 50%;
