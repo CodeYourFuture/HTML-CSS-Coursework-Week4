@@ -158,11 +158,11 @@
  article h2 a {
   color: #0050f2;
  }
- article .role {
+ .article-container .role {
   font-size: 5vw;
   margin-bottom: 1rem;
  }
- article p {
+ .article-container p {
   font-size: 5vw;
   margin-bottom: 1rem;
  }
