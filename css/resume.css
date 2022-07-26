@@ -1,33 +1,4 @@
 /* Main */
-.main {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-    background-color: var(--dark-beige);
-    padding: 60px 20px;
-}
-
-/* Main title */
-.m__title__container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.m__icon {
-    width: 19px;
-    height: 19px;
-    background-color: var(--royal-blue);
-}
-
-.m__title {
-    padding: 0 10px;
-    font-size: 29px;
-    font-family: var(--heading-font);
-    font-weight: 600;
-}
-
 
 /* Subtitles */
 .m__subtitle__container {
@@ -105,24 +76,6 @@
 
 @media screen and (min-width:600px) {
 
-    /* Main */
-    .main {
-        padding: 100px 300px;
-    }
-
-    /* Main title */
-    .m__title__container {
-        padding: 20px;
-    }
-
-    .m__icon {
-        width: 20px;
-        height: 20px;
-    }
-
-    .m__title {
-        font-size: 35px;
-    }
 
     /* Subtitles */
     .m__subtitle {
