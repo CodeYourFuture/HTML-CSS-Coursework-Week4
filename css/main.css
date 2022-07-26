@@ -216,7 +216,7 @@ body{
     align-items: center;
     background-color: var(--white);
     font-family: 'Quicksand', sans-serif;
-    border: solid 1px rgb(156, 156, 156);
+    border: solid 1px rgb(207, 207, 207);
 }
 .hello{
     font-size: 3rem;
@@ -235,6 +235,9 @@ body{
     border-style: none;
     min-height: 1.5rem;
     max-height: 1.5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    max-width: 50%;
 }
 .btn2{
     background-color: var(--white);
@@ -243,6 +246,9 @@ body{
     border-width: 2px;
     min-height: 1.5rem;
     max-height: 1.5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    max-width: 50%;
 }
 
 
