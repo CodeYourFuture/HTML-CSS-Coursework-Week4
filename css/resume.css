@@ -31,6 +31,9 @@
   margin: 0 1rem;
   overflow: hidden;
 }
+a:link {
+  text-decoration: none;
+}
 
 .menu-button-container {
   display: none;
@@ -139,6 +142,20 @@
   justify-content: center;
   margin-top: 1rem;
   }
+  .hero button {
+    background-color: #0050ff;
+     font-weight: bold;
+     padding: 0.1rem 3rem;
+   border-radius: 1rem;
+   font-size: 2vw;
+     box-shadow: none;
+  border-style: none;
+  /* padding: 10px 0px; */
+  }
+  .hero button a {
+    color: white;
+    text-decoration: none;
+  }
   
  article {
   background-color: white;
@@ -215,3 +232,14 @@
   background: white;
   color: black;
  }
+ @media (min-width: 700px) {
+ .hero h1 {
+  text-align: center;
+  margin-top: 2rem;
+ }
+ .hero h2 {
+  font-size: 3vw;
+  margin-top: 3rem;
+  margin-right: 10rem;
+ }
+}

@@ -30,6 +30,9 @@
   margin: 0 1rem;
   overflow: hidden;
 }
+a:link {
+  text-decoration: none;
+}
 
 .menu-button-container {
   display: none;

@@ -48,6 +48,9 @@ header {
   margin: 0 1rem;
   overflow: hidden;
 }
+a:link {
+  text-decoration: none;
+}
 
 .menu-button-container {
   display: none;
@@ -141,6 +144,7 @@ header {
     border-bottom: 1px solid #444;
   }
 }
+/* main */
 main {
     grid-area: main;
     /* background-color: blueviolet; */
@@ -299,3 +303,18 @@ footer {
   background: white;
   color: black;
  }
+@media (min-width: 700px) {
+  main {
+   display: flex;
+  width: 50%;
+  }
+  main .hero
+    {
+   flex: 1;
+  border: 2px solid blueviolet;
+  margin: 10px;
+  }
+  main article {
+   margin-right: 20px;
+  }
+}
