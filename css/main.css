@@ -1,3 +1,86 @@
-/* Add your CSS here */
+:root {
 
-/* Dont' forget to link this file to your HTML in the <head> */
+  --clr-black: #000;
+  --clr-white: #fff;
+  --clr-lilac: #f5e8ff;
+  --clr-light-green: #e6fac0;
+  --clr-medium-green: #5e7d1f;
+  --clr-dark-green: #394b2a;
+
+  --font-headings: 'Questrial', sans-serif;
+  --font-buttons: 'Raleway', sans-serif;
+  --font-body: 'Roboto', sans-serif;
+    
+}
+
+/* Order button */
+
+.btn-order {
+
+}
+
+/* Header */
+
+.header {
+    
+}
+
+/* Hero */
+
+.hero {
+    
+}
+
+/* Orange picture */
+
+.showcase {
+    
+}
+
+/* Discount section */
+
+.discount {
+    
+}
+
+/* Differences section */
+
+.differences {
+    
+}
+
+/* Boosting immunity section */
+
+.vision {
+    
+}
+
+/* Choose your wellness path */
+
+.catalog {
+    
+}
+
+/* Discover our ... */
+
+.kit {
+    
+}
+
+/* Get juice bar */
+
+.supply {
+    
+}
+
+/* follow us */
+
+.networks {
+    
+}
+
+/* Footer */
+
+.footer {
+    
+}
