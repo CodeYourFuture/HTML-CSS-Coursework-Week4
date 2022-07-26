@@ -1,3 +1,38 @@
 /* Add your CSS here */
 
+body {
+    margin: 0;
+}
+
+header {
+    color: aqua;
+    background-color: rgb(82, 80, 80);
+    padding: 5em 0;
+    
+}
+
+main {
+    color: blueviolet;
+    background-color: aquamarine;
+    padding: 5em 0;
+    
+}
+
+footer {
+    color: coral;
+    background-color: rgb(163, 243, 247);
+    padding: 5em 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /* Dont' forget to link this file to your HTML in the <head> */
