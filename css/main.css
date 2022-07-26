@@ -264,7 +264,7 @@
     width: 100%;
     justify-content: center;
     padding: 10px;
-    margin-top: 20px;
+    margin-top: 10px;
     background-color: var(--white);
 }
 
@@ -272,6 +272,7 @@
     padding: 0 10px;
 }
 
+/* Main content */
 .m__heading {
     padding-top: 20px;
     margin-left: 30px;
@@ -289,8 +290,13 @@
     padding-bottom: 10px;
 }
 
-.m__content p {
+.m__content {
     margin-left: 30px;
+    margin-bottom: 50px;
+
+}
+
+.m__content p {
     padding: 0 10px 10px 0;
 }
 
