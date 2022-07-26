@@ -120,18 +120,16 @@ button{
  display: flex;
  flex-direction: column;
  border: 2px solid green;
- margin-top: 1em;
+ margin-top: 2em;
 }
 
 .product {
- height: 500px;
+ height: 420px;
  border: 2px solid yellow;
 }
 
 #cacti {
- background-image: url(/Images/4.png);
- border: 2px solid black;
- background-size: contain;
+ background: url(/Images/4.png) no-repeat center/cover;
 }
 
 /* About section */
@@ -271,6 +269,11 @@ border: 1px solid white;
 color: white;
  }
 
+ iframe{
+  width: 100%;
+  height: 400px;
+ filter: invert(100%) grayscale(60%);
+ }
  
 
 
