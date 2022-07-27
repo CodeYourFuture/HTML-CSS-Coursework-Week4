@@ -8,6 +8,12 @@
     padding: 60px 20px;
 }
 
+.m__text{
+    padding: 20px;
+    text-align: center;
+    line-height: 1.5em;
+}
+
 /* Articles */
 .m__article {
     display: grid;
@@ -78,4 +84,17 @@
 
 #img-p03 {
     background-image: url("../images/project-03.jpg");
+}
+
+@media screen and (min-width:600px) {
+
+    /* Main */
+    .main--secondary {
+        padding: 100px 300px;
+    }
+
+    /* Articles */
+    .m__article {
+        margin: 40px 0;
+    }
 }
