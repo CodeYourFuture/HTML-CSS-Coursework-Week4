@@ -106,6 +106,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 .nav-item {
@@ -116,6 +117,9 @@ a {
   font-size: 1rem;
   font-weight: 400;
   color: #475569;
+  font-family: var(--font-family-body--);
+  font-weight: 600;
+  font-size: 1rem;
 }
 
 .nav-link:hover {
@@ -556,10 +560,7 @@ main {
 
 .contact__content {
   background-color: var(--White--);
-  /* position: absolute;  */
-  display: flex;
-  flex-direction: column;
-  justify-items: space-between;
+  
   width: 20rem;
   margin: 2rem 0rem 0rem 3rem;
   box-shadow: -10px 10px 40px -20px rgba(0, 0, 0, 0.5);
@@ -586,10 +587,14 @@ main {
   margin: 0.5rem;
 }
 
+
 .contact__line {
-  width: 10rem;
+  width: 100%;
   margin: 2rem 0 2rem 0;
   justify-items: center;
+  border: none;
+  
+  border-bottom: var(--Black--) solid 2px;
 }
 
 
@@ -639,4 +644,81 @@ main {
       transform: translateY(-8px) rotate(-45deg);
     }
   
+}
+
+@media only screen and (min-width: 768px) {
+
+  .logo {
+    flex-direction: row;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .logo__title {
+    margin: 0;
+    margin-left: 1rem;
+    margin-bottom: -80px;
+    font-family: var(--font-family-body--);
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+    .profile {
+      position: absolute;
+      top: 5rem;
+      display: flex;
+      flex-direction: column;
+      justify-items: space-between;
+      background-color: var(--Light-beige--);
+      width: 20rem;
+      margin-left: -10rem;
+      box-shadow: -10px 10px 40px -20px rgba(0, 0, 0, 0.5);
+    }
+
+    .profile__img {
+      padding: 2rem;
+      width: 18rem;
+      align-self: center;
+      margin-bottom: -2rem;
+    }
+
+        .hero__section {
+          background-color: var(--White--);
+          width: 100%;
+          display: flex;
+    }
+
+        .about__me {
+          flex-direction: column;
+          position: relative;
+          background-color: var(--Dark-beige--);
+          width: 100%vw;
+          align-items: center;
+          padding: 1rem 2rem 2rem 20rem;
+          margin-bottom:2rem;
+          height: 100%vh;
+        }
+
+        .hero{
+          background-color: aqua;
+          margin-left: 11rem;
+          
+         
+        }
+
+        /* Contact Page */
+
+  
+
+        .contact__content{
+          width:40rem;
+          margin: 0 auto;
+        
+        }
+
+        .contact__block {
+          display: flex;
+        }
 }

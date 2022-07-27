@@ -12,23 +12,26 @@
 
   <body>
     <header>
-      <div class="navbar">
+      <nav class="navbar">
         <div class="logo">
-          <div class="square"></div>
           <div class="logo__block">
+            <div class="square"></div>
             <p class="logo__name">Maya Nelson</p>
-            <p>PROJECT MANAGER</p>
           </div>
+          <p>PROJECT MANAGER</p>
         </div>
-        <div class="navbar__menu">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
+        <ul class="nav-menu">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
-      </div>
+      </nav>
     </header>
 
     <main>
@@ -40,19 +43,22 @@
           </div>
         </div>
 
-        <div class="contact__content">
-          <p>First Name <span class="contact__star">*</span></p>
-          <hr class="contact__line">
-          <p>Last Name<span class="contact__star">*</span></p>
-          <hr class="contact__line">
-          <p>Email<span class="contact__star">*</span></p>
-          <hr class="contact__line">
-          <p>Subject</p>
-          <hr class="contact__line">
-          <p>Message</p>
-          <hr class="contact__line">
+        <form class="contact__content">
+
+          <div class="contact__block">
+            <label for="firstname">First Name <span class="contact__star">*</span></label>
+            <input type="text" id="firstname" class="contact__line">
+            <label for="lastname">Last Name<span class="contact__star">*</span></label>
+            <input type="" id="lastname" class="contact__line">
+          </div>
+          <label for="">Email<span class="contact__star">*</span></label>
+          <input type="" id="" class="contact__line">
+          <label for="">Subject</label>
+          <input type="" id="" class="contact__line">
+          <label for="">Message</label>
+          <input type="" id="" class="contact__line">
           <button class="send">SEND</button>
-        </div>
+        </form>
       </section>
     </main>
       <footer>
@@ -80,5 +86,6 @@
       © This website design was created by Wix.com, and is used here for
       strictly educational purposes.
     </p>
+    <script src="script.js"></script>
   </body>
 </html>
