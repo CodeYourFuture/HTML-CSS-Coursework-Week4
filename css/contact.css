@@ -8,6 +8,48 @@
     padding: 60px 20px;
 }
 
+/* Form */
+.m__form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    padding: 30px 10px;
+    background-color: var(--white);
+    box-shadow: -6px 6px 18px -9px rgba(0, 0, 0, 0.75);
+}
+
+.m__form__section {
+    display: flex;
+    flex-direction: column;
+}
+
+.m__form__label {
+    font-family: var(--heading-font);
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-right: 20px;
+}
+
+.m__form__required {
+    color: var(--royal-blue);
+}
+
+.m__form__input {
+    height: 38px;
+    max-width: 100%;
+    color: var(--royal-blue);
+    padding: 5px 5px 5px 10px;
+    font-weight: 600;
+    border: 0;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.6);
+}
+
+/* Button */
+.btn {
+    align-self: center;
+    margin-top: 20px;
+}
+
 @media screen and (min-width:600px) {
 
     /* Main */
