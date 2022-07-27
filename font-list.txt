@@ -1,0 +1,28 @@
+
+### **DESIGN 1: Prickles & Co** **An e-commerce site selling plants** ![Prickles & Co homepage](./designs/Cactus%20shop.png) Live demo here: https: //www.wix.com/website-template/view/html/1995
+### Fonts **Headings:** Fjalla One - Regular 400 https: //fonts.google.com/specimen/Fjalla+One  
+**Subheadings:** Outfit - Extra-light 200 https: //fonts.google.com/specimen/Outfit  
+**Body:** Outfit - Extra-light 200 https: //fonts.google.com/specimen/Outfit  
+
+
+
+**Headings:** Fjalla One - Regular 400 https: //fonts.google.com/specimen/Fjalla+One  
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+
+font-family: 'Fjalla One', sans-serif;
+
+
+
+Subheadings:** Outfit - Extra-light 200 https: //fonts.google.com/specimen/Outfit  
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap" rel="stylesheet">
+
+
+font-family: 'Outfit', sans-serif;
+
+**Body:** Outfit - Extra-light 200 https: //fonts.google.com/specimen/Outfit 

@@ -16,3 +16,25 @@ Just click “Edit Text” or double click me to add your own content and make c
 This is a great space to write long text about your company and your services. 
 You can use this space to go into a little more detail about your company. 
 Talk about your team and what services you provide.
+
+OUR STORE
+
+Address: 500 Terry Francois Street San Francisco, CA 94158
+
+Phone: 123-456-7890
+
+Email:  info@mysite.com
+
+OPENING HOURS
+
+Mon - Fri: 7am - 10pm
+​​Saturday: 8am - 10pm
+​Sunday: 8am - 11pm
+
+HELP
+
+Shipping & Returns
+
+Privacy Policy
+
+FAQ
