@@ -5,5 +5,15 @@
     --light-green: #E6FAC0;
     --medium-green: #5E7D1F;
     --dark-green: #394B2A;
+    --headings: 'Questrial',
+        sans-serif;
+    --buttons: 'Raleway',
+        sans-serif;
+    --body: 'Roboto',
+        sans-serif;
 }
 
+.header1 {
+    color: var(--white);
+    background-color: var(--black);
+}
