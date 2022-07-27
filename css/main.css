@@ -1,17 +1,43 @@
 /* Add your CSS here */
-/* HEADER */
+
 body {
   background-color: #ededee;
+  font-family: "Outfit", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+h1,
+h2,
+h3 {
+  font-family: "Fjalla One", sans-serif;
+}
+.sub-heading {
+  font-family: "Outfit", sans-serif;
+}
+/* HEADER */
+header{
+  display: grid;
+  grid-template: auto / repeat(2, 1fr);
+  padding: 0rem 1rem;
 }
 .title {
   color: #a05941;
   text-transform: uppercase;
   font-size: 1.5rem;
+  margin-bottom: 0;
+}
+.hamburger-menu{
+  font-size: 2rem;
+  color:#a05941;
+  font-weight: bold;
+  text-align: right;
 }
 .desktop-nav {
   display: none;
+  color: #a05941;
 }
 .responsive-nav {
+  display: none;
   color: #a05941;
 }
 .login-link {
@@ -30,36 +56,80 @@ nav > ul > li {
   color: #a05941;
 }
 .header-txt {
+  grid-column: 1 / -1;
   color: #a05941;
   font-size: 1rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+}
+.h-text-2{
+  display: none;
 }
 
 /* MAIN */
 .jumbotron {
-  background: url(assets/images/1.png);
-  background-color: black;
   text-align: center;
   color: white;
 }
-.jumbotron > h1 {
-  text-transform: uppercase;
-  font-size: 2.5rem;
+.jumbotron > img{
+  max-width: 100%;
+  position: relative;
+  filter: brightness(80%);
 }
-.jumbotron > h2 {
-  text-transform: uppercase;
+.jumbo-text{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
 }
-.jumbotron > button {
+.jumbo-text > h1 {
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  letter-spacing: .5rem;
+  margin-bottom: 0;
+}
+.jumbo-text > h2 {
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  font-size: 1.5rem;
+}
+.jumbo-text > button {
   background-color: #a05941;
   color: white;
   border: solid 1px #a05941;
   padding: 0.5rem 1.5rem;
+  
 }
 form {
   display: grid;
   gap: 1rem;
+  background-color: white;
+  padding: 1rem 1rem 1.5rem 1rem;
+  margin: 0 1rem;
+}
+form > h3 {
+  text-align: center;
+  color: #a05941;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  padding: 0rem 5rem;
+  margin-bottom: 0;
+}
+form > span {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #a05941;
+  padding: 0;
+  margin: 0;
 }
 form > input {
   padding-top: 0.5rem;
+}
+form > input:hover,
+textarea:hover {
+  border: 2px black solid;
 }
 form > button {
   background-color: #a05941;
@@ -67,9 +137,14 @@ form > button {
   border: solid 1px #a05941;
   padding: 1rem 1.5rem;
 }
+.divider-img{
+  max-width: 100%;
+}
 .more-info {
   background-color: #133032;
   color: white;
+  padding: 0;
+  margin: 0;
 }
 .store-info,
 .hours,
@@ -80,15 +155,58 @@ form > button {
 }
 .section-h3 {
   text-transform: uppercase;
+  letter-spacing: 0.5rem;
+}
+article {
+  padding: 3rem 1.5rem 0 1.5rem;
+}
+article > p {
+  padding-bottom: 0.5rem;
+  margin: 0;
 }
 .help {
   display: grid;
+}
+.help > a {
+  color: white;
+  padding-bottom: 0.5rem;
 }
 .subscribe {
   display: grid;
 }
 .subscribe > label {
   text-align: left;
+  padding-bottom: .5rem;
+}
+.subscribe > input {
+  color: white;
+  background-color: #133032;
+  border: solid 1px white;
+  padding: .5rem;
+}
+.subscribe > input:hover {
+  border: solid 2.5px white;
+}
+.subscribe > button{
+  margin-top: 1rem;
+  padding: 1rem;
+  font-size: 1rem;
+  background-color: white;
+}
+.socials{
+  padding: 5rem 0rem 3rem 0rem;
+}
+.socials > a{
+  color: white;
+  font-size: 1.5rem;
+  padding: 0rem .5rem;
+}
+.location {
+  padding: 0;
+  margin: 0;
+}
+.location > img{
+  max-width: 100%;
 }
 footer {
   text-align: center;
