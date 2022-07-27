@@ -1,4 +1,9 @@
-/* Add your CSS here */
-
-/* Dont' forget to link this file to your HTML in the <head> */
+:root {
+    --black: #000;
+    --white: #fff;
+    --lylac: #f5e8ff;
+    --light-green: #E6FAC0;
+    --medium-green: #5E7D1F;
+    --dark-green: #394B2A;
+}
 
