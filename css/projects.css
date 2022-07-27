@@ -1,10 +1,22 @@
 /* Main */
+.main--secondary {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background-color: var(--dark-beige);
+    padding: 60px 20px;
+}
+
 /* Articles */
 .m__article {
     display: grid;
     grid-template-columns: 10px auto;
     grid-template-rows: 50px 1fr 200px;
+    margin: 20px 0;
     padding: 10px 0 0;
+    background-color: var(--white);
+    box-shadow: -6px 6px 18px -9px rgba(0, 0, 0, 0.75);
 }
 
 .m__article__icon {

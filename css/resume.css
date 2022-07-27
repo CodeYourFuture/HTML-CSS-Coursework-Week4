@@ -1,4 +1,12 @@
 /* Main */
+.main--secondary {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background-color: var(--dark-beige);
+    padding: 60px 20px;
+}
 
 /* Subtitles */
 .m__subtitle__container {
@@ -25,6 +33,11 @@
 .m__article {
     display: flex;
     flex-direction: column;
+    min-height: 200px;
+    margin: 20px 0;
+    padding: 40px;
+    background-color: var(--white);
+    box-shadow: -6px 6px 18px -9px rgba(0, 0, 0, 0.75);
 }
 
 .m__article__headings {
@@ -82,6 +95,11 @@
         padding: 10px;
         width: 150px;
         font-size: 14px;
+    }
+
+    /* Main */
+    .main--secondary {
+        padding: 100px 300px;
     }
 
     /* Articles */

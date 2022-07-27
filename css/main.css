@@ -194,16 +194,6 @@
     border: 1px solid var(--black);
 }
 
-/* Main for page other that -About me- */
-.main--secondary {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-    background-color: var(--dark-beige);
-    padding: 60px 20px;
-}
-
 /* Main title */
 .m__title__container {
     display: flex;
@@ -222,15 +212,6 @@
     font-size: 29px;
     font-family: var(--heading-font);
     font-weight: 600;
-}
-
-/* Articles */
-.m__article {
-    min-height: 200px;
-    margin: 20px 0;
-    padding: 40px;
-    background-color: var(--white);
-    box-shadow: -6px 6px 18px -9px rgba(0, 0, 0, 0.75);
 }
 
 /* Footer */
@@ -336,11 +317,6 @@
 
     .h__nav__menu a:hover {
         color: var(--royal-blue);
-    }
-
-    /* Main for page other that -About me- */
-    .main--secondary {
-        padding: 100px 300px;
     }
 
     /* Main title */
