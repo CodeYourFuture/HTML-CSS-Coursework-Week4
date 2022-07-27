@@ -3,13 +3,16 @@
 .m__article {
     display: grid;
     grid-template-columns: 10px auto;
-    grid-template-rows: auto;
-    padding: 10px 20px 0 0;
+    grid-template-rows: 50px 1fr 200px;
+    grid-template-areas: "i h"
+        "c c"
+        "m m";
+    padding: 10px 0 0;
 }
 
 .m__article__icon {
     grid-column: -1/1;
-    grid-row: -1/1;
+    grid-row: 1/2;
     width: 10px;
     height: 50px;
     background-color: var(--royal-blue);
@@ -46,6 +49,27 @@
     padding-bottom: 20px;
     grid-column: -1/2;
     grid-row: 2/3;
-    padding-left: 20px;
-    padding-top: 20px;
+    padding: 20px;
+}
+
+.m__article__image {
+    grid-area: m;
+    height: 100%;
+    width: 100%;
+    grid-column: 1/3;
+    grid-row: 3/4;
+    background-size: cover;
+    background-position: center;
+}
+
+#img-p01 {
+    background-image: url("../images/project-01.jpg");
+}
+
+#img-p02 {
+    background-image: url("../images/project-02.jpg");
+}
+
+#img-p03 {
+    background-image: url("../images/project-03.jpg");
 }
