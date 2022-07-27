@@ -1,21 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Add a link to your custom CSS here -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
     <title>Responsive grid project</title>
 </head>
 
 <body>
+    <header>
+        <h1 class="title">Prickles & Co.</h1>
+        <nav class="responsive-nav">
+            <i class="bi bi-person-circle"></i>
+            <a href="#" class="login-link">Log In</a>
+            <ul>
+                <li><a href="shop.html" class="nav-link">Shop</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="#" class="nav-link">FAQ</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h2 class="header-txt">We Deliver to Your Doorstep</h2>
+        <h2 class="header-txt h-text-2">Call Us Now! 123-456-7890</h2>
+    </header>
+    <main>
+        <section class="jumbotron">
+            <h1>Prickles and Co</h1>
+            <h2>Bring Nature Indoors</h2>
+            <button>Shop now</button>
+        </section>
+        <form action="">
+            <h3>For Special Requests & Orders</h3>
 
-    <!-- Add your markup here -->
+            <label for="first-name">First Name*</label>
+            <input type="text" id="first-name" required>
 
+            <label for="last-name">Last Name*</label>
+            <input type="text" id="last-name" required>
 
-    <!-- Please leave this in to credit the creators of this design -->
-    <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
+            <label for="email">Email*</label>
+            <input type="email" id="email" required>
+
+            <label for="phone">Phone</label>
+            <input type="text" id="phone">
+
+            <label for="message">Message</label>
+            <textarea name="message-input" id="message" cols="30" rows="10"></textarea>
+
+            <button>Send</button>
+        </form>
+        <img src="" alt="">
+        <section class="more-info">
+            <article class="store-info">
+                <h3 class="section-h3">Our Store</h3>
+                <p>Address: 500 Terry Francois Street San Francisco, CA 94158</p>
+                <p>Phone: 123-456-7890</p>
+                <p>Email: info@mysite.com</p>
+            </article>
+            <article class="hours">
+                <h3 class="section-h3">Opening Hours</h3>
+                <p>Mon - Fri: 7am - 10pm</p>
+                <p>Saturday: 8am - 10pm</p>
+                <p>Sunday: 8am - 11pm</p>
+            </article>
+            <article class="help">
+                <h3 class="section-h3">Help</h3>
+                <a href="#">Shipping & Returns</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">FAQ</a>
+            </article>
+            <article class="subscribe">
+                <h3 class="section-h3">Subscribe</h3>
+
+                <label for="email">Enter your email here *</label>
+                <input type="email" required>
+                <button>Subscribe Now</button>
+            </article>
+            <article class="socials">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-pinterest"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            </article>
+            <article class="location">
+                <img src="" alt="">
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; by Prickles & Co. Proudly recreated by michellejanaycodes</p>
+        <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
+    </footer>
 </body>
 
 </html>

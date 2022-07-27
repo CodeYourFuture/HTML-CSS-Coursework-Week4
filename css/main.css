@@ -1,3 +1,96 @@
 /* Add your CSS here */
+/* HEADER */
+body {
+  background-color: #ededee;
+}
+.title {
+  color: #a05941;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+.desktop-nav {
+  display: none;
+}
+.responsive-nav {
+  color: #a05941;
+}
+.login-link {
+  text-decoration: none;
+  color: #a05941;
+}
+nav > ul {
+}
+nav > ul > li {
+  list-style-type: none;
+  padding-left: 1rem;
+}
+.nav-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #a05941;
+}
+.header-txt {
+  color: #a05941;
+  font-size: 1rem;
+}
 
-/* Dont' forget to link this file to your HTML in the <head> */
+/* MAIN */
+.jumbotron {
+  background: url(assets/images/1.png);
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+.jumbotron > h1 {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+.jumbotron > h2 {
+  text-transform: uppercase;
+}
+.jumbotron > button {
+  background-color: #a05941;
+  color: white;
+  border: solid 1px #a05941;
+  padding: 0.5rem 1.5rem;
+}
+form {
+  display: grid;
+  gap: 1rem;
+}
+form > input {
+  padding-top: 0.5rem;
+}
+form > button {
+  background-color: #a05941;
+  color: white;
+  border: solid 1px #a05941;
+  padding: 1rem 1.5rem;
+}
+.more-info {
+  background-color: #133032;
+  color: white;
+}
+.store-info,
+.hours,
+.help,
+.subscribe,
+.socials {
+  text-align: center;
+}
+.section-h3 {
+  text-transform: uppercase;
+}
+.help {
+  display: grid;
+}
+.subscribe {
+  display: grid;
+}
+.subscribe > label {
+  text-align: left;
+}
+footer {
+  text-align: center;
+  color: #a05941;
+}
