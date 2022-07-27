@@ -42,7 +42,7 @@ body button {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 1rem;
     transition-duration: 0.4s;
     cursor: pointer;
 }
@@ -54,8 +54,8 @@ body button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 2rem;
-    margin-right: 2.2rem;
+    padding-left: 2rem;
+    padding-right: 2.2rem;
 }
 
 .header h1 {

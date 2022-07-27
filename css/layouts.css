@@ -102,9 +102,10 @@
 
 @media (min-width: 800px) {
 .container {
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 5.5rem 22.5rem 80vh 5.4rem auto auto auto auto auto 23rem auto;
+  /* grid-template-columns: repeat(12, 1fr); */
+  grid-template-rows: 5.5rem 5.5rem 22.5rem 80vh 5.4rem auto auto auto auto auto 23rem auto;
   grid-template-areas:
+    "or or or or or or or or or or or or"
     "hd hd hd hd hd hd hd hd hd hd or or"
     "hr hr hr hr hr hr hr hr hr hr hr hr"
     "sc sc sc sc sc sc sc sc sc sc sc sc"
@@ -120,9 +121,27 @@
 
 /* header */
 
+.order {
+    position: fixed;
+    height: 5.5rem;
+    top: 0;
+    right: 0;
+    width: 12.5rem;
+}
+
 .header {
     flex-direction: row-reverse;
-    margin-right: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5.5rem;
+    width: calc(100% - 12.5rem);
+    padding-left: 4rem;
+    padding-right: 1.5rem;
+}
+
+.header h1 {
+    margin-left: 12.5rem;
 }
 
 /* Log-in */
