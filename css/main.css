@@ -1,3 +1,83 @@
-/* Add your CSS here */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Quicksand:wght@300&display=swap');
 
-/* Dont' forget to link this file to your HTML in the <head> */
+/* 
+Font
+font-family: 'Poppins', sans-serif;
+font-family: 'Quicksand', sans-serif; 
+*/
+
+
+/*FRAME PARTS: HEADER, FOOTER, EXTRA*/
+:root
+{
+    --Dark-Beige: #E6DACD;
+    --Light-Beige: #F4ECE6;
+    --Royal-Blue: #0150FD;
+    --Black: #000;
+    --White: #FFF;
+}
+
+/*HEADER FRAMEWORK START*/
+.header-content
+{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-column-gap: 0;
+    grid-row-gap: 2rem;
+}
+
+.header-img
+{
+    padding-top: 32px;
+    padding-left: 32px;
+    padding-right: 5px;
+    width: 16px;
+    height: 16px;
+}
+
+.header-main
+{
+    display: flex;
+}
+
+.header-sub
+{
+    visibility: hidden;
+    display: none;
+}
+
+.header-sub ul
+{
+    display: flex;
+    justify-content: flex-end;
+    text-align: center; 
+    list-style-type: none;
+}
+
+.header-sub ul li
+{
+    padding: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+.dropdown-button
+{
+    display: flex;
+    width: 2rem;
+    visibility: visible;
+    display: contents;
+}
+
+.header-2
+{
+    padding-top: 10px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    visibility: hidden;
+}
+
+.header-3
+{
+    padding-top: 14px;
+}
