@@ -1,7 +1,12 @@
-function myMap() {
-  var mapProp = {
-    center: new google.maps.LatLng(51.508742, -0.12085),
-    zoom: 5,
-  };
-  var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-}
+
+
+// function total(){
+//   console.log("my first arrow function")
+// }
+
+// total()
+
+const total = () => console.log("another arrow function")
+total()
+
+let test = document.querySelector(".about")
