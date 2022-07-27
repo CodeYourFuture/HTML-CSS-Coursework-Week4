@@ -1,0 +1,17 @@
+/* Main */
+.main--secondary {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background-color: var(--dark-beige);
+    padding: 60px 20px;
+}
+
+@media screen and (min-width:600px) {
+
+    /* Main */
+    .main--secondary {
+        padding: 100px 300px;
+    }
+}
