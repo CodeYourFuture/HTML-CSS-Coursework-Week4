@@ -1,3 +1,5 @@
+/* Variables */
+
 :root {
     --black: #000;
     --white: #fff;
@@ -12,6 +14,36 @@
     --body: 'Roboto',
         sans-serif;
 }
+
+
+/* Set fonts */
+
+body {
+    font-family: var(--body);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--headings);
+}
+
+button {
+    font-family: var(--buttons);
+}
+
+
+/* Mobile Grid */
+
+.mobile-container {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(8, 1fr);
+    text-align: center;
+}
+
+
+.header {
+    grid-area: 1 / 1 / 2 / 9;
+}
+
 
 .header1 {
     color: var(--white);
