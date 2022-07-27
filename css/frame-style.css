@@ -17,9 +17,17 @@ body {
     font-family: 'Fjalla One', sans-serif;
 }
 .hero {
-    background-image: url("/responsive-grid-project/img/main.png");
+    background-image: url("/responsive-grid-project/img/main.png" ) ;
+    background-repeat: no-repeat;
     height: 400px;
+    width: 100% ;
 }
+
+.logo {
+    display: block;
+    margin: auto;
+}
+
 .main-container {
     background-color: cornflowerblue;
     }
