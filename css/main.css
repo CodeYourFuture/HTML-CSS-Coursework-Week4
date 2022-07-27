@@ -82,6 +82,8 @@ font-family: 'Quicksand', sans-serif;
     padding-top: 14px;
 }
 
+
+
 /*HEADER GRID PART START*/
 .dropdown-button
 {
@@ -241,7 +243,6 @@ input ~ .nav-1 ul li a
     text-transform: uppercase;
     color: black;
     font-weight: 700;
-    font-family: sans-serif;
     display: block;
     padding: 30px;
 }
@@ -271,9 +272,35 @@ input:checked ~ .nav-1 ul li
     margin-left: 28px;
 }
 
+.buttons
+{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--Black);
+}
+
+.buttons:hover
+{
+    color: var(--Royal-Blue);
+}
+
+
+.button-current
+{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--Royal-Blue);
+}
+
+.button-current:hover
+{
+    color: var(--Royal-Blue);
+}
+
 /*HEADER GRID PART END*/
 
 /*HEADER FRAMEWORK END*/
+
 
 
 /*FOOTER FRAMEWORK START*/
@@ -386,7 +413,6 @@ svg
 
 
 
-
 /*FONT STYLING START*/
 
 h1
@@ -422,6 +448,11 @@ h6
 p
 {
     font-family: 'Quicksand', sans-serif; 
+}
+
+a
+{
+    font-family: 'Quicksand', sans-serif;
 }
 
 /*FONT STYLING END*/
@@ -659,6 +690,10 @@ section
     margin-bottom: 50px;
     margin-top: 20rem;
 }
+
+
+
+
 
 /*MEDIA CODE*/
 @media (min-width: 540px)
