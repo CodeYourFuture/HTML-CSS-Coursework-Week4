@@ -1,5 +1,4 @@
 /* Add your CSS here */
-
 /* Dont' forget to link this file to your HTML in the <head> */
 :root{
     --dark-beige:#E6DACD;
@@ -19,11 +18,10 @@ body{
     flex-direction: column;
     background-color: var(--white);
 }
-
 /* header menu */
 .header{
     background-color: var(--white);
-    height: 7rem;
+    height: 15%;
 }
 .title-container * {
     margin: 0;
@@ -40,7 +38,6 @@ body{
 .title-container{
     display: flex;
     flex-direction: row;
-    
     gap: 15px;
     margin: 2rem;
 }
@@ -51,7 +48,7 @@ body{
 .role-title{
     font-size: 0.85em;
 }
-/* hamburger menu */
+/* Header-Menu > hamburger menu */
 #menu__toggle {
     opacity: 0;
 }
@@ -88,17 +85,14 @@ body{
     background-color: #616161;
     transition-duration: 0.25s;
 }
-
 .menu__btn>span::before {
     content: '';
     top: -8px;
 }
-
 .menu__btn>span::after {
     content: '';
     top: 8px;
 }
-
 .menu__box {
     display: block;
     position: fixed;
@@ -114,7 +108,6 @@ body{
     transition-duration: 0.25s;
     text-align: center;
 }
-
 .menu__item {
     display: block;
     padding: 12px 24px;
@@ -126,7 +119,6 @@ body{
     transition-duration: 0.25s;
     padding: 1em;
 }
-
 .menu__item:hover {
     font-size: 40px;
     color: #363a40;
@@ -151,11 +143,9 @@ body{
 }
 .main-content{
     display: flex;
-    flex-direction: column;
-    box-shadow: 50px var(--rotal-blue); 
-    -webkit-box-shadow: 5px 5px 10px 5px #b8b8b8;
-    box-shadow: 5px 5px 10px 5px #b8b8b8;
-    margin-bottom: 0.2rem;
+    flex-direction: column; 
+    box-shadow: 5px 5px 10px 2px #dbdbdb;
+    min-width: 15rem;
 }
 .profile-img-container{
     display: flex;
@@ -165,7 +155,6 @@ body{
     background-color: var(--light-beige);
     font-family: 'Quicksand', sans-serif;
     box-shadow: #363a40;
-    min-width: 15rem;
 }
 @media screen and (max-width:280px) {
     .profile-img-container{
@@ -207,16 +196,24 @@ body{
     width: 100%;
     height: 100%;
 }
-
 .profile-text-container{
     max-width: 15rem;
+    min-width: 15rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: var(--white);
     font-family: 'Quicksand', sans-serif;
-    border: solid 1px rgb(207, 207, 207);
+    border: solid 1px rgb(228, 228, 228);
+    border-top: none;
+    box-shadow: 5px 5px 10px 2px #dbdbdb;
+}
+@media screen and(max-width:305px) {
+    .profile-text-container, .main-content{
+        max-width: 10rem;
+        min-width: 10rem;
+    }
 }
 .hello{
     font-size: 3rem;
@@ -250,13 +247,50 @@ body{
     padding-left: 1rem;
     max-width: 50%;
 }
-
-
-
-
-
-
 /* Footer section*/
 .footer{
-    background-color: var(--light-beige);
+    background-color: var(--white);
+    padding: 1rem;
+    padding-bottom: 0.4rem;
+}
+.footer-title{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0.2rem;
+}
+.footer-text{
+    font-size: 0.8rem;
+    margin: 0.3rem;
+}
+.footer-row1{
+    display: flex;
+    flex-direction: row; 
+}
+.footer-row1 div:nth-child(1){
+    min-width: 50%;
+}
+.footer-row1 div:nth-child(2) {
+    min-width: 50%;
+}
+#follow-title{
+    margin-bottom: 0;
+}
+#wix-com{
+    text-decoration: underline;
+}
+.social-media-icons{
+    max-width: 1.2rem;
+    max-height: 1.2rem;
+}
+#linkdin-icon{
+    max-width: 1.7rem;
+    max-height: 1.7rem;
+}
+#linkdin-icon-footer{
+    max-width: 1.5rem;
+    max-height: 1.5rem;
+}
+.links{
+    cursor: pointer;
 }
