@@ -1,3 +1,43 @@
 /* Add your CSS here */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: #000;
+}
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  padding: 0 20px;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+}
+.blue-box {
+  width: 20px;
+  height: 20px;
+  background-color: #0150fd;
+  margin-right: 20px;
+}
+.logo p {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.logo p span {
+  font-weight: 300;
+}
 /* Dont' forget to link this file to your HTML in the <head> */
