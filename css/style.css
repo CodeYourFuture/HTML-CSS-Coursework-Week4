@@ -18,7 +18,8 @@ body button {
     font-family: var(--font-buttons);
 }
 
-.content-box {
+.content-box,
+.diff-content-box {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,6 +50,7 @@ body button {
 /* Header */
 
 .header {
+    background-color: var(--clr-white);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -65,13 +67,17 @@ body button {
     width: 30px;
 }
 
+.login-box {
+    display: none;
+}
+
 /* Hero */
 
 .hero {
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     flex-direction: column;
+    text-align: center;
 }
 
 .hero h2, h3 {
@@ -82,11 +88,14 @@ body button {
 .hero h2 {
     font-size: 2.1rem;
     font-weight: 100;
+    width: 20rem;
 }
 
 .hero h3 {
     font-size: 1.4rem;
     font-weight: 100;
+    width: 17rem;
+    line-height: 2rem;
 }
 
 .hero-h2-box {
