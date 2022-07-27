@@ -4,18 +4,140 @@ body {
     margin: 0;
 }
 
-header {
-    color: aqua;
-    background-color: rgb(82, 80, 80);
-    padding: 5em 0;
-    position: absolute;
+.desktop {
+    display: none;
 }
+
+header {
+    color: rgb(4, 98, 98);
+    background-color: rgb(210, 205, 205);
+    padding: 2em 0;
+    position:;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.maya {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    position: relative;
+}
+
+.maya::before {
+    content: '■';
+    position: absolute;
+    left: -0.8em;
+    top: -0.35em;
+    font-size: 2em;
+    color: blue;
+}
+
+
+/* hamburger menu*/
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-area: ;
+}
+
+#menu-toggle {
+    opacity: 0;
+}
+
+#menu-toggle:checked+menu.btn>span {
+    transform: rotate(45deg);
+}
+
+#menu-toggle:checked+.menu-btn>span::before {
+    top: 0;
+    transform: rotate(0deg);
+}
+
+#menu-toggle:checked+.menu-btn>span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+#menu-toggle:checked~.nav-list {
+    right: 0 !important;
+}
+
+.menu-btn {
+    position: fixed;
+    top: 55px;
+    right: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.menu-btn>span,
+.menu-btn>span::before,
+.menu-btn>span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: blanchedalmond;
+    transition-duration: 0.25s;
+}
+
+.menu-btn>span::before {
+    content: '';
+    top: -8px;
+}
+
+.menu-btn>span::after {
+    content: '';
+    top: 8px;
+}
+
+.nav-list {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: fit-content;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: rgb(212, 212, 254);
+    box-shadow: 2px 2px 6px rgb(145, 54, 54);
+    transition-duration: 0.25s;
+    text-align: center;
+}
+
+.nav-link {
+    display: block;
+    padding: 12px 24px;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition-duration: 0.25s;
+}
+
+.nav-link> a {
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    background-color: darkorange;
+}
+
+
 
 main {
     color: blueviolet;
     background-color: aquamarine;
     padding: 5em 0;
-    position: absolute;
+    position:;
     margin-top: 2em;
     margin-left: 4em;
 }
@@ -24,7 +146,7 @@ footer {
     color: coral;
     background-color: rgb(163, 243, 247);
     padding: 5em 0;
-    position: initial;
+    position:;
 }
 
 
