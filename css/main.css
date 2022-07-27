@@ -103,10 +103,16 @@ nav > ul > li > a {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 0rem 0rem 3rem 0rem;
+  padding: 0rem 0rem 6rem 0rem;
 }
-.discount > img{
+.discount > img {
   max-width: 100%;
+}
+.announcement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 70%;
 }
 .discount-text {
   color: white;
@@ -114,10 +120,11 @@ nav > ul > li > a {
   padding: 0rem 3rem;
   text-align: center;
 }
-.discount > button {
+.announcement > button {
   padding: 0.7rem 1rem;
   background-color: white;
   font-size: 1rem;
+  max-width: 50%;
 }
 /* FORM SECTION */
 form {
@@ -262,8 +269,20 @@ footer {
   .divider-img {
     display: none;
   }
+  .more-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .subscribe {
+    width: 60%;
+  }
 }
 @media only screen and (min-width: 900px) {
+  body {
+    margin: 0 2rem;
+  }
   header {
     display: flex;
     width: 100%;
@@ -283,5 +302,55 @@ footer {
   }
   .header-txt {
     margin-left: 50%;
+  }
+  .jumbotron {
+    min-height: 700px;
+  }
+  .about-img {
+    display: none;
+  }
+  .discount {
+    display: grid;
+    grid-template: auto / repeat(2, 1fr);
+    padding-bottom: 0;
+  }
+  discount > img {
+    grid-row: 1;
+    grid-column: 1;
+  }
+  .announcement {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+    padding-top: 0;
+  }
+  .discount-text {
+    font-size: 5rem;
+  }
+  .form-section {
+    min-height: 800px;
+    display: flex;
+    justify-content: center;
+  }
+  form {
+    max-width: 50%;
+    margin: 2rem 0rem;
+  }
+  .more-info {
+    display: grid;
+    grid-template: auto / repeat(3, 1fr);
+  }
+  .subscribe {
+    grid-row: 2;
+    grid-column: 2;
+  }
+  .socials {
+    grid-row: 3;
+    grid-column: 2;
+  }
+  .location {
+    grid-row: 4;
+    grid-column: 1 / -1;
   }
 }
