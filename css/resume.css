@@ -140,18 +140,23 @@ a:hover{
  .hero {
   padding: 1rem;
  }
- /* .hero h1 {
-   align-items: center;
- } */
+ .hero h1 {
+  
+   text-align: center;
+ }
  .hero div {
   display: flex;
   justify-content: center;
   margin-top: 1rem;
   }
+  .hero h2 {
+    font-size: 5vw;
+    margin-right: 1rem;
+  }
   .hero button {
     background-color: #0050ff;
      font-weight: bold;
-     padding: 0.1rem 3rem;
+     padding: 0.1rem 1rem;
    border-radius: 1rem;
    font-size: 2vw;
      box-shadow: none;
@@ -182,6 +187,14 @@ a:hover{
   font-size: 6vw;
 
  }
+ /* square */
+ /* .square {
+  height: 6vw;
+  width: 6vw;
+  background-color: #0050f2;
+  margin-top: 0.4rem;
+  margin-right: 1rem;
+} */
  .job {
   margin-bottom: 1rem;
   font-size: 6vw;
@@ -193,7 +206,9 @@ a:hover{
   margin-bottom: 1rem;
   font-size: 8vw;
  }
+  
  .lang h1 {
+  display: flex;
   margin-top: 1rem;
   margin-bottom: 1rem;
   font-size: 8vw;
@@ -238,7 +253,14 @@ a:hover{
   background: white;
   color: black;
  }
- @media (min-width: 700px) {
+ @media screen and (min-width: 700px) {
+  .container {
+    display: flex;
+  }
+  .container p {
+    margin-top: 2rem;
+    margin-left: 2rem;
+  }
  .hero h1 {
   text-align: center;
   margin-top: 2rem;
@@ -271,7 +293,12 @@ a:hover{
  .article-p {
   font-size: 2vw;
   width: 60%;
-  margin-top: 2.5rem;
+  margin-top: 5.5rem;
  }
-
+ .skill h1 {
+  font-size: 2vw;
+ }
+.lang h1 {
+  font-size: 2vw;
+}
 }
