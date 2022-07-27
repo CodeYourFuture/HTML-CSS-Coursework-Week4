@@ -439,17 +439,42 @@ background-color: var(--clr-light-green);
 .footer {
     background-color: var(--clr-dark-green);
     color: var(--clr-white);
+    padding: 1.5rem;
 }
 
+.footer h3 {
+    font-size: 1.4rem;
+    font-weight: 100;
+    text-align: left;
+    margin-left: 0;
+    margin-bottom: 2rem;
+}
+
+.serving-link-box a {
+    font-family: var(--font-headings);
+    font-size: 1.4rem;
+    font-weight: 100;
+}
+
+.footer a:link,
+.footer a:visited,
+.footer a:hover,
+.footer a:active {
+    color: var(--clr-white);
+}
+
+/* overflow images */
+
 .thumbnails {
-    height: 20rem;
-    text-align: center;
+    height: 16rem;
+    /* text-align: center; */
     position: relative;
 }
 
 .thumbnails img {
     height: 10rem;
     width: 8rem;
+
 }
 
 .img-thumb1 {
@@ -482,4 +507,101 @@ background-color: var(--clr-light-green);
     position: absolute;
     top: 29%;
     left: 55%; 
+}
+
+/* Footer Navigation */
+
+.footer-navs-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.navigation-item {
+    padding: 0.5rem 0;
+}
+
+.navigation-link {
+    color: var(--clr-white);
+    font-weight: 400;
+    text-decoration: none;
+}
+
+/* Email form */
+
+.form-email {
+    display: flex;
+}
+.email-field-box {
+    display: flex;
+    flex-direction: column;
+}
+
+#email {
+    width: 9rem;
+    height: 1.95rem;
+    border: 0;
+    border-bottom: 2px solid var(--clr-white);
+    background-color: var(--clr-dark-green);
+    margin-right: 1.3rem;
+}
+
+#email:focus {
+    outline: none;
+    border-bottom: 3px solid var(--clr-light-green);
+}
+
+.btn-submit {
+    background-color: var(--clr-dark-green);
+    color: var(--clr-white);
+    border: 2px solid var(--clr-white);
+    padding: 0.9rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.9rem;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.btn-submit:active {
+    background-color: var(--clr-white);
+    color: var(--clr-black);
+}
+
+/* Circle logo box */
+
+.circle-logo-box {
+    display: flex;
+    align-items: center;
+	height : 5.5rem;
+    margin: 1.5rem;
+}
+
+.circle-logo-text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	width : 4rem;
+	height : 4rem;
+	border-radius : 50%;
+	border : 2px solid var(--clr-white);
+	margin : 0;
+	padding : 17px;
+    font-weight: 800;
+}
+
+.logo-b {
+    align-self: flex-end;
+}
+
+.copyright {
+    font-size: 0.9rem;
+    font-weight: 100;
+    width: 20rem;
 }
