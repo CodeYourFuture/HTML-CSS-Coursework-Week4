@@ -1,6 +1,29 @@
 /* Main */
 /* Articles */
 .m__article {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 10px auto;
+    grid-template-rows: auto;
+    padding-left: 0;
+}
+
+.m__article__icon {
+    grid-column: -1/1;
+    grid-row: -1/1;
+    width: 10px;
+    height: 50px;
+    background-color: var(--royal-blue);
+}
+
+.m__article__heading {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding-left: 30px;
+}
+
+.m__article__content {
+    grid-column: -1/2;
+    grid-row: 2/3;
+    padding-left: 30px;
+    padding-top: 20px;
 }
