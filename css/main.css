@@ -1,3 +1,4 @@
-/* Add your CSS here */
-
-/* Dont' forget to link this file to your HTML in the <head> */
+.mobile-container {
+    display: grid;
+    grid-template: 1fr 2fr 8fr / repeat(4, 1fr);
+}
