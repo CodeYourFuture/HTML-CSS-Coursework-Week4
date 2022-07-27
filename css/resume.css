@@ -30,6 +30,15 @@
   margin: 0 1rem;
   overflow: hidden;
 }
+a:link {
+  text-decoration: none;
+}
+a:hover{
+  color: #0050ff;
+}
+#onlink {
+  color: #0050ff;
+}
 
 .menu-button-container {
   display: none;
@@ -138,6 +147,16 @@
   justify-content: center;
   margin-top: 1rem;
   }
+  .hero button {
+    background-color: #0050ff;
+     font-weight: bold;
+     padding: 0.1rem 0.1rem;
+   border-radius: 0.5rem;
+   font-size: 2vw;
+     box-shadow: none;
+  border-style: none;
+  
+  }
   
  article {
   background-color: white;
@@ -214,3 +233,49 @@
   background: white;
   color: black;
  }
+ @media (min-width: 700px) {
+  .container{
+    display: flex;
+    
+  }
+  .container p{
+    margin-top: 2.0rem;
+    margin-left: 2.0rem;
+  }
+ .hero h1 {
+  text-align: center;
+  margin-top: 2rem;
+ }
+ .hero h2 {
+  font-size: 3vw;
+  margin-top: 3rem;
+  margin-right: 10rem;
+ }
+ .hero button {
+  margin-top: 3rem;
+ }
+  article {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 60%;
+    padding: 2rem;
+
+ }
+ article a{
+  font-size: 2vw;
+ }
+ article .job {
+  font-size: 1.5vw;
+ }
+ .company-info p {
+  font-size: 2vw;
+ }
+ .article-p {
+  font-size: 2vw;
+  width: 60%;
+  margin-top: 2.5rem;
+ }
+
+}
+

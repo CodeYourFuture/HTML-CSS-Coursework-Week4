@@ -30,6 +30,17 @@
   margin: 0 1rem;
   overflow: hidden;
 }
+a:link {
+  text-decoration: none;
+}
+#onlink {
+  color: #0050ff;
+}
+
+a:hover{
+  color: #0050ff;
+}
+
 
 .menu-button-container {
   display: none;

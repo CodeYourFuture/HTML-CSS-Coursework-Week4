@@ -34,6 +34,7 @@ header {
   /* color: #FFF; */
   height: 50px;
   padding: 1em;
+  
 }
 
 .menu {
@@ -42,11 +43,22 @@ header {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  
 }
 
-.menu > li {
+.menu  li {
   margin: 0 1rem;
   overflow: hidden;
+  text-decoration: none;
+}
+a:link {
+  text-decoration: none;
+}
+a:hover {
+  color: #0050ff;
+}
+  #onlink {
+  color: #0050ff;
 }
 
 .menu-button-container {
@@ -113,6 +125,7 @@ header {
     width: 100%;
     justify-content: center;
     align-items: center;
+    
   }
   #menu-toggle ~ .menu li {
     height: 0;
@@ -147,7 +160,7 @@ main {
     position: relative;
 }
 .hero {
-     gap: 1rem;
+   gap: 1rem;
   background-color: #f4ece6;
   width: 80%;
    /* height: 375px; */
@@ -158,7 +171,7 @@ main {
    position: absolute;
 }
 .hero-info img {
-    background-color: #0050ff;
+  background-color: #0050ff;
    display: block;
   margin-left: auto;
   margin-right: auto;
@@ -181,17 +194,14 @@ main {
    display: inline-block;
     justify-content: space-around;
  }
-.resume {
-    background-color: #0050ff;
+.resume{
+    background-color: blue;
     color: white;
-/* font-size: 4vw; */
-    font-weight: bold;
      padding: 0.5rem 1rem;
    border-radius: 1rem;
-     box-shadow: none;
-  border-style: none;
+   border-style: none;
   padding: 10px 20px;
-  /* border-radius: 5px; */
+ 
 
   }
   .project {
@@ -299,3 +309,45 @@ footer {
   background: white;
   color: black;
  }
+@media only screen and (min-width: 700px) { 
+  body{
+    display:grid ;
+    grid-template-rows: 130px 150px 100px;
+    grid-template-areas: 
+    'header header'
+    'main main'
+    'footer footer';
+    
+  }
+  header{
+    grid-area: header;
+    
+
+  }
+  .container{
+    display: flex;
+    justify-content: space-around;
+
+    
+  }
+  .container p{
+    margin-top: 2.0rem;
+    font-size: 20px;
+    padding: 0 10px ;
+    
+  }
+  main{
+    grid:main ;
+    background-color: #0050ff;
+    
+  }
+ 
+    
+
+  }
+  
+  
+
+  
+
+
