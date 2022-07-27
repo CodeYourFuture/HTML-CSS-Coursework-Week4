@@ -6,9 +6,6 @@ body {
  box-sizing: border-box;
  font-family: 'Outfit', sans-serif;
   background-color: #EDEDEE;
- display: grid;
- grid-template-columns: 100%;
- grid-template-rows: 4.5% auto auto auto;
 }
 
 /* Header Styles */
@@ -238,7 +235,11 @@ font-family: 'Fjalla One', sans-serif;
 
 /* Form section */
 .form_section{
- margin: 1.8em 1em 1em 1em;
+ padding-bottom: 9em;
+  border: 2px solid red;
+ margin: 1.8em 1em 0 1em;
+ background: url(../Images/8.png) no-repeat bottom/contain;
+
 
 }
 
@@ -247,6 +248,7 @@ font-family: 'Fjalla One', sans-serif;
  width: 70%;
  margin: 1em auto;
  font-size: 1.5em;
+ background-position: ;
 }
 
 form{
@@ -280,7 +282,7 @@ footer {
 
 h3{
  width: 100%;
- margin: 3em auto 1.5em auto;
+ margin: 0em auto 1.5em auto;
  letter-spacing: 5px;
 }
 
