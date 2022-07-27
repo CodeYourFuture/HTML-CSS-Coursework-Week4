@@ -44,7 +44,7 @@ main{
  }
 
 .hero {
- background: url(/Images/1.png) no-repeat center/cover;
+ background: url(../Images/1.png) no-repeat center/cover;
  padding-top: 1.4em;
  display: grid;
  grid-template-columns: 1fr;
@@ -165,15 +165,15 @@ font-size: 0.9em;
 }
 
 #cacti {
- background-image: url(/Images/4.png);
+ background-image: url(../Images/4.png);
 }
 
 #plant {
- background-image: url(/Images/2.png);
+ background-image: url(../Images/2.png);
 }
 
 #succulent {
- background-image: url(/Images/3.png)
+ background-image: url(../Images/3.png)
 }
 
 /* About section */
@@ -235,8 +235,7 @@ font-family: 'Fjalla One', sans-serif;
 
 /* Form section */
 .form_section{
- padding-bottom: 9em;
-  border: 2px solid red;
+ padding-bottom: 5em;
  margin: 1.8em 1em 0 1em;
  background: url(../Images/8.png) no-repeat bottom/contain;
 
@@ -248,15 +247,15 @@ font-family: 'Fjalla One', sans-serif;
  width: 70%;
  margin: 1em auto;
  font-size: 1.5em;
- background-position: ;
+
 }
 
 form{
  display: grid;
  width: 90%;
- margin: 1em auto;
+ margin: 1em auto 11em auto ;
  row-gap: 0.8em;
- padding-bottom: 1em;
+ padding-bottom: 3em;
 }
 
 input, form button{
@@ -264,12 +263,11 @@ input, form button{
  width: 100%;
 }
 
-.form_section img {
- width: 101%;
- min-height: 50%;
- margin: 0;
- padding: 0;
+form button{
+  margin-top: 1.5em;
 }
+
+
 
 /* Footer Styles */
 
@@ -282,8 +280,12 @@ footer {
 
 h3{
  width: 100%;
- margin: 0em auto 1.5em auto;
+ margin: 3em auto 1.5em auto;
  letter-spacing: 5px;
+}
+#our_store{
+  margin-top: 0;
+  padding-top: 3em;
 }
 
 footer a{
