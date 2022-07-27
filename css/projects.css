@@ -4,7 +4,7 @@
     display: grid;
     grid-template-columns: 10px auto;
     grid-template-rows: auto;
-    padding-left: 0;
+    padding: 10px 20px 0 0;
 }
 
 .m__article__icon {
@@ -18,12 +18,34 @@
 .m__article__heading {
     grid-column: 2/3;
     grid-row: 1/2;
-    padding-left: 30px;
+    padding-left: 20px;
+}
+
+.m__article__heading h1 {
+    color: var(--royal-blue);
+    font-family: var(--heading-font);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.m__article__heading h1 {
+    padding-top: 10px;
+    color: var(--royal-blue);
+    font-family: var(--heading-font);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.m__article__heading>p {
+    padding-top: 5px;
+    font-size: 12px;
+    font-weight: bold;
 }
 
 .m__article__content {
+    padding-bottom: 20px;
     grid-column: -1/2;
     grid-row: 2/3;
-    padding-left: 30px;
+    padding-left: 20px;
     padding-top: 20px;
 }
