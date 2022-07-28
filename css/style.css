@@ -183,11 +183,24 @@ footer {
 
 /* Section 2 */
 
+.section2 {
+    padding-top: 2em;
+}
+
 .section2 a {
+    color: var(--black);
     text-decoration: underline;
 }
 
+.first-online-order {
+    background-color: var(--lylac);
+}
+
 /* Section 3 */
+
+.section3 {
+    padding-top: 2em;
+}
 
 /* Section 4 */
 
