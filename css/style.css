@@ -451,7 +451,6 @@ footer a {
 
     #section4-desktop {
         display: flex;
-        /* justify-content: space-around; */
     }
 
     #section4-item {
@@ -464,6 +463,18 @@ footer a {
     }
 
     /* Adjust Section 5 */
+
+    #section5-desktop {
+        display: flex;
+    }
+
+    #section5-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 2em 3em 0 3em;
+    }
+
 
     /* Adjust Section 6 */
 
