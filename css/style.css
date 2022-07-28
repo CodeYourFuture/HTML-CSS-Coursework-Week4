@@ -55,10 +55,6 @@ ul {
 
 /* Mobile Grid */
 
-body {
-    overflow: hidden;
-}
-
 .mobile-container {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -73,6 +69,8 @@ header {
 
 main {
     grid-area: 2 / 1 / 3 / 9;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Header */
@@ -87,3 +85,10 @@ main {
 
 /* Section 3 */
 
+/* Section 4 */
+
+/* Section 5 */
+
+/* Section 6 */
+
+/* Section 7 */
