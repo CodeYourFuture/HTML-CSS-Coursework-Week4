@@ -183,10 +183,17 @@ button{
 
 /* Products section */
 
+.product {
+  background-color: white;
+  border: 2px solid red;
+  margin-bottom: 2em;
+}
+
 .products {
  display: flex;
  flex-direction: column;
  margin-top: 2em;
+ background-color: #EDEDEE;
 }
 
 .products p{
@@ -214,8 +221,8 @@ font-size: 0.9em;
  margin: 12px auto;
 }
 
-.product {
- height: 420px;
+.product_img_container {
+ height: 320px;
  background-repeat: no-repeat;
  background-size: cover;
  background-position: center;
@@ -395,7 +402,75 @@ color: white;
   height: 400px;
  filter: invert(100%) grayscale(60%);
  }
+
+
+ /* Media Queries */
+
+@media screen and (min-width: 540px) {
+body{
+  padding: 0 3rem;
+}
+
+.hero{
+  height: 90vh;
+  background-size: cover;
+  background-position: top;
+}
+ .logo{
+    width: 50%;
+  }
+
+
+  svg{
+    height: 80%;
+  }
+}
+
  
+
+
+
+
+/* Media query laptop */
+@media screen and (min-width: 900px) {
+body{
+  padding: 0 3rem;
+}
+
+.hero{
+  height: 140vh;
+  background-size: cover;
+  background-position: top;
+  background-image: url(../Images/697bc8_ee5e15509a8c468f96ec8b15a13e0daf_mv2_d_2000_1809_s_2.webp);
+background-attachment: fixed;
+row-gap: 0em;
+padding-top: 4em;
+grid-template-rows:22% 18% 7% 6%;
+}
+ .logo{
+    width: 30%;
+    height: 40%;
+    align-items: center;
+    padding-top: 5em;
+  }
+
+
+  h1{
+    margin-top: 0;
+    font-size: 5.5em;
+  }
+
+.hero button{
+  width: 17%;
+}
+  
+
+  /* Product */
+
+ 
+
+  
+}
 
 
 
