@@ -10,10 +10,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  /* background-color: #00BAF0; */
-  /* background: linear-gradient(to left, #050505, #060606); */
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  /* color: #FFF; */
+  
   height: 50px;
   padding: 1em;
 }
@@ -91,7 +88,7 @@ a:hover{
   transform: rotate(-405deg);
 }
 
-@media screen a(max-width: 700px) {
+@media screen and (max-width: 700px) {
   .menu-button-container {
     display: flex;
   }
@@ -134,7 +131,7 @@ a:hover{
 }
 /* main */
  main {
-  background-color: #f4ece6;
+  /* background-color: #f4ece6; */
  } 
  .hero {
   padding: 1rem;
@@ -154,7 +151,19 @@ a:hover{
    border-radius: 0.5rem;
    font-size: 2vw;
      box-shadow: none;
-  border-style: none;
+  border-style: none; 
+    display: flex;
+  }
+  
+  .container p{
+    margin-top: 2rem;
+  }
+  main {
+    grid-area: main;
+    /* display: flex; */
+    /* background-color: blueviolet; */
+    /* position: relative; */
+    height: 60vw;
   
   }
   
@@ -240,15 +249,19 @@ a:hover{
   background: white;
   color: black;
  }
+
  @media screen and (min-width: 700px) {
-  .container{
+.container{
     display: flex;
-    justify-content: space-between;
     
-  }
+   }
+ 
+  
+  
+  
   .container p{
-    margin-top: 2.0rem;
-    margin-left: 2.0rem;
+    margin-top: 2.0rem; 
+  
   }
  .hero h1 {
   text-align: center;
@@ -284,25 +297,17 @@ a:hover{
   width: 60%;
   margin-top: 2.5rem;
  } 
- section {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 60%;
-  padding: 2rem;
-  
- }
+ 
 
 
  .skill h1{
   font-size: 1.5rem;
-
- }
+}
  .lang h1{
   font-size: 1.5rem;
  }
- }
 
+}
 
 
 

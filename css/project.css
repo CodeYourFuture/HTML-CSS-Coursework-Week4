@@ -1,3 +1,4 @@
+ 
 * {
    margin: 0%;
    padding: 0;
@@ -33,14 +34,12 @@
 a:link {
   text-decoration: none;
 }
-#onlink {
-  color: #0050ff;
-}
-
 a:hover{
   color: #0050ff;
 }
-
+#onlink {
+  color: #0050ff;
+}
 
 .menu-button-container {
   display: none;
@@ -169,11 +168,11 @@ a:hover{
  article h2 a {
   color: #0050f2;
  }
- article .role {
+ .article-container .role {
   font-size: 5vw;
   margin-bottom: 1rem;
  }
- article p {
+ .article-container p {
   font-size: 5vw;
   margin-bottom: 1rem;
  }
@@ -223,3 +222,67 @@ a:hover{
   background: white;
   color: black;
  }
+ @media screen and  (min-width: 700px) {
+  .container {
+    display: flex;
+  }
+
+  .container p{
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+  }
+
+  .hero {
+    padding: 0 1rem;
+    width: 60%;
+   margin: 3rem auto;
+
+  }
+  .hero h1 {
+  font-size: 4vw;
+  text-align: center;
+  margin-bottom: 1rem;
+ }
+  .hero p {
+    font-size: 2vw;
+    text-align: center;
+    /* padding: 0.5rem 10rem; */
+  }
+  article {
+  background-color: white;
+   margin: 3rem auto;
+   display: flex;
+   flex-direction: row;
+   width: 60%;
+    /* padding: 2rem; */
+ }
+ /* article h2 {
+  margin-bottom: 1rem;
+  font-size: 3vw;
+  color: #0050f2;
+ } */
+ article h2 a {
+  /* color: #0050f2; */
+  font-size: 3vw;
+ }
+ .article-container {
+  padding: 1.5rem;
+ }
+ .article-container .role {
+  font-size: 2vw;
+  margin-bottom: 1rem;
+ }
+ .article-container p {
+  font-size: 1.5vw;
+  margin-bottom: 1rem;
+  margin-right: 2rem;
+ }
+ article img {
+  width: 30vw;
+  }
+ footer{
+  display: flex;
+  flex-direction: row-reverse;
+ }
+ 
+}

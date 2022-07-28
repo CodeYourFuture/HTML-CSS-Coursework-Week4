@@ -257,7 +257,7 @@ main {
   color: black;
 }
 /* article */
-article {
+.article {
   background-color: #e6dace;
   width: 100%;
   /* height: 613px; */
@@ -327,9 +327,10 @@ footer h2 {
 @media screen and (min-width: 700px) {
   .container {
     display: flex;
+    
   }
   .container p{
-    margin-top: 2.3rem;
+    margin-top: 2rem;
   }
   main {
     grid-area: main;
@@ -352,9 +353,11 @@ footer h2 {
     width: 50%;
     padding-top: 16rem;
     z-index: 1;
-    margin-left: 50rem;
+    margin-left: 45rem;
     margin-right: 2rem;
     position: absolute;
+    background-color:white;
+  
   }
   .article h1 {
     font-size: 6vw;
@@ -374,5 +377,17 @@ footer h2 {
   .hello {
     width: 80%;
   }
+  .btn-container{
+    display: none;
+  }
+  .btn-container-2{
+    margin-left: 1.5rem ;
+    margin-bottom: 2.5rem ;
+  
+  }
+  .contact{
+    display:flex ;
+    flex-direction: row;
+  }
+  
 }
-
