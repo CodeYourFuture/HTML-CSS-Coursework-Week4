@@ -56,9 +56,10 @@ main h3 {
 
 button {
     font-family: var(--buttons);
-    border: 1px solid var(--black);
+    border: 2px solid var(--black);
     padding: .5em 1.5em;
     background-color: var(--white);
+    font-size: 1em;
 }
 
 /* Mobile Grid */
@@ -99,8 +100,10 @@ footer {
 
 .header2 {
     display: flex;
-    justify-content: space-between;
-    padding: 1.5em 0;
+    justify-content: space-around;
+    padding-top: 2em;
+    padding-bottom: 4em;
+    margin: 0 -8em;
 }
 
 .logo {
@@ -180,11 +183,6 @@ footer {
 /* Section 1 */
 
 /* Section 2 */
-
-.img1 {
-    /* width: 100%; */
-}
-
 
 .section2 a {
     text-decoration: underline;
