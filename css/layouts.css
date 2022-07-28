@@ -102,7 +102,13 @@
 
 @media (min-width: 800px) {
 .container {
-  grid-template-rows: 5.5rem 5.5rem 17rem 80vh 5.4rem auto auto auto auto auto 23rem auto;
+  grid-template-rows: 5.5rem 5.5rem 17rem 80vh 5.4rem auto 37rem auto auto auto 23rem auto;
+}
+
+body p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.9rem;
 }
 
 body button {
@@ -111,6 +117,7 @@ body button {
 
 .order {
     position: fixed;
+    z-index:1;
     height: 5.5rem;
     top: 0;
     right: 0;
@@ -128,6 +135,7 @@ body button {
 .header {
     flex-direction: row-reverse;
     position: fixed;
+    z-index:1;
     top: 0;
     left: 0;
     height: 5.5rem;
@@ -183,14 +191,51 @@ body button {
     font-size: 1.6rem;
 }
 
-.btn-explore {
+.btn-vision,
+.btn-explore,
+.btn-view {
     padding: 1.3rem 4.5rem;
     margin: 2rem 0 5rem;
 }
+.discount {
+    flex-direction: row;
+}
 
-.supply-content,
-.catalog-content,
+.discount a,
+.discount p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-left: 0.4rem;
+}
+
 .differences-content {
+    display: flex;
+    width: 100%;
+     justify-content: space-evenly;
+}
+
+.differences h2 {
+    font-size: 3.4rem;
+    margin: 6rem 0;
+}
+
+.differences h3 {
+    font-size: 2rem;
+    line-height: 2.6rem;
+    margin: 0 0 1rem 0;
+    width: 13rem;
+}
+
+.differences p {
+    margin-bottom: 5rem;
+}
+
+.img-differences {
+    width: 6.2rem;
+    margin: 0.6rem 0;
+}
+
+.supply-content {
     display: flex;
 }
 
@@ -198,24 +243,109 @@ body button {
     width: 13rem;
 }
 
+.vision {
+    position: relative;
+}
+
+.vision p {
+    margin: 0;
+}
+
+.vision h2 {
+    font-size: 3.5rem;
+    line-height: 4.2rem;
+    /* margin-top: 1.5rem; */
+    margin-bottom: 1.2rem;
+    width: 29rem;
+}
+
+.img-vision-box {
+    width: 30rem;
+    height: auto;
+    bottom: -4rem;
+    right: 54%;
+    position: absolute;
+}
+
+.vision-content {
+    top: 1.5rem;
+    left: 54%;
+    position: absolute;
+}
+
+.col-content-box,
+.cat-box1,
+.cat-box2,
+.cat-box3 {
+    align-items:flex-start;
+    text-align: left;
+}
+
 .row-content-box {
     flex-direction: row;
+    align-items:flex-start;
+    text-align: left;
 }
 
 .vision p {
     width: 24rem;
 }
 
-.img-vision {
-    object-fit: contain;
+.catalog {
+    padding: 0;
+}
+
+.catalog-top-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20rem;
+    background-color: var(--clr-white);
+}
+
+.catalog-content {
+    display: flex;
+    width: 100%;
+    height: 40rem;
+    position: relative;
+}
+
+.cat-box1 {
+    top: -3rem;
+    right: 65%;
+    position: absolute;
+}
+
+.cat-box2 {
+    position: absolute;
+    top: -7rem;
+    left: 50%; 
+    transform: translate(-50%, 0%);
+}
+
+.cat-box3 {
+    top: -3rem;
+    left: 65%;
+    position: absolute;
+}
+
+.catalog h2 {
+    font-size: 3.5rem;
+}
+
+.catalog h3 {
+    font-size: 2.2rem;
+    line-height: 2.7rem;
+    margin-left: 0;
+    margin-bottom: 1rem;
     width: 20rem;
-    height: auto;
 }
 
 .img-catalog {
     object-fit: cover;
-    width: 5rem;
-    height: auto;
+    width: 19rem;
+    height: 25rem;
 }
 
 .img-kit {
@@ -226,11 +356,10 @@ body button {
 
 .hero h2,
 .hero h3,
-.differences h2 {
+.differences h2,
+.catalog h2 {
     width: 100%;
 }
-
-
 
 /* FOOTER */
 
