@@ -261,6 +261,15 @@ footer {
 
 /* Section 8 */
 
+.section8 {
+    padding: 2em 0;
+}
+
+.section8 a {
+    color: var(--black);
+    text-decoration: underline;
+}
+
 /* Footer */
 
 .footer-navs {
