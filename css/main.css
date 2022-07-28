@@ -6,9 +6,11 @@
   --btn-background-color: #a05941;
   --btn-color: white;
   --btn-border: solid 1px #a05941;
+  --body-background-color: #ededee;
+  --other-background-color: #133032;
 }
 body {
-  background-color: #ededee;
+  background-color: var(--body-background-color);
   font-family: var(--allotherfonts-font-family);
   padding: 0;
   margin: 0;
@@ -138,7 +140,7 @@ nav > ul > li > a {
 }
 /* DISCOUNT SECTION */
 .discount {
-  background-color: #133032;
+  background-color: var(--other-background-color);
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -207,7 +209,7 @@ form > button {
   max-width: 100%;
 }
 .more-info {
-  background-color: #133032;
+  background-color: var(--other-background-color);
   color: var(--btn-color);
   padding: 0;
   margin: 0;
