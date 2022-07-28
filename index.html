@@ -5,17 +5,223 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Add a link to your custom CSS here -->
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>Responsive grid project</title>
 </head>
 
-<body>
+    <body>
+        <div class="grid-container">
+              <!-- Search -->   
+        <div id="search">
+            <div id="search-box">
+                <input type="text" placeholder="Search" />
+            </div>
+            <div id="basket">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            </div>
+        </div>
+            <!-- Header -->   
+        <header id="header" class="grid">
+            <!-- Top Navigation Mobile Menu -->
+            <div class="top-nav">
+                <div class="logo_img">
+                    <h2>PRICKLES & CO.</h2>
+                    <p>We Deliver to Your Doorstep</p>
+                        
+        
+                </div>
+                <!-- Navigation links (hidden by default) -->
+                <div class="navmenu">
+                    <nav id="myLinks">
+                        <ul class="navbar">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </nav>
+                    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                    <a href="javascript:void(0);" id="ham-button" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+       
+           <!-- Section A) -->
+        <section class="banner">
+            <div class="banner-content">
+                <h1>PRICKLES & CO</h1>
+                <p>
+                    BRING NATURE INDOORS
+                </p>
+                <div class="banner-buttons">
 
-    <!-- Add your markup here -->
+                    <button class="button">Shop Now</button>
+                    <button class="button-2"><i class="fa fa-commenting-o" aria-hidden="true"></i></button>
+
+                </div>
+                
+            </div>
+        </section>
+         
+        <!-- Section B -->
+        <section id="section-b">
+            <div class="grid_1">
+                <div class="card">
+                    <div class="card-content">
+                        <h4 class="card-title">CACTI</h4>
+                         <button class="button">Shop Collection</button>
+                    </div>
+                    <img src="/img/4.png" alt="">
+                </div>
+        
+                <div class="card">
+                    <div class="card-content">
+                        <h4 class="card-title">PLANTS</h4>
+                        <button class="button">Shop Collection</button>
+                    </div>
+                    <img src="/img/2.png" alt="">
+                </div>
+        
+                <div class="card">
+                    <div class="card-content">
+                        <h4 class="card-title">SUCCULENTS</h4>
+                         <button class="button">Shop Collection</button>
+                    </div>
+                    <img src="/img/3.png" alt="">
+                </div>
+            </div>
+        </section>
+                
+           <!-- Section C -->
+           <section id="section-c" class="grid">
+                <h3>ABOUT US</h3>
+                <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to
+                add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a
+                great place for you to tell a story and let your users know a little more about you.
+                </p>
+                <p>
+                This is a great space to write long text about your company and your services. You can use this space to go into a
+                little more detail about your company. Talk about your team and what services you provide.
+                </p> 
+           </section>
+       
+           <!-- Section D -->
+           <section id="section-d" >
+                <div class="grid_1">
+                    <div class="card-1">
+                        <img src="/img/5.png" alt="">
+                    </div>
+            
+                    <div class="card-1">
+                        <img src="/img/6.png" alt="">
+                    </div>
+            
+                    <div class="card-1">
+                        <img src="/img/7.png" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section E -->
+            <section id="section-e">
+                <div class="card-2">
+                    <h1>BUY ONLINE NOW & GET 10% OFF !</h1>
+                    
+                    <button class="button_2">Shop Now</button>
+                </div>
+            </section>
+
+            <!-- Section F -->
+           <section id="section-f" class="grid">
+                <h2>FOR SPECIAL REQUESTS & ORDERS</h2>
+               <div class="req-form">
+                <div class="container">
+                    <form action="/action_page.php">
+                        <label for="fname">First Name*</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                
+                        <label for="lname">Last Name*</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        
+                        <label for="email">Email*</label>
+                        <input type="text" id="lname" name="email" placeholder="Your Email..">
+                     
+                        <label for="phone">Phone</label>
+                        <input type="text" id="lname" name="phone" placeholder="Your Phone Number..">
+
+                        <label for="message">Message</label>
+                        <textarea id="subject" name="message" placeholder="Write something.." style="height:200px"></textarea>
+                        <div class="row">
+                        <input type="Send" value="Send">
+                        </div>
+                    </form>
+                </div>
+               </div>
+            </section>
+
+            <!-- Section G -->
+            <section id="section-g">
+                <div class="grid_3">
+                    <div>
+                        <img src="/img/8.png" alt="">
+                    </div>
+                    <div class="card-3">
+                    <div class="our-store"> 
+                        <h3>OUR STORE</h3>
+                        <P>Address: 500 Terry Francois Street San </P>
+                        <p>Francisco, CA 94158</p>
+                        <P>Phone: 123-456-7890</P>
+                        <p>Email: info@mysite.com</p>
+                    </div>
+                    <br/>
+                    <div class="op-hours">
+                        <h3>OPENING HOURS</h3>
+                        <p>Mon - Fri: 7am - 10pm</p>
+                        <P>​​Saturday: 8am - 10pm</P>
+                        <p>Sunday: 8am - 11pm</p>
+                    </div>
+                    <br />
+                    <div class="help">
+                        <h3>HELP</h3>
+                        <p>Shipping & Returns</p>
+                        <P>​Privacy Policy</P>
+                        <p>FAQ</p>
+                    </div>
+                </div>
+                </div>
+            </section>
 
 
-    <!-- Please leave this in to credit the creators of this design -->
-    <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
+            <!-- Footer -->
+            <section id="footer" class="grid">
+                <p>© 2023 by Prickles & Co. Proudly created with Wix.com</p>
+                <!-- Please leave this in to credit the creators of this design -->
+                <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
+            </section>
+
+
+
+
+
+
+
+
+                    <script>
+                    function myFunction() {
+                        var x = document.getElementById("myLinks");
+                        if (x.style.display === "block") {
+                            x.style.display = "none";
+                        } else {
+                            x.style.display = "block";
+                        }
+                    }
+                    </script>
 </body>
+
+
 
 </html>
