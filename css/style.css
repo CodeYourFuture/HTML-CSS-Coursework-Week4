@@ -405,7 +405,7 @@ footer a {
     .hamburger {
         padding-left: 1em;
     }
-    
+
     .nav-link {
         color: var(--white)
     }
@@ -448,6 +448,20 @@ footer a {
 
 
     /* Adjust Section 4 */
+
+    #section4-desktop {
+        display: flex;
+        /* justify-content: space-around; */
+    }
+
+    #section4-item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img2 {
+        padding-left: 8em;
+    }
 
     /* Adjust Section 5 */
 
