@@ -191,7 +191,7 @@ footer {
 /* Section 2 */
 
 .section2 {
-    padding-top: 2em;
+    padding-top: 3em;
 }
 
 .section2 a {
@@ -201,12 +201,14 @@ footer {
 
 .first-online-order {
     background-color: var(--lylac);
+    width: 61.5%;
+    margin: auto;
 }
 
 /* Section 3 */
 
 .section3 {
-    padding-top: 2em;
+    padding-top: 3em;
 }
 
 .fa-circle {
@@ -214,6 +216,11 @@ footer {
 }
 
 /* Section 4 */
+
+.section4 {
+    background-color: var(--light-green);
+    padding: 2em 0;
+}
 
 /* Section 5 */
 
