@@ -156,7 +156,6 @@ footer {
     background-color: none;
 }
 
-@media only screen and (max-width: 539px) {
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -194,7 +193,9 @@ footer {
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
-}
+
+
+/* Section 1 */
 
 
 /* Section 2 */
@@ -211,8 +212,6 @@ footer {
 
 .first-online-order {
     background-color: var(--lylac);
-    width: 61.5%;
-    margin: auto;
 }
 
 
@@ -334,8 +333,32 @@ footer a {
     line-height: 1.5em;
 }
 
+
 /* Media Query Desktop */
 
 @media only screen and (min-width: 540px) {
-    
-} 
+   
+    header {
+        flex-direction: row;
+        border: dashed hotpink;
+        justify-content: space-evenly;
+    }
+
+    .header2 {
+        order: 1;
+        border: dashed green;
+        width: 85%;
+        justify-content: space-around;
+        display: block;
+    }
+
+    .header1 {
+        order: 2;
+        border: dashed yellow;
+        width: 15%;
+    }
+
+    .logo {
+        order: 1;
+    }
+}
