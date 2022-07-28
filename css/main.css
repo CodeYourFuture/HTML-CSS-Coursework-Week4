@@ -220,7 +220,7 @@ i {
   width: 100%vw;
   align-items: center;
   padding: 15rem 2rem 2rem 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: -5rem;
   height: 100%vh;
 }
 
@@ -490,10 +490,13 @@ main {
   .nav-menu {
     position: fixed;
     left: -100%;
-    top: 5rem;
+    /* Add -1 to top margin */
+    top: -1rem;
     flex-direction: column;
-    background-color: #fff;
+    background-color:var(--Light-beige--);
+    /* Add height to menu below */
     width: 100%;
+    height: 43rem;
     border-radius: 10px;
     text-align: center;
     transition: 0.3s;
@@ -589,6 +592,10 @@ main {
       margin-left: 11rem;    
     }
 
+    .resume__section h2:first-child {
+      margin-top: -5rem;
+    }
+
     /* Contact Page Below */
 
     .contact__content{
@@ -675,12 +682,6 @@ main {
     width: 100%;    
     align-items: baseline;
     
-  }
-
-
-
-  .resume__content h2:first-of-type {
-    margin-left: 1rem;
   }
 
   .resume__content h2 {
