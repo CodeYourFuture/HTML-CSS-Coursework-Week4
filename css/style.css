@@ -191,7 +191,9 @@ footer {
 /* Section 2 */
 
 .section2 {
-    padding-top: 3em;
+    padding-top: 6em;
+    padding-bottom: 2em;
+    /* border: solid hotpink; */
 }
 
 .section2 a {
@@ -239,7 +241,15 @@ footer {
 
 /* Section 6 */
 
+.section6 {
+    padding: 2em 0;
+}
+
 /* Section 7 */
+
+.section7 {
+    background-color: var(--light-green);
+}
 
 .circle-p {
     border: 1px solid var(--black);
