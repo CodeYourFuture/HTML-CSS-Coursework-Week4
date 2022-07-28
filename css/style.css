@@ -338,27 +338,51 @@ footer a {
 
 @media only screen and (min-width: 540px) {
    
+    /* Header - Button and Hamburger Menu */
+
     header {
         flex-direction: row;
-        border: dashed hotpink;
         justify-content: space-evenly;
     }
 
     .header2 {
         order: 1;
-        border: dashed green;
-        width: 85%;
-        justify-content: space-around;
-        display: block;
+        width: 55%;
+        justify-content: space-between;
     }
 
     .header1 {
         order: 2;
-        border: dashed yellow;
-        width: 15%;
+        width: 20%;
+    }
+
+    .header-desktop {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        background-color: var(--white);
     }
 
     .logo {
         order: 1;
     }
+
+    #button-header {
+        padding: 2em 0;
+    }
+
+
+    /* Sticky Header */
+
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%
+    }
+
+    .sticky + main {
+    padding-top: 102px;
+}
+
+
 }
