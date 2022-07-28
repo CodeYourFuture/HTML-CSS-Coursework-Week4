@@ -1,0 +1,35 @@
+/* SHOP JUMBOTRON */
+.shop-jumbo {
+  color: white;
+  background-image: url(../assets/images/shop-jumbo.png);
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(80%);
+}
+.shop-jumbo > article {
+  padding: 1rem;
+  margin: 0;
+  text-align: center;
+}
+.shop-jumbo > article > h1 {
+  font-size: 3rem;
+  text-transform: capitalize;
+  margin-bottom: 0;
+}
+.bi {
+  font-size: 2rem;
+}
+/* SHOP ITEMS */
+.shop-all > h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+.shop-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
