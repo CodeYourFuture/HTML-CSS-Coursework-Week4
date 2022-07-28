@@ -478,6 +478,20 @@ footer a {
 
     /* Adjust Section 6 */
 
+    #section6-desktop {
+        display: flex;
+    }
+
+    #section6-item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img6 {
+        padding-left: 8em;
+    }
+
+
     /* Adjust Section 7 */
 
     /* Adjust Section 8 */
