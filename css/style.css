@@ -62,6 +62,13 @@ button {
     font-size: 1em;
 }
 
+/* Set Paragraph Width */
+
+main p {
+    width: 50%;
+    margin: auto;
+}
+
 /* Mobile Grid */
 
 .mobile-container {
@@ -200,6 +207,10 @@ footer {
 
 .section3 {
     padding-top: 2em;
+}
+
+.fa-circle {
+    color: var(--light-green);
 }
 
 /* Section 4 */
