@@ -214,6 +214,9 @@ footer {
     background-color: var(--lylac);
 }
 
+.img1 {
+    width: 100%;
+}
 
 /* Section 3 */
 
@@ -338,7 +341,7 @@ footer a {
 
 @media only screen and (min-width: 540px) {
    
-    /* Header - Button and Hamburger Menu */
+    /* Adjust Header - Button and Hamburger Menu */
 
     header {
         flex-direction: row;
@@ -383,7 +386,7 @@ footer a {
     }
 
 
-    /* Sticky Header */
+    /* Add Sticky Header */
 
     .sticky {
         position: fixed;
@@ -392,8 +395,31 @@ footer a {
     }
 
     .sticky + main {
-    padding-top: 102px;
+    padding-top: 10em;
 }
+
+
+    /* Adjust Font Size */
+
+    h1 {
+        font-size: 3.5em;
+    }
+
+    p {
+        font-size: 1.4em;
+    }
+
+    h4 {
+        font-size: 2em;
+    }
+
+    /* Adjust Button Size */
+
+    button {
+        padding: 1.5em 5.5em;
+    }
+
+
 
 
 }
