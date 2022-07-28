@@ -1,3 +1,436 @@
 /* Add your CSS here */
+/* background color code for laptops */
 
-/* Dont' forget to link this file to your HTML in the <head> */
+/* background color code for mobile device */
+/* Don't forget to link this file to your HTML in the <head> */
+:root {
+    --Dark-beige: #E6DACD;
+    --Light-beige: #F4ECE6;
+    --Royal-blue: #0150FD;
+}
+
+
+body {
+    display: grid;
+    grid-template-areas:
+        'header'
+        'main'
+        'footer';
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+
+}
+
+header {
+    grid-area: header;
+    margin: 20px;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+#logo {
+    display: flex;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+#logo-title {
+    font-size: 14px;
+}
+
+#logo-shape {
+    margin: 10px 10px 0px 0px;
+    width: 16px;
+    height: 16px;
+    background-color: var(--Royal-blue);
+
+}
+
+#slash,
+#position {
+    display: none;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin-top: 70%;
+
+}
+
+li {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 30px;
+}
+
+.bar-container {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#nav-list {
+    display: none;
+    background-color: var(--Light-beige);
+    margin: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 30px;
+    height: 3px;
+    background-color: var(--Royal-blue);
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 20px;
+}
+
+.links:hover,
+.active {
+    color: var(--Royal-blue);
+}
+
+.bar1,
+.bar3 {
+    width: 15px;
+}
+
+.bar3 {
+    margin-left: 15px;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(4px, 19px);
+    width: 30px;
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-4px, -7px);
+    width: 30px;
+
+}
+
+main {
+    grid-area: main;
+    background: linear-gradient(360deg, var(--Dark-beige) 70%, #fff 10%);
+    width: 100%;
+    margin: 0;
+}
+
+article {
+    width: auto;
+    padding: 20px;
+}
+
+#info {
+    background-color: var(--Light-beige);
+    text-align: center;
+    box-shadow: -9px 9px 32px -22px rgba(0, 0, 0, 1);
+    height: 395px;
+    width: 350px;
+}
+
+
+
+#desc {
+    background-color: transparent;
+    text-align: left;
+}
+
+#desc>h1,
+#desc>h3,
+#desc>p {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#desc>h1 {
+    font-size: 40px;
+}
+
+#desc>p {
+
+    font-size: 16px;
+}
+
+#info>img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin: 30px 0 10px 0;
+}
+
+h1 {
+    font-size: 21px;
+    font-weight: 600;
+    margin: 0;
+}
+
+button {
+    background-color: var(--Royal-blue);
+    width: 120px;
+    height: 33px;
+    border: 2px solid var(--Royal-blue);
+    border-radius: 90px;
+    color: #fff;
+    margin: 0 10px;
+}
+
+button:hover {
+    color: #000;
+    background-color: transparent;
+}
+
+.button-project {
+    border: 1px solid #000;
+    color: #000;
+    background-color: transparent;
+}
+
+.button-project:hover {
+    border: 1px solid var(--Royal-blue);
+    color: #fff;
+    background-color: var(--Royal-blue);
+}
+
+.social {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #fff;
+    padding: 6px 0;
+}
+
+#social>a,
+.social>a {
+    font-size: 1.5em;
+    margin: 10px 20px 0 0;
+}
+
+#social {
+    margin: 20px;
+
+}
+
+
+#line {
+    background-color: var(--Royal-blue);
+    width: 68px;
+    height: 2px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 26px auto;
+}
+
+footer {
+    grid-area: footer;
+}
+
+#contacts {
+    padding: 20px;
+
+}
+
+.contact {
+    float: left;
+    width: 50%;
+}
+
+#copyright {
+    margin: 20px;
+
+}
+
+#wix-link-style {
+    text-decoration: underline;
+}
+
+@media screen and (min-width:768px) {
+    .bar-container {
+        display: none;
+    }
+
+    #logo-title,
+    #nav-list {
+        margin: 40px;
+    }
+
+    header {
+        position: fixed;
+        background-color: white;
+        width: 100%;
+        margin: 0;
+        height: 126px;
+    }
+
+    #nav-list {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        bottom: auto;
+        left: auto;
+        background-color: transparent;
+    }
+
+    ul {
+        margin: 0;
+        width: 650px;
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+    }
+
+    li {
+        font-size: 14px;
+        font-weight: 300;
+        margin: 10px
+    }
+
+    main {
+        background: linear-gradient(90deg, var(--Dark-beige) 38%, #ffF 10%);
+    }
+
+    article {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 20% 0 10% 0;
+        
+    }
+
+    #info {
+        width: 375px;
+        height: 526px;
+    }
+
+    #info>img {
+        width: 205px;
+        height: 205px;
+    }
+
+    #info>h1 {
+        font-size: 27px;
+    }
+
+    .social {
+        padding: 20px 0;
+    }
+
+    #desc {
+        width: 370px;
+    }
+
+    #btn-container {
+        margin: 40px 20px 40px 20px;
+    }
+
+    button {
+        margin: 0px 20px 0px 0;
+
+    }
+
+    #desc>h1 {
+        font-size: 100px;
+        margin: 0px 20px 0 20px;
+        padding: 0;
+    }
+
+    #desc>h3 {
+        font-size: 23px;
+        font-weight: 400;
+        margin-top: 0;
+    }
+
+    #desc>p {
+        font-size: 17px;
+        font-weight: 200;
+
+    }
+
+    .social {
+        margin-top: 50px;
+    }
+
+    #logo-title {
+        display: flex;
+
+    }
+
+    #slash,
+    #position {
+        display: block;
+        letter-spacing: 5px;
+        font-size: 17px;
+    }
+
+    #slash,
+    #title {
+        margin: 10px 0 0 10px;
+        font-size: 17px;
+    }
+
+    footer {
+        display: grid;
+        grid-template-areas: 'copyright contact';
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #copyright {
+        width: 220px;
+        grid-area: copyright;
+        text-align: left;
+
+
+    }
+
+    #contact-social {
+        grid-area: contact;
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+
+    }
+
+    #contacts {
+        padding: 0;
+        width: 400px;
+        display: flex;
+    }
+
+    #social,
+    .contact {
+        margin: 0;
+        padding: 0;
+        padding: 20px;
+
+    }
+
+    .contact>h3,
+    #social>h3,
+    #social>a {
+        font-size: 14px;
+    }
+
+
+}

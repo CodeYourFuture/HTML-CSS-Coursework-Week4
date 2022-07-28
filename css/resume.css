@@ -1,0 +1,116 @@
+:root {
+    --Dark-beige: #E6DACD;
+    --Light-beige: #F4ECE6;
+    --Royal-blue: #0150FD;
+}
+
+main {
+    background: var(--Dark-beige);
+    display: flex;
+    justify-content: center;
+}
+article
+{
+    display: flex;
+        flex-direction: column;
+        max-width: 650px;
+}
+
+#resume-heading {
+    display: flex;
+    justify-content: center;
+    margin: 40px 20px;
+}
+#resume-heading>h1
+{
+    font-size: 29px;
+
+}
+#resume-shape{
+    margin: 12.5px 10px 0px 0px;
+width: 19px;
+height: 19px;
+background-color: var(--Royal-blue);
+}
+.resume-title {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+}
+#btn-download
+{
+width: 100%;
+display: flex;
+justify-content: flex-end;
+}
+#btn-download>button {
+
+    margin: 18px 0;
+}
+
+.exp {
+    width: 100%;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 20px 0;
+    font-weight: 300;
+    box-shadow: -9px 9px 32px -22px rgba(0, 0, 0, 1);
+}
+.years
+{
+    color: var(--Royal-blue);
+    font-weight: bold;
+    font-size: 15px;
+}
+.position{
+
+}
+.company-info
+{
+    font-size: 15px;
+}
+.exp-desc
+{
+    font-size: 17px;
+}
+.rect-shape
+{
+    margin: 10px 10px 0px 0px;
+        width: 13px;
+        height: 13px;
+        background-color: var(--Royal-blue);
+}
+
+#skills,#languages
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+#languages>div,#skills>div
+{
+    width: 300px;
+}
+#skills>div>p,#languages>div>p
+{
+    margin:5px 0px 0px 0px ;
+}
+#skills>div,#languages>div
+{
+    display: flex;
+    margin: 25`px 0;
+
+}
+
+#lang
+{
+    margin: 40px 0;
+}
+@media screen and (min-width:768px) {
+    
+    article
+    {
+        margin: 200px 0 100px 0;
+    }
+    
+}

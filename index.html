@@ -1,21 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Add a link to your custom CSS here -->
-
-    <title>Responsive grid project</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Maya Nelson</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
 
 <body>
-
     <!-- Add your markup here -->
-
-
+    <header>
+        <div id="logo-title">
+            <a id="logo" href="index.html">
+                <div id="logo-shape"></div>
+                Maya Nelson
+            </a>
+            <span id="slash">/</span>
+            <a id="title" href="index.html">
+                PROJECT MANAGER
+            </a>
+        </div>
+        <nav id="nav-list">
+            <ul>
+                <a class="links active" href="index.html">
+                    <li>ABOUT ME</li>
+                </a>
+                <a class="links" href="resume.html">
+                    <li>RESUME</li>
+                </a>
+                <a class="links" href="projects.html">
+                    <li>PROJECTS</li>
+                </a>
+                <a class="links" href="contacts.html">
+                    <li>CONTACTS</li>
+                </a>
+            </ul>
+        </nav>
+        <div class="bar-container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </header>
+    <main>
+        <article>
+            <section id="info">
+                <img src="./img/AdobeStock_230407429.webp" alt="Maya Nelson photo">
+                <h1>Maya<br>Nelson</h1>
+                <div id="line"></div>
+                <div id="position">PROJECT MANAGER</div>
+                <div id="loc">
+                    <div id="btn-container">
+                        <button onclick="document.location='resume.html'">RESUME</button>
+                        <button onclick="document.location='projects.html'" class="button-project">PROJECTS</button>
+                    </div>
+                </div>
+                <div class="social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                </div>
+            </section>
+            <section id="desc">
+                <h1>Hello</h1>
+                <h3>Here's who I am & what I do</h3>
+                <div id="btn-new-loc"></div>
+                <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or
+                    double click me to
+                    add your own content and make changes to the font.</p>
+                <p>I’m a great place for you to tell a story and let your users know a little more about you.</p>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <div id="contact-social">
+            <div id="contacts">
+                <div id="phone" class="contact">
+                    <h3>Call</h3>
+                    <p>123-456-7890</p>
+                </div>
+                <div id="email" class="contact">
+                    <h3>Write</h3>
+                    <p>info@mysite.com</p>
+                </div>
+            </div>
+            <div id="social">
+                <h3>Follow</h3>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+        </div>
+        <div id="copyright">
+            <p>© 2023 by Maya Nelson. <br> Proudly created with <a href="#" id="wix-link-style">Wix.com</a> </p>
+        </div>
+        <p>This website design was created by Wix.com, and is used here for strictly educational
+            purposes.</p>
+    </footer>
     <!-- Please leave this in to credit the creators of this design -->
-    <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
+    <script>
+        function myFunction(y) {
+            y.classList.toggle("change");
+            var x = document.getElementById("nav-list");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+        function chkMediaQuery(x) {
+            if (x.matches) { // If media query matches
+
+                $("#btn-container").appendTo("#loc");
+            } else {
+                $("#btn-container").appendTo("#btn-new-loc");
+
+            }
+        }
+        var x = window.matchMedia("(max-width: 768px)")
+        chkMediaQuery(x) // Call listener function at run time
+        x.addListener(chkMediaQuery)
+    </script>
 </body>
 
 </html>
