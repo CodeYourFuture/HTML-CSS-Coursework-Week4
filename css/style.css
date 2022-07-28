@@ -1,4 +1,4 @@
-/* Colour and Font Variables */
+/* Create Colour and Font Variables */
 
 :root {
     --black: #000;
@@ -15,8 +15,23 @@
         sans-serif;
 }
 
+/* Reset */
 
-/* Set fonts */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Set fonts and Style Buttons */
 
 body {
     font-family: var(--body);
@@ -31,27 +46,20 @@ h6 {
     font-family: var(--headings);
 }
 
+main h1 {
+    font-size: 2.5em;
+}
+
+main h3 {
+    font-size: 1.5rem;
+}
+
 button {
     font-family: var(--buttons);
+    border: 1px solid var(--black);
+    padding: .5em 1.5em;
+    background-color: var(--white);
 }
-
-
-/* Reset */
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-a {
-    text-decoration: none;
-}
-
-ul {
-    list-style: none;
-}
-
 
 /* Mobile Grid */
 
@@ -81,15 +89,22 @@ footer {
 
 /* Header - Button and Hamburger Menu */
 
-.header2 {
-    display: flex;
-    justify-content: space-between;
-}
-
 #button-header {
     color: var(--white);
     background-color: var(--black);
     width: 100%;
+    font-size: 1em;
+    padding: 1em 0;
+}
+
+.header2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em 0;
+}
+
+.logo {
+    color: var(--black);
 }
 
 .navbar {
@@ -165,6 +180,11 @@ footer {
 /* Section 1 */
 
 /* Section 2 */
+
+.img1 {
+    /* width: 100%; */
+}
+
 
 .section2 a {
     text-decoration: underline;
