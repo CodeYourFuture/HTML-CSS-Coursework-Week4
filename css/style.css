@@ -15,6 +15,7 @@
         sans-serif;
 }
 
+
 /* Reset */
 
 * {
@@ -31,7 +32,8 @@ ul {
     list-style: none;
 }
 
-/* Set fonts and Style Buttons */
+
+/* Set Fonts and Main Button Styles */
 
 body {
     font-family: var(--body);
@@ -62,12 +64,14 @@ button {
     font-size: 1em;
 }
 
+
 /* Set Paragraph Width */
 
 main p {
     width: 50%;
     margin: auto;
 }
+
 
 /* Mobile Grid */
 
@@ -95,6 +99,7 @@ footer {
     flex-direction: column;
 }
 
+
 /* Header - Button and Hamburger Menu */
 
 #button-header {
@@ -120,6 +125,11 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.nav-link {
+    color: var(--black);
+    font-size: 1.5em;
 }
 
 .hamburger {
@@ -186,14 +196,12 @@ footer {
     }
 }
 
-/* Section 1 */
 
 /* Section 2 */
 
 .section2 {
     padding-top: 6em;
     padding-bottom: 2em;
-    /* border: solid hotpink; */
 }
 
 .section2 a {
@@ -207,6 +215,7 @@ footer {
     margin: auto;
 }
 
+
 /* Section 3 */
 
 .section3 {
@@ -216,6 +225,7 @@ footer {
 .fa-circle {
     color: var(--light-green);
 }
+
 
 /* Section 4 */
 
@@ -228,6 +238,7 @@ footer {
     background-color: var(--light-green);
 }
 
+
 /* Section 5 */
 
 .section5 {
@@ -239,11 +250,13 @@ footer {
     background-color: var(--lylac);
 }
 
+
 /* Section 6 */
 
 .section6 {
     padding: 2em 0;
 }
+
 
 /* Section 7 */
 
@@ -259,6 +272,7 @@ footer {
     line-height: 1.5em;
 }
 
+
 /* Section 8 */
 
 .section8 {
@@ -269,6 +283,7 @@ footer {
     color: var(--black);
     text-decoration: underline;
 }
+
 
 /* Footer */
 
