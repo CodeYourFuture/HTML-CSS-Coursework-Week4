@@ -272,15 +272,30 @@ footer {
 
 /* Footer */
 
+footer {
+    background-color: var(--dark-green);
+    color: var(--white);
+}
+
 .footer-navs {
     display: flex;
     justify-content: space-around;
+}
+
+footer a {
+    color: var(--white);
 }
 
 #email {
     border-top: none;
     border-left: none;
     border-right: none;
+}
+
+#footer-button {
+    background-color: var(--dark-green);
+    border-color: var(--white);
+    color: var(--white);
 }
 
 .serving-safely {
