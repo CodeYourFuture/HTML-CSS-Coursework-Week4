@@ -1,21 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- Add a link to your custom CSS here -->
-
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="https://kit.fontawesome.com/159ab1957a.js" crossorigin="anonymous"></script>
     <title>Responsive grid project</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <div class="logo__block">
+            <div class="square"></div>
+            <p class="logo__name">Maya Nelson</p>
+          </div>
+          <p class="logo__title"><span>/</span> PROJECT MANAGER</p>
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="white__layout"></section>
+      <div class="middle">
+        <section class="hero__section">
+          <div class="about__me">
+            <div class="profile">
+              <img
+                src="/images/profile-image-elipse.png"
+                alt="Photo of woman in white shirt"
+                class="profile__img"
+              />
+              <h1>
+                Maya <br />
+                Nelson
+              </h1>
+              <hr/>
+              <div class="hero__btn">
+                <button class="resume__btn">RESUME</button>
+                <button class="projects__btn">PROJECTS</button>
+              </div>
+              <div class="socialmedia__set">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+            </div>
+          </section> 
+          <section>
+            <div class="hero">  
+              <h2 class="about">Hello</h2>
+              <p>Here's who I am & what I do</p>
+
+              <p>
+                I'm a paragraph. Click here to add your own text and edit me. It’s
+                easy. Just click “Edit Text” or double click me to add your own
+                content and make changes to the font.
+              </p>
+
+              <p>
+                I’m a great place for you to tell a story and let your users know a
+                little more about you.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <p class="call">
+        <span>Call</span> <br />
+        123-456-7890
+      </p>
+      <p class="email">
+        <span> Write</span> <br />
+        info@mysite.com
+      </p>
+      <div class="socialmedia__icons">
+        <p>Follow</p>
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+    </footer>
 
     <!-- Add your markup here -->
 
-
     <!-- Please leave this in to credit the creators of this design -->
-    <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
-</body>
-
+    <p class="copyright">
+      © This website design was created by Wix.com, and is used here for
+      strictly educational purposes.
+    </p>
+    <script src="script.js"></script>
+  </body>
 </html>
