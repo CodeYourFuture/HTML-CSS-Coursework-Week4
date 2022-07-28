@@ -10,14 +10,6 @@ body {
     font-family: var(--font-body);
 }
 
-body h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-headings);
-}
-
-body button {
-    font-family: var(--font-buttons);
-}
-
 .col-content-box,
 .row-content-box {
     display: flex;
@@ -27,24 +19,10 @@ body button {
     text-align: center;
 }
 
-/* Order button */
+/* Order */
 
 .order {
 
-}
-
-.btn-order {
-    background-color: var(--clr-black);
-    color: var(--clr-white);
-    border: none;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1rem;
-    transition-duration: 0.4s;
-    cursor: pointer;
 }
 
 /* Header */
@@ -56,11 +34,6 @@ body button {
     align-items: center;
     padding-left: 2rem;
     padding-right: 2.2rem;
-}
-
-.header h1 {
-    font-size: 1.5rem;
-    font-weight: 100;
 }
 
 .img-hamburger {
@@ -80,49 +53,12 @@ body button {
     text-align: center;
 }
 
-.hero h2, h3 {
-    text-align: center;
-    margin: 0.5rem;
-}
-
-.hero h2 {
-    font-size: 2.1rem;
-    font-weight: 100;
-    width: 20rem;
-}
-
-.hero h3 {
-    font-size: 1.4rem;
-    font-weight: 100;
-    width: 17rem;
-    line-height: 2rem;
-}
-
 .hero-h2-box {
     margin: 0.3rem;
 }
 
 .hero-h3-box {
     margin: 1rem;
-}
-
-.btn-explore {
-    background-color: var(--clr-white);
-    color: var(--clr-black);
-    border: 2px solid var(--clr-black);
-    padding: 0.9rem 2rem;
-    margin: 1.3rem;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 0.9rem;
-    transition-duration: 0.4s;
-    cursor: pointer;
-}
-
-.btn-explore:active {
-    background-color: var(--clr-black);
-    color: var(--clr-white);
 }
 
 /* Orange picture */
@@ -161,26 +97,6 @@ body button {
     text-align: center;
 }
 
-.differences h2 {
-    font-size: 2rem;
-    font-weight: 100;
-    width: 14rem;
-    margin: 2.1rem 0 0.6rem;
-    line-height: 2.5rem;
-}
-
-.differences h3 {
-    font-size: 1.4rem;
-    font-weight: 100;
-    margin-bottom: 0.8rem;
-}
-
-.differences p {
-    line-height: 1.6rem;
-    width: 15rem;
-    margin-bottom: 1.5rem;
-}
-
 .img-differences {
     width: 4.5rem;
     margin: 0.6rem;
@@ -198,47 +114,10 @@ body button {
     text-align: center;
 }
 
-.vision h2 {
-    font-size: 1.9rem;
-    font-weight: 100;
-    line-height: 2.6rem;
-    margin-top: 1.5rem;
-    margin-bottom: 0.8rem;
-    width: 15.5rem;
-}
-
 .img-vision {
     object-fit: contain;
-    /* border: 1rem; */
     width: 100%;
     height: auto;
-    /* max-height: 100vw; */
-}
-
-.vision p {
-    /* font-size: 0.9rem; */
-    line-height: 1.6rem;
-    width: 16.2rem;
-    margin-bottom: 1.5rem;
-}
-
-.btn-vision {
-    background-color: var(--clr-light-green);
-    color: var(--clr-black);
-    border: 2px solid var(--clr-black);
-    padding: 0.9rem 3rem;
-    /* margin-top: 0.3rem; */
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 0.9rem;
-    transition-duration: 0.4s;
-    cursor: pointer;
-}
-
-.btn-vision:active {
-    background-color: var(--clr-black);
-    color: var(--clr-white);
 }
 
 /* Choose your wellness path */
@@ -253,54 +132,10 @@ body button {
     text-align: center;
 }
 
-.catalog h2 {
-    font-size: 2rem;
-    font-weight: 100;
-    width: 14rem;
-    margin: 0.5rem 0 0.7rem;
-    line-height: 2.5rem;
-}
-
-.catalog h3 {
-    font-size: 1.4rem;
-    font-weight: 100;
-    line-height: 1.7rem;
-    margin-top: 1.8rem;
-    margin-bottom: 0.5rem;
-    width: 13rem;
-}
-
 .img-catalog {
     object-fit: cover;
-    /* border: 1rem; */
     width: 100%;
     height: 90vw;
-}
-
-.catalog p {
-    /* font-size: 0.9rem; */
-    line-height: 1.6rem;
-    width: 16.2rem;
-    margin-bottom: 2rem;
-}
-
-.btn-view {
-    background-color: var(--clr-lilac);
-    color: var(--clr-black);
-    border: 2px solid var(--clr-black);
-    padding: 0.7rem 3rem;
-    margin-bottom: 1.2rem;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 0.9rem;
-    transition-duration: 0.4s;
-    cursor: pointer;
-}
-
-.btn-view:active {
-    background-color: var(--clr-black);
-    color: var(--clr-white);
 }
 
 /* Discover our ... */
@@ -311,49 +146,12 @@ body button {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* text-align: center; */
-}
-
-.kit h2 {
-    font-size: 1.9rem;
-    font-weight: 100;
-    line-height: 2.6rem;
-    margin-top: 2.5rem;
-    margin-bottom: 0.8rem;
-    width: 17rem;
 }
 
 .img-kit {
     object-fit: contain;
-    /* border: 1rem; */
     width: 100%;
     height: auto;
-    /* max-height: 100vw; */
-}
-
-.kit p {
-    /* font-size: 0.9rem; */
-    line-height: 1.6rem;
-    width: 18rem;
-    margin-bottom: 1.5rem;
-}
-
-.btn-try {
-    background-color: var(--clr-white);
-    color: var(--clr-black);
-    border: 2px solid var(--clr-black);
-    padding: 0.7rem 4rem;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 0.9rem;
-    transition-duration: 0.4s;
-    cursor: pointer;
-}
-
-.btn-try:active {
-    background-color: var(--clr-black);
-    color: var(--clr-white);
 }
 
 /* Get juice bar */
@@ -361,10 +159,6 @@ body button {
 .supply {
 background-color: var(--clr-light-green);
     
-}
-
-.supply h1 {
-    font-weight: 200;
 }
 
 .supply-heading {
@@ -395,31 +189,10 @@ background-color: var(--clr-light-green);
 	padding : 0;
 }
 
-.supply h2 {
-    font-size: 1.4rem;
-    font-weight: 100;
-    line-height: 1.5rem;
-    /* margin-top: 2.5rem; */
-    margin-bottom: 0.8rem;
-}
-
-.supply p {
-    line-height: 1.6rem;
-    width: 15rem;
-    margin-bottom: 1.5rem;
-}
-
-
 /* follow us */
 
 .networks {
     text-align: center;
-}
-
-.networks h2 {
-    font-size: 2rem;
-    font-weight: 100;
-    margin: 2rem 0 1rem;
 }
 
 .networks a {
@@ -442,14 +215,6 @@ background-color: var(--clr-light-green);
     padding: 1.5rem;
 }
 
-.footer h3 {
-    font-size: 1.4rem;
-    font-weight: 100;
-    text-align: left;
-    margin-left: 0;
-    margin-bottom: 2rem;
-}
-
 .serving-link-box a {
     font-family: var(--font-headings);
     font-size: 1.4rem;
@@ -467,7 +232,6 @@ background-color: var(--clr-light-green);
 
 .thumbnails {
     height: 16rem;
-    /* text-align: center; */
     position: relative;
 }
 
@@ -556,24 +320,6 @@ background-color: var(--clr-light-green);
     border-bottom: 3px solid var(--clr-light-green);
 }
 
-.btn-submit {
-    background-color: var(--clr-dark-green);
-    color: var(--clr-white);
-    border: 2px solid var(--clr-white);
-    padding: 0.9rem 2rem;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 0.9rem;
-    transition-duration: 0.4s;
-    cursor: pointer;
-}
-
-.btn-submit:active {
-    background-color: var(--clr-white);
-    color: var(--clr-black);
-}
-
 /* Circle logo box */
 
 .circle-logo-box {
@@ -604,4 +350,195 @@ background-color: var(--clr-light-green);
     font-size: 0.9rem;
     font-weight: 100;
     width: 20rem;
+}
+
+/* buttons */
+
+body button {
+    font-family: var(--font-buttons);
+    border: 2px solid var(--clr-black);
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.btn-order {
+    background-color: var(--clr-black);
+    color: var(--clr-white);
+    border: none;
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+}
+
+.btn-explore {
+    background-color: var(--clr-white);
+    color: var(--clr-black);
+    padding: 0.9rem 2rem;
+    margin: 1.3rem;
+}
+
+.btn-vision {
+    background-color: var(--clr-light-green);
+    color: var(--clr-black);
+    padding: 0.9rem 3rem;
+}
+
+.btn-view {
+    background-color: var(--clr-lilac);
+    color: var(--clr-black);
+    padding: 0.7rem 3rem;
+    margin-bottom: 1.2rem;
+}
+
+.btn-try {
+    background-color: var(--clr-white);
+    color: var(--clr-black);
+    padding: 0.7rem 4rem;
+}
+
+.btn-submit {
+    background-color: var(--clr-dark-green);
+    color: var(--clr-white);
+    border: 2px solid var(--clr-white);
+    padding: 0.9rem 2rem;
+}
+
+.btn-submit:active {
+    background-color: var(--clr-white);
+    color: var(--clr-black);
+}
+
+.btn-vision:active,
+.btn-view:active,
+.btn-try:active,
+.btn-explore:active {
+    background-color: var(--clr-black);
+    color: var(--clr-white);
+}
+
+/* headings */
+
+body h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-headings);
+    font-weight: 100;
+    
+}
+
+.header h1 {
+    font-size: 1.5rem;
+}
+
+.supply h1 {
+    font-weight: 200;
+}
+
+.hero h2, h3 {
+    margin: 0.5rem;
+}
+
+.hero h2 {
+    font-size: 2.1rem;
+    width: 20rem;
+}
+
+.hero h3 {
+    font-size: 1.4rem;
+    width: 17rem;
+    line-height: 2rem;
+}
+
+.differences h2 {
+    font-size: 2rem;
+    width: 14rem;
+    margin: 2.1rem 0 0.6rem;
+    line-height: 2.5rem;
+}
+
+.differences h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+}
+
+.vision h2 {
+    font-size: 1.9rem;
+    line-height: 2.6rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem;
+    width: 15.5rem;
+}
+
+.catalog h2 {
+    font-size: 2rem;
+    width: 14rem;
+    margin: 0.5rem 0 0.7rem;
+    line-height: 2.5rem;
+}
+
+.catalog h3 {
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    margin-top: 1.8rem;
+    margin-bottom: 0.5rem;
+    width: 13rem;
+}
+
+.kit h2 {
+    font-size: 1.9rem;
+    line-height: 2.6rem;
+    margin-top: 2.5rem;
+    margin-bottom: 0.8rem;
+    width: 17rem;
+}
+
+.supply h2 {
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.networks h2 {
+    font-size: 2rem;
+    margin: 2rem 0 1rem;
+}
+
+.footer h3 {
+    font-size: 1.4rem;
+    text-align: left;
+    margin-left: 0;
+    margin-bottom: 2rem;
+}
+
+/* paragraphs */
+
+body p {
+    line-height: 1.6rem;
+}
+
+.differences p {
+    width: 15rem;
+    margin-bottom: 1.5rem;
+}
+
+.vision p {
+    width: 16.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.catalog p {
+    width: 16.2rem;
+    margin-bottom: 2rem;
+}
+
+.kit p {
+    line-height: 1.6rem;
+    width: 18rem;
+    margin-bottom: 1.5rem;
+}
+
+.supply p {
+    width: 15rem;
+    margin-bottom: 1.5rem;
 }

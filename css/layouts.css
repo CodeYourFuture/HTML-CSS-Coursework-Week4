@@ -102,24 +102,12 @@
 
 @media (min-width: 800px) {
 .container {
-  /* grid-template-columns: repeat(12, 1fr); */
-  grid-template-rows: 5.5rem 5.5rem 22.5rem 80vh 5.4rem auto auto auto auto auto 23rem auto;
-  grid-template-areas:
-    "or or or or or or or or or or or or"
-    "hd hd hd hd hd hd hd hd hd hd or or"
-    "hr hr hr hr hr hr hr hr hr hr hr hr"
-    "sc sc sc sc sc sc sc sc sc sc sc sc"
-    "ds ds ds ds ds ds ds ds ds ds ds ds"
-    "df df df df df df df df df df df df"
-    "vs vs vs vs vs vs vs vs vs vs vs vs"
-    "ct ct ct ct ct ct ct ct ct ct ct ct"
-    "kt kt kt kt kt kt kt kt kt kt kt kt"
-    "sp sp sp sp sp sp sp sp sp sp sp sp"
-    "nt nt nt nt nt nt nt nt nt nt nt nt"
-    "ft ft ft ft ft ft ft ft ft ft ft ft";
+  grid-template-rows: 5.5rem 5.5rem 17rem 80vh 5.4rem auto auto auto auto auto 23rem auto;
 }
 
-/* header */
+body button {
+    font-size: 1.1rem;
+}
 
 .order {
     position: fixed;
@@ -127,6 +115,14 @@
     top: 0;
     right: 0;
     width: 12.5rem;
+}
+
+.btn-order {
+    font-size: 1.2rem;
+}
+
+.btn-order:hover {
+    background-color: var(--clr-medium-green);
 }
 
 .header {
@@ -141,7 +137,12 @@
 }
 
 .header h1 {
+    font-size: 2rem;
     margin-left: 12.5rem;
+}
+
+.img-hamburger {
+    width: 35px;
 }
 
 /* Log-in */
@@ -151,6 +152,20 @@
     align-items: center;
 }
 
+.login-box a {
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.login-box a:link,
+.login-box a:visited,
+.login-box a:hover,
+.login-box a:active {
+    color: var(--clr-black);
+}
+
 .img-login {
     width: 25px;
     margin: 0.8rem;
@@ -158,6 +173,19 @@
 
 .hero {
     justify-content: center;
+}
+
+.hero h2 {
+    font-size: 3.2rem;
+}
+
+.hero h3 {
+    font-size: 1.6rem;
+}
+
+.btn-explore {
+    padding: 1.3rem 4.5rem;
+    margin: 2rem 0 5rem;
 }
 
 .supply-content,
