@@ -222,7 +222,20 @@ footer {
     padding: 2em 0;
 }
 
+#our-vision-button {
+    background-color: var(--light-green);
+}
+
 /* Section 5 */
+
+.section5 {
+    background-color: var(--lylac);
+    padding: 3em 0;
+}
+
+#view-all-button {
+    background-color: var(--lylac);
+}
 
 /* Section 6 */
 
