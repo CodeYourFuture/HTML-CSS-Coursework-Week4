@@ -42,6 +42,17 @@
     font-weight: 600;
     border: 0;
     border-bottom: 2px solid rgba(0, 0, 0, 0.6);
+    outline: none;
+}
+
+.m__form__input:focus {
+    border-bottom: 3px solid var(--royal-blue);
+}
+
+/* Textarea */
+#message {
+    resize: none;
+    overflow: auto;
 }
 
 /* Button */
