@@ -1,20 +1,27 @@
 /* Add your CSS here */
-
+:root {
+  --h1-font-family: "Fjalla One", sans-serif;
+  --allotherfonts-font-family: "Outfit", sans-serif;
+  --uppercase-text-transform: uppercase;
+  --btn-background-color: #a05941;
+  --btn-color: white;
+  --btn-border: solid 1px #a05941;
+}
 body {
   background-color: #ededee;
-  font-family: "Outfit", sans-serif;
+  font-family: var(--allotherfonts-font-family);
   padding: 0;
   margin: 0;
 }
 h1,
 h2,
 h3 {
-  font-family: "Fjalla One", sans-serif;
+  font-family: var(--h1-font-family);
   font-weight: normal;
   letter-spacing: 0.1rem;
 }
 .sub-heading {
-  font-family: "Outfit", sans-serif;
+  font-family: var(--allotherfonts-font-family);
 }
 /* HEADER */
 .search-login {
@@ -26,29 +33,29 @@ header {
   padding: 0rem 1rem;
 }
 .title {
-  color: #a05941;
-  text-transform: uppercase;
+  color: var(--btn-background-color);
+  text-transform: var(--uppercase-text-transform);
   font-size: 1.5rem;
   margin-bottom: 0;
 }
 .hamburger-menu {
   font-size: 2rem;
-  color: #a05941;
+  color: var(--btn-background-color);
   font-weight: bold;
   text-align: right;
   padding-top: 0.5rem;
 }
 .desktop-nav {
   display: none;
-  color: #a05941;
+  color: var(--btn-background-color);
 }
 .responsive-nav {
   display: none;
-  color: #a05941;
+  color: var(--btn-background-color);
 }
 .login-link {
   text-decoration: none;
-  color: #a05941;
+  color: var(--btn-background-color);
 }
 nav > ul > li {
   list-style-type: none;
@@ -56,11 +63,11 @@ nav > ul > li {
 }
 nav > ul > li > a {
   text-decoration: none;
-  color: #a05941;
+  color: var(--btn-background-color);
 }
 .header-txt {
   grid-column: 1 / -1;
-  color: #a05941;
+  color: var(--btn-background-color);
   font-size: 1rem;
   letter-spacing: 0.1rem;
   font-weight: bold;
@@ -72,7 +79,7 @@ nav > ul > li > a {
 /* JUMBOTRON */
 .jumbotron {
   text-align: center;
-  color: white;
+  color: var(--btn-color);
 }
 .jumbotron > img {
   max-width: 100%;
@@ -87,28 +94,28 @@ nav > ul > li > a {
   width: 100%;
 }
 .jumbo-text > h1 {
-  text-transform: uppercase;
+  text-transform: var(--uppercase-text-transform);
   font-size: 3.5rem;
   letter-spacing: 0.5rem;
   margin-bottom: 0;
 }
 .jumbo-text > h2 {
-  text-transform: uppercase;
+  text-transform: var(--uppercase-text-transform);
   letter-spacing: 0.5rem;
   font-size: 1rem;
 }
 .jumbo-text > button {
-  background-color: #a05941;
-  color: white;
-  border: solid 1px #a05941;
+  background-color: var(--btn-background-color);
+  color: var(--btn-color);
+  border: var(--btn-border);
   padding: 0.5rem 1.5rem;
 }
 /* ABOUT SECTION */
 .about {
   text-align: center;
-  color: #a05941;
+  color: var(--btn-background-color);
   margin: 0;
-  background-color: white;
+  background-color: var(--btn-color);
 }
 .about > article {
   padding-bottom: 4rem;
@@ -117,7 +124,7 @@ nav > ul > li > a {
   margin: 0;
   padding: 0;
   font-weight: bold;
-  color: #a05941;
+  color: var(--btn-background-color);
   font-size: 3rem;
 }
 .about > h1 {
@@ -147,7 +154,7 @@ nav > ul > li > a {
   max-width: 70%;
 }
 .discount-text {
-  color: white;
+  color: var(--btn-color);
   font-size: 3rem;
   padding: 0rem 3rem;
   margin: 0;
@@ -155,7 +162,7 @@ nav > ul > li > a {
 }
 .announcement > button {
   padding: 0.7rem 1rem;
-  background-color: white;
+  background-color: var(--btn-color);
   font-size: 1rem;
   max-width: 50%;
 }
@@ -163,13 +170,13 @@ nav > ul > li > a {
 form {
   display: grid;
   gap: 1rem;
-  background-color: white;
+  background-color: var(--btn-color);
   padding: 1rem 1rem 1.5rem 1rem;
   margin: 0 1rem;
 }
 form > h3 {
   text-align: center;
-  color: #a05941;
+  color: var(--btn-background-color);
   letter-spacing: 0.5rem;
   text-transform: uppercase;
   padding: 0rem 5rem;
@@ -179,7 +186,7 @@ form > span {
   text-align: center;
   font-size: 3rem;
   font-weight: bold;
-  color: #a05941;
+  color: var(--btn-background-color);
   padding: 0;
   margin: 0;
 }
@@ -191,9 +198,9 @@ textarea:hover {
   border: 2px black solid;
 }
 form > button {
-  background-color: #a05941;
-  color: white;
-  border: solid 1px #a05941;
+  background-color: var(--btn-background-color);
+  color: var(--btn-color);
+  border: var(--btn-border);
   padding: 1rem 1.5rem;
 }
 .divider-img {
@@ -201,7 +208,7 @@ form > button {
 }
 .more-info {
   background-color: #133032;
-  color: white;
+  color: var(--btn-color);
   padding: 0;
   margin: 0;
 }
@@ -213,7 +220,7 @@ form > button {
   text-align: center;
 }
 .section-h3 {
-  text-transform: uppercase;
+  text-transform: var(--uppercase-text-transform);
   letter-spacing: 0.5rem;
 }
 article {
@@ -227,7 +234,7 @@ article > p {
   display: grid;
 }
 .help > a {
-  color: white;
+  color: var(--btn-color);
   padding-bottom: 0.5rem;
 }
 .subscribe {
@@ -238,7 +245,7 @@ article > p {
   padding-bottom: 0.5rem;
 }
 .subscribe > input {
-  color: white;
+  color: var(--btn-color);
   background-color: #133032;
   border: solid 1px white;
   padding: 0.5rem;
@@ -250,13 +257,13 @@ article > p {
   margin-top: 1rem;
   padding: 1rem;
   font-size: 1rem;
-  background-color: white;
+  background-color: var(--btn-color);
 }
 .socials {
   padding: 5rem 0rem 3rem 0rem;
 }
 .socials > a {
-  color: white;
+  color: var(--btn-color);
   font-size: 1.5rem;
   padding: 0rem 0.5rem;
 }
@@ -269,7 +276,7 @@ article > p {
 }
 footer {
   text-align: center;
-  color: #a05941;
+  color: var(--btn-background-color);
 }
 
 @media only screen and (min-width: 540px) {
@@ -318,7 +325,7 @@ footer {
   }
   .login-cart {
     display: flex;
-    color: #a05941;
+    color: var(--btn-background-color);
     align-items: flex-end;
     padding-right: 1rem;
   }
@@ -342,14 +349,14 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: white;
+    background-color: var(--btn-color);
     padding: 0;
     margin: 0;
   }
   .search-bar {
     padding: 0.5rem;
     margin: 0.5rem;
-    color: #a05941;
+    color: var(--btn-background-color);
   }
   .search-bar:hover {
     border: 1px solid #a05941;
@@ -358,7 +365,7 @@ footer {
     border: none;
   }
   ::placeholder {
-    color: #a05941;
+    color: var(--btn-background-color);
   }
   .hamburger-menu {
     display: none;

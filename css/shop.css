@@ -1,13 +1,13 @@
 a {
   text-decoration: none;
-  color: #a05941;
+  color: var(--btn-background-color);
   padding: 0;
   margin: 0;
 }
 button {
-  color: white;
-  background-color: #a05941;
-  border: #a05941 solid 1px;
+  color: var(--btn-color);
+  background-color: var(--btn-background-color);
+  border: var(--btn-border);
   padding: 1rem 3rem;
   margin-top: 0.5rem;
   width: 100%;
@@ -18,12 +18,12 @@ button:hover {
   border: #c39484 solid 1px;
 }
 h1 {
-  text-transform: uppercase;
+  text-transform: var(--uppercase-text-transform);
   letter-spacing: 0.1rem;
 }
 /* SHOP JUMBOTRON */
 .shop-jumbo {
-  color: white;
+  color: var(--btn-color);
   background-image: url(../assets/images/shop-jumbo.png);
   min-height: 500px;
   background-attachment: fixed;
