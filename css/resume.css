@@ -91,7 +91,7 @@ a:hover{
   transform: rotate(-405deg);
 }
 
-@media (max-width: 700px) {
+@media screen a(max-width: 700px) {
   .menu-button-container {
     display: flex;
   }
@@ -184,14 +184,21 @@ a:hover{
  .article-p {
   font-size: 6vw;
  }
+
+ section {
+  background-color: white;
+  width: 60%;
+  margin: 0.5rem auto;
+  padding: 1.5rem;
+ }
  .skill h1 {
   margin-bottom: 1rem;
-  font-size: 8vw;
+  font-size: 5vw;
  }
  .lang h1 {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  font-size: 8vw;
+  font-size: 5vw;
  }
  /* footer */
  footer {
@@ -233,9 +240,10 @@ a:hover{
   background: white;
   color: black;
  }
- @media (min-width: 700px) {
+ @media screen and (min-width: 700px) {
   .container{
     display: flex;
+    justify-content: space-between;
     
   }
   .container p{
@@ -259,7 +267,7 @@ a:hover{
   flex-direction: row;
   justify-content: space-between;
   width: 60%;
-    padding: 2rem;
+  padding: 2rem;
 
  }
  article a{
@@ -275,7 +283,27 @@ a:hover{
   font-size: 2vw;
   width: 60%;
   margin-top: 2.5rem;
+ } 
+ section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 60%;
+  padding: 2rem;
+  
  }
 
-}
+
+ .skill h1{
+  font-size: 1.5rem;
+
+ }
+ .lang h1{
+  font-size: 1.5rem;
+ }
+ }
+
+
+
+
 
