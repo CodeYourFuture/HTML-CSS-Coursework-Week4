@@ -11,10 +11,11 @@
 
 /* Buttons */
 .m__buttons {
-    position: absolute;
-    top: 390px;
-    left: 80px;
     z-index: 1;
+}
+
+.m__buttons--desktop {
+    display: none;
 }
 
 /* Card */
@@ -82,7 +83,6 @@
 /* Main content */
 .m__heading {
     padding-top: 20px;
-    margin-left: 30px;
 }
 
 .m__heading h1 {
@@ -98,7 +98,6 @@
 }
 
 .m__content {
-    margin-left: 30px;
     margin-bottom: 50px;
 }
 
@@ -111,15 +110,15 @@
     /* Main */
     .main--primary {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 40vh 60vh;
+        grid-template-columns: 1fr 5vh 1fr;
+        grid-template-rows: 40% 10% 50%;
         height: 100vh;
     }
 
     .m__hero {
         position: relative;
         top: 0;
-        grid-row: 1/3;
+        grid-row: 1/4;
         width: 40vw;
         height: 100%;
     }
@@ -128,12 +127,13 @@
     .m__card {
         position: absolute;
         left: 200px;
+        grid-column: 1/2;
+        grid-row: 1/2;
         justify-content: space-between;
         align-self: center;
         width: 30vw;
         height: 80vh;
-        grid-column: 1/2;
-        grid-row: 1/2;
+
     }
 
     .m__card__img {
@@ -156,14 +156,9 @@
         padding: 20px;
     }
 
-    /* Buttons */
-    .m__buttons {
-        left: 700px;
-    }
-
     /* Main content */
     .m__heading {
-        grid-column: 2/3;
+        grid-column: 3/4;
         grid-row: 1/2;
         margin-top: 40px;
     }
@@ -176,11 +171,27 @@
         font-size: 25px;
     }
 
-    .m__content {
-        grid-column: 2/3;
+    /* Buttons */
+    .m__buttons {
+        grid-column: 3/4;
         grid-row: 2/3;
+        align-self: center;
+        margin: 30px 0;
+    }
+
+    .m__buttons--mobile {
+        display: none;
+    }
+
+    .m__buttons--desktop {
+        display: block;
+    }
+
+    .m__content {
+        grid-column: 3/4;
+        grid-row: 3/4;
         width: 30vw;
-        margin-top: 120px;
+        margin-top: 20px;
         font-size: 17px;
     }
 
