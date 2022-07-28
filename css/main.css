@@ -245,7 +245,20 @@ font-size: 0.9em;
 .about{
  background: white;
  color: #A05941;
+ display: grid;
+ grid-template-rows: auto auto;
+ grid-template-columns: repeat(5, auto);
+ grid-template-areas:
+ "about-div about-div about-div about-div"
+ "img1 img1 img1 img1"
+ "img2 img2 img2 img2"
+ "img3 img3 img3 img3"
+ "buy-online buy-online buy-online buy-online"
  
+}
+
+.about > div:first-child{
+  grid-area: about-div
 }
 
 h2{
@@ -272,11 +285,24 @@ h2{
  margin-bottom: -4px;
 }
 
+#img1{
+grid-area: img1;
+}
+
+#img2{
+ grid-area: img2;
+}
+
+#img3{
+  grid-area: img3;
+}
+
 .about > div:last-child{
  height: 400px;
  background: #133032;
  color: white;
  text-align: center;
+ grid-area: buy-online;
 }
 
 #buy_online{
@@ -476,6 +502,40 @@ grid-template-rows:22% 18% 7% 6%;
   background-position: bottom;
 }
  
+.about{
+  height: 150vh;
+  margin-top: 2em;
+  grid-template-rows: 45% 55%;
+  grid-template-columns:
+  50% 1fr 1fr;
+  grid-template-areas:
+  "about-div img1 img2"
+
+  "img3 buy-online buy-online" 
+}
+
+.about_para{
+  line-height: 1.5em;
+ 
+}
+
+#img1, #img2, #img3, .about >div:last-child{
+  height: 100%;
+}
+
+#buy_online{
+ width: 63%;
+ font-size: 3.7em;
+ padding-bottom: 0.5em;
+}
+
+.buy_online button{
+  background-color: white;
+  color: black;
+  width: 33%;
+  
+  
+}
 
   
 }
