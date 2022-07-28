@@ -502,7 +502,23 @@ footer a {
         display: flex;
         flex-direction: column;
     }
+
+
     /* Adjust Section 8 */
 
+    .section8 img {
+        width: 20%;
+    }
+
+
     /* Adjust Footer */
+
+    #footer-desktop {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    footer p {
+        text-align: center;
+    }
 }
