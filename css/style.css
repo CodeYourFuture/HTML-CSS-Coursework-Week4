@@ -334,3 +334,8 @@ footer a {
     line-height: 1.5em;
 }
 
+/* Media Query Desktop */
+
+@media only screen and (min-width: 540px) {
+    
+} 
