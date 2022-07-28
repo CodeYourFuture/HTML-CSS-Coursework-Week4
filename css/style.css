@@ -195,9 +195,6 @@ footer {
     }
 
 
-/* Section 1 */
-
-
 /* Section 2 */
 
 .section2 {
@@ -212,6 +209,7 @@ footer {
 
 .first-online-order {
     background-color: var(--lylac);
+    padding: 1em 0;
 }
 
 .img1 {
@@ -341,6 +339,29 @@ footer a {
 
 @media only screen and (min-width: 540px) {
    
+     /* Adjust Font Sizes */
+
+    main h1 {
+        font-size: 3.5em;
+    }
+
+    p {
+        font-size: 1.4em;
+    }
+
+    h4 {
+        font-size: 2em;
+    }
+
+
+    /* Adjust Button Size */
+
+    button {
+        padding: 1.5em 4.5em;
+        font-size: 1.3em;
+    }
+
+
     /* Adjust Header - Button and Hamburger Menu */
 
     header {
@@ -350,7 +371,7 @@ footer a {
 
     .header2 {
         order: 1;
-        width: 55%;
+        width: 53%;
         justify-content: space-between;
     }
 
@@ -381,6 +402,10 @@ footer a {
         padding-left: 5em;
     }
 
+    .hamburger {
+        padding-left: 1em;
+    }
+    
     .nav-link {
         color: var(--white)
     }
@@ -399,27 +424,38 @@ footer a {
 }
 
 
-    /* Adjust Font Size */
+    /* Adjust Section 1 */
 
-    h1 {
-        font-size: 3.5em;
-    }
-
-    p {
-        font-size: 1.4em;
-    }
-
-    h4 {
-        font-size: 2em;
-    }
-
-    /* Adjust Button Size */
-
-    button {
-        padding: 1.5em 5.5em;
+    .section1 {
+        padding-top: 3em;
     }
 
 
+    /* Adjust Section 2 */
 
 
+    /* Adjust Section 3 */
+
+    #section3-desktop {
+        display: flex;
+    }
+
+    #section3-item {
+        display: flex;
+        flex-direction: column;
+        padding: 4em 0;
+    }
+
+
+    /* Adjust Section 4 */
+
+    /* Adjust Section 5 */
+
+    /* Adjust Section 6 */
+
+    /* Adjust Section 7 */
+
+    /* Adjust Section 8 */
+
+    /* Adjust Footer */
 }
