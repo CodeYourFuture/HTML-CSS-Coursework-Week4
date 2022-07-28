@@ -1,3 +1,86 @@
-/* Add your CSS here */
+#search {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+}
 
-/* Dont' forget to link this file to your HTML in the <head> */
+#search-box {
+    justify-content:  flex-start;
+}
+
+#basket {
+    justify-content: flex-end;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: 100%
+}
+
+/* logo */
+.logo_img {
+    padding: 10px 10px 10px 10px;
+}
+
+
+
+
+
+    button {
+    margin: 10px 10px;
+    }
+    /* Mobile Navigation */
+    .logo {
+    text-align: left;
+    width: 100%;
+    height: auto;
+    }
+
+    .topnav {
+    overflow: hidden;
+    background-color: rgb(233, 233, 233);
+    
+    }
+
+    ul {
+    list-style-type: none;
+    }
+
+    .nav_menu1 {
+    display: none;
+    }
+
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    .topnav #myLinks {
+    display: none;
+    text-align: right;
+    margin-right: 10px;
+    }
+
+    /* Style navigation menu links */
+    .topnav a {
+    color: var(--dark-gray);
+    text-decoration: none;
+    display: block;
+    }
+
+    /* Style the hamburger menu */
+    .topnav a.icon {
+    color: var(--dark-gray);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    }
+
+    #ham-button {
+    margin: 30px 30px;
+
+
+    }
+    /* Add a grey background color on mouse-over */
+    .topnav a:hover {
+    background-color: #ddd;
+    color: var(--white);
+    }
