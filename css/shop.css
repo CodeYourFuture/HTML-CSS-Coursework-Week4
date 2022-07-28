@@ -1,3 +1,26 @@
+a {
+  text-decoration: none;
+  color: #a05941;
+  padding: 0;
+  margin: 0;
+}
+button {
+  color: white;
+  background-color: #a05941;
+  border: #a05941 solid 1px;
+  padding: 1rem 3rem;
+  margin-top: 0.5rem;
+  width: 100%;
+  font-size: 1rem;
+}
+button:hover {
+  background-color: #c39484;
+  border: #c39484 solid 1px;
+}
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
 /* SHOP JUMBOTRON */
 .shop-jumbo {
   color: white;
@@ -16,20 +39,55 @@
 }
 .shop-jumbo > article > h1 {
   font-size: 3rem;
-  text-transform: capitalize;
   margin-bottom: 0;
 }
-.bi {
+.shop-jumbo > article > p {
+  padding: 0.3rem;
+  margin: 0;
+}
+.bi-arrow-down-circle-fill {
   font-size: 2rem;
 }
 /* SHOP ITEMS */
+.shop-all {
+  padding: 2.5rem 0;
+}
 .shop-all > h1 {
   text-align: center;
   font-size: 2rem;
+  padding: 0;
+  margin: 0;
 }
 .shop-items {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+article {
+  text-align: center;
+}
+article > a > img {
+  max-width: 100%;
+  padding: 0;
+}
+
+@media only screen and (min-width: 900px) {
+  .shop-jumbo {
+    min-height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .shop-jumbo > article {
+    padding: 0 15rem;
+  }
+  .shop-jumbo > article > h1 {
+    font-size: 5rem;
+  }
+  .shop-jumbo > article > p {
+    font-size: 1.2rem;
+  }
+  .shop-items {
+    display: grid;
+    grid-template: auto / repeat(3, 1fr);
+  }
 }
