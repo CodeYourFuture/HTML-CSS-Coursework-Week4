@@ -107,3 +107,26 @@ footer {
 
 /* Footer */
 
+.footer-navs {
+    display: flex;
+    justify-content: space-around;
+}
+
+#email {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.serving-safely {
+    display: flex;
+}
+
+.footer-link {
+    text-decoration: underline;
+}
+
+.jb {
+    border: 1px solid var(--black);
+}
+
