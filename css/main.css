@@ -125,6 +125,10 @@ body{
     border-radius: 1em;
     background-color: #A9B4C2;
 }
+/*Navigation Section in desktop version*/
+.nav-items-desktop{
+    display: none;
+}
 /* Main section*/
 .main{
     height: auto; 
@@ -238,7 +242,7 @@ body{
     background-color: var(--white);
     border-radius: 4rem;
     font-weight: lighter;
-    border-width: 2px;
+    border-width: 1px;
     min-height: 1.5rem;
     max-height: 1.5rem;
     padding-right: 1rem;
@@ -282,8 +286,8 @@ body{
     max-height: 1.2rem;
 }
 #linkdin-icon{
-    max-width: 1.7rem;
-    max-height: 1.7rem;
+    max-width: 1.5rem;
+    max-height: 1.5rem;
 }
 #linkdin-icon-footer{
     max-width: 1.5rem;
@@ -305,4 +309,64 @@ body{
         min-width: 7rem;
     }
     
+}
+@media screen and (min-width:900px) {
+    .hamburger-menu{
+        display: none;
+    }
+    .nav-items-desktop{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+        margin-right: 2.5rem;
+    }
+    .nav-items{
+        font-size: 1.2rem;
+        font-weight: 100;
+        text-decoration: none;
+        color: var(--black);
+        font-family:'Poppins', sans-serif;
+    }
+    .nav-items:hover{
+        color: var(--rotal-blue);
+    }
+    .header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .main{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-content{
+        min-width: 20%;
+        max-width: 5em;
+        min-height: 89%;
+        max-height: 89%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .profile-text-container{
+        min-width: 50%;
+        max-width: 10em;
+        min-height: 89%;
+        max-height: 89%;
+        box-shadow: none;
+        border: none;
+    }
+    .profile-text-container>*{
+        
+    }
+    .hello{
+        font-size: 5.3rem;
+        font-family: 'Poppins',sans-serif;
+        margin: 0;
+        margin-top: 1rem;
+    }
+    .text1{
+        
+    }
 }
