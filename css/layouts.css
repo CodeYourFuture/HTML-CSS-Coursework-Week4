@@ -398,6 +398,53 @@ body button {
     margin-top: 0.8rem;
 }
 
+.networks h2 {
+    font-size: 3.5rem;
+    margin: 5.5rem 0 1rem;
+}
+/* 
+.thumbnails {
+    height: 16rem;
+    position: relative;
+} */
+
+.thumbnails img {
+    height: 20rem;
+    width: 16rem;
+}
+
+.img-thumb1 {
+    transform: rotate(334deg) translate(-50%, -50%);
+    width: 100%;
+    position: absolute;
+    top: -20%;
+    left: 28%; 
+}
+
+.img-thumb2 {
+    transform: rotate(19deg) translate(-50%, -50%);
+    width: 100%;
+    position: absolute;
+    top: 17%;
+    left: 36%; 
+}
+
+.img-thumb3 {
+    transform: rotate(347deg) translate(0, -50%);
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 53%; 
+}
+
+.img-thumb4 {
+    transform: rotate(17deg) translate(-50%, -50%);
+    width: 100%;
+    position: absolute;
+    top: 17%;
+    left: 75%; 
+}
+
 .hero h2,
 .hero h3,
 .differences h2,
