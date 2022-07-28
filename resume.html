@@ -15,7 +15,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Maya Nelson's Resume</title>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
 
 <body>
@@ -32,10 +31,10 @@
         </div>
         <nav id="nav-list">
             <ul>
-                <a class="links active" href="index.html">
+                <a class="links " href="index.html">
                     <li>ABOUT ME</li>
                 </a>
-                <a class="links" href="resume.html">
+                <a class="links active" href="resume.html">
                     <li>RESUME</li>
                 </a>
                 <a class="links" href="projects.html">
@@ -160,9 +159,9 @@
                         </p>
                     </div>
                 </div>
-                <div class="exp">
+                <div class="skills">
                     <h3>Professional skillset</h3>
-                    <div id="skills">
+                    <div id="skill">
                         <div>
                             <div class="rect-shape"></div>
                             <p>Entrepreneurial Mindset</p>
@@ -236,6 +235,29 @@
         <p>This website design was created by Wix.com, and is used here for strictly educational
             purposes.</p>
     </footer>
+    <script>
+        function myFunction(y) {
+            y.classList.toggle("change");
+            var x = document.getElementById("nav-list");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+        function chkMediaQuery(x) {
+            if (x.matches) { // If media query matches
+
+                $("#btn-container").appendTo("#loc");
+            } else {
+                $("#btn-container").appendTo("#btn-new-loc");
+
+            }
+        }
+        var x = window.matchMedia("(max-width: 768px)")
+        chkMediaQuery(x) // Call listener function at run time
+        x.addListener(chkMediaQuery)
+    </script>
 </body>
 
 </html>
