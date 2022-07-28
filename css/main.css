@@ -135,8 +135,8 @@ body{
     width: 100%;
     background: linear-gradient(
         to right,
-        var(--light-beige) 0%,
-        var(--light-beige) 40%,
+        var(--dark-beige) 0%,
+        var(--dark-beige) 40%,
         white 40%,
         white 100%
     );
@@ -296,6 +296,12 @@ body{
 .links{
     cursor: pointer;
 }
+.footer-icons-desktop{
+    display: none;
+}
+.desktop-only{
+    display: none;
+}
 @media screen and (min-width:540px) and (max-width:900px) {
     .footer-row2{
         display: flex;
@@ -342,12 +348,15 @@ body{
         align-items: center;
     }
     .main-content{
-        min-width: 20%;
+        min-width: 40%;
         max-width: 5em;
         min-height: 89%;
         max-height: 89%;
         display: flex;
         justify-content: space-between;
+        background-color: var(--light-beige);
+        box-shadow: 0px 2px 8px 10px rgba(41, 41, 41, 0.1);
+        z-index: 1;
     }
     .profile-text-container{
         min-width: 50%;
@@ -356,9 +365,7 @@ body{
         max-height: 89%;
         box-shadow: none;
         border: none;
-    }
-    .profile-text-container>*{
-        
+        padding-left: 1rem;
     }
     .hello{
         font-size: 5.3rem;
@@ -366,7 +373,55 @@ body{
         margin: 0;
         margin-top: 1rem;
     }
+    .who-i-am{
+        font-family: 'Poppins',sans-serif;
+    }
+    .text2{
+        margin-top: 0;
+        padding-bottom: 1.5rem;
+        margin-top: 1rem;
+    }
     .text1{
+        margin-bottom: 0;
+    }
+    .footer-row1{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .footer-icons{
+        display: none;
+    }
+    #follow-title{
+        display: none;
         
+    }
+    .footer-row1{
+        display: flex;
+        flex-direction: row;
+    }
+    #optimize{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .footer-icons-des{
+        max-width: 1.2rem;
+        max-height: 1.2rem;
+    }
+    #footer-follow{
+        font-family: 'Quicksand',
+            sans-serif;
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin: 0;
+            
+    }
+    .desktop-only{
+        display: inline;
+        margin-left: 1.5rem;
     }
 }
