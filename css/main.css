@@ -1,3 +1,90 @@
 /* Add your CSS here */
+:root {
+        --dark-Beige: #e6dacd;
+        --light-Beige: #f4ece6;
+        --royal-Blue: #0150fd;
+        --black: #000;
+        --white: #fff;
+}
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h1,
+h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+body{
+    font-family: "quicksand", sans-serif;
+    font-weight: 300;
+    background: var(--dark-Beige);
+}
+.navigation-menu{
+    display: fixed;
+    justify-content: flex-end;
+    top: 0;
+    right: 0px;
+    align-items: center ;
+}
+.nav-item {
+    padding: 22px 0;
+    align-items: flex-end;
+     }
+.nav-header{
+color: black;
+font-weight: 500;
+text-decoration: none;
+padding: 0 1em;
+margin-right: 10px;
+position: relative;
+transition: opacity 0.25s;
+     }
+.nav-header:hover {
+    color: var(--royal-Blue);
+          }
+.grid-container{
+    display: grid;
+    grid-template-rows: 1fr 2fr 250px;
+    grid-template-areas: 
+    "h h h h h h h h h h h h h"
+    "m m m m m m m m m m m m m"
+    "f f f f f f f f f f f f f";
+}
+.navigation-bar{
+display: grid;
+grid-template-rows: 100px;
+grid-template-areas: "Name . h-span heading . nav";
+margin: 1rem 1rem;
+line-height: 2rem;
+}
+.navigation-bar ul{
+    list-style:none;
+}
+#square {
+    color: blue;
+    align-self: center;
+    height: 18.5px;
+    width: 24px;
+    padding-right: 0.5rem;
+}
+#main-header{
+    display: grid;
+    grid-area: h;
+    background-color: var(--white);
+    position: relative;
+    z-index: 999;
+}
+main{
+    grid-area: m;
+    background: var(--dark-Beige);
+    padding: 1em;
+}
+footer{
+    grid-area: f;
+    background-color: var(--white);
+}
+/* moving on towards the main section which is the display screen*/
 /* Dont' forget to link this file to your HTML in the <head> */

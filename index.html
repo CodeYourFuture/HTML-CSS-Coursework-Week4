@@ -4,35 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="main.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/main.css">
     <!-- Add a link to your custom CSS here -->
 
     <title>Responsive grid project</title>
 </head>
 
 <body>
-<header>
-    <div class="header-container">
-        <span class="h-span"></span>
-        <div class="Name">Maya Nelson</div>
+<header id="main-header">
+    <section class="navigation-bar">
+    <div class="grid-container">
+        <img src="/img/blue-square.png" id="square"/>
+        <div class="Name"><h1>Maya Nelson</h1></div>
+    </div>
+        <span class="h-span">/</span>
     </div>
 <div class="heading">PROJECT MANAGER</div>
-<nav>
+<nav id="nav">
     <ul class="navigation-menu">
-          <ls class="nav-item"><a class="nav-header" href="#">ABOUT ME</a> </ls>
+          <ls class="nav-item"><a class="nav-header" href="#">ABOUT ME</a></ls>
           <ls class="nav-item"><a class="nav-header" href="#">RESUME</a></ls>
-          <ls class="nav-item"><a  class="nav-header" href="#">PROJECTS</a></ls>
+          <ls class="nav-item"><a class="nav-header" href="#">PROJECTS</a></ls>
           <ls class="nav-item"><a class="nav-header" href="#">CONTACT</a></ls>
     </ul>
-   </nav>
+</nav>
+</section>
 </header>
 <main>
     <div class="main-container">
     <div class= "w-box">
 </div>
+</div>
     <div class="profile">
      <div class="profile-picture">
-        <img src="img/photo-woman.png">
+        <img class="image" src="img/photo-woman.png" alt="photo of lady">
+     </div>
      </div>
      <div class="profile-name">
       <h3>Maya<br>Nelson</h3>
@@ -54,14 +61,13 @@
           I'm a great place for you to tell a story and let your users know a
           little more about you.
         </p>
-      </section>
-    </main>
-    <div class="p-social-media">
+    </section>
+    <section class="p-social-media">
         <img src="/img/facebook.png" alt="" class="logo-img"/>
         <img src="/img/twitter.png" alt="" class="logo-img"/>
         <img src="/img/linkedin.png" alt="" class="logo-img"/>
         <img src="/img/instagram.png" alt="" class="logo-img"/>
-    </div>
+    </section>
 </main>
 <footer>
     <p>&copy 2023 by Maya Nelson</p>
