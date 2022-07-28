@@ -494,6 +494,14 @@ footer a {
 
     /* Adjust Section 7 */
 
+    #section7-desktop {
+        display: flex;
+    }
+
+    #section7-item {
+        display: flex;
+        flex-direction: column;
+    }
     /* Adjust Section 8 */
 
     /* Adjust Footer */
