@@ -275,21 +275,27 @@ footer {
 footer {
     background-color: var(--dark-green);
     color: var(--white);
+    padding-top: 2em;
+    padding-bottom: 1em;
+    text-align: left;
 }
 
 .footer-navs {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 footer a {
     color: var(--white);
+    line-height: 2em;
 }
 
 #email {
     border-top: none;
     border-left: none;
     border-right: none;
+    border-bottom: solid 2px white;
+    background-color: var(--dark-green);
 }
 
 #footer-button {
@@ -307,6 +313,9 @@ footer a {
 }
 
 .jb {
-    border: 1px solid var(--black);
+    border: 1px solid var(--white);
+    width: 5%;
+    border-radius: 50%;
+    line-height: 1.5em;
 }
 
