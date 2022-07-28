@@ -101,6 +101,32 @@ nav > ul > li > a {
   border: solid 1px #a05941;
   padding: 0.5rem 1.5rem;
 }
+/* ABOUT SECTION */
+.about {
+  text-align: center;
+  color: #a05941;
+  margin: 0;
+  background-color: white;
+}
+.about > article {
+  padding-bottom: 4rem;
+}
+.about > span {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  color: #a05941;
+  font-size: 3rem;
+}
+.about > h1 {
+  letter-spacing: 0.5rem;
+}
+.about > p {
+  padding: 0rem 2rem 3rem 2rem;
+}
+.about > img {
+  max-width: 100%;
+}
 /* DISCOUNT SECTION */
 .discount {
   background-color: #133032;
@@ -357,8 +383,26 @@ footer {
     font-size: 1rem;
     padding-bottom: 2rem;
   }
-  .about-img {
-    display: none;
+  .about {
+    display: grid;
+    grid-template: auto / repeat(4, 1fr);
+    padding: 0;
+    margin: 0;
+  }
+  .about > article {
+    padding: 1rem 3rem 2rem 3rem;
+    grid-column: span 2;
+  }
+  .plant-img {
+    grid-column: 3;
+    min-height: 100%;
+    object-fit: cover;
+  }
+  .leaf-img {
+    grid-column: 4;
+    width: auto;
+    min-height: 100%;
+    object-fit: cover;
   }
   .discount {
     display: grid;
