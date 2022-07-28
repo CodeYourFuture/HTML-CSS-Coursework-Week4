@@ -45,8 +45,12 @@
     outline: none;
 }
 
-.m__form__input:focus {
+.m__form__input:focus:valid {
     border-bottom: 3px solid var(--royal-blue);
+}
+
+.m__form__input:focus:invalid {
+    border-bottom: 2px solid red;
 }
 
 /* Textarea */
