@@ -1,21 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Outfit:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/e5b3d06da0.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Add a link to your custom CSS here -->
 
     <title>Responsive grid project</title>
-</head>
+  </head>
+  <body>
+    <header>
+      <div>
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input
+          class="search-button"
+          type="text"
+          attribute
+          data-magnifier-mode="glass"
+          placeholder="Search.."
+        />
+      </div>
+      <div>
+        <i class="fa-solid fa-user"></i>
+        <a href="#home" class="active">Log in</a>
+        <i class="fa-solid fa-weight-hanging"></i>
+      </div>
 
-<body>
+      <!-- <img src="img/bag-check-fill.svg" class="logo-cart" alt="bag" /> -->
+    </header>
+    <main>
+      <div class="title">
+        <p>Prickles & Co.</p>
+        <p>Call Us Now! 123-456-7890</p>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#" class="nav-link">Shop</a></li>
+        <li><a href="about" class="nav-link">About</a></li>
+        <li><a href="#" class="nav-link">FAQ</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <script src="index.js"></script>
+
+      <!-- <div class="topnav"> -->
+      <!-- Navigation links (hidden by default) -->
+      <!-- <div id="myLinks">
+          <a href="#shop">Shop</a>
+          <a href="#about">About</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+        </div> -->
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a> -->
+      <!-- </div> -->
+    </main>
+    <section class="first-section">
+      <div class="hero">
+        <p>Estb</p>
+        <svg
+          preserveAspectRatio="xMidYMid meet"
+          data-bbox="10.326 50.3 180.129 101.208"
+          xmlns="http://www.w3.org/2000/svg"
+          width="200"
+          height="200"
+          viewBox="10.326 50.3 180.129 101.208"
+          role="presentation"
+          aria-hidden="true"
+        >
+          <g>
+            <path
+              d="M105.6 52.7c-1.8-1.5-3.5-2.4-5.1-2.4-1.6.1-3.3 1-5.1 2.4-11.2 9.2-16.3 21-17 35.2-.4 7.5-1.3 14.8 10.2 12.6 1.3-.2 3.1-.2 4.3.6 1 .6 1.9 1.4 2.6 2.4 3 4.3 2.2 9.1 1 13.9-1.8 7-2.5 14.2-1.6 21.3.6 4.9-.6 13.1 5.6 12.8 6.3.3 5-7.9 5.6-12.8.9-7.2.2-14.3-1.6-21.3-1.2-4.8-2.1-9.7 1-13.9.7-.9 1.6-1.7 2.6-2.4 1.2-.8 3-.8 4.3-.6 11.5 2.1 10.6-5.2 10.2-12.6-.7-14.2-5.8-26-17-35.2z"
+            ></path>
+            <path
+              d="M57.6 128.4c1.5-2.3 3.7-6.5 3.6-11.2-.2-5.8-4-10.6-5.4-12.2-.3-.3-.7-.3-1 0-1.2 1.5-4.4 6.1-4.2 11.8.1 3.7 3 8.4 4.8 10.8-.2 2-.2 4 0 5.5v.2c-4.4-2.4-8.9-5.5-12.9-9.7-.1-.2-.2-.3-.4-.4-1.5-1.6-2.9-3.2-4.1-5.1-.3-.4-.5-.8-.8-1.2-.8-2.6-.5-5.5.9-7.9 2.7-.7 6.4-2.2 9.1-5.2 4-4.3 4.6-10.5 4.7-12.5 0-.4-.3-.6-.7-.6-2 .3-8 1.5-12 5.8-2.6 2.7-3.4 8.2-3.2 11.6-.7 1.3-1.2 2.8-1.4 4.2-2.5-5-4.2-10.6-4.9-16.6.1-3 1.7-5.7 3.9-6.9 2.1-.1 5.5-.6 8.1-2.7 3.2-2.6 4.2-6.9 4.5-8.7.1-.4-.2-.8-.7-.8-1.7 0-6.2.1-9.3 2.7-2.8 2.3-3.9 5.9-4.3 8-1 .7-1.9 1.6-2.5 2.6-.2-5.6.4-11.7 1.6-18.1 1.8-.5 5.6-2.1 8.1-5 3.2-3.6 3.8-8.4 3.8-10.3 0-.4-.4-.7-.8-.7-1.9.4-5.9 1.8-9.4 5.2-2.6 2.6-3.4 6.4-3.6 8.5-2 9.5-2.6 18.2-1.6 26.1v.2c-1.1-1.4-2.3-2.7-3.4-3.8-.1-2.4-.7-6.2-3.1-9.2-3.1-3.9-8.2-5.1-9.9-5.4-.3-.1-.6.2-.7.5-.1 1.7 0 6.6 3 10.4 1.8 2.3 5.7 3.9 8.3 4.6 2.5 1.7 6 6.4 6.9 9.1 1.3 5.7 3.5 10.9 6.6 15.6v.1c.3.5.6 1 .9 1.4l.9 1.2c-1.3-.4-2.7-.8-4.1-.8-.1-.2-.1-.4-.3-.6-1.9-2.3-5.4-5.6-9.1-6.2-5.6-1-10.9 1.6-12.8 2.7-.4.2-.5.8-.2 1.2 1.5 1.7 5.6 5.8 11.2 6.8 3.8.6 7.5-.4 10.1-1.4.1-.1.2-.2.3-.2 3.2-.3 7.5 2 8.4 2.7 5.5 5.9 11.9 9.8 17.6 12.4-.6.4-1.6.8-3.1 1.1-5-3.4-12.7-4-16.4-3.2-7.8 1.8-12.9 7.4-14.5 9.6-.3.4-.2.9.3 1.1 2.4 1.2 10.2 4.6 18 2.8 5.8-1.4 10.3-5.2 12.9-8.1v-.1c1.2-.2 2.3-.5 3.2-.9.9-.4 1.5-.9 1.9-1.3 7.5 3.1 13.4 4 13.9 4l.3-2.2c-.1 0-7.7-1.1-16.5-5.4-.2 0-.8-2.1-.5-5.9z"
+            ></path>
+            <path
+              d="M190.1 115.9c-1.9-1.1-7.3-3.7-12.8-2.7-3.7.7-7.2 3.9-9.1 6.2l-.3.6c-1.4 0-2.8.3-4.1.8l.9-1.2c.3-.5.6-1 .9-1.4v-.1c3-4.7 5.2-9.9 6.6-15.6.9-2.6 4.4-7.4 6.9-9.1 2.5-.7 6.4-2.3 8.3-4.6 3-3.8 3.1-8.7 3-10.4 0-.3-.3-.6-.7-.5-1.7.3-6.8 1.5-9.9 5.4-2.4 3-3 6.8-3.1 9.2-1.2 1-2.4 2.3-3.4 3.8v-.2c.9-7.9.4-16.6-1.6-26.1-.2-2.1-1-5.9-3.6-8.5-3.5-3.4-7.5-4.9-9.4-5.2-.4-.1-.8.2-.8.7 0 1.9.6 6.7 3.8 10.3 2.6 2.9 6.3 4.4 8.1 5 1.3 6.4 1.8 12.4 1.6 18.1-.7-1.1-1.5-2-2.5-2.6-.4-2-1.5-5.6-4.3-8-3.2-2.6-7.6-2.8-9.3-2.7-.4 0-.7.4-.7.8.3 1.7 1.3 6 4.5 8.7 2.6 2.1 6 2.6 8.1 2.7 2.2 1.2 3.7 3.9 3.9 6.9-.7 6.1-2.4 11.6-4.9 16.6-.2-1.5-.7-2.9-1.4-4.2.2-3.4-.6-8.9-3.2-11.6-4-4.2-10-5.5-12-5.8-.4-.1-.7.2-.7.6.1 2 .7 8.2 4.7 12.5 2.7 3 6.4 4.4 9.1 5.2 1.4 2.4 1.7 5.2.9 7.9-.3.4-.5.8-.8 1.2-1.3 1.8-2.7 3.5-4.1 5.1l-.4.4c-4 4.2-8.5 7.4-12.9 9.7v-.2c.2-1.6.2-3.5 0-5.5 1.8-2.4 4.7-7 4.8-10.8.2-5.7-3-10.3-4.2-11.8-.2-.3-.7-.3-1 0-1.4 1.6-5.2 6.3-5.4 12.2-.2 4.7 2.1 8.9 3.6 11.2.3 3.7-.2 5.8-.5 6.4-8.9 4.3-16.5 5.4-16.6 5.4l.3 2.2c.5-.1 6.4-.9 13.9-4 .4.4.9.9 1.9 1.3.9.4 2 .7 3.2.9v.1c2.6 2.8 7.1 6.7 12.9 8.1 7.8 1.8 15.6-1.6 18-2.8.4-.2.5-.7.3-1.1-1.6-2.2-6.7-7.8-14.5-9.6-3.7-.8-11.3-.2-16.4 3.2-1.5-.3-2.5-.7-3.1-1.1 5.7-2.6 12.1-6.6 17.6-12.4.9-.8 5.1-3 8.4-2.7.1.1.2.2.3.2 2.6 1.1 6.3 2.1 10.1 1.4 5.6-.9 9.8-5.1 11.2-6.8.4-.9.3-1.4-.1-1.7z"
+            ></path>
+          </g>
+        </svg>
+        <p>2023</p>
+      </div>
+
+      <h1>Prickles % Co</h1>
+      <p class="logo-text">Bring nature indoors</p>
+      <div>
+        <button class="btn-primary">Shop Now</button>
+      </div>
+    </section>
+
+    <section id="about" class="second-section">
+      <div class="contain-content">
+        <div class="contain-text">
+          <h2>About us</h2>
+          <hr />
+          <p>
+            I'm a paragraph. Click here to add your own text and edit me. It's
+            easy. Just click “Edit Text” or double click me to add your own
+            content and make changes to the font. Feel free to drag and drop me
+            anywhere you like on your page. I'm a great place for you to tell a
+            story and let your users know a little more about you.
+          </p>
+          <p>
+            This is a great space to write long text about your company and your
+            services. You can use this space to go into a little more detail
+            about your company. Talk about your team and what services you
+            provide.
+          </p>
+        </div>
+
+        <!-- <article class="images-container"> -->
+
+        <img src="img/5.png" class="first-image" alt="picture of cactus" />
+        <img src="img/6.png" class="second-image" alt="hand holding a leave" />
+        <img src="img/7.png" class="third-image" alt="a girl" />
+        <!-- </article> -->
+        <div class="text2-container">
+          <h3>Buy online now& get 10% off!</h3>
+          <div>
+            <button class="btn-3">Shop Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="third-section">
+      <form>
+        <h4>For special requests & <br />orders</h4>
+        <div class="wrap-rows">
+          <div>
+            <label for="first-name">First Name*</label>
+            <input type="text" id="first-name" name="first-name" required />
+          </div>
+          <div>
+            <label for="last-name">Last Name*</label>
+            <input
+              type="text"
+              id="last-name"
+              name="last-name"
+              min="3"
+              required
+            />
+          </div>
+        </div>
+        <label for="email">Email*</label>
+        <input type="email" id="email" name="email" />
+        <label for="phone">Phone*</label>
+        <input type="tel" id="phone" name="phone" />
+        <label for="Message">Message</label>
+        <textarea name="" id="Message" cols="30" rows="10"></textarea>
+        <input class="button-send" type="submit" value="Send" />
+      </form>
+      <img src="img/8.png" id="form-image" alt="cactus" />
+      <div class="contact-info">
+        <div class="info-contact">
+          <h5>Our store</h5>
+          <address>
+            Address: 500 Terry Francois Street San<br />
+            Francisco, CA 94158 <br />
+            Phone: 123-456-7890<br />
+            Email: info@mysite.com<br />
+          </address>
+        </div>
+        <div class="info-contact">
+          <h5>Opening hours</h5>
+          <p>Mon - Fri: 7am - 10pm</p>
+          <p>Saturday:8am-10pm</p>
+          <p>Sunday:8am-11pm</p>
+        </div>
+        <div class="info-contact">
+          <h5>Help</h5>
+          <p>Shipping& Returns</p>
+          <p>Privacy Policy</p>
+          <p>FAQ</p>
+        </div>
+      </div>
+
+      <div class="subscribe-section">
+        <h5>SUBSCRIBE</h5>
+        <div class="text-subscribe">
+          <label for="email">Enter your email here*</label>
+          <input type="email" id="another-email" name="email" />
+          <input type="submit" class="subscribe" value="Subscribe Now" />
+        </div>
+      </div>
+      <div class="social-media">
+        <img
+          src="https://static.wixstatic.com/media/23fd2a2be53141ed810f4d3dcdcd01fa.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/23fd2a2be53141ed810f4d3dcdcd01fa.png"
+          class="media"
+          alt="facebook"
+        />
+        <img
+          src="https://static.wixstatic.com/media/9c486556465843c5850fabfd68dfae49.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/9c486556465843c5850fabfd68dfae49.png"
+          class="media"
+          alt="pinterest"
+        />
+        <img
+          src="https://static.wixstatic.com/media/81af6121f84c41a5b4391d7d37fce12a.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/81af6121f84c41a5b4391d7d37fce12a.png"
+          class="media"
+          alt="instagram"
+        />
+      </div>
+      <div id="map-contain">
+        <div class="map">
+          <div class="mapouter">
+            <div class="gmap_canvas">
+              <iframe
+                width="437"
+                height="339"
+                id="gmap_canvas"
+                src="https://maps.google.com/maps?q=prickles%20&%20co&t=k&z=9&ie=UTF8&iwloc=&output=embed"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+              </iframe
+              ><a href="https://www.whatismyip-address.com"></a><br /><style>
+                .mapouter {
+                  position: relative;
+                  text-align: right;
+                  height: 339px;
+                  width: 437px;
+                }</style
+              ><a href="https://www.embedgooglemap.net">embedgooglemap.net</a
+              ><style>
+                .gmap_canvas {
+                  overflow: hidden;
+                  background: none !important;
+                  height: 339px;
+                  width: 437px;
+                }
+              </style>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Add your markup here -->
 
-
-    <!-- Please leave this in to credit the creators of this design -->
-    <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
-</body>
-
+    <footer>
+      <!-- Please leave this in to credit the creators of this design -->
+      <p>
+        This website design was created by Wix.com, and is used here for
+        strictly educational purposes.
+      </p>
+    </footer>
+  </body>
 </html>
