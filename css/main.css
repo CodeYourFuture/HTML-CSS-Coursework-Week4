@@ -15,6 +15,9 @@ h3 {
   font-family: "Outfit", sans-serif;
 }
 /* HEADER */
+.search-login {
+  display: none;
+}
 header {
   display: grid;
   grid-template: auto / repeat(2, 1fr);
@@ -31,6 +34,7 @@ header {
   color: #a05941;
   font-weight: bold;
   text-align: right;
+  padding-top: 0.5rem;
 }
 .desktop-nav {
   display: none;
@@ -283,9 +287,48 @@ footer {
   body {
     margin: 0 2rem;
   }
+  .login-cart {
+    display: flex;
+    color: #a05941;
+    align-items: flex-end;
+    padding-right: 1rem;
+  }
+  .login-cart > .bi {
+    font-size: 1.5rem;
+  }
+  .login-cart > p {
+    align-self: flex-end;
+    margin: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  .bi-basket2 {
+    padding-left: 2rem;
+  }
   header {
     display: flex;
     width: 100%;
+  }
+  .search-login {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+  }
+  .search-bar {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    color: #a05941;
+  }
+  .search-bar:hover {
+    border: 1px solid #a05941;
+  }
+  .search-bar > input {
+    border: none;
+  }
+  ::placeholder {
+    color: #a05941;
   }
   .hamburger-menu {
     display: none;
@@ -305,6 +348,14 @@ footer {
   }
   .jumbotron {
     min-height: 700px;
+  }
+  .jumbo-text > h1 {
+    font-size: 5rem;
+    letter-spacing: 1.5rem;
+  }
+  .jumbo-text > h2 {
+    font-size: 1rem;
+    padding-bottom: 2rem;
   }
   .about-img {
     display: none;
@@ -344,6 +395,7 @@ footer {
   .subscribe {
     grid-row: 2;
     grid-column: 2;
+    place-self: center;
   }
   .socials {
     grid-row: 3;
