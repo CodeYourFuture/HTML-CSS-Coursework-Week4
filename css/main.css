@@ -349,11 +349,16 @@ footer h2 {
     z-index: 2;
     position: absolute;
   }
+  
+  .hero h3{
+    text-align: center;
+    margin-top: 2rem;
+  }
   .article {
     width: 50%;
     padding-top: 16rem;
     z-index: 1;
-    margin-left: 45rem;
+    margin-left: 44rem;
     margin-right: 2rem;
     position: absolute;
     background-color:white;

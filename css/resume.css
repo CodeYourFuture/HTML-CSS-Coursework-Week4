@@ -253,13 +253,9 @@ a:hover{
  @media screen and (min-width: 700px) {
 .container{
     display: flex;
-    
-   }
+     }
  
-  
-  
-  
-  .container p{
+ .container p{
     margin-top: 2.0rem; 
   
   }

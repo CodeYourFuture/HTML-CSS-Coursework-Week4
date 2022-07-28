@@ -231,6 +231,9 @@ a:hover{
     margin-top: 2rem;
     margin-left: 1.5rem;
   }
+  .menu{
+    margin-top: 3rem;
+  }
 
   .hero {
     padding: 0 1rem;
@@ -239,12 +242,12 @@ a:hover{
 
   }
   .hero h1 {
-  font-size: 4vw;
+  font-size: 2.5rem;
   text-align: center;
   margin-bottom: 1rem;
  }
   .hero p {
-    font-size: 2vw;
+    font-size: 1rem;
     text-align: center;
     /* padding: 0.5rem 10rem; */
   }
@@ -273,16 +276,19 @@ a:hover{
   margin-bottom: 1rem;
  }
  .article-container p {
-  font-size: 1.5vw;
+  font-size: 1rem;
   margin-bottom: 1rem;
   margin-right: 2rem;
  }
  article img {
   width: 30vw;
   }
+  
+    
+  
  footer{
   display: flex;
   flex-direction: row-reverse;
  }
  
-}
+ }
