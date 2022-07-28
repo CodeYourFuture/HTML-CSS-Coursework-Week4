@@ -24,7 +24,7 @@ function closeMenu() {
 
 window.onscroll = function() {myFunction()};
 
-var header = document.getElementById("myHeader");
+var header = document.getElementById("sticky-header");
 
 var sticky = header.offsetTop;
 

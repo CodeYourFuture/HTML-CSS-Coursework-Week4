@@ -371,6 +371,17 @@ footer a {
         padding: 2em 0;
     }
 
+    .nav-menu {
+        background-color: var(--black);
+        width: 40%;
+        text-align: left;
+        padding-left: 5em;
+    }
+
+    .nav-link {
+        color: var(--white)
+    }
+
 
     /* Sticky Header */
 
