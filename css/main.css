@@ -185,8 +185,8 @@ button{
 
 .product {
   background-color: white;
-  border: 2px solid red;
-  margin-bottom: 2em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 .products {
@@ -226,7 +226,6 @@ font-size: 0.9em;
  background-repeat: no-repeat;
  background-size: cover;
  background-position: center;
- margin-bottom: 1.5em;
 }
 
 #cacti {
@@ -439,7 +438,6 @@ body{
 
 .hero{
   height: 140vh;
-  background-size: cover;
   background-position: top;
   background-image: url(../Images/697bc8_ee5e15509a8c468f96ec8b15a13e0daf_mv2_d_2000_1809_s_2.webp);
 background-attachment: fixed;
@@ -466,7 +464,17 @@ grid-template-rows:22% 18% 7% 6%;
   
 
   /* Product */
+  .product {
+    width: 30%;
+  }
+.products{
+  flex-direction: row;
+  justify-content: space-between;
+}
 
+.product_img_container{
+  background-position: bottom;
+}
  
 
   
