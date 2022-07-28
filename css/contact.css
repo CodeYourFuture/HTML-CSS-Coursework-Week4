@@ -71,4 +71,32 @@
     .main--secondary {
         padding: 100px 300px;
     }
+
+    /* Form */
+    .m__form {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(250px, 1fr));
+        grid-template-rows: auto;
+        gap: 60px;
+        width: 50vw;
+        padding: 80px 60px;
+    }
+
+    .m__form__section:nth-child(3) {
+        grid-column: 1/3;
+    }
+
+    .m__form__section:nth-child(4) {
+        grid-column: 1/3;
+    }
+
+    .m__form__section:nth-child(5) {
+        grid-column: 1/3;
+    }
+
+    .m__form__section:nth-child(6) {
+        grid-column: 1/3;
+    }
+
+
 }
