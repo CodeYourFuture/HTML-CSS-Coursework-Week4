@@ -588,7 +588,7 @@ grid-template-rows:22% 18% 7% 6%;
   width: 48%;
  }
 
-/* Footer styles */
+/* Footer style */
 footer > div:first-child {
   display: flex;
   justify-content: space-around;
