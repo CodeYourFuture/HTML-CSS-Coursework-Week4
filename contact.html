@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Add a link to your custom CSS here -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Quicksand:wght@300&display=swap"
+        rel="stylesheet">
+    <title>Responsive grid project</title>
+</head>
+
+<body>
+    <!-- Add your markup here -->
+    <header class="header">
+        <div class="title-container">
+            <div class="blue-icon"></div>
+            <div>
+                <h1 class="title">Maya Nelson</h1>
+                <p class="role-title">/ PROJECT MANAGER</p>
+            </div>
+        </div>
+        <nav class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
+            <ul class="menu__box">
+                <li><a class="menu__item" href="#">ABOUT ME</a></li>
+                <li><a class="menu__item" href="#">RESUME</a></li>
+                <li><a class="menu__item" href="#">PROJECTS</a></li>
+                <li><a class="menu__item" href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <nav class="nav-items-desktop">
+            <li><a class="nav-items" href="#">ABOUT ME</a></li>
+            <li><a class="nav-items" href="#">RESUME</a></li>
+            <li><a class="nav-items" href="#">PROJECTS</a></li>
+            <li><a class="nav-items" href="contact.html">CONTACT</a></li>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="contact-form">
+            <div class="form-title">
+            <div class="blue-icon"></div>
+            <h1 class="title" id="form-title">Let's Talk</h1>
+            </div>
+            <div class="form">
+                <form action="">
+                    <div class="form-row1">
+                        <div class="form-column1">
+                         <label for="firstname">First Name <span class="form-span">*</span></label>
+                         <input type="text" id="firstname" class="input">
+                        </div>
+                        <div>
+                         <label for="lastname">Last Name <span class="form-span">*</span></label>
+                         <input type="text" id="lastname" class="input">
+                        </div>
+                    </div>
+                    <div class="form-row2">
+                    <label for="email">Email <span class="form-span">*</span></label>
+                    <input type="email" id="email" class="input">
+                    </div>
+                    <div class="form-row3">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" class="input">
+                    </div>
+                    <div class="form-row4">
+                    <label for="Message">Message</label>
+                    <textarea name="message" id="message" cols="15" rows="5" class="input"></textarea>
+                    </div>
+                    <button class="send-btn">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <!-- Please leave this in to credit the creators of this design -->
+    <footer class="footer">
+        <div id="optimize">
+            <div class="desktop-only">
+                <p id="footer-follow">Follow</p>
+                <div>
+                    <a href="https://en-gb.facebook.com/" target="_blank"><img src="images/fb-icn.svg"
+                            alt="facebook icon" class="footer-icons-des"></a>
+                    <a href="https://twitter.com/" target="_blank"><img src="images/twitter-icn.svg" alt="twitter icon"
+                            class="footer-icons-des"></a>
+                    <a href="https://uk.linkedin.com/" target="_blank"><img src="images/linkdin-icn.png"
+                            alt="linkdin icon" class="footer-icons-des"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="images/ig-icn.png"
+                            alt="instgram icon" class="footer-icons-des"></a>
+                </div>
+            </div>
+            <div class="footer-row1">
+                <div>
+                    <p class="footer-title">Call</p>
+                    <p class="footer-text">123-456-7890</p>
+                </div>
+                <div>
+                    <p class="footer-title">Write</p>
+                    <p class="footer-text">info@mysite.com</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-row2">
+            <p class="footer-title" id="follow-title">Follow</p>
+            <div class="footer-icons">
+                <a href="https://en-gb.facebook.com/" class="links" target="_blank"><img src="images/fb-icn.svg"
+                        alt="facebook icon" class="social-media-icons"></a>
+                <a href="https://twitter.com/" class="links" target="_blank"><img src="images/twitter-icn.svg"
+                        alt="twitter-icn" class="social-media-icons"></a>
+                <a href="https://uk.linkedin.com/" class="links" target="_blank"><img src="images/linkdin-icn.png"
+                        alt="linkdin-icon" class="social-media-icons" id="linkdin-icon-footer"></a>
+                <a href="https://www.instagram.com/" class="links" target="_blank"><img src="images/ig-icn.png"
+                        alt="instgram icon" class="social-media-icons"></a>
+            </div>
+            <p class="footer-text">©2023 by Maya Nelson. <br>proudly created with <span id="wix-com">Wix.com</span> </p>
+            <p class="footer-text">* This website design was created by Wix.com, and is used here for strictly
+                educational purposes. *</p>
+        </div>
+    </footer>
+</body>
+
+</html>
