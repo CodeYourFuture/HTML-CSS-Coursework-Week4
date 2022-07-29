@@ -6,15 +6,74 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Add a link to your custom CSS here -->
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Quicksand:wght@300&display=swap"
+    rel="stylesheet">
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <title> Jaspreet-Responsive grid project</title>
 </head>
 
 <body>
-    <header id="header">
-      <div class="logo">
-        <div class="blue-box"></div>
-        <p class="name">Maya Nelson <span>/ PROJECT MANAGER</span></p>
+    <header class="header">
+     <img class="header-img" src="https://tinyurl.com/y8s5hpsb" alt="blue-box">
+     <div class="logo">     
+      <h1 class="heading"><strong>Maya Nelson</strong></h1>
+      <p>/PROJECT MANAGER</p>
+          </div>
+         <div class="nav-container">
+          <nav class="hamburger">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle">
+                        <span></span>
+                    </label>
+        <ul class="nav-list">
+          <li><a href="#" class="nav-links">ABOUT ME</a></li>
+          <li><a href="#" class="nav-links">RESUME</a></li>
+          <li><a href="#" class="nav-links">PROJECTS</a></li>
+          <li><a href="#" class="nav-links">CONTACT</a></li>
+        </ul>
+      </nav>
+      
       </div>
+    </header>
+    <nav class="navigation">
+            <ul class="nav_menu">
+                <li><a class="nav_link" href="#">ABOUT ME</a></li>
+                <li><a class="nav_link" href="#">RESUME</a></li>
+                <li><a class="nav_link" href="#">PROJECTS</a></li>
+                <li><a class="nav_link" href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+    <div class="mobile">
+
+    <div class="section">
+        <img class="hero-img" src="/responsive-grid-project/images/profilepic.jpg" alt="picture">
+        <h3 class="name">Maya <br> Nelson </h3>
+        <div class="buttons">
+            <button type="button" class="resume">RESUME</button>
+            <button type="button" class="project">PROJECT</button>
+            </div>
+               <br>
+               <div class="social">
+            <ul class="icons">
+              <li class="facebook">
+                    <img src="https://tinyurl.com/2p8mpxbr" alt="facebook-icon"/>
+                                                </li>
+              <li class="twitter">
+                          <img src="https://tinyurl.com/yk65sws2" alt="twitter-icon"/>
+                        </li>
+                        <li class="linkedin">
+                          <img src="https://tinyurl.com/5ts3sjxb" alt="linkedin-icon"/>
+                        </li>
+                        
+                        <li class="instagram">
+                      <img src="https://tinyurl.com/2p97eedr" alt="instagram-icon"/>
+                        </li>
+                </ul>
+            </div>
+    </div>
+
 
     <!-- Add your markup here -->
 
