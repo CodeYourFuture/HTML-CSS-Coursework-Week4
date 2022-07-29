@@ -59,3 +59,75 @@ body {
         grid-column: 1 / 3;
         margin-top: -2.5rem;
     }
+    /* Main Section */
+    .intro {
+        background-image: url("https://static.wixstatic.com/media/697bc8_ee5e15509a8c468f96ec8b15a13e0daf~mv2_d_2000_1809_s_2.jpg/v1/fill/w_1305,h_928,al_b,q_85,usm_0.66_1.00_0.01/697bc8_ee5e15509a8c468f96ec8b15a13e0daf~mv2_d_2000_1809_s_2.webp");
+        text-align: center;
+        color: var(--white);
+        padding-bottom: 10rem;
+    }
+    .intro-title {
+        padding-top: 10rem;
+        font-family: "Outfit", sans-serif;
+            font-size: 5rem;
+    }
+    .shop-now-button {
+        color: var(--white);
+        background-color: var(--red-brown);
+        padding: 1rem 3rem;
+        border: none;
+        margin-top: 2rem;
+    }
+    .products {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1.7rem;
+    }
+    .cacti {
+        background-image: url("https://static.wixstatic.com/media/697bc8_8bf7131cfd3547e9bd54d9f4f57f3e74~mv2_d_1920_1920_s_2.jpg/v1/fill/w_402,h_565,al_c,q_80,usm_0.66_1.00_0.01/697bc8_8bf7131cfd3547e9bd54d9f4f57f3e74~mv2_d_1920_1920_s_2.webp");
+    }
+    .plants {
+        background-image: url("https://static.wixstatic.com/media/697bc8_8267510d9e19448297fc161a522881f1~mv2_d_1920_1920_s_2.jpg/v1/fill/w_402,h_565,al_c,q_80,usm_0.66_1.00_0.01/697bc8_8267510d9e19448297fc161a522881f1~mv2_d_1920_1920_s_2.webp");
+    }
+    .scculents {
+        background-image: url("https://static.wixstatic.com/media/697bc8_b067d0a4b500479b8a3930782976779e~mv2_d_1920_1920_s_2.jpg/v1/fill/w_402,h_565,al_c,q_80,usm_0.66_1.00_0.01/697bc8_b067d0a4b500479b8a3930782976779e~mv2_d_1920_1920_s_2.webp");
+    }
+    .product {
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        width: 100%;
+        height: 45rem;
+    }
+    .shop-collection-button {
+        color: var(--white);
+        background-color: var(--red-brown);
+        padding: 1rem 2rem;
+        border: none;
+    }
+    .about {
+        background-color: var(--white);
+        text-align: center;
+        margin-top: 0;
+        padding-top: 2.5rem;
+    }
+    .about-text {
+        margin: 0 1.5rem;
+    }
+    .about-image {
+        width: 100%;
+    }
+.promo {
+    background-color: var(--green-black);
+    color: var(--white);
+    font-size: 5rem;
+}
+.promo-text {
+    margin: 80px 2rem 0;
+    font-family: "Fjalla One", sans-serif;
+}
+.promo-button {
+    padding: 1rem 4rem;
+    margin-bottom: 5rem;
+    border: none;
+}
