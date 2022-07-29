@@ -111,29 +111,7 @@
             purposes.</p>
     </footer>
     <!-- Please leave this in to credit the creators of this design -->
-    <script>
-        function myFunction(y) {
-            y.classList.toggle("change");
-            var x = document.getElementById("nav-list");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
-        }
-        function chkMediaQuery(x) {
-            if (x.matches) { // If media query matches
-
-                $("#btn-container").appendTo("#loc");
-            } else {
-                $("#btn-container").appendTo("#btn-new-loc");
-
-            }
-        }
-        var x = window.matchMedia("(max-width: 768px)")
-        chkMediaQuery(x) // Call listener function at run time
-        x.addListener(chkMediaQuery)
-    </script>
+    <script src="./Javascript/main.js"></script>
 </body>
 
 </html>

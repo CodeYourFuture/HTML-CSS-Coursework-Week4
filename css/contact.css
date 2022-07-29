@@ -43,6 +43,12 @@ textarea {
 
 
 }
+form>div>div:nth-child(1),
+form>div>div:nth-child(2) {
+    
+    display: flex;
+    flex-direction: column;
+}
 
 #btn-container {
     margin: 10px 0;
