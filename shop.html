@@ -3,16 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/shop.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Outfit:wght@200&display=swap"
         rel="stylesheet">
-
-    <title>Responsive grid project</title>
+    <title>Responsive Grid Project</title>
 </head>
 
 <body>
@@ -38,9 +38,9 @@
             <a href="#" class="login-link">Log In</a>
             <ul>
                 <li><a href="shop.html" class="nav-link">SHOP</a></li>
-                <li><a href="#about-section" class="nav-link">ABOUT</a></li>
+                <li><a href="index.html/" class="nav-link">ABOUT</a></li>
                 <li><a href="#" class="nav-link">FAQ</a></li>
-                <li><a href="#contact" class="nav-link">CONTACT</a></li>
+                <li><a href="index.html/" class="nav-link">CONTACT</a></li>
             </ul>
         </nav>
         <nav class="desktop-nav">
@@ -55,65 +55,49 @@
         <h2 class="header-txt h-text-2">Call Us Now! 123-456-7890</h2>
     </header>
     <main>
-        <section class="jumbotron">
-            <img src="assets/images/jumbo-background.png" alt="Plants">
-            <article class="jumbo-text">
-                <h1>Prickles & Co</h1>
-                <h2 class="sub-heading">Bring Nature Indoors</h2>
-                <a href="shop.html"><button>Shop now</button></a>
-            </article>
-        </section>
-        <section class="about" id="about-section">
+        <section class="shop-jumbo">
             <article>
-                <h1 class="sub-heading">About Us</h1>
-                <span>-</span>
+                <h1>Everything that grows in our garden</h1>
                 <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or
                     double
                     click me to
-                    add your own content and make changes to the font. Feel free to drag and drop me anywhere you like
-                    on
-                    your page. I’m a
-                    great place for you to tell a story and let your users know a little more about you.
+                    add your own content and make changes to the font. I’m a great place for you to tell a story and let
+                    your users know a
+                    little more about you.
                 </p>
-                <p>
-                    This is a great space to write long text about your company and your services. You can use this
-                    space to
-                    go into a
-                    little more detail about your company. Talk about your team and what services you provide.</p>
-            </article>
-            <img src="assets/images/plant-shop.png" alt="Plant Store" class="plant-img">
-            <img src="assets/images/holding-leaf.png" alt="someone holding a leaf" class="leaf-img">
-        </section>
-        <section class="discount">
-            <img src="assets/images/girl-with-plants.png" alt="girl with plants">
-            <article class="announcement">
-                <h1 class="discount-text">Buy Online now and get 10% off !</h1>
-                <a href="shop.html"><button>Shop Now</button></a>
+                <i class="bi bi-arrow-down-circle-fill"></i>
             </article>
         </section>
-        <section class="form-section" id="contact">
-            <form action="">
-                <h3 class="sub-heading">For Special Requests & Orders</h3>
-                <span>-</span>
-                <label for="first-name">First Name*</label>
-                <input type="text" id="first-name" required>
+        <section class="shop-all">
+            <h1>Shop all</h1>
+            <section class="shop-items">
+                <article>
+                    <a href=""><img src="assets/images/cacti.png" alt="Cacti"></a>
+                    <a href="">
+                        <p>Price</p>
+                        <p>I'm a product</p>
+                    </a>
+                    <a href=""><button>Add to cart</button></a>
+                </article>
+                <article>
+                    <a href=""><img src="assets/images/plant.png" alt="Plant"></a>
+                    <a href="">
+                        <p>Price</p>
+                        <p>I'm a product</p>
+                    </a>
+                    <a href=""><button>Add to cart</button></a>
+                </article>
+                <article>
+                    <a href=""><img src="assets/images/succulent.png" alt="Succulent"></a>
+                    <a href="">
+                        <p>Price</p>
+                        <p>I'm a product</p>
+                    </a>
+                    <a href=""><button>Add to cart</button></a>
+                </article>
 
-                <label for="last-name">Last Name*</label>
-                <input type="text" id="last-name" required>
-
-                <label for="email">Email*</label>
-                <input type="email" id="email" required>
-
-                <label for="phone">Phone</label>
-                <input type="text" id="phone">
-
-                <label for="message">Message</label>
-                <textarea name="message-input" id="message" cols="30" rows="10"></textarea>
-
-                <button>Send</button>
-            </form>
+            </section>
         </section>
-        <img src="assets/images/leaves.png" alt="leaves" class="divider-img">
         <section class="more-info">
             <article class="store-info">
                 <h3 class="section-h3 sub-heading">Our Store</h3>
@@ -155,7 +139,6 @@
         <p><strong>This website design was created by Wix.com, and is used here for strictly educational
                 purposes.</strong></p>
     </footer>
-    <script src="script.js"></script>
 </body>
 
 </html>

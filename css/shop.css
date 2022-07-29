@@ -1,0 +1,93 @@
+a {
+  text-decoration: none;
+  color: var(--btn-background-color);
+  padding: 0;
+  margin: 0;
+}
+button {
+  color: var(--btn-color);
+  background-color: var(--btn-background-color);
+  border: var(--btn-border);
+  padding: 1rem 3rem;
+  margin-top: 0.5rem;
+  width: 100%;
+  font-size: 1rem;
+}
+button:hover {
+  background-color: #c39484;
+  border: #c39484 solid 1px;
+}
+h1 {
+  text-transform: var(--uppercase-text-transform);
+  letter-spacing: 0.1rem;
+}
+/* SHOP JUMBOTRON */
+.shop-jumbo {
+  color: var(--btn-color);
+  background-image: url(../assets/images/shop-jumbo.png);
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(80%);
+}
+.shop-jumbo > article {
+  padding: 1rem;
+  margin: 0;
+  text-align: center;
+}
+.shop-jumbo > article > h1 {
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+.shop-jumbo > article > p {
+  padding: 0.3rem;
+  margin: 0;
+}
+.bi-arrow-down-circle-fill {
+  font-size: 2rem;
+}
+/* SHOP ITEMS */
+.shop-all {
+  padding: 2.5rem 0;
+}
+.shop-all > h1 {
+  text-align: center;
+  font-size: 2rem;
+  padding: 0;
+  margin: 0;
+}
+.shop-items {
+  margin: 0;
+  padding: 0;
+}
+article {
+  text-align: center;
+}
+article > a > img {
+  max-width: 100%;
+  padding: 0;
+}
+
+@media only screen and (min-width: 900px) {
+  .shop-jumbo {
+    min-height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .shop-jumbo > article {
+    padding: 0 15rem;
+  }
+  .shop-jumbo > article > h1 {
+    font-size: 5rem;
+  }
+  .shop-jumbo > article > p {
+    font-size: 1.2rem;
+  }
+  .shop-items {
+    display: grid;
+    grid-template: auto / repeat(3, 1fr);
+  }
+}
