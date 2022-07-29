@@ -34,6 +34,7 @@ body {
 .hamburger {
     width: 50px;
     height: 50px;
+    fill: rgb(160, 88, 65);
 }
 
  .nav {
@@ -79,6 +80,8 @@ body {
         text-align: center;
         color: var(--white);
         padding-bottom: 10rem;
+        object-fit: cover;
+        object-position: 50% 100%;
     }
 
     .intro-title {
@@ -344,5 +347,5 @@ label {
     .social-links {
         grid-row: 3 / 4;
     }
-    
+
 }
