@@ -1,6 +1,5 @@
-/*home-page-style*/
-
-*{
+/*Project-page-style*/
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,26 +7,26 @@
 
 /*header style*/
 
-.header{
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color:white;
     width: 100%;
-    height:100px ;
+    height: 100px;
     font-family: 'Poppins', sans-serif;
-    position: fixed
+    position: fixed;
 }
-.heading{
+.heading {
     padding-left: 2rem;
     list-style-type: square;
-    font-size:1.4rem;
+    font-size: 1.4rem;
 }
-span{
+span {
     font-family: 'Quicksand', sans-serif;
     font-size: 1.2rem;
 }
-#menu-icon{
+#menu-icon {
     opacity: 0;
 }
 #menu-icon:checked+.menu-button>span {
@@ -53,9 +52,9 @@ span{
     cursor: pointer;
     z-index: 1;
 }
-.menu-button > span,
-.menu-button > span::before,
-.menu-button > span::after {
+.menu-button>span,
+.menu-button>span::before,
+.menu-button>span::after {
     display: block;
     position: absolute;
     width: 100%;
@@ -63,11 +62,11 @@ span{
     background-color: black;
     transition-duration: 0.25s;
 }
-.menu-button > span::before {
+.menu-button>span::before {
     content: '';
     top: -8px;
 }
-.menu-button > span::after {
+.menu-button>span::after {
     content: '';
     top: 8px;
 }
@@ -89,155 +88,125 @@ span{
 .menu-list {
     display: block;
     padding: 12px 24px;
-    color:black;
+    color: black;
     font-family: 'Quicksand', sans-serif;
-    font-weight: bold;
     font-size: 1.2rem;
     text-decoration: none;
     transition-duration: 0.25s;
 }
 .menu-list:hover {
-    background-color:#a0a0a0;
+    background-color: #a0a0a0;
     color: #0150FD;
 }
-.desktop-navbar{
+.desktop-navbar {
     opacity: 0;
 }
 
 /*hero-style*/
 
-.aboutme-page{
-    padding-top: 6rem;
-    width: 90%;
-    margin: auto; 
+.project-page {
+    padding-top: 12rem;
+    background-color: #E6DACD;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: '. title title .'
+                        '. text text .'
+                        '. proj1 proj1 .'
+                        '. proj2 proj2 .'
+                        '. proj3 proj3 .'
+                        '. . . .' ;
+    grid-row-gap: 3rem;
 }
-.container{
-    background-color: #E6DACD; 
-    position: absolute; 
-    top:0;
-    left: 0;
-    bottom: 0;
-    right: 30%;
-    z-index: -1;
-    margin: auto;
+.title{
+    grid-area: title;
+    text-align: center;
+    list-style-type: none;
+    font-size: 2rem;
+    font-family:'Poppins',sans-serif; 
 }
-.aboutme-image{
+.intro-text{
+    grid-area: text;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Quicksand',sans-serif;
+    line-height: 2rem;
+}
+.project1{
+    grid-area: proj1;
+    background-color: white;
+}
+.project2{
+    grid-area: proj2;
+    background-color: white;
+}
+.project3{
+    grid-area: proj3;
+    background-color: white;
+}
+.projects{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.projects img{
+    width:100%;
+    height: 200px;
+}
+.project-description{
+    padding: 2rem;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    background-color: #F4ECE6;
-    padding: 3rem 3rem 1rem ;
-    align-items: center;
-    width: 70%;
-    margin-top: 5rem;
-    margin-left: 8rem;
+    gap:1rem;
+      
+}
+.project-name {
+    border-left: 0.5rem solid #0150FD;
+    padding-left: 1rem;
+}
+.project-description h3{
+    color:#0150FD;
     font-family: 'Poppins', sans-serif;
 }
-.profile-image{
-    width: 80%;
-    border-radius: 12em;
-}
-.profile-name{
-    font-size: 1.4rem;
-    font-weight: bold;
-    text-align: center;
-}
-.aboutme-image p{
-    text-align: center;
-}
-.socialmedia-icon{
-    display: flex;
-    gap: 1rem;
-    background-color: white;  
-}
-.contact-icon{
-    width: 1.2rem;
-}
-.aboutme-text{
-    text-align: justify;
-    margin-top: 10rem;
-}
-.hello{
-    font-size: 6rem;
-    font-family: 'Poppins', sans-serif;
-}
-.aboutme-text h2{
-    font-size: 2rem;
-    margin-bottom: 2rem;
-}
-.resume-button{
-    background-color: #0150FD;
-    border-radius: 1rem;
-    border: none;
-    padding: 0.5rem 2rem;
-}
-.resume-button:hover{
-    background-color: white;
-    border:0.01rem solid black; 
-}
-.resume-link:hover{
-    color: #0150FD;
-}
-.resume-link{
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-.projects-button {
-    background-color: white;
-    border-radius: 1rem;
-    border: 0.01rem solid black;
-    padding: 0.5rem 2rem;
-    margin-left: 0.5rem;
-    margin-bottom: 2rem;
-}
-.projects-button:hover{
-    background-color: #0150FD;
-    border: none;
-}
-.projects-link {
-    text-decoration: none;
-    color:black;
-    font-weight: bold;
-}
-.projects-link:hover{
-    color: white;
-}
-.aboutme-text p{
-    margin-top: 1rem;
-    font-family:'Quicksand', sans-serif; 
-    font-size: 1rem;
+.project-description p{
+    font-family: 'Quicksand', sans-serif;
 }
 
 /*footer-style*/
 
-.footer{
+.footer {
     width: 90%;
     margin: auto;
     background-color: white;
     padding: 1rem 0;
     gap: 2rem;
 }
-.contact{
+.contact {
     display: flex;
     flex-direction: column;
-    gap:1rem;
+    gap: 1rem;
     font-size: 0.8rem;
 }
-.contact-opt{
+.contact-opt {
     display: flex;
     flex-direction: column;
     gap: 0.6rem;
 }
-.copyright{
+.socialmedia-icon {
+    display: flex;
+    gap: 1rem;
+    background-color: white;
+}
+.contact-icon {
+    width: 1.2rem;
+}
+.copyright {
     padding-top: 2rem;
 }
 
 /*desktop-style*/
 
 @media (min-width: 950px) {
-    .hamburger-menu{
-        display:none;
+    .hamburger-menu {
+        display: none;
     }
     .desktop-navbar {
         opacity: 1;
@@ -252,47 +221,41 @@ span{
     .nav-link {
         text-decoration: none;
         color: black;
-        font-family: 'Quicksand',sans-serif;
+        font-family: 'Quicksand', sans-serif;
         font-weight: bold;
     }
-    .nav-link:hover{
+    .nav-link:hover {
         color: #0150FD;
     }
     .nav-list:last-child {
         margin-right: 2rem;
     }
-    .container{
-        right: 70%;
-    }
-    .aboutme-page{
+    .projects{
         display: flex;
-        gap:1.5rem;
+        flex-direction: row;
     }
-    .aboutme-image{
-        margin-top: 3rem;
+    .projects img{
+        width: 40%;
+        height: auto;
     }
-    .aboutme-text{
-        margin-top: 2rem;
+    .project-description p{
+        line-height: 2rem;
+        padding-top: 2rem;
+        font-size: 1.2rem;
     }
-    .aboutme-text p{
-        width: 50%;
-    }  
-    .profile-image{
-        width: 50%;
-    } 
-    .footer{
+    .footer {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
-        margin-top: 10rem;
     }
-    .contact{
+    .contact {
         display: flex;
-        flex-direction: row;   
+        flex-direction: row;
     }
-    .contact-opt{
+    .contact-opt {
         text-align: center;
         margin-left: 3rem;
     }
 }
- 
+
+
