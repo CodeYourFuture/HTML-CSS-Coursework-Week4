@@ -1,3 +1,258 @@
-/* Add your CSS here */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 
-/* Dont' forget to link this file to your HTML in the <head> */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+main {
+  background-color: #EDEDEE;
+}
+.underline {
+  height: 2px;
+}
+h1{
+    font-weight: bolder;
+    color: #a05841;
+}
+.btn {
+  border: none;
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: #a05841;
+  color: #ffff;
+  font-size: 1rem;
+}
+/* ---------------------------------- */
+.search {
+  padding: 2rem;
+}
+.search-wrapper {
+  border: 1px solid red;
+  width: 50%;
+  height: 2rem;
+  padding: 6px;
+}
+.search-txt {
+  border: none;
+}
+
+/* header and navbar------------------------------ */
+
+.header {
+  display: flex;
+  /* position: fixed; */
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ededee;
+  height: 100px;
+}
+.nav-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.logo-wrapper {
+  line-height: 2rem;
+  text-align: center;
+  width: 50%;
+}
+.logo {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  /* margin-left: 10px;
+  margin-right: 2rem; */
+  color: #a05841;
+}
+.header p {
+  color: #a05841;
+}
+/* .slogan {
+  margin-right: 20px;
+  text-align: left;
+  color: #A05841;
+  font-weight: bold;
+  margin-top: 2rem;
+  font-size: 20px;
+} */
+
+/* hamburger menu------------ */
+#menu-toggle {
+  opacity: 0;
+}
+#menu-toggle:checked + .menu-btn > span {
+  transform: rotate(45deg);
+}
+#menu-toggle:checked + .menu-btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+
+#menu-toggle:checked + .menu-btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu-toggle:checked ~ .menu-box {
+  right: 0 !important;
+}
+.menu-btn {
+  position: fixed;
+  top: 120px;
+  right: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+.menu-btn > span,
+.menu-btn > span::before,
+.menu-btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #a05841;
+  transition-duration: 0.25s;
+}
+.menu-btn > span::before {
+  content: "";
+  top: -8px;
+}
+.menu-btn > span::after {
+  content: "";
+  top: 8px;
+}
+.menu-box {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: #ededee;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  transition-duration: 0.25s;
+  text-align: center;
+}
+.menu-items {
+  display: block;
+  padding: 12px 24px;
+  color: #131313;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  transition-duration: 0.25s;
+  text-transform: uppercase;
+}
+.menu-items:hover {
+  color: darkgray;
+}
+
+/* hero section------------------------------ */
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/1.png);
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-text {
+  text-align: center;
+  font-size: 2rem;
+  padding: 4rem 1rem;
+  color: white;
+  text-transform: uppercase;
+}
+.hero-text h1 {
+  font-family: 'Fjalla One', sans-serif;
+  line-height: 2em;
+  color: #ffff;
+  font-weight: bolder;
+}
+.hero-text p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+
+/* Shop collection section--------------- */
+.shop-collection {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.collection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0;
+  padding-top: 2rem;
+  background-color: white;
+  text-transform: uppercase;
+}
+.shop-images {
+  width: 100%;
+  height: 50%;
+}
+/*about us section ----------------------------------- */
+.intro{
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem ;
+    background-color: #ffff;
+}
+.intro h1{
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    font-weight: 100;
+
+}
+.image-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.buy-online{
+  background-color: #123132;
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 2rem;
+  font-family: 'Fjalla One', sans-serif;
+}
+.buy-online h1{
+  color: #ffff;
+  text-transform: uppercase;
+  padding: 2rem;
+}
+.buy-online button{
+  background-color: #ffff;
+  color: #131313;
+}
+
+/* order form section --------------------------------------- */
+.order-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.form{
+  display: inline-block;
+  align-items: center;
+  
+}
+.form button{
+  width: 100%;
+}
+.order-form img{
+  
+}
