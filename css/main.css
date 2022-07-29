@@ -6,7 +6,13 @@
 body {
     margin: 0;
     font-family:'Quicksand',sans-serif;
-    background-color: #E6DACD;
+    background: linear-gradient(
+        to bottom,
+        white 0%,
+        white 25%,
+        #E6DACD 25%,
+        #E6DACD 100%
+    );
 
 }
 
@@ -17,7 +23,7 @@ body {
 header {
     color: rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
-    padding: 1rem 0 10rem;
+    padding: 1rem 0 2rem;
     position:;
     display: flex;
     justify-content: space-between;
@@ -114,7 +120,7 @@ header {
     margin: 0;
     padding: 80px 0;
     list-style: none;
-    background-color: rgb(212, 212, 254);
+    background-color: #F4ECE6;
     box-shadow: 2px 2px 6px rgb(145, 54, 54);
     transition-duration: 0.25s;
     text-align: center;
@@ -141,16 +147,16 @@ header {
 /*End of hamburger menu*/
 
 main {
-    color: blueviolet;
+    color: black;
     background-color: #F4ECE6;
-    padding: 10em 0;
+    padding: 2em 0 1em;
     position: ;
     margin-top: 2em;
     margin-left: 4em;
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 10px 10px 10px 10px black;
+    box-shadow: -5px 5px 5px 5px rgb(179, 178, 178);
 }
 
 main > h3 {
@@ -171,6 +177,8 @@ main > h3 {
     padding: 2px 15px;
     color: black;
     font-weight: bold;
+    font-size: 0.8rem;
+    margin-left: 15px;
 }
 
 .button:hover {
@@ -181,7 +189,8 @@ main > h3 {
 
 .soc-media {
     background-color: white;
-    padding: 1em 1em
+    padding: 0.5em 5em;
+    margin-top: 22px;
 }
 
 .soc-media >img {
@@ -198,15 +207,53 @@ footer {
 
 .project-man {
     margin-left: -24px;
+    font-size: smaller;
+    font-family: 'Cormorant';
 }
 
+main >h3 {
+    font-family: 'Poppins';
+    width: 90px;
+    text-align: center;
+}
 
+section {
+    padding: 1.5rem;
+}
 
+section >h1 {
+    font-family: 'Cormorant';
+    font-size: 2rem;
+}
 
+section >h3 {
+    font-weight: 900;
+}
 
+section >p {
+    font-size: 0.9rem;
+    line-height: 1.5rem;    
+}
 
+footer {
+    padding:  1rem;
+}
 
+footer >div> h5 {
+    font-family: 'Cormorant';
+}
 
+footer >div >p {
+    font-size: 0.8rem;
+}
 
+footer >div >img {
+    width: 20px;
+}
+
+.call {
+    display: flex;
+    justify-content: space-between;
+}
 
 /* Dont' forget to link this file to your HTML in the <head> */
