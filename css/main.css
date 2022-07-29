@@ -15,8 +15,8 @@ header{
 }
  header > div:first-child {
  border-top: 1px solid black;
-  height: 2.7em;
-  border-radius: 18px;
+  height: 3em;
+  border-radius: 30px;
  }
 
  .search_bar {
@@ -37,10 +37,22 @@ header{
   color: #A05941;
  }
 
+ .bi.bi-person-circle{
+  color: #A05941;
+  font-size: 1.5em;
+ }
+
  .search_bar > div:first-child{
   display: flex;
   align-items: center;
   justify-content: space-around;
+ }
+
+ .search_bar > div:last-child{
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  gap: 10%;
  }
 
  .search_bar input {
@@ -53,32 +65,53 @@ header{
  .search_bar input::placeholder{
   color: #A05941;
  }
+
+ .user{
+  display: none;
+  gap: 9%;
+  justify-content: end;
+  width: 50%;
+ }
  
  
 
  nav {
   display: flex;
   justify-content:space-around;
-  align-items: flex-start;
+  flex-direction: column;
   background-color: #EDEDEE;
   color: #A05941;
    font-family: 'Fjalla One', sans-serif;
-
+   padding-top: 1em;
+   padding-bottom: 1em;
  }
 
  .nav_text_wrapper{
-  height: 90%;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+ 
  }
  
- .nav_text_wrapper > p:first-child{
+ .nav_text_wrapper > p{
 letter-spacing: 2px;
-font-size: 1.2em;
+font-size: 1.3em;
+width: 60%;
+margin: 0;
  }
 
- .nav_text_wrapper > p:nth-child(2){
-  font-size: 0.85em;
+ nav>p{
+ 
   font-weight: lighter;
-  letter-spacing: 1.5px ;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  width: 89%;
+  margin: 1em auto;
+
+ }
+
+ .nav_links{
+  display: none;
  }
  
 
@@ -89,7 +122,9 @@ font-size: 1.2em;
 
  .bi.bi-list{
  font-size: 2.5em;
-
+ width: 20%;
+ display: flex;
+ justify-content: center;
  }
 
 
@@ -458,6 +493,8 @@ body{
   padding: 0 3rem;
 }
 
+
+
 .hero{
   height: 90vh;
   background-size: cover;
@@ -482,6 +519,41 @@ body{
 @media screen and (min-width: 900px) {
 body{
   padding: 0 3rem;
+}
+.user {
+  display: flex;
+}
+
+nav{
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav_text_wrapper > p{
+  width: 38%;
+}
+.nav_links > a{
+  font-family: 'Outfit', sans-serif;
+  text-decoration: none;
+}
+
+
+.nav_links{
+  display: flex;
+  justify-content: space-between;
+  width: 55%;
+}
+
+.nav_text_wrapper{
+  width: 40%;
+}
+nav > p{
+  width: 30%;
+ margin: 0;
+ text-align: end;
+}
+.bi.bi-list{
+  display: none;
 }
 
 .hero{
