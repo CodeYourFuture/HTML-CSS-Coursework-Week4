@@ -1,3 +1,408 @@
-/* Add your CSS here */
+/* font-family: 'Poppins',sans-serif;
+font-family: 'Quicksand',
+sans-serif; */
 
-/* Dont' forget to link this file to your HTML in the <head> */
+/* Colors
+Dark beige: #E6DACD
+Light beige: #F4ECE6
+Royal blue: #0150FD
+Black: #000
+White: #FFF */
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.desktop-section{
+    display: none;
+}
+
+body, header {
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Quicksand', sans-serif;
+    }
+
+/* hamburger menu */
+#menu__toggle {
+    opacity: 0;
+}
+
+#menu__toggle:checked+.menu__btn>span {
+    transform: rotate(45deg);
+}
+
+#menu__toggle:checked+.menu__btn>span::before {
+    top: 0;
+    transform: rotate(0deg);
+}
+
+#menu__toggle:checked+.menu__btn>span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+#menu__toggle:checked~.menu__box {
+    right: 0 !important;
+}
+
+.menu__btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.menu__btn>span,
+.menu__btn>span::before,
+.menu__btn>span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #0f00df;
+    transition-duration: 0.25s;
+}
+
+.menu__btn>span::before {
+    content: '';
+    top: -8px;
+}
+
+.menu__btn>span::after {
+    content: '';
+    top: 8px;
+}
+
+.menu__box {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: fit-content;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: #a7a7a7;
+    box-shadow: 2px 2px 6px rgba(72, 72, 72, 0.653);
+    transition-duration: 0.25s;
+    text-align: center;
+}
+
+.menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: 0.25s;
+}
+
+.menu__item:hover {
+    background-color: rgb(55, 0, 254);
+}
+
+/* desktop navigation */
+.desktop {
+    display: none;
+}
+
+#tittle{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 18pt;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#projectm{
+    padding-left: 20px;
+}
+
+.foto{
+    border-radius: 100%;
+    height: 120px;
+    
+    align-items: center;
+}
+
+.portada{
+    font-weight: 600;
+    font-size: 18pt;
+    font-family:'Poppins',sans-serif ;
+}
+
+.section_2{
+    background-color: #F4ECE6 ;
+    display: block;
+    justify-content: center;
+    padding: 60px 10px;
+    text-align: center;
+}
+
+
+/* buttons */
+
+.resume-b{
+    padding: 6px 25px;
+    border-radius: 50px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: bold;
+    font-size: 12pt;
+    background-color:#0150FD ;
+    color: #fff;
+    font-weight: bolder;   
+}
+
+.project-b{
+    padding: 6px 25px;
+    border-radius: 50px;
+    font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        font-size: 12pt;
+}
+
+.botones{
+    padding-bottom: 40px;
+    padding-top: 30px;
+}
+
+.iconos{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #fff;
+    font-size: 13pt;
+
+}
+h1{
+    font-family:'Poppins',sans-serif; 
+    font-size: 35pt;
+    font-weight: 600;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+.text-2{
+    font-size: 14pt;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.text-3{
+    padding-left: 10px;
+    margin: 0 10px;
+    font-size: 14pt;
+}
+
+
+
+
+
+
+
+/* info section */
+
+
+.info-section{
+    background-color: #E6DACD ;
+    padding-bottom: 100px;
+}
+
+
+/* FOOTER */
+
+.contacts{
+    display: flex;
+    justify-content: space-around;
+    padding-top:40px ;
+    padding-bottom: 40px;
+}
+
+.follow-section{
+    padding-bottom: 40px;
+    padding-left: 30px;
+}
+
+.iconos-2{
+    font-size: 15pt;
+    display: flex;
+    gap: 15px;
+    padding-top: 10px;
+}
+
+
+/* final part */
+
+.copyr{
+    padding-left: 20px;
+    margin: 0 30px;
+    padding-bottom: 20px;
+    text-align: center;
+
+}
+
+.credits{
+    padding-left: 20px;
+    margin: 0 2px;
+    padding-bottom: 10px;
+}
+
+/* /////////////////////////////// */
+
+/* desktop */
+@media screen and (min-width: 900px) {
+    .desktop {
+        display: block;
+        width: 90%;
+        margin: auto;
+       margin-top: -40px;
+       padding-bottom: 40px;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+
+    
+
+    .nav_list {
+        display: flex;
+        justify-content: right;
+         gap: 0.5rem;
+    }
+
+    .nav_list li {
+        list-style-type: none;
+    }
+
+    .nav_link {
+        padding: 0.25rem 1.5rem;
+        color: black;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: small;
+    }
+
+    .nav_link:last-child {
+        margin-right: 1rem;
+    }
+
+.mobile{
+    display: none;
+}
+
+.desktop-section{
+    background: rgb(230, 218, 205);
+        background: linear-gradient(90deg, rgba(230, 218, 205, 1) 35%, rgba(255, 255, 255, 1) 35%);
+        height: 800px;
+        display: flex;
+        justify-content: center;
+        
+
+}
+
+.desktop-fotopart{
+    background-color: #F4ECE6;
+    padding-top: 80px;
+    width: 500px;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 30px;
+    margin-bottom: 160px;
+}
+
+.foto-desk{
+    border-radius: 100%;
+    height: 200px;
+}
+
+.desktop-portada{
+    font-family: 'Poppins',sans-serif;
+    font-size: 22pt;
+    padding-top: 10px;
+    padding-bottom: 20px;
+
+}
+
+.desktop-pmang{
+    font-size: 15pt;
+    padding-bottom: 50px;
+}
+
+#desktop-aboutme{
+    color: #0150FD;
+}
+
+.desktop-iconos{
+    font-size: 16pt;
+    background-color: #fff;
+    padding: 20px 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;    
+    gap: 30px;
+}
+
+.desktop-hello{
+    background-color: #fff;
+    padding: 50px 20px 50px 20px;
+    padding-top: 20px;
+        width: 500px;
+        text-align: left;
+        margin-top: 100px;
+        margin-bottom: 160px;
+}
+
+.desk-hello{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 700;
+    font-size: 70pt;
+}
+
+.text-2-desktop{
+    font-size: 20pt;
+    padding-bottom: 30px;
+    padding-left: 20px;
+}
+
+.resume-b{
+    margin-bottom: 25px;
+}
+
+.desktop-footer{
+    display: flex;
+    justify-content:right;
+    gap: 30px;
+    text-align: center;
+}
+
+.contacts{
+    gap: 20px;
+}
+
+.follow-section {
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+
+
+}
+
+
+
