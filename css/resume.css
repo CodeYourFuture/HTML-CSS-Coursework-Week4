@@ -131,14 +131,12 @@ a:hover{
 }
 /* main */
  main {
-  /* background-color: #f4ece6; */
+ 
  } 
  .hero {
   padding: 1rem;
  }
- /* .hero h1 {
-   align-items: center;
- } */
+ 
  .hero div {
   display: flex;
   justify-content: center;
