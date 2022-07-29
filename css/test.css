@@ -1,0 +1,259 @@
+body{
+ border: 12px solid green;
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+
+
+#header{
+ grid-area: header;
+ background: yellow;
+}
+
+#div1{
+ grid-area: div1;
+ height: auto;
+ background-color: blueviolet;
+}
+
+#div3{
+ background: pink;
+ grid-area: div3;
+}
+
+#div2{
+ background: green;
+ grid-area: div2
+}
+
+
+.hero {
+ background: url(/Images/1.png) no-repeat center/cover;
+ padding-top: 1.4em;
+ display: grid;
+ grid-template-columns: 1fr;
+ grid-template-rows: 30% 13% 18% 38px;
+ grid-template-areas: 
+ "logo"
+ "h1"
+ "p"
+ "button";
+ row-gap: 1.5em;
+ height: 12%;
+ color: white;
+}
+
+svg{
+ fill: white;
+ width:50%;
+ height: 100%
+ 
+}
+
+.logo {
+ display: flex;
+ justify-content: center;
+ align-items: flex-end;
+ gap: 5%;
+ width: 80%;
+ grid-area: logo;
+ margin: 0 auto;
+}
+
+.logo > p {
+ text-decoration: underline;
+ font-size: 1.2em;
+ letter-spacing: 2.5px;
+ text-underline-offset: 10px;
+ align-self: center;
+
+}
+
+h1, .hero > p{
+ text-align: center;
+}
+
+h1{
+ grid-area: h1;
+ font-weight: 200;
+ font-size: 2.25rem;
+ letter-spacing: 0.2em;
+ font-family: 'Fjalla One', sans-serif;
+ margin: 0;
+ padding: 0;
+}
+
+.hero > p {
+ width: 65%;
+
+ font-size:1.5rem;
+ text-align: center;
+ margin: 0 auto;
+ letter-spacing: 2.8px;
+ grid-area: p;
+}
+
+ .hero > div:last-child {
+display: flex;
+justify-content: center;
+grid-area: button;
+}
+
+button{
+ width: 49%; 
+ font-size: medium;
+ color: white;
+ background-color: #A05941;
+ border: none;
+}
+
+
+
+
+.form_section{
+ margin: 1.8em 1em 1em 1em;
+
+}
+
+.form_section p{
+ text-align: center;
+ width: 70%;
+ margin: 1em auto;
+ font-size: 1.5em;
+}
+
+form{
+ display: grid;
+ width: 90%;
+ margin: 1em auto;
+ row-gap: 0.8em;
+ padding-bottom: 1em;
+}
+
+input, form button{
+ height: 35px;
+ width: 100%;
+}
+
+button{
+ width: 49%; 
+ font-size: medium;
+ color: white;
+ background-color: #A05941;
+ border: none;
+}
+
+.form_section img {
+ width: 100%;
+ height: auto;
+ margin: 0;
+ padding: 0;
+}
+
+img{
+ width: 100%;
+}
+
+#buy_online{
+ width: 75%;
+ text-align: center;
+ margin: 0 auto;
+ padding: 1em;
+ font-size: 3em;
+ letter-spacing: 2px;
+ font-weight: bolder;
+font-family: 'Fjalla One', sans-serif;
+}
+
+.buy_online > button{
+ width: 47%;
+ height: 10%;
+ font-size: medium;
+ 
+}
+.about > div:last-child{
+ height: 400px;
+ background: #133032;
+ color: white;
+ text-align: center;
+}
+
+
+.products {
+ display: flex;
+ flex-direction: column;
+ margin-top: 2em;
+}
+
+.products p{
+ color: #A05941;
+ font-size: 1.5em;
+ margin-top: 0.7em;
+ margin-bottom: 0;
+ font-weight: bold;
+ letter-spacing: 3px;
+ text-align: center;
+}
+
+.product button {
+ display: block;
+margin: auto;
+height: 35px;
+font-size: 0.9em;
+
+}
+
+.bar{
+ width:12px;
+ background-color: #A05941;
+ height: 5px;
+ margin: 12px auto;
+}
+
+.product {
+ height: 420px;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ margin-bottom: 1.5em;
+}
+
+#cacti {
+ background-image: url(../Images/4.png);
+}
+
+#plant {
+ background-image: url(../Images/2.png);
+}
+
+#succulent {
+ background-image: url(../Images/3.png)
+}
+
+.about{
+ background: white;
+ color: #A05941;
+ 
+}
+
+h2{
+ text-align: center;
+ letter-spacing: 2px;
+ margin: 0;
+ padding-top: 1.5em;
+}
+
+.about_para {
+ width: 90%;
+ margin: 2em auto;
+ text-align: center;
+ line-height: 1.8em;
+ font-size: 1em;
+}
+
+#second_para{
+ margin-bottom: 3em;
+}
+

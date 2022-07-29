@@ -1,21 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Add a link to your custom CSS here -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Outfit:wght@200&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font awesome -->
+    <script
+      src="https://kit.fontawesome.com/a6d80728cd.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--Bootstrap icons -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
 
     <title>Responsive grid project</title>
-</head>
+  </head>
+  <body>
+    <header>
+      <div></div>
+      <div class="search_bar">
+        <div>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" name="" id="" placeholder="Search..." />
+        </div>
+        <div>
 
-<body>
+          <div class="user">
+            <i class="bi bi-person-circle"></i>
 
-    <!-- Add your markup here -->
+            <a href="">Log in</a>
+          </div>
+          
 
+          <i class="bi bi-bag"></i>
+        </div>
 
-    <!-- Please leave this in to credit the creators of this design -->
-    <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
-</body>
+        
+      </div>
 
+      <nav>
+        <div class="nav_text_wrapper">
+          <p>PRICKLES & CO.</p>
+
+          <i class="bi bi-list"></i>
+
+          <div class="nav_links">
+            <a href="">Shop</a>
+            <a href="">About</a>
+            <a href="">FAQ</a>
+            <a href="">Contact</a>
+
+          </div>
+         
+        </div>
+
+         <p>We deliver to your doorstep</p>
+        
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="logo">
+          <p>ESTB</p>
+          <svg
+            preserveAspectRatio="xMidYMid meet"
+            data-bbox="10.326 50.3 180.129 101.208"
+            xmlns="http://www.w3.org/2000/svg"
+            width="200"
+            height="200"
+            viewBox="10.326 50.3 180.129 101.208"
+            role="presentation"
+            aria-hidden="true"
+          >
+            <g>
+              <path
+                d="M105.6 52.7c-1.8-1.5-3.5-2.4-5.1-2.4-1.6.1-3.3 1-5.1 2.4-11.2 9.2-16.3 21-17 35.2-.4 7.5-1.3 14.8 10.2 12.6 1.3-.2 3.1-.2 4.3.6 1 .6 1.9 1.4 2.6 2.4 3 4.3 2.2 9.1 1 13.9-1.8 7-2.5 14.2-1.6 21.3.6 4.9-.6 13.1 5.6 12.8 6.3.3 5-7.9 5.6-12.8.9-7.2.2-14.3-1.6-21.3-1.2-4.8-2.1-9.7 1-13.9.7-.9 1.6-1.7 2.6-2.4 1.2-.8 3-.8 4.3-.6 11.5 2.1 10.6-5.2 10.2-12.6-.7-14.2-5.8-26-17-35.2z"
+              ></path>
+              <path
+                d="M57.6 128.4c1.5-2.3 3.7-6.5 3.6-11.2-.2-5.8-4-10.6-5.4-12.2-.3-.3-.7-.3-1 0-1.2 1.5-4.4 6.1-4.2 11.8.1 3.7 3 8.4 4.8 10.8-.2 2-.2 4 0 5.5v.2c-4.4-2.4-8.9-5.5-12.9-9.7-.1-.2-.2-.3-.4-.4-1.5-1.6-2.9-3.2-4.1-5.1-.3-.4-.5-.8-.8-1.2-.8-2.6-.5-5.5.9-7.9 2.7-.7 6.4-2.2 9.1-5.2 4-4.3 4.6-10.5 4.7-12.5 0-.4-.3-.6-.7-.6-2 .3-8 1.5-12 5.8-2.6 2.7-3.4 8.2-3.2 11.6-.7 1.3-1.2 2.8-1.4 4.2-2.5-5-4.2-10.6-4.9-16.6.1-3 1.7-5.7 3.9-6.9 2.1-.1 5.5-.6 8.1-2.7 3.2-2.6 4.2-6.9 4.5-8.7.1-.4-.2-.8-.7-.8-1.7 0-6.2.1-9.3 2.7-2.8 2.3-3.9 5.9-4.3 8-1 .7-1.9 1.6-2.5 2.6-.2-5.6.4-11.7 1.6-18.1 1.8-.5 5.6-2.1 8.1-5 3.2-3.6 3.8-8.4 3.8-10.3 0-.4-.4-.7-.8-.7-1.9.4-5.9 1.8-9.4 5.2-2.6 2.6-3.4 6.4-3.6 8.5-2 9.5-2.6 18.2-1.6 26.1v.2c-1.1-1.4-2.3-2.7-3.4-3.8-.1-2.4-.7-6.2-3.1-9.2-3.1-3.9-8.2-5.1-9.9-5.4-.3-.1-.6.2-.7.5-.1 1.7 0 6.6 3 10.4 1.8 2.3 5.7 3.9 8.3 4.6 2.5 1.7 6 6.4 6.9 9.1 1.3 5.7 3.5 10.9 6.6 15.6v.1c.3.5.6 1 .9 1.4l.9 1.2c-1.3-.4-2.7-.8-4.1-.8-.1-.2-.1-.4-.3-.6-1.9-2.3-5.4-5.6-9.1-6.2-5.6-1-10.9 1.6-12.8 2.7-.4.2-.5.8-.2 1.2 1.5 1.7 5.6 5.8 11.2 6.8 3.8.6 7.5-.4 10.1-1.4.1-.1.2-.2.3-.2 3.2-.3 7.5 2 8.4 2.7 5.5 5.9 11.9 9.8 17.6 12.4-.6.4-1.6.8-3.1 1.1-5-3.4-12.7-4-16.4-3.2-7.8 1.8-12.9 7.4-14.5 9.6-.3.4-.2.9.3 1.1 2.4 1.2 10.2 4.6 18 2.8 5.8-1.4 10.3-5.2 12.9-8.1v-.1c1.2-.2 2.3-.5 3.2-.9.9-.4 1.5-.9 1.9-1.3 7.5 3.1 13.4 4 13.9 4l.3-2.2c-.1 0-7.7-1.1-16.5-5.4-.2 0-.8-2.1-.5-5.9z"
+              ></path>
+              <path
+                d="M190.1 115.9c-1.9-1.1-7.3-3.7-12.8-2.7-3.7.7-7.2 3.9-9.1 6.2l-.3.6c-1.4 0-2.8.3-4.1.8l.9-1.2c.3-.5.6-1 .9-1.4v-.1c3-4.7 5.2-9.9 6.6-15.6.9-2.6 4.4-7.4 6.9-9.1 2.5-.7 6.4-2.3 8.3-4.6 3-3.8 3.1-8.7 3-10.4 0-.3-.3-.6-.7-.5-1.7.3-6.8 1.5-9.9 5.4-2.4 3-3 6.8-3.1 9.2-1.2 1-2.4 2.3-3.4 3.8v-.2c.9-7.9.4-16.6-1.6-26.1-.2-2.1-1-5.9-3.6-8.5-3.5-3.4-7.5-4.9-9.4-5.2-.4-.1-.8.2-.8.7 0 1.9.6 6.7 3.8 10.3 2.6 2.9 6.3 4.4 8.1 5 1.3 6.4 1.8 12.4 1.6 18.1-.7-1.1-1.5-2-2.5-2.6-.4-2-1.5-5.6-4.3-8-3.2-2.6-7.6-2.8-9.3-2.7-.4 0-.7.4-.7.8.3 1.7 1.3 6 4.5 8.7 2.6 2.1 6 2.6 8.1 2.7 2.2 1.2 3.7 3.9 3.9 6.9-.7 6.1-2.4 11.6-4.9 16.6-.2-1.5-.7-2.9-1.4-4.2.2-3.4-.6-8.9-3.2-11.6-4-4.2-10-5.5-12-5.8-.4-.1-.7.2-.7.6.1 2 .7 8.2 4.7 12.5 2.7 3 6.4 4.4 9.1 5.2 1.4 2.4 1.7 5.2.9 7.9-.3.4-.5.8-.8 1.2-1.3 1.8-2.7 3.5-4.1 5.1l-.4.4c-4 4.2-8.5 7.4-12.9 9.7v-.2c.2-1.6.2-3.5 0-5.5 1.8-2.4 4.7-7 4.8-10.8.2-5.7-3-10.3-4.2-11.8-.2-.3-.7-.3-1 0-1.4 1.6-5.2 6.3-5.4 12.2-.2 4.7 2.1 8.9 3.6 11.2.3 3.7-.2 5.8-.5 6.4-8.9 4.3-16.5 5.4-16.6 5.4l.3 2.2c.5-.1 6.4-.9 13.9-4 .4.4.9.9 1.9 1.3.9.4 2 .7 3.2.9v.1c2.6 2.8 7.1 6.7 12.9 8.1 7.8 1.8 15.6-1.6 18-2.8.4-.2.5-.7.3-1.1-1.6-2.2-6.7-7.8-14.5-9.6-3.7-.8-11.3-.2-16.4 3.2-1.5-.3-2.5-.7-3.1-1.1 5.7-2.6 12.1-6.6 17.6-12.4.9-.8 5.1-3 8.4-2.7.1.1.2.2.3.2 2.6 1.1 6.3 2.1 10.1 1.4 5.6-.9 9.8-5.1 11.2-6.8.4-.9.3-1.4-.1-1.7z"
+              ></path>
+            </g>
+          </svg>
+          <p>2023</p>
+        </div>
+        <h1>PRICKLES & CO</h1>
+        <p>BRING NATURE INDOORS</p>
+        <div>
+          <button>Shop Now</button>
+        </div>
+      </section>
+
+      <section class="products">
+        <div class="product">
+          <p>CACTI</p>
+          <div class="bar"></div>
+          <button>Shop Collection</button>
+          <div class="product_img_container" id="cacti"></div>
+        </div>
+
+        <div class="product">
+          <p>PLANTS</p>
+          <div class="bar"></div>
+          <button>Shop Collection</button>
+
+          <div class="product_img_container" id="plant"></div>
+        </div>
+
+        <div class="product">
+          <p>SUCCULENTS</p>
+          <div class="bar"></div>
+          <button>Shop Collection</button>
+
+          <div class="product_img_container" id="succulent"></div>
+        </div>
+      </section>
+
+      <section class="about">
+        <div>
+          <h2>ABOUT US</h2>
+          <div class="bar"></div>
+          <p class="about_para">
+            I'm a paragraph. Click here to add your own text and edit me. It’s
+            easy. Just click “Edit Text” or double click me to add your own
+            content and make changes to the font. Feel free to drag and drop me
+            anywhere you like on your page. I’m a great place for you to tell a
+            story and let your users know a little more about you
+          </p>
+
+          <p class="about_para" id="second_para">
+            This is a great space to write long text about your company and your
+            services. You can use this space to go into a little more detail
+            about your company. Talk about your team and what services you
+            provide.
+          </p>
+        </div>
+
+        <img src="./Images/5.png" alt="" id="img1" />
+        <img src="./Images/6.png" alt="" id="img2" />
+        <img src="./Images/7.png" alt="" id="img3" />
+        <div class="buy_online">
+          <p id="buy_online">BUY ONLINE NOW & GET 10% OFF !</p>
+          <button>Shop Now</button>
+        </div>
+      </section>
+
+      <section class="form_section">
+        <div>
+          <div class="form_title">
+            <p>FOR SPECIAL REQUESTS & ORDERS</p>
+
+            <div class="bar"></div>
+          </div>
+          <form action="">
+            <div class="name_wrapper">
+              <div>
+                <label for="first_name">First Name</label>
+                <input type="text" name="first_name" id="first_name" />
+              </div>
+
+              <div>
+                <label for="last_name">Last Name</label>
+                <input type="text" name="last_name" id="last_name" />
+              </div>
+            </div>
+
+            <label for="Email">Email</label>
+            <input type="email" name="email" id="email" />
+
+            <label for="phone">Phone</label>
+            <input type="tel" name="" id="phone" />
+
+            <label for="message">Message</label>
+            <textarea name="" id="message" cols="30" rows="10"></textarea>
+
+            <button>Send</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <div>
+          <h3 id="our_store">OUR STORE</h3>
+          <p class="address">
+            Address: 500 Terry Francois Street San <br />
+            Franciso, CA 94158 <br />
+            Phone: 123-456-7890 <br />
+            Email: info@mysite.com
+          </p>
+        </div>
+
+        <div>
+          <h3>OPENING HOURS</h3>
+          <p>Mon - Fri: 7am - 10pm</p>
+          <p>Saturday: 7am - 10pm</p>
+          <p>Sunday: 7am - 10pm</p>
+        </div>
+
+        <div>
+          <h3>HELP</h3>
+          <div class="help_links">
+            <a href="">Shipping & Returns</a>
+            <a href="">Private Policy</a>
+            <a href="">FAQ</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="subscribe">
+        <h3>SUBSCRIBE</h3>
+
+        <div>
+          <div class="input_div">
+            <label for="footer_email">Enter your email here</label>
+
+            <input type="email" name="" id="footer_email" />
+          </div>
+          
+
+          <button>Subscribe Now</button>
+        </div>
+      </div>
+
+      <div class="social_media">
+        <i class="fa-brands fa-facebook"></i>
+
+        <i class="fa-brands fa-pinterest-p"></i>
+
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+    </footer>
+
+    <div id="googleMap">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317715.71194565966!2d-0.38178730035928854!3d51.52873519479685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon!5e0!3m2!1sen!2suk!4v1658829910806!5m2!1sen!2suk"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+    <p>
+      This website design was created by Wix.com, and is used here for strictly
+      educational purposes.
+    </p>
+  </body>
 </html>

@@ -1,3 +1,701 @@
-/* Add your CSS here */
+body {
+ margin: 0;
+ padding: 0;
+ width: 100vw;
+ border: 1px solid green;
+ box-sizing: border-box;
+ font-family: 'Outfit', sans-serif;
+  background-color: #EDEDEE;
+}
 
-/* Dont' forget to link this file to your HTML in the <head> */
+/* Header Styles */
+
+header{
+ background-color: white;
+}
+ header > div:first-child {
+ border-top: 1px solid black;
+  height: 3em;
+  border-radius: 30px;
+ }
+
+ .search_bar {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.8em;
+ }
+
+ .search_bar > div:first-child {
+  width: 70%;
+ }
+
+ .fa-solid.fa-magnifying-glass{
+  color: #A05941;
+ }
+
+ .bi.bi-list{
+  color: #A05941;
+ }
+
+ .bi.bi-person-circle{
+  color: #A05941;
+  font-size: 1.5em;
+ }
+
+ .search_bar > div:first-child{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+ }
+
+ .search_bar > div:last-child{
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  gap: 10%;
+ }
+
+ .search_bar input {
+  width: 80%;
+  outline-color: #A05941;
+  border: none;
+  font-size: 1.1em;
+ }
+
+ .search_bar input::placeholder{
+  color: #A05941;
+ }
+
+ .user{
+  display: none;
+  gap: 9%;
+  justify-content: end;
+  width: 50%;
+ }
+ 
+ 
+
+ nav {
+  display: flex;
+  justify-content:space-around;
+  flex-direction: column;
+  background-color: #EDEDEE;
+  color: #A05941;
+   font-family: 'Fjalla One', sans-serif;
+   padding-top: 1em;
+   padding-bottom: 1em;
+ }
+
+ .nav_text_wrapper{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+ 
+ }
+ 
+ .nav_text_wrapper > p{
+letter-spacing: 2px;
+font-size: 1.3em;
+width: 60%;
+margin: 0;
+ }
+
+ nav>p{
+ 
+  font-weight: lighter;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  width: 89%;
+  margin: 1em auto;
+
+ }
+
+ .nav_links{
+  display: none;
+ }
+ 
+
+ .bi.bi-bag{
+  color: #A05941;
+  font-size: 1.5em;
+ }
+
+ .bi.bi-list{
+ font-size: 2.5em;
+ width: 20%;
+ display: flex;
+ justify-content: center;
+ }
+
+
+
+main{
+ background-color: #EDEDEE;
+ height: auto;
+ }
+
+.hero {
+ background: url(../Images/1.png) no-repeat center/cover;
+ padding-top: 1.4em;
+ display: grid;
+ grid-template-columns: 1fr;
+ grid-template-rows: 30% 13% 18% 38px;
+ grid-template-areas: 
+ "logo"
+ "h1"
+ "p"
+ "button";
+ row-gap: 1.5em;
+ height: 85vh;
+ color: white;
+}
+
+svg{
+ fill: white;
+ width:50%;
+ height: 100%;
+ 
+}
+
+
+ 
+.logo {
+ display: flex;
+ justify-content: center;
+ align-items: flex-end;
+ gap: 5%;
+ width: 80%;
+ grid-area: logo;
+ margin: 0 auto;
+}
+
+.logo > p {
+ text-decoration: underline;
+ font-size: 1.2em;
+ letter-spacing: 2.5px;
+ text-underline-offset: 10px;
+ align-self: center;
+
+}
+
+h1, .hero > p{
+ text-align: center;
+}
+
+h1{
+ grid-area: h1;
+ font-weight: 200;
+ font-size: 2.25rem;
+ letter-spacing: 0.2em;
+ font-family: 'Fjalla One', sans-serif;
+ margin: 0;
+ padding: 0;
+}
+
+.hero > p {
+ width: 65%;
+
+ font-size:1.5rem;
+ text-align: center;
+ margin: 0 auto;
+ letter-spacing: 2.8px;
+ grid-area: p;
+}
+
+ .hero > div:last-child {
+display: flex;
+justify-content: center;
+grid-area: button;
+}
+
+button{
+ width: 49%; 
+ font-size: medium;
+ color: white;
+ background-color: #A05941;
+ border: none;
+}
+
+/* Products section */
+
+.product {
+  background-color: white;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.products {
+ display: flex;
+ flex-direction: column;
+ margin-top: 2em;
+ background-color: #EDEDEE;
+}
+
+.products p{
+ color: #A05941;
+ font-size: 1.5em;
+ margin-top: 0.7em;
+ margin-bottom: 0;
+ font-weight: bold;
+ letter-spacing: 3px;
+ text-align: center;
+}
+
+.product button {
+ display: block;
+margin: auto;
+height: 35px;
+font-size: 0.9em;
+
+}
+
+.bar{
+ width:12px;
+ background-color: #A05941;
+ height: 5px;
+ margin: 12px auto;
+}
+
+.product_img_container {
+ height: 320px;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+}
+
+#cacti {
+ background-image: url(../Images/4.png);
+}
+
+#plant {
+ background-image: url(../Images/2.png);
+}
+
+#succulent {
+ background-image: url(../Images/3.png)
+}
+
+/* About section */
+
+.about{
+ background: white;
+ color: #A05941;
+ display: grid;
+ grid-template-rows: auto auto;
+ grid-template-columns: repeat(5, auto);
+ grid-template-areas:
+ "about-div about-div about-div about-div"
+ "img1 img1 img1 img1"
+ "img2 img2 img2 img2"
+ "img3 img3 img3 img3"
+ "buy-online buy-online buy-online buy-online"
+ 
+}
+
+.about > div:first-child{
+  grid-area: about-div
+}
+
+h2{
+ text-align: center;
+ letter-spacing: 2px;
+ margin: 0;
+ padding-top: 1.5em;
+}
+
+.about_para {
+ width: 90%;
+ margin: 2em auto;
+ text-align: center;
+ line-height: 1.8em;
+ font-size: 1em;
+}
+
+#second_para{
+ margin-bottom: 3em;
+}
+
+.about img{
+ width: 100%;
+ margin-bottom: -4px;
+}
+
+#img1{
+grid-area: img1;
+}
+
+#img2{
+ grid-area: img2;
+}
+
+#img3{
+  grid-area: img3;
+}
+
+.about > div:last-child{
+ height: 400px;
+ background: #133032;
+ color: white;
+ text-align: center;
+ grid-area: buy-online;
+}
+
+#buy_online{
+ width: 75%;
+ text-align: center;
+ margin: 0 auto;
+ padding: 1em;
+ font-size: 3em;
+ letter-spacing: 2px;
+ font-weight: bolder;
+font-family: 'Fjalla One', sans-serif;
+}
+
+.buy_online > button{
+ width: 47%;
+ height: 10%;
+ font-size: medium;
+ 
+}
+
+/* Form section */
+.form_section{
+ padding-bottom: 5em;
+ background: url(../Images/8.png) no-repeat bottom/contain;
+padding-bottom: 11em;
+}
+
+
+.form_section > div:first-child {
+  width: 90%;
+  margin: 2em auto;
+  background-color: white;
+  padding-top: 1em;
+}
+
+.form_title{
+  color: #A05941;
+}
+
+.name_wrapper{
+ 
+  display: grid;
+  row-gap: 0.85em;
+}
+
+.name_wrapper div{
+  display: grid;
+  row-gap: 0.4em;
+}
+
+
+.form_section p{
+ text-align: center;
+ width: 70%;
+ margin: 1em auto;
+ font-size: 1.5em;
+
+}
+
+form{
+ display: grid;
+ padding: 0 1em 3em 1em;
+ row-gap: 0.8em;
+}
+
+input{
+ height: 35px;
+ width: 100%;
+}
+
+form button{
+  margin-top: 1.5em;
+  height: 40px;
+  width: 100%;
+}
+
+
+
+/* Footer Styles */
+
+footer {
+ background-color: #133032;
+ color: white;
+ text-align: center;
+ padding-bottom: 1.5em;
+}
+
+h3{
+ width: 100%;
+ margin: 3em auto 1.5em auto;
+ letter-spacing: 5px;
+}
+#our_store{
+  margin-top: 0;
+  padding-top: 3em;
+}
+
+footer a{
+ color: white;
+}
+
+.help_links{
+ display: flex;
+ flex-direction: column;
+}
+
+.subscribe h3 {
+ text-align: center;
+}
+
+.subscribe {
+ width: 90%;
+margin: 1em auto;
+ text-align: left;
+}
+
+ footer input {
+background-color: transparent;
+border: 1px solid white;
+ }
+
+ footer button {
+  width: 100%;
+  margin-top: 1em;
+  height: 40px;
+  background-color: white;
+  color: black;
+ }
+
+ .social_media{
+  display: flex;
+  justify-content: center;
+  gap: 3%;
+  margin-top: 3.5em;
+  margin-bottom: 1em;
+ }
+
+ i{
+color: white;
+ }
+
+ iframe{
+  width: 100%;
+  height: 400px;
+ filter: invert(100%) grayscale(60%);
+ }
+
+
+ /* Media Queries */
+
+@media screen and (min-width: 540px) {
+body{
+  padding: 0 3rem;
+}
+
+
+
+.hero{
+  height: 90vh;
+  background-size: cover;
+  background-position: top;
+}
+ .logo{
+    width: 50%;
+  }
+
+
+  svg{
+    height: 80%;
+  }
+}
+
+ 
+
+
+
+
+/* Media query laptop */
+@media screen and (min-width: 900px) {
+body{
+  padding: 0 3rem;
+}
+.user {
+  display: flex;
+}
+
+nav{
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav_text_wrapper > p{
+  width: 38%;
+}
+.nav_links > a{
+  font-family: 'Outfit', sans-serif;
+  text-decoration: none;
+}
+
+
+.nav_links{
+  display: flex;
+  justify-content: space-between;
+  width: 55%;
+}
+
+.nav_text_wrapper{
+  width: 40%;
+}
+nav > p{
+  width: 30%;
+ margin: 0;
+ text-align: end;
+}
+.bi.bi-list{
+  display: none;
+}
+
+.hero{
+  height: 140vh;
+  background-position: top;
+  background-image: url(../Images/697bc8_ee5e15509a8c468f96ec8b15a13e0daf_mv2_d_2000_1809_s_2.webp);
+background-attachment: fixed;
+row-gap: 0em;
+padding-top: 4em;
+grid-template-rows:22% 18% 7% 6%;
+}
+ .logo{
+    width: 30%;
+    height: 40%;
+    align-items: center;
+    padding-top: 5em;
+  }
+
+
+  h1{
+    margin-top: 0;
+    font-size: 5.5em;
+  }
+
+.hero button{
+  width: 17%;
+}
+  
+
+  /* Product */
+  .product {
+    width: 30%;
+  }
+.products{
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.product_img_container{
+  background-position: bottom;
+}
+ 
+.about{
+  height: 150vh;
+  margin-top: 2em;
+  grid-template-rows: 45% 55%;
+  grid-template-columns:
+  50% 1fr 1fr;
+  grid-template-areas:
+  "about-div img1 img2"
+
+  "img3 buy-online buy-online" 
+}
+
+.about_para{
+  line-height: 1.5em;
+ 
+}
+
+#img1, #img2, #img3, .about >div:last-child{
+  height: 100%;
+}
+
+#buy_online{
+ width: 63%;
+ font-size: 3.7em;
+ padding-bottom: 0.5em;
+}
+
+.buy_online button{
+  background-color: white;
+  color: black;
+  width: 33%; 
+  
+}
+
+ /* Form */
+
+ .form_section{
+  background-size: cover;
+  background-attachment: fixed;
+  padding-bottom: 3em;
+  padding-top: 4.4em;
+ }
+
+ .form_title{
+  margin-bottom: 2em;
+ }
+
+
+ .form_section > div:first-child {
+  width: 65%;
+  margin: 2em auto;
+  padding: 1em;
+  opacity: 0.8;
+ }
+
+ .name_wrapper{
+  display: flex;
+  justify-content: space-between;
+ }
+
+ .name_wrapper div{
+  width: 48%;
+ }
+
+/* Footer style */
+footer > div:first-child {
+  display: flex;
+  justify-content: space-around;
+}
+
+.subscribe > div{
+  display: flex;
+  width: 35%;
+  margin: 0 auto;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.input_div{
+  width: 58%;
+}
+
+.input_div input {
+  margin-top: 0.5em;
+}
+
+
+
+.subscribe button {
+  width: 35%;
+}
+
+  
+}
+
+
+
+
+
+
+
+
+
