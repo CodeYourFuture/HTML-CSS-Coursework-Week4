@@ -1,3 +1,375 @@
-/* Add your CSS here */
+/* Variables */
 
-/* Dont' forget to link this file to your HTML in the <head> */
+:root {
+    --dark-beige: #E6DACD;
+    --light-beige: #F4ECE6;
+    --royal-blue: #0150FD;
+    --black: #000;
+    --white: #FFF;
+    --heading-font: 'Poppins', sans-serif;
+    --body-font: 'Quicksand', sans-serif;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--black);
+    font-family: var(--body-font);
+}
+
+/* Header */
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--white);
+    height: 15vh;
+}
+
+/* Header brand */
+.h__brand {
+    display: grid;
+    grid-template-areas: "icon title"
+        "subtitle subtitle";
+    margin: 20px;
+}
+
+.h__brand__icon {
+    grid-area: icon;
+    align-self: center;
+    width: 16px;
+    height: 16px;
+    background-color: var(--royal-blue);
+}
+
+.h__brand__title {
+    grid-area: title;
+    align-self: center;
+    padding-left: 10px;
+    font-family: var(--heading-font);
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.h__brand__span {
+    display: none;
+}
+
+.h__brand__subtitle {
+    grid-area: subtitle;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+/* Hamburger icon */
+#h__side-menu {
+    display: none;
+}
+
+.h__hamb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+}
+
+.h__hamb-line__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    height: 21px;
+    width: 26px;
+    z-index: 3;
+
+}
+
+.h__hamb-line {
+    position: relative;
+    display: block;
+    height: 3px;
+    border-radius: 4px;
+    background: var(--royal-blue);
+}
+
+.h__hamb-line:nth-child(1) {
+    width: 13px;
+}
+
+.h__hamb-line:nth-child(3) {
+    width: 13px;
+    align-self: flex-end;
+}
+
+#h__side-menu:checked~.h__nav {
+    max-height: 100%;
+}
+
+#h__side-menu:checked~.h__hamb .h__hamb-line {
+    background-color: var(--black);
+    transition-duration: 0.5s;
+}
+
+#h__side-menu:checked~.h__hamb .h__hamb-line:nth-child(1) {
+    transform: rotateZ(-135deg) translate(-4px, -2px);
+
+}
+
+#h__side-menu:checked~.h__hamb .h__hamb-line:nth-child(2) {
+    transform: rotate(-45deg);
+
+}
+
+#h__side-menu:checked~.h__hamb .h__hamb-line:nth-child(3) {
+    transform: rotate(-135deg) translate(-4px, 11px);
+    align-self: flex-start;
+
+}
+
+/* Navigation menu */
+.h__nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    color: var(--black);
+    background-color: var(--light-beige);
+    text-align: center;
+    max-height: 0;
+    transition: max-height .5s ease-out;
+    z-index: 2;
+}
+
+.h__nav__menu {
+    list-style-type: none;
+    margin-top: 10em;
+}
+
+.h__nav__menu li {
+    margin: 30px;
+}
+
+.h__nav__menu a {
+    cursor: pointer;
+    font-family: var(--heading-font);
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.active-link {
+    color: var(--royal-blue)
+}
+
+/* Buttons */
+.btn {
+    width: 120px;
+    padding: 5px;
+    margin: 5px;
+    font-size: 14px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    border-radius: 20px;
+    transition: 0.4s ease 0s;
+
+}
+
+.btn--primary {
+    color: var(--white);
+    background-color: var(--royal-blue);
+    border: 2px solid var(--royal-blue);
+}
+
+.btn--secondary {
+    color: var(--black);
+    background-color: transparent;
+    border: 1px solid var(--black);
+}
+
+/* Main title */
+.m__title__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.m__icon {
+    width: 19px;
+    height: 19px;
+    background-color: var(--royal-blue);
+}
+
+.m__title {
+    padding: 0 10px;
+    font-size: 29px;
+    font-family: var(--heading-font);
+    font-weight: 600;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: var(--white);
+}
+
+.f__sections {
+    display: grid;
+    grid-template-columns: 40vw 60vw;
+    grid-template-rows: auto;
+}
+
+.f__section {
+    margin: 10px;
+    font-size: 14px;
+}
+
+.f__section__title {
+    padding-bottom: 10px;
+    font-family: var(--heading-font);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.f__section__mail {
+    text-decoration: none;
+}
+
+.fa-brands {
+    padding-right: 10px;
+}
+
+.f__text {
+    margin: 10px 20px 10px 10px;
+    font-size: 14px;
+}
+
+@media screen and (min-width:600px) {
+
+    /* Header */
+    .header {
+        padding: 20px;
+    }
+
+    /* Header brand */
+    .h__brand {
+        display: flex;
+        align-items: center;
+    }
+
+    .h__brand__title {
+        font-size: 25px;
+        margin-right: 10px;
+    }
+
+    .h__brand__span {
+        display: inline;
+        margin-right: 10px;
+
+    }
+
+    .h__brand__subtitle {
+        font-size: 17px;
+    }
+
+    /* Hamburger icon */
+    .h__hamb {
+        display: none;
+    }
+
+    /* Navigation */
+    .h__nav {
+        position: sticky;
+        width: auto;
+        height: auto;
+        align-items: center;
+        overflow: initial;
+        max-height: none;
+        background-color: transparent;
+
+    }
+
+    .h__nav__menu {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 0;
+    }
+
+    .h__nav__menu li {
+        margin: 0 10px;
+    }
+
+    .h__nav__menu a {
+        line-height: 40px;
+        font-family: var(--body-font);
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+    .h__nav__menu a:hover {
+        color: var(--royal-blue);
+    }
+
+    /* Main title */
+    .m__title__container {
+        padding: 20px;
+    }
+
+    .m__icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .m__title {
+        font-size: 35px;
+    }
+
+    /* Buttons */
+    .m__buttons {
+        left: 700px;
+    }
+
+    .btn--primary:hover {
+        color: var(--royal-blue);
+        background-color: var(--white);
+    }
+
+    .btn--secondary:hover {
+        color: var(--white);
+        background-color: var(--royal-blue);
+        border: 2px solid var(--royal-blue);
+    }
+
+    /* Footer */
+    .footer {
+        flex-direction: row-reverse;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .f__text {
+        display: block;
+        width: 40vw;
+        padding: 20px 50px 10px;
+    }
+
+    .f__sections {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .f__section {
+        text-align: center;
+    }
+
+}
