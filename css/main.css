@@ -217,6 +217,9 @@ main {
   background-color: white;
   color: black;
 }
+.btn-project:hover {
+background-color: #0050ff;
+}
 .btn-project {
   background-color: white;
   font-weight: bold;
@@ -230,6 +233,9 @@ main {
 .btn {
   display: none;
   
+}
+.btn a {
+  text-decoration: none;
 }
 
 
