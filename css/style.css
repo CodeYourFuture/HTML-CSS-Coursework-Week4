@@ -22,6 +22,17 @@ body {
     text-align: center;
 }
 
+/*  */
+
+.animated {
+	opacity: 1 !important;
+	transition: opacity 2s;
+	transition-delay: 0.25s;
+}
+.need-animate{
+	opacity: 0 !important;
+}
+
 /* Order */
 
 .order {
@@ -70,6 +81,7 @@ body {
     background-image: url(../img/hero.png);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* Discount section */
@@ -352,6 +364,7 @@ background-color: var(--clr-light-green);
 .copyright {
     font-size: 0.9rem;
     font-weight: 100;
+    margin-bottom: 1.5rem;
 }
 
 /* buttons */
@@ -361,6 +374,7 @@ body button {
     border: 2px solid var(--clr-black);
     text-align: center;
     text-decoration: none;
+    transition-duration: 0.4s;
     font-size: 0.9rem;
     cursor: pointer;
 }
@@ -554,5 +568,8 @@ body p {
 .img-kit,
 .img-catalog {
     max-width: 30rem;
+}
+
+.img-catalog {
     max-height: 30rem;
 }

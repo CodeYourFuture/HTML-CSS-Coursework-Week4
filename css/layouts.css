@@ -159,6 +159,12 @@ body button {
     font-size: 1.6rem;
 }
 
+/* Orange picture */
+
+.showcase {
+    background-attachment: fixed;
+}
+
 .btn-vision,
 .btn-explore {
     padding: 1.3rem 4.5rem;
@@ -469,7 +475,15 @@ body button {
 }
 
 .copyright {
+    font-size: 1rem;
     text-align: center;
+    margin-top: 4rem;
+}
+
+.img-vision,
+.img-kit,
+.img-catalog {
+    max-width: none;
 }
 
 }
