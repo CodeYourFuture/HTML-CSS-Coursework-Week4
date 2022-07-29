@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>frame</title>
+    <link rel="stylesheet" href="css/marquee-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/responsive-grid-project/css/frame-style.css">
+    <script src="https://kit.fontawesome.com/43c21ed95e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="search-bar">
+        <input type="text" id="search-bar" placeholder="search" />
+    </div>
+    <header class="header">
+        <nav class="navbar">
+
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#" class="nav-link">home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">about</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">contact</a></li>
+            </ul>
+            <i id="hamburger" class="fa-solid fa-bars"></i>
+        </nav>
+        <h1>PRICKLES & CO.</h1>
+        <div class="marquee">
+            <div class="marquee__inner" aria-hidden="true">
+                <span>We Deliver to Your Doorstep</span>
+                <span></span>
+                <span>Call Us Now! 123-456-7890</span>
+
+            </div>
+        </div>
+        <!--
+        <h3>We Deliver to Your Doorstep</h3>
+        <h3>Call Us Now! 123-456-7890</h3>-->
+    </header>
+    <main class="main-container">
+        <section class="intro-sec">
+            <article class="hero">
+                <div class="hero-container">
+                    <p class="hero-text">ESTB</p>
+                    <img class="logo" alt="logo svg" src="logo.svg">
+                    <P class="hero-text">2023</P>
+                </div>
+                <button class="button-red">Shop Now</button>
+
+            </article>
+        </section>
+        <section class="plants-sec">
+            <article class="plants ">
+                <h3>plants</h3>
+                <span class="brown-line"></span>
+                <button class="button-red">shop collection</button>
+                <!--- <img src="responsive-grid-project/img/plants.png" alt="plants image"> -->
+            </article>
+            <article class="cacti ">
+                <h3>cacti</h3>
+                <button class="button-red">shop collection</button>
+                <!--<img src="responsive-grid-project/img/cacti.png" alt="cacti image"> -->
+            </article>
+            <article class="succulent ">
+                <h3>succulent</h3>
+                <button class="button-red">shop collection</button>
+                <!---<img src="/img/succlents.png" alt="succulents image"> -->
+            </article>
+        </section>
+        <section class="about-sec">
+            <article class="about-txt">
+                <h3>About us</h3>
+                <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy.
+                    Just click “Edit Text” or double click me to add your own content and make changes to the font.
+                    Feel free to drag and drop me anywhere you like on your page.
+                    I’m a great place for you to tell a story and let your users know a little more about you.
+                    This is a great space to write long text about your company and your services.
+                    You can use this space to go into a little more detail about your company.
+                    Talk about your team and what services you provide.</p>
+            </article>
+            <article class="about-img">
+                <img class="img" src="\responsive-grid-project\img\greenhouse.png" alt="greenhouse wheelbarrow plants">
+                <img class="img" src="\responsive-grid-project/img/leaf.png" alt="hand holding leaf">
+            </article>
+        </section>
+        <section class="offer">
+            <h3>BUY ONLINE NOW & GET 10% OFF !</h3>
+            <button class="white-button">shop now</button>
+
+        </section>
+        <section class="form-sec">
+            form
+            <form class="form" action="">
+
+                <label for="fname">First name *</label>
+                <input type="text" id="fname" name="fname" required><br><br>
+                <label for="lname">Last name *</label>
+                <input type="text" id="lname" name="lname" required><br><br>
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" "><br><br>
+                <label for=" message">Message:</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                <button class="button-red">sent</button>
+            </form>
+
+        </section>
+        <section class="subscribe-sec">
+            <div class="info-container">
+                <article class="our-store">
+                    <h3>OUR STORE</h3>
+
+                    Address: 500 Terry Francois Street San Francisco, CA 94158
+
+                    Phone: 123-456-7890
+
+                    Email: info@mysite.com
+
+                </article>
+                <article class="opening">
+                    <h3>OPENING HOURS</h3>
+
+                    Mon - Fri: 7am - 10pm
+                    ​​Saturday: 8am - 10pm
+                    ​Sunday: 8am - 11pm
+                </article>
+                <article class="help">
+                    <h3>HELP</h3>
+
+                    Shipping & Returns
+
+                    Privacy Policy
+
+                    FAQ
+                </article>
+            </div>
+            <article class="sub">
+                <h3>Subscribe</h3>
+                <label for="sub-email">Enter email here *</label>
+                <input id="sub-email" type="email">
+                <button>subscribe now!</button>
+            </article>
+        </section>
+        <article class="social">
+
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-pinterest-p"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </article>
+
+        <section class="map"> map
+            <div class="mapouter">
+                <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas"
+                        src="https://maps.google.com/maps?q=Address:%20500%20Terry%20Francois%20Street%20San%20Francisco,%20CA%2094158&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                        href="https://fmovies-online.net">fmovies</a><br>
+                    <a href="https://www.embedgooglemap.net">google maps widget</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
