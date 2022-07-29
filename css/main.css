@@ -1,29 +1,37 @@
 /* Add your CSS here */
 :root {
-  --h1-font-family: "Fjalla One", sans-serif;
+  --headers: "Fjalla One", sans-serif;
+  --all-other-fonts: "Outfit", sans-serif;
+  --uppercase: uppercase;
+  --burnt-orange: #a05941;
+  --white: white;
+  --btn-border: solid 1px #a05941;
+  --grey: #ededee;
+  --dark-green: #133032;
+}
+/*  --h1-font-family: "Fjalla One", sans-serif;
   --allotherfonts-font-family: "Outfit", sans-serif;
   --uppercase-text-transform: uppercase;
   --btn-background-color: #a05941;
   --btn-color: white;
   --btn-border: solid 1px #a05941;
   --body-background-color: #ededee;
-  --other-background-color: #133032;
-}
+  --other-background-color: #133032; */
 body {
-  background-color: var(--body-background-color);
-  font-family: var(--allotherfonts-font-family);
+  background-color: var(--grey);
+  font-family: var(--all-other-fonts);
   padding: 0;
   margin: 0;
 }
 h1,
 h2,
 h3 {
-  font-family: var(--h1-font-family);
+  font-family: var(--headers);
   font-weight: normal;
   letter-spacing: 0.1rem;
 }
 .sub-heading {
-  font-family: var(--allotherfonts-font-family);
+  font-family: var(--all-other-fonts);
 }
 /* HEADER */
 .search-login {
@@ -35,29 +43,30 @@ header {
   padding: 0rem 1rem;
 }
 .title {
-  color: var(--btn-background-color);
-  text-transform: var(--uppercase-text-transform);
+  color: var(--burnt-orange);
+  text-transform: var(--uppercase);
   font-size: 1.5rem;
   margin-bottom: 0;
 }
 .hamburger-menu {
   font-size: 2rem;
-  color: var(--btn-background-color);
+  color: var(--burnt-orange);
   font-weight: bold;
   text-align: right;
   padding-top: 0.5rem;
 }
 .desktop-nav {
   display: none;
-  color: var(--btn-background-color);
+  color: var(--burnt-orange);
 }
 .responsive-nav {
   display: none;
-  color: var(--btn-background-color);
+  color: var(--burnt-orange);
+  text-align: center;
 }
 .login-link {
   text-decoration: none;
-  color: var(--btn-background-color);
+  color: var(--burnt-orange);
 }
 nav > ul > li {
   list-style-type: none;
@@ -65,11 +74,11 @@ nav > ul > li {
 }
 nav > ul > li > a {
   text-decoration: none;
-  color: var(--btn-background-color);
+  color: var(--burnt-orange);
 }
 .header-txt {
   grid-column: 1 / -1;
-  color: var(--btn-background-color);
+  color: var(--burnt-orange);
   font-size: 1rem;
   letter-spacing: 0.1rem;
   font-weight: bold;
@@ -81,7 +90,7 @@ nav > ul > li > a {
 /* JUMBOTRON */
 .jumbotron {
   text-align: center;
-  color: var(--btn-color);
+  color: var(--white);
 }
 .jumbotron > img {
   max-width: 100%;
@@ -96,28 +105,28 @@ nav > ul > li > a {
   width: 100%;
 }
 .jumbo-text > h1 {
-  text-transform: var(--uppercase-text-transform);
+  text-transform: var(--uppercase);
   font-size: 3.5rem;
   letter-spacing: 0.5rem;
   margin-bottom: 0;
 }
 .jumbo-text > h2 {
-  text-transform: var(--uppercase-text-transform);
+  text-transform: var(--uppercase);
   letter-spacing: 0.5rem;
   font-size: 1rem;
 }
 .jumbo-text > button {
-  background-color: var(--btn-background-color);
-  color: var(--btn-color);
+  background-color: var(--burnt-orange);
+  color: var(--white);
   border: var(--btn-border);
   padding: 0.5rem 1.5rem;
 }
 /* ABOUT SECTION */
 .about {
   text-align: center;
-  color: var(--btn-background-color);
+  color: var(--burnt-orange);
   margin: 0;
-  background-color: var(--btn-color);
+  background-color: var(--white);
 }
 .about > article {
   padding-bottom: 4rem;
@@ -126,7 +135,7 @@ nav > ul > li > a {
   margin: 0;
   padding: 0;
   font-weight: bold;
-  color: var(--btn-background-color);
+  color: var(--burnt-orange);
   font-size: 3rem;
 }
 .about > h1 {
@@ -140,7 +149,7 @@ nav > ul > li > a {
 }
 /* DISCOUNT SECTION */
 .discount {
-  background-color: var(--other-background-color);
+  background-color: var(--dark-green);
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -156,7 +165,7 @@ nav > ul > li > a {
   max-width: 70%;
 }
 .discount-text {
-  color: var(--btn-color);
+  color: var(--white);
   font-size: 3rem;
   padding: 0rem 3rem;
   margin: 0;
@@ -164,7 +173,7 @@ nav > ul > li > a {
 }
 .announcement > button {
   padding: 0.7rem 1rem;
-  background-color: var(--btn-color);
+  background-color: var(--white);
   font-size: 1rem;
   max-width: 50%;
 }
@@ -172,15 +181,15 @@ nav > ul > li > a {
 form {
   display: grid;
   gap: 1rem;
-  background-color: var(--btn-color);
+  background-color: var(--white);
   padding: 1rem 1rem 1.5rem 1rem;
   margin: 0 1rem;
 }
 form > h3 {
   text-align: center;
-  color: var(--btn-background-color);
+  color: var(--burnt-orange);
   letter-spacing: 0.5rem;
-  text-transform: uppercase;
+  text-transform: var(--uppercase);
   padding: 0rem 5rem;
   margin-bottom: 0;
 }
@@ -188,7 +197,7 @@ form > span {
   text-align: center;
   font-size: 3rem;
   font-weight: bold;
-  color: var(--btn-background-color);
+  color: var(--burnt-orange);
   padding: 0;
   margin: 0;
 }
@@ -200,8 +209,8 @@ textarea:hover {
   border: 2px black solid;
 }
 form > button {
-  background-color: var(--btn-background-color);
-  color: var(--btn-color);
+  background-color: var(--burnt-orange);
+  color: var(--white);
   border: var(--btn-border);
   padding: 1rem 1.5rem;
 }
@@ -209,8 +218,8 @@ form > button {
   max-width: 100%;
 }
 .more-info {
-  background-color: var(--other-background-color);
-  color: var(--btn-color);
+  background-color: var(--dark-green);
+  color: var(--white);
   padding: 0;
   margin: 0;
 }
@@ -236,7 +245,7 @@ article > p {
   display: grid;
 }
 .help > a {
-  color: var(--btn-color);
+  color: var(--white);
   padding-bottom: 0.5rem;
 }
 .subscribe {
@@ -247,7 +256,7 @@ article > p {
   padding-bottom: 0.5rem;
 }
 .subscribe > input {
-  color: var(--btn-color);
+  color: var(--white);
   background-color: #133032;
   border: solid 1px white;
   padding: 0.5rem;
@@ -259,13 +268,13 @@ article > p {
   margin-top: 1rem;
   padding: 1rem;
   font-size: 1rem;
-  background-color: var(--btn-color);
+  background-color: var(--white);
 }
 .socials {
   padding: 5rem 0rem 3rem 0rem;
 }
 .socials > a {
-  color: var(--btn-color);
+  color: var(--white);
   font-size: 1.5rem;
   padding: 0rem 0.5rem;
 }
@@ -278,7 +287,7 @@ article > p {
 }
 footer {
   text-align: center;
-  color: var(--btn-background-color);
+  color: var(--burnt-orange);
 }
 
 @media only screen and (min-width: 540px) {
@@ -327,7 +336,7 @@ footer {
   }
   .login-cart {
     display: flex;
-    color: var(--btn-background-color);
+    color: var(--burnt-orange);
     align-items: flex-end;
     padding-right: 1rem;
   }
@@ -351,14 +360,14 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--btn-color);
+    background-color: var(--white);
     padding: 0;
     margin: 0;
   }
   .search-bar {
     padding: 0.5rem;
     margin: 0.5rem;
-    color: var(--btn-background-color);
+    color: var(--burnt-orange);
   }
   .search-bar:hover {
     border: 1px solid #a05941;
@@ -367,7 +376,7 @@ footer {
     border: none;
   }
   ::placeholder {
-    color: var(--btn-background-color);
+    color: var(--burnt-orange);
   }
   .hamburger-menu {
     display: none;
