@@ -137,13 +137,14 @@ article {
     .company-info {
         font-size: 14px;
     }
-    .skills
-    {
+
+    .skills {
         padding: 45px;
     }
-    
 
-    .exp-desc,.position {
+
+    .exp-desc,
+    .position {
         font-size: 17px;
         font-weight: 200;
     }
