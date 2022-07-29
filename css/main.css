@@ -1,3 +1,402 @@
-/* Add your CSS here */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Quicksand:wght@300&display=swap');
 
-/* Dont' forget to link this file to your HTML in the <head> */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+body,
+html {
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+header {
+    height: 300px;
+    position: relative;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header-name {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.header-name h3 {
+    margin-top: -10px;
+    margin-bottom: 2px;
+    margin-left: 10px;
+    font-size: 25px;
+}
+
+.header-name .icon {
+    background-color: #0150FD;
+    width: 20px;
+    height: 20px;
+}
+
+.header-role {
+   font-size: 20px;
+   font-weight:100;
+}
+
+.header-logo-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-logo-container span {
+    display: none;
+}
+
+.desktop {
+	display: none;
+}
+
+/* hamburger menu */
+#menu-toggle {
+    opacity: 0;
+}
+
+#menu-toggle:checked+.menu-label>span {
+    transform: rotate(-45deg);
+    background-color: #000;
+}
+
+#menu-toggle:checked+.menu-label>span::before {
+    top: -9px;
+    left: 10px;
+    transform: rotate(-90deg);
+    background-color: #000;
+}
+
+#menu-toggle:checked+.menu-label>span::after {
+    top: 9px;
+    right: 10px;
+    transform: rotate(-90deg);
+    background-color: #000;
+}
+
+#menu-toggle:checked~.menu-list {
+    right: 0 !important;
+}
+
+.menu-label {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu-label>span,
+.menu-label>span::before,
+.menu-label>span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #0150FD;
+    transition-duration: 0.5s;
+    border-radius: 3px;
+}
+
+.menu-label>span::before {
+    content: '';
+    top: -15px;
+    width: 50%;
+}
+
+.menu-label>span::after {
+    content: '';
+    top: 15px;
+    width: 50%;
+    right: 0;
+}
+
+.menu-list {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: #F4ECE6;
+    transition-duration: 0.25s;
+    text-align: center;
+    z-index: 1;
+}
+
+.menu-item {
+    display: block;
+    padding: 12px 24px;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition-duration: 0.25s;
+}
+
+.active-link {
+    color: #0150FD;
+}
+
+
+img {
+    border-radius: 50%;
+    width: 200px;
+    height: auto;
+}
+
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.home-background{
+    background-color: #E6DACD;
+    min-height: 800px;
+}
+
+.home-cover {
+    position: absolute;
+    top: 100px;
+    width: 100%;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-card {
+    box-shadow: -10px 10px 30px 0 rgba(0, 0, 0, 0.2);
+    height: 580px;
+    width: 400px;
+    background-color: #F4ECE6;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.home-card > * {
+    margin-top: 40px;
+}
+
+.home-card hr {
+    border: 2px solid #0150FD;
+    width: 100px;
+}
+
+.card-buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+.card-buttons-container span {
+    display: none;
+}
+
+.card-buttons-container a {
+    display: block;
+}
+
+.home-button {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #000;
+}
+
+.resume-button {
+    background-color: #0150FD;
+    color: #FFF;
+    border-style: none;
+
+}
+
+.home-card-social {
+    height: 50px;
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+}
+
+.home-card-social a {
+    margin: 10px;
+    color: #000;
+    font-size: 25px;
+}
+
+.home-bio {
+    /* background-color: #E6DACD; */
+    height: auto;
+    width: 400px;
+}
+
+.bio-content {
+    padding-top: 50px;
+    padding-bottom: 40px;
+    margin: 40px;
+}
+
+.bio-buttons-container {
+    display: none;
+}
+
+
+.footer-container {
+    padding-top: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 80px;
+}
+
+.footer-cell {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+
+.social-links a {
+    font-size: 30px;
+    color: #000;
+}
+
+
+/* desktop */
+@media screen and (min-width: 600px) {
+    header {
+        height: 50px;
+    }
+    .desktop {
+		display: block;
+	}
+	.hamburger-menu {
+		display: none;
+	}
+
+
+    
+    .header-logo-container {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+    }
+
+    .header-logo-container span {
+        display: block;
+    }
+
+	.nav-list {
+		display: flex;
+		justify-content: right;
+		margin: auto;
+		gap: 0.5rem;
+	}
+	.nav-list li {
+		list-style-type: none;
+	}
+	.nav-link {
+		padding: 0.25rem 0.5rem;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-size: small;
+	}
+
+    .home-background {
+        width: 40%;
+        height: 60rem;
+    }
+
+    .nav-link:active {
+		color: #0150FD;
+    }
+
+    .home-cover {
+        top: 300px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home-bio {
+        width: 500px;
+    }
+
+    .card-buttons-container span {
+        display: block;
+    }
+    .card-buttons-container a {
+        display: none;
+    }
+
+    .bio-buttons-container {
+        display: block;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+
+    }
+    
+    .footer-container {
+        display: felx;
+        flex-direction: row;
+        min-width: 30rem;
+        justify-content: flex-end;
+
+    }
+
+    .footer-cell {
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .social-links a {
+        font-size: 20px;
+    }
+
+
+}

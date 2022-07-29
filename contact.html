@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/contact.css">
         <link rel="shortcut icon" type="image/icon" href="image/icon.PNG">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>a multi-page responsive website using CSS Grid Fatemeh</title>
@@ -29,63 +30,58 @@
                     <span></span>
                   </label>
                   <ul class="menu-list">
-                    <li><a class="menu-item active-link" href="./index.html">ABOUT ME</a></li>
+                    <li><a class="menu-item" href="./index.html">ABOUT ME</a></li>
                     <li><a class="menu-item" href="./resume.html">RESUME</a></li>
                     <li><a class="menu-item" href="./projects.html">PROJECTS</a></li>
-                    <li><a class="menu-item" href="./contact.html">CONTACT</a></li>
+                    <li><a class="menu-item active-link" href="./contact.html">CONTACT</a></li>
                   </ul>
                 </nav>
                 <nav class="desktop">
                     <ul class="nav-list">
-                        <li><a class="nav-link active-link" href="./index.html">ABOUT ME</a></li>
+                        <li><a class="nav-link" href="./index.html">ABOUT ME</a></li>
                         <li><a class="nav-link" href="./resume.html">RESUME</a></li>
                         <li><a class="nav-link" href="./projects.html">PROJECTS</a></li>
-                        <li><a class="nav-link" href="./contact.html">CONTACT</a></li>
+                        <li><a class="nav-link active-link" href="./contact.html">CONTACT</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
 
         <main>
-            <div class="home-background">
-                <section class="home-cover">
-                    <section class="home-card">
-                        <div class="card-image">
-                            <img src="https://static.wixstatic.com/media/2e2a49_bd3a1599bc1b4265a01b2754b99b8536~mv2_d_5760_3840_s_4_2.jpeg/v1/crop/x_2703,y_43,w_2199,h_2205/fill/w_308,h_308,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/AdobeStock_230407429.jpeg">
-                        </div>
-                        <div class="home-card-name">
-                            <h3>Maya Nelson</h3>
-                        </div>
-                        <hr>
-                        <div class="card-buttons-container">
-                            <span>PROJECT MANAGER</span>
-                            <a class="home-button resume-button" href="" >RESUME</a>
-                            <a class="home-button" href="" >PROJECTS</a>
-                        </div>
-                        <div class="home-card-social">
-                            <a href="https://en-gb.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
-                            <a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
-                            <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                            <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-instagram"></i></a>
-                        </div>
-                    </section>
-                    <article class="home-bio">
-                        <div class="bio-content">
-                            <h2>Hello</h2>
-                            <h4>Here's who I am & what I do</h4>
-                            <div class="bio-buttons-container">
-                                <a class="home-button resume-button" href="" >RESUME</a>
-                                <a class="home-button" href="" >PROJECTS</a>
-                            </div>
-                            <p>I'm a paragraph. Click here to add your own text and edit me. 
-                                It’s easy. Just click “Edit Text” or double click me to add 
-                                your own content and make changes to the font.</p>
-                            <p>I’m a great place for you to tell a story and let your users 
-                                know a little more about you.</p>
-                        </div>
-                    </article>
-                </section>
-            </div>
+            <section class="page-title-container">
+                <div class="page-title">
+                    <div class="page-title-icon"></div>
+                    <h1 class="page-title-name">Let's talk</h1>
+                </div>
+            </section>
+            
+            <section class="contact-container">
+                <form class="contact-form">
+                    <div class="contact-form-cell">
+                        <label class="form-label" for="firstname">First Name<span class="form-star"> *</span></label>
+                        <input class="form-input" type="text" id="firstname" name="firstname" required/>
+                    </div>
+                    <div class="contact-form-cell">
+                        <label class="form-label" for="lastname">Last Name<span class="form-star"> *</span></label>
+                        <input class="form-input" type="text" id="lastname" name="lastname" required/>
+                    </div>
+                    <div class="contact-form-cell extened">
+                        <label class="form-label" for="email">Email<span class="form-star"> *</span></label>
+                        <input class="form-input" type="text" id="email" name="email" required/>
+                    </div>                    
+                    <div class="contact-form-cell extened">
+                        <label class="form-label" for="subject">Subject</label>
+                        <input class="form-input" type="text" id="subject" name="subject"/>
+                    </div>
+                    <div class="contact-form-cell extened">
+                        <label class="form-label" for="messgae">Message</label>
+                        <textarea class="form-input" id="messgae" name="messgae"></textarea>
+                    </div>
+                </form>
+                <div class="button-container">
+                    <button class="conact-button" type="submit">SEND</button>
+                </div>
+            </section>
         </main>
 
         <footer>
@@ -116,5 +112,3 @@
     </body>
 
 </html>
-
-
