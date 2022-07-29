@@ -135,7 +135,7 @@ body {
 }
 
 .img-catalog {
-    object-fit: cover;
+    object-fit: contain;
     width: 100%;
     height: 90vw;
 }
@@ -362,7 +362,6 @@ body button {
     text-align: center;
     text-decoration: none;
     font-size: 0.9rem;
-    transition-duration: 0.4s;
     cursor: pointer;
 }
 
@@ -547,4 +546,13 @@ body p {
 .supply p {
     width: 15rem;
     margin-bottom: 1.5rem;
+}
+
+/* images */
+
+.img-vision,
+.img-kit,
+.img-catalog {
+    max-width: 30rem;
+    max-height: 30rem;
 }

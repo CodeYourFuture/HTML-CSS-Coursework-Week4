@@ -21,77 +21,45 @@
     grid-area: or;
 }
 
-/* Header */
-
 .header {
     grid-area: hd;
-    
 }
-
-/* Hero */
 
 .hero {
     grid-area: hr;
-    
 }
-
-/* Orange picture */
 
 .showcase {
     grid-area: sc;
-    
 }
-
-/* Discount section */
 
 .discount {
     grid-area: ds;
-    
 }
-
-/* Differences section */
 
 .differences {
     grid-area: df;
-    
 }
-
-/* Boosting immunity section */
 
 .vision {
     grid-area: vs;
-    
 }
-
-/* Choose your wellness path */
 
 .catalog {
     grid-area: ct;
-    
 }
-
-/* Discover our ... */
 
 .kit {
     grid-area: kt;
-    
 }
-
-/* Get juice bar .. */
 
 .supply {
     grid-area: sp;
-    
 }
-
-/* follow us */
 
 .networks {
     grid-area: nt;
-    
 }
-
-/* Footer */
 
 .footer {
     grid-area: ft;
@@ -100,7 +68,7 @@
 /* ----- LARGE-SCREEN ----- */
 
 
-@media (min-width: 800px) {
+@media (min-width: 1024px) {
 .container {
   grid-template-rows: 5.5rem 5.5rem 17rem 80vh 5.4rem auto 37rem auto auto auto 23rem auto;
 }
@@ -203,6 +171,19 @@ body button {
     margin: 2rem 0 5rem;
 }
 
+.btn-explore:hover,
+.btn-vision:hover,
+.btn-view:hover,
+.btn-try:hover {
+    background-color: var(--clr-black);
+    color: var(--clr-white);
+}
+
+.btn-submit:hover {
+    background-color: var(--clr-white);
+    color: var(--clr-black);
+}
+
 .discount {
     flex-direction: row;
 }
@@ -288,6 +269,8 @@ body button {
 .cat-box3 {
     align-items:flex-start;
     text-align: left;
+    max-width: none;
+    max-height: none;
 }
 
 .row-content-box {
@@ -320,7 +303,7 @@ body button {
 
 .cat-box1 {
     top: -3rem;
-    right: 65%;
+    right: 67%;
     position: absolute;
 }
 
@@ -333,7 +316,7 @@ body button {
 
 .cat-box3 {
     top: -3rem;
-    left: 65%;
+    left: 67%;
     position: absolute;
 }
 
