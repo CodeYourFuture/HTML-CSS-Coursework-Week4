@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Add a link to your custom CSS here -->
+
+    <title>Responsive grid project</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;1,100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+
+
+   <main class="container">
+      
+    <section class="form-container">
+      <p class="title">Order your Karma wifi device today!</p>
+
+      <form class="form">
+        <fieldset class="form-karma">
+
+ <div class="row">
+          <div class="column">
+            <label for="first-name" class="field">Fist Name*</label>
+            <input type="text" name="first-name" required />
+          </div>
+
+          <div class="column">
+            <label for="last-name" class="field">Last name *</label>
+            <input type="text" name="last-name" required />
+          </div>
+          </div>
+</div>
+
+
+          <div class="column">
+            <label for="home-address" class="field">Address *</label>
+            <input type="home-address" name="home-address" required />
+          </div>
+
+          <div class="column">
+            <label for="home-address" class="field">Address 2</label>
+            <input type="home-address" name="home-address" required />
+          </div>
+
+          <div class="row">
+          <div class="column">
+            <label for="city" class="field">City *</label>
+            <select name="city" class="city" required>
+              <option disabled selected hidden>Select your city...</option>
+
+              <option value="Birmingham">Birmingham</option>
+              <option value="London">London</option>
+              <option value="Manchester">Manchester</option>
+              <option value="York">York</option>
+              <option value="Liverpool">Liverpool</option>
+            </select>
+          </div>
+
+          <div class="column">
+            <label for="postcode" class="field">Postcode</label>
+            <input type="postcode" name="postcode" class="postcode" required />
+          </div>
+</div>
+
+
+          <div class="KarmaOrange">
+            <label for="color" class="field">Select a color</label>
+            
+            <div class="radio-group">
+<div class="row">
+            
+            <input type="radio" name="karma-color" required />
+            <label for="radio">Karma orange</label>
+          </div>
+
+          <div class="row">
+            <input type="radio" name="karma-color" />
+            <label for="radio">Space grey</label>
+          </div>
+</div>
+</div>
+
+          <div class="term-conditions">
+            <input
+              type="checkbox"
+              name="term-conditions"
+              id="term-conditions"
+              required
+            />
+            <span for="checkbox"
+              >By placing your order you agree to Karma's
+              <a href="#" class="terms-link">Terms and Conditions</a>*</span
+            >
+          </div>
+          <div class="button">
+            <button class="button">Place my order</button>
+          </div>
+        </fieldset>
+      </form>
+      
+    </section>
