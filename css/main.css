@@ -1,3 +1,445 @@
 /* Add your CSS here */
+:root {
+    --Dark-beige: #E6DACD;
+    --light-beige: #F4ECE6;
+    --royal-blue: #0150FD;
+    --black: #000;
+    --white: #fff;
+    --Quicksand: font-family;
+    --Poppins: font-family;
+}
+
+body {
+    font-family: var(--Quicksand);
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    color: var(--black);
+    font-size: 1.2em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    background-color: var(--white);
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+        "header  header  header  header "
+        "hero     hero    hero     hero"
+        "desc  desc desc  desc"
+        "footer   footer  footer   footer";
+}
+
+.header {
+    grid-area: header;
+}
+
+h1 {
+    padding-left: 1.1em;
+}
+
+h1::before {
+    content: " ";
+    display: inline-block;
+    margin-right: .4em;
+    background-color: var(--royal-blue);
+    color: var(--royal-blue);
+    width: .7em;
+    height: .7em;
+}
+
+.title {
+    padding-left: 2em;
+}
+
+.menu {
+    cursor: pointer;
+    width: 2.6em;
+    height: 2.6em;
+    cursor: pointer;
+    position: fixed;
+    right: 1em;
+    top: .4em;
+}
+
+.top,
+.middle,
+.bottom {
+    background-color: var(--royal-blue);
+    /* width: 100%; */
+    height: .2em;
+}
+
+.top {
+    margin-top: .3em;
+    width: 50%;
+}
+
+.middle {
+    margin-top: .6em;
+}
+
+.bottom {
+    margin-top: .6em;
+    width: 50%;
+    margin-left: 1.3em;
+}
+
+.nav-lists {
+    display: none;
+
+}
+
+.nav-link {
+    cursor: pointer;
+
+}
+
+.main-page {
+    background-color: var(--Dark-beige);
+    margin-top: 14em;
+}
+
+.hero {
+    grid-area: hero;
+    width: 92%;
+    border-width: 2px;
+    border-color: #000;
+    box-shadow: -10px 5px 10px 8px rgba(176, 174, 174, 0.299);
+    margin-top: -12em;
+    margin-left: 1.8em;
+
+    grid-area: hero;
+    background-color: var(--light-beige);
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    border-radius: 50%;
+    width: 150px;
+    height: 160px;
+    margin-top: 2.9em;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+h2 {
+    text-align: center;
+}
+
+.hero p {
+    display: none;
+}
+
+.small-screen-btn {
+    text-align: center;
+}
+
+.large-screen-btn {
+    display: none;
+}
+
+.resume-btn,
+.projects-btn {
+    font-weight: bold;
+    padding: .7em 1.6em;
+    border-top-left-radius: 1.4em;
+    border-bottom-left-radius: 1.4em;
+    border-bottom-right-radius: 1.4em;
+    border-top-right-radius: 1.4em;
+    margin: 1.4em;
+
+
+}
+
+.resume-btn {
+    background-color: var(--royal-blue);
+    color: var(--white);
+    border: none;
+
+}
+
+.resume-btn a {
+    color: var(--white);
+}
+
+.projects-btn {
+    border: 1px solid var(--black);
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.projects-btn a {
+    color: var(--black);
+}
+
+.social-media-icons {
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+    margin-bottom: .6em;
+}
+
+.fa {
+    color: var(--black);
+    padding: .5em;
+    font-size: 1.6em;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+
+.desc {
+    grid-area: desc;
+    background-color: var(--Dark-beige);
+    padding: 2em;
+}
+
+h3 {
+    font-size: 2.4em;
+    font-weight: bold;
+
+}
+
+.footer {
+    grid-area: footer;
+    background-color: var(--white);
+    padding: 1.8em;
+}
+
+h5 {
+    font-size: 1.1em;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer-social-media-icons {
+
+    display: flex;
+    justify-content: left;
+
+    margin-bottom: .6em;
+}
+
+.footer-social-media-icons fa {
+    font-size: 1.6em;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    width: 10px;
+}
+
+/* styling for resume.html starts here */
+
+.main-page-resume {
+    grid-area: hero;
+    width: 100%;
+    background-color: var(--Dark-beige);
+}
+
+.main-page-resume h3 {
+    font-size: 25px;
+}
+
+h3 span {
+    margin-left: 330px;
+}
+
+p span {
+    color: var(--royal-blue);
+    font-weight: bolder;
+}
+
+.main-page-resume h2 {
+    font-size: 35px;
+}
+
+.main-page-resume h2::before {
+    content: "-";
+    background-color: var(--royal-blue);
+    color: var(--royal-blue);
+    display: inline;
+    margin-right: .6em;
+    margin-top: 300px;
+    margin-bottom: 300px;
+}
+
+.exper-download {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 2em;
+}
+
+.download-btn {
+    background-color: var(--royal-blue);
+    color: var(--white);
+    border: none;
+    margin-bottom: .3em;
+    padding: 0 .2em;
+    font-weight: bold;
+    border-top-left-radius: 1.4em;
+    border-bottom-left-radius: 1.4em;
+    border-bottom-right-radius: 1.4em;
+    border-top-right-radius: 1.4em;
+}
+
+.experience,
+.education {
+    background-color: var(--white);
+    width: 84%;
+    box-shadow: -10px 5px 10px 8px rgba(176, 174, 174, 0.299);
+    margin-left: 1.8em;
+    margin-bottom: 2.2em;
+    padding: 1em;
+}
+
+.experience :nth-child(1) {
+    color: var(--royal-blue);
+    font-weight: bolder;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:900px) {
+    .main-page {
+        display: flex;
+        flex-direction: row;
+        margin-top: 2em;
+
+
+    }
+
+    .hero {
+        margin-top: 5em;
+        margin-bottom: 6em;
+        width: 34%;
+        margin-left: 20em;
+        margin-right: -8em;
+        z-index: 1;
+    }
+
+    .hero img {
+        margin-top: 3.6em;
+    }
+
+    .hero p {
+        display: block;
+        text-align: center;
+        margin-top: 2em;
+    }
+
+    .desc {
+        background-color: var(--white);
+        padding-left: 10em;
+        padding-right: 3.6em;
+        width: 500px;
+
+
+    }
+
+    .small-screen-btn {
+        display: none;
+    }
+
+    h3 {
+        font-size: 100px;
+        margin: 0;
+    }
+
+    h4 {
+        font-size: 25px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .nav-link {
+        list-style: none;
+        margin: 1.2em;
+    }
+
+    .nav-lists {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        margin-right: 2.8em;
+
+    }
+
+    .contacts {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .follow-us {
+        margin: 1.4em
+    }
+
+    .history {
+        margin: auto;
+    }
+
+    .education,
+    .experience {
+        width: 60%;
+        margin-left: 320px;
+        padding: 1.8em;
+    }
+
+    .education li {
+        display: inline;
+        margin: 160px;
+        line-height: 2.4em;
+        list-style: none;
+    }
+
+    .education li::before {
+        content: '0';
+        display: inline;
+        background-color: var(--royal-blue);
+        color: var(--royal-blue);
+        margin-right: .4em;
+
+    }
+
+
+}
 
 /* Dont' forget to link this file to your HTML in the <head> */
