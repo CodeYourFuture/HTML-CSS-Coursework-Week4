@@ -326,11 +326,33 @@ font-family: 'Fjalla One', sans-serif;
 /* Form section */
 .form_section{
  padding-bottom: 5em;
- margin: 1.8em 1em 0 1em;
  background: url(../Images/8.png) no-repeat bottom/contain;
-
-
+padding-bottom: 11em;
 }
+
+
+.form_section > div:first-child {
+  width: 90%;
+  margin: 2em auto;
+  background-color: white;
+  padding-top: 1em;
+}
+
+.form_title{
+  color: #A05941;
+}
+
+.name_wrapper{
+ 
+  display: grid;
+  row-gap: 0.85em;
+}
+
+.name_wrapper div{
+  display: grid;
+  row-gap: 0.4em;
+}
+
 
 .form_section p{
  text-align: center;
@@ -342,19 +364,19 @@ font-family: 'Fjalla One', sans-serif;
 
 form{
  display: grid;
- width: 90%;
- margin: 1em auto 11em auto ;
+ padding: 0 1em 3em 1em;
  row-gap: 0.8em;
- padding-bottom: 3em;
 }
 
-input, form button{
+input{
  height: 35px;
  width: 100%;
 }
 
 form button{
   margin-top: 1.5em;
+  height: 40px;
+  width: 100%;
 }
 
 
@@ -532,10 +554,40 @@ grid-template-rows:22% 18% 7% 6%;
 .buy_online button{
   background-color: white;
   color: black;
-  width: 33%;
-  
+  width: 33%; 
   
 }
+
+ /* Form */
+
+ .form_section{
+  background-size: cover;
+  background-attachment: fixed;
+  padding-bottom: 3em;
+  padding-top: 4.4em;
+ }
+
+ .form_title{
+  margin-bottom: 2em;
+ }
+
+
+ .form_section > div:first-child {
+  width: 65%;
+  margin: 2em auto;
+  padding: 1em;
+  opacity: 0.8;
+ }
+
+ .name_wrapper{
+  display: flex;
+  justify-content: space-between;
+ }
+
+ .name_wrapper div{
+  width: 48%;
+ }
+
 
   
 }
