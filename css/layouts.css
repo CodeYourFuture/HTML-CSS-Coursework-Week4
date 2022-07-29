@@ -77,7 +77,7 @@
     
 }
 
-/* Get juice bar */
+/* Get juice bar .. */
 
 .supply {
     grid-area: sp;
@@ -402,11 +402,8 @@ body button {
     font-size: 3.5rem;
     margin: 5.5rem 0 1rem;
 }
-/* 
-.thumbnails {
-    height: 16rem;
-    position: relative;
-} */
+
+/* overlap images */
 
 .thumbnails img {
     height: 20rem;
@@ -414,33 +411,21 @@ body button {
 }
 
 .img-thumb1 {
-    transform: rotate(334deg) translate(-50%, -50%);
-    width: 100%;
-    position: absolute;
     top: -20%;
     left: 28%; 
 }
 
 .img-thumb2 {
-    transform: rotate(19deg) translate(-50%, -50%);
-    width: 100%;
-    position: absolute;
     top: 17%;
     left: 36%; 
 }
 
 .img-thumb3 {
-    transform: rotate(347deg) translate(0, -50%);
-    width: 100%;
-    position: absolute;
     top: 0%;
     left: 53%; 
 }
 
 .img-thumb4 {
-    transform: rotate(17deg) translate(-50%, -50%);
-    width: 100%;
-    position: absolute;
     top: 17%;
     left: 75%; 
 }
@@ -454,16 +439,54 @@ body button {
 
 /* FOOTER */
 
+.footer {
+    padding: 0;
+}
+
 .footer-container {
     display: flex;
     flex-direction: row;
 }
 
-.footer-content-box {
+.footer-navs-box {
     display: flex;
+    justify-content: space-around;
+    width: 50%;
 }
 
+.footer-content-box {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
 
+.serving-box{
+    margin-left: 1rem;
+}
 
+.serving-link-box {
+    width: 8rem;
+}
+
+.serving-link-box a {
+    line-height: 2rem;
+}
+
+.circle-logo-text-box {
+	width : 5rem;
+	height : 5rem;
+}
+
+.logo-j {
+    margin-left: 0.5rem;
+}
+
+.logo-b {
+    margin-right: 0.5rem;
+}
+
+.copyright {
+    text-align: center;
+}
 
 }

@@ -301,7 +301,9 @@ background-color: var(--clr-light-green);
 
 .form-email {
     display: flex;
+    margin-bottom: 5rem;
 }
+
 .email-field-box {
     display: flex;
     flex-direction: column;
@@ -327,7 +329,7 @@ background-color: var(--clr-light-green);
     display: flex;
     align-items: center;
 	height : 5.5rem;
-    margin: 1.5rem;
+    margin: 1.5rem 0;
 }
 
 .circle-logo-text-box {
@@ -350,7 +352,6 @@ background-color: var(--clr-light-green);
 .copyright {
     font-size: 0.9rem;
     font-weight: 100;
-    width: 20rem;
 }
 
 /* buttons */
