@@ -1,21 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Outfit:wght@200;400&display=swap"
+        rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Add a link to your custom CSS here -->
-
+    <link rel="stylesheet" href="css/main.css">
     <title>Responsive grid project</title>
 </head>
 
 <body>
-
     <!-- Add your markup here -->
+    <header>
 
+        <section class="search-bar">
+            <i class="bi bi-search"></i>
+            <p class="placeholder">search...</p>
+            <input class="search" type="search" id="search" placeholder=" ">
+            <!-- <i class="bi bi-person-circle"></i> -->
+            <i class="fa fa-shopping-bag"></i>
+        </section>
 
-    <!-- Please leave this in to credit the creators of this design -->
-    <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
+        <section class="head-bar">
+            <div>
+                <h2>PRICKLES & CO.</h2>
+                <p>We Deliver To Your Doorstep</p>
+            </div>
+
+            <!-- -------navigation ------- -->
+            <div>
+                <button aria-label="Open navigation" class="open-nav"> &#9776;</button>
+                <nav class="nav  navigation-open">
+                    <button aria-label="Close navigation" class="close-nav"> &times;</button>
+        
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#" class="nav-link">
+                                <i class="bi bi-person-circle"></i> Log In </a></li>
+                        <li class="nav-item"><a href="#" class="nav-link"> Shop </a></li>
+                        <li class="nav-item"><a href="#" class="nav-link"> About </a></li>
+                        <li class="nav-item"><a href="#" class="nav-link"> FAQ </a></li>
+                        <li class="nav-item"><a href="#" class="nav-link"> Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+    </header>
+
+    <!------------main---------  -->
+
+    <main>
+        <section class="hero">
+            <div class="hero-title">
+                <p>ESTB</p>
+                <img class="hero-icon" src="img/logo.png">
+                <p>2023</p>
+            </div>
+            <h1>PRICKLES & CO</h1>
+            <h2>BRING NATURE <br>INDOORS</h2>
+            <a class="btn shop-btn" href="#">Shop Now</a>
+        </section>
+
+        <article class="store-img">
+            <section class="item item-img1">
+                <p class="img-title">CACTI</p>
+                <a class="btn shop-collection" href="#">Shop Collection</a>
+            </section>
+        
+            <section class="item item-img2">
+                <p class="img-title">PLANTS</p>
+                <a class="btn shop-collection" href="#">Shop Collection</a>
+            </section>
+        
+            <section class="item item-img3">
+                <p class="img-title">SUCCULENTS</p>
+                <a class="btn shop-collection" href="#">Shop Collection</a>
+            </section>
+        </article>
+
+        <section class="about-us">
+            <h3>ABOUT US</h3>
+            <p>--</p>
+            <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click
+                me to
+                add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page.
+                I’m a
+                great place for you to tell a story and let your users know a little more about you.
+        
+                <br><br>
+        
+                This is a great space to write long text about your company and your services. You can use this space to go into
+                a
+                little more detail about your company. Talk about your team and what services you provide.</p>
+            </section>
+        <img class="thumbnail" src="img/5.png" alt="">
+        <img class="thumbnail" src="img/6.png" alt="">
+        <img class="thumbnail" src="img/7.png" alt="">
+
+        <section class="sale thumbnail">
+            <p>BUY ONLINE<br>
+                NOW & GET<br>
+                10% OFF !</p>
+            <a class="shop-btn" href="#">Shop Now</a>
+        </section>
+
+        <article class="contact">
+
+            <form class="form">
+                <h3>FOR SPECIAL REQUESTS & ORDERS </h3>
+        
+                <section class="form-layout"> 
+                    <label for="first-name" class="first-name">
+                        First Name * <br>
+                        <input type="text" id="first-name" required>
+                    </label><br>
+                
+                    <label for="last-name" class="last-name">
+                        Last Name * <br>
+                        <input type="text" id="last-name" required>
+                    </label><br>
+                
+                    <label for="email" class="email">
+                        Email * <br>
+                        <input type="email" id="email" required>
+                    </label><br>
+                
+                    <label for="phone" class="phone">
+                        Phone <br>
+                        <input type="text" id="phone">
+                    </label><br>
+                
+                    <label for="message" class="message">
+                        Message<br>
+                        <textarea type="text" id="message"></textarea>
+                    </label><br>
+                
+                    <button class="send-btn">Send</button>
+                </section>
+            </form>
+
+            <img class="thumbnail" src="img/8.png" alt="">
+
+            <section class="info">
+                <h3>OUR STORE</h3><br>
+                <p>Address:500 Terry Francois Street San<br>
+                    Francisco,CA 94158<br>
+                    Phone: 123-456-7890</p>
+                <p>Email: info@mysite.com</p><br>
+            
+                <h3>OPENING HOURS</h3>
+                <p>Mon-Fri: 7am-10pm</p>
+                <p>Saturday:8am-10pm</p>
+                <p>Sunday: 8am-11pm</p><br>
+            
+                <h3>HELP</h3>
+                    <div class="information-link">
+                    <a class="info-link" href="#">Shipping & Returns</a><br>
+                    <a class="info-link" href="#">Privacy Policy.</a><br>
+                    <a class="info-link" href="#">FAQ</a><br>
+                </div>
+            
+                <h3>SUBSCRIBE</h3>
+                <div  class="subscription">
+                    <label for="subscription">
+                        Enter your email here *<br>
+                        <input type="email" class="email"></input>
+                    </label><br>
+                    <a href="#" class="subscribe-btn">Subscribe Now</a>
+                </div>
+                <div class="social-media">
+                    <i class="fa fa-facebook-f"></i>
+                    <i class="fa fa-pinterest"></i>
+                    <i class="fa fa-instagram"></i>
+                </div>
+            
+                <div class="map">
+                </div>
+            </section>
+        </article>
+        
+    </main>
+
+    <!-- footer-->
+    <footer>
+        <p>©2023 by Prickles & Co. Proudly</p>
+        <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
+    </footer>
+
+<script src="script.js"></script>    
 </body>
 
 </html>
