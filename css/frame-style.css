@@ -7,26 +7,84 @@
 --White: #FFF;
 --Transparent-white: rgba(255, 251, 251, 0.75);
 }
+
+
 body {
     background-color: black;
     font-family: 'Outfit', sans-serif;
+}
+
+.search-bar {
+background-color: var(--White);  
+color: var(--red-brown);  
+}
+
+::placeholder {
+    color: var(--red-brown);
+    opacity: 1;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: var(--red-brown) ;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: var(--red-brown);
 }
 
 .header {
     background-color: var(--Light-grey);
     font-family: 'Fjalla One', sans-serif;
 }
+
+.nav-menu {
+    display: none;
+}
+
+#hamburger  {
+   
+    display: block;
+    text-align: right;
+    font-size: larger;
+}
+
 .hero {
     background-image: url("/responsive-grid-project/img/main.png" ) ;
     background-repeat: no-repeat;
-    height: 400px;
-    width: 100% ;
+   width: 100%;
+   height: 100% ;
+-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
 }
 
 .logo {
     display: block;
     margin: auto;
 }
+
+.intro-sec  {
+    text-align: center;
+}
+
+.hero-text {
+    color: var(--White);
+    font-size: 36px ;
+    text-decoration: underline;
+    line-height: 20px ;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .main-container {
     background-color: cornflowerblue;
@@ -50,7 +108,7 @@ body {
 
 .plants , .cacti , .succulent  {
     background-color: aquamarine;
-    min-height: 400px;
+    min-height: 450px;
     padding: 10px;
 
 } 
@@ -58,66 +116,113 @@ body {
 .plants {
    
     background: lightblue url("/responsive-grid-project/img/plants.png") no-repeat  center;
-   width:inherit;
-   max-width: 400px;
+   width: 100%;
+   max-width: 450px;
    text-align: center;
 }
 .cacti {
 
     background: lightblue url("/responsive-grid-project/img/cacti.png") no-repeat center;
-    width: inherit;
-    max-width: 400px;
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+
+.succulent {
+
+    background: lightblue url("/responsive-grid-project/img/succulents.png") no-repeat center;
+    width: 100%;
+    max-width: 450px;
     text-align: center;
 }
 
 .about-sec {
     color: var(--red-brown);
-display: grid;
+    display: grid;
     grid-gap: 5px;
     grid-template-columns: repeat(minmax(200px, 1fr));
 }
 
 .about-txt , .about-img {
-    background-color: lightgreen;
+    background-color: var(--Light-grey);
         min-height: 400px;
         padding: 10px;
+        text-align: center;
 }
 
 .img {
  width: 100%;   
 }
 
-button {
+.button-red {
     background-color: var(--red-brown);
     color: var(--White);
+    padding: 7px 10px ;
+    border: none ;
+    margin: auto;
+    text-align: center;
 }
 
 .offer {
     background-color: var(--Green-black);
     color: var(--White);
+    text-align: center;
+    font-size: 64px;
+    font-family: 'Fjalla one', sans-serif;
+    font-weight:lighter;
+    padding: 10px 0px 0px 10px; 
 }
 
 .form-sec {
-    background: lightblue url("/responsive-grid-project/img/rubber-plant.png") no-repeat  center;
+    background: lightblue url("/responsive-grid-project/img/rubber-plant.png") no-repeat  center ;
+    width:auto ;
+    -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
 }
 
 .form {
     background-color: var(--Transparent-white);
+    margin: auto;
+    text-align: left;
 }
+
+.subscribe-sec {
+display: flex;
+flex-direction: column;
+background-color: var(--Green-black);
+color: var(--White);
+height: 400px; 
+text-align: center;
+}
+.sub {
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.social {
+    display: none;
+}
+
+
+
 
 /*     map section       */
  .mapouter {
      position: relative;
      text-align: right;
      height: 500px;
-     width: 600px;
+     max-width: 450px;
  }
 
  .gmap_canvas {
      overflow: hidden;
      background: none !important;
      height: 500px;
-     width: 600px;
+     max-width: 450px;
  }
 
   
@@ -127,6 +232,17 @@ button {
     body {
         background-color: red;
     }
+
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+}    
+
+#hamburger {
+    display: none;
+}
 
 .plants-sec {
     display: flex;
@@ -143,5 +259,39 @@ button {
         height: auto;
     }
 
-       
+  .our-store , .opening , .help {
+    width: 300px;
+    margin: 10px;
+  }    
+
+
+.info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+   
+    color: var(--White);
+    background-color: var(--Green-black);
+}
+
+.social > i {
+    padding: 15px;
+    display: inline-block;
+}
+
+.mapouter , .gmap_canvas {
+    margin: auto;
+    position: inherit ;
+    text-align: right;
+    height:max-content;
+    width: max-content;
+}
+
 }
