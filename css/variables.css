@@ -1,0 +1,14 @@
+:root {
+
+  --clr-black: #000;
+  --clr-white: #fff;
+  --clr-lilac: #f5e8ff;
+  --clr-light-green: #e6fac0;
+  --clr-medium-green: #5e7d1f;
+  --clr-dark-green: #394b2a;
+
+  --font-headings: 'Questrial', sans-serif;
+  --font-buttons: 'Raleway', sans-serif;
+  --font-body: 'Roboto', sans-serif;
+    
+}
