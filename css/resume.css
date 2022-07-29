@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +11,10 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  
+  /* background-color: #00BAF0; */
+  /* background: linear-gradient(to left, #050505, #060606); */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* color: #FFF; */
   height: 50px;
   padding: 1em;
 }
@@ -88,7 +92,7 @@ a:hover{
   transform: rotate(-405deg);
 }
 
-@media screen and (max-width: 700px) {
+@media (max-width: 700px) {
   .menu-button-container {
     display: flex;
   }
@@ -131,38 +135,37 @@ a:hover{
 }
 /* main */
  main {
- 
+  background-color: #f4ece6;
  } 
  .hero {
   padding: 1rem;
  }
- 
+ .hero h1 {
+  
+   text-align: center;
+ }
  .hero div {
   display: flex;
   justify-content: center;
   margin-top: 1rem;
   }
+  .hero h2 {
+    font-size: 5vw;
+    margin-right: 1rem;
+  }
   .hero button {
     background-color: #0050ff;
      font-weight: bold;
-     padding: 0.1rem 0.1rem;
-   border-radius: 0.5rem;
+     padding: 0.1rem 1rem;
+   border-radius: 1rem;
    font-size: 2vw;
      box-shadow: none;
-  border-style: none; 
-    display: flex;
+  border-style: none;
+  /* padding: 10px 0px; */
   }
-  
-  .container p{
-    margin-top: 2rem;
-  }
-  main {
-    grid-area: main;
-    /* display: flex; */
-    /* background-color: blueviolet; */
-    /* position: relative; */
-    height: 60vw;
-  
+  .hero button a {
+    color: white;
+    text-decoration: none;
   }
   
  article {
@@ -184,6 +187,14 @@ a:hover{
   font-size: 6vw;
 
  }
+ /* square */
+ /* .square {
+  height: 6vw;
+  width: 6vw;
+  background-color: #0050f2;
+  margin-top: 0.4rem;
+  margin-right: 1rem;
+} */
  .job {
   margin-bottom: 1rem;
   font-size: 6vw;
@@ -191,21 +202,16 @@ a:hover{
  .article-p {
   font-size: 6vw;
  }
-
- section {
-  background-color: white;
-  width: 60%;
-  margin: 0.5rem auto;
-  padding: 1.5rem;
- }
  .skill h1 {
   margin-bottom: 1rem;
-  font-size: 5vw;
+  font-size: 8vw;
  }
+  
  .lang h1 {
+  display: flex;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  font-size: 5vw;
+  font-size: 8vw;
  }
  /* footer */
  footer {
@@ -247,15 +253,13 @@ a:hover{
   background: white;
   color: black;
  }
-
  @media screen and (min-width: 700px) {
-.container{
+  .container {
     display: flex;
-     }
- 
- .container p{
-    margin-top: 2.0rem; 
-  
+  }
+  .container p {
+    margin-top: 2rem;
+    margin-left: 2rem;
   }
  .hero h1 {
   text-align: center;
@@ -274,7 +278,7 @@ a:hover{
   flex-direction: row;
   justify-content: space-between;
   width: 60%;
-  padding: 2rem;
+    padding: 2rem;
 
  }
  article a{
@@ -289,20 +293,19 @@ a:hover{
  .article-p {
   font-size: 2vw;
   width: 60%;
-  margin-top: 2.5rem;
- } 
- 
-
-
- .skill h1{
-  font-size: 1.5rem;
-}
- .lang h1{
-  font-size: 1.5rem;
+  margin-top: 5.5rem;
  }
-
+ .skill h1 {
+  font-size: 2vw;
+ }
+.lang h1 {
+  font-size: 2vw;
 }
-
-
-
-
+footer {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin: 0 3rem;
+  }
+ 
+}
