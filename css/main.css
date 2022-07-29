@@ -102,6 +102,7 @@ footer{
     font-size: 1.5em;
     font-weight: 800;
  }
+
  .profile-picture {
     background: var(--light-beige);
     width: 92%;
@@ -133,7 +134,65 @@ footer{
     margin-top: 1rem;
     margin-bottom: 2rem;
   }
-.profile-name h3 hr.line {
+.profile-name h3 {
     align-items: center;
+}
+.buttons{
+    margin-top: 2.5rem;
+}
+.b-1{
+    background: var(--royal-blue);
+    color: #fff;
+    background-color: var(--royal-Blue);
+    border: none;
+    padding: 10px 35px;
+    border-radius: 2rem;
+    margin-right: 1rem;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-left: 15rem;
+    margin-bottom: 10px ;
+}
+.b-2{
+    padding: 8px 30px;
+    border-radius: 2rem;
+    font-weight: bold;
+    font-size: 1rem;
+    background: var(--light-beige);
+    text-align: center;
+    margin-right: 0.5rem;
+    margin-left: 15rem;
+}
+.p-social-media{
+    background: var(--white);
+    color: var(--black);
+    margin-top: 2rem;
+}
+.social-media-links{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    margin-bottom: 1rem;
+    list-style: none;
+}
+.logo-img{
+   height:25px;
+   width:25px;
+   margin: 5px 10px;
+}
+.profile {
+    margin-top: 5rem;
+    margin-left: 1.25rem;
+    margin-right: 2rem;
+  }
+.profile-info{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+.profile p{
+    font-size: 18px;
+    line-height: 1.65em;
 }
 }
