@@ -1,21 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
     <!-- Add a link to your custom CSS here -->
-
+    <link rel="stylesheet" href="css/main.css" />
     <title>Responsive grid project</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- Add your markup here -->
+    <header>
+      <section class="top-nav">
+        <div class="container">
+          <h1>
+            <span style="font-size: 50px; color: #0050ff">&#9632;</span>Maya
+            Nelson <span class="slash">/</span>
+          </h1>
+          <p>PROJECT MANAGER</p>
+        </div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-button-container" for="menu-toggle">
+          <div class="menu-button"></div>
+        </label>
+        <ul class="menu">
+          <li><a href="index.html" id="onlink">ABOUT ME</a></li>
+          <li><a href="resume.html">RESUME</a></li>
+          <li><a href="project.html">PROJECTS</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </section>
+    </header>
 
+    <main>
+      <div class="hero">
+        <div class="hero-info">
+          <img src="./designs/pic.jpg" alt="" width="50%" />
+          <h1>Maya<br />Nelson</h1>     
+          <div class="underline"></div>
+          <h3>Project Manager</h3>
+        </div>
+
+        <div class="btn-container">
+          <button class="btn-resume">
+            <a href="resume.html" id="onlink">RESUME</a>
+          </button>g
+          <button class="btn-project">
+            <a href="projects.html">PROJECTS</a>
+          </button>
+        </div>
+
+        <div class="hero-social">
+          <a href="https://en-gb.facebook.com/" class="fa fa-facebook"></a>
+          <a href="https://twitter.com/" class="fa fa-twitter"></a>
+          <a href="https://www.linkedin.com/feed/" class="fa fa-linkedin"></a>
+          <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+        </div>
+      </div>
+      <div class="blank"></div>
+      <div class="article">
+        <div class="hello">
+          <h1>Hello</h1>
+          <h3>Here's who I am & what I do</h3>
+          <div class="btn">
+          <button class="btn-resume">
+            <a href="resume.html" id="onlink">RESUME</a>
+          </button>
+          <button class="btn-project">
+            <a href="projects.html">PROJECTS</a>
+          </button>
+        </div>
+          <p>I'm a paragraph. Click here to add your own text and edit me. It’s
+            easy. Just click “Edit Text” or double click me to add your own
+            content and make changes to the font.</p><br />
+          <p>I’m a great place for you to tell a story and let your users know a
+            little more about you.
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="contact">
+        <div class="call">
+          <h2>Call</h2>
+          <br />
+          <p>123-456-7890</p>
+        </div>
+        <div class="write">
+          <h2>Write</h2>
+          <br />
+          <p>info@mysite.com</p>
+        </div>
+      </div>
+      <!-- <h2>Follow</h2> -->
+      <div class="social">
+        <div><h2>Follow</h2></div>
+        <a href="https://en-gb.facebook.com/" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/" class="fa fa-twitter"></a>
+        <a href="https://www.linkedin.com/feed/" class="fa fa-linkedin"></a>
+        <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+      </div>
+      <p>© 2023 by Maya Nelson.<br> Proudly created with Wix.com</p>
+    </footer>
 
     <!-- Please leave this in to credit the creators of this design -->
-    <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
-</body>
-
+    <p>
+      This website design was created by Wix.com, and is used here for strictly
+      educational purposes.
+    </p>
+  </body>
 </html>
