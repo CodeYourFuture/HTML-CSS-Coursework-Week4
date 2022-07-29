@@ -588,6 +588,33 @@ grid-template-rows:22% 18% 7% 6%;
   width: 48%;
  }
 
+/* Footer styles */
+footer > div:first-child {
+  display: flex;
+  justify-content: space-around;
+}
+
+.subscribe > div{
+  display: flex;
+  width: 35%;
+  margin: 0 auto;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.input_div{
+  width: 58%;
+}
+
+.input_div input {
+  margin-top: 0.5em;
+}
+
+
+
+.subscribe button {
+  width: 35%;
+}
 
   
 }
