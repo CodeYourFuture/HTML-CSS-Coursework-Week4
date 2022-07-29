@@ -1,3 +1,198 @@
 /* Add your CSS here */
+:root {
+        --dark-Beige: #e6dacd;
+        --light-Beige: #f4ece6;
+        --royal-Blue: #0150fd;
+        --black: #000;
+        --white: #fff;
+}
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h1,
+h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+body{
+    font-family: "quicksand", sans-serif;
+    font-weight: 300;
+    background: var(--dark-Beige);
+}
+.navigation-menu{
+    display: fixed;
+    justify-content: flex-end;
+    top: 0;
+    right: 0px;
+    align-items: center ;
+}
+.nav-item {
+    padding: 22px 0;
+    align-items: flex-end;
+     }
+.nav-header{
+color: black;
+font-weight: 500;
+text-decoration: none;
+padding: 0 1em;
+margin-right: 10px;
+position: relative;
+transition: opacity 0.25s;
+     }
+.nav-header:hover {
+    color: var(--royal-Blue);
+          }
+.grid-container{
+    display: grid;
+    grid-template-rows: 1fr 2fr 250px;
+    grid-template-areas: 
+    "h h h h h h h h h h h h h"
+    "m m m m m m m m m m m m m"
+    "f f f f f f f f f f f f f";
+}
+.navigation-bar{
+display: grid;
+grid-template-rows: 100px;
+grid-template-areas: "Name . h-span heading . nav";
+margin: 1rem 1rem;
+line-height: 2rem;
+}
+.navigation-bar ul{
+    list-style:none;
+}
+#square {
+    color: blue;
+    align-self: center;
+    height: 18.5px;
+    width: 24px;
+    padding-right: 0.5rem;
+}
+#main-header{
+    display: grid;
+    grid-area: h;
+    background-color: var(--white);
+    position: relative;
+    z-index: 999;
+}
+main{
+    grid-area: m;
+    background: var(--dark-Beige);
+    padding: 1em;
+}
+footer{
+    grid-area: f;
+    background-color: var(--white);
+}
+/* moving on towards the phone section which is the moblie screen*/
 /* Dont' forget to link this file to your HTML in the <head> */
+@media screen and (max-width: 480px) {
+ .nav ul .nav-item {
+    list-style: none;
+    display: none;
+ }
+ .profile-name{
+    font-size: 2em;
+    font-weight: 900;
+ }
+ .Name {
+    grid-area: Name;
+    font-size: 1.5em;
+    font-weight: 800;
+ }
+
+ .profile-picture {
+    background: var(--light-beige);
+    width: 92%;
+    padding-top: 2em;
+    text-align: center;
+    position: absolute;
+    top: 7rem;
+    z-index: 2;
+    left: 1.5rem;
+ }
+ .profile-picture #image{
+    border-radius: 50%;
+    width: 50%;
+    margin-top: 3.5rem;
+    
+ }
+.profile-name h3{
+    font-weight: 800;
+    margin-top: 22rem;
+    margin-left: 17rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+  hr.line {
+    border: 2px solid var(--royal-Blue);
+    border-color:var(--royal-Blue);
+    width: 35%;
+    margin-left: 13rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+.profile-name h3 {
+    align-items: center;
+}
+.buttons{
+    margin-top: 2.5rem;
+}
+.b-1{
+    background: var(--royal-blue);
+    color: #fff;
+    background-color: var(--royal-Blue);
+    border: none;
+    padding: 10px 35px;
+    border-radius: 2rem;
+    margin-right: 1rem;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-left: 15rem;
+    margin-bottom: 10px ;
+}
+.b-2{
+    padding: 8px 30px;
+    border-radius: 2rem;
+    font-weight: bold;
+    font-size: 1rem;
+    background: var(--light-beige);
+    text-align: center;
+    margin-right: 0.5rem;
+    margin-left: 15rem;
+}
+.p-social-media{
+    background: var(--white);
+    color: var(--black);
+    margin-top: 2rem;
+}
+.social-media-links{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    margin-bottom: 1rem;
+    list-style: none;
+}
+.logo-img{
+   height:25px;
+   width:25px;
+   margin: 5px 10px;
+}
+.profile {
+    margin-top: 5rem;
+    margin-left: 1.25rem;
+    margin-right: 2rem;
+  }
+.profile-info{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+.profile p{
+    font-size: 18px;
+    line-height: 1.65em;
+}
+}
