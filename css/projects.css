@@ -225,6 +225,9 @@ a:hover{
   .container {
     display: flex;
   }
+  .container p {
+    margin-top: 2rem;
+  }
   .hero {
     padding: 0 1rem;
     width: 60%;
@@ -273,6 +276,11 @@ a:hover{
  article img {
   width: 25vw;
   }
- 
+ footer {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin: 0 3rem;
+  }
  
 }

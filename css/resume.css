@@ -301,4 +301,11 @@ a:hover{
 .lang h1 {
   font-size: 2vw;
 }
+footer {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin: 0 3rem;
+  }
+ 
 }
