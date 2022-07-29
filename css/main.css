@@ -9,14 +9,6 @@
   --grey: #ededee;
   --dark-green: #133032;
 }
-/*  --h1-font-family: "Fjalla One", sans-serif;
-  --allotherfonts-font-family: "Outfit", sans-serif;
-  --uppercase-text-transform: uppercase;
-  --btn-background-color: #a05941;
-  --btn-color: white;
-  --btn-border: solid 1px #a05941;
-  --body-background-color: #ededee;
-  --other-background-color: #133032; */
 body {
   background-color: var(--grey);
   font-family: var(--all-other-fonts);
@@ -115,7 +107,7 @@ nav > ul > li > a {
   letter-spacing: 0.5rem;
   font-size: 1rem;
 }
-.jumbo-text > button {
+.jumbo-text > a > button {
   background-color: var(--burnt-orange);
   color: var(--white);
   border: var(--btn-border);
@@ -171,11 +163,11 @@ nav > ul > li > a {
   margin: 0;
   text-align: center;
 }
-.announcement > button {
+.announcement > a > button {
   padding: 0.7rem 1rem;
   background-color: var(--white);
   font-size: 1rem;
-  max-width: 50%;
+  border: solid 1px white;
 }
 /* FORM SECTION */
 form {
