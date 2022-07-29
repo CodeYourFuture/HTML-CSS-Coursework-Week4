@@ -73,16 +73,6 @@
   grid-template-rows: 5.5rem 5.5rem 17rem 80vh 5.4rem auto 37rem auto auto auto 23rem auto;
 }
 
-body p {
-    font-size: 1.1rem;
-    font-weight: 400;
-    line-height: 1.9rem;
-}
-
-body button {
-    font-size: 1.1rem;
-}
-
 .order {
     position: fixed;
     z-index:1;
@@ -90,14 +80,6 @@ body button {
     top: 0;
     right: 0;
     width: 12.5rem;
-}
-
-.btn-order {
-    font-size: 1.2rem;
-}
-
-.btn-order:hover {
-    background-color: var(--clr-medium-green);
 }
 
 .header {
@@ -110,11 +92,6 @@ body button {
     width: calc(100% - 12.5rem);
     padding-left: 4rem;
     padding-right: 1.5rem;
-}
-
-.header h1 {
-    font-size: 2rem;
-    margin-left: 12.5rem;
 }
 
 .img-hamburger {
@@ -151,51 +128,17 @@ body button {
     justify-content: center;
 }
 
-.hero h2 {
-    font-size: 3.2rem;
-}
-
-.hero h3 {
-    font-size: 1.6rem;
-}
-
 /* Orange picture */
 
 .showcase {
     background-attachment: fixed;
 }
 
-.btn-vision,
-.btn-explore {
-    padding: 1.3rem 4.5rem;
-    margin: 2rem 0 5rem;
-}
-
-.btn-view,
-.btn-try {
-    padding: 1.3rem 6.5rem;
-    margin: 2rem 0 5rem;
-}
-
-.btn-explore:hover,
-.btn-vision:hover,
-.btn-view:hover,
-.btn-try:hover {
-    background-color: var(--clr-black);
-    color: var(--clr-white);
-}
-
-.btn-submit:hover {
-    background-color: var(--clr-white);
-    color: var(--clr-black);
-}
-
 .discount {
     flex-direction: row;
 }
 
-.discount a,
-.discount p {
+.discount a {
     font-size: 1.4rem;
     font-weight: 400;
     margin-left: 0.4rem;
@@ -207,22 +150,6 @@ body button {
     justify-content: space-evenly;
 }
 
-.differences h2 {
-    font-size: 3.4rem;
-    margin: 6rem 0;
-}
-
-.differences h3 {
-    font-size: 2rem;
-    line-height: 2.6rem;
-    margin: 0 0 1rem 0;
-    width: 13rem;
-}
-
-.differences p {
-    margin-bottom: 5rem;
-}
-
 .img-differences {
     width: 6.2rem;
     margin: 0.6rem 0;
@@ -232,23 +159,8 @@ body button {
     display: flex;
 }
 
-.differences p {
-    width: 13rem;
-}
-
 .vision {
     position: relative;
-}
-
-.vision p {
-    margin: 0;
-}
-
-.vision h2 {
-    font-size: 3.5rem;
-    line-height: 4.2rem;
-    margin-bottom: 1.2rem;
-    width: 29rem;
 }
 
 .img-vision-box {
@@ -263,10 +175,6 @@ body button {
     top: 1.5rem;
     left: 54%;
     position: absolute;
-}
-
-.vision p {
-    width: 24rem;
 }
 
 .col-content-box,
@@ -326,18 +234,6 @@ body button {
     position: absolute;
 }
 
-.catalog h2 {
-    font-size: 3.5rem;
-}
-
-.catalog h3 {
-    font-size: 2.2rem;
-    line-height: 2.7rem;
-    margin-left: 0;
-    margin-bottom: 1rem;
-    width: 20rem;
-}
-
 .img-catalog {
     object-fit: cover;
     width: 19rem;
@@ -346,17 +242,6 @@ body button {
 
 .kit {
     padding: 4.5rem 0;
-}
-
-.kit h2 {
-    font-size: 3.5rem;
-    line-height: 4.2rem;
-    margin-bottom: 1.2rem;
-    width: 30rem;
-}
-
-.kit p {
-    width: 29rem;
 }
 
 .img-kit {
@@ -374,22 +259,6 @@ body button {
     width: 100%;
     height: 22rem;
     justify-content: space-evenly;
-}
-
-.supply h1 {
-    font-size: 3.5rem;
-    font-weight: 200;
-}
-
-.supply h2 {
-    font-size: 2rem;
-    line-height: 3rem;
-    margin-top: 0.8rem;
-}
-
-.networks h2 {
-    font-size: 3.5rem;
-    margin: 5.5rem 0 1rem;
 }
 
 /* overlap images */
@@ -417,13 +286,6 @@ body button {
 .img-thumb4 {
     top: 17%;
     left: 75%; 
-}
-
-.hero h2,
-.hero h3,
-.differences h2,
-.catalog h2 {
-    width: 100%;
 }
 
 /* FOOTER */
@@ -485,5 +347,155 @@ body button {
 .img-catalog {
     max-width: none;
 }
+
+/* buttons */
+
+body button {
+    font-size: 1.1rem;
+}
+
+.btn-order {
+    font-size: 1.2rem;
+}
+
+.btn-vision,
+.btn-explore {
+    padding: 1.3rem 4.5rem;
+}
+
+.btn-view,
+.btn-try {
+    padding: 1.3rem 6.5rem;
+}
+
+.btn-vision,
+.btn-explore,
+.btn-view,
+.btn-try {
+    margin: 2rem 0 5rem;
+}
+
+.btn-order:hover {
+    background-color: var(--clr-medium-green);
+}
+
+.btn-explore:hover,
+.btn-vision:hover,
+.btn-view:hover,
+.btn-try:hover {
+    background-color: var(--clr-black);
+    color: var(--clr-white);
+}
+
+.btn-submit:hover {
+    background-color: var(--clr-white);
+    color: var(--clr-black);
+}
+
+/* headings */
+
+.header h1 {
+    font-size: 2rem;
+    margin-left: 12.5rem;
+}
+
+.hero h2 {
+    font-size: 3.2rem;
+}
+
+.hero h3 {
+    font-size: 1.6rem;
+}
+
+
+.differences h2 {
+    font-size: 3.4rem;
+    margin: 6rem 0;
+}
+
+.differences h3 {
+    font-size: 2rem;
+    line-height: 2.6rem;
+    margin: 0 0 1rem 0;
+    width: 13rem;
+}
+
+.vision h2 {
+    font-size: 3.5rem;
+    line-height: 4.2rem;
+    margin-bottom: 1.2rem;
+    width: 29rem;
+}
+
+.catalog h2 {
+    font-size: 3.5rem;
+}
+
+.catalog h3 {
+    font-size: 2.2rem;
+    line-height: 2.7rem;
+    margin-left: 0;
+    margin-bottom: 1rem;
+    width: 20rem;
+}
+
+.kit h2 {
+    font-size: 3.5rem;
+    line-height: 4.2rem;
+    margin-bottom: 1.2rem;
+    width: 30rem;
+}
+
+.supply h1 {
+    font-size: 3.5rem;
+    font-weight: 200;
+}
+
+.supply h2 {
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-top: 0.8rem;
+}
+
+.networks h2 {
+    font-size: 3.5rem;
+    margin: 5.5rem 0 1rem;
+}
+
+.hero h2,
+.hero h3,
+.differences h2,
+.catalog h2 {
+    width: 100%;
+}
+
+/* paragraphs */
+
+body p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.9rem;
+}
+
+.discount p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-left: 0.4rem;
+}
+
+.differences p {
+    width: 13rem;
+    margin-bottom: 5rem;
+}
+
+.vision p {
+    margin: 0;
+    width: 24rem;
+}
+
+.kit p {
+    width: 29rem;
+}
+
 
 }

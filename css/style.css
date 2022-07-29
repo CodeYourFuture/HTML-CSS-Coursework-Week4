@@ -10,29 +10,6 @@ body {
     font-family: var(--font-body);
 }
 
-.col-content-box,
-.row-content-box,
-.cat-box1,
-.cat-box2,
-.cat-box3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-}
-
-/*  */
-
-.animated {
-	opacity: 1 !important;
-	transition: opacity 2s;
-	transition-delay: 0.25s;
-}
-.need-animate{
-	opacity: 0 !important;
-}
-
 /* Order */
 
 .order {
@@ -116,7 +93,7 @@ body {
     margin: 0.6rem;
 }
 
-/* Boosting immunity section */
+/* Our vision section */
 
 .vision {
     background-color: var(--clr-light-green);
@@ -134,7 +111,7 @@ body {
     height: auto;
 }
 
-/* Choose your wellness path */
+/* view Catalog  */
 
 .catalog {
     background-color: var(--clr-lilac);
@@ -152,7 +129,7 @@ body {
     height: 90vw;
 }
 
-/* Discover our ... */
+/* Kit section*/
 
 .kit {
     padding: 1.5rem;
@@ -168,7 +145,7 @@ body {
     height: auto;
 }
 
-/* Get juice bar */
+/* Get juice bar - Supply section */
 
 .supply {
 background-color: var(--clr-light-green);
@@ -286,7 +263,7 @@ background-color: var(--clr-light-green);
     left: 55%; 
 }
 
-/* Footer Navigation */
+/* footer Navigation */
 
 .footer-navs-box {
     display: flex;
@@ -365,6 +342,18 @@ background-color: var(--clr-light-green);
     font-size: 0.9rem;
     font-weight: 100;
     margin-bottom: 1.5rem;
+}
+
+.col-content-box,
+.row-content-box,
+.cat-box1,
+.cat-box2,
+.cat-box3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 /* buttons */
@@ -572,4 +561,15 @@ body p {
 
 .img-catalog {
     max-height: 30rem;
+}
+
+/* scroll */
+
+.animated {
+	opacity: 1 !important;
+	transition: opacity 2s;
+	transition-delay: 0.25s;
+}
+.need-animate{
+	opacity: 0 !important;
 }
