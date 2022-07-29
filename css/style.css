@@ -337,7 +337,7 @@ footer a {
 
 /* Media Query Desktop */
 
-@media only screen and (min-width: 540px) {
+@media only screen and (min-width: 800px) {
    
      /* Adjust Font Sizes */
 
