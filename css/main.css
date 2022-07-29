@@ -1,7 +1,13 @@
 /* Add your CSS here */
 
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
 body {
     margin: 0;
+    font-family:'Quicksand',sans-serif;
+    background-color: #E6DACD;
+
 }
 
 .desktop {
@@ -9,12 +15,13 @@ body {
 }
 
 header {
-    color: rgb(4, 98, 98);
-    background-color: rgb(210, 205, 205);
-    padding: 2em 0;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    padding: 1rem 0 10rem;
     position:;
     display: flex;
     justify-content: space-between;
+    font-family:'Poppins', sans-serif;
 }
 
 
@@ -67,7 +74,7 @@ header {
 }
 
 .menu-btn {
-    position: fixed;
+    position:absolute;
     top: 55px;
     right: 20px;
     width: 26px;
@@ -83,7 +90,7 @@ header {
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: blanchedalmond;
+    background-color: royalblue;
     transition-duration: 0.25s;
 }
 
@@ -131,25 +138,67 @@ header {
     background-color: darkorange;
 }
 
-
+/*End of hamburger menu*/
 
 main {
     color: blueviolet;
-    background-color: aquamarine;
-    padding: 5em 0;
-    position:;
+    background-color: #F4ECE6;
+    padding: 10em 0;
+    position: ;
     margin-top: 2em;
     margin-left: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 10px 10px 10px 10px black;
+}
+
+main > h3 {
+    border-bottom: 1px solid royalblue;
+    padding-bottom: 1rem;
+}
+
+.maya-img {
+    border-radius: 50%;
+    height: 150px;
+    width: auto;
+}
+
+.button {
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 2px 15px;
+    color: black;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: royalblue;
+    color: white;
+    border: 1px solid royalblue;
+}
+
+.soc-media {
+    background-color: white;
+    padding: 1em 1em
+}
+
+.soc-media >img {
+    height: 20px;
+    width: auto;
 }
 
 footer {
-    color: coral;
-    background-color: rgb(163, 243, 247);
+    color: black;
+    background-color: white;
     padding: 5em 0;
     position:;
 }
 
-
+.project-man {
+    margin-left: -24px;
+}
 
 
 
