@@ -49,10 +49,10 @@ header {
   margin: 0 1rem;
   overflow: hidden;
 }
-a:link {
+.menu li a:link {
   text-decoration: none;
 }
-a:hover {
+.menu li a:hover {
   color: #0050ff;
 }
 .menu #onlink {
@@ -108,7 +108,7 @@ a:hover {
   margin-top: 0px;
   transform: rotate(-405deg);
 }
-/* larg screen */
+/* large screen */
 
 @media (max-width: 700px) {
   .menu-button-container {
@@ -160,19 +160,17 @@ main {
 }
 /* hero */
 .hero {
-  gap: 1rem;
+    box-shadow: 1px 1px 8px #888888;
+      gap: 1rem;
   background-color: #f4ece6;
   width: 80%;
-  /* height: 375px; */
-  margin-left: 3rem;
-  margin-right: 3rem;
-  margin: 0 2.5em;
-  z-index: 2;
-  position: absolute;
-   box-shadow: 1px 1px 8px #888888;
+  margin-right: 3rem; 
+   margin: 0 2.5em;
+   z-index: 2;
+   position: absolute;
 }
 .hero-info img {
-  background-color: #0050ff;
+  /* background-color: #0050ff; */
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -183,6 +181,15 @@ main {
 .hero-info h1 {
   text-align: center;
 }
+.underline {
+  height: 3px;
+  width: 100px;
+  background-color: #0050ff;
+  margin: 2rem auto;
+ }
+ .hero-info h3 {
+  text-align: center;
+ }
 /* INSERT BUTTON STYLES HERE */
 .btn-container {
   display: flex;
@@ -203,17 +210,18 @@ main {
   box-shadow: none;
   border-style: none;
   cursor: pointer;
+  
 }
-.btn-resume {
-  background-color: #0050ff;
-  color: white;
-}
+ 
 .btn-resume:hover {
   background-color: white;
   color: black;
 }
+.btn-project:hover {
+background-color: #0050ff;
+}
 .btn-project {
-    background-color: white;
+  background-color: white;
   font-weight: bold;
   padding: 0.4rem 1.5rem;
   border-radius: 1rem;
@@ -221,6 +229,13 @@ main {
   box-shadow: none;
   border-style: none;
   cursor: pointer;
+}
+.btn {
+  display: none;
+  
+}
+.btn a {
+  text-decoration: none;
 }
 
 
@@ -239,6 +254,7 @@ main {
 }
 .fa {
   font-size: 30px;
+  text-decoration: none;
 }
 .fa-facebook {
   background: white;
@@ -257,16 +273,21 @@ main {
   color: black;
 }
 /* article */
+/* .article  {
+  padding-top: 25rem;
+  position: absolute;
+  z-index: 1;
+
+} */
 .article {
   background-color: #e6dace;
   width: 100%;
   /* height: 613px; */
-  padding-top: 15rem;
+  padding-top: 25rem;
+  margin-top: 17rem;
   /* position: absolute; */
   z-index: 1;
-  /* top: 300px; */
-  margin-top: 17rem;
-}
+  }
 article h1 {
   font-size: 15vw;
   font-weight: bold;
@@ -280,7 +301,7 @@ article h3 {
 article p {
   font-size: 5vw;
 }
-article h1,
+.article h1,
 h3,
 p {
   padding: 0 2rem 2rem;
@@ -324,50 +345,84 @@ footer h2 {
   color: black;
 }
 /* for larg screen */
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 1024px) {
+  /* header {
+    position: fixed;
+  } */
   .container {
     display: flex;
-    
   }
-  .container p{
-    margin-top: 2rem;
+  .container p {
+    margin-top: 2.1rem;
   }
   main {
-    grid-area: main;
+    /* grid-area: main; */
     /* display: flex; */
     /* background-color: blueviolet; */
-    /* position: relative; */
-    height: 60vw;
-    background: linear-gradient(to right, #e6dace 50%, white 50%);
-  }
-  .hero {
-    gap: 1rem;
-    background-color: #f4ece6;
-    width: 35%;
-    margin-left: 10rem;
-    margin-top: 2rem;
-    z-index: 2;
-    position: absolute;
-  }
+    position: static;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 1fr 1fr;
+    grid-template-rows: 1fr 150px;
+    grid-template-areas: 
+    'blank hero article'
+    'blank . .';
+    /* height: 60vw; */
+    /* background: linear-gradient(to right, #e6dace 50%, white 50%); */
+     /* height: 500px;
+     border: 1px solid black;
+  margin: 1rem;
+  padding: 2rem 2rem;
+  text-align: center;
+     background: linear-gradient(to right, #e6dace 50vw, white 50vw); */
+
   
-  .hero h3{
-    text-align: center;
-    margin-top: 2rem;
+  }
+
+  .hero {
+    grid-area: hero;
+    gap: 1rem;
+    /* background-color: #f4ece6; */
+    width: 100%;
+    padding: 2.5rem 7rem;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+    z-index: 2;
+    position: static;
+    margin-right: 0; 
+   margin: 0;
+   /* margin-left: -9rem; */
+    margin-top: 9rem;
+    margin-left: -9rem;
+    place-items: center;
+  }
+  .hero-info img {
+    margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+ }
+  .blank {
+    grid-area: blank;
+    background-color: #e6daca;
+    width: 100%;
+    height: 100%;
   }
   .article {
-    width: 50%;
-    padding-top: 16rem;
-    z-index: 1;
-    margin-left: 44rem;
+    grid-area: article;
+    width: 100%;
+    padding-top: 1rem;
+    /* z-index: 1; */
+    margin-left: -7rem;
     margin-right: 2rem;
-    position: absolute;
-    background-color:white;
-  
+    margin-top: 25rem;
+    position: static;
+     background-color: white;
   }
   .article h1 {
-    font-size: 6vw;
+    font-size: 4vw;
     font-weight: bold;
-    margin-bottom: 1rem;
+    /* margin-bottom: 0.5rem; */
     margin-top: -14rem;
     margin-left: 1.5rem;
   }
@@ -379,20 +434,44 @@ footer h2 {
   .article p {
     font-size: 1.5vw;
   }
-  .hello {
+  /* .hello {
     width: 80%;
-  }
-  .btn-container{
+   } */
+  .btn-container {
     display: none;
   }
-  .btn-container-2{
-    margin-left: 1.5rem ;
-    margin-bottom: 2.5rem ;
-  
+  .btn {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  /* font-size: 20px; */
+  width: 100%;
+  margin: auto;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-decoration: none;
+ }
+.btn .btn-project {
+  /* background-color: #0050ff; */
+  font-weight: bold;
+  padding: 0.3rem 1.2rem;
+  border-radius: 1rem;
+  font-size: 2vw;
+  box-shadow: none;
+  border-style: none;
+  cursor: pointer;
+  border: 1px black solid;
+  text-decoration: none;
+}
+.hero-social {
+  height: 10vh;
+  padding: 0 50%;
+  gap: 1rem;
+}
+footer {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin: 0 3rem;
   }
-  .contact{
-    display:flex ;
-    flex-direction: row;
-  }
-  
 }
