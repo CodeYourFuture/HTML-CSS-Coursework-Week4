@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
 
 * {
   padding: 0;
@@ -8,14 +8,14 @@
   font-family: "Outfit", sans-serif;
 }
 main {
-  background-color: #EDEDEE;
+  background-color: #ededee;
 }
 .underline {
   height: 2px;
 }
-h1{
-    font-weight: bolder;
-    color: #a05841;
+h1 {
+  font-weight: bolder;
+  color: #a05841;
 }
 .btn {
   border: none;
@@ -25,11 +25,18 @@ h1{
   color: #ffff;
   font-size: 1rem;
 }
+button:hover{
+    cursor: pointer;
+}
 /* ---------------------------------- */
 .search {
-  padding: 2rem;
+  padding: 1rem;
+  border-width: 50%; 
 }
-.search-wrapper {
+.search input{
+    height: 2rem;
+}
+/* .search-wrapper {
   border: 1px solid red;
   width: 50%;
   height: 2rem;
@@ -37,7 +44,7 @@ h1{
 }
 .search-txt {
   border: none;
-}
+} */
 
 /* header and navbar------------------------------ */
 
@@ -57,27 +64,19 @@ h1{
 }
 .logo-wrapper {
   line-height: 2rem;
-  text-align: center;
   width: 50%;
+  padding-left: 1rem;
+  font-weight: bolder;
 }
 .logo {
   font-size: 1.2rem;
   text-transform: uppercase;
-  /* margin-left: 10px;
-  margin-right: 2rem; */
   color: #a05841;
 }
 .header p {
   color: #a05841;
 }
-/* .slogan {
-  margin-right: 20px;
-  text-align: left;
-  color: #A05841;
-  font-weight: bold;
-  margin-top: 2rem;
-  font-size: 20px;
-} */
+
 
 /* hamburger menu------------ */
 #menu-toggle {
@@ -172,7 +171,7 @@ h1{
   text-transform: uppercase;
 }
 .hero-text h1 {
-  font-family: 'Fjalla One', sans-serif;
+  font-family: "Fjalla One", sans-serif;
   line-height: 2em;
   color: #ffff;
   font-weight: bolder;
@@ -181,7 +180,6 @@ h1{
   font-size: 1.5rem;
   margin-bottom: 2rem;
 }
-
 
 /* Shop collection section--------------- */
 .shop-collection {
@@ -205,54 +203,115 @@ h1{
   height: 50%;
 }
 /*about us section ----------------------------------- */
-.intro{
-    text-align: center;
-    padding: 2rem;
-    margin-top: 2rem ;
-    background-color: #ffff;
+.intro {
+  text-align: center;
+  padding: 2rem;
+  margin-top: 2rem;
+  background-color: #ffff;
 }
-.intro h1{
-    letter-spacing: 6px;
-    text-transform: uppercase;
-    font-weight: 100;
-
+.intro h1 {
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  font-weight: 100;
 }
-.image-wrapper{
-    display: flex;
-    flex-direction: column;
+.image-wrapper {
+  display: flex;
+  flex-direction: column;
 }
-.buy-online{
+.buy-online {
   background-color: #123132;
   text-align: center;
   font-size: 2.5rem;
   padding: 2rem;
-  font-family: 'Fjalla One', sans-serif;
+  font-family: "Fjalla One", sans-serif;
 }
-.buy-online h1{
+.buy-online h1 {
   color: #ffff;
   text-transform: uppercase;
   padding: 2rem;
 }
-.buy-online button{
+.buy-online button {
   background-color: #ffff;
   color: #131313;
 }
 
 /* order form section --------------------------------------- */
-.order-form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.form{
-  display: inline-block;
+.order-form {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  
+  justify-content: center;
+  background-color: #ffff;
+  margin-top: 2rem;
+  padding-top: 2rem;
 }
-.form button{
+.form {
+  display: inline-block;
+  margin: 1rem; 
+}
+.order-form input{
+    width: 100%; 
+    height: 2rem;
+    margin: 1rem 0;
+}
+.order-form input:hover{
+    border-width: 3px;
+    border-color: #131313;
+}
+textarea{
+    margin: 1rem 0;
+    width: 100%;
+}
+textarea:hover{
+    border-width: 3px;
+    border-color: #131313;
+}
+.form button {
   width: 100%;
+  margin-bottom: 1rem;
 }
-.order-form img{
-  
+.order-form img {
+    width: fit-content;
+}
+/* our store section--------------------------- */
+.our-store{
+    background-color: #123132;
+    text-align: center;
+    padding: 4rem;
+    color: #ededee;
+}
+.our-store div{
+    margin: 3rem 0;
+}
+.our-store h1{
+    text-transform: uppercase;
+    color: #ededee;
+    font-family: "Outfit", sans-serif; 
+    font-weight: lighter;
+    letter-spacing: 0.3rem;
+    padding-bottom: 1.5rem;
+}
+.our-store a{
+    color: #ededee;
+}
+.our-store input{
+    background-color: #123132;
+    border-width: 1px;
+    width: 100%; 
+    height: 2rem;
+    margin: 1rem 0;
+}
+.our-store input:hover{
+    border-width: 3px;
+}
+
+
+/* footer section-------------- */
+footer{
+    background-color: #ededee;
+    color: #a05841;
+    padding: 2rem;
+}
+footer a{
+    color: #a05841;
 }

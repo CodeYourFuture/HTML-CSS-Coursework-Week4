@@ -11,9 +11,9 @@
   <body>
     <div class="search">
       <div class="search-wrapper">
-        <a href=""><ion-icon name="search-outline"></ion-icon></a>
-        <input type="text" class="search-txt" placeholder=" Search..." />
-        <ion-icon name="cart"></ion-icon>
+        <!-- <a href=""><ion-icon name="search-outline"></ion-icon></a> -->
+        <input type="search" class="search-txt" placeholder=" Search..." />
+        <!-- <ion-icon name="cart"></ion-icon> -->
       </div>
     </div>
 
@@ -31,8 +31,8 @@
 
           <ul class="menu-box">
             <li><a class="menu-items" href="#">Log in</a></li>
-            <li><a class="menu-items" href="#">Shop</a></li>
-            <li><a class="menu-items" href="#">About</a></li>
+            <li><a class="menu-items" href="shop">Shop</a></li>
+            <li><a class="menu-items" href="#about">About</a></li>
             <li><a class="menu-items" href="#">FAQ</a></li>
             <li><a class="menu-items" href="#">Contact</a></li>
           </ul>
@@ -44,7 +44,7 @@
         <div class="hero-image">
           <div class="hero-text">
             <h1>Prickles & Co</h1>
-            <p>Bring nature<br/>indoors</p>
+            <p>Bring nature<br />indoors</p>
             <button class="btn">Shop Now</button>
           </div>
         </div>
@@ -69,7 +69,7 @@
           <img class="shop-images" src="/images/3.png" alt="succulents" />
         </div>
       </section>
-      <section class="about-us">
+      <section id="about" class="about-us">
         <div class="intro">
           <h1>about us</h1>
           <ion-icon id="underline" name="remove-outline"></ion-icon>
@@ -87,9 +87,9 @@
           </p>
         </div>
         <div class="image-wrapper">
-          <img src="/images/5.png" alt="">
-          <img src="/images/6.png" alt="">
-          <img src="/images/7.png" alt="">
+          <img src="/images/5.png" alt="" />
+          <img src="/images/6.png" alt="" />
+          <img src="/images/7.png" alt="" />
         </div>
         <div class="buy-online">
           <h1>buy online now & get 10% off !</h1>
@@ -98,35 +98,68 @@
       </section>
       <section class="order-form">
         <h1>for special requests & orders</h1>
-        <ion-icon id="underline" name="remove-outline"></ion-icon> 
+        <ion-icon id="underline" name="remove-outline"></ion-icon>
         <div class="form">
-          <form >
-            <label>First name *</label><br>
-            <input type="text">
-            <br>
-            <label>Last name *</label><br>
-            <input type="text">
-            <br>
-            <label>Email *</label><br>
-            <input type="email">
-            <br>
-            <label>Phone</label><br>
-            <input type="tel">
-            <br>
-            <label>Message</label><br>
+          <form>
+            <label>First name *</label><br />
+            <input type="text" />
+            <br />
+            <label>Last name *</label><br />
+            <input type="text" />
+            <br />
+            <label>Email *</label><br />
+            <input type="email" />
+            <br />
+            <label>Phone</label><br />
+            <input type="tel" />
+            <br />
+            <label>Message</label><br />
             <textarea cols="30" rows="10"></textarea>
             <button class="btn">Send</button>
           </form>
         </div>
-        <img src="/images/8.png" alt="">
+        <img src="/images/8.png" alt="" />
+      </section>
+      <section class="our-store">
+        <div>
+          <h1>our store</h1>
+          <p>
+            Address: 500 Terry Francois Street San <br />
+            Francisco, CA 94158 <br />Phone: 123-456-7890 <br />
+            Email: info@mysite.com
+          </p>
+        </div>
+        <div>
+          <h1>Opening Hours</h1>
+          <p>
+            Mon - Fri: 7am - 10pm <br/>Saturday: 8am - 10pm <br/>
+            Sunday: 8am - 11pm
+          </p>
+        </div>
+        <div>
+            <h1>Help</h1>
+            <a href="#">Shipping & Returns</a>
+            <br>
+            <a href="#">Privacy Policy</a>
+            <br>
+            <a href="#">FAQ</a>
+        </div>
+        <div class="subscribe">
+            <h1>Subscribe</h1>
+            <label>Enter your email here *</label>
+            <input type="email">
+            <button class="btn">Subscribe Now</button>
+        </div>
       </section>
     </main>
 
     <!-- Please leave this in to credit the creators of this design -->
+    <footer>
     <p>
-      This website design was created by Wix.com, and is used here for strictly
+      This website design was created by <a href="https://www.wix.com/">Wix.com</a>, and is used here for strictly
       educational purposes.
     </p>
+    </footer>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
