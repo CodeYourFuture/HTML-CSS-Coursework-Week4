@@ -17,38 +17,53 @@
 
 <body>
     <!-- Add your markup here -->
+<section class="desktop-width">    
     <header>
 
         <section class="search-bar">
-            <i class="bi bi-search"></i>
-            <p class="placeholder">search...</p>
-            <input class="search" type="search" id="search" placeholder=" ">
+            <div class="temp-search-flex">
+                <div class="search-input-icons">
+                    <i class="bi bi-search placeholder"></i>
+                    <p class="placeholder">search...</p>
+                </div>
+                <input class="search" type="search" id="search" >
+            </div>
             <!-- <i class="bi bi-person-circle"></i> -->
-            <i class="fa fa-shopping-bag"></i>
+
+            <div class="desktop-searchbar">
+                <a href="#" class=" phone-hidden desktop-login">
+                    <i class="bi bi-person-circle"></i> Log In </a>
+
+                <i class="fa fa-shopping-bag"></i>
+            </div>
         </section>
 
         <section class="head-bar">
-            <div>
-                <h2>PRICKLES & CO.</h2>
-                <p>We Deliver To Your Doorstep</p>
-            </div>
+            <section class="desktop-head-bar">
 
-            <!-- -------navigation ------- -->
-            <div>
-                <button aria-label="Open navigation" class="open-nav"> &#9776;</button>
-                <nav class="nav  navigation-open">
-                    <button aria-label="Close navigation" class="close-nav"> &times;</button>
-        
-                    <ul class="nav-list">
-                        <li class="nav-item"><a href="#" class="nav-link">
-                                <i class="bi bi-person-circle"></i> Log In </a></li>
-                        <li class="nav-item"><a href="#" class="nav-link"> Shop </a></li>
-                        <li class="nav-item"><a href="#" class="nav-link"> About </a></li>
-                        <li class="nav-item"><a href="#" class="nav-link"> FAQ </a></li>
-                        <li class="nav-item"><a href="#" class="nav-link"> Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
+                <div class="headbar-title">
+                    <a class="home-page" href="index.html"> PRICKLES & CO.</a>
+                    <p class="desktop-hidden">We Deliver To Your Doorstep</p>
+            
+                </div>
+                <!-- -------navigation ------- -->
+                <div>
+                    <button aria-label="Open navigation" class="open-nav"> &#9776;</button>
+                    <nav class="nav ">
+                        <button aria-label="Close navigation" class="close-nav"> &times;</button>
+            
+                        <ul class="nav-list">
+                            <li class="nav-item desktop-hidden"><a href="#" class="nav-link">
+                                    <i class="bi bi-person-circle"></i> Log In </a></li>
+                            <li class="nav-item"><a href="#" class="nav-link"> Shop </a></li>
+                            <li class="nav-item"><a href="about.html" class="nav-link"> About </a></li>
+                            <li class="nav-item"><a href="#" class="nav-link"> FAQ </a></li>
+                            <li class="nav-item"><a href="contact.html" class="nav-link"> Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+            <p class="phone-hidden">We Deliver To Your Doorstep</p>
         </section>
 
     </header>
@@ -63,7 +78,7 @@
                 <p>2023</p>
             </div>
             <h1>PRICKLES & CO</h1>
-            <h2>BRING NATURE <br>INDOORS</h2>
+            <h2>BRING NATURE INDOORS</h2>
             <a class="btn shop-btn" href="#">Shop Now</a>
         </section>
 
@@ -84,104 +99,122 @@
             </section>
         </article>
 
-        <section class="about-us">
-            <h3>ABOUT US</h3>
-            <p>--</p>
-            <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click
-                me to
-                add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page.
-                I’m a
-                great place for you to tell a story and let your users know a little more about you.
-        
-                <br><br>
-        
-                This is a great space to write long text about your company and your services. You can use this space to go into
-                a
-                little more detail about your company. Talk about your team and what services you provide.</p>
+        <article  class="about-wrapper">
+
+            <section class="about-us">
+                <h3>ABOUT US</h3>
+                <p>--</p>
+                <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click
+                    me to
+                    add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page.
+                    I’m a
+                    great place for you to tell a story and let your users know a little more about you.
+            
+                    <br><br>
+            
+                    This is a great space to write long text about your company and your services. You can use this space to go into
+                    a
+                    little more detail about your company. Talk about your team and what services you provide.</p>
             </section>
-        <img class="thumbnail" src="img/5.png" alt="">
-        <img class="thumbnail" src="img/6.png" alt="">
-        <img class="thumbnail" src="img/7.png" alt="">
+            <img class="thumbnail thumbnail1" src="img/5.png" alt="">
+            <img class="thumbnail thumbnail2" src="img/6.png" alt="">
+            <img class="thumbnail thumbnail3" src="img/7.png" alt="">
 
-        <section class="sale thumbnail">
-            <p>BUY ONLINE<br>
-                NOW & GET<br>
-                10% OFF !</p>
-            <a class="shop-btn" href="#">Shop Now</a>
-        </section>
+            <section class="sale ">
+                <p>BUY ONLINE<br>
+                    NOW & GET<br>
+                    10% OFF !</p>
+                <a class="shop-btn" href="#">Shop Now</a>
+            </section>
 
-        <article class="contact">
+        </article>
 
-            <form class="form">
-                <h3>FOR SPECIAL REQUESTS & ORDERS </h3>
-        
-                <section class="form-layout"> 
-                    <label for="first-name" class="first-name">
-                        First Name * <br>
-                        <input type="text" id="first-name" required>
-                    </label><br>
-                
-                    <label for="last-name" class="last-name">
-                        Last Name * <br>
-                        <input type="text" id="last-name" required>
-                    </label><br>
-                
-                    <label for="email" class="email">
-                        Email * <br>
-                        <input type="email" id="email" required>
-                    </label><br>
-                
-                    <label for="phone" class="phone">
-                        Phone <br>
-                        <input type="text" id="phone">
-                    </label><br>
-                
-                    <label for="message" class="message">
-                        Message<br>
-                        <textarea type="text" id="message"></textarea>
-                    </label><br>
-                
-                    <button class="send-btn">Send</button>
-                </section>
-            </form>
+        <article class="contact ">
 
-            <img class="thumbnail" src="img/8.png" alt="">
+            <section class="form-background">
+                <form class="form">
+                    <h3>FOR SPECIAL REQUESTS & ORDERS </h3>
+            
+                    <section class="form-layout"> 
+                        <label for="first-name" class="first-name">
+                            First Name * <br>
+                            <input type="text" id="first-name" required>
+                        </label><br>
+                    
+                        <label for="last-name" class="last-name">
+                            Last Name * <br>
+                            <input type="text" id="last-name" required>
+                        </label><br>
+                    
+                        <label for="email" class="email">
+                            Email * <br>
+                            <input type="email" id="email" required>
+                        </label><br>
+                    
+                        <label for="phone" class="phone">
+                            Phone <br>
+                            <input type="text" id="phone">
+                        </label><br>
+                    
+                        <label for="message" class="message">
+                            Message<br>
+                            <textarea type="text" id="message"></textarea>
+                        </label><br>
+                    
+                        <button class="send-btn">Send</button>
+                    </section>
+                </form>
+            </section>
+
+            <img class="thumbnail desktop-hidden" src="img/8.png" alt="">
 
             <section class="info">
-                <h3>OUR STORE</h3><br>
-                <p>Address:500 Terry Francois Street San<br>
-                    Francisco,CA 94158<br>
-                    Phone: 123-456-7890</p>
-                <p>Email: info@mysite.com</p><br>
-            
-                <h3>OPENING HOURS</h3>
-                <p>Mon-Fri: 7am-10pm</p>
-                <p>Saturday:8am-10pm</p>
-                <p>Sunday: 8am-11pm</p><br>
-            
-                <h3>HELP</h3>
-                    <div class="information-link">
-                    <a class="info-link" href="#">Shipping & Returns</a><br>
-                    <a class="info-link" href="#">Privacy Policy.</a><br>
-                    <a class="info-link" href="#">FAQ</a><br>
+                    <div class="info-flex">
+
+                        <div class="info-sec">
+                            <h3>OUR STORE</h3><br>
+                            <p>Address:500 Terry Francois Street San<br>
+                                Francisco,CA 94158<br>
+                                Phone: 123-456-7890</p>
+                            <p>Email: info@mysite.com</p>
+                        </div>
+                        
+                        <div class="info-sec">
+                            <h3>OPENING HOURS</h3>
+                            <p>Mon-Fri: 7am-10pm</p>
+                            <p>Saturday:8am-10pm</p>
+                            <p>Sunday: 8am-11pm</p>
+                        </div>
+
+                        <div class="info-sec">
+                            <h3>HELP</h3>
+                                <div class="information-link">
+                                <a class="info-link" href="#">Shipping & Returns</a><br>
+                                <a class="info-link" href="#">Privacy Policy.</a><br>
+                                <a class="info-link" href="#">FAQ</a><br>
+                            </div>
+                        </div>
+                    </div>
+
+                <div class="subscription">
+                    <h3 class="subscription-title">SUBSCRIBE</h3>
+                        <label for="subscription" class="email-label">
+                            Enter your email here *</label>
+                        <div class="email-wrapper">
+                            <input type="email" class="email"></input>
+                            
+                            <a href="#" class="subscribe-btn">Subscribe Now</a>
+                        </div>
                 </div>
-            
-                <h3>SUBSCRIBE</h3>
-                <div  class="subscription">
-                    <label for="subscription">
-                        Enter your email here *<br>
-                        <input type="email" class="email"></input>
-                    </label><br>
-                    <a href="#" class="subscribe-btn">Subscribe Now</a>
-                </div>
-                <div class="social-media">
-                    <i class="fa fa-facebook-f"></i>
-                    <i class="fa fa-pinterest"></i>
-                    <i class="fa fa-instagram"></i>
-                </div>
-            
-                <div class="map">
-                </div>
+
+                    <div class="social-media">
+                        <i class="fa fa-facebook-f"></i>
+                        <i class="fa fa-pinterest"></i>
+                        <i class="fa fa-instagram"></i>
+                    </div>
+                
+                    <div class="map">
+                    </div>
             </section>
         </article>
         
@@ -192,7 +225,7 @@
         <p>©2023 by Prickles & Co. Proudly</p>
         <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
     </footer>
-
+</section>
 <script src="script.js"></script>    
 </body>
 
