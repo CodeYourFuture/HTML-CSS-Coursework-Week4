@@ -129,7 +129,7 @@ header {
   top: 0;
   right: -100%;
   width: 100%;
-  height: auto;
+  height: 566px;
   margin: 0;
   padding: 60px, 20px;
   list-style: none;
@@ -170,7 +170,7 @@ header {
 .main {
   background-color: #fff;
 }
-.mobile_bck {
+.hero_bckgrnd {
   background-color: #e6dacd;
   padding-top: 24rem;
   margin-top: 5rem;
@@ -179,7 +179,7 @@ header {
 .info {
   background-color: #f4ece6;
   width: 90%;
-  height: max-content;
+  height: fit-content;
   margin: 0 auto 4rem auto;
   border-radius: 5px;
   text-align: center;
@@ -328,46 +328,183 @@ footer p {
 
 /* Desktop view */
 @media screen and (min-width: 1024px) {
+  .mobile,
   .mobile_menu {
     display: none;
   }
 
   .desktop {
     display: block;
-    padding-top: 4rem;
+    /* padding-top: 4rem; */
   }
   header .desktop {
     width: 100%;
     height: 100px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 5rem;
-    padding-left: 3rem;
-    background-color: aliceblue;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+    /* background-color: azure; */
   }
 
   .blue_box {
     width: 22px;
     height: 22px;
-    border: 1px solid #0150fd;
+    /* border: 1px solid #0150fd; */
     background-color: #0150fd;
-    margin: 1rem;
+    margin-left: 1rem;
+    margin-top: 0.6rem;
   }
   .boxname_title {
     display: flex;
+    width: 50%;
+    gap: 1rem;
+    /* background-color: aqua; */
   }
-  .nav {
+
+  .name {
+    text-transform: capitalize;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #000;
+  }
+  #role {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    cursor: pointer;
+  }
+  .nav_list {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: flex-end;
+    /* gap: 4rem; */
+    /* background-color: aquamarine; */
   }
-  .nav li {
-    text-decoration: none;
+  .nav_list li {
     list-style-type: none;
   }
-  nav li a {
-    text-transform: uppercase;
+
+  .nav_link {
     text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    padding: 1rem;
+    font-size: medium;
+  }
+  .nav_link:link,
+  .nav_link:hover {
+    color: #0150fd;
+  }
+
+  /* main session */
+  .main {
+    background-color: #fff;
+  }
+
+  .hero_bckgrnd {
+    width: 40%;
+    height: 850px;
+    position: static;
+  }
+
+  .info {
+    width: 20%;
+    margin-top: 15rem;
+    position: absolute;
+    right: 5rem;
+    left: -9rem;
+    top: 1.5rem;
+    bottom: rem;
+  }
+  .chioma {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+  }
+  .h1 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .h1 h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: "Poppins" sans-serif;
+  }
+  .blue_line hr {
+    border: 2px solid #0150fd;
+    margin-bottom: 2rem;
+  }
+  .h2 {
+    text-transform: uppercase;
+    font-size: 1rem;
+  }
+  .detailed_info {
+    background-color: aliceblue;
+  }
+
+  .details {
+    background-color: #fff;
+    width: 40%;
+    position: absolute;
+    top: 14.5rem;
+    right: 7rem;
+  }
+  .details h3 {
+    padding-top: 2rem;
+    font-size: 4rem;
+  }
+  .buttons {
+    display: flex;
+    margin-bottom: 3rem;
+  }
+
+  .btn3:hover {
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000;
+  }
+  .btn4:hover {
+    background-color: #0150fd;
+    color: #fff;
+  }
+
+  /* footer */
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-top: 2rem;
+    position: relative;
+    background-color: #ff0;
+    
+  }
+
+  .copy {
+    position: absolute;
+    top: 0;
+    left: 3rem;
+  }
+
+  .cal-wrt {
+    gap: 2rem;
+    position: absolute;
+    top: 0;
+    right: 5rem;
+  }
+    }
+  .footer_socials {
+    position:relative;
+    top: 0;
+    bottom: 0;    
+  }
+  
+
+  .wix {
+    font-size: 0.6rem;
   }
 }
