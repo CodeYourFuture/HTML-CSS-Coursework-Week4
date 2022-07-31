@@ -27,7 +27,7 @@ White: #FFF */
   
 }
 
-.header-img {
+.header-img, .blue-img {
     height: 16px;
     width: 16px;
   
@@ -136,4 +136,40 @@ White: #FFF */
 
 .navigation {
   display: none;
+}
+
+.blue-resume {
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+    margin-bottom: 40px;
+    margin-left: -10px;
+     padding-top: 50px;
+    font-family:'Poppins',sans-serif;
+}
+.resume {
+    font-size: 25pt;
+     font-family:'Poppins',sans-serif;
+}
+.blue-img {
+    margin-top: 15px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 11pt;
+}
+
+.d-btn {
+        padding: 6px 25px;
+        border-radius: 50px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        font-size: 10pt;
+        background-color: #0150FD;
+        color: #fff;
+        font-weight: bolder;
 }
