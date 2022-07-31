@@ -356,6 +356,10 @@ White: #FFF */
     color: #0150FD;
 }
 
+ .nav_link:hover {
+         color:  #0150FD;
+    }
+
 .desk-summary {
     background-color: #fff;
     padding: 150px 50px 150px 50px;
