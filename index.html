@@ -1,21 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- Add a link to your custom CSS here -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Quicksand:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Jaspreet-Responsive grid project</title>
+  </head>
 
-    <title>Responsive grid project</title>
-</head>
+  <body>
+    <header class="header">
+      <div class="left">
+      <div class="logo">
+        <img
+          class="header-img"
+          src="https://tinyurl.com/y8s5hpsb"
+          alt="blue-box"
+        />
+        <h1 class="heading"><strong>Maya Nelson</strong></h1>
+      </div>
+      <p>PROJECT MANAGER</p>
+</div>
+      <div class="nav-container">
+        <nav class="hamburger">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+          <ul class="nav-list">
+            <li><a href="index.html" class="nav-links">ABOUT ME</a></li>
+            <li><a href="resume.html" class="nav-links">RESUME</a></li>
+            <li><a href="#" class="nav-links">PROJECTS</a></li>
+            <li><a href="#" class="nav-links">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <nav class="navigation">
+      <ul class="nav_menu">
+        <li><a class="nav_link"  id="aboutme" href="index.html">ABOUT ME</a></li>
+        <li><a class="nav_link" href="resume.html">RESUME</a></li>
+        <li><a class="nav_link" href="#">PROJECTS</a></li>
+        <li><a class="nav_link" href="#">CONTACT</a></li>
+      </ul>
+    </nav>
+    <div class="mobile">
+      <div class="section">
+        <img
+          class="hero-img"
+          src="/responsive-grid-project/images/profilepic.jpg"
+          alt="picture"
+        />
+        <h3 class="name">
+          Maya <br />
+          Nelson
+        </h3>
+        <div class="buttons">
+          <button type="button" class="resume">RESUME</button>
+          <button type="button" class="project">PROJECT</button>
+        </div>
+        <br />
+        <div class="social">
+          <ul class="icons">
+            <li class="facebook">
+              <img src="https://tinyurl.com/2p8mpxbr" alt="facebook-icon" />
+            </li>
+            <li class="twitter">
+              <img src="https://tinyurl.com/yk65sws2" alt="twitter-icon" />
+            </li>
+            <li class="linkedin">
+              <img src="https://tinyurl.com/5ts3sjxb" alt="linkedin-icon" />
+            </li>
 
-<body>
+            <li class="instagram">
+              <img src="https://tinyurl.com/2p97eedr" alt="instagram-icon" />
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="summary">
+        <h1>Hello</h1>
+        <h4 class="text">Here's who I am & what I do</h4>
+        <p class="paragraph">
+          I'm a paragraph. Click here to add your own text and edit me. It’s
+          easy. Just click “Edit Text” or double click me to add your own
+          content and make changes to the font. <br />
+          <br />
+          I’m a great place for you to tell a story and let your users know a
+          little more about you.
+        </p>
+      </div>
+    </div>
+
+
+      <section class="desktop">
+      <div class="desk-section">
+        <img
+          class="desk-img"
+          src="/responsive-grid-project/images/profilepic.jpg"
+          alt="picture"
+        />
+        <h3 class="name">
+          Maya <br />
+          Nelson
+        </h3>
+         <p class="desk-mngr">PROJECT MANAGER</p>
+        <br />
+        <div class="social">
+          <ul class="icons">
+            <li class="facebook">
+              <img src="https://tinyurl.com/2p8mpxbr" alt="facebook-icon" />
+            </li>
+            <li class="twitter">
+              <img src="https://tinyurl.com/yk65sws2" alt="twitter-icon" />
+            </li>
+            <li class="linkedin">
+              <img src="https://tinyurl.com/5ts3sjxb" alt="linkedin-icon" />
+            </li>
+
+            <li class="instagram">
+              <img src="https://tinyurl.com/2p97eedr" alt="instagram-icon" />
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="desk-summary">
+        <h1 class="desk-h1">Hello</h1>
+        <h4 class="text">Here's who I am & what I do</h4>
+         <div class="buttons">
+          <button type="button" class="resume">RESUME</button>
+          <button type="button" class="project">PROJECT</button>
+        </div>
+        <p class="paragraph">
+          I'm a paragraph. Click here to add your own text and edit me. It’s
+          easy. Just click “Edit Text” or double click me to add your own
+          content and make changes to the font. <br />
+          <br />
+          I’m a great place for you to tell a story and let your users know a
+          little more about you.
+        </p>
+      </div>
+    </div>
+
+
+    <footer>
+      <div class="footer-content">
+        <section class="contacts">
+          <div>
+            <h4>Call</h4>
+            <p>123-456-7890</p>
+          </div>
+
+          <div>
+            <h4>Write</h4>
+            <p>info@mysite.com</p>
+          </div>
+        </section>
+
+        <section class="content">
+          <h4>Follow</h4>
+          <div class="social2">
+            <ul class="icons2">
+              <li class="facebook">
+                <img src="https://tinyurl.com/2p8mpxbr" alt="facebook-icon" />
+              </li>
+              <li class="twitter">
+                <img src="https://tinyurl.com/yk65sws2" alt="twitter-icon" />
+              </li>
+              <li class="linkedin">
+                <img src="https://tinyurl.com/5ts3sjxb" alt="linkedin-icon" />
+              </li>
+
+              <li class="instagram">
+                <img src="https://tinyurl.com/2p97eedr" alt="instagram-icon" />
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+
+      <p class="copyright">
+        © 2023 by Maya Nelson.<br />
+        Proudly created with Wix.com
+      </p>
+
+      <p>
+        This website design was created by Wix.com, and is used here for
+        strictly educational purposes.
+      </p>
+    </footer>
 
     <!-- Add your markup here -->
 
-
     <!-- Please leave this in to credit the creators of this design -->
-    <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
-</body>
-
+  </body>
 </html>

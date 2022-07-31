@@ -11,6 +11,7 @@ White: #FFF */
   padding: 0;
   box-sizing: border-box;
 }
+
 /*body {
   width: 100%;
   height: 100vh;
@@ -27,7 +28,7 @@ White: #FFF */
   
 }
 
-.header-img {
+.header-img, .blue-img {
     height: 16px;
     width: 16px;
   
@@ -49,8 +50,6 @@ White: #FFF */
 .left {
   float: left;
 }
-
-
 
 
 .nav-container {
@@ -138,98 +137,87 @@ White: #FFF */
   display: none;
 }
 
-
-.hero-img {
-    border-radius: 100%;
-    height: 120px;
-   align-items: center;
-   
-  
+.resume-section {
+     background-color: #E6DACD ;
+     padding-bottom: 40px;
 }
 
-.name {
-    font-weight: 600;
-    font-size: 18pt;
-    font-family:'Poppins',sans-serif ;
-}
-
-.section {
-    background-color: #F4ECE6 ;
-    display: block;
-    justify-content: center;
-    padding: 0px 20px;
-    text-align: center;
-}
-
-.resume {
-    padding: 5px 25px;
-    border-radius: 50px;
-    font-family: 'Poppins',sans-serif;
-    font-weight: bold;
-    font-size: 12pt;
-    background-color:#0150FD ;
-    color: #fff;
-      
-}
-
-.project {
-    padding: 5px 25px;
-    border-radius: 50px;
-    font-family: 'Poppins', sans-serif;
-        font-weight: bold;
-        font-size: 12pt;
-    
-}
-
-.buttons{
-    padding-bottom: 40px;
-    padding-top: 30px;
-    
-    
-}
-.icons {
+.blue-resume {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    gap: 10px; 
+    margin-bottom: 40px;
+    margin-left: -10px;
+     padding-top: 50px;
+    font-family:'Poppins',sans-serif;
+}
+.resume {
+    font-size: 25pt;
+     font-family:'Poppins',sans-serif;
+}
+.blue-img {
+    margin-top: 15px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 11pt;
+}
+
+.d-btn {
+        padding: 6px 25px;
+        border-radius: 50px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        font-size: 10pt;
+        background-color: #0150FD;
+        color: #fff;
+        font-weight: bolder;
+}
+
+.job-section {
     background-color: #fff;
-    font-size: 13pt;
-
-}
-.social img {
-  width: 30px;
-  height: 30px;
-  
-}
-.icons li {
-  list-style: none;
+    margin: 10px 10px;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
 }
 
-.summary{
-    background-color: #E6DACD ;
-    padding-bottom: 100px;
+.year {
+    color:#0150FD ;
+    padding: 30px 0px 15px 20px;   
 }
-.summary h1 {
-    font-family:'Poppins',sans-serif; 
-    font-size: 35pt;
-    font-weight: bold;
+
+.job{
     padding-left: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-
+    padding-bottom: 10px;
 }
 
-.text {
-    font-size: 14pt;
+p {
     padding-left: 20px;
-    padding-bottom: 20px;
 }
 
 .paragraph {
-    padding-left: 10px;
-    margin: 0 10px;
-    font-size: 14pt;
+    margin-right: 5px;
+    padding-bottom: 30px;
+}
+
+h1{
+font-family: 'Poppins',sans-serif;
+font-size: 20px;
+padding: 0px 0 40px 10px;
+}
+
+.profession {
+    padding-top: 40px;
+    padding-left: 20px;
+}
+
+.skills {
+    line-height: 2.5;
+    padding-left: 40px;
 }
 
 .contacts {
@@ -239,9 +227,9 @@ White: #FFF */
     padding-bottom: 40px;
 }
 
-.content {
+.content2 {
     padding-bottom: 40px;
-    padding-left: 30px;
+    padding-left: 40px;
 }
 
 .icons2 {
@@ -270,11 +258,6 @@ White: #FFF */
   
 
 }
-
-.desktop {
-  display: none;
-}
-
 @media screen and (min-width: 900px) {
     .navigation {
         display: block;
@@ -311,87 +294,54 @@ White: #FFF */
         margin-right: 1rem;
     }
 
-    .mobile {
-        display: none;
+    #resm {
+      color:  #0150FD;
     }
 
-    .desktop {
-     background: rgb(230, 218, 205);
-        background: linear-gradient(90deg, rgba(230, 218, 205, 1) 35%, rgba(255, 255, 255, 1) 35%);
-        height: 800px;
-        display: flex;
-        justify-content: center;
- }
-
-.desk-section {
-    background-color: #F4ECE6;
-    padding-top: 80px;
-    width: 500px;
-    text-align: center;
-    margin-top: 100px;
-    margin-left: 30px;
-    margin-bottom: 160px;
-}
-
-.desk-img {
-    border-radius: 100%;
-    height: 200px;
-    
-}
-
-.name{
-    font-family: 'Poppins',sans-serif;
-    font-size: 22pt;
-    padding-top: 10px;
-    padding-bottom: 20px;
-
-}
-
-.desk-mngr {
-    font-size: 15pt;
-    padding-bottom: 50px;
-}
-
-#aboutme {
-    color: #0150FD;
-}
-
- .nav_link:hover {
+    .nav_link:hover {
          color:  #0150FD;
     }
 
-.desk-summary {
-    background-color: #fff;
-    padding: 150px 50px 150px 50px;
-    padding-top: 20px;
-        width: 500px;
-        text-align: left;
-        margin-top: 100px;
-        margin-bottom: 160px;
-}
+    /*.mobile {
+        display: none;
+    }*/
 
-.desk-h1 {
-    font-family: 'Poppins',sans-serif;
-    font-weight: 700;
-    font-size: 70pt;
-}
+    .job-section{
+        margin: 0 500px;
+        margin-bottom: 40px;
+        padding: 60px 0;
+    }
 
-.text {
-    font-size: 20pt;
-    padding-bottom: 30px;
-    padding-left: 20px;
-}
-.resume {
-    margin-bottom: 25px;
-}
+    .year{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 15pt;
 
-.footer-content {
-    display: none;
-}
+    }
 
-.copyright{
-  display: none;
-}
-  }
+    .paragraph {
+        margin-left: 300px;
+        margin-right: 10px;
+        margin-top: -50px;
+    }
 
-/* Dont' forget to link this file to your HTML in the <head> */
+        .content {
+            display: flex;
+            justify-content: center;
+            gap: 450px;
+
+        }
+
+        .studies {
+            padding-left: 520px;
+            font-size: 16pt;
+        }
+
+                .footer-content {
+                    display: none;
+                  
+                }
+
+                
+
+}
