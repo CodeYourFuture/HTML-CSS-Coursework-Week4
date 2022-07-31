@@ -1,0 +1,70 @@
+:root {
+    --black: #000;
+    --white: #fff;
+    --red-brown: #a05941;
+    --light-grey: #ededee;
+    --green-black: #133032;
+}
+
+body {
+    background-color: var(--light-grey);
+    color: var(--red-brown);
+    margin: 0;
+    font-size: 20px;
+    font-family: "Fjalla One", sans-serif;
+}
+
+/* Header Section */
+.header {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 2fr auto;
+    margin: 1rem;
+}
+
+.search {
+    background-color: var(--light-grey);
+    border: 1px solid var(--red-brown);
+}
+
+.shopping-cart,
+.hamburger {
+    width: 50px;
+    height: 50px;
+}
+
+.nav {
+    display: none;
+    padding-top: 1.5rem;
+}
+
+.navigation {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nav-list {
+    list-style-type: none;
+}
+
+.nav-link {
+    color: var(--red-brown);
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+
+.hamburger {
+    margin-top: 0.7rem;
+}
+
+.header-title {
+    font-family: "Outfit", sans-serif;
+    color: var(--red-brown);
+    text-decoration: none;
+}
+
+.header-message {
+    grid-column: 1 / 3;
+    margin-top: -2.5rem;
+}
