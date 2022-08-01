@@ -12,49 +12,93 @@
   <body>
     <!-- Add your markup here -->
     <header>
-      <section class="name-title">
-        <!-- <p>hi</p> -->
+      <section class="mobile mobile_menu">
+        <div class="box_name">
         <section class="blue-box"></section>
-        <a href="index.html" class="full-name"> Chioma okeke</a>
-        <p>/</p>
-        <a href="resume.html" class="job-title">software developer trainee</a>
+        <section class="title">
+          <p class="full-name"><a href="index.html"> Chioma okeke</a></p>
+          <div class="job-title">
+            <a href="resume.html">software developer</a>
+          </div>
+          </div>
+        </section>
       </section>
-      <nav class="mobile">
-        <ul class="hamburgher_menu">
-          <li><a href="index.html" class="menu_link">about me</a></li>
-          <li>
-            <a href="resume.html" target="_blank" class="menu_link">resume</a>
+<!-- HAMBURGER MENU -->
+      
+      <nav class="mobile_menu">
+        <input type="checkbox" id="menu_toggle">
+        <label for="menu_toggle" class="menu_btn"><span></span></label>
+        <ul class="menu_box">
+          <li class="menu_list"><a href="index.html" class="menu_link" target="_self">about me</a></li>
+          <li class="menu_list">
+            <a href="resume.html"  class="menu_link">resume</a>
           </li>
-          <li>
-            <a href="projects.html" target="_blank" class="menu_link"
+          <li class="menu_list">
+            <a href="projects.html"  class="menu_link"
               >projects</a
             >
           </li>
-          <li>
-            <a href="contact.html" target="_blank" class="menu_link">contact</a>
+          <li class="menu_list">
+            <a href="contact.html"  class="menu_link">contact</a>
           </li>
         </ul>
       </nav>
+      <!-- DESKTOP -->
+      <section class="desktop">
+        <section class="boxname_title">
+          <section class="blue_box"></section>
+          <p><a href="index.html" class="name">Chioma okeke </a> / <a href="resume.html" id="role">software developer</a> </p>
+          <!-- <p class="role"></p> -->
+        </section>
+        <nav class="nav desktop">
+          <ul class="nav_list">
+            <li><a href="index.html" class="nav_link">about me</a></li>
+            <li><a href="resume.html" class="nav_link">resume</a></li>
+            <li><a href="projects.html" class="nav_link">projects</a></li>
+            <li><a href="contact.html" class="nav_link">contact</a></li>
+          </ul>
+        </nav>
+      </section>
     </header>
-    <main>
-      <article class="">
-        <section class="info">
-          <img src="./images/jane.jpeg" alt="Chioma okeke" class="chioma" />
-          <h1>Chioma okeke</h1>
-          <section class="blue_line"></section>
-          <h2>software developer trainee</h2>
+    <main class="main">
+      <article class="hero_bckgrnd ">
+          <section class="info">
+          <img
+            src="./images/jane.jpeg"
+            alt="Chioma okeke"
+            class="chioma"
+            
+          />
+          <section class="h1"><h1>Chioma okeke</h1></section>
+          <section class="blue_line">
+            <hr>
+          </section>
+          <p class="desktop h2">software developer</p>
+          <button class="btn1 button mobile" href="resume.html">resume</button>
+          <button class="btn2 button mobile" href="projects.html">projects</button>
           <section class="social_media">
-            <section class="media"></section>
-            <section class="media"></section>
-            <section class="media"></section>
-            <section class="media"></section>
+            <section class="media">
+              <img src="./images/facebook-icon.svg" alt="facebook-icon" class="facebook logo">
+            </section>
+            <section class="media">
+              <img src="./images/twitter-icon.svg" alt="twitter-icon" class="twitter">
+            </section>
+            <section class="media">
+              <img src="./images/linkedln.png" alt="linkedln" class="linkedln">
+            </section>
+            <section class="media">
+              <img src="./images/instagram-icon.svg" alt="instagram-icon" class="instagram">
+            </section>
           </section>
         </section>
         <section class="details">
           <h3>Hello</h3>
           <h4>Here's who I am & what I do</h4>
-          <button class="btn1">resume</button>
-          <button class="btn2">projects</button>
+          <div class="buttons">
+            <button class="desktop btn1">resume</button>
+          <button class="desktop btn2">projects</button>
+          </div>
+          
           <p>
             I'm a paragraph. Click here to add your own text and edit me. It’s
             easy. Just click “Edit Text” or double click me to add your own
@@ -65,35 +109,54 @@
             little more about you.
           </p>
         </section>
+        
+        
       </article>
     </main>
     <footer>
+      
+      <section class="cal-wrt">
+        <section class="call">
+          <p class="head">call</p>
+          <p>123-456-7890</p>
+        </section>
+        <section class="write">
+          <p class="head">write</p>
+          <a href="mailto:info@mysite.com">info@mysite.com</a>
+        </section>
+      </section>
+
+      <section class="follow">
+        <div class="footer_socials"></div>
+        <p class="head">follow</p>
+        <section class="footer_media">
+        
+          <section class="f_media media">
+                <img src="./images/facebook-icon.svg" alt="facebook-icon" class="facebook logo">
+              </section>
+              <section class="f_media media">
+                <img src="./images/twitter-icon.svg" alt="twitter-icon" class="twitter">
+              </section>
+              <section class="f_media media">
+                <img src="./images/linkedln.png" alt="linkedln" class="linkedln">
+              </section>
+              <section class="f_media media">
+                <img src="./images/instagram-icon.svg" alt="instagram-icon" class="instagram">
+              </section>
+          </section>
       <section class="copy">
-        <p class="copyright">&COPY; 2023 by Chioma okeke</p>
+        <p class="copyright">&COPY; 2023 by Chioma Okeke.</p>
         <p>
-          proudly created with
+          Proudly created with
           <a href="https://www.wix.com/" target="_blank">Wix.com</a>
         </p>
       </section>
-
-      <section class="call">
-        <p>call</p>
-        <p>123-456-7890</p>
       </section>
-      <address class="write">
-        <p>write</p>
-        <a href="mailto:info@mysite.com">info@mysite.com</a>
-      </address>
-      <section class="footer_media">
-        <section class="media"></section>
-        <section class="media"></section>
-        <section class="media"></section>
-        <section class="media"></section>
-      </section>
+      
     </footer>
 
     <!-- Please leave this in to credit the creators of this design -->
-    <p>
+    <p class="wix">
       This website design was created by Wix.com, and is used here for strictly
       educational purposes.
     </p>
