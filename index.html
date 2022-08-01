@@ -1,21 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- Add a link to your custom CSS here -->
-
+    <link rel="stylesheet" href="/css/main.css" />
     <title>Responsive grid project</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- Add your markup here -->
+    <header>
+      <section class="mobile mobile_menu">
+        <div class="box_name">
+        <section class="blue-box"></section>
+        <section class="title">
+          <p class="full-name"><a href="index.html"> Chioma okeke</a></p>
+          <div class="job-title">
+            <a href="resume.html">software developer</a>
+          </div>
+          </div>
+        </section>
+      </section>
+<!-- HAMBURGER MENU -->
+      
+      <nav class="mobile_menu">
+        <input type="checkbox" id="menu_toggle">
+        <label for="menu_toggle" class="menu_btn"><span></span></label>
+        <ul class="menu_box">
+          <li class="menu_list"><a href="index.html" class="menu_link" target="_self">about me</a></li>
+          <li class="menu_list">
+            <a href="resume.html"  class="menu_link">resume</a>
+          </li>
+          <li class="menu_list">
+            <a href="projects.html"  class="menu_link"
+              >projects</a
+            >
+          </li>
+          <li class="menu_list">
+            <a href="contact.html"  class="menu_link">contact</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- DESKTOP -->
+      <section class="desktop">
+        <section class="boxname_title">
+          <section class="blue_box"></section>
+          <p><a href="index.html" class="name">Chioma okeke </a> / <a href="resume.html" id="role">software developer</a> </p>
+          <!-- <p class="role"></p> -->
+        </section>
+        <nav class="nav desktop">
+          <ul class="nav_list">
+            <li><a href="index.html" class="nav_link">about me</a></li>
+            <li><a href="resume.html" class="nav_link">resume</a></li>
+            <li><a href="projects.html" class="nav_link">projects</a></li>
+            <li><a href="contact.html" class="nav_link">contact</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <main class="main">
+      <article class="hero_bckgrnd ">
+          <section class="info">
+          <img
+            src="./images/jane.jpeg"
+            alt="Chioma okeke"
+            class="chioma"
+            
+          />
+          <section class="h1"><h1>Chioma okeke</h1></section>
+          <section class="blue_line">
+            <hr>
+          </section>
+          <p class="desktop h2">software developer</p>
+          <div class="btn12 mobile">
+            <button class="btn1 button mobile" href="resume.html">resume</button>
+          <button class="btn2  button mobile" href="projects.html">projects</button>
+          </div>
+          
+          <section class="social_media">
+            <section class="media">
+              <img src="./images/facebook-icon.svg" alt="facebook-icon" class="facebook logo">
+            </section>
+            <section class="media">
+              <img src="./images/twitter-icon.svg" alt="twitter-icon" class="twitter">
+            </section>
+            <section class="media">
+              <img src="./images/linkedln.png" alt="linkedln" class="linkedln">
+            </section>
+            <section class="media">
+              <img src="./images/instagram-icon.svg" alt="instagram-icon" class="instagram">
+            </section>
+          </section>
+        </section>
+        <section class="details">
+          <h3>Hello</h3>
+          <h4>Here's who I am & what I do</h4>
+          <div class="buttons desktop">
+            <button class="desktop btn3">resume</button>
+          <button class="desktop btn4">projects</button>
+          </div>
+          
+          <p>
+            I'm a paragraph. Click here to add your own text and edit me. It’s
+            easy. Just click “Edit Text” or double click me to add your own
+            content and make changes to the font.
+          </p>
+          <p>
+            I’m a great place for you to tell a story and let your users know a
+            little more about you.
+          </p>
+        </section>
+        
+        
+      </article>
+    </main>
+    <footer>
+      
+      <section class="cal-wrt">
+        <section class="call">
+          <p class="head">call</p>
+          <p>123-456-7890</p>
+        </section>
+        <section class="write">
+          <p class="head">write</p>
+          <a href="mailto:info@mysite.com">info@mysite.com</a>
+        </section>
+      </section>
 
+      <section class="follow">
+        <!-- <div class="footer_socials desktop"></div> -->
+        <p class="head">follow</p>
+        <section class="footer_media">
+        
+          <section class="f_media media">
+                <img src="./images/facebook-icon.svg" alt="facebook-icon" class="facebook logo">
+              </section>
+              <section class="f_media media">
+                <img src="./images/twitter-icon.svg" alt="twitter-icon" class="twitter">
+              </section>
+              <section class="f_media media">
+                <img src="./images/linkedln.png" alt="linkedln" class="linkedln">
+              </section>
+              <section class="f_media media">
+                <img src="./images/instagram-icon.svg" alt="instagram-icon" class="instagram">
+              </section>
+          </section>
+      <section class="copy">
+        <p class="copyright">&COPY; 2023 by Chioma Okeke.</p>
+        <p>
+          Proudly created with
+          <a href="https://www.wix.com/" target="_blank">Wix.com</a>
+        </p>
+      </section>
+      </section>
+      
+    </footer>
 
     <!-- Please leave this in to credit the creators of this design -->
-    <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
-</body>
-
+    <p class="wix">
+      This website design was created by Wix.com, and is used here for strictly
+      educational purposes.
+    </p>
+  </body>
 </html>
