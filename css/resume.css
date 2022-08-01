@@ -33,11 +33,13 @@ article {
     height: 19px;
     background-color: var(--Royal-blue);
 }
-
+section
+{
+    width: 100%;
+}
 .resume-title {
     display: flex;
     justify-content: left;
-    width: 100%;
 }
 
 #btn-download {
