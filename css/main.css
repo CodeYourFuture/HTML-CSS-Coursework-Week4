@@ -13,6 +13,7 @@ body {
   border-top: 7px solid rgb(200, 198, 198);
   font-size: 18px;
   font-weight: 300;
+  font-family: "Quicksand" sans-serif;
 }
 h1,
 h2,
@@ -20,7 +21,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
 }
 /* header */
@@ -216,14 +217,20 @@ header {
   background-color: #0150fd;
 }
 button {
-  width: 40%;
+  width: 30%;
   padding: 1rem 1.5rem 1rem 1.5rem;
   margin-top: 1.5rem;
+
   border-radius: 2rem;
   border: none;
   text-transform: uppercase;
   font-weight: bold;
   cursor: pointer;
+}
+.btn12 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .btn1 {
@@ -395,7 +402,7 @@ footer p {
     padding: 1rem;
     font-size: medium;
   }
-  .nav_link:link,
+
   .nav_link:hover {
     color: #0150fd;
   }
@@ -459,7 +466,12 @@ footer p {
   }
   .buttons {
     display: flex;
+    gap: 1rem;
     margin-bottom: 3rem;
+  }
+  .btn3 {
+    color: #fff;
+    background-color: #0150fd;
   }
 
   .btn3:hover {
@@ -480,10 +492,11 @@ footer p {
     gap: 2rem;
     margin-top: 2rem;
     position: relative;
-    background-color: #ff0;
-    
+    /* background-color: #ff0; */
   }
-
+  .media {
+    cursor: pointer;
+  }
   .copy {
     position: absolute;
     top: 0;
@@ -494,15 +507,18 @@ footer p {
     gap: 2rem;
     position: absolute;
     top: 0;
-    right: 5rem;
+    right: 20rem;
   }
-    }
-  .footer_socials {
+
+  .follow {
+    margin-left: 75rem;
+  }
+
+  /* .footer_socials {
     position:relative;
     top: 0;
     bottom: 0;    
-  }
-  
+  } */
 
   .wix {
     font-size: 0.6rem;

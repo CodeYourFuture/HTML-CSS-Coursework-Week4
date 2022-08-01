@@ -1,0 +1,338 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url(https://fonts.google.com/specimen/Quicksand);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  border-top: 7px solid rgb(200, 198, 198);
+  font-size: 18px;
+  font-weight: 300;
+  font-family: "Quicksand" sans-serif;
+  background-color: #e6dacd;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+/* header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #fff;
+  /* padding: 0 2rem; */
+}
+.name-title {
+  display: flex;
+  gap: 1rem;
+}
+
+.blue-box {
+  width: 18px;
+  height: 18px;
+  background-color: #0150fd;
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+}
+.name-title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.full-name {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #000;
+  font-weight: bold;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.5rem;
+  margin-left: 2.8rem;
+  margin-top: -2rem;
+}
+.job-title {
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-left: 1rem;
+}
+/* hamburger */
+#menu_toggle {
+  opacity: 0; //change to 0 value
+}
+#menu_toggle:checked + .menu_btn > span {
+  transform: rotate(45deg);
+}
+#menu_toggle:checked + .menu_btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+#menu_toggle:checked + .menu_btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu_toggle:checked ~ .ham-menu {
+  right: 0 !important;
+}
+
+.menu_btn {
+  position: absolute;
+  top: 45px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.menu_btn > span,
+.menu_btn > span::before,
+.menu_btn > span::after {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background-color: #0150fd;
+  transition-duration: 0.1s;
+}
+.menu_btn > span::before {
+  content: "";
+  top: -8px;
+}
+.menu_btn > span::after {
+  content: "";
+  top: 8px;
+}
+.ham-menu {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 566px;
+  margin: 0;
+  padding: 60px, 20px;
+  list-style: none;
+  background-color: #f4ece6;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  transition-duration: 0.15s;
+  text-align: center;
+}
+.nav {
+  margin-right: 1rem;
+}
+.ham-menu li {
+  list-style-type: none;
+  padding-top: 4rem;
+}
+.menu_list:active .menu_link {
+  color: #0150fd;
+}
+
+.menu_list a:visited {
+  text-decoration: none;
+}
+.menu_list a:hover {
+  text-decoration: underline;
+  color: #0150fd;
+  font-weight: bold;
+}
+.menu_link {
+  display: block;
+  padding: 10px 6px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  transition-duration: 0.125s;
+}
+
+.desktop {
+  display: none;
+}
+/* main */
+
+.resume {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+#bluebox {
+  padding: 0.9rem;
+}
+.subtitle {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+.sub-btn {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1rem;
+  margin-bottom: 1rem;
+}
+.subhead {
+  font-weight: bold;
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+.cv {
+  width: 45%;
+  /* height: 55x; */
+  padding: 1rem 1rem;
+  background-color: #0150fd;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 2rem;
+  font-weight: bold;
+}
+
+.wht-bck {
+  width: 85%;
+  margin: auto;
+  padding: 2rem;
+  background-color: #fff;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.experience {
+  margin-bottom: 1.5rem;
+}
+.year {
+  text-transform: capitalize;
+  color: #0150fd;
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-family: "Quicksand", sans-serif;
+  margin-bottom: 0.8rem;
+}
+.job_title {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.company,
+.location {
+  text-transform: capitalize;
+}
+.duties p {
+  line-height: 2rem;
+  text-align: justify;
+}
+.subhead {
+  margin-left: 2rem;
+  font-weight: bold;
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+.edu_details {
+  margin-bottom: 2rem;
+}
+.set,
+.lang {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 1.3rem;
+  padding: 0.5rem;
+}
+.lang {
+  margin: 2rem 0;
+}
+.skill {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.skills {
+  width: 10px;
+  height: 10px;
+  background-color: #0150fd;
+  margin-top: 0.6rem;
+}
+.skill_list li,
+.lang_list li {
+  list-style-type: none;
+}
+/* footer */
+footer {
+  width: 100%;
+  background-color: #fff;
+  margin-top: 4rem;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  gap: 10px;
+}
+
+.call {
+  grid-column: 1;
+  grid-row: 1;
+  /* background-color: brown; */
+}
+.write {
+  grid-column: 2;
+  grid-row: 1/2;
+  /* background-color: bisque; */
+}
+.footer_media {
+  grid-column: 1/3;
+  grid-row: 2;
+  /* background-color: aliceblue; */
+}
+.copy {
+  grid-column: 1/3;
+  grid-row: 3;
+  /* background-color: aquamarine; */
+}
+.p1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+.p2 {
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+}
+.follow {
+  margin-top: 2rem;
+}
+.media img {
+  width: 25px;
+  height: 25px;
+}
+.media-img {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+  /* background-color: rgb(18, 134, 138); */
+}
+.copy p {
+  font-size: 1rem;
+}
+.copyright {
+  padding-top: 1rem;
+}
+.link a {
+  /* text-decoration: none; */
+  color: #000;
+}
+.wix {
+  text-align: center;
+  font-size: 0.6rem;
+}
