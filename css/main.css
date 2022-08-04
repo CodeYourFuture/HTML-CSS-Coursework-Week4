@@ -1,3 +1,105 @@
-/* Add your CSS here */
+/.logo {
+    height: 60px;
+    width: 60px;
+    margin-left: 400px;
+
+}
+
+.leftposition {
+   /* float: left;
+    margin-left: 20%;
+    margin-top: 2%; */
+    display: flex;
+    gap: 2%;
+    width: 30%;
+    margin: 0 auto;
+}
+nav {
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 20px;
+    padding: 0;
+    overflow: hidden;
+    float: right;
+    margin-right: 175px;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    color: black;
+}
+
+li a:hover {
+    color: hsl(210, 42%, 52%);
+}
+.content {
+    clear: both;
+    margin-left: 20%;
+}
+.img_profile {
+    float: left;
+   
+}
+.img_profile img {
+    height: 600px;
+    padding-top: 30px;
+}
+.text_content {
+    margin-left: 40%;
+}
+.button {
+    height: 50px;
+    width: 150px;
+    margin-right: 10px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 35px;
+    margin-top: 30px;
+}
+.button1 {
+    background-color: #0f7bdb;
+}
+.button2 {
+   color:black;
+   border-style: solid;
+   background-color: white;
+}
+        
+.content_details {
+    width: 60%;
+    font-size: 26px;
+}
+h1 {
+    font-size: 130px;
+    font-weight: bold;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    
+}
+
+.content_header {
+    padding-top: 1%;
+}
+ .socialsection {
+    margin-left: 30%;
+    margin-top: -30px;
+ }
+.socialsection div {
+    float:left;
+    margin-left: 20px;
+}
 
 /* Dont' forget to link this file to your HTML in the <head> */
