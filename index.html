@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<link rel="stylesheet" href="/css/main.css" />
+	<link rel="stylesheet" href="/css/main.css" />
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Outfit:wght@200&display=swap"
+        rel="stylesheet" />
     <title>Responsive grid project</title>
 </head>
 
@@ -12,52 +17,167 @@
 Use CSS Grid and flexbox for layouts and alignment
 Save fonts and colours in CSS variables -->
 
-<body>
+<body class="grid-container">
 <nav>
-    <input type="text" placeholder="Search..">
+    <div id="search">
+		<input class="search" type="text" placeholder="&#x1F50D; Search...">
+	<button class="shop-bag"><i class="fa fa-shopping-bag"></i></button>
+	</div>
 </nav>
 
-<header>
-<h1>PRICKLES & CO.</h1>
-<H2>We Deliver To Your Doorstep</H2>
+<header class="header">
+
+<a class="h1">PRICKLES & CO.</a>
+<br>
+<a class="h2"><span id="callus">We Deliver To Your Doorstep</span></a>
+
+         
+<script type="text/javascript">
+      (function () {
+        var words = ["We Deliver To Your Doorstep", "Call Us Now! 123-456-7890" ],
+        i = 0;
+        setInterval(function(){ $('#callus').fadeOut(function(){
+            $(this).html(words[(i = (i + 1) % words.length)]).fadeIn();
+          }); }, 3000)
+      })();
+</script>
+
+  
+			<div class="nav_wrapper">
+				<nav class="hamburger-menu">
+					<input id="menu__toggle" type="checkbox" />
+					<label class="menu__btn" for="menu__toggle">
+						<span></span>
+					</label>
+
+					<ul class="menu__box">
+						<li><a class="menu__item" href="#">Log in</a></li>
+						<li><a class="menu__item" href="#">Shop</a></li>
+						<li><a class="menu__item" href="#">About</a></li>
+						<li><a class="menu__item" href="#">FAQ</a></li>
+						<li><a class="menu__item" href="#">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+
 </header>
 
 <section class="hero">
-
+<img src="/designs/plant-page-imgs/1.png" alt="Hero-image">
+<h1>PRICKLES & CO.</h1>
+<p>BRING NATURE <br> INDOORS</p>
+<button>Shop Now</button>
 </section>
 
-<section class="shop_collections">
-
+<section class="shop_collection">
+<img src="/designs/plant-page-imgs/4.png" alt="">
+<h1>CACTI</h1>
+<button>Shop Collection</button>
 </section>
+
+<section class="shop_collection">
+<img src="/designs/plant-page-imgs/2.png" alt="">
+<h1>PLANTS</h1>
+<button>Shop Collection</button>
+</section>
+
+<section class="shop_collection">
+<img src="/designs/plant-page-imgs/3.png" alt="">
+<h1>SUCCULENTS</h1>
+<button>Shop Collection</button>
+</section>
+
 
 <section class="about_us">
+<h1>ABOUT US</h1>
+<p>
+	ABOUT US
+I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.
 
+ <br>
+ <br>
+
+This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide.
+</p>
 </section>
 
 <section class="images">
-
+<img src="/designs/plant-page-imgs/5.png" alt="">
+</section>
+<section class="images">
+<img src="/designs/plant-page-imgs/6.png" alt="">
+</section>
+<section class="images">
+<img src="/designs/plant-page-imgs/7.png" alt="">
 </section>
 
- <section class="shop_now">
-
+ <section class="tenpercent">
+<h1>BUY ONLINE NOW & GET 10% OFF!</h1>
+<button>Shop Now</button>
 </section>
 
-<section class="special requests">
+<section class="special_requests">
+<p>FOR SPECIAL REQUESTS & ORDERS</p><br>
+	<form>
+  <label for="fname">First name*</label><br>
+  <input type="text" id="fname" name="fname" value=""><br>
+  <label for="lname">Last name*</label><br>
+  <input type="text" id="lname" name="lname" value=""><br><br>
+  <label for="email">Email*</label><br>
+  <input type="text" id="email" name="email" value=""><br><br>
+  <label for="phone">Phone</label><br>
+  <input type="number" id="phone" name="phone" value=""><br><br>
+  <label for="message">Message</label><br>
+  <textarea name="comment" form="usrform"></textarea><br><br>
+<button>Send</button>
+</form> 
+</section>
 
+<section class="images">
+<img src="/designs/plant-page-imgs/8.png" alt="">
 </section>
 
 <section class="our_store">
+<p>OUR STORE <br><br>
+
+Address: 500 Terry Francois Street San <br>Francisco, CA 94158<br>
+
+Phone: 123-456-7890<br>
+
+Email:  info@mysite.com<br><br><br>
+
+OPENING HOURS<br><br>
+
+Mon - Fri: 7am - 10pm<br>
+​​Saturday: 8am - 10pm<br>
+​Sunday: 8am - 11pm<br><br><br>
+
+HELP<br><br>
+
+Shipping & Returns<br>
+
+Privacy Policy<br>
+
+FAQ<br> <br><br> <br>  
+
+
+</p>
+
+<form >
+  <label for="email">Enter your email here*</label><br>
+  <input type="text" id="email" name="email" value=""><br><br>
+<button>Subscribe Now</button>
+</form> 
 
 </section>
 
 <footer>
-
+ <p>© 2023 by Prickles & Co. 
+		This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
 </footer>
 
 
-
-
-    <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
+   
 </body>
 
 </html>
