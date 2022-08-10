@@ -1,3 +1,477 @@
-/* Add your CSS here */
+@import url("https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400;700&family=Poppins:wght@600&family=Quicksand:wght@300&display=swap");
 
-/* Dont' forget to link this file to your HTML in the <head> */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "header header"
+    "main main"
+    "footer footer";
+  gap: 2rem;
+  font-family: Quicksand;
+  font-weight: 300;
+}
+/* header */
+
+header {
+  grid-area: header;
+  /* background-color: blue; */
+  margin: 1.5rem;
+}
+.top-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: #00BAF0; */
+  /* background: linear-gradient(to left, #050505, #060606); */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* color: #FFF; */
+  height: 50px;
+  padding: 1em;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu > li {
+  margin: 0 1rem;
+  overflow: hidden;
+}
+.menu li a:link {
+  text-decoration: none;
+}
+.menu li a:hover {
+  color: #0050ff;
+}
+.menu #onlink {
+  color: #0050ff;
+}
+
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: black;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: "";
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: "";
+  margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+/* large screen */
+
+@media (max-width: 700px) {
+  .menu-button-container {
+    display: flex;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu-toggle:checked ~ .menu li {
+    /* border: 1px solid #333; */
+    height: 9.5em;
+    padding: 0.5em;
+    font-weight: bold;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    z-index: 3;
+  }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    background-color: #f4ece6;
+  }
+  .menu > li:not(:last-child) {
+    border-bottom: 1px solid #444;
+  }
+}
+/* main */
+main {
+  grid-area: main;
+  /* background-color: blueviolet; */
+  position: relative;
+}
+/* hero */
+.hero {
+    box-shadow: 1px 1px 8px #888888;
+      gap: 1rem;
+  background-color: #f4ece6;
+  width: 80%;
+  margin-right: 3rem; 
+   margin: 0 2.5em;
+   z-index: 2;
+   position: absolute;
+}
+.hero-info img {
+  /* background-color: #0050ff; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  border-radius: 100%;
+  margin-top: 2rem;
+}
+.hero-info h1 {
+  text-align: center;
+}
+.underline {
+  height: 3px;
+  width: 100px;
+  background-color: #0050ff;
+  margin: 2rem auto;
+ }
+ .hero-info h3 {
+  text-align: center;
+ }
+/* INSERT BUTTON STYLES HERE */
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  /* font-size: 20px; */
+  width: 100%;
+  margin: auto;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+ }
+.btn-resume {
+  background-color: #0050ff;
+  font-weight: bold;
+  padding: 0.4rem 1.5rem;
+  border-radius: 1rem;
+  font-size: 2vw;
+  box-shadow: none;
+  border-style: none;
+  cursor: pointer;
+  
+}
+ 
+.btn-resume:hover {
+  background-color: white;
+  color: black;
+}
+.btn-project:hover {
+background-color: #0050ff;
+}
+.btn-project {
+  background-color: white;
+  font-weight: bold;
+  padding: 0.4rem 1.5rem;
+  border-radius: 1rem;
+  font-size: 2vw;
+  box-shadow: none;
+  border-style: none;
+  cursor: pointer;
+}
+.btn {
+  display: none;
+  
+}
+.btn a {
+  text-decoration: none;
+}
+
+
+.hero-social {
+  display: flex;
+  /* position: absolute; */
+  width: 100%;
+  /* top: 10vh; */
+  margin-bottom: 2rem;
+  background-color: white;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  height: 6vh;
+}
+.fa {
+  font-size: 30px;
+  text-decoration: none;
+}
+.fa-facebook {
+  background: white;
+  color: black;
+}
+.fa-twitter {
+  background: white;
+  color: black;
+}
+.fa-linkedin {
+  background: white;
+  color: black;
+}
+.fa-instagram {
+  background: white;
+  color: black;
+}
+/* article */
+/* .article  {
+  padding-top: 25rem;
+  position: absolute;
+  z-index: 1;
+
+} */
+.article {
+  background-color: #e6dace;
+  width: 100%;
+  /* height: 613px; */
+  padding-top: 25rem;
+  margin-top: 17rem;
+  /* position: absolute; */
+  z-index: 1;
+  }
+article h1 {
+  font-size: 15vw;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+article h3 {
+  font-size: 6vw;
+  margin-bottom: 1rem;
+  /* line-height: 1rem; */
+}
+article p {
+  font-size: 5vw;
+}
+.article h1,
+h3,
+p {
+  padding: 0 2rem 2rem;
+}
+/* footer */
+footer {
+  grid-area: footer;
+  /* background-color: brown; */
+  /* position: relative; */
+  /* padding: 2.5rem; */
+}
+.contact {
+  display: flex;
+  margin-bottom: 1rem;
+  justify-content: space-around;
+}
+footer h2 {
+  padding: 0 1.5rem;
+}
+
+/* .hero-social {
+    margin: 1rem auto;
+ } */
+.social a {
+  padding: 1rem;
+}
+.social .fa-facebook {
+  background: white;
+  color: black;
+}
+.social .fa-twitter {
+  background: white;
+  color: black;
+}
+.social .fa-linkedin {
+  background: white;
+  color: black;
+}
+.social .fa-instagram {
+  background: white;
+  color: black;
+}
+/* for larg screen */
+@media screen and (min-width: 1024px) {
+  /* header {
+    position: fixed;
+  } */
+  .container {
+    display: flex;
+  }
+  .container p {
+    margin-top: 2.1rem;
+  }
+  main {
+    /* grid-area: main; */
+    /* display: flex; */
+    /* background-color: blueviolet; */
+    position: static;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 1fr 1fr;
+    grid-template-rows: 1fr 150px;
+    grid-template-areas: 
+    'blank hero article'
+    'blank . .';
+    /* height: 60vw; */
+    /* background: linear-gradient(to right, #e6dace 50%, white 50%); */
+     /* height: 500px;
+     border: 1px solid black;
+  margin: 1rem;
+  padding: 2rem 2rem;
+  text-align: center;
+     background: linear-gradient(to right, #e6dace 50vw, white 50vw); */
+
+  
+  }
+
+  .hero {
+    grid-area: hero;
+    gap: 1rem;
+    /* background-color: #f4ece6; */
+    width: 100%;
+    padding: 2.5rem 7rem;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+    z-index: 2;
+    position: static;
+    margin-right: 0; 
+   margin: 0;
+   /* margin-left: -9rem; */
+    margin-top: 9rem;
+    margin-left: -9rem;
+    place-items: center;
+  }
+  .hero-info img {
+    margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+ }
+  .blank {
+    grid-area: blank;
+    background-color: #e6daca;
+    width: 100%;
+    height: 100%;
+  }
+  .article {
+    grid-area: article;
+    width: 100%;
+    padding-top: 1rem;
+    /* z-index: 1; */
+    margin-left: -7rem;
+    margin-right: 2rem;
+    margin-top: 25rem;
+    position: static;
+     background-color: white;
+  }
+  .article h1 {
+    font-size: 4vw;
+    font-weight: bold;
+    /* margin-bottom: 0.5rem; */
+    margin-top: -14rem;
+    margin-left: 1.5rem;
+  }
+  .article h3 {
+    font-size: 1.6vw;
+    margin-bottom: 1rem;
+    /* line-height: 1rem; */
+  }
+  .article p {
+    font-size: 1.5vw;
+  }
+  /* .hello {
+    width: 80%;
+   } */
+  .btn-container {
+    display: none;
+  }
+  .btn {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  /* font-size: 20px; */
+  width: 100%;
+  margin: auto;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-decoration: none;
+ }
+.btn .btn-project {
+  /* background-color: #0050ff; */
+  font-weight: bold;
+  padding: 0.3rem 1.2rem;
+  border-radius: 1rem;
+  font-size: 2vw;
+  box-shadow: none;
+  border-style: none;
+  cursor: pointer;
+  border: 1px black solid;
+  text-decoration: none;
+}
+.hero-social {
+  height: 10vh;
+  padding: 0 50%;
+  gap: 1rem;
+}
+footer {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin: 0 3rem;
+  }
+}
