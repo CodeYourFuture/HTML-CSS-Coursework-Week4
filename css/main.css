@@ -1,3 +1,125 @@
-/* Add your CSS here */
+* {
+    margin: 0px;
+    padding: 0px;
+}
 
-/* Dont' forget to link this file to your HTML in the <head> */
+:root {
+    --color-1: #0150FD;
+    --font-1: 'Poppins', sans-serif;
+    --font-2: 'Quicksand', sans-serif;
+}
+
+body {
+    display: grid;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 0px 20px;
+    margin-top: 20px;
+}
+
+.hdr-section-1 {
+    display: grid;
+    grid-template-areas:
+        "box name name name"
+        "role role role role"
+    ;
+}
+
+.hdr-box-con {
+    grid-area: box;
+}
+
+.hdr-box-con > div {
+    width: 16px;
+    height: 16px;
+    background-color: var(--color-1);
+    margin-top: 10px;
+}
+
+.hdr-name-con {
+    grid-area: name;
+    font-family: var(--font-1);
+}
+
+.hdr-slash-con {
+    display: none;
+}
+
+.hdr-role-con {
+    grid-area: role;
+    font-family: var(--font-2);
+}
+
+nav {
+    text-align: right;
+}
+
+nav > ul {
+    list-style: none;
+    display: none;
+}
+
+@media screen and (min-width: 1300px) {
+    header {
+        grid-template-columns: 1fr 1fr;
+        padding: 30px 40px;
+        margin: 0px;
+    }
+
+    .hdr-section-1 {
+        width: fit-content;
+        grid-template-areas:
+            "box name slash role"
+        ;
+    }
+
+    .hdr-box-con {
+        padding: 3px 10px 0px 0px;
+    }
+    
+    .hdr-name-con {
+        padding: 3px 10px 0px 0px;
+    }
+    
+    .hdr-slash-con {
+        display: block;
+        padding: 16px 10px 0px 0px;
+    }
+    
+    .hdr-role-con {
+        padding: 13px 10px 0px 0px;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+
+    nav {
+        height: 100%;
+    }
+
+    nav > ul {
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    nav > ul > li {
+        margin-left: 20px;
+    }
+
+    nav a {
+        text-decoration: none;
+        font-family: var(--font-2);
+        color: black;
+        font-size: 13px;
+    }
+
+    nav a:hover, .active {
+        color: var(--color-1)
+    }
+}
