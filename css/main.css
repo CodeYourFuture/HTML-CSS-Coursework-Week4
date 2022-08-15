@@ -82,19 +82,19 @@ nav > ul {
 
 .hero {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 40% 60%;
     grid-template-areas:
-        "gr1-s1 gr1-s1"
-        "gr1-s2 gr1-s2"
+        "gr2-s1 gr2-s1"
+        "gr2-s2 gr2-s2"
     ;
 }
 
 .hero > div:nth-child(1) {
-    grid-area: gr1-s1;
+    grid-area: gr2-s1;
 }
 
 .hero > div:nth-child(2) {
-    grid-area: gr1-s2;
+    grid-area: gr2-s2;
     background-color: var(--bg-color);
 }
 
@@ -109,6 +109,10 @@ nav > ul {
 
 .person-card {
     display: grid;
+    grid-template-areas:
+        "gr3-s1"
+        "gr3-s2"
+    ;
     width: 80%;
     margin: 0 auto;
     position: absolute;
@@ -116,6 +120,7 @@ nav > ul {
 }
 
 .person-card-s1 {
+    grid-area: gr3-s1;
     background-color: var(--bg-color2);
     text-align: center;
     padding-top: 30px;
@@ -154,6 +159,7 @@ nav > ul {
 
 .p-c-role-con {
     display: none;
+    font-family: var(--font-2);
 }
 
 .p-c-social-con > ul {
@@ -170,6 +176,7 @@ nav > ul {
 }
 
 .person-card-s2 {
+    grid-area: gr3-s2;
     font-family: var(--font-1);
     padding: 30px 10px 30px 10px;
 }
@@ -248,5 +255,55 @@ nav > ul {
 
     nav a:hover, .active {
         color: var(--color-1)
+    }
+
+    .hero {
+        grid-template-areas:
+            "gr2-s2 gr2-s1"
+        ;
+    }
+
+    .hero-s1 {
+        height: auto;
+    }
+
+    .person-card {
+        grid-template-areas:
+            "gr3-s1 gr3-s2"
+        ;
+        
+        left: auto;
+        top: 89px;
+        right: 379px;
+    }
+
+    .person-card-s1 {
+        padding: 30px 60px 0px 60px;
+    }
+
+    .person-card-s1 > img {
+        width: 205px;
+    }
+
+    .person-card-name {
+        font-size: 27px;
+        line-height: 30px;
+        padding-top: 24px;
+    }
+
+    .person-card-divider {
+        margin-top: 24px;
+        width: 54px;
+        height: 2px;
+    }
+
+    .p-c-buttons-con {
+        display: none;
+    }
+
+    .p-c-role-con {
+        display: block;
+        letter-spacing: 6px;
+        margin-top: 24px;
     }
 }
