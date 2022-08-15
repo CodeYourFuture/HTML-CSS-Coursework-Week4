@@ -200,6 +200,43 @@ nav > ul {
     margin-top: 20px;
 }
 
+footer {
+    display: grid;
+    grid-template-areas:
+        "gr4-call gr4-write"
+        "gr4-follow ."
+        "gr4-text gr4-text"
+    ;
+    font-family: var(--font-2);
+}
+
+.f-call {
+    grid-area: gr4-call;
+    line-height: 30px;
+}
+
+.f-write {
+    grid-area: gr4-write;
+    line-height: 30px;
+}
+
+.f-follow {
+    grid-area: gr4-follow;
+}
+
+.footer-social-con > ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.f-text {
+    grid-area: gr4-text;
+}
+
+
+
 @media screen and (min-width: 1300px) {
     header {
         grid-template-columns: 1fr 1fr;
