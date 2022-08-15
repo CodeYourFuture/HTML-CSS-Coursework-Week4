@@ -1,3 +1,12 @@
 /* Add your CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
+body{
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding:0px
+}
+:root{
+    accent-color:#0150FD;
+}
+
