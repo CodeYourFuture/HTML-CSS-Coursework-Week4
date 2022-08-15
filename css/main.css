@@ -207,6 +207,8 @@ footer {
         "gr4-follow ."
         "gr4-text gr4-text"
     ;
+    gap: 20px;
+    padding: 20px;
     font-family: var(--font-2);
 }
 
@@ -234,8 +236,6 @@ footer {
 .f-text {
     grid-area: gr4-text;
 }
-
-
 
 @media screen and (min-width: 1300px) {
     header {
@@ -384,5 +384,29 @@ footer {
 
     .hero-s2 {
         height: 700px;
+    }
+
+    footer {
+        grid-template-columns: 1fr 150px 150px 150px;
+        grid-template-areas:
+        "gr4-text gr4-call gr4-write gr4-follow"
+    ;
+        padding: 40px;
+    }
+
+    .f-call {
+        text-align: center;
+    }
+    
+    .f-write {
+        text-align: center;
+    }
+    
+    .f-follow {
+        text-align: center;
+    }
+    
+    .f-text {
+        
     }
 }
