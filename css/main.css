@@ -127,7 +127,7 @@ nav > ul {
     box-shadow: -11.31px 11.31px 17px 0px rgba(138,131,124,0.23);
 }
 
-.person-card-s1 > img {
+.p-c-person-con > img {
     width: 120px;
     border-radius: 100%;
 }
@@ -155,6 +155,10 @@ nav > ul {
 
 .p-c-buttons-con > a:nth-child(2) {
     margin-left: 20px;
+}
+
+.person-card-s2 .p-c-buttons-con {
+    display: none;
 }
 
 .p-c-role-con {
@@ -186,6 +190,7 @@ nav > ul {
 }
 
 .person-card-s2 > h5 {
+    font-family: var(--font-2);
     font-size: 19px;
     margin-top: 15px;
 }
@@ -271,17 +276,17 @@ nav > ul {
         grid-template-areas:
             "gr3-s1 gr3-s2"
         ;
-        
+        width: 738px;
         left: auto;
         top: 89px;
         right: 379px;
     }
 
-    .person-card-s1 {
-        padding: 30px 60px 0px 60px;
+    .p-c-person-con {
+        padding: 0px 60px 0px 60px;
     }
 
-    .person-card-s1 > img {
+    .p-c-person-con > img {
         width: 205px;
     }
 
@@ -297,7 +302,7 @@ nav > ul {
         height: 2px;
     }
 
-    .p-c-buttons-con {
+    .person-card-s1 .p-c-buttons-con {
         display: none;
     }
 
@@ -305,5 +310,42 @@ nav > ul {
         display: block;
         letter-spacing: 6px;
         margin-top: 24px;
+    }
+
+    .p-c-social-con {
+        margin-top: 43px;
+    }
+
+    .p-c-social-con > ul {
+        padding: 10px 91px 10px 91px;
+    }
+
+    .person-card-s1 > div:last-child {
+        display: none;
+    }
+
+    .person-card-s2 {
+        padding-left: 30px;
+    }
+
+    .person-card-s2 > h1 {
+        font-size: 100px;
+    }
+
+    .person-card-s2 > h5 {
+        font-size: 25px;
+        margin-top: 0px;
+    }
+
+    .person-card-s2 .p-c-buttons-con {
+        display: block;
+    }
+
+    .person-card-s2 > p:nth-child(4) {
+        margin-top: 0px;
+    }
+
+    .hero-s2 {
+        height: 700px;
     }
 }
