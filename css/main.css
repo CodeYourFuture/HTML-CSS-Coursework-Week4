@@ -6,6 +6,7 @@
 :root {
     --color-1: #0150FD;
     --bg-color: #E6DACD;
+    --bg-color2: #F4ECE6;
     --font-1: 'Poppins', sans-serif;
     --font-2: 'Quicksand', sans-serif;
 }
@@ -13,6 +14,8 @@
 body {
     display: grid;
 }
+
+
 
 header {
     display: grid;
@@ -83,7 +86,41 @@ nav > ul {
 
 .person-card {
     display: grid;
+    width: 90%;
+}
 
+.person-card-s1 {
+    background-color: var(--bg-color2);
+    text-align: center;
+    padding-top: 30px;
+}
+
+.person-card-s1 > img {
+    width: 120px;
+    border-radius: 100%;
+}
+
+.person-card-name {
+    font-family: var(--font-1);
+    font-size: 21px;
+    line-height: 25px;
+    padding-top: 10px;
+}
+
+.person-card-divider {
+    width: 68px;
+    height: 3px;
+    background-color: var(--color-1);
+    margin: 0 auto;
+    margin-top: 17px;
+}
+
+.p-c-role-con {
+    display: none;
+}
+
+.p-c-social-con {
+    background-color: white;
 }
 
 @media screen and (min-width: 1300px) {
