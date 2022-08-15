@@ -45,26 +45,38 @@ grid-template-areas: "head . logo"
    display: flex;
     margin-bottom: 0px; 
     grid-area: head; 
-    margin-left: 20px;
+    margin-left: 10px;
+    margin-right: 0px;
+    position: relative;
 }
 .homep-header-head h2{
 padding-bottom: 0px;
 margin-bottom: 0px;
 margin-top: 30px;
+margin-left: 35px;
+
 }
-.homep-header-head input{
+.homep-header-head span{
     margin-top: 40px;
     margin-right: 10px;
-    height:20px;
-    width: 20px;
-    background-color: #0150FD;
+    height:25px;
+    width: 25px;
+    position: absolute;
+    background-color:#0150FD;
+    top:0px;
+    left: 0px;
 }
+
+
+
 .homep-header-par{
-margin-left: 30px;
+margin-left: 50px;
 margin-top: 20px;
 grid-area: par;
 font-size: 1.3rem;
-
+font-weight:lighter;
+font-family: arial;
+letter-spacing: 3px;
 }
 .homep-header-humberger{
     grid-area: logo;
@@ -79,19 +91,35 @@ float: right;
     display: none;
     grid-area: nav;
 }
+/**********************************/
 /*  main*/
 .homep-main{
 grid-area: main;
+grid-template-columns: repeat(3,1fr);
+grid-template-rows: ;
+grid-template-areas: ". img ."
+                     ". parag ."
+                     "resume . project";
 }
-
+.home-main-image{
+    grid-area: img;
+}
 .homep-main-image img{
     height: 5%;
-    width:5%;
+    width:5%;   
 }
+
+.homep-main-head{
+
+}
+.home-main-
+
+/*********************************/
 /* aside */
 .homep-aside{
     grid-area:aside;
 }
+/*********************************/
 /* footer */
 .homep-foote{
     grid-area: footer;
