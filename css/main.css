@@ -1,3 +1,18 @@
-/* Add your CSS here */
-
-/* Dont' forget to link this file to your HTML in the <head> */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+/* font-family: 'Poppins', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+/* font-family: 'Quicksand', sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --Darkbeige: #e6dacd;
+  --Lightbeige: #f4ece6;
+  --Royalblue: #0150fd;
+  --text-black: #000;
+  --text-white: #fff;
+  --title-font: 'Poppins', sans-serif;
+  --normal-font: 'Quicksand', sans-serif;
+}
