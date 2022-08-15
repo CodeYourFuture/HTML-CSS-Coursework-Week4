@@ -1,32 +1,98 @@
 /* Add your CSS here */
-@font-face {
-    font-family: "Poppins";
-    src: url("/fonts/Poppins-SemiBold-webfont.woff2") format("woff2 supports variations"),
-         url("/fonts/Poppins-SemiBold-webfont.woff") format("woff-variations");
-         font-weight: 100 1000;
-  }
-:root{
-    --font-fallback: BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
-    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-sans;
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0");
 
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Poppins", "Quicksand";
+    src: url("/fonts/Poppins-SemiBold-webfont.woff2") format("woff2 supports variations"),
+        url("/fonts/Poppins-SemiBold-webfont.woff") format("woff-variations");
+    font-weight: 100 1000;
+    src: url("/fonts/Quicksand-Light300-webfont.woff2") format("woff2 supports variations"),
+        url("/fonts/Quicksand-Light300-webfont.woff2")format("woff-variations");
+
+}
+
+:root {
+    --font-fallback: BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+        "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-sans;
+    --section-color: #E6DACD;
+    --card-color: #F4ECE6;
+    --btn-color: #0150FD;
+    --icon-color: #000;
+    --bg-color: #FFF;
 }
 
 /* Dont' forget to link this file to your HTML in the <head> */
-header{
-    border: 2px solid black;
+body {
+    font-family: "Quicksand";
+    font-weight: 300;
 }
-header > h2{
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "main main"
+        "footer footer";
+    grid-template-rows: 50px 1fr 100px;
+    grid-template-columns: 1fr 1fr;
+    margin: 10% 2% 2% 10%;
+    background-color: var(--bg-color);
+}
+
+header {
+    grid-area: header;
+    border: 2px solid black;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display:flex;
+    justify-content: space-between;
+}
+
+span {
+    color: #0150FD;
+}
+
+header>h2 {
     font-family: "Poppins", var(--font-fallback);
     font-weight: bold;
 }
-section{
-    border: 2px solid red;
-}
-article{
-    border: 2px solid blue;
-}
-footer{
-    border: 2px solid brown;
+
+.nav-toggle {
+    color: #0150FD;
+    border: transparent;
+    background: transparent;
+    font-size: 1.5rem;
 }
 
-Open Sans
+nav {
+    display: none;
+}
+main{
+    grid-area: main;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+section {
+    grid-area: ;
+    border: 2px solid red;
+}
+
+article {
+    border: 2px solid blue;
+    background-color: #E6DACD;
+}
+
+footer {
+    border: 2px solid brown;
+}

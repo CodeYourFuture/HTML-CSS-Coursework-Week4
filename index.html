@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Add a link to your custom CSS here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/css/main.css">
     <title>DESIGN 2: Resume(Responsive grid project)</title>
 </head>
@@ -15,11 +18,25 @@
     <!-- Add your markup here -->
     <div class="container">
         <header>
-            <h2>
-                <icon>square</icon> Maya Nelson
-            </h2> , <p>PROJECT MANAGER</p>, <nav> <button class="nav-toggle" id="navToggle">
-                    <i class="fas fa-bars"></i>
-                </button></nav>
+            <div>
+                <h2>
+                <span> &#9632</span> Maya Nelson
+                </h2>
+                <p>PROJECT MANAGER</p>
+            </div>
+            <div class="nav-button">
+                <button class="nav-toggle" id="navToggle">
+                    <i class='fa-solid fa-bars-staggered'></i>
+                </button>
+            </div>
+            <nav>
+                <ul>
+                    <li>ABOUT ME </li>
+                    <li>RESUME </li>
+                    <li>PROJECTS</li>
+                    <li>CONTACT </li>
+                </ul>
+            </nav>
         </header>
 
         <main>
