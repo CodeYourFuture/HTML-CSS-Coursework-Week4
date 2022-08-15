@@ -35,7 +35,7 @@ header {
     display: grid;
     grid-template-columns: 2fr 1fr;
     padding: 0px 20px;
-    margin-top: 20px;
+    margin: 20px 0px 20px 0px;
 }
 
 .hdr-section-1 {
@@ -98,15 +98,28 @@ nav > ul {
     background-color: var(--bg-color);
 }
 
+.hero-s1 {
+    height: 200px;
+    position: relative;
+}
+
+.hero-s2 {
+    height: 590px;
+}
+
 .person-card {
     display: grid;
-    width: 90%;
+    width: 80%;
+    margin: 0 auto;
+    position: absolute;
+    left: 25px;
 }
 
 .person-card-s1 {
     background-color: var(--bg-color2);
     text-align: center;
     padding-top: 30px;
+    box-shadow: -11.31px 11.31px 17px 0px rgba(138,131,124,0.23);
 }
 
 .person-card-s1 > img {
@@ -143,8 +156,36 @@ nav > ul {
     display: none;
 }
 
-.p-c-social-con {
+.p-c-social-con > ul {
+    list-style: none;
     background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 50px 10px 50px;
+}
+
+.person-card-s1 > div:last-child {
+    height: 15px;
+    background-color: var(--bg-color2);
+}
+
+.person-card-s2 {
+    font-family: var(--font-1);
+    padding: 30px 10px 30px 10px;
+}
+
+.person-card-s2 > h1 {
+    font-size: 40px;
+}
+
+.person-card-s2 > h5 {
+    font-size: 19px;
+    margin-top: 15px;
+}
+
+.person-card-s2 > p {
+    font-family: var(--font-2);
+    margin-top: 20px;
 }
 
 @media screen and (min-width: 1300px) {
