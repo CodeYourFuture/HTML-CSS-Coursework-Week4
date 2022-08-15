@@ -5,6 +5,7 @@
 
 :root {
     --color-1: #0150FD;
+    --bg-color: #E6DACD;
     --font-1: 'Poppins', sans-serif;
     --font-2: 'Quicksand', sans-serif;
 }
@@ -60,6 +61,29 @@ nav {
 nav > ul {
     list-style: none;
     display: none;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+        "s1 s1"
+        "s2 s2"
+    ;
+}
+
+.hero > div:nth-child(1) {
+    grid-area: s1;
+}
+
+.hero > div:nth-child(2) {
+    grid-area: s2;
+    background-color: var(--bg-color);
+}
+
+.person-card {
+    display: grid;
+    
 }
 
 @media screen and (min-width: 1300px) {
