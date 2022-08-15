@@ -7,8 +7,19 @@
   box-sizing: border-box;
   font-family: "Outfit", sans-serif;
 }
+body{
+    font-family: 'Outfit', sans-serif;;
+}
 main {
   background-color: #ededee;
+}
+.btn {
+  border: none;
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: #a05841;
+  color: #ffff;
+  font-size: 1rem;
 }
 .underline {
   height: 2px;
@@ -17,7 +28,7 @@ h1 {
   font-weight: bolder;
   color: #a05841;
 }
-.btn {
+.shop-btn {
   border: none;
   display: inline-block;
   padding: 10px 30px;
@@ -36,21 +47,12 @@ button:hover{
 .search input{
     height: 2rem;
 }
-/* .search-wrapper {
-  border: 1px solid red;
-  width: 50%;
-  height: 2rem;
-  padding: 6px;
-}
-.search-txt {
-  border: none;
-} */
+
 
 /* header and navbar------------------------------ */
 
 .header {
   display: flex;
-  /* position: fixed; */
   width: 100%;
   justify-content: space-between;
   align-items: center;
@@ -154,10 +156,10 @@ button:hover{
   color: darkgray;
 }
 
-/* hero section------------------------------ */
+/* hero section --------------------- */
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(../images/1.png);
+    url(../images/shop-img/1.webp);
   height: 50%;
   background-position: center;
   background-repeat: no-repeat;
@@ -168,112 +170,55 @@ button:hover{
   font-size: 2rem;
   padding: 4rem 1rem;
   color: white;
-  text-transform: uppercase;
 }
 .hero-text h1 {
   font-family: "Fjalla One", sans-serif;
-  line-height: 2em;
   color: #ffff;
   font-weight: bolder;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
 }
 .hero-text p {
   font-size: 1.5rem;
   margin-bottom: 2rem;
 }
-
-/* Shop collection section--------------- */
-.shop-collection {
-  margin: 2rem 0;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+/* shop all section------------------ */
+.shop-all{
+    text-align: center;
 }
-.collection {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 5px 0;
-  padding-top: 2rem;
-  background-color: white;
-  text-transform: uppercase;
+.img-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-.shop-images {
-  width: 100%;
-  height: 50%;
+.shop-all h1{
+    color: #131313;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: lighter;
+    padding: 2rem;
+    font-family: "Fjalla One", sans-serif;
 }
-/*about us section ----------------------------------- */
-.intro {
-  text-align: center;
-  padding: 2rem;
-  margin-top: 2rem;
-  background-color: #ffff;
+.product{
+    color: #a05841;
+    padding: 0.5rem 0;
 }
-.intro h1 {
-  letter-spacing: 6px;
-  text-transform: uppercase;
-  font-weight: 100;
+.product img{
+    margin-bottom: 1rem;
 }
-.image-wrapper {
-  display: flex;
-  flex-direction: column;
+.product p{
+    line-height: 1.5rem;
 }
-.buy-online {
-  background-color: #123132;
-  text-align: center;
-  font-size: 2.5rem;
-  padding: 2rem;
-  font-family: "Fjalla One", sans-serif;
+.shop-all span{
+    text-decoration: line-through;
+    padding: 1rem;
 }
-.buy-online h1 {
-  color: #ffff;
-  text-transform: uppercase;
-  padding: 2rem;
-}
-.buy-online button {
-  background-color: #ffff;
-  color: #131313;
-}
-
-/* order form section --------------------------------------- */
-.order-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #ffff;
-  margin-top: 2rem;
-  padding-top: 2rem;
-}
-.form {
-  display: inline-block;
-  margin: 1rem; 
-}
-.order-form input{
-    width: 100%; 
-    height: 2rem;
-    margin: 1rem 0;
-}
-.order-form input:hover{
-    border-width: 3px;
-    border-color: #131313;
-}
-textarea{
-    margin: 1rem 0;
+.shop-btn{
+    margin-top: 1rem;
     width: 100%;
 }
-textarea:hover{
-    border-width: 3px;
-    border-color: #131313;
-}
-.form button {
-  width: 100%;
-  margin-bottom: 1rem;
-}
-.order-form img {
-    width: fit-content;
-}
-/* our store section--------------------------- */
+/* our store ------------------ */
 .our-store{
     background-color: #123132;
     text-align: center;
@@ -304,15 +249,18 @@ textarea:hover{
 .our-store input:hover{
     border-width: 3px;
 }
-
-
-/* footer section-------------- */
+.subscribe button{
+    width: 100%;
+    background-color: #ffff;
+    color: #131313;
+}
+/* footer------------ */
 footer{
     background-color: #ededee;
     color: #a05841;
     padding: 2rem;
-    font-weight: bold;
 }
 footer a{
     color: #a05841;
 }
+

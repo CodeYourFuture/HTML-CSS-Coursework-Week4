@@ -1,21 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Add a link to your custom CSS here -->
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/css/main.css" />
     <title>Responsive grid project</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <div class="search">
+      <div class="search-wrapper">
+        <!-- <a href=""><ion-icon name="search-outline"></ion-icon></a> -->
+        <input type="search" class="search-txt" placeholder=" Search..." />
+        <!-- <ion-icon name="cart"></ion-icon> -->
+      </div>
+    </div>
 
-    <!-- Add your markup here -->
+    <header class="header">
+      <div class="logo-wrapper">
+        <p class="logo">Prickles & Co</p>
+        <p>We Deliver to your doorstep</p>
+      </div>
+      <div class="nav-wrapper">
+        <nav class="hamburger-menu">
+          <input type="checkbox" id="menu-toggle" />
+          <label for="menu-toggle" class="menu-btn">
+            <span></span>
+          </label>
 
+          <ul class="menu-box">
+            <li><a class="menu-items" href="#">Log in</a></li>
+            <li><a class="menu-items" href="shop">Shop</a></li>
+            <li><a class="menu-items" href="#about">About</a></li>
+            <li><a class="menu-items" href="#">FAQ</a></li>
+            <li><a class="menu-items" href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero-section">
+        <div class="hero-image">
+          <div class="hero-text">
+            <h1>Prickles & Co</h1>
+            <p>Bring nature<br />indoors</p>
+            <button class="btn">Shop Now</button>
+          </div>
+        </div>
+      </section>
+      <section class="shop-collection">
+        <div class="collection">
+          <h1>Cacti</h1>
+          <ion-icon id="underline" name="remove-outline"></ion-icon>
+          <button class="btn">Shop Collection</button>
+          <img class="shop-images" src="/images/4.png" alt="Cacti" />
+        </div>
+        <div class="collection">
+          <h1>Plants</h1>
+          <ion-icon id="underline" name="remove-outline"></ion-icon>
+          <button class="btn">Shop Collection</button>
+          <img class="shop-images" src="/images/2.png" alt="Plants" />
+        </div>
+        <div class="collection">
+          <h1>Succulents</h1>
+          <ion-icon id="underline" name="remove-outline"></ion-icon>
+          <button class="btn">Shop Collection</button>
+          <img class="shop-images" src="/images/3.png" alt="succulents" />
+        </div>
+      </section>
+      <section id="about" class="about-us">
+        <div class="intro">
+          <h1>about us</h1>
+          <ion-icon id="underline" name="remove-outline"></ion-icon>
+          <p>
+            I'm a paragraph. Click here to add your own text and edit me. It’s
+            easy. Just click “Edit Text” or double click me to add your own
+            content and make changes to the font. Feel free to drag and drop me
+            anywhere you like on your page. I’m a great place for you to tell a
+            story and let your users know a little more about you. <br /><br />
+            I'm a paragraph. Click here to add your own text and edit me. It’s
+            easy. Just click “Edit Text” or double click me to add your own
+            content and make changes to the font. Feel free to drag and drop me
+            anywhere you like on your page. I’m a great place for you to tell a
+            story and let your users know a little more about you.
+          </p>
+        </div>
+        <div class="image-wrapper">
+          <img src="/images/5.png" alt="" />
+          <img src="/images/6.png" alt="" />
+          <img src="/images/7.png" alt="" />
+        </div>
+        <div class="buy-online">
+          <h1>buy online now & get 10% off !</h1>
+          <button class="btn">Shop Now</button>
+        </div>
+      </section>
+      <section class="order-form">
+        <h1>for special requests & orders</h1>
+        <ion-icon id="underline" name="remove-outline"></ion-icon>
+        <div class="form">
+          <form>
+            <label>First name *</label><br />
+            <input type="text" />
+            <br />
+            <label>Last name *</label><br />
+            <input type="text" />
+            <br />
+            <label>Email *</label><br />
+            <input type="email" />
+            <br />
+            <label>Phone</label><br />
+            <input type="tel" />
+            <br />
+            <label>Message</label><br />
+            <textarea cols="30" rows="10"></textarea>
+            <button class="btn">Send</button>
+          </form>
+        </div>
+        <img src="/images/8.png" alt="" />
+      </section>
+      <section class="our-store">
+        <div>
+          <h1>our store</h1>
+          <p>
+            Address: 500 Terry Francois Street San <br />
+            Francisco, CA 94158 <br />Phone: 123-456-7890 <br />
+            Email: info@mysite.com
+          </p>
+        </div>
+        <div>
+          <h1>Opening Hours</h1>
+          <p>
+            Mon - Fri: 7am - 10pm <br/>Saturday: 8am - 10pm <br/>
+            Sunday: 8am - 11pm
+          </p>
+        </div>
+        <div>
+            <h1>Help</h1>
+            <a href="#">Shipping & Returns</a>
+            <br>
+            <a href="#">Privacy Policy</a>
+            <br>
+            <a href="#">FAQ</a>
+        </div>
+        <div class="subscribe">
+            <h1>Subscribe</h1>
+            <label>Enter your email here *</label>
+            <input type="email">
+            <button class="btn">Subscribe Now</button>
+        </div>
+      </section>
+    </main>
 
     <!-- Please leave this in to credit the creators of this design -->
-    <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
-</body>
-
+    <footer>
+    <p>
+      This website design was created by <a href="https://www.wix.com/">Wix.com</a>, and is used here for strictly
+      educational purposes.
+    </p>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
