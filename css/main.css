@@ -4,9 +4,42 @@
 body{
     margin: 0 auto;
     box-sizing: border-box;
-    padding:0px
+    padding:0px;
+    max-width: 460px;
+    max-height: 900px;
 }
 :root{
     accent-color:#0150FD;
 }
+/* grid total page (homep) */
+.homep{
+    display:grid;
+    grid-template-columns:1fr;
+    /* grid-template-rows: 1fr 3fr 2fr 1fr; */
+    grid-template-areas:"header"
+                         "main"
+                         "aside"
+                         "footer" ;
+    grid-gap:10px;                     
+}
+/* header*/
+.homep-header{
+grid-area: header;
+}
+/*  main*/
+.homep-main{
+grid-area: main;
+}
 
+.homep-main-image img{
+    height: 5%;
+    width:5%;
+}
+/* aside */
+.homep-aside{
+    grid-area:aside;
+}
+/* footer */
+.homep-foote{
+    grid-area: footer;
+}
