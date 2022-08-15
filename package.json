@@ -1,0 +1,25 @@
+{
+  "name": "responsive-grid-project-maine",
+  "version": "1.0.0",
+  "description": "Choose one of the designs below, and re-create the design to perfection, using CSS Grid, and media queries to make the site fully responsive.\r ## Requirements",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "node-sass sass/main.scss css/main.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeYourFuturee/responsive-grid-project-maine.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodeYourFuturee/responsive-grid-project-maine/issues"
+  },
+  "homepage": "https://github.com/CodeYourFuturee/responsive-grid-project-maine#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}
