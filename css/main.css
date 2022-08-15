@@ -27,7 +27,7 @@
     --bg-color: #FFF;
 }
 
-/* Dont' forget to link this file to your HTML in the <head> */
+/* Do not forget to link this file to your HTML in the <head> */
 body {
     font-family: "Quicksand";
     font-weight: 300;
