@@ -1,3 +1,17 @@
 /* Add your CSS here */
+:root{
 
+}
 /* Dont' forget to link this file to your HTML in the <head> */
+header{
+    border: 2px solid black;
+}
+section{
+    border: 2px solid red;
+}
+article{
+    border: 2px solid blue;
+}
+footer{
+    border: 2px solid brown;
+}
