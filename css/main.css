@@ -24,13 +24,13 @@ header {
 .hdr-section-1 {
     display: grid;
     grid-template-areas:
-        "box name name name"
-        "role role role role"
+        "gr1-box gr1-name gr1-name gr1-name"
+        "gr1-role gr1-role gr1-role gr1-role"
     ;
 }
 
 .hdr-box-con {
-    grid-area: box;
+    grid-area: gr1-box;
 }
 
 .hdr-box-con > div {
@@ -41,7 +41,7 @@ header {
 }
 
 .hdr-name-con {
-    grid-area: name;
+    grid-area: gr1-name;
     font-family: var(--font-1);
 }
 
@@ -50,7 +50,7 @@ header {
 }
 
 .hdr-role-con {
-    grid-area: role;
+    grid-area: gr1-role;
     font-family: var(--font-2);
 }
 
@@ -67,23 +67,23 @@ nav > ul {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-areas:
-        "s1 s1"
-        "s2 s2"
+        "gr1-s1 gr1-s1"
+        "gr1-s2 gr1-s2"
     ;
 }
 
 .hero > div:nth-child(1) {
-    grid-area: s1;
+    grid-area: gr1-s1;
 }
 
 .hero > div:nth-child(2) {
-    grid-area: s2;
+    grid-area: gr1-s2;
     background-color: var(--bg-color);
 }
 
 .person-card {
     display: grid;
-    
+
 }
 
 @media screen and (min-width: 1300px) {
@@ -96,7 +96,7 @@ nav > ul {
     .hdr-section-1 {
         width: fit-content;
         grid-template-areas:
-            "box name slash role"
+            "gr1-box gr1-name gr1-slash gr1-role"
         ;
     }
 
@@ -110,6 +110,7 @@ nav > ul {
     
     .hdr-slash-con {
         display: block;
+        grid-area: gr1-slash;
         padding: 16px 10px 0px 0px;
     }
     
