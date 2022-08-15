@@ -1,10 +1,23 @@
 /* Add your CSS here */
+@font-face {
+    font-family: "Poppins";
+    src: url("/fonts/Poppins-SemiBold-webfont.woff2") format("woff2 supports variations"),
+         url("/fonts/Poppins-SemiBold-webfont.woff") format("woff-variations");
+         font-weight: 100 1000;
+  }
 :root{
+    --font-fallback: BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-sans;
 
 }
+
 /* Dont' forget to link this file to your HTML in the <head> */
 header{
     border: 2px solid black;
+}
+header > h2{
+    font-family: "Poppins", var(--font-fallback);
+    font-weight: bold;
 }
 section{
     border: 2px solid red;
@@ -15,3 +28,5 @@ article{
 footer{
     border: 2px solid brown;
 }
+
+Open Sans
