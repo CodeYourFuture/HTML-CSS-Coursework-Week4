@@ -15,7 +15,21 @@ body {
     display: grid;
 }
 
+.btn {
+    text-decoration: none;
+    background-color: var(--color-1);
+    color: white;
+    font-size: 15px;
+    font-family: var(--font-1);
+    padding: 7px 25px 7px 25px;
+    border-radius: 20px;
+}
 
+.btn-2 {
+    background-color: var(--bg-color2);
+    color: black;
+    border: 1px solid black;
+}
 
 header {
     display: grid;
@@ -113,6 +127,16 @@ nav > ul {
     background-color: var(--color-1);
     margin: 0 auto;
     margin-top: 17px;
+}
+
+.p-c-buttons-con {
+    padding: 40px 0px 40px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.p-c-buttons-con > a:nth-child(2) {
+    margin-left: 20px;
 }
 
 .p-c-role-con {
