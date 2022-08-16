@@ -64,16 +64,119 @@ nav {
   align-items: center;
   font-size: large;
 }
+
 /* this help no underline in the naviagation  elements */
-nav a{
-    text-decoration: none;
+nav a {
+  text-decoration: none;
 }
+
+/* from here find all classess inside main element */
 
 main {
+  display: grid;
   grid-area: m;
-  border: solid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  height: 50vw;
 }
 
+.background_colored_section {
+  grid-column: 1/6;
+  grid-row: 1/-1;
+  background-color: var(--bckgrnd-color);
+}
+
+.background_white_section {
+  grid-column: 6/-1;
+  grid-row: 1/-1;
+  background-color: var(--white);
+}
+
+.overview_section {
+  display: flex;
+  grid-column: 4/-2;
+  grid-row: 3/-3;
+}
+
+.profile_contianer {
+  width: 40%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 11fr 1fr;
+  box-shadow: -1px 8px lightslategray;
+}
+
+.img_FLName_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--light-being);
+}
+
+.overview_section_followLinks {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  width: 100%;
+  align-items: center;
+  background-color: var(--white);
+}
+
+.profilePhoto {
+  width: 50%;
+  border-radius: 50%;
+}
+
+.images_socialMedia {
+  width: 20px;
+}
+
+.personal_introduction {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 20px;
+  justify-content: center;
+}
+
+.personal_introduction > h1 {
+  font-size: 10em;
+  margin: 10px;
+}
+
+/* general styling both bottons */
+.btn {
+  border-radius: 40px;
+  font-size: larger;
+  padding: 5px 30px 5px 30px;
+  margin: 10px;
+}
+
+/* Resume button */
+.resume_btn {
+  background-color: blue;
+  color: var(--white);
+}
+
+.resume_btn:hover {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+/* Projects Button */
+.projects_btn {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.projects_btn:hover {
+  background-color: blue;
+  color: var(--white);
+}
+
+/* from here find all classess inside footer element */
 footer {
   display: flex;
   grid-area: f;
