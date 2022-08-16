@@ -528,4 +528,29 @@ footer {
     .f-follow {
         text-align: center;
     }
+
+    /* resume page */
+    .resume-hero {
+        padding-top: 88px;
+    }
+
+    .s-experience {
+        padding-top: 67px;
+    }
+
+    .s-experience > div {
+        width: 40%;
+    }
+
+    .article-resume {
+        width: 36%;
+    }
+
+    .s-education {
+        padding-top: 0px;
+    }
+
+    .s-skills > div {
+        width: 36%;
+    }
 }
