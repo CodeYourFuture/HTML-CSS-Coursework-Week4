@@ -243,7 +243,8 @@ footer {
 .resume-hero {
     background-color: var(--bg-color);
     font-family: var(--font-1);
-    padding-top: 20px;
+    padding-top: 58px;
+    font-family: var(--font-1);
 }
 
 .title {
@@ -262,6 +263,53 @@ footer {
     width: 19px;
     height: 19px;
     background-color: var(--color-1);
+}
+
+.s-experience {
+    background-color: var(--bg-color);
+    padding-top: 36px;
+}
+
+.s-experience > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 87%;
+    margin: 0 auto;
+}
+
+.s-experience h2 {
+    font-family: var(--font-1);
+}
+
+.article-resume {
+    width: 78%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 32px 24px 32px 24px;
+    margin-top: 41px;
+    margin-bottom: 41px;
+}
+
+.article-resume > h3 {
+    color: var(--color-1);
+    font-family: var(--font-1);
+}
+
+.article-resume > p {
+    font-family: var(--font-2);
+}
+
+.article-resume > p:nth-child(2) {
+    margin-top: 10px;
+}
+
+.article-resume > p:nth-child(3), .article-resume > p:nth-child(4), .article-resume > p:nth-child(5) {
+    margin-top: 20px;
+}
+
+.article-resume > p:nth-child(4), .article-resume > p:nth-child(5) {
+    line-height: 25px;
 }
 
 @media screen and (min-width: 1300px) {
