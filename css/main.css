@@ -365,10 +365,60 @@ footer {
 
 .projects-hero p {
     font-family: var(--font-2);
-    width: 80%;
+    width: 75%;
     text-align: center;
     margin: 20px auto;
-    line-height: 20px;
+    line-height: 25px;
+}
+
+/* projects page */
+.s-projects {
+    background-color: var(--bg-color);
+}
+
+.s-projects article {
+    width: 78%;
+    background-color: white;
+    margin: 20px auto;
+    display: grid;
+    padding-top: 10px;
+}
+
+.s-projects img {
+    width: 100%;
+}
+
+.s-projects h4, .s-projects h5 {
+    font-family: var(--font-1);
+}
+
+.s-projects h4 {
+    color: var(--color-1);
+}
+
+.s-projects p {
+    font-family: var(--font-2);
+    width: 80%;
+    margin: 20px auto;
+}
+
+.s-p-art-heading {
+    display: grid;
+    grid-template-columns: 10px 1fr;
+    column-gap: 20px;
+}
+
+.s-p-art-heading-s1 {
+    background-color: var(--color-1);
+    height: 50px;
+}
+
+.s-p-art-heading-s2 {
+    padding-top: 10px;
+}
+
+.s-projects > article:nth-child(3) {
+    margin-bottom: 40px;
 }
 
 @media screen and (min-width: 1300px) {
