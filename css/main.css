@@ -1,35 +1,83 @@
 /* Add your CSS here */
 /* colors and font size variables */
-:root{
-    --bckgrnd-color:#E6DACD;
-    --light-being:#F4ECE6;
-    --royal-blue:#0150FD;
-    --black:#000;
-    --white:#FFF;
-    --heading-fnt-siz: @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap');
-    --body-font:@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+:root {
+  --bckgrnd-color: #e6dacd;
+  --light-being: #f4ece6;
+  --royal-blue: #0150fd;
+  --black: #000;
+  --white: #fff;
+  --heading-fnt-siz: @import
+    url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap");
+  --body-font: @import
+    url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
 }
 
-body{
-    display: grid;
-    grid: 
-          'h h h h h h h h h h h h'
-          'm m m m m m m m m m m m'
-          'f f f f f f f f f f f f';
+/* body grid layout */
+body {
+  display: grid;
+  grid:
+    "h h h h h h h h h h h h"
+    "m m m m m m m m m m m m"
+    "f f f f f f f f f f f f";
 }
-header{
-    display: flex;
-    grid-area: h;
-    border: solid;
+
+header {
+  display: grid;
+  grid: "name name empty empty nav nav nav";
+  grid-area: h;
+  justify-content: space-between;
 }
-main{
-    grid-area: m;
-    border: solid;
+
+/* from here find classes inside header */
+
+.blueBox_Name_and_JobTitle {
+  display: flex;
+  grid-area: name;
+  align-items: center;
+  gap: 10px;
+  margin: 20px;
 }
-footer{
-    display: flex;
-    grid-area: f;
-    border: solid;
+
+/* Small Blue box just before the name */
+.smallBlueBox {
+  width: 20px;
+  height: 20px;
+  background-color: #0150fd;
+}
+
+.blueBox_Name_and_JobTitle p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  align-items: center;
+}
+
+.firstLastName {
+  color: var(--black);
+  font-weight: 600;
+}
+
+nav {
+  display: flex;
+  grid-area: nav;
+  justify-content: space-between;
+  padding: 10px;
+  align-content: space-around;
+  align-items: center;
+  font-size: large;
+}
+/* this help no underline in the naviagation  elements */
+nav a{
+    text-decoration: none;
+}
+
+main {
+  grid-area: m;
+  border: solid;
+}
+
+footer {
+  display: flex;
+  grid-area: f;
+  border: solid;
 }
 
 /* Dont' forget to link this file to your HTML in the <head> */
