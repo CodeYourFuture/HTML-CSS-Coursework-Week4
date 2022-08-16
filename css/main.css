@@ -1,3 +1,35 @@
 /* Add your CSS here */
+/* colors and font size variables */
+:root{
+    --bckgrnd-color:#E6DACD;
+    --light-being:#F4ECE6;
+    --royal-blue:#0150FD;
+    --black:#000;
+    --white:#FFF;
+    --heading-fnt-siz: @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap');
+    --body-font:@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+}
+
+body{
+    display: grid;
+    grid: 
+          'h h h h h h h h h h h h'
+          'm m m m m m m m m m m m'
+          'f f f f f f f f f f f f';
+}
+header{
+    display: flex;
+    grid-area: h;
+    border: solid;
+}
+main{
+    grid-area: m;
+    border: solid;
+}
+footer{
+    display: flex;
+    grid-area: f;
+    border: solid;
+}
 
 /* Dont' forget to link this file to your HTML in the <head> */
