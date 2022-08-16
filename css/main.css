@@ -180,7 +180,22 @@ main {
 footer {
   display: flex;
   grid-area: f;
-  border: solid;
+  justify-content: space-between;
+  align-items: center;
 }
+.copyRight_section {
+  width: 15%;
+}
+.contacts_container {
+  display: flex;
 
+  width: 40%;
+  justify-content: space-around;
+  text-align: center;
+}
+.footer_links {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
 /* Dont' forget to link this file to your HTML in the <head> */
