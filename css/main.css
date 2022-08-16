@@ -51,10 +51,17 @@
    }
    .login {
     display: flex;
-   }
-   .login-img {
-    width: 35px;
-    height: 35px;
+    margin-left: 1200px;
    }
 
+   .login-img {
+    width: 30px;
+    height: 30px;
+   }
+
+   .order-online {
+    color: white;
+    background-color: black;
+    padding: 30px;
+   }
 
