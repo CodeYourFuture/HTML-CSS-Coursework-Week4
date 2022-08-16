@@ -9,25 +9,30 @@ body{
 }
 
 /* headersection starts here */
-.nav-container {
+.nav-top{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  background-color: #cdb4db;
+  /* justify-content: space-evenly; */
   width: auto;
-  height: 300px;
-  /* border: 1px solid black; */
+  /* height: 300px; */
+  border: 1px solid black
   }
   
 
 .square {
+   
     height: 20px;
     width: 20px;
     background-color: #0150FD;
   }
 
+.name {
+  margin-top: 0px;
+    
+  }
+
 /* nav bar */
-.nav-bar {
+/*.nav-bar {
   justify-content: center;
   }
   
@@ -46,7 +51,7 @@ body{
   
   .nav-bar li a:hover {
   background-color: gray;
-  }
+  }*/
   
   /* hamburger menu */
   .toggle-button {
@@ -63,6 +68,12 @@ body{
   .toggle-button .bar {
   height: 3px;
   width: 100%;
-  background-color: black;
+  background-color:#0150FD;
   border-radius: 10px;
+  }
+
+  .image{
+    width: 100px;
+    height: auto;
+    border-radius: ;
   }
