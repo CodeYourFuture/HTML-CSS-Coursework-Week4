@@ -447,6 +447,40 @@ footer {
     width: 163px;
 }
 
+.s-form {
+    background-color: var(--bg-color);
+}
+
+form {
+    background-color: white;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas:
+        "gr5-fn"    
+    ;
+    padding: 30px 10px 30px 10px;
+    margin-top: 45px;
+    margin-bottom: 25px;
+}
+
+label, input {
+    display: block;
+    font-family: var(--font-1);
+    font-size: 18px;
+}
+
+input {
+    width: 94%;
+    color: var(--color-1);
+    height: 38px;
+    margin-top: 15px;
+    padding-left: 20px;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+}
+
 @media screen and (min-width: 1300px) {
     header {
         grid-template-columns: 1fr 1fr;
