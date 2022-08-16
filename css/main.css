@@ -1,3 +1,13 @@
 /* Add your CSS here */
-
 /* Dont' forget to link this file to your HTML in the <head> */
+
+body{
+    
+}
+
+.square {
+    height: 20px;
+    width: 20px;
+    background-color: #0150FD;
+  }
+
