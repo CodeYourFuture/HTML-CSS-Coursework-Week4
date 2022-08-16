@@ -80,6 +80,8 @@ nav > ul {
     display: none;
 }
 
+/* home page */
+
 .hero {
     display: grid;
     grid-template-columns: 40% 60%;
@@ -235,6 +237,31 @@ footer {
 
 .f-text {
     grid-area: gr4-text;
+}
+
+/* resume page */
+.resume-hero {
+    background-color: var(--bg-color);
+    font-family: var(--font-1);
+    padding-top: 20px;
+}
+
+.title {
+    width: 151px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.title > h1 {
+    font-size: 29px;
+}
+
+.blue-box {
+    width: 19px;
+    height: 19px;
+    background-color: var(--color-1);
 }
 
 @media screen and (min-width: 1300px) {
