@@ -1,3 +1,60 @@
-/* Add your CSS here */
+/* Start Variables */
+:root {
+    --Black-color: #000
+    --Whitecolor: #FFF
+    --Lylac-color: #f5e8ff
+    --Light-Green: #E6FAC0
+    --MediumGreen: #5E7D1F
+    --Dark-Green: #394B2A
 
-/* Dont' forget to link this file to your HTML in the <head> */
+  }
+  /* End Variables */
+  /* Start Global Rules */
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Mouse Memoirs', sans-serif;
+
+
+  }
+  ul {
+    list-style: none;
+  }
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+  }
+   /* End Global Rules */
+
+
+   .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+   }
+
+   .menu-img {
+    width: 50px;
+    height: 50px;
+   }
+   .login {
+    display: flex;
+   }
+   .login-img {
+    width: 35px;
+    height: 35px;
+   }
+
+
