@@ -1,3 +1,191 @@
-/* Add your CSS here */
+/* heading font */
+@import url("https://fonts.google.com/specimen/Poppins");
+/* body font */
+@import url("https://fonts.google.com/specimen/Quicksand");
+/* sub-head */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
-/* Dont' forget to link this file to your HTML in the <head> */
+:root{
+    --Dark-beige:#E6DACD;
+    --Light-beige:#F4ECE6;
+    --Royal-blue:#0150FD;
+    --Black:#000;
+    --White:#FFF;
+    --head-font:Poppins;
+    --body-font:Quicksand;
+    --sub-head:Raleway;
+}
+
+body{
+    box-sizing: border-box;
+    max-width: 420px;
+    margin: 0 auto;
+    }
+main{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 80px 401px 350px 200px;
+    border: 1px solid black;
+    grid-template-areas: "header"
+    "profile"
+    "content"
+    "footer";
+}
+.header{
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+}
+.header a{
+    text-decoration: none;
+}
+.profile-name{
+    font-family: var(--head-font),sans-serif;
+    font-size: 20px;
+    color: var(--Black);
+    font-weight: bold;
+    margin-left: 10px;
+}
+.profile-job{
+    font-family:var(--sub-head) ,sans-serif;
+    font-size: 20px;
+    color: var(--Black);
+    margin-left: 1.5em;
+}
+.blue-square{
+    width: 16px;
+    height: 16px;
+    background-color: var(--Royal-blue);
+    align-items: center;
+}
+.header-badge{
+    display: flex;
+    margin: 1em;
+    align-items: center;
+}
+.profile{
+    grid-area: profile;
+}
+.profile-white-section{
+    width: 418px;
+    background-color: var(--White);
+    height: 198px;
+}
+.profile-image-section{
+    width: 280px;
+    height: 375.38px;
+    background-color: var(--Light-beige);
+    position: absolute;
+    top: 100px;
+    right: 0;
+    left: 150px;
+    bottom: 0;
+}
+.profile-beige-section{
+    width: 418px;
+    background-color: var(--Dark-beige);
+    height: 203px;
+}
+.content{
+    grid-area: content;
+    background-color: blueviolet;
+}
+.footer{
+    grid-area: footer;
+    background-color: brown;
+}
+
+/* Hamburger menu */
+label .menu {
+  position: absolute;
+  right: -480px;
+  top: -100px;
+  width: 690px;
+  cursor: pointer;
+}
+label .hamburger {
+  position: absolute;
+  top: 135px;
+  left: 50px;
+  width: 26px;
+  height: 3px;
+  background: var(--Royal-blue);
+  display: block;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+label .hamburger:after,
+label .hamburger:before {
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  content: "";
+  position: absolute;
+  display: block;
+  width:13px;
+  height: 3px;
+  background: var(--Royal-blue);
+}
+label .hamburger:before {
+  top: -10px;
+}
+
+label .hamburger:after {
+  bottom: -10px;
+}
+
+label input {
+  display: none;
+}
+
+label input:checked + .menu {
+  box-shadow: 0 0 0 100vw #fff, 0 0 0 100vh #fff;
+  border-radius: 0;
+}
+
+label input:checked + .menu .hamburger {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+label input:checked + .menu .hamburger:after {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  bottom: 0;
+}
+
+label input:checked + .menu .hamburger:before {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  top: 0;
+}
+
+label input:checked + .menu + ul {
+  opacity: 1;
+}
+
+label ul {
+  z-index: 200;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  -webkit-transition: 0.25s 0s ease-in-out;
+  transition: 0.25s 0s ease-in-out;
+  font-size: 1.5em;
+}
+
+label a {
+  margin-bottom: 1em;
+  display: block;
+  color: var(--Black);
+  text-decoration: none;
+  font-weight: bold;
+  font-family: var(--head-font);
+}
+ ul a:nth-child(1){
+    color: var(--Royal-blue);
+}
