@@ -142,4 +142,62 @@ grid-template-rows: 1fr auto;
     object-fit: cover;
     grid-column: 1/4;
     grid-row: 3/4;
+}
 /* *****Project Page***** */
+/* *****Contact Us Page***** */
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contact{
+    margin: 30px;
+    padding: 20px;
+    background-color: var(--text-white);
+}
+label{
+    font-family: var(--title-font);
+}
+input[type=text], input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    background-color: transparent;
+    box-sizing: border-box;
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: var(--text-black);
+}
+input:focus {
+    border-color: var(--Royalblue);
+  }
+
+input[type=submit] {
+    width: 30%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  span{
+    color: var(--Royalblue);
+    font-size: 20px;
+  }
+  .contact-btn{
+    background-color: var(--Royalblue);
+    color: var(--text-white);
+    padding: 5px 40px;
+    border-radius: 25px;
+    font-size: 20px;
+    font-family: var(--title-font);
+    text-decoration: none;
+  }
+  .submit-btn{
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  /* *****Contact Us Page***** */
