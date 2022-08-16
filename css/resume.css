@@ -1,0 +1,96 @@
+header {
+  height: 120px;
+  padding-top: 20px;
+}
+main {
+  background-color: var(--Darkbeige);
+}
+.pages-title {
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.pages-title_head {
+  font-family: var(--title-font);
+  font-size: 35px;
+  text-align: center;
+}
+.page-title_blue-box {
+  height: 20px;
+  width: 20px;
+  background-color: var(--Royalblue);
+}
+.btn-3-4 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  justify-content: space-around;
+}
+.card-btn_3,
+.card-btn_4 {
+  display: flex;
+  flex-direction: row;
+  padding: 2px 20px;
+  border-radius: 25px;
+  font-size: 20px;
+  font-family: var(--title-font);
+  text-decoration: none;
+}
+.card-btn_3 {
+  background-color: none;
+  color: var(--text-black);
+}
+.card-btn_4 {
+  background-color: var(--Royalblue);
+  color: var(--text-white);
+}
+.experience-box,
+.skill-box {
+  background-color: var(--text-white);
+  box-shadow: 5px 10px #888888;
+  margin: 35px;
+  padding: 40px;
+}
+.exp-box_date {
+  font-family: var(--title-font);
+  color: var(--Royalblue);
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.exp-box_job {
+  margin-bottom: 15px;
+}
+.exp-box_company,
+.exp-box_location {
+  font-size: 15px;
+}
+.exp-box_location {
+  margin-bottom: 20px;
+}
+.title-info {
+  font-size: 20px;
+  font-family: var(--title-font);
+  color: var(--text-black);
+  padding-left: 35px;
+  margin-bottom: 30px;
+}
+
+li {
+  padding-bottom: 20px;
+  font-size: 18px;
+}
+ul li::before {
+  content: "🟦";
+  font-size: 100%;
+  padding-right: 20px;
+  color: blue;
+}
+.skill-box_title {
+  font-size: 25px;
+  font-family: var(--title-font);
+  margin-bottom: 30px;
+}
