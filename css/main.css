@@ -1,3 +1,801 @@
-/* Add your CSS here */
+* {
+    margin: 0px;
+    padding: 0px;
+}
 
-/* Dont' forget to link this file to your HTML in the <head> */
+:root {
+    --color-1: #0150FD;
+    --bg-color: #E6DACD;
+    --bg-color2: #F4ECE6;
+    --font-1: 'Poppins', sans-serif;
+    --font-2: 'Quicksand', sans-serif;
+    --box-shadow: -11.31px 11.31px 17px 0px rgba(138,131,124,0.23);
+}
+
+body {
+    display: grid;
+}
+
+.btn {
+    text-decoration: none;
+    background-color: var(--color-1);
+    color: white;
+    font-size: 15px;
+    font-family: var(--font-1);
+    padding: 7px 25px 7px 25px;
+    border-radius: 20px;
+}
+
+.btn-2 {
+    background-color: var(--bg-color2);
+    color: black;
+    border: 1px solid black;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 0px 20px;
+    margin: 20px 0px 20px 0px;
+}
+
+.hdr-section-1 {
+    display: grid;
+    grid-template-areas:
+        "gr1-box gr1-name gr1-name gr1-name"
+        "gr1-role gr1-role gr1-role gr1-role"
+    ;
+}
+
+.hdr-box-con {
+    grid-area: gr1-box;
+}
+
+.hdr-box-con > div {
+    width: 16px;
+    height: 16px;
+    background-color: var(--color-1);
+    margin-top: 10px;
+}
+
+.hdr-name-con {
+    grid-area: gr1-name;
+    font-family: var(--font-1);
+}
+
+.hdr-slash-con {
+    display: none;
+}
+
+.hdr-role-con {
+    grid-area: gr1-role;
+    font-family: var(--font-2);
+}
+
+nav {
+    text-align: right;
+}
+
+nav > ul {
+    list-style: none;
+    display: none;
+}
+
+/* home page */
+
+.hero {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas:
+        "gr2-s1 gr2-s1"
+        "gr2-s2 gr2-s2"
+    ;
+}
+
+.hero > div:nth-child(1) {
+    grid-area: gr2-s1;
+}
+
+.hero > div:nth-child(2) {
+    grid-area: gr2-s2;
+    background-color: var(--bg-color);
+}
+
+.hero-s1 {
+    height: 200px;
+    position: relative;
+}
+
+.hero-s2 {
+    height: 590px;
+}
+
+.person-card {
+    display: grid;
+    grid-template-areas:
+        "gr3-s1"
+        "gr3-s2"
+    ;
+    width: 80%;
+    margin: 0 auto;
+    position: absolute;
+    left: 25px;
+}
+
+.person-card-s1 {
+    grid-area: gr3-s1;
+    background-color: var(--bg-color2);
+    text-align: center;
+    padding-top: 30px;
+    box-shadow: var(--box-shadow);
+}
+
+.p-c-person-con > img {
+    width: 120px;
+    border-radius: 100%;
+}
+
+.person-card-name {
+    font-family: var(--font-1);
+    font-size: 21px;
+    line-height: 25px;
+    padding-top: 10px;
+}
+
+.person-card-divider {
+    width: 68px;
+    height: 3px;
+    background-color: var(--color-1);
+    margin: 0 auto;
+    margin-top: 17px;
+}
+
+.p-c-buttons-con {
+    padding: 40px 0px 40px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.p-c-buttons-con > a:nth-child(2) {
+    margin-left: 20px;
+}
+
+.person-card-s2 .p-c-buttons-con {
+    display: none;
+}
+
+.p-c-role-con {
+    display: none;
+    font-family: var(--font-2);
+}
+
+.p-c-social-con > ul {
+    list-style: none;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 50px 10px 50px;
+}
+
+.person-card-s1 > div:last-child {
+    height: 15px;
+    background-color: var(--bg-color2);
+}
+
+.person-card-s2 {
+    grid-area: gr3-s2;
+    font-family: var(--font-1);
+    padding: 30px 10px 30px 10px;
+}
+
+.person-card-s2 > h1 {
+    font-size: 40px;
+}
+
+.person-card-s2 > h5 {
+    font-family: var(--font-2);
+    font-size: 19px;
+    margin-top: 15px;
+}
+
+.person-card-s2 > p {
+    font-family: var(--font-2);
+    margin-top: 20px;
+}
+
+footer {
+    display: grid;
+    grid-template-areas:
+        "gr4-call gr4-write"
+        "gr4-follow ."
+        "gr4-text gr4-text"
+    ;
+    gap: 20px;
+    padding: 20px;
+    font-family: var(--font-2);
+}
+
+.f-call {
+    grid-area: gr4-call;
+    line-height: 30px;
+}
+
+.f-write {
+    grid-area: gr4-write;
+    line-height: 30px;
+}
+
+.f-follow {
+    grid-area: gr4-follow;
+}
+
+.footer-social-con > ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.f-text {
+    grid-area: gr4-text;
+}
+
+/* resume page */
+.resume-hero {
+    background-color: var(--bg-color);
+    font-family: var(--font-1);
+    padding-top: 58px;
+    font-family: var(--font-1);
+}
+
+.title {
+    width: 151px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.title > h1 {
+    font-size: 29px;
+}
+
+.blue-box {
+    width: 19px;
+    height: 19px;
+    background-color: var(--color-1);
+}
+
+.s-experience {
+    background-color: var(--bg-color);
+    padding-top: 36px;
+}
+
+.s-experience > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 87%;
+    margin: 0 auto;
+}
+
+.s-experience h2 {
+    font-family: var(--font-1);
+}
+
+.article-resume {
+    width: 78%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 32px 24px 32px 24px;
+    margin-top: 41px;
+    margin-bottom: 41px;
+    box-shadow: var(--box-shadow);
+}
+
+.article-resume > h3 {
+    color: var(--color-1);
+    font-family: var(--font-1);
+}
+
+.article-resume > p {
+    font-family: var(--font-2);
+}
+
+.article-resume > p:nth-child(2) {
+    margin-top: 10px;
+}
+
+.article-resume > p:nth-child(3), .article-resume > p:nth-child(4), .article-resume > p:nth-child(5) {
+    margin-top: 20px;
+}
+
+.article-resume > p:nth-child(4), .article-resume > p:nth-child(5) {
+    line-height: 25px;
+}
+
+.s-education {
+    padding-top: 0px;
+}
+
+.s-skills {
+    background-color: var(--bg-color);
+}
+
+.s-skills > div {
+    width: 78%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 32px 24px 32px 24px;
+    margin-top: 41px;
+    margin-bottom: 41px;
+    box-shadow: var(--box-shadow);
+}
+
+.s-skills h2 {
+    font-family: var(--font-1);
+}
+
+.s-skills ul {
+    list-style: none;
+    font-family: var(--font-2);
+}
+
+.s-skills li {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.s-skills p {
+    list-style: none;
+    font-family: var(--font-2);
+    margin-left: 11px;
+}
+
+.blue-box-list {
+    background-color: var(--color-1);
+    width: 13px;
+    height: 13px;
+}
+
+.s-skills h2:nth-child(3) {
+    margin-top: 30px;
+}
+
+.projects-hero p {
+    font-family: var(--font-2);
+    width: 75%;
+    text-align: center;
+    margin: 20px auto;
+    line-height: 25px;
+}
+
+/* projects page */
+.s-projects {
+    background-color: var(--bg-color);
+}
+
+.s-projects article {
+    width: 78%;
+    background-color: white;
+    margin: 20px auto;
+    display: grid;
+    padding-top: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+.s-projects img {
+    width: 100%;
+}
+
+.s-projects h4, .s-projects h5 {
+    font-family: var(--font-1);
+}
+
+.s-projects h4 {
+    color: var(--color-1);
+}
+
+.s-projects p {
+    font-family: var(--font-2);
+    width: 80%;
+    margin: 20px auto;
+    line-height: 25px;
+}
+
+.s-p-art-heading {
+    display: grid;
+    grid-template-columns: 10px 1fr;
+    column-gap: 20px;
+}
+
+.s-p-art-heading-s1 {
+    background-color: var(--color-1);
+    height: 50px;
+}
+
+.s-p-art-heading-s2 {
+    padding-top: 10px;
+}
+
+.s-projects > article:nth-child(3) {
+    margin-bottom: 40px;
+}
+
+.s-p-article-s2 {
+    height: 198px;
+}
+
+.leaflet {
+    background-image: url('../img/leaflet-s.webp');
+    background-size: cover;
+}
+
+.w-m {
+    background-image: url('../img/website-mockup-s.webp');
+    background-size: cover;
+}
+
+.app-screen {
+    background-image: url('../img/app-screen-s.webp');
+    background-size: cover;
+}
+
+/* contact page */
+.contact-hero > div {
+    width: 163px;
+}
+
+.s-form {
+    background-color: var(--bg-color);
+}
+
+form {
+    background-color: white;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    row-gap: 10px;
+    padding: 30px 10px 30px 10px;
+    margin-top: 45px;
+    margin-bottom: 25px;
+}
+
+label, input {
+    display: block;
+    font-family: var(--font-1);
+    font-size: 18px;
+}
+
+input, textarea {
+    width: 94%;
+    color: var(--color-1);
+    height: 38px;
+    margin-top: 15px;
+    padding-left: 20px;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+}
+
+textarea {
+    font-family: var(--font-1);
+    font-size: 18px;
+}
+
+input:hover, input:focus, textarea:hover, textarea:focus {
+    border-bottom: 2px solid var(--color-1);
+}
+
+form > div:last-child {
+    text-align: center;
+}
+
+.btn-form {
+    border: none;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 18px;
+}
+
+@media screen and (min-width: 1300px) {
+    header {
+        grid-template-columns: 1fr 1fr;
+        padding: 30px 40px;
+        margin: 0px;
+    }
+
+    .hdr-section-1 {
+        width: fit-content;
+        grid-template-areas:
+            "gr1-box gr1-name gr1-slash gr1-role"
+        ;
+    }
+
+    .hdr-box-con {
+        padding: 3px 10px 0px 0px;
+    }
+    
+    .hdr-name-con {
+        padding: 3px 10px 0px 0px;
+    }
+    
+    .hdr-slash-con {
+        display: block;
+        grid-area: gr1-slash;
+        padding: 16px 10px 0px 0px;
+    }
+    
+    .hdr-role-con {
+        padding: 13px 10px 0px 0px;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+
+    nav {
+        height: 100%;
+    }
+
+    nav > ul {
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    nav > ul > li {
+        margin-left: 20px;
+    }
+
+    nav a {
+        text-decoration: none;
+        font-family: var(--font-2);
+        color: black;
+        font-size: 13px;
+    }
+
+    nav a:hover, .active {
+        color: var(--color-1)
+    }
+
+    .hero {
+        grid-template-areas:
+            "gr2-s2 gr2-s1"
+        ;
+    }
+
+    .hero-s1 {
+        height: auto;
+    }
+
+    .person-card {
+        grid-template-areas:
+            "gr3-s1 gr3-s2"
+        ;
+        width: 738px;
+        left: auto;
+        top: 116px;
+        right: 326px;
+    }
+
+    .p-c-person-con {
+        padding: 0px 60px 0px 60px;
+    }
+
+    .p-c-person-con > img {
+        width: 205px;
+    }
+
+    .person-card-name {
+        font-size: 27px;
+        line-height: 30px;
+        padding-top: 24px;
+    }
+
+    .person-card-divider {
+        margin-top: 24px;
+        width: 54px;
+        height: 2px;
+    }
+
+    .person-card-s1 .p-c-buttons-con {
+        display: none;
+    }
+
+    .p-c-role-con {
+        display: block;
+        letter-spacing: 6px;
+        margin-top: 24px;
+    }
+
+    .p-c-social-con {
+        margin-top: 43px;
+    }
+
+    .p-c-social-con > ul {
+        padding: 10px 91px 10px 91px;
+    }
+
+    .person-card-s1 > div:last-child {
+        display: none;
+    }
+
+    .person-card-s2 {
+        padding-left: 30px;
+    }
+
+    .person-card-s2 > h1 {
+        font-size: 100px;
+    }
+
+    .person-card-s2 > h5 {
+        font-size: 25px;
+        margin-top: 0px;
+    }
+
+    .person-card-s2 .p-c-buttons-con {
+        display: block;
+    }
+
+    .person-card-s2 > p:nth-child(4) {
+        margin-top: 0px;
+    }
+
+    .hero-s2 {
+        height: 700px;
+    }
+
+    footer {
+        grid-template-columns: 1fr 150px 150px 150px;
+        grid-template-areas:
+        "gr4-text gr4-call gr4-write gr4-follow"
+    ;
+        padding: 40px;
+    }
+
+    .f-call {
+        text-align: center;
+    }
+    
+    .f-write {
+        text-align: center;
+    }
+    
+    .f-follow {
+        text-align: center;
+    }
+
+    /* resume page */
+    .resume-hero {
+        padding-top: 88px;
+    }
+
+    .s-experience {
+        padding-top: 67px;
+    }
+
+    .s-experience > div {
+        width: 40%;
+    }
+
+    .article-resume {
+        width: 36%;
+    }
+
+    .s-education {
+        padding-top: 0px;
+    }
+
+    .s-skills > div {
+        width: 36%;
+    }
+
+    /* projects page */
+    .s-projects article {
+        width: 78%;
+        grid-template-columns: 1fr 322px;
+        grid-template-rows: 404px;
+        padding-top: 0px;
+    }
+
+    .leaflet {
+        background-image: url('../img/leaflet-m.webp');
+    }
+    
+    .w-m {
+        background-image: url('../img/website-mockup-m.webp');
+    }
+    
+    .app-screen {
+        background-image: url('../img/app-screen-m.webp');
+    }
+
+    .s-p-article-s2 {
+        height: auto;
+    }
+
+    .s-projects > article {
+        width: 56%;
+    }
+
+    .s-projects > article:nth-child(1) {
+        margin-top: 35px;
+    }
+
+    .s-projects > article:nth-child(2), .s-projects > article:nth-child(3) {
+        margin-top: 60px;
+    }
+
+    .s-p-article-s1 h4 {
+        font-size: 20px;
+    }
+
+    .s-p-art-heading {
+        margin-top: 77px;
+    }
+
+    .s-p-article-s1 > p {
+        margin-top: 35px;
+    }
+
+    .projects-hero > p {
+        width: 50%;
+        margin-top: 34px;
+    }
+
+    /* contact page */
+    form {
+        width: 40%;
+        display: grid;
+        grid-template-areas:
+            "gr5-fn gr5-ln"
+            "gr5-email gr5-email"
+            "gr5-subject gr5-subject"
+            "gr5-msg gr5-msg"
+            "gr5-btn gr5-btn"
+        ;
+        gap: 30px;
+        padding: 60px 60px 150px 60px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    form > div:nth-child(1) {
+        grid-area: gr5-fn;
+    }
+
+    form > div:nth-child(2) {
+        grid-area: gr5-ln;
+    }
+
+    form > div:nth-child(3) {
+        grid-area: gr5-email;
+    }
+
+    form > div:nth-child(4) {
+        grid-area: gr5-subject;
+    }
+
+    form > div:nth-child(5) {
+        grid-area: gr5-msg;
+    }
+
+    form > div:nth-child(6) {
+        grid-area: gr5-btn;
+    }
+
+    label, input, textarea {
+        font-size: 13px;
+    }
+
+    form > div:last-child {
+        text-align: left;
+    }
+
+    input {
+        width: 88%;
+    }
+} 
