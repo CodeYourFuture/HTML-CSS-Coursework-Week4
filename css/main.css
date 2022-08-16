@@ -1,9 +1,24 @@
 /* Add your CSS here */
 /* Dont' forget to link this file to your HTML in the <head> */
+*{
+  box-sizing: border-box;
+}
 
 body{
     
 }
+
+/* headersection starts here */
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #cdb4db;
+  width: auto;
+  height: 300px;
+  /* border: 1px solid black; */
+  }
+  
 
 .square {
     height: 20px;
@@ -11,3 +26,43 @@ body{
     background-color: #0150FD;
   }
 
+/* nav bar */
+.nav-bar {
+  justify-content: center;
+  }
+  
+  .nav-bar ul {
+  display: flex;
+  }
+  
+  .nav-bar li {
+  list-style: none;
+  }
+  
+  .nav-bar li a {
+  text-decoration: none;
+  padding: 10px;
+  }
+  
+  .nav-bar li a:hover {
+  background-color: gray;
+  }
+  
+  /* hamburger menu */
+  .toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40px;
+  height: 30px;
+  }
+  
+  .toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: black;
+  border-radius: 10px;
+  }
