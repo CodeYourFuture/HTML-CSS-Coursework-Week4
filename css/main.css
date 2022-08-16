@@ -312,6 +312,10 @@ footer {
     line-height: 25px;
 }
 
+.s-education {
+    padding-top: 0px;
+}
+
 @media screen and (min-width: 1300px) {
     header {
         grid-template-columns: 1fr 1fr;
