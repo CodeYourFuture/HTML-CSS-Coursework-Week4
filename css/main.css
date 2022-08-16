@@ -747,5 +747,55 @@ form > div:last-child {
     }
 
     /* contact page */
+    form {
+        width: 40%;
+        display: grid;
+        grid-template-areas:
+            "gr5-fn gr5-ln"
+            "gr5-email gr5-email"
+            "gr5-subject gr5-subject"
+            "gr5-msg gr5-msg"
+            "gr5-btn gr5-btn"
+        ;
+        gap: 30px;
+        padding: 60px 60px 150px 60px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
 
+    form > div:nth-child(1) {
+        grid-area: gr5-fn;
+    }
+
+    form > div:nth-child(2) {
+        grid-area: gr5-ln;
+    }
+
+    form > div:nth-child(3) {
+        grid-area: gr5-email;
+    }
+
+    form > div:nth-child(4) {
+        grid-area: gr5-subject;
+    }
+
+    form > div:nth-child(5) {
+        grid-area: gr5-msg;
+    }
+
+    form > div:nth-child(6) {
+        grid-area: gr5-btn;
+    }
+
+    label, input, textarea {
+        font-size: 13px;
+    }
+
+    form > div:last-child {
+        text-align: left;
+    }
+
+    input {
+        width: 88%;
+    }
 } 
