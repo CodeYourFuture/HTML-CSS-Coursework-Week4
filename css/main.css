@@ -382,6 +382,7 @@ footer {
     margin: 20px auto;
     display: grid;
     padding-top: 10px;
+    box-shadow: var(--box-shadow);
 }
 
 .s-projects img {
