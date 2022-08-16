@@ -442,6 +442,11 @@ footer {
     background-size: cover;
 }
 
+/* contact page */
+.contact-hero > div {
+    width: 163px;
+}
+
 @media screen and (min-width: 1300px) {
     header {
         grid-template-columns: 1fr 1fr;
@@ -688,4 +693,7 @@ footer {
         width: 50%;
         margin-top: 34px;
     }
-}
+
+    /* contact page */
+
+} 
