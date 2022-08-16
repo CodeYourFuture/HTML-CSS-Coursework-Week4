@@ -4,8 +4,15 @@
   box-sizing: border-box;
 }
 
+h1{
+  font-size: 25px;
+  font-family: 'Poppins', sans-serif;
+}
 
-
+p{
+  font-size: 15px;
+  font-family: 'Quicksand', sans-serif;
+}
 
 
 /* headersection starts here */
@@ -19,6 +26,10 @@
 }
 
 
+.container, .hero{
+  grid-row: 2 / 3;
+}
+
 .nav-top{
   grid-column: 1 /-1;
   display: flex;
@@ -29,8 +40,10 @@
   border: 1px solid black
   }
 
+
   .container{
     grid-column: 1 / -1;
+    background-color: #E6DACD;
     height: 500px;
     padding-top: 12rem;
     border: 1px solid black;
@@ -38,9 +51,10 @@
 
   .hero{
     grid-column: 3 / 4;
+    background-color: #F4ECE6;
     align-self: center;
-    width: 300px;
-    height: 300px;
+    width: 600px;
+    height: 500px;
     text-align: center;
     border: 1px solid blue;
   }
@@ -50,6 +64,7 @@
 .square {
     height: 20px;
     width: 20px;
+
     background-color: #0150FD;
   }
 
@@ -81,9 +96,10 @@
   
 
   .image{
-    width: 100px;
-    height: auto;
-    border-radius: ;
+    margin-top: 50px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
   }
 
 
