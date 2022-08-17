@@ -1,5 +1,7 @@
 /* Add your CSS here */
 /* colors and font size variables */
+
+/* ---------------------Mobile Design------------- */
 :root {
   --bckgrnd-color: #e6dacd;
   --light-being: #f4ece6;
@@ -12,146 +14,91 @@
     url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
 }
 
-/* body grid layout */
-body {
-  display: grid;
-  grid:
-    "h h h h h h h h h h h h"
-    "m m m m m m m m m m m m"
-    "f f f f f f f f f f f f";
+html{
+  height: 100%;
 }
-
-header {
-  display: grid;
-  grid: "name name empty empty nav nav nav";
-  grid-area: h;
-  justify-content: space-between;
-}
-
-/* from here find classes inside header */
-
-.blueBox_Name_and_JobTitle {
-  display: flex;
-  grid-area: name;
-  align-items: center;
-  gap: 10px;
-  margin: 20px;
-}
-
-/* Small Blue box just before the name */
-.smallBlueBox {
+/* ------ The next two classes control all images------- */
+.images_socialMedia {
   width: 20px;
-  height: 20px;
-  background-color: #0150fd;
-}
-
-.blueBox_Name_and_JobTitle p {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  align-items: center;
-}
-
-.firstLastName {
-  color: var(--black);
-  font-weight: 600;
-}
-
-nav {
-  display: flex;
-  grid-area: nav;
-  justify-content: space-between;
-  padding: 10px;
-  align-content: space-around;
-  align-items: center;
-  font-size: large;
-}
-
-/* this help no underline in the naviagation  elements */
-nav a {
-  text-decoration: none;
-}
-
-/* from here find all classess inside main element */
-
-main {
-  display: grid;
-  grid-area: m;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(12, 1fr);
-  height: 50vw;
-}
-
-.background_colored_section {
-  grid-column: 1/6;
-  grid-row: 1/-1;
-  background-color: var(--bckgrnd-color);
-}
-
-.background_white_section {
-  grid-column: 6/-1;
-  grid-row: 1/-1;
-  background-color: var(--white);
-}
-
-.overview_section {
-  display: flex;
-  grid-column: 4/-2;
-  grid-row: 3/-3;
-}
-
-.profile_contianer {
-  width: 40%;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 11fr 1fr;
-  box-shadow: -1px 8px lightslategray;
-}
-
-.img_FLName_title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  background-color: var(--light-being);
-}
-
-.overview_section_followLinks {
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-  width: 100%;
-  align-items: center;
-  background-color: var(--white);
 }
 
 .profilePhoto {
   width: 50%;
   border-radius: 50%;
 }
-
-.images_socialMedia {
-  width: 20px;
+/* ------------------- Body rule--------- */
+body{
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid: 
+  'h'
+  'm'
+  'f';
+  margin: 2px;
+}
+/*------ Header---- */
+header {
+  display: flex;
+  grid-area: h;
+  justify-content: space-between;
 }
 
-.personal_introduction {
-  width: 50%;
+/* ----- From here is the design of the main element and its children -----*/
+main{
+  grid-area: m;
+  height: 700px;
+  background: linear-gradient(90deg, var(--bckgrnd-color) 50vw, var(--white) 50vw);
+}
+.overview_section{
+  display: flex;
+  height: 60%;
+  width: 80vw;
+  position: relative;
+  top: 15vw;
+  right: 15vw;
+  bottom: 15vw;
+  left: 15vw;
+  
+}
+.profile_contianer{
+  width: 45vw;
   display: flex;
   flex-direction: column;
-  align-items: left;
-  padding: 20px;
-  justify-content: center;
+  justify-content: space-between;
+  background-color: var(--light-being);
 }
 
-.personal_introduction > h1 {
-  font-size: 10em;
-  margin: 10px;
+.img_FLName_title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+.overview_section_followLinks {
+  display: flex;
+ justify-content: space-between;
+  background-color: var(--white);
+}
+
+
+.personal_introduction{
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.personal_introduction > h1{
+  font-size: 100px;
+  margin: 0px;
 }
 
 /* general styling both bottons */
 .btn {
   border-radius: 40px;
-  font-size: larger;
-  padding: 5px 30px 5px 30px;
-  margin: 10px;
+  padding: 5px 10px 5px 10px;
 }
 
 /* Resume button */
@@ -176,26 +123,27 @@ main {
   color: var(--white);
 }
 
-/* from here find all classess inside footer element */
-footer {
+/* ----Footer -- */
+footer{
   display: flex;
   grid-area: f;
   justify-content: space-between;
-  align-items: center;
 }
+
 .copyRight_section {
   width: 15%;
 }
+
 .contacts_container {
   display: flex;
-
-  width: 40%;
+  width: 70%;
   justify-content: space-around;
   text-align: center;
 }
+
 .footer_links {
   display: flex;
   justify-content: space-between;
   gap: 10px;
 }
-/* Dont' forget to link this file to your HTML in the <head> */
+
