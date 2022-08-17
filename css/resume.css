@@ -201,3 +201,143 @@ input[type=submit] {
     text-align: center;
   }
   /* *****Contact Us Page***** */
+
+  /* !!!!!!!!! Resume Page Desktop View !!!!!!!!! */
+  @media only screen and (min-width: 900px) {
+    body {
+      margin: auto;
+      max-width: 1044px;
+    }
+    .btn-1-2 {
+      display: none;
+    }
+    header {
+      display: flex;
+      height: 100px;
+      align-items: center;
+      justify-content: space-around;
+    }
+    .header-blue-box{
+      position: absolute;
+      top: 50px;
+      left: 70px;
+  
+    }
+    .logo-area {
+      display: flex;
+      align-content: space-between;
+      align-items: center;
+    }
+    nav {
+      display: flex;
+      gap:20px;
+      text-decoration: none;
+    }
+    nav > a {
+      text-decoration: none;
+      color: var(--text-black);
+    }
+    .nav-item:hover{
+      color: var(--Royalblue);
+      transition: .5s;
+    }
+    .nav-item:active {
+      color:var(--Royalblue)
+    }
+  main {
+    display: block;
+    background-color: var(--Darkbeige);
+  }
+  .main-resume-page {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .experience-box {
+    display: grid;
+    grid-template-columns: 30px repeat(6, 1fr);
+    grid-template-rows: 50px;
+    grid-template-areas: 
+    " . . . . . . ."
+    " . d d . . . .  "
+    " . j j . tx1 tx1 tx1  "
+    " . cn cn . tx1 tx1 tx1  "
+    " . cl cl . tx2 tx2 tx2  "
+    ;
+  }
+  .exp-box_date {
+    grid-area: d;
+  }
+  .exp-box_job {
+    grid-area: j;
+  }
+  .exp-box_company {
+    grid-area: cn;
+  }
+  .exp-box_location{
+    grid-area: cl;
+  }
+  .intro-text_1 {
+    grid-area: tx1;
+  }
+  .intro-text_2 {
+    grid-area: tx2;
+  }
+  }
+   /* !!!!!!!!! Resume Page Desktop View !!!!!!!!! */
+    /* !!!!!!!!! Project Page Desktop View !!!!!!!!! */
+    .main-project-page {
+      padding-left: 100px;
+      padding-right: 100px;
+    }
+    .pages-title_p{
+      text-align: center;
+      margin: 20px;
+      line-height: 30px;
+  }
+  .project-details{
+  background-color: var(--text-white);
+  box-shadow: 5px 10px #888888;
+  margin: 35px;
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: 10px 1fr 1fr;
+  grid-template-rows: auto;
+  }
+  .project-details_line{
+      border-left: 8px solid var(--Royalblue);
+      height: 50px;
+      grid-row: 1;
+      margin-top: 15px;
+  }
+  .info-area {
+      grid-column: 2/4; 
+      margin-bottom: 20px;
+  }
+  .project-details_title{
+      padding-left: 15px;
+      font-size: 17px;
+      color: var(--Royalblue);
+      font-family: var(--title-font);
+      grid-column: 1/2;
+      grid-row: 1;
+  }
+  .project-details_subtitle{
+      padding-left: 15px;
+      grid-row: 1;
+  }
+  .project-details_text{
+      padding-right: 15px;
+      padding-left: 25px;
+      grid-column: 1/3;
+      grid-row: 2;
+      margin-bottom: 20px;
+      line-height: 30px;
+  }
+  .project-details_img{
+      padding: 0;
+      width: 100%;
+      object-fit: cover;
+      grid-column: 3/4;
+      grid-row: 2;
+  }
+     /* !!!!!!!!! Project Page Desktop View !!!!!!!!! */
