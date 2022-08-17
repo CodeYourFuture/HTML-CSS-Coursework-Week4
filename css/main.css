@@ -38,7 +38,7 @@ li {
   width: 20px;
   background-color: var(--Royalblue);
   padding-left: 10px;
-  position: absolute;
+  position: fixed;
   top: 28px;
   left: 10px;
 }

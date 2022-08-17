@@ -201,7 +201,7 @@ input[type=submit] {
     text-align: center;
   }
   /* *****Contact Us Page***** */
-
+/* _+_+_+_+_+_+_+_+ DESKTOP VERSION _+_+_+_+_+_+_+_+ */
   /* !!!!!!!!! Resume Page Desktop View !!!!!!!!! */
   @media only screen and (min-width: 900px) {
     body {
@@ -282,7 +282,7 @@ input[type=submit] {
   .intro-text_2 {
     grid-area: tx2;
   }
-  }
+  
    /* !!!!!!!!! Resume Page Desktop View !!!!!!!!! */
     /* !!!!!!!!! Project Page Desktop View !!!!!!!!! */
     .main-project-page {
@@ -341,3 +341,36 @@ input[type=submit] {
       grid-row: 2;
   }
      /* !!!!!!!!! Project Page Desktop View !!!!!!!!! */
+    /* !!!!!!!!! Contact Page Desktop View !!!!!!!!! */
+    .main-contact-page {
+      padding-left: 100px;
+      padding-right: 100px;
+    }
+    form{
+  display:grid ;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(5,1fr);
+  }
+  .email-field {
+    grid-row: 2;
+    grid-column: 1/3;
+  }
+  .subject-field {
+    grid-row: 3;
+    grid-column: 1/3;
+  }
+  .message-field {
+    grid-row: 4;
+    grid-column: 1/3;
+  
+  }
+  .submit-btn {
+    grid-row: 5;
+    grid-column: 1;
+  }
+    .submit-btn{
+      margin-bottom: 50px;
+      text-align: left;
+    }
+  /* !!!!!!!!! Contact Page Desktop View !!!!!!!!! */
+  }
