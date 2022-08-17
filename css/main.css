@@ -97,7 +97,7 @@ main{
     height: auto;
     width: 100%;
     min-height: auto;
-    grid-template-rows: 120px 110px 20px 30px 70px;
+    grid-template-rows: 120px 110px 20px 30px 120px;
     grid-template-columns: 100%;
     justify-items: center;
 }
@@ -142,11 +142,13 @@ h1{
     justify-self: start;    
 }
 .resume-btn{
-    width: 120px;
+
+    width: 122px;
     height: 33px;
     background-color: var(--Royal-blue);
     color: var(--White);
     border: none;
+    font-size: 14px;
 }
 .proj-btn{
     width: 120px;
@@ -264,6 +266,105 @@ button{
 }
 .wix{
     color: var(--Black);
+}
+/* --------------------Style for Resume page-------------------- */
+/* main resume */
+.main-resume{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 120px 1fr 1fr 1fr 120px;
+    box-sizing: border-box;
+    grid-template-areas: "header"
+    "experience"
+    "education"
+    "skill"
+    "footer";
+}
+.experience{
+    grid-area: experience;
+    background-color: var(--Dark-beige);
+    font-family: var(--body-font);
+}
+.resume-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.resume-top h1{
+    margin-left: 7px;
+}
+.education{
+    grid-area: education;
+    background-color: var(--Dark-beige);
+}
+.skill-language{
+    grid-area: skill;
+    background-color: var(--Dark-beige);
+}
+.exp-btn{
+    display: flex;
+    flex-direction: row;
+    margin: 1em;
+    justify-content: space-between;
+    align-items: flex-end;
+    text-align: center;
+    font-family: var(--body-font);
+}
+ h2{
+    font-size: 18px;
+    font-family: var(--body-font);
+    margin-left: 1em;
+    padding-top: 1em;
+}
+.white-container{
+    width: 280px;
+    height: 461px;
+    background-color: var(--White);
+    margin: 1em;
+    box-shadow: var(--shadow);
+}
+
+h3{
+    font-size: 17px;
+    font-family: var(--body-font);
+    color: var(--Royal-blue);
+    font-weight: bold;
+    margin-left: 1em;
+    padding-top: 1em;
+}
+.sub-title{
+    font-size: 16px;
+    font-family: var(--body-font);
+    margin-left: 1em;
+    margin-bottom: 1.5em;
+}
+.second-sub-title{
+    font-size: 15px;
+    font-family: var(--body-font);
+    margin-left: 1em;
+}
+.main-title{
+    font-size: 16px;
+    font-family: var(--body-font);
+    margin: 1em;
+    text-align: justify;
+    line-height: 1.5em;
+}
+.skill{
+    display: flex;
+    align-items: center;
+    margin-left: 1em;
+}
+.blue-square-list{
+    width: 13px;
+    height: 13px;
+    background-color: var(--Royal-blue);
+    margin-right: .7em;
+}
+.list-item{
+    font-family: var(--body-font);
+    font-size: 14px;
 }
 /* Hamburger menu */
 label .menu {
