@@ -78,9 +78,12 @@ header h1, .front h2, article>h2{
     font-weight: bold;
     font-size: 1.5rem;
 }
+.forward-slash{
+    display: none;
+}
 
 header p{
-    font-family: "Quicksand", var(--font-fallback);
+    font-family: "Quicksand";
     font-weight: lighter;
     font-size: 1rem;
 }
@@ -234,7 +237,7 @@ padding-bottom: 10%;
         grid-template-columns: 1fr 1fr;
         margin: 10% 0 2% 0;
         background-color: var(--bg-color);
-        height: 100vh;
+        height: 150vh;
     }
     
     header {
@@ -245,43 +248,64 @@ padding-bottom: 10%;
         grid-row-end: 2;
         height: 10vh;
         margin: 0 5% 0 6%;
-        border: 2px solid green;
         display: grid;
         grid-template-areas:
-        "h1 p nav";
-        grid-template-columns: 100px 100px 1fr;
-
+        "h1 nav";
+        grid-template-columns: 1fr  1fr;
     }
-    header> h1{
-        font-family: "Poppins", var(--font-fallback);
-        font-weight: bold;
-        font-size: 2rem;
+.header-headline{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+header h1, .front h2{
+    font-family: "Poppins", var(--font-fallback);
+    font-weight: bold;
+    font-size: 2rem;
+}
+ header  h1{
         font-weight: 900;
         grid-area: h1;
         grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
-    display:flex;
-    justify-content: space-between;
     }
-#paragraph-heading{
-     grid-area: p;
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        grid-row-end: 2;
-    } 
+    .forward-slash{
+        font-size: 30px;
+        color: var(--icon-color);
+        font-weight: bold;
+        display: inline;
+    }
+    header p{
+    font-family: var(--font_7);
+}
+    header p{
+        font-weight: lighter;
+        font-size: 1.7rem;
+        padding-top: 1%;
+    }
+    article h3{
+    font-size: 2rem;
+    padding: 5% 0;
+    font-weight: 600;
+
+    }
+    article p{
+        font-family: "Quicksand", var(--font-fallback);
+        line-height: 35px;
+        font-size: 1.5rem;
+    }
 nav{
     display: inline;
     grid-area: nav;
-    grid-column-start: 3;
-        grid-column-end: 4;
+    grid-column-start: 2;
+        grid-column-end: 3;
         grid-row-start: 1;
         grid-row-end: 2;
         display: flex;  
         justify-content: flex-end;
-        padding-right: 5%;
+        padding-right: 2%;
 }
 nav ul {
         display: flex;
@@ -293,8 +317,6 @@ nav ul li {
     font-size: 1.5rem;
     font-weight: 400;
 }
-
-
 main{
     grid-area: main;
     grid-column-start: 1;
@@ -302,8 +324,92 @@ main{
     grid-row-start: 2;
     grid-row-end: 3;
     height: 110vh;
-    border: 2px solid red;
-}
-footer
+    display: grid;
+    grid-template-areas:
+            "first art";
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
 }
 
+.first-section{
+    grid-area: first;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    position: relative;
+      height: 100vh;
+      border: 2px solid green;
+    }
+    .back{
+    position: absolute;
+    background: linear-gradient(180deg, #E6DACD 100%, white 50%);
+    height: 100vh;
+    border: 2px solid black;
+
+    }
+    .front{
+    position: absolute;
+      left: 10%;
+      background-color: var(--card-color);
+      width: 100%;
+      height: auto;
+      top: 10%;
+      bottom: 10%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+      box-shadow: -10px 5px 50px -15px grey;
+    }
+    img{
+        height: 300px;
+        object-fit: cover;
+    }
+    article{
+        grid-area: art;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        border: 2px solid red;
+        background-color: var(--bg-color);
+        margin: 20% 0 0 5%;
+    }
+    article>h2{
+        font-size: 6rem;
+    }
+    #btn-for-desktop{
+        padding: 5px 25px;
+        border-radius: 20px;
+        border-width: thin;
+        font-weight: bold;
+        margin-bottom: 10%;
+    }
+    #resume-btn{
+        background-color: var(--btn-color);
+        color: var(--bg-color);
+        border-color: var(--btn-color);
+    }
+    #projects-btn{
+        background-color: #F4ECE6;
+        border-color: var(--icon-color);
+    }
+
+
+footer{
+    grid-area: footer;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    height: 20vh;
+    border: 2px solid red;
+}
+
+
+
+
+
+
+}
