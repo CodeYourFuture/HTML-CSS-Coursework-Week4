@@ -31,6 +31,7 @@
 body {
     font-family: "Quicksand";
     font-weight: 300;
+    font-size: 62.5%;
 }
 
 .container {
@@ -43,7 +44,7 @@ body {
     grid-template-columns: 1fr 1fr;
     margin: 10% 0 2% 0;
     background-color: var(--bg-color);
-    height: 115vh;
+    height: 155vh;
 }
 
 header {
@@ -62,14 +63,16 @@ span {
     color: #0150FD;
 }
 
-header>h2, .front h2 {
+header h2, .front h2, article>h2{
     font-family: "Poppins", var(--font-fallback);
     font-weight: bold;
+    font-size: 1.5rem;
 }
 
 header p{
     font-family: "Quicksand", var(--font-fallback);
     font-weight: lighter;
+    font-size: 1rem;
 }
 
 .nav-toggle {
@@ -88,7 +91,7 @@ main{
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
-    height: 80vh;
+    height: 110vh;
 }
 .first-section{
 position: relative;
@@ -120,17 +123,56 @@ position: absolute;
     justify-items: center; 
 }
 .border{
-    width:25%;
-    border: 2px solid blue;
+    width:20%;
+    border: 1px solid blue;
     margin: 5% 0 5% 0;
+}
+button{
+    padding: 5px 25px;
+    border-radius: 20px;
+    border-width: thin;
+    font-weight: bold;
+}
+#resume-btn{
+    background-color: var(--btn-color);
+    color: var(--bg-color);
+    border-color: var(--btn-color);
+}
+#projects-btn{
+    background-color: #F4ECE6;
+    border-color: var(--icon-color);
+}
+.icon{
+    width: 100%;
+    margin-top: 10%;
+    padding: 4% 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: var(--bg-color);
+    font-size: 1rem;
 }
 
 article {
     background-color: #E6DACD;
-    border: 2px double red;
-    height: 20vh;
+    height: 50vh;
+    padding: 0% 10%;
+    font-family: "Quicksand", var(--font-fallback);
 }
-
+article >h2{
+    font-weight: 900;
+    font-size: 2.5rem; 
+}
+article h3{
+    font-size: 1.3rem;
+    padding: 5% 0;
+    font-weight: 600;
+}
+article p{
+    font-size: 1rem;
+    text-align: justify;
+    line-height: 25px;
+}
 footer {
     grid-area: footer;
     grid-area: main;
@@ -138,6 +180,32 @@ footer {
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: -1;
-    border: 2px solid brown;
-    height: 25vh;
+    height: 35vh;
+    font-family: "Quicksand", var(--font-fallback);
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
 }
+footer p{
+    font-size:  1rem;
+
+}
+.footer-description{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 5% 0 5% 0;
+}
+.footer-description h4{
+font-weight: 600;
+padding-bottom: 10%;
+}
+.footer-last-section{
+  padding-left: 10%;
+}
+#icon{
+    display: flex;
+    gap: 20px;
+    padding: 5% 0 10% 0;
+}
+
