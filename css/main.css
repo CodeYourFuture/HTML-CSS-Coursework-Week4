@@ -54,7 +54,6 @@ h1{
   justify-content: space-between;
   align-items: center;
   width: auto;
-  /* height: 300px;  */
   border: 1px solid black;
   }
 
@@ -163,7 +162,7 @@ h1{
     height: 300px;
     margin-top: 100px;
     text-align: center;
-    /* border: 1px solid blue; */
+    border: 1px solid blue; 
   }*/
   
 
