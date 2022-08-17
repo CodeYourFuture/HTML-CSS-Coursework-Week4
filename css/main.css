@@ -1,3 +1,196 @@
-/* Add your CSS here */
+/* Start Variables */
+:root {
+    --Black-color: #000
+    --Whitecolor: #FFF
+    --Lylac-color: #f5e8ff
+    --Light-Green: #E6FAC0
+    --MediumGreen: #5E7D1F
+    --Dark-Green: #394B2A
 
-/* Dont' forget to link this file to your HTML in the <head> */
+  }
+  /* End Variables */
+  /* Start Global Rules */
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Mouse Memoirs', sans-serif;
+  }
+  ul {
+    list-style: none;
+  }
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+  }
+   /* End Global Rules */
+
+
+   .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+   }
+
+   .menu-img {
+    width: 75px;
+    height: 60px;
+   }
+   .login {
+    display: flex;
+   }
+
+   .login-img {
+    width: 30px;
+    height: 30px;
+   }
+
+   .order-online {
+    background-color: black;
+    color: white;
+    padding: 30px;
+   }
+
+   .welcome-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+    justify-items: center;
+    grid-gap: 3em;
+    padding-top:75px;
+   }
+   .welcome-section h1 {
+    font-size: 70px;
+   }
+   .welcome-section h3 {
+
+    background-color:black;
+    color: white;
+    padding: 25px;
+   }
+
+   .welcome-section a {
+    text-decoration: none;
+   }
+   .menu l {
+    display: none;
+   }
+   .menu .menu-img2 {
+    width: 45px;
+    height: 45px;
+   }
+   @media(min-width:921px) {
+    .menu .menu-img2 {
+      display: none;
+     }
+
+   }
+   
+   /* Store.html Page Styling */
+
+   .pickup {
+    border: 1px solid black;
+    max-width: 45%;
+    padding: 1em;
+    margin: 1em;
+   }
+   .backgr {
+    background-color: #e6fac0;
+   }
+   .navbar {
+    display: flex;
+   }
+
+   .narrow-img {
+    width:25px
+   }
+
+   .bag-img {
+    width:25px
+   }
+   .navbar {
+    display: grid;
+    grid-template: repeat(1, 10px) / repeat(8, 1fr);
+    grid-gap: 3px;
+    align-items: center;
+    justify-content: center;
+    justify-items: end;
+  
+   }
+/* 
+   .menu-juies {
+    display:none;
+   } */
+   @media (max-width:920px) {
+    .navbar {
+      display: none;
+    }
+    .menu h2  {
+      display: none;
+     }
+    
+   }
+
+   .vertical-bar {
+    height: px;
+    border: 1px solid black;
+    
+   }
+
+   .menu h2  {
+    padding: 5px;
+    margin: 1em;
+   }
+   .menu p  {
+    padding: 5px;
+    margin: 1em;
+   }
+   .card-img {
+    width: 178px;
+    height: 175px;
+   }
+    
+   .cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+   
+   }
+   .card {
+    border: 1px solid gray;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
+   }
+   .footer {
+    padding: 30px;
+    background-color:#394b2a ;
+   
+   }
+   .footer p {
+    padding: 1em;
+    color: white;
+    text-align: center;
+   }
+   
+
+   
+   
+   
+
+
