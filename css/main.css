@@ -84,7 +84,40 @@
     text-decoration: none;
    }
 
-   /* Store Page Styling */
+   /* Store.html Page Styling */
+
+   .pickup {
+    border: 1px solid black;
+    max-width: 45%;
+    padding: 1em;
+    margin: 1em;
+   }
+   .backgr {
+    background-color: #e6fac0;
+   }
+   .navbar {
+    display: flex;
+   }
+
+   .narrow-img {
+    width:25px
+   }
+
+   .bag-img {
+    width:25px
+   }
+   .navbar {
+  padding: 1em;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+   }
+   .vertical-bar {
+    height: 20px;
+    border: 1px solid black;
+    
+   }
 
    
    
