@@ -114,6 +114,26 @@ h1{
     border-radius: 50%;
   }
 
+  .btn1, .btn2{
+    width: 150px;
+    height: 25px;
+    background-color: #0150FD;
+    color: white;
+    margin: 50px 20px 10px 0px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+  }
+
+  .icons {
+    width: auto;
+    height: 100px;
+    background-color: white;
+    margin-top: 100px;
+    border: 1px solid dodgerblue;
+  }
+
 
   /* nav bar */
 /*.nav-bar {
