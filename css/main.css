@@ -8,15 +8,14 @@
   --royal-blue: #0150fd;
   --black: #000;
   --white: #fff;
-  --heading-fnt-siz: @import
-    url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap");
-  --body-font: @import
-    url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+  --heading-fnt-siz: @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap");
+  --body-font: @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
 }
 
-html{
+html {
   height: 100%;
 }
+
 /* ------ The next two classes control all images------- */
 .images_socialMedia {
   width: 20px;
@@ -26,31 +25,71 @@ html{
   width: 50%;
   border-radius: 50%;
 }
+
 /* ------------------- Body rule--------- */
-body{
+body {
   height: 100%;
   width: 100%;
   display: grid;
-  grid: 
-  'h'
-  'm'
-  'f';
+  grid:
+    'h'
+    'm'
+    'f';
   margin: 2px;
 }
+
 /*------ Header---- */
+
 header {
-  display: flex;
+  display: grid;
+  grid: "name name name"
+    "nav nav nav";
   grid-area: h;
   justify-content: space-between;
 }
 
+.blueBox_Name_and_JobTitle {
+  display: flex;
+  grid-area: name;
+  align-items: center;
+  gap: 10px;
+  margin: 10px;
+}
+
+/* Small Blue box just before the name */
+.smallBlueBox {
+  width: 20px;
+  height: 20px;
+  background-color: #0150fd;
+}
+
+.firstLastName :first-child {
+  font-weight: bold;
+  font-size: x-large;
+}
+
+nav {
+  display: flex;
+  grid-area: nav;
+  justify-content: space-around;
+  align-content: space-around;
+  align-items: center;
+  font-size: large;
+}
+
+/* this help no underline in the naviagation  elements */
+nav a {
+  text-decoration: none;
+}
+
 /* ----- From here is the design of the main element and its children -----*/
-main{
+main {
   grid-area: m;
   height: 700px;
   background: linear-gradient(90deg, var(--bckgrnd-color) 50vw, var(--white) 50vw);
 }
-.overview_section{
+
+.overview_section {
   display: flex;
   height: 60%;
   width: 80vw;
@@ -59,52 +98,84 @@ main{
   right: 15vw;
   bottom: 15vw;
   left: 15vw;
-  
+
 }
-.profile_contianer{
+
+.profile_contianer {
   width: 45vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-color: var(--light-being);
+  align-items: center;
+  padding-top: 40px;
 }
 
-.img_FLName_title{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 30px;
+.profile_contianer :nth-child(2) {
+  font-weight: bolder;
+  font-size: xx-large;
+  text-align: center;
 }
+
+/* The blue line under the name */
+.firstLastNames :nth-child(3) {
+  height: 1px;
+  width: 50px;
+  background-color: #0150fd;
+}
+
 .overview_section_followLinks {
   display: flex;
- justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
   background-color: var(--white);
 }
 
 
-.personal_introduction{
+.personal_introduction {
   width: 55%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 5px;
+  padding-left: 5px;
 }
 
-.personal_introduction > h1{
-  font-size: 100px;
+/* why first-child not working with out > ?*/
+.personal_introduction> :first-child {
+  font-size: 40px;
   margin: 0px;
+
+}
+
+.personal_introduction> :nth-child(2) {
+  font-size: 18px;
+  margin: 0px;
+}
+
+.buttons_container {
+  display: flex;
+  gap: 4px;
+  width: 100%;
+
+}
+
+.paragraph_container {
+  height: 100%;
 }
 
 /* general styling both bottons */
 .btn {
   border-radius: 40px;
-  padding: 5px 10px 5px 10px;
+  padding: 5px 8px 5px 8px;
+
 }
 
 /* Resume button */
 .resume_btn {
   background-color: blue;
   color: var(--white);
+  font-size: 15px;
 }
 
 .resume_btn:hover {
@@ -116,6 +187,7 @@ main{
 .projects_btn {
   background-color: var(--white);
   color: var(--black);
+  font-size: 15px;
 }
 
 .projects_btn:hover {
@@ -123,27 +195,48 @@ main{
   color: var(--white);
 }
 
-/* ----Footer -- */
-footer{
+.paragraph_container {
   display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/* ----Footer -- */
+footer {
   grid-area: f;
-  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
 }
 
 .copyRight_section {
-  width: 15%;
+  display: flex;
+  justify-content: space-around;
+  margin: 0px;
 }
 
 .contacts_container {
   display: flex;
-  width: 70%;
   justify-content: space-around;
   text-align: center;
+  margin: 0px;
 }
+
+.hover_effect :hover{
+ box-shadow: -3px 3px green;
+ background-color: lightsalmon;
+ color:white;
+ border-radius: 20px;
+ padding: 10px;
+}
+
 
 .footer_links {
   display: flex;
-  justify-content: space-between;
   gap: 10px;
 }
 
+/* Tablet view */
+@media screen and (min-width:425px) {}
+
+/* laptop view */
+@media screen and (min-width:768px) {}
