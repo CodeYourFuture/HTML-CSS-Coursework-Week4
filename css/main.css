@@ -47,8 +47,8 @@ h1{
 
 /* nav bar starts here*/
 .navbar{
-  grid-column: 1 / -1;
-  grid-row: 1 / 1;
+  /* grid-column: 1 / -1; */
+  /* grid-row: 1 / 1; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -110,13 +110,13 @@ h1{
   border-radius: 10px;
   }
 
-  @media (max-width: 400px){
+  @media (max-width: 600px){
     .toggle-button{
       display: flex;
     }
 
     .navbar-links {
-      display: none;
+      /* display: none; */
       width: 100%;
     }
 
@@ -125,7 +125,7 @@ h1{
       align-items: flex-start;
     }
 
-    .navbar-links ul{
+   /* .navbar-links ul{
       width: 100%;
       flex-direction: column;
     }
@@ -150,8 +150,8 @@ h1{
     height: 500px;
     margin:0px;
     padding-top: 12rem;
-    /* border: 1px solid black; */
-  }
+    /* border: 1px solid black; 
+  }*/
 
   /*.hero{
     grid-column: 3/4;
