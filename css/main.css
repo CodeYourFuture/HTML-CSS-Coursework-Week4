@@ -9,9 +9,19 @@ h1{
   font-family: 'Poppins', sans-serif;
 }
 
-p{
+.container h1{
+  font-size: 45px;
+  margin-left: 10px;
+}
+
+.container h2{
+  margin-left: 10px;
+}
+
+.container p{
   font-size: 15px;
   font-family: 'Quicksand', sans-serif;
+  margin-left: 10px;
 }
 
 
@@ -21,28 +31,30 @@ p{
   display: grid;
   width: auto;
   grid-template-columns: repeat(5,1fr);
+  /* grid-template-rows: repeat(3,1fr); */
   /* grid-template-rows: 100px 100px; */
   border: 2px solid salmon;
 }
 
 
-.container, .hero{
-  grid-row: 2 / 3;
-}
+/* .container, .hero{ */
+  /* grid-row: 1/ 3; */
+/* } */
 
 .nav-top{
-  grid-column: 1 /-1;
+  grid-column: 1 / -1;
+  grid-row: 1 / 1;
   display: flex;
   flex-direction: row;
   /* justify-content: space-evenly; */
   width: auto;
-  height: 300px; 
+  /* height: 300px;  */
   border: 1px solid black
   }
 
-
   .container{
     grid-column: 1 / -1;
+    grid-row: 2/ 2;
     background-color: #E6DACD;
     height: 500px;
     padding-top: 12rem;
@@ -50,7 +62,8 @@ p{
   }
 
   .hero{
-    grid-column: 3 / 4;
+    grid-column: 2/5;
+    grid-row: 1 / 1; 
     background-color: #F4ECE6;
     align-self: center;
     width: 600px;
@@ -64,7 +77,6 @@ p{
 .square {
     height: 20px;
     width: 20px;
-
     background-color: #0150FD;
   }
 
