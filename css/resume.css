@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+  }
+  
+  body{
+    margin: 0;
+    padding: 0;
+  }
+
+  /* nav bar starts here*/
+.navbar{
+    grid-column: 1 / -1;
+    grid-row: 1 / 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    border: 1px solid black;
+    }
+  
+  .square {
+      height: 20px;
+      width: 20px;
+      background-color: #0150FD;
+      /* margin: 10px 0px 0px 20px; */
+  }
+  
+  
+    .navbar-links ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    
+    .navbar-links li {
+      list-style: none;
+    }
+    
+    .navbar-links li a {
+      text-decoration: none;
+      color:black;
+      padding: 10px;
+      display: block;
+    }
+    
+    .navbar-links li a:hover {
+    background-color: gray;
+    }
+  
+  
+    /* hamburger menu */
+    .toggle-button {
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40px;
+    height: 30px;
+    }
+    
+    .toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color:#0150FD;
+    border-radius: 10px;
+    }
+
+
+
+/* footer-bar */
+footer{
+    margin-left: 20px;
+  }
+
+  .footer-icons{
+    width: auto;
+    height: 80px;
+    background-color:#FFF;
+    margin-top: 20px;
+    /* border: 1px solid dodgerblue; */
+  }
+
+  .footer-icon{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+  }
+
+  .right-div{
+    float: right;
+    margin-right: auto;
+  }
