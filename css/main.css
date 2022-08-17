@@ -83,6 +83,22 @@
    .welcome-section a {
     text-decoration: none;
    }
+   .menu l {
+    display: none;
+   }
+   .menu .menu-img2 {
+    width: 45px;
+    height: 45px;
+   }
+   @media(min-width:921px) {
+    .menu .menu-img2 {
+      display: none;
+     }
+
+   }
+   
+
+   
 
    /* Store.html Page Styling */
 
@@ -107,14 +123,30 @@
     width:25px
    }
    .navbar {
-  padding: 1em;
-  display: flex;
-  align-content: center;
-  align-items: center;
-  justify-content: space-evenly;
+    display: grid;
+    grid-template: repeat(1, 10px) / repeat(8, 1fr);
+    grid-gap: 3px;
+    align-items: center;
+    justify-content: center;
+    justify-items: end;
+  
    }
+/* 
+   .menu-juies {
+    display:none;
+   } */
+   @media (max-width:920px) {
+    .navbar {
+      display: none;
+    }
+    .menu h2  {
+      display: none;
+     }
+    
+   }
+
    .vertical-bar {
-    height: 20px;
+    height: px;
     border: 1px solid black;
     
    }
@@ -140,7 +172,8 @@
    
    }
    .card {
-  padding: 1em;
+    border: 1px solid gray;
+    margin: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
