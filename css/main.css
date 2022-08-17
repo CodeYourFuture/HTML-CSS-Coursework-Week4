@@ -22,8 +22,6 @@
   }
   body {
     font-family: 'Mouse Memoirs', sans-serif;
-
-
   }
   ul {
     list-style: none;
@@ -81,6 +79,15 @@
     color: white;
     padding: 25px;
    }
+
+   .welcome-section a {
+    text-decoration: none;
+   }
+
+   /* Store Page Styling */
+
+   
+   
    
 
 
