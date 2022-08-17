@@ -234,7 +234,7 @@ padding-bottom: 10%;
         grid-template-columns: 1fr 1fr;
         margin: 10% 0 2% 0;
         background-color: var(--bg-color);
-        height: 200vh;
+        height: 100vh;
     }
     
     header {
@@ -294,6 +294,7 @@ nav ul li {
     font-weight: 400;
 }
 
+
 main{
     grid-area: main;
     grid-column-start: 1;
@@ -303,6 +304,6 @@ main{
     height: 110vh;
     border: 2px solid red;
 }
-
+footer
 }
 
