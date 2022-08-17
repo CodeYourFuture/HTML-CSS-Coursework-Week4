@@ -45,6 +45,7 @@ h1{
 }
 
 
+/* nav bar starts here*/
 .navbar{
   grid-column: 1 / -1;
   grid-row: 1 / 1;
@@ -54,47 +55,20 @@ h1{
   align-items: center;
   width: auto;
   /* height: 300px;  */
-  /* border: 1px solid black */
+  border: 1px solid black;
   }
-
-  .container{
-    grid-column: 1  / -1;
-    grid-row: 2 / 2;
-    background-color: #E6DACD;
-    height: 500px;
-    margin:0px;
-    padding-top: 12rem;
-    /* border: 1px solid black; */
-  }
-
-  /*.hero{
-    grid-column: 3/4;
-    grid-row: 1 / 1; 
-    background-color: #F4ECE6;
-    align-self: center;
-    width: 600px;
-    height: 300px;
-    margin-top: 100px;
-    text-align: center;
-    /* border: 1px solid blue; 
-  }*/
-
-
 
 .square {
     height: 20px;
     width: 20px;
     background-color: #0150FD;
     /* margin: 10px 0px 0px 20px; */
-
-  }
+}
 
 .name{
   margin-right: auto;
   margin-left: 10px;
 }
-
-/* nav bar */
 
   .navbar-links ul {
     margin: 0;
@@ -169,6 +143,28 @@ h1{
       display: flex;
     }
   }
+
+  .container{
+    grid-column: 1  / -1;
+    grid-row: 2 / 2;
+    background-color: #E6DACD;
+    height: 500px;
+    margin:0px;
+    padding-top: 12rem;
+    /* border: 1px solid black; */
+  }
+
+  /*.hero{
+    grid-column: 3/4;
+    grid-row: 1 / 1; 
+    background-color: #F4ECE6;
+    align-self: center;
+    width: 600px;
+    height: 300px;
+    margin-top: 100px;
+    text-align: center;
+    /* border: 1px solid blue; */
+  }*/
   
 
   .image{
