@@ -11,19 +11,22 @@ h1{
 
 .container h1{
   font-size: 45px;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 .container h2{
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 .container p{
   font-size: 15px;
   font-family: 'Quicksand', sans-serif;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
+.hero h1{
+  margin-bottom: 50px;
+}
 
 /* headersection starts here */
 
@@ -33,7 +36,7 @@ h1{
   grid-template-columns: repeat(5,1fr);
   /* grid-template-rows: repeat(3,1fr); */
   /* grid-template-rows: 100px 100px; */
-  border: 2px solid salmon;
+  /* border: 2px solid salmon; */
 }
 
 
@@ -49,27 +52,28 @@ h1{
   /* justify-content: space-evenly; */
   width: auto;
   /* height: 300px;  */
-  border: 1px solid black
+  /* border: 1px solid black */
   }
 
   .container{
-    grid-column: 1 / -1;
-    grid-row: 2/ 2;
+    grid-column: 1  / -1;
+    grid-row: 2 / 2;
     background-color: #E6DACD;
     height: 500px;
+    margin:0px;
     padding-top: 12rem;
-    border: 1px solid black;
+    /* border: 1px solid black; */
   }
 
   .hero{
-    grid-column: 2/5;
+    grid-column: 3/6;
     grid-row: 1 / 1; 
     background-color: #F4ECE6;
     align-self: center;
     width: 600px;
-    height: 500px;
+    height: 300px;
     text-align: center;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
   }
 
 
@@ -78,12 +82,14 @@ h1{
     height: 20px;
     width: 20px;
     background-color: #0150FD;
+    margin: 10px 0px 0px 20px;
+
   }
 
-.name {
+.name h1 {
   margin-top: 0px;
-    
-  }
+  margin-left: 30px;
+}
 
 
   /* hamburger menu */
@@ -126,12 +132,43 @@ h1{
     border-radius: 20px;
   }
 
-  .icons {
+  .icons{
     width: auto;
-    height: 100px;
-    background-color: white;
+    height: 80px;
+    background-color:#FFF;
     margin-top: 100px;
-    border: 1px solid dodgerblue;
+    /* border: 1px solid dodgerblue; */
+  }
+ 
+  .icon-img {
+    width: 50px;
+    height: 50px;
+    margin: 20px 30px;
+  }
+
+
+  /* footer-bar */
+  footer{
+    margin-left: 20px;
+  }
+
+  .footer-icons{
+    width: auto;
+    height: 80px;
+    background-color:#FFF;
+    margin-top: 20px;
+    /* border: 1px solid dodgerblue; */
+  }
+
+  .footer-icon{
+    width: 30px;
+    height: 30px;
+    margin: 20px 30px;
+  }
+
+  .right-div{
+    float: right;
+    margin-right: auto;
   }
 
 
