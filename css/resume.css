@@ -7,10 +7,12 @@
     padding: 0;
   }
 
+  main{
+    background-color: #E6DACD;
+  }
+
   /* nav bar starts here*/
 .navbar{
-    grid-column: 1 / -1;
-    grid-row: 1 / 1;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -23,11 +25,17 @@
       height: 20px;
       width: 20px;
       background-color: #0150FD;
+      margin-left: 10px;
       /* margin: 10px 0px 0px 20px; */
   }
+
+  .name{
+    margin-right: auto;
+    margin-left: 10px;
+  }
+
   
-  
-    .navbar-links ul {
+ .navbar-links ul {
       margin: 0;
       padding: 0;
       display: flex;
@@ -48,7 +56,6 @@
     background-color: gray;
     }
   
-  
     /* hamburger menu */
     .toggle-button {
     position: absolute;
@@ -68,7 +75,49 @@
     border-radius: 10px;
     }
 
+    @media (max-width: 400px){
+        .toggle-button{
+          display: flex;
+        }
+    
+        .navbar-links {
+          display: none;
+          width: 100%;
+        }
+    
+        .navbar{
+          flex-direction: column;
+          align-items: flex-start;
+        }
+    
+        .navbar-links ul{
+          width: 100%;
+          flex-direction: column;
+        }
+    
+        .navbar-links li{
+          text-align: center;
+        }
+        
+        .navbar-links li a{
+          padding: .5rem 1rem;
+        }
+    
+        .navbar-links .active{
+          display: flex;
+        }
+      }
 
+      .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+      }
+
+      .div1{
+        background-color: white;
+        border: 1px solid salmon;
+      }
 
 /* footer-bar */
 footer{
