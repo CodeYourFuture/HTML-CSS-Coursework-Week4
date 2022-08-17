@@ -19,6 +19,9 @@
 nav, .btn-1-2_desktop {
   display: none;
     }
+    .logo-span, .card-subtitle{
+      visibility: hidden;
+    }
 body {
   display: grid;
   font-family: var(--normal-font);
@@ -38,7 +41,7 @@ li {
   width: 20px;
   background-color: var(--Royalblue);
   padding-left: 10px;
-  position: fixed;
+  position: relative;
   top: 28px;
   left: 10px;
 }
@@ -377,6 +380,10 @@ display: none;
     align-items: center;
     justify-content: space-around;
   }
+  .logo-span{
+    visibility: visible;
+    font-family: var(--normal-font);
+  }
   .header-blue-box{
     position: absolute;
     top: 50px;
@@ -427,6 +434,12 @@ main {
 }
 .card-desktop {
   padding-bottom: 30px;
+}
+.card-subtitle{
+  visibility: visible;
+  font-size: 20px;
+  padding-bottom: 30px;
+  font-weight: bold;
 }
 .intro {
   background-color: var(--text-white);
@@ -504,9 +517,8 @@ div > h5 {
   grid-area: copy;
 }
 .fa {
-  margin-top: -15px;
   font-size: 15px !important;
-  width: 10px;
+  width: 0px;
   text-align: center;
   text-decoration: none;
   color: #000;

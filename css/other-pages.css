@@ -221,7 +221,10 @@ input[type=submit] {
       position: absolute;
       top: 50px;
       left: 70px;
-  
+    }
+    .logo-span{
+      font-family: var(--normal-font);
+      color: var(--text-black);
     }
     .logo-area {
       display: flex;
