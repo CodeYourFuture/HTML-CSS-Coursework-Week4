@@ -129,20 +129,14 @@
       }
       
       .square2{
-         /* margin: auto;    */
-        /* margin-top: 20px; */
         height: 20px;
         width: 20px;
         background-color: #0150FD;
       }
 
-      /* .container h1{ 
-        margin: auto;
-        font-family: 'Poppins', sans-serif;
-      }*/
-
       .container h3{ 
-        margin-top: 100px;
+        /* margin-top: 100px; */
+        margin-left: 20px;
       }
 
       .cv-btn{
