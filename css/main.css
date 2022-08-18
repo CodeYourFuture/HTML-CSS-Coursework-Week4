@@ -51,7 +51,8 @@ header {
   justify-content: space-between;
 }
 
-.blueBox_Name_and_JobTitle {
+.blueBox_Name_and_JobTitle,
+.title_resumePage {
   display: flex;
   grid-area: name;
   align-items: center;
@@ -95,11 +96,13 @@ nav a {
     var(--white) 50vw
   );
 }
+/* this controls the main element in the resume page  */
 .common_background {
   grid-area: m;
   height: 700px;
   background-color: var(--bckgrnd-color);
- }
+  height: fit-content;
+}
 
 .overview_section {
   display: flex;
@@ -175,19 +178,22 @@ nav a {
 }
 
 /* general styling both bottons */
-.btn {
+.btn,
+.download_btn_in_resumePage {
   border-radius: 40px;
   padding: 5px 8px 5px 8px;
 }
 
-/* Resume button */
-.resume_btn {
+/* Resume button in ABOUT ME page and download button in RESUME page  */
+.resume_btn,
+.download_btn_in_resumePage {
   background-color: blue;
   color: var(--white);
   font-size: 15px;
 }
 
-.resume_btn:hover {
+.resume_btn:hover,
+.download_btn_in_resumePage:hover {
   background-color: var(--white);
   color: var(--black);
 }
@@ -243,8 +249,46 @@ footer {
   gap: 10px;
 }
 
+/* ------------------RESUME PAGE RULES---MOBILE VIEW------------------ */
+.subtitle_experience_and_download_btn {
+  display: flex;
+}
+.main_resumepage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.subtitle_experience_and_download_btn {
+  display: flex;
+  justify-content: space-between;
+  width: 70vw;
+  font-size: x-small;
+}
+.download_btn_in_resumePage {
+  padding: 10px;
+}
+
+.sections_style {
+  display: flex;
+  background-color: var(--white);
+  padding: 20px;
+  width: 70vw;
+  margin: 20px;
+}
+.timeLine_and_description_style {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50vw;
+}
+.time_line > * {
+  margin: 0px;
+}
+
 /* laptop view */
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 426px) {
   /*------ Header---- */
 
   header {
@@ -282,85 +326,121 @@ footer {
     justify-content: space-between;
     gap: 20px;
   }
+
+  /* -------------Resume page------------------- */
+  .subtitle_experience_and_download_btn {
+    display: flex;
+    justify-content: space-between;
+    width: 45vw;
+    font-size: small;
+  }
+  .download_btn_in_resumePage {
+    padding: 10px;
+  }
+
+  .sections_style {
+    display: flex;
+    background-color: var(--white);
+    padding: 20px;
+    width: 45vw;
+    margin: 20px;
+  }
 }
 
 /* Wider Screen */
 @media screen and (min-width: 1025px) {
-
   .overview_section {
-  display: flex;
-  height: 60%;
-  width: 80vw;
-  position: relative;
-  top: 100px;
-  left: 20vw;
-}
+    display: flex;
+    height: 60%;
+    width: 80vw;
+    position: relative;
+    top: 100px;
+    left: 20vw;
+  }
 
-.profile_contianer {
-  width: 30vw;
-  height: 500px;
-  margin-left: 200px;
-}
+  .profile_contianer {
+    width: 30vw;
+    height: 500px;
+    margin-left: 200px;
+  }
 
-.profile_contianer :nth-child(2) {
-  font-weight: bolder;
-  font-size: xx-large;
-  text-align: center;
-}
+  .profile_contianer :nth-child(2) {
+    font-weight: bolder;
+    font-size: xx-large;
+    text-align: center;
+  }
 
+  .overview_section_followLinks {
+    display: flex;
+    width: 100%;
+    gap: 30px;
+    justify-content: center;
+    background-color: var(--white);
+  }
 
-.overview_section_followLinks {
-  display: flex;
-  width: 100%;
-  gap: 30px;
-  justify-content: center;
-  background-color: var(--white);
-}
+  .personal_introduction {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 20px;
+    align-items: left;
+  }
 
-.personal_introduction {
-  width: 55%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding-left: 20px;
-  align-items: left;
-}
+  /* why first-child not working with out > ?*/
+  .personal_introduction > :first-child {
+    font-size: 5vw;
+    margin: 0px;
+  }
 
-/* why first-child not working with out > ?*/
-.personal_introduction > :first-child {
-  font-size: 5vw;
-  margin: 0px;
-}
+  .personal_introduction > :nth-child(2) {
+    font-size: 2vw;
+    margin: 0px;
+  }
 
-.personal_introduction > :nth-child(2) {
-  font-size: 2vw;
-  margin: 0px;
-}
+  .personal_introduction > :nth-child(4) {
+    font-size: 30px;
+    margin: 0px;
+    padding-right: 20px;
+  }
 
-.personal_introduction > :nth-child(4) {
-  font-size: 30px;
-  margin: 0px;
-  padding-right: 20px;
-}
+  /* general styling both bottons */
+  .btn {
+    border-radius: 40px;
+    padding: 5px 30px 5px 30px;
+  }
 
-/* general styling both bottons */
-.btn {
-  border-radius: 40px;
-  padding: 5px 30px 5px 30px;
-}
+  /* Resume button */
+  .resume_btn {
+    background-color: blue;
+    color: var(--white);
+    font-size: 30px;
+  }
 
-/* Resume button */
-.resume_btn {
-  background-color: blue;
-  color: var(--white);
-  font-size: 30px;
-}
+  /* Projects Button */
+  .projects_btn {
+    background-color: var(--white);
+    color: var(--black);
+    font-size: 30px;
+  }
 
-/* Projects Button */
-.projects_btn {
-  background-color: var(--white);
-  color: var(--black);
-  font-size: 30px;
-}
+  /* -------------Resume page------------------- */
 
+  .subtitle_experience_and_download_btn {
+    display: flex;
+    justify-content: space-between;
+    width: 30vw;
+    font-size: small;
+  }
+  .download_btn_in_resumePage {
+    padding: 10px;
+  }
+
+  .sections_style {
+    display: flex;
+    background-color: var(--white);
+    padding: 20px;
+    width: 30vw;
+    margin: 20px;
+  }
 }
