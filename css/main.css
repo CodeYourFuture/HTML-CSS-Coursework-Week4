@@ -155,6 +155,9 @@ button{
     background-color: #F4ECE6;
     border-color: var(--icon-color);
 }
+.front p{
+    display: none;
+}
 .icon{
     width: 100%;
     margin-top: 10%;
@@ -213,7 +216,7 @@ footer p{
 font-weight: 600;
 padding-bottom: 10%;
 }
-.footer-last-section{
+.footer-middle-section, .footer-last-section{
   padding-left: 10%;
 }
 #icon{
@@ -252,6 +255,7 @@ padding-bottom: 10%;
         grid-template-areas:
         "h1 nav";
         grid-template-columns: 1fr  1fr;
+        border: 2px solid red;
     }
 .header-headline{
     display: flex;
@@ -277,18 +281,20 @@ header h1, .front h2{
         font-weight: bold;
         display: inline;
     }
-    header p{
+    header p, .front p{
     font-family: var(--font_7);
 }
-    header p{
+    header p, .front p{
         font-weight: lighter;
         font-size: 1.7rem;
         padding-top: 1%;
     }
+    article>h2{
+        font-size: 10rem;
+    }
     article h3{
-    font-size: 2rem;
-    padding: 5% 0;
-    font-weight: 600;
+    font-size: 2.5rem;
+    font-weight: 500;
 
     }
     article p{
@@ -323,12 +329,13 @@ main{
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
-    height: 110vh;
+    height: 100vh;
     display: grid;
     grid-template-areas:
             "first art";
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 1fr;
+        border: 2px solid yellow;
 }
 
 .first-section{
@@ -346,25 +353,37 @@ main{
     background: linear-gradient(180deg, #E6DACD 100%, white 50%);
     height: 100vh;
     border: 2px solid black;
-
     }
     .front{
     position: absolute;
       left: 10%;
       background-color: var(--card-color);
       width: 100%;
-      height: auto;
-      top: 10%;
-      bottom: 10%;
+      height: 60vh;
+      top: 20%;
+      bottom: 0%;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      align-content: center;
+      justify-content: flex-end;
       box-shadow: -10px 5px 50px -15px grey;
+    }
+    .front p{
+        display: inline;
+    }
+    .front button{
+display: none;
     }
     img{
         height: 300px;
         object-fit: cover;
+    }
+    .icon{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        background-color: var(--bg-color);
+        font-size: 2rem;
     }
     article{
         grid-area: art;
@@ -372,26 +391,31 @@ main{
         grid-column-end: 3;
         grid-row-start: 1;
         grid-row-end: 2;
-        border: 2px solid red;
         background-color: var(--bg-color);
-        margin: 20% 0 0 5%;
+        margin: 30% 0 0 5%;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        row-gap: 3%;
     }
-    article>h2{
-        font-size: 6rem;
+   
+.btn-for-desktop{
+        display: flex;
+        column-gap: 30px;
+        margin-bottom: 5%;
     }
-    #btn-for-desktop{
-        padding: 5px 25px;
-        border-radius: 20px;
+    #resume-btn-desktop, #projects-btn-desktop{
+        padding: 2% 10%;
+        font-size: 1.2rem;
         border-width: thin;
         font-weight: bold;
-        margin-bottom: 10%;
     }
-    #resume-btn{
+    #resume-btn-desktop{
         background-color: var(--btn-color);
         color: var(--bg-color);
         border-color: var(--btn-color);
     }
-    #projects-btn{
+    #projects-btn-desktop{
         background-color: #F4ECE6;
         border-color: var(--icon-color);
     }
@@ -403,8 +427,53 @@ footer{
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 4;
-    height: 20vh;
+    height: 40vh;
     border: 2px solid red;
+    font-size:  1.5rem;
+    display: grid;
+        grid-template-areas:
+            "last des middle";
+        grid-template-rows: 1fr;
+        grid-template-columns: 2fr 1fr 200px;
+}
+
+.footer-description{
+    grid-area: des;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    border: 2px solid red;
+}
+.footer-description h4{
+font-weight: 600;
+}
+.footer-middle-section{
+    grid-area: middle;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border:  2px solid blue;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
+    
+}
+.footer-last-section{
+    grid-area: last;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border: 2px solid black;
+
+}
+#icon{
+    padding: 10% 0 10% 0;
 }
 
 
