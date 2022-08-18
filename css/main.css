@@ -74,18 +74,12 @@ body {
 .header-layout2 {
   position: absolute;
   top: 10rem;
+  height: 60rem;
   width: 90%;
   margin-left: 6rem;
   background-color: #f4ece6;
   box-shadow: -2px 5px 40px -2px #000;
   z-index: 2; }
-
-.layout3 {
-  position: absolute;
-  top: 33rem;
-  width: 100%;
-  background-color: #e6dacd;
-  z-index: 1; }
 
 .img {
   margin-top: 4rem;
@@ -161,6 +155,14 @@ body {
   margin-left: 2.5rem;
   margin-top: 1.2rem; }
 
+.layout3 {
+  position: absolute;
+  top: 33rem;
+  width: 100%;
+  height: 125rem;
+  background-color: #e6dacd;
+  z-index: 1; }
+
 .layout3_raper {
   text-align: justify;
   margin: 45rem 5rem;
@@ -181,19 +183,13 @@ body {
     font-weight: 300;
     color: #727070; }
 
-.footer {
+.footer_end {
+  position: absolute;
+  top: 158rem;
   width: 100%;
-  background-color: antiquewhite; }
-
-@media screen and (max-width: 650px) {
-  .header-layout1 {
-    width: 100%; }
-  .header-layout2 {
-    height: 60rem; }
-  .layout3 {
-    height: 120rem; }
-  .footer {
-    height: 60rem; } }
+  height: 50rem;
+  background-color: #fff;
+  color: #000; }
 
 /*////////////////////////*/
 .nav_box {

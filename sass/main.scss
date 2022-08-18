@@ -69,19 +69,12 @@
 .header-layout2 {
   position: absolute;
   top: 10rem;
+  height: 60rem;
   width: 90%;
   margin-left: 6rem;
   background-color: $color-Light-beige;
   box-shadow: -2px 5px 40px -2px $color-black;
   z-index: 2;
-}
-.layout3 {
-  position: absolute;
-  top: 33rem;
-  width: 100%;
-  background-color: $color-Dark-beige;
-  // box-shadow: -2px 5px 40px -2px $color-black;
-  z-index: 1;
 }
 
 .img {
@@ -159,6 +152,15 @@
   margin-left: 2.5rem;
   margin-top: 1.2rem;
 }
+.layout3 {
+  position: absolute;
+  top: 33rem;
+  width: 100%;
+  height: 125rem;
+  background-color: $color-Dark-beige;
+  // box-shadow: -2px 5px 40px -2px $color-black;
+  z-index: 1;
+}
 .layout3_raper {
   // margin-top: 45rem;
   text-align: justify;
@@ -185,25 +187,29 @@
     color: rgb(114, 112, 112);
   }
 }
-.footer {
+.footer_end {
+  position: absolute;
+  top: 158rem;
   width: 100%;
-  background-color: antiquewhite;
+  height: 50rem;
+  background-color: $color-white;
+  color: #000;
 }
 
-@media screen and (max-width: 650px) {
-  .header-layout1 {
-    width: 100%;
-  }
-  .header-layout2 {
-    height: 60rem;
-  }
-  .layout3 {
-    height: 120rem;
-  }
-  .footer {
-    height: 60rem;
-  }
-}
+// @media screen and (max-width: 650px) {
+//   .header-layout1 {
+//     width: 100%;
+//   }
+//   .header-layout2 {
+//     height: 60rem;
+//   }
+//   .layout3 {
+//     height: 125rem;
+//   }
+//   // .footer {
+//   //   height: 60rem;
+//   // }
+// }
 
 /*////////////////////////*/
 .nav_box {
