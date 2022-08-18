@@ -195,7 +195,71 @@
   background-color: $color-white;
   color: #000;
 }
-
+.footer_end {
+  width: 100%;
+}
+footer {
+  width: inherit;
+}
+footer::before,
+footer::after {
+  width: inherit;
+  content: "";
+  display: table;
+  clear: both;
+}
+.sec-left {
+  width: 50%;
+  float: left;
+  text-align: justify;
+  height: 35rem;
+}
+.sec-right {
+  width: 50%;
+  float: right;
+  height: 35rem;
+}
+.sec-text {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-left: 2.5rem;
+  margin-top: 3rem;
+  text-align: justify;
+}
+.sec-sub_text {
+  font-size: 2.8rem;
+  font-weight: 300;
+  margin-left: 2.5rem;
+  margin-top: 1rem;
+}
+.sec-sub_text a {
+  text-decoration: none;
+  color: $color-black;
+}
+.left-icon {
+  margin-top: 2.5rem;
+  margin-right: 2rem;
+}
+.left-icon img {
+  display: inline-block;
+  width: 5rem;
+  height: 5rem;
+  margin-top: 1.2rem;
+  font-size: 2rem;
+  margin-left: 1.5rem;
+}
+.copy-right {
+  line-height: 3.5rem;
+}
+.copy-right p {
+  font-size: 2.8rem;
+  font-weight: 300;
+  margin-left: 2.5rem;
+}
+.copy-right span {
+  text-decoration: underline;
+  cursor: pointer;
+}
 // @media screen and (max-width: 650px) {
 //   .header-layout1 {
 //     width: 100%;
