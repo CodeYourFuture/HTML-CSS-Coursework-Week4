@@ -581,4 +581,25 @@ form button {
   .follow-us {
     margin: 4em 0 0;
   }
+
+  [src="./img/grouptwo1.jpg"] {
+    position: absolute;
+    left: 12vw;
+    top: 170px;
+  }
+  [src="./img/grouptwo2.png"] {
+    position: absolute;
+    left: 28vw;
+    top: 180px;
+  }
+  [src="./img/grouptwo3.png"] {
+    position: absolute;
+    left: 48vw;
+    top: 170px;
+  }
+  [src="./img/grouptwo4.png"] {
+    position: absolute;
+    left: 68vw;
+    top: 170px;
+  }
 }
