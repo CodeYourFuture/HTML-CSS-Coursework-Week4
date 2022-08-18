@@ -193,3 +193,58 @@ label {
  border: none;
  padding: 1rem 1rem;
 }
+/* Footer Section */
+.contacts {
+ color: var(--white);
+ background-color: var(--green-black);
+ text-align: center;
+ margin: 0;
+ padding: 3rem 0;
+}
+
+.address,
+.timings,
+.help {
+ margin-bottom: 5rem;
+}
+
+.subscribe,
+.help {
+ display: flex;
+ flex-direction: column;
+ margin: 1rem;
+}
+
+.subscribe {
+ margin-bottom: 5rem;
+}
+
+.help-link {
+ color: var(--white);
+}
+
+.subscription-email {
+ background-color: var(--green-black);
+ padding: 1rem 0;
+ margin: 1rem 0;
+ border: 1px solid var(--white);
+}
+
+.subscribe-now {
+ background-color: var(--white);
+ border: none;
+ padding: 1rem 0;
+}
+
+.social-icon {
+ width: 25px;
+ height: 25px;
+}
+
+.map-image {
+ width: 100%;
+}
+
+.wix {
+ color: var(--red-brown);
+}
