@@ -17,6 +17,22 @@ body{
     margin: 4px;
 }
 
+.conteiner{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:0.3fr 1fr 1fr 0.7fr;
+    grid-template-areas: 
+    "ln ln rn"
+    "m m m"
+    "s s s"
+    "f f f"
+    
+    ;
+    
+}
+
+
 .nav_all{
     grid-area: ln;
 }
