@@ -69,7 +69,7 @@
 .header-layout2 {
   position: absolute;
   top: 15rem;
-  height: 60rem;
+  height: 63rem;
   width: 90%;
   margin-left: 6rem;
   background-color: $color-Light-beige;
@@ -140,17 +140,17 @@
 }
 .header-layout2_footer {
   width: 100%;
-  height: 5rem;
+  height: 8rem;
   background-color: $color-white;
   text-align: center;
 }
 .header-layout2_footer img {
   display: inline-block;
   text-align: center;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 4rem;
+  height: 4rem;
   margin-left: 2.5rem;
-  margin-top: 1.2rem;
+  margin-top: 2rem;
 }
 .layout3 {
   position: absolute;
@@ -245,7 +245,7 @@ footer::after {
   width: 5rem;
   height: 5rem;
   margin-top: 1.2rem;
-  font-size: 2rem;
+  // font-size: 2rem;
   margin-left: 1.5rem;
 }
 .copy-right {
