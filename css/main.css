@@ -70,7 +70,7 @@ body {
 }
 /* Main Section */
 .intro {
- background-image: url("https://static.wixstatic.com/media/697bc8_ee5e15509a8c468f96ec8b15a13e0daf~mv2_d_2000_1809_s_2.jpg/v1/fill/w_1305,h_928,al_b,q_85,usm_0.66_1.00_0.01/697bc8_ee5e15509a8c468f96ec8b15a13e0daf~mv2_d_2000_1809_s_2.webp");
+ background-image: url("/images/prickles-hero-img.png");
  background-size: cover;
  text-align: center;
  color: var(--white);
@@ -98,15 +98,15 @@ body {
 }
 
 .cacti {
- background-image: url("https://static.wixstatic.com/media/697bc8_8bf7131cfd3547e9bd54d9f4f57f3e74~mv2_d_1920_1920_s_2.jpg/v1/fill/w_402,h_565,al_c,q_80,usm_0.66_1.00_0.01/697bc8_8bf7131cfd3547e9bd54d9f4f57f3e74~mv2_d_1920_1920_s_2.webp");
+ background-image: url("/images/cactus.png");
 }
 
 .plants {
- background-image: url("https://static.wixstatic.com/media/697bc8_8267510d9e19448297fc161a522881f1~mv2_d_1920_1920_s_2.jpg/v1/fill/w_402,h_565,al_c,q_80,usm_0.66_1.00_0.01/697bc8_8267510d9e19448297fc161a522881f1~mv2_d_1920_1920_s_2.webp");
+ background-image: url("/images/plants.png");
 }
 
 .scculents {
- background-image: url("https://static.wixstatic.com/media/697bc8_b067d0a4b500479b8a3930782976779e~mv2_d_1920_1920_s_2.jpg/v1/fill/w_402,h_565,al_c,q_80,usm_0.66_1.00_0.01/697bc8_b067d0a4b500479b8a3930782976779e~mv2_d_1920_1920_s_2.webp");
+ background-image: url("/images/shop-image14.jpg");
 }
 
 .product {
@@ -158,7 +158,7 @@ body {
 }
 
 .form-container {
- background-image: url("https://static.wixstatic.com/media/697bc8_4ea3867c24544ad6b0d299b5d93a7fd5~mv2_d_3000_2150_s_2.jpg/v1/fill/w_1305,h_928,al_t,q_85,usm_0.66_1.00_0.01/697bc8_4ea3867c24544ad6b0d299b5d93a7fd5~mv2_d_3000_2150_s_2.webp");
+ background-image: url("/images/background-plant.png");
  background-size: cover;
  padding-bottom: 10rem;
  padding-top: 10rem;
@@ -293,7 +293,7 @@ label {
 
  .about-text {
    grid-column: 1 / 3;
-   margin: 0 10rem;
+   
  }
 
  .facility {
