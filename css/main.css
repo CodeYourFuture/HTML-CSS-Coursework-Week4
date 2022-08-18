@@ -194,6 +194,15 @@ body {
         height: 120px;
 
     }
+    button{
+        padding: 5px;
+        background-color: #F4ECE6;
+        border-radius: 20px;
+    }
+    button:hover{
+        background-color: #0150FD;
+        color: white;
+    }
     .underlin{
         color: #0150FD;
         
