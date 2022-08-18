@@ -86,7 +86,7 @@ nav a {
 }
 
 /* ----- From here is the design of the main element and its children -----*/
-main {
+.multi_background {
   grid-area: m;
   height: 700px;
   background: linear-gradient(
@@ -95,6 +95,11 @@ main {
     var(--white) 50vw
   );
 }
+.common_background {
+  grid-area: m;
+  height: 700px;
+  background-color: var(--bckgrnd-color);
+ }
 
 .overview_section {
   display: flex;
@@ -228,7 +233,7 @@ footer {
 .hover_effect :hover {
   box-shadow: -3px 3px green;
   background-color: lightsalmon;
-  color: white;
+  color: var(--white);
   border-radius: 20px;
   padding: 10px;
 }
