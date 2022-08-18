@@ -1,3 +1,57 @@
 /* Add your CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
+body {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    
+}
+.content{
+    padding: 0 0.938rem;
+margin: 0 auto;
+min-width: 37.5rem;
+
+}
+:focus{
+    outline: none;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+a {
+    list-style: none;
+    padding: 0;
+}
+.topnav {
+    position: relative;
+    width: 100%;
+    z-index: 9999;   
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+.topnav > .content{
+    height: 4.375rem;
+}
+.topnav .heads{
+height: 4.375rem;
+margin-left: 10%;
+}
+.topnav .link{
+    float: right;
+    color: #838994;
+    font-size: 1.04rem;
+    margin-top: 1.7rem;
+}
+.topnav .link li{
+    display: inline-block;
+    margin-left: 1.563rem;
+}
+.topnav .link li.active{
+    color: #333;
+    font-weight: 500;
+}
+.topnav .link li:hover{
+cursor: pointer;
+color: #333333;
+}
