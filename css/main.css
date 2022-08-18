@@ -491,7 +491,94 @@ form button {
 /* =============== index main laptop ============== */
 
 @media screen and (min-width: 900px) {
-  main {
-    /* display: none; */
+  .hero {
+    margin-top: 4em;
+  }
+
+  .intro-grid-container {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    align-content: center;
+    justify-content: center;
+    text-align: left;
+    margin-bottom: 3em;
+  }
+
+  .intro-grid-container div:first-child p {
+    padding-top: 2.4em;
+  }
+
+  .boosting {
+    display: flex;
+    padding: 5em 0 0;
+    justify-content: space-evenly;
+    text-align: left;
+  }
+  .boosting div {
+    padding-top: 5em;
+    width: 400px;
+  }
+
+  .boosting img {
+    margin-bottom: -4em;
+    width: 38vw;
+  }
+
+  .boosting a {
+    text-align: center;
+  }
+
+  .wellness {
+    margin-top: 22em;
+  }
+  .wellness-wrapper {
+    display: flex;
+    padding: 0 6em;
+    margin-bottom: -10em;
+    transform: translateY(-9.4em);
+  }
+
+  .wellness-wrapper div:nth-child(2) {
+    margin-top: -4em;
+  }
+
+  .wellness h2 {
+    transform: translateY(-6.6em);
+  }
+
+  .cleanse-kit {
+    display: flex;
+    padding: 5em 0 0;
+    justify-content: space-evenly;
+    text-align: left;
+  }
+  .cleanse-kit div {
+    padding-top: 5em;
+    width: 400px;
+  }
+
+  .cleanse-kit img {
+    width: 38vw;
+  }
+
+  .cleanse-kit a {
+    text-align: center;
+  }
+
+  .collecting {
+    margin-top: 8em;
+  }
+
+  .collecting h2 {
+    transform: translateY(-0.8em);
+  }
+
+  .collecting-delivery {
+    display: flex;
+    padding: 1.6em 0;
+  }
+
+  .follow-us {
+    margin: 4em 0 0;
   }
 }
