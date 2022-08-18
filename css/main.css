@@ -52,7 +52,7 @@ header {
 }
 
 .blueBox_Name_and_JobTitle,
-.title_resumePage {
+.title_resumePage, .skill_and_language {
   display: flex;
   grid-area: name;
   align-items: center;
@@ -285,6 +285,18 @@ footer {
 }
 .time_line > * {
   margin: 0px;
+}
+
+.skills_container{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.skills_list{
+   display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
 }
 
 /* laptop view */
