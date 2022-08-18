@@ -33,7 +33,7 @@
 }
 .header-layout1 {
   width: 100%;
-  height: 30rem;
+  height: 40rem;
   background-color: $color-white;
 }
 .header-title {
@@ -49,26 +49,26 @@
 .header-title a {
   text-decoration: none;
   color: $color-black;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 .blue-box {
-  width: 2rem;
-  height: 2rem;
+  width: 4rem;
+  height: 4rem;
   background-color: blue;
   margin-top: 1.6rem;
-  margin-right: 1.2rem;
+  margin-right: 2.3rem;
 }
 .header-layout1_text a {
   text-decoration: none;
 }
 .header-layout1_text a h3 {
   color: $color-black;
-  font-size: 1.7rem;
+  font-size: 2.5rem;
   font-weight: 100;
 }
 .header-layout2 {
   position: absolute;
-  top: 10rem;
+  top: 15rem;
   height: 60rem;
   width: 90%;
   margin-left: 6rem;
@@ -154,7 +154,7 @@
 }
 .layout3 {
   position: absolute;
-  top: 33rem;
+  top: 46rem;
   width: 100%;
   height: 125rem;
   background-color: $color-Dark-beige;
@@ -189,7 +189,7 @@
 }
 .footer_end {
   position: absolute;
-  top: 158rem;
+  top: 172rem;
   width: 100%;
   height: 50rem;
   background-color: $color-white;
