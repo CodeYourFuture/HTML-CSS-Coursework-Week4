@@ -1,3 +1,17 @@
-/* Add your CSS here */
 
-/* Dont' forget to link this file to your HTML in the <head> */
+:root {
+ --black: #000;
+ --white: #fff;
+ --red-brown: #a05941;
+ --light-grey: #ededee;
+ --green-black: #133032;
+}
+
+
+body {
+ background-color: var(--light-grey);
+ color: var(--red-brown);
+ margin: 0;
+ font-size: 20px;
+ font-family: "Outfit", sans-serif;
+}
