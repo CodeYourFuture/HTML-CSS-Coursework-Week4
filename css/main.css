@@ -1,3 +1,13 @@
-/* Add your CSS here */
-
-/* Dont' forget to link this file to your HTML in the <head> */
+body{
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(
+      to top,
+      #fff 0%,
+      #fff 25%, 
+      #E6DACD 25%,
+      #E6DACD 80%,
+      #fff 80%,
+      #fff 100%  
+    );
+}
