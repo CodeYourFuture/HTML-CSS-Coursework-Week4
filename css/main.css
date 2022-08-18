@@ -5,6 +5,7 @@
 }
 
 body{
+  font-family: 'Quicksand', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -25,7 +26,6 @@ h1{
 
 .container p{
   font-size: 15px;
-  font-family: 'Quicksand', sans-serif;
   margin-left: 20px;
 }
 
@@ -47,19 +47,21 @@ h1{
 
 /* nav bar starts here*/
 .navbar{
-  /* grid-column: 1 / -1; */
-  /* grid-row: 1 / 1; */
+  grid-column: 1 / -1; 
+  grid-row: 1 / 1; 
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row;  */
   justify-content: space-between;
+  background-color: white;
   align-items: center;
-  width: auto;
+  /* width: auto; */
   border: 1px solid black;
   }
 
 .square {
     height: 20px;
     width: 20px;
+    margin-left: 20px;
     background-color: #0150FD;
     /* margin: 10px 0px 0px 20px; */
 }
@@ -87,7 +89,7 @@ h1{
   }
   
   .navbar-links li a:hover {
-  background-color: gray;
+    background-color: gray;
   }
 
 
@@ -125,7 +127,7 @@ h1{
       align-items: flex-start;
     }
 
-   /* .navbar-links ul{
+    .navbar-links ul{
       width: 100%;
       flex-direction: column;
     }
@@ -150,10 +152,10 @@ h1{
     height: 500px;
     margin:0px;
     padding-top: 12rem;
-    /* border: 1px solid black; 
-  }*/
+    /* border: 1px solid black; */
+  }
 
-  /*.hero{
+  .hero{
     grid-column: 3/4;
     grid-row: 1 / 1; 
     background-color: #F4ECE6;
@@ -163,7 +165,7 @@ h1{
     margin-top: 100px;
     text-align: center;
     border: 1px solid blue; 
-  }*/
+  }
   
 
   .image{
