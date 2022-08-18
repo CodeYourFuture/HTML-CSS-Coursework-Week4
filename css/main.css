@@ -8,8 +8,10 @@
   --royal-blue: #0150fd;
   --black: #000;
   --white: #fff;
-  --heading-fnt-siz: @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap");
-  --body-font: @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+  --heading-fnt-siz: @import
+    url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap");
+  --body-font: @import
+    url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
 }
 
 html {
@@ -32,9 +34,9 @@ body {
   width: 100%;
   display: grid;
   grid:
-    'h'
-    'm'
-    'f';
+    "h"
+    "m"
+    "f";
   margin: 2px;
 }
 
@@ -42,7 +44,8 @@ body {
 
 header {
   display: grid;
-  grid: "name name name"
+  grid:
+    "name name name"
     "nav nav nav";
   grid-area: h;
   justify-content: space-between;
@@ -86,7 +89,11 @@ nav a {
 main {
   grid-area: m;
   height: 700px;
-  background: linear-gradient(90deg, var(--bckgrnd-color) 50vw, var(--white) 50vw);
+  background: linear-gradient(
+    90deg,
+    var(--bckgrnd-color) 50vw,
+    var(--white) 50vw
+  );
 }
 
 .overview_section {
@@ -98,7 +105,6 @@ main {
   right: 15vw;
   bottom: 15vw;
   left: 15vw;
-
 }
 
 .profile_contianer {
@@ -132,7 +138,6 @@ main {
   background-color: var(--white);
 }
 
-
 .personal_introduction {
   width: 55%;
   display: flex;
@@ -142,13 +147,12 @@ main {
 }
 
 /* why first-child not working with out > ?*/
-.personal_introduction> :first-child {
+.personal_introduction > :first-child {
   font-size: 40px;
   margin: 0px;
-
 }
 
-.personal_introduction> :nth-child(2) {
+.personal_introduction > :nth-child(2) {
   font-size: 18px;
   margin: 0px;
 }
@@ -157,7 +161,6 @@ main {
   display: flex;
   gap: 4px;
   width: 100%;
-
 }
 
 .paragraph_container {
@@ -168,7 +171,6 @@ main {
 .btn {
   border-radius: 40px;
   padding: 5px 8px 5px 8px;
-
 }
 
 /* Resume button */
@@ -221,22 +223,60 @@ footer {
   margin: 0px;
 }
 
-.hover_effect :hover{
- box-shadow: -3px 3px green;
- background-color: lightsalmon;
- color:white;
- border-radius: 20px;
- padding: 10px;
+.hover_effect :hover {
+  box-shadow: -3px 3px green;
+  background-color: lightsalmon;
+  color: white;
+  border-radius: 20px;
+  padding: 10px;
 }
-
 
 .footer_links {
   display: flex;
   gap: 10px;
 }
 
-/* Tablet view */
-@media screen and (min-width:425px) {}
-
 /* laptop view */
-@media screen and (min-width:768px) {}
+@media screen and (min-width: 769px) {
+  /*------ Header---- */
+
+  header {
+    display: grid;
+    grid: "name name empty empty nav nav nav";
+    grid-area: h;
+    justify-content: space-between;
+    padding: 0px 20px 0px 20px;
+  }
+  /* general styling both bottons */
+  .btn {
+    border-radius: 40px;
+    font-size: larger;
+    padding: 5px 30px 5px 30px;
+    margin: 10px;
+  }
+
+  /* ----Footer----- */
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    grid-area: f;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .contacts_container {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    text-align: center;
+  }
+  .footer_links {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+}
+
+/* Wider Screen */
+@media screen and (min-width: 1025px) {
+}
