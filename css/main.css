@@ -39,10 +39,10 @@ header {
 }
 
 .header-cont-box > div {
+  margin-top: 10px;
+  background-color: var(--color-3);
   width: 16px;
   height: 16px;
-  background-color: var(--color-3);
-  margin-top: 10px;
 }
 
 .header-cont-name {
@@ -69,18 +69,6 @@ nav > ul {
 }
 
 /*HERO*/
-
-hero {
-  display: grid;
-  grid-template-columns: 40% 60%;
-  grid-template-areas:
-    "grid2-section1 grid2-section1"
-    "grid2-section2 grid2-section2";
-}
-
-.hero > div:nth-child(1) {
-  grid-area: grid2-section1;
-}
 
 .hero > div:nth-child(2) {
   grid-area: grid2-section2;
@@ -109,9 +97,9 @@ hero {
 
 .hero-cont-card-sec1 {
   grid-area: grid-details;
+  padding-top: 30px;
   background-color: var(--color-2);
   text-align: center;
-  padding-top: 30px;
   box-shadow: var(--shadow);
 }
 
@@ -123,16 +111,16 @@ hero {
 .card-divider {
   width: 68px;
   height: 3px;
-  background-color: var(--color-3);
   margin: 0 auto;
   margin-top: 17px;
+  background-color: var(--color-3);
 }
 
 .card-name {
+  padding-top: 10px;
   font-family: var(--font-1);
   font-size: 21px;
   line-height: 25px;
-  padding-top: 10px;
 }
 
 .card-role-cont {
@@ -141,8 +129,8 @@ hero {
 }
 
 .card-btn-cont {
-  padding: 40px 0px 40px 0px;
   display: flex;
+  padding: 40px 0px 40px 0px;
   justify-content: center;
 }
 
@@ -155,11 +143,11 @@ hero {
 }
 
 .hero-cont-card-sec1-social > ul {
-  list-style: none;
-  background-color: white;
   display: flex;
-  justify-content: space-evenly;
   padding: 10px 50px 10px 50px;
+  background-color: var(--color-5);
+  list-style: none;
+  justify-content: space-evenly;
 }
 
 .hero-cont-card-sec1 > div:last-child {
@@ -169,8 +157,8 @@ hero {
 
 .hero-cont-card-sec2 {
   grid-area: grid-text;
-  font-family: var(--font-1);
   padding: 30px 10px 30px 10px;
+  font-family: var(--font-1);
 }
 
 .hero-cont-card-sec2 > h1 {
@@ -178,30 +166,30 @@ hero {
 }
 
 .hero-cont-card-sec2 > h5 {
+  margin-top: 15px;
   font-family: var(--font-2);
   font-size: 19px;
-  margin-top: 15px;
 }
 
 .hero-cont-card-sec2 > p {
-  font-family: var(--font-2);
   margin-top: 20px;
+  font-family: var(--font-2);
 }
 
 .card-btn1 {
-  text-decoration: none;
-  background-color: var(--color-3);
-  color: white;
-  font-size: 15px;
-  font-family: var(--font-1);
   padding: 7px 25px 7px 25px;
   border-radius: 20px;
+  background-color: var(--color-3);
+  color: var(--color-5);
+  text-decoration: none;
+  font-size: 15px;
+  font-family: var(--font-1);
 }
 
 .card-btn2 {
   background-color: var(--color2);
-  color: black;
-  border: 1px solid black;
+  color: var(--color-4);
+  border: 1px solid var(--color-4);
 }
 
 /*FOOTER*/
@@ -231,17 +219,17 @@ footer {
 }
 
 .footer-social > ul {
-  list-style: none;
   display: flex;
-  justify-content: space-between;
   margin-top: 10px;
+  list-style: none;
+  justify-content: space-between;
 }
 
 .footer-text {
   grid-area: grid-text;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1100px) {
   /*HEADER*/
 
   header {
@@ -304,6 +292,23 @@ footer {
   }
 
   /*HERO*/
+
+  .hero {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas:
+      "grid2-section1 grid2-section1"
+      "grid2-section1 grid2-section1";
+  }
+
+  .hero > div:nth-child(1) {
+    grid-area: grid2-section1;
+  }
+
+  .hero > div:nth-child(2) {
+    grid-area: grid2-section2;
+    background-color: var(--color-1);
+  }
 
   .hero {
     grid-template-areas: "grid2-section2 grid2-section1";
