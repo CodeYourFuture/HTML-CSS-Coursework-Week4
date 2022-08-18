@@ -1,6 +1,9 @@
 /* Add your CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300&family=Nanum+Gothic&family=Sarabun:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300&family=Nanum+Gothic&family=Sarabun:wght@100&display=swap');
+
  * {
     padding: 0px;
     margin: 0px;
@@ -8,16 +11,12 @@
 body {
  
   }
-  h1 {
-    text-align: center;
-    letter-spacing: 1px;
-    word-spacing: 0.15em;
-    font-size: 3em;
-    line-height: 1.2;
-    transform: translateY(52%);
+  .text_nav1{
+    font-family: 'Frank Ruhl Libre', serif;
   }
-  
-  
+  .text_nav2{
+    font-family: 'Sarabun', sans-serif;
+  }
   #toggle {
     display: none;
   }
