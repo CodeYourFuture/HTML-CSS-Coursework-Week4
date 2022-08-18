@@ -195,7 +195,7 @@ body {
 
     }
     button{
-        padding: 5px;
+        padding: 10px;
         background-color: #F4ECE6;
         border-radius: 20px;
     }
@@ -205,9 +205,25 @@ body {
     }
     .underlin{
         color: #0150FD;
-        
       }
     .info_maya{
         background-color: #F4ECE6;
+    }
+    .icon_media{
+        border: 2px solid rgb(75, 75, 75);
+        display:flex;
+        height: auto;
+        justify-content: center;
+        background-color: white;
+        height: 20px;
+        justify-content: space-around;
+        margin-top: 30px;
+        
+    }
+    .icon{
+        width: 20px;
+        /* border: 2px solid black; */
+        height: 20px;
+       
     }
     
