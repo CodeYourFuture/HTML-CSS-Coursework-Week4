@@ -70,6 +70,32 @@ nav > ul {
 
 /*HERO*/
 
+hero {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-areas:
+    "grid2-section1 grid2-section1"
+    "grid2-section2 grid2-section2";
+}
+
+.hero > div:nth-child(1) {
+  grid-area: grid2-section1;
+}
+
+.hero > div:nth-child(2) {
+  grid-area: grid2-section2;
+  background-color: var(--color-1);
+}
+
+.hero-section-1 {
+  height: 200px;
+  position: relative;
+}
+
+.hero-section-2 {
+  height: 590px;
+}
+
 .hero-cont-card {
   display: grid;
   grid-template-areas:
@@ -94,6 +120,14 @@ nav > ul {
   border-radius: 100%;
 }
 
+.card-divider {
+  width: 68px;
+  height: 3px;
+  background-color: var(--color-3);
+  margin: 0 auto;
+  margin-top: 17px;
+}
+
 .card-name {
   font-family: var(--font-1);
   font-size: 21px;
@@ -113,7 +147,11 @@ nav > ul {
 }
 
 .card-btn-cont > a:nth-child(2) {
-  margin-left: 10px;
+  margin-left: 20px;
+}
+
+.hero-cont-card-sec2 .card-btn-cont {
+  display: none;
 }
 
 .hero-cont-card-sec1-social > ul {
@@ -127,6 +165,27 @@ nav > ul {
 .hero-cont-card-sec1 > div:last-child {
   height: 65px;
   background-color: var(--color-2);
+}
+
+.hero-cont-card-sec2 {
+  grid-area: grid-text;
+  font-family: var(--font-1);
+  padding: 30px 10px 30px 10px;
+}
+
+.hero-cont-card-sec2 > h1 {
+  font-size: 40px;
+}
+
+.hero-cont-card-sec2 > h5 {
+  font-family: var(--font-2);
+  font-size: 19px;
+  margin-top: 15px;
+}
+
+.hero-cont-card-sec2 > p {
+  font-family: var(--font-2);
+  margin-top: 20px;
 }
 
 .card-btn1 {
@@ -210,7 +269,7 @@ nav > ul {
   /*HERO*/
 
   .hero {
-    grid-template-areas: "grid-details grid-social";
+    grid-template-areas: "grid2-section2 grid2-section1";
   }
 
   .hero-section-1 {
@@ -218,7 +277,7 @@ nav > ul {
   }
 
   .hero-cont-card {
-    grid-template-areas: "grid-details grid-social";
+    grid-template-areas: "grid-details grid-text";
     width: 738px;
     left: auto;
     top: 116px;
@@ -239,6 +298,12 @@ nav > ul {
     padding-top: 24px;
   }
 
+  .card-divider {
+    margin-top: 24px;
+    width: 54px;
+    height: 2px;
+  }
+
   .hero-cont-card-sec1 .card-btn-cont {
     display: none;
   }
@@ -249,10 +314,6 @@ nav > ul {
     margin-top: 24px;
   }
 
-  .hero-cont-card-sec1 > div:last-child {
-    height: 45px;
-  }
-
   .hero-cont-card-sec1-social {
     margin-top: 43px;
   }
@@ -261,7 +322,32 @@ nav > ul {
     padding: 10px 91px 10px 91px;
   }
 
-  .person-card-s1 > div:last-child {
-    display: none;
+  .hero-cont-card-sec1 > div:last-child {
+    height: 25px;
+  }
+
+  .hero-cont-card-sec2 {
+    padding-left: 30px;
+  }
+
+  .hero-cont-card-sec2 > h1 {
+    font-size: 100px;
+  }
+
+  .hero-cont-card-sec2 > h5 {
+    font-size: 25px;
+    margin-top: 0px;
+  }
+
+  .hero-cont-card-sec2 .card-btn-cont {
+    display: block;
+  }
+
+  .hero-cont-card-sec2 > p:nth-child(4) {
+    margin-top: 0px;
+  }
+
+  .hero-section-2 {
+    height: 700px;
   }
 }
