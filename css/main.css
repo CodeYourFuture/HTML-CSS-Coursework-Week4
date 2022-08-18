@@ -52,7 +52,7 @@ header {
 }
 
 .blueBox_Name_and_JobTitle,
-.title_resumePage, .skill_and_language {
+.title_resumePage, .title_project_page, .skill_and_language {
   display: flex;
   grid-area: name;
   align-items: center;
@@ -253,7 +253,7 @@ footer {
 .subtitle_experience_and_download_btn {
   display: flex;
 }
-.main_resumepage {
+.main_resumepage, .project_page_main {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -270,7 +270,7 @@ footer {
   padding: 10px;
 }
 
-.sections_style {
+.sections_style, .projects_list {
   display: flex;
   background-color: var(--white);
   padding: 20px;
@@ -297,6 +297,25 @@ footer {
    display: flex;
   flex-direction: row;
   flex-wrap:wrap;
+}
+
+
+/* ----------PROJECTS PAGE-----MOBILE ------------------*/
+.project_page_intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 70vw;
+  align-items: center;
+  font-size: large;
+}
+.projects_list{
+  gap:10px;
+}
+
+.project_picture{
+  width: 40vw;
+ height: auto;
 }
 
 /* laptop view */
