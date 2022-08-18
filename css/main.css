@@ -9,6 +9,13 @@
     margin: 0px;
  }
 body {
+    background:linear-gradient(
+      to top,
+      #E6DACD 0%,
+      #E6DACD 50%,
+      #fff 50%,
+      #fff 100%  
+    );
     width: 390px;
     height: 844px;
     border: 2px solid black;
@@ -16,9 +23,23 @@ body {
  text-align: center;
 
   }
+ 
   /* header text */
-  .text_nav1{
+  .scouer{
+    /* padding: 2px; */
+    background-color: #0150FD;
+    width: 16px; 
+     height: 16px;
+     margin-top: 10px;
+  }
+  h1{
     font-family: 'Frank Ruhl Libre', serif;
+  }
+  .text_nav1{
+    display: flex;
+    font-family: 'Frank Ruhl Libre', serif;
+    
+    
   }
   .text_nav2{
     font-family: 'Sarabun', sans-serif;
@@ -26,13 +47,14 @@ body {
   #toggle {
     display: none;
   }
-  
+
+ 
   /**
     Hamburger
   **/
   .hamburger {
     position: absolute;
-    top: 5em;
+    top: 3em;
     right: 5%;
     margin-left: -2em;
     margin-top: -45px;
@@ -122,9 +144,14 @@ body {
   }
  /* CONTENER GRIDE */
  .contener{
+    width: 390px;
+    height: 844px;
+    border: 3px solid saddlebrown;
     display: grid;
-    grid-template-columns: 0.2fr 0.2fr;
-    grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr;
+    /* grid-template-columns: 0.2fr 0.2fr;
+    grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr; */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:repeat(4,auto) ;
     grid-template-areas:
     "header header header header"
     "info info info info"
@@ -145,13 +172,21 @@ body {
     width: 280px;
     height: 375.4px;
     border: 3px solid red;
+    margin-left: 50px;
+    box-shadow: 5px 10px 18px rgb(161, 159, 159);
  }
  .content_text{
     grid-area: content_text;
+    border: 2px solid rgb(229, 35, 148);
  }
  footer{
     grid-area: footer;
+    width: 320px;
+    height: 226px;
+    border: 2px solid darkgreen;
  }
+ 
+ 
     /* section  info  */
     img{
         border-radius: 50%;
@@ -159,6 +194,10 @@ body {
         height: 120px;
 
     }
+    .underlin{
+        color: #0150FD;
+        
+      }
     .info_maya{
         background-color: #F4ECE6;
     }
