@@ -11,11 +11,14 @@
   --color-5: #fff; /*White*/
   --font-1: "Poppins", sans-serif;
   --font-2: "Quicksand", sans-serif;
+  --shadow: -11.31px 11.31px 17px 0px rgba(138, 131, 124, 0.23);
 }
 
 body {
   display: grid;
 }
+
+/*HEADER*/
 
 header {
   display: grid;
@@ -65,7 +68,86 @@ nav > ul {
   display: none;
 }
 
+/*HERO*/
+
+.hero-cont-card {
+  display: grid;
+  grid-template-areas:
+    "grid-details"
+    "grid-text";
+  width: 90%;
+  margin: 0 auto;
+  position: absolute;
+  left: 25px;
+}
+
+.hero-cont-card-sec1 {
+  grid-area: grid-details;
+  background-color: var(--color-2);
+  text-align: center;
+  padding-top: 30px;
+  box-shadow: var(--shadow);
+}
+
+.hero-cont-card-sec1-details > img {
+  width: 120px;
+  border-radius: 100%;
+}
+
+.card-name {
+  font-family: var(--font-1);
+  font-size: 21px;
+  line-height: 25px;
+  padding-top: 10px;
+}
+
+.card-role-cont {
+  display: none;
+  font-family: var(--font-2);
+}
+
+.card-btn-cont {
+  padding: 40px 0px 40px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.card-btn-cont > a:nth-child(2) {
+  margin-left: 10px;
+}
+
+.hero-cont-card-sec1-social > ul {
+  list-style: none;
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 50px 10px 50px;
+}
+
+.hero-cont-card-sec1 > div:last-child {
+  height: 65px;
+  background-color: var(--color-2);
+}
+
+.card-btn1 {
+  text-decoration: none;
+  background-color: var(--color-3);
+  color: white;
+  font-size: 15px;
+  font-family: var(--font-1);
+  padding: 7px 25px 7px 25px;
+  border-radius: 20px;
+}
+
+.card-btn2 {
+  background-color: var(--color2);
+  color: black;
+  border: 1px solid black;
+}
+
 @media screen and (min-width: 900px) {
+  /*HEADER*/
+
   header {
     grid-template-columns: 1fr 1fr;
     padding: 30px 40px;
@@ -123,5 +205,63 @@ nav > ul {
   nav a:hover,
   .active {
     color: var(--color-3);
+  }
+
+  /*HERO*/
+
+  .hero {
+    grid-template-areas: "grid-details grid-social";
+  }
+
+  .hero-section-1 {
+    height: auto;
+  }
+
+  .hero-cont-card {
+    grid-template-areas: "grid-details grid-social";
+    width: 738px;
+    left: auto;
+    top: 116px;
+    right: 326px;
+  }
+
+  .hero-cont-card-sec1-details {
+    padding: 0px 60px 0px 60px;
+  }
+
+  .hero-cont-card-sec1-details > img {
+    width: 205px;
+  }
+
+  .card-name {
+    font-size: 27px;
+    line-height: 30px;
+    padding-top: 24px;
+  }
+
+  .hero-cont-card-sec1 .card-btn-cont {
+    display: none;
+  }
+
+  .card-role-cont {
+    display: block;
+    letter-spacing: 6px;
+    margin-top: 24px;
+  }
+
+  .hero-cont-card-sec1 > div:last-child {
+    height: 45px;
+  }
+
+  .hero-cont-card-sec1-social {
+    margin-top: 43px;
+  }
+
+  .hero-cont-card-sec1-social > ul {
+    padding: 10px 91px 10px 91px;
+  }
+
+  .person-card-s1 > div:last-child {
+    display: none;
   }
 }
