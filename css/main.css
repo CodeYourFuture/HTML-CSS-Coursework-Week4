@@ -1,3 +1,414 @@
-/* Add your CSS here */
+* {
+  margin: 0px;
+  padding: 0px;
+}
 
-/* Dont' forget to link this file to your HTML in the <head> */
+:root {
+  --color-1: #e6dacd; /*Dark beige*/
+  --color-2: #f4ece6; /*Light beige*/
+  --color-3: #0150fd; /*Royal blue:*/
+  --color-4: #000; /*Black*/
+  --color-5: #fff; /*White*/
+  --font-1: "Poppins", sans-serif;
+  --font-2: "Quicksand", sans-serif;
+  --shadow: -11.31px 11.31px 17px 0px rgba(138, 131, 124, 0.23);
+}
+
+body {
+  display: grid;
+}
+
+/*HEADER*/
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0px 20px;
+  margin-top: 20px;
+}
+
+.header-section {
+  display: grid;
+  grid-template-areas:
+    "box name name name"
+    "role role role role";
+}
+
+.header-cont-box {
+  grid-area: box;
+}
+
+.header-cont-box > div {
+  margin-top: 10px;
+  background-color: var(--color-3);
+  width: 16px;
+  height: 16px;
+}
+
+.header-cont-name {
+  grid-area: name;
+  font-family: var(--font-1);
+}
+
+.header-cont-text {
+  display: none;
+}
+
+.header-cont-role {
+  grid-area: role;
+  font-family: var(--font-2);
+}
+
+nav {
+  text-align: right;
+}
+
+nav > ul {
+  list-style: none;
+  display: none;
+}
+
+/*HERO*/
+
+.hero > div:nth-child(2) {
+  grid-area: grid2-section2;
+  background-color: var(--color-1);
+}
+
+.hero-section-1 {
+  height: 200px;
+  position: relative;
+}
+
+.hero-section-2 {
+  height: 590px;
+}
+
+.hero-cont-card {
+  display: grid;
+  grid-template-areas:
+    "grid-details"
+    "grid-text";
+  width: 90%;
+  margin: 0 auto;
+  position: absolute;
+  left: 25px;
+}
+
+.hero-cont-card-sec1 {
+  grid-area: grid-details;
+  padding-top: 30px;
+  background-color: var(--color-2);
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+
+.hero-cont-card-sec1-details > img {
+  width: 120px;
+  border-radius: 100%;
+}
+
+.card-divider {
+  width: 68px;
+  height: 3px;
+  margin: 0 auto;
+  margin-top: 17px;
+  background-color: var(--color-3);
+}
+
+.card-name {
+  padding-top: 10px;
+  font-family: var(--font-1);
+  font-size: 21px;
+  line-height: 25px;
+}
+
+.card-role-cont {
+  display: none;
+  font-family: var(--font-2);
+}
+
+.card-btn-cont {
+  display: flex;
+  padding: 40px 0px 40px 0px;
+  justify-content: center;
+}
+
+.card-btn-cont > a:nth-child(2) {
+  margin-left: 20px;
+}
+
+.hero-cont-card-sec2 .card-btn-cont {
+  display: none;
+}
+
+.hero-cont-card-sec1-social > ul {
+  display: flex;
+  padding: 10px 50px 10px 50px;
+  background-color: var(--color-5);
+  list-style: none;
+  justify-content: space-evenly;
+}
+
+.hero-cont-card-sec1 > div:last-child {
+  height: 65px;
+  background-color: var(--color-2);
+}
+
+.hero-cont-card-sec2 {
+  grid-area: grid-text;
+  padding: 30px 10px 30px 10px;
+  font-family: var(--font-1);
+}
+
+.hero-cont-card-sec2 > h1 {
+  font-size: 40px;
+}
+
+.hero-cont-card-sec2 > h5 {
+  margin-top: 15px;
+  font-family: var(--font-2);
+  font-size: 19px;
+}
+
+.hero-cont-card-sec2 > p {
+  margin-top: 20px;
+  font-family: var(--font-2);
+}
+
+.card-btn1 {
+  padding: 7px 25px 7px 25px;
+  border-radius: 20px;
+  background-color: var(--color-3);
+  color: var(--color-5);
+  text-decoration: none;
+  font-size: 15px;
+  font-family: var(--font-1);
+}
+
+.card-btn2 {
+  background-color: var(--color2);
+  color: var(--color-4);
+  border: 1px solid var(--color-4);
+}
+
+/*FOOTER*/
+footer {
+  display: grid;
+  grid-template-areas:
+    "grid-call grid-write"
+    "grid-follow ."
+    "grid-text grid-text";
+  gap: 20px;
+  padding: 20px;
+  font-family: var(--font-2);
+}
+
+.footer-call {
+  grid-area: grid-call;
+  line-height: 30px;
+}
+
+.footer-write {
+  grid-area: grid-write;
+  line-height: 30px;
+}
+
+.footer-follow {
+  grid-area: grid-follow;
+}
+
+.footer-social > ul {
+  display: flex;
+  margin-top: 10px;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.footer-text {
+  grid-area: grid-text;
+}
+
+@media screen and (min-width: 1100px) {
+  /*HEADER*/
+
+  header {
+    grid-template-columns: 1fr 1fr;
+    padding: 30px 40px;
+    margin: 0px;
+  }
+
+  .header-section {
+    width: fit-content;
+    grid-template-areas: "box name text role";
+  }
+
+  .header-cont-box {
+    padding: 3px 10px 0px 0px;
+  }
+
+  .header-cont-name {
+    padding: 3px 10px 0px 0px;
+  }
+
+  .header-cont-text {
+    display: block;
+    padding: 16px 10px 0px 0px;
+  }
+
+  .header-cont-role {
+    padding: 13px 10px 0px 0px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  nav {
+    height: 100%;
+  }
+
+  nav > ul {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  nav > ul > li {
+    margin-left: 20px;
+  }
+
+  nav a {
+    text-decoration: none;
+    font-family: var(--font-2);
+    color: var(--color-4);
+    font-size: 13px;
+  }
+
+  nav a:hover,
+  .active {
+    color: var(--color-3);
+  }
+
+  /*HERO*/
+
+  .hero {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas:
+      "grid2-section1 grid2-section1"
+      "grid2-section1 grid2-section1";
+  }
+
+  .hero > div:nth-child(1) {
+    grid-area: grid2-section1;
+  }
+
+  .hero > div:nth-child(2) {
+    grid-area: grid2-section2;
+    background-color: var(--color-1);
+  }
+
+  .hero {
+    grid-template-areas: "grid2-section2 grid2-section1";
+  }
+
+  .hero-section-1 {
+    height: auto;
+  }
+
+  .hero-cont-card {
+    grid-template-areas: "grid-details grid-text";
+    width: 738px;
+    left: auto;
+    top: 116px;
+    right: 326px;
+  }
+
+  .hero-cont-card-sec1-details {
+    padding: 0px 60px 0px 60px;
+  }
+
+  .hero-cont-card-sec1-details > img {
+    width: 205px;
+  }
+
+  .card-name {
+    font-size: 27px;
+    line-height: 30px;
+    padding-top: 24px;
+  }
+
+  .card-divider {
+    margin-top: 24px;
+    width: 54px;
+    height: 2px;
+  }
+
+  .hero-cont-card-sec1 .card-btn-cont {
+    display: none;
+  }
+
+  .card-role-cont {
+    display: block;
+    letter-spacing: 6px;
+    margin-top: 24px;
+  }
+
+  .hero-cont-card-sec1-social {
+    margin-top: 43px;
+  }
+
+  .hero-cont-card-sec1-social > ul {
+    padding: 10px 91px 10px 91px;
+  }
+
+  .hero-cont-card-sec1 > div:last-child {
+    height: 25px;
+  }
+
+  .hero-cont-card-sec2 {
+    padding-left: 30px;
+  }
+
+  .hero-cont-card-sec2 > h1 {
+    font-size: 100px;
+  }
+
+  .hero-cont-card-sec2 > h5 {
+    font-size: 25px;
+    margin-top: 0px;
+  }
+
+  .hero-cont-card-sec2 .card-btn-cont {
+    display: block;
+  }
+
+  .hero-cont-card-sec2 > p:nth-child(4) {
+    margin-top: 0px;
+  }
+
+  .hero-section-2 {
+    height: 700px;
+  }
+
+  /*FOOTER*/
+  footer {
+    grid-template-columns: 1fr 150px 150px 150px;
+    grid-template-areas: "grid-text grid-call grid-write grid-follow";
+    padding: 40px;
+  }
+
+  .footer-call {
+    text-align: center;
+  }
+
+  .footer-write {
+    text-align: center;
+  }
+
+  .footer-follow {
+    text-align: center;
+  }
+}
