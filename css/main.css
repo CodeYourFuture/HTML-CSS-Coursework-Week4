@@ -293,8 +293,154 @@ position: absolute;
   -o-transform: rotate(17deg);
   transform: rotate(17deg);
 }
+/* =================== footer =================== */
+footer {
+  background-color: var(--clr-Dark-Green);
+  color: var(--clr-White);
+  padding: 0 1em 2em;
+  
+}
+
+footer li {
+  list-style: none;margin-bottom: 1em;
+}
+
+footer a {
+  color: var(--clr-White);
+text-decoration: none;
+font-size: 1.2rem;
+
+}
+
+footer h4 {
+  font-size: 1.8rem;
+  margin-bottom: 1.4em;
+}
+
+.footer-grid {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: auto;
+}
+
+.footer-grid div:nth-child(2) {
+justify-self: end;
+}
+.footer-grid div:nth-child(3) {
+  margin-top: 4em;
+grid-column: 1 / -1;
+}
+
+form div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.email-input {
+  flex-direction: column;
+  gap: 1em;
+}
+
+.email-input label {
+font-size: 1.2rem;
+}
+
+.email-input input {
+background-color: transparent;
+border: none;
+border-bottom: 3px solid var(--clr-White);
+width: 12em;
+}
+
+form button {
+    border: 3px solid var(--clr-White);
+  display: inline-block;
+  width: 9em;
+  background-color: transparent;
+  font-size: 1.1rem;
+  padding: 18px 0;
+  color: var(--clr-White);
+  cursor: pointer;
+}
+
+.footer-logo  {
+  grid-column: 1 / -1;
+  margin-top: 5em;
+
+}
+
+.footer-logo a {
+  font-size: 1.8rem;
+  text-decoration: underline;
+}
+
+.footer-logo div {
+  margin: 2em 0;
+  position: relative;
+  border-radius: 50%;
+  width: 5em;
+  height: 5em;
+  justify-self: start;
+  border: 3px solid var(--clr-White);
+}
+
+.footer-logo div p:first-child {
+position: absolute;
+top: -8px;
+left: 20px;
+font-weight: 800;
+}
+
+.footer-logo div p:last-child {
+position: absolute;
+top: 22px;
+left: 42px;
+font-weight: 800;
+}
+
+[href="wix.com"] {
+  text-decoration: underline;
+}
+@media screen and (min-width: 900px) {
+  footer {
+    padding: 3em !important;
+  }
+
+.footer-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
 
 
+  .footer-grid div:nth-child(1) {
+  margin-top: 4em;
+grid-column: 1 / 2;
+}
+.footer-grid div:nth-child(2) {
+  margin-top: 4em;
+grid-column: 2 / 3;
+}
+.footer-grid div:nth-child(3) {
+  margin-top: 4em;
+grid-column: 3 / 4;
+}
+.footer-grid div:nth-child(4) {
+  margin-top: 4em;
+grid-column: 4 / 5 ;
+}
+
+
+
+@media screen and (min-width: 700px) {
+  footer {
+    padding: 6em;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  main {
+    display: none;
+  }
+}
 /* @media screen and (min-width: 600px) {
   body {
     /* background-color: #e6fac0; */
