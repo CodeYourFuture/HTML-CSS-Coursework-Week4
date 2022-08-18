@@ -162,7 +162,6 @@ body {
  .text_area_nav{
  grid-area: header;
  text-align: left;
- border: 3px solid rgb(117, 72, 240);
  width: 320px;
  height: 90.79px;
  }
@@ -171,19 +170,19 @@ body {
     grid-area: info;
     width: 280px;
     height: 375.4px;
-    border: 3px solid red;
     margin-left: 50px;
-    box-shadow: 5px 10px 18px rgb(161, 159, 159);
+    box-shadow: 5px 10px 10px 8px rgb(161, 159, 159);
  }
  .content_text{
+    margin-top: 25px;
     grid-area: content_text;
-    border: 2px solid rgb(229, 35, 148);
+    /* border: 2px solid rgb(229, 35, 148); */
  }
  footer{
     grid-area: footer;
     width: 320px;
     height: 226px;
-    border: 2px solid darkgreen;
+    /* border: 2px solid darkgreen; */
  }
  
  
@@ -192,6 +191,7 @@ body {
         border-radius: 50%;
         width:120px;
         height: 120px;
+        margin-top: 20px;
 
     }
     button{
@@ -210,20 +210,20 @@ body {
         background-color: #F4ECE6;
     }
     .icon_media{
-        border: 2px solid rgb(75, 75, 75);
+        border: 2px solid rgb(120, 119, 119);
         display:flex;
         height: auto;
         justify-content: center;
         background-color: white;
-        height: 20px;
+        height: 30px;
         justify-content: space-around;
         margin-top: 30px;
         
+        
     }
     .icon{
-        width: 20px;
-        /* border: 2px solid black; */
-        height: 20px;
-       
+        margin: 0;
+        width: 30px;
+        height: 30px;    
     }
     
