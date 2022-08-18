@@ -115,6 +115,8 @@ main {
   background-color: var(--light-being);
   align-items: center;
   padding-top: 40px;
+  border-radius: 10px;
+  box-shadow: -5px 5px 10px 0.2px gray;
 }
 
 .profile_contianer :nth-child(2) {
@@ -279,4 +281,81 @@ footer {
 
 /* Wider Screen */
 @media screen and (min-width: 1025px) {
+
+  .overview_section {
+  display: flex;
+  height: 60%;
+  width: 80vw;
+  position: relative;
+  top: 100px;
+  left: 20vw;
+}
+
+.profile_contianer {
+  width: 30vw;
+  height: 500px;
+  margin-left: 200px;
+}
+
+.profile_contianer :nth-child(2) {
+  font-weight: bolder;
+  font-size: xx-large;
+  text-align: center;
+}
+
+
+.overview_section_followLinks {
+  display: flex;
+  width: 100%;
+  gap: 30px;
+  justify-content: center;
+  background-color: var(--white);
+}
+
+.personal_introduction {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 20px;
+  align-items: left;
+}
+
+/* why first-child not working with out > ?*/
+.personal_introduction > :first-child {
+  font-size: 5vw;
+  margin: 0px;
+}
+
+.personal_introduction > :nth-child(2) {
+  font-size: 2vw;
+  margin: 0px;
+}
+
+.personal_introduction > :nth-child(4) {
+  font-size: 30px;
+  margin: 0px;
+  padding-right: 20px;
+}
+
+/* general styling both bottons */
+.btn {
+  border-radius: 40px;
+  padding: 5px 30px 5px 30px;
+}
+
+/* Resume button */
+.resume_btn {
+  background-color: blue;
+  color: var(--white);
+  font-size: 30px;
+}
+
+/* Projects Button */
+.projects_btn {
+  background-color: var(--white);
+  color: var(--black);
+  font-size: 30px;
+}
+
 }
