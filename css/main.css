@@ -1,3 +1,127 @@
-/* Add your CSS here */
+* {
+  margin: 0px;
+  padding: 0px;
+}
 
-/* Dont' forget to link this file to your HTML in the <head> */
+:root {
+  --color-1: #e6dacd; /*Dark beige*/
+  --color-2: #f4ece6; /*Light beige*/
+  --color-3: #0150fd; /*Royal blue:*/
+  --color-4: #000; /*Black*/
+  --color-5: #fff; /*White*/
+  --font-1: "Poppins", sans-serif;
+  --font-2: "Quicksand", sans-serif;
+}
+
+body {
+  display: grid;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0px 20px;
+  margin-top: 20px;
+}
+
+.header-section {
+  display: grid;
+  grid-template-areas:
+    "box name name name"
+    "role role role role";
+}
+
+.header-cont-box {
+  grid-area: box;
+}
+
+.header-cont-box > div {
+  width: 16px;
+  height: 16px;
+  background-color: var(--color-3);
+  margin-top: 10px;
+}
+
+.header-cont-name {
+  grid-area: name;
+  font-family: var(--font-1);
+}
+
+.header-cont-text {
+  display: none;
+}
+
+.header-cont-role {
+  grid-area: role;
+  font-family: var(--font-2);
+}
+
+nav {
+  text-align: right;
+}
+
+nav > ul {
+  list-style: none;
+  display: none;
+}
+
+@media screen and (min-width: 900px) {
+  header {
+    grid-template-columns: 1fr 1fr;
+    padding: 30px 40px;
+    margin: 0px;
+  }
+
+  .header-section {
+    width: fit-content;
+    grid-template-areas: "box name text role";
+  }
+
+  .header-cont-box {
+    padding: 3px 10px 0px 0px;
+  }
+
+  .header-cont-name {
+    padding: 3px 10px 0px 0px;
+  }
+
+  .header-cont-text {
+    display: block;
+    padding: 16px 10px 0px 0px;
+  }
+
+  .header-cont-role {
+    padding: 13px 10px 0px 0px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  nav {
+    height: 100%;
+  }
+
+  nav > ul {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  nav > ul > li {
+    margin-left: 20px;
+  }
+
+  nav a {
+    text-decoration: none;
+    font-family: var(--font-2);
+    color: var(--color-4);
+    font-size: 13px;
+  }
+
+  nav a:hover,
+  .active {
+    color: var(--color-3);
+  }
+}
