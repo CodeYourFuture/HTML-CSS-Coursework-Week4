@@ -113,7 +113,7 @@
       .container{
         display: flex;
         flex-direction: column;
-        /* justify-content: space-between; */
+        justify-content: space-between; 
       }
 
       .square2{
@@ -131,22 +131,23 @@
 
       
 
-      .div1{
+      .main-div{
         background-color: white;
         margin: 20px 20px 30px 20px;
         padding: 20px;
         /* border: 1px solid salmon; */
       }
 
+     .imgs{
+        width: 100%;
+        height: auto;
+      }
+
       h3{
         margin-left: 20px;
       }
 
-      .div1 h3{
-        margin: 0px;
-      }
-
-      h4{
+      .sub-div h4{
         color: #0150FD;
       }
 
