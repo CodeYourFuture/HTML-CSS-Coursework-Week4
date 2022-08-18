@@ -128,8 +128,10 @@
         margin: auto;
         font-family: 'Poppins', sans-serif;
       }
-
-      
+    
+     .container p{
+        margin-left: 20px;
+     }
 
       .main-div{
         background-color: white;
