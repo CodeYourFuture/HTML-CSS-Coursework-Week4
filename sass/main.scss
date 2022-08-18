@@ -69,7 +69,7 @@
 .header-layout2 {
   position: absolute;
   top: 15rem;
-  height: 63rem;
+  height: 69rem;
   width: 90%;
   margin-left: 6rem;
   background-color: $color-Light-beige;
@@ -93,40 +93,42 @@
 }
 .name-girl {
   width: 3rem;
-  font-size: 2.2rem;
-  margin: auto;
+  font-size: 3rem;
+  margin: 3rem auto;
   color: $color-black;
 }
 .name-girl::after {
   content: "";
   display: table;
-  border-bottom: solid 2px blue;
-  width: 11rem;
-  margin-top: 2rem;
+  border-bottom: solid 2.5px blue;
+  width: 15rem;
+  margin-top: 2.5rem;
 }
 .name-girl h2 {
   line-height: 4.5rem;
 }
 .buttom {
   text-align: center;
-  margin-top: 5rem;
+  margin-top: 6rem;
   text-align: center;
 }
 .buttom a {
+  display: inline-block;
   text-decoration: none;
-  margin-top: 10rem;
-  padding: 2rem 4rem;
+  padding: 0.8rem 5rem;
+  width: 22rem;
   border: solid 1.5px $color-black;
   border-radius: 4rem;
   color: $color-black;
 }
 .buttom a span {
-  font-size: 2rem;
-  font-weight: 600;
+  display: inline-block;
+  font-size: 2.5rem;
+  font-weight: 700;
   text-align: center;
 }
 .projects {
-  margin-left: 5rem;
+  margin-left: 3rem;
 }
 .resume {
   background-color: blue;
