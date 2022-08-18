@@ -9,8 +9,14 @@
     margin: 0px;
  }
 body {
- 
+    width: 390px;
+    height: 844px;
+    border: 2px solid black;
+ align-content: center;
+ text-align: center;
+
   }
+  /* header text */
   .text_nav1{
     font-family: 'Frank Ruhl Libre', serif;
   }
@@ -114,3 +120,46 @@ body {
     top: 0;
     transform: scale(1);
   }
+ /* CONTENER GRIDE */
+ .contener{
+    display: grid;
+    grid-template-columns: 0.2fr 0.2fr;
+    grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr;
+    grid-template-areas:
+    "header header header header"
+    "info info info info"
+    "content_text content_text content_text content_text"
+    "footer footer footer footer"
+    ;
+ }
+ .text_area_nav{
+ grid-area: header;
+ text-align: left;
+ border: 3px solid rgb(117, 72, 240);
+ width: 320px;
+ height: 90.79px;
+ }
+ 
+ .info_maya{
+    grid-area: info;
+    width: 280px;
+    height: 375.4px;
+    border: 3px solid red;
+ }
+ .content_text{
+    grid-area: content_text;
+ }
+ footer{
+    grid-area: footer;
+ }
+    /* section  info  */
+    img{
+        border-radius: 50%;
+        width:120px;
+        height: 120px;
+
+    }
+    .info_maya{
+        background-color: #F4ECE6;
+    }
+    
