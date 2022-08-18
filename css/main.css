@@ -497,7 +497,7 @@ form button {
 
   .intro-grid-container {
     display: grid;
-    grid-template-columns: 300px 300px 300px;
+    grid-template-columns: repeat(3, minmax(300px, 27vw));
     align-content: center;
     justify-content: center;
     text-align: left;
@@ -601,5 +601,41 @@ form button {
     position: absolute;
     left: 68vw;
     top: 170px;
+  }
+}
+
+/* //////////////// store page ///////////// */
+.store {
+  background-color: var(--clr-Light-Green);
+}
+.items-container > div {
+  display: flex;
+  width: 100%;
+  border: 1px solid var(--clr-Black);
+  margin-bottom: 26px;
+  line-height: 0.1em;
+  padding: 40px 20px 0;
+}
+
+.store h1 {
+  padding: 1em 0.6em 1em;
+  font-size: 2.8rem;
+}
+
+.items-container img {
+  width: 100px;
+  height: 100px;
+}
+
+.items-container p {
+  margin-top: 0.9em;
+  line-height: 1.2em;
+}
+
+@media screen and (min-width: 900px) {
+  .items-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1em;
   }
 }
