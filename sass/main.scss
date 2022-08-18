@@ -23,6 +23,7 @@
 
 // @import "pages/home";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Roboto:ital,wght@0,500;0,700;1,300;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Roboto:ital,wght@0,500;0,700;1,300;1,500&display=swap");
 
 .header {
   position: relative;
@@ -82,6 +83,65 @@
   // box-shadow: -2px 5px 40px -2px $color-black;
   z-index: 1;
 }
+
+.img {
+  margin-top: 4rem;
+  text-align: center;
+}
+.img img {
+  width: 20rem;
+  height: 20rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.name-girl-raper {
+  margin-top: 2rem;
+  text-align: center;
+}
+.name-girl {
+  width: 3rem;
+  font-size: 2.2rem;
+  margin: auto;
+  color: $color-black;
+}
+.name-girl::after {
+  content: "";
+  display: table;
+  border-bottom: solid 2px blue;
+  width: 11rem;
+  margin-top: 2rem;
+}
+.name-girl h2 {
+  line-height: 4.5rem;
+}
+.buttom {
+  text-align: center;
+  margin-top: 5rem;
+  text-align: center;
+}
+.buttom a {
+  text-decoration: none;
+  margin-top: 10rem;
+  padding: 2rem 4rem;
+  border: solid 1.5px $color-black;
+  border-radius: 4rem;
+  color: $color-black;
+}
+.buttom a span {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+.projects {
+  margin-left: 5rem;
+}
+.resume {
+  background-color: blue;
+  color: $color-white;
+  span {
+    color: $color-white;
+  }
+}
 .header-layout2_footer__raper {
   margin-top: 7rem;
 }
@@ -91,16 +151,57 @@
   background-color: $color-white;
   text-align: center;
 }
+.header-layout2_footer img {
+  display: inline-block;
+  text-align: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-left: 2.5rem;
+  margin-top: 1.2rem;
+}
+.layout3_raper {
+  // margin-top: 45rem;
+  text-align: justify;
+  margin: 45rem 5rem;
+  font-family: sans-serif;
+  // font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  color: $color-black;
+  .layout3_title {
+    font-size: 8rem;
+    font-weight: 700;
+  }
+  .layout3-sub_title {
+    margin-top: 1.7rem;
+    font-size: 4rem;
+    font-weight: 700;
+    color: rgb(77, 76, 76);
+  }
+  .layout3-text_1 {
+    margin-top: 4rem;
+    font-size: 3rem;
+    // font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: rgb(114, 112, 112);
+  }
+}
+.footer {
+  width: 100%;
+  background-color: antiquewhite;
+}
 
 @media screen and (max-width: 650px) {
   .header-layout1 {
     width: 100%;
   }
   .header-layout2 {
-    height: 40rem;
+    height: 60rem;
   }
   .layout3 {
-    height: 80rem;
+    height: 120rem;
+  }
+  .footer {
+    height: 60rem;
   }
 }
 
