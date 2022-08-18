@@ -116,8 +116,17 @@
         justify-content: space-between; 
       }
 
+      
+      .title-info{
+        /* display: inline-block; */
+        margin-left: auto;
+        margin-right: auto; 
+      }
+
       .title{
-        display: inline-block;
+         display: inline-block;
+         margin-left: 10px;
+         font-family: 'Poppins', sans-serif;
       }
 
 
