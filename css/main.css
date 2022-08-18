@@ -17,6 +17,9 @@ body{
     margin: 4px;
 }
 
+.nav_all{
+    grid-area: ln;
+}
 .burger{
     grid-area: rn;
 }
