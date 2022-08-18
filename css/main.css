@@ -16,3 +16,17 @@ body{
     
     margin: 4px;
 }
+
+.burger{
+    grid-area: rn;
+}
+.main_all{
+    grid-area: m;
+}
+.sec{
+    grid-area: s;
+}
+
+.footer{
+    grid-area: f;
+}
