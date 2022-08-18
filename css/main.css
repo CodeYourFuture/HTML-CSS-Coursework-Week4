@@ -12,13 +12,13 @@ body {
     background:linear-gradient(
       to top,
       #E6DACD 0%,
-      #E6DACD 50%,
-      #fff 50%,
+      #E6DACD 60%,
+      #fff 60%,
       #fff 100%  
     );
     width: 390px;
     height: 844px;
-    border: 2px solid black;
+  
  align-content: center;
  text-align: center;
 
@@ -32,7 +32,7 @@ body {
      height: 16px;
      margin-top: 10px;
   }
-  h1{
+  .h1_1{
     font-family: 'Frank Ruhl Libre', serif;
   }
   .text_nav1{
@@ -68,7 +68,7 @@ body {
     width: 3em;
     height: 7px;
     border-radius: 3px;
-    background-color: #000000;
+    background-color:rgb(74, 74, 248);
     margin-top: 8px;
     transition: all 0.3s ease-in-out;
   }
@@ -81,6 +81,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: #F4ECE6;
+   
     top: -100%; left: 0; right: 0; bottom: 0;
     overflow: hidden;
     transition: all 0.3s ease-in-out;
@@ -91,10 +92,12 @@ body {
     overflow: hidden;
     overflow-y: auto;
     height: 100%;
+    
   }
   nav {
     text-align: left;
     margin-left: 25%;
+    
   }
   nav a {
     position: relative;
@@ -125,6 +128,17 @@ body {
   /**
   Animations
   **/
+  .top-bun{
+   
+    width: 20px;
+  }
+  .meat{
+    width: 40px;
+  }
+  .bottom-bun{
+    width: 20px;
+  }
+  
   #toggle:checked + .hamburger .top-bun {
     transform: rotate(-45deg);
     margin-top: 25px;
@@ -146,7 +160,7 @@ body {
  .contener{
     width: 390px;
     height: 844px;
-    border: 3px solid saddlebrown;
+  
     display: grid;
     /* grid-template-columns: 0.2fr 0.2fr;
     grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr; */
@@ -173,16 +187,63 @@ body {
     margin-left: 50px;
     box-shadow: 5px 10px 10px 8px rgb(161, 159, 159);
  }
+ /* content area */
  .content_text{
     margin-top: 25px;
     grid-area: content_text;
+    /* font-family: 'Frank Ruhl Libre', serif;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Sarabun', sans-serif; */
     /* border: 2px solid rgb(229, 35, 148); */
  }
+ .h1_2{
+  padding-left: 20px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 40px;
+  font-family: 'Nanum Gothic', sans-serif;
+ }
+ .h2_1{
+  padding-left: 20px;
+  text-align: left;
+  font-size:20px ;
+  font-family: 'Nanum Gothic', sans-serif;
+ }
+ p{
+  /* border: 2px solid black; */
+  padding-left: 20px;
+  text-align: left;
+  font-family: 'Sarabun', sans-serif;
+ }
+  /* footer area */
  footer{
+  background-color: white;
+
     grid-area: footer;
-    width: 320px;
-    height: 226px;
+    width: 385px;
+    height: 150px;
     /* border: 2px solid darkgreen; */
+    display: flex;
+    flex-direction: column;
+    
+ }
+ .footer_1{
+  display: flex;
+  justify-content: space-around;
+  justify-content: start;
+  padding-bottom: 10px;
+ }
+ .footer_icon{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+ }
+ .icon_f{
+  display: flex;
+  padding-left: 10px;
+  text-align: left;
+  
  }
  
  
@@ -210,7 +271,7 @@ body {
         background-color: #F4ECE6;
     }
     .icon_media{
-        border: 2px solid rgb(120, 119, 119);
+       
         display:flex;
         height: auto;
         justify-content: center;
