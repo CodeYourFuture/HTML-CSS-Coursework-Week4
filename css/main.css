@@ -467,6 +467,7 @@ display: none;
   /* **Footer** */ 
 }
 /* ^^^^^^^Mobile Media^^^^^^^ */
+/* ^^^^^^^Desktop Media^^^^^^^ */
 @media only screen and (min-width: 900px) {
   body {
     margin: auto;
@@ -582,8 +583,11 @@ main {
 footer {
   padding: 10px 10px;
   display: grid;
+  justify-items: center;
+  align-items: baseline;
+
   grid-template-columns: repeat(12,1fr);
-  grid-template-rows: 100px;
+  grid-template-rows: 60px;
   grid-template-areas: 
   " copy copy copy . . . text1 text1 text2 text2 text3 text3";
 
@@ -611,6 +615,7 @@ div > h4 {
 div > h5 {
   font-family: var(--normal-font);
   font-size: 13px;
+  margin-top: 20px;
 }
 
 .copyright {
