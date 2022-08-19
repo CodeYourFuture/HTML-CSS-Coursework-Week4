@@ -2,11 +2,26 @@
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 1.2fr 0.5fr;
     grid-template-areas:
-        ". . ."
-        ". . ."
-        ". . ."
+        "n n hu"
+        "ma ma ma"
+        "f f f"
     ;
 
+}
+.navbar{
+    grid-area: n;
+}
+
+.humborger{
+    grid-area: hu;
+}
+
+.main_all{
+    grid-area: ma;
+}
+
+.footer_all{
+    grid-area: f;
 }
