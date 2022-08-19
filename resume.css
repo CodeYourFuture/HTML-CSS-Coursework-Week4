@@ -166,7 +166,8 @@
     font-size: 20px;
     height: 35px;
     color: white;
-    margin-top: 15px;   
+    margin-top: 15px;
+    border: none;   
 }
 
 .card_1{
@@ -188,6 +189,54 @@
 
 .co_loc{
     margin-top: -18px;
+}
+
+.card_2{
+    background-color: white;
+    width: 280px;
+    margin-left: 23px;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 21px;
+    
+}
+.p_17{
+    color: #0150FD;
+    font-weight: bold;
+    font-size: ;
+}
+
+
+
+.co_na_2{
+    margin-top: -20px;
+}
+
+/* ######### */
+
+.card_3{
+    background-color: white;
+    width: 280px;
+    margin-left: 23px;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 21px;
+    
+}
+.p_15{
+    color: #0150FD;
+    font-weight: bold;
+    font-size: ;
+}
+
+
+
+.un_loc{
+    margin-top: -20px;
+}
+
+.edu{
+
 }
 
 
