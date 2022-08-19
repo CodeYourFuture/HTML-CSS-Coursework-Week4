@@ -212,6 +212,11 @@
     margin-top: -20px;
 }
 
+.edu{
+    margin-left: 25px;
+    padding: 10px;
+}
+
 /* ######### */
 
 .card_3{
@@ -250,6 +255,25 @@
     color: #0150FD;
     font-weight: bold;
     font-size: ;
+}
+
+/* card 5 */
+
+.card_5{
+    background-color: white;
+    width: 280px;
+    margin-left: 23px;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 21px;
+    
+}
+
+.skilks {
+    margin-left: 18px;
+    margin-top: -20px;
+    padding-left: 4px;
+    font-weight: 5px;
 }
 
 /* .title_1{
@@ -302,3 +326,5 @@
     width: 385px;
     height: 250px;
 }
+
+
