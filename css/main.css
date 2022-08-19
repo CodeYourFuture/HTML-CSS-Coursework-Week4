@@ -60,10 +60,27 @@ color: #333333;
 
 /* footer page */
 
-.contain {
-    flex-direction: column;
-
+.mainfoot {
+    display: grid;
+    padding: 10px;
+    margin: 35px;
+    grid-template-columns: 10% 40% auto auto auto;
+    grid-template-rows: auto;
+    
+    }
+.wix {
+    grid-column: 1/2;
+   
 }
-/* .call {
-    grid-column: 9/12;
-}  */
+.call {
+    grid-column: 3/4;
+    
+}
+.write {
+    grid-column: 4/5;
+    
+}
+.follow {
+    grid-column: 5/6;
+    
+}
