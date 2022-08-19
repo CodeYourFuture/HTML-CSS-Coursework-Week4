@@ -68,6 +68,25 @@ body {
     /* justify-self: end; */
   }
 
+  .headerLinks{
+    display: none;
+    grid-column: 3/5;
+    /* grid-row: 2/3; */
+    justify-self: right;
+
+
+  }
+
+  .headerList{
+    display: none;
+ padding: 20px;
+ margin-right: 25px;
+
+  }
+
+
+
+
   /* ADDING CARD IN THE MIDDLE OF THE PAGE*/
 
   .card {
@@ -263,8 +282,10 @@ body {
 
 /* DESKTOP LAYOUT STARTS HERE */
 
+
+
 .header {
-    position: relative;
+    /* position: relative; */
 
     z-index: -1;
 
@@ -348,6 +369,7 @@ body {
     grid-template-columns: 10% auto 10%;
     grid-template-rows: auto auto auto auto auto;
   }
+
   .cardImage {
     grid-column: 2/3;
     grid-row: 1/2;
