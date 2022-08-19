@@ -4,24 +4,23 @@
 
 :root {
   --var-dark-beige: #e6dacd;
-  --var-beige: #F4ECE6;
-  --var-royal-blue : #0150FD;
+  --var-beige: #f4ece6;
+  --var-royal-blue: #0150fd;
   --var-white: #fff;
-  --var-black : #000;
+  --var-black: #000;
 }
 
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
   /* font-family: 'Quicksand', sans-serif; */
-
 }
 
 @media only screen and (max-width: 400px) {
   .header {
     position: relative;
 
-    z-index: 1;
+    z-index: -1;
 
     background-color: white;
   }
@@ -69,99 +68,89 @@ body {
     /* justify-self: end; */
   }
 
-
-
   /* ADDING CARD IN THE MIDDLE OF THE PAGE*/
 
   .card {
     position: relative;
-    z-index: 2;
+    z-index: 999;
     background-color: var(--var-beige);
     display: grid;
     grid-template-columns: 10% auto 10%;
     grid-template-rows: auto auto auto auto auto;
-
   }
-  .cardImage{
-    grid-column:2/3 ;
+  .cardImage {
+    grid-column: 2/3;
     grid-row: 1/2;
     width: 100px;
     height: 100px;
-justify-self: center;
-border-radius: 50%;
-padding: 20px;
+    justify-self: center;
+    border-radius: 50%;
+    padding: 20px;
   }
 
-  .cardText{
-    grid-column:2/3 ;
+  .cardText {
+    grid-column: 2/3;
     grid-row: 2/3;
     text-align: center;
   }
 
-.cardRow{
-    grid-column:2/3 ;
+  .cardRow {
+    grid-column: 2/3;
     grid-row: 3/4;
     color: black;
-}
+  }
 
-.cardButtonResume{
-    grid-column:2/3 ;
+  .cardButtonResume {
+    grid-column: 2/3;
     grid-row: 4/5;
-    justify-self: left ;
+    justify-self: left;
     border-radius: 20px;
     margin-left: 10%;
     background-color: var(--var-royal-blue);
     color: white;
     padding: 10px;
     padding-left: 15px;
-padding-right: 15px;
-font-size: larger;
+    padding-right: 15px;
+    font-size: larger;
+  }
 
-
-}
-
-.cardButtonProjects{
-    grid-column:2/3 ;
+  .cardButtonProjects {
+    grid-column: 2/3;
     grid-row: 4/5;
-    justify-self: right ;
+    justify-self: right;
     border-radius: 20px;
-margin-right: 10%;
-background-color: var(--var-beige);
-color: black;
-padding: 10px;
-padding-left: 15px;
-padding-right: 15px;
-font-size: larger;
-}
+    margin-right: 10%;
+    background-color: var(--var-beige);
+    color: black;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: larger;
+  }
 
-.cardIconsDiv{
-    grid-column:2/3 ;
+  .cardIconsDiv {
+    grid-column: 2/3;
     grid-row: 5/6;
     justify-self: center;
     /* padding: 0; */
     background-color: var(--var-white);
+  }
 
-}
-
-.cardList{
+  .cardList {
     padding-left: 0;
+  }
 
-}
-
-.cardIcon{
+  .cardIcon {
     width: 20px;
     height: 20px;
     filter: grayscale(100%);
-
-}
+  }
   /* CARD ENDS ABOVE */
-
-
 
   .main {
     position: relative;
 
-    z-index: 1;
+    z-index: -1;
 
     background-color: var(--var-dark-beige);
     /* background-color: aqua; */
@@ -263,6 +252,6 @@ font-size: larger;
     font-weight: bolder;
     font-size: small;
     justify-self: left;
-    margin-left : 10%;
+    margin-left: 10%;
   }
 }
