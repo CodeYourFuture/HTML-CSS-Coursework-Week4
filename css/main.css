@@ -53,11 +53,13 @@ body {
 }
 
 .companyname {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   margin: auto;
-  padding: auto;
   background-image: url("http://foodsafetyhelpline.com/wp-content/uploads/2020/04/Are-Organic-Foods-Superior-to-Conventional-Food-1024x682.jpg");
-  width: 900px;
-  height: 800px;
+  width: 1000px;
+  height: 500px;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -65,42 +67,40 @@ body {
 .companypolicy {
   display: flex;
   justify-content: center;
-  margin: 100px;
-  padding: auto;
+  padding: 10px;
   font-weight: 200;
-  border: solid white;
+  border: solid white 2px;
   border-radius: 8px;
   font-family: "Mochiy Pop One", sans-serif;
-  font-size: large;
+  font-size: 40px;
   color: white;
 }
 
 .companypolicy2 {
   display: flex;
   justify-content: center;
-  margin: 100px;
-  padding: auto;
+  padding: 15px;
   font-weight: 100;
-  border: solid white;
+  border: solid white 2px;
   border-radius: 8px;
   font-family: "Mochiy Pop One", sans-serif;
-  font-size: large;
+  font-size: 24px;
   color: white;
 }
 
-.companypolicy3 {
+.order-btn {
   display: flex;
   justify-content: center;
-  margin: 100px;
-  padding: auto;
-  font-weight: 100;
-  border: solid white;
-  border-radius: 8px;
+  color: #fff;
+  padding: 15px;
+  border-radius: 15px;
+  font-size: 20px;
   font-family: "Mochiy Pop One", sans-serif;
-  font-size: large;
-  color: white;
+  background-color: #133032;
+  font-weight: 100;
+  border: solid white 1px;
+  border-radius: 8px;
 }
-
 .products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -124,7 +124,7 @@ body {
 }
 
 .product2 {
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkl-Joew8M0fSVJWWcEnh5nejOwyiJGPL1WA&usqp=CAU");
+  background-image: url("https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2022/04/pjimage-2022-04-26t124613-1650957376.jpg");
   height: 500px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -134,7 +134,7 @@ body {
 }
 
 .product3 {
-  background-image: url("https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2022/04/pjimage-2022-04-26t124613-1650957376.jpg");
+  background-image: url("https://img.freepik.com/premium-photo/arrangement-different-fresh-vegetables_23-2148655301.jpg?w=2000");
   height: 500px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -155,26 +155,21 @@ body {
 }
 
 .info {
+  display: flex;
+  flex-direction: row;
   margin-top: 30px;
-  display: grid;
-  grid-template-columns: "1, 2";
   font-family: "Mochiy Pop One", sans-serif;
   color: #a05941;
 }
 
 .info1 {
-  display: grid;
-  grid-template-columns: text;
-  height: 500px;
   border-radius: 5px;
   padding-top: 20px;
   width: auto;
 }
 
 .info2 {
-  display: grid;
-  grid-template-columns: pic;
-  height: 300px;
+  height: 320px;
   border-radius: 5px;
   padding-top: 20px;
   width: auto;
@@ -186,17 +181,43 @@ body {
 
 .footer-text1 {
   font-family: "Mochiy Pop One", sans-serif;
+  color: #133032;
+  margin-left: 30px;
 }
 
 .footer-text2 {
   font-family: "Mochiy Pop One", sans-serif;
 }
 
+.container-social {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  width: 13%;
+  margin: 0 auto;
+}
+
+.social {
+  border: 1px solid #bdc3c7;
+  border-radius: 100%;
+  padding: 0.6rem;
+}
+
+.social img {
+  width: 1.4rem;
+}
+
 /* *****Contact Us Page***** */
 form {
+  color: #133032;
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.formtitle {
+  margin-left: 30px;
+  color: #133032;
 }
 .contact {
   margin: 30px;
@@ -231,20 +252,21 @@ input[type="submit"] {
 }
 
 .contact-btn {
-  background-color: var(--Royalblue);
-  color: var(--text-white);
-  padding: 5px 40px;
-  border-radius: 25px;
+  background-color: #a05941;
+  color: #fff;
+  padding: 10px 40px;
+  border-radius: 15px;
   font-size: 20px;
   font-family: var(--title-font);
   text-decoration: none;
+  font-size: medium;
 }
 .submit-btn {
-  margin-bottom: 50px;
+  margin-bottom: 5px;
   text-align: center;
 }
 
-/* _+_+_+_+_+_+_+_+ DESKTOP VERSION _+_+_+_+_+_+_+_+ */
+/*  DESKTOP VERSION  */
 
 @media only screen and (min-width: 900px) {
   body {
@@ -294,5 +316,83 @@ input[type="submit"] {
     margin-bottom: 50px;
     text-align: left;
   }
-  /* !!!!!!!!! Contact Page Desktop View !!!!!!!!! */
+}
+/* MOBILE  VERSION */
+
+@media only screen and (max-width: 600px) {
+  body {
+    margin: auto;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .nav-bar {
+    display: grid;
+    padding: 10px;
+  }
+
+  .nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .companyname {
+    display: flex;
+    align-items: center;
+    width: 480px;
+    flex-direction: column;
+  }
+
+  .companypolicy {
+    margin-top: 80px;
+    font-size: medium;
+  }
+
+  .companypolicy2 {
+    margin-top: 80px;
+    font-size: smaller;
+  }
+
+  .order-btn {
+    margin-top: 80px;
+    font-size: smaller;
+  }
+
+  .products {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    margin-top: 30px;
+    width: 480px;
+  }
+
+  .info {
+    display: flex;
+    align-items: center;
+    width: 380px;
+    flex-direction: column;
+  }
+
+  .info1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: medium;
+  }
+
+  .info1 > p {
+    display: flex;
+    margin-right: 25px;
+    margin-left: 25px;
+    flex-direction: column;
+    text-align: center;
+    font-size: small;
+  }
 }
