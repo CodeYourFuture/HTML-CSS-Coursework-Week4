@@ -1,0 +1,387 @@
+/* mobile design for the page RESUME */
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-fallback: sans-serif;
+    --section-color: #E6DACD;
+    --card-color: #F4ECE6;
+    --btn-color: #0150FD;
+    --icon-color: #000;
+    --bg-color: #FFF;
+    --font1 : 'Poppins', sans-serif;
+    --font2 : 'Quicksand', sans-serif;
+    --font_3: normal normal normal 17px/1.4em avenir-lt-w01_35-light1475496,avenir-lt-w05_35-light,sans-serif;
+}
+
+/* Do not forget to link this file to your HTML in the <head> */
+body {
+    font-family: var(--font2);
+    font-size: 62.5%;
+}
+
+/* font style */
+.main-section-title > h1, h2, button{
+    font-family: var(--font1);
+}
+.main-section-title > h1{
+    font-weight: bold;
+    font-size: 2rem;
+}
+h2{
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+button, h3{
+    font-size: 1rem;
+    font-family: var(--font2);
+    font-weight: 100;
+    color: var(--btn-color);
+}
+
+.skills ul li{
+    font-family: var(--font2);
+    font-size: 1rem;
+}
+/* font style ending */
+/* padding */
+.latest-experience, .main-section-info, .oldest-experience, .latest-education, .oldest-education, .skills{
+    padding: 10%; 
+} 
+.skills ul li{
+    padding: 5%;
+
+}
+/* end of padding */
+
+/* margin */
+.second-container{
+    margin: 10% 0 2% 0;
+}
+.latest-experience, .latest-education, .oldest-education, .skills{
+    margin: 0 2% 10% 10%;
+}
+.oldest-experience{
+    margin: 0 2% 2% 10%;
+}
+.education-headline{
+margin-left: 10%;
+}
+.professional-skills, .languages{
+    margin: 5% 0;
+}
+
+/* end of margin */
+
+.second-container{
+    display: grid;
+    grid-template-areas:
+    "header header"
+        "main main"
+        "footer footer";
+    grid-template-rows: 100px 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    height: 360vh;
+}
+header {
+    grid-area: header;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    height: 30vh;
+}
+main{
+    grid-area: main;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    height: 310vh;
+    display: grid;
+    grid-template-areas:
+    "m-s-h m-s-h"
+    "lst-ex lst-ex"
+    "ost-ex ost-ex"
+    "edu-head edu-head"
+    "lst-edu lst-edu"
+    "ost-edu ost-edu"
+    "skills skills";
+    grid-template-rows: 1fr 1fr 1fr 100px 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--section-color);
+    
+}
+.main-section-headline{
+    grid-area: m-s-h;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: var(--section-color);
+}
+.main-section-title {
+    display: flex;
+    justify-content: center;
+}
+.main-section-info{
+    display: flex;
+    justify-content: space-between;
+}
+.cv-btn{
+    background-color: var(--btn-color);
+    color: var(--bg-color);
+    padding: 2px 10px;
+    border-radius: 20px;
+    border-width: thin;
+}
+
+.latest-experience{
+    grid-area: lst-ex;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    box-shadow: -10px -5px 50px -15px grey;
+    background-color: var(--bg-color);
+    height: auto;
+}
+
+.oldest-experience{
+    grid-area: ost-ex;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    box-shadow: -10px -5px 50px -15px grey;
+    background-color: var(--bg-color);
+}
+
+.education-headline{
+    grid-area: edu-head;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-color: var(--section-color);
+    display: flex;
+    align-items: center;
+    height: auto;
+}
+.latest-education{
+    grid-area: lst-edu;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    box-shadow: -10px -5px 50px -15px grey;
+    background-color: var(--bg-color);
+    height: auto;
+  
+}
+.oldest-education{
+    grid-area: ost-edu;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 7; 
+    box-shadow: -10px -5px 50px -15px grey;
+    background-color: var(--bg-color);
+    height: auto;
+}
+.skills{
+    grid-area: skills;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 7;
+    grid-row-end: 8; 
+    box-shadow: -10px -5px 50px -15px grey;
+    background-color: var(--bg-color);
+    height: auto;
+}
+
+.skills ul li{
+    list-style: none;
+}
+
+.professional-skills{
+    display: flex;
+    flex-direction: column;  
+}
+
+footer{
+    grid-area: footer;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 8;
+    grid-row-end: 9;
+    height: 30vh;
+}
+
+
+@media screen and  (min-width: 1400px){
+    /* font style */
+.main-section-title > h1, h2, button{
+    font-family: var(--font1);
+}
+.main-section-title > h1{
+    font-weight: bold;
+    font-size: 2rem;
+}
+h2{
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+button, h3{
+    font-size: 1.5rem;
+    font-family: var(--font2);
+    font-weight: 100;
+    color: var(--btn-color);
+}
+
+.skills ul li{
+    font-family: var(--font2);
+    font-size: 1rem;
+}
+/* font style ending */
+
+/* padding */
+.latest-experience, .main-section-info, .oldest-experience, .latest-education, .oldest-education, .skills{
+    padding: 5%; 
+} 
+.skills ul li{
+    padding: 5%;
+} 
+/* end of padding */
+
+/* margin */
+
+ .latest-experience, .oldest-education, .skills{
+    margin: 5% 20%; 
+} 
+.oldest-experience{
+    margin: 5% 20% 0 20%;
+}
+.latest-education{
+    margin: 0 20% 5% 20%;
+}
+.education-headline{
+margin-left: 20%;
+}
+.professional-skills, .languages{
+    margin: 5% 0;
+}
+
+/* end of margin */
+
+    .nav-toggle{
+        display: none;
+    }
+    .second-container{
+        display: grid;
+        grid-template-areas:
+        "header header"
+            "main main"
+            "footer footer";
+        grid-template-rows: 200px 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        height: 400vh;
+        margin: 0%;
+    }
+    header {
+        grid-area: header;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        height: 15vh;
+    }
+
+.cv-btn{
+    background-color: var(--btn-color);
+    color: var(--bg-color);
+    padding: 10px 30px;
+    border-radius: 20px;
+    border-width: thin;
+    border-color: var(--btn-color);
+    font-weight: bold;
+}
+main{
+    grid-area: main;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    height: 400vh;
+    display: grid;
+    grid-template-areas:
+    "m-s-h m-s-h"
+    "lst-ex lst-ex"
+    "ost-ex ost-ex"
+    "edu-head edu-head"
+    "lst-edu lst-edu"
+    "ost-edu ost-edu"
+    "skills skills";
+    grid-template-rows: 1fr 1fr 1fr 100px 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--section-color);
+}
+.main-section-title{
+    object-fit: cover;
+}
+.latest-experience, .oldest-experience, .latest-education, .oldest-education {
+ box-shadow: none;
+ background-color: var(--bg-color);
+ display: flex;
+ flex-direction: row;
+}
+
+.latest-experience-headline{
+    width: 40%;
+    height: fit-content;
+}
+.latest-experience-details{
+    width: 60%;
+    margin-top: 10%;
+    height: fit-content;
+
+}
+ .professional-skills, .languages{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.languages{
+margin-right: 20%;
+}
+footer{
+    grid-area: footer;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 8;
+    grid-row-end: 9;
+    height: 10vh;
+    margin-top: 2%;
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
