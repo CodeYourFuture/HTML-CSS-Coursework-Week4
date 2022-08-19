@@ -57,33 +57,38 @@
       </nav>
     </header>
 
-    <main>
-      <section class="card1">
-        <img class="photo" src="/designs/icon.jpeg" alt="maya_photo"/>
-        <span class="font1"> Maya <br> Nelson</span>
-        <div><button class="font2 button1">RESUME</button>
-        <button class="font2 button2">PROJECT</button></div>
-        <div class="icons_container">
-          <img src="/designs/fb.png"  class="icons"></img>
-          <img src="/designs/twitter.png"  class="icons"></img>          
-          <img src="/designs/linkedin.png"  class="icons"></img>
-          <img src="/designs/ig.png"  class="icons"></img>
+    <main style="border-bottom: dotted; border-bottom-color: transparent;">
+        <section class="contact_header">
+            <div class="square_icon" id="square_2">
+                <div class="square_1" style="margin: inherit;">
+                  <div id="square_2inlineContent" data-testid="inline-content" class="">
+                    <div
+                      id="square_2inlineContent-gridContainer"
+                      data-testid="mesh-container-content"
+                    ></div>
+                  </div>
                 </div>
-      </section>
+              </div>
 
-      <section class="card2">
-        <h1 class="font1">Hello</h1>
-        <h2 class="font2">Here's who I am & what I do</h2>
-        <p class="font2">
-          I'm a paragraph. Click here to add your own text and edit me. It’s
-          easy. Just click “Edit Text” or double click me to add your own
-          content and make changes to the font. <br><br>
-          I’m a great place for you to
-          tell a story and let your users know a little more about you.
-        </p>
-      </section>
+            <div class="contact_slogan font1">Let's talk</div>
+        </section>
+
+        <section class="contact_section font2" style="font-weight:bold;">
+            <form>
+                <label id="first_name"> First Name *</label> <br>
+                <input type="text" name="first_name" id="first_name" required /> <br>
+                <label id="last_name"> Last Name *</label> <br>
+                <input type="text" name="last_name" id="last_name" required /> <br>
+                <label id="email"> Email *</label> <br>
+                <input type="text" name="email" id="email" required /> <br>
+                <label id="subject"> Subject</label> <br>
+                <input type="text" name="subject" id="subject" /> <br>
+                <label id="message">Message</label> <br>
+                <textarea></textarea><br>
+                <div style="text-align: center;"><button class="button1" style="width: 100px;" type="submit"> SEND</button></div>
+            </form>
+        </section>
     </main>
-
     <footer>
       <div class="tel">
         <p class="footer_text">Call</p>
