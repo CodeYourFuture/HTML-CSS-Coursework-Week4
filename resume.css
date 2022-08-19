@@ -25,3 +25,20 @@
 .footer_all{
     grid-area: f;
 }
+
+.blue_box {
+    background-color: #0150FD;
+    height: 16px;
+    width: 16px;
+    margin-top: 19px;
+}
+
+.title_1 {
+    margin-left: 18px;
+    margin-top: -20px;
+    padding-left: 4px;
+}
+
+.title_2 {
+    margin-top: -29px;
+}
