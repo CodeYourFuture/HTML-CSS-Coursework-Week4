@@ -12,17 +12,14 @@ margin: 0 auto;
 min-width: 37.5rem;
 
 }
-:focus{
+/* :focus{
     outline: none;
+} */
+
+.topnav h1 {
+    margin-top: 3.45rem;
 }
-ul {
-    list-style: none;
-    padding: 0;
-}
-a {
-    list-style: none;
-    padding: 0;
-}
+
 .topnav {
     position: relative;
     width: 100%;
@@ -32,8 +29,9 @@ a {
 }
 .topnav > .content{
     height: 4.375rem;
+    margin-right: 2.45rem;
 }
-.topnav .heads{
+.topnav .maya{
 height: 4.375rem;
 margin-left: 10%;
 }
@@ -42,10 +40,12 @@ margin-left: 10%;
     color: #838994;
     font-size: 1.04rem;
     margin-top: 1.7rem;
+    
 }
 .topnav .link li{
     display: inline-block;
     margin-left: 1.563rem;
+    
 }
 .topnav .link li.active{
     color: #333;
