@@ -61,9 +61,16 @@ color: #333333;
 .text h2 {
     margin-top: 5.45rem;
     text-align: center;
+    font-family: serif;
+    font-size: 30px;
+    font-weight: bold;
+    
 }
 .text p {
     text-align: center;
+    margin-top: 2.5rem;
+    font-family: serif;
+    font-size: 20px;
 }
 .col {
     margin-top: 2.54rem;
