@@ -140,3 +140,53 @@
     top: 0;
     transform: scale(1);
   }
+
+
+
+  .c_w {
+    display: flex;
+
+
+}
+
+
+.call {
+
+    width: 50%;
+
+
+
+}
+
+.write {
+    width: 50%;
+}
+
+.h3_c {
+    margin-bottom: -10px;
+}
+
+.icon2 {
+    box-sizing: border-box;
+    display: flex;
+    height: 25px;
+    width: 25px;
+    margin: 10px;
+}
+
+.follow {
+    margin-top: -10px;
+    justify-content: space-between;
+}
+
+.icon_4 {
+    display: flex;
+}
+
+.last_footer{
+    margin-top: 20px;
+}
+.b4{
+    width: 385px;
+    height: 250px;
+}
