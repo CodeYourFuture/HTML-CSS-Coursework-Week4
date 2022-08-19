@@ -80,12 +80,12 @@ body {
     height: 0;
     position: absolute;
     width: 0.25em;
-    background-color: white;
+    /* background-color: white; */
     left: -0.5em;
     transition: all 0.2s ease-in-out;
   }
   nav a:hover {
-    color: white;
+    color: #0150FD;
   }
   nav a:hover:before {
     height: 100%;
@@ -286,5 +286,4 @@ button {
 .b4{
     width: 385px;
     height: 250px;
-    border: 2px solid red;
 }
