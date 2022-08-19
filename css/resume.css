@@ -332,15 +332,8 @@ main{
     grid-template-columns: 1fr 1fr;
     background-color: var(--section-color);
 }
-.main-section-headline{
-    grid-area: m-s-h;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    background-color: var(--section-color);
-    margin: 0;
-    padding: 0;
+.main-section-title{
+    object-fit: cover;
 }
 .latest-experience, .oldest-experience, .latest-education, .oldest-education {
  box-shadow: none;
