@@ -1,0 +1,122 @@
+
+header {
+  height: 100px;
+  width: 100%;
+  position: relative;
+  top: 0;
+  background-color: white;
+  margin: 0;
+  padding-top: 3%;
+}
+
+.box {
+  height: 20px;
+  width: 20px;
+  background-color: #5600ff;
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-left: 20px;
+  grid-column: 1 / 2;
+}
+
+.title_top {
+  font-weight: bold;
+  margin-right: 10px;
+  align-items: center;
+  line-height: 1em;
+  font-size: 23px;
+  grid-column: 2 / 6;
+}
+
+
+nav {
+  display: grid;
+  grid-template-columns: repeat(7, 46px);
+  grid-template-rows: 32px;
+  align-items: flex-start;
+  padding: 0 3%;
+}
+
+nav p {
+  align-items: center;
+  grid-column: 1 / -1;
+  margin-left: 18px;
+}
+nav ul {
+  list-style-type: none;
+  list-style: none;
+}
+
+nav ul li {
+  margin-right: 35px;
+}
+nav a:hover {
+  color: blue;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Hamburger Menu Start */
+
+.ham_menu {
+  display: flex;
+  justify-content: end;
+  margin-top: 23px;
+  grid-column: -2 / 8;
+}
+
+.wrapper-menu {
+  width: 32px;
+  height: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: transform 330ms ease-out;
+  z-index: 2;
+}
+
+.wrapper-menu.open {
+  transform: rotate(-45deg);
+}
+
+.line-menu {
+  background-color: #0000ff;
+  border-radius: 5px;
+  width: 100%;
+  height: 4px;
+}
+
+.line-menu.half {
+  width: 50%;
+}
+
+
+#menu {
+  display: none;
+  font-family: 'Poppins';
+  font-weight: bold;
+  position: absolute;
+  width: 262px;
+  height: 567px;
+  margin: 747px 0 0 -15px;
+  padding: 70px;
+  padding-top: 125px;
+
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+#menu li {
+  padding: 10px 0;
+  font-size: 27px;
+  text-align: center;
+}
+
+#menu li a:hover {
+  color: #0000ff;
+}
