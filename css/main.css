@@ -534,5 +534,9 @@ body {
   }
 
   
-
+/* Will have to redo the project.
+The switching in layouts using media query requires elements
+ to be hidden/revealed dynamically using JS. 
+ Currently the layout wont change
+ */
 
