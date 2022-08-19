@@ -173,9 +173,24 @@ body {
     text-align: left;
     font-family: 'Sarabun', sans-serif;
    }
+    /* section 1 */
+    .scouer{
+        margin-left: 15px;
+        /* padding: 2px; */
+        background-color: #0150FD;
+        width: 16px; 
+         height: 16px;
+         margin-top: 10px;
+      }
 
-
-
+    /* section 2 form */
+    .form_contact{
+    grid-area: form;
+    background-color: white;
+    width: 280px;
+    height: 375.4px;
+    margin-left: 50px;
+    box-shadow: 5px 25px 20px rgb(173, 168, 168);    }
 
 
    /* footer area */

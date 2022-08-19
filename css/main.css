@@ -23,7 +23,6 @@ body {
  text-align: center;
 
   }
- 
   /* header text */
   .scouer{
     margin-left: 15px;
@@ -191,7 +190,8 @@ body {
     width: 280px;
     height: 375.4px;
     margin-left: 50px;
-    box-shadow: 5px 10px 10px 8px rgb(161, 159, 159);
+    box-shadow: 5px 25px 20px rgb(173, 168, 168);
+
  }
  /* content area */
  .content_text{
