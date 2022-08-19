@@ -7,11 +7,9 @@
  }
 body {
   background-color: #E6DACD;
-    width: 390px;
-    height: 844px;
-  
  align-content: center;
  text-align: center;
+ align-items: center;
 
   }
  
@@ -303,3 +301,38 @@ body {
     height: 30px;    
 }
 
+@media screen and (min-width: 900px) {
+  body{
+    
+  }
+  .contener{
+
+    display: grid;
+    align-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows:repeat(4,auto) ;
+      grid-template-areas:
+      "header header header header"
+      ". card card ."
+      ". card card ."
+      "footer footer footer footer"
+      ;
+  }
+  .card_1{
+    box-shadow: 5px 25px 20px rgb(173, 168, 168);
+    text-align: center;
+    grid-area: card;
+    background-color: #ffffff;
+    width:750px;
+    height: 404px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    /* height: 481.67px; */
+    display: flex;
+  }
+
+  .img_all{
+    width: 322px;
+    height: auto;
+  }
+}

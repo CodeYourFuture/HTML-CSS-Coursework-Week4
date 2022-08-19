@@ -197,6 +197,7 @@ body {
  .content_text{
     margin-top: 25px;
     grid-area: content_text;
+    margin-bottom: 25px;
     /* font-family: 'Frank Ruhl Libre', serif;
     font-family: 'Nanum Gothic', sans-serif;
     font-family: 'Sarabun', sans-serif; */
@@ -295,3 +296,25 @@ body {
         height: 30px;    
     }
     
+    /* media Desktop*/
+    @media screen and (min-width: 900px) {
+      body {
+        
+        /* background:linear-gradient(
+          to left,
+          #E6DACD 0%,
+          #E6DACD 60%,
+          #fff 60%,
+          #fff 100%  
+        ); */
+        background-color: #c40202;
+        width: 390px;
+        height: 844px;
+      
+     align-content: center;
+     text-align: center;
+      }
+      .hamburger{
+        display: block;
+      }
+    }

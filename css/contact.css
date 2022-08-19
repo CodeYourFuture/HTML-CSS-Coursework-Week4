@@ -232,9 +232,11 @@ body {
     }
     input{
         width: 90%;
-        
-      border: 1px outset black;
-      display: block;
+        border: none;
+        border-bottom: 2px solid black;
+        outline: none;
+
+      
     }
       span{
         color:#0150FD
