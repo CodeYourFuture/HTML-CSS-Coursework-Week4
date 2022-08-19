@@ -20,11 +20,9 @@ header {
   padding: 0px 15px;
   margin: 20px 5px;
 }
-.header-left{
- display:grid;
- grid-template-areas: 
- "hd-n hd-s hd-r"
- ;
+.header-left {
+  display: grid;
+  grid-template-areas: "hd-n hd-s hd-r";
 }
 
 .hd-name {
