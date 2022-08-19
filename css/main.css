@@ -1,3 +1,567 @@
 /* Add your CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
+
+:root {
+  --var-dark-beige: #e6dacd;
+  --var-beige: #f4ece6;
+  --var-royal-blue: #0150fd;
+  --var-white: #fff;
+  --var-black: #000;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  /* font-family: 'Quicksand', sans-serif; */
+}
+
+@media only screen and (max-width: 450px) {
+  .header {
+    position: relative;
+
+    z-index: -1;
+
+    background-color: white;
+  }
+
+  .nav {
+    display: grid;
+    grid-template-columns: 20% 40% 20% 20%;
+    grid-template-rows: 15% 15% auto;
+    /* flex-direction: row; */
+  }
+
+  .blueBlock {
+    background-color: var(--var-royal-blue);
+    height: 15px;
+    width: 15px;
+    grid-column: 1/2;
+    grid-row: 1/3;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-self: end;
+    justify-self: end;
+  }
+
+  .name {
+    color: black;
+    font-weight: 900;
+    grid-column: 2/3;
+    grid-row: 1/3;
+    align-self: stretch;
+    font-size: large;
+  }
+  .hamburgerMenu {
+    grid-column: 4/5;
+    grid-row: 2/3;
+    height: 30px;
+    width: 30px;
+    align-self: center;
+    justify-self: left;
+  }
+  .jobTitle {
+    color: black;
+    grid-column: 1/3;
+    grid-row: 3/4;
+    margin-left: 40px;
+    /* justify-self: end; */
+  }
+
+  .headerLinks{
+    display: none;
+    grid-column: 3/5;
+    /* grid-row: 2/3; */
+    justify-self: right;
+
+
+  }
+
+  .headerList{
+    display: none;
+ padding: 20px;
+ margin-right: 25px;
+
+  }
+
+
+
+
+  /* ADDING CARD IN THE MIDDLE OF THE PAGE*/
+
+  .card {
+    position: relative;
+    z-index: 999;
+    background-color: var(--var-beige);
+    display: grid;
+    grid-template-columns: 10% auto 10%;
+    grid-template-rows: auto auto auto auto auto;
+  }
+  .cardImage {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    width: 100px;
+    height: 100px;
+    justify-self: center;
+    border-radius: 50%;
+    padding: 20px;
+  }
+
+  .cardText {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+  }
+
+  .cardRow {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    color: black;
+  }
+
+  .cardButtonResume {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    justify-self: left;
+    border-radius: 20px;
+    margin-left: 10%;
+    background-color: var(--var-royal-blue);
+    color: white;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: larger;
+  }
+
+  .cardButtonProjects {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    justify-self: right;
+    border-radius: 20px;
+    margin-right: 10%;
+    background-color: var(--var-beige);
+    color: black;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: larger;
+  }
+
+  .cardIconsDiv {
+    grid-column: 2/3;
+    grid-row: 5/6;
+    justify-self: center;
+    /* padding: 0; */
+    background-color: var(--var-white);
+  }
+
+  .cardList {
+    padding-left: 0;
+  }
+
+  .cardIcon {
+    width: 20px;
+    height: 20px;
+    filter: grayscale(100%);
+  }
+  /* CARD ENDS ABOVE */
+
+  .main {
+    position: relative;
+
+    z-index: -1;
+    /* add z index to lower number */
+
+    background-color: var(--var-dark-beige);
+    /* background-color: aqua; */
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 100px auto auto auto auto;
+  }
+
+  .mainHello {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    justify-self: left;
+    align-self: center;
+    padding: 10px;
+    background-color: var(--var-dark-beige);
+  }
+
+  .mainH3 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    justify-self: left;
+    align-self: center;
+    font-size: medium;
+    padding: 10px;
+    background-color: var(--var-dark-beige);
+  }
+
+  .mainPara1 {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    justify-self: center;
+    align-self: center;
+    font-size: smaller;
+    text-align: left;
+    padding: 10px;
+    background-color: var(--var-dark-beige);
+  }
+
+  .mainPara2 {
+    grid-column: 2/3;
+    grid-row: 5/6;
+    justify-self: center;
+    align-self: center;
+    font-size: smaller;
+    text-align: left;
+    padding: 10px;
+    background-color: var(--var-dark-beige);
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto;
+  }
+
+  .footerCall {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-weight: bolder;
+    justify-self: center;
+  }
+
+  .footerWrite {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    font-weight: bolder;
+    justify-self: center;
+  }
+
+  .footerFollow {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    font-weight: bolder;
+    justify-self: center;
+  }
+  a {
+    text-decoration: none;
+    font-size: small;
+    color: grey;
+  }
+
+  ul > li {
+    list-style-type: none;
+    display: inline;
+  }
+
+  .footerImages {
+    padding-left: 0;
+  }
+  .footerIcon {
+    width: 20px;
+    height: 20px;
+    filter: grayscale(100%);
+  }
+
+  .footerCopyRights {
+    grid-column: 1/3;
+    grid-row: 3/4;
+    font-weight: bolder;
+    font-size: small;
+    justify-self: left;
+    margin-left: 10%;
+  }
+}
+
+/* DESKTOPPP STOPP */
+
+/* DESKTOP ONLY BELOW */
+
+/* DESKTOP LAYOUT STARTS HERE */
+
+
+
+.header {
+    /* position: relative; */
+
+    z-index: -1;
+
+    background-color: white;
+  }
+
+  .nav {
+    display: grid;
+    grid-template-columns: 20% 40% 20% 20%;
+    grid-template-rows:  auto;
+    /* flex-direction: row; */
+  }
+
+  .blueBlock {
+    background-color: var(--var-royal-blue);
+    height: 15px;
+    width: 15px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-left: 25px;
+    /* margin-right: 10px; */
+    align-self: center;
+    justify-self: left;
+  }
+
+  .name {
+    color: black;
+    font-weight: 900;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    align-self: stretch;
+    justify-self: center;
+    font-size: large;
+    margin-left: -15px;
+  }
+  .hamburgerMenu {
+    display: none;
+    grid-column: 4/5;
+    grid-row: 2/3;
+    height: 30px;
+    width: 30px;
+    align-self: center;
+    justify-self: left;
+  }
+
+  .headerLinks{
+    display: inline;
+    grid-column: 3/5;
+    /* grid-row: 2/3; */
+    justify-self: right;
+
+
+  }
+
+  .headerList{
+ padding: 20px;
+ margin-right: 25px;
+
+  }
+
+
+
+  .jobTitle {
+    /* position: relative; */
+    color: black;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-left: -40px;
+    justify-self: left;
+  }
+
+  /* header working on desktop */
+
+  /* ADDING CARD IN THE MIDDLE OF THE PAGE*/
+
+  .card {
+    position: relative;
+    z-index: 999;
+    background-color: var(--var-beige);
+    display: grid;
+    grid-template-columns: 10% auto 10%;
+    grid-template-rows: auto auto auto auto auto;
+  }
+
+  .cardImage {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    width: 100px;
+    height: 100px;
+    justify-self: center;
+    border-radius: 50%;
+    padding: 20px;
+  }
+
+  .cardText {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+  }
+
+  .cardRow {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    color: black;
+  }
+
+  .cardButtonResume {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    justify-self: left;
+    border-radius: 20px;
+    margin-left: 10%;
+    background-color: var(--var-royal-blue);
+    color: white;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: larger;
+  }
+
+  .cardButtonProjects {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    justify-self: right;
+    border-radius: 20px;
+    margin-right: 10%;
+    background-color: var(--var-beige);
+    color: black;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: larger;
+  }
+
+  .cardIconsDiv {
+    grid-column: 2/3;
+    grid-row: 5/6;
+    justify-self: center;
+    /* padding: 0; */
+    background-color: var(--var-white);
+  }
+
+  .cardList {
+    padding-left: 0;
+  }
+
+  .cardIcon {
+    width: 20px;
+    height: 20px;
+    filter: grayscale(100%);
+  }
+  /* CARD ENDS ABOVE */
+
+  .main {
+    position: relative;
+
+    z-index: -1;
+    /* add z index to lower number */
+
+    background-color: var(--var-dark-beige);
+    /* background-color: aqua; */
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 100px auto auto auto auto;
+  }
+
+  .mainHello {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    justify-self: left;
+    align-self: center;
+    padding: 10px;
+    background-color: var(--var-dark-beige);
+  }
+
+  .mainH3 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    justify-self: left;
+    align-self: center;
+    font-size: medium;
+    padding: 10px;
+    background-color: var(--var-dark-beige);
+  }
+
+  .mainPara1 {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    justify-self: center;
+    align-self: center;
+    font-size: smaller;
+    text-align: left;
+    padding: 10px;
+    background-color: var(--var-dark-beige);
+  }
+
+  .mainPara2 {
+    grid-column: 2/3;
+    grid-row: 5/6;
+    justify-self: center;
+    align-self: center;
+    font-size: smaller;
+    text-align: left;
+    padding: 10px;
+    background-color: var(--var-dark-beige);
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: 20% 40% auto auto auto;
+    grid-template-rows: auto;
+  }
+
+  .footerCall {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    font-weight: bolder;
+    justify-self: center;
+    align-self: center;
+
+  }
+
+  .footerWrite {
+    grid-column: 4/5;
+    grid-row: 1/2;
+    font-weight: bolder;
+    justify-self: center;
+    align-self: center;
+
+  }
+
+  .footerFollow {
+    grid-column: 5/6;
+    grid-row: 1/2;
+    font-weight: bolder;
+    justify-self: center;
+    align-self: center;
+
+  }
+
+
+  .footerCopyRights {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-weight: bolder;
+    font-size: small;
+    justify-self: center;
+    align-self: center;
+    margin-left: 10%;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: small;
+    color: black;
+  }
+
+  ul > li {
+    list-style-type: none;
+    display: inline;
+  }
+
+  .footerImages {
+    padding-left: 0;
+  }
+  .footerIcon {
+    width: 20px;
+    height: 20px;
+    filter: grayscale(100%);
+  }
+
+  
+/* Will have to redo the project.
+The switching in layouts using media query requires elements
+ to be hidden/revealed dynamically using JS. 
+ Currently the layout wont change as the z index is not working
+ */
+
+/* Card in the center has to be  */
