@@ -263,7 +263,6 @@ footer {
 
 .contact_slogan {
   margin-left: 1.5em;
-  font-size: 25px !important;
 }
 
 .contact_section {
@@ -329,8 +328,8 @@ textarea {
     font-size: 17px;
   }
 
-  .bigger {
-    font-size: 25px !important;
+  #bigger {
+    font-size: 25px;
   }
 
   /* Navigation */
@@ -427,6 +426,28 @@ textarea {
 
   .claim {
     grid-area: a;
+  }
+
+  /** Contact**/
+  .contact_section {
+    width: 40%;
+  }
+
+  #contact_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+
+  .contact_slogan {
+    font-size: 32px !important;
+  }
+
+  #align {
+    margin: inherit;
+    padding-top: 5px;
   }
 }
 
