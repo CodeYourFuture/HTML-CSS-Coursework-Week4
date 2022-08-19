@@ -151,6 +151,7 @@ body {
     position: relative;
 
     z-index: -1;
+    /* add z index to lower number */
 
     background-color: var(--var-dark-beige);
     /* background-color: aqua; */
