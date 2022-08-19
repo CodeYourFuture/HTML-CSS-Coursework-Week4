@@ -39,6 +39,10 @@
       background-color: #0150FD;
   }
 
+  .navbar-links{
+    margin-left: auto;
+  }
+
  .navbar-links ul {
       margin: 0%;
       padding: 0%;
@@ -49,15 +53,14 @@
     
     .navbar-links li {
       list-style: none;
-      
     }
     
     .navbar-links li a {
       text-decoration: none;
       color:black;
       padding: 10px;
-      display: block;
-      
+      display: block; 
+     
     }
     
     .navbar-links li a:hover {
