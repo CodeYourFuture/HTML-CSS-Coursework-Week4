@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;600&display=swap');
 
 
+
 :root{
     --primary:#0150FD;
   --dark: #E6DACD;
@@ -25,23 +26,17 @@
     display: grid;
     grid-template-columns: repeat(1fr 1fr 1fr);
     grid-template-rows: 80px auto 150px;
-    grid-area:
-    "grid-header"
-    "grid-container"
-    "grid-footer"
-    ;
   }
 
 
 .grid-header{
-    display:grid;
+    display: grid;
     grid-gap: 20px;
     grid-template-columns: 1fr 1fr;
     grid-area:"header header nav-bar nav-bar ";
     padding-bottom: 32px;
     padding-top: 32px;
     position: fixed;
-    background-color: #0150FD;
 
 }
 .header{
@@ -82,7 +77,7 @@ span{
   float: right;
   margin-top: 10px;
 }
-.nav-bar a{
+.nav-bar a{g
   display: block;
   text-decoration: none;
   text-align: center;
@@ -90,17 +85,30 @@ span{
 .nav-bar  ul li a:hover{
   color:var(--primary)
 }
+
+
 /*------------------main---------------*/
 
-.grid-container{
+.main-container{
+  display: grid;
+    grid-template-areas: 1fr 1fr;
+    grid-gap: 20px;
+    justify-content: center;
+    text-align: center;
     background-color: var(--dark);
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 80px auto 150px;
-    height: 1000px;
+    height: 900px;
+    margin-top: 20px;
 }
+.contact {
+  display: flex;
+  margin-top: 100px;
+  justify-content: center;
+  text-align: center;
+}
+.form{
+background-color: aliceblue;
 
-
+}
 
 
 
