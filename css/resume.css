@@ -13,7 +13,7 @@
     background-color: #E6DACD;
   }
 
-  /* nav bar starts here*/
+/* nav bar starts here*/
 .navbar{
     display: flex;
     flex-direction: row;
@@ -21,30 +21,35 @@
     width: auto;
     /* border: 1px solid black; */
 }
+
+.profile{
+   display: inline-block;
+   margin-left: 10px;
+   font-family: 'Poppins', sans-serif;
+}
+
+.profile-info p{
+  margin-top: 0%;
+  margin-left: 10px;
+}
   
   .square1 {
-      /* justify-items: flex-start; */
       height: 20px;
       width: 20px;
-      margin-left: 20px;
       background-color: #0150FD;
-      /* margin: 10px 0px 0px 20px; */
   }
 
-  .name{
-    margin: auto; 
-    margin-left: 20px;
-  }
-
-  
  .navbar-links ul {
-      margin: 0;
-      padding: 0;
-      display: flex;
-    }
+      margin: 0%;
+      padding: 0%;
+      display: flex; 
+      /* justify-content: flex-end; */
+      
+  }
     
     .navbar-links li {
       list-style: none;
+      
     }
     
     .navbar-links li a {
@@ -52,6 +57,7 @@
       color:black;
       padding: 10px;
       display: block;
+      
     }
     
     .navbar-links li a:hover {
@@ -155,18 +161,18 @@
         }
       
 
-      .div1{
+      .sub-container{
         background-color: white;
         margin: 20px 20px 30px 20px;
         padding: 20px;
         /* border: 1px solid salmon; */
       }
 
-      .div1 h3{
+      .sub-container h3{
         margin: 0px;
       }
 
-      .div1 h4{
+      .sub-container h4{
         color: #0150FD;
       }
       
@@ -175,7 +181,6 @@
       }
 
       .square3{
-        margin: left;
         height: 20px;
         width: 20px;
         background-color: #0150FD;
@@ -202,5 +207,4 @@ footer{
 
   .right-div{
     float: right;
-    margin: auto;
   }
