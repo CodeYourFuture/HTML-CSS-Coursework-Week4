@@ -156,11 +156,30 @@ body{
         justify-self: center;
 
     }
+    a{
+        text-decoration: none;
+        font-size: small;
+        color: grey;
+
+    }
+
     ul > li{
         list-style-type: none;
         display: inline;
     }
 
+
+    
+
+    .footerImages{
+        padding-left: 0;
+    }
+    .footerIcon{
+        width: 20px;
+        height: 20px;
+        filter: grayscale(100%);
+
+    }
 
     .footerCopyRights{
 
@@ -168,8 +187,8 @@ body{
         grid-row: 3/4;
         font-weight: bolder;
         font-size: small;
-        justify-self: left;   
-
+        justify-self:center;   
+        /* margin-left : 20px; */
 
     }
 }
