@@ -235,10 +235,22 @@
     margin-top: -20px;
 }
 
-.edu{
+/* card 4 */
 
+.card_4{
+    background-color: white;
+    width: 280px;
+    margin-left: 23px;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 21px;
+    
 }
-
+.p_12{
+    color: #0150FD;
+    font-weight: bold;
+    font-size: ;
+}
 
 /* .title_1{
     
