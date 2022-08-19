@@ -99,7 +99,7 @@ Nav Styles
   position: fixed;
   width: 100%;
   height: 100%;
-  background-color: #090E6B;
+  background-color: var(--Lightbeige);
   top: -100%; left: 0; right: 0; bottom: 0;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
@@ -118,7 +118,7 @@ Nav Styles
 .nav-mob-item {
   position: relative;
   text-decoration: none;
-  color: #6ecddd;
+  color: var(--text-black);
   font-size: 2em;
   display: inline-block;
   margin-top: 1.25em;
@@ -130,12 +130,12 @@ Nav Styles
   height: 0;
   position: absolute;
   width: 0.25em;
-  background-color: white;
+  background-color: var(--Royalblue);
   left: -0.5em;
   transition: all 0.2s ease-in-out;
 }
 .nav-mob-item :hover {
-  color: white;
+  color: var(--text-black);
 }
 .nav-mob-item:hover :before {
   height: 100%;
