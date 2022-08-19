@@ -26,6 +26,7 @@ body {
  
   /* header text */
   .scouer{
+    margin-left: 15px;
     /* padding: 2px; */
     background-color: #0150FD;
     width: 16px; 
@@ -36,12 +37,14 @@ body {
     font-family: 'Frank Ruhl Libre', serif;
   }
   .text_nav1{
+    margin-left: 5px;
     display: flex;
     font-family: 'Frank Ruhl Libre', serif;
     
     
   }
   .text_nav2{
+    margin-left: 16px;
     font-family: 'Sarabun', sans-serif;
   }
   #toggle {
@@ -179,6 +182,9 @@ body {
  width: 320px;
  height: 90.79px;
  }
+ .title_nav{
+  font-family: 'Nanum Gothic', sans-serif;
+ }
  
  .info_maya{
     grid-area: info;
@@ -268,7 +274,7 @@ body {
         color: #0150FD;
       }
     .info_maya{
-        background-color: #F4ECE6;
+        background-color: #faf2ec;
     }
     .icon_media{
        
