@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Questrial&family=Raleway&family=Roboto:wght@300&display=swap");
 
-/* font-family: 'Questrial', sans-serif;
-font-family: 'Raleway', sans-serif;
-font-family: 'Roboto', sans-serif; */
-
 :root {
   --clr-Black: #000;
   --clr-White: #fff;
@@ -457,7 +453,7 @@ form button {
 
 @media screen and (min-width: 900px) {
   footer {
-    padding: 3em 0em 2em !important;
+    padding: 3em 0.5em 2em !important;
   }
 
   .footer-grid {
@@ -633,6 +629,9 @@ form button {
 }
 
 @media screen and (min-width: 900px) {
+  .store {
+    padding: 0 6vw;
+  }
   .items-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
