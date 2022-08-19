@@ -1,3 +1,8 @@
-/* Add your CSS here */
-
-/* Dont' forget to link this file to your HTML in the <head> */
+:root {
+    --color-1: #0150FD;
+    --bg-color: #E6DACD;
+    --bg-color2: #F4ECE6;
+    --font-1: 'Poppins', sans-serif;
+    --font-2: 'Quicksand', sans-serif;
+    --box-shadow: -11.31px 11.31px 17px 0px rgba(138, 131, 124, 0.23);
+}
