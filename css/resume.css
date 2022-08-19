@@ -6,20 +6,14 @@
     margin: 0px;
  }
 body {
-    background:linear-gradient(
-      to top,
-      #E6DACD 0%,
-      #E6DACD 60%,
-      #fff 60%,
-      #fff 100%  
-    );
+    background-color: #E6DACD;
     width: 390px;
     height: 844px;
-  
  align-content: center;
  text-align: center;
 
   }
+ 
  
   /* header text */
   .scouer{
@@ -173,10 +167,108 @@ body {
     text-align: left;
     font-family: 'Sarabun', sans-serif;
    }
+/* grid area */
+.contener{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows:repeat(4,auto) ;
+  grid-template-areas:
+  "header header header header"
+  ". card card ."
+  ". card card ."
+  "footer footer footer footer"
+  ;
+}
+/* header area */
+.text_area_nav{
+  grid-area: header;
+  text-align: left;
+  width: 320px;
+  height: 90.79px;
+  background-color:rgb(255, 255, 255);
+  width: 390px;
+  }
 
+  /* tilte area */
+  .experience_text{
+    font-size: 19px;
+  }
+  .titil_resume{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  .a{
+    margin-top: 15px;
+    margin-right: 6px;
+  }
+  .experience{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-left: 25px;
+    
+  }
+  .experience_text{
+    font-size: 25px;
+    padding: 9px;
+    font-weight: bold;
+  }
+  button{
+    font-size: 15px;
+    padding: 9px;
+    background-color: #0150FD;
+    color: white;
+    border-radius: 20px;
+    border: 1px solid rgb(130, 129, 129);
+    
+  }
+/* card area */
+.card_1{
+  box-shadow: 5px 25px 20px rgb(173, 168, 168);
+  text-align: center;
+  grid-area: card;
+  background-color: #ffffff;
+  width:280px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  /* height: 481.67px; */
+}
 
+.title_card{
+  padding-left: 10px;
+}
+.all_project{
+  text-align: left;
+  display: flex;
+}
+h4{
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 18px;
+}
+.text_header{
+  font-family: 'Nanum Gothic', sans-serif;
+  color: #0150FD;
+}
+/* skills area*/
+.skills{
+  display: flex;
+  flex-direction: column;
+}
+.row_skills{
+  display: flex;
+}
+.q{
+  margin-bottom: 30px;
+  margin-top: 4px;
+}
+.h1_style{
 
-
+  font-family: 'Nanum Gothic', sans-serif;
+}
 
    /* footer area */
  footer{

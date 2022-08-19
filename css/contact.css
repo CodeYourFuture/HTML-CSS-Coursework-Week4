@@ -247,6 +247,7 @@ body {
         border-radius: 15px;
         background-color: #0150FD;
         color: white;
+        border: 1px solid rgb(130, 129, 129);
     }
     form{
         text-align: center;

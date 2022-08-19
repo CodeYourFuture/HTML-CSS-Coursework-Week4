@@ -265,6 +265,7 @@ body {
         padding: 10px;
         background-color: #F4ECE6;
         border-radius: 20px;
+        border: 1px solid rgb(130, 129, 129);
     }
     button:hover{
         background-color: #0150FD;
