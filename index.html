@@ -1,21 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Add a link to your custom CSS here -->
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/main.css" />
     <title>Responsive grid project</title>
-</head>
-
-<body>
-
-    <!-- Add your markup here -->
-
-
-    <!-- Please leave this in to credit the creators of this design -->
-    <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
-</body>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header>
+      <div class="logo-area">
+        <div class="header-blue-box"></div>
+      <h1 class="header-title">Milad E-Pour <span class="logo-span">/</span></h1>
+      <h2 class="header-subtitle">Software Developer</h2>
+    </div>
+          <nav>
+            <a class="nav-item" href="/index.html">About me</a><br>
+            <a class="nav-item" href="/resume.html">Resume</a><br>
+            <a class="nav-item" href="/project.html">Project</a><br>
+            <a class="nav-item" href="/contact.html">Contact</a>
+          </nav>
+          <div class="mobile-menu">
+            <input id="toggle" type="checkbox"></input>
+  <label for="toggle" class="hamburger">
+    <div class="top-bun"></div>
+    <div class="meat"></div>
+    <div class="bottom-bun"></div>
+  </label>
+  <div class="nav-2">
+    <div class="nav-wrapper">
+      <nav class="nav-mob">
+        <a class="nav-mob-item" href="./index.html">About me</a><br>
+        <a class="nav-mob-item" href="./resume.html">Resume</a><br>
+        <a class="nav-mob-item" href="./project.html">Project</a><br>
+        <a class="nav-mob-item" href="./contact.html">Contact</a>
+      </nav>
+    </div>
+  </div>
+  </div>
+    </header>
+    <main>
+      <section class="card" id="card-id">
+        <img class="card-image" src="./Img/IMG_70602.JPG" alt="profile-picture" />
+        <h3 class="card-name">Milad Ebrahimpour</h3>
+        <hr class="card-divider" />
+        <p class="card-subtitle"> SOFTWARE DEVELOPER</p>
+        <div class="btn-1-2">
+        <a href="/resume.html" class="card-btn_1">Resume</a>
+        <a href="/project.html" class="card-btn_2">Projects</a>
+    </div>
+        <div class="card-social-media">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-instagram"></a>
+        </div>
+      </section>
+      <section class="intro">
+        <h3 class="intro-title">Hello</h3>
+        <h4 class="intro-subtitle">Here's who I am & what I do</h4>
+        <div class="btn-1-2_desktop">
+          <a href="/resume.html" class="card-btn_1_desktop">Resume</a>
+          <a href="/project.html" class="card-btn_2_desktop">Projects</a>
+      </div>
+        <p class="intro-text_1">
+          I'm a paragraph. Click here to add your own text and edit me. It’s
+          easy. Just click “Edit Text” or double click me to add your own
+          content and make changes to the font.
+        </p>
+        <p class="intro-text_2">
+          I’m a great place for you to tell a story and let your users know a
+          little more about you.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-text-1">
+        <h4 class="footer-text_header" >Call</h4>
+        <h5>123-456-7890</h5>
+      </div>
+      <div class="footer-text-2">
+        <h4 class="footer-text_header">Write</h4>
+        <h5>info@mysite.com</h5>
+      </div>
+      <div class="footer-text-3">
+        <h4 class=" footer-text-3_header">Follow</h4>
+        <div class="social-media-footer">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-instagram"></a>
+      </div>
+      </div>
+      <p class="copyright">
+        This website design was created by Wix.com, and is used here for
+        strictly educational purposes.
+      </p>
+    </footer>
+  </body>
 </html>
