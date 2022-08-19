@@ -12,7 +12,7 @@
     <!-- main of contact -->
     <main class="main-contact">
         <!-- header section -->
-        <section class="header">
+        <section class="header header-resume">
             <label class="hamburger-menu">
           <input type="checkbox" />
           <span class="menu"> <span class="hamburger"></span> </span>
@@ -24,40 +24,48 @@
         </label>
         <div class="header-badge">
           <div class="blue-square"></div>
-          <a href="#" class="profile-name">Leila Faez</a>
+          <a href="#" class="profile-name">Leila Faez<p id="job-title" style="display: none;">/Web developer</p></a>
         </div>
         <a href="#" class="profile-job">web developer</a>
+        <!-- menu -->
+      <section class="homepage-menu"  >
+        <div class="main-menu" style="display: none" >
+          <div class="menu "><a href="index.html" class="first first-resume">ABOUT ME</a></div>
+          <div class="menu"><a href="resume.html" >RESUME</a></div>
+          <div class="menu"><a href="contact.html" class="third">CONTACT</a></div>
+        </div>
+        </section>
         </section>
         <!-- form section -->
         <section class="contact-form">
           <div class="contact-top">
             <div class="blue-square"></div>
-            <h1>Let's Talk</h1>
+            <h1 class="resume-first-title">Let's Talk</h1>
            </div>
-           <div class="white-container">
+           <div class="white-container form-white-container">
                 <form action="">
-                    <div class="name-part">
+                    <div class="name-part n-part">
                         <label class="required" for="name">First Name</label>
                         <input type="text" id="name" name="fname" required>
                     </div>
-                    <div class="family-part">
+                    <div class="family-part l-part">
                         <label class="required" for="family">Last Name</label>
                         <input type="text" id="family" name="lname" required>
                     </div>
-                    <div class="email-part">
+                    <div class="email-part e-part">
                         <label class="required" for="email">Email</label>
                         <input type="email" id="email" name="email" required>
                     </div>
-                    <div class="subject-part">
+                    <div class="subject-part s-part">
                         <label for="subject">Subject</label>
                         <input type="text" id="subject" name="subject" minlength="5" maxlength="30">
                     </div>
-                    <div class="message-part">
+                    <div class="message-part m-part">
                         <label for="message">Message</label>
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
                         <!-- <input type="text" id="message" name="message" maxlength="150"> -->
                     </div>
-                    <div class="btn-part">
+                    <div class="btn-part b-part">
                         <button class="resume-btn" onclick="save()">Send</button>
                         <span id="result"></span>
                     </div>
@@ -105,6 +113,44 @@
           </p>
         </div>
         </section>
+         <!-- footer desktop -->
+      <section class="footer-desktop" style="display: none;">
+        
+          <div class="copyright-part"><p class="copyright">
+            ©This website design was created by <a href="https://wix.com" class="wix">Wix.com</a>, and is used here for
+            strictly educational purposes.
+          </p></div>
+          <div class="contact-info">
+          <div class="contact-detail">
+            <p class="footer-text">Call</p>
+            <p>07938478994</p>
+          </div>
+          <div>
+            <p class="footer-text">Write</p>
+            <a href="mailto : leilifaz39@gmail.com" class="email">
+                <p>leilifaz39@gmail.com</p>
+            </a>
+          </div>
+        </div>
+          <div class="social-media-footer">
+          <p class="footer-text">Follow</p>
+
+          <ul>
+            <a href=""
+              ><img src="/img/facebooklogo.png" class="footer-logo" alt="facebook logo for footer"
+            /></a>
+            <a href=""
+              ><img src="/img/twitter logo.png" class="footer-logo" alt="twitter logo for footer"
+            /></a>
+            <a href=""
+              ><img src="/img/linkedinlogo.png" class="footer-logo" alt="linkedin logo for footer"
+            /></a>
+            <a href=""
+              ><img src="/img/instalogo.png" class="footer-logo" alt="instagram logo for footer"
+            /></a>
+          </ul>
+        </div>
+      </section>
     </main>
     <!-- <script type="text/javascript" src="/javascript/main.js"></script> -->
   </body>

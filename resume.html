@@ -10,7 +10,7 @@
   <body>
     <main class="main-resume">
         <!-- header area -->
-      <section class="header">
+      <section class="header header-resume">
         <label class="hamburger-menu">
           <input type="checkbox" />
           <span class="menu"> <span class="hamburger"></span> </span>
@@ -22,30 +22,39 @@
         </label>
         <div class="header-badge">
           <div class="blue-square"></div>
-          <a href="#" class="profile-name">Leila Faez</a>
+          <a href="#" class="profile-name">Leila Faez <p id="job-title" style="display: none;">/Web developer</p></a>
         </div>
         <a href="#" class="profile-job">web developer</a>
+        <!-- menu -->
+      <section class="homepage-menu"  >
+        <div class="main-menu" style="display: none" >
+          <div class="menu "><a href="index.html" class="first first-resume">ABOUT ME</a></div>
+          <div class="menu"><a href="resume.html" class="second-resume">RESUME</a></div>
+          <div class="menu"><a href="contact.html">CONTACT</a></div>
+        </div>
+        </section>
       </section>
+      
         <!--experience area  -->
       <section class="experience">
         <div class="resume-top">
             <div class="blue-square"></div>
-            <h1>Resume</h1>
+            <h1 class="resume-first-title">Resume</h1>
         </div>
         <div class="exp-btn">
-            <h2>Experience</h2>
-            <a href=""><button class="resume-btn">DOWNLOAD CV</button></a>
+            <h2 class="resume-first-subtitle">Experience</h2>
+            <a href=""><button class="resume-btn resume-btn-responsive">DOWNLOAD CV</button></a>
         </div>
-        <div class="white-container">
-            <h3>2019-Present</h3>
+        <div class="white-container resume-white-container">
+            <h3 class="resume-year">2019-Present</h3>
             <p class="sub-title">JOB POSITION</p>
             <p class="second-sub-title">Company Name<br>Company Location</p>
             <p class="main-title">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.</p>
             <p class="main-title">I'm a great place for you to tell a story and let your users know a little more about you.</p>
         </div>
         
-        <div class="white-container">
-            <h3>2017-2019</h3>
+        <div class="white-container resume-white-container">
+            <h3 class="resume-year">2017-2019</h3>
             <p class="sub-title">JOB POSITION</p>
             <p class="second-sub-title">Company Name<br>Company Location</p>
             <p class="main-title">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.</p>
@@ -54,17 +63,17 @@
       </section>
         <!-- education area -->
       <section class="education">
-        <h2>Education</h2>
-        <div class="white-container">
-            <h3>2015 - 2017</h3>
+        <h2 class="resume-second-subtitle">Education</h2>
+        <div class="white-container resume-white-container">
+            <h3 class="resume-year">2015 - 2017</h3>
             <p class="sub-title">UNIVERSITY NAME</p>
             <p class="second-sub-title">Degree Level<br>University Location</p>
             <p class="main-title">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.</p>
             <p class="main-title">I'm a great place for you to tell a story and let your users know a little more about you.</p>
         </div>
         
-        <div class="white-container">
-            <h3>2012 - 2015</h3>
+        <div class="white-container resume-white-container">
+            <h3 class="resume-year">2012 - 2015</h3>
             <p class="sub-title">UNIVERSITY NAME</p>
             <p class="second-sub-title">Degree Level<br>University Location</p>
             <p class="main-title">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.</p>
@@ -73,38 +82,38 @@
       </section>  
         <!--skill/language area -->
       <section class="skill-language">
-        <div class="white-container">
+        <div class="white-container resume-white-container skill-container">
            
-            <h2>Professional Skillset</h2>
+            <h2 class="head1">Professional Skillset</h2>
            <div class="skill">
-            <div class="blue-square-list"></div>
-            <p class="list-item">Entrepreneurial Mindset</p>
+            <div class="blue-square-list "></div>
+            <p class="list-item skill1">Entrepreneurial Mindset</p>
            </div>  
            <div class="skill">
             <div class="blue-square-list"></div>
-            <p class="list-item">Go-to-Market Planning</p>
+            <p class="list-item skill2" >Go-to-Market Planning</p>
            </div>
            <div class="skill">
             <div class="blue-square-list"></div>
-            <p class="list-item">Teamwork & Collaboration</p>
+            <p class="list-item skill3">Teamwork & Collaboration</p>
            </div>
            <div class="skill">
             <div class="blue-square-list"></div>
-            <p class="list-item">Digital Analytics</p>
+            <p class="list-item skill4">Digital Analytics</p>
            </div>
 
-           <h2>Languages</h2>
+           <h2 class="head2">Languages</h2>
            <div class="skill">
             <div class="blue-square-list"></div>
-            <p class="list-item">English (native)</p>
+            <p class="list-item lang1">English (native)</p>
            </div>  
            <div class="skill">
             <div class="blue-square-list"></div>
-            <p class="list-item">Spanish (proficient)</p>
+            <p class="list-item lang2">Spanish (proficient)</p>
            </div>
            <div class="skill">
             <div class="blue-square-list"></div>
-            <p class="list-item">French (proficient)</p>
+            <p class="list-item lang3">French (proficient)</p>
            </div>
         </div>
       </section> 
@@ -147,6 +156,44 @@
           </p>
         </div>
       </section>  
+      <!-- footer desktop -->
+      <section class="footer-desktop" style="display: none;">
+        
+          <div class="copyright-part"><p class="copyright">
+            ©This website design was created by <a href="https://wix.com" class="wix">Wix.com</a>, and is used here for
+            strictly educational purposes.
+          </p></div>
+          <div class="contact-info">
+          <div class="contact-detail">
+            <p class="footer-text">Call</p>
+            <p>07938478994</p>
+          </div>
+          <div>
+            <p class="footer-text">Write</p>
+            <a href="mailto : leilifaz39@gmail.com" class="email">
+                <p>leilifaz39@gmail.com</p>
+            </a>
+          </div>
+        </div>
+          <div class="social-media-footer">
+          <p class="footer-text">Follow</p>
+
+          <ul>
+            <a href=""
+              ><img src="/img/facebooklogo.png" class="footer-logo" alt="facebook logo for footer"
+            /></a>
+            <a href=""
+              ><img src="/img/twitter logo.png" class="footer-logo" alt="twitter logo for footer"
+            /></a>
+            <a href=""
+              ><img src="/img/linkedinlogo.png" class="footer-logo" alt="linkedin logo for footer"
+            /></a>
+            <a href=""
+              ><img src="/img/instalogo.png" class="footer-logo" alt="instagram logo for footer"
+            /></a>
+          </ul>
+        </div>
+      </section>
 
     </main>
   </body>

@@ -115,7 +115,7 @@ main{
     border-radius: 50%;
 }
 .profile-beige-section{
-    width: 318px;
+    width: 320px;
     background-color: var(--Dark-beige);
     height: 203px;
 }
@@ -211,14 +211,14 @@ button{
     margin-left: 1.7em;
     
 }
-.content :nth-child(3){
+.content :nth-child(4){
     font-family: var(--body-font);
     margin-left: 2em;
     font-size: 16px;
     line-height: 1.5em;
     text-align: justify;
 }
-.content :nth-child(4){
+.content :nth-child(5){
     font-family: var(--body-font);
     margin-left: 2em;
     font-size: 16px;
@@ -617,13 +617,13 @@ label a {
         font-size: 17px !important;
         margin-top: 30px !important;
     }
-    .second-content{
-        font-size: 17px !important;
-        margin-left: 2em !important;
+    #second-content{
+        font-size: 17px;
+        margin-left: 2em ;
     }
     .button-content{
         display: flex !important;
-        
+        align-items: flex-end;
     }
     .resume-btn{
         width: 130px !important;
@@ -647,6 +647,9 @@ label a {
     margin: 1.5em;
   
    }
+   .index-menu{
+    margin-top: 3.5em;
+   }
    .main-menu a{
     text-decoration: none;
     font-size: 14px;
@@ -654,6 +657,9 @@ label a {
     margin-left:20px;
     color: var(--Black);
    }
+.main-menu a:hover{
+    color: var(--Royal-blue);
+}
 .first{
     color: var(--Royal-blue) !important;
 }
@@ -665,7 +671,6 @@ label a {
     background-color: var(--White);
     display: flex !important;
     justify-content: space-between;
-    align-items: center;
     margin-top: 50px;
 }
 
@@ -673,13 +678,14 @@ label a {
     text-align: center;
     position: absolute;
     left: 760px;
+    font-size: 14px;
 }
 .contact-detail{
     margin-right: 18px;
 }
 .social-media-footer{
     text-align: center;
-   
+   font-size: 14px;
 }
 .footer-text{
  margin-bottom: 0;
@@ -688,17 +694,16 @@ label a {
     margin-top: 10px;
 }
 .copyright-part{
-    width: 220px;
-    text-align: center
+    width: 250px;
 }
 
 .profile-white-section{
     background-color: var(--Dark-beige);
-    width: 400px;
-    /* height: 503px; */
+    width: 450px;
+ 
 }
 .profile-beige-section{
-    width: 400px;
+    width: 450px;
    height: 253px;
 }
 .profile-image-section{
@@ -725,7 +730,155 @@ label a {
 .blue-line{
     margin-left:7px;
 }
+.profile-footer{
+    position: absolute;
+    top :300px
+}
 .content{
     background-color: var(--White);
+}
+/* for resume.html */
+.header-resume, .header{
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.first-resume{
+    color: var(--Black) !important;
+}
+.second-resume{
+    color: var(--Royal-blue) !important;
+}
+.resume-first-title{
+    font-size: 35px;
+}
+.resume-first-subtitle, .resume-second-subtitle{
+    font-size: 25px;
+    margin-left: 200px;
+}
+.resume-btn-responsive{
+    margin-right: 175px;
+}
+.resume-proj-btn{
+    background-color: var(--White);
+
+}
+.resume-white-container{
+    margin-left: 200px;
+    width: 524px;
+    height: 317px;
+}
+.resume-year{
+    font-size: 20px;
+    margin-left: .8em;
+}
+.skill-container{
+    display: grid;
+    grid-template-columns: 262px 262px;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px;
+    grid-template-areas: "head1 head2"
+    "skill1 lang1"
+    "skill2 lang2"
+    "skill3 lang3"
+    "skill4 .";
+}
+.head1{
+    grid-area: head1;
+    padding-bottom:1em !important;
+ }
+.skill1{
+    grid-area: skill1;
+}
+.skill2{
+    grid-area: skill2;
+}
+.skill3{
+    grid-area: skill3;
+}
+.skill4{
+    grid-area: skill4;
+}
+.head2{
+    grid-area: head2;
+    padding-bottom:1em !important;
+}
+.lang1{
+    grid-area: lang1;
+}
+.lang2{
+    grid-area: lang2;
+}
+.lang3{
+    grid-area: lang3;
+}
+/* for contact.html */
+.form-white-container{
+    width: 679px;
+    height: 679px;
+    margin-left: 120px;
+    display: grid;
+    grid-template-columns: 339.5px 339.5px;
+    grid-template-rows: repeat(9, 75.4px);
+    grid-template-areas: ". ."
+    "f l"
+    "e e"
+    "s s"
+    "m m"
+    "m m"
+    "b b"
+    ". ."
+    ". .";
+}
+.n-part{
+    grid-area: f ;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    margin-left: 1em;
+}
+.l-part{
+    grid-area: l ;
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+.e-part{
+    grid-area: e;
+    margin-left: 1em;
+    grid-row: 3/4;
+    grid-column: 1/3;
+}
+.s-part{
+    grid-area: s;
+    grid-row: 4/5 ;
+    grid-column: 1/3;
+     margin-left: 1em;
+}
+.m-part{
+    grid-area: m;
+    grid-row: 5/7;
+    grid-column: 1/3;
+    margin-left: 1em;
+   
+}
+.b-part{
+    grid-area: b;
+    grid-row: 7/8;
+    grid-column: 1/2;
+    margin-left: 1em;
+
+}
+#email, #subject{
+    width: 555px;
+    height: 40px;
+}
+#message{
+    width: 555px;
+    height: 100px;
+}
+.first-resume{
+    color: var(--Black);
+}
+.third{
+    color: var(--Royal-blue);
 }
 }
