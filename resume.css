@@ -141,8 +141,24 @@
     transform: scale(1);
   }
 
+/* Main div */
 
+.main_all{
+    display: flex;
+    justify-content: center;
+    
+}
+.top_main{
+    padding-left: 40px;
+    width: 250px;
+    height: 50px;
+    justify-content: center;
+    margin-top: 60px;   
+}
 
+.title_1{
+
+}
   .c_w {
     display: flex;
 
