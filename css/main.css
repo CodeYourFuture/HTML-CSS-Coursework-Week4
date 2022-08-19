@@ -57,6 +57,21 @@ color: #333333;
 }
 /* header */
 
+/* middle section on resume */
+.text h2 {
+    margin-top: 5.45rem;
+    text-align: center;
+}
+.text p {
+    text-align: center;
+}
+.col {
+    margin-top: 2.54rem;
+}
+.middletext {
+    background-color: #E6DACE;
+    margin-top: 1.2rem;
+}
 
 /* footer page */
 
