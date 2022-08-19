@@ -1,0 +1,466 @@
+/* Add your CSS here */
+
+/* Dont' forget to link this file to your HTML in the <head> */
+
+/* add mobile wiframe */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,300&family=Open+Sans:ital@1&family=Poppins:ital,wght@1,600&family=Quicksand:wght@300&family=Roboto:ital,wght@1,100;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,300&family=Open+Sans:ital@1&family=Poppins:ital,wght@1,600&family=Roboto:ital,wght@1,100;1,300&display=swap');
+
+ body{
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding:0px;
+    max-width: 500px;
+    max-height: 2000px;
+    font-family: 'Quicksand', sans-serif;
+}
+:root{
+    --Dark: #E6DACD;
+    --Light : #F4ECE6;
+    --Royal : #0150FD;
+    --Black: #000;
+    --White: #FFF;
+} 
+/* grid total page (homep) */
+.homep{
+    display:grid;
+    grid-template-columns:1fr;
+    grid-template-areas:"header"
+                         "main"
+                         "aside"
+                         "footer" ;
+    grid-gap:10px;  
+    position: relative; 
+    height: 100%;                 
+} 
+/* header*/
+.homep-header{
+grid-area: header;
+background-color: rgb(248, 249, 250);
+
+grid-template-columns: 2fr 1fr;
+grid-template-rows: 50px auto;
+grid-template-areas: "head . logo"
+                      "par . nav";
+                      
+ display:grid;
+ width:500px;
+ font-family: 'Poppins', sans-serif;
+ /* position:absolute; */
+  z-index: 1; 
+}
+.homep-header-head{
+   display: flex;
+    margin-bottom: 0px; 
+    grid-area: head; 
+    margin-left: 10px;
+    margin-right: 0px;
+    position: relative;
+}
+.homep-header-head h2{
+padding-bottom: 0px;
+margin-bottom: 0px;
+margin-top: 30px;
+margin-left: 35px;
+
+}
+.homep-header-head span{
+    margin-top: 40px;
+    margin-right: 10px;
+    height:25px;
+    width: 25px;
+    position: absolute;
+    background-color:#0150FD;
+    top:0px;
+    left: 0px;
+}
+.homep-header-par{
+margin-left: 50px;
+margin-top: 20px;
+grid-area: par;
+font-size: 1.3rem;
+font-weight:lighter;
+font-family: arial;
+letter-spacing: 3px;
+}
+.homep-header-humberger{
+    grid-area: logo;
+}
+.homep-header-humberger img{
+width:40px;
+height;:40px
+margin-left: 30px;
+float: right;
+}
+.homep-header-navbar{
+    display: none;
+    grid-area: nav;
+} 
+/**********************************/
+/*  main*/
+ 
+
+/*********************************/
+/* footer */
+ .homep-footer{
+     grid-area: footer;
+    position:absolute;
+    z-index: 2;
+    top: 3200px;
+    width: 500px;
+    background-color: #fff;
+    border: 1px solid #E6DACD ;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;}
+.homep-footer h4{
+        font-weight: bold;
+    }
+     
+.footer-images{
+    display: flex;
+    justify-content: flex-start;
+    gap:1.5em;
+}
+.footer-images img{
+width:8%;
+width:8%;
+}
+
+.seperator{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.homep-footer-follow,.homep-footer-par p{
+    margin-left: em;} 
+    .homep-main-button2{
+        display:none;
+    }
+    .slash{
+        display: none;
+    }
+    .homep-header-par1{
+        display: none;
+    }
+.bodyhom{
+ background-color: var(--Dark);
+}
+.main-resume span{
+    height:30px;
+    width: 30px;
+    background-color:#0150FD;
+    position: absolute;
+    right:500px;
+    top:170px;   
+}
+div{
+    background-color: var(--White);
+    width: 500px;
+    padding:1em ;
+    margin:1em 0px;
+}
+div h2{
+    font-weight:bolder;
+     color: var(--Royal);
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+}
+.tittles{
+    margin: 1em;
+    font-family:q;
+    font-size: 2em;
+}
+.main-resume{
+    width: 500px;
+    height: 300px;
+}
+
+.main-resume h1{
+    font-size: 2.5rem;
+    font-family: q;
+    text-align: center;
+    
+
+}
+.resume-sub{
+    display: flex;
+    justify-content: space-between;
+
+}
+.resume-sub p{
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    line-height: 2rem;;
+}
+.resume-sub button{
+    color:var(--White) ;
+    background-color: var(--Royal);
+    border: #0150FD;
+    border-radius: 30px;
+    padding: 0px;
+    font-size: 1.3rem;
+    width: 180px;
+}
+.resume-sub button:hover{
+    color: var(--Black);
+    background-color: var(--Dark);
+    border: 3px solid var(--Royal);
+}
+.checkbox0{
+    height:25px;
+    width: 25px;
+    background-color:#0150FD;
+}
+.paragragh{
+    font-size: 1.5rem;
+    margin-top: 2em;
+    text-align: justify;
+    line-height: 2rem;;
+}
+/************media query 900 desktop**************  */
+
+@media only screen and (min-width:900px) {
+    body{
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding:0px;
+        max-width: 2000px;
+        max-height: 1200px;
+        font-family: 'Quicksand', sans-serif;
+    }
+    /* total grid */ 
+    .homep{
+        display:grid;
+        grid-template-columns:1fr 1fr ;
+        grid-template-rows: 200px 200px;
+        grid-template-areas:"header header"
+                             "div aside"
+                             "footer footer ";
+         position: relative;                                     
+    }
+
+    /* header */
+
+    .homep-header{
+        grid-area: header;
+        background-color: #fff;
+        width: 1900px;
+        height: 200px;
+        font-family: 'Poppins', sans-serif;
+        margin-left: 20px;
+        margin-right: 20px;
+        position:fixed;
+        display:grid;
+        grid-template-columns: 1fr 1fr 1.2fr;
+        grid-template-rows: 100px;
+        grid-template-areas: "head proj nav";
+        font-family: 'Poppins', sans-serif;
+        z-index: 3;
+        
+        }
+        .homep-header-head{
+            grid-area:head ;
+             margin-bottom: 0px; 
+             margin-left: 30px;
+             margin-right: 0px;
+        
+         }
+         .homep-header-head h2{
+         padding-bottom: 0px;
+         margin-bottom: 0px;
+         margin-top: 1.8em;
+         margin-left: 40px;
+         font-size: 2.5rem;
+         padding-right: 0px;
+         margin-right: 0px;
+         text-align: center;
+         
+         }
+         .homep-header-head span{
+             margin-top: 3.5em;
+             margin-right: 30px;
+             margin-left: 0px;
+             height:30px;
+             width: 30px;
+             position: absolute;
+             top: 30px;
+             background-color:#0150FD;
+             
+         }
+         .homep-header-par{
+         margin-left: 0px;
+         margin-top: 3em;
+         grid-area: proj;
+         font-size: 1.5rem;
+         font-weight:lighter;
+         font-family: arial;
+         letter-spacing: 3px;
+         }
+         .homep-header-humberger{
+             display: none;
+         }
+         .homep-header-navbar{
+            display:block;
+             grid-area: nav;
+             margin-top: 2.5em;
+             font-size: 1.2rem;
+             
+             
+         }
+         ul{
+            display: flex;
+            gap: 20px;
+            margin-top:50px ;
+            list-style-type: none;
+            }
+         li a{
+            text-decoration: none;
+            color: black;
+            list-style-type: none;
+         }
+         li a:hover{
+            color: #0150FD;
+         }
+         li{
+            font-family: q;
+         }
+         .slash{
+            display: inline;
+            margin-bottom: 0px;
+           
+         }
+        /* main */
+        /************************/
+        .main-resume{
+            position: absolute;
+            top: 300px;
+            left: 25em;
+            display: flex;
+            flex-direction: column;
+            width: 1000px;
+        }
+        
+        .main-resume h1{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 5rem;
+            margin-top: 0px;
+            text-align: center;
+            align-items: center;
+        }
+        .main-resume span{
+            height:60px;
+            width: 60px;
+            background-color:var(--Royal);
+            position: absolute;
+            left: 150px;
+            top:20px;   
+        }
+        
+
+        .arrange{
+            width:1000px;
+            display: flex;
+        }
+
+        /* footer */
+        .homep-footer{
+            grid-area: footer;
+            z-index: 2;
+            background-color: #fff;
+            border: 1px solid #f1efed ;
+            display: grid;
+            grid-template-columns: repeat(5 ,1fr);
+            grid-template-areas: " call follow write";
+
+            grid-gap:2em;
+            width:2000px;
+            top:2870px;
+        }
+        .homep-footer h4{
+                font-weight: bold;
+                grid-area: follow;
+                font-size: 1.4rem;
+            }
+             
+        .footer-images{
+            display: flex;
+            justify-content: flex-start;
+            gap:1.5em;
+            grid-area:img ;
+        }
+        .footer-images img{
+        width:5%;
+        width:5%;
+        }
+        .homep-footer-par p{
+            margin-left: 2em
+            display:inline;
+        font-size: 1.4rem;}
+        
+             .homep-footer-write{
+        grid-area: write;
+        font-size: 1.4rem;
+             }
+             .homep-footer-call{
+                grid-area: call;
+                font-size: 1.4rem;
+                     }
+        
+                .footer-images img{
+                    hight:5%;
+                    width:5%
+                } 
+                .homep-main-button{
+                    display: none;
+                }
+
+        .footer-images img{
+            hight:5%;
+            width:5%
+        } 
+        .homep-main-button{
+            display: none;
+        }
+        /* *****resume */
+        
+        .subtittle-resume{
+            text-align: center;
+            position: absolute;
+            top:400px
+        }
+        .checkbox1{
+            height:30px;
+            width: 30px;
+            background-color:#0150FD;
+            position: absolute;
+            right:600px;
+            top:600px;
+
+            
+        }
+        h2{
+            font-size: 2.4rem;
+        }
+
+        
+
+}
+    
+
+        
+
+
+
+
+
+
+
+
+
+
+ 
+    
+
+
+
