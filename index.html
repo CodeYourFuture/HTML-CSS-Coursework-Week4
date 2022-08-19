@@ -5,36 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Add a link to your custom CSS here -->
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="/css/index.css">
 
-    <title>Business portfolio Responsive grid project</title> 
+    <title>Business portfolio</title> 
 </head>
+<div class="grid-container">
 <body>
+    <!--------------- HEADER---------------------------->
     <header>
-        <div>
+        <div class="grid-header">
         <div class="header">
-                <h1>Maya Nelson</h1>
-                <h2>/ PROJECT MANEGER</h2>
+            <h1><span>Maya Nelson </span>/ PROJECT MANEGER</h1>
+            
         </div>
         <div>
                 <nav class="nav-bar">
                     <ul>
-                        <li> <a href="#">ABOUT ME</a></li>
-                        <li> <a href="#">RESUME</a></li>
-                        <li> <a href="#">PROJECTS</a></li>
-                        <li> <a href="#">CONTACT</a></li>
+                        <li> <a href="index.html">ABOUT ME</a></li>
+                        <li> <a href="resume.html">RESUME</a></li>
+                        <li> <a href="projects.html">PROJECTS</a></li>
+                        <li> <a href="contact.html">CONTACT</a></li>
                     </ul>
                 </nav>
         </div>
         </div>
     </header>
     <!-------------------------MAIN------------------------------->
-    <main>
+    <main class="grid-main">
+        
         <section1 class="main-left"> 
-            <img src="/designs/AdobeStock_230407429.webp" alt="Maya img"/>
+            <div class="main-profile">
+        <img class="profile" src="/designs/AdobeStock_230407429.webp" alt="Maya img"/>
             <h1>Maya Nelson</h1>
             <hr>
-            <div> PROJECT MANEGER</div>
+            <div> <p>PROJECT MANEGER</p></div>
             <div class="Social-media">
                 <img src="/designs/feceb.webp"alt="fecebook"/>
                 <img src="/designs/twiter.webp"alt="fecebook"/>
@@ -42,22 +46,25 @@
                 <img src="/designs/instagran.webp"alt="fecebook"/>
 
             </div>
+        </div>
         </section1>
         <section2 class="main-right">
+            <div class="main-summary">
             <h1>Hello</h1>
             <h2>My profile and my projects</h2>
             <div>
-                <button type="button-1">RESUME</button>
-                <button type="button-2">PROJECTS</button>
+                <button class="button-1" type="button-1">RESUME</button>
+                <button class="button-2" type="button-2">PROJECTS</button>
             </div>
             <p>I'm a paragraph. Here you can add your text. It's easy, just click "Edit Text" or double click me to edit content, font and more.</p>
             <p>I'm a great place for you to tell your story and share about yourself.</p>
+        </div>
         </section2>
 </main>
 <!----------------- END MAIN---------------------->
 <!---------------------FOOTER--------------------->
-<footer>
-    <div class="section-feft">
+<footer class=" grid-footer">
+    <div class="section-left">
         <P>Cookies Policy</P>
         <p>Privacy Policy</p>
         <p>© 2023 by Maya Nunes. </p>
@@ -72,23 +79,22 @@
         <h1>Email</h1>
         <p>info@mysite.com</p>
     </div>
-    <div class="social media">
+    <div class="social-media">
         <h1>Social networks</h1>
+        <div class="social-midia-img">
         <img src="/designs/feceb.webp"alt="fecebook"/>
-                <img src="/designs/twiter.webp"alt="fecebook"/>
-                <img src="/designs/indeed.webp"alt="fecebook"/>
-                <img src="/designs/instagran.webp"alt="fecebook"/>
+                <img src="/designs/twiter.webp"alt="twiter"/>
+                <img src="/designs/indeed.webp"alt="indeed"/>
+                <img src="/designs/instagran.webp"alt="instagran"/>
+            </div>
             </div>
         </div>
 </footer>
 
-    
-
-    <!-- Add your markup here -->
-
 
     <!-- Please leave this in to credit the creators of this design -->
-    <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
+   
 </body>
-
+</div>
+<p >This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
 </html>
