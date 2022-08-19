@@ -1,16 +1,14 @@
 /* Add your CSS here */
 :root {
-    --grey1: #E6DACD;
-    --grey2: #F4ECE6;
-    --blue: #0150FD;
-    --black:  #000;
-    --white: #FFF;
-    --type1: "Poppins", sans-serif;
-    --type2: "Quicksand", sans-serif;
+  --grey1: #e6dacd;
+  --grey2: #f4ece6;
+  --blue: #0150fd;
+  --black: #000;
+  --white: #fff;
+  --type1: "Poppins", sans-serif;
+  --type2: "Quicksand", sans-serif;
+}
 
-
-  }
-   
 .font1 {
   font-family: var(--type1);
   font-size: large;
@@ -28,7 +26,6 @@ body {
 }
 
 h1 {
-  font-size: 40px !important;
   margin: 0.1em 0;
 }
 
@@ -69,7 +66,7 @@ header {
 }
 
 main {
-  background-color: var(--grey1);
+  background-image: linear-gradient(180deg, var(--white) 25%, var(--grey1) 8%);
 }
 
 /* Navigation */
@@ -77,19 +74,6 @@ main {
 ul {
   display: none;
   list-style: none;
-}
-
-li {
-  padding: 10px;
-}
-
-a {
-  color: var(--black)
-  text-decoration: none;
-}
-
-a:hover {
-  color: var(--blue);
 }
 
 /**Section**/
@@ -110,8 +94,17 @@ a:hover {
   padding: 0 0 1em 0;
 }
 
+#hello_text {
+  font-size: 40px;
+}
+
 img {
   border-radius: 50%;
+}
+
+hr {
+  border: 1px solid var(--blue);
+  width: 50px;
 }
 
 .button1 {
@@ -133,6 +126,10 @@ img {
   border: var(--black) 1px solid;
   border-radius: 30px;
   width: 130px;
+}
+
+.inactive {
+  display: none;
 }
 
 /**Footer**/
@@ -169,7 +166,7 @@ footer {
 
 /** Icons**/
 .icons_container {
-  background-color: var(--white)
+  background-color: var(--white);
   align-self: stretch;
   display: flex;
   justify-content: center;
@@ -285,6 +282,152 @@ textarea {
   border-right: var(--white);
   padding: 0.8em;
   margin-bottom: 0.8em;
+}
+.main_container,
+.name_container {
+  display: contents;
+}
+
+.nav_container {
+  display: none;
+}
+
+/* Media queries */
+@media screen and (min-width: 750px) {
+  header {
+    display: block;
+  }
+
+  .name_container {
+    padding-top: 13px;
+  }
+
+  .square_1 {
+    padding-top: 18px;
+  }
+
+  .main_container {
+    display: inline-grid;
+    grid-template-columns: 50px auto auto;
+    width: 100%;
+  }
+
+  .square_icon,
+  .name_container,
+  .nav_container {
+    display: unset;
+  }
+
+  .menu_icon,
+  .title {
+    display: none;
+  }
+
+  .name::after {
+    content: " / PROJECT MANAGER";
+    font-family: var(--type2);
+    font-size: 17px;
+  }
+
+  .bigger {
+    font-size: 25px !important;
+  }
+
+  /* Navigation */
+
+  ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    list-style: none;
+  }
+
+  li {
+    padding: 10px;
+  }
+
+  a {
+    color: var(--black);
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: var(--blue);
+  }
+
+  main {
+    background-image: linear-gradient(90deg, var(--grey1) 40%, var(--white) 8%);
+    display: flex;
+    justify-content: center;
+  }
+
+  .card1 {
+    display: flex;
+    margin: 8em 0em 8em 0em;
+    padding: 2em 0 0em 0;
+    flex-direction: column;
+    align-items: center;
+    grid-gap: 2em;
+    width: 400px;
+    justify-content: space-between;
+  }
+
+  .card2 {
+    width: 330px;
+    margin: 8em 0em 8em 1.5em;
+  }
+
+  #hello_text {
+    font-size: 100px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 2em;
+  }
+
+  .para {
+    font-size: 15px;
+    margin-top: 3em;
+  }
+
+  .icons_container {
+    padding: 1.5em;
+  }
+
+  .inactive {
+    display: block;
+  }
+
+  .inactive_desktop {
+    display: none;
+  }
+
+  footer {
+    font-size: 14px;
+    display: grid;
+    grid-template-columns: auto 120px 120px 120px;
+    grid-template-rows: 80px;
+    grid-template-areas: "a b c d";
+  }
+
+  .tel {
+    grid-area: b;
+  }
+
+  .mail {
+    grid-area: c;
+  }
+
+  .media {
+    grid-area: d;
+  }
+
+  .claim {
+    grid-area: a;
+  }
 }
 
 /* Dont' forget to link this file to your HTML in the <head> */

@@ -19,49 +19,54 @@
   <body>
     <!-- Add your markup here -->
     <header>
-      <div class="square_icon" id="square_2">
-        <div class="square_1">
-          <div id="square_2inlineContent" data-testid="inline-content" class="">
-            <div
-              id="square_2inlineContent-gridContainer"
-              data-testid="mesh-container-content"
-            ></div>
-          </div>
-        </div>
-      </div>
-
-      <span class="font1 name"> Maya Nelson </span>
-      <span class="font2 title"> PROJECT MANAGER </span>
-
-      <div class="icon_container_1 menu_icon">
-        <div class="icon_line_1 icon_line_1_2 icon_line_1_1"></div>
-        <div class="icon_line_1 _2vsXM"></div>
-        <div class="icon_line_1 icon_line_1_2 icon_line_1_3"></div>
-      </div>
-
-      <nav>
-        <ul class="font2">
-          <li>
-            <a href="/index.html">ABOUT ME</a>
-        </li>
-          <li>
-            <a href="#">RESUME</a>
-          </li>
-          <li>
-            <a href="#">PROJECTS</a>
-          </li>
-          <li>
-            <a href="/contact.html">CONTACT</a>
-          </li>
-        </ul>
-      </nav>
+        <div class="main_container">
+          <div class="square_icon" id="square_2">
+            <div class="square_1">
+              <div id="square_2inlineContent" data-testid="inline-content" class="">
+                <div
+                  id="square_2inlineContent-gridContainer"
+                  data-testid="mesh-container-content"
+                ></div>
+              </div>
+            </div>
+            </div>
+            <div class="name_container">
+              <span class="font1 name bigger"> Maya Nelson </span>
+              <span class="font2 title"> PROJECT MANAGER </span>
+            </div>
+            <div class="icon_container_1 menu_icon">
+              <div class="icon_line_1 icon_line_1_2 icon_line_1_1"></div>
+              <div class="icon_line_1 _2vsXM"></div>
+              <div class="icon_line_1 icon_line_1_2 icon_line_1_3"></div>
+            </div>
+            <div class="nav_container" >
+                <nav>
+                  <ul class="font2" style="font-size: 13px;">
+                    <li>
+                      <a href="/index.html">ABOUT ME</a>
+                      </li>
+                        <li>
+                          <a href="#">RESUME</a>
+                        </li>
+                        <li>
+                          <a href="#">PROJECTS</a>
+                        </li>
+                        <li>
+                          <a href="/contact.html">CONTACT</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+    </div>
     </header>
 
     <main>
       <section class="card1">
         <img class="photo" src="/designs/icon.jpeg" alt="maya_photo"/>
         <span class="font1"> Maya <br> Nelson</span>
-        <div><button class="font2 button1">RESUME</button>
+        <hr>
+        <span class="inactive">PROJECT MANAGER</span>
+        <div class="inactive_desktop"><button class="font2 button1">RESUME</button>
         <button class="font2 button2">PROJECT</button></div>
         <div class="icons_container">
           <img src="/designs/fb.png"  class="icons"></img>
@@ -72,9 +77,11 @@
       </section>
 
       <section class="card2">
-        <h1 class="font1">Hello</h1>
+        <h1 class="font1" id="hello_text">Hello</h1>
         <h2 class="font2">Here's who I am & what I do</h2>
-        <p class="font2">
+        <div class="inactive"><button class="font2 button1">RESUME</button>
+            <button class="font2 button2">PROJECT</button></div>
+        <p class="font2 para">
           I'm a paragraph. Click here to add your own text and edit me. It’s
           easy. Just click “Edit Text” or double click me to add your own
           content and make changes to the font. <br><br>
