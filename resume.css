@@ -150,11 +150,29 @@
     padding-left: 25%;
     height: 50px;
     justify-content: center;
-    margin-top: 60px;
-    border: 2px solid red;   
+    margin-top: 60px;   
 }
 
+.ex_butt{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    
+}
 
+.download{
+    background-color: #0150FD;
+    border-radius: 40px;
+    font-size: 20px;
+    height: 35px;
+    color: white;
+    margin-top: 15px;
+    
+    
+    
+
+    
+}
 
 /* .title_1{
     
