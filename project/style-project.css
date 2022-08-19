@@ -233,7 +233,7 @@ div h2{
     .homep{
         display:grid;
         grid-template-columns:1fr 1fr ;
-        grid-template-rows: 200px auto 200px;
+        grid-template-rows: 200px 200px;
         grid-template-areas:"header header"
                              "div aside"
                              "footer footer ";
@@ -366,14 +366,16 @@ div h2{
         /* footer */
         .homep-footer{
             grid-area: footer;
-            position:absolute;
             z-index: 2;
             background-color: #fff;
-            border: 1px solid #E6DACD ;
+            border: 1px solid #f1efed ;
             display: grid;
-            grid-template-columns: repeat(3 ,1fr);
+            grid-template-columns: repeat(5 ,1fr);
             grid-template-areas: " call follow write";
+
             grid-gap:2em;
+            width:2000px;
+            top:2870px;
         }
         .homep-footer h4{
                 font-weight: bold;

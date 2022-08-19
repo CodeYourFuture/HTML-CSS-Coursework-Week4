@@ -205,9 +205,13 @@ div h2{
     border: 3px solid var(--Royal);
 }
 .checkbox0{
-    height:25px;
-    width: 25px;
+    height: 1px;
+    width: 1px;
     background-color:#0150FD;
+}
+.squre{
+    display: flex;
+    gap: 10px;
 }
 /************media query 900 desktop**************  */
 
@@ -356,49 +360,50 @@ div h2{
         /* footer */
         .homep-footer{
             grid-area: footer;
-            position:absolute;
             z-index: 2;
             background-color: #fff;
-            border: 1px solid #E6DACD ;
+            border: 1px solid #f1efed ;
             display: grid;
-            grid-template-columns: repeat(3 ,1fr);
+            grid-template-columns: repeat(5 ,1fr);
             grid-template-areas: " call follow write";
+
             grid-gap:2em;
+            width:2000px;
+            top:2740px;
         }
         .homep-footer h4{
-                font-weight: bold;
-                grid-area: follow;
-                font-size: 1.4rem;
-            }
-             
-        .footer-images{
-            display: flex;
-            justify-content: flex-start;
-            gap:1.5em;
-            grid-area:img ;
+            font-weight: bold;
+            grid-area: follow;
+            font-size: 1.4rem;
         }
-        .footer-images img{
-        width:5%;
-        width:5%;
-        }
-        .homep-footer-par p{
-            margin-left: 2em
-            display:inline;
-        font-size: 1.4rem;}
-        
-             .homep-footer-write{
-        grid-area: write;
-        font-size: 1.4rem;
-             }
-             .homep-footer-call{
-                grid-area: call;
-                font-size: 1.4rem;
-                     }
-        
-                .footer-images img{
-                    hight:5%;
-                    width:5%
-                } 
+         
+    .footer-images{
+        display: flex;
+        justify-content: flex-start;
+        gap:1.5em;
+        grid-area:img ;
+    }
+    .footer-images img{
+    width:5%;
+    width:5%;
+    }
+    .homep-footer-par p{
+        margin-left: 2em
+        display:inline;
+    font-size: 1.4rem;}
+    
+         .homep-footer-write{
+    grid-area: write;
+    font-size: 1.4rem;
+         }
+         .homep-footer-call{
+            grid-area: call;
+            font-size: 1.4rem;
+                 }
+    
+            .footer-images img{
+                hight:5%;
+            
                 .homep-main-button{
                     display: none;
                 }

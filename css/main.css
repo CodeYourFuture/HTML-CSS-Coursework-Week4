@@ -563,6 +563,11 @@ font-size: 1.4rem;
         .homep-main-button{
             display: none;
         }
+        .seperator{
+            display: flex;
+            justify-content: space-between;
+            margin: 0 2em;
+        }
         
 
 }
