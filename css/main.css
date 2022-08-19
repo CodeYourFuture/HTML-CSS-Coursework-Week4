@@ -88,7 +88,6 @@ body {
  background-color: var(--red-brown);
  padding: 1rem 3rem;
  border: none;
- margin-top: 2rem;
 }
 
 .products {
@@ -122,6 +121,9 @@ body {
  background-color: var(--red-brown);
  padding: 1rem 2rem;
  border: none;
+ 
+ 
+ 
 }
 
 .about {
@@ -337,4 +339,10 @@ label {
  .social-links {
    grid-row: 3 / 4;
  }
+ .copyright{
+  display: flex;
+  justify-content: center;
+ }
+ 
+ 
 }
