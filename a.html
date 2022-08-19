@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<style>
+  .icon_container_1 {
+    width: 26px;
+    height: 21px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 0.33s ease-out;
+  }
+  .icon_line_1.icon_line_1_1 {
+    transition: transform 0.33s cubic-bezier(0.54, -0.81, 0.57, 0.57);
+    transform-origin: right;
+  }
+  .icon_line_1.icon_line_1_2 {
+    width: 50%;
+  }
+  .icon_line_1.icon_line_1_3 {
+    align-self: flex-end;
+    transition: transform 0.33s cubic-bezier(0.54, -0.81, 0.57, 0.57);
+    transform-origin: left;
+  }
+  .icon_line_1 {
+    background-color: rgba(
+      var(--lineColor, var(--color_2)),
+      var(--alpha-lineColor, 1)
+    );
+    border-radius: 1.5px;
+    width: 100%;
+    height: 3px;
+    background-color: #0150fd;
+  }
+
+  .square_1 {
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(
+      --container-corvid-background-color,
+      rgba(var(--bg, var(--color_11)), var(--alpha-bg, 1))
+    );
+  }
+  #square_2 {
+    --bg: var(--color_18);
+    --alpha-bg: 1;
+    --shc-mutated-brightness: 0, 40, 128;
+    width: 16px;
+    position: relative;
+    margin: 24px 0px 12px 0;
+    left: 20px;
+    grid-area: 1 / 1 / 2 / 2;
+    justify-self: start;
+    align-self: start;
+    --container-corvid-background-color: rgba(
+      var(--bg, var(--color_11)),
+      var(--alpha-bg, 1)
+    );
+  }
+  #square_2inlineContent {
+    height: auto;
+    width: 100%;
+    position: static;
+    min-height: 16px;
+    pointer-events: none;
+    --bg: var(--color_18);
+    --alpha-bg: 1;
+    --shc-mutated-brightness: 0, 40, 128;
+    background-color: #0150fd;
+  }
+  #square_2inlineContent-gridContainer {
+    --bg: var(--color_18);
+    --alpha-bg: 1;
+    --shc-mutated-brightness: 0, 40, 128;
+  }
+</style>
+<html>
+  <head>
+    <title>Page Title</title>
+  </head>
+  <body>
+    <div class="icon_container_1">
+      <div class="icon_line_1 icon_line_1_2 icon_line_1_1"></div>
+      <div class="icon_line_1 _2vsXM"></div>
+      <div class="icon_line_1 icon_line_1_2 icon_line_1_3"></div>
+    </div>
+
+    <br style="height: 200px" />
+    
+    <div id="square_2">
+      <div class="square_1">
+        <div id="square_2inlineContent" data-testid="inline-content" class="">
+          <div
+            id="square_2inlineContent-gridContainer"
+            data-testid="mesh-container-content"
+          ></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
