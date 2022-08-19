@@ -1,12 +1,24 @@
 /* Add your CSS here */
+:root {
+    --grey1: #E6DACD;
+    --grey2: #F4ECE6;
+    --blue: #0150FD;
+    --black:  #000;
+    --white: #FFF;
+    --type1: "Poppins", sans-serif;
+    --type2: "Quicksand", sans-serif;
+
+
+  }
+   
 .font1 {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--type1);
   font-size: large;
 }
 
 footer,
 .font2 {
-  font-family: "Quicksand", sans-serif;
+  font-family: var(--type2);
   font-size: 17px;
   line-height: 1.5em;
 }
@@ -57,7 +69,7 @@ header {
 }
 
 main {
-  background-color: #e6dacd;
+  background-color: var(--grey1);
 }
 
 /* Navigation */
@@ -72,19 +84,19 @@ li {
 }
 
 a {
-  color: #000;
+  color: var(--black)
   text-decoration: none;
 }
 
 a:hover {
-  color: #0150fd;
+  color: var(--blue);
 }
 
 /**Section**/
 
 .card1 {
   display: flex;
-  background-color: #f4ece6;
+  background-color: var(--grey2);
   margin: 0 2em 2em;
   padding: 2em 0 1em 0;
   flex-direction: column;
@@ -103,8 +115,8 @@ img {
 }
 
 .button1 {
-  background-color: #0150fd;
-  color: #fff;
+  background-color: var(--blue);
+  color: var(--white);
   font-weight: 900;
   padding: 0.5em;
   border: none;
@@ -114,11 +126,11 @@ img {
 }
 
 .button2 {
-  background-color: #f4ece6;
-  color: #000;
+  background-color: var(--grey2);
+  color: var(--black);
   font-weight: 900;
   padding: 0.5em;
-  border: #000 1px solid;
+  border: var(--black) 1px solid;
   border-radius: 30px;
   width: 130px;
 }
@@ -157,7 +169,7 @@ footer {
 
 /** Icons**/
 .icons_container {
-  background-color: #fff;
+  background-color: var(--white)
   align-self: stretch;
   display: flex;
   justify-content: center;
@@ -197,7 +209,7 @@ footer {
   border-radius: 1.5px;
   width: 100%;
   height: 3px;
-  background-color: #0150fd;
+  background-color: var(--blue);
 }
 
 .square_1 {
@@ -236,7 +248,7 @@ footer {
   --bg: var(--color_18);
   --alpha-bg: 1;
   --shc-mutated-brightness: 0, 40, 128;
-  background-color: #0150fd;
+  background-color: var(--blue);
 }
 #square_2inlineContent-gridContainer {
   --bg: var(--color_18);
@@ -259,7 +271,7 @@ footer {
 
 .contact_section {
   display: flex;
-  background-color: #fff;
+  background-color: var(--white);
   margin: 2em;
   padding: 2em 0 4em 0;
   justify-content: center;
@@ -267,10 +279,10 @@ footer {
 
 input,
 textarea {
-  border: #000 1.5px solid;
-  border-top: #fff;
-  border-left: #fff;
-  border-right: #fff;
+  border: var(--black) 1.5px solid;
+  border-top: var(--white);
+  border-left: var(--white);
+  border-right: var(--white);
   padding: 0.8em;
   margin-bottom: 0.8em;
 }
