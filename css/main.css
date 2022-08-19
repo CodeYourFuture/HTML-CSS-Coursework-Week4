@@ -8,10 +8,10 @@
   --royal-blue: #0150fd;
   --black: #000;
   --white: #fff;
-  --heading-fnt-siz: @import
-    url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap");
-  --body-font: @import
-    url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+  --font-body: 'Quicksand', sans-serif;
+  --font-heading: 'Poppins', sans-serif;
+  --body-fontWeight: 300;
+  --heading-fontWeight:600;
 }
 
 html {
@@ -78,7 +78,7 @@ nav {
   justify-content: space-around;
   align-content: space-around;
   align-items: center;
-  font-size: large;
+  font-size: var(--heading-fontWeight);
 }
 
 /* this help no underline in the naviagation  elements */
@@ -214,6 +214,8 @@ nav a {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  font-family: var(--font-body);
+  font-weight: var(--body-fontWeight);
 }
 
 /* ----Footer -- */
