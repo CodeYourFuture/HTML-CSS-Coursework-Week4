@@ -33,7 +33,7 @@ body {
      margin-top: 10px;
   }
   .h1_1{
-    font-family: 'Frank Ruhl Libre', serif;
+    font-family: 'Poppins', sans-serif;
   }
   .text_nav1{
     margin-left: 5px;
@@ -182,7 +182,7 @@ body {
  height: 90.79px;
  }
  .title_nav{
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: 'Quicksand', sans-serif;
  }
  
  .info_maya{
@@ -208,13 +208,13 @@ body {
   text-align: left;
   font-weight: bold;
   font-size: 40px;
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: 'Poppins', sans-serif;
  }
  .h2_1{
   padding-left: 20px;
   text-align: left;
   font-size:20px ;
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: 'Poppins', sans-serif;
  }
  p{
   /* border: 2px solid black; */
