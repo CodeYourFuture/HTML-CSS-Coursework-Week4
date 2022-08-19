@@ -1,3 +1,884 @@
-/* Add your CSS here */
+/* heading font */
+@import url("https://fonts.google.com/specimen/Poppins");
+/* body font */
+@import url("https://fonts.google.com/specimen/Quicksand");
+/* sub-head */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
-/* Dont' forget to link this file to your HTML in the <head> */
+:root{
+    --Dark-beige:#E6DACD;
+    --Light-beige:#F4ECE6;
+    --Royal-blue:#0150FD;
+    --Black:#000;
+    --White:#FFF;
+    --head-font:Poppins;
+    --body-font:Quicksand;
+    --sub-head:Raleway;
+    --shadow:-11.31px 11.31px 17px 0px rgba(138,131,124,0.23);
+}
+
+body{
+    box-sizing: border-box;
+    max-width: 320px;
+    margin: 0 auto;
+    }
+    /* ----------Index page---------------------------- */
+    /* main */
+main{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 80px 310x 310px 320px 420px 300px;
+    grid-template-areas: "header"
+    "profile"
+    "content"
+    "content"
+    "footer"
+    "footer";
+}
+/* header of main */
+.header{
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+}
+.header a{
+    text-decoration: none;
+}
+.profile-name{
+    font-family: var(--head-font),sans-serif;
+    font-size: 20px;
+    color: var(--Black);
+    font-weight: bold;
+    margin-left: 10px;
+}
+.profile-job{
+    font-family:var(--sub-head) ,sans-serif;
+    font-size: 20px;
+    color: var(--Black);
+    margin-left: 1em;
+    margin-top: 0;
+}
+.blue-square{
+    width: 16px;
+    height: 16px;
+    background-color: var(--Royal-blue);
+    align-items: center;
+}
+.header-badge{
+    display: flex;
+    margin: 1em;
+    align-items: center;
+}
+/* profile of main */
+.profile{
+    grid-area: profile;
+}
+.profile-white-section{
+    width: 310px;
+    background-color: var(--White);
+    height: 198px;
+}
+.profile-image-section{
+    width: 280px;
+    height: 367.38px;
+    background-color: var(--Light-beige);
+    position: absolute;
+    top: 100px;
+    right: 0;
+    left: 115px;
+    bottom: 0;
+    border: rgba(0, 0, 0 , 1);
+    border-radius: 3px;
+    box-shadow:var(--shadow,0 1px 4px rgba(0,0,0,.6)) ;
+     
+}
+.container{
+    position: static;
+    display: grid;
+    height: auto;
+    width: 100%;
+    min-height: auto;
+    grid-template-rows: 120px 110px 20px 30px 120px;
+    grid-template-columns: 100%;
+    justify-items: center;
+}
+.image{
+    width: 120px;
+    height: 120px;
+    margin-top: 15px;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.profile-beige-section{
+    width: 320px;
+    background-color: var(--Dark-beige);
+    height: 203px;
+}
+.profile-title{
+    text-align: center;
+    font-size: 20px;
+    font-family: var(--body-font);
+    color: var(--Black);
+    width: 90px;
+    position: relative;
+    margin: 0 0 17px 5px;
+    grid-area: 2/1/3/2;
+}
+h1{
+    line-height: 1.2em;
+}
+.blue-line{
+    width: 70px;
+    height: 5px;
+    box-sizing: border-box;
+    border-top: solid var(--Royal-blue);
+    position: relative;
+    left: 107px;
+    margin: 0 0 26px 0;
+    justify-self: start;    
+}
+.resume-btn{
+
+    width: 122px;
+    height: 33px;
+    background-color: var(--Royal-blue);
+    color: var(--White);
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+.proj-btn{
+    width: 120px;
+    height: 33px;
+    background-color: var(--Light-beige);
+    border: 1px solid black;
+    cursor: pointer;
+}
+.proj-btn:hover{
+    background-color: var(--Royal-blue);
+    color: var(--White);
+}
+button{
+    border-radius: 15px;
+    padding: .5em;
+    margin-right: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.profile-footer{
+    width: 280px;
+    height: 40px;
+    background-color: var(--White);
+    box-shadow: var(--shadow);
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+}
+.profile-footer a{
+    margin-right: 10px;
+}
+/* content of main */
+.content{
+    grid-area: content;
+    background-color: var(--Dark-beige);
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+.content p{
+    margin: .5em .8em;
+    text-align: start;
+}
+.content :nth-child(1){
+    font-family: var(--body-font);
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: .85em;
+}
+.content :nth-child(2){
+    font-family: var(--body-font);
+    font-size: 19px;
+    font-weight: bold;
+    margin-left: 1.7em;
+    
+}
+.content :nth-child(4){
+    font-family: var(--body-font);
+    margin-left: 2em;
+    font-size: 16px;
+    line-height: 1.5em;
+    text-align: justify;
+}
+.content :nth-child(5){
+    font-family: var(--body-font);
+    margin-left: 2em;
+    font-size: 16px;
+    line-height: 1.5em;
+    text-align: justify;
+}
+/* footer of main */
+.footer{
+    grid-area: footer;
+    background-color: var(--White);
+    display: grid;
+    height:auto;
+    width: 100%;
+    grid-template-rows: 1fr ;
+    grid-template-columns: 100% ;
+    
+}
+.contact-info{
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    font-family: var(--body-font);
+}
+.email{
+    text-decoration: none;
+    color: var(--Black);
+}
+.social-media-footer{
+    display: flex;
+    flex-direction: column;
+
+}
+.social-media-footer p{
+    margin-left: 1.5em;
+}
+.social-media-footer a{
+    margin-right: 3px;
+}
+.social-media-footer ul{
+    padding: 0;
+    margin-left: 1.2em;
+    margin-top: 0;
+}
+.footer-text{
+    font-size: 15px;
+    font-weight: bold;
+}
+.copyright{
+    font-family: var(--body-font);
+    font-size: 14px;
+    margin: 1.5em;
+}
+.wix{
+    color: var(--Black);
+}
+/* --------------------Style for Resume page-------------------- */
+/* main resume */
+.main-resume{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 120px 1fr 1fr 1fr 120px;
+    box-sizing: border-box;
+    grid-template-areas: "header"
+    "experience"
+    "education"
+    "skill"
+    "footer";
+   max-height: 100vh;
+}
+/* experience part */
+.experience{
+    grid-area: experience;
+    background-color: var(--Dark-beige);
+    font-family: var(--body-font);
+}
+.resume-top, .contact-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.5em;
+
+}
+.resume-top h1{
+    margin-left: 7px;
+}
+/* Education part */
+.education{
+    grid-area: education;
+    background-color: var(--Dark-beige);
+}
+/* Skill part */
+.skill-language{
+    grid-area: skill;
+    background-color: var(--Dark-beige);
+    
+}
+.exp-btn{
+    display: flex;
+    flex-direction: row;
+    margin: 1em;
+    justify-content: space-between;
+    align-items: flex-end;
+    text-align: center;
+    font-family: var(--body-font);
+}
+ h2{
+    font-size: 18px;
+    font-family: var(--body-font);
+    margin-left: 1em;
+    padding-top: 1em;
+    font-weight: bold;
+}
+.white-container{
+    width: 280px;
+    height: 461px;
+    background-color: var(--White);
+    margin: 1em;
+    box-shadow: var(--shadow);
+}
+
+h3{
+    font-size: 17px;
+    font-family: var(--body-font);
+    color: var(--Royal-blue);
+    font-weight: bold;
+    margin-left: 1em;
+    padding-top: 1em;
+}
+.sub-title{
+    font-size: 16px;
+    font-family: var(--body-font);
+    margin-left: 1em;
+    margin-bottom: 1.5em;
+}
+.second-sub-title{
+    font-size: 15px;
+    font-family: var(--body-font);
+    margin-left: 1em;
+}
+.main-title{
+    font-size: 16px;
+    font-family: var(--body-font);
+    margin: 1em;
+    text-align: justify;
+    line-height: 1.5em;
+}
+.skill{
+    display: flex;
+    align-items: center;
+    margin-left: 1em;
+}
+.blue-square-list{
+    width: 13px;
+    height: 13px;
+    background-color: var(--Royal-blue);
+    margin-right: .7em;
+}
+.list-item{
+    font-family: var(--body-font);
+    font-size: 14px;
+}
+/* ---------------------Style for Contact page-------------------------- */
+.main-contact{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 120px 2fr 120px;
+    grid-template-areas: "header"
+    "form"
+    "footer";
+    max-height: 100vh;
+
+}
+/* Form part */
+.contact-form{
+    grid-area: form;
+    background-color: var(--Dark-beige);
+    font-family: var(--body-font);
+}
+.contact-form h1{
+    margin-left: 7px;
+}
+form{
+    display: grid;
+    width: 100%;
+    height: 461px;
+    grid-template-rows: 76.83px 76.83px 76.83px 76.83px 76.83px 76.83px;
+    grid-template-columns: 100%;
+    grid-template-areas: "fname"
+    "lname"
+    "email"
+    "subject"
+    "message"
+    "btn";
+    margin-left: 1em;
+    padding-top: .7em;
+    justify-items: start;
+}
+.name-part{
+    grid-area: fname;
+    display: flex;
+    flex-direction: column;
+    grid-row: 1/2;
+    justify-content: space-evenly;
+}
+.family-part{
+    grid-area: lname;
+    display: flex;
+    flex-direction: column;
+    grid-row: 2/3;
+    justify-content: space-evenly;
+}
+.email-part{
+    grid-area: email;
+    display: flex;
+    flex-direction: column;
+    grid-row: 3/4;
+    grid-column: 1/2;
+    justify-content: space-evenly;
+}
+.subject-part{
+    grid-area: email;
+    display: flex;
+    flex-direction: column;
+    grid-row: 4/5;
+    justify-content: space-evenly;
+}
+.message-part{
+    grid-area: message;
+    display: flex;
+    flex-direction: column;
+    grid-row: 5/6;
+    justify-content: space-evenly;
+}
+.btn-part{
+    grid-area: btn;
+    display: flex;
+    flex-direction: column;
+    grid-row: 6/7;
+    justify-content: center;
+    margin:0 auto;
+ }
+.required::after{
+    content: "*";
+    color:  var(--Royal-blue);
+}
+input{
+   border: none;
+   border-bottom: 2px solid var(--Black);
+    width: 230px ;
+    padding: 10px;
+    box-sizing: border-box;
+}
+textarea{
+    border: none;
+   border-bottom: 2px solid var(--Black);
+    width: 230px ;
+    padding: 10px;
+    box-sizing: border-box;
+    resize: none;
+}
+label{
+    font-family: var(--body-font);
+    font-size: 16px;
+    font-weight: bold;
+}
+/* Hamburger menu */
+label .menu {
+  position: absolute;
+  right: -500px;
+  top: -100px;
+  width: 690px;
+  cursor: pointer;
+}
+label .hamburger {
+  position: absolute;
+  top: 135px;
+  left: 50px;
+  width: 26px;
+  height: 3px;
+  background: var(--Royal-blue);
+  display: block;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+label .hamburger:after,
+label .hamburger:before {
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  content: "";
+  position: absolute;
+  display: block;
+  width:13px;
+  height: 3px;
+  background: var(--Royal-blue);
+}
+label .hamburger:before {
+  top: -10px;
+}
+
+label .hamburger:after {
+  bottom: -10px;
+}
+
+label input {
+  display: none;
+}
+
+label input:checked + .menu {
+  box-shadow: 0 0 0 100vw #fff, 0 0 0 100vh #fff;
+  border-radius: 0;
+  z-index: 100; 
+ }
+
+label input:checked + .menu + ul {
+  opacity: 1;
+}
+
+label ul {
+  z-index: 300;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  -webkit-transition: 0.25s 0s ease-in-out;
+  transition: 0.25s 0s ease-in-out;
+  font-size: 1.5em;
+}
+
+label a {
+  margin-bottom: 1em;
+  display: block;
+  color: var(--Black);
+  text-decoration: none;
+  font-weight: bold;
+  font-family: var(--head-font);
+  text-align: center;
+}
+ ul a:nth-child(1){
+    color: var(--Royal-blue);
+}
+/* --------------Media query--------------------------- */
+@media  screen and (min-width:900px){
+    /* For Index.html */
+    body{
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 450px 100px;
+        grid-template-areas: 
+        "header menu"
+       "profile content"
+        "footer footer";
+       
+     }
+   
+     .profile-job{
+        display: none;
+    }
+    .hamburger-menu{
+        display: none;
+    }
+    .profile-name{
+        font-size: 25px;
+    }
+    #job-title{
+        display: inline !important;
+        font-size: 17px ;
+        font-family: var(--body-font) ;
+    }
+   
+    .header-badge{
+        margin: 1.5em;
+    }
+   .profile-title h1{
+        font-size: 27px;
+    }
+    .content-title{
+        font-size: 90px !important;
+        margin-left: .5em !important;
+        margin-top: .3em !important;
+
+    }
+    .content-subtitle{
+        font-size: 25px !important;
+       
+    }
+    .first-content{
+        font-size: 17px !important;
+        margin-top: 30px !important;
+    }
+    #second-content{
+        font-size: 17px;
+        margin-left: 2em ;
+    }
+    .button-content{
+        display: flex !important;
+        align-items: flex-end;
+    }
+    .resume-btn{
+        width: 130px !important;
+        height: 35px !important;
+        font-size: 14px !important;
+        margin-left: 0 !important;
+       
+    }
+    .proj-btn{
+        width: 130px !important;
+        height: 35px !important;
+        font-size: 14px !important;
+        justify-content: flex-start !important;
+        margin-left: 0 !important;
+    }
+   .main-menu{
+    grid-area: menu;
+    display: flex !important;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 1.5em;
+  
+   }
+   .index-menu{
+    margin-top: 3.5em;
+   }
+   .main-menu a{
+    text-decoration: none;
+    font-size: 14px;
+    font-family: var(--body-font);
+    margin-left:20px;
+    color: var(--Black);
+   }
+.main-menu a:hover{
+    color: var(--Royal-blue);
+}
+.first{
+    color: var(--Royal-blue) !important;
+}
+.footer{
+    display: none;
+}
+.footer-desktop{
+    grid-area: footer;
+    background-color: var(--White);
+    display: flex !important;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.contact-info{
+    text-align: center;
+    position: absolute;
+    left: 760px;
+    font-size: 14px;
+}
+.contact-detail{
+    margin-right: 18px;
+}
+.social-media-footer{
+    text-align: center;
+   font-size: 14px;
+}
+.footer-text{
+ margin-bottom: 0;
+}
+.social-media-footer ul{
+    margin-top: 10px;
+}
+.copyright-part{
+    width: 250px;
+}
+
+.profile-white-section{
+    background-color: var(--Dark-beige);
+    width: 450px;
+ 
+}
+.profile-beige-section{
+    width: 450px;
+   height: 253px;
+}
+.profile-image-section{
+    width: 356;
+    height: 373px;
+    background-color: var(--Light-beige);
+    position: absolute;
+    top: 139px;
+    right: 223px;
+    left: 422px;
+    bottom: 0;
+    border: rgba(0, 0, 0 , 1);
+    border-radius: 3px;
+    box-shadow:var(--shadow,0 1px 4px rgba(0,0,0,.6)) ;
+}
+.button{
+    display: none;
+}
+#job-title-profile{
+    display: flex !important;
+    font-family: var(--body-font);
+    font-size: 17px;
+}
+.blue-line{
+    margin-left:7px;
+}
+.profile-footer{
+    position: absolute;
+    top :300px
+}
+.content{
+    background-color: var(--White);
+}
+/* for resume.html */
+.header-resume, .header{
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.first-resume{
+    color: var(--Black) !important;
+}
+.second-resume{
+    color: var(--Royal-blue) !important;
+}
+.resume-first-title{
+    font-size: 35px;
+}
+.resume-first-subtitle, .resume-second-subtitle{
+    font-size: 25px;
+    margin-left: 200px;
+}
+.resume-btn-responsive{
+    margin-right: 175px;
+}
+.resume-proj-btn{
+    background-color: var(--White);
+
+}
+.resume-white-container{
+    margin-left: 200px;
+    width: 524px;
+    height: 317px;
+}
+.resume-year{
+    font-size: 20px;
+    margin-left: .8em;
+}
+.skill-container{
+    display: grid;
+    grid-template-columns: 262px 262px;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px;
+    grid-template-areas: "head1 head2"
+    "skill1 lang1"
+    "skill2 lang2"
+    "skill3 lang3"
+    "skill4 .";
+}
+.head1{
+    grid-area: head1;
+    padding-bottom:1em !important;
+ }
+.skill1{
+    grid-area: skill1;
+}
+.skill2{
+    grid-area: skill2;
+}
+.skill3{
+    grid-area: skill3;
+}
+.skill4{
+    grid-area: skill4;
+}
+.head2{
+    grid-area: head2;
+    padding-bottom:1em !important;
+}
+.lang1{
+    grid-area: lang1;
+}
+.lang2{
+    grid-area: lang2;
+}
+.lang3{
+    grid-area: lang3;
+}
+/* for contact.html */
+.form-white-container{
+    width: 679px;
+    height: 679px;
+    margin-left: 120px;
+    display: grid;
+    grid-template-columns: 339.5px 339.5px;
+    grid-template-rows: repeat(9, 75.4px);
+    grid-template-areas: ". ."
+    "f l"
+    "e e"
+    "s s"
+    "m m"
+    "m m"
+    "b b"
+    ". ."
+    ". .";
+}
+.n-part{
+    grid-area: f ;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    margin-left: 1em;
+}
+.l-part{
+    grid-area: l ;
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+.e-part{
+    grid-area: e;
+    margin-left: 1em;
+    grid-row: 3/4;
+    grid-column: 1/3;
+}
+.s-part{
+    grid-area: s;
+    grid-row: 4/5 ;
+    grid-column: 1/3;
+     margin-left: 1em;
+}
+.m-part{
+    grid-area: m;
+    grid-row: 5/7;
+    grid-column: 1/3;
+    margin-left: 1em;
+   
+}
+.b-part{
+    grid-area: b;
+    grid-row: 7/8;
+    grid-column: 1/2;
+    margin-left: 1em;
+
+}
+#email, #subject{
+    width: 555px;
+    height: 40px;
+}
+#message{
+    width: 555px;
+    height: 100px;
+}
+.first-resume{
+    color: var(--Black);
+}
+.third{
+    color: var(--Royal-blue);
+}
+}
