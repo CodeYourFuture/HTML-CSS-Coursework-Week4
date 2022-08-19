@@ -390,7 +390,6 @@ display: none;
         display: flex;
         flex-direction: column;
         row-gap: 3%;
-        border: 2px solid red;
     }
     .front p{
         margin: 15% 0 15% 0;
