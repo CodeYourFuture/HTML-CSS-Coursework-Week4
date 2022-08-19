@@ -8,6 +8,11 @@ toggleButton.addEventListener('click', () => {
 
 /*function myFunc(){
     alert("You Clicked Me");
+ }
+
+ function toggleHamburger(){
+    console.log("clickedtrigger");
+    navbarLinks.classList.toggle('active')
  }*/
 
  /*const hamburger = document.querySelector(".toggle-button");
