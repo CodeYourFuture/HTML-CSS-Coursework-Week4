@@ -35,28 +35,45 @@ h2{
     font-size: 1.3rem;
     font-weight: 900;
 }
-button{
+button, h3{
     font-size: 1rem;
+    font-family: var(--font2);
     font-weight: 100;
+    color: var(--btn-color);
 }
 
+.skills ul li{
+    font-family: var(--font2);
+    font-size: 1rem;
+}
 /* font style ending */
 /* padding */
-.main-section-info,.latest-experience, .oldest-experience, .latest-education, .oldest-education{
-    padding: 0% 2% 0 10%;
+.latest-experience, .main-section-info, .oldest-experience, .latest-education, .oldest-education, .skills{
+    padding: 10%; 
 } 
-.latest-experience-headline, .oldest-experience-headline, .latest-education-headline, .oldest-education-headline{
-padding: 8%;
-}
-.education-headline{
-    padding: 8% 0 0 8%;
+.skills ul li{
+    padding: 5%;
+
 }
 /* end of padding */
 
 /* margin */
-.latest-education, .oldest-education{
-    margin-bottom: 5%;
+.second-container{
+    margin: 10% 0 2% 0;
 }
+.latest-experience, .latest-education, .oldest-education, .skills{
+    margin: 0 2% 10% 10%;
+}
+.oldest-experience{
+    margin: 0 2% 2% 10%;
+}
+.education-headline{
+margin-left: 10%;
+}
+.professional-skills, .languages{
+    margin: 5% 0;
+}
+
 /* end of margin */
 
 .second-container{
@@ -65,10 +82,9 @@ padding: 8%;
     "header header"
         "main main"
         "footer footer";
-    grid-template-rows: 50px 1fr 1fr;
+    grid-template-rows: 100px 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    margin: 10% 0 2% 0;
-    height: 420vh;
+    height: 350vh;
 }
 header {
     grid-area: header;
@@ -76,7 +92,7 @@ header {
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
-    height: 20vh;
+    height: 30vh;
 }
 main{
     grid-area: main;
@@ -84,7 +100,7 @@ main{
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
-    height: 300vh;
+    height: 310vh;
     display: grid;
     grid-template-areas:
     "m-s-h m-s-h"
@@ -97,6 +113,7 @@ main{
     grid-template-rows: 1fr 1fr 1fr 100px 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     background-color: var(--section-color);
+    
 }
 .main-section-headline{
     grid-area: m-s-h;
@@ -106,11 +123,10 @@ main{
     grid-row-end: 2;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     background-color: var(--section-color);
 }
 .main-section-title {
-    margin-bottom: 10%;
     display: flex;
     justify-content: center;
 }
@@ -132,53 +148,72 @@ main{
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
+    box-shadow: -10px -5px 50px -15px grey;
+    background-color: var(--bg-color);
+    height: auto;
 }
-.latest-experience-headline, .oldest-experience-headline, .latest-education-headline, .oldest-education-headline{
-background-color: var(--bg-color);
-box-shadow: -10px -5px 50px -15px grey;
-}
+
 .oldest-experience{
     grid-area: ost-ex;
-    border: 2px solid black;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 4;
+    box-shadow: -10px -5px 50px -15px grey;
+    background-color: var(--bg-color);
+    height: auto;
 }
 
 .education-headline{
     grid-area: edu-head;
-    border: 2px solid black;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 4;
     grid-row-end: 5;
     background-color: var(--section-color);
+    display: flex;
+    align-items: center;
+    height: auto;
 }
 .latest-education{
     grid-area: lst-edu;
-    border: 2px solid black;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 5;
     grid-row-end: 6;
+    box-shadow: -10px -5px 50px -15px grey;
+    background-color: var(--bg-color);
+    height: auto;
   
 }
 .oldest-education{
     grid-area: ost-edu;
-    border: 2px solid black;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 6;
     grid-row-end: 7; 
+    box-shadow: -10px -5px 50px -15px grey;
+    background-color: var(--bg-color);
+    height: auto;
 }
 .skills{
     grid-area: skills;
-    border: 2px solid black;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 7;
     grid-row-end: 8; 
+    box-shadow: -10px -5px 50px -15px grey;
+    background-color: var(--bg-color);
+    height: auto;
+}
+
+.skills ul li{
+    list-style: none;
+}
+
+.professional-skills{
+    display: flex;
+    flex-direction: column;  
 }
 
 footer{
@@ -187,8 +222,7 @@ footer{
     grid-column-end: 3;
     grid-row-start: 8;
     grid-row-end: 9;
-    border: 2px solid red;
-    height: 50vh;
+    height: 30vh;
 }
 
 
