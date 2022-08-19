@@ -144,21 +144,21 @@
 /* Main div */
 
 .main_all{
-    display: flex;
-    justify-content: center;
-    
+    justify-content: center;   
 }
 .top_main{
-    padding-left: 40px;
-    width: 250px;
+    padding-left: 25%;
     height: 50px;
     justify-content: center;
-    margin-top: 60px;   
+    margin-top: 60px;
+    border: 2px solid red;   
 }
 
-.title_1{
 
-}
+
+/* .title_1{
+    
+} */
   .c_w {
     display: flex;
 
