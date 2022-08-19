@@ -7,16 +7,6 @@
     box-sizing: border-box;
 }
 
-@font-face {
-    font-family: "Poppins", "Quicksand";
-    src: url("/fonts/Poppins-SemiBold-webfont.woff2") format("woff2 supports variations"),
-        url("/fonts/Poppins-SemiBold-webfont.woff") format("woff-variations");
-    font-weight: 100 1000;
-    src: url("/fonts/Quicksand-Light300-webfont.woff2") format("woff2 supports variations"),
-        url("/fonts/Quicksand-Light300-webfont.woff2")format("woff-variations");
-
-}
-
 :root {
     --font-fallback: sans-serif;
     --section-color: #E6DACD;
@@ -36,6 +26,7 @@ body {
     font-weight: 300;
     font-size: 62.5%;
 }
+/* mobile design for About me page */
 
 .container {
     display: grid;
@@ -478,11 +469,5 @@ footer{
     grid-row-end: 2;
 
 }
-
-
-
-
-
-
-
 }
+
