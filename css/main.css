@@ -58,10 +58,12 @@ color: #333333;
 /* header */
 
 
-/* middle page for index */
+/* footer page */
 
-.mainpage {
-    width: 1000px;
-    height: 800px;
-    margin-top: 3.45rem;
+.contain {
+    flex-direction: column;
+
 }
+/* .call {
+    grid-column: 9/12;
+}  */
