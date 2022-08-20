@@ -1,3 +1,28 @@
 /* Add your CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
+
+/*nav bar*/
+.brand {
+	margin: 0;
+	float: none;
+	text-align: center;
+	text-decoration: none;
+	font-weight: 500;
+}
+
+.nav-item {
+	padding: 0 40px;
+	font-weight: 400;
+	font-size: 30px;
+}
+
+.nav-link {
+	color: white;
+}
+
+.nav-socials {
+	padding: 0 40px;
+	font-weight: 300;
+	font-size: 15px;
+}
