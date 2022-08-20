@@ -114,3 +114,21 @@ a {
     margin-left: 15px;
     border-radius: 15%;
 }
+
+.grid-body {
+    display: grid;
+    grid-template-rows: 300px 800px 200px;
+}
+
+.grid-header {
+    background-color: white;
+}
+
+.grid-main {
+    grid-row: 2;
+    background-color: var(--bg-color);
+}
+
+.grid-footer {
+    background-color: white;
+}
