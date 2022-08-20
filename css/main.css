@@ -1,341 +1,816 @@
 
 :root {
- --black: #000;
- --white: #fff;
- --red-brown: #a05941;
- --light-grey: #ededee;
- --green-black: #133032;
+ --red-brown: #A05941;
+    --green-black: #133032;
+    --light-grey: #EDEDEE;
+    --white: #FFF;
+    --light-brown: #a059415e;
+    --transparent-white: rgba(0,0,0,0.75);
+ 
 }
 
 
 body {
  background-color: var(--light-grey);
- color: var(--red-brown);
- margin: 0;
- font-size: 20px;
- font-family: "Outfit", sans-serif;
-}
-/* Header Section */
-.header {
  display: grid;
- grid-gap: 2rem;
- grid-template-columns: 2fr auto;
- margin: 1rem;
+ margin: 0;
+ grid-template-columns: repeat(6, 1fr);
+ grid-template-rows: auto;
+ grid-template-areas: 
+ "header        header        header        header         header        header"
+ "hero          hero          hero          hero           hero          hero"
+ "shop          shop          shop          shop           shop          shop"
+ "about         about         about         about          about         about"
+ "img           img           img           img            img           img"
+ "img2          img2          img2          img2           img2          img2"
+ "img3          img3          img3          img3           img3          img3"
+ "offer         offer         offer         offer          offer         offer"
+ "order         order         order         order          order         order"
+ "img4          img4          img4          img4           img4          img4"
+ "footer        footer        footer        footer         footer        footer"
+ "copyright     copyright     copyright     copyright      copyright     copyright"
+ "credit        credit        credit        credit         credit        credit";
+}
+/* HEADER  */
+.header {
+ grid-area: header;  
+ padding-bottom: 0.7em;
 }
 
-.search {
- background-color: var(--light-grey);
+/* SEARCH BAR */
+.header-top-half {
+ background-color: #ffffff;
+ height: 70px;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ margin-top: 5px;
+}
+
+.search-container {
+ max-width: 80%;
+ cursor: pointer;
+ height: 20px;
+ padding: 24px 0 0 35px;      
+}
+
+.search-container:hover {
  border: 1px solid var(--red-brown);
 }
 
-.shopping-cart,
-.hamburger {
- width: 50px;
- height: 50px;
+.fa {
+ color: var(--red-brown);
+}
+
+.fa .fa-search {
+ cursor: pointer;
+ position: absolute;
+ top: 47%;
+ left: 0;
+ transform: translateY(-50%);
+ padding: 13px 15px 13px 11px;
+}
+
+.input-field {
+ border: 0;
+ height: 20px;
+ background: var(--white);
+ max-width: 80%;
+ padding-left: 0.7em;
+}
+
+::placeholder {
+ color:var(--red-brown);
+ font-size: 1.2em;
+}
+
+.account-container {
+ display: flex;
+ align-items: center;
+ flex-direction: row;
+ justify-content: space-around;
+}
+
+.profile {
+ visibility: hidden;
+}
+
+/* SHOPPING BASKET ICON */
+.shopping-basket {
+ width: 20px;
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+ justify-content: space-around;
+ padding-right: 1.4em;
+}
+
+header .svg-color {
+ filter: invert(38%) sepia(12%) 
+ saturate(2170%) hue-rotate(329deg) 
+ brightness(100%) contrast(88%);
+}
+
+/* LOGO & NAVBAR */
+.header-nav {
+ display: flex;
+ justify-content: space-between;
+ align-items: center; 
+}
+
+.header-nav--logo {
+ font-family: 'Fjalla One', sans-serif;
+ font-weight: 100;
+ font-size: 1.6em;
+ color: var(--red-brown);
+ padding-left: 1em;
+ padding-top: 0.5em;
+}
+
+.nav-icon {
+ margin: 1em;
+ width: 30px;
+}
+
+.nav-icon:after, 
+.nav-icon:before, 
+.nav-icon div {
+ background-color: var(--red-brown);
+ border-radius: 3px;
+ content: '';
+ display: block;
+ height: 3px;
+ margin: 11px 0;
+ transition: all .2s ease-in-out;
+}
+
+.nav-icon:hover:before {
+ transform: translateY(12px) rotate(135deg);
+}
+
+.nav-icon:hover:after {
+ transform: translateY(-12px) rotate(-135deg);
+}
+
+.nav-icon:hover div {
+ transform: scale(0);
+}
+
+.header-nav--subheading {
+ font-family: 'Fjalla One', sans-serif;
+ font-weight: 100;
+ font-size: 1em;
+ color: var(--red-brown);
+ padding-left: 1.6em;
+ letter-spacing: 0.2em;
+ margin-top: 0;   
 }
 
 .nav {
- display: none;
- padding-top: 1.5rem;
+ visibility: hidden;
 }
 
-.navigation {
- display: flex;
- justify-content: flex-start;
-}
-
-.nav-list {
- list-style-type: none;
-}
-
-.nav-link {
- color: var(--red-brown);
- text-decoration: none;
- margin-right: 1rem;
-}
-
-.hamburger {
- margin-top: 0.7rem;
-}
-
-.header-title {
- font-family: "Outfit", sans-serif;
- color: var(--red-brown);
- text-decoration: none;
-}
-
-.header-message {
- grid-column: 1 / 3;
- margin-top: -2.5rem;
-}
-/* Main Section */
-.intro {
+/* HERO SECTION */
+.hero {
  background-image: url("/images/prickles-hero-img.png");
+ grid-area: hero;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
  background-size: cover;
- text-align: center;
- color: var(--white);
- padding-bottom: 10rem;
+ background-repeat: no-repeat;
+ padding-bottom: 5em;
 }
 
-.intro-title {
- padding-top: 10rem;
- font-family: "Outfit", sans-serif;
- font-size: 5rem;
+.logo-img {
+ margin-top: 70px;
 }
 
+<<<<<<< Updated upstream
 .shop-now-button {
  color: var(--white);
  background-color: var(--red-brown);
  padding: 1rem 3rem;
  border: none;
+=======
+.logo-est-year {
+ color: var(--white); 
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+>>>>>>> Stashed changes
 }
 
-.products {
+.est-title, .year-title {
+ margin-top: 60px;
+ font-family: 'Outfit', sans-serif;
+ font-weight: 200;
+ letter-spacing: 0.4em;
+}
+
+.est-title {
+ margin-right: 20px;
+}
+
+.year-title {
+ margin-left: 20px;
+}
+
+.hero-line-decoration {
+ height: 3px;
+ border: none;
+ background-color: white;
+ width: 60px;
+}
+
+.svg-color {
+ filter: invert(100%) sepia(6%) 
+ saturate(0%) hue-rotate(115deg) 
+ brightness(108%) contrast(108%);
+}
+
+.logo-title {
+ font-size: 2.7em;
+ font-family: 'Fjalla One', sans-serif;
+ letter-spacing: 0.2em;
+ font-weight: 400;
+ color: var(--white);
+ margin: 0;
+ padding-left: 0.3em;
+}
+
+.hero-subheading {
+ font-family: 'Outfit', sans-serif;
+ color: var(--white);
+ font-weight: 200;
+ text-align: center;
+ font-size: 1.3em;
+ letter-spacing: 0.3em; 
+}
+
+.text1 {
+ padding-top: 10px;
+ margin-bottom: 0;
+}
+
+.text2 {
+ margin: 0;
+}
+
+.btn {
+ background-color: var(--red-brown);
+ font-family: 'Outfit', sans-serif;
+ color:var(--white);
+ padding: 13px 40px;
+ border: none;
+<<<<<<< Updated upstream
+ 
+ 
+ 
+=======
+ margin-top: 1.7em;
+ font-size: 1em;
+ cursor: pointer;
+}
+/* ABOUT US */
+.about-us-container {
+ grid-area: about;
+>>>>>>> Stashed changes
+}
+
+.about-us {
+ background-color:var(--white);
+ margin-top: 1.6em;
+ text-align: center;
+ padding-bottom: 30px;
+}
+
+.title {
+ font-family: 'Outfit', sans-serif;
+ padding-top: 5em;
+ color: var(--red-brown);
+ font-size: 1em;
+ letter-spacing: 0.3em;
+}
+
+.title-underline {
+ color: var(--red-brown);
+ height: 3px;
+ border: none;
+ width: 12px;
+ margin-top: 0.4em;
+}
+
+.about-us--description p {
+ font-family: 'Outfit', sans-serif;
+ margin: 0; 
+ line-height: 160%;
+ font-size: 0.92em;
+ color: var(--red-brown);
+}
+
+.about-us--description__p1 {
+ padding: 1em 1.6em 0 1.6em;
+}
+
+.about-us--description__p2 {
+ padding: 2.2em 1.6em 3em 1.6em;
+}
+
+/* ABOUT US IMAGES */
+.greenhouse {
+ grid-area: img;
+ width: 100%;
+ object-fit: cover;
+}
+
+.greenhouse--img {
+ object-fit: cover;
+ width: 100%;
+ height: 100%;
+}
+
+.leaf {
+ object-fit: cover;
+ grid-area: img2;
+ width: 100%;  
+}
+
+.leaf--img {
+ object-fit: cover;
+ width: 100%;
+ height: 100%;
+}
+
+.foliage {
+grid-area: img3;
+width: 100%; 
+}
+
+.foliage--img {
+ object-fit: fill;
+ width: 100%;
+ height: auto;
+}
+
+/* ABOUT US OFFER */
+.offer {
+ grid-area: offer;
+ background-color:var(--green-black);
  display: flex;
  flex-direction: column;
- margin-top: 1.7rem;
+ align-items: center;
+ padding-bottom: 5em;
+}
+
+.offer--heading {
+ font-family: 'Fjalla One', sans-serif;
+ color:var(--white);
+ text-align: center;
+ font-size: 4em;
+ font-weight: 400;
+ margin: 0;
+ padding-top: 1.3em;
+ padding-bottom: 0.4em;
+}
+
+.btn-white {
+ background-color: var(--white);
+ color: var(--green-black);
+}
+
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 900px) {
+ body {
+     padding: 0 2em;
+ }
+
+ .about-us-container {
+     display: flex;
+     flex-direction: column;
+ }
+
+ .about-us-wrapper {
+     display: flex;
+     margin-top: 1.6em;
+ }
+
+.about-us {
+     display: flex;
+     flex-direction: column;
+     padding-bottom: 0;
+     margin-top: 0;
+} 
+
+.title {
+    padding-top: 1em;
+    font-size: 1.4vw;
+}
+
+.about-us--description {
+    font-size: 1.4vw;
+     padding: 0 3em;
+}
+
+}    
+
+/* SHOP */
+.shop-container {
+ grid-area: shop;
+ display: flex;
+ flex-direction: column; 
+ grid-gap: 1.6em;
+ margin-top: 1.6em;
+}
+
+/* cacti */
+.shop-cacti {  
+ display: flex;
+ flex-direction: column;  
+ /* grid-column: 1/3; */
+}
+
+.shop-cacti img {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ background-size: contain;
+ background-repeat: no-repeat;
+ max-width: 100%;
+}
+
+.desc {
+ position: absolute;
+ top: 5vw;
+ left: 0;
+ right: 0;
+ text-align: center;
+ color: #000;
 }
 
 .cacti {
- background-image: url("/images/cactus.png");
+ margin: 0em;
+}
+
+/* plants */
+.shop-plants {
+ display: flex;
+ flex-direction: column; 
+}
+
+.shop-plants img {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ background-size: contain;
+ background-repeat: no-repeat;
+ max-width: 100%;
 }
 
 .plants {
- background-image: url("/images/plants.png");
+ margin: 0em;  
 }
 
-.scculents {
- background-image: url("/images/shop-image14.jpg");
+/* succulents */
+.shop-succulents {
+ display: flex;
+ flex-direction: column;  
 }
 
-.product {
+.shop-succulents img {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ background-size: contain;
+ background-repeat: no-repeat;    
+ max-width: 100%;
+}
+
+.succulents {
+ margin: 0em;  
+}
+
+/* shared classes for shop section*/
+.shop-cacti, .shop-plants, .shop-succulents {
+ position: relative; 
+ display: inline-block;
+}
+
+.title-name {
+ font-family: 'Fjalla One', sans-serif;
+ font-weight: 200;
+ letter-spacing: 0.3em;
+ font-size: 1.3em;
+ color:var(--red-brown);
+}
+
+.title-underline {
+ height: 3px;
+ border: none;
+ background-color: #a05941;
+ width: 0.4px;
+}
+
+.btn--collection {
+ padding: 13px 20px;
+ margin-top: 0.4em;
+}
+
+/* END PAGE IMG */
+.end-page {
+ grid-area: img4;
+}
+
+.end-page--img {
+ padding: 100px;
  background-repeat: no-repeat;
+ background: url(../images/background-plant.png) no-repeat center center/50px 50px fixed;
  background-size: cover;
- text-align: center;
- width: 100%;
- height: 45rem;
+}
+.footer {
+ background-color:var(--green-black);
+ grid-area: footer;
+ padding-top: 4em;
+ margin-bottom: 1.5em;
 }
 
-.shop-collection-button {
- color: var(--white);
- background-color: var(--red-brown);
- padding: 1rem 2rem;
- border: none;
- 
- 
- 
+.footer--store {
+ padding: 0.6em 2em 0 2em;
 }
 
-.about {
- background-color: var(--white);
- text-align: center;
- margin-top: 0;
- padding-top: 2.5rem;
- display: grid;
+.footer--subscribe {
+ margin: 18px 0px 57px 0;
 }
 
-.about-text {
- margin: 0 1.5rem;
-}
-
-.about-image {
- width: 100%;
-}
-
-.promo {
- background-color: var(--green-black);
- color: var(--white);
- font-size: 5rem;
-}
-
-.promo-text {
- margin: 80px 2rem 0;
- font-family: "Fjalla One", sans-serif;
-}
-
-.promo-button {
- padding: 1rem 4rem;
- margin-bottom: 5rem;
- border: none;
-}
-
-.form-container {
- background-image: url("/images/background-plant.png");
- background-size: cover;
- padding-bottom: 10rem;
- padding-top: 10rem;
-}
-
-.form {
- display: flex;
- flex-direction: column;
- margin-top: 2rem;
- padding: 2.5rem 1rem;
- color: var(--black);
- background-color: var(--white);
-}
-
-.form-text {
- text-align: center;
- margin-bottom: 2rem;
- color: var(--red-brown);
-}
-
-label {
- margin-top: 1.5rem;
-}
-
-.message {
- margin-bottom: 1rem;
-}
-
-.send {
- background-color: var(--red-brown);
- color: var(--white);
- border: none;
- padding: 1rem 1rem;
-}
-/* Footer Section */
-.contacts {
- color: var(--white);
- background-color: var(--green-black);
- text-align: center;
+.footer--heading {
+ font-family: 'Outfit', sans-serif;
  margin: 0;
- padding: 3rem 0;
+ color:var(--white);
+ font-size: 1em;
+ letter-spacing: 0.5em;
+ line-height: 1.4em;
+ font-weight: 400;
+ padding: 0.5em 0;
+ text-align: center;
+ 
 }
 
-.address,
-.timings,
-.help {
- margin-bottom: 5rem;
+.footer--text {
+ padding: 0.6em 0 3em 0;
+ font-size: 0.96em;
+ text-align: center;
+ 
 }
 
-.subscribe,
-.help {
+.footer--span {
+ font-family: 'Outfit', sans-serif;
+ margin: 0;
+ color:var(--white);
+ text-align: center;
+ 
+}
+
+.footer--span a {
+ text-decoration: underline;
+ color:var(--white);
+}
+
+.form-subscribe--email {
+ padding: 1em;
  display: flex;
  flex-direction: column;
- margin: 1rem;
 }
 
-.subscribe {
- margin-bottom: 5rem;
+.email-label {
+ padding-bottom: 10px;
 }
 
-.help-link {
+.form-subscribe input[type="email"] {
+ background-color:var(--green-black);
+ border: 1px solid #FFF;
+ border-radius: 2px;
+ font-size: 18pt;
+ height: 42px;
+ width: 100%;
+ padding: 12px;
+ box-sizing: border-box;
+ resize: vertical;
+}
+
+.email-label {
+ font-family: 'Outfit', sans-serif;
  color: var(--white);
 }
 
-.subscription-email {
- background-color: var(--green-black);
- padding: 1rem 0;
- margin: 1rem 0;
- border: 1px solid var(--white);
-}
-
-.subscribe-now {
- background-color: var(--white);
+.btn-white {
+ font-family: 'Outfit', sans-serif;
+ padding: 13px 40px;
  border: none;
- padding: 1rem 0;
+ margin-top: 1.7em;
+ font-size: 1em;
+ cursor: pointer;
+ background-color: var(--white);
+ color:var(--green-black);
 }
 
-.social-icon {
- width: 25px;
- height: 25px;
+.footer-content {
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-content: space-between;
+ margin: 0px 0px 33px 0
 }
 
-.map-image {
+.footer-content a {
+ cursor: pointer;
+ text-decoration: none;
+}
+
+.social {
+ max-height: 20px;
+ width: 20px;
+ padding: 4px;
+ border-radius: 50px;
+ margin: 4px;
+}
+
+.social-media-icons {
+ max-height: 20px;
+ width: auto;    
+}
+
+.map-container {
+ margin: 0px 0px 10px 0;
+}
+
+.google-map {
+ border:0;
+ -webkit-filter: grayscale(100%);
+ filter: grayscale(100%);
  width: 100%;
+ min-height: 343px;
 }
 
-.wix {
+
+/* COPYRIGHT SECTION */
+
+.copyright {
+ grid-area: copyright;
+ padding: 0.6em 2.2em 3em 3.2em;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ font-family: 'Outfit', sans-serif;
+}
+
+.copyright--text {
+ color: var(--red-brown);
+ text-align: center;
+}
+
+.copyright--text a {
+ text-decoration: underline;
  color: var(--red-brown);
 }
+
+.credit {
+ grid-area: credit;
+ font-size: 0.7em;
+}
+
+
+
+/* MEDIA QUERIES */
+
+/* tablet */
 @media screen and (min-width: 900px) {
- .header {
-   grid-template-columns: 1fr 4fr auto;
+ body {
+     padding: 0 2em;
  }
+ 
+     .account-container {
+         display: flex;
+         align-items: center;
+         flex-direction: row;
+     }
 
- .search {
-   grid-column: 1 / 3;
- }
+     .profile {
+         display: flex;
+         flex-direction: row;
+         padding-right: 1.4em;
+         align-items: center;
+         justify-content: space-between;
+         width: 4.8em;
+         visibility: visible;
+     }
 
- .shopping-cart {
-   grid-column: 2 / 3;
- }
+     .profile-svg {
+         width: 26px;
+         height: 50px;
+         
+     }
 
- .header-message {
-   grid-column: 3 / 4;
-   grid-row: 2 / 3;
-   padding-top: 5rem;
- }
+     .login-link {
+         font-family: 'Outfit', sans-serif;
+         color: var(--red-brown);
+         font-size: 0.9em;
+         text-decoration: none;
+     }
 
- .hamburger {
-   display: none;
- }
+     .header {
+         padding: 0;
+     }
 
- .nav {
-   display: block;
-   grid-row: 2 / 3;
-   grid-column: 2 / 3;
- }
+     .nav-icon {
+         visibility: hidden;
+     }
 
- .products {
-   flex-direction: row;
-   justify-content: space-around;
- }
+     .nav-container {
+         display: flex;
+         justify-content: space-between;
+          
+     }
 
- .product {
-   padding-top: 5rem;
-   height: 70vh;
- }
+     .header-nav {
+         display: flex;
+         
+     }
 
- .about {
-   grid-template-columns: repeat(4, 1fr);
- }
+     .header-nav--logo {
+         font-family: 'Fjalla One', sans-serif;
+         font-weight: 100;
+         font-size: 1.6em;
+         color: var(--red-brown);
+         padding: 0;  
+     }
 
- .about-text {
-   grid-column: 1 / 3;
-   
- }
+     .nav {
+         visibility: visible;
+     }
 
- .facility {
-   grid-column: 3 / 4;
- }
+     .nav--menu {
+         display: flex;
+         justify-content: space-between;
+         width: 100%;
+     }
+     
+     li {
+         list-style: none;
+     }
 
- .leaf {
-   grid-column: 4 / 5;
- }
+     a {
+         text-decoration: none;
+     }
 
- .woman {
-   grid-row: 2 / 3;
-   grid-column: 1 / 3;
- }
+     .nav--link {
+         font-family: 'Outfit', sans-serif;
+         color: var(--red-brown);
+         font-size: 0.9em;
+     }
 
- .promo {
-   grid-column: 3 / 5;
- }
+     .header-nav--subheading {
+         margin-top: 2em;
+     }
 
- .form-container {
-   display: flex;
-   justify-content: space-evenly;
- }
+     /* SHOP */
+     .shop-container {
+         grid-area: shop;
+         display: flex;
+         flex-direction: row;
+         grid-gap: 1.6em;
+         margin-top: 1.6em;
+     }
+    
+     .shop-cacti {
+         flex-direction: column;
+         grid-column: 1/3;
+     }
 
- .form {
-   width: 50%;
+     .shop-plants {
+         flex-direction: column; 
+         grid-column: 3/5; 
+     }
 
-   background-color: rgba(255, 255, 255, 0.8);
- }
+     .shop-succulents  {
+         flex-direction: column;  
+         grid-column: 5/-1;
+     }
 
- .contacts {
-   display: grid;
-   grid-template-columns: repeat(3, 1fr);
- }
+     .desc {
+         top: 2vw;
+     }
 
- .subscribe,
- .social-links {
-   grid-column: 2 / 3;
- }
+     .title-name {
+         font-size: 1.1em;
+     }
 
+     .btn--collection {
+         padding: 5px 15px;
+     }
+
+
+<<<<<<< Updated upstream
  .social-links {
    grid-row: 3 / 4;
  }
@@ -345,4 +820,6 @@ label {
  }
  
  
+=======
+>>>>>>> Stashed changes
 }
