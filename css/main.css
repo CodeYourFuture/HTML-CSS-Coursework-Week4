@@ -1,3 +1,327 @@
-/* Add your CSS here */
+/* Red Brown: #A05941 
+Green Black: #133032 
+Light Grey: #EDEDEE 
+White: #FFF 
+Transparent White: rgba(0, 0, 0, 0.75)
 
-/* Dont' forget to link this file to your HTML in the <head> */
+Fonts Headings: Fjalla One - Regular 400 https: //fonts.google.com/specimen/Fjalla+One
+Subheadings: Outfit - Extra-light 200 https: //fonts.google.com/specimen/Outfit
+Body: Outfit - Extra-light 200 https: //fonts.google.com/specimen/Outfit */
+
+@font-face {
+    font-family: 'Fjallaone';
+    src: url('/designs/Fjalla_One/FjallaOne-Regular.ttf');
+    /* IE9 Compat Modes */
+    src: url('webfont.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('/designs/Fjalla_One/FjallaOne-Regular.ttf') format('woff'),
+        /* Modern Browsers */
+        url('/designs/Fjalla_One/FjallaOne-Regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('/designs/Fjalla_One/FjallaOne-Regular.ttf') format('svg');
+    /* Legacy iOS */
+}
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    font-family: "Fjallaone";
+    color: #20303c;
+}
+
+  .search {
+      height: 30px;
+      width: 130px;
+      border-style: hidden;
+  }
+
+   .search:hover {
+       border: .5px solid;
+       border-color: #A05941;
+   }
+
+ ::placeholder {
+    color:#A05941;
+  }
+
+
+  .shop-bag {
+    float: right;
+    height: 30px;
+    border: none;
+    background-color: white;
+    color: #A05941;
+
+  }
+
+
+ 
+header {
+    display: grid;
+    width: 100%;
+    background-color: #EDEDEE;
+    height: 70px;
+}
+
+.nav_wrapper {
+    display: flex;
+}
+
+header a {
+    background-color: #EDEDEE;
+    color: #A05941;
+    padding: 3px;
+}
+
+header .h1 {
+    font-size: 15px;
+    position: absolute;
+    top: 50px;
+    left: 15px;
+}
+
+header .h2 {
+    font-size: 12px;
+    position: absolute;
+        top: 80px;
+        left: 15px;
+}
+
+
+
+/* hamburger menu */
+#menu__toggle {
+    opacity: 0;
+}
+
+#menu__toggle:checked+.menu__btn>span {
+    transform: rotate(45deg);
+}
+
+#menu__toggle:checked+.menu__btn>span::before {
+    top: 0;
+    transform: rotate(0deg);
+}
+
+#menu__toggle:checked+.menu__btn>span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+#menu__toggle:checked~.menu__box {
+    left: 0 !important;
+}
+
+.menu__btn {
+    position: absolute;
+    top: 65px;
+    right: 20px;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.menu__btn>span,
+.menu__btn>span::before,
+.menu__btn>span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #A05941;
+    transition-duration: 0.25s;
+}
+
+.menu__btn>span::before {
+    content: '';
+    top: -8px;
+}
+
+.menu__btn>span::after {
+    content: '';
+    top: 8px;
+}
+
+.menu__box {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: fit-content;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: #eceff1;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+    transition-duration: 0.25s;
+    text-align: center;
+    opacity: 1;
+}
+
+.menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #A05941;
+    background-color: #eceff1;
+    font-size: 15px;
+    font-weight: 50;
+    text-decoration: none;
+    transition-duration: 0.25s;
+    opacity: 1;
+}
+
+/* hero */
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.hero h1 {
+    color: white;
+    position: absolute;
+        bottom: 110px;
+        letter-spacing: .1em;
+        left: 20%;
+}
+
+.hero p {
+        color: white;
+            position: absolute;
+            bottom: 90px;
+            letter-spacing: .1em;
+    left: 40%;
+    font-size: 10px;
+    text-align: center;
+}
+
+.hero button {
+    color: white;
+    background-color: #A05941;
+    border: none;
+    position: absolute;
+    bottom: 70px;
+    left: 30%;
+    padding: 5px 30px;
+    font-size: 10px;
+}
+
+/* shop collections */
+
+
+
+.shop_collection img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.shop_collection button {
+        color: white;
+        background-color: #A05941;
+        border: none;
+        position: relative;
+        left: 25%;
+        top: -80%;
+        padding: 5px 30px;
+        font-size: 10px;
+}
+
+.shop_collection h1 {
+            position: relative;
+                left: 35%;
+                top: -80%;
+                color: #A05941;
+}
+
+
+/* about us  */
+
+.about_us {
+    background-color: white;
+    color: #A05941;
+    text-align: center;
+    position: relative;
+    top: -30%;
+}
+
+.about_us p {
+    font-size: 10px;
+}
+
+.images img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.tenpercent {
+    background-color: #133032;
+    color: white;
+    text-align: center;
+}
+
+.tenpercent button {
+        color: #133032;
+            background-color: white;
+            border: none;
+            position: relative;
+            bottom: 10%;
+            left: 5%;
+            padding: 5px 30px;
+            font-size: 10px;
+}
+
+.special_requests p {
+    color: #A05941;
+    text-align: center;
+}
+
+.special_requests form {
+    position: relative;
+    left: 10%;
+}
+
+.special_requests button{
+        color: white;
+            background-color: #A05941;
+            border: none;
+            position: relative;
+            width: 70%;
+            left: 0%;
+            top: -80%;
+            padding: 5px 60px;
+            font-size: 10px;
+}
+
+.our_store {
+    background-color: #133032;
+    color: white;
+    font-size: x-small; 
+    text-align: center;
+}
+
+.our_store form{
+    text-align: left;
+}
+
+.our_store button {
+            color: #133032;
+                background-color: white;
+                border: none;
+                position: relative;
+                bottom: 10%;
+                left: 5%;
+                padding: 5px 30px;
+                font-size: 10px;
+}
+
+footer {
+    background-color: #eceff1;
+    font-size: x-small;
+}
