@@ -377,6 +377,23 @@ footer::after {
   top: 0;
   transform: rotate(-135deg); }
 
+.layout3_desktop {
+  width: 100%; }
+  .layout3_desktop .layout3_layout3_desktop_title p {
+    font-size: 100px;
+    color: #000; }
+  .layout3_desktop .layout3-layout3_desktop-sub_title p {
+    font-size: 25px;
+    color: #000;
+    white-space: nowrap;
+    overflow: hidden; }
+  .layout3_desktop .layout3-layout3_desktop-text_1 p {
+    line-height: 1.5em;
+    font-size: 17px;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-bottom: 9rem; }
+
 @media screen and (min-width: 800px) {
   .navigation {
     display: none;
@@ -395,7 +412,7 @@ footer::after {
     -webkit-box-shadow: 0px 3px 11px -3px rgba(34, 60, 255, 0.64);
     box-shadow: 0px 3px 11px -3px rgba(34, 60, 255, 0.5); }
   .header {
-    height: 15rem;
+    height: 12rem;
     margin-top: 0;
     color: #000; }
     .header .header-layout1-title {
@@ -433,9 +450,49 @@ footer::after {
           .header .nav .nav__nav .nav__list li a,
           .header .nav .nav__nav .nav__list li a:link {
             text-decoration: none;
-            color: #000; } }
+            color: #000; }
+  .layout3 {
+    display: none;
+    opacity: 0; }
+  .layout2_layout3_desktop_rapper {
+    width: 100vw;
+    position: relative;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "l des";
+    grid-template-rows: 279px 279px; }
+    .layout2_layout3_desktop_rapper .header-layout2__rapper {
+      width: 50%;
+      grid-area: l; }
+      .layout2_layout3_desktop_rapper .header-layout2__rapper .layout2__discktop {
+        width: 32%;
+        z-index: 0;
+        margin: 0 15rem; }
+        .layout2_layout3_desktop_rapper .header-layout2__rapper .layout2__discktop .buttom {
+          position: absolute;
+          left: 128%;
+          top: 27%;
+          display: flex; }
+          .layout2_layout3_desktop_rapper .header-layout2__rapper .layout2__discktop .buttom a {
+            padding: 0;
+            width: 13rem; }
+          .layout2_layout3_desktop_rapper .header-layout2__rapper .layout2__discktop .buttom span {
+            font-size: 1.5rem; }
+      .layout2_layout3_desktop_rapper .header-layout2__rapper .background-desktop {
+        background-color: #e6dacd;
+        width: 153%;
+        height: 102rem; }
+    .layout2_layout3_desktop_rapper .layout3_desktop {
+      width: 80%;
+      grid-area: des;
+      margin-top: 13rem; }
+  .footer_end {
+    top: 117rem; } }
 
 @media screen and (max-width: 800px) {
   .nav {
+    display: none;
+    opacity: 0; }
+  .layout3_desktop {
     display: none;
     opacity: 0; } }
