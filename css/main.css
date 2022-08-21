@@ -10,6 +10,8 @@
 body {
     background-color: white;
     margin: 0%;
+
+
 }
 
 header {
@@ -121,7 +123,7 @@ a {
 
 .grid-body {
     display: grid;
-    grid-template-rows: 300px 800px 200px;
+    grid-template-rows: 300px 750px 200px;
 }
 
 .grid-header {
@@ -145,4 +147,16 @@ a {
     width: 90%;
     margin-right: 1%;
     margin-left: 9%;
+}
+
+article {
+    margin-top: 300px;
+    margin-bottom: 40px;
+    margin-left: 9%;
+    margin-right: 3%;
+}
+
+article h1 {
+    font: var(--font-4);
+
 }
