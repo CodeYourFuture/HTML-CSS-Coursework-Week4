@@ -289,6 +289,8 @@ footer {
 
 
 
+
+
 @media screen and (min-width: 400px) {
     .grid-body {
         grid-template-columns: 40% 60%;
@@ -305,7 +307,7 @@ footer {
         align-items: center;
         text-align: justify;
         font-family: var(--font-2);
-        font-size: 12px;
+        font-size: 14px;
         white-space: nowrap;
     }
 
@@ -462,5 +464,16 @@ footer {
         grid-column: 4/5;
         margin-top: 0%;
     }
+
+    .nav-link {
+        color: black;
+    }
+
+    .nav-menu .nav-link1 {
+        text-decoration: none;
+        color: #0150FD;
+    }
+
+
 
 }
