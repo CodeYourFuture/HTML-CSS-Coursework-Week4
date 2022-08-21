@@ -22,10 +22,7 @@ Body: Outfit - Extra-light 200 https: //fonts.google.com/specimen/Outfit */
     /* Legacy iOS */
 }
 
-@media only screen and (max-width: 1200px) {
-    body {
-        display: none;
-    }
+
 
 .grid-container {
     display: grid;
