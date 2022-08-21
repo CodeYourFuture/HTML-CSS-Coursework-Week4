@@ -55,6 +55,10 @@ a {
     margin-left: 7px;
 }
 
+.slash {
+    display: none;
+}
+
 .position {
     font-family: var(--font-2);
     display: flex;
@@ -125,6 +129,23 @@ a {
 .grid-body {
     display: grid;
     grid-template-rows: 250px 750px 10px;
+}
+
+@media screen and (min-width: 400px) {
+    .grid-body {
+        grid-template-columns: 40% 60%;
+    }
+
+    .header {
+        display: flex;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+}
+
 }
 
 .grid-header {
