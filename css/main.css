@@ -1,3 +1,165 @@
-/* Add your CSS here */
+.main-page-resume h2::before {
+    content: "-";
+    background-color: var(--royal-blue);
+    color: var(--royal-blue);
+    display: inline;
+    margin-right: .6em;
+    margin-top: 300px;
+    margin-bottom: 300px;
+}
+
+.exper-download {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 2em;
+}
+
+.download-btn {
+    background-color: var(--royal-blue);
+    color: var(--white);
+    border: none;
+    margin-bottom: .3em;
+    padding: 0 .2em;
+    font-weight: bold;
+    border-top-left-radius: 1.4em;
+    border-bottom-left-radius: 1.4em;
+    border-bottom-right-radius: 1.4em;
+    border-top-right-radius: 1.4em;
+}
+
+.experience,
+.education {
+    background-color: var(--white);
+    width: 84%;
+    box-shadow: -10px 5px 10px 8px rgba(176, 174, 174, 0.299);
+    margin-left: 1.8em;
+    margin-bottom: 2.2em;
+    padding: 1em;
+}
+
+.experience :nth-child(1) {
+    color: var(--royal-blue);
+    font-weight: bolder;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:900px) {
+    .main-page {
+        display: flex;
+        flex-direction: row;
+        margin-top: 2em;
+
+
+    }
+
+    .hero {
+        margin-top: 5em;
+        margin-bottom: 6em;
+        width: 34%;
+        margin-left: 20em;
+        margin-right: -8em;
+        z-index: 1;
+    }
+
+    .hero img {
+        margin-top: 3.6em;
+    }
+
+    .hero p {
+        display: block;
+        text-align: center;
+        margin-top: 2em;
+    }
+
+    .desc {
+        background-color: var(--white);
+        padding-left: 10em;
+        padding-right: 3.6em;
+        width: 500px;
+
+
+    }
+
+    .small-screen-btn {
+        display: none;
+    }
+
+    h3 {
+        font-size: 100px;
+        margin: 0;
+    }
+
+    h4 {
+        font-size: 25px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .nav-link {
+        list-style: none;
+        margin: 1.2em;
+    }
+
+    .nav-lists {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        margin-right: 2.8em;
+
+    }
+
+    .contacts {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .follow-us {
+        margin: 1.4em
+    }
+
+    .history {
+        margin: auto;
+    }
+
+    .education,
+    .experience {
+        width: 60%;
+        margin-left: 320px;
+        padding: 1.8em;
+    }
+
+    .education li {
+        display: inline;
+        margin: 160px;
+        line-height: 2.4em;
+        list-style: none;
+    }
+
+    .education li::before {
+        content: '0';
+        display: inline;
+        background-color: var(--royal-blue);
+        color: var(--royal-blue);
+        margin-right: .4em;
+
+    }
+
+
+}
 
 /* Dont' forget to link this file to your HTML in the <head> */
