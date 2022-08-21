@@ -1,3 +1,479 @@
-/* Add your CSS here */
+:root {
+    --color-1: #0150FD;
+    --bg-color: #E6DACD;
+    --bg-color2: #F4ECE6;
+    --font-2: 'Quicksand', sans-serif;
+    --box-shadow: -11.31px 11.31px 17px 0px rgba(138, 131, 124, 0.23);
+    --font-4: 'Poppins', sans-serif;
+}
 
-/* Dont' forget to link this file to your HTML in the <head> */
+body {
+    background-color: white;
+    margin: 0%;
+
+
+}
+
+header {
+    height: 100px;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 7% 85% 8%;
+    grid-template-rows: repeat(2, 30px);
+    margin: 20px 13px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.square {
+
+    background-color: var(--color-1);
+    width: 20px;
+    height: 20px;
+    color: var(--color-1);
+    display: flex;
+
+
+}
+
+.name1 {
+    display: flex;
+    white-space: nowrap;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: left;
+    align-items: center;
+    text-decoration: none;
+    font-family: var(--font-4);
+    color: black;
+    margin-left: 7px;
+}
+
+.slash {
+    display: none;
+}
+
+.position {
+    font-family: var(--font-2);
+    display: flex;
+    grid-column: 1/3;
+    grid-row: 2/3;
+    text-align: left;
+    align-items: center;
+    text-decoration: none;
+}
+
+.sqr {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+    text-align: right;
+}
+
+.nav-menu {
+    display: none;
+}
+
+.right-header {
+    grid-row: 1/3;
+    grid-column: 3/4;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.hamburger {
+    width: 25px;
+    background-color: white;
+}
+
+.bar1 {
+    display: block;
+    align-items: right;
+    width: 10px;
+    height: 3px;
+    margin: 5px;
+    background-color: #0150FD;
+    border-radius: 25px;
+
+}
+
+.bar2 {
+    display: block;
+    align-items: right;
+    width: 20px;
+    height: 3px;
+    margin: 5px;
+    background-color: var(--color-1);
+    border-radius: 25px;
+}
+
+.bar3 {
+    display: block;
+    align-items: right;
+    width: 10px;
+    height: 3px;
+    margin-top: 5px;
+    background-color: var(--color-1);
+    margin-left: 15px;
+    border-radius: 25px;
+}
+
+.grid-body {
+    display: grid;
+    grid-template-rows: 200px 750px 10px;
+}
+
+.grid2 {
+    grid-row: 1/3;
+    display: grid;
+    grid-template-rows: 250px auto;
+}
+
+
+
+.grid-header {
+    background-color: white;
+}
+
+.grid-main {
+    grid-row: 2/3;
+    background-color: var(--bg-color);
+}
+
+.grid-footer {
+    background-color: white;
+
+}
+
+.middle {
+    height: 500px;
+    background-color: var(--bg-color2);
+    position: absolute;
+    margin-right: 2%;
+    margin-left: 9%;
+    box-shadow: var(--box-shadow);
+    width: 90%;
+    grid-row: 1/2;
+}
+
+.img-person {
+    display: flex;
+    border-radius: 50%;
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+
+.name2 {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    height: 100px;
+    font-family: var(--font-4);
+}
+
+.underline {
+    display: block;
+    width: 70px;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--color-1);
+    border-radius: 25px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 30px;
+
+}
+
+.btn {
+    width: 40%;
+    margin: auto;
+    border-radius: 25px;
+    height: 30px;
+    font-family: var(--font-4);
+
+}
+
+.button1 {
+    background-color: var(--color-1);
+    color: white;
+    border: #0150FD;
+}
+
+.button2 {
+    background-color: var(--bg-color2);
+    border: solid black 1px;
+}
+
+.socials {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+    background-color: white;
+    height: 30px;
+    padding: 10px 80px;
+    box-shadow: var(--box-shadow);
+}
+
+article {
+    margin-top: 280px;
+    margin-left: 11%;
+    margin-right: 4%;
+}
+
+article h1 {
+    font-family: var(--font-4);
+    font-weight: 900;
+    font-size: 40px;
+    height: 50px;
+    margin: 0%;
+}
+
+article h6 {
+    font: var(--font-4);
+    font-weight: 200;
+    font-size: 23px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+article p {
+    line-height: 1.6;
+    font-family: var(--font-2);
+    font-size: 19px;
+    margin-top: 0%;
+}
+
+footer {
+    margin-left: 11%;
+}
+
+.connections {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 35px 35px;
+
+}
+
+.bold-footer {
+    font-family: var(--font-4);
+}
+
+.normal-footer {
+    font-family: var(--font-2);
+}
+
+.position2 {
+    display: none;
+}
+
+.buttons2 {
+    display: none;
+}
+
+
+
+
+
+@media screen and (min-width: 400px) {
+    .grid-body {
+        grid-template-columns: 40% 60%;
+        grid-template-rows: auto;
+        grid-template-rows: 800px;
+    }
+
+
+
+    .nav-menu {
+        display: flex;
+        grid-column: 6/7;
+        justify-content: space-between;
+        align-items: center;
+        text-align: justify;
+        font-family: var(--font-2);
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    .square {
+        grid-column: 1/2;
+
+    }
+
+    .header {
+        display: grid;
+        grid-template-columns: 20px 178px 15px 200px 1fr 1fr;
+    }
+
+    .name1 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .slash {
+        grid-column: 3/4;
+        grid-row: 1/2;
+        align-items: center;
+        display: flex;
+        font-family: var(--font-2);
+    }
+
+    .position {
+        grid-column: 4/5;
+        grid-row: 1/2;
+
+    }
+
+    .hamburger {
+        display: none;
+
+    }
+
+    .buttons {
+        display: none;
+    }
+
+    .position2 {
+        font-family: var(--font-2);
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+
+    }
+
+    .buttons2 {
+        display: flex;
+        justify-content: center;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 30px;
+
+    }
+
+    .grid2 {
+        grid-template-columns: 350px 1000px;
+        grid-template-rows: auto;
+        background-color: var(--bg-color);
+        padding-left: 20%;
+    }
+
+    .middle {
+        margin-left: 30%;
+        margin-right: 50%;
+        width: 340px;
+        height: 480px;
+        margin-top: 100px;
+        grid-column: 1/2;
+        position: relative;
+
+    }
+
+    .grid-main {
+        grid-column: 2/3;
+        background-color: white;
+        grid-row: 1;
+        margin-left: 10%;
+        margin-right: 50%;
+        width: 340px;
+        height: 480px;
+        margin-top: 20px;
+    }
+
+    article {
+        margin-top: 100px;
+        width: 400px;
+    }
+
+    .grid-header2 {
+        display: none;
+    }
+
+    article h1 {
+        margin-top: 20px;
+        font-weight: bolder;
+        font-size: 70px;
+        height: 80px;
+    }
+
+    .btn {
+        margin-bottom: 30px;
+    }
+
+    .button2 {
+        background-color: white;
+    }
+
+    footer {
+        margin: 20px;
+    }
+
+    .connections {
+        display: grid;
+        grid-template-columns: 250px 1fr 200px 200px 200px;
+        grid-template-rows: auto auto;
+        text-align: center;
+
+    }
+
+    .Wix {
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+
+    .call {
+        grid-column: 3/4;
+        grid-row: 1/2;
+        margin-bottom: 0%;
+    }
+
+    .write {
+        grid-row: 1/2;
+        grid-column: 4/5;
+    }
+
+    .footer-social {
+        grid-row: 1/3;
+        grid-column: 5/6;
+
+    }
+
+    .num {
+        grid-row: 2/3;
+        grid-column: 3/4;
+        margin-top: 0%;
+    }
+
+    .mail {
+        grid-row: 2/3;
+        grid-column: 4/5;
+        margin-top: 0%;
+    }
+
+    .nav-link {
+        color: black;
+    }
+
+    .nav-menu .nav-link1 {
+        text-decoration: none;
+        color: #0150FD;
+    }
+
+
+
+}
