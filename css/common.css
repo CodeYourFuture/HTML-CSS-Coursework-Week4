@@ -1,99 +1,100 @@
-
 /* Add your CSS here */
 /* common styling the header */
 :root {
---dark-beige: #E6DACD;  
---light-beige: #F4ECE6;  
---royal-blue: #0150FD; 
---black: #000;  
---purple: #a90fe6; 
+  --dark-beige: #e6dacd;
+  --light-beige: #f4ece6;
+  --royal-blue: #0150fd;
+  --black: #000;
+  --purple: #a90fe6;
 }
 
-h1,h2,h3,h4,h5,h6{
-  font-family: 'Poppins', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
 }
 
 * {
   box-sizing: border-box;
-  margin:0;
-  padding:0;
-
+  margin: 0;
+  padding: 0;
 }
-body{
-  font-family: 'Quicksand', sans-serif; 
+body {
+  font-family: "Quicksand", sans-serif;
   background: var(--dark-beige);
 }
 
 .navbar {
   display: grid;
-  grid-template-rows:100px;
-  grid-template-areas:"name .  nav";
+  grid-template-rows: 100px;
+  grid-template-areas: "name .  nav";
   margin: 1rem 1rem;
-  line-height:2rem;
+  line-height: 2rem;
 }
 
- .lists{
-   grid-area:nav;
-   display:flex;
-   justify-content:flex-end;
-   display: none;
-  }
-
-  #square{
-  color:blue;
-  padding-right:0.5rem;
+.lists {
+  text-decoration: none;
+  display: none;
 }
 
+#square {
+  color: blue;
+  padding-right: 0.5rem;
+}
 
- header{
+header {
   display: grid;
-  grid-area:h;
+  grid-area: h;
   background: #fff;
   position: relative;
   z-index: 1;
-  top:-1.2rem;
-
+  top: -1.2rem;
 }
 
-.navbar ul{
-  list-style:none;
+.navbar ul {
+  list-style: none;
 }
 
 .name {
   grid-area: name;
-  font-size:20px;
- }
-
- .title{
-  font-size:14px;
- }
-
-.hamburger{
- background: transparent;
- margin-left: 6rem;
- border: none;
- margin-bottom: 5rem;
- color: var(--royal-blue); 
- width: 4rem;
+  font-size: 20px;
 }
 
- .hamburger a{
- filter:  blue (100%);
+.title {
+  font-size: 14px;
+}
+.title-name {
+  display: block;
 }
 
+.hamburger {
+  background: transparent;
+  margin-left: 6rem;
+  border: none;
+  margin-bottom: 5rem;
+  color: var(--royal-blue);
+  width: 4rem;
+}
 
-main{
-  grid-area:m;
+.hamburger a {
+  filter: blue (100%);
+}
+
+main {
+  grid-area: m;
   background: var(--dark-beige);
-  padding:1em;
+  padding: 1em;
 }
 
-footer{
-  grid-area:f;
+footer {
+  grid-area: f;
   background-color: #fff;
 }
 
-  /* common styling the footer */
+/* common styling the footer */
 .contacts2 {
   margin-top: 1.55rem;
   display: flex;
@@ -138,4 +139,29 @@ footer{
   margin-top: 1.5rem;
   margin-left: 1.55rem;
   line-height: 0.1rem;
+}
+
+@media screen and (min-width: 680px) {
+  .lists {
+    color: black;
+    grid-area: nav;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+  .lists:hover li {
+    color: rgb(0, 26, 255);
+  }
+  .hamburger {
+    display: none;
+  }
+
+  .title:before {
+    content: "/";
+    margin: 5px;
+  }
+  .title-name {
+    display: flex;
+    gap: 8px;
+  }
 }

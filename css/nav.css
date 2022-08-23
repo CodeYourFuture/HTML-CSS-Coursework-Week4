@@ -23,13 +23,7 @@ body{
   background-color: var(--light-beige);
 }
 
-.about-container{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
- 
-}
+
 
 .nav-list{
    margin-top: 1.5rem; 
@@ -62,9 +56,4 @@ body{
 .menu-icon a{
     text-decoration: none;
     color:var(--black);
-}
-@media screen and (min-width: 400px)
-{
- 
-
 }

@@ -7,14 +7,15 @@
     "m m m m m m m m m m m m "
     "f f f f f f f f f f f f";
   grid-template-rows: 1fr 2fr 300px;
+  margin-top: 1rem;
 }
 
 /* This is for the big screen*/
 
-.nav ul li {
+/* .nav ul li {
   list-style: none;
   display: none;
-}
+} */
 
 .my-image {
   background: var(--light-beige);
@@ -24,7 +25,7 @@
   position: absolute;
   top: 6rem;
   z-index: 2;
-  left:1rem;
+  left: 1rem;
 }
 .my-image img {
   border-radius: 50%;
@@ -51,15 +52,12 @@ hr.line {
   grid-area: name;
 }
 
-
-h1{
+h1 {
   font-size: 3.5rem;
   margin-top: 18px;
-
 }
- 
-.contacts{
 
+.contacts {
   background: #fff;
   color: var(--black);
   margin-top: 2rem;
@@ -72,7 +70,6 @@ h1{
   padding: 1rem;
   list-style: none;
   margin-bottom: 0.75rem;
-
 }
 .contact-links a {
   font-size: 20px;
@@ -82,12 +79,12 @@ h1{
   padding: 0 0.25rem;
 }
 .btn {
-  text-decoration:none;
-  margin:5px 10px;
-  padding: 0 0.25rem
+  text-decoration: none;
+  margin: 5px 10px;
+  padding: 0 0.25rem;
 }
 
-.btn{
+.btn {
   margin-top: 2.5rem;
 }
 
@@ -102,7 +99,6 @@ h1{
   font-size: 1.2rem;
   font-weight: bold;
   font-size: 1.2rem;
-
 }
 
 .resume a {
@@ -118,8 +114,7 @@ h1{
   background: var(--light-beige);
 }
 
-
-.profile{
+.profile {
   margin-top: 15rem;
   margin-left: 1.25rem;
   margin-right: 2rem;
@@ -127,13 +122,15 @@ h1{
 
 h2 {
   font-size: 40px;
- 
+}
+.about-heading {
+  margin-top: 20rem;
 }
 
 .profile-info {
   font-size: 19px;
   font-weight: bold;
-  margin-top: 1rem;
+  margin-top: 6rem;
 }
 
 .profile p {
@@ -142,24 +139,36 @@ h2 {
   font-size: 16px;
 }
 
-.contacts2{
-  margin-top:1.55rem;
+.contacts2 {
+  margin-top: 1.55rem;
   display: flex;
 }
 
-.number-info{
-  margin-top:0.5rem;
+.number-info {
+  margin-top: 0.5rem;
 }
-.project-btn{
+.project-btn {
   text-decoration: none;
   color: var(--black);
 }
 
+/* for tablet  version*/
+@media screen and (min-width: 400px) {
+  .about-heading {
+    margin-top: 22rem;
+  }
+}
 
-/* Dont' forget to link this file to your HTML in the <head> */
-
-@media screen and (min-width: 480px) {
-  body {
-   
+/* for laptop version */
+@media screen and (min-width: 650px) {
+  .about-heading {
+    margin-top: 28rem;
+    font-size: 26px;
+  }
+}
+@media screen and (min-width: 780px) {
+  .about-heading {
+    margin-top: 35rem;
+    font-size: 26px;
   }
 }
