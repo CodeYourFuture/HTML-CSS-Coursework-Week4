@@ -1,0 +1,648 @@
+
+:root {
+  --headers: "Fjalla One", sans-serif;
+  --all-other-fonts: "Outfit", sans-serif;
+  --orange: #a05941;
+  --white: white;
+  --btn-border: solid 1px #a05941;
+}
+
+body {
+    color:var(--orange);
+    line-height: 1.3;
+      background-color: #ededee;
+      font-family: var(--all-other-fonts);  
+  padding: 10px;
+  margin: 10px;
+
+}
+
+h3 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 200;
+    letter-spacing: 3.5px;
+    font-size: 1.2rem;
+    text-align: center;
+    margin : 2em auto;
+}
+
+/* Start of Hero Section */
+.hero {
+    width: 100%;
+    margin: 1em auto;
+    min-height: 70vh;
+    max-height: auto;
+    text-align: center;
+    color: #fff;
+    background-image: url(/1.png);
+    background-size: cover;
+    background-position:bottom;
+    background-repeat: no-repeat;
+    padding: 2em 0;
+
+}
+
+.hero-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    letter-spacing: 2.5px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 200;
+}
+
+.hero-title p {
+    border-bottom: 2px solid white;
+}
+
+.hero-logo {
+    width: 150px;
+}
+
+.hero h1 {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 200;
+    letter-spacing: 8px;
+    text-shadow: 1px 1px 2px #123123;
+}
+
+.hero h2 {
+    font-family: 'outfit', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 1px #123123;
+}
+
+.btn {
+    font-size: 1rem;
+    display: inline-block;
+    background-color: #A05941;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 0;
+    padding: .5em 2em;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 200;
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 1em;
+    margin: 1em 0;
+}
+
+.title_images {
+
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+    letter-spacing: 5px;
+    font-size: 1.2rem;
+
+}
+
+.cacti-image {
+    background-image: url(../4.png);
+    background-size: cover;
+    width: 90%;
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.plants-image {
+    background-image: url(../2.png);
+    background-size: cover;
+    width: 90%;
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.succulents_images {
+    background-image: url(../3.png);
+    background-size: cover;
+    width: 90%;
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.shop-collection {
+    padding: .7em 1em;
+}
+/* End of Hero Section */
+
+/* Start of About Us Section */
+.about-us {
+    font-size: 1rem;
+    height: auto;
+    background-color: #fff;
+    text-align: center;
+    padding:2em 1.5em;
+    line-height: 2;
+}
+
+.about-us p,
+h3 {
+    margin: 0;
+}
+
+.thumbnail {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+}
+
+.offer {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    padding: 1em 0;
+    margin-top: 0;
+    background-color: #133032;
+    color: #fff;
+    font-size: 3.75rem;
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.offer .shop-btn {
+    display: inline-block;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    color: #123123;
+    padding: .7em 2.6em;
+    background-color: #fff;
+    text-decoration: none;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 200;
+}
+/* End of About Us Section */
+
+/* Start of Header Section */
+.search-login {
+  display: none;
+}
+
+header {
+  display: grid;
+  grid-template: auto / repeat(2, 1fr);
+  padding: 0rem 1rem;
+}
+.title {
+  color: var(--orange);
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+.hamburger-menu {
+  font-size: 2rem;
+  color: var(--orange);
+  font-weight: bold;
+  text-align: right;
+  padding-top: 0.5rem;
+}
+.desktop-nav {
+  display: none;
+  color: var(--orange);
+}
+.responsive-nav {
+  display: none;
+  color: var(--orange);
+  text-align: center;
+}
+.login-link {
+  text-decoration: none;
+  color: var(--orange);
+}
+nav > ul > li {
+  list-style-type: none;
+  padding-left: 1rem;
+}
+nav > ul > li > a {
+  text-decoration: none;
+  color: var(--orange);
+}
+.header-txt {
+  grid-column: 1 / -1;
+  color: var(--orange);
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+}
+.h-text-2 {
+  display: none;
+}
+/* End of Header Section */
+
+/*Start of Form Section */
+.form {
+    display: grid;
+  gap: 1rem;
+  background-color: var(--white);
+  padding: 1rem 1rem 1.5rem 1rem;
+  margin: 0 1rem;
+}
+
+.form input, textarea {
+    width: 95%;
+    height: 2.2rem;
+    border:.5px solid black;
+    margin: .6em 0;
+}
+
+.form input:hover, textarea:hover {
+     border: 2px solid black;
+  
+}
+
+textarea { 
+    height: 10rem;
+}
+.form h3 {
+    margin : 2em auto;
+    width: 50%;
+    color: #A05941;
+}
+
+.send_button {
+    display: inline-block;
+    width: 96%;
+    padding: .8em 1em;
+    font-size: 1rem;
+    border: none;
+    color: #fff;
+    background-color: #A05941;
+    margin-bottom: 2em;
+    cursor: pointer;
+}
+/* End of Form Section */
+
+
+/* Start of Subscription Section */
+.btn {
+    font-size: 1rem;
+    display: inline-block;
+    background-color: #A05941;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 0;
+    padding: .5em 2em;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 200;
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 1em;
+    margin: 1em 0;    
+}
+
+.store_information {
+    font-family: 'outfit';
+    font-weight: 200;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #133032;
+    padding: 3em 0 2em;
+}
+.store {
+    text-align: center;
+}
+.store_hours_help {
+    margin: 3em;
+}
+
+.information-link {
+    margin:2em auto 5em;
+}
+.info-link {
+    display: inline-block;
+    margin: .2em 0;
+    color: white;
+}
+
+.subscription {
+ display: flex;
+ flex-direction: column;
+ align-items: stretch;
+}
+
+.subscription-title {
+    margin-bottom: 1em;
+}
+.subscription input {
+    width: 90%;
+    height: 2.2rem;
+    border:.5px solid #fff;
+    margin-top: 0;
+    margin-bottom: .5em;
+    background: transparent;
+}
+.subscription input:hover {
+    border: 3px solid #fff;
+}
+
+.email-label {
+    font-size: 1.1rem;
+    padding-left: 1em;
+    margin-bottom: 0.3em;
+    text-align: left;
+}
+.email-wrapper {
+    text-align: center;
+}
+
+.subscribe-btn {
+    display: inline-block;
+    width: 83%;
+    padding: .8em 1em;
+    font-size: 1rem;
+    border: none;
+    color: #133032;
+    background-color:#fff;
+    margin-bottom: .5em;
+    cursor: pointer;
+    text-decoration: none;
+}
+.social_media  {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social_media .fa {
+    margin:1em .5em;
+}
+/* End of Subscription Section */
+
+/* Start of Map Section */
+.google_map {
+    width: 100%;
+    height:70vh;
+    background-image: url(map.png);
+    background-size: cover;
+    background-position: center;
+}
+/* End of Map Section */
+
+
+/* Start of Footer */
+footer {
+    text-align: center;
+}
+/* End of Footer */
+
+@media (max-width:600px){
+    .phone-hidden {
+        display:none;
+        visibility: hidden;
+    }
+    }
+
+
+
+@media (min-width:600px){
+    .desktop-width {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .hero h1 {
+        font-size: 7rem;
+        margin: 0;
+    }
+
+    .shop-btn {
+        margin-top: 1.5em;
+        font-size: 1.2rem;
+    }
+
+    .plant_images {
+        display: flex;
+        flex-direction: row;
+        gap:1em;
+    } 
+
+    .about-wrapper {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(2,minmax(250px ,auto));   
+    }
+
+    .about-us {
+        grid-column: 1/3;
+        grid-row: 1;
+    }
+    .thumbnail_bath {
+        grid-column: 3/4;
+        grid-row: 1;
+    }
+    .thumbnail_leaf {
+        grid-column: 4/5;
+        grid-row: 1;
+    }
+
+    .thumbnail_trees {
+        grid-column: 1/3;
+        grid-row: 2;
+    }
+    .offer {
+        grid-column:3/5;
+        grid-row: 2;
+    } 
+}
+
+@media only screen and (min-width: 900px) {
+  body {
+    margin: 0 2rem;
+  }
+  .login-cart {
+    display: flex;
+    color: var(--orange);
+    align-items: flex-end;
+    padding-right: 1rem;
+  }
+  .login-cart > .bi {
+    font-size: 1.5rem;
+  }
+  .login-cart > p {
+    align-self: flex-end;
+    margin: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  .bi-basket2 {
+    padding-left: 2rem;
+  }
+  header {
+    display: grid;
+    grid-template: auto / repeat(12, 1fr);
+    padding: 0;
+  }
+  .search-login {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white);
+    padding: 0;
+    margin: 0;
+  }
+  .search-bar {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    color: var(--orange);
+  }
+  .search-bar:hover {
+    border: 1px solid #a05941;
+  }
+  .search-bar > input {
+    border: none;
+  }
+  ::placeholder {
+    color: var(--orange);
+  }
+  .hamburger-menu {
+    display: none;
+  }
+  .responsive-nav {
+    display: none;
+  }
+  .title {
+    width: 100%;
+    grid-row: 1;
+    grid-column: 1 / 4;
+    text-decoration: none;
+    margin-right: 0;
+  }
+  .desktop-nav {
+    display: grid;
+    grid-row: 1;
+    grid-column: 4;
+    text-transform: none;
+    margin-left: 0;
+  }
+  .desktop-nav > ul {
+    display: flex;
+    padding: 0;
+  }
+  .header-txt {
+    margin-left: 50%;
+    grid-row: 1;
+    grid-column: 2 / -1;
+    text-align: right;
+    padding-right: 0;
+  }
+ 
+  
+}
+
+@media (max-width:600px){
+    .phone-hidden {
+        display:none;
+        visibility: hidden;
+    }  
+}
+
+
+@media (min-width:600px){
+    .form_section {
+        background-image: url(8.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 5em 0;
+    }
+    
+    .form {
+        width: 50%;
+        margin:0 auto;
+        background-color: rgba(255, 255, 255, 0.521);
+        padding: 1em;
+    }
+    .form h3 {
+        font-size: 1rem;
+    }
+
+    .form input, .form textarea {
+        width: 100%;
+    }
+
+    .form_design {
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        gap:1em;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, auto);
+    }
+    .first-name {
+        grid-column:1/2;
+        grid-row:1;
+    }
+    .last-name {
+        grid-column:2/3;
+        grid-row:1;
+    }
+    .email {
+        grid-column:1/-1;
+        grid-row:2;
+    }
+    .phone {
+        grid-column:1/-1;
+        grid-row:3;
+    }
+    .message {
+        grid-column:1/-1;
+        grid-row:4;
+    }
+    .send_button {
+        width: 100%;
+        grid-column:1/-1 ;
+        grid-row: 5;
+        margin-bottom: 0;
+    }
+    .store_information {
+        padding-bottom:3em ;
+    }
+    .store {
+        display: flex;
+        justify-content:center;
+    }
+
+    .store_hours_help {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin:2em 4em;
+    }
+    .subscription {
+        width: 30%;
+        margin: 0 auto;
+    }
+    .email-wrapper {
+    display: flex;
+    justify-content:space-between;
+    }
+    .subscription input {
+        width: 50%;
+    }
+    .subscribe-btn {
+        width: 30%;
+        padding: .5em 1em ;
+    }
+}
+
+
+
