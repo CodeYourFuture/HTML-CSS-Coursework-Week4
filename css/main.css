@@ -1,3 +1,174 @@
 /* Add your CSS here */
 
-/* Dont' forget to link this file to your HTML in the <head> */
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "h h h h h h h h h h h h"
+    "m m m m m m m m m m m m "
+    "f f f f f f f f f f f f";
+  grid-template-rows: 1fr 2fr 300px;
+  margin-top: 1rem;
+}
+
+/* This is for the big screen*/
+
+/* .nav ul li {
+  list-style: none;
+  display: none;
+} */
+
+.my-image {
+  background: var(--light-beige);
+  width: 92%;
+  padding-top: 2em;
+  text-align: center;
+  position: absolute;
+  top: 6rem;
+  z-index: 2;
+  left: 1rem;
+}
+.my-image img {
+  border-radius: 50%;
+  width: 50%;
+}
+.my-image p {
+  font-size: 21px;
+  margin-top: 19px;
+  line-height: 1.2em;
+  font-weight: bold;
+}
+hr.line {
+  border: 1px solid var(--royal-blue);
+  width: 20%;
+  margin-left: 8.5rem;
+  margin-top: 1rem;
+}
+
+.my-image h1 {
+  align-items: center;
+}
+
+.name {
+  grid-area: name;
+}
+
+h1 {
+  font-size: 3.5rem;
+  margin-top: 18px;
+}
+
+.contacts {
+  background: #fff;
+  color: var(--black);
+  margin-top: 2rem;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  list-style: none;
+  margin-bottom: 0.75rem;
+}
+.contact-links a {
+  font-size: 20px;
+  color: var(--black);
+  text-decoration: none;
+  margin: 5px 10px;
+  padding: 0 0.25rem;
+}
+.btn {
+  text-decoration: none;
+  margin: 5px 10px;
+  padding: 0 0.25rem;
+}
+
+.btn {
+  margin-top: 2.5rem;
+}
+
+.resume {
+  background: var(--royal-blue);
+  color: #fff;
+  border: 0;
+  padding: 10px 20px;
+  border-radius: 2rem;
+  margin-right: 1.5rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.resume a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.projects {
+  padding: 5px 10px;
+  border-radius: 2rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  background: var(--light-beige);
+}
+
+.profile {
+  margin-top: 15rem;
+  margin-left: 1.25rem;
+  margin-right: 2rem;
+}
+
+h2 {
+  font-size: 40px;
+}
+.about-heading {
+  margin-top: 20rem;
+}
+
+.profile-info {
+  font-size: 19px;
+  font-weight: bold;
+  margin-top: 6rem;
+}
+
+.profile p {
+  margin-top: 1rem;
+  line-height: 1.9rem;
+  font-size: 16px;
+}
+
+.contacts2 {
+  margin-top: 1.55rem;
+  display: flex;
+}
+
+.number-info {
+  margin-top: 0.5rem;
+}
+.project-btn {
+  text-decoration: none;
+  color: var(--black);
+}
+
+/* for tablet  version*/
+@media screen and (min-width: 400px) {
+  .about-heading {
+    margin-top: 22rem;
+  }
+}
+
+/* for laptop version */
+@media screen and (min-width: 650px) {
+  .about-heading {
+    margin-top: 28rem;
+    font-size: 26px;
+  }
+}
+@media screen and (min-width: 780px) {
+  .about-heading {
+    margin-top: 35rem;
+    font-size: 26px;
+  }
+}

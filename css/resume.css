@@ -1,0 +1,174 @@
+
+.grid-container{
+  display:grid;
+  grid-template-areas: "h h h h h h h h h h h h"
+    "m m m m m m m m m m m m "
+    "f f f f f f f f f f f f";
+  grid-template-rows: 100px 2fr 300px;
+  
+} 
+
+.fas-resume{
+  text-align: center;
+  list-style: none;
+  margin: 2rem;
+  font-size: 29px;
+  font-weight: bolder;
+}
+
+.resume-wrapper{
+  display:flex; 
+}
+
+.experience{
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 2rem;
+}
+
+.download{ 
+ margin-left: 7rem;
+ background-color: #0150FD;
+ border-radius: 15px;
+ padding:8px;
+ color:white;
+ font-weight: bold;
+ border-style: none;
+}
+
+main h3{
+   color:#0150FD; 
+   font-size: 15px; 
+   margin-top: 3rem;
+   margin-bottom: 1rem;
+}
+
+.job-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+} 
+
+.job-wrapper p{
+  font-size: 17px;
+  line-height:1.5em;
+}
+
+.jobs{
+  
+  background: #fff;
+  width: 95%;
+  margin-top:2rem;
+  padding: 1rem;
+}
+
+
+.nav ul li{
+ list-style:none;
+   display: none;
+}
+
+.jobs{
+ 
+  background: #fff;
+  width: 100%;
+  margin-left: 0.5rem;
+}
+
+ .jobs p{
+  /* padding-bottom: 1rem; */
+  padding-right: 1rem ;
+  padding-left: 1rem;
+  line-height: 1.5rem;
+}
+
+.contacts2{
+  margin-top:1.55em;
+  display:flex;
+
+}
+
+
+.number-info{
+  margin-top:0.5rem;
+}
+
+.job-position{
+  margin-bottom: 2rem;
+  font-size: 16px;
+}
+
+.edit-info{
+  margin-top: 2rem; 
+}
+.comp-location{
+  margin-top: 1.5rem;  
+}
+
+.more-info{
+  margin-top: 2rem;
+}
+
+h2{
+  padding-top:2rem;
+  margin-left:0.5rem;
+}
+
+.education{
+  padding-top:1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   
+} 
+.edu-background{
+ 
+  background: #fff;
+  width: 95%;
+  margin-top:2rem;
+  padding: 1rem;  
+}
+
+.education p{
+  font-size: 17px;
+  line-height:1.5em;
+}
+
+.skills{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-language{
+  background: #fff;
+  width: 95%;
+  margin-top:2rem;
+  padding: 1rem;
+  
+}
+
+.skill-language h2{
+  font-size: 18px;
+  padding-bottom: 1.8rem;
+}
+
+.skill-language p{
+  font-size: 17px;
+  line-height:1.5em;
+  padding-bottom: 1.5rem;
+  color: rgba(0,0,0,1);
+}
+
+
+@media screen and (min-width: 480px) {
+  .jobs-wrapper {
+    display:flex;
+   
+  }
+}
+
+
+
+
+
