@@ -1,3 +1,522 @@
 /* Add your CSS here */
+/* colors and font size variables */
 
-/* Dont' forget to link this file to your HTML in the <head> */
+/* ---------------------Mobile Design------------- */
+:root {
+  --bckgrnd-color: #e6dacd;
+  --light-being: #f4ece6;
+  --royal-blue: #0150fd;
+  --black: #000;
+  --white: #fff;
+  --font-body: 'Quicksand', sans-serif;
+  --font-heading: 'Poppins', sans-serif;
+  --body-fontWeight: 300;
+  --heading-fontWeight:600;
+}
+
+html {
+  height: 100%;
+}
+
+/* ------ The next two classes control all images------- */
+.images_socialMedia {
+  width: 20px;
+}
+
+.profilePhoto {
+  width: 50%;
+  border-radius: 50%;
+}
+
+/* ------------------- Body rule--------- */
+body {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid:
+    "h"
+    "m"
+    "f";
+  margin: 2px;
+}
+
+/*------ Header---- */
+
+header {
+  display: grid;
+  grid:
+    "name name name"
+    "nav nav nav";
+  grid-area: h;
+  justify-content: space-between;
+}
+
+.blueBox_Name_and_JobTitle,
+.title_resumePage, .title_project_page, .skill_and_language {
+  display: flex;
+  grid-area: name;
+  align-items: center;
+  gap: 10px;
+  margin: 10px;
+}
+
+/* Small Blue box just before the name */
+.smallBlueBox {
+  width: 20px;
+  height: 20px;
+  background-color: #0150fd;
+}
+
+.firstLastName :first-child {
+  font-weight: bold;
+  font-size: x-large;
+}
+
+nav {
+  display: flex;
+  grid-area: nav;
+  justify-content: space-around;
+  align-content: space-around;
+  align-items: center;
+  font-size: var(--heading-fontWeight);
+}
+
+/* this help no underline in the naviagation  elements */
+nav a {
+  text-decoration: none;
+}
+
+/* ----- From here is the design of the main element and its children -----*/
+.multi_background {
+  grid-area: m;
+  height: 700px;
+  background: linear-gradient(
+    90deg,
+    var(--bckgrnd-color) 50vw,
+    var(--white) 50vw
+  );
+}
+/* this controls the main element in the resume page  */
+.common_background {
+  grid-area: m;
+  height: 700px;
+  background-color: var(--bckgrnd-color);
+  height: fit-content;
+}
+
+.overview_section {
+  display: flex;
+  height: 60%;
+  width: 80vw;
+  position: relative;
+  top: 15vw;
+  right: 15vw;
+  bottom: 15vw;
+  left: 15vw;
+}
+
+.profile_contianer {
+  width: 45vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--light-being);
+  align-items: center;
+  padding-top: 40px;
+  border-radius: 10px;
+  box-shadow: -5px 5px 10px 0.2px gray;
+}
+
+.profile_contianer :nth-child(2) {
+  font-weight: bolder;
+  font-size: xx-large;
+  text-align: center;
+}
+
+/* The blue line under the name */
+.firstLastNames :nth-child(3) {
+  height: 1px;
+  width: 50px;
+  background-color: #0150fd;
+}
+
+.overview_section_followLinks {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--white);
+}
+
+.personal_introduction {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 5px;
+}
+
+/* why first-child not working with out > ?*/
+.personal_introduction > :first-child {
+  font-size: 40px;
+  margin: 0px;
+}
+
+.personal_introduction > :nth-child(2) {
+  font-size: 18px;
+  margin: 0px;
+}
+
+.buttons_container {
+  display: flex;
+  gap: 4px;
+  width: 100%;
+}
+
+.paragraph_container {
+  height: 100%;
+}
+
+/* general styling both bottons */
+.btn,
+.download_btn_in_resumePage {
+  border-radius: 40px;
+  padding: 5px 8px 5px 8px;
+}
+
+/* Resume button in ABOUT ME page and download button in RESUME page  */
+.resume_btn,
+.download_btn_in_resumePage, .submit_btn {
+  background-color: blue;
+  color: var(--white);
+  font-size: 15px;
+}
+
+.resume_btn:hover,
+.download_btn_in_resumePage:hover, .submit_btn:hover {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+/* Projects Button */
+.projects_btn {
+  background-color: var(--white);
+  color: var(--black);
+  font-size: 15px;
+}
+
+.projects_btn:hover {
+  background-color: blue;
+  color: var(--white);
+}
+
+.paragraph_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: var(--font-body);
+  font-weight: var(--body-fontWeight);
+}
+
+/* ----Footer -- */
+footer {
+  grid-area: f;
+  display: flex;
+  flex-direction: column;
+}
+
+.copyRight_section {
+  display: flex;
+  justify-content: space-around;
+  margin: 0px;
+}
+
+.contacts_container {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin: 0px;
+}
+
+.hover_effect :hover {
+  box-shadow: -3px 3px green;
+  background-color: lightsalmon;
+  color: var(--white);
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.footer_links {
+  display: flex;
+  gap: 10px;
+}
+
+/* ------------------RESUME PAGE RULES---MOBILE VIEW------------------ */
+.subtitle_experience_and_download_btn {
+  display: flex;
+}
+.main_resumepage, .project_page_main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.subtitle_experience_and_download_btn {
+  display: flex;
+  justify-content: space-between;
+  width: 70vw;
+  font-size: x-small;
+}
+.download_btn_in_resumePage {
+  padding: 10px;
+}
+
+.sections_style, .projects_list {
+  display: flex;
+  background-color: var(--white);
+  padding: 20px;
+  width: 70vw;
+  margin: 20px;
+}
+.timeLine_and_description_style {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50vw;
+}
+.time_line > * {
+  margin: 0px;
+}
+
+.skills_container{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.skills_list{
+   display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+}
+
+
+/* ----------PROJECTS PAGE-----MOBILE ------------------*/
+.project_page_intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 70vw;
+  align-items: center;
+  font-size: large;
+}
+.projects_list{
+  gap:10px;
+}
+
+.project_picture{
+  width: 40vw;
+ height: auto;
+}
+
+
+/* --------CONTACT PAGE -----MOBILE VIEW----------- */
+
+.contact_page_main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 700px;
+  gap: 30px;
+}
+
+form{ 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: var(--white);
+  height: 25em;
+  width: 30vw;
+  padding: 15px;
+}
+input, textarea{
+  border:none;
+  border-bottom: solid 1px;
+}
+.fL_names{
+display: flex;
+justify-content: space-between;
+}
+.f_name, .l_name{
+  display: flex;
+flex-direction: column;
+width: 14vw;
+}
+.message_and_button{
+  display: flex;
+  flex-direction: column;
+}
+
+.submit_btn{
+  margin: 10px;
+  width: 30%;
+}
+
+/* laptop view */
+@media screen and (min-width: 426px) {
+  /*------ Header---- */
+
+  header {
+    display: grid;
+    grid: "name name empty empty nav nav nav";
+    grid-area: h;
+    justify-content: space-between;
+    padding: 0px 20px 0px 20px;
+  }
+  /* general styling both bottons */
+  .btn {
+    border-radius: 40px;
+    font-size: larger;
+    padding: 5px 30px 5px 30px;
+    margin: 10px;
+  }
+
+  /* ----Footer----- */
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    grid-area: f;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .contacts_container {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    text-align: center;
+  }
+  .footer_links {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  /* -------------Resume page------------------- */
+  .subtitle_experience_and_download_btn {
+    display: flex;
+    justify-content: space-between;
+    width: 45vw;
+    font-size: small;
+  }
+  .download_btn_in_resumePage {
+    padding: 10px;
+  }
+
+  .sections_style {
+    display: flex;
+    background-color: var(--white);
+    padding: 20px;
+    width: 45vw;
+    margin: 20px;
+  }
+}
+
+/* Wider Screen */
+@media screen and (min-width: 1025px) {
+  .overview_section {
+    display: flex;
+    height: 60%;
+    width: 80vw;
+    position: relative;
+    top: 100px;
+    left: 20vw;
+  }
+
+  .profile_contianer {
+    width: 30vw;
+    height: 500px;
+    margin-left: 200px;
+  }
+
+  .profile_contianer :nth-child(2) {
+    font-weight: bolder;
+    font-size: xx-large;
+    text-align: center;
+  }
+
+  .overview_section_followLinks {
+    display: flex;
+    width: 100%;
+    gap: 30px;
+    justify-content: center;
+    background-color: var(--white);
+  }
+
+  .personal_introduction {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 20px;
+    align-items: left;
+  }
+
+  /* why first-child not working with out > ?*/
+  .personal_introduction > :first-child {
+    font-size: 5vw;
+    margin: 0px;
+  }
+
+  .personal_introduction > :nth-child(2) {
+    font-size: 2vw;
+    margin: 0px;
+  }
+
+  .personal_introduction > :nth-child(4) {
+    font-size: 30px;
+    margin: 0px;
+    padding-right: 20px;
+  }
+
+  /* general styling both bottons */
+  .btn {
+    border-radius: 40px;
+    padding: 5px 30px 5px 30px;
+  }
+
+  /* Resume button */
+  .resume_btn {
+    background-color: blue;
+    color: var(--white);
+    font-size: 30px;
+  }
+
+  /* Projects Button */
+  .projects_btn {
+    background-color: var(--white);
+    color: var(--black);
+    font-size: 30px;
+  }
+
+  /* -------------Resume page------------------- */
+
+  .subtitle_experience_and_download_btn {
+    display: flex;
+    justify-content: space-between;
+    width: 30vw;
+    font-size: small;
+  }
+  .download_btn_in_resumePage {
+    padding: 10px;
+  }
+
+  .sections_style {
+    display: flex;
+    background-color: var(--white);
+    padding: 20px;
+    width: 30vw;
+    margin: 20px;
+  }
+}

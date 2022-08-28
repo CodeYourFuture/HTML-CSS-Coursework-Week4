@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/css/main.css" rel="stylesheet" />
+    <title>CONTACT</title>
+</head>
+
+<body>
+    <header>
+        <div class="blueBox_Name_and_JobTitle">
+            <div class="smallBlueBox"></div>
+            <p class="firstLastName"><span>Maya Nelson</span> / PROJECT MANAGER</p>
+        </div>
+
+        <nav>
+            <a href="/index.html" class="nav_links aboutMe">ABOUT ME</a>
+            <a href="/resume.html" class="nav_links resume">RESUME</a>
+            <a href="/projects.html" class="nav_links projects">PROJECTS</a>
+            <a href="/contact.html" class="nav_links contact">CONTACT</a>
+        </nav>
+
+    </header>
+    <!-- main element has a class, beacuse there are multiple main elements in different pages, that share same style-sheet -->
+    <main class="common_background contact_page_main">
+
+        <div class="project_page_intro">
+            <div class="title_project_page">
+                <div class="smallBlueBox"></div>
+                <h1>CONTACT</h1>
+            </div>
+
+            <form>
+                <div class="fL_names">
+                    <div class="f_name">
+                        <label for="firstName">First Name*</label>
+                        <input type="text" name="firstName" id="firstName" minlength="3" required>
+                    </div>
+
+                    <div class="l_name">
+                        <label for="lirstName">Lirst Name*</label>
+                        <input type="text" name="lastName" id="lirstName" minlength="3" required>
+                    </div>
+
+                </div>
+
+                <label for="email">Email*</label>
+                <input type="email" name="eamil" id="email" required>
+
+                <label for="subject">Subject</label>
+                <input type="text" id="subject">
+                <div class="message_and_button">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message"></textarea>
+                    <button type="submit" class="btn submit_btn">Submit</button>
+                </div>
+            </form>
+    </main>
+    <footer>
+        <div class="contacts_container hover_effect">
+            <div class="contacts call">
+                <h4>Call</h4>
+                <number>123-456-7890</number>
+            </div>
+            <div class="contacts email">
+                <h4>Write</h4>
+                <email>info@mysite.com</email>
+            </div>
+            <div class="footer_follow_links">
+                <h4>Follow</h4>
+                <div class="footer_links">
+                    <a href="https://en-gb.facebook.com/" class="overview_followLinks footer_followLinks"><img
+                            src="/images/Facebook.png" class="images_socialMedia facebookImage"
+                            alt="facebookImage" /></a>
+                    <a href="https://twitter.com/?lang=en" class="overview_followLinks footer_followLinks"><img
+                            src="/images/Twitter.png" class="images_socialMedia twitterImage" alt="TwitterLogo" /></a>
+                    <a href="https://uk.linkedin.com/" class="overview_followLinks footer_followLinks"><img
+                            src="/images/Linked.png" class="images_socialMedia linkedImage" alt="LinkedLogo" /></a>
+                    <a href="https://www.instagram.com/" class="overview_followLinks footer_followLinks"><img
+                            src="/images/Instagram.png" class="images_socialMedia instagramIamge" alt="Instagram" /></a>
+                </div>
+            </div>
+        </div>
+        <section class="copyRight_section">
+            <!-- link here exectley the link in the wix page -->
+            <p>©2023 by Maya Nelson.</p>
+            <p>
+                Proudly created with
+                <a href="https://www.wix.com/website-template/view/html/2622">Wix.com</a>
+            </p>
+        </section>
+    </footer>
+</body>
+
+</html>
