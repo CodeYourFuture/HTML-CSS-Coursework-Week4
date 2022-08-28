@@ -1,112 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<!-- Add a link to your custom CSS here -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Quicksand:wght@300&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="css/main.css" />
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
-			crossorigin="anonymous"
-		/>
-		<title>Responsive grid project</title>
-	</head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive grid project</title>
 
-	<body>
-		<!-- Add your markup here -->
-		<nav class="navbar bg-light fixed-top">
-			<div class="container-fluid">
-				<button
-					class="navbar-toggler"
-					type="button"
-					data-bs-toggle="offcanvas"
-					data-bs-target="#offcanvasNavbar"
-					aria-controls="offcanvasNavbar"
-				>
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div
-					class="offcanvas offcanvas-start navbar-dark bg-dark"
-					tabindex="-1"
-					id="offcanvasNavbar"
-					aria-labelledby="offcanvasNavbarLabel"
-				>
-					<div class="offcanvas-header">
-						<h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-						<button
-							type="button"
-							class="btn-close"
-							data-bs-dismiss="offcanvas"
-							aria-label="Close"
-						></button>
-					</div>
-					<div class="offcanvas-body">
-						<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-							<li class="nav-item">
-								<a class="nav-link active" aria-current="page" href="#">Home</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">Story</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">Menu</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">Order Online</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">Location & Hours</a>
-							</li>
-						</ul>
-						<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-							<li class="nav-socials">
-								<a class="nav-link" href="#">Instagram</a>
-							</li>
-							<li class="nav-socials">
-								<a class="nav-link" href="#">Facebook</a>
-							</li>
-							<li class="nav-socials">
-								<a class="nav-link" href="#">Youtube</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<a class="brand" href="index.html">
-					<span class="navbar-brand" href="/index.html">Juice Bar</span>
-				</a>
-				<div
-					class="btn-group"
-					role="group"
-					aria-label="Basic mixed styles example"
-				>
-					<button type="button" class="btn">Login</button>
-					<button type="button" class="btn btn-dark">Order Online</button>
-				</div>
-			</div>
-		</nav>
-		<!-- Please leave this in to credit the creators of this design -->
-		<p>
-			This website design was created by Wix.com, and is used here for strictly
-			educational purposes.
-		</p>
-		<script
-			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-			integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
-			integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
-			crossorigin="anonymous"
-		></script>
-	</body>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Quicksand:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="first-start">
+            <div class="start-box">
+                <div></div>
+            </div>
+            <div class="name"><h2>Maya Nelson</h2></div>
+            <div class="slash"><p>/</p></div>
+            <div class="role"><p>PROJECT MANAGER</p></div>
+        </div>
+        <div>
+            <nav>
+                <img class="hamburger-menu" src="./img/hamburger-menu.svg" />
+                <ul>
+                    <li><a class="active" href="">ABOUT ME</a></li>
+                    <li><a href="resume.html">RESUME</a></li>
+                    <li><a href="projects.html">PROJECTS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="intro">
+        <div class="first-intro">
+            <div class="person-id">
+                <div class="person-id1">
+                    <div class="person">
+                        <img src="./img/person.webp" alt="woman" />
+                        <p class="person-id-name">Maya<br/>Nelson</p>
+                        <div class="person-id-divider"></div>
+                        <div class="person-buttons">
+                            <a class="btn" href="./resume.html">RESUME</a>
+                            <a class="btn btn-2" href="./projects.html">PROJECTS</a>
+                        </div>
+                        <div class="person-role">
+                            <p>PROJECT MANAGER</p>
+                        </div>
+                    </div>
+                    <div class="person-social-icons">
+                        <ul>
+                            <li><img src="./img/facebook.webp" alt="facebook logo"></li>
+                            <li><img src="./img/twitter.webp" alt="twitter logo"></li>
+                            <li><img src="./img/linked-in.webp" alt="linked-in logo"></li>
+                            <li><img src="./img/instagram.webp" alt="instagram logo"></li>
+                        </ul>
+                    </div>
+                    <div></div>
+                </div>
+                <div class="person-id2">
+                    <h1>Hello</h1>
+                    <h5>Here's who I am & what I do</h5>
+                    <div class="person-buttons">
+                        <a class="btn" href="./resume.html">RESUME</a>
+                        <a class="btn btn-2" href="./projects.html">PROJECTS</a>
+                    </div>
+                    <p>I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.</p>
+                    <p>I'm a great place for you to tell a story and let your users know a little more about you.</p>
+                </div>
+            </div>
+        </div>
+        <div class="second-intro"></div>
+    </section>
+
+    <footer>
+        <div class="call">
+            <h4>Call</h4>
+            <p>123-456-7890</p>
+        </div>
+        <div class="write">
+            <h4>Write</h4>
+            <p>info@mysite.com</p>
+        </div>
+        <div class="follow">
+            <h4>Follow</h4>
+            <div class="footer-social-icons">
+                <ul>
+                    <li><img src="./img/facebook.webp" alt="facebook logo"></li>
+                    <li><img src="./img/twitter.webp" alt="twitter logo"></li>
+                    <li><img src="./img/linked-in.webp" alt="linked-in logo"></li>
+                    <li><img src="./img/instagram.webp" alt="instagram logo"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="text">
+            <p>&copy; 2023 by Maya Nelson<br/>Proudly created with <a href="https://wix.com">Wix.com</a><br/>Icons by <a href="https://icons8.com/">Icons8</a></p>
+        </div>
+    </footer>
+</body>
 </html>
