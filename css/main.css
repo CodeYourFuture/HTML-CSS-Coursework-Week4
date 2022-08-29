@@ -60,11 +60,25 @@ color: #333333;
 }
 /* header */
 
+
 /* middle project */
-.
+
+.projects {
+    background-color: white;
+    margin-right: 2.45rem;
+
+}
+.pt2 {
+    color: blue;
+}
+.col {
+    padding-right: 0%;
+}
+
+/* middle section on project */
 
 
-/* middle section on resume */
+
 .text h1 {
     margin-top: 5.45rem;
     text-align: center;
@@ -112,5 +126,8 @@ color: #333333;
 }
 .follow {
     grid-column: 5/6;
+    
+}
+@media screen and (max-width: 600px){
     
 }
