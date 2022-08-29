@@ -429,17 +429,17 @@ footer {
 }
 
 .brochure {
-	background-image: url('../img/leaflet-s.webp');
+	background-image: url('../img/brochure-s.webp');
 	background-size: cover;
 }
 
 .web-design {
-	background-image: url('../img/website-mockup-s.webp');
+	background-image: url('../img/web-design-s.webp');
 	background-size: cover;
 }
 
 .mobile-app {
-	background-image: url('../img/app-screen-s.webp');
+	background-image: url('../img/mobile-app-s.webp');
 	background-size: cover;
 }
 
@@ -701,15 +701,15 @@ form > div:last-child {
 	}
 
 	.brochure {
-		background-image: url('../img/leaflet-m.webp');
+		background-image: url('../img/brochure-m.webp');
 	}
 
 	.web-design {
-		background-image: url('../img/website-mockup-m.webp');
+		background-image: url('../img/web-design-m.webp');
 	}
 
 	.mobile-app {
-		background-image: url('../img/app-screen-m.webp');
+		background-image: url('../img/mobile-app-m.webp');
 	}
 
 	.projest-2 {
