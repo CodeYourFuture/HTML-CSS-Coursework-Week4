@@ -34,7 +34,7 @@ h3 {
     max-height: auto;
     text-align: center;
     color: #fff;
-    background-image: url(/1.png);
+    background-image: url(1.png);
     background-size: cover;
     background-position:bottom;
     background-repeat: no-repeat;
@@ -106,7 +106,7 @@ h3 {
 }
 
 .cacti-image {
-    background-image: url(../4.png);
+    background-image: url(4.png);
     background-size: cover;
     width: 90%;
     height: 50vh;
@@ -115,7 +115,7 @@ h3 {
 }
 
 .plants-image {
-    background-image: url(../2.png);
+    background-image: url(2.png);
     background-size: cover;
     width: 90%;
     height: 50vh;
@@ -125,7 +125,7 @@ h3 {
 }
 
 .succulents_images {
-    background-image: url(../3.png);
+    background-image: url(3.png);
     background-size: cover;
     width: 90%;
     height: 50vh;
