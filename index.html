@@ -5,17 +5,157 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Add a link to your custom CSS here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Outfit:wght@200&display=swap"/>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/css/main.css">
 
     <title>Responsive grid project</title>
 </head>
 
 <body>
-
-    <!-- Add your markup here -->
-
-
+    <!------------------ Add header container------------------->
+    <header>
+        <input type="text" id="search" class="search"name="search"placeholder="Search..."/>
+        <a><img src="/images/shopping-bag.png" alt="shopping cart"class="shopping-cart" /></a>
+        <h1><a href="index.html" class="header-title">PRICKLES & CO.</a></h1>
+        <img src="/images/menu.png" class="hamburger" />
+        
+        <!---navigation---->
+        <nav class="nav">
+          <ul class="navigation">
+            <li class="nav-list"><a href="#shop" class="nav-link">Shop</a></li>
+            <li class="nav-list"><a href="#about" class="nav-link">About</a></li>
+            <li class="nav-list"><a href="faq.html" class="nav-link">FAQ</a></li>
+            <li class="nav-list"><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+        <p class="header-message">We deliver to your Doorstep</p>
+    </header>
+    <!---------------------add main container---------------------->
+    <main>
+        <section class="intro">
+            <h1 class="intro-title" >PRICKLES & CO.</h1>
+            <p class="intro-message" >BRING NATURE INDOORS</p>
+            <button class="shop-now-button">Shop Now</button>
+        </section>
+        <section class="products">
+            <div class="product cacti">
+                <h2 class="product-heading">CACTI</h2>
+                <button class="shop-collection-button">Shop Collection</button>
+            </div>
+    
+            <div class="product plants">
+                <h2 class="product-heading">PLANTS</h2>
+                <button class="shop-collection-button">Shop Collection</button>
+                
+            </div>
+    
+            <div class="product scculents">
+                <h2>SCCULENTS</h2>
+                <button class="shop-collection-button">Shop Collection</button>
+            </div>
+        </section>
+        <section class="about">
+            <div class="about-text">
+            <p>
+              I'm a paragraph. Click here to add your own text and edit me. It’s
+              easy. Just click “Edit Text” or double click me to add your own
+              content and make changes to the font. Feel free to drag and drop me
+              anywhere you like on your page. I’m a great place for you to tell a
+              story and let your users know a little more about you.
+            </p>
+  
+            <p>
+              This is a great space to write long text about your company and your
+              services. You can use this space to go into a little more detail
+              about your company. Talk about your team and what services you
+              provide.
+            </p>
+          </div>
+                    
+                <img src="/images/garden-shop.png" alt="facility" class="about-image facility">
+                <img src="/images/leaf.png" alt="leaf" class="about-image leaf">
+                <img src="/images/woman-foliage.png" alt="woman image" class="about-image woman">
+            
+    
+                <div class="promo">
+                    <p class="promo-text">BUY ONLINE NOW & GET 10% OFF !</p>
+                    <button class="promo-button">Shop Now</button>
+                </div> 
+            </div>
+        </section>
+        <section class="form-container">
+            <!--add order form-->
+            <form class="form">
+                <p>FOR SPECIAL REQUESTS & ORDERS</p>
+                <label for="first-name">First Name *</label>
+                <input type="text" id="first-name" name="first-name" />
+                <label for="last-name">Last Name *</label>
+                <input type="text" id="last-name" name="last-name" />
+                <label for="email">Email *</label>
+                <input type="text" id="email" name="email" />
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" />
+                <label for="message">Message</label>
+                <textarea id="message" name="message" cols="30" rows="10"></textarea>
+                <input type="button" id="send" name="send" value="Send" class="send" />
+            </form>
+        </section>
+    </main>
+    <!----- --------------------Add footer container---------------------->
+    <footer>
+        <!--add contact/adress-->
+        <section class="contacts">
+            <div class="contact-adress">
+                <p>OUR STORE</p>
+                <p>Address: 500 Terry Francois Street San Francisco, CA 94158 Phone:
+                    123-456-7890 Email: info@mysite.com</p>
+                
+            </div>
+            <!--add timing-->
+            <div class="contact-time">
+                <p>OPENING HOURS</p>
+                <p>Mon - Fri: 7am - 10pm </p>
+                <p>​Saturday: 8am - 10pm</p>​ 
+                <p>​Sunday: 8am - 11pm</p>
+            </div>
+            <!--add info/help-->
+            <div class="contact-help">
+                <p>HELP</p>
+                <a href="#shipping&returns" class="help-link">Shipping & returns</a>
+                <a href="#privacy-policy" class="help-link">Privacy Policy</a>
+                <a href="#faq" class="help-link">FAQ</a>
+            </div>
+            <!--add input email/button-->
+            <div class="contact-subscribe">
+                <p>SUBSCRIBE</p>
+                <label for="email" class="subscription-email-text"> Enter your email here* </label>
+                <input type="email"id=""name="" class="subscription-email"/>
+                <input type="button"id=""name=""value="" class="subscribe-now"/>
+            </div>
+            <!--add social links-->
+            <div class="social-links">
+                <a href="#"><img src="/images/facebook.png"alt="" class="social-icon"/></a>
+                <a href="#"><img src="/images/instagram.png"alt="" class="social-icon"/></a>
+                <a href="#"><img src="/images/pinterest.png"alt="" class="social-icon"/></a>
+            </div>
+        </section>
+    
+        <!--add map img-->  
+        <section class="map">
+            <iframe class="google-map" loading="lazy"  allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=%20500%20Terry%20Francois%20Street%20San%20Francisco%2C%20CA%2094158&zoom=13&key=AIzaSyCoM_KN-tSL30ne7EUFbMA6PG-nNn-NoxI">
+            </iframe>
+        </section>
+        <!--add copyright-->
+        <section class="copyright">
+            <p>&copy; 2023 by Pricles & Co. Proudly created with
+                <a href="https://www.wix.com">Wix.com</a></p>
+        </section>
+    </footer>
     <!-- Please leave this in to credit the creators of this design -->
-    <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
+    <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p> 
+   
 </body>
-
 </html>
