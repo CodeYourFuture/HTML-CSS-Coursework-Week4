@@ -1,3 +1,256 @@
 /* Add your CSS here */
-
 /* Dont' forget to link this file to your HTML in the <head> */
+*{
+  box-sizing: border-box;
+  background-size: cover;
+}
+
+body{
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+   display: grid;
+   /* grid-template-columns: repeat(2, 1fr);   */
+   /* grid-template-rows: repeat(2, 1fr); */
+  /* grid-auto-rows: minmax(100px, auto); */
+  grid-gap: 20px;
+  grid-template-areas:
+    "hd "
+    "ma ma"
+    "he he"
+    "ft ft";
+}
+
+.navbar{
+   
+    /* grid-row: 2 / 2; */
+  /* grid-area: hd; */
+  grid-column: 1  / 3;
+  grid-row: 1;
+  border: 1px solid black;
+}
+
+.container{
+  grid-area: ma;
+  border: 1px solid red;
+}
+
+.hero{
+  grid-area: he;
+  border: 1px solid blue;
+}
+
+.footer{
+  grid-area: ft;
+  border: 1px solid blueviolet;
+}
+
+
+h1{
+  font-size: 25px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container h1{
+  font-size: 45px;
+  margin-left: 20px;
+}
+
+.container h2{
+  margin-left: 20px;
+}
+
+.container p{
+  font-size: 15px;
+  margin-left: 20px;
+}
+
+.hero h1{
+  margin-bottom: 50px;
+}
+
+/* nav bar starts here*/
+.navbar{
+  display: flex;
+  flex-direction: row;  
+  justify-content: space-between;
+  background-color: white;
+  align-items: center;
+  width: auto;  
+  border: 1px solid black;
+  }
+
+.square {
+    height: 20px;
+    width: 20px;
+    margin-left: 20px;
+    background-color: #0150FD;
+    /* margin: 10px 0px 0px 20px; */
+}
+
+.name{
+  margin-right: auto;
+  margin-left: 10px;
+}
+
+  .navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navbar-links li {
+    list-style: none;
+  }
+  
+  .navbar-links li a {
+    text-decoration: none;
+    color:black;
+    padding: 10px;
+    display: block;
+  }
+  
+  .navbar-links li a:hover {
+    background-color: gray;
+  }
+
+
+  /* hamburger menu */
+  .toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40px;
+  height: 30px;
+  }
+  
+  .toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color:#0150FD;
+  border-radius: 10px;
+  }
+
+  @media (max-width: 400px){
+    .toggle-button{
+      display: flex;
+    }
+
+    .navbar-links {
+      display: none; 
+      width: 100%;
+    }
+
+    .navbar{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .navbar-links ul{
+      width: 100%;
+      flex-direction: column;
+    }
+
+    .navbar-links li{
+      text-align: center;
+    }
+    
+    .navbar-links li a{
+      padding: .5rem 1rem;
+    }
+
+    .navbar-links .active{
+      display: flex;
+    }
+  }
+
+  .container{
+    /* grid-column: 1  / -1; */
+    /* grid-row: 2 / 2; */
+    background-color: #E6DACD;
+    height: 500px;
+    margin:0px;
+    padding-top: 12rem;
+    /* border: 1px solid black;*/
+  }
+
+  .hero{
+    /* grid-column: 3/4; */
+    /* grid-row: 1 / 1;  */
+    background-color: #F4ECE6;
+    align-self: center;
+    width: 600px;  
+    height: 300px;  
+    margin-left: auto; 
+    margin-right: auto;  
+    text-align: center;
+    border: 1px solid blue; 
+  }
+  
+
+  .image{
+    margin-top: 50px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+
+  .btn1, .btn2 {
+    width: 150px;
+    height: 25px;
+    background-color: #0150FD;
+    color: white;
+    margin: 50px 20px 10px 0px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+  }
+
+  .icons {
+    width: auto;
+    height: 80px;
+    background-color:#FFF;
+    margin-top: 100px;
+    /* border: 1px solid dodgerblue; */
+  }
+ 
+  .icon-img {
+    width: 50px;
+    height: 50px;
+    margin: 20px 30px;
+  }
+
+
+  /* footersection starts here */
+  footer{
+    /* margin-left: 20px; */
+  }
+
+  .footer-icons{
+    width: auto;
+    height: 80px;
+    background-color:#FFF;
+    margin-top: 20px;
+    /* border: 1px solid dodgerblue;*/
+  }
+
+  .footer-icon{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+  }
+
+  .right-div{
+    float: right;
+  }
+
+
+  
+  
