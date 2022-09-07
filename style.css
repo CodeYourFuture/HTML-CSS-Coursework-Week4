@@ -1,0 +1,299 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+}
+ 
+   :root {
+    --dark-beige:  #E6DACD;
+    --light-beige: #F4ECE6;
+    --royal-blue: #0150FD;
+
+   } 
+
+   .flex {
+    display: flex;
+   }
+   .a-i {
+    align-items: center;
+   }
+
+   .j-b {
+    justify-content: space-between;
+   }
+
+header {
+    padding: 20px;
+
+}
+ .name {
+    font-size: 25px;
+    font-weight: 800;
+ }
+ header .flex{
+    gap: 11px;
+    
+ }
+li {
+    list-style: none;
+    display: inline block;
+}
+main:not(.r) {
+    text-align: center; 
+}
+button {
+    background-color:  #000;
+    color: #FFF ;
+}
+
+
+header {
+    display: flex;
+    padding:  2% 6%;
+    justify-content: space-around;
+    align-items: center;
+}
+h3 {
+    font-size: 30px;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    font-size: 20px; 
+}
+.nav {
+    background-color: black;
+    color: #fff;
+    padding: 20px 70px;
+}
+nav li {
+    flex: 1;
+}
+ul li a {
+    color: #000;text-decoration: none;
+    font-size: 20px;
+}
+.logo {
+    width: 20px;
+    height: 20px;
+}
+
+.aside {
+    background-color: #FFF;
+
+}
+.main-box > * {
+    padding: 15px;
+}
+.text-box {
+    width: 90%;
+    color: #000;
+    
+    
+    
+
+}
+.text-box h1{
+    font-size: 70px;
+    margin: 10px 0 40px;
+}
+.text-box h3{
+     margin: 10px 0 40px;
+     font-size: 30px;
+}
+
+.hero-btn {
+    display: inline block;
+    border: 1px solid;
+text-decoration: none;
+background-color: dodgerblue;
+    font-size: 13px;
+    position: relative;
+    border-radius: 2px;
+    color: #fff;
+    
+}
+.hero-btn {
+    margin: 10px 14px;
+    padding: 15px 50px;
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.btn {
+    margin: 10px 14px;
+    padding: 15px 50px;
+      font-size: 30px;
+}
+
+ a {
+    text-decoration: none;
+}
+.nav-bar {
+    color: dodgerblue;
+}
+
+
+.aside-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  
+}
+
+
+
+
+.home main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    position: relative;
+    min-height: 100vh;
+    background-color: var(--dark-beige);
+}
+.home main::before, .home  main::after{
+    content: "";
+height: 100%;
+position: absolute;
+right: 0;
+display: block;
+width: 55%;
+background-color: #FFF;
+margin-left: auto;
+
+
+z-index: 1;
+}
+.text-box h2 {
+    font-size: 27px;
+    font-weight: 800;
+    margin: 25px auto 15px auto;
+    padding-bottom: 12px;
+    width: fit-content;
+    border-bottom: 1px solid var(--royal-blue);
+}
+.text-box h3{
+    font-size: 17px;
+    margin-bottom: 51px;
+    font-weight: 400;
+}
+.text-box{
+    padding-top: 30px;
+    text-align: center;
+}
+
+
+.main-box {
+    position:  relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+     display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+}
+
+.main-box > section:nth-child(1){
+    background-color: var(--dark-beige);
+    box-shadow: -11px 11px 17px 0px rgba(138,131,124,0.23);
+    
+}
+
+
+.l-b {
+    background-color: #FFF;
+}
+
+
+/* second css  */
+.flex {
+    display: flex;
+}
+.text-sm {
+    font-size: 17px;
+    font-weight: 300;
+}
+.aside h2 {
+    font-weight: 800;
+    font-size: 100px;
+text-align: left;
+}
+.aside h4 {
+   font-size: 25px; 
+   margin-bottom: 20px;
+    text-align: left;
+    font-weight: 500;
+}
+.aside p {
+    margin-bottom: 20px;
+    font-weight: 300;
+    font-size: 17px;
+    text-align: left;
+}
+.btn-container {
+gap: 20px;
+padding-bottom:  40px;
+
+}
+.btn-1, .rc-header a {
+    background-color: #0150FD;
+    color: white;
+border-radius: 25px;
+padding: 8px 30px;
+text-transform: uppercase;
+font-weight: 500;
+text-decoration: none;
+}
+.btn-2 {
+    border: 2px solid black;
+    color: black;
+border-radius: 25px;
+padding: 8px 30px;
+text-transform: uppercase;
+font-weight: 500;
+text-decoration: none;
+transition: 0.3s;
+}
+.btn-2:hover {
+    background-color: #0150FD;
+    color: #FFF;
+}
+
+/* resume  */
+.r {
+    padding: 70px 20px;
+    background-color: var(--light-beige);
+}
+.justify-b {
+    justify-content: space-between;
+}
+.align-c {
+align-items: center;
+}
+.r-header, .r-content, .rc-header {
+    max-width: 700px;
+    margin: 30px auto;
+}
+.rc-header h2 {
+    font-size: 25px;
+    font-weight: 700;
+}
+.grid-rc {
+    display: grid;
+    grid-template-columns: 25% 60%;
+    justify-content: space-between;
+    background-color: #fff;
+    margin-bottom: 30px;
+    padding: 67px 40px;
+}
+.grid-rc  h6 {
+    padding: 7px;
+}
