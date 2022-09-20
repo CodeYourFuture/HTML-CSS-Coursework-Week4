@@ -1,3 +1,285 @@
 /* Add your CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
+
+:root {
+    --brown: #A05941;
+    --beige: rgb(237,237,238);
+    --green: #133032;
+    --grey: #EDEDEE;
+    --white: #fff;
+
+}
+
+
+/* RESET ROOT */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* GRID CONTAINER */
+
+.gc {
+    display: grid;
+    grid-template-rows: 25vh 85vh;
+}
+
+
+/* GRID ITEMS */
+
+.gi-header {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 10vh 15vh;
+}
+
+    .white-background {
+        background-color: var(--white);
+        padding: 1rem 1.5rem;
+        display: grid;
+        grid-template-columns: 7fr 1fr;
+        align-content: center;
+        align-items: center;
+    }
+
+            .searchbar {
+                width: 216px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+            }
+
+            .searchbar-svg {
+                padding: 0 0.5rem;
+            }
+
+            .searchbar:focus-within {
+                border: 1px solid var(--brown);
+            }
+
+            .searchbar-input {
+                border: none;
+                color: var(--brown);
+            }
+
+            .searchbar-input:focus {
+                outline: none;
+            }
+
+            .searchbar-input::placeholder {
+                color: var(--brown)
+            }
+
+            .basket-button {
+                border: none;
+                background-color: var(--white);
+            }
+
+            .basket-svg {
+                width: 19px;
+            }
+
+            .basket-counter {
+                color: rgb(0, 0, 0);
+                z-index: 2;
+                position: absolute;
+                top: 25%;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                text-align: center;
+                vertical-align: center;
+                margin: auto;
+                color: var(--white);
+                font-size: 0.7rem;
+
+            }
+
+    .beige-background {
+        background-color: var(--beige);
+        padding: 0 1.5rem;
+        display: grid;
+        grid-template-columns: 7fr 1fr;
+        align-items: center;
+    }
+
+            .subheading {
+                margin: 10px 0 10px 0;
+            }
+
+            .hamburger {
+                height: 29px;
+                align-self: center;;
+            }
+
+/* HERO */
+/* Darker Overlay for visibility */
+.gi-hero {
+    background: 
+    linear-gradient(rgba(0,50,50,0.45), rgba(0,50,50,0.45)), url(/images/hero-background.png);
+    /* background-image: url("/images/hero-background.png"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 45% 30%;
+    display: grid;
+    grid-template: repeat(6, min-content) 1fr / min-content 1fr min-content 1fr min-content;
+    padding: 1rem 1rem;
+    justify-items: center;
+
+
+}
+
+        .icon-text-top {
+            color: var(--white);
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.75rem;
+            letter-spacing: 0.45em;
+            margin: 95px 0px 8px 0;
+        } 
+
+        .spade-svg {
+            grid-column: 2 / 5;
+            grid-row: 1/ 3;
+            justify-self: center;
+            align-self: center;
+            padding-top: 55px;
+        }
+
+        .hero-underline {
+            width: 53px;
+            height: 5px;
+            box-sizing: border-box;
+            border-top: solid #fff;
+            padding-bottom: 60px;
+        }
+
+        .hero-title {
+            grid-column: 1 / -1;
+            font-family: 'Fjalla One', sans-serif;
+            color: var(--white);
+            letter-spacing: 0.12em;
+            font-size: 2.5rem;
+            padding-bottom: 1.25rem;
+
+        }
+
+        .hero-subtitle {
+            grid-column: 1 / -1;
+            color: var(--white);
+            font-family: 'Outfit', sans-serif;
+            font-weight: bold;
+            letter-spacing: 0.2em;
+            padding: 0 2rem;
+            padding-bottom: 2.5rem;
+            text-align: center;
+            margin-bottom: 1.75rem;
+        }
+
+        .hero-btn {
+            grid-column: 2 / 5;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0;
+            background-color: var(--brown);
+            border: none;
+            border-radius: 2.5px;
+            width: 140px;
+            height: 40px;
+        }
+
+        .btn-a {
+            text-decoration: none;
+            color: var(--white);
+            font-family: 'Outfit', sans-serif;
+        }
+
+
+/* SHOP */
+.gi-shop {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--beige);
+
+}
+
+.shop-fi {
+    background-color: var(--white);
+    margin: 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50vh;
+}
+
+.top-shop-fi {
+    margin: 1rem 0 0.5rem;
+}
+
+.bottom-shop-fi {
+    margin: 0.5rem 0 1rem;
+}
+
+.cacti {
+    background-image: url("css/main.css/images/cacti.jpg");
+    background-size: cover;
+}
+
+.plants {
+    background-image: url("../images/plants.jpg");
+    background-size: cover;
+}
+
+.succulents {
+    background-image: url("../images/succulents.jpg");
+    background-size: cover;
+}
+
+.shop-fi-title {
+    margin-bottom: 0;
+}
+
+.underline {
+    width: 10px;
+    border-top: var(--brown) 0.25rem solid;
+    height: 2px;
+    margin: 1rem 0;
+}
+
+/* UTILITY CLASSES */
+
+        /* SUBHEADING */
+
+            .sh {
+                font-family: 'Fjalla One', sans-serif;
+                font-weight: 100;
+                color: var(--brown);
+                font-size: 1.4rem;
+
+            }
+
+            .margin2 {
+                margin-top: 0;
+                font-weight: 100;
+                font-size: 1rem;
+            }
+
+.margin-bottom {
+margin-bottom: 7.5px;
+}
+
+.margin-top {
+    margin-top: 15px;
+}
+
+.positioned {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+}
