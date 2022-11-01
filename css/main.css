@@ -77,8 +77,6 @@
     height: 45px;
 }
 
-/* Style Media Query */
-
 .footer {
     padding: 30px;
     background-color: #394b2a;
@@ -89,4 +87,13 @@
     padding: 1em;
     color: white;
     text-align: center;
+}
+
+/* Add Media Query */
+
+@media(min-width:921px) {
+    .menu .menu-img2 {
+        display: none;
+    }
+
 }
