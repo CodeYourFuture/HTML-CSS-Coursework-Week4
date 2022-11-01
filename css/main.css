@@ -77,3 +77,16 @@
     height: 45px;
 }
 
+/* Style Media Query */
+
+.footer {
+    padding: 30px;
+    background-color: #394b2a;
+
+}
+
+.footer p {
+    padding: 1em;
+    color: white;
+    text-align: center;
+}
