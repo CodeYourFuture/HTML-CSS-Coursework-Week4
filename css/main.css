@@ -1,3 +1,79 @@
 /* Add your CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
+
+/* Style */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.menu-img {
+    width: 75px;
+    height: 60px;
+}
+
+.login {
+    display: flex;
+}
+
+.login-img {
+    width: 30px;
+    height: 30px;
+}
+
+.order-online {
+    background-color: black;
+    color: white;
+    padding: 30px;
+}
+
+.welcome-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+    justify-items: center;
+    grid-gap: 3em;
+    padding-top: 75px;
+}
+
+.welcome-section h1 {
+    font-size: 70px;
+}
+
+.welcome-section h3 {
+
+    background-color: black;
+    color: white;
+    padding: 25px;
+}
+
+.welcome-section a {
+    text-decoration: none;
+}
+
+.menu l {
+    display: none;
+}
+
+.menu .menu-img2 {
+    width: 45px;
+    height: 45px;
+}
+
