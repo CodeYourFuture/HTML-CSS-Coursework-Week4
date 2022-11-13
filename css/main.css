@@ -1,22 +1,43 @@
 /* Add your CSS here */
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Kolker+Brush&family=Raleway:ital@1&display=swap');
 
-:root{
-    --heading: 'Indie Flower',cursive;
-    --subHeading: 'Kolker Brush',cursive;
-    --body: 'Raleway',sans-serif;
-    --
-}
+/* 'Indie Flower',cursive;
+'Kolker Brush',cursive;
+'Raleway',sans-serif; */
 
-p{
-    font-family: var(heading);
-}
-
-.fontExample {
-    font-family: 'Indie Flower',cursive;
+/* .fontExample {
+    font-family: 'Indie Flower', cursive;
     font-weight: 400;
     font-variation-settings: 'wght' 400;
+} */
+
+/* Colors */
+
+:root{
+    --redBrown: #A05941;
+    --greenBlack: #133032;
+    --lightGray: #EDEDEE;
+    --white: #fff;
+    --transparentWhite: rgb(0,0,0,0.75);
 }
+
+/* General */
+
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
 
 
 
