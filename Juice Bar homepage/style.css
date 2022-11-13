@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Raleway&family=Roboto:wght@300&display=swap');
+
+/* font-family: 'Questrial', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+:root {
+    --black: #000;
+    --white: #FFF;
+    --lylac: #f5e8ff;  
+    --light-green: #E6FAC0; 
+    --medium-green: #5E7D1F;
+    --dark-green: #394B2A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
