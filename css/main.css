@@ -1,3 +1,169 @@
-/* Add your CSS here */
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Outfit:wght@200&display=swap');
+:root {
+  --fjalla-one: 'Fjalla One', sans-serif;
+  --outfit: 'Outfit', sans-serif;
+  --red-brown: #a05941;
+  --green-black: #133032;
+  --light-grey: #ededee;
+  --white: #fff;
+  --transparent-white: rgba(0, 0, 0, 0.75);
+}
 
-/* Dont' forget to link this file to your HTML in the <head> */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--fjalla-one);
+}
+button {
+  background-color: var(--red-brown);
+  color: var(--white);
+  font-family: var(--outfit);
+  border: transparent;
+  padding: 0.8rem 0rem;
+  width: 8rem;
+  font-weight: bold;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+}
+.header i {
+  font-size: 1.5rem;
+}
+.nav-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: var(--light-grey);
+  color: var(--red-brown);
+  text-transform: uppercase;
+}
+
+.nav-tel {
+  padding: 1rem;
+  background: var(--light-grey);
+  color: var(--red-brown);
+  letter-spacing: 0.1rem;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: var(--light-grey);
+}
+.main-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 80vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('./img/hero.jpg');
+
+  background-size: cover;
+  background-position: center;
+  color: var(--white);
+}
+.main-hero * {
+  margin-bottom: 1rem;
+}
+.main-hero-fristLine {
+  padding: 0 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  letter-spacing: 0.2rem;
+  font-family: var(--outfit);
+}
+.main-hero-fristLine p {
+  display: block;
+  position: relative;
+  border-bottom: 1px solid white;
+}
+.main-hero-fristLine p:first-child:before {
+  position: absolute;
+  content: '';
+  bottom: 14px;
+  width: 100px;
+  height: 10px;
+  color: #fff;
+  z-index: 33;
+}
+.main-hero-fristLine .lni-shovel {
+  font-size: 4rem;
+  transform: rotate(135deg);
+}
+.main-hero-fristLine .fa-pagelines {
+  font-size: 4rem;
+}
+.main-hero-fristLine .fa-pagelines:first-child {
+  transform: scaleX(-1);
+}
+.main-hero h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+.main-hero p {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-family: var(--outfit);
+  text-align: center;
+}
+/* main-collection */
+.main-collection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: var(--light-grey);
+}
+.main-collection-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  text-transform: uppercase;
+  color: var(--red-brown);
+  padding-top: 1.5rem;
+}
+.main-collection-box:first-child {
+  background-image: url('./img/mobile/1.webp');
+}
+.main-collection-box:nth-child(2) {
+  background-image: url('./img/mobile/2.webp');
+}
+.main-collection-box:last-child {
+  background-image: url('./img/mobile/3.webp');
+}
+.main-about-shop {
+  background-color: var(--white);
+  color: var(--red-brown);
+  text-align: center;
+}
+.main-about p {
+  font-family: var(--outfit);
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+.main-about p:first-child {
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-size: 1rem;
+}
+
+.main-about {
+  padding: 2.5rem 2rem;
+  letter-spacing: 1px;
+}
