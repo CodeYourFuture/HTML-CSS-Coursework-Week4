@@ -127,7 +127,7 @@ article .p1, .p2 {
    text-align: center;
    /* transform: translateX(40px);
    transform: translateY(-30%); */
-   transform: translate(7%, -30%)  
+   transform: translate(7%, -35%)  
 }
 .float-card img {
     border-radius: 50%;
@@ -153,4 +153,23 @@ article .p1, .p2 {
     border-radius: 20px;
     border: 1px solid gray;
 
+}
+.social {
+    width: 100%;
+    height: 30px;
+}
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #FFF;
+    padding: 10px;   
+   
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
 }
