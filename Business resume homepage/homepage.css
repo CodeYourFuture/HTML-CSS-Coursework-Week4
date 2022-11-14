@@ -724,6 +724,7 @@ footer p {
         display: flex;
         flex-direction: column;
         gap: .5rem;
+        align-items: center;
     }
 
     .write {
@@ -732,6 +733,7 @@ footer p {
         display: flex;
         flex-direction: column;
         gap: .5rem;
+        align-items: center;
     }
 
     .follow {
@@ -739,6 +741,7 @@ footer p {
         margin: 0 2rem;
         display: flex;
         flex-direction: column;
+        align-items: center;
         gap: .5rem;
     }
    footer p {
