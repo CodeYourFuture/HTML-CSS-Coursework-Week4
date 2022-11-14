@@ -1,3 +1,128 @@
-/* Add your CSS here */
+body {
+    display: grid;
+  margin: 0;
+  padding: 1rem;
+  color: black;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+}
 
-/* Dont' forget to link this file to your HTML in the <head> */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+/* header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* main */
+
+/* card */
+
+.card {
+    background-color: #F4ECE6;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    /* border: solid blue 4px; */
+    margin: auto;
+}
+
+.card_image {
+    width: 40%;
+    border-radius: 50%;
+    margin: auto;
+    /* border: solid red 4px; */
+}
+
+.links_card_container {
+  display: flex;
+  justify-content: space-around;
+  /* border: solid 4px yellow; */
+}
+
+.links_card {
+  border: solid 1px black;
+  border-radius: 15px;
+  width: 30%;
+  padding: 8px 15px 8px 15px;
+  text-align: center;
+}
+
+/* Naviation */
+
+#navigation_toggle {
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#navigation_toggle a {
+  text-decoration: none;
+  color: #232323;
+  transition: color 0.3s ease;
+}
+
+#navigation_toggle a:hover {
+  color: tomato;
+}
+
+
+#navigation_toggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+  -webkit-touch-callout: none;
+}
+
+/* Toggle */
+
+#navigation_toggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #0150FD;
+  border-radius: 3px;
+  z-index: 1;
+}
+
+#menu {
+  position: absolute;
+  width: 100%;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  /* padding-top: 125px; */
+  background: #F4ECE6;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  display: none;
+}
+
+#menu li {
+  padding: 10px 0;
+  font-size: 22px;
+  font-family: Poppins, sans-serif;
+  font-weight: bold;
+}
+
+#navigation_toggle input:checked ~ ul {
+  display: block;
+}
