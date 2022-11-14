@@ -40,6 +40,9 @@ header {
     gap: .5rem;
     margin: 1rem 1.5rem;
 }
+span {
+    display: none;
+}
 .header-left a {
     font-family: 'Quicksand', sans-serif;
     text-decoration: none;
@@ -261,6 +264,10 @@ main {
     width: 70px;
     height: 2px;
 }
+
+.text-container {
+    display: none;
+}
 /* -----buttons----- */
 .buttons {
     display: flex;
@@ -349,6 +356,10 @@ main {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+}
+
+.main-text .buttons {
+    display: none;
 }
 
 .main-text p:nth-child(1) {
@@ -451,4 +462,288 @@ footer p {
 
 .footer-a:hover {
     color: var(--royal-blue);
+}
+
+/* -----screens----- */
+@media (min-width: 900px) {
+    
+    /* -----header---- */
+    header {
+        position: fixed;
+        align-items: center;
+        width: 100%;
+        height: 15%;
+        z-index: 4;
+    }
+    
+    .header-left {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-items: flex-start;
+        gap: .5rem;
+        margin: 1rem 1.5rem;
+        z-index: 8;
+    }
+
+    .title-header {
+        margin-top: .8rem;
+    }
+
+    .header-left a {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 22px;
+    }
+
+
+    .header-box a {
+        font-size: 32px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .square {
+        background-color: var(--royal-blue);
+        width: 15px;
+        height: 15px;
+    }
+
+    span {
+        display: block;
+        margin-top: 1rem;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .nav {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        background-color: transparent;
+        top: 0; left: 0; right: 10px; bottom: 0;
+        overflow: hidden !important;
+        transition: all 0.3s ease-in-out;
+        transform: scale(1);
+        z-index: 4;
+    }
+    .nav-wrapper {
+        position: relative;
+        overflow: hidden !important;
+        overflow-y: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        right: -400px;
+        
+
+     }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    nav ul li {
+        margin: 0 .5rem;
+    }
+
+    nav ul li a {
+        font-family: 'Quicksand', sans-serif;
+        text-transform: uppercase;
+        position: relative;
+        text-decoration: none;
+        color: var(--black);
+        font-size: 16px;
+        display: flex;
+        margin-top: 2.5rem;
+        transition: color 0.2s ease-in-out;
+        letter-spacing: 0px;
+    }   
+    /* ------main------ */
+    main {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        
+    }
+
+    .main-wrapper {
+        grid-area: 1 / 1 / 2 / 2;
+        background-color: var(--dark-beige);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: -130px;
+    }
+
+    .container {
+        background-color: var(--light-beige);
+        width: 400px;
+        height: 500px;
+        position: absolute;
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        box-shadow: rgba(0, 0, 0, 0.24) -4px 3px 8px;
+        z-index: 1;
+        left: 150px;
+       
+    }
+    .container img {
+        margin-top: 2rem;
+        border-radius: 50%;
+        width: 180px;
+    }
+
+    .container h1 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 30px;
+        text-align: center;
+        margin: 0 200px;
+        line-height: 1.2em;
+    }
+
+    .line {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--royal-blue);
+        width: 70px;
+        height: 2px;
+    }
+    /* -----buttons----- */
+    .buttons {
+        display: none;
+        
+    }
+
+    .text-container {
+        display: block;
+    }
+
+    .text-container p {
+        font-size: 24px;
+    }
+    /* -----social icons----- */
+    .socials {
+        position: absolute;
+        background-color: var(--white);
+        width: 100%;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        bottom: 0px;
+    }
+
+    .socials ul {
+        display: flex;
+        list-style: none;
+    }
+
+    .socials ul li:nth-child(1) {
+        margin-right: 2rem;
+    }
+    .socials ul li:nth-child(2) {
+        margin-right: 2rem;
+    }
+    .socials ul li:nth-child(3) {
+        margin-right: 2rem;
+    }
+
+    .socials ul li a {
+        text-decoration: none;
+        color: var(--black);
+        font-size: 22px;
+        transition: all .4s ease-in-out;
+    }
+/* ------main text------- */
+    .main-text {
+        position: absolute;
+        width: 30%;
+        left: 550px;
+        margin-top: 0px;
+        margin-bottom: 1.5rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        
+    }
+
+    .main-text .buttons {
+        display: block;
+        margin-left: -5px;
+    }
+
+    .main-text p:nth-child(1) {
+        font-size: 70px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .main-text p:nth-child(2) {
+            font-size: 24px; 
+            font-weight: bold; 
+            margin-top: -20px;
+    }
+
+    .main-text p:nth-child(3) {
+            font-size: 16px; 
+            font-weight: bold; 
+    }
+
+    .main-text p:nth-child(4) {
+            font-size: 16px; 
+            font-weight: bold; 
+    }
+
+/* ------footer------- */
+    footer{ 
+        grid-area: 3 / 1 / 4 / 2; 
+        background-color: var(--white);
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 10px;
+    }
+
+    .call {
+        grid-area: 2 / 3 / 2 / 3;
+        margin: .5rem 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+
+    .write {
+        grid-area: 2 / 4 / 2 / 4;
+        margin: .5rem 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+
+    .follow {
+        grid-area: 2 / 5 / 2 / 5;
+        margin: 0 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+   footer p {
+        grid-area: 2 / 1 / 4 / 3;
+        margin: 0 2rem;
+        width: 50%;
+    }
 }
