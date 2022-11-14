@@ -16,3 +16,187 @@ font-family: 'Quicksand', sans-serif; */
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+font-family: 'Quicksand', sans-serif;
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 5fr 5fr 1fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+/* -----header----- */
+header { 
+    grid-area: 1 / 1 / 2 / 2;
+    background-color: var(--white);
+    display: flex;
+}
+
+.header-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .5rem;
+    margin: 1rem 1.5rem;
+}
+.header-left a {
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+    color: var(--black);
+}
+.header-box{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header-box a {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.square {
+    background-color: var(--royal-blue);
+    width: 15px;
+    height: 15px;
+}
+
+/* -----burger menu----- */
+
+#toggle {
+  display: none;
+}
+
+/**
+  Hamburger
+**/
+.hamburger {
+  position: absolute;
+  top: 4em;
+  right: 10%;
+  margin-left: -2em;
+  margin-top: -45px;
+  width: 2em;
+  height: 45px;
+  z-index: 5;
+}
+
+.hamburger .top-bun {
+  position: relative;
+  width: 1em;
+  height: 4px;
+  border-radius: 3px;
+  background-color: var(--royal-blue);
+  margin-top: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger .meat {
+  position: relative;
+  width: 2em;
+  height: 4px;
+  border-radius: 3px;
+  background-color: var(--royal-blue);
+  margin-top: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger .bottom-bun {
+  position: relative;
+  right: -15px;
+  width: 1em;
+  height: 4px;
+  border-radius: 3px;
+  background-color: var(--royal-blue);
+  margin-top: 8px;
+  transition: all 0.3s ease-in-out;
+}
+/**
+Nav Styles
+**/
+.nav {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: var(--light-beige);
+  top: -100%; left: 0; right: 0; bottom: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  transform: scale(0);
+}
+.nav-wrapper {
+  position: relative;
+  overflow: hidden;
+  overflow-y: auto;
+  height: 100%;
+}
+nav {
+  text-align: center;
+  margin-top: 10rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav ul li a {
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    position: relative;
+    text-decoration: none;
+    color: var(--black);
+    font-size: 2em;
+    display: inline-block;
+    margin-top: 1.25em;
+    transition: color 0.2s ease-in-out;
+    letter-spacing: 1px;
+}
+
+nav ul li a:hover {
+    color: var(--royal-blue);
+}
+
+nav ul li a:focus {
+    color: var(--royal-blue);
+}
+
+/**
+Animations
+**/
+#toggle:checked + .hamburger .top-bun {
+  transform: rotate(-45deg);
+  width: 2em;
+  margin-top: 25px;
+  background-color: var(--black);
+}
+#toggle:checked + .hamburger .bottom-bun {
+  opacity: 0;
+  transform: rotate(45deg);
+}
+#toggle:checked + .hamburger .meat {
+  transform: rotate(45deg);
+  margin-top: -4px;
+  background-color: var(--black);
+}
+
+#toggle:checked + .hamburger + .nav {
+  top: 0;
+  transform: scale(1);
+}
+
+
+/* -----main----- */
+main { 
+    grid-area: 2 / 1 / 3 / 2; 
+    background-color: var(--dark-beige);
+}
+footer{ 
+    grid-area: 3 / 1 / 4 / 2; 
+    background-color: var(--white);
+}
+
