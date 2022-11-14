@@ -1,3 +1,84 @@
-/* Add your CSS here */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Quicksand:wght@300&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
 
-/* Dont' forget to link this file to your HTML in the <head> */
+* {
+    box-sizing: border-box;
+    margin: px;
+    padding: px;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    /* margin: 1rem auto; */
+    padding: 20px
+    min-width: 320px;
+    height: auto;
+    border: 1px solid black;
+  }
+
+.blue {
+    width:25px ;
+    height:25px ;
+    background-color: blue;
+    
+}
+
+.header-name {
+    display: flex;
+    align-items: center;
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 1rem;
+    
+    
+}
+.header-role {
+  font-family: "Quicksand";
+  font-weight: 300;
+  font-size: 1rem; 
+  margin-top: 0px; 
+}
+.head1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header {
+    padding: 10px;
+    height: 50vh;  
+}
+ 
+.header-name {
+    gap: 10px
+}
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin-right: 0px;
+   
+}
+.navbar {
+    
+}
+.top, .middle, .bottom {
+    display: block;
+    width: 1.3rem;
+    height: 3px;
+    background-color: blue;
+    border-radius: 5px;
+    
+
+}
+.top {
+ 
+ 
+}
+.middle {
+ width: 100%;
+}
+.bottom {
+ width: 50%;
+ align-self: flex-end;
+}
