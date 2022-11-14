@@ -166,7 +166,8 @@ header {
 
 /* card socials */
 
-.socials_card_container {
+.socials_card_container,
+.socials_footer_container {
   /* border: solid red 4px; */
   display: flex;
   background-color: white;
@@ -175,7 +176,8 @@ header {
   padding: 0;
 }
 
-.socials_card_list {
+.socials_card_list,
+.socials_footer_list {
   display: flex;
   justify-content: space-around;
   /* border: solid yellow 4px; */
@@ -186,7 +188,8 @@ header {
   padding-right: 70px;
 }
 
-.card_icon {
+.card_icon,
+.footer_icon {
   width: 20px;
 }
 
@@ -198,4 +201,12 @@ header {
   width:100%;
   max-width: 300px;
   margin: auto;
+}
+
+/* footer */
+
+.contact_footer_container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
 }
