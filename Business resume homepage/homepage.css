@@ -175,6 +175,10 @@ nav ul li a {
     letter-spacing: 1px;
 }
 
+nav ul li a:active {
+    color: var(--royal-blue);
+}
+
 nav ul li a:hover {
     color: var(--royal-blue);
 }
