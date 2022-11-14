@@ -166,8 +166,7 @@ header {
 
 /* card socials */
 
-.socials_card_container,
-.socials_footer_container {
+.socials_card_container {
   /* border: solid red 4px; */
   display: flex;
   background-color: white;
@@ -176,8 +175,7 @@ header {
   padding: 0;
 }
 
-.socials_card_list,
-.socials_footer_list {
+.socials_card_list {
   display: flex;
   justify-content: space-around;
   /* border: solid yellow 4px; */
@@ -188,8 +186,7 @@ header {
   padding-right: 70px;
 }
 
-.card_icon,
-.footer_icon {
+.card_icon {
   width: 20px;
 }
 
@@ -209,4 +206,23 @@ header {
   display: flex;
   justify-content: space-around;
   margin-top: 20px;
+}
+
+.socials_footer_container {
+  margin: 0;
+  padding: 0;
+  border: red solid 4px;
+}
+
+.socials_footer_list {
+  list-style: none;
+  display:flex;
+  justify-content: left;
+  border: solid 4px green;
+}
+
+.footer_icon {
+  width: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
