@@ -16,6 +16,7 @@
     list-style: none;
     text-decoration: none;
 }
+
 body {
     padding: 20px
     min-width: 320px;
@@ -23,9 +24,10 @@ body {
     border: 1px solid black;
   }
 
-.blue {
-    width:25px ;
-    height:25px ;
+
+.blue, .blue2 {
+    width:20px;
+    height:20px;
     background-color: #0150FD;
     
 }
@@ -42,7 +44,7 @@ body {
   font-family: "Quicksand";
   font-weight: bold;
   font-size: 1rem; 
-  margin-left: 15px;
+  margin-left: 10px;
   margin-top: -15px;
   
 }
@@ -54,9 +56,13 @@ body {
     gap: 10px;
 }
 
+.head {
+    gap: 10px;
+}
+
 .header {
     padding: 10px;
-    height: 50vh;  
+      
 }
  
 .header-name {
@@ -71,17 +77,13 @@ body {
     margin-right: 0px;
    
 }
-.navbar {
-    
-}
 .top, .middle, .bottom {
     display: block;
     height: 4px;
     background-color: #0150FD;
     border-radius: 20px;
-    
-
 }
+
 .top {
     width: 15px;
     margin-right: 15px;
@@ -93,70 +95,110 @@ body {
  width:15px;
  align-self: flex-end;
 }
-.btn-r, .btn-p {
-    padding: 15px;
-    /* width: 150px; */
-    border-radius: 20px;
-    border: 1px solid gray;   
-}
-.btn-r, .btn-p:hover {
-    background-color: #0150FD;
-    color: #FFF;
-
-}
-
-.article1 {
+.main-background {
     background-color: #E6DACD;
     height: auto;
-    padding: 20px;
-   
+    padding: 10px;
 }
-article h1 {
-    margin-top: 300px;
-    
-}
-article h1 h2 {
+.resume-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: "Poppins";
-}
-article .p1, .p2 {
-    font-family: "Quicksand";
-}
-.float-card {
-   position: absolute;
-   padding: 30px; 
-   /* margin: 20px auto; */
-   background-color: #F4ECE6;
-   width: 85%;
-   height: auto;
-   /* border: 1px solid red; */
-   text-align: center;
-   /* transform: translateX(40px);
-   transform: translateY(-30%); */
-   transform: translate(7%, -35%)  
-}
-.float-card img {
-    border-radius: 50%;
+    font-weight: 600;
+    font-size: 1rem;
+    gap:10px;
     
 }
-/* .line {
-    display: block;
-    width: 100px;
-    height: 4px;
-    border: 1px solid #0150FD;
-    background-color: #0150FD;
+
+.exp, .down {
     border-radius: 20px;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+   
+    
+}
+.exp {
+    background-color: #E6DACD;
+    font-weight: bold;
+    font-size: 22px;
+    margin-left: 20px;
+}
+.button{
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-bottom: 20px;
-    margin-left: %;   
-} */
+    
+    
+}
 
-.btn {
-    display: none;
-    padding: 15px;
-    border-radius: 20px;
-    border: 1px solid rgb(196, 195, 195);
+.down, .exp:hover {
+    background-color: #0150FD;
+    color: #FFF;
+    /* margin: 20px; */
+
+}
+.card1, .card2, .card3,.card4, .card5 {
+    border: 1px solid white;
+    height: auto;
+    background-color: #FFF;
+    margin: 30px 2px 50px 30px;
+    padding: 10px;
+    box-shadow: -20px 4px 20px rgb(107, 86, 86);
+    
+}
+.card1, p{
+    padding-left: 30px;
+    font-family: "Quicksand"
+}
+.card1, .card2, .card3 li {
+    font-family: "Poppins";
+}
+.year {
+    color: #0150FD;
+    font-weight: bolder;
+}
+.card2, p{
+    padding-left: 40px;
+    font-family: "Quicksand"
+}
+.card2 li {
+    font-family: "Poppins";
+}
+.card3, .card4, p{
+    padding-left: 40px;
+    font-family: "Quicksand";
+}
+.card3, .card4 li {
+    font-family: "Poppins";
+}
+main h2 {
+    margin-left: 30px;
+    font-size: 1.8rem;
+}
+.blue3 {
+    width:10px;
+    height:10px;
+    background-color: #0150FD;
+    align-self: center;
+    justify-content: baseline;
+}
+
+.card5 li {
+    display: flex;
+    gap:10px;
+    font-family: "Quicksand";
+    
+}
+.card5-all {
+    padding-left: 40px;
+
+}
+.card5 h2 {
+    font-size: larger;
+    font-family: "Poppins";
 
 }
 .social {
