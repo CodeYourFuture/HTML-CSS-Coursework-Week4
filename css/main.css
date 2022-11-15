@@ -1,92 +1,131 @@
 body {
   margin: 0;
   padding: 0;
-
-  /* make it look decent enough */
-  background: #232323;
-  color: #cdcdcd;
-  font-family: "Avenir Next", "Avenir", sans-serif;
+  background: #fff;
+  color: #000;
+  font-family: "Quicksand", sans-serif;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1rem;
+  margin: 15px;
 }
 
-#menuToggle {
-  display: block;
+h1,
+h2 {
+  font-family: "Poppins", sans-serif;
+}
+.blue-square {
+  background-color: #0150fd;
+  width: 15px;
+  height: 15px;
+  border: none;
+}
+header .position {
+  font-weight: lighter;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+}
+header .name-position {
+  display: flex;
+  margin-bottom: 15px;
+}
+header h1 {
+  font-size: 1.5rem;
+}
+/* menu */
+
+/* Mobile Version */
+
+.navigation-menu {
+  overflow: hidden;
   position: relative;
-  top: 50px;
-  left: 50px;
-
-  z-index: 1;
-
-  -webkit-user-select: none;
-  user-select: none;
 }
 
-#menuToggle a {
-  text-decoration: none;
-  color: #232323;
+/* Hiding the main navigation until it is clicked */
 
-  transition: color 0.3s ease;
+.main-navigation {
+  display: none;
+  padding-left: 0px;
 }
 
-#menuToggle a:hover {
-  color: tomato;
-}
-
-#menuToggle input {
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
-
-  cursor: pointer;
-
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
-
-  -webkit-touch-callout: none;
-}
-
-/*
- * Just a quick hamburger
- */
-#menuToggle span {
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-
-  background: #cdcdcd;
-  border-radius: 3px;
-  z-index: 1;
-}
-
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
-#menu {
-  position: absolute;
-  width: 300px;
-  margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
-
-  background: #ededed;
+.main-navigation li {
   list-style-type: none;
-  -webkit-font-smoothing: antialiased;
+  margin: 15px auto;
+  text-align: center;
+}
+
+.main-navigation a {
+  padding: 5px 7px;
+  color: black;
+  margin: 0px 2px 0px 2px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.main-navigation a:hover {
+  color: #0150fd;
+  transition: 0.3s ease;
+}
+
+.hamburger-icon {
+  margin: 5px 30px 5px 5px;
+  cursor: pointer;
+  font-size: 35px;
+  color: #0150fd;
+}
+
+/* Hiding the checkbox */
+
+#menu-toggle {
   display: none;
 }
 
-#menu li {
-  padding: 10px 0;
-  font-size: 22px;
+/* When the checkbox is ticked, the main navigation will display */
+
+#menu-toggle:checked + .main-navigation {
+  display: block;
 }
 
-/*
- * And let's slide it in from the left
- */
-#menuToggle input:checked ~ ul {
-  display: block;
+/* Desktop Version */
+
+@media screen and (min-width: 505px) {
+  .navigation-menu {
+    height: 70px;
+    display: flex;
+    align-items: center;
+  }
+
+  .main-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-left: 30px;
+  }
+
+  .main-navigation a {
+    padding: 15px 17px;
+  }
+
+  /* Hiding the hamburger icon on larger screens */
+
+  .hamburger-icon {
+    display: none;
+  }
+
+  /* Ensuring that if the hamburger menu is active but
+  the screen becomes larger, the display will 
+  change to display items in a row instead of a column*/
+
+  #menu-toggle:checked + .main-navigation {
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 541px) {
+}
+
+@media only screen and (max-width: 540px) {
 }
