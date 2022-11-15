@@ -18,3 +18,28 @@ font-family: 'Roboto', sans-serif; */
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+header a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
+    background-color: var(--black);
+    color: var(--white);
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+}
+
+.navigation h1 {
+    font-family: 'Questrial', sans-serif;
+}
