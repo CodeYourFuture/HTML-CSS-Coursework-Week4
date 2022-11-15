@@ -1,3 +1,321 @@
-/* Add your CSS here */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Quicksand:wght@300&display=swap');
 
-/* Dont' forget to link this file to your HTML in the <head> */
+
+body {
+    display: grid;
+  margin: 0;
+  /* padding: 1rem; */
+  color: black;
+  font-family: "Quicksand", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+}
+
+h2 {
+  font-size: 30px;;
+}
+
+/* header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    /* border: 4px solid orange; */
+    width: 100%;
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 800px) {
+  .name_header {
+    display: flex;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 75px;
+    gap: 30px;
+    padding-left: 30px;
+    /* border: solid blue 3px; */
+  }
+
+  header {
+    height: 75px;
+  }
+}
+
+/* Navigation */
+
+@media only screen and (min-width: 800px) {
+  .navigation_toggle {
+    display: none;
+    background-color: white;
+    border: red solid 3px;
+  }
+}
+
+#navigation_toggle {
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#navigation_toggle a {
+  text-decoration: none;
+  color: #232323;
+  transition: color 0.3s ease;
+}
+
+#navigation_toggle a:hover {
+  color: tomato;
+}
+
+
+#navigation_toggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+  -webkit-touch-callout: none;
+}
+
+/* Toggle */
+
+#navigation_toggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #0150FD;
+  border-radius: 3px;
+  z-index: 1;
+}
+
+#menu {
+  position: absolute;
+  width: 100%;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  /* padding-top: 125px; */
+  background: #F4ECE6;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  display: none;
+}
+
+@media only screen and (min-width: 800px) {
+  #menu {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+  }
+}
+
+#menu li {
+  padding: 10px 0;
+  font-size: 22px;
+  font-family: Poppins, sans-serif;
+  font-weight: bold;
+}
+
+#navigation_toggle input:checked ~ ul {
+  display: block;
+}
+
+/* main */
+
+@media only screen and (min-width: 800px) {
+  section.hero {
+    display: flex;
+    height: 600px;
+    /* border: red solid 4px; */
+    margin:auto;
+  }
+
+  .card_container {
+    /* border: solid yellow 4px; */
+    margin-right: 0;
+    scale: 1.25;
+    /* position: absolute; */
+  }
+
+  .intro_index_container {
+    margin-left: auto;
+    padding: 50px;
+    /* padding-left: 0; */
+    scale: 1.25;
+    background-color: white;
+    max-width: 300px;
+    /* border: solid green 4px; */
+  }
+
+  .intro_text {
+    margin: 100px;
+    /* border: 3px red solid; */
+  }
+}
+
+.hero {
+  margin-bottom: 50px;
+}
+
+/* card */
+
+.card_container {
+    background-color: #F4ECE6;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: o;
+    /* border: solid blue 4px; */
+    margin: auto;
+    box-shadow: -3px 3px 15px  #aaaaaa;
+    /* offset-x | offset-y | blur-radius | color */
+}
+
+.card_image {
+    width: 125px;
+    border-radius: 50%;
+    margin: 30px auto 0 auto;
+    /* border: solid red 4px; */
+}
+
+.title_card_container {
+  margin: auto;
+  position: block;
+  /* border: solid 4px green; */
+}
+
+.name_card {
+  line-height: 1.5;
+}
+
+#firstname_card {
+  margin-bottom: 0;
+}
+
+#lastname_card {
+  margin-top: 0;
+}
+
+.line_break {
+  color:#0150FD;
+  border: solid 1px;
+  margin-bottom: 2rem;
+}
+
+.links_card_container {
+  display: flex;
+  justify-content: space-around;
+  /* border: solid 4px yellow; */
+  margin-bottom: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.links_card button {
+  border: solid 1px black;
+  border-radius: 20px;
+  padding: 8px 0 8px 0;
+  text-align: center;
+  width: 120px;
+  font-family: poppins;
+  font-size: 15px;
+}
+
+.links_card button:hover {
+  background-color:#0150FD;
+  color: white;
+  border: none;
+}
+
+/* card socials */
+
+.socials_card_container {
+  /* border: solid red 4px; */
+  display: flex;
+  background-color: white;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.socials_card_list {
+  display: flex;
+  justify-content: space-around;
+  /* border: solid yellow 4px; */
+  width: 100%;
+  list-style: none;
+  margin: 10px 0 10px 0;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.card_icon {
+  width: 20px;
+}
+
+/* article */
+
+.intro_index_container {
+  background-color: #E6DACD;
+  padding: 30px;
+  width:100%;
+  margin: auto;
+}
+
+.intro_text {
+  max-width: 300px;
+  margin: auto;
+}
+
+/* footer */
+
+@media only screen and (min-width: 800px) {
+  footer {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    /* border: solid green 4px; */
+  }
+}
+
+.contact_footer_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 40px;
+  line-height: 10px;
+}
+
+.contact_footer {
+  margin: 0 50px 20px 50px;
+}
+
+.socials_footer_list {
+  list-style: none;
+  display:flex;
+  padding-left: 0;
+  /* border: solid 4px green; */
+}
+
+.footer_icon {
+  width: 20px;
+  margin-right: 20px;
+}
+
+.copyright_footer {
+  padding: 20px 50px 0 50px;
+}
+
