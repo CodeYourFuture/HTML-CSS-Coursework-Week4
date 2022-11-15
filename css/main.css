@@ -5,22 +5,21 @@
 body {
   font-family: "Quicksand", sans-serif;
   min-width: auto;
+  margin: 1em;
+}
+
+/*STYLES FOR HEADER*/
+
+header {
+  display: flex;
 }
 
 .blue-box {
-  width: 1em;
-  height: 1em;
+  width: 1.5em;
+  height: 1.5em;
   background-color: #0150fd;
-  margin-top: 0.5em;
+  margin-top: 0.3em;
 }
-
-/* label span {
-  display: flex;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  background: #0150fd;
-} */
 
 h1,
 h2,
@@ -34,8 +33,121 @@ h3 {
 
 .name-title h2 {
   margin: 0 0 0 0.2em;
+  font-weight: bold;
 }
 
 #slash {
   display: none;
+}
+
+.name-title p {
+  margin-top: 0.1em;
+}
+
+.nav-bar {
+  width: 30%;
+  margin: 1em 0.5em 1.5em 1em;
+  display: block;
+}
+
+label span {
+  max-width: 33px;
+  height: 3px;
+  margin-bottom: 7px;
+  background: #0150fd;
+  border-radius: 2px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3em;
+  padding: 0.4em;
+}
+
+.one,
+.three {
+  width: 40%;
+}
+
+.three {
+  margin-left: 1em;
+}
+
+input {
+  display: none;
+}
+
+ul {
+  display: none;
+}
+
+#check:checked ~ .nav-items {
+  display: block;
+  list-style: none;
+}
+
+.nav-items {
+  padding: 0.3em;
+}
+
+.nav-items li {
+  margin-bottom: 1em;
+}
+
+.nav-items li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black;
+}
+
+@media screen and (min-width: 900px) {
+  .name-title {
+    display: flex;
+  }
+
+  #slash {
+    display: inline;
+    margin: 0.5em;
+  }
+
+  .title {
+    padding-top: 0.5em;
+  }
+
+  .nav-bar {
+    width: 50%;
+  }
+
+  .nav-items {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0.5em;
+  }
+
+  label {
+    display: none;
+  }
+
+  .nav-items li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+  }
+
+  .nav-items li {
+    list-style: none;
+    margin-right: 0.5em;
+  }
+}
+
+/*STYLE FOR MAIN*/
+
+.card img {
+  width: 10em;
+  height: 10em;
+  object-fit: cover;
+  border-radius: 50%;
 }
