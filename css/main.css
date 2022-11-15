@@ -16,7 +16,11 @@
 a,
 button {
   cursor: pointer;
+  text-decoration: none;
 }
+
+/* ............/Header/............ */
+
 /* ............/Search bar/............ */
 
 .nav-search {
@@ -93,7 +97,6 @@ button {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  /* position: relative; */
   height: 64px;
   align-items: center;
 }
@@ -248,3 +251,7 @@ button {
         content:'Call Us Now! 123-456-7890';
     }
 }
+
+/* ............/Main/............ */
+
+/* ............/Section hero/............ */
