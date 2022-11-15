@@ -27,6 +27,11 @@ h3 {
   font-family: "Poppins", sans-serif;
 }
 
+.name-title {
+  margin-left: 1em;
+  margin-top: 1em;
+}
+
 .name-title div {
   display: flex;
 }
@@ -143,11 +148,86 @@ ul {
   }
 }
 
-/*STYLE FOR MAIN*/
+/*STYLE FOR MAIN ASIDE*/
 
 .card img {
   width: 10em;
   height: 10em;
   object-fit: cover;
   border-radius: 50%;
+  margin-top: 2em;
+}
+
+.card {
+  background-color: #f4ece6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 414px;
+  margin-left: 1em;
+  margin-right: 0.8em;
+}
+
+.card .title {
+  display: none;
+}
+
+#first {
+  margin-bottom: 0;
+}
+
+#last {
+  margin-top: 0;
+}
+
+.card span {
+  width: 5em;
+  height: 3px;
+  background-color: #0150fd;
+}
+
+.button {
+  margin: 3em 0.5em;
+}
+
+.resume {
+  background-color: #0150fd;
+  color: #fff;
+  padding: 0.5em 2.3em;
+  border-radius: 20px;
+  border: none;
+  margin-right: 1em;
+}
+
+.projects {
+  background-color: #f4ece6;
+  color: #000;
+  padding: 0.5em 2.3em;
+  border-radius: 20px;
+}
+
+.icons {
+  background-color: #fff;
+}
+
+@media screen and (min-width: 900px) {
+  .button {
+    display: none;
+  }
+
+  .card .title {
+    display: block;
+  }
+}
+
+/*STYLE FOR MAIN SECTION*/
+
+.button2 {
+  display: none;
+}
+
+.card h3,
+.card p,
+.card h1 {
+  text-align: left;
 }
