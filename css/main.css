@@ -226,8 +226,7 @@ ul {
   display: none;
 }
 
-.card h3,
-.card p,
-.card h1 {
+.info,
+.card p {
   text-align: left;
 }
