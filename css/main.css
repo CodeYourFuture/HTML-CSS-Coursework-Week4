@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Quicksand:wght@300&display=swap');
+
+
 body {
     display: grid;
   margin: 0;
@@ -8,7 +12,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Poppins", sans-serif;
+    font-family: Poppins, sans-serif;
     font-weight: 600;
 }
 
@@ -96,6 +100,33 @@ header {
 
 /* main */
 
+@media only screen and (min-width: 800px) {
+  section.hero {
+    display: flex;
+    height: 600px;
+    /* border: red solid 4px; */
+    margin:auto;
+  }
+
+  .card_container {
+    /* border: solid yellow 4px; */
+    margin-right: 0;
+    scale: 1.25;
+  }
+
+  .intro_index_container {
+    margin-left: 0;
+    padding-left: 0;
+    scale: 1.25;
+    background-color: white;
+    /* border: solid green 4px; */
+  }
+}
+
+.hero {
+  margin-bottom: 50px;
+}
+
 /* card */
 
 .card_container {
@@ -138,7 +169,6 @@ header {
   color:#0150FD;
   border: solid 1px;
   margin-bottom: 2rem;
-  padding-right: 10px;
 }
 
 .links_card_container {
@@ -152,10 +182,12 @@ header {
 
 .links_card button {
   border: solid 1px black;
-  border-radius: 15px;
+  border-radius: 20px;
   padding: 8px 0 8px 0;
   text-align: center;
-  width: 120px
+  width: 120px;
+  font-family: poppins;
+  font-size: 15px;
 }
 
 .links_card button:hover {
@@ -202,27 +234,38 @@ header {
 
 /* footer */
 
-.contact_footer_container {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
+@media only screen and (min-width: 800px) {
+  footer {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    /* border: solid green 4px; */
+  }
 }
 
-.socials_footer_container {
-  margin: 0;
-  padding: 0;
-  border: red solid 4px;
+.contact_footer_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 40px;
+  line-height: 10px;
+}
+
+.contact_footer {
+  margin: 0 50px 20px 50px;
 }
 
 .socials_footer_list {
   list-style: none;
   display:flex;
-  justify-content: left;
-  border: solid 4px green;
+  padding-left: 0;
+  /* border: solid 4px green; */
 }
 
 .footer_icon {
   width: 20px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-right: 20px;
 }
+
+.copyright_footer {
+  padding: 20px 50px 0 50px;
+}
+
