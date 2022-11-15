@@ -8,12 +8,15 @@ body {
   /* padding: 1rem; */
   color: black;
   font-family: "Quicksand", sans-serif;
-  font-weight: 300;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: Poppins, sans-serif;
     font-weight: 600;
+}
+
+h2 {
+  font-size: 30px;;
 }
 
 /* header */
@@ -24,9 +27,34 @@ header {
     /* border: 4px solid orange; */
     width: 100%;
     padding: 10px 20px 10px 20px;
+    margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 800px) {
+  .name_header {
+    display: flex;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 75px;
+    gap: 30px;
+    padding-left: 30px;
+    /* border: solid blue 3px; */
+  }
+
+  header {
+    height: 75px;
+  }
 }
 
 /* Navigation */
+
+@media only screen and (min-width: 800px) {
+  .navigation_toggle {
+    display: none;
+    background-color: white;
+    border: red solid 3px;
+  }
+}
 
 #navigation_toggle {
   display: block;
@@ -87,6 +115,14 @@ header {
   display: none;
 }
 
+@media only screen and (min-width: 800px) {
+  #menu {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+  }
+}
+
 #menu li {
   padding: 10px 0;
   font-size: 22px;
@@ -112,14 +148,22 @@ header {
     /* border: solid yellow 4px; */
     margin-right: 0;
     scale: 1.25;
+    /* position: absolute; */
   }
 
   .intro_index_container {
-    margin-left: 0;
-    padding-left: 0;
+    margin-left: auto;
+    padding: 50px;
+    /* padding-left: 0; */
     scale: 1.25;
     background-color: white;
+    max-width: 300px;
     /* border: solid green 4px; */
+  }
+
+  .intro_text {
+    margin: 100px;
+    /* border: 3px red solid; */
   }
 }
 
@@ -131,13 +175,15 @@ header {
 
 .card_container {
     background-color: #F4ECE6;
-    width: 300px;
+    width: 350px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: o;
     /* border: solid blue 4px; */
     margin: auto;
+    box-shadow: -3px 3px 15px  #aaaaaa;
+    /* offset-x | offset-y | blur-radius | color */
 }
 
 .card_image {
@@ -228,6 +274,10 @@ header {
   background-color: #E6DACD;
   padding: 30px;
   width:100%;
+  margin: auto;
+}
+
+.intro_text {
   max-width: 300px;
   margin: auto;
 }
