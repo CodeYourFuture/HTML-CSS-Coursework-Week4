@@ -7,10 +7,15 @@
   padding: 0;
   --main-text-color: #a05941;
   --hover-color: #133032;
+  --white-color: #fff;
   --background-color: #ededee;
   --headings-font: "Fjalla One", sans-serif;
   --subheadings-font: "Outfit", sans-serif;
   --body-font: "Outfit", sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
 }
 
 a,
@@ -19,6 +24,19 @@ button {
   text-decoration: none;
 }
 
+.btn-1 {
+    padding: 0.8em 2.5em;
+    background-color: var(--main-text-color);
+    color: var(--white-color);
+    font-family: var(--body-font);
+    font-weight: 400;
+    font-size: 1.2rem;
+    box-shadow: var(--shd,0 1px 4px rgba(0,0,0,.6));}
+
+.btn-1:hover {
+    background-color: var(--background-color);
+    color: var(--hover-color);
+}
 /* ............/Header/............ */
 
 /* ............/Search bar/............ */
@@ -30,6 +48,7 @@ button {
   align-items: center;
   gap: 8%;
   padding: 0 1rem;
+  background-color: var(--white-color);
 }
 
 .nav-search form {
@@ -255,3 +274,57 @@ button {
 /* ............/Main/............ */
 
 /* ............/Section hero/............ */
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.hero {
+    background-image: url(/img/1st.webp);
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero .logo {
+    display: flex;
+    align-items: center;
+        padding-top: 20%;
+        gap: 1rem;
+}
+
+.hero h1 {
+    font-family: var(--headings-font);
+    font-size: xxx-large;
+    font-weight: 100;
+    letter-spacing: 0.3rem;
+padding: 1rem 0;
+    line-height: 6rem;
+}
+
+.hero h3 {
+    font-family: var(--body-font);
+    font-weight: 500;
+    letter-spacing: 0.25rem;
+    font-size: x-large;
+    width: 60%;
+    text-align: center;
+}
+
+.hero .logo h3 {
+border-bottom: 0.3rem solid var(--white-color);
+}
+
+.hero .logo svg {
+    color: var(--white-color);
+        width: 11rem;
+}
+
+.hero .btn-1 {
+    margin-top: 10%;
+}
