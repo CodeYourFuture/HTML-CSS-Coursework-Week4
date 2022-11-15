@@ -13,6 +13,8 @@ header {
   margin: 15px;
 }
 
+@media screen and (max-width: 505px) {
+}
 h1,
 h2 {
   font-family: "Poppins", sans-serif;
@@ -73,7 +75,7 @@ header h1 {
 .hamburger-icon {
   margin: 5px 30px 5px 5px;
   cursor: pointer;
-  font-size: 35px;
+  font-size: 45px;
   color: #0150fd;
 }
 
@@ -128,4 +130,111 @@ header h1 {
 }
 
 @media only screen and (max-width: 540px) {
+}
+
+/*section*/
+.hero {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 505px) {
+  .hero {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.white {
+  background-color: #fff;
+  position: relative;
+  height: 200px;
+}
+
+.beige {
+  background-color: #e6dacd;
+  padding: 250px 10px 10px 20px;
+  position: relative;
+}
+
+.beige h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0;
+}
+
+.beige h3 {
+  font-size: 1.5rem;
+}
+.card {
+  position: absolute;
+  z-index: 1;
+  background-color: #f4ece6;
+  text-align: center;
+  padding: 25px 0;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+  margin: 5px 10px -100px 20px;
+}
+/*edit below!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1*/
+@media only screen and (min-width: 541px) {
+  .card {
+    padding: 25px 50px;
+    margin: 5px -50px 10px 200px;
+  }
+  .white {
+    position: relative;
+    height: 300px;
+    width: 40%;
+  }
+  .beige {
+    height: 300px;
+    position: relative;
+    width: 60%;
+  }
+}
+
+.card img {
+  width: 40%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.card hr {
+  color: #0150fd;
+  font-weight: bold;
+  width: 60px;
+  height: 1px;
+  border: none;
+  background-color: #0150fd;
+}
+
+.icons {
+  background-color: white;
+  margin-top: 20px;
+}
+.icons img {
+  width: 25px;
+}
+
+.btns button {
+  margin: 20px 4px;
+  border-radius: 30px;
+  font-size: large;
+  text-transform: uppercase;
+  border: none;
+
+  font-weight: lighter;
+}
+.blue-btn {
+  background-color: #0150fd;
+  color: white;
+  padding: 7px 25px;
+}
+.beige-btn {
+  background-color: #e6dacd;
+  color: black;
+  border: 1ps solid black;
+  padding: 7px 15px;
 }
