@@ -1,3 +1,51 @@
 /* Add your CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
+
+* {
+  margin: 0;
+  padding: 0;
+  --main-text-color: #a05941;
+  --hover-color: #133032;
+  --background-color: #ededee;
+  --headings-font: "Fjalla One", sans-serif;
+  --subheadings-font: "Outfit", sans-serif;
+  --body-font: "Outfit", sans-serif;
+}
+
+.nav-search {
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 8%;
+}
+
+.nav-search form {
+  height: 40px;
+  color: var(--main-text-color);
+}
+
+.nav-search form:hover {
+    border: 1px solid var(--main-text-color);
+}
+
+.nav-search form .fa-magnifying-glass {
+  padding: 0 10px;
+}
+
+.nav-search form input {
+  height: 100%;
+  border: 0;
+  color: var(--main-text-color);
+}
+
+.nav-search form input::placeholder {
+  color: #ad6a54;
+  font-family: var(--body-font);
+  font-size: 1rem;
+}
+
+.search-bag {
+  width: 25px;
+}
