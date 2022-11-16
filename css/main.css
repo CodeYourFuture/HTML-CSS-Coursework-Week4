@@ -1,3 +1,169 @@
-/* Add your CSS here */
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "poppins";
+  font-weight: 600;
+  margin: 0;
+}
 
-/* Dont' forget to link this file to your HTML in the <head> */
+body,
+p,
+a,
+span
+button {
+  font-family: "quicksand";
+  font-weight: 300;
+  
+}
+:root {
+    
+    --white: #ffffff;
+    --darkBeige: #E6DACD;
+    --lightBeige: #F4ECE6;
+    --royalBlue: #0150FD;
+    --Black: #000;
+
+    
+  }
+body{
+
+    margin: 0;
+    padding: 0;
+}
+.follow-p{
+    margin-bottom: 15px;
+
+}
+
+
+.follow-links-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;    
+    background-color: var(--white);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 150px;
+    margin:0 auto;
+    padding: 20px;
+    
+    
+           
+}  
+.follow-links-container{
+    width: 100%;
+    background-color: var(--white);
+    
+     
+}
+
+.images_socialMedia {
+    width: 25px;
+    height: 25px;
+} 
+main{       
+    background-color: var(--darkBeige);
+    position: relative;
+      
+}
+.profetional-introduction{
+    margin:20px;
+    background-color: var(--lightBeige);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;   
+    box-shadow: -7px 7px 15px 2px #939393;
+    position:relative;   
+     
+    
+     
+      
+}   
+      
+.personal-image{
+    height: 250px;
+    width: 250px;
+    padding: 20px;
+    border-radius: 100%;
+}   
+.divider{
+    border-color: var(--royalBlue);
+    width: 68px;
+} 
+.name-family{
+    font-size: 21px;
+    line-height: 1.2em;
+}
+
+header{
+    margin: 20px;
+    
+}
+.blueSquer{
+    width: 15px;
+    height: 15px;
+    background-color: var(--royalBlue);
+}
+.blueSquer-p{
+    display: flex; 
+    align-items: baseline;
+    font-size: 20px;
+    gap :5px; 
+    font-weight:bolder;
+}  
+
+  
+footer{       
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    
+}
+
+.contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.personal_introduction {
+    
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+}
+button{
+        
+    background-color: var(--royalBlue);
+    border: 2px solid var(--royalBlue);
+    color: var(--white);
+    padding: 5px 25px;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+button :hover{
+    background-color: var(--lightBeige);
+    border: 2px solid var(--Black);
+    color: var(--Black);
+
+}
+   
+
+  
+
+
+   
+
+
+
+
+    
+
+
+
