@@ -15,7 +15,7 @@
 }
 
 body {
-    background-color: var(--background-color);
+  background-color: var(--background-color);
 }
 
 a,
@@ -25,17 +25,18 @@ button {
 }
 
 .btn-1 {
-    padding: 0.8em 2.5em;
-    background-color: var(--main-text-color);
-    color: var(--white-color);
-    font-family: var(--body-font);
-    font-weight: 400;
-    font-size: 1.2rem;
-    box-shadow: var(--shd,0 1px 4px rgba(0,0,0,.6));}
+  padding: 0.8em 2.5em;
+  background-color: var(--main-text-color);
+  color: var(--white-color);
+  font-family: var(--body-font);
+  font-weight: 400;
+  font-size: 1.2rem;
+  box-shadow: var(--shd, 0 1px 4px rgba(0, 0, 0, 0.6));
+}
 
 .btn-1:hover {
-    background-color: var(--background-color);
-    color: var(--hover-color);
+  background-color: var(--background-color);
+  color: var(--hover-color);
 }
 /* ............/Header/............ */
 
@@ -163,9 +164,9 @@ button {
 }
 
 .navbar-container .menu-items label {
-    position: absolute;
-    top: 87px;
-    right: 110px;
+  position: absolute;
+  top: 87px;
+  right: 110px;
 }
 
 .navbar-container .menu-items div {
@@ -178,7 +179,8 @@ button {
 .navbar-container
   .menu-items
   input[type="checkbox"]:checked
-  + div label
+  + div
+  label
   .fa-angle-down {
   display: none;
 }
@@ -186,7 +188,8 @@ button {
 .navbar-container
   .menu-items
   input[type="checkbox"]:checked
-  + div label
+  + div
+  label
   .fa-angle-up {
   display: inline;
 }
@@ -251,24 +254,24 @@ button {
 }
 
 .animated-line::before {
-    content: '';
-    animation: animate infinite 10s;
-    font-family: var(--headings-font);
-    line-height: 20px;
-    letter-spacing: 0.1rem;
-    padding: 1rem;
+  content: "";
+  animation: animate infinite 10s;
+  font-family: var(--headings-font);
+  line-height: 20px;
+  letter-spacing: 0.1rem;
+  padding: 1rem;
 }
 
 @keyframes animate {
-    0% {
-        content:'Call Us Now! 123-456-7890';
-    }
-    50% {
-        content:'We Deliver to Your Doorstep';
-    }
-    100% {
-        content:'Call Us Now! 123-456-7890';
-    }
+  0% {
+    content: "Call Us Now! 123-456-7890";
+  }
+  50% {
+    content: "We Deliver to Your Doorstep";
+  }
+  100% {
+    content: "Call Us Now! 123-456-7890";
+  }
 }
 
 /* ............/Main/............ */
@@ -276,55 +279,83 @@ button {
 /* ............/Section hero/............ */
 
 main {
-    display: grid;
-    grid-template-columns: 1fr;
+  /* display: grid;
+  grid-template-columns: 100vw;
+  grid-auto-rows: auto; */
 }
 
 .hero {
-    background-image: url(/img/1st.webp);
-    width: 100%;
-    height: 700px;
-    background-size: cover;
-    color: var(--white-color);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    /* grid-row: 1/2; */
+  background-image: url(/img/1st.webp);
+  width: 100%;
+  height: 700px;
+  background-size: cover;
+  color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-shadow: 0 0 black;
+  background-position: top;
 }
 
 .hero .logo {
-    display: flex;
-    align-items: center;
-        padding-top: 20%;
-        gap: 1rem;
+  display: flex;
+  align-items: center;
+  padding-top: 20%;
+  gap: 1rem;
 }
 
 .hero h1 {
-    font-family: var(--headings-font);
-    font-size: xxx-large;
-    font-weight: 100;
-    letter-spacing: 0.3rem;
-padding: 1rem 0;
-    line-height: 6rem;
+  font-family: var(--headings-font);
+  font-size: xxx-large;
+  font-weight: 100;
+  letter-spacing: 0.3rem;
+  padding: 1rem 0;
+  line-height: 6rem;
 }
 
 .hero h3 {
-    font-family: var(--body-font);
-    font-weight: 500;
-    letter-spacing: 0.25rem;
-    font-size: x-large;
-    width: 60%;
-    text-align: center;
+  font-family: var(--body-font);
+  font-weight: 500;
+  letter-spacing: 0.25rem;
+  font-size: x-large;
+  width: 60%;
+  text-align: center;
 }
 
 .hero .logo h3 {
-border-bottom: 0.3rem solid var(--white-color);
+  border-bottom: 0.3rem solid var(--white-color);
 }
 
 .hero .logo svg {
-    color: var(--white-color);
-        width: 11rem;
+  color: var(--white-color);
+  width: 11rem;
 }
 
 .hero .btn-1 {
-    margin-top: 10%;
+  margin-top: 10%;
+}
+
+
+/* ............/Section one/............ */
+
+main .one {
+    background-image: url(/img/2.webp);
+    width: 100%;
+    height: 400px;
+    background-size: contain;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10rem 10rem auto ;
+}
+
+main .one h1 {
+    color: var(--main-text-color);
+    font-family: var(--headings-font);
+    grid-row: 1/2;
+}
+
+main .one .btn-1 {
+    grid-row: 2/3;
 }
