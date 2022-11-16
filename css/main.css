@@ -1,3 +1,167 @@
-/* Add your CSS here */
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
 
-/* Dont' forget to link this file to your HTML in the <head> */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "quicksand";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "poppins";
+  font-weight: 600;
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: 16px auto auto 1fr;
+  grid-column-gap: 10px;
+  align-items: center;
+  justify-items: right;
+  width: 100%;
+  background-color: white;
+  padding: 0 40px;
+  height: 120px;
+}
+
+.navbar h1 {
+  font-size: 21px;
+}
+
+.navbar p {
+  font-size: 18px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 20px;
+  justify-items: right;
+  font-size: 14px;
+}
+
+.blue-box {
+  height: 16px;
+  width: 16px;
+  background-color: #0050ff;
+  display: inline-block;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-gap: 40px;
+  height: 100vh;
+}
+
+.left-container {
+  background-color: #e6dacd;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  background-color: #f4ece6;
+  z-index: 3;
+  width: 375px;
+  margin-top: 100px;
+  /* margin-right: -20px; */
+  box-shadow: var(
+    -11.31px 11.31px 17px 0px rgba(138, 131, 124, 0.23),
+    0 1px 4px rgba(0, 0, 0, 0.6)
+  );
+  margin-left: auto;
+}
+
+.right-container {
+  background-color: white;
+}
+
+a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+
+hr {
+  border-color: #0150fd;
+  width: 50px;
+}
+
+.icon-row-container {
+  background-color: white;
+  padding: 20px;
+}
+
+.icon-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 150px;
+  margin: 0 auto;
+}
+
+.icon-row img {
+  height: 25px;
+  width: 25px;
+}
+
+.navbar-text {
+  width: 80%;
+  display: inline;
+}
+
+.image-container {
+  background-color: rgb(243, 236, 231);
+  text-align: center;
+  box-shadow: -7px 7px 15px 2px #939393;
+}
+
+.name-container {
+  height: 35px;
+  display: flex;
+  align-items: center;
+  font-size: 21px;
+  margin: 0px;
+}
+
+.personal-image {
+  height: 250px;
+  width: 250px;
+  padding: 20px;
+  border-radius: 100%;
+}
+
+.profile-container {
+  background-color: white;
+}
+
+@media (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .image-container {
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: -100px;
+    z-index: 10;
+  }
+
+  .profile-container {
+    padding-top: 100px;
+    background-color: #e6dacd;
+  }
+
+  .personal-image {
+    height: 150px;
+    width: 150px;
+  }
+}
