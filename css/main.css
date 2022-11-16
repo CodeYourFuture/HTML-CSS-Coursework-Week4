@@ -12,6 +12,7 @@
   --headings-font: "Fjalla One", sans-serif;
   --subheadings-font: "Outfit", sans-serif;
   --body-font: "Outfit", sans-serif;
+  --transparent-White: rgba(0, 0, 0, 0.75);
 }
 
 body {
@@ -25,13 +26,26 @@ button {
 }
 
 .btn-1 {
-  padding: 0em em;
   background-color: var(--main-text-color);
   color: var(--white-color);
   font-family: var(--body-font);
   font-weight: 400;
   font-size: 1rem;
-  box-shadow: var(--shd, 0 1px 4px rgba(0, 0, 0, 0.6));
+  /* box-shadow: var(--shd, 0 1px 4px rgba(0, 0, 0, 0.6)); */
+  display: block;
+  width: 10rem;
+  height: 2rem;
+  padding: auto;
+  padding-top: 0.5rem;
+}
+
+.btn-2 {
+  background-color: var(--white-color);
+  color: var(--hover-color);
+  font-family: var(--body-font);
+  font-weight: 400;
+  font-size: 1rem;
+  /* box-shadow: var(--shd, 0 1px 4px rgba(0, 0, 0, 0.6)); */
   display: block;
   width: 10rem;
   height: 2rem;
@@ -40,10 +54,26 @@ button {
 }
 
 .btn-1:hover {
-  background-color: var(--background-color);
-  color: var(--hover-color);
+  background-color: var(--main-text-color) var(--transparent-White);
+  background-blend-mode: multiply;
+  color: var(--main-text-color);
 }
-/* ............/Header/............ */
+
+.btn-2:hover {
+  background-color: var(--hover-color) rgba(0, 0, 0, 0.75);
+  background-blend-mode: multiply;
+  color: var(--white-color);
+}
+
+.dash {
+  display: block;
+  height: 0.3rem;
+  width: 0.8rem;
+  background: var(--main-text-color);
+  margin: 1rem;
+}
+
+/* ......./Header/...................... */
 
 /* ............/Search bar/............ */
 
@@ -279,7 +309,7 @@ button {
   }
 }
 
-/* ............/Main/............ */
+/* ........./Main/....................... */
 
 /* ............/Section hero/............ */
 
@@ -344,40 +374,96 @@ main {
 
 /* ............/Shop Section/............ */
 
-main .one, main .two, main .three {
-  width: 100%;
-  height: 400px;
+main .one,
+main .two,
+main .three {
   background-size: contain;
   margin-top: 2rem;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
-main .one {
-  background-image: url(/img/2.webp);
+main .one img,
+main .two img,
+main .three img {
+  object-fit: contain;
+  padding: 0;
+  margin: 0;
+  width: 100%;
 }
 
-main .two {
-      background-image: url(/img/3.jpg);
-}
-
-main .three {
-      background-image: url(/img/4.webp);
-}
-
-main .one h1, main .two h1, main .three h1 {
+main .one h1,
+main .two h1,
+main .three h1 {
   color: var(--main-text-color);
   font-family: var(--headings-font);
   font-weight: 500;
   padding-top: 1rem;
+  position: absolute;
+  top: 1rem;
 }
 
-main .one .dash, main .two .dash, main .three .dash {
-  display: block;
-  height: 0.4rem;
-  width: 0.8rem;
-  background: var(--main-text-color);
-  margin: 1rem;
+main .shop-section .btn-1 {
+  position: absolute;
+  top: 7rem;
+}
+
+main .shop-section .dash {
+  position: absolute;
+  top: 4rem;
+}
+
+/* ............/About Section/............ */
+
+main .about-container {
+  text-align: center;
+  color: var(--main-text-color);
+  background-color: var(--white-color);
+  margin-top: 1rem;
+  padding: 3rem 2rem;
+}
+
+main .about-container h1 {
+  font-family: var(--body-font);
+  font-weight: 300;
+  letter-spacing: 0.3rem;
+  font-size: large;
+  padding-bottom: 1rem;
+}
+
+main .about-container .dash {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main .about-container p {
+  font-family: var(--body-font);
+  font-weight: 300;
+  padding-top: 1rem;
+}
+
+main .about img {
+  width: 100%;
+  object-fit: cover;
+  height: 250px;
+}
+
+main .about .green {
+  background-color: var(--hover-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+main .about .green h1 {
+  font-family: var(--headings-font);
+  color: var(--white-color);
+  font-size: 60px;
+  font-weight: 400;
+  padding-bottom: 3rem;
 }
