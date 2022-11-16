@@ -189,6 +189,7 @@ main {
 }
 
 .header-h1 {
+    margin-top: 1rem;
     font-family: 'Questrial', sans-serif;
     font-size: 32px;
     text-align: center;
@@ -216,7 +217,9 @@ main {
   flex-direction: column;
   align-items: center;
 }
-
+.hero img {
+  width: 100%;
+}
 
 .first-text {
   display: flex;
@@ -233,4 +236,48 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 2rem;
+}
+
+.hero2 p {
+  margin: 0 3rem;
+  text-align: center;
+}
+
+.hero2 i {
+  background-color: var(--light-green);
+  padding: 2rem;
+  font-size: 20px;
+  border-radius: 50%;
+}
+
+.hero3 {
+  background-color: var(--light-green);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero3 div{
+  margin: 2rem 1.3rem;
+}
+
+.hero3 div img {
+  width: 100%;
+}
+
+.hero3 p {
+  margin: 0 3rem;
+  text-align: center;
+}
+
+.hero3 a {
+  background-color: transparent;
+  border: 2px solid var(--black);
+  padding: 1.2rem 4.5rem;
+  color: var(--black);
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 1rem;
 }
