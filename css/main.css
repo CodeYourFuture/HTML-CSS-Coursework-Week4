@@ -251,10 +251,6 @@ header h1 {
 }
 .btns button {
   margin: 20px 4px;
-  border-radius: 30px;
-  font-size: large;
-  text-transform: uppercase;
-  border: none;
 
   font-weight: lighter;
 }
@@ -262,12 +258,20 @@ header h1 {
   background-color: #0150fd;
   color: white;
   padding: 7px 25px;
+  border-radius: 30px;
+  font-size: large;
+  text-transform: uppercase;
+  border: none;
 }
 .beige-btn {
   background-color: #e6dacd;
   color: black;
   border: 1ps solid black;
   padding: 7px 15px;
+  border-radius: 30px;
+  font-size: large;
+  text-transform: uppercase;
+  border: none;
 }
 
 /*footer*/
@@ -308,17 +312,19 @@ footer a {
   background-color: rgb(230, 218, 205);
   padding: 50px 0px 25px;
   margin: 0px auto;
+  max-width: 540px;
+  min-width: 300px;
 }
 
 .in-line {
   display: flex;
   flex-direction: row;
+  align-items: baseline;
 }
 
 .resume-card {
   background-color: white;
-  max-width: 350px;
-  min-width: 300px;
+  width: 350px;
   margin: 25px auto;
   padding: 15px 10px;
 }
@@ -330,4 +336,8 @@ footer a {
 
 .resume-company {
   margin: 0px;
+}
+
+.resume-btn {
+  height: 45px;
 }
