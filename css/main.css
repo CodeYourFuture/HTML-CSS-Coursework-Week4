@@ -182,7 +182,7 @@ header h1 {
   min-width: 300px;
 }
 /*edit below!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1*/
-@media only screen and (min-width: 1250px) {
+@media only screen and (min-width: 541px) {
   .card {
     top: 20%;
     left: 65%;
