@@ -18,6 +18,7 @@ span
 button {
   font-family: "quicksand";
   font-weight: 300;
+  margin:0px;
   
 }
 :root {
@@ -49,7 +50,7 @@ body{
     margin-bottom: 10px;
     width: 150px;
     margin:0 auto;
-    padding: 20px;
+    padding: 10px;
     
     
            
@@ -57,6 +58,7 @@ body{
 .follow-links-container{
     width: 100%;
     background-color: var(--white);
+    transform: translate(0px,-10px); 
     
      
 }
@@ -70,7 +72,7 @@ main{
     position: relative;
       
 }
-.profetional-introduction{
+.professional-introduction{
     margin:20px;
     background-color: var(--lightBeige);
     display:flex;
@@ -78,11 +80,9 @@ main{
     align-items: center;
     gap:20px;   
     box-shadow: -7px 7px 15px 2px #939393;
-    position:relative;   
-     
-    
-     
-      
+    position:relative ; 
+    top: -270px; 
+ 
 }   
       
 .personal-image{
@@ -101,7 +101,14 @@ main{
 }
 
 header{
+    
     margin: 20px;
+    display:grid ;
+    grid-template-columns: 4fr 1fr;
+    position: relative;
+    height: 370px;
+    
+    
     
 }
 .blueSquer{
@@ -136,6 +143,8 @@ footer{
     display: flex;
     flex-direction: column;
     row-gap: 10px;
+    position: absolute;
+    bottom: 1px;
 
 }
 button{
@@ -153,7 +162,178 @@ button :hover{
     color: var(--Black);
 
 }
-   
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  
+  
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;   
+  cursor: pointer;  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+.span-1
+{
+  display: block;
+  width: 30px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  z-index: 1;
+}
+.span-2
+{
+  display: block;
+  width: 60px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  z-index: 1;
+}
+.span-3
+{
+  display: block;
+  width: 30px;
+  height: 4px;
+  margin-bottom: 5px;
+  position:relative;  
+  background: #cdcdcd;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin:left;
+
+}
+
+
+
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: relative;
+  width: 300px;
+  margin: -100px 0 0 0;
+ 
+  padding-top: 125px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  display: none;
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  display:block}
+
+  .title{
+    font-size: medium;
+}  
+@media (min-width: 600px) {
+    .name-title{
+        display:flex;
+        align-items: baseline;
+        gap: 5px; 
+    } 
+
+    .professional-introduction{
+        display: flex;
+         flex-direction: column;
+         align-items: right;
+         background-color: #f4ece6;
+         z-index: 3;
+         width: 375px;
+         margin-top: 100px;
+         /* margin-right: -20px; */
+         box-shadow: var(
+          -11.31px 11.31px 17px 0px rgba(138, 131, 124, 0.23),
+               0 1px 4px rgba(0, 0, 0, 0.6)
+                );
+        margin-left: auto;
+        background-color: #0150FD;
+        
+     
+    }   
+    .personal_introduction {
+    
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        background-color: aqua;
+    
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: #939393;
+    }
+    header{
+        margin: 20px;
+        display:grid ;
+        grid-template-columns: 4fr 1fr;
+        height: 100px;
+        
+    
+    
+    }
+
+}
 
   
 
