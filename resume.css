@@ -75,6 +75,7 @@ body {
     align-items: center;
     gap: 5px;
     margin-right: 0px;
+    margin-top: 35px;
    
 }
 .top, .middle, .bottom {
@@ -117,6 +118,7 @@ body {
     justify-content: center;
     align-items: center;
     border: none;
+    
    
     
 }
