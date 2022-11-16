@@ -150,7 +150,6 @@ header h1 {
   padding: 250px 10px 20px 20px;
   position: relative;
   max-width: 350px;
-  min-width: 300px;
 }
 
 .beige h1 {
@@ -190,17 +189,18 @@ header h1 {
   .white {
     background-color: #e6dacd;
     position: relative;
-
     width: 40%;
     height: 100%;
+    min-width: 600px;
   }
   .beige {
     background-color: white;
-
+    padding: 0;
     position: relative;
     width: 60%;
-    padding: 10% 5% 5% 10%;
-    height: 100%;
+    left: 15%;
+    top: 23%;
+    height: 80%;
   }
 
   .beige h1 {
@@ -264,12 +264,25 @@ header h1 {
   padding: 7px 15px;
 }
 
-.right {
-  font-size: 0.5rem;
-  font-weight: lighter;
+/*footer*/
+footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 5%;
+  margin-right: 10px;
 }
 
-/*footer*/
+footer a {
+  text-decoration: none;
+}
 .follow-links img {
   width: 15px;
+}
+
+.right {
+  text-align: center;
+  font-size: 0.5rem;
+  font-weight: lighter;
 }
