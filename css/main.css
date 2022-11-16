@@ -264,6 +264,7 @@ header h1 {
   font-size: large;
   text-transform: uppercase;
   border: none;
+  cursor: pointer;
 }
 .beige-btn {
   background-color: #e6dacd;
@@ -274,6 +275,7 @@ header h1 {
   font-size: large;
   text-transform: uppercase;
   border: none;
+  cursor: pointer;
 }
 
 /*footer*/
