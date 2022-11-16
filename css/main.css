@@ -5,6 +5,12 @@ body {
   color: #000;
   font-family: "Quicksand", sans-serif;
 }
+
+@media only screen and (max-width: 540px) {
+  body {
+    margin: 0 auto;
+  }
+}
 header {
   display: flex;
   flex-direction: row;
@@ -180,7 +186,7 @@ header h1 {
   max-width: 350px;
   min-width: 300px;
 }
-/*edit below!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1*/
+/*for desktop*/
 @media only screen and (min-width: 541px) {
   .card {
     top: 20%;
@@ -272,6 +278,16 @@ footer ul {
   justify-content: flex-end;
   gap: 5%;
   margin: 20px 10px 0 0;
+}
+@media only screen and (max-width: 540px) {
+  footer ul {
+    justify-content: center;
+  }
+
+  footer {
+    max-width: 350px;
+    min-width: 300px;
+  }
 }
 
 footer a {
