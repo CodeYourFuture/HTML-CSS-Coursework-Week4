@@ -1,3 +1,29 @@
-/* Add your CSS here */
+/* fonts*/
 
-/* Dont' forget to link this file to your HTML in the <head> */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+body {
+    margin: 0;
+}
+.order {
+    font-family: Roboto, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    color: #FFF;
+    height: 3em;
+}
+p {
+    
+}
+
+
+
+
+@media (min-width: 540px) {
+  body {
+    background: rgb(204, 226, 219);
+  }
+}
+    
+
