@@ -285,6 +285,7 @@ img {
     align-items: center;
     border: 2px dotted red;
     margin-bottom: 30px;
+    padding-right: 20px;
 }
 
 .page2-img {
@@ -302,17 +303,18 @@ img {
 @media only screen and (min-width: 900px) {
     .page2-content-wrapper {
         display: grid;
-        grid-gap: 20px;
+        grid-gap: 0;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(1, 1fr);
-        margin-top: 50px;
+        margin: 70px 80px 0 120px;
         padding: 0 30px;
     }
 
     .page2-content {
         margin-bottom: 0;
-        padding-bottom: 100px;
-        align-items: flex-start;
+        padding-bottom: 60px;
+        align-items:flex-start;
+        width: 80%;
     }
     
     .page2-title {
@@ -321,16 +323,32 @@ img {
     }
 
     h3 {
-        padding: 20px 0;
+        font-size: 2.1em;
+        padding: 0;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        text-align: left;
+        line-height: 1.3em;
+    }
+
+    .page2-paragraph {
+        padding: 0;
+        text-align: left;
+        word-spacing: .1rem;
+        font-size: 1.1em;
+        font-weight: 100;
+    }
+
+    .page2-img {
+        width: 40%;
+        height: auto;
+        border: 2px dotted blue;
     }
 }
 
 .page3-wrapper {
     border: 2px dotted blue;
     background-color: var(--light-green);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 20px;
 }
 
@@ -346,6 +364,12 @@ img {
 .page3-img {
     max-width: 100%;
     object-fit: cover;
+}
+
+.page3-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .page3-title {
@@ -365,9 +389,56 @@ img {
     border: 2px solid var(--black);
     font-size: 1em;
     background-color: light var(--light-green);
+    
 }
 
 .page3-button:hover {
     background-color: var(--black);
     color: var(--white);
+}
+
+@media only screen and (min-width: 900px) {
+    .page3-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "image h1"
+        "image p"
+        "image b";
+        padding-left: 50px;
+        padding-top: 70px;
+    }
+
+    .page3-content-wrapper {
+        padding-top: 100px;
+        padding-right: 150px;
+    }
+
+    .page3-img-wrapper {
+        width: 90%;
+    }
+
+    .page3-img {
+        grid-area: image;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .page3-title {
+        grid-area: h1;
+        padding: 0;
+        margin: 0;
+        text-align: left;
+        font-size: 3.3em;
+        line-height: 1.3em;
+    }
+
+    .page3-paragraph {
+        grid-area: p;
+    }
+
+    .page3-button {
+        grid-area: b;
+    }
+
 }
