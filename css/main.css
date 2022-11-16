@@ -17,10 +17,10 @@
     text-decoration: none;
 }
 body {
-    padding: 20px
+    /* padding: 20px; */
     min-width: 320px;
     height: auto;
-    border: 1px solid black;
+    /* border: 1px solid black; */
   }
 
 .blue {
@@ -69,6 +69,7 @@ body {
     align-items: center;
     gap: 5px;
     margin-right: 0px;
+    margin-top: 35px;
    
 }
 .navbar {

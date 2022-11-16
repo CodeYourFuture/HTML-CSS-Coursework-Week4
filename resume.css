@@ -18,10 +18,10 @@
 }
 
 body {
-    padding: 20px
+    /* padding: 20px; */
     min-width: 320px;
     height: auto;
-    border: 1px solid black;
+    /* border: 1px solid black; */
   }
 
 
