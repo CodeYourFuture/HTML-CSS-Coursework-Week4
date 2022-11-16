@@ -13,7 +13,7 @@ header {
   margin: 15px;
 }
 
-@media screen and (max-width: 505px) {
+@media screen and (max-width: 540px) {
 }
 h1,
 h2 {
@@ -126,19 +126,13 @@ header h1 {
   }
 }
 
-@media only screen and (min-width: 541px) {
-}
-
-@media only screen and (max-width: 540px) {
-}
-
 /*section*/
 .hero {
   display: flex;
   flex-direction: column;
 }
 
-@media only screen and (min-width: 505px) {
+@media only screen and (min-width: 540px) {
   .hero {
     display: flex;
     flex-direction: row;
@@ -155,6 +149,8 @@ header h1 {
   background-color: #e6dacd;
   padding: 250px 10px 20px 20px;
   position: relative;
+  max-width: 350px;
+  min-width: 300px;
 }
 
 .beige h1 {
@@ -172,6 +168,8 @@ header h1 {
 .card {
   position: absolute;
   z-index: 1;
+  top: -20px;
+  left: 10px;
   background-color: #f4ece6;
   text-align: center;
   padding: 25px 0;
@@ -179,29 +177,43 @@ header h1 {
     0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
     0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
     0 100px 80px rgba(0, 0, 0, 0.12);
-  margin: 5px 10px -100px 20px;
-  width: 350px;
+
+  max-width: 350px;
+  min-width: 300px;
 }
 /*edit below!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1*/
-@media only screen and (min-width: 541px) {
+@media only screen and (min-width: 1250px) {
   .card {
-    margin: 5px -50px 10px 200px;
+    top: 20%;
+    left: 65%;
   }
   .white {
+    background-color: #e6dacd;
     position: relative;
-    height: 300px;
+
     width: 40%;
+    height: 100%;
   }
   .beige {
-    height: 300px;
+    background-color: white;
+
     position: relative;
     width: 60%;
-    padding-left: 100px;
+    padding: 10% 5% 5% 10%;
+    height: 100%;
+  }
+
+  .beige h1 {
+    font-size: 5rem;
+    margin: 0;
+  }
+  .hero {
+    height: 700px;
   }
 }
 
 .card img {
-  width: 40%;
+  width: 50%;
   height: auto;
   border-radius: 50%;
   margin-top: 15px;
@@ -255,4 +267,9 @@ header h1 {
 .right {
   font-size: 0.5rem;
   font-weight: lighter;
+}
+
+/*footer*/
+.follow-links img {
+  width: 15px;
 }
