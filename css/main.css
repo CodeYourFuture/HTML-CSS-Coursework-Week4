@@ -302,3 +302,32 @@ footer a {
   font-size: 0.5rem;
   font-weight: lighter;
 }
+/*resume page*/
+
+.resume-page {
+  background-color: rgb(230, 218, 205);
+  padding: 50px 0px 25px;
+  margin: 0px auto;
+}
+
+.in-line {
+  display: flex;
+  flex-direction: row;
+}
+
+.resume-card {
+  background-color: white;
+  max-width: 350px;
+  min-width: 300px;
+  margin: 25px auto;
+  padding: 15px 10px;
+}
+
+.resume-date {
+  color: rgb(1, 80, 253);
+  font-weight: bolder;
+}
+
+.resume-company {
+  margin: 0px;
+}
