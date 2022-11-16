@@ -452,7 +452,7 @@ main .about img {
   display: block;
 }
 
-main .about .green {
+.green {
   background-color: var(--hover-color);
   display: flex;
   flex-direction: column;
@@ -468,6 +468,7 @@ main .about .green h1 {
   font-weight: 400;
   padding-bottom: 3rem;
 }
+
 .form-section {
   color: var(--main-text-color);
   background-color: var(--white-color);
@@ -497,12 +498,64 @@ main form #message {
 }
 
 main form .btn-1 {
-  width: 100%;
+    width: 100%;
+    height: 3rem;
+    line-height: rem;
+    border: none;
+    padding: 0;
 }
 
 main .form-container img {
-width: 100%;
-    object-fit: cover;
-    height: 250px;
-    display: block;
+  width: 100%;
+  object-fit: cover;
+  height: 250px;
+  display: block;
+}
+
+/* .contact {
+  padding: 6rem 1rem;
+} */
+.contact {
+padding: 5rem 1.5rem 2rem 1.5rem;
+}
+
+.contact h1 {
+  font-family: var(--subheadings-font);
+  font-size: larger;
+  font-weight: 200;
+  padding-bottom: 2rem;
+  letter-spacing: 0.4rem;
+  color: var(--white-color);
+}
+
+.contact p,
+.contact a {
+  font-family: var(--body-font);
+  font-weight: 200;
+  padding-bottom: 2rem;
+  line-height: 1.5rem;
+  color: var(--white-color);
+}
+
+.contact form input {
+    width: 100%;
+    background-color: var(--hover-color);
+    border: 0.2rem solid red;
+}
+
+.contact form label {
+    color: var(--white-color);
+    float: left;
+}
+
+.contact form .btn-2 {
+    width: 100%;
+    height: 3rem;
+    line-height: rem;
+    border: none;
+    padding: 0;
+}
+
+.contact-icons{
+margin-top: 5rem;
 }
