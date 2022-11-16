@@ -229,6 +229,11 @@ img {
         padding-top: 100px;
     }
 
+    .hero-text {
+        position: sticky;
+        top: 100px;
+    }
+
     .hero-title {
         font-size: 3.5em;
     }
