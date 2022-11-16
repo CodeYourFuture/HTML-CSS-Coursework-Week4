@@ -209,7 +209,13 @@ ul {
 }
 
 .icons {
-  background-color: #fff;
+    background-color: #fff;
+    max-height: 3em;
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+    padding: 1em 0;
 }
 
 @media screen and (min-width: 900px) {
@@ -219,6 +225,10 @@ ul {
 
   .card .title {
     display: block;
+  }
+
+  .icons {
+    margin-bottom: 0;
   }
 }
 
@@ -274,5 +284,9 @@ ul {
 
   .button2 {
     display: block;
+  }
+
+  .projects {
+    background-color: #fff;
   }
 }
