@@ -400,32 +400,36 @@ img {
 @media only screen and (min-width: 900px) {
     .page3-wrapper {
         display: grid;
+        grid-gap: 60px;
         grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 290px);
         grid-template-areas: 
-        "image h1"
-        "image p"
-        "image b";
+        "image c";
         padding-left: 50px;
         padding-top: 70px;
     }
 
     .page3-content-wrapper {
+        grid-area: c;
         padding-top: 100px;
-        padding-right: 150px;
+        padding-right: 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .page3-img-wrapper {
-        width: 90%;
+        width: 100%;
+        grid-area: image;
     }
 
     .page3-img {
-        grid-area: image;
         width: 100%;
+        height: auto;
         object-fit: cover;
     }
 
     .page3-title {
-        grid-area: h1;
         padding: 0;
         margin: 0;
         text-align: left;
@@ -434,11 +438,14 @@ img {
     }
 
     .page3-paragraph {
-        grid-area: p;
+       text-align: left;
+       font-size: 1.1em;
+       line-height: 1.8em;
+
     }
 
     .page3-button {
-        grid-area: b;
+        padding: 25px 70px;
     }
 
 }
