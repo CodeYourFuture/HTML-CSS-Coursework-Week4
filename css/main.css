@@ -312,7 +312,6 @@ footer a {
   background-color: rgb(230, 218, 205);
   padding: 50px 0px 25px;
   margin: 0px auto;
-  max-width: 540px;
   min-width: 300px;
 }
 
@@ -320,13 +319,17 @@ footer a {
   display: flex;
   flex-direction: row;
   align-items: baseline;
+  justify-content: space-evenly;
+  gap: 4%;
 }
 
 .resume-card {
   background-color: white;
-  width: 350px;
-  margin: 25px auto;
+  min-width: 300px;
+  max-width: 500px;
+  margin: 50px auto;
   padding: 15px 10px;
+  box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.5);
 }
 
 .resume-date {
@@ -340,4 +343,17 @@ footer a {
 
 .resume-btn {
   height: 45px;
+}
+
+.resume-heading {
+  font-size: 2.5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.square-bullet ul li::before {
+  list-style-type: square;
 }
