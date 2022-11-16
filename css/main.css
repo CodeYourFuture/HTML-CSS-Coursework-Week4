@@ -25,14 +25,21 @@ button {
 }
 
 .btn-1 {
-  padding: 0.8em 2.5em;
-  background-color: var(--main-text-color);
-  color: var(--white-color);
-  font-family: var(--body-font);
-  font-weight: 400;
-  font-size: 1.2rem;
-  box-shadow: var(--shd, 0 1px 4px rgba(0, 0, 0, 0.6));
+    padding: 0em em;
+    background-color: var(--main-text-color);
+    color: var(--white-color);
+    font-family: var(--body-font);
+    font-weight: 400;
+    font-size: 1rem;
+    box-shadow: var(--shd, 0 1px 4px rgba(0, 0, 0, 0.6));
+    display: block;
+    width: 10rem;
+    height: 2rem;
+    padding: auto;
+    padding-top: 0.5rem;
 }
+
+
 
 .btn-1:hover {
   background-color: var(--background-color);
@@ -296,7 +303,7 @@ main {
   align-items: center;
   text-shadow: 0 0 black;
   background-position: top;
-}
+    text-align: center;}
 
 .hero .logo {
   display: flex;
@@ -345,17 +352,30 @@ main .one {
     height: 400px;
     background-size: contain;
     margin-top: 2rem;
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 10rem 10rem auto ;
+    grid-template-rows: 10rem 10rem auto ; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 main .one h1 {
-    color: var(--main-text-color);
+color: var(--main-text-color);
     font-family: var(--headings-font);
-    grid-row: 1/2;
-}
+    /* grid-row: 1/2; */
+    /* padding: 1rem; */
+    font-weight: 500;
+    padding-top: 1rem;}
 
-main .one .btn-1 {
-    grid-row: 2/3;
-}
+main .one .dash {
+    display: block;
+    height: 0.4rem;
+    width: 0.8rem;
+    /* border-radius: 10px; */
+    background: var(--main-text-color);
+    margin: 1rem;}
+
+
