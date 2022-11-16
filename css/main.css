@@ -37,6 +37,7 @@ button {
   height: 2rem;
   padding: auto;
   padding-top: 0.5rem;
+  text-align: center;
 }
 
 .btn-2 {
@@ -51,6 +52,7 @@ button {
   height: 2rem;
   padding: auto;
   padding-top: 0.5rem;
+  text-align: center;
 }
 
 .btn-1:hover {
@@ -71,6 +73,8 @@ button {
   width: 0.8rem;
   background: var(--main-text-color);
   margin: 1rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ......./Header/...................... */
@@ -426,17 +430,13 @@ main .about-container {
   padding: 3rem 2rem;
 }
 
-main .about-container h1 {
+main .about-container h1,
+main .form-section h1 {
   font-family: var(--body-font);
   font-weight: 300;
   letter-spacing: 0.3rem;
   font-size: large;
   padding-bottom: 1rem;
-}
-
-main .about-container .dash {
-  margin-left: auto;
-  margin-right: auto;
 }
 
 main .about-container p {
@@ -447,8 +447,9 @@ main .about-container p {
 
 main .about img {
   width: 100%;
-  object-fit: cover;
+  object-fit: fill;
   height: 250px;
+  display: block;
 }
 
 main .about .green {
@@ -466,4 +467,42 @@ main .about .green h1 {
   font-size: 60px;
   font-weight: 400;
   padding-bottom: 3rem;
+}
+.form-section {
+  color: var(--main-text-color);
+  background-color: var(--white-color);
+  margin: 2rem 0.5rem 0 0.5rem;
+  padding: 2rem 1rem;
+}
+
+.form-section h1 {
+  padding: 0 3rem;
+  text-align: center;
+}
+
+main form {
+  font-size: 1.3rem;
+  color: var(--transparent-White);
+  font-family: var(--body-font);
+}
+
+main form input {
+  width: 100%;
+  height: 2rem;
+  margin: 1rem 0;
+}
+
+main form #message {
+  height: 5rem;
+}
+
+main form .btn-1 {
+  width: 100%;
+}
+
+main .form-container img {
+width: 100%;
+    object-fit: cover;
+    height: 250px;
+    display: block;
 }
