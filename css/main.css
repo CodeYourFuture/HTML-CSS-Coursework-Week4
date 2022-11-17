@@ -35,8 +35,8 @@ a {
 .bar {
     display: block;
     width: 30px;
-    height: 3px;
-    margin: 5px auto;
+    height: 3.5px;
+    margin: 4.5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: #101010;
@@ -136,6 +136,7 @@ p {
     display: flex;
     justify-content:space-around;
     align-items: center;
+    margin-top: 1.3em;
 }
 .h1 {
     display: flex;
