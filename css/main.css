@@ -159,10 +159,10 @@ ul {
 #brown {
   width: 100%;
   background-color: #e6dacd;
-  height: 500px;
+  height: 43em;
   position: relative;
-  right: 2px;
-  top: 100px;
+  right: 0em;
+  top: 13em;
 }
 
 .card img {
@@ -276,7 +276,12 @@ ul {
 }
 
 .info {
-  margin-left: 1em;
+  margin-left: 1.4em;
+  position: absolute;
+  top: 41em;
+  padding-left: 0.5em;
+  padding-right: 3em;
+  margin-right: 2.5em;
 }
 
 .info h1 {
