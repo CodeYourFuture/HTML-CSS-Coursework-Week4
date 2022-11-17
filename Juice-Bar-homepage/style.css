@@ -432,6 +432,7 @@ legend {
 .list {
   display: flex;
   justify-content: space-around;
+  margin-top: -90px;
 }
 
 .footer-h1 {
@@ -467,34 +468,31 @@ legend {
   text-decoration: none;
 }
 
-.img-wrapper {
-  padding: 1rem 0;
-}
 
 .img-wrapper img:nth-child(1) {
   width: 131px;
   height: 159px;
   transform: rotate(-28deg);
-  
+  translate: 80% 20%;
 }
 
 .img-wrapper img:nth-child(2) {
   width: 131px;
   height: 159px;
-  
+  translate: -50% -30%;
   transform: rotate(18deg);
 }
 
 .img-wrapper img:nth-child(3) {
   width: 131px;
   height: 159px;
-  
+  translate: 100% -170%;
   transform: rotate(-18deg);
 }
 
 .img-wrapper img:nth-child(4) {
   width: 131px;
   height: 159px;
-  
+  translate: 10% -130%;
   transform: rotate(18deg);
 }
