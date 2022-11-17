@@ -4,18 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Add a link to your custom CSS here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&family=Raleway&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <title>Responsive grid project</title>
 </head>
 <body>
     <header>
         <div class="order">
-           <p>Order Online</p>
+            <a href='#'><p>Order Online</p></a>
         </div>
-
-    </header> 
-    
+        <div class="bar1">
+            <a href='#'><p class="h1" >Juice Bar</p></a>
+        
+        <section class="section">
+            <nav class="navbar">
+                <!--<a href="#" class="nav-logo">WebDev.</a>-->
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Story</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Order Online</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Locations & Hours</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Log In</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    
+                </div>
+            </nav>
+        </section>
+    </div>
+    </header>
     <main>
 
 
@@ -24,9 +59,30 @@
 
     
     <footer>
-          <p>&copy 2022 by Juice Bar. This website design was created by Wix.com, 
-         and is used here for strictly educational purposes.</p>
-    </footer>     
+        <p class="footer">&copy 2022 by Juice Bar. This website
+         design was created by Wix.com  and is used here for
+          strictly educational purposes.</p>
+    </footer>
+    
+    <script>
+    const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+        
+        hamburger.addEventListener("click", mobileMenu);
+        
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}
+        </script>
 </body>
 
 </html>
