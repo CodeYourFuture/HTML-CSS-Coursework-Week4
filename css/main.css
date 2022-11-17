@@ -110,10 +110,16 @@ ul {
   color: black;
 }
 
+.nav-items li a:hover {
+  color: #0150fd;
+}
+
 @media screen and (min-width: 900px) {
   .name-title {
     display: flex;
     margin-top: 1.5em;
+    position: sticky;
+    top: 0;
   }
 
   #slash {
@@ -128,6 +134,8 @@ ul {
   .nav-bar {
     width: 50%;
     margin-top: 0.5em;
+    position: sticky;
+    top: 0;
   }
 
   .nav-items {
@@ -414,8 +422,8 @@ h3 {
     position: absolute;
     top: 51em;
     display: grid;
-    grid-template-columns: auto auto;
-    max-width: auto;
+    grid-template-columns: repeat(2, 20em);
+    grid-template-rows: repeat(2, auto);
   }
 
   .contact {
