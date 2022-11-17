@@ -1,6 +1,6 @@
-* {
+/** {
   border: 1px solid red;
-}
+}*/
 
 body {
   font-family: "Quicksand", sans-serif;
@@ -177,17 +177,27 @@ ul {
 
 main {
   background-color: #e6dacd;
+  height: 35em;
 }
 
 form {
   background-color: #fff;
   display: flex;
   flex-direction: column;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 2em;
 }
 
 form label {
   margin-bottom: 1em;
   font-weight: bold;
+  margin-left: 0.5em;
+}
+
+.name-input {
+  display: flex;
+  flex-direction: column;
 }
 
 .asterix {
@@ -200,6 +210,127 @@ form label {
   padding: 0.5em 2.3em;
   border-radius: 20px;
   border: none;
-  margin-right: 1em;
   font-weight: bold;
+  text-transform: uppercase;
+  margin: 1em 8em 2em 10em;
+}
+
+form input {
+  border: none;
+  margin: 0.5em;
+  border-bottom: 2px solid black;
+  padding: 0.5em;
+}
+
+form input:hover {
+  border-bottom: 3px solid #0150fd;
+}
+
+form input:visited {
+  border-bottom: 1px solid red;
+}
+
+/*STYLING FOR FOOTER*/
+
+h3 {
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 13em 13em;
+}
+
+.phone,
+.social-media {
+  margin-left: 1em;
+}
+
+.email {
+  margin-left: 0.5em;
+}
+
+.contact p {
+  margin-top: 0.5em;
+}
+
+.copyright {
+  margin-left: 1em;
+}
+
+.copyright p {
+  margin-bottom: 0;
+}
+.p-two {
+  margin-top: 0;
+}
+
+.declaration {
+  min-width: auto;
+}
+
+@media screen and (min-width: 900px) {
+  .main {
+    margin-top: 2em;
+    height: 35em;
+  }
+  .heading {
+    margin-bottom: 2em;
+  }
+
+  form {
+    margin-left: 13em;
+  }
+  .name-wrapper {
+    display: flex;
+    gap: 50px;
+  }
+
+  .name-input {
+    width: 50%;
+  }
+
+  .name {
+    width: 90%;
+  }
+
+  .resume {
+    background-color: #0150fd;
+    color: #fff;
+    padding: 0.5em 2.3em;
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 1em 54em 2em 1em;
+  }
+
+  form {
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: repeat(2, 6em);
+    grid-template-rows: repeat(2, auto);
+  }
+
+  .contact {
+    grid-column: 3 / span 2;
+    display: flex;
+    justify-content: flex-end;
+    width: 40em;
+    padding: 1em;
+  }
+
+  .contact article {
+    margin-left: 0.5em;
+  }
+
+  .copyright {
+    grid-column: 1 / span 2;
+  }
 }

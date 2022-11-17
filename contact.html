@@ -58,25 +58,35 @@
       </section>
 
       <form action="">
-        <label for="first-name"
-          >First Name <span class="asterix">*</span></label
-        >
-        <input
-          type="text"
-          id="first-name"
-          required
-          minlength="2"
-          name="first-name"
-        />
+        <div class="name-wrapper">
+          <div class="name-input">
+            <label for="first-name"
+              >First Name <span class="asterix">*</span></label
+            >
+            <input
+              type="text"
+              id="first-name"
+              required
+              minlength="2"
+              name="first-name"
+              class="name"
+            />
+          </div>
 
-        <label for="last-name">Last Name <span class="asterix">*</span></label>
-        <input
-          type="text"
-          id="last-name"
-          required
-          minlength="2"
-          name="last-name"
-        />
+          <div class="name-input">
+            <label for="last-name"
+              >Last Name <span class="asterix">*</span></label
+            >
+            <input
+              type="text"
+              id="last-name"
+              required
+              minlength="2"
+              name="last-name"
+              class="name"
+            />
+          </div>
+        </div>
 
         <label for="email">Email <span class="asterix">*</span></label>
         <input type="email" required />
@@ -87,7 +97,9 @@
         <label for="message">Message</label>
         <input type="text" id="message" />
 
-        <button class="resume" type="submit">Send</button>
+        <div class="button">
+          <button class="resume" type="submit">Send</button>
+        </div>
       </form>
     </main>
 
