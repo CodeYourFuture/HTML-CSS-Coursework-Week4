@@ -45,3 +45,93 @@ header {
   gap: 1rem;
   align-items: center;
 }
+.background1 {
+  background: #e6dacd;
+  width: 40%;
+  height: 90vh;
+  position: absolute;
+  z-index: -1;
+}
+.main-content {
+  display: flex;
+  height: 90vh;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.main-box-container {
+  background-color: #f4ece6;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+  gap: 2.5rem;
+}
+img {
+  width: 50%;
+  height: auto;
+  border-radius: 50%;
+}
+.main-name {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+hr.blue-line {
+  background-color: #0150fd;
+  width: 20%;
+  height: 2px;
+}
+
+.main-title {
+  font-size: 1.1rem;
+  letter-spacing: 0.5rem;
+  font-family: "Quicksand", sans-serif;
+}
+.contact {
+  background-color: white;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 3rem;
+}
+.contact i {
+  padding-left: 30px;
+}
+.hello-part {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 2rem;
+  width: 25%;
+}
+.hello-text {
+  font-size: 6.3rem;
+  font-family: "Poppins", sans-serif;
+}
+.role {
+  font-size: 1.6rem;
+}
+.p1 .p2 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.btns {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  border-radius: 20px;
+  padding: 5px 25px;
+  font-size: 0.9rem;
+}
+.resume-btn {
+  background-color: #0150fd;
+  color: white;
+}
