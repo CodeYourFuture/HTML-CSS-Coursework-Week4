@@ -56,7 +56,7 @@ h3 {
   display: block;
 }
 
-label span {
+.nav-label span {
   max-width: 33px;
   height: 3px;
   margin-bottom: 7px;
@@ -64,7 +64,7 @@ label span {
   border-radius: 2px;
 }
 
-label {
+.nav-label {
   display: flex;
   flex-direction: column;
   margin-left: 3em;
@@ -80,7 +80,7 @@ label {
   margin-left: 1em;
 }
 
-input {
+#check {
   display: none;
 }
 
@@ -146,7 +146,7 @@ ul {
     width: 89%;
   }
 
-  label {
+  .nav-label {
     display: none;
   }
 
@@ -173,4 +173,33 @@ ul {
 #blue-box {
   margin-top: 1.6em;
   margin-right: 1em;
+}
+
+main {
+  background-color: #e6dacd;
+}
+
+form {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+
+.asterix {
+  color: #0150fd;
+}
+
+.resume {
+  background-color: #0150fd;
+  color: #fff;
+  padding: 0.5em 2.3em;
+  border-radius: 20px;
+  border: none;
+  margin-right: 1em;
+  font-weight: bold;
 }

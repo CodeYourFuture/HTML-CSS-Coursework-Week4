@@ -29,7 +29,7 @@
       </section>
       <nav class="nav-bar">
         <input id="check" type="checkbox" />
-        <label for="check">
+        <label for="check" class="nav-label">
           <span class="one"></span>
           <span class="two"></span>
           <span class="three"></span>
@@ -56,7 +56,39 @@
         <span class="blue-box" id="blue-box"></span>
         <h1>Let's talk</h1>
       </section>
-      <form action=""></form>
+
+      <form action="">
+        <label for="first-name"
+          >First Name <span class="asterix">*</span></label
+        >
+        <input
+          type="text"
+          id="first-name"
+          required
+          minlength="2"
+          name="first-name"
+        />
+
+        <label for="last-name">Last Name <span class="asterix">*</span></label>
+        <input
+          type="text"
+          id="last-name"
+          required
+          minlength="2"
+          name="last-name"
+        />
+
+        <label for="email">Email <span class="asterix">*</span></label>
+        <input type="email" required />
+
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" />
+
+        <label for="message">Message</label>
+        <input type="text" id="message" />
+
+        <button class="resume" type="submit">Send</button>
+      </form>
     </main>
 
     <footer>
