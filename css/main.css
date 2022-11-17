@@ -436,11 +436,14 @@ main .shop-section .dash {
 
 /* ............/About Section/............ */
 
+main .about {
+  margin-top: 1rem;
+}
+
 main .about-container {
   text-align: center;
   color: var(--main-text-color);
   background-color: var(--white-color);
-  margin-top: 1rem;
   padding: 3rem 2rem;
 }
 
@@ -464,6 +467,7 @@ main .about img {
   object-fit: fill;
   height: 250px;
   display: block;
+  z-index: 0;
 }
 
 .green {
@@ -592,8 +596,14 @@ footer {
 /* ........./Desktop/....................... */
 
 @media (min-width: 750px) {
-  body {
-    padding: 0 3rem;
+  header {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+  }
+
+  main {
+    margin: 0 3rem;
   }
 
   .navbar-container input,
@@ -601,17 +611,15 @@ footer {
     display: none;
   }
 
-  .navbar-container {
-    display: flex;
-    justify-content: space-between;
-    height: 64px;
-    align-items: center;
+  .navbar-container,
+  .nav-search {
+    margin: 0 3rem;
   }
 
   .navbar-container {
     display: flex;
     justify-content: space-between;
-    height: 64px;
+    height: 65px;
     align-items: center;
   }
 
@@ -657,7 +665,7 @@ footer {
   }
 
   .navbar {
-    height: auto;
+    height: 65px;
   }
 
   .navbar-container h1 {
@@ -674,7 +682,7 @@ footer {
   header .Q-img {
     border-radius: 0;
     background-color: var(--main-text-color);
-    padding: 0.5rem 2rem 0.5rem 2rem;
+    padding: 1rem 3rem;
     right: 1rem;
     bottom: 1.5rem;
     z-index: 10;
@@ -684,6 +692,7 @@ footer {
 
   .hero {
     background-attachment: fixed;
+        margin-top: 125px;
   }
   .hero .logo {
     padding-top: 6rem;
@@ -692,17 +701,37 @@ footer {
   .hero h1 {
     font-size: 6rem;
     letter-spacing: 1rem;
-}
+  }
 
-.hero h3 {
+  .hero h3 {
     font-size: 1rem;
-}
+  }
 
-
-.hero .btn-1 {
+  .hero .btn-1 {
     margin-top: 3rem;
+  }
+
+  .shop-section{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: auto;
+   gap: 3rem; 
+  }
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 0.5fr;
+  grid-template-rows: 1fr 1fr;
 }
 
-  
+main .about img {
+  object-fit: cover;
+    height: 100%;
+    display: inline;
+}
+
+#Promo {
+  grid-column: 2/4;
+}
 
 }
