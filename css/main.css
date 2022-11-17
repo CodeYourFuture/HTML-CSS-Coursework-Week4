@@ -19,7 +19,7 @@ a {
 }
 .section {
     display: flex;
-    margin-left: 10em;
+    margin-right: -2em;
 }
 
 .navbar {
@@ -162,9 +162,12 @@ main {
     margin-top: 2em;
     font-size: 1.2em;
     padding: 1.1em 2.5em;
-    margin-left: 28%;
     border: 2px solid #000;
 }
+.button-wrapper{
+     display: flex; 
+    justify-content: center;
+ }
 .button:active {
     background-color:#000;
     color:#FFF;
@@ -179,8 +182,40 @@ main {
     margin-top: 2em;
     width: 100%;
 }
-
-
+.trynow {
+    background-color: pink;
+    text-align: center;
+    padding: 1.6em;
+    margin: -1em;
+}
+span {
+    text-decoration: underline;
+    color: #000;
+}
+.what {
+    margin-top: 1.3em;
+    text-align: center;
+    font-size: 2.5em;
+}
+.what1 {
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap
+}
+.locally {
+    display: flex-direction;
+    text-align: center;
+}
+.img {
+    display: flex;
+    justify-content: center;
+    padding: 1.6em;
+    width: 35%;
+}
+.paragraf {
+    text-align: center;
+    color: #000;
+}
 @media (min-width: 540px) {
   body {
     background: rgb(204, 226, 219);
