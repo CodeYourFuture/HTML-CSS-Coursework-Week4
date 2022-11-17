@@ -157,11 +157,12 @@ ul {
 /*STYLE FOR MAIN ASIDE*/
 
 #brown {
-  width: 115%;
+  width: 100%;
   background-color: #e6dacd;
   height: 500px;
   position: relative;
-  right: 106px;
+  right: 2px;
+  top: 100px;
 }
 
 .card img {
@@ -180,6 +181,9 @@ ul {
   max-width: 40em;
   margin-left: 1em;
   margin-right: 0.8em;
+  position: absolute;
+  top: 118px;
+  right: 72px;
 }
 
 .card .title {
@@ -252,11 +256,11 @@ ul {
   }
 
   #brown {
-    max-width: 85%;
+    max-width: 125%;
     background-color: #e6dacd;
     height: 42em;
     position: relative;
-    right: 7.3em;
+    right: 8.6em;
   }
 }
 
@@ -299,7 +303,7 @@ ul {
     width: 21em;
     position: absolute;
     top: 16em;
-    left: 17em;
+    left: 6em;
   }
 
   .info {
@@ -308,7 +312,7 @@ ul {
     padding: 0.5em;
     margin-left: 10px;
     position: absolute;
-    right: 14em;
+    right: 0em;
     top: 16em;
   }
 
