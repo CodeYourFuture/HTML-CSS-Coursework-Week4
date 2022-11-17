@@ -1,0 +1,47 @@
+/* Add your CSS here */
+/* Dont' forget to link this file to your HTML in the <head> */
+
+/* header */
+header {
+  position: sticky;
+  background-color: white;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.header-box {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.header-nav-menu {
+  display: flex;
+}
+.header-nav-menu li {
+  padding: 20px;
+  list-style: none;
+  font-size: 0.9rem;
+  font-family: "Quicksand", sans-serif;
+}
+
+.header-name {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+.header-title {
+  font-size: 1rem;
+  font-family: "Quicksand", sans-serif;
+}
+.box1 {
+  background-color: blue;
+  height: 15px;
+  width: 15px;
+}
+
+.box1-name {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
