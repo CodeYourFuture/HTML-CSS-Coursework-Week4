@@ -72,40 +72,6 @@ body{
     width: 25px;
     height: 25px;
 } 
-main{       
-    background-color: var(--darkBeige);
-    position: relative;
-      
-}
-.professional-introduction{
-    margin:20px;
-    background-color: var(--lightBeige);
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    gap:20px;   
-    box-shadow: -7px 7px 15px 2px #939393;
-    position:relative ; 
-    top: -270px; 
- 
-}   
-      
-.personal-image{
-    height: 250px;
-    width: 250px;
-    padding: 20px;
-    border-radius: 100%;
-    margin-top: 20px;
-}   
-.divider{
-    border-color: var(--royalBlue);
-    width: 68px;
-} 
-.name-family{
-    font-size: 21px;
-    line-height: 1.2em;
-}
-
 header{
     
     margin: 20px;
@@ -128,33 +94,67 @@ header{
     font-size: 20px;
     gap :5px; 
     font-weight:bolder;
+} 
+.follow-links-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;    
+    background-color: var(--white);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 150px;
+    margin:0 auto;
+    padding: 10px;
+    
+    
+           
 }  
 
-  
-footer{       
-    margin:5px 10px 60px 20px ;
-    display: flex;
-    flex-direction: column;
-    gap:30px;
+.follow-links-container{
+    width: 100%;
+    background-color: var(--white);
+    transform: translate(0px,-10px); 
     
+    
+     
 }
 
+.images_socialMedia {
+    width: 25px;
+    height: 25px;
+}  
 
-.contact{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+main{       
+    background-color: var(--darkBeige);
+    position: relative;
+      
 }
-.personal_introduction {
-    
-    margin: 20px;
-    display: flex;
+.professional-introduction{
+    margin:20px;
+    background-color: var(--lightBeige);
+    display:flex;
     flex-direction: column;
-    row-gap: 10px;
-    position: absolute;
-    bottom: 1px;
-    
-    
-
+    align-items: center;
+    gap:20px;   
+    box-shadow: -7px 7px 15px 2px #939393;
+    position:relative ; 
+    top: -300px; 
+ 
+}   
+      
+.personal-image{
+    height: 250px;
+    width: 250px;
+    padding: 20px;
+    border-radius: 100%;
+    margin-top: 20px;
+}   
+.divider{
+    border-color: var(--royalBlue);
+    width: 68px;
+} 
+.name-family{
+    font-size: 21px;
+    line-height: 1.2em;
 }
 .resume{
         
@@ -186,6 +186,43 @@ footer{
     color: var(--white);
 
 }
+.buttun-personal{
+    display: none;
+}  
+.buttun-professional{
+    margin-bottom: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+
+
+  
+footer{       
+    margin:5px 10px 60px 20px ;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    
+}
+
+
+.contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.personal_introduction {
+    
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    position: absolute;
+    bottom: 1px;
+    
+    
+
+}
 
 
 #menuToggle
@@ -213,7 +250,7 @@ footer{
 
 #menuToggle a:hover
 {
-  color: tomato;
+  color:var(--royalBlue);
 }
 
 
@@ -315,16 +352,20 @@ footer{
   .title{
     font-size: medium;
 }
-.buttun-personal{
-    display: none;
-}  
-.buttun-professional{
-    margin-bottom: 30px;
-    display: flex;
-    gap: 20px;
-}
+
 
 @media (min-width: 600px) {
+    header{
+        margin: 20px;
+        display:grid ;
+        grid-template-columns: 2fr 1fr;
+        
+        height: 100px;
+        position: sticky;
+        top: 0;
+        background-color: var(--white);
+        
+    }
     .name-title{
         display:flex;
         align-items: baseline;
@@ -339,58 +380,72 @@ footer{
         align-items: center;
         gap:20px;   
         box-shadow: -7px 7px 15px 2px #939393;
-        position:relative ; 
+        position:relative; 
         top:unset; 
-        right: 300px;
-     
+        height: 450px;
+        width: 400px;      
+          
     } 
     .personal_introduction {
-    
-        margin: 20px;
+           
         display: flex;
         flex-direction: column;
         row-gap: 10px;
         position: relative;
+        
         bottom: unset;
-        right: 300px;
+        right: 40px;
+        
         top: 40px;
+        height: 450px;
+        width: 400px;
     
     } 
     .follow-links-container{
         width: 100%;
         background-color: var(--white);
-        transform: unset;
+        transform: unset; 
+    }      
+    #menu{
+        position: relative;
+        width: unset;
+        margin: unset;
+        padding-top: unset;
+        background:unset;
+        list-style-type: none;
+       -webkit-font-smoothing: unset;
+        display: block;
+        display: flex;
+        gap: 20px;
+        bottom: 40px;
         
-         
-    }    
-              
+        
+    }
+    .span-1 ,.span-2 ,.span-3{
+        display: none;
+    }
+   
+   
     main{
         display:grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        background-color:var(--white)
+        grid-template-columns: 40% 60%;
+        background-color:var(--white);
+        z-index: -1;
+        height: 100vh;
     }
     .blanck{
         background-color: var(--darkBeige);
     }
-    header{
-        margin: 20px;
-        display:grid ;
-        grid-template-columns: 4fr 1fr;
-        height: 100px;
-        
     
-    }
-    footer{
+    .introduction{
         display: grid;
-        grid-template-columns: 3fr 1fr 1fr ;
-        margin-top: 30px;
-        
-    }
-    .copywrite{
-        grid-column: 1/2;
-        grid-row: 1;
-        
-    }
+        grid-template-columns: 1fr 1fr;
+        position: relative;
+        right: 300px;
+        top:200px;
+    } 
+    
+   
     .buttun-personal{
         display: block;
 
@@ -404,22 +459,21 @@ footer{
     .resume:hover{
         background-color: var(--white);
     }
-    #menu{
-        position: relative;
-        width: unset;
-        margin: unset;
-        padding-top: unset;
-        background:unset;
-        list-style-type: none;
-       -webkit-font-smoothing: unset;
-        display: block;
-        display: flex;
-        gap: 20px;
-        bottom: 40px;
-        right: 50px;
+    
+    footer{
+        display: grid;
+        grid-template-columns: 3fr 1fr 1fr ;
+        margin-top: 30px;
+        margin-right: 0px;
+        margin-bottom: 10px;
+
+        
+        
     }
-    .span-1 ,.span-2 ,.span-3{
-        display: none;
+    .copywrite{
+        grid-column: 1/2;
+        grid-row: 1;
+        
     }
     
    
