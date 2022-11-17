@@ -126,7 +126,7 @@ a {
     justify-content: center;
     background-color: #000;
     color: #FFF;
-    height: 3em;
+    height: 3.8em;
 }
 p {
     color:#FFF;
@@ -144,12 +144,41 @@ p {
     margin-left: 0;
     color: #000;
 }
+main {
+    
+    font-family: 'Questrial', sans-serif;
+}
+.slogan {
+    margin-top: 1.3em;
+    text-align: center;
+    font-size: 2.5em;
+}
+.slogan1 {
+    margin-top: 1.3em;
+    text-align: center;
+    font-size: 1.6em;
+}
+.button {
+    margin-top: 2em;
+    font-size: 1.2em;
+    padding: 1.1em 2.5em;
+    margin-left: 28%;
+    border: 2px solid #000;
+}
+.button:active {
+    background-color:#000;
+    color:#FFF;
+}
+
 .footer {
     margin: 3em;
     font-size: .8em;
     color:#000;
 }
-
+.mainimage {
+    margin-top: 2em;
+    width: 100%;
+}
 
 
 @media (min-width: 540px) {
