@@ -144,8 +144,13 @@ p {
     margin-left: 0;
     color: #000;
 }
+i { 
+    padding: 1.2em;
+}
+.fa-user-circle-o {
+    margin: 0;
+}
 main {
-    
     font-family: 'Questrial', sans-serif;
 }
 .slogan {
