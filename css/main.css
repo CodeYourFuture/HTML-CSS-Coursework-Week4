@@ -135,6 +135,7 @@ ul {
     justify-content: flex-end;
     margin: 0.5em;
     background-color: #fff;
+    width: 89%;
   }
 
   label {
@@ -260,7 +261,8 @@ ul {
     background-color: #e6dacd;
     height: 42em;
     position: relative;
-    right: 8.6em;
+    right: 8.8em;
+    top: 0;
   }
 }
 
@@ -359,5 +361,75 @@ ul {
     height: 42em;
     position: relative;
     right: 8.6em;
+  }
+}
+
+/*STYLING FOR FOOTER*/
+
+footer {
+  position: absolute;
+  top: 63em;
+}
+
+h3 {
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 13em 13em;
+}
+
+.phone,
+.social-media {
+  margin-left: 2em;
+}
+
+.email {
+  margin-left: 1em;
+}
+
+.contact p {
+  margin-top: 0.5em;
+}
+
+.copyright {
+  margin-left: 2em;
+}
+
+.copyright p {
+  margin-bottom: 0;
+}
+.p-two {
+  margin-top: 0;
+}
+
+.declaration {
+  min-width: auto;
+}
+
+@media screen and (min-width: 900px) {
+  footer {
+    position: absolute;
+    top: 51em;
+    display: grid;
+    grid-template-columns: auto auto;
+    max-width: auto;
+  }
+
+  .contact {
+    grid-column: 3 / span 2;
+    display: flex;
+    justify-content: flex-end;
+    width: 40em;
+  }
+
+  .contact article {
+    margin-left: 0.5em;
+  }
+
+  .copyright {
+    grid-column: 1 / span 2;
   }
 }
