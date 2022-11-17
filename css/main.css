@@ -83,6 +83,7 @@ img {
 
 @media only screen and (min-width: 900px) {
     .header {
+        z-index: 500;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -206,6 +207,7 @@ img {
 
 .hero-text-wrapper {
     padding-bottom: 30px;
+    z-index: 5;
 }
 
 .hero-paragraph {
@@ -238,27 +240,25 @@ img {
 
 @media only screen and (min-width: 900px) {
     .hero-wrapper {
-        margin-top: 0;
+        margin: 0;
         border: 6px dotted red; 
-        /* background-image: url("/hero-image.jpg");
+        background-image: url("/hero-image.jpg");
         width: auto;
         height: 700px;
-        overflow: visible; */
+        overflow: visible;
     }
 
     .hero-img-wrapper {
         order: 1;
+        display: none;
     }
 
     .hero-text-wrapper {
         order: 2;
         background-color: var(--white);
-        padding-top: 40px;
-        padding-bottom: 40px;
+        padding-top: 70px;
+        padding-bottom: 55px;
         border: 2px dotted blue;
-        position: relative;
-        bottom: 600px;
-        width: 100%;
     }
 
     .hero-title {
@@ -402,17 +402,16 @@ img {
         display: grid;
         grid-gap: 60px;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 290px);
+        grid-template-rows: 1fr;
         grid-template-areas: 
         "image c";
-        padding-left: 50px;
-        padding-top: 70px;
+        padding: 70px 20px 20px 50px;
     }
 
     .page3-content-wrapper {
         grid-area: c;
         padding-top: 100px;
-        padding-right: 120px;
+        padding-right: 90px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -425,8 +424,8 @@ img {
 
     .page3-img {
         width: 100%;
-        height: auto;
         object-fit: cover;
+        margin-bottom: -80px;
     }
 
     .page3-title {
@@ -446,6 +445,7 @@ img {
 
     .page3-button {
         padding: 25px 70px;
+        margin-top: 10px;
     }
 
 }
