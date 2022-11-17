@@ -235,6 +235,26 @@ span {
   body {
     background: rgb(204, 226, 219);
   }
+header {
+    display: flex;
+    
+    flex-direction: row-reverse;
+    
+}
+.bar1 {
+    
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.order {
+    
+    justify-content: center;
+}
+
+
+
+
+
 }
     
 
