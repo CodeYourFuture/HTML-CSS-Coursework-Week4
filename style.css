@@ -26,6 +26,10 @@ header {
   font-family: "Quicksand", sans-serif;
 }
 
+.about-me{
+    color: blue; 
+}
+
 .header-name {
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
@@ -52,40 +56,6 @@ header {
   position: absolute;
   z-index: -1;
 }
-.hamburger-nav-menu {
-  display: block;
-  margin-right: 3rem;
-}
-
-.header-line1 {
-  position: relative;
-  width: 1em;
-  height: 4px;
-  border-radius: 3px;
-  background-color: blue;
-  margin-top: 8px;
-  right: 20px;
-}
-
-.header-line2 {
-  position: relative;
-  width: 2em;
-  height: 4px;
-  border-radius: 3px;
-  background-color: blue;
-  margin-top: 8px;
-}
-
-.header-line3 {
-  position: relative;
-  width: 1em;
-  height: 4px;
-  border-radius: 3px;
-  background-color: blue;
-  margin-top: 8px;
-  right: -20px;
-}
-
 .main-content {
   display: flex;
   height: 90vh;
@@ -99,7 +69,6 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 1rem;
   padding-top: 1rem;
   gap: 2.5rem;
 }
@@ -198,6 +167,7 @@ footer {
   align-items: center;
 }
 
+
 .footer-write {
   display: flex;
   flex-direction: column;
@@ -217,7 +187,87 @@ footer {
   gap: 1rem;
 }
 
-.purpose {
-  grid-area: 3 / 1 / 4 / 3;
-  margin: 0 2rem;
+.purpose2{
+  display: none;
+}
+.hamburger-nav-menu {
+  display: none;
+}
+@media screen and (max-width: 600px){
+  .header-box{
+      display: none;
+  }
+
+  .hamburger-nav-menu {
+    display: block;
+    margin-right: 3rem;
+  }
+  
+  .header-line1 {
+    position: relative;
+    width: 1em;
+    height: 4px;
+    border-radius: 3px;
+    background-color: blue;
+    margin-top: 8px;
+    right: 20px;
+  }
+  
+  .header-line2 {
+    position: relative;
+    width: 2em;
+    height: 4px;
+    border-radius: 3px;
+    background-color: blue;
+    margin-top: 8px;
+  }
+  
+  .header-line3 {
+    position: relative;
+    width: 1em;
+    height: 4px;
+    border-radius: 3px;
+    background-color: blue;
+    margin-top: 8px;
+    right: -20px;
+  }
+
+  .main-content {
+    flex-direction: column;
+    height: 100%;
+    background-color: #E6DACD;
+}
+
+.background1 {
+    display: none;
+}
+
+.hello-part {
+    width: auto;
+    padding: 60px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: start;
+    gap: 1rem;
+}
+
+.footer-call {
+    grid-column: 1/2;
+}
+
+.purpose1 {
+    display: none;
+    grid-column: 1/3;
+}
+.purpose2 {
+    display: block;
+    grid-column: 1/3;
+}
+.main-box-container {
+    margin-top: 1rem;
+
 }
