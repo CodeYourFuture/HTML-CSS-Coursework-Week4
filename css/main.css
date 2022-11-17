@@ -1,3 +1,118 @@
 /* Add your CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
+
+header {
+  display: grid;
+  grid-template-columns: 20px 1fr 60px;
+  grid-template-rows: 50px;
+  align-items: center;
+  column-gap: 10px;
+  margin: 20px 15px 0 15px;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  line-height: 2%;
+}
+
+.blue-box {
+  width: 20px;
+  height: 20px;
+  background-color: #0150fd;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.toggle-menu {
+  float: right;
+}
+
+.line-one {
+  border-top: 3px solid blue;
+  border-radius: 20px;
+  width: 10px;
+  margin-right: 30px;
+}
+.line-two {
+  border-top: 3px solid blue;
+  border-radius: 20px;
+  width: 20px;
+}
+.line-three {
+  border-top: 3px solid blue;
+  border-radius: 20px;
+  width: 10px;
+  margin-left: 30px;
+}
+
+h1 {
+  grid-column: 2;
+  grid-row: 1;
+  font-size: 1.5em;
+}
+
+h2 {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+  font-size: 1.2em;
+  font-style: normal;
+  font-weight: 100;
+}
+
+.card {
+  border: 1px solid black;
+  width: 20em;
+  height: 27em;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+  background-color: #f4ece6;
+}
+
+.profile-img {
+  border-radius: 50%;
+  width: 150px;
+  margin-top: 20px;
+}
+.name {
+  font-size: 1.7em;
+  font-weight: bold;
+  margin-top: auto;
+}
+
+.card-line {
+  width: 6.5em;
+  border-top: 2px solid blue;
+}
+
+.card-buttons1 {
+  width: 8em;
+  margin-top: 20px;
+  border: 1px solid #0150fd;
+  border-radius: 25px 25px 25px 25px;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  font-size: 16px;
+  background-color: #0150fd;
+}
+
+.card-buttons2 {
+  width: 8em;
+  margin-top: 20px;
+  border: 1px solid black;
+  border-radius: 25px 25px 25px 25px;
+  color: black;
+  padding: 10px 30px;
+  text-align: center;
+  font-size: 16px;
+  background-color: #f4ece6;
+}
+
+.social-bar {
+  display: flex;
+  flex-direction: row;
+  width: 20em;
+  height: 3em;
+  background-color: white;
+  margin-top: 35px;
+}
