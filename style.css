@@ -1,0 +1,58 @@
+
+:root {
+  --dark-beige: #E6DACD;
+  --light-beige: #F4ECE6;
+  --royal-blue: #0150FD;
+  --black: #000;  
+  --white: #FFF; 
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Quicksand', sans-serif; 
+  font-weight: 600;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; 
+}
+
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  }
+
+
+.container {  display: grid;
+    grid-template-columns: 0.4fr 1fr 1fr 1fr 1fr 0.25fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Header Header Header Header Header Header"
+      ". Card Card Card Card ."
+      ". Card Card Card Card ."
+      ". Card Card Card Card ."
+      ". Card Card Card Card ."
+      ". Text Text Text Text ."
+      ". Text Text Text Text ."
+      "Footer Footer Footer Footer Footer Footer";
+  }
+  
+  .Header { grid-area: Header; }
+  
+  .Card { 
+    grid-area: Card; 
+    border: red solid 10px;
+    }
+  
+
+  
+  .Text { grid-area: Text; }
+  
+  .Footer { grid-area: Footer; }
+  
