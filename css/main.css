@@ -1,3 +1,71 @@
 /* Add your CSS here */
 
-/* Dont' forget to link this file to your HTML in the <head> */
+body {
+  padding: 4px;
+  margin: 4px;
+  border: 1px solid red;
+  top: 2;
+  font-family: "Poppins", sans-serif;
+  width: 320px;
+  height: 613px;
+  margin-left: 28em;
+}
+.headings {
+  font-family: "Poppins", sans-serif;
+}
+/* header */
+
+header {
+  position: relative;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-areas:
+    "a n"
+    "b n";
+  border: 1px solid green;
+  padding: 4px;
+}
+
+h1 {
+  grid-area: a;
+  background-color: blueviolet;
+  padding-left: 1em;
+  width: 100%;
+  height: 50%;
+  margin-top: 0em;
+  padding-top: 1em;
+}
+
+h2 {
+  grid-area: b;
+  background-color: brown;
+  position: absolute;
+  bottom: 0.3em;
+  left: 0.4em;
+  width: 95%;
+}
+
+.navbar {
+  grid-area: n;
+  background-color: red;
+  width: 100%;
+}
+
+.blue_square {
+  position: absolute;
+  background-color: blue;
+  border: 0;
+  width: 1em;
+  height: 1em;
+  top: 3.3em;
+  left: 1em;
+}
+
+.headings {
+  font-family: "Poppins", sans-serif;
+}
+
+/* footer */
+footer {
+  font-weight: 300;
+}
