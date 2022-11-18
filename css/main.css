@@ -1,3 +1,172 @@
-/* Add your CSS here */
 
-/* Dont' forget to link this file to your HTML in the <head> */
+:root { 
+    --Dark-beige: #E6DACD;
+    --Light-beige: #F4ECE6;
+    --Royal-blue: #0150FD;
+    --Black: #000;
+    --White: #FFF;
+}
+
+body{
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "hd"
+    "section"
+    "footer";
+    gap: 1rem;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+/* heaader section */
+
+header{
+    grid-area: hd;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-areas:
+    "data nav";
+    background-color: var(--white);
+    background-color: var(--White);
+    border: 2px solid #0150FD;
+}   
+
+
+.nav2 {
+    display: none;
+}
+
+.data {
+    grid-area: data;
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 1rem;
+
+}
+
+.blueSquare {
+    background-color: var(--Royal-blue);
+    width: 1rem;
+    height: 1rem;
+    margin-top: 1.3rem;
+    margin-right: 1rem;
+
+}
+
+.name {
+    margin-bottom: 0rem;
+}
+.roll {
+    margin-top: 0rem;
+
+}
+
+
+.data .name a {
+    margin-top: 1rem;
+    color: var(--Black);
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.roll a{
+    font-size: 1rem;
+    color: var(--Black);
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 1rem;
+}
+
+.toggle {
+    grid-area: nav;
+    /* display: none; */
+}
+
+.nav {
+    /* display: none; */
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: baseline; 
+    align-content: center;
+    text-decoration: none;
+    background-color: #08fef6;
+    list-style: none;
+}
+
+/* section */
+ 
+section {
+    background-color: var(--Dark-beige);
+}
+
+.social{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 80%;
+    text-align: center;
+}
+
+footer p{
+    color: white;
+
+}
+
+.social  a {
+    font-size: 35px;
+    color: cyan;
+    transition: all .5s ease;
+    padding-bottom: 2rem;
+}
+
+footer .social .facebook:hover{
+    transform: scale(2.1,2.1);
+    color: rgb(7, 7, 108);
+}
+
+footer .social .twitter:hover{
+    transform: scale(2.1,2.1);
+    color: #ffffff;
+    text-shadow: 0 0 10px #4de7f5, 0 0 8px #08fef6;
+    /* color: RGB 255, 255, 255; */
+}
+
+footer .social .youtube:hover{
+    transform: scale(2.1,2.1);
+    color: rgb(191, 3, 3);
+}
+
+footer .social .github:hover{
+    transform: scale(2.1,2.1);
+    color: rgb(4, 4, 10);
+}
+
+/* 1st option but one color */
+
+/* footer .social .instagram:hover{
+    transform: scale(2.1,2.1);
+    color: rgba(155, 20, 176, 0.662);
+} */
+
+/* 2nd option with degradient color  the best one*/
+
+footer .social .instagram:hover{
+    color: transparent;
+    transform: scale(2.1,2.1);
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
