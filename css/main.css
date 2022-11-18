@@ -13,7 +13,9 @@ header {
   color: black;
   line-height: 2%;
 }
-
+main {
+  font-family: "Quicksand", sans-serif;
+}
 .blue-box {
   width: 20px;
   height: 20px;
@@ -48,6 +50,7 @@ h1 {
   grid-column: 2;
   grid-row: 1;
   font-size: 1.5em;
+  font-family: Poppins;
 }
 
 h2 {
@@ -75,6 +78,7 @@ h2 {
 }
 .name {
   font-size: 1.7em;
+  font-family: Quicksand;
   font-weight: bold;
   margin-top: auto;
 }
@@ -85,7 +89,7 @@ h2 {
 }
 
 .card-buttons1 {
-  width: 8em;
+  width: 140px;
   margin-top: 20px;
   border: 1px solid #0150fd;
   border-radius: 25px 25px 25px 25px;
@@ -97,7 +101,7 @@ h2 {
 }
 
 .card-buttons2 {
-  width: 8em;
+  width: 140px;
   margin-top: 20px;
   border: 1px solid black;
   border-radius: 25px 25px 25px 25px;
@@ -111,8 +115,41 @@ h2 {
 .social-bar {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 6%;
   width: 20em;
   height: 3em;
   background-color: white;
   margin-top: 35px;
+}
+
+.facebook {
+  width: 12px;
+}
+
+.twitter {
+  width: 35px;
+}
+
+.linkedin {
+  width: 17px;
+}
+
+.instagram {
+  width: 20px;
+}
+
+.info-paragraph {
+  text-align: left;
+  margin-left: 25px;
+}
+
+h3 {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 1.2em;
 }
