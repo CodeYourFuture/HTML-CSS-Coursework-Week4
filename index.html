@@ -4,18 +4,142 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Add a link to your custom CSS here -->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&family=Raleway&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
     <title>Responsive grid project</title>
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>                
+     
 </head>
-
 <body>
+    <header> 
+        <div class="order">
+            <a href="#" class="nav-link">
+               
+            <a href='#'><p>Order Online</p></a>
+        </div>
+        <div class="bar1">
+           <a class="login" href="#">Log In</a> 
+                <i class='fa fa-user-circle-o' aria-hidden="true">
+                </i> 
+            <a href='#'><p class="h1" >Juice Bar</p></a>
+        
+        <section class="section">
+            <nav class="navbar">
+                <!--<a href="#" class="nav-logo">WebDev.</a>-->
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Story</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Order Online</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Locations & Hours</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class='fa fa-user-circle-o' aria-hidden="true">
+                            </i> Log In</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    
+                </div>
+            </nav>
+        </section>
+        </div>
+    </header>
+    <main>
+        <div class="slogan">Fuel Your Body.<br>
+            Balance Your Mind.
+        </div>
+        <div class="slogan1">Organic Cold Pressed<br>Juices & Smoothies
+        </div>
+    <div class="button-wrapper">   
+     <button class="button">Explore Flavors</button>
+     </div>
+     <img class="main_image" src="img/mainimage.png" width="100%">
+    <div class="trynow">
+        Get 10% off your first Online Order.<br> 
+    <a href="#"><span>Try Now</span></a>   
+    </div>
+    <div class="what">
+        What Makes Us<br> Different
+    </div>
 
-    <!-- Add your markup here -->
+    <section class="what1">
+        <img class="img" src="img/locally.png">
+        <div class="locally">
+            Locally Sourced
+        </div>
+        <p class="paragraf">
+            I'm a paragraph. Click here to
+            add your own text and edit me. Let your users get to know you.    
+        </p> 
+    </section>
+    <section class="what1">
+        <img class="img" src="img/lemon.png">
+        <div class="locally">
+            100% Natural Ingredients
+        </div>
+        <p class="paragraf">
+            I'm a paragraph. Click here to
+            add your own text and edit me. Let your users get to know you.    
+        </p> 
+    </section>
+    <section class="what1">
+        <img class="img" src="img/greenleaves.png">
+        <div class="locally">
+            Just Picked Freshness
+        </div>
+        <p class="paragraf">
+            I'm a paragraph. Click here to
+            add your own text and edit me. Let your users get to know you.    
+        </p> 
+    </section>
+    
+    </main>
+   
 
+    <img class="main_image1" src="https://static.wixstatic.com/media/c837a6_e9a98eea8cf6418088d411361c2f32a1~mv2.jpg/v1/fill/w_980,h_700,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_e9a98eea8cf6418088d411361c2f32a1~mv2.jpg" 
+    alt="" style="width: 980px; height: 700px; object-fit: cover; object-position: 50% 50%;"> 
+    <footer>
+        <p class="footer">&copy 2022 by Juice Bar. This website
+         design was created by Wix.com  and is used here for
+          strictly educational purposes.</p>
+    </footer>
+    
+    <script>
+    const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+        
+        hamburger.addEventListener("click", mobileMenu);
+        
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
 
-    <!-- Please leave this in to credit the creators of this design -->
-    <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}
+        </script>
 </body>
 
 </html>

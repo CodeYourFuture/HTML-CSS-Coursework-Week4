@@ -1,3 +1,282 @@
-/* Add your CSS here */
+/* fonts
+font-family: 'Questrial', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
 
-/* Dont' forget to link this file to your HTML in the <head> */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+.section {
+    display: flex;
+    margin-right: -2em;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+/* hamburger styles*/
+.hamburger {
+    display: none;
+}
+.bar {
+    display: block;
+    width: 30px;
+    height: 3.5px;
+    margin: 4.5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+/*basic styles for our other elements*/
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -1em ;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color:  #475569;
+    color: #000;
+}
+
+.nav-link:hover{
+    color: #394B2A;
+}
+
+.bar:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+.nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow:
+        0 10px 27px rgba(0, 0, 0, 0.05);
+}
+
+.nav-menu.active {
+    left: 0;
+    top: 1em;
+}
+
+.nav-item {
+    margin: 1.1rem 0;
+}
+
+.hamburger {
+    display: block;
+    cursor: pointer;
+}
+
+
+
+/*my code*/
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+header {
+    
+    font-family: 'Questrial', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.order {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    color: #FFF;
+    height: 3.8em;
+}
+p {
+    color:#FFF;
+    font-size: 1.2em;
+}
+.bar1 {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin-top: 1.3em;
+}
+.h1 {
+    display: flex;
+    font-size: 1.6em;
+    margin-left: -6em;
+    color: #000;
+}
+i { 
+    padding: 1.2em;
+}
+.fa-user-circle-o {
+    margin: 0;
+}
+main {
+    font-family: 'Questrial', sans-serif;
+}
+.slogan {
+    margin-top: 1.3em;
+    text-align: center;
+    font-size: 2.5em;
+}
+.slogan1 {
+    margin-top: 1.3em;
+    text-align: center;
+    font-size: 1.6em;
+}
+.button {
+    margin-top: 2em;
+    font-size: 1.2em;
+    padding: 1.1em 2.5em;
+    border: 2px solid #000;
+}
+.button-wrapper{
+     display: flex; 
+    justify-content: center;
+ }
+.button:active {
+    background-color:#000;
+    color:#FFF;
+}
+
+.footer {
+    margin: 3em;
+    font-size: .6em;
+    color:#000;
+}
+.main_image {
+    margin-top: 2em;
+    width: 100%;
+}
+.trynow {
+    background-color: pink;
+    text-align: center;
+    padding: 1.6em;
+    margin: -1em;
+}
+span {
+    text-decoration: underline;
+    color: #000;
+}
+.what {
+    margin-top: 1.3em;
+    text-align: center;
+    font-size: 2.5em;
+}
+.what1 {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    flex-flow: column wrap
+}
+.locally {
+    font-size: 2em;
+    margin-bottom: 5%;
+    display: flex-direction;
+    text-align: center;
+}
+.img {
+    display: flex;
+    justify-content: center;
+    padding: 1.6em;
+    width: 35%;
+}
+.paragraf {
+    width: 60%;
+    line-height: 1.6em;
+    text-align: center;
+    color: #000;
+}
+
+.main_image1 {
+    display: none;
+} 
+ .login { 
+    display: none;
+}
+.fa-user-circle-o {
+    color:#FFF;
+}
+@media (min-width: 540px) {
+  body {
+    background-color:#FFF;
+  }
+header {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.order {
+    justify-content: center;
+    padding: 3em 3em;
+}
+.bar1 {
+    display: flex;
+    flex-direction: row-reverse;
+    
+    margin-right: 2em;
+}
+.section {
+    display: flex;
+    justify-content: flex-start;
+    
+}
+.navbar {
+    margin-right: 30em;
+}
+.fa-user-circle-o {
+    margin-left: 6em;
+    color:#000
+}
+.login {
+    display: block;
+    font-size: .7em;
+    color: #000;
+}
+br {
+    display: none;
+}
+
+
+
+    
+
