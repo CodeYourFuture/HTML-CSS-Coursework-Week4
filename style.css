@@ -1,0 +1,281 @@
+/* Add your CSS here */
+/* Dont' forget to link this file to your HTML in the <head> */
+
+/* header */
+header {
+  position: sticky;
+  background-color: white;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.header-box {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.header-nav-menu {
+  display: flex;
+}
+.header-nav-menu li {
+  padding: 20px;
+  list-style: none;
+  font-size: 0.9rem;
+  font-family: "Quicksand", sans-serif;
+}
+
+.about-me{
+    color:#0150fd ; 
+}
+
+.header-name {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+.header-title {
+  font-size: 1rem;
+  font-family: "Quicksand", sans-serif;
+}
+.box1 {
+  background-color: blue;
+  height: 15px;
+  width: 15px;
+}
+
+.box1-name {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.background1 {
+  background: #e6dacd;
+  width: 40%;
+  height: 90vh;
+  position: absolute;
+  z-index: -1;
+}
+.main-content {
+  display: flex;
+  height: 90vh;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.main-box-container {
+  background-color: #f4ece6;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+  gap: 2.5rem;
+}
+img {
+  width: 50%;
+  height: auto;
+  border-radius: 50%;
+}
+.main-name {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+hr.blue-line {
+  background-color: #0150fd;
+  width: 19%;
+  height: 2px;
+}
+
+.main-title {
+  font-size: 1.1rem;
+  letter-spacing: 0.5rem;
+  font-family: "Quicksand", sans-serif;
+}
+
+.contact {
+  background-color: white;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 3rem;
+}
+
+.hello-part {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 2rem;
+  width: 25%;
+}
+.hello-text {
+  font-size: 6.3rem;
+  font-family: "Poppins", sans-serif;
+}
+.role {
+  font-size: 1.6rem;
+}
+.p1 .p2 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.btn {
+  display: flex;
+  gap: 1rem;
+}
+
+.resume-btn {
+  border-radius: 20px;
+  padding: 5px 25px;
+  font-size: 1rem;
+  background-color: #0150fd;
+  color: white;
+}
+.resume-btn:hover {
+  background-color: white;
+}
+.projects-btn{
+  border-radius: 20px;
+  padding: 5px 25px;
+  font-size: 0.85rem;
+}
+.projects-btn:hover {
+  background-color:blue;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: end;
+  margin: 0 2rem;
+}
+
+.footer-major {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+.footer-call {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-follow {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.footer-write {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-contain {
+  text-decoration: none;
+  color: black;
+  font-family: "Quicksand", sans-serif;
+}
+
+.footer-contact {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+
+.purpose2{
+  display: none;
+}
+.hamburger-nav-menu {
+  display: none;
+}
+@media screen and (max-width: 600px){
+  .header-box{
+      display: none;
+  }
+
+  .hamburger-nav-menu {
+    display: block;
+    margin-right: 3rem;
+  }
+  
+  .header-line1 {
+    position: relative;
+    width: 1em;
+    height: 4px;
+    border-radius: 3px;
+    background-color: blue;
+    margin-top: 8px;
+    right: 20px;
+  }
+  
+  .header-line2 {
+    position: relative;
+    width: 2em;
+    height: 4px;
+    border-radius: 3px;
+    background-color: blue;
+    margin-top: 8px;
+  }
+  
+  .header-line3 {
+    position: relative;
+    width: 1em;
+    height: 4px;
+    border-radius: 3px;
+    background-color: blue;
+    margin-top: 8px;
+    right: -20px;
+  }
+
+  .main-content {
+    flex-direction: column;
+    height: 100%;
+    background-color: #E6DACD;
+}
+
+.background1 {
+    display: none;
+}
+
+.hello-part {
+    width: auto;
+    padding: 60px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: start;
+    gap: 1rem;
+}
+
+.footer-call {
+    grid-column: 1/2;
+}
+
+.purpose1 {
+    display: none;
+    grid-column: 1/3;
+}
+.purpose2 {
+    display: block;
+    grid-column: 1/3;
+}
+.main-box-container {
+    margin-top: 1rem;
+
+}
