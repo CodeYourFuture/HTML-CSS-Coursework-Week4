@@ -318,10 +318,6 @@ footer{
 
 
 
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
 #menu
 {
   position: relative;
@@ -342,9 +338,8 @@ footer{
   font-size: 18px;
 }
 
-/*
- * And let's slide it in from the left
- */
+ 
+
 #menuToggle input:checked ~ ul
 {
   display:block}
