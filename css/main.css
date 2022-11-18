@@ -74,7 +74,45 @@ h2 {
   font-family: "Poppins", sans-serif;
 }
 
+/* hero */
+.hero {
+  width: 281px;
+  height: 369px;
+  background-color: beige;
+}
+
+/* about_me */
+.about_me {
+  width: 304px;
+  height: 864px;
+}
+
 /* footer */
 footer {
   font-weight: 300;
+  width: 308px;
+  height: 223px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 25% 25% 25%;
+  grid-template-areas:
+    " call write"
+    "follow follow"
+    "copyright copyright";
+}
+.follow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2em;
+  grid-area: follow;
+}
+.call {
+  grid-area: call;
+}
+
+.email {
+  grid-area: email;
+}
+.copyright {
+  grid-area: copyright;
 }
