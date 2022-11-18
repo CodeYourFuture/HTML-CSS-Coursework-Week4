@@ -15,7 +15,7 @@
         <section class="header-search">
             <i class="fa fa-search"></i>
             <input type="text" name="search" id="search" placeholder="Search...">
-            <a href="#"><img src="./img/OIP.jpeg" alt="Shopping Basket"></a>
+            <a href="#"><img src="./img/Basket.jpeg" alt="Shopping Basket"></a>
         </section>
         <section class="header-title">
             <div>
@@ -24,11 +24,16 @@
             </div>
             <nav>
                 <ul class="nav-list">
-                    <li><a href="#">Log In</a></li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <input type="checkbox" id="check">
+                    <span class="menu">
+                        <li class="nav-link"><a href="#">Log In</a></li>
+                        <li class="nav-link"><a href="#">Shop</a></li>
+                        <li class="nav-link"><a href="#">About</a></li>
+                        <li class="nav-link"><a href="#">FAQ</a></li>
+                        <li class="nav-link"><a href="#">Contact</a></li>
+                        <label for="check" class="close-menu"><i class="fa fa-times"></i></label>
+                    </span>
+                    <label for="check" class="open-menu"><i class="fa fa-bars"></i></label>
                 </ul>
             </nav>
         </section>
@@ -36,7 +41,7 @@
     <main>
         <section class="hero capital">
             <p><span>estb</span>
-            <svg preserveAspectRatio="xMidYMid meet" data-bbox="10.326 50.3 180.129 101.208" xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="10.326 50.3 180.129 101.208" role="presentation" aria-hidden="true"></svg>    
+            <img src="./img/logo.svg" alt="Logo">
             <span>2023</span></p>
             <h1>prickles & co</h1>
             <p>bring nature indoors</p>
@@ -47,25 +52,16 @@
                 <p>cacti</p>
                 <p>-</p>
                 <button>Shop Collection</button>
-                <!-- <div class="img-wrapper">
-                    <img src="./img/Cactus_edited.jpg" alt="Cacti">
-                </div> -->
             </article>
             <article class="frame capital title plants">
                 <p>plants</p>
                 <p>-</p>
                 <button>Shop Collection</button>
-                <!-- <div class="img-wrapper">
-                    <img src="https://static.wixstatic.com/media/697bc8_8267510d9e19448297fc161a522881f1~mv2_d_1920_1920_s_2.jpg/v1/fill/w_325,h_706,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/697bc8_8267510d9e19448297fc161a522881f1~mv2_d_1920_1920_s_2.jpg" alt="Plants">
-                    </div>   -->
             </article>
             <article class="frame capital title succulents">
                 <p>Succulents</p>
                 <p>-</p>
                 <button>Shop Collection</button>
-                <!-- <div class="img-wrapper">
-                    <img src="" alt="Succulents">
-                </div> -->
             </article>
         </section>
         <section class="about">
@@ -82,24 +78,26 @@
         </section>
         <section class="about-img">
             <div class="img-wrapper">
-                <img src="./img/Screenshot 2022-11-18 005622.jpg" alt="">
+                <img src="./img/Screenshot 1.jpg" alt="">
             </div>
             <div class="img-wrapper">
-                <img src="./img/home-bg.jpg" alt="">
+                <img src="./img/Screenshot 2.jpg" alt="">
             </div>
         </section>
         <section class="buy">
             <div class="img-wrapper">
-                <img src="./img/ac9cb2_7d1d010b844348ce8235c16e73210f81_mv2.jpg" alt="">
+                <img src="./img/Screenshot 3.jpg" alt="">
             </div>
+        </section>
+        <section class="buy-online">
             <div class="buy-online">
                 <p class="capital">buy online now & get 10% off !</p>
                 <button>Shop Now</button>
             </div>
         </section>
-        <section class="form">
-            <p>for special requests & orders</p>
-            <form action="" method="post">
+        <section class="request">
+            <p class="capital">for special requests & orders</p>
+            <form action="" method="post" class="form">
                 <label for="first-name">First Name *</label>
                 <input type="text" name="first-name" id="first-name">
                 <label for="last-name">Last Name *</label>
@@ -114,8 +112,10 @@
             </form>
         </section>
         <section>
-            <img src="" alt="">
-        </section>
+            <div class="img-wrapper">
+                <img src="./img/Screenshot 4.jpg" alt="Plants">
+            </div>
+            </section>
         <section class="address">
             <p class="capital">our store</p>
             <p>Address: 500 Terry Francois Street San Francisco, CA 94158</p>
@@ -123,9 +123,10 @@
             <p>Email: info@mysite.com</p>
         </section>
     </main>
-
+    <footer>
     <!-- Please leave this in to credit the creators of this design -->
-    <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
+        <!-- <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p> -->
+    </footer>
 </body>
 
 </html>

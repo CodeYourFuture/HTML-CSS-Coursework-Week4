@@ -1,5 +1,5 @@
 /* Add your CSS here */
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Kolker+Brush&family=Raleway:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Outfit:wght@200&display=swap');
 
 /* Fonts and Colors */
 
@@ -10,9 +10,8 @@
     --white: #fff;
     --transparentWhite: rgb(0,0,0,0.75);
 
-    --font1: 'Indie Flower',cursive;
-    --font2: 'Kolker Brush',cursive;
-    --font3:'Raleway',sans-serif;
+    --font1: 'Fjalla One',sans-serif;
+    --font2: 'Outfit',sans-serif;
 }
 
 /* General */
@@ -32,6 +31,7 @@ html {
 }
 
 body {
+    font-family: var(--font1);
     text-align: center;
     color: var(--redBrown);
     background-color: var(--lightGray);
@@ -45,6 +45,7 @@ body {
     "about"
     "about-img"
     "buy"
+    "buy-online"
     "form"
     "footer";
 }
@@ -79,32 +80,94 @@ header{
 .header-title{
     display: flex;
     justify-content: space-between;
+    padding: 20px 50px;
+    text-align: left;
 }
 
 .header-title p{
     font-size: 20px;
 }
 
-.nav-list{
+.nav-list {
+    list-style: none;
+}
+
+nav {
+    grid-area: nav;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;    
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 1;
+    background-color: var(--lightGray);
+    transition: 0.5s ease-in-out;
+}
+
+.open-menu,
+.close-menu {
+    position: absolute;
+    cursor: pointer;
+    font-size: 2rem;
+    display: block;
+}
+
+.open-menu {
+    top: 5.5rem;
+    right: 1.5rem;
+}
+
+.close-menu {
+    top: 5.5rem;
+    right: 2rem;
+}
+
+#check {
+    display: none;
+}
+
+#check:checked~.menu {
+    right: 0;
+}
+
+.nav-link,
+.footer-wrapper {
+    padding: 1.5rem;
+}
+
+.nav-link a {
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    color: var(--redBrown);
+    padding: 5px 10px;
 }
 
 .hero{
     grid-area: hero;
-    background-image: url("../img/pl0000004093_card2_lg_edited.jpg");
+    background-image: url("../img/hero.jpg");
     background-size: cover;
-    /* background-attachment: fixed; */
     padding: 10%;
     line-height: 100px;
     height: auto;
     color: var(--white);
-    font-family: var(--font3);
 }
 
 .hero span{
     text-decoration-line: underline;
+}
+
+.hero img{
+    filter: invert(100%);
 }
 
 .capital{
@@ -125,6 +188,13 @@ header{
     font-size: 15px;
 }
 
+.line{
+    width: 10px;
+    height: 5x;
+    background-color: var(--redBrown);
+    display: block;
+    position: absolute;
+}
 .products{
     grid-area: products;
     display: flex;
@@ -143,15 +213,15 @@ header{
 }
 
 .cacti {
-    background-image: url("../img/Cactus\ \ \ .jpg");
+    background-image: url("../img/Cacti.jpg");
 }
 
 .plants{
-    background-image: url("../img/77384c8c8e254a8391f88652f06ceada.jpg");
+    background-image: url("../img/Plants.jpg");
 }
 
 .succulents{
-    background-image: url("../img/2ed75b70e2284f0aa633a9891d94e11f.jpg");
+    background-image: url("../img/Succulents.jpg");
 }
 
 .img-wrapper{
@@ -169,7 +239,7 @@ header{
 }
 
 .about{
-    font-family: var(--font1);
+    font-family: var(--font2);
     grid-area: about;
     font-size: 20px;
     background-color: var(--white);
@@ -186,6 +256,7 @@ header{
 }
 
 .buy-online{
+    grid-area: buy-online;
     padding: 20% 10%;
     font-size: 65px;
     background-color: var(--greenBlack);
@@ -199,6 +270,65 @@ header{
     font-size: 15px;
 }
 
+.request{
+    grid-area: form;
+    background-color: var(--white);
+    margin: 50px 20px 0px 20px;
+    padding: 40px;
+}
+
+.request p{
+    color: var(--redBrown);
+    font-size: 40px;
+    padding: 20px 60px;
+    font-weight: normal;
+    font-family: var(--font2);
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 20px;
+    color: black;
+}
+form input,
+form textarea{
+    width: 100%;
+    margin: 15px 0px;
+    padding: 10px;
+}
+
+form button{
+    background-color: var(--redBrown);
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: var(--white);
+    margin: 20px 0px;
+}
 
 
+@media screen and (min-width:540px) {
+
+    header{
+        position: fixed;
+    }
+
+    body {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(8, auto);
+            grid-template-areas:
+                "header header"
+                "hero hero"
+                "products products"
+                "about about-img"
+                "buy buy-online"
+                "form form"
+                "footer footer";
+        }
+
+        .hero{
+            background-attachment: fixed;
+        }
 /* Dont' forget to link this file to your HTML in the <head> */
