@@ -1,0 +1,314 @@
+/* Add your CSS here */
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Quicksand', sans-serif; */
+
+:root {
+  --dark-beige: #e6dacd;
+  --light-beige: #f4ece6;
+  --royal-blue: #0150fd;
+  --black: #000;
+  --white: #fff;
+  --font_1: normal normal normal 16px/1.4em avenir-lt-w01_35-light1475496,
+    avenir-lt-w05_35-light, sans-serif;
+}
+
+/* Dont' forget to link this file to your HTML in the <head> */
+
+body {
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+header {
+  background-color: var(--white);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto auto;
+  padding-bottom: 40%;
+  justify-content: center;
+  font-family: "Quicksand", sans-serif;
+  grid-column-gap: 2rem;
+  /*position: absolute;
+  top: 0;*/
+}
+
+h1 {
+  font-weight: 1000;
+  font-family: "Quicksand", sans-serif;
+}
+.box {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: var(--royal-blue);
+  margin-right: 1rem;
+}
+
+.h1-header {
+  display: flex;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  font-size: 1.5em;
+  align-items: center;
+  font-weight: bold;
+  margin: 0;
+}
+
+header p {
+  grid-column: 1 / 2;
+  grid-row: 2/3;
+  margin: 0;
+}
+
+.nav-1 {
+  grid-column: 2 /3;
+  grid-row: 1 / 2;
+  position: relative;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  z-index: 100;
+  background-color: var(--light-beige);
+  transition: all 0.2s ease-in;
+}
+.menu li {
+  padding-left: 30px;
+  margin-top: 20px;
+}
+
+.menu li a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--black);
+  text-align: center;
+  transition: 0.15s ease-in-out;
+  position: relative;
+  text-transform: uppercase;
+  padding: 10px;
+  font-weight: 950;
+  font-family: "Quicksand", sans-serif;
+}
+#a-style {
+  color: var(--royal-blue);
+}
+.menu li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--dark-beige);
+  transition: 0.15s ease-in-out;
+}
+
+.open_menu,
+.close_menu {
+  margin: 1rem;
+  content: "";
+  position: absolute;
+
+  cursor: pointer;
+  font-size: 24px;
+  display: block;
+}
+
+.open_menu {
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.close_menu {
+  top: 20px;
+  right: 20px;
+}
+
+#check {
+  display: none;
+}
+
+#check:checked ~ .menu {
+  right: 0;
+}
+
+.line {
+  display: block;
+  width: 13px;
+  height: 3px;
+  margin-bottom: 6px;
+  background-color: var(--royal-blue);
+}
+
+.second {
+  width: 25px;
+}
+
+.third {
+  margin-left: 12px;
+}
+
+.right-close {
+  display: block;
+  width: 25px;
+  height: 2px;
+  margin-bottom: 4px;
+  background-color: var(--black);
+  transform: rotate(-45deg);
+}
+
+.left-close {
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 2px;
+  margin-right: 4px;
+  background-color: var(--black);
+  transform: rotate(45deg);
+}
+
+hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--light-beige);
+  position: absolute;
+  margin: auto;
+  top: 12%;
+  font-size: 12px;
+  width: 90%;
+}
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.figure-img {
+  border-radius: 100%;
+  margin: 1rem;
+}
+
+figcaption {
+  font-size: 2em;
+  font-weight: 900;
+  font-family: "Quicksand", sans-serif;
+}
+
+.under-line {
+  display: block;
+  width: 55%;
+  height: 3px;
+  background-color: var(--royal-blue);
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.header-btn {
+  display: flex;
+
+  gap: 1rem;
+}
+.btn-style {
+  background-color: var(--light-beige);
+  padding: 0.55rem 1.5rem;
+  border-radius: 20px;
+  font-weight: bold;
+  box-shadow: none;
+  font-size: 1rem;
+  width: 100%;
+}
+.left-btn {
+  background-color: var(--royal-blue);
+  color: #ffffff;
+  border: none;
+  width: 60%;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
+.nav-2 {
+  background-color: var(--white);
+  margin-bottom: 1rem;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.nav-2 ul {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  list-style: none;
+  padding: 0rem 5rem;
+
+  justify-content: space-evenly;
+  margin: 0.5rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 70%;
+  background-color: var(--dark-beige);
+  font-size: 16px;
+  top: 10%;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 0;
+  line-height: 1.5rem;
+  text-align: left;
+  width: 100%;
+}
+main h1 {
+  text-align: left;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto auto;
+
+  margin-left: 1rem;
+}
+
+.first-child {
+  grid-column: 1 / 2;
+}
+
+.second-child {
+  grid-column: 2 / 3;
+}
+
+.third-child {
+  grid-column: 1 / 2;
+}
+
+.fourth-child {
+  display: none;
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+}
+
+.fifth-child {
+  display: none;
+  grid-column: 1 / 2;
+}
+
+.nav-footer {
+  justify-content: space-between;
+}
