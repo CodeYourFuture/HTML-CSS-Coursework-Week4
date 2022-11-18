@@ -14,9 +14,6 @@ header {
   line-height: 2%;
 }
 
-@media screen and (min-width: 900px) {
-}
-
 main {
   font-family: "Quicksand", sans-serif;
   display: flex;
