@@ -70,6 +70,7 @@ body {
     gap: 5px;
     margin-right: 0px;
     margin-top: 35px;
+    
    
 }
 .navbar {
@@ -90,6 +91,30 @@ body {
 .middle {
  width: 30px;
 }
+ /* hamburger menu with checkbox */
+#hamburger-checkbox {
+    position: absolute;
+    /* width: 40px;
+    height: 40px; */
+    border: none;
+    display: none;
+}
+
+.ham-open {
+    display: none;
+    background-color: #E6DACD;
+    border: 1px solid #E6DACD;
+    padding: 40px;
+    z-index: 100;
+}
+    
+
+#hamburger-checkbox:checked ~ ham-open {
+    display: block;
+ }
+
+/* end of hamburger menu with checkbox */
+
 .bottom {
  width:15px;
  align-self: flex-end;
@@ -99,7 +124,8 @@ body {
     /* width: 150px; */
     border-radius: 20px;
     border: 1px solid gray;
-    cursor: pointer;   
+    cursor: pointer;
+    justify-content: space-evenly;   
 }
 .btn-r, .btn-p:hover {
     background-color: #0150FD;
