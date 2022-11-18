@@ -1,0 +1,334 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* the suggested font face from the README.md is completely incorrect so... */
+@font-face {
+  font-family: "Avenir LT W01 35 Light";
+  src: url("../fonts/avenir-lt-w01-35-light.woff2");
+  /* this was the closest i could find to the original, down to the exact name, but its not perfect */
+}
+@font-face {
+  font-family: "Avenir LT W01 85 Heavy";
+  src: url("../fonts/avenir-lt-w01-85-heavy.woff2");
+  /* this was the closest i could find to the original, down to the exact name, but its not perfect */
+}
+
+/* CSS VARIABLES FOR THE COLOUR PALLETTE */
+:root {
+  --dark-beige: #E6DACD;
+  --light-beige: #F4ECE6;
+  --royal-blue: #0150FD;
+  --black: #000;
+  --white: #FFF;
+  --dark-gray: #5C5752;
+  --red: #FF4040;
+  --shadow: rgba(138, 131, 124, 0.23);
+}
+
+/* BASIC RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  /* border: 1px solid red; */
+  /* ^ design process layout border toggle */
+}
+
+html {
+  font-size: 10px;
+  /* to make REM units intuitive multiples of 10 */
+}
+
+body {
+  overflow-y: scroll;
+  /* always show vertical scroll-bar to avoid jumping */
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: var(--white);
+}
+
+@media screen and (min-width: 800px) {
+  header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 3.8rem;
+    height: 12.6rem;
+    /* ^ height value from WIX */
+    /* but i don't like fixed values */
+  }
+}
+
+.header-name-title-container {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  gap: 0.2rem;
+}
+
+@media screen and (min-width: 800px) {
+  .header-name-title-container {
+    flex-direction: row;
+    align-items: center;
+    gap: none;
+  }
+}
+
+.header-name-container {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.header-name {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 800px) {
+  .header-name {
+    font-size: 2.5rem;
+  }
+}
+
+.header-name-square {
+  width: 1.6rem;
+  height: 1.6rem;
+  background-color: var(--royal-blue);
+}
+
+.header-name-slash {
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+  .header-name-slash {
+    display: block;
+    padding: 0 0.8rem;
+    font-family: "Avenir LT W01 35 Light", sans-serif;
+    font-size: 1.7rem;
+  }
+}
+
+.header-title {
+  text-transform: uppercase;
+  font-family: "Avenir LT W01 35 Light", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+@media screen and (min-width: 800px) {
+  .header-title {
+    font-size: 1.7rem;
+  }
+}
+
+/* HEADER NAV MOBILE */
+.nav-mobile {
+  display: block;
+}
+
+@media screen and (min-width: 800px) {
+  .nav-mobile {
+    display: none;
+  }
+}
+
+.nav-mobile-link {
+  display: flex;
+  flex-direction: column;
+  gap: 0.64rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-mobile-burger-top-layer,
+.nav-mobile-burger-middle-layer,
+.nav-mobile-burger-bottom-layer {
+  display: block;
+  background-color: var(--royal-blue);
+  height: 0.3rem;
+  width: 2.6rem;
+  border-radius: 1rem;   
+}
+
+.nav-mobile-burger-top-layer {
+  width: 50%;
+}
+
+.nav-mobile-burger-middle-layer {
+  /* width: 100%; */
+  /* this is default */
+}
+
+.nav-mobile-burger-bottom-layer {
+  width: 50%;
+  align-self: flex-end;
+}
+
+/* HEADER NAV DESKTOP */
+.nav-desktop {
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+  .nav-desktop {
+    display: block;
+  }
+}
+
+.nav-desktop-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-desktop-list-item {
+  padding: 0 1rem;
+}
+
+.nav-desktop-list-item-link {
+  font-family: "Avenir LT W01 35 Light", sans-serif;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-desktop-list-item-link:hover {
+  color: var(--royal-blue);
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  gap: 1rem;
+  background-color: var(--white);
+}
+
+@media screen and (min-width: 800px) {
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3.8rem;
+    gap: none;
+    height: 11rem;
+    /* ^ height value from WIX */
+    /* but i don't like fixed values */
+  }
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+@media screen and (min-width: 800px) {
+  .contact-container {
+    flex-wrap: nowrap;
+    order: 2;
+  }
+}
+
+.contact-call-container,
+.contact-write-container,
+.contact-follow-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex-basis: 50%;
+  padding-bottom: 1.6rem; 
+}
+
+@media screen and (min-width: 800px) {
+  .contact-call-container,
+  .contact-write-container,
+  .contact-follow-container {
+    flex-basis: auto;
+    align-items: center;
+    padding: 0 1.6rem;
+  }
+}
+
+.contact-call-title,
+.contact-write-title,
+.contact-follow-title {
+  font-family: "Avenir LT W01 85 Heavy", sans-serif;
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 800px) {
+  .contact-call-title,
+  .contact-write-title,
+  .contact-follow-title {
+    font-size: 1.4rem;
+  }
+}
+
+.contact-call-link,
+.contact-write-link {
+  display: block;
+  font-family: "Avenir LT W01 35 Light", sans-serif;
+  font-size: 1.4rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.contact-follow-icons-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.contact-follow-icon-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.contact-follow-icon {
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 800px) {
+  .contact-follow-icon {
+    font-size: 1.6rem;
+  }
+}
+
+.copyright-container {
+  display: flex;
+  flex-direction: column;
+  font-family: "Avenir LT W01 35 Light", sans-serif;
+  font-size: 1.4rem;
+}
+
+@media screen and (min-width: 800px) {
+  .copyright-container {
+    order: 1;
+    justify-content: center;
+  }
+}
+
+.copyright-date-name {
+  /* if needed later */
+}
+
+.copyright-attribution {
+  /* if needed later */
+}
+
+.copyright-attribution-link {
+  color: inherit;
+}
