@@ -1,3 +1,474 @@
-/* Add your CSS here */
+/** {
+  border: 1px solid red;
+}*/
 
-/* Dont' forget to link this file to your HTML in the <head> */
+body {
+  font-family: "Quicksand", sans-serif;
+  min-width: auto;
+  margin: 1em;
+}
+
+/*STYLES FOR HEADER*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blue-box {
+  width: 1.5em;
+  height: 1.5em;
+  background-color: #0150fd;
+  margin-top: 0.3em;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
+}
+
+.name-title {
+  margin-left: 1em;
+  margin-top: 1em;
+}
+
+.name-title div {
+  display: flex;
+}
+
+.name-title h2 {
+  margin: 0 0 0 0.2em;
+  font-weight: bold;
+}
+
+#slash {
+  display: none;
+}
+
+.name-title p {
+  margin-top: 0.1em;
+}
+
+.nav-bar {
+  width: 30%;
+  margin: 1em 0.5em 1.5em 1em;
+  display: block;
+}
+
+label span {
+  max-width: 33px;
+  height: 3px;
+  margin-bottom: 7px;
+  background: #0150fd;
+  border-radius: 2px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3em;
+  padding: 0.4em;
+}
+
+.one,
+.three {
+  width: 13.2px;
+}
+
+.three {
+  margin-left: 1em;
+}
+
+input {
+  display: none;
+}
+
+ul {
+  display: none;
+}
+
+#check:checked ~ .nav-items {
+  display: block;
+  list-style: none;
+}
+
+.nav-items {
+  padding: 1.5em 0.3em 0.3em 0.3em;
+  background-color: #f4ece6;
+  text-align: center;
+  position: fixed;
+  z-index: 1;
+  width: 8em;
+}
+
+.nav-items li {
+  margin-bottom: 1em;
+}
+
+.nav-items li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black;
+}
+
+.nav-items li a:hover {
+  color: #0150fd;
+}
+
+@media screen and (min-width: 900px) {
+  .name-title {
+    display: flex;
+    margin-top: 1.5em;
+    position: sticky;
+    top: 0;
+  }
+
+  #slash {
+    display: inline;
+    margin: 0.5em;
+  }
+
+  .title {
+    padding-top: 0.5em;
+  }
+
+  .nav-bar {
+    width: 50%;
+    margin-top: 0.5em;
+    position: sticky;
+    top: 0;
+  }
+
+  .nav-items {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0.5em;
+    background-color: #fff;
+    width: 41em;
+  }
+
+  label {
+    display: none;
+  }
+
+  .nav-items li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+  }
+
+  .nav-items li {
+    list-style: none;
+    margin-right: 0.5em;
+  }
+}
+
+/*STYLE FOR MAIN ASIDE*/
+
+#brown {
+  width: 100%;
+  background-color: #e6dacd;
+  height: 43em;
+  position: relative;
+  right: 0em;
+  top: 13em;
+}
+
+.card img {
+  width: 10em;
+  height: 10em;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: 2em;
+}
+
+.card {
+  background-color: #f4ece6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 40em;
+  margin-left: 1em;
+  margin-right: 0.8em;
+  position: absolute;
+  top: 118px;
+  right: 72px;
+}
+
+.card .title {
+  display: none;
+}
+
+#first {
+  margin-bottom: 0;
+}
+
+#last {
+  margin-top: 0;
+}
+
+.card span {
+  width: 5em;
+  height: 3px;
+  background-color: #0150fd;
+}
+
+.button {
+  margin: 3em 0.5em;
+}
+
+.resume {
+  background-color: #0150fd;
+  color: #fff;
+  padding: 0.5em 2.3em;
+  border-radius: 20px;
+  border: none;
+  margin-right: 1em;
+  font-weight: bold;
+}
+
+.projects {
+  background-color: #f4ece6;
+  color: #000;
+  padding: 0.5em 2.3em;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.icons {
+  background-color: #fff;
+  max-height: 3em;
+  width: 100%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  text-align: center;
+  padding: 1em 0;
+  /* display: flex;
+    justify-content: space-around; */
+}
+
+.fa-brands {
+  margin-right: 1.5em;
+}
+
+@media screen and (min-width: 900px) {
+  .button {
+    display: none;
+  }
+
+  .card .title {
+    display: block;
+  }
+
+  .icons {
+    margin-bottom: 0;
+  }
+
+  #brown {
+    max-width: 125%;
+    background-color: #e6dacd;
+    height: 42em;
+    position: relative;
+    right: 8.8em;
+    top: 0;
+  }
+}
+
+/*STYLE FOR MAIN SECTION*/
+
+.button2 {
+  display: none;
+}
+
+.info,
+.card p {
+  text-align: left;
+}
+
+.info {
+  margin-left: 1.4em;
+  position: absolute;
+  top: 41em;
+  padding-left: 0.5em;
+  padding-right: 3em;
+  margin-right: 2.5em;
+}
+
+.info h1 {
+  margin-bottom: 0;
+  margin-top: 0.2em;
+  font-size: 3em;
+}
+
+.info h2 {
+  font-size: 1em;
+}
+
+@media screen and (min-width: 900px) {
+  main {
+    display: grid;
+    grid-template-columns: auto auto;
+    max-width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .card {
+    margin-left: 1em;
+    width: 21em;
+    position: absolute;
+    top: 16em;
+    left: 6em;
+  }
+
+  .info {
+    width: 23em;
+    margin-right: 3em;
+    padding: 0.5em;
+    margin-left: 10px;
+    position: absolute;
+    right: 0em;
+    top: 16em;
+  }
+
+  .info h1 {
+    font-size: 5em;
+  }
+
+  .button2 {
+    display: block;
+  }
+
+  .projects {
+    background-color: #fff;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .name-title {
+    display: flex;
+    margin-top: 1.5em;
+    position: sticky;
+    margin-left: 4em;
+    top: 0;
+  }
+
+  .card {
+    margin-left: 1em;
+    width: 21em;
+    position: absolute;
+    top: 16em;
+    left: 11em;
+  }
+
+  .info {
+    width: 23em;
+    margin-right: 3em;
+    padding: 0.5em;
+    margin-left: 10px;
+    position: absolute;
+    right: 13em;
+    top: 16em;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .info {
+    width: 23em;
+    margin-right: 3em;
+    padding: 0.5em;
+    margin-left: 10px;
+    position: absolute;
+    right: 20em;
+    top: 16em;
+  }
+
+  .card {
+    margin-left: 1em;
+    width: 21em;
+    position: absolute;
+    top: 16em;
+    left: 17em;
+  }
+
+  #brown {
+    max-width: 85%;
+    background-color: #e6dacd;
+    height: 42em;
+    position: relative;
+    right: 8.6em;
+  }
+}
+
+/*STYLING FOR FOOTER*/
+
+footer {
+  position: absolute;
+  top: 63em;
+}
+
+h3 {
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 13em 13em;
+}
+
+.phone,
+.social-media {
+  margin-left: 2em;
+}
+
+.email {
+  margin-left: 1em;
+}
+
+.contact p {
+  margin-top: 0.5em;
+}
+
+.copyright {
+  margin-left: 2em;
+}
+
+.copyright p {
+  margin-bottom: 0;
+}
+.p-two {
+  margin-top: 0;
+}
+
+.declaration {
+  min-width: auto;
+}
+
+@media screen and (min-width: 900px) {
+  footer {
+    position: absolute;
+    top: 51em;
+    display: grid;
+    grid-template-columns: repeat(2, 20em);
+    grid-template-rows: repeat(2, auto);
+  }
+
+  .contact {
+    grid-column: 3 / span 2;
+    display: flex;
+    justify-content: flex-end;
+    width: 40em;
+  }
+
+  .contact article {
+    margin-left: 0.5em;
+  }
+
+  .copyright {
+    grid-column: 1 / span 2;
+  }
+}
