@@ -1,3 +1,302 @@
 /* Add your CSS here */
+body {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    
+}
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "poppins";
+  font-weight: 600;
+  margin: 0;
+}
+body{
 
-/* Dont' forget to link this file to your HTML in the <head> */
+    margin: 0;
+    padding: 0;
+}
+.content{
+    padding: 0 0.938rem;
+margin: 0 auto;
+min-width: 37.5rem;
+
+}
+/* :focus{
+    outline: none;
+} */
+
+.topnav h1 {
+    margin-top: 3.45rem;
+}
+
+.topnav {
+    position: relative;
+    width: 100%;
+    z-index: 9999;   
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+.topnav > .content{
+    height: 4.375rem;
+    margin-right: 2.45rem;
+}
+.topnav .maya{
+height: 4.375rem;
+margin-left: 10%;
+}
+.topnav .link{
+    float: right;
+    color: #838994;
+    font-size: 1.04rem;
+    margin-top: 1.7rem;
+    
+}
+.topnav .link li{
+    display: inline-block;
+    margin-left: 1.563rem;
+    
+}
+.topnav .link li.active{
+    color: #333;
+    font-weight: 500;
+}
+.topnav .link li:hover{
+cursor: pointer;
+color: #333333;
+}
+
+
+
+body {
+    display: grid;
+  margin: 0;
+  padding: 1rem;
+  color: black;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+/* header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* main */
+.main {
+    background-color: #E6DACD;
+    height: 736px;
+    margin-top: 20px;
+    display: block;
+    
+ 
+   
+  
+}
+/* card */
+
+.card {
+    background-color: #d7cac1;
+    width:600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    /* border: solid blue 4px; */
+    margin: auto;
+    position: absolute;
+    padding: 30px; 
+    margin-top: 40px;
+   align-items: flex-start;
+    text-align: center;
+   flex-wrap: wrap;
+    transform: translate(7%, -35%);
+    box-shadow: -10px 4px 20px rgb(107, 86, 86);  
+ }
+.card2 {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 600px;
+    flex-direction: column;
+    
+
+
+}
+.article1 {
+    background-color: #E6DACD;
+    height: auto;
+    padding: 20px;
+
+}
+.card_image {
+    width: 40%;
+    border-radius: 50%;
+    margin: auto;
+    height: auto;
+    /* border: solid red 4px; */
+}
+
+.links_card_container {
+  display: flex;
+  justify-content: space-between;
+  /* border: solid 4px yellow; */
+}
+
+.links_card {
+  border: solid 1px black;
+  border-radius: 15px;
+  width: 30%;
+  padding: 8px 15px 8px 15px;
+  text-align: center;
+}
+button{
+background-color: #1551d1;
+
+        padding: 15px;
+        /* width: 150px; */
+        border-radius: 20px;
+        border: 1px solid rgb(78, 19, 180);
+        cursor: pointer;
+        justify-content: space-evenly;   
+    }
+}
+button :hover{
+    background-color: var(--lightBeige);
+    border: 2px solid var(--Black);
+    color: var(--Black);
+
+}
+.blueSquer{
+    width: 15px;
+    height: 15px;
+    background-color: var(--royalBlue);
+}
+.blueSquer-p{
+    display: flex; 
+    align-items: baseline;
+    font-size: 20px;
+    gap :5px; 
+    font-weight:bolder;
+}  
+
+
+/* Naviation */
+
+#navigation_toggle {
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#navigation_toggle a {
+  text-decoration: none;
+  color: #232323;
+  transition: color 0.3s ease;
+}
+
+#navigation_toggle a:hover {
+  color: tomato;
+}
+
+
+#navigation_toggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+  -webkit-touch-callout: none;
+}
+
+/* Toggle */
+
+#navigation_toggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #0150FD;
+  border-radius: 3px;
+  z-index: 1;
+}
+
+#menu {
+  position: absolute;
+  width: 100%;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  /* padding-top: 125px; */
+  background: #F4ECE6;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  display: none;
+}
+
+#menu li {
+  padding: 10px 0;
+  font-size: 22px;
+  font-family: Poppins, sans-serif;
+  font-weight: bold;
+}
+
+#navigation_toggle input:checked ~ ul {
+  display: block;
+}
+
+/* social styles */
+.follow-links-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;    
+    background-color: var(--white);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 150px;
+    margin:0 auto;
+    padding: 20px;
+
+
+
+}  
+.follow-links-container{
+    width: 100%;
+    background-color: var(--white);
+
+
+}
+
+.images_socialMedia {
+    width: 25px;
+    height: 25px;
+} 
+
+
+
+@media screen and (min-width: 900px) {
+    .toggle-menu {
+          display: none;
+        }
+      }
