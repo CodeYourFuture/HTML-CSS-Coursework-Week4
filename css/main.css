@@ -136,6 +136,7 @@ hr {
   background-color: var(--white);
   margin: 1em;
   padding: 1em 0;
+  grid-area: s;
 }
 .socialBar a {
   text-decoration: none;
@@ -168,4 +169,43 @@ footer {
   font-family: "Poppins", sans-serif;
   font-size: 19px;
   margin: 0 0 1em 0;
+}
+
+footer {
+  display: grid;
+  margin: 5%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "call w"
+    " p e "
+    "follow ."
+    "s ."
+    "copyR copyR";
+}
+footer p {
+  font-size: 14px;
+}
+#call {
+  grid-area: call;
+}
+#phoneNo {
+  grid-area: p;
+  font-family: "Quicksand", sans-serif;
+  margin-bottom: 1em;
+}
+#write {
+  grid-area: w;
+}
+#email {
+  grid-area: e;
+  font-family: "Quicksand", sans-serif;
+  margin-bottom: 1em;
+}
+#follow {
+  grid-area: follow;
+}
+#copyright {
+  grid-area: copyR;
+  font-family: "Quicksand", sans-serif;
+  margin-bottom: 1em;
 }
