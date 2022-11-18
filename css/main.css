@@ -10,15 +10,30 @@ body {
 main {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 400px 80px 50px 250px;
+  grid-template-rows: 400px 400px;
   padding-bottom: 100px;
 }
+
+@media screen and (min-width: 900px) {
+  main {
+    grid-template-columns: 100px 1fr 1fr 100px;
+    grid-template-rows: 600px;
+    padding-bottom: 0;
+  }
+}
+
 .hero {
   display: grid;
   grid-template-columns: 20px 1fr 50px;
   grid-template-rows: 30px;
   align-items: center;
   padding: 20px;
+}
+
+@media screen and (min-width: 900px) {
+  .hero {
+    grid-template-columns: 20px 1fr 1fr 50px;
+  }
 }
 
 .blue-square {
@@ -45,74 +60,39 @@ main {
   margin-bottom: 0;
 }
 
-@media screen and {
-  min-width: 900px;
-}
 /* Hamburger Menu Starts Here  */
 
-#menuToggle {
-  grid-column: 3;
-  display: block;
-  position: relative;
-  z-index: 1;
-}
-
-#menuToggle a {
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-#menuToggle a:hover {
-  color: tomato;
-}
-
-#menuToggle input {
-  display: block;
+.blue-line {
   width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
-  cursor: pointer;
-  opacity: 0;
-  z-index: 2;
+  height: 5px;
+  background-color: #0150fd;
+  margin: 10px;
+  border-radius: 25px;
 }
 
-#menuToggle span {
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-  background: #0150fd;
-  border-radius: 3px;
-  z-index: 1;
+@media screen and (min-width: 900px) {
+  .mobile-navbar {
+    display: none;
+  }
 }
 
-#menu {
-  position: absolute;
-  width: auto;
-  margin: -100px 0 0 -150px;
-  padding: 50px;
-  padding-top: 125px;
-  background: #ededed;
-  list-style-type: none;
+/* Desktop Navbar Starts Here  */
+.desktop-navbar {
   display: none;
 }
 
-#menu li {
-  padding: 10px 0;
-  font-size: 22px;
-  color: #0150fd;
-  font-weight: bold;
+@media screen and (min-width: 900px) {
+  .desktop-navbar {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
 }
-#menuToggle input:checked ~ ul {
-  display: block;
-}
+/* Main Starts Here  */
 
 .main-card {
   display: flex;
-  grid-column: 1;
+  grid-column: 1 / span 4;
   grid-row: 1;
   flex-direction: column;
   align-items: center;
@@ -134,6 +114,16 @@ main {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 900px) {
+  main {
+    grid-template-rows: 100px 400px 100px;
+  }
+  .main-card {
+    grid-column: 2;
+    grid-row: 2;
+  }
+}
+
 .main-card h2 {
   margin-bottom: 15px;
   text-align: center;
@@ -143,6 +133,12 @@ main {
   display: flex;
   flex-direction: row;
   gap: 15px;
+}
+
+@media screen and (min-width: 900px) {
+  .main-card-btn {
+    display: none;
+  }
 }
 
 .resume-btn {
@@ -201,6 +197,18 @@ main {
   padding-top: 60%;
   padding-bottom: 5%;
   margin-top: 200px;
+  margin-right: 0;
+}
+
+@media screen and (min-width: 900px) {
+  .text-card {
+    grid-column: 3;
+    grid-row: 2;
+    position: relative;
+    background-color: white;
+    padding-top: 0;
+    margin-top: 0;
+  }
 }
 
 .text-card h2 {
@@ -221,6 +229,16 @@ main {
   margin-right: 20px;
   margin-top: 0;
   margin-bottom: 0;
+}
+
+@media screen and (min-width: 900px) {
+  .desktop-background {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 3;
+    z-index: -2;
+    background-color: #e6dacd;
+    width: 85%;
+  }
 }
 
 footer {
