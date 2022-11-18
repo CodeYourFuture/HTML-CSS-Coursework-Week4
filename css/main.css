@@ -1,3 +1,264 @@
 /* Add your CSS here */
+body {
+  font-family: "Quicksand", Poppins;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
 
-/* Dont' forget to link this file to your HTML in the <head> */
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 400px 400px;
+  padding-bottom: 100px;
+}
+
+@media screen and (min-width: 900px) {
+  main {
+    grid-template-columns: 100px 1fr 1fr 100px;
+    grid-template-rows: 600px;
+    padding-bottom: 0;
+  }
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 20px 1fr 50px;
+  grid-template-rows: 30px;
+  align-items: center;
+  padding: 20px;
+}
+
+@media screen and (min-width: 900px) {
+  .hero {
+    grid-template-columns: 20px 1fr 1fr 50px;
+  }
+}
+
+.blue-square {
+  grid-column: 1;
+  background-color: #0150fd;
+  width: 20px;
+  height: 20px;
+  display: inline;
+}
+
+.hero h2 {
+  grid-column: 2;
+  font-size: 20px;
+  justify-items: left;
+  margin-left: 10px;
+}
+
+.hero h4 {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+  font-size: 15px;
+  font-weight: 250;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Hamburger Menu Starts Here  */
+
+.blue-line {
+  width: 40px;
+  height: 5px;
+  background-color: #0150fd;
+  margin: 10px;
+  border-radius: 25px;
+}
+
+@media screen and (min-width: 900px) {
+  .mobile-navbar {
+    display: none;
+  }
+}
+
+/* Desktop Navbar Starts Here  */
+.desktop-navbar {
+  display: none;
+}
+
+@media screen and (min-width: 900px) {
+  .desktop-navbar {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+/* Main Starts Here  */
+
+.main-card {
+  display: flex;
+  grid-column: 1 / span 4;
+  grid-row: 1;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4ece6;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.main-card-img {
+  height: 120px;
+  margin-top: 20px;
+  border-radius: 50%;
+}
+
+.main-card span {
+  width: 100px;
+  height: 3px;
+  background-color: #0150fd;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 900px) {
+  main {
+    grid-template-rows: 100px 400px 100px;
+  }
+  .main-card {
+    grid-column: 2;
+    grid-row: 2;
+  }
+}
+
+.main-card h2 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.main-card-btn {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+@media screen and (min-width: 900px) {
+  .main-card-btn {
+    display: none;
+  }
+}
+
+.resume-btn {
+  background-color: #0150fd;
+  border: none;
+  color: white;
+  padding: 8px 35px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 15px;
+}
+
+.project-btn {
+  background-color: #0150fd;
+  border: none;
+  color: white;
+  padding: 8px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 15px;
+}
+
+.social-media-handles {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  padding: 0;
+}
+
+.instagram-handle,
+.linkedin-handle,
+.twitter-handle {
+  width: 20px;
+  height: 20px;
+}
+
+.facebook-handle {
+  width: 30px;
+  height: 30px;
+}
+
+.text-card {
+  background-color: #e6dacd;
+  position: absolute;
+  z-index: -1;
+  padding-top: 60%;
+  padding-bottom: 5%;
+  margin-top: 200px;
+  margin-right: 0;
+}
+
+@media screen and (min-width: 900px) {
+  .text-card {
+    grid-column: 3;
+    grid-row: 2;
+    position: relative;
+    background-color: white;
+    padding-top: 0;
+    margin-top: 0;
+  }
+}
+
+.text-card h2 {
+  grid-column: 1;
+  grid-row: 2;
+  font-size: 70px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.text-card h3 {
+  grid-column: 1;
+  grid-row: 2;
+  font-weight: 50;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 900px) {
+  .desktop-background {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 3;
+    z-index: -2;
+    background-color: #e6dacd;
+    width: 85%;
+  }
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.bold-txt {
+  font-weight: bold;
+}
+
+.small-txt {
+  font-size: 14px;
+}
+
+.copyright {
+  grid-row: 3;
+  grid-column: 1 / span 2;
+  font-size: 10px;
+}
