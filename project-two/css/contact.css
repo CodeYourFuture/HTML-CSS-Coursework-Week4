@@ -1,0 +1,286 @@
+/* DESKTOP NAV ADJUSTMENT */
+.nav-desktop-list-item-contact {
+  color: var(--royal-blue);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  background-color: #E6DACD;
+}
+
+.main-container {
+  width: 28rem;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2.5rem;
+}
+
+@media screen and (min-width: 800px) {
+  .main-container {
+    width: 67.9rem;
+    padding-bottom: 5rem;
+  }
+}
+
+.contact-heading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+}
+
+@media screen and (min-width: 800px) {
+  .contact-heading-container {
+    padding-top: 9rem;
+    padding-bottom: 6rem;
+  }
+}
+
+.contact-heading-square {
+  width: 1.9rem;
+  height: 1.9rem;
+  background-color: var(--royal-blue);
+}
+
+@media screen and (min-width: 800px) {
+  .contact-heading-square {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+.contact-heading {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 2.9rem;
+}
+
+@media screen and (min-width: 800px) {
+  .contact-heading {
+    font-size: 3.5rem;
+  }
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+    "first-name"
+    "last-name"
+    "email"
+    "subject"
+    "message"
+    "submit";
+  padding: 3rem 1rem 5rem 1rem;
+  row-gap: 1rem;
+  background-color: var(--white);
+  box-shadow: var(--shadow) -11.31px 11.31px 25px 0px;
+}
+
+@media screen and (min-width: 800px) {
+  form {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+      "first-name last-name"
+      "email email"
+      "subject subject"
+      "message message"
+      "submit .";
+    column-gap: 3.5rem;
+    padding: 5rem 7rem 12rem 7rem;
+  }
+}
+
+.form-first-name-container,
+.form-last-name-container,
+.form-email-container,
+.form-subject-container,
+.form-message-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-first-name-container {
+  grid-area: first-name;
+}
+
+.form-last-name-container {
+  grid-area: last-name;
+}
+
+.form-email-container {
+  grid-area: email;
+}
+
+@media screen and (min-width: 800px) {
+  .form-email-container {
+    padding-top: 5rem;
+  }
+}
+
+.form-subject-container {
+  grid-area: subject;
+}
+
+@media screen and (min-width: 800px) {
+  .form-subject-container {
+    padding-top: 2rem;
+  }
+}
+
+.form-message-container {
+  grid-area: message;
+  padding-bottom: 1rem;
+  /* to offset the button below */
+}
+
+@media screen and (min-width: 800px) {
+  .form-message-container {
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+    /* to offset the button below */
+  }
+}
+
+.form-first-name-label,
+.form-last-name-label,
+.form-email-label,
+.form-subject-label,
+.form-message-label {
+  font-family: "Avenir LT W01 85 Heavy", sans-serif;
+  font-size: 1.6rem;
+  padding-bottom: 0.9rem;
+}
+
+@media screen and (min-width: 800px) {
+  .form-first-name-label,
+  .form-last-name-label,
+  .form-email-label,
+  .form-subject-label,
+  .form-message-label {
+    font-size: 1.4rem;
+  }
+}
+
+.form-label-asterisk {
+  color: var(--royal-blue);
+}
+
+.form-first-name-input,
+.form-last-name-input,
+.form-email-input,
+.form-subject-input,
+.form-message-input-mobile {
+  padding: 0.5rem 0.5rem 1rem 1.5rem;
+  border-bottom: 0.2rem solid var(--dark-gray);
+  color: var(--royal-blue);
+  font-family: "Avenir LT W01 85 Heavy", sans-serif;
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 800px) {
+  .form-message-input-mobile {
+    display: none;
+  }
+}
+
+.form-message-textarea-desktop {
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+  .form-message-textarea-desktop {
+    display: block;
+    width: 100%;
+    height: 10rem;
+    /* ^ THIS IS NOT WORKING THE TEXTAREA IS NOT WIDE ENOUGH AND TOO TALL*/
+    resize: none;
+    padding: 0.5rem 0.5rem 1rem 1.5rem;
+    border-bottom: 0.2rem solid var(--dark-gray);
+    color: var(--royal-blue);
+    font-family: "Avenir LT W01 85 Heavy", sans-serif;
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .form-first-name-input,
+  .form-last-name-input,
+  .form-email-input,
+  .form-subject-input,
+  .form-message-textarea-desktop {
+    font-size: 1.4rem;
+  }
+}
+
+/* if the input is valid then return to a black bottom border */
+.form-first-name-input:valid,
+.form-last-name-input:valid,
+.form-email-input:valid {
+  border-bottom: 0.2rem solid var(--dark-gray);
+}
+
+/* if input is invalid apply a red bottom border */
+/* !!! but this is implemented by default on the empty fields which are "required" */
+.form-first-name-input:invalid,
+.form-last-name-input:invalid,
+.form-email-input:invalid {
+  border-bottom: 0.2rem solid var(--red);
+  /* the line is thinner by 1px but this will cause "Page Shift?" Elements Jumping */
+}
+
+/* I MOVED THE HOVER and FOCUS rules BELOW to apply after the valid/invalid -- but this is JANKY */
+
+/* on hover blue apply a bottom border */
+.form-first-name-input:hover,
+.form-last-name-input:hover,
+.form-email-input:hover,
+.form-subject-input:hover,
+.form-message-input-mobile:hover,
+.form-message-textarea-desktop:hover {
+  border-bottom: 0.2rem solid var(--royal-blue);
+}
+
+/* when focused apply and maintain a blue bottom border */
+.form-first-name-input:focus,
+.form-last-name-input:focus,
+.form-email-input:focus,
+.form-subject-input:focus,
+.form-message-input-mobile:focus,
+.form-message-textarea-desktop:focus {
+  border-bottom: 0.2rem solid var(--royal-blue);
+  /* outline: none; */
+  /* ^ remove browser enforced outline */
+}
+
+.form-submit {
+  grid-area: submit;
+  justify-self: center;
+  width: 10rem;
+  height: 3rem;
+  border-radius: 2rem;
+  border: 0.2rem solid var(--royal-blue);
+  background-color: var(--royal-blue);
+  color: var(--white);
+  font-family: "Avenir LT W01 85 Heavy", sans-serif;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 800px) {
+  .form-submit {
+    width: 11.5rem;
+    height: 3.5rem;
+    justify-self: start;
+    font-size: 1.4rem;
+  }
+}
+
+.form-submit:active {
+  color: var(--black);
+  background-color: transparent;
+  transition: border-color .4s ease 0s,background-color .4s ease 0s;
+}
