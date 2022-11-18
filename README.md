@@ -11,28 +11,7 @@ Choose one of the designs below, and re-create the design to perfection, using C
 
 Here are 3 designs to choose from, along with suggested fonts and colours to use for your chosen projects:
 
-### **DESIGN 1: Prickles & Co**
-**An e-commerce site selling plants**
 
-![Prickles & Co homepage](./designs/Cactus%20shop.png)
-
-Live demo here: https://www.wix.com/website-template/view/html/1995
-### Fonts
-**Headings:** Fjalla One - Regular 400  
-https://fonts.google.com/specimen/Fjalla+One  
-**Subheadings:** Outfit - Extra-light 200  
-https://fonts.google.com/specimen/Outfit  
-**Body:** Outfit - Extra-light 200  
-https://fonts.google.com/specimen/Outfit  
-
-### Colors
-Red Brown: #A05941  
-Green Black: #133032  
-Light Grey: #EDEDEE  
-White: #FFF  
-Transparent White: rgba(0,0,0,0.75)
-
-=====================================
 
 ### **DESIGN 2: Resume**
 **A website to showcase skills and projects**
