@@ -141,7 +141,7 @@ p {
 .h1 {
     display: flex;
     font-size: 1.6em;
-    margin-left: 0;
+    margin-left: -6em;
     color: #000;
 }
 i { 
@@ -231,30 +231,52 @@ span {
 .main_image1 {
     display: none;
 } 
+ .login { 
+    display: none;
+}
+.fa-user-circle-o {
+    color:#FFF;
+}
 @media (min-width: 540px) {
   body {
-    background: rgb(204, 226, 219);
+    background-color:#FFF;
   }
 header {
     display: flex;
-    
     flex-direction: row-reverse;
-    
-}
-.bar1 {
-    
-    flex-direction: row-reverse;
-    justify-content: space-between;
 }
 .order {
-    
     justify-content: center;
+    padding: 3em 3em;
+}
+.bar1 {
+    display: flex;
+    flex-direction: row-reverse;
+    
+    margin-right: 2em;
+}
+.section {
+    display: flex;
+    justify-content: flex-start;
+    
+}
+.navbar {
+    margin-right: 30em;
+}
+.fa-user-circle-o {
+    margin-left: 6em;
+    color:#000
+}
+.login {
+    display: block;
+    font-size: .7em;
+    color: #000;
+}
+br {
+    display: none;
 }
 
 
 
-
-
-}
     
 
