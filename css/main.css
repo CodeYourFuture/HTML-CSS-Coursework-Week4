@@ -1,3 +1,171 @@
 /* Add your CSS here */
 
-/* Dont' forget to link this file to your HTML in the <head> */
+/* Don't forget to link this file to your HTML in the <head> */
+:root {
+  --darkBeige: #e6dacd;
+  --lightBeige: #f4ece6;
+  --royalBlue: #0150fd;
+  --black: #000;
+  --white: #fff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 5% 1fr 5%;
+  grid-template-areas:
+    "h h h"
+    " . c ."
+    "b b b"
+    "f f f";
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 14px;
+}
+p {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  margin: 0;
+}
+
+header {
+  grid-area: h;
+  margin: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 5%;
+}
+
+header h1,
+header p {
+  margin: 0;
+}
+input {
+  display: none;
+}
+#navbarImg {
+  width: 10%;
+  height: auto;
+  padding: 5%;
+}
+#square {
+  width: 15px;
+  height: 15px;
+  background-color: var(--royalBlue);
+  margin-bottom: 0px;
+  margin-top: 7px;
+}
+
+.name {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+ul {
+  display: none;
+}
+
+#toggle-menu:checked ~ ul,
+#navbarImg {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+img {
+  border-radius: 50%;
+  width: 40%;
+}
+hr {
+  width: 20%;
+  background-color: var(--royalBlue);
+  height: 2px;
+}
+#buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+#resumeButton {
+  background-color: var(--royalBlue);
+  color: var(--white);
+  font-family: "Poppins", sans-serif;
+  border-radius: 20px;
+  border: none;
+  padding: 5px 40px;
+}
+#projectsButton {
+  background-color: transparent;
+  color: var(--black);
+  font-family: "Poppins", sans-serif;
+  border-radius: 20px;
+  padding: 5px 30px;
+}
+#card {
+  grid-area: c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1em;
+  gap: 1em;
+  background-color: var(--lightBeige);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#card p {
+  font-size: 21px;
+}
+#card h1 {
+  display: none;
+}
+.socialBar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2em;
+  background-color: var(--white);
+  margin: 1em;
+  padding: 1em 0;
+}
+.socialBar a {
+  text-decoration: none;
+  color: var(--black);
+}
+footer {
+  grid-area: f;
+}
+
+.backgroundSection {
+  grid-area: b;
+  background-color: var(--darkBeige);
+  margin-top: -60%;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60% 5% 5% 5%;
+}
+.backgroundSection p {
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  margin-bottom: 1em;
+}
+.backgroundSection h1 {
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+}
+.backgroundSection h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 19px;
+  margin: 0 0 1em 0;
+}

@@ -1,21 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- Add a link to your custom CSS here -->
-
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Responsive grid project</title>
-</head>
+  </head>
 
-<body>
-
-    <!-- Add your markup here -->
-
-
-    <!-- Please leave this in to credit the creators of this design -->
-    <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
-</body>
-
+  <body>
+    <header>
+      <div class="name">
+        <div id="square"></div>
+        <p>Maya Nelson</p>
+      </div>
+      <div class="position"><h1>PROJECT MANAGER</h1></div>
+      <input id="toggle-menu" type="checkbox" />
+      <label for="toggle-menu">
+        <img
+          id="navbarImg"
+          alt="Responsive Navigation bar"
+          src="img/toggle img.png"
+        />
+      </label>
+      <ul>
+        <li>ABOUT ME</li>
+        <li>RESUME</li>
+        <li>PROJECTS</li>
+        <li>CONTACT</li>
+      </ul>
+    </header>
+    <section id="card">
+      <img alt="picture of the manager" src="img/card.png" />
+      <p>Maya<br />Nelson</p>
+      <hr />
+      <h1>PROJECT MANAGER</h1>
+      <div id="buttons">
+        <button id="resumeButton">RESUME</button>
+        <button id="projectsButton">PROJECTS</button>
+      </div>
+      <div class="socialBar">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-instagram"></a>
+      </div>
+    </section>
+    <section class="backgroundSection">
+      <h1>Hello</h1>
+      <h2>Here's who I am & what I do.</h2>
+      <p>
+        I'm a paragraph. Click here to add your own text and edit me. It's easy.
+        Just click "Edit Text" or double click me to add your own content and
+        make changes to the font.
+      </p>
+      <p>
+        I'm a great place for you to tell a story and let your users know a
+        little more about you.
+      </p>
+    </section>
+    <footer>
+      This website design was created by Wix.com, and is used here for strictly
+      educational purposes.
+    </footer>
+  </body>
 </html>
