@@ -1,3 +1,245 @@
 /* Add your CSS here */
+body {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    
+}
+.content{
+    padding: 0 0.938rem;
+margin: 0 auto;
+min-width: 37.5rem;
 
+}
+/* :focus{
+    outline: none;
+} */
+
+.topnav h1 {
+    margin-top: 3.45rem;
+}
+
+.topnav {
+    position: relative;
+    width: 100%;
+    z-index: 9999;   
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+.topnav > .content{
+    height: 4.375rem;
+    margin-right: 2.45rem;
+}
+.topnav .maya{
+height: 4.375rem;
+margin-left: 10%;
+}
+.topnav .link{
+    float: right;
+    color: #838994;
+    font-size: 1.04rem;
+    margin-top: 1.7rem;
+    
+}
+.topnav .link li{
+    display: inline-block;
+    margin-left: 1.563rem;
+    
+}
+.topnav .link li.active{
+    color: #333;
+    font-weight: 500;
+}
+.topnav .link li:hover{
+cursor: pointer;
+color: #333333;
+}
+
+
+
+body {
+    display: grid;
+  margin: 0;
+  padding: 1rem;
+  color: black;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+/* header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* main */
+.main {
+    background-color: #E6DACD;
+    height: 736px;
+    margin-top: 20px;
+}
+/* card */
+
+.card {
+    background-color: #d7cac1;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    /* border: solid blue 4px; */
+    margin: auto;
+}
+
+.card_image {
+    width: 40%;
+    border-radius: 50%;
+    margin: auto;
+    /* border: solid red 4px; */
+}
+
+.links_card_container {
+  display: flex;
+  justify-content: space-between;
+  /* border: solid 4px yellow; */
+}
+
+.links_card {
+  border: solid 1px black;
+  border-radius: 15px;
+  width: 30%;
+  padding: 8px 15px 8px 15px;
+  text-align: center;
+}
+
+/* Naviation */
+
+#navigation_toggle {
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#navigation_toggle a {
+  text-decoration: none;
+  color: #232323;
+  transition: color 0.3s ease;
+}
+
+#navigation_toggle a:hover {
+  color: tomato;
+}
+
+
+#navigation_toggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+  -webkit-touch-callout: none;
+}
+
+/* Toggle */
+
+#navigation_toggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #0150FD;
+  border-radius: 3px;
+  z-index: 1;
+}
+
+#menu {
+  position: absolute;
+  width: 100%;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  /* padding-top: 125px; */
+  background: #F4ECE6;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  display: none;
+}
+
+#menu li {
+  padding: 10px 0;
+  font-size: 22px;
+  font-family: Poppins, sans-serif;
+  font-weight: bold;
+}
+
+#navigation_toggle input:checked ~ ul {
+  display: block;
+}
+
+/* social styles */
+.social-links {
+    background-color:#fff;  
+    padding: 7px 10px;
+    font-size: 18px;
+    width: 280px;
+    text-decoration: none;
+    margin-top: -50px;
+}
+.social-links {
+    background-color:#fff;  
+    padding: 7px 10px;
+    font-size: 18px;
+    width: 280px;
+    text-decoration: none;
+    margin-top: -50px;
+}
+
+.fa:hover {
+    opacity: 0.8;
+}
+
+.fa-facebook {
+    background: #fff;
+    color: #000;
+    margin: 5px 10px 2px 76px;
+    text-decoration: none;
+}
+
+#toggle {
+    display: none;
+}
+
+.fa-twitter {
+    background: #fff;
+    color: #000;
+    margin: 5px 17px 2px 14px;
+    text-decoration: none;
+}
+
+.fa-linkedin {
+    background: #fff;
+    color: #000;
+    text-decoration: none;
+}
+
+.fa-instagram {
+    background: #fff;
+    color: #000;
+    margin-left: 16px;
+    text-decoration: none;
+}
 /* Dont' forget to link this file to your HTML in the <head> */
