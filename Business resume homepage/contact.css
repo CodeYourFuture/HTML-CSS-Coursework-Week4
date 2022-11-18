@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Quicksand:wght@300&display=swap');
+
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Quicksand', sans-serif; */
+
+:root {
+    --dark-beige: #E6DACD;
+    --light-beige: #F4ECE6;
+    --royal-blue: #0150FD;
+    --black: #000;  
+    --white: #FFF; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+font-family: 'Quicksand', sans-serif;
+display: block;
+}
+
+main {
+    background-color: var(--dark-beige);
+}
+
+form {
+    margin: 2rem;
+    padding: 1.5rem;
+    background-color: var(--white);
+    width: 300px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem 2rem;
+    box-shadow: rgba(0, 0, 0, 0.24) -4px 3px 8px;
+}
+
+label {
+    font-family: 'Poppins', sans-serif;
+}
+
+.names-form {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.form-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.field-input, .textarea-input {
+    border: none;
+    border-bottom: 2px solid var(--black);
+    color: var(--royal-blue);
+    font-size: 20px;
+}
+
+.field-input:hover:focus, .textarea-input:hover:focus {
+    outline: none;
+    border-bottom: 2px solid var(--royal-blue);
+}
+
+.field {
+    border: none;
+    margin: 0;
+}
+
+.textarea-input {
+    overflow: scroll;
+
+}
+
+button {
+    background-color: var(--royal-blue);
+    border: 2px solid var(--royal-blue);
+    color: var(--white);
+    padding: 5px 25px;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all .4s ease-in-out;
+}
+
+.submit-form {
+    display: flex;
+    justify-content: center;
+}
+
+/* screens */
+@media (min-width: 900px) {
+    form {
+        margin: 2rem;
+        padding: 1.5rem;
+        background-color: var(--white);
+        width: 700px;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        gap: .5rem 2rem;
+        box-shadow: rgba(0, 0, 0, 0.24) -4px 3px 8px;
+    }
+
+    .names-form {
+        flex-direction: row;
+        gap: 10rem;
+        
+    }
+
+    .form-details{
+        width: 100%;
+        align-items: stretch;
+    }
+
+    .textarea-input {
+        overflow: scroll;
+        width: 100%;
+    }
+
+    .submit-form {
+        justify-content: flex-start;
+    }
+}

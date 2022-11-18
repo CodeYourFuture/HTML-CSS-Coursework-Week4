@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Outfit:wght@200&display=swap');
+
+/* font-family: 'Fjalla One', sans-serif;
+font-family: 'Outfit', sans-serif; */
+
+:root {
+    --red-brown: #A05941;
+    --green-black: #133032;  
+    --light-grey: #EDEDEE; 
+    --white: #FFF;  
+    --transparent-white: rgba(0,0,0,0.75);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
