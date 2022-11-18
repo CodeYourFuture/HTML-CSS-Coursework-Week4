@@ -87,7 +87,7 @@ button {
 .form-section .btn-1:hover::after {
   content: "Send";
   width: 100%;
-  height: 3rem;
+  height: 2.2rem;
   line-height: rem;
   border: none;
   padding-top: 0.76rem;
@@ -497,7 +497,7 @@ main .shop-section .dash {
 /* ............/About Section/............ */
 
 main .about {
-  margin-top: 1rem;
+  margin-top: 3rem;
 }
 
 main .about-container {
