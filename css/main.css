@@ -1,3 +1,13 @@
 /* Add your CSS here */
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Quicksand', sans-serif; */
+
+:root {
+  --dark-beige: #e6dacd;
+  --light-beige: #f4ece6;
+  --royal-blue: #0150fd;
+  --black: #000;
+  --white: #fff;
+}
 
 /* Dont' forget to link this file to your HTML in the <head> */
