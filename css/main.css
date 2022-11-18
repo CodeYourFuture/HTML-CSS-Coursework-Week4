@@ -13,13 +13,73 @@
     --body: 'Quicksand', sans-serif;
 }
 
-.hero > img{
+.mobile {
+    display: none;
+}
+/* hero */
+.hero {
+    background-color: var(--beige-light);
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.hero > img {
     border-radius: 50%;
-    width: 30%;
+    width: 40%;
+    margin: 1.5rem auto .5rem auto;
+}
+
+.hero > p {
+    font-family: var(--heading);
+    font-size: 1.3rem;
+    text-align: center;
+    width: 40%;
+    margin: auto;
+    line-height: 1.6rem;
+}
+
+#resume {
+    background-color: var(--blue-royal);
+    color: white;
+    border-radius: 1rem;
+    height: 2rem;
+    text-transform: uppercase;
+    font-family: var(--heading);
+    font-size: .9rem;
+    width: 40%;
+    border: none;
+}
+
+#projects {
+    background-color: var(--beige-light);
+    border-radius: 1rem;
+    height: 2rem; 
+    text-transform: uppercase;
+    font-family: var(--heading);
+    font-size: .9rem;
+    width: 40%;
+    border: 1px solid black;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1.5rem 0;
+}
+
+.social-media {
+    height: 2rem;
+    background-color: var(--white);
+    margin: .5rem 0;
+    display: flex;
+    justify-content: center;
 }
 
 .social-media > img{
     width: 1rem;
+    margin: 0 .5rem;
 }
 
 .social-media-footer > img{
