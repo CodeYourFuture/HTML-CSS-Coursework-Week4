@@ -48,7 +48,7 @@ label {
     gap: .5rem;
 }
 
-.first-name-form, .last-name-form, .email-form, .subject-form {
+.form-details {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -61,15 +61,11 @@ label {
     font-size: 20px;
 }
 
-.field-input:focus, .textarea-input:focus {
+.field-input:hover:focus, .textarea-input:hover:focus {
     outline: none;
     border-bottom: 2px solid var(--royal-blue);
 }
 
-.field-input:hover, .textarea-input:hover{
-    outline: none;
-    border-bottom: 2px solid var(--royal-blue);
-}
 
 .textarea-input {
     overflow: scroll;

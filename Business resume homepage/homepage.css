@@ -43,11 +43,12 @@ header {
 span {
     display: none;
 }
-.header-left a {
+.title-header {
     font-family: 'Quicksand', sans-serif;
     text-decoration: none;
     color: var(--black);
     font-size: 14px;
+    text-transform: uppercase;
 }
 .header-box{
     display: flex;
