@@ -1,3 +1,228 @@
-/* Add your CSS here */
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --red-brown: #a05941;
+  --green-black: #133032;
+  --light-grey: #ededee;
+  --white: #fff;
+  --transparent-white: rgba(0, 0, 0, 0.75);
+}
+body {
+  margin: 0;
+}
+body,
+button {
+  font-family: "Fjalla One", "Outfit", Arial, sans-serif;
+  color: var(--red-brown);
+  font-size: 1rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
-/* Dont' forget to link this file to your HTML in the <head> */
+/* ----- Menu Toggle ----- */
+
+.navbar .menu-toggle {
+  position: absolute;
+  right: 0px;
+  top: -100px;
+  z-index: 4;
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 0, 0.22);
+  border-radius: 50%;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+.hamburger {
+  position: absolute;
+  top: 140px;
+  left: 50px;
+  width: 30px;
+  height: 3px;
+  background-color: var(--red-brown);
+  display: block;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  -webkit-transition: 0.5s ease-in-out;
+}
+.hamburger::after,
+.hamburger::before {
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: var(--red-brown);
+}
+.hamburger::before {
+  top: -10px;
+}
+.hamburger::after {
+  bottom: -10px;
+}
+.navbar input {
+  display: none;
+}
+.navbar input:checked + .menu-toggle {
+  box-shadow: 0 0 0 100vw var(--light-grey), 0 0 0 100vh var(--light-grey);
+  border-radius: 0;
+}
+.navbar input:checked + .menu-toggle .hamburger {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.navbar input:checked + .menu-toggle .hamburger::after {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  bottom: 0;
+}
+.navbar input:checked + .menu-toggle .hamburger::before {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  top: 0;
+}
+.navbar input:checked + .menu-toggle + ul {
+  opacity: 1;
+}
+/* ----- Navigation ----- */
+
+.nav-list {
+  list-style: none;
+  z-index: 5;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  -webkit-transition: 0.25s 0s ease-in-out;
+  transition: 0.25s 0s ease-in-out;
+}
+.nav-link {
+  margin-bottom: 1em;
+  display: block;
+  text-decoration: none;
+}
+
+/* ----- Header ----- */
+header a {
+  text-decoration: none;
+  color: var(--red-brown);
+}
+header {
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  height: auto;
+  width: 100%;
+  min-height: auto;
+  background-color: var(--light-grey);
+  padding: 1.5em;
+  row-gap: 0.8em;
+}
+.logo {
+  font-size: 1.7em;
+}
+.header-text-slider {
+  letter-spacing: 0.15em;
+}
+/* ----- Hero Section ----- */
+.content {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 100%;
+  justify-items: center;
+  background-color: var(--light-grey);
+}
+main {
+  position: relative;
+  top: -400px;
+  z-index: 1;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 100%;
+  justify-items: center;
+  color: var(--white);
+  gap: 40px;
+}
+main a {
+  color: var(--white);
+  text-decoration: none;
+}
+.space {
+  letter-spacing: 0.45em;
+}
+
+.top-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
+  letter-spacing: 0.15em;
+}
+.top-hero span {
+  display: block;
+  content: "";
+  top: 140px;
+  left: 50px;
+  width: 50px;
+  height: 3px;
+  background-color: var(--white);
+}
+.top-hero img {
+  filter: invert(100%);
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+}
+.hero h1 {
+  font-size: 3em;
+}
+.shop-now-btn {
+  color: var(--white);
+  padding: 1rem 2.4rem;
+  background-color: var(--red-brown);
+}
+
+.main-img {
+  grid-row: 1 / 2;
+  height: 480px;
+  background-color: var(--green-black);
+}
+.main-img img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+}
+.product-container {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 100%;
+}
+.product-container img {
+  width: 320px;
+  height: 400px;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
