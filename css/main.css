@@ -1,3 +1,120 @@
 /* Add your CSS here */
 
-/* Dont' forget to link this file to your HTML in the <head> */
+/* Don't forget to link this file to your HTML in the <head> */
+@import url('https://fonts.google.com/specimen/Quicksand');
+@import url('https://fonts.google.com/specimen/Poppins');
+
+html,body {
+     margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: 'Quicksand';
+   /* background-color: aqua; */
+}
+
+h1,h2,h3 {
+    font-family: 'Poppins';
+}
+
+input {
+    background: blue;
+}
+
+/*define grid*/
+.h-main {
+     display: grid; 
+     /* gap: 1px;   */
+     grid-template-columns: repeat(2,1fr); 
+     grid-template-rows: 100px 420px 320px 220px 80px; 
+     grid-template-areas:  
+     "hero       hero   " 
+     "feature    feature" 
+     "product    product" 
+     "aside      aside  " 
+     "footer     footer "; 
+    
+}
+/*
+
+/*define hero*/
+.h-hero {
+    /* background-color: coral;  */
+    grid-area: hero; 
+    margin-left: 2rem;
+}
+
+
+/*define feature*/
+.h-feature {
+   background-color:#F4ECE6;  
+   grid-area: feature;
+   text-align: center; 
+}
+
+img {
+    margin-top: 15px;
+    border-radius: 50%;
+}
+.one {
+    border-style: none;
+    border-radius: 15%;
+    padding: 5px 15px;
+    margin-right: 5px;
+    background-color: #0150FD;
+}
+.two {
+    border-radius: 15%;
+    padding: 5px 15px;
+    margin-left: 5px;
+}
+#left {
+    text-decoration: none;
+    color: #fff;
+}
+#right {
+    text-decoration: none;
+    color: #000;
+}
+.logo {
+    background-color: #fff;
+}
+
+
+/*define product*/
+.h-products {
+    background-color: #e6dacd;
+    grid-area: product; 
+  }
+.text {
+    margin-left: 20px;
+}
+
+/*define aside*/
+.h-aside {
+    /* background-color: brown;  */
+    grid-area: aside; 
+}
+.h-up {
+    display: flex;
+    justify-content: space-around;
+    
+}
+.h-down {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 2rem;
+}
+.aside-logo {
+    margin-left: 25px;
+}
+
+/*define footer*/
+.h-footer {
+    /* background-color: yellowgreen; */
+    grid-area: footer;
+    margin-left: 25px;
+}
+
+
+
+
