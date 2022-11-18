@@ -13,8 +13,14 @@ header {
   color: black;
   line-height: 2%;
 }
+
+@media screen and (min-width: 900px) {
+}
+
 main {
   font-family: "Quicksand", sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 .blue-box {
   width: 20px;
@@ -26,6 +32,12 @@ main {
 
 .toggle-menu {
   float: right;
+}
+
+@media screen and (min-width: 900px) {
+  .toggle-menu {
+    display: none;
+  }
 }
 
 .line-one {
@@ -62,9 +74,8 @@ h2 {
 }
 
 .card {
-  border: 1px solid black;
   width: 20em;
-  height: 27em;
+  height: 28em;
   text-align: center;
   margin: auto;
   margin-top: 20px;
@@ -142,14 +153,64 @@ h2 {
 
 .info-paragraph {
   text-align: left;
-  margin-left: 25px;
+  background-color: #e6dacd;
+  margin-top: 70%;
+  padding-top: 30%;
+  z-index: -1;
+  position: absolute;
 }
 
 h3 {
-  font-size: 3em;
-  font-weight: bold;
+  font-size: 3rem;
 }
 
 h4 {
-  font-size: 1.2em;
+  font-size: 1.4rem;
+}
+
+.paragraph-text {
+  padding-top: 19%;
+  margin-left: 7%;
+  margin-right: 7%;
+  padding-bottom: 10%;
+}
+
+.paragraph {
+  font-size: 1.2rem;
+}
+
+footer {
+  margin-top: 135%;
+  margin-left: 5%;
+}
+h5 {
+  font-weight: bold;
+  font-size: larger;
+  margin-bottom: 10px;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  font-size: larger;
+}
+
+.contact p {
+  line-height: 2px;
+}
+
+.footer-social-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4%;
+}
+.copy-right {
+  padding-top: 10px;
+  font-size: 1rem;
+}
+
+.wix {
+  font-size: 0.8rem;
 }
