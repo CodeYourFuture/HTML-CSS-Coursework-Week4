@@ -66,6 +66,10 @@ label {
     border-bottom: 2px solid var(--royal-blue);
 }
 
+.field {
+    border: none;
+    margin: 0;
+}
 
 .textarea-input {
     overflow: scroll;
@@ -106,7 +110,14 @@ button {
     .names-form {
         flex-direction: row;
         gap: 10rem;
+        
     }
+
+    .form-details{
+        width: 100%;
+        align-items: stretch;
+    }
+
     .textarea-input {
         overflow: scroll;
         width: 100%;
