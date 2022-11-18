@@ -176,8 +176,8 @@ main {
 }
 
 .card img {
-  width:150px;
-  height: 200px; 
+  width:170px;
+  height: 170px; 
   border-radius: 50%;
   padding-top: 15px;
 
@@ -202,6 +202,19 @@ main {
 
 .card-text {
   display: none;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+}
+
+.social-media ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap:2rem
 }
 
 /*buttons*/
@@ -272,12 +285,12 @@ display: none;
   padding-top:20px;
   font-size: 40px;
   font-family: 'Poppins', sans-serif;
-  padding-top
+  
 }
 
 #intro {
   font-size: 20px;  
-  font-weight:100;
+  font-weight: 100;
   text-align: justify;
   line-height: 25px;
 }
@@ -296,6 +309,7 @@ display: none;
   text-align: justify;
   line-height: 25px;
 }
+
 /*footer*/
 
 footer{ 
@@ -339,6 +353,9 @@ footer{
 .contact-follow ul {
   display: flex;
   list-style: none;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
 
@@ -395,7 +412,8 @@ span {
   margin-left: 0px;
   font-size:20px;
   align-items: center;
-  margin-top: 24px;
+  margin-top: 24px; 
+ 
 }
 
 /*main*/
@@ -426,14 +444,14 @@ width:600px;
   width: 300px;
   height: 500px;
   position: absolute;
-  margin-top: -222.5px;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
   z-index: 1;
   left: 350px;
-  position:fixed;
+  
   box-shadow:lightgrey;
  
 
@@ -456,10 +474,10 @@ width:600px;
 /*main text area*/
 
 .text-main {
-  position: fixed;
+ position: absolute;
   width: 30%;
   left: 600px;
-  margin-top: -222.5px;
+  margin-top: 50px;
   margin-bottom: 1.5rem;
   margin-left: 5rem;
   margin-right: 3rem;
@@ -481,6 +499,18 @@ width:600px;
 .card-text p {
   font-weight: 100;
   letter-spacing: 5px;
+}
+
+footer {
+ 
+  background-color: var(--white);
+  display: flex;
+  flex-direction: row;
+  grid-row-gap: 10px;
+  align-items: left;
+  justify-content: left;
+  margin-right: -200px;
+ 
 }
 
 }
