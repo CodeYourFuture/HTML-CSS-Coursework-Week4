@@ -5,21 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Add a link to your custom CSS here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/main.css">
     <title>Responsive grid project</title>
 </head>
 
 <body>
-    <header class="header">
-        <input type="text" name="search" id="search" placeholder="Search...">
-        <a href=""><img src="" alt="Shopping Basket"></a>
-        <section>
+    <header>
+        <section class="header-search">
+            <i class="fa fa-search"></i>
+            <input type="text" name="search" id="search" placeholder="Search...">
+            <a href="#"><img src="./img/OIP.jpeg" alt="Shopping Basket"></a>
+        </section>
+        <section class="header-title">
             <div>
-                <p>prickles & co.</p>
+                <h1>prickles & co.</h1>
                 <p>We Deliver to Your Doorstep</p>
             </div>
             <nav>
-                <ul>
+                <ul class="nav-list">
                     <li><a href="#">Log In</a></li>
                     <li><a href="#">Shop</a></li>
                     <li><a href="#">About</a></li>
@@ -27,60 +31,69 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
-        </div>
+        </section>
     </header>
     <main>
         <section class="hero capital">
-            <span>estb</span>
-            <img src="" alt="logo">
-            <span>2023</span>
+            <p><span>estb</span>
+            <svg preserveAspectRatio="xMidYMid meet" data-bbox="10.326 50.3 180.129 101.208" xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="10.326 50.3 180.129 101.208" role="presentation" aria-hidden="true"></svg>    
+            <span>2023</span></p>
             <h1>prickles & co</h1>
             <p>bring nature indoors</p>
             <button>Shop Now</button>
         </section>
         <section class="products">
-            <article class="cacti capital">
-                <div class="cacti-wrapper">
-                    <p class="section-title">cacti</p>
-                    <button>Shop Collection</button>
-                </div>
+            <article class="frame capital title cacti">
+                <p>cacti</p>
+                <p>-</p>
+                <button>Shop Collection</button>
+                <!-- <div class="img-wrapper">
+                    <img src="./img/Cactus_edited.jpg" alt="Cacti">
+                </div> -->
             </article>
-            <article class="plants capital">
-                <div class="plants-wrapper">
-                    <p class="section-title">cacti</p>
-                    <button>Shop Collection</button>
-                </div>
+            <article class="frame capital title plants">
+                <p>plants</p>
+                <p>-</p>
+                <button>Shop Collection</button>
+                <!-- <div class="img-wrapper">
+                    <img src="https://static.wixstatic.com/media/697bc8_8267510d9e19448297fc161a522881f1~mv2_d_1920_1920_s_2.jpg/v1/fill/w_325,h_706,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/697bc8_8267510d9e19448297fc161a522881f1~mv2_d_1920_1920_s_2.jpg" alt="Plants">
+                    </div>   -->
             </article>
-            <article class="succulents capital">
-                <div class="succulents-wrapper">
-                    <p class="section-title">cacti</p>
-                    <button>Shop Collection</button>
-                </div>
+            <article class="frame capital title succulents">
+                <p>Succulents</p>
+                <p>-</p>
+                <button>Shop Collection</button>
+                <!-- <div class="img-wrapper">
+                    <img src="" alt="Succulents">
+                </div> -->
             </article>
         </section>
-        <section class="about capital">
+        <section class="about">
             <div>
-                <p>about us</p>
+                <p class="capital">about us</p>
+                <p class="capital">-</p>
                 <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to
                 add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a
                 great place for you to tell a story and let your users know a little more about you.</p>
-                <hr>
+                <br>
                 <p>This is a great space to write long text about your company and your services. You can use this space to go into a
                 little more detail about your company. Talk about your team and what services you provide.</p>
             </div>
+        </section>
+        <section class="about-img">
             <div class="img-wrapper">
-                <img src="" alt="">
+                <img src="./img/Screenshot 2022-11-18 005622.jpg" alt="">
             </div>
             <div class="img-wrapper">
-                <img src="" alt="">
+                <img src="./img/home-bg.jpg" alt="">
             </div>
         </section>
-        <section class="capital">
-            <div class="online-image">
-                <img src="" alt="">
+        <section class="buy">
+            <div class="img-wrapper">
+                <img src="./img/ac9cb2_7d1d010b844348ce8235c16e73210f81_mv2.jpg" alt="">
             </div>
-            <div>
-                <p>buy online now & get 10% off!</p>
+            <div class="buy-online">
+                <p class="capital">buy online now & get 10% off !</p>
                 <button>Shop Now</button>
             </div>
         </section>

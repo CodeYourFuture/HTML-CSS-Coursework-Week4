@@ -1,24 +1,18 @@
 /* Add your CSS here */
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Kolker+Brush&family=Raleway:ital@1&display=swap');
 
-/* 'Indie Flower',cursive;
-'Kolker Brush',cursive;
-'Raleway',sans-serif; */
+/* Fonts and Colors */
 
-/* .fontExample {
-    font-family: 'Indie Flower', cursive;
-    font-weight: 400;
-    font-variation-settings: 'wght' 400;
-} */
-
-/* Colors */
-
-:root{
+:root{    
     --redBrown: #A05941;
     --greenBlack: #133032;
     --lightGray: #EDEDEE;
     --white: #fff;
     --transparentWhite: rgb(0,0,0,0.75);
+
+    --font1: 'Indie Flower',cursive;
+    --font2: 'Kolker Brush',cursive;
+    --font3:'Raleway',sans-serif;
 }
 
 /* General */
@@ -37,8 +31,173 @@ html {
     padding: 0;
 }
 
+body {
+    text-align: center;
+    color: var(--redBrown);
+    background-color: var(--lightGray);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, auto);
+    grid-template-areas: 
+    "header"
+    "hero"
+    "products"
+    "about"
+    "about-img"
+    "buy"
+    "form"
+    "footer";
+}
 
+/* Header */
 
+header{
+    grid-area: header;
+}
+
+.header-search{
+    background-color: var(--white);
+    display: flex;
+}
+
+.header-search i{
+   padding: 20px 0px 0px 20px;
+   font-size: 30px;
+}
+.header-search input{
+    width: 100%;
+    border: none;
+    padding-left: 20PX;
+    font-size: 20PX;
+}
+
+.header-search img {
+    height: 80px;
+    padding: 20px 0px;
+}
+
+.header-title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-title p{
+    font-size: 20px;
+}
+
+.nav-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;    
+}
+
+.hero{
+    grid-area: hero;
+    background-image: url("../img/pl0000004093_card2_lg_edited.jpg");
+    background-size: cover;
+    /* background-attachment: fixed; */
+    padding: 10%;
+    line-height: 100px;
+    height: auto;
+    color: var(--white);
+    font-family: var(--font3);
+}
+
+.hero span{
+    text-decoration-line: underline;
+}
+
+.capital{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.title{
+    font-size: 30px;
+}
+
+.products button,
+.hero button{
+    background-color: var(--redBrown);
+    border: none;
+    padding: 15px 30px;
+    color: var(--white);
+    font-size: 15px;
+}
+
+.products{
+    grid-area: products;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.frame{
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 364px;
+    width: 100%;
+    background-color: var(--white);
+    margin: 20px 0px;
+    padding-top: 10%;
+}
+
+.cacti {
+    background-image: url("../img/Cactus\ \ \ .jpg");
+}
+
+.plants{
+    background-image: url("../img/77384c8c8e254a8391f88652f06ceada.jpg");
+}
+
+.succulents{
+    background-image: url("../img/2ed75b70e2284f0aa633a9891d94e11f.jpg");
+}
+
+.img-wrapper{
+    position: relative;
+    padding-bottom: 72%;
+}
+
+.img-wrapper img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.about{
+    font-family: var(--font1);
+    grid-area: about;
+    font-size: 20px;
+    background-color: var(--white);
+    padding: 40px 30px;
+}
+
+.about-img{
+    grid-area: about-img;
+    width:100%;
+}
+
+.buy{
+    grid-area: buy;
+}
+
+.buy-online{
+    padding: 20% 10%;
+    font-size: 65px;
+    background-color: var(--greenBlack);
+    color: var(--white);
+}
+
+.buy-online button{
+    background-color: var(--white);
+    border: none;
+    padding: 15px 30px;
+    font-size: 15px;
+}
 
 
 
