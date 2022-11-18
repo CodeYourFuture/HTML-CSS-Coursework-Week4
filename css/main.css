@@ -721,6 +721,8 @@ footer {
 
   .navbar-container .menu-items li {
     margin: 0;
+    padding-right: 1rem;
+    font-size: medium;
   }
 
   .animated-line::before {
@@ -917,6 +919,7 @@ footer {
     align-items: baseline;
     gap: 1rem;
     justify-content: center;
+    align-items: baseline;
   }
 
   #C form button {
