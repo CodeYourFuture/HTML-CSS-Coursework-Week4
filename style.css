@@ -27,7 +27,7 @@ header {
 }
 
 .about-me{
-    color: blue; 
+    color:#0150fd ; 
 }
 
 .header-name {
@@ -85,7 +85,7 @@ img {
 
 hr.blue-line {
   background-color: #0150fd;
-  width: 20%;
+  width: 19%;
   height: 2px;
 }
 
@@ -94,6 +94,7 @@ hr.blue-line {
   letter-spacing: 0.5rem;
   font-family: "Quicksand", sans-serif;
 }
+
 .contact {
   background-color: white;
   align-items: center;
@@ -102,9 +103,7 @@ hr.blue-line {
   justify-content: center;
   height: 3rem;
 }
-.contact i {
-  padding-left: 30px;
-}
+
 .hello-part {
   display: flex;
   flex-direction: column;
@@ -125,19 +124,28 @@ hr.blue-line {
   font-weight: bold;
 }
 
-.btns {
+.btn {
   display: flex;
   gap: 1rem;
 }
 
-.btn {
+.resume-btn {
   border-radius: 20px;
   padding: 5px 25px;
-  font-size: 0.9rem;
-}
-.resume-btn {
+  font-size: 1rem;
   background-color: #0150fd;
   color: white;
+}
+.resume-btn:hover {
+  background-color: white;
+}
+.projects-btn{
+  border-radius: 20px;
+  padding: 5px 25px;
+  font-size: 0.85rem;
+}
+.projects-btn:hover {
+  background-color:blue;
 }
 
 footer {
