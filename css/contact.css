@@ -97,6 +97,8 @@ ul {
   padding: 1.5em 0.3em 0.3em 0.3em;
   background-color: #f4ece6;
   text-align: center;
+  position: absolute;
+  z-index: 2;
 }
 
 .nav-items li {
@@ -177,7 +179,7 @@ ul {
 
 main {
   background-color: #e6dacd;
-  height: 35em;
+  height: 42em;
 }
 
 form {
@@ -187,6 +189,7 @@ form {
   margin-left: 1em;
   margin-right: 1em;
   margin-bottom: 2em;
+  padding: 1em;
 }
 
 form label {
@@ -212,7 +215,7 @@ form label {
   border: none;
   font-weight: bold;
   text-transform: uppercase;
-  margin: 1em 8em 2em 10em;
+  margin: 1em 8em 4em 10em;
 }
 
 form input {
