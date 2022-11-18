@@ -4,18 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Add a link to your custom CSS here -->
+   <link rel="stylesheet" href="/css/main.css">
 
     <title>Responsive grid project</title>
 </head>
-
+      <!-- mobile first design -->
 <body>
+  <header class="header">
+   <div class="head1">
+    <div class="head">
+      <div class="header-name">
+        <span class="blue"></span>
+        <h1>Maya Nelson</h1>
+      </div>
+
+      <p class="header-role">PROJECT MANAGER</p>
+    </div>
+      
+         <nav class="hamburger-menu"> 
+            <span class="top"></span>
+            <span class="middle"></span>
+            <span class="bottom"></span>
+            <input type="checkbox" id="hamburger-checkbox">  
+
+            <ul class="ham-open">
+              <li>ABOUT ME</li>
+              <li>RESUME</li>
+              <li>PROJECT</li>
+              <li>CONTACT</li>
+            </ul>
+          </nav>
+    </div>   
+  </header>
+
+  <main class="float-card">
+    <div class="">
+       <img class="profile" src="/image/AdobeStock_230407429.webp" alt="profile-image"/>
+       <h1>Maya <br> Nelson</h1>
+       <span class="line"></span>
+    </div>
+
+    <div>
+      <a href="/resume.html"><button class="btn-r" type="">RESUME</button></a>
+      <a href="/project.html"><button class="btn-p" type="">PROJECTS</button> 
+    </div>
+
+    <div class="social">
+      <ul class="social-media">
+        <a href="https://www.facebook.com/wix" target="_blank"><li class=""><img src="/image/facebook.svg"/></li></a>
+        <a href="https://twitter.com/wix" target="_blank"><li class=""><img src="/image/twitter.svg"/></li></a>
+        <a href="https://www.linkedin.com/company/wix-com" target="_blank"><li class=""><img src="/image/linkedin-in.svg"/></li></a>
+        <a href="https://www.instagram.com/wix/" target="_blank"><li class=""><img src="/image/instagram.svg"/></li></a>
+      </ul> 
+    </div>
+  </main>
+
+
+
+  <article class="article1">
+    <h1>HELLO</h1>
+    <h2>Here's who I am & what I do</h2>
+    <p class="p1">I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.</p>
+    
+    <p class="p2">I'm a great place for you to tell a story and let your users know a little more about you.</p>
+    <button class="btn" type="">RESUME</button>
+    <button class="btn" type="">PROJECTS</button>
+
+  </article>
+  <footer class="footer">
+    
+    <div class="call">
+     <ul>
+      <li>Call</li>
+      <li>123-456-7890</li>
+     </ul>
+
+    </div>
+    <div class="write">
+      <ul>
+        <li>Write</li>
+        <li>info@mysite.com</li>
+      </ul>
+    </div>
+
+    
+      <ul class="container">
+        <a href="https://www.facebook.com/wix" target="_blank"><li class="fc"><img src="/image/facebook.svg"/></li></a>
+        <a href="https://twitter.com/wix" target="_blank"><li class="tw"><img src="/image/twitter.svg"/></li></a>
+        <a href="https://www.linkedin.com/company/wix-com" target="_blank"><li class="lk"><img src="/image/linkedin-in.svg"/></li></a>
+        <a href="https://www.instagram.com/wix/" target="_blank"><li class="is"><img src="/image/instagram.svg"/></li></a>
+     </ul>
+    
+
+    <div class="copyright">
+      <ul>
+       <li class="">@ 2023 by Maya Nelson.</li>
+       <li class="">Proudly created with <a href="#">Wix.com</a></li>
+      </ul>
+    </div>
+    
+  </footer>
 
     <!-- Add your markup here -->
 
 
     <!-- Please leave this in to credit the creators of this design -->
-    <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
+    <!-- <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p> -->
 </body>
 
 </html>
