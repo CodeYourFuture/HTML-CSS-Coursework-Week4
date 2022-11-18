@@ -1,3 +1,35 @@
 /* Add your CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
+
+:root {
+    --beige-dark: #E6DACD;
+    --beige-light: #F4ECE6;
+    --blue-royal: #0150FD;
+    --black: #000;
+    --white: #FFF;
+
+    --heading: 'Poppins', sans-serif;
+    --body: 'Quicksand', sans-serif;
+}
+
+.hero > img{
+    border-radius: 50%;
+    width: 30%;
+}
+
+.social-media > img{
+    width: 1rem;
+}
+
+.social-media-footer > img{
+    width: 1rem;
+}
+
+h1 {
+    font-family: var(--heading);
+}
+
+p {
+    font-family: var(--body);
+}
