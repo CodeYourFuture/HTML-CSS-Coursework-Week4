@@ -12,7 +12,7 @@
   --headings-font: "Fjalla One", sans-serif;
   --subheadings-font: "Outfit", sans-serif;
   --body-font: "Outfit", sans-serif;
-  --transparent-White: rgba(0, 0, 0, 0.75);
+  --transparent-White: rgba(255, 255, 255, 0.5);
 }
 
 body {
@@ -31,13 +31,13 @@ button {
   font-family: var(--body-font);
   font-weight: 400;
   font-size: 1rem;
-  /* box-shadow: var(--shd, 0 1px 4px rgba(0, 0, 0, 0.6)); */
   display: block;
   width: 10rem;
   height: 2rem;
   padding: auto;
   padding-top: 0.5rem;
   text-align: center;
+  position: relative;
 }
 
 .btn-2 {
@@ -46,7 +46,31 @@ button {
   font-family: var(--body-font);
   font-weight: 400;
   font-size: 1rem;
-  /* box-shadow: var(--shd, 0 1px 4px rgba(0, 0, 0, 0.6)); */
+  display: block;
+  width: 10rem;
+  height: 2rem;
+  padding: auto;
+  padding-top: 0.5rem;
+  text-align: center;
+  position: relative;
+}
+
+.btn-1:hover {
+  color: var(--hover-color);
+}
+
+.btn-1:hover::after {
+  background-color: var(--transparent-White);
+  color: var(--hover-color);
+  content: "Shop Now";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  font-family: var(--body-font);
+  font-weight: 100;
+  font-size: 1rem;
   display: block;
   width: 10rem;
   height: 2rem;
@@ -55,16 +79,52 @@ button {
   text-align: center;
 }
 
-.btn-1:hover {
-  background-color: var(--main-text-color) var(--transparent-White);
-  background-blend-mode: multiply;
-  color: var(--main-text-color);
+.shop-section .btn-1:hover::after {
+  content: "Shop Collection";
+  font-weight: 400;
 }
 
-.btn-2:hover {
-  background-color: var(--hover-color) rgba(0, 0, 0, 0.75);
-  background-blend-mode: multiply;
+.form-section .btn-1:hover::after {
+  content: "Send";
+  width: 100%;
+  height: 3rem;
+  line-height: rem;
+  border: none;
+  padding-top: 0.76rem;
+  font-weight: 400;
+}
+
+.btn-2:hover::after {
+  background-color: #133032a1;
   color: var(--white-color);
+  content: "Shop Now";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  font-family: var(--body-font);
+  font-weight: 400;
+  font-size: 1rem;
+  display: block;
+  width: 10rem;
+  height: 2rem;
+  padding: auto;
+  padding-top: 0.5rem;
+  text-align: center;
+}
+
+.contact form .btn-2:hover::after {
+  background-color: #133032a1;
+  color: var(--white-color);
+  content: "Subscribe Now";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3rem;
+  border: none;
+  padding-top: 0.4rem;
 }
 
 .dash {
@@ -448,7 +508,7 @@ main .about-container {
 }
 
 main .about-container h1,
-main .form-section h1 {
+main .form-container h1 {
   font-family: var(--body-font);
   font-weight: 300;
   letter-spacing: 0.3rem;
@@ -476,6 +536,9 @@ main .about img {
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+
+.green-padding {
   padding: 6rem 2rem;
 }
 
@@ -487,14 +550,21 @@ main .about .green h1 {
   padding-bottom: 3rem;
 }
 
-.form-section {
+/* ............/Form Section/............ */
+
+main .form-container {
   color: var(--main-text-color);
   background-color: var(--white-color);
   margin: 2rem 0.5rem 0 0.5rem;
   padding: 2rem 1rem;
 }
 
-.form-section h1 {
+main .form-container label {
+  color: var(--hover-color);
+  font-size: 1rem;
+}
+
+.form-container h1 {
   padding: 0 3rem;
   text-align: center;
 }
@@ -521,17 +591,18 @@ main form .btn-1 {
   line-height: rem;
   border: none;
   padding: 0;
+  /* position: relative; */
 }
 
-main .form-container img {
+main .form-section img {
   width: 100%;
   object-fit: cover;
   height: 250px;
   display: block;
 }
 
-.contact {
-  padding: 5rem 1.5rem 2rem 1.5rem;
+.contact-padding {
+  padding: 2.5rem 1.5rem 2rem 1.5rem;
 }
 
 .contact h1 {
@@ -553,31 +624,37 @@ main .form-container img {
 }
 
 .contact form input {
+  box-sizing: border-box;
   width: 100%;
   background-color: var(--hover-color);
-  border: 0.2rem solid red;
+  border: 1px solid var(--white-color);
+}
+
+.contact form input:hover {
+  border: 3px solid var(--white-color);
 }
 
 .contact form label {
   color: var(--white-color);
   float: left;
+  font-weight: 200;
+  font-size: large;
 }
 
 .contact form .btn-2 {
   width: 100%;
   height: 3rem;
-  line-height: rem;
   border: none;
   padding: 0;
 }
 
 .contact-icons {
-  margin-top: 5rem;
+  margin-top: 1rem;
 }
 
-#map iframe {
-  background-color: #133032;
-  color: #133032;
+.contact .map {
+  width: 100%;
+  height: 400px;
 }
 
 /* ........./Footer/....................... */
@@ -626,19 +703,11 @@ footer {
   .navbar .menu-items {
     display: flex;
     height: auto;
-    /* max-width: none; */
     flex-direction: row;
     align-items: stretch;
     transform: none;
-    /* background: none; */
-    /* box-shadow: none; */
     position: static;
   }
-
-  /* .navbar .menu-items li {
-    margin-bottom: 0.5rem;
-    font-size: 1.2rem;
-  } */
 
   .navbar-container .menu-items label {
     display: none;
@@ -646,9 +715,6 @@ footer {
 
   .navbar-container .menu-items li .log-in {
     position: absolute;
-    /* top: -4rem; */
-    /* left: 70rem; */
-    /* right: 5rem; */
     top: 0.3rem;
     right: 8rem;
   }
@@ -692,7 +758,7 @@ footer {
 
   .hero {
     background-attachment: fixed;
-        margin-top: 125px;
+    margin-top: 125px;
   }
   .hero .logo {
     padding-top: 6rem;
@@ -711,27 +777,155 @@ footer {
     margin-top: 3rem;
   }
 
-  .shop-section{
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
-   grid-template-rows: auto;
-   gap: 3rem; 
+  .shop-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 3rem;
   }
 
-.about {
-  display: grid;
-  grid-template-columns: 1fr 0.5fr 0.5fr;
-  grid-template-rows: 1fr 1fr;
-}
+  .about {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 0.5fr;
+    grid-template-rows: 1fr 700px;
+  }
 
-main .about img {
-  object-fit: cover;
+  main .about img {
+    object-fit: cover;
     height: 100%;
     display: inline;
-}
+  }
 
-#Promo {
-  grid-column: 2/4;
-}
+  #Promo {
+    grid-column: 2/4;
+  }
 
+  main .about-container {
+    padding: 6rem 6rem;
+  }
+
+  main .about .green h1 {
+    padding: 3rem 9rem;
+    margin-bottom: 2rem;
+    font-size: 80px;
+  }
+
+  main .form-section {
+    background-image: url(/img/8.jpg);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main .form-container {
+    background-color: var(--transparent-White);
+    width: 800px;
+    margin: 6rem auto;
+  }
+
+  main .form-section img {
+    display: none;
+  }
+
+  .form-container {
+    color: var(--main-text-color);
+    background-color: var(--white-color);
+    margin: 2rem 0.5rem 0 0.5rem;
+    padding: 2rem 1rem;
+  }
+
+  .form-section .form-container form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      "F L"
+      "E E"
+      "P P"
+      "M M"
+      "B B";
+    gap: 0 8px;
+    padding-top: 3rem;
+  }
+
+  #F {
+    grid-area: F;
+  }
+
+  #L {
+    grid-area: L;
+  }
+
+  #E {
+    grid-area: E;
+  }
+
+  #P {
+    grid-area: P;
+  }
+
+  #M {
+    grid-area: M;
+  }
+
+  #B {
+    grid-area: B;
+  }
+
+  main .contact {
+    display: grid;
+    grid-template-columns: 3rem 8rem 1fr 1fr 1fr 8rem 3rem;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      ". . S O H . ."
+      ". . C C C . ."
+      ". . . I . . ."
+      "A A A A A A A";
+
+    padding-top: 2rem;
+    align-items: baseline;
+  }
+
+  #S {
+    grid-area: S;
+  }
+
+  #O {
+    grid-area: O;
+  }
+
+  #H {
+    grid-area: H;
+  }
+
+  #C {
+    grid-area: C;
+  }
+
+  #I {
+    grid-area: I;
+  }
+  #A {
+    grid-area: A;
+  }
+
+  #C form {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  #C form button {
+    font-weight: 200;
+    width: 7rem;
+    height: 2rem;
+  }
+
+  #C form div {
+    width: 17rem;
+  }
 }
