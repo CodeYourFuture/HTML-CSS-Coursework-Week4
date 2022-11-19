@@ -1,3 +1,416 @@
-/* Add your CSS here */
+body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #000;
+  font-family: "Quicksand", sans-serif;
+}
 
-/* Dont' forget to link this file to your HTML in the <head> */
+@media only screen and (max-width: 540px) {
+  body {
+    margin: 0 auto;
+  }
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1rem;
+  margin: 15px;
+}
+
+@media screen and (max-width: 540px) {
+}
+h1,
+h2 {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+.blue-square {
+  background-color: #0150fd;
+  width: 15px;
+  height: 15px;
+  border: none;
+}
+header .position {
+  font-weight: lighter;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+}
+header .name-position {
+  display: flex;
+  margin-bottom: 15px;
+}
+header h1 {
+  font-size: 1.5rem;
+}
+/* menu */
+
+/* Mobile Version */
+
+.navigation-menu {
+  overflow: hidden;
+  position: relative;
+}
+
+/* Hiding the main navigation until it is clicked */
+
+.main-navigation {
+  display: none;
+  padding-left: 0px;
+}
+
+.main-navigation li {
+  list-style-type: none;
+  margin: 15px auto;
+  text-align: center;
+}
+
+.main-navigation a {
+  padding: 5px 7px;
+  color: black;
+  margin: 0px 2px 0px 2px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.main-navigation a:hover {
+  color: #0150fd;
+  transition: 0.3s ease;
+}
+
+.hamburger-icon {
+  margin: 5px 30px 5px 5px;
+  cursor: pointer;
+  font-size: 45px;
+  color: #0150fd;
+}
+
+/* Hiding the checkbox */
+
+#menu-toggle {
+  display: none;
+}
+
+/* When the checkbox is ticked, the main navigation will display */
+
+#menu-toggle:checked + .main-navigation {
+  display: block;
+}
+
+/* Desktop Version */
+
+@media screen and (min-width: 505px) {
+  .navigation-menu {
+    height: 70px;
+    display: flex;
+    align-items: center;
+  }
+
+  .main-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-left: 30px;
+  }
+
+  .main-navigation a {
+    padding: 15px 17px;
+  }
+
+  /* Hiding the hamburger icon on larger screens */
+
+  .hamburger-icon {
+    display: none;
+  }
+
+  /* Ensuring that if the hamburger menu is active but
+  the screen becomes larger, the display will 
+  change to display items in a row instead of a column*/
+
+  #menu-toggle:checked + .main-navigation {
+    display: flex;
+  }
+}
+
+/*section*/
+.hero {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 540px) {
+  .hero {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.white {
+  background-color: #fff;
+  position: relative;
+  height: 200px;
+}
+
+.beige {
+  background-color: #e6dacd;
+  padding: 250px 10px 20px 20px;
+  position: relative;
+  max-width: 350px;
+  min-width: 300px;
+}
+
+.beige h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0;
+}
+
+.beige h3 {
+  font-size: 1.5rem;
+}
+
+.beige p {
+  font-weight: 500;
+}
+.card {
+  position: absolute;
+  z-index: 1;
+  top: -20px;
+  left: 10px;
+  background-color: #f4ece6;
+  text-align: center;
+  padding: 25px 0;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+
+  max-width: 350px;
+  min-width: 300px;
+}
+/*for desktop*/
+@media only screen and (min-width: 541px) {
+  .card {
+    top: 20%;
+    left: 65%;
+  }
+  .white {
+    background-color: #e6dacd;
+    position: relative;
+    width: 40%;
+    height: 100%;
+    min-width: 600px;
+  }
+  .beige {
+    background-color: white;
+    padding: 0;
+    position: relative;
+    width: 60%;
+    left: 15%;
+    top: 23%;
+    height: 80%;
+    min-width: 300px;
+  }
+
+  .beige h1 {
+    font-size: 5rem;
+    margin: 0;
+  }
+  .hero {
+    height: 700px;
+  }
+}
+
+.card img {
+  width: 50%;
+  height: auto;
+  border-radius: 50%;
+  margin-top: 15px;
+}
+
+.card hr {
+  color: #0150fd;
+  font-weight: bold;
+  width: 60px;
+  height: 1px;
+  border: none;
+  background-color: #0150fd;
+}
+
+.icons {
+  background-color: white;
+  margin-top: 20px;
+  padding: 8px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+}
+.icons img {
+  width: 25px;
+}
+.icons a:hover {
+  cursor: pointer;
+}
+.btns button {
+  margin: 20px 4px;
+
+  font-weight: lighter;
+}
+.blue-btn {
+  background-color: #0150fd;
+  color: white;
+  padding: 7px 25px;
+  border-radius: 30px;
+  font-size: large;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+.beige-btn {
+  background-color: #e6dacd;
+  color: black;
+  border: 1ps solid black;
+  padding: 7px 15px;
+  border-radius: 30px;
+  font-size: large;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+
+/*footer*/
+footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 5%;
+  margin: 20px 10px 0 0;
+}
+@media only screen and (max-width: 540px) {
+  footer ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    max-width: 350px;
+    min-width: 300px;
+  }
+  footer li {
+    padding: 5px;
+  }
+}
+
+footer a {
+  text-decoration: none;
+}
+.follow-links img {
+  width: 15px;
+}
+
+.right {
+  text-align: center;
+  font-size: 0.5rem;
+  font-weight: lighter;
+}
+/*resume page*/
+
+.resume-page {
+  background-color: rgb(230, 218, 205);
+  padding: 50px 0px 25px;
+  margin: 0px auto;
+  min-width: 350px;
+}
+
+.in-line {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-evenly;
+  gap: 4%;
+  max-width: 700px;
+  margin: 15px auto;
+}
+
+.resume-card {
+  background-color: white;
+  min-width: 300px;
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 40px 20px;
+  box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.5);
+}
+
+.resume-date {
+  color: rgb(1, 80, 253);
+  font-weight: bolder;
+}
+
+.resume-company {
+  margin: 0px;
+}
+
+.resume-btn {
+  height: 45px;
+}
+
+.resume-heading {
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+.resume-card-name {
+  font-size: 1rem;
+}
+.center-text {
+  text-align: center;
+}
+
+.square-bullet ul li::before {
+  list-style-type: square;
+}
+/*Contacts page*/
+.contacts-form input {
+  border: none;
+  border-bottom: 2px solid black;
+  display: block;
+  height: 40px;
+  width: 100%;
+}
+.form-line-message input {
+  height: 120px;
+}
+.contacts-form label {
+  display: block;
+}
+
+.contacts-form input:hover {
+  border-bottom: 2px solid #0150fd;
+}
+
+.contacts-form input:focus {
+  border-bottom: 2px solid #0150fd;
+}
+@media only screen and (min-width: 540px) {
+  .form-name {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: auto;
+  }
+
+  .form-fname {
+    width: 40%;
+  }
+  .form-lname {
+    width: 40%;
+  }
+}
+.form-line {
+  margin-top: 10px;
+}
+
+.contacts-form {
+  padding: 4% 2% 2% 5%;
+}
