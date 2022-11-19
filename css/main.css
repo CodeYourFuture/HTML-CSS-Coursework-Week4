@@ -230,10 +230,10 @@ footer p {
 @media screen and (min-width: 900px) {
   main {
     grid-template-columns: 10% 1fr 2fr 10%;
+
     grid-template-areas:
       "h h h h"
       " . c b b"
-      ". . b b"
       "f f f f";
   }
   .card {
