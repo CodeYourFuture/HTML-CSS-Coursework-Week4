@@ -100,6 +100,8 @@ header {
     background-color: #E6DACD;
     height: 736px;
     margin-top: 20px;
+    display: block;
+    display: inline-flex;
 }
 /* card */
 
@@ -121,6 +123,11 @@ header {
     transform: translate(7%, -35%);
     box-shadow: -10px 4px 20px rgb(107, 86, 86);  
  }
+.card2 {
+    display: block;
+    
+
+
 }
 .article1 {
     background-color: #E6DACD;
@@ -150,7 +157,7 @@ header {
   text-align: center;
 }
 button{
-
+color: #0150FD;
 
         padding: 15px;
         /* width: 150px; */
