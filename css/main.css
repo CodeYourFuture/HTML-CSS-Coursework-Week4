@@ -1,3 +1,174 @@
 /* Add your CSS here */
+*{
 
+}
+
+body{
+    /* display: grid; */
+    /* grid-template-columns: ; */
+    /* min-width: auto; */
+    font-family: "poppins", sans serif;
+}
+.topnav{
+    display: flex;
+    flex-direction: row;
+}
+
+.container{
+  width:100%;
+  display: grid;
+  grid-template-areas: " left right";
+  position:absolute;
+  top: 7rem;
+  padding: 120px 0 0 150px;
+  height: 32em;
+}
+
+.main-text{
+    width: 50%;
+    grid-area: right;
+    margin: auto;
+    position: absolute;
+    margin-right: 0px;
+    height: 510px;
+  
+}
+.name-title {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+}
+.name{
+    margin-top: 20px;
+    height: 20px;
+    font-family: sans-serif;
+    margin-left: 30px;
+}
+.name a{ 
+    line-height: 0.5em;
+    font-size: 20px;
+    margin-left: -20px;
+    
+}
+.title p{
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 17px;
+}
+
+
+.blue-button {
+  width: 20px;
+  height: 20px;
+  background-color: blue;
+  margin-top: 20px;
+  margin-left: 14px;
+}
+ 
+  #myLinks a {
+    text-decoration: none;
+    color: black;
+    float: right;
+    width:6em;
+    margin:10px auto;
+    font-size: 10px;
+  }
+
+  .grey-box{
+    background-color:#E6DACE;
+    display:block;
+    width: 50%;
+    height: 45em;
+    margin-top: 15px;
+    
+}
+h1{
+position: relative;
+
+}
+
+
+.card{
+  grid-area: left;
+     display: flex;
+    flex-direction: column;
+    background-color: #F4ECE6;
+    
+    /* position: absolute; */
+    width: 22em;
+
+    right: 50;
+    bottom: 0;
+    left: 0;
+    align-items: center;
+    /* margin-top: 150px; */
+    /* height: 30em; */
+    /* margin-left: 10%; */
+    box-shadow: grey -3px 3px 8px;
+    }
+    
+img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;   
+}
+.main-text{
+  grid-area: right;
+    border: 3px solid blue;
+    margin-left: 280px;
+}
+#greeting{
+  font-size: 40px;
+}
+#firstname{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 10px;
+}
+#lastname{
+   text-align: center;
+    font-size: 15px;
+    margin-top: -35px;
+}
+  
+
+    /*
+  }
+  .column1{
+    background-color: #E6DACE;
+    width: 393PX;
+    height: 953PX;
+    position: absolute;
+  }
+  .column2{
+    background-color: yellow;
+    width: 200PX;
+    height: 953PX;
+    position: absolute;
+  }
+  .row2{
+    background-color: pink;
+    display: ;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .column3{
+    background-color:blue;
+    width: 200px;
+    height: 300px;
+  }
+  
+  /*.button {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }/*
+  
 /* Dont' forget to link this file to your HTML in the <head> */
