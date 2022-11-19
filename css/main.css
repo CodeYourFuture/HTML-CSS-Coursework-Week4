@@ -30,30 +30,33 @@ html {
     padding: 0;
 }
 
+/* Body */
+
 body {
     font-family: var(--font1);
     text-align: center;
-    color: var(--redBrown);
     background-color: var(--lightGray);
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(8, auto);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(10, auto);
     grid-template-areas: 
-    "header"
-    "hero"
-    "products"
-    "about"
-    "about-img"
-    "buy"
-    "buy-online"
-    "form"
-    "footer";
+    "header       header"
+    "hero         hero"
+    "products     products"
+    "about        about"
+    "about-img    about-img"
+    "buy-img      buy-img"
+    "buy-online   buy-online"
+    "request-form request-form"
+    "leaf         leaf"
+    "footer       footer";
 }
 
 /* Header */
 
-header{
+.header{
     grid-area: header;
+    width: 100%;
 }
 
 .header-search{
@@ -62,9 +65,11 @@ header{
 }
 
 .header-search i{
+    color: var(--redBrown);
    padding: 20px 0px 0px 20px;
    font-size: 30px;
 }
+
 .header-search input{
     width: 100%;
     border: none;
@@ -78,10 +83,12 @@ header{
 }
 
 .header-title{
+    color: var(--redBrown);
     display: flex;
     justify-content: space-between;
     padding: 20px 50px;
     text-align: left;
+    background-color: var(--lightGray);
 }
 
 .header-title p{
@@ -93,7 +100,6 @@ header{
 }
 
 nav {
-    grid-area: nav;
     display: flex;
     flex-direction: column;
 }
@@ -177,6 +183,7 @@ nav {
 
 .title{
     font-size: 30px;
+    color: var(--redBrown);
 }
 
 .products button,
@@ -195,6 +202,7 @@ nav {
     display: block;
     position: absolute;
 }
+
 .products{
     grid-area: products;
     display: flex;
@@ -239,8 +247,9 @@ nav {
 }
 
 .about{
-    font-family: var(--font2);
     grid-area: about;
+    color: var(--redBrown);
+    font-family: var(--font2);
     font-size: 20px;
     background-color: var(--white);
     padding: 40px 30px;
@@ -248,11 +257,13 @@ nav {
 
 .about-img{
     grid-area: about-img;
+    display: flex;
+    flex-direction: column;
     width:100%;
 }
 
-.buy{
-    grid-area: buy;
+.buy-img{
+    grid-area: buy-img;
 }
 
 .buy-online{
@@ -270,14 +281,14 @@ nav {
     font-size: 15px;
 }
 
-.request{
-    grid-area: form;
+.request-form{
+    grid-area: request-form;
     background-color: var(--white);
     margin: 50px 20px 0px 20px;
     padding: 40px;
 }
 
-.request p{
+.request-form p{
     color: var(--redBrown);
     font-size: 40px;
     padding: 20px 60px;
@@ -290,7 +301,6 @@ nav {
     flex-direction: column;
     align-items: flex-start;
     font-size: 20px;
-    color: black;
 }
 form input,
 form textarea{
@@ -308,27 +318,68 @@ form button{
     margin: 20px 0px;
 }
 
+.leaf{
+    grid-area: leaf;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+
+/* Media Query */
 
 @media screen and (min-width:540px) {
 
+
     header{
         position: fixed;
+        top:0;
     }
 
-    body {
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(8, auto);
+    .open-menu,
+    .close-menu {
+        display: none;
+    }
+
+    .nav-list {
+        margin: 0 2rem;
+    }
+
+    .nav-link,
+    .footer-wrapper {
+        padding: 1rem;
+    }
+
+    body{
             grid-template-areas:
                 "header header"
                 "hero hero"
                 "products products"
                 "about about-img"
-                "buy buy-online"
-                "form form"
+                "buy-img buy-online"
+                "request-form request-form"
                 "footer footer";
         }
 
         .hero{
             background-attachment: fixed;
+            margin-top: 180px;
         }
+
+        .products{
+            flex-direction: row;
+            
+        }
+
+        .leaf{
+            display: none;
+        }
+
+        .about-img{
+            flex-direction: row;
+            
+        }
+}
+
 /* Dont' forget to link this file to your HTML in the <head> */
