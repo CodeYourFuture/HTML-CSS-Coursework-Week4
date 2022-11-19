@@ -1,0 +1,149 @@
+body{
+    max-width: 400px;
+}
+
+input{
+    display: none;
+}
+nav{
+    display: flex;
+
+}
+.abc{
+    display: flex;
+}
+.nav-bar{
+    display: none;
+}
+#toggle-menu:checked ~.nav{
+    display: none;
+}
+
+#toggle-menu:checked ~ .nav-bar{
+    display:block;
+}
+header{
+    display: flex;
+    height: 20em;
+    background-color: rgb(248, 250, 250);
+}
+.nav-p{
+
+   margin-top: -.5em;
+    
+}
+.nav-ul{
+    
+    text-decoration: none;
+    list-style-type: none;
+    margin-top: 2em;
+}
+.blue{
+    width: 25px;
+    height: 25px;
+    background-color: rgb(6, 6, 196);
+    margin-top: 1.7em;
+    margin-right: .5em;
+}
+.blue-and-h1{
+    display: flex;
+}
+.ul-icons1{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    
+    
+}
+.maya-img{
+    border-radius: 14em;
+}
+main{
+    display: grid;
+    background-color: rgb(230, 226, 222);
+    grid-template-columns: repeat(20,1fr);
+    grid-template-rows:350px 400px;
+    grid-template-areas:
+        ". m m m m m m m m m m m m m m m m m m ."
+        ". s s s s s s s s s s s s s s s s s s ."
+        
+    ;
+
+}
+.section1{  
+    margin-top:-10em;
+    grid-area: m;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    background-color: rgb(201, 193, 183);
+    flex-direction: column;
+    padding-top: 2em;
+   
+}
+.icons{
+    background-color: rgb(133, 50, 50);
+    width: 100%;
+    margin-top: 2em;
+}
+.empty{
+    background-color: rgb(69, 75, 186);
+    width:5em;
+    height: .1em;
+    border: 1px rgb(16, 8, 90) solid;
+    margin-bottom: 2em;
+}
+.btn{
+    padding: 1em;
+    margin: auto;
+    border-radius: 1.5em;
+    width: 12em;
+}
+.btn-2{
+    margin-left: 2em;
+}
+
+
+
+.section2{
+grid-area: s;
+margin-top: 5em;
+}
+footer{
+    grid-area: f;
+    
+}
+.li-icon {
+    margin-left: 2em;
+}
+
+.aaaa{
+    margin-left: -2em;
+}
+
+.h2-maya1{
+    
+    margin-top: -1em;
+}
+footer{
+    display: grid;
+    grid-template-columns: repeat(2 1fr);
+    grid-template-rows: repeat(3 1fr);
+    grid-template-areas: 
+        "a b"
+        "c ."
+        "d ."
+    ;
+}
+.f1{
+    grid-area: a;
+}
+.f2{
+    grid-area: b;
+}
+.f3{
+    grid-area: c;
+}
+.f4{
+    grid-area: d;
+}
