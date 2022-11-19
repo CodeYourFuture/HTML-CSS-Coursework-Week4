@@ -4,6 +4,23 @@ body {
     -webkit-font-smoothing: antialiased;
     
 }
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "poppins";
+  font-weight: 600;
+  margin: 0;
+}
+body{
+
+    margin: 0;
+    padding: 0;
+}
 .content{
     padding: 0 0.938rem;
 margin: 0 auto;
@@ -68,7 +85,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Poppins", sans-serif;
-    font-weight: 600;
+    font-weight: 300;
 }
 
 /* header */
@@ -95,12 +112,27 @@ header {
     padding: 1rem;
     /* border: solid blue 4px; */
     margin: auto;
+    position: absolute;
+    padding: 30px; 
+    margin-top: 40px;
+   
+    text-align: center;
+   
+    transform: translate(7%, -35%);
+    box-shadow: -10px 4px 20px rgb(107, 86, 86);  
+ }
 }
+.article1 {
+    background-color: #E6DACD;
+    height: auto;
+    padding: 20px;
 
+}
 .card_image {
     width: 40%;
     border-radius: 50%;
     margin: auto;
+    height: auto;
     /* border: solid red 4px; */
 }
 
@@ -117,6 +149,36 @@ header {
   padding: 8px 15px 8px 15px;
   text-align: center;
 }
+button{
+
+
+        padding: 15px;
+        /* width: 150px; */
+        border-radius: 20px;
+        border: 1px solid rgb(78, 19, 180);
+        cursor: pointer;
+        justify-content: space-evenly;   
+    }
+}
+button :hover{
+    background-color: var(--lightBeige);
+    border: 2px solid var(--Black);
+    color: var(--Black);
+
+}
+.blueSquer{
+    width: 15px;
+    height: 15px;
+    background-color: var(--royalBlue);
+}
+.blueSquer-p{
+    display: flex; 
+    align-items: baseline;
+    font-size: 20px;
+    gap :5px; 
+    font-weight:bolder;
+}  
+
 
 /* Naviation */
 
@@ -191,55 +253,35 @@ header {
 }
 
 /* social styles */
-.social-links {
-    background-color:#fff;  
-    padding: 7px 10px;
-    font-size: 18px;
-    width: 280px;
-    text-decoration: none;
-    margin-top: -50px;
-}
-.social-links {
-    background-color:#fff;  
-    padding: 7px 10px;
-    font-size: 18px;
-    width: 280px;
-    text-decoration: none;
-    margin-top: -50px;
+.follow-links-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;    
+    background-color: var(--white);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 150px;
+    margin:0 auto;
+    padding: 20px;
+
+
+
+}  
+.follow-links-container{
+    width: 100%;
+    background-color: var(--white);
+
+
 }
 
-.fa:hover {
-    opacity: 0.8;
-}
+.images_socialMedia {
+    width: 25px;
+    height: 25px;
+} 
 
-.fa-facebook {
-    background: #fff;
-    color: #000;
-    margin: 5px 10px 2px 76px;
-    text-decoration: none;
-}
 
-#toggle {
-    display: none;
-}
 
-.fa-twitter {
-    background: #fff;
-    color: #000;
-    margin: 5px 17px 2px 14px;
-    text-decoration: none;
-}
-
-.fa-linkedin {
-    background: #fff;
-    color: #000;
-    text-decoration: none;
-}
-
-.fa-instagram {
-    background: #fff;
-    color: #000;
-    margin-left: 16px;
-    text-decoration: none;
-}
-/* Dont' forget to link this file to your HTML in the <head> */
+@media screen and (min-width: 900px) {
+    .toggle-menu {
+          display: none;
+        }
+      }
