@@ -388,6 +388,10 @@ footer a {
 .contacts-form input:hover {
   border-bottom: 2px solid #0150fd;
 }
+
+.contacts-form input:focus {
+  border-bottom: 2px solid #0150fd;
+}
 @media only screen and (min-width: 540px) {
   .form-name {
     display: flex;
