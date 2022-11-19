@@ -17,6 +17,10 @@
     display: none;
 }
 /* hero */
+body {
+    background: var(--beige-dark);
+    margin: 0px;
+}
 .hero {
     background-color: var(--beige-light);
     display: flex;
@@ -29,6 +33,7 @@
     border-radius: 50%;
     width: 40%;
     margin: 1.5rem auto .5rem auto;
+
 }
 
 .hero > p {
@@ -38,6 +43,13 @@
     width: 40%;
     margin: auto;
     line-height: 1.6rem;
+}
+
+.blue-line {
+    width: 20%;
+    margin: auto;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--blue-royal);
 }
 
 #resume {
@@ -82,14 +94,90 @@
     margin: 0 .5rem;
 }
 
-.social-media-footer > img{
-    width: 1rem;
+main {
+    width: 85%;
+    margin: auto;
+    padding-bottom: 1rem;
+
 }
 
 h1 {
+    font-size: 2.7rem;
+    font-family: var(--heading);
+    margin: .8rem 0;
+}
+
+h2 {
+    font-size: 1rem;
     font-family: var(--heading);
 }
 
-p {
+main > p {
     font-family: var(--body);
+    font-size: .9rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background: var(--white);
+    margin: 0;
+}
+
+.contact {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
+.phone, .email, .social {
+    margin: 1rem 0.4rem 0 0;
+}
+
+
+.social-media-footer > img {
+    width: 1rem;
+    margin-right: .5rem;
+}
+
+.heading {
+    font-family: var(--heading);
+    font-size: 0.9rem;
+    margin-bottom: .4rem;
+}
+
+.text {
+    font-family: var(--body);
+    font-size: 0.8rem;
+}
+
+.copyright {
+    padding: 1rem;
+}
+
+.copyright > p{
+    font-family: var(--body);
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+.copyright > p > a:link, a:visited, a:hover, a:active {
+    color: var(--black);
+}
+
+.education {
+    padding: 0 1rem;
+    font-size: 0.8rem;
 }
