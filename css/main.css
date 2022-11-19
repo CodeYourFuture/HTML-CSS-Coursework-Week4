@@ -157,6 +157,7 @@ header h1 {
   padding: 250px 10px 20px 20px;
   position: relative;
   max-width: 350px;
+  min-width: 300px;
 }
 
 .beige h1 {
@@ -289,12 +290,14 @@ footer ul {
 }
 @media only screen and (max-width: 540px) {
   footer ul {
-    justify-content: center;
-  }
-
-  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     max-width: 350px;
     min-width: 300px;
+  }
+  footer li {
+    padding: 5px;
   }
 }
 
