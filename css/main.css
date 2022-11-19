@@ -367,3 +367,43 @@ footer a {
 .square-bullet ul li::before {
   list-style-type: square;
 }
+/*Contacts page*/
+.contacts-form input {
+  border: none;
+  border-bottom: 2px solid black;
+  display: block;
+  height: 40px;
+  width: 100%;
+}
+.form-line-message input {
+  height: 120px;
+}
+.contacts-form label {
+  display: block;
+}
+
+.contacts-form input:hover {
+  border-bottom: 2px solid #0150fd;
+}
+@media only screen and (min-width: 540px) {
+  .form-name {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: auto;
+  }
+
+  .form-fname {
+    width: 40%;
+  }
+  .form-lname {
+    width: 40%;
+  }
+}
+.form-line {
+  margin-top: 10px;
+}
+
+.contacts-form {
+  padding: 4% 2% 2% 5%;
+}
