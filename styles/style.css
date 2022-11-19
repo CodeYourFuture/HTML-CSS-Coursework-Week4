@@ -31,6 +31,9 @@ h3 {
 }
 
 /* top-navbar */
+.fixed-top {
+  position: relative !important;
+}
 
 .site-navbar-wrap {
   background-color: white;
@@ -51,7 +54,7 @@ h3 {
   padding-left: 30px;
   background-size: 20px;
   background-repeat: no-repeat;
-  margin: 20px 0;
+  margin: 10px 0;
   width: 80%;
   border: none;
 }
@@ -209,6 +212,10 @@ h3 {
 /* type of flowers */
 .type_of_flowers {
   margin-bottom: 20px;
+}
+
+.type_of_flowers .container-fluid {
+  padding: 0;
 }
 
 .type_of_flowers .flower-container {
@@ -488,6 +495,14 @@ footer .c-footer a {
     padding: 0 3% 3% 3%;
   }
 
+  .fixed-top {
+    position: fixed !important;
+  }
+
+  main {
+    margin-top: 150px;
+  }
+
   .menu .menu-container {
     display: grid !important;
     grid-template-columns: repeat(10, 1fr);
@@ -521,16 +536,10 @@ footer .c-footer a {
     width: 100%;
   }
 
-  footer .subscribe-form label {
+  footer .subscribe-form {
     width: 50%;
-  }
-
-  footer .subscribe-form input {
-    width: 50%;
-  }
-
-  footer .subscribe-form button {
-    width: 50%;
+    display: block;
+    margin: 0 auto;
   }
 }
 
@@ -568,7 +577,7 @@ footer .c-footer a {
   .about {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, auto);
+    grid-template-rows: auto 600px;
     grid-template-areas:
       "about about img1 img2"
       "img3 img3 ad ad";
@@ -598,6 +607,7 @@ footer .c-footer a {
   .about .about-ad {
     grid-area: ad;
     padding: 30px 100px;
+    height: auto;
   }
 
   .about .about-ad h2 {
@@ -620,8 +630,8 @@ footer .c-footer a {
   }
 
   .contact .form-container {
-    background-color: #fbfbfb59;
-    width: 60%;
+    background-color: #fbfbfb8e;
+    width: 55%;
     padding: 30px;
     display: block;
     margin: 0 auto;
@@ -633,7 +643,55 @@ footer .c-footer a {
     font-size: 22px;
   }
 
+  .contact .form-container label {
+    font-size: 16px;
+  }
+
   .contact img {
     display: none;
+  }
+
+  footer .subscribe-form {
+    width: 35%;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+      "label label . ."
+      "input input input button";
+  }
+
+  footer .subscribe-form button {
+    width: 190px;
+    justify-self: start;
+  }
+
+  footer iframe {
+    height: 40rem;
+  }
+
+  footer .c-footer {
+    font-size: 20px;
+  }
+
+  footer .c-footer a {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about .about-text {
+    padding: 10% 20%;
+  }
+
+  .contact .form-container {
+    width: 45%;
+  }
+
+  footer .subscribe-form {
+    width: 30%;
+  }
+
+  footer .footer-icons {
+    margin: 50px 0;
   }
 }
