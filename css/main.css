@@ -13,6 +13,9 @@
   --subheadings-font: "Outfit", sans-serif;
   --body-font: "Outfit", sans-serif;
   --transparent-White: rgba(255, 255, 255, 0.5);
+    scroll-behavior: smooth;
+    scroll-padding: 120px;
+
 }
 
 body {
@@ -674,7 +677,8 @@ footer {
 
 @media (min-width: 750px) {
   header {
-    position: fixed;
+    position: sticky;
+    top: 0;
     width: 100%;
     z-index: 10;
   }
@@ -760,7 +764,6 @@ footer {
 
   .hero {
     background-attachment: fixed;
-    margin-top: 125px;
   }
   .hero .logo {
     padding-top: 6rem;
