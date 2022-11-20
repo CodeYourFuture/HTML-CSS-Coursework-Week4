@@ -75,6 +75,9 @@ main{
     padding-top: 2em;
    
 }
+.p-under-img{
+    display: none;
+}
 .icons{
     background-color:white;
     width: 100%;
@@ -99,6 +102,7 @@ main{
     height: .1em;
     border: 1px rgb(16, 8, 90) solid;
     margin-bottom: 2em;
+   
 }
 .btn{
     padding: 1em;
@@ -124,13 +128,18 @@ footer{
 .btnn{
     display: none;
 }
-
+.sec-div{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 
 .h2-maya1{
-    
-    margin-top: -1em;
+    margin-top: -1em; 
 }
+
 footer{
     display: grid;
     grid-template-columns: repeat(2 1fr);
@@ -154,12 +163,8 @@ footer{
     grid-area: d;
 }
 @media screen and (min-width: 600px){
-    body{
-        
-    }
-    header{
-        display: flex;
-    }
+  
+   
     .nav-bar{
         display:contents;
     }
@@ -210,7 +215,28 @@ footer{
     }
     header{
         grid-area: a;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(20 1fr);
+        grid-template-rows: 100px;
+        grid-template-areas: "a a a a a a a . . . . . . s s s s s s s";
     }
+    .nav{
+        grid-area: a;
+    }
+    .nav-bar{
+        grid-area: s;
+    }
+   .nav-ul{
+    display: flex;
+   }
+   .li-nav{
+    border: 0ch;
+
+   }
+
+   
+    
     content{
         grid-area:b;
         display: grid;
@@ -273,6 +299,9 @@ footer{
     footer{
         grid-area: d;
         position: relative;
+    }
+    .p-under-img{
+        display: contents;
     }
     
 }
