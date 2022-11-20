@@ -14,6 +14,9 @@
 body {
     font-family: Raleway;
     font-size: .9275rem;
+    line-height: 1.8em;
+    word-spacing: .1em;
+    text-align: center;
     margin: 0;
     padding: 0;
     display: grid;
@@ -27,12 +30,14 @@ h1, h2 {
     text-align: center;
     margin-top: 5px;
     line-height: 1.3em;
+    font-size: 2rem;
 }
 
 h3 {
     font-family: "Questrial";
     font-weight: 100;
     font-size: 1.3em;
+    line-height: 1.3em;
     text-align: center;
     padding: 0;
     margin-bottom: 0;
@@ -226,6 +231,7 @@ img {
 .hero-paragraph {
     padding: 0 30px 30px 30px;
     line-height: 1.5em;
+    font-size: 1.375rem;
     margin-bottom: 0;
 }
 
@@ -318,8 +324,8 @@ img {
     height: 70px;
 }
 
-.section2-paragraph {
-    padding: 0;
+.page-paragraph {
+    padding: 0 20px;
     word-spacing: .1rem;
     text-align: center;
 }
@@ -397,13 +403,13 @@ img {
 
 .section3-wrapper {
     background-color: var(--light-green);
+    padding: 20px;
 }
 
 .section3-img {
     width: 280px;
     height: 377px;
     object-fit: cover;
-    padding: 25px;
 }
 
 .section3-content-wrapper {
@@ -412,20 +418,19 @@ img {
     align-items: center;
 }
 
-.section3-paragraph {
+.section3-title {
+    padding: 20px 0 0 0;
     margin: 0;
-    padding: 0 20px;
-    text-align: center;
-    line-height: 1.8em;
 }
+
 .section3-button {
     font-family: Raleway;
     font-weight: 300;
     padding: 15px 40px;
-    margin: 25px 0 30px 0;
+    margin-top: 15px;
     border: 2px solid var(--black);
     font-size: 1em;
-    background-color: light var(--light-green);   
+    background-color: var(--light-green);   
 }
 
 .section3-button:hover {
@@ -500,6 +505,48 @@ img {
         text-align: center;
     }
 
+}
+
+.section4-wrapper {
+    background-color: var(--lylac);
+    padding: 20px 25px 30px 25px;
+}
+
+.section4-title {
+    margin-bottom: 12px;
+}
+
+.section4-sub-title {
+    font-size: 1.375rem;
+    padding: 0 30px;
+    margin-top: 15px;
+}
+
+.section4-img1 {
+    width: 280px;
+    height: 274px;
+}
+
+.section4-img2 {
+    width: 280px;
+    height: 274px;
+    margin: 20px 0 5px 0;
+}
+
+.section4-img3 {
+    width: 280px;
+    height: 274px;
+    margin-top: 20px;
+}
+
+.section4-button {
+    font-family: Raleway;
+    font-weight: 300;
+    padding: 12px 50px;
+    margin: 15px 0 10px 0;
+    border: 2px solid var(--black);
+    font-size: 1em;
+    background-color: var(--lylac);   
 }
 
 footer {
