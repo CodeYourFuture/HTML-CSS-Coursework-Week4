@@ -36,7 +36,7 @@ h1, h2 {
 h3 {
     font-family: "Questrial";
     font-weight: 100;
-    font-size: 1.3em;
+    font-size: 1.375rem;
     line-height: 1.3em;
     text-align: center;
     padding: 0;
@@ -245,12 +245,12 @@ img {
 }
 
 .hero-window {
-    /* position: relative; */
     background-color: var(--lylac);
     padding: 10px 0;
     margin: 0;
     text-align: center;
     width: 100%;
+    line-height: 1em;
 }
 
 .window-underline {
@@ -322,12 +322,6 @@ img {
 .section2-img {
     width: 70px;
     height: 70px;
-}
-
-.page-paragraph {
-    padding: 0 20px;
-    word-spacing: .1rem;
-    text-align: center;
 }
 
 @media only screen and (min-width: 576px) {
@@ -549,6 +543,191 @@ img {
     background-color: var(--lylac);   
 }
 
-footer {
-    margin-top: 100px;
+/* Section 5 */
+.section5-wrapper {
+    padding: 20px;
 }
+.section5-img {
+    width: 280px;
+    height: 371px;
+    margin-bottom: 20px;
+}
+
+.section5-h2 {
+    margin-bottom: 0;
+}
+
+.section5-p {
+    margin-top: 0;
+} 
+
+.section5-button {
+    font-family: Raleway;
+    font-weight: 300;
+    padding: 12px 50px;
+    margin: 10px 0 20px 0;
+    border: 2px solid var(--black);
+    font-size: 1em;
+    background-color: var(--white);   
+}
+
+/* Section 6 Styles */
+
+.section6-content-wrapper {
+    background-color: var(--light-green);
+    padding: 40px 30px 15px 30px;
+}
+
+.section6-border {
+    border: 1px solid var(--black);
+    border-radius: 50%;
+    display: inline;
+    padding: 15px;
+}
+
+.section6-p {
+    margin-top: 10px;
+    margin-bottom: 80px;
+}
+
+/* Footer */
+
+.footer-wrapper {
+    padding: 20px 0 5px 0;
+}
+
+.footer-h2 {
+    margin: 15px 0 0 0;
+}
+
+.footer-main-link {
+    color: black;
+}
+
+.footer-sub {
+    background-color: var(--dark-green);
+    padding: 0 20px 0 20px;
+    color: var(--white)
+}
+
+.footer-img {
+    width: 172px;
+    height: 190px;
+}
+
+.footer-grid {
+    text-align: left;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    padding-bottom: 30px;
+}
+
+.footer-gridblock {
+    grid-column: 1 / -1;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.footer-grid-p {
+    font-family: "Questrial";
+    font-weight: 100;
+    font-size: 1.375rem;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.footer-sub-links {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.footer-contact {
+    margin-bottom: 0;
+}
+
+.footer-list {
+    font-family: "Questrial";
+    font-weight: 100;
+    font-size: 1.375rem;
+    grid-column: 1 / -1;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.footer-flex1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-flex2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
+    margin-bottom: 80px;
+}
+
+label {
+    display: block;
+    text-align: left;
+}
+
+#email {
+    background-color: transparent;
+    border-bottom: rgb(220, 80, 10);
+
+}
+
+.footer-submit-btn {
+    width: 120px;
+    color: var(--white);
+    border: 2px solid white;
+    background-color: transparent;
+}
+
+.footer-flex3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-serve-link {
+    color: var(--white);
+    text-align: left;
+    font-size: 1.375rem;
+    margin-bottom: 30px;
+}
+
+.footer-stamp {
+    border-radius: 50%;
+    width: 61px;
+    height: 60px;
+    border: 2px solid var(--white);
+    margin-bottom: 20px;
+    padding: 0;
+    text-align: left;
+    font-weight: bold;
+}
+
+.footer-stamp-j {
+    margin: 18px 0 0 18px;
+    padding: 0;
+    line-height: .5em;
+}
+
+.footer-stamp-b {
+    margin: 0 0 0 33px;
+    padding: 0; 
+    line-height: 1.5em;
+} 
+
+.footer-copyright-p {
+    margin-right: 50px;
+    text-align: left;
+}
+
+.footer-copyright-link {
+    color: var(--white);
+}
+
