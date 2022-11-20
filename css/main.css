@@ -12,7 +12,8 @@
 }
 
 body {
-    font-family: Roboto;
+    font-family: Raleway;
+    font-size: .9275rem;
     margin: 0;
     padding: 0;
     display: grid;
@@ -25,14 +26,15 @@ h1, h2 {
     font-weight: 400;
     text-align: center;
     margin-top: 5px;
+    line-height: 1.3em;
 }
 
 h3 {
     font-family: "Questrial";
     font-weight: 100;
+    font-size: 1.3em;
     text-align: center;
     padding: 0;
-    border: 2px dotted blue;
     margin-bottom: 0;
 }
 
@@ -53,6 +55,7 @@ h3 {
 
 .button:hover {
     background-color: var(--medium-green);
+    border: none;
 }
 
 .call-to-action-button {
@@ -91,6 +94,7 @@ img {
         position: sticky;
         top: 0;
         left: 0;
+        padding-top: 0;
     }
 }
 
@@ -119,7 +123,8 @@ img {
 @media only screen and (min-width: 900px) {
     .logo {
         order: 2;
-        margin-left: 40px;
+        margin-left: 180px;
+        font-size: 2em;
         border: 2px dotted blue;
     }
 }
@@ -138,12 +143,13 @@ img {
 
 .bar {
     display: block;
-    width: 30px;
-    height: 3px;
-    margin: 0 0 10px 0;
+    width: 25px;
+    height: 2px;
+    margin: 0 0 5px 0;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: black;
+    margin-bottom: 10px;
 }
 
 .login-wrapper {
@@ -163,7 +169,9 @@ img {
         display:flex;
         flex-direction: row;
         border: 2px dotted blue;
-        padding: 20px 0;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
         margin: 0;
         order: 3;
     }
@@ -185,13 +193,19 @@ img {
 @media only screen and (min-width: 900px) {
     .nav-button {
         display: flex;
-        padding: 0;
+        padding: 40px 60px;
         margin: 0;
-        /* background-color: var(--black);
-        color: white; */
+        background-color: var(--black);
+        color: white;
         align-self: center;
         border: 2px dotted pink;
         order: 3;
+        font-size: 1em;
+        border: none;
+    }
+
+    .nav-button:hover {
+        background-color: var(--medium-green);
     }
 }
 
@@ -201,7 +215,6 @@ img {
     background-color: var(--white);
     padding: 0;
     text-align: center;
-    border: 2px dotted blue;
     margin: 0;
 }
 
@@ -228,7 +241,7 @@ img {
 .hero-window {
     /* position: relative; */
     background-color: var(--lylac);
-    padding: 10px 30px;
+    padding: 10px 0;
     margin: 0;
     text-align: center;
     width: 100%;
@@ -267,59 +280,93 @@ img {
 
     .hero-window {
         display: block;
-        padding: 30px 0;
-        font-size: 1.2em;
+        
+        margin-right: 20px;
+        font-size: 1.3em;
         margin: 0;
 }
 }
 
-.page2-wrapper {
+.section2-content-wrapper {
+    margin: 0;
+    padding: 0 30px; 
+}
+
+.section2-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.page2-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 2px dotted red;
-    margin-bottom: 30px;
-    padding-right: 20px;
-}
-
-.page2-img {
-    width: 22%;
-    height: auto;
-    border: 2px dotted blue;
-}
-
-.page2-paragraph {
     padding: 0 10px;
-    text-align: center;
+}
+
+.section2-title {
+    padding-top: 20px;
+}
+
+.section2-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.section2-img {
+    width: 70px;
+    height: 70px;
+}
+
+.section2-paragraph {
+    padding: 0;
     word-spacing: .1rem;
+    text-align: center;
+}
+
+@media only screen and (min-width: 576px) {
+
+    .section2-content-wrapper {
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        margin: 10px 0 0 0;
+        padding: 0 30px;
+        width: 100%;
+    }
+
+    .section2-content {
+        align-items: flex-start;
+    }
+
+    .section2-img {
+        padding-bottom: 30px;
+        width: 50%;
+    }
+
+    h3 {
+        font-size: 1.7em;
+        padding: 0;
+    }
 }
 
 @media only screen and (min-width: 900px) {
-    .page2-content-wrapper {
-        display: grid;
-        grid-gap: 0;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(1, 1fr);
-        margin: 70px 80px 0 120px;
-        padding: 0 30px;
+
+    .section2-content-wrapper {
+        margin: 20px;
+        padding: 0;
     }
 
-    .page2-content {
+    .section2-content {
         margin-bottom: 0;
-        padding-bottom: 60px;
+        padding: 0 0 60px 0;
         align-items:flex-start;
-        width: 80%;
     }
     
-    .page2-title {
+    .section2-title {
         font-size: 3.5em;
-        padding-top: 20px;
+        padding-top: 60px;
     }
 
     h3 {
@@ -331,7 +378,7 @@ img {
         line-height: 1.3em;
     }
 
-    .page2-paragraph {
+    .section2-paragraph {
         padding: 0;
         text-align: left;
         word-spacing: .1rem;
@@ -339,113 +386,122 @@ img {
         font-weight: 100;
     }
 
-    .page2-img {
+    .section2-img {
         width: 40%;
         height: auto;
         border: 2px dotted blue;
     }
 }
 
-.page3-wrapper {
-    border: 2px dotted blue;
+/* Page 3 */
+
+.section3-wrapper {
     background-color: var(--light-green);
-    padding: 20px;
 }
 
-.page3-heading {
-    padding: 0;
-    border: 2px dotted blue;
-}
-
-.page3-img-wrapper {
-    border: 2px dotted red;
-}
-
-.page3-img {
-    max-width: 100%;
+.section3-img {
+    width: 280px;
+    height: 377px;
     object-fit: cover;
+    padding: 25px;
 }
 
-.page3-content-wrapper {
+.section3-content-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.page3-title {
-   margin: 30px 0 0 0;
-   padding: 0 10px;
-}
-
-.page3-paragraph {
+.section3-paragraph {
+    margin: 0;
+    padding: 0 20px;
     text-align: center;
+    line-height: 1.8em;
 }
-
-.page3-button {
+.section3-button {
     font-family: Raleway;
     font-weight: 300;
     padding: 15px 40px;
-    margin: 20px 0 10px 0;
+    margin: 25px 0 30px 0;
     border: 2px solid var(--black);
     font-size: 1em;
-    background-color: light var(--light-green);
-    
+    background-color: light var(--light-green);   
 }
 
-.page3-button:hover {
+.section3-button:hover {
     background-color: var(--black);
     color: var(--white);
 }
 
-@media only screen and (min-width: 900px) {
-    .page3-wrapper {
+@media only screen and (min-width: 576px) {
+    .section3-wrapper {
         display: grid;
-        grid-gap: 60px;
+        grid-gap: 20px;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr;
         grid-template-areas: 
         "image c";
-        padding: 70px 20px 20px 50px;
+        padding: 50px 20px 20px 50px;
     }
 
-    .page3-content-wrapper {
+    .section3-content-wrapper {
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 0;
+    }
+
+    .section3-img {
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+
+    .section3-wrapper {
+        grid-gap: 40px;
+    }
+    .section3-content-wrapper {
         grid-area: c;
         padding-top: 100px;
-        padding-right: 90px;
+        padding-right: 50px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .page3-img-wrapper {
+    .section3-img-wrapper {
         width: 100%;
         grid-area: image;
     }
 
-    .page3-img {
+    .section3-img {
         width: 100%;
         object-fit: cover;
         margin-bottom: -80px;
     }
 
-    .page3-title {
-        padding: 0;
+    .section3-title {
+        padding-right: 10px;
         margin: 0;
-        text-align: left;
-        font-size: 3.3em;
+        font-size: 2.3em;
         line-height: 1.3em;
+        border: 2px dotted red;
     }
 
-    .page3-paragraph {
-       text-align: left;
+    .section3-paragraph {
        font-size: 1.1em;
        line-height: 1.8em;
 
     }
 
-    .page3-button {
+    .section3-button {
         padding: 25px 70px;
         margin-top: 10px;
+        text-align: center;
     }
 
+}
+
+footer {
+    margin-top: 100px;
 }
