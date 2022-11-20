@@ -217,22 +217,32 @@ footer{
         grid-area: a;
         max-width: 100%;
         display: grid;
-        grid-template-columns: repeat(20 1fr);
+        grid-template-columns: 50vw 50vw;
         grid-template-rows: 100px;
-        grid-template-areas: "a a a a a a a . . . . . . s s s s s s s";
+        grid-template-areas: "a s ";
     }
     .nav{
         grid-area: a;
+        display: flex;
     }
     .nav-bar{
         grid-area: s;
     }
    .nav-ul{
     display: flex;
+    margin-right: 0;
+    padding: 0;
+    justify-content: flex-end;
+    margin-right: 2em;
    }
    .li-nav{
     border: 0ch;
-
+    margin:0;
+    margin-right: 1em;
+   }
+   .nav-p{
+    margin-top: 2.1em;
+    margin-left: 1em;
    }
 
    
@@ -249,7 +259,6 @@ footer{
     main{
         grid-area: c;
         display:grid;
-        
         justify-content: center;
         background-color: white;
         grid-template-columns: 450px 450px;
@@ -263,34 +272,46 @@ footer{
         grid-area: s;
         margin: 0; 
         background-color: rgb(230, 226, 222);
+        
        
     }
     .sec-div{
         background-color: rgb(188, 181, 175);
+        margin-right: -25em;
+        margin-top: 2em;
+        
     }
     
     .section2{
         grid-area: w;
+        margin-left: 10em;
+        display: flex;
+        flex-direction: column;
     }
   
     .btnn{
-        display: contents;
-        padding: 1em;
-        margin: auto;
+    
+        display: content;
+        margin: 1em;
         border-radius: 1.5em;
         width: 10em;
         height: 2em;
         padding: 0;
     }
+    .buttons1{
+        display: flex;
+    }
 
     .btn-22{
-        display: contents;
-        margin-left: 2em;
+        display: block;
+
+        
         
     }
     .btn11{
-        display: contents;
+        display:block;
         background-color: rgb(45, 45, 205);
+        color: white;
         
     }
     .btn{
@@ -299,9 +320,24 @@ footer{
     footer{
         grid-area: d;
         position: relative;
+        display: flex;
+        width: 100vw;
+        justify-content: flex-end;
+        flex-direction: row-reverse;
+        
+    }
+    .f3,.f2,.f1{
+       margin-left: 4em;
+    }
+    .f3{
+        margin-left: 70em;
     }
     .p-under-img{
         display: contents;
+    }
+    header{
+        position:fixed;
+        height: 10vh;
     }
     
 }
