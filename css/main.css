@@ -1,3 +1,937 @@
 /* Add your CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
+
+* {
+  margin: 0;
+  padding: 0;
+  --main-text-color: #a05941;
+  --hover-color: #133032;
+  --white-color: #fff;
+  --background-color: #ededee;
+  --headings-font: "Fjalla One", sans-serif;
+  --subheadings-font: "Outfit", sans-serif;
+  --body-font: "Outfit", sans-serif;
+  --transparent-White: rgba(255, 255, 255, 0.5);
+    scroll-behavior: smooth;
+    scroll-padding: 120px;
+
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+a,
+button {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-1 {
+  background-color: var(--main-text-color);
+  color: var(--white-color);
+  font-family: var(--body-font);
+  font-weight: 400;
+  font-size: 1rem;
+  display: block;
+  width: 10rem;
+  height: 2rem;
+  padding: auto;
+  padding-top: 0.5rem;
+  text-align: center;
+  position: relative;
+}
+
+.btn-2 {
+  background-color: var(--white-color);
+  color: var(--hover-color);
+  font-family: var(--body-font);
+  font-weight: 400;
+  font-size: 1rem;
+  display: block;
+  width: 10rem;
+  height: 2rem;
+  padding: auto;
+  padding-top: 0.5rem;
+  text-align: center;
+  position: relative;
+}
+
+.btn-1:hover {
+  color: var(--hover-color);
+}
+
+.btn-1:hover::after {
+  background-color: var(--transparent-White);
+  color: var(--hover-color);
+  content: "Shop Now";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  font-family: var(--body-font);
+  font-weight: 100;
+  font-size: 1rem;
+  display: block;
+  width: 10rem;
+  height: 2rem;
+  padding: auto;
+  padding-top: 0.5rem;
+  text-align: center;
+}
+
+.shop-section .btn-1:hover::after {
+  content: "Shop Collection";
+  font-weight: 400;
+}
+
+.form-section .btn-1:hover::after {
+  content: "Send";
+  width: 100%;
+  height: 2.2rem;
+  line-height: rem;
+  border: none;
+  padding-top: 0.76rem;
+  font-weight: 400;
+}
+
+.btn-2:hover::after {
+  background-color: #133032a1;
+  color: var(--white-color);
+  content: "Shop Now";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  font-family: var(--body-font);
+  font-weight: 400;
+  font-size: 1rem;
+  display: block;
+  width: 10rem;
+  height: 2rem;
+  padding: auto;
+  padding-top: 0.5rem;
+  text-align: center;
+}
+
+.contact form .btn-2:hover::after {
+  background-color: #133032a1;
+  color: var(--white-color);
+  content: "Subscribe Now";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3rem;
+  border: none;
+  padding-top: 0.4rem;
+}
+
+.dash {
+  display: block;
+  height: 0.3rem;
+  width: 0.8rem;
+  background: var(--main-text-color);
+  margin: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ......./Header/...................... */
+
+/* ............/Search bar/............ */
+
+.nav-search {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8%;
+  padding: 0 1rem;
+  background-color: var(--white-color);
+}
+
+.nav-search form {
+  height: 40px;
+  color: var(--main-text-color);
+}
+
+.nav-search form:hover {
+  border: 1px solid var(--main-text-color);
+}
+
+.nav-search form .fa-magnifying-glass {
+  padding: 0 10px;
+}
+
+.nav-search form input {
+  height: 100%;
+  border: 0;
+  color: var(--main-text-color);
+}
+
+.nav-search form input::placeholder {
+  color: #ad6a54;
+  font-family: var(--body-font);
+  font-size: 1rem;
+}
+
+.search-bag {
+  width: 25px;
+}
+
+/* ............/navbar/............ */
+
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines {
+  display: block;
+}
+
+.navbar {
+  width: 100%;
+  background: var(--background-color);
+  height: 100px;
+  color: var(--main-text-color);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar h1 a {
+  font-family: var(--headings-font);
+  font-weight: 100;
+  padding: 0.8rem;
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+.navbar h1 a:hover {
+  color: var(--hover-color);
+  transition: color 0.4s ease-in-out;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 64px;
+  align-items: center;
+}
+
+.navbar-container input[type="checkbox"] {
+  display: none;
+}
+
+.navbar-container .hamburger-lines {
+  display: block;
+  height: 20px;
+  width: 25px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.navbar-container .hamburger-lines .line {
+  display: block;
+  height: 2px;
+  width: 100%;
+  border-radius: 10px;
+  background: var(--main-text-color);
+}
+
+.navbar-container .hamburger-lines .line1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.navbar-container .hamburger-lines .line2 {
+  transition: transform 0.2s ease-in-out;
+}
+
+.navbar-container .hamburger-lines .line3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.navbar-container .menu-items .fa-angle-up {
+  display: none;
+}
+
+.navbar-container .menu-items label {
+  position: absolute;
+  top: 87px;
+  right: 110px;
+}
+
+.navbar-container .menu-items div {
+  display: flex;
+}
+
+.navbar-container .menu-items .s-list {
+  display: none;
+}
+
+.navbar-container
+  .menu-items
+  input[type="checkbox"]:checked
+  + div
+  label
+  .fa-angle-down {
+  display: none;
+}
+
+.navbar-container
+  .menu-items
+  input[type="checkbox"]:checked
+  + div
+  label
+  .fa-angle-up {
+  display: inline;
+}
+
+.navbar-container .menu-items input[type="checkbox"]:checked ~ .s-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-items {
+  background: var(--background-color);
+  height: 100vh;
+  transform: translate(-350%);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.5s ease-in-out;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.menu-items li {
+  list-style: none;
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+  font-family: var(--body-font);
+  font-size: large;
+}
+
+.menu-items li .fa-circle-user {
+  padding: 1rem;
+}
+
+.menu-items a {
+  text-decoration: none;
+  color: var(--main-text-color);
+  font-weight: 500;
+}
+
+.menu-items a:hover {
+  color: var(--hover-color);
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-container input[type="checkbox"]:checked ~ .menu-items {
+  transform: translateX(0);
+}
+
+.navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+  transform: rotate(45deg);
+}
+
+.navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+  transform: scaleY(0);
+}
+
+.navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+  transform: rotate(-45deg);
+}
+
+.animated-line::before {
+  content: "";
+  animation: animate infinite 10s;
+  font-family: var(--headings-font);
+  line-height: 20px;
+  letter-spacing: 0.1rem;
+  padding: 1rem;
+}
+
+@keyframes animate {
+  0% {
+    content: "Call Us Now! 123-456-7890";
+  }
+  50% {
+    content: "We Deliver to Your Doorstep";
+  }
+  100% {
+    content: "Call Us Now! 123-456-7890";
+  }
+}
+
+header .Q-img {
+  position: fixed;
+  border-radius: 8rem;
+  background-color: var(--main-text-color);
+  padding: 0.6rem 0.6rem 0.2rem 0.6rem;
+  right: 1rem;
+  bottom: 1.5rem;
+  z-index: 10;
+}
+
+header .Q-img p {
+  display: none;
+}
+
+/* ........./Main/....................... */
+
+/* ............/Section hero/............ */
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+}
+
+.hero {
+  background-image: url(/img/1st.webp);
+  width: 100%;
+  height: 700px;
+  background-size: cover;
+  color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-shadow: 0 0 black;
+  background-position: top;
+  text-align: center;
+}
+
+.hero .logo {
+  display: flex;
+  align-items: center;
+  padding-top: 20%;
+  gap: 1rem;
+}
+
+.hero h1 {
+  font-family: var(--headings-font);
+  font-size: xxx-large;
+  font-weight: 100;
+  letter-spacing: 0.3rem;
+  padding: 1rem 0;
+  line-height: 6rem;
+}
+
+.hero h3 {
+  font-family: var(--body-font);
+  font-weight: 500;
+  letter-spacing: 0.25rem;
+  font-size: x-large;
+  width: 60%;
+  text-align: center;
+}
+
+.hero .logo h3 {
+  border-bottom: 0.3rem solid var(--white-color);
+}
+
+.hero .logo svg {
+  color: var(--white-color);
+  width: 11rem;
+}
+
+.hero .btn-1 {
+  margin-top: 10%;
+}
+
+/* ............/Shop Section/............ */
+
+main .one,
+main .two,
+main .three {
+  background-size: contain;
+  margin-top: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+main .one img,
+main .two img,
+main .three img {
+  object-fit: contain;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+main .one h1,
+main .two h1,
+main .three h1 {
+  color: var(--main-text-color);
+  font-family: var(--headings-font);
+  font-weight: 500;
+  padding-top: 1rem;
+  position: absolute;
+  top: 1rem;
+}
+
+main .shop-section .btn-1 {
+  position: absolute;
+  top: 7rem;
+}
+
+main .shop-section .dash {
+  position: absolute;
+  top: 4rem;
+}
+
+/* ............/About Section/............ */
+
+main .about {
+  margin-top: 3rem;
+}
+
+main .about-container {
+  text-align: center;
+  color: var(--main-text-color);
+  background-color: var(--white-color);
+  padding: 3rem 2rem;
+}
+
+main .about-container h1,
+main .form-container h1 {
+  font-family: var(--body-font);
+  font-weight: 300;
+  letter-spacing: 0.3rem;
+  font-size: large;
+  padding-bottom: 1rem;
+}
+
+main .about-container p {
+  font-family: var(--body-font);
+  font-weight: 300;
+  padding-top: 1rem;
+}
+
+main .about img {
+  width: 100%;
+  object-fit: fill;
+  height: 250px;
+  display: block;
+  z-index: 0;
+}
+
+.green {
+  background-color: var(--hover-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.green-padding {
+  padding: 6rem 2rem;
+}
+
+main .about .green h1 {
+  font-family: var(--headings-font);
+  color: var(--white-color);
+  font-size: 60px;
+  font-weight: 400;
+  padding-bottom: 3rem;
+}
+
+/* ............/Form Section/............ */
+
+main .form-container {
+  color: var(--main-text-color);
+  background-color: var(--white-color);
+  margin: 2rem 0.5rem 0 0.5rem;
+  padding: 2rem 1rem;
+}
+
+main .form-container label {
+  color: var(--hover-color);
+  font-size: 1rem;
+}
+
+.form-container h1 {
+  padding: 0 3rem;
+  text-align: center;
+}
+
+main form {
+  font-size: 1.3rem;
+  color: var(--transparent-White);
+  font-family: var(--body-font);
+}
+
+main form input {
+  width: 100%;
+  height: 2rem;
+  margin: 1rem 0;
+}
+
+main form #message {
+  height: 5rem;
+}
+
+main form .btn-1 {
+  width: 100%;
+  height: 3rem;
+  line-height: rem;
+  border: none;
+  padding: 0;
+  /* position: relative; */
+}
+
+main .form-section img {
+  width: 100%;
+  object-fit: cover;
+  height: 250px;
+  display: block;
+}
+
+.contact-padding {
+  padding: 2.5rem 1.5rem 2rem 1.5rem;
+}
+
+.contact h1 {
+  font-family: var(--subheadings-font);
+  font-size: larger;
+  font-weight: 200;
+  padding-bottom: 2rem;
+  letter-spacing: 0.4rem;
+  color: var(--white-color);
+}
+
+.contact p,
+.contact a {
+  font-family: var(--body-font);
+  font-weight: 200;
+  padding-bottom: 2rem;
+  line-height: 1.5rem;
+  color: var(--white-color);
+}
+
+.contact form input {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: var(--hover-color);
+  border: 1px solid var(--white-color);
+}
+
+.contact form input:hover {
+  border: 3px solid var(--white-color);
+}
+
+.contact form label {
+  color: var(--white-color);
+  float: left;
+  font-weight: 200;
+  font-size: large;
+}
+
+.contact form .btn-2 {
+  width: 100%;
+  height: 3rem;
+  border: none;
+  padding: 0;
+}
+
+.contact-icons {
+  margin-top: 1rem;
+}
+
+.contact .map {
+  width: 100%;
+  height: 400px;
+}
+
+/* ........./Footer/....................... */
+
+footer {
+  background-color: var(--background-color);
+  font-family: var(--body-font);
+  color: var(--main-text-color);
+  padding: 2rem 2rem 4rem 2rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+/* ........./Media query/....................... */
+
+/* ........./Desktop/....................... */
+
+@media (min-width: 750px) {
+  header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+  }
+
+  main {
+    margin: 0 3rem;
+  }
+
+  .navbar-container input,
+  .navbar-container .hamburger-lines {
+    display: none;
+  }
+
+  .navbar-container,
+  .nav-search {
+    margin: 0 3rem;
+  }
+
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    height: 65px;
+    align-items: center;
+  }
+
+  .navbar .menu-items {
+    display: flex;
+    height: auto;
+    flex-direction: row;
+    align-items: stretch;
+    transform: none;
+    position: static;
+  }
+
+  .navbar-container .menu-items label {
+    display: none;
+  }
+
+  .navbar-container .menu-items li .log-in {
+    position: absolute;
+    top: 0.3rem;
+    right: 8rem;
+  }
+
+  .navbar-container .menu-items li {
+    margin: 0;
+    padding-right: 1rem;
+    font-size: medium;
+  }
+
+  .animated-line::before {
+    position: absolute;
+    position: absolute;
+    right: 3rem;
+    top: 4rem;
+  }
+
+  .navbar {
+    height: 65px;
+  }
+
+  .navbar-container h1 {
+    width: 14rem;
+  }
+
+  header .Q-img p {
+    display: inline;
+    font-family: var(--headings-font);
+    color: var(--white-color);
+    padding: 0 0.5rem;
+  }
+
+  header .Q-img {
+    border-radius: 0;
+    background-color: var(--main-text-color);
+    padding: 1rem 3rem;
+    right: 1rem;
+    bottom: 1.5rem;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+  }
+
+  .hero {
+    background-attachment: fixed;
+  }
+  .hero .logo {
+    padding-top: 6rem;
+  }
+
+  .hero h1 {
+    font-size: 6rem;
+    letter-spacing: 1rem;
+  }
+
+  .hero h3 {
+    font-size: 1rem;
+  }
+
+  .hero .btn-1 {
+    margin-top: 3rem;
+  }
+
+  .shop-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 3rem;
+  }
+
+  .about {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 0.5fr;
+    grid-template-rows: 1fr 700px;
+  }
+
+  main .about img {
+    object-fit: cover;
+    height: 100%;
+    display: inline;
+  }
+
+  #Promo {
+    grid-column: 2/4;
+  }
+
+  main .about-container {
+    padding: 6rem 6rem;
+  }
+
+  main .about .green h1 {
+    padding: 3rem 9rem;
+    margin-bottom: 2rem;
+    font-size: 80px;
+  }
+
+  main .form-section {
+    background-image: url(/img/8.jpg);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main .form-container {
+    background-color: var(--transparent-White);
+    width: 800px;
+    margin: 6rem auto;
+  }
+
+  main .form-section img {
+    display: none;
+  }
+
+  .form-container {
+    color: var(--main-text-color);
+    background-color: var(--white-color);
+    margin: 2rem 0.5rem 0 0.5rem;
+    padding: 2rem 1rem;
+  }
+
+  .form-section .form-container form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      "F L"
+      "E E"
+      "P P"
+      "M M"
+      "B B";
+    gap: 0 8px;
+    padding-top: 3rem;
+  }
+
+  #F {
+    grid-area: F;
+  }
+
+  #L {
+    grid-area: L;
+  }
+
+  #E {
+    grid-area: E;
+  }
+
+  #P {
+    grid-area: P;
+  }
+
+  #M {
+    grid-area: M;
+  }
+
+  #B {
+    grid-area: B;
+  }
+
+  main .contact {
+    display: grid;
+    grid-template-columns: 3rem 8rem 1fr 1fr 1fr 8rem 3rem;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      ". . S O H . ."
+      ". . C C C . ."
+      ". . . I . . ."
+      "A A A A A A A";
+
+    padding-top: 2rem;
+    align-items: baseline;
+  }
+
+  #S {
+    grid-area: S;
+  }
+
+  #O {
+    grid-area: O;
+  }
+
+  #H {
+    grid-area: H;
+  }
+
+  #C {
+    grid-area: C;
+  }
+
+  #I {
+    grid-area: I;
+  }
+  #A {
+    grid-area: A;
+  }
+
+  #C form {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    justify-content: center;
+    align-items: baseline;
+  }
+
+  #C form button {
+    font-weight: 200;
+    width: 7rem;
+    height: 2rem;
+  }
+
+  #C form div {
+    width: 17rem;
+  }
+}

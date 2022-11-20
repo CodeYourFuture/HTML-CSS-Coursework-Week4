@@ -1,21 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- Add a link to your custom CSS here -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/cc6a0049ef.js"
+      crossorigin="anonymous"
+    ></script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Outfit:wght@100;200;400&display=swap" rel="stylesheet">
+
 
     <title>Responsive grid project</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- Add your markup here -->
+    <header>
+      <div class="nav-search">
+        <form>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" class="search" placeholder="Search..." />
+        </form>
+        <a href="">
+          <img
+            src="./icons/icons8-paper-bag-64.png"
+            alt=""
+            class="search-bag"
+          />
+        </a>
+      </div>
+      <div>
+        <nav class="navbar">
+          <div class="navbar-container">
+            <h1><a href="./index.html">PRICKLES & CO.</a></h1>
+            <input type="checkbox" name="list" id="list" />
+            <label for="list" class="hamburger-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+            </label>
+            <ul class="menu-items">
+              <li>
+                <a href="#" class="log-in"><i class="fa-solid fa-circle-user"></i>Log in</a>
+              </li>
+              <input type="checkbox" name="sublist" id="sublist" />
+              <div>
+                <li><a href="#">Shop</a></li>
+                <span>
+                  <label for="sublist">
+                    <i class="fa-solid fa-angle-down"></i>
+                    <i class="fa-solid fa-angle-up"></i>
+                  </label>
+                </span>
+              </div>
+              <span class="s-list">
+                <li><a href="#">Cacti</a></li>
+                <li><a href="#">Plants</a></li>
+                <li><a href="#">Succulents</a></li>
+              </span>
+              <li><a href="#abt" target="_top">About</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#f-Sec" target="_top">Contact</a></li>
+            </ul>
+          </div>
+          <div class="animated-line"></div>
+        </nav>
+      </div>
+      <div class="Q-img">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" style="width: 24px; height: 24px; color: rgb(255, 255, 255);"> <g fill="none" fill-rule="evenodd"> <g fill="currentColor" fill-rule="nonzero"> <g> <g> <path d="M14 0C6.28 0 0 5.8 0 12.93c.007 2.165.593 4.288 1.696 6.15L.028 26.59c-.095.427.06.871.398 1.148.339.277.804.34 1.204.162l6.914-3.072c1.738.685 3.589 1.035 5.456 1.033 7.72 0 14-5.8 14-12.93S21.72 0 14 0zm4.508 16.32H9.492c-.64 0-1.16-.52-1.16-1.16 0-.64.52-1.16 1.16-1.16h9.016c.64 0 1.16.52 1.16 1.16 0 .64-.52 1.16-1.16 1.16zm0-4.638H9.492c-.64 0-1.16-.519-1.16-1.16 0-.64.52-1.158 1.16-1.158h9.016c.64 0 1.16.519 1.16 1.159s-.52 1.159-1.16 1.159z" transform="translate(-2580 -734) translate(2580 734) translate(2 2)" fill="white"></path> </g> </g> </g> </g> </svg>
+      <p>Let's Chat!</p>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="logo">
+                <h3>ESTB</h3>
+                <div>
+                    <svg preserveAspectRatio="xMidYMid meet" data-bbox="10.326 50.3 180.129 101.208" xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="10.326 50.3 180.129 101.208" role="presentation" aria-hidden="true">
+                        <g>
+                            <path d="M105.6 52.7c-1.8-1.5-3.5-2.4-5.1-2.4-1.6.1-3.3 1-5.1 2.4-11.2 9.2-16.3 21-17 35.2-.4 7.5-1.3 14.8 10.2 12.6 1.3-.2 3.1-.2 4.3.6 1 .6 1.9 1.4 2.6 2.4 3 4.3 2.2 9.1 1 13.9-1.8 7-2.5 14.2-1.6 21.3.6 4.9-.6 13.1 5.6 12.8 6.3.3 5-7.9 5.6-12.8.9-7.2.2-14.3-1.6-21.3-1.2-4.8-2.1-9.7 1-13.9.7-.9 1.6-1.7 2.6-2.4 1.2-.8 3-.8 4.3-.6 11.5 2.1 10.6-5.2 10.2-12.6-.7-14.2-5.8-26-17-35.2z"  fill="currentcolor"></path>
+                            <path d="M57.6 128.4c1.5-2.3 3.7-6.5 3.6-11.2-.2-5.8-4-10.6-5.4-12.2-.3-.3-.7-.3-1 0-1.2 1.5-4.4 6.1-4.2 11.8.1 3.7 3 8.4 4.8 10.8-.2 2-.2 4 0 5.5v.2c-4.4-2.4-8.9-5.5-12.9-9.7-.1-.2-.2-.3-.4-.4-1.5-1.6-2.9-3.2-4.1-5.1-.3-.4-.5-.8-.8-1.2-.8-2.6-.5-5.5.9-7.9 2.7-.7 6.4-2.2 9.1-5.2 4-4.3 4.6-10.5 4.7-12.5 0-.4-.3-.6-.7-.6-2 .3-8 1.5-12 5.8-2.6 2.7-3.4 8.2-3.2 11.6-.7 1.3-1.2 2.8-1.4 4.2-2.5-5-4.2-10.6-4.9-16.6.1-3 1.7-5.7 3.9-6.9 2.1-.1 5.5-.6 8.1-2.7 3.2-2.6 4.2-6.9 4.5-8.7.1-.4-.2-.8-.7-.8-1.7 0-6.2.1-9.3 2.7-2.8 2.3-3.9 5.9-4.3 8-1 .7-1.9 1.6-2.5 2.6-.2-5.6.4-11.7 1.6-18.1 1.8-.5 5.6-2.1 8.1-5 3.2-3.6 3.8-8.4 3.8-10.3 0-.4-.4-.7-.8-.7-1.9.4-5.9 1.8-9.4 5.2-2.6 2.6-3.4 6.4-3.6 8.5-2 9.5-2.6 18.2-1.6 26.1v.2c-1.1-1.4-2.3-2.7-3.4-3.8-.1-2.4-.7-6.2-3.1-9.2-3.1-3.9-8.2-5.1-9.9-5.4-.3-.1-.6.2-.7.5-.1 1.7 0 6.6 3 10.4 1.8 2.3 5.7 3.9 8.3 4.6 2.5 1.7 6 6.4 6.9 9.1 1.3 5.7 3.5 10.9 6.6 15.6v.1c.3.5.6 1 .9 1.4l.9 1.2c-1.3-.4-2.7-.8-4.1-.8-.1-.2-.1-.4-.3-.6-1.9-2.3-5.4-5.6-9.1-6.2-5.6-1-10.9 1.6-12.8 2.7-.4.2-.5.8-.2 1.2 1.5 1.7 5.6 5.8 11.2 6.8 3.8.6 7.5-.4 10.1-1.4.1-.1.2-.2.3-.2 3.2-.3 7.5 2 8.4 2.7 5.5 5.9 11.9 9.8 17.6 12.4-.6.4-1.6.8-3.1 1.1-5-3.4-12.7-4-16.4-3.2-7.8 1.8-12.9 7.4-14.5 9.6-.3.4-.2.9.3 1.1 2.4 1.2 10.2 4.6 18 2.8 5.8-1.4 10.3-5.2 12.9-8.1v-.1c1.2-.2 2.3-.5 3.2-.9.9-.4 1.5-.9 1.9-1.3 7.5 3.1 13.4 4 13.9 4l.3-2.2c-.1 0-7.7-1.1-16.5-5.4-.2 0-.8-2.1-.5-5.9z" fill="currentcolor"></path>
+                            <path d="M190.1 115.9c-1.9-1.1-7.3-3.7-12.8-2.7-3.7.7-7.2 3.9-9.1 6.2l-.3.6c-1.4 0-2.8.3-4.1.8l.9-1.2c.3-.5.6-1 .9-1.4v-.1c3-4.7 5.2-9.9 6.6-15.6.9-2.6 4.4-7.4 6.9-9.1 2.5-.7 6.4-2.3 8.3-4.6 3-3.8 3.1-8.7 3-10.4 0-.3-.3-.6-.7-.5-1.7.3-6.8 1.5-9.9 5.4-2.4 3-3 6.8-3.1 9.2-1.2 1-2.4 2.3-3.4 3.8v-.2c.9-7.9.4-16.6-1.6-26.1-.2-2.1-1-5.9-3.6-8.5-3.5-3.4-7.5-4.9-9.4-5.2-.4-.1-.8.2-.8.7 0 1.9.6 6.7 3.8 10.3 2.6 2.9 6.3 4.4 8.1 5 1.3 6.4 1.8 12.4 1.6 18.1-.7-1.1-1.5-2-2.5-2.6-.4-2-1.5-5.6-4.3-8-3.2-2.6-7.6-2.8-9.3-2.7-.4 0-.7.4-.7.8.3 1.7 1.3 6 4.5 8.7 2.6 2.1 6 2.6 8.1 2.7 2.2 1.2 3.7 3.9 3.9 6.9-.7 6.1-2.4 11.6-4.9 16.6-.2-1.5-.7-2.9-1.4-4.2.2-3.4-.6-8.9-3.2-11.6-4-4.2-10-5.5-12-5.8-.4-.1-.7.2-.7.6.1 2 .7 8.2 4.7 12.5 2.7 3 6.4 4.4 9.1 5.2 1.4 2.4 1.7 5.2.9 7.9-.3.4-.5.8-.8 1.2-1.3 1.8-2.7 3.5-4.1 5.1l-.4.4c-4 4.2-8.5 7.4-12.9 9.7v-.2c.2-1.6.2-3.5 0-5.5 1.8-2.4 4.7-7 4.8-10.8.2-5.7-3-10.3-4.2-11.8-.2-.3-.7-.3-1 0-1.4 1.6-5.2 6.3-5.4 12.2-.2 4.7 2.1 8.9 3.6 11.2.3 3.7-.2 5.8-.5 6.4-8.9 4.3-16.5 5.4-16.6 5.4l.3 2.2c.5-.1 6.4-.9 13.9-4 .4.4.9.9 1.9 1.3.9.4 2 .7 3.2.9v.1c2.6 2.8 7.1 6.7 12.9 8.1 7.8 1.8 15.6-1.6 18-2.8.4-.2.5-.7.3-1.1-1.6-2.2-6.7-7.8-14.5-9.6-3.7-.8-11.3-.2-16.4 3.2-1.5-.3-2.5-.7-3.1-1.1 5.7-2.6 12.1-6.6 17.6-12.4.9-.8 5.1-3 8.4-2.7.1.1.2.2.3.2 2.6 1.1 6.3 2.1 10.1 1.4 5.6-.9 9.8-5.1 11.2-6.8.4-.9.3-1.4-.1-1.7z" fill="currentcolor"></path>
+                        </g>
+                    </svg>
+                </div>
+                <h3>2023</h3>
+            </div>
+            <h1>PRICKLES & CO</h1>
+            <h3>BRING NATURE INDOORS</h3>
+            
+            <a href="" class="btn-1">Shop Now</a>
+        </section>
+        <section class="shop-section">
+            <div class="one">
+                <h1>CACTI</h1>
+                <div class="dash"></div>
+                <a href="" class="btn-1">Shop Collection</a>
+                <img src="./img/2.webp" alt="">
+            </div>
+            <div class="two">
+                <h1>PLANTS</h1>
+                <div class="dash"></div>
+                <a href="" class="btn-1">Shop Collection</a>
+                <img src="./img/3.webp" alt="">
+            </div>
+            <div class="three">
+                <h1>SUCCULENTS</h1>
+                <div class="dash"></div>
+                <a href="" class="btn-1">Shop Collection</a>
+                <img src="./img/4.webp" alt="">
+            </div>
+        </section>
+        <section id="abt" class="about">
+            <div class="about-container">
+                <h1>ABOUT US</h1>
+                <div class="dash"></div>
+                <P>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.</P>
+                <br>
+                <P>This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide.</P>
+            </div>
+            <div>
+                <img src="./img/5.webp" alt="">
+            </div>
+            <div>
+                <img src="./img/6.webp" alt="">
+            </div>
+            <div>
+                <img src="./img/7.jpg" alt="">
+            </div>
+            <div id="Promo" class="green green-padding">
+                <h1>BUY ONLINE NOW & GET 10% OFF !</h1>
+                <a href="" class="btn-2">Shop Now</a>
+            </div>
+        </section>
+        <section id="f-Sec" class="form-section">
+          <div  class="form-container">
+            <h1>FOR SPECIAL REQUESTS & ORDERS</h1>
+            <div class="dash"></div>
+            <form action="" method="get">
+              <div id="F">      
+                  <label for="First-name">First name *</label>
+                  <input id="First-name" type="text" name="First name" required/>
+              </div>
+              <div id="L">
+                  <label for="Last-name">Last name *</label>
+                  <input id="Last-name" type="text" name="Last name" required/>
+              </div>
+              
+              <div id="E">
+                  <label for="Email">Email *</label>
+                  <input id="Email" type="email" name="Email" required/>
+              </div>
+              
+              <div id="P">
+                  <label for="Phone">Phone</label>
+                  <input id="Phone" type="text" name="Phone"/>
+              </div>
 
+              <div id="M">
+                  <label for="message">Message</label>
+                  <input id="message" type="text" name="Message"/>
+              </div>
+              <button id="B" class="btn-1">Send</button>
+            </form>
+          </div>
+          <img src="./img/8.webp" alt="">
+        </section>
+        <section class="contact green">
+          <div id="S" class="contact-padding">
+          <h1>OUR STORE</h1>
+          <p>Address: 500 Terry Francois Street San Francisco, CA 94158</br>
+            Phone: 123-456-7890</br>
+            Email:  info@mysite.com
+          </p>
+          </div>
+          <div id="O" class="contact-padding">
+          <h1>OPENING HOURS</h1>
+          <p>Mon - Fri: 7am - 10pm</br>
+            ​​Saturday: 8am - 10pm</br>
+            ​Sunday: 8am - 11pm
+          </p>
+          </div>
+          <div id="H" class="contact-padding">
+          <h1>HELP</h1>
+          <a href="">
+            <u>Shipping & Returns</br>
+              Privacy Policy</br>
+              FAQ
+            </u>
+          </a>
+          </div>
+          <div id="C" class="contact-padding">
+          <h1>SUBSCRIBE</h1>
+          <form action="" method="get">
+            <div>
+                <label for="Email">Enter your email here *</label>
+                <input id="Email" type="email" name="Email" required/>
+            </div>
+            <button class="btn-2">Subscribe Now</button>
+          </form>
+          </div>
+          <div id="I" class="contact-icons contact-padding">
+            <img src="./img/contact-f.webp.webp" alt="">
+            <img src="./img/contact-insta.webpwebp" alt="">
+            <img src="./img/contact-p.webp" alt="">
+          </div>
+        <div id="A" class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8405286753054!2d-122.38929098469427!3d37.77033727976035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7fc4fe5e0af3%3A0x11c548b59491f791!2s500%20Terry%20A%20Francois%20Blvd%206th%20floor%2C%20San%20Francisco%2C%20CA%2094158%2C%20USA!5e0!3m2!1sen!2suk!4v1668631819291!5m2!1sen!2suk" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+          
+        </section>
+    </main>
+    <footer>
 
     <!-- Please leave this in to credit the creators of this design -->
-    <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
-</body>
-
+    <p>
+      This website design was created by Wix.com, and is used here for strictly
+      educational purposes.
+    </p>
+    </footer>
+  </body>
 </html>
