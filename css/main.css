@@ -9,11 +9,12 @@ body{
     /* min-width: auto; */
     margin-top: 5rem;
     font-family: "poppins", sans serif;
-}
+  }
+
 .topnav{
     display: flex;
     flex-direction: row;
-   
+     
 }
 
 #myLinks a {
@@ -75,7 +76,7 @@ body{
 .blue-button {
   width: 20px;
   height: 20px;
-  background-color: blue;
+  background-color: #0050FF;
   margin-top: 20px;
   margin-left: 14px;
 }
@@ -128,30 +129,33 @@ img{
   .buttons{
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 20px; 
   }
 
   .resume, .projects{
     margin-top: 15px;
-    background-color: rgb(255, 255, 255);
+    background-color: #0050ff;
     height: 30px;
     width: 85px;
-    border-radius: 14%;
-
+    border-radius: 50px;
+    font: 14px avenir;
   }
+  
 .main-text{
     grid-area: right;
-    border: 3px solid blue;
+    border: 3px solid;
     width: 20em;
-    font-size: 17px;
     right: 350px; 
     text-align: center;  
-    margin-top: 60px;
-    
+    margin-top: 60px; 
+    font: 17px avenir;      
 }
+
 #greeting{
-  font-size: 40px;
+  font-size: 0px;
+  font: 100px poppins-semibold;
 }
+
 #firstname{
     text-align: center;
     font-size: 15px;
