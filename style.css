@@ -1,0 +1,329 @@
+/* Add your CSS here */
+
+/* Dont' forget to link this file to your HTML in the <head> */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  
+/* header */
+header {
+    position: sticky;
+    background-color: white;
+}
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.header-menu{
+    display: flex;
+    
+}
+
+.header-menu li {
+    padding: 20px;
+    list-style: none;
+    font-size: 0.9rem;
+    font-family: 'Quicksand', sans-serif;
+    
+}
+
+.header-navigation a {
+    text-decoration: none;
+    color: black;
+}
+
+.header-name{
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.project-manager{
+    font-size: 1rem;
+    font-family: 'Quicksand', sans-serif;
+}
+header {
+    top: 0;
+    left: 0;
+    width: 100%; 
+}
+
+.square {
+    background-color: blue;
+    height: 15px;
+    width: 15px;
+}
+
+.square-name {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+/* main */
+
+.content-wrapper{
+    display: flex;
+    /* width: 1440px; */
+    height: 90vh;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.background-dark-beige {
+    background: #E6DACD;
+    width: 40%;
+    height: 90vh;
+    position: absolute;
+    z-index: -1;
+}
+
+.card-container {
+    background-color: #F4ECE6;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+    gap: 2.5rem;
+    /* width: 50%; */
+}
+img {
+    width: 50%;
+    height: auto;
+    border-radius: 50%;
+    }
+
+    .card-name{
+        font-size: 1.6rem;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+    }
+
+    hr.blue-line {
+        background-color: #0150FD;
+        width: 20% ;
+        height: 2px;
+      }
+
+    .card-project-manager{
+        font-size: 1.1rem;
+        letter-spacing: 0.5rem;
+        font-family: 'Quicksand', sans-serif;
+    }
+    .social {
+        background-color: white;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 3rem;
+        align-items: center;
+    }
+    .social i {
+        padding-left: 30px;
+    }
+
+    .card-wrapper {
+        display: flex;
+    }
+
+    .hello-section {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        gap: 2rem;
+        width: 25%;
+    }
+
+    .hello {
+        font-size: 6.3rem;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .do {
+        font-size: 1.6rem;
+    }
+    .par1 .par2 {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .links-wrapper {
+        display: flex;
+        gap: 1.5rem;
+    }
+    .link-resume {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 10rem;
+        height: 3rem;
+        border-radius: 2rem;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        cursor: pointer;
+        color: white;
+        border: 0.16rem solid black;
+        background-color: #0150FD;
+    }
+
+    .link-projects {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 10rem;
+        height: 3rem;
+        border-radius: 2rem;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        cursor: pointer;
+        color: inherit;
+        border: 0.16rem solid black;
+    }
+/* footer */
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: end;
+    margin: 0 2rem;
+}
+
+.footer-action {
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    
+}
+
+.call{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.follow{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.write{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-add {
+    text-decoration: none;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.social-footer {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+}
+
+.new {
+    display: none;
+}
+
+.hamburger-menu {
+    display: none;
+}
+@media screen and (max-width: 600px){
+    .header-menu{
+        display: none;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+        height: 100%;
+        background-color: #E6DACD;
+    }
+
+    .background-dark-beige {
+        display: none;
+    }
+
+    .hello-section {
+        width: auto;
+        padding: 60px;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        justify-items: start;
+        gap: 1rem;
+    }
+
+    .call {
+        grid-column: 1/2;
+    }
+
+    .wix {
+        display: none;
+        grid-column: 1/3;
+    }
+    .new {
+        display: block;
+        grid-column: 1/3;
+    }
+    .card-container {
+        margin-top: 1rem;
+        
+    }
+
+    .hamburger-menu {
+        display: block;
+        margin-right: 3rem;
+    }
+
+    .blue-menu-line1 {
+        position: relative;
+        width: 1rem;
+        height: 4px;
+        border-radius: 3px;
+        background-color: blue;
+        margin-top: 8px;
+        right: 20px
+    }
+
+    .blue-menu-line2 {
+        position: relative;
+        width: 2rem;
+        height: 4px;
+        border-radius: 3px;
+        background-color: blue;
+        margin-top: 8px;
+    }
+
+    .blue-menu-line3 {
+        position: relative;
+        width: 1rem;
+        height: 4px;
+        border-radius: 3px;
+        background-color: blue;
+        margin-top: 8px;
+        right: -20px
+    }
+
+}
