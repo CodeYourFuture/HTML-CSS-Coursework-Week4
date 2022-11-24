@@ -243,4 +243,8 @@ footer p {
   .backgroundSection {
     background-color: var(--white);
   }
+  header,
+  footer {
+    padding: 1em;
+  }
 }
