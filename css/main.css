@@ -228,23 +228,37 @@ footer p {
 }
 
 @media screen and (min-width: 900px) {
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1em;
+    color: black;
+    z-index: 1;
+  }
+  #navbarImg {
+    display: none;
+  }
   main {
-    grid-template-columns: 10% 1fr 2fr 10%;
-
+    grid-template-columns: 1fr 2fr;
     grid-template-areas:
-      "h h h h"
-      " . c b b"
-      "f f f f";
+      " h h"
+      " c b"
+      "f f";
+    background-color: var(--darkBeige);
   }
   .card {
-    margin-right: -10px;
-    margin: 1em -10% 1em 1em;
+    margin: 1em -20% 1em 1em;
+    z-index: 1;
   }
   .backgroundSection {
+    padding-left: 20%;
+    z-index: 0;
     background-color: var(--white);
   }
   header,
   footer {
     padding: 1em;
+    background-color: var(--white);
   }
 }
