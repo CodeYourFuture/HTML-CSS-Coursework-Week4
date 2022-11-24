@@ -2,6 +2,13 @@
 
 /* Dont' forget to link this file to your HTML in the <head> */
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  
 /* header */
 header {
     position: sticky;
@@ -148,19 +155,41 @@ img {
         font-weight: bold;
     }
 
-    .buttons {
+    .links-wrapper {
         display: flex;
-        gap: 1rem;
+        gap: 1.5rem;
+    }
+    .link-resume {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 10rem;
+        height: 3rem;
+        border-radius: 2rem;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        cursor: pointer;
+        color: white;
+        border: 0.16rem solid black;
+        background-color: #0150FD;
     }
 
-    button {
-        border-radius: 20px;
-        padding: 5px 25px;
-        font-size: 0.9rem;
-    }
-    .resume-button {
-        background-color: #0150FD;
-        color: white;
+    .link-projects {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 10rem;
+        height: 3rem;
+        border-radius: 2rem;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        cursor: pointer;
+        color: inherit;
+        border: 0.16rem solid black;
     }
 /* footer */
 
@@ -270,7 +299,7 @@ footer {
 
     .blue-menu-line1 {
         position: relative;
-        width: 1em;
+        width: 1rem;
         height: 4px;
         border-radius: 3px;
         background-color: blue;
@@ -280,7 +309,7 @@ footer {
 
     .blue-menu-line2 {
         position: relative;
-        width: 2em;
+        width: 2rem;
         height: 4px;
         border-radius: 3px;
         background-color: blue;
@@ -289,7 +318,7 @@ footer {
 
     .blue-menu-line3 {
         position: relative;
-        width: 1em;
+        width: 1rem;
         height: 4px;
         border-radius: 3px;
         background-color: blue;
