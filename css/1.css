@@ -1,0 +1,10 @@
+div {
+  background-color: red;
+  height: 100px;
+  width: 80vw;
+  min-width: 200px;
+  width: max(80vw, 200px);
+}
+h1 {
+  font-size: max(10vw, 12px);
+}

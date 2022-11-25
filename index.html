@@ -4,105 +4,187 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Responsive-grid-project" />
     <title>Responsive grid project</title>
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Outfit:wght@200&display=swap"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
-    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
 
   <body>
     <header>
-      <div class="bottom-btn">
-        <i class="fa-solid fa-comment"></i>
+      <div class="bottom-btn flex">
+        <img
+          src="./img/svg/comment-solid.svg"
+          alt="comment"
+          class="svg-color-white"
+          width="20"
+          height="20"
+        />
         <p class="desktop-letschat">Let's Chat</p>
       </div>
-      <section class="header-section">
+      <section class="header-section flex">
         <div class="header-search">
-          <input type="text" placeholder="Search..." />
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
-        <div>
-          <div class="desktop-login">
-            <i class="fa-solid fa-circle-user"></i> Log in
+          <input type="text" placeholder="Search..." id="hidden" />
+          <label for="hidden">this text has to is hidden</label>
+          <div class="img-magnifying">
+            <img
+              src="./img/svg/magnifying-glass-solid.svg"
+              alt="magnifying"
+              class="svg-color-red-brown"
+              width="16"
+              height="16"
+            />
           </div>
-
-          <i class="fa-solid fa-bag-shopping">
+        </div>
+        <div class="header-right">
+          <div class="desktop-login">
+            <img
+              src="./img/svg/circle-user-solid.svg"
+              alt="user"
+              class="svg-color-red-brown"
+              width="22"
+              height="22"
+            />
+            <p>Log in</p>
+          </div>
+          <div class="header-bag">
+            <img
+              src="./img/svg/bag-shopping-solid.svg"
+              alt="bag"
+              class="svg-color-red-brown"
+              width="22"
+              height="22"
+            />
             <div class="cart-num">0</div>
-          </i>
+          </div>
         </div>
       </section>
       <nav>
-        <div class="nav-title">
-          <p class="fjalla">prickles & co.</p>
-          <ul class="desktop-nav">
+        <div class="nav-left flex">
+          <h2 class="fjalla nav-title">prickles & co.</h2>
+          <ul class="desktop-nav grid">
             <li>Shop</li>
-            <!-- <li>Cacti</li>
-            <li>Plants</li>
-            <li>Succulents</li> -->
-            <li>About</li>
-            <li>FAQ</li>
-            <li>Contact</li>
-          </ul>
-          <label for="menu"><i class="fa-solid fa-bars"></i></label>
-          <input type="checkbox" id="menu" />
-          <ul class="mobile-nav">
-            <li><i class="fa-solid fa-circle-user"></i> Log In</li>
-            <li>Shop</li>
-            <!-- <li>Cacti</li>
-            <li>Plants</li>
-            <li>Succulents</li> -->
             <li>About</li>
             <li>FAQ</li>
             <li>Contact</li>
           </ul>
         </div>
+        <label for="menu"
+          ><img
+            src="./img/svg/bars-solid.svg"
+            alt="bar"
+            class="svg-color-red-brown"
+            width="20"
+            height="22"
+        /></label>
+        <input type="checkbox" id="menu" />
+        <ul class="mobile-nav">
+          <li>
+            <img
+              src="./img/svg/circle-user-solid.svg"
+              alt="user"
+              class="svg-color-red-brown"
+              width="22"
+              height="22"
+            />
+            Log In
+          </li>
+          <li>Shop</li>
+          <li>About</li>
+          <li>FAQ</li>
+          <li>Contact</li>
+        </ul>
 
-        <div class="nav-tel">
-          <p class="fjalla">Call Us Now! 123-456-7890</p>
+        <div class="nav-right">
+          <a href="tel:+11234567890" class="fjalla nav-tel"
+            >Call Us Now! 123-456-7890</a
+          >
         </div>
       </nav>
     </header>
     <main>
-      <section class="main-hero">
-        <div class="main-hero-fristLine">
+      <section class="main-hero grid">
+        <div class="main-hero-fristLine flex">
           <p>ESTB</p>
           <div>
-            <i class="fa-brands fa-pagelines"></i><i class="lni lni-shovel"></i
-            ><i class="fa-brands fa-pagelines"></i>
+            <img
+              src="./img/svg/pagelines.svg"
+              alt="pagelines"
+              class="svg-color-white svg-pagelines"
+              width="50"
+              height="50"
+            />
+            <img
+              src="./img/svg/shovel.svg"
+              alt="shovel"
+              class="svg-color-white svg-shovel"
+              width="50"
+              height="50"
+            />
+            <img
+              src="./img/svg/pagelines.svg"
+              alt="pagelines"
+              class="svg-color-white svg-pagelines"
+              width="50"
+              height="50"
+            />
           </div>
-          <p>2023</p>
+          <p>2035</p>
         </div>
-        <p class="fjalla">prickles & co</p>
+        <h1 class="fjalla main-hero-title">prickles & co</h1>
         <p>bring nature indoors</p>
         <button>Shop Now</button>
       </section>
-      <section class="main-collection">
-        <div class="main-collection-box">
-          <h2>cacti</h2>
-          <h2>-</h2>
+      <section class="main-collection grid">
+        <div class="main-collection-box grid">
+          <h2 class="fjalla">cacti</h2>
+          <img
+            src="./img/svg/minus-solid.svg"
+            alt="line"
+            class="svg-color-red-brown hr-line"
+            width="20"
+            height="20"
+          />
           <button>Shop Collection</button>
         </div>
-        <div class="main-collection-box">
-          <h2>plants</h2>
-          <h2>-</h2>
+        <div class="main-collection-box grid">
+          <h2 class="fjalla">plants</h2>
+          <img
+            src="./img/svg/minus-solid.svg"
+            alt="line"
+            class="svg-color-red-brown hr-line"
+            width="20"
+            height="20"
+          />
           <button>Shop Collection</button>
         </div>
-        <div class="main-collection-box">
-          <h2>succulents</h2>
-          <h2>-</h2>
+        <div class="main-collection-box grid">
+          <h2 class="fjalla">succulents</h2>
+          <img
+            src="./img/svg/minus-solid.svg"
+            alt="line"
+            class="svg-color-red-brown hr-line"
+            width="20"
+            height="20"
+          />
           <button>Shop Collection</button>
         </div>
       </section>
-      <section class="main-about-shop">
-        <div class="main-about">
-          <p class="main-spacing">about us</p>
-          <h2>-</h2>
+      <section class="main-about-shop grid">
+        <div class="main-about grid">
+          <h1 class="main-spacing">about us</h1>
+          <img
+            src="./img/svg/minus-solid.svg"
+            alt="line"
+            class="svg-color-red-brown hr-line"
+            width="20"
+            height="20"
+          />
           <p>
             I'm a paragraph. Click here to add your own text and edit me. It’s
             easy. Just click “Edit Text” or double click me to add your own
@@ -117,11 +199,23 @@
             provide.
           </p>
         </div>
-        <div class="mobile-main-pics">
-          <img src="./img/mobile/4.webp" alt="4" /><img
+        <div class="mobile-main-pics grid">
+          <img
+            src="./img/mobile/4.webp"
+            alt="bath"
+            width="320"
+            height="223"
+          /><img
             src="./img/mobile/5.webp"
-            alt="5"
-          /><img src="./img/mobile/6.webp" alt="6" />
+            alt="leaf"
+            width="320"
+            height="223"
+          /><img
+            src="./img/mobile/6.webp"
+            alt="female"
+            width="320"
+            height="223"
+          />
         </div>
 
         <div class="desktop-pic4"></div>
@@ -129,79 +223,90 @@
         <div class="desktop-pic6"></div>
 
         <div class="main-buy">
-          <p class="fjalla">BUY ONLINE NOW & GET 10% OFF !</p>
+          <p class="fjalla">buy online now & get 10% off!</p>
           <button>Shop Now</button>
         </div>
       </section>
-      <section class="main-order">
-        <h1>FOR SPECIAL REQUESTS & ORDERS</h1>
-        <h1>-</h1>
-        <form action="">
-          <div class="fn">
-            <label for="">First Name *</label> <input type="text" />
+      <section class="main-order grid">
+        <h1>for special requests & orders</h1>
+        <img
+          src="./img/svg/minus-solid.svg"
+          alt="line"
+          class="svg-color-red-brown hr-line"
+          width="20"
+          height="20"
+        />
+        <form action="" class="grid">
+          <div class="fname">
+            <label for="fname">First Name *</label>
+            <input type="text" id="fname" />
           </div>
-          <div class="ln">
-            <label for="">Last Name *</label> <input type="text" />
+          <div class="lname">
+            <label for="lname">Last Name *</label>
+            <input type="text" id="lname" />
           </div>
-          <div class="em">
-            <label for="">Email *</label> <input type="text" />
+          <div class="email">
+            <label for="email">Email *</label> <input type="text" id="email" />
           </div>
-          <div class="ph">
-            <label for="">Phone</label> <input type="number" />
+          <div class="phone">
+            <label for="ph">Phone</label> <input type="number" id="ph" />
           </div>
-          <div class="mg">
-            <label for="">Message</label>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+          <div class="msg">
+            <label for="msg">Message</label>
+            <textarea name="" id="msg" cols="30" rows="10"></textarea>
           </div>
-          <button class="bu">Send</button>
+          <button class="btn">Send</button>
         </form>
       </section>
       <section class="main-bg"></section>
     </main>
     <footer>
       <section class="footer-section">
-        <div class="footer-3details">
-          <div class="footer-detail">
-            <p>OUR STORE</p>
+        <div class="footer-3details grid">
+          <div class="footer-detail grid">
+            <h3>our store</h3>
             <p>Address: 500 Terry Francois</p>
             <p>Street San Francisco, CA 94158</p>
             <p>Phone: 123-456-7890</p>
             <p>Email: info@mysite.com</p>
           </div>
-          <div class="footer-detail">
-            <p>OPENING HOURS</p>
+          <div class="footer-detail grid">
+            <h3>opening hours</h3>
             <p>Mon - Fri: 7am - 10pm</p>
             <p>Saturday: 8am - 10pm</p>
             <p>Sunday: 8am - 11pm</p>
           </div>
-          <div class="footer-detail">
-            <p>HELP</p>
+          <div class="footer-detail grid">
+            <h3>help</h3>
             <a href="./shipping-returns.html">Shipping & Returns</a>
             <a href="./privacy-policy.html">Privacy Policy</a>
             <a href="#">FAQ</a>
           </div>
         </div>
 
-        <div class="footer-subscribe">
-          <p>SUBSCRIBE</p>
+        <div class="footer-subscribe grid">
+          <h3>subscribe</h3>
           <form action="">
-            <label for="">Enter your email here *</label>
+            <label for="enter">Enter your email here *</label>
             <div class="footer-subscribe-box">
-              <input type="text" /><button>Subscribe Now</button>
+              <input type="text" id="enter" /><button>Subscribe Now</button>
             </div>
           </form>
         </div>
-        <div class="footer-icons">
-          <img src="./img/fb.webp" alt="fb" /><img
+        <div class="footer-icons flex">
+          <img src="./img/fb.webp" alt="fb" width="24" height="24" /><img
             src="./img/pinterest.webp"
             alt="pinterest"
-          /><img src="./img/ig.webp" alt="ig" />
+            width="24"
+            height="24"
+          /><img src="./img/ig.webp" alt="ig" width="24" height="24" />
         </div>
       </section>
       <section class="footer-map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8296652875483!2d-122.38939518502107!3d37.77059197976028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7f1a33f38ea7%3A0xe4941e6c1dc4022b!2s500%20Terry%20A%20Francois%20Blvd%2C%20San%20Francisco%2C%20CA%2094158%2C%20USA!5e0!3m2!1sen!2suk!4v1668513245168!5m2!1sen!2suk"
           loading="lazy"
+          title="map"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
       </section>

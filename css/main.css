@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Outfit:wght@200&display=swap');
 :root {
   --fjalla-one: 'Fjalla One', sans-serif;
   --outfit: 'Outfit', sans-serif;
@@ -15,14 +14,29 @@
   box-sizing: border-box;
   font-family: var(--outfit);
 }
-
-.fjalla,
-.main-collection-box h2 {
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 100;
+}
+body {
+  display: grid;
+  place-items: center;
+  background-color: var(--light-grey);
+}
+.grid {
+  display: grid;
+}
+.flex {
+  display: flex;
+}
+.fjalla {
   font-family: var(--fjalla-one);
-  font-size: 1.2rem;
   letter-spacing: 0.1rem;
   color: var(--red-brown);
 }
+
 .desktop-letschat {
   font-family: var(--fjalla-one);
 }
@@ -39,7 +53,7 @@ button {
   color: var(--white);
   border: transparent;
   padding: 0.8rem 0rem;
-  width: 8rem;
+  width: 10rem;
   cursor: pointer;
 }
 
@@ -54,25 +68,30 @@ button {
   cursor: pointer;
   z-index: 50;
 }
-.fa-comment {
-  font-size: 1.2rem;
-}
 header,
 main,
 footer {
-  /* display: grid; */
   width: 100%;
   height: 100%;
 }
+
 .header-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 1vmax;
   background-color: #fff;
 }
 .header-search {
   position: relative;
+}
+label[for='hidden'] {
+  position: absolute;
+  left: -100000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 .header-section input {
   border: 1px solid var(--white);
@@ -83,26 +102,35 @@ footer {
 .header-section input:hover {
   border: 1px solid var(--red-brown);
 }
-.fa-magnifying-glass {
+.img-magnifying {
   position: absolute;
   left: 0.5rem;
   top: 0.5rem;
 }
 .header-section input::placeholder,
-.fa-magnifying-glass,
-.desktop-login,
-.fa-bag-shopping {
+.desktop-login {
   color: var(--red-brown);
 }
-.fa-bag-shopping,
-.fa-circle-user {
-  font-size: 1.5rem;
+
+.desktop-login p,
+.nav-tel,
+.nav-title,
+.main-hero-title {
+  white-space: nowrap;
+}
+.header-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.header-bag {
   position: relative;
 }
 .cart-num {
   position: absolute;
-  right: 0.4375rem;
-  top: 0.75rem;
+  right: 0.5rem;
+  top: 0.5rem;
   color: var(--white);
   z-index: 10;
   font-size: 0.7rem;
@@ -111,27 +139,31 @@ footer {
 nav {
   background: var(--light-grey);
   display: grid;
-  gap: 1rem;
-  padding: 1rem;
+  padding: 1vmax;
   color: var(--red-brown);
   min-height: 1rem;
+  position: relative;
+}
+.nav-left {
+  align-items: center;
+  gap: 2rem;
 }
 .nav-title {
   text-transform: uppercase;
-  position: relative;
+  font-size: 1.2rem;
 }
-.nav-title .fjalla:hover,
-.nav-title .desktop-nav li:hover {
+.nav-title:hover,
+.desktop-nav li:hover {
   color: var(--green-black);
   cursor: pointer;
 }
-.nav-tel .fjalla {
-  font-size: 0.9rem;
+.nav-tel {
+  font-size: max(1.5vmax, 0.9rem);
 }
 label[for='menu'] {
   position: absolute;
-  top: 1px;
-  right: 1px;
+  top: 1.5vmax;
+  right: 1.5vmax;
   z-index: 200;
 }
 #menu {
@@ -153,31 +185,37 @@ li {
   width: 100%;
 }
 #menu:checked ~ ul > li {
-  padding: 0.5rem 0;
+  padding: 0.3rem 0;
+}
+#menu:checked ~ ul > li:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
 }
 main {
   gap: 1.5rem;
   background-color: var(--light-grey);
 }
 .main-hero {
-  display: grid;
   place-items: center;
+  place-content: center;
+  gap: 1rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('../img/hero.jpg');
+    url('../img/hero.webp');
   background-size: cover;
   background-position: center;
+
   color: var(--white);
-  height: 31.25rem;
+  height: 100vh;
 }
-.main-hero * {
-  margin-bottom: 1rem;
-}
-.main-hero .fjalla {
+.main-hero-title {
   color: var(--white);
-  font-size: 3rem;
+  font-size: max(2rem, 10vw);
+  text-transform: uppercase;
+  letter-spacing: 1vmax;
 }
 .main-hero-fristLine {
-  display: flex;
   justify-content: center;
   align-items: center;
   letter-spacing: 0.2rem;
@@ -197,33 +235,32 @@ main {
   color: #fff;
   z-index: 33;
 }
-.main-hero-fristLine .lni-shovel {
-  font-size: 3rem;
+.main-hero-fristLine .svg-shovel {
   transform: rotate(135deg);
 }
-.main-hero-fristLine .fa-pagelines {
-  font-size: 3rem;
+
+.svg-color-white {
+  filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(338deg)
+    brightness(101%) contrast(100%);
 }
-.main-hero-fristLine .fa-pagelines:first-child {
+.svg-color-red-brown {
+  filter: invert(37%) sepia(74%) saturate(369%) hue-rotate(329deg)
+    brightness(92%) contrast(94%);
+}
+.main-hero-fristLine .svg-pagelines:first-child {
   transform: scaleX(-1);
 }
 .main-hero p {
-  font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
-
   text-align: center;
 }
 /* main-collection */
 .main-collection {
-  display: grid;
   gap: 1.5rem;
   background-color: var(--light-grey);
 }
 .main-collection-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   height: 500px;
   background-size: cover;
   background-position: center;
@@ -231,6 +268,11 @@ main {
   color: var(--red-brown);
   padding-top: 1.5rem;
   letter-spacing: 0.5rem;
+  place-content: start center;
+  place-items: center;
+}
+.main-collection-box h2 {
+  font-size: 3vmax;
 }
 .main-collection-box:first-child {
   background-image: url('../img/mobile/1.webp');
@@ -241,16 +283,18 @@ main {
 .main-collection-box:last-child {
   background-image: url('../img/mobile/3.webp');
 }
-
+.main-collection-box .hr-line {
+  margin: 0.5rem 0;
+}
 .main-about {
   background-color: var(--white);
   color: var(--red-brown);
   text-align: center;
-  padding: 2.5rem 2rem;
+  padding: 2.5vmax 2vmax;
   letter-spacing: 1px;
-}
-.main-about * {
-  padding: 0.5rem 0;
+  line-height: 1.5rem;
+  place-items: center;
+  gap: 1rem;
 }
 .main-about p {
   font-size: 0.8rem;
@@ -261,19 +305,19 @@ main {
   font-size: 1rem;
 }
 
-.mobile-main-pics {
-  display: flex;
-  flex-direction: column;
+.mobile-main-pics img {
+  height: 100%;
+  width: 100%;
 }
 .main-buy {
   padding: 5rem 0;
-  height: auto;
   text-align: center;
   background-color: var(--green-black);
 }
 .main-buy .fjalla {
   font-size: 4rem;
   color: var(--white);
+  text-transform: uppercase;
 }
 .main-buy button {
   margin-top: 5rem;
@@ -281,8 +325,6 @@ main {
   background-color: var(--white);
 }
 .main-order {
-  height: auto;
-  display: grid;
   place-items: center;
   background-color: var(--white);
   padding: 4rem 0;
@@ -294,53 +336,50 @@ main {
   padding: 0 5rem;
   letter-spacing: 0.5rem;
   font-size: 1rem;
-}
-.main-order h1:nth-child(2) {
-  color: var(--red-brown);
-  text-align: center;
-  font-size: 2rem;
+  text-transform: uppercase;
 }
 .main-order form {
-  display: grid;
   padding: 1rem 1rem;
   width: 100%;
   gap: 1rem;
   grid-template-areas:
-    'fn'
-    'ln'
-    'em'
-    'ph'
-    'mg'
-    'bu';
+    'fname'
+    'lname'
+    'email'
+    'phone'
+    'msg'
+    'btn';
 }
-.fn,
-.ln,
-.em,
-.ph,
-.mg,
-.bu {
+.fname,
+.lname,
+.email,
+.phone,
+.msg,
+.btn {
+  width: 100%;
   display: grid;
 }
-.fn {
-  grid-area: fn;
+.fname {
+  grid-area: fname;
 }
-.ln {
-  grid-area: ln;
+.lname {
+  grid-area: lname;
 }
-.em {
-  grid-area: em;
+.email {
+  grid-area: email;
 }
-.ph {
-  grid-area: ph;
+.phone {
+  grid-area: phone;
 }
-.mg {
-  grid-area: mg;
+.msg {
+  grid-area: msg;
 }
-.bu {
-  grid-area: bu;
+.btn {
+  grid-area: btn;
 }
 .main-order form input {
   padding: 0.5rem 0;
+  width: 100%;
 }
 .main-order button {
   margin-top: 0.5rem;
@@ -348,7 +387,7 @@ main {
 }
 .main-bg {
   height: 12.5rem;
-  background-image: url('../img/bg.jpg');
+  background-image: url('../img/bg.webp');
   background-size: cover;
   background-position-y: 50%;
 }
@@ -356,15 +395,14 @@ main {
 .footer-section {
   background-color: var(--green-black);
   color: var(--white);
-  display: grid;
-  place-items: center;
 }
 
-.footer-detail p:first-child,
-.footer-subscribe p:first-child {
+.footer-detail h3,
+.footer-subscribe h3 {
   letter-spacing: 0.5rem;
   font-size: 1rem;
   padding: 0.8rem 0;
+  text-transform: uppercase;
 }
 .footer-detail p:not(first-child) {
   font-size: 0.9rem;
@@ -372,19 +410,14 @@ main {
 }
 
 .footer-detail {
-  padding: 2rem 3.5rem;
-  display: grid;
-  place-items: center;
+  padding: 2rem 0;
   text-align: center;
+  place-content: center;
 }
 .footer-detail a {
   color: var(--white);
 }
 .footer-subscribe {
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  display: grid;
   place-items: center;
 }
 .footer-subscribe form {
@@ -403,8 +436,10 @@ main {
   margin-top: 0.5rem;
   width: 100%;
 }
-.footer-icons * {
-  margin: 3rem 0.5rem;
+.footer-icons {
+  justify-content: center;
+  padding: 3rem 0.5rem;
+  gap: 1rem;
   cursor: pointer;
 }
 .footer-map iframe {
@@ -418,26 +453,37 @@ main {
   padding: 3rem 0;
 }
 .main-help {
-  display: grid;
   place-items: center;
   text-align: center;
   background-color: var(--white);
   color: var(--red-brown);
-  margin: 5rem 0;
+  padding: 5rem 0;
   gap: 4rem;
 }
 .main-help-box * {
   margin: 1rem 3rem;
 }
 @media screen and (min-width: 481px) {
-  .desktop-login,
+  header,
+  main,
+  footer {
+    width: 92%;
+  }
   .desktop-letschat {
     display: inline;
+  }
+  .desktop-login {
+    display: flex;
+    align-items: center;
+  }
+  .main-hero {
+    background-attachment: fixed;
   }
   .bottom-btn {
     border-radius: 0%;
     font-family: var(--fjalla-one);
     padding: 0.9rem 2rem;
+    gap: 0.3rem;
   }
   header {
     position: sticky;
@@ -452,12 +498,10 @@ main {
   .desktop-nav {
     display: grid;
     grid-auto-flow: column;
+    gap: 1rem;
   }
-  .desktop-nav li {
-    padding-left: 1rem;
-  }
-  nav,
-  .nav-title {
+
+  nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -466,64 +510,47 @@ main {
   .header-section {
     height: 3rem;
   }
-  .main-hero {
-    padding-top: 3rem;
-    height: 40rem;
-  }
-  .main-hero .fjalla {
-    font-size: 7rem;
-    letter-spacing: 1rem;
-  }
   .main-collection {
-    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     grid-auto-flow: column;
   }
   .main-about-shop {
-    display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
-      'ab ab p4 p5'
-      'p6 p6 bu bu';
+      'about about pic4 pic5'
+      'pic6 pic6 buy buy';
   }
   .main-about {
-    grid-area: ab;
-    line-height: 1.5rem;
-    padding: 5rem;
-  }
-  .main-about * {
-    padding: 0.5rem 0;
+    grid-area: about;
   }
   .desktop-pic4 {
     display: block;
-    grid-area: p4;
+    grid-area: pic4;
     background-image: url('../img/desktop/4.webp');
     background-size: cover;
   }
   .desktop-pic5 {
     display: block;
-    grid-area: p5;
-    grid-column: 4/5;
+    grid-area: pic5;
     background-image: url('../img/desktop/5.webp');
     background-size: cover;
   }
   .desktop-pic6 {
     display: block;
-    grid-area: p6;
-    grid-row: 2/3;
-    grid-column: 1/3;
+    grid-area: pic6;
     background-image: url('../img/desktop/6.webp');
     background-size: cover;
     background-position-y: center;
   }
   .main-buy {
-    grid-area: bu;
+    grid-area: buy;
   }
   .mobile-main-pics,
   .main-bg {
     display: none;
   }
   .main-order {
-    background-image: url('../img/bg.jpg');
+    background-image: url('../img/bg.webp');
     background-size: cover;
     background-position-y: center;
     margin: 0;
@@ -534,19 +561,18 @@ main {
     height: auto;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
-      'fn ln'
-      'em em'
-      'ph ph'
-      'mg mg'
-      'bu bu';
+      'fname lname'
+      'email email'
+      'phone phone'
+      'msg msg'
+      'btn btn';
   }
   .footer-3details {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
   .footer-subscribe-box {
-    display: flex;
     gap: 1rem;
+    display: flex;
   }
 
   .footer-subscribe form input {
