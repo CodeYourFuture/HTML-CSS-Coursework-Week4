@@ -13,16 +13,13 @@
 }
 
 body {
-    font-family: Raleway;
+    font-family: Raleway, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: .9275rem;
     line-height: 1.8em;
     word-spacing: .1em;
     text-align: center;
     margin: 0;
     padding: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
-    grid-template-rows: repeat(1fr, 1fr);
 } 
 
 h1, h2 {
@@ -35,7 +32,7 @@ h1, h2 {
 }
 
 h3 {
-    font-family: "Questrial";
+    font-family: "Questrial", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 100;
     font-size: 1.375rem;
     line-height: 1.3em;
@@ -46,7 +43,7 @@ h3 {
 
 .button {
     display: block;
-    font-family: Raleway;
+    font-family: Raleway, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
     padding: 15px 0;
     color: white;
@@ -65,7 +62,7 @@ h3 {
 }
 
 .call-to-action-button {
-    font-family: Raleway;
+    font-family: Raleway, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 300;
     padding: 20px 30px;
     margin: 0;
@@ -339,7 +336,7 @@ img {
         grid-gap: 50px;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(1, 1fr); 
-        margin: 10px auto 0 30px;
+        margin: 10px 0 0 0;
         padding: 0 30px;
         max-width: 100%;
     }
@@ -409,7 +406,7 @@ img {
 }
 
 .section3-button {
-    font-family: Raleway;
+    font-family: Raleway, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 300;
     padding: 15px 40px;
     margin-top: 15px;
@@ -438,11 +435,6 @@ img {
 
     .section3-content-wrapper {
         grid-area: c;
-        padding-top: 100px;
-        padding-right: 50px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
     }
 
     .section3-content-wrapper {
@@ -467,7 +459,6 @@ img {
         margin: 0;
         font-size: 3.5em;
         line-height: 1.3em;
-        border: 2px dotted red;
     }
 
     .section3-paragraph {
@@ -487,8 +478,9 @@ img {
 }
 
 .section4-wrapper {
-    background-color: var(--lilac);
+    background-color: var(--lylac);
     padding: 20px 25px 30px 25px;
+    margin-bottom: 30px;
 }
 
 .section4-title {
@@ -501,25 +493,15 @@ img {
     margin-top: 15px;
 }
 
-.section4-img1 {
+.section4-img1, .section-img2, .section4-img3 {
     width: 280px;
     height: 274px;
-}
-
-.section4-img2 {
-    width: 280px;
-    height: 274px;
-    margin: 20px 0 5px 0;
-}
-
-.section4-img3 {
-    width: 280px;
-    height: 274px;
-    margin-top: 20px;
+    margin: 0;
+    padding: 0;
 }
 
 .section4-button {
-    font-family: Raleway;
+    font-family: Raleway, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 300;
     padding: 12px 50px;
     margin: 15px 0 10px 0;
@@ -530,70 +512,51 @@ img {
 
 @media only screen and (min-width: 900px) {
     .section4-wrapper {
-        margin-top: 100px;
+        margin: 200px 0 0 0;
+        padding: 0;
+        background-color: var(--white);
     }
 
     .section4-title {
         font-size: 4em;
-        margin-bottom: 70px;
+        margin-bottom: 170px;
+        padding: 0;
     }
 
     .section4-row-wrapper {
-        /* display: grid;
-        grid-gap: 50px;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(1, 1fr); 
-        margin: 10px auto 0 30px;
-        padding: 0 30px;
-        max-width: 100%; */
         display: flex;
         flex-direction: row;
-        gap: 20px;
-        border: 2px dotted red;
-        height: 700px;
-        margin-left: 30px;
+        margin: 0 0 0 0;
+        padding: 0 90px;
+        gap: 30px;
     }
-
-    .section4-column-wrapper1 {
+    
+    .section4-main-wrapper {
+        background-color: var(--lylac);
+        padding: 0 0 65px 0;
+        margin: 0;
+    } 
+    
+    .section4-column-wrapper {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
         text-align: left;
-        padding-right: 40px;
         font-size: 1.06rem;
-        border: 2px dotted blue;
-        align-self: flex-end;
     }
 
-    .section4-column-wrapper2 {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        text-align: left;
-        padding-right: 40px;
-        font-size: 1.06rem;
-        border: 2px dotted blue;
+    .section4-column-end {
+        margin-top: -50px;
     }
 
-    .section4-img1 {
-        width: 310px;
+    .section4-column-middle {
+        margin-top: -110px;
+    }
+
+    .section4-img1, .section4-img2, .section4-img3 {
+        width: 320px;
         height: 390px
-    }
-
-    .section4-img2 {
-        width: 310px;
-        height: 390px;
-        margin: 0;
-        padding: 0;
-    }
-
-    .section4-img3 {
-        width: 310px;
-        height: 390px;
-        margin: 0;
-        padding: 0;
     }
 
     .section4-sub-title {
@@ -605,11 +568,17 @@ img {
         padding-right: 40px;
     }
 
+    .section4-button {
+    padding: 25px 100px;
+    margin: 0 0 10px 0;
+    border: 2px solid var(--black);
+    } 
 }
 
 /* Section 5 */
 .section5-wrapper {
     padding: 20px;
+    margin-bottom: 40px;
 }
 .section5-img {
     width: 280px;
@@ -625,14 +594,67 @@ img {
     margin-top: 0;
 } 
 
+.section5-h2-break {
+    display: none;
+}
+
 .section5-button {
-    font-family: Raleway;
+    font-family: Raleway, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 300;
     padding: 12px 50px;
-    margin: 10px 0 20px 0;
+    margin: 10px 0 40px 0;
     border: 2px solid var(--black);
     font-size: 1em;
     background-color: var(--white);   
+}
+
+@media only screen and (min-width: 900px) {
+    .section5-wrapper {
+        display: grid;
+        grid-template-columns: 40%, 60%;
+        padding: 70px 0 20px 50px;
+        height: 650px;
+        margin-bottom: 80px;
+    }
+
+    .section5-img {
+        grid-column: 1 / 2;
+        width: 550px;
+        height: 600px;
+        margin: 0;
+    }
+
+    .section5-content-wrapper {
+        grid-column: 2 / 3;
+        padding-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 530px;
+        margin: 0;
+    }
+
+    .section5-h2 {
+        text-align: left;
+        margin: 0 0 15px 0;
+        font-size: 3.5em;
+        line-height: 1.3em;
+    }
+
+    .section5-h2-break {
+        display: block;
+    }
+
+    .section5-p {
+        text-align: left;
+        margin: 0 20px 30px 0; 
+        width: 467px;
+        font-size: 1.062rem;
+    }
+
+    .section5-button {
+        padding: 25px 120px;
+    }
 }
 
 /* Section 6 Styles */
@@ -654,6 +676,46 @@ img {
     margin-bottom: 80px;
 }
 
+@media only screen and (min-width: 900px) {
+
+    .section6-h2 {
+        font-size: 3.5rem;
+    }
+
+    .section6-content-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 0;
+        padding: 0;
+    }
+
+    .section6-flex-column {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 280px;
+        padding-top: 50px;
+    }
+
+    .section6-h3 {
+        margin: 0;
+        padding: 0;
+    }
+
+    .section6-border {
+        border-radius: 50%;
+        padding: 10px 15px 10px 15px;
+        font-size: 1.0625rem;
+    }
+
+    .section6-p {
+        text-align: left;
+        padding: 0;
+        font-size: 1.0625rem;
+    }
+}
 /* Footer */
 
 .footer-wrapper {
@@ -689,11 +751,7 @@ img {
     position: absolute;
     bottom: 60px;
     left: 137px;
-    -webkit-transform:rotate(18deg);
-    -moz-transform: rotate(18deg);
-    -ms-transform: rotate(18deg);
-    -o-transform: rotate(18deg);
-    transform: rotate(18deg);
+    transform:rotate(18deg);
 }
 
 .footer-img2 {
@@ -704,11 +762,7 @@ img {
     position: absolute;
     bottom: 148px;
     left: 65px;
-    -webkit-transform:rotate(-12deg);
-    -moz-transform: rotate(-12deg);
-    -ms-transform: rotate(-12deg);
-    -o-transform: rotate(-12deg);
-    transform: rotate(-12deg);
+    transform:rotate(-12deg);
 }
 
 .footer-img3 {
@@ -719,12 +773,7 @@ img {
     position: absolute;
     bottom: 75px;
     left: 20px;
-    -webkit-transform:rotate(18deg);
-    -moz-transform: rotate(18deg);
-    -ms-transform: rotate(18deg);
-    -o-transform: rotate(18deg);
-    transform: rotate(18deg);
-    
+    transform:rotate(18deg);
 }
 
 .footer-img4 {
@@ -734,11 +783,7 @@ img {
     object-fit: contain;
     position: relative;
     top: 30px;
-    -webkit-transform:rotate(-12deg);
-    -moz-transform: rotate(-12deg);
-    -ms-transform: rotate(-12deg);
-    -o-transform: rotate(-12deg);
-    transform: rotate(-12deg);
+    transform:rotate(-12deg);
 }
 
 .footer-grid {
@@ -756,7 +801,7 @@ img {
 }
 
 .footer-grid-p {
-    font-family: "Questrial";
+    font-family: "Questrial", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 100;
     font-size: 1.375rem;
     padding: 0;
@@ -773,7 +818,7 @@ img {
 }
 
 .footer-list {
-    font-family: "Questrial";
+    font-family: "Questrial", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 100;
     font-size: 1.375rem;
     grid-column: 1 / -1;
@@ -818,7 +863,7 @@ label {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-}
+} 
 
 .footer-serve-link {
     color: var(--white);
@@ -853,9 +898,137 @@ label {
 .footer-copyright-p {
     margin-right: 50px;
     text-align: left;
+    padding-bottom: 50px;
 }
 
 .footer-copyright-link {
     color: var(--white);
 }
 
+@media only screen and (min-width: 900px) {
+    .footer-h2 {
+        font-size: 3.5rem;
+        margin-top: 50px;
+    }
+
+    .footer-main-link {
+        font-size: 1.2em;
+    }
+
+    .footer-sub {
+        padding: 0 40px;
+    }
+
+
+    .footer-img1 {
+        width: 320px;
+        height: 353px;
+        object-fit: contain;
+        position: absolute;
+        bottom: 60px;
+        left: 137px;
+        transform:rotate(18deg);
+    }
+
+    .footer-img2 {
+        width: 320px;
+        height: 353px;
+        object-fit: contain;
+        position: absolute;
+        bottom: 148px;
+        left: 65px;
+        transform:rotate(-12deg);
+    }
+
+    .footer-img3 {
+  
+        width: 320px;
+        height: 353px;
+        object-fit: contain;
+        position: absolute;
+        bottom: 75px;
+        left: 20px;
+        transform:rotate(18deg);
+    }
+
+    .footer-img4 {
+        width: 320px;
+        height: 353px;
+        object-fit: contain;
+        position: relative;
+        bottom: 1000px;
+        transform:rotate(-12deg);
+        border: 2px dotted white;
+        display: none;
+    }
+
+    .footer-desktopv-flex {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer-grid {
+        grid-template-columns: 60% 40%;
+        margin: 0;
+        flex: 2.8;
+    }
+
+    .footer-flex1 {
+        flex: 3;
+        margin-left: 30px;
+    }
+
+    .footer-flex3 {
+        padding-top: 20px;
+        flex: 1;
+    }
+
+    .footer-copyright-p {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .footer-grid-p {
+        font-size: 1.5rem;
+    }
+
+    .footer-sub-links {
+        font-size: 1.0625rem;
+        line-height: 2em;
+        font-weight: bold;
+    }
+
+    .footer-gridblock {
+        font-size: 1.0625rem;
+        line-height: 2em;
+    }
+
+    .footer-label-email {
+        font-size: 1.0625rem;
+        font-weight: bold;
+    }
+
+    #email {
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid var(--white);
+        width: 200px;
+        margin-right: 10px;
+    }
+
+    #email:hover {
+        border-bottom: 2px solid var(--light-green);
+    }
+
+    .footer-submit-btn {
+        width: 150px;
+        height: 60px;
+        color: var(--white);
+        background-color: transparent;
+    }
+
+    .footer-serve-link {
+        line-height: 1.5em;
+        margin-bottom: 50px;
+    }
+}
