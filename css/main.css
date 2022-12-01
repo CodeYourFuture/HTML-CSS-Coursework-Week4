@@ -41,3 +41,33 @@ grid-area: 1 / 1 / 2 / 2;;
 nav {
     grid-area: 1 / 2 / 3 / 3;;
 }
+
+.socialmedia-icons {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+.info-card{
+   ; 
+}
+
+.socialmedia-icons img{
+    height: 20px;
+    width: 20px;
+}
+.footer-icons{
+    display: flex;
+        gap: 40px;
+        align-items: center;
+        justify-content: center;
+}
+.footer-icons img {
+    height: 20px;
+    width: 20px;
+}
+.blue-line{
+    margin-left: 50px;
+    width: 68px;
+    height: 5px;
+}
