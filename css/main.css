@@ -1,3 +1,107 @@
 /* Add your CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.body {
+    font-family: Quicksand - Light 300;
+}
+
+.header-title {
+    font-size: 30px;
+}
+
+.header-title-item {
+    text-decoration: none;
+    color: black;
+}
+
+.nav {
+
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.item {
+    text-decoration: none;
+}
+
+.main {
+    display: flex;
+    justify-content: space-around
+}
+
+.h2 {
+    text-align: center;
+}
+
+.line {
+    color: blue;
+    width: 50px;
+}
+
+.icon1 {
+    width: 25px;
+    height: 25px;
+    align-items: center;
+    padding-left: 8%;
+
+}
+
+.container1-background {
+    background-color: gray;
+    display: grid;
+    width: 80%;
+    padding-left: 10%;
+}
+
+.h1 {
+    font-size: 400%;
+    text-align: center;
+
+}
+
+.h4 {
+    text-align: center;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 25px;
+
+}
+
+.container2 {
+    display: grid;
+    margin-left: 50px;
+}
+
+.container2-background {
+    display: grid;
+
+
+}
+
+.button {
+
+    font-size: 14px;
+    white-space: nowrap;
+    position: relative;
+
+}
+
+.p {
+
+    font-size: 17px;
+    line-height: 1.5em;
+
+}
+
