@@ -1,3 +1,9 @@
 /* Add your CSS here */
+#cactus-shop {
+    width: 100%;
+    align-items: center;
+    
+
+}
 
 /* Dont' forget to link this file to your HTML in the <head> */
