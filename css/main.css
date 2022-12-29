@@ -1,7 +1,5 @@
 /* Add your CSS here */
-@import url('https://fonts.google.com/specimen/Questrial');
-@import url('https://fonts.google.com/specimen/Raleway');
-@import url('https://fonts.google.com/specimen/Roboto');
+
 
 #cactus-shop {
     width: 100%;
@@ -10,8 +8,11 @@
 
 h1 {
     font-size: 25px;
-    font-family: Questrial;
     text-align: center;
+}
+
+a {
+    text-decoration: none;
 }
 
 h2 {
@@ -20,6 +21,11 @@ h2 {
 }
 #explore {
     color: white;
+       
+}
+
+#welcome {
+    font-size: medium;
 }
 
 .nav-bar {
@@ -54,11 +60,21 @@ h2 {
     background-color: black;
     border: 3px solid black;
     padding: 3px;
-    width: 50%;
+    width: 150px;
     justify-items: center;
     text-align: center;
     margin: auto;
     margin-bottom: 2rem;
+}
+
+.flavours {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+img {
+    width: 300px;;
 }
 
 /* Dont' forget to link this file to your HTML in the <head> */
