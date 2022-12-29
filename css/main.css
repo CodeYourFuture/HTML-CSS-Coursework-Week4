@@ -1,9 +1,64 @@
 /* Add your CSS here */
+@import url('https://fonts.google.com/specimen/Questrial');
+@import url('https://fonts.google.com/specimen/Raleway');
+@import url('https://fonts.google.com/specimen/Roboto');
+
 #cactus-shop {
     width: 100%;
     align-items: center;
-    
+}
 
+h1 {
+    font-size: 25px;
+    font-family: Questrial;
+    text-align: center;
+}
+
+h2 {
+    font-size: 15px;
+    text-align: center;
+}
+#explore {
+    color: white;
+}
+
+.nav-bar {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    vertical-align: middle;
+
+}
+
+#user-icon {
+    width: 15px;
+    margin-right: 8px;
+}
+#order-online {
+    background-color: black;
+    color: white;
+}
+
+.heading {
+    margin-top: 30px;   
+}
+
+.item {
+    width: auto;
+    height: 30px;
+    align-content: center;
+    margin: 10px;
+}
+
+.clickable {
+    background-color: black;
+    border: 3px solid black;
+    padding: 3px;
+    width: 50%;
+    justify-items: center;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 2rem;
 }
 
 /* Dont' forget to link this file to your HTML in the <head> */
