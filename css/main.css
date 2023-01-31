@@ -139,6 +139,66 @@ header{
     color:white;
 
 }
+@media only screen and (max-width:412px){
+    .infos-form{
+        margin:100px;
+    }
+    .bay-online img{
+        margin:15px;
+        height:50%;
+    }
+    .bay-online p{
+       padding-top:20%;
+    }
+        .item1 {grid-area: p;}
+    
+        .item2 { grid-area: img1;}
+    
+        .item3 {grid-area: img2;}
+
+    .about{
+        
+        display:grid;
+        grid-template-areas:
+        "p p"
+        "img1 img2";
+    }
+    .about img{
+        height: 70%;
+        width:80%;
+    }
+    .image1{
+        position:relative;
+    }
+    .icon-flower{
+        position:relative;
+        color:#A05941;
+        margin-right:60%;
+    }
+    .centered-items h1{
+        position:relative;
+        color:#A05941
+    }
+
+    .centered-items{
+        position:block;
+        margin: 15%;
+    }
+    .centered-items .nature-indoors {
+        position:relative;
+        margin-right:50%;
+        color:#A05941;
+    } 
+    .top-button{
+        position:relative;
+        margin-right:50%;
+        width:20%;
+    }  
+
+
+
+    
+}
 
 
 
