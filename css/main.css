@@ -1,3 +1,205 @@
 /* Add your CSS here */
+body {
+    background-color: rgb(228, 227, 227);
+    background-image: url("css/images/2022-12-07.png");
+}
+
+login a{
+    float:right;
+    font:fjalla One - Regular 400;
+    color: #A05941;
+}
+header input{
+    height:25px;
+    border-color: #A05941;
+}
+header button{
+    height: 25px;
+}
+.search-bar{
+    height: 50px;
+    background-color: white;
+}
+header{ 
+    background-color: rgb(228, 227, 227);
+    position:fixed;
+    width:95%;   
+}
+.navbar-left{
+    
+}
+.navbar-left ul{
+    display:flex;
+    flex-direction:row;
+    color: #A05941;
+   }
+.navbar-left ul li{
+    padding:1.5em;
+    list-style: none;   
+}
+.navbar-left ul h4{
+    display:flex;
+    justify-content: flex-end; 
+}
+
+.body-center{
+    text-align:center;  
+    /* background-image:url("css/images/2022-12-07.png");
+    height: 15px; */
+    display:flex;
+    flex-direction: column;
+}
+.image1{
+    position:relative;
+    text-align:center;
+    color:white;
+    width:95%;
+    top:50%;
+    margin-top: 160px;
+    margin-bottom: 20px;
+}
+.centered-items h1{
+      position:absolute;
+      top:70%;
+      padding: 15px;
+      width: 90%;
+      color:white;
+}
+.centered-items .nature-indoors{
+    position:absolute;
+    top:80%;
+    left:40%;
+    color:white;
+    text-transform:uppercase;
+    margin-top: 60px;
+}
+
+.icon-flower{
+   position:absolute;
+   top:65%;
+   left:43%;
+   color: white;
+}
+.top-button{
+    position:absolute;
+    background-color: #A05941;
+    color:white;
+    top: 100%;
+    left: 40%;
+    height: 7%;
+    width: 10%;
+    border-style: hidden;
+}
+.b-shop-collection{
+    background-color: #A05941;
+    width:65%;
+    height:40PX;
+    border-style: hidden;
+    color:white;
+    margin-bottom:20px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.about{
+    margin-top:100px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+}
+.about p{
+    display:flex;
+    flex-direction:column;
+    color:#A05941;
+    margin-left:40px;
+}
+.about img{
+    margin:40px
+}
+.bay-online{
+ display:flex;
+ flex-direction: row;
+ justify-content: space-around;
+}
+.bay-online p{
+    background-color: rgb(1, 15, 1);
+    color:white;
+    width:60%;
+    top:50%;
+    left:50%   
+}
+.infos-form{
+    margin: 5%;
+    color:#A05941;
+}
+.infos-form button{
+    background-color: #A05941;
+    width:80%;
+    margin-left:5%;
+    border-style: hidden;
+    color:white;
+
+}
+@media only screen and (max-width:412px){
+    .infos-form{
+        margin:100px;
+    }
+    .bay-online img{
+        margin:15px;
+        height:50%;
+    }
+    .bay-online p{
+       padding-top:20%;
+    }
+        .item1 {grid-area: p;}
+    
+        .item2 { grid-area: img1;}
+    
+        .item3 {grid-area: img2;}
+
+    .about{
+        
+        display:grid;
+        grid-template-areas:
+        "p p"
+        "img1 img2";
+    }
+    .about img{
+        height: 70%;
+        width:80%;
+    }
+    .image1{
+        position:relative;
+    }
+    .icon-flower{
+        position:relative;
+        color:#A05941;
+        margin-right:60%;
+    }
+    .centered-items h1{
+        position:relative;
+        color:#A05941
+    }
+
+    .centered-items{
+        position:block;
+        margin: 15%;
+    }
+    .centered-items .nature-indoors {
+        position:relative;
+        margin-right:50%;
+        color:#A05941;
+    } 
+    .top-button{
+        position:relative;
+        margin-right:50%;
+        width:20%;
+    }  
+
+
+
+    
+}
+
+
 
 /* Dont' forget to link this file to your HTML in the <head> */
