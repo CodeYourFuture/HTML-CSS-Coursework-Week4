@@ -1,3 +1,97 @@
 /* Add your CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Quicksand:wght@300&display=swap");
+
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Quicksand', sans-serif; */
+
+:root {
+  --dark-beige: #e6dacd;
+  --light-beige: #f4ece6;
+  --royal-blue: #0150fd;
+  --black: #000;
+  --white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 2fr 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.header {
+  background-color: var(--light-beige);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__shared-navigation {
+  display: flex;
+}
+.hSN-top-position-left {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin: 1rem 1.5rem;
+}
+
+.hSN-top-position-middleTorigh {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+ul {
+  list-style-type: none;
+}
+.hSN-top-position-middleTorigh nav ul li a {
+  list-style-type: none;
+  text-decoration: none;
+  color: red;
+}
+
+/* .hSN-top-position-middleTorigh li {
+  display: inline-block;
+  padding: 0.5rem;
+} */
+.hSN-top-navbar nav {
+  margin-right: 3rem;
+}
+
+main {
+  background-color: var(--dark-beige);
+}
+
+.square-bulletPoint::before {
+  content: "";
+  display: inline-block;
+  width: 1.76rem;
+  height: 1.6rem;
+  background-color: #0150fd;
+  margin-right: 5px;
+}
+
+footer {
+  background-color: var(--light-beige);
+}
+@media (min-width: 900px) {
+  .hSN-top-position-middleTorigh li {
+    display: inline-block;
+    padding: 0.5rem;
+  }
+
+  #toggle {
+    display: none;
+  }
+}
