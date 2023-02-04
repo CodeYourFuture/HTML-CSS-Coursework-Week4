@@ -1,0 +1,80 @@
+
+naming conventions 
+BEM
+in html/class name
+B = block;
+b = sub-block
+E = element 
+M = modifier
+- block ( header, section, footer, aside..etc)
+- sub-block ( div, nav, ...etc)
+- element (discriptor of the fuction of the conatiner? so header would be shared-Navigation-top t img, h1, a tag, span )
+- modifier name ( visibility, type)
+
+in css/class body
+v = modifier value
+- modifier value ( hidden, red, opacity, dispaly: none.)
+
+
+general text
+- heading
+- subheading
+- paragrath
+
+/* -----  {section-placeholder}  ----- */
+header
+header section 
+- right
+- middle
+- left
+-/ use To to if sections span middle and righ or left ( eg, middleToLeft)
+
+- top-left
+- middle-left
+- bottom-left
+
+- middle-top
+- "middle-middle"
+- middle-bottom
+
+- top-right
+- middle-right
+- bottom-rith
+
+BEM example
+for header
+block = header 
+element = shared-navigation 
+modifeir = top-SN, position-left || 
+position-middleToLeft
+
+
+example.
+header section = .HS
+header section top left = .HS-top-left
+
+/* -- {sub-section-placeholder} -- */
+header text
+- title
+- subtitle
+- hero-title
+- hero-subtitle
+- hero-paragrath
+
+example.
+header text = .HT
+header section top left = .HT-title
+
+/* -- {sub-section-placeholder} -- */
+header navigation
+- hamburger
+- bun-top
+- meat
+- bun-bottom
+- nav
+- nav-bar-container
+
+example.
+header text = .HN
+header navigation hamburger = .HN-hamburger
+
