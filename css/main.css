@@ -1,3 +1,46 @@
 /* Add your CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
+* {
+    background-color: #F4ECE6;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.square {
+    width: 17px;
+    height: 17px;
+    background-color: #0150FD;
+    border: 1px;
+    border-style: solid;
+    margin-left: 50px;
+    margin-right: 10px;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+.navbar a {
+    text-decoration: none;
+    color:black;
+}
+.right_navbar {
+    display: flex;
+    margin-left: auto;
+    
+
+}
+
+.navbar_links {
+    margin-right: 50px;
+}
+#name {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    
+
+}
+.left_navbar {
+    font-size: 22px;
+}
+
