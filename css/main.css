@@ -1,3 +1,244 @@
-/* Add your CSS here */
 
+/* haddings font-family: 'Questrial', sans-serif;*/
+/*buttons font-family: 'Raleway', sans-serif;*/
+/*body font-family: 'Roboto', sans-serif;*/
+/*
+Black: #000  
+White: #FFF  
+Lylac: #f5e8ff  
+Light Green: #E6FAC0  
+Medium Green: #5E7D1F  
+Dark Green: #394B2A  
+*/
 /* Dont' forget to link this file to your HTML in the <head> */
+
+
+
+body{
+    margin: 0 auto;
+    background-color: rgb(244, 244, 244);
+}
+
+header{
+    max-width: 100%;
+    width: auto;
+}
+
+header h1, h3, h2, h4{
+    font-family: 'Questrial', sans-serif;
+    font-weight: 100;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+}
+
+a, button{
+    font-family: 'Raleway', sans-serif;
+}
+
+/*navbar*/
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    height: 6rem;
+    position: fixed;
+    background-color: rgb(244, 244, 244);
+}
+
+.line{
+    border-bottom: solid black 0.2rem;
+    margin-bottom: 0.4rem;
+    display: block;
+    width: 2.5rem;
+}
+
+h1{
+    margin-left: 12rem;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.burger-button{
+    margin-left: 4rem;
+}
+.log-in{
+    display: flex;
+    align-items: center;
+    
+}
+
+.log-in img{
+    width: 1.7rem;
+}
+
+.log-in a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 200;
+    color: black;
+    margin-left: 0.8rem;
+    margin-right: 1rem;
+}
+
+.order-online{
+    height: 6rem;
+    width: 14rem;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1rem;
+    border: none;
+}
+
+/*Header text*/
+
+.header-text{
+    height: 19rem;
+    text-align: center;
+    margin-top: 10rem;
+    font-family: 'Questrial', sans-serif;
+}
+
+h2{
+    font-size: 3.5rem;
+    font-weight: 300;
+}
+
+.header-text h4 {
+    font-size: 1.5rem;
+    font-weight:100;
+}
+
+button{
+    width: 16rem;
+    height: 4.5rem;
+    border: solid black 0.15rem;
+    font-size: 1.1rem;
+    background-color: transparent;
+    
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+    
+}
+
+.header-picture img{
+    width: 100%;
+
+}
+ /*main*/
+
+.discount {
+    height: 5rem;
+    background-color:#f5e8ff;
+    font-size: 1.4rem;
+    font-weight: 100;
+    text-align: center;
+}
+
+.discount h4{
+    margin-top: 0rem;
+    padding-top: 1.5rem;
+}
+
+.discount a{
+    color: black;
+}
+
+
+/*different-icons*/
+
+.different-icons{
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+    grid-template-rows: 0.8fr 1fr;
+    grid-template-areas: 
+    "head head head"
+    "icon1 icon2 icon3";
+    text-align: center;
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+
+.h2-heading{
+    grid-area: head;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.icon1{
+    margin-top: 2rem;
+    grid-area: icon1;
+    text-align: left;
+    padding: 0 4rem;
+}
+
+.icon1 img, .icon2 img, .icon3 img{
+    max-width: 7rem;
+}
+
+.icon1 h3, .icon2 h3, .icon3 h3{
+    font-size: 2.2rem;
+}
+
+.icon1 p, .icon2 p, .icon3 p{
+    font-size: 1rem;
+}
+
+.icon2{
+    margin-top: 2rem;
+    grid-area: icon2;
+    text-align: left;
+    padding: 0 4rem;
+}
+
+.icon3{
+    margin-top: 2rem;
+    grid-area: icon3;
+    text-align: left;
+    padding: 0 4rem;   
+}
+
+/*our-vision*/
+
+.our-vision{
+    background-color: #E6FAC0 ;
+    max-height: 100%;
+    height: 48rem;
+    max-width: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.vision-img {
+    max-width: 100%;
+    margin: 10rem 5rem 0 5rem;
+
+}
+
+.vision-img img{
+    width: 35rem;
+
+}
+
+.vision-text{
+    max-width: 100%;
+    width: auto;
+    padding-right: 8rem;;
+    
+}
+.vision-text h2{
+    font-size: 4rem;
+    
+    
+}
+
