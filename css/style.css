@@ -165,11 +165,15 @@ header {
     /* width: 100%;   */
 }
 
+.last-name {
+    position: relative;
+}
+
 .last-name::after {
-    content: ' ';
-    display: inline-block;
-    width: 2px;
-    height: 2px;
+    content: '-';
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
     color: blue;
 }
 
@@ -180,14 +184,25 @@ header {
     position: absolute;
     bottom: 0;
     left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* display: flex;
+    justify-content: space-evenly;
+    align-items: baseline; */
 }
 
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+
+}
+
+
 .icon {
-    width: 3rem;
+    width: 2rem;
     height: 3rem;
+    margin-right: 1.6rem;
+
 }
 
 .div4 {
