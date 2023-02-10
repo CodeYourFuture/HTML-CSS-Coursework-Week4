@@ -1,28 +1,68 @@
 :root {
-    --blue: #0050FF;
+    --blue: #0150FD;
     --black: #000000;
     --white: #FFFFFF;
-    --leather: #E6DACE;
+    --leather: #E6DACD;
     --ivory: #F4ECE6;
-
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+/* buttons */
+/*  :link - :visited  / :hover - :active*/
+
+li { 
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+
+}
 
 .parent { 
     display: grid; 
     grid-template-columns: repeat(12, 1fr); 
-    grid-template-rows: repeat(7, 1fr); 
+    grid-template-rows: repeat(5, 1fr); 
     grid-column-gap: 8px;
     grid-row-gap: 0px; 
-    height: 100vh;
-    width: 100vw;
     }
-.div1 { grid-area: 1 / 1 / 2 / 6; } 
-.div2 { grid-area: 1 / 6 / 2 / 13; } 
-.div3 { grid-area: 2 / 1 / 7 / 6; } 
-.div4 { grid-area: 2 / 6 / 7 / 13; } 
-.div5 { grid-area: 3 / 4 / 6 / 7; } 
-.div6 { grid-area: 3 / 7 / 6 / 10; } 
-.div7 { grid-area: 7 / 1 / 8 / 6; } 
-.div8 { grid-area: 7 / 6 / 8 / 13; } 
+    .div1 { grid-area: 1 / 1 / 6 / 6; } 
+    .div2 { grid-area: 1 / 6 / 6 / 13; } 
+    .div3 { grid-area: 2 / 4 / 5 / 7; } 
+    .div4 { grid-area: 2 / 7 / 5 / 10; } 
+
+
+/* ++++++++++++++++++ */
+/* HEADER */
+/* ++++++++++++++++++ */
+
+.name {
+
+}
+
+/* ++++++++++++++++++ */
+/* NAVIGATION */
+/* ++++++++++++++++++ */
+
+
+/* ++++++++++++++++++ */
+/* HERO SECTION */
+/* ++++++++++++++++++ */
+
+
+/* ++++++++++++++++++ */
+/* FOOTER SECTION */
+/* ++++++++++++++++++ */
+ 
 
