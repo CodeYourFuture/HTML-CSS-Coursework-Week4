@@ -59,3 +59,19 @@ label {
 .textarea-input {
   overflow: scroll;
 }
+
+button {
+  background-color: var(--royal-blue);
+  border: 2px solid var(--royal-blue);
+  color: var(--white);
+  padding: 5px 25px;
+  border-radius: 20px;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  font-size: 16px;
+  transition: all .4s ease-in-out;
+}
+.submit-form {
+  display: flex;
+  justify-content: center;
+}
