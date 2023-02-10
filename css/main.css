@@ -75,3 +75,17 @@ button {
   display: flex;
   justify-content: center;
 }
+
+/* screens */
+@media (min-width: 900px) {
+  form {
+      margin: 2rem;
+      padding: 1.5rem;
+      background-color: var(--white);
+      width: 700px;
+      height: 600px;
+      display: flex;
+      flex-direction: column;
+      gap: .5rem 2rem;
+      box-shadow: rgba(0, 0, 0, 0.24) -4px 3px 8px;
+  }
