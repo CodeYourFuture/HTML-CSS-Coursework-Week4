@@ -16,6 +16,7 @@ body {
     font-family: 'Roboto', sans-serif;
     color: var(--black);
     font-size: 1rem;
+    box-sizing: border-box;
 }
 
 button {
@@ -37,20 +38,95 @@ p {
 }
 
 .header,
-.content,
 .footer {
-    padding: 0 1.5rem;
+    padding: 0;
     /** max-width: 1200px; **/
     margin: 0 auto;
 }
 
+.main {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    /** HELP!! Is this correct using rem or should it be 5fr? **/
+    grid-auto-rows: fit-content(15rem);
+}
+
+
 
 /** Header **/
+
+.order_online {
+    grid-column: 1/-1;
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.order_online a {
+    color: var(--white);
+    text-decoration: none;
+    font-family: 'Questrial', sans-serif;
+    font-size: 1.5rem;
+}
+
+.juicebar_logo_menu {
+    grid-column: 1/-1;
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.juicebar_logo_menu p {
+    font-size: 1.5rem;
+    font-family: 'Questrial', sans-serif;
+}
+
 /** Navigation **/
 /** Text Styles **/
 /** Buttons **/
-/** Content --> grid? **/
+
+button {
+    background-color: #fff;
+    border: 2px solid var(--black);
+    padding: 0.8rem 1rem;
+    font-weight: 400;
+    align-self: center;
+}
+
+/** Content **/
+
+.content {}
+
 /** Hero **/
+
+.hero {
+    grid-column: 1/-1;
+    background-color: var(--white);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.hero p {
+    font-weight: 400;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.hero img {
+    padding: 2rem 0;
+}
+
 /** Selling Point **/
 /** Wellness Product **/
 /** Getting Juice **/

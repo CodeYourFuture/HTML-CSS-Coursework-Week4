@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylsheet" href="main.css" />
+    <link rel="stylesheet" href="css/main.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,11 +27,14 @@
     -->
 
     <header class="header">
-        <a class="order_online" href="#">
-            <p>Order Online</p>
-        </a>
-        <a class="juicebar_logo" href="#"> <img src="" alt="Juice Bar Logo"></a>
-        <!--
+        <div class="order_online">
+            <a href="#">
+                <p>Order Online</p>
+            </a>
+        </div>
+        <div class="juicebar_logo_menu">
+            <p>Juice Bar</p>
+            <!--
         <nav>
             <ul class="nav_list">
                 <li class="nav_item"> <a class="nav_link" href="#">Home</a> </li>
@@ -39,22 +42,23 @@
                 <li class="nav_item"> <a class="nav_link" href="#">Menu</a> </li>
                 <li class="nav_item"> <a class="nav_link" href="#">Order Online</a> </li>
                 <li class="nav_item"> <a class="nav_link" href="#">Locations & Hours</a> </li>
+                <button>Log In</button>
             </ul>
         </nav>
          -->
-        <button>Log In</button>
-    </header>
+        </div>
 
+    </header>
     <div class="content">
         <main class="main">
 
             <section class="hero">
 
-                <h1>Fuel Your Body. Balance Your Mind.</h1>
+                <h1>Fuel Your Body.<br>Balance Your Mind.</h1>
                 <p>Organic Cold Pressed Juices & Smoothies</p>
                 <button>Explore Flavors</button>
 
-                <img class="hero_image" src="" alt="Image of fresh fruit and juices" />
+                <img class="hero_image" src="images/hero_image" alt="Image of fresh fruit and juices" />
 
                 <div class="hero_offer">
                     <p>Get 10% off your first online Order.</p>
@@ -185,67 +189,68 @@
             </section>
 
         </main>
+
+
+        <footer class="footer">
+
+            <div class="get_started">
+                <p>Get Started</p>
+                <nav>
+                    <ul class="footer_nav_list">
+                        <li class="nav_item"> <a class="nav_link" href="#">Home</a> </li>
+                        <li class="nav_item"> <a class="nav_link" href="#">Story</a> </li>
+                        <li class="nav_item"> <a class="nav_link" href="#">Menu</a> </li>
+                        <li class="nav_item"> <a class="nav_link" href="#">Order Online</a> </li>
+                        <li class="nav_item"> <a class="nav_link" href="#">Locations & Hours</a> </li>
+                        <li class="nav_item"> <a class="nav_link" href="#">Contact</a> </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="connect">
+                <p>Connect</p>
+                <nav>
+                    <ul class="footer_socialmedia">
+                        <li class="nav_item"> <a class="nav_link" href="#">Instagram</a> </li>
+                        <li class="nav_item"> <a class="nav_link" href="#">Facebook</a> </li>
+                        <li class="nav_item"> <a class="nav_link" href="#">Youtube</a> </li>
+                    </ul>
+                    <div data-mesh-id="comp-kplqii4cinlineContent-gridContainer" data-testid="mesh-container-content">
+                        grid
+                </nav>
+            </div>
+
+            <div class="mailing_list">
+                <p>Join Our Mailing List</p>
+                <fieldset class="mailing_list_form">
+                    <form action="customer.html" method="get"> <!----ADD---->
+                        <div class="customer_email">
+                            <label for="Email">Email *</label>
+                            <input class="customer_email" type="email" name="Email" id="Email" required>
+                        </div>
+
+                        <button type="submit">Submit</button>
+                    </form>
+                </fieldset>
+            </div>
+
+            <div class="serving_safely">
+                <p><a href="#">Serving You Safely</a> :)</p>
+            </div>
+
+            <div class="logo">
+                <a href="#"><img src="" alt="Logo for Juice Bar" class="footer_logo"></a>
+            </div>
+
+            <div class="creators_credit">
+                <!-- Please leave this in to credit the creators of this design -->
+                <p>This website design was created by Wix.com, and is used here for strictly educational purposes.
+                </p>
+            </div>
+
+        </footer>
+
     </div>
-
-    <footer class="footer">
-
-        <div class="get_started">
-            <p>Get Started</p>
-            <nav>
-                <ul class="footer_nav_list">
-                    <li class="nav_item"> <a class="nav_link" href="#">Home</a> </li>
-                    <li class="nav_item"> <a class="nav_link" href="#">Story</a> </li>
-                    <li class="nav_item"> <a class="nav_link" href="#">Menu</a> </li>
-                    <li class="nav_item"> <a class="nav_link" href="#">Order Online</a> </li>
-                    <li class="nav_item"> <a class="nav_link" href="#">Locations & Hours</a> </li>
-                    <li class="nav_item"> <a class="nav_link" href="#">Contact</a> </li>
-                </ul>
-            </nav>
-        </div>
-
-        <div class="connect">
-            <p>Connect</p>
-            <nav>
-                <ul class="footer_socialmedia">
-                    <li class="nav_item"> <a class="nav_link" href="#">Instagram</a> </li>
-                    <li class="nav_item"> <a class="nav_link" href="#">Facebook</a> </li>
-                    <li class="nav_item"> <a class="nav_link" href="#">Youtube</a> </li>
-                </ul>
-                <div data-mesh-id="comp-kplqii4cinlineContent-gridContainer" data-testid="mesh-container-content">grid
-            </nav>
-        </div>
-
-        <div class="mailing_list">
-            <p>Join Our Mailing List</p>
-            <fieldset class="mailing_list_form">
-                <form action="customer.html" method="get"> <!----ADD---->
-                    <div class="customer_email">
-                        <label for="Email">Email *</label>
-                        <input class="customer_email" type="email" name="Email" id="Email" required>
-                    </div>
-
-                    <button type="submit">Submit</button>
-                </form>
-            </fieldset>
-        </div>
-
-        <div class="serving_safely">
-            <p><a href="#">Serving You Safely</a> :)</p>
-        </div>
-
-        <div class="logo">
-            <a href="#"><img src="" alt="Logo for Juice Bar" class="footer_logo"></a>
-        </div>
-
-        <div class="creators_credit">
-            <!-- Please leave this in to credit the creators of this design -->
-            <p>This website design was created by Wix.com, and is used here for strictly educational purposes.
-            </p>
-        </div>
-
-    </footer>
-
-
 
 
 </body>
