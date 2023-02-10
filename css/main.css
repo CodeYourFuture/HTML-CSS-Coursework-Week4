@@ -219,26 +219,322 @@ button:hover{
     flex-direction: row;
     align-items: center;
 }
+
 .vision-img {
     max-width: 100%;
     margin: 10rem 5rem 0 5rem;
-
 }
 
 .vision-img img{
     width: 35rem;
-
 }
 
 .vision-text{
     max-width: 100%;
     width: auto;
-    padding-right: 8rem;;
-    
+    padding-right: 8rem;;   
 }
+
 .vision-text h2{
-    font-size: 4rem;
-    
+    font-size: 4rem; 
+}
+
+/*choose*/
+
+.choose{
+    text-align: center;
+}
+
+.choose-container{
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+    grid-template-rows: 30rem 10rem;
+    grid-template-areas: 
+    "choose-1 choose-2 choose-3"
+    "view-all view-all view-all";
+    text-align: left;
+    justify-content: center;
+    gap: 3rem;
+    background-color: #f5e8ff;
+    padding-left: 2rem;
     
 }
+
+.choose-h2{
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 8rem;
+}
+
+.choose-1{
+    grid-area: choose-1;
+    max-width: 20rem;
+    margin-top: -2rem;
+  
+}
+
+.choose-1 h3, .choose-2 h3, .choose-3 h3{
+    font-size: 2rem;
+}
+
+.choose-1 p, .choose-2 p, .choose-3 p{
+    font-size: 1.1rem;
+}
+
+
+.choose-1 img{
+    max-width: 100%;
+    width: 18rem;
+}
+
+.choose-2{
+    grid-area: choose-2;
+    max-width: 20rem;
+    margin-top: -4rem;
+}
+
+.choose-2 img{
+    max-width: 100%;
+    width: 18rem;
+}
+
+.choose-3{
+    grid-area: choose-3;
+    max-width: 20rem;
+    margin-top: -2rem;
+}
+
+.choose-3 img{
+    max-width: 100%;
+    width: 18rem;
+}
+
+.view-all{
+    grid-area: view-all;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+/*discover*/
+.discover{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.discover-img img{
+    max-width: auto;
+    width: 36rem;
+    margin: 5rem 3rem 0 3rem;
+}
+
+
+
+.discover-text{
+    max-width: 100%;
+    width: auto;
+    margin-left: 2rem;
+    margin-right: 5rem;
+}
+
+/*juice-bar*/
+
+.bar-container{
+    display: grid;
+    grid-template-areas: 
+    "juice01 juice02 juice03";
+    grid-template-columns: repeat(3 1fr);
+    justify-content: center;
+    padding: 4rem 8rem 4rem 8rem;
+    gap: 8rem;
+    background-color: #E6FAC0;
+}
+
+.juice-bar h2{
+    text-align: center;
+    margin: 8rem 0 4rem 0;
+}
+
+.juise01{
+    grid-area: juice01;
+    text-align: left;
+}
+
+.juise02{
+    grid-area: juice02;
+    text-align: left;
+}
+
+.juise03{
+    grid-area: juice03;
+    text-align: left;
+}
+
+.juice01 h2, .juice02 h2, .juice03 h2{
+    border: solid black 0.1rem;
+    border-radius: 3rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    font-size: 1.5rem;
+    font-weight: 100;
+    display: block;
+    width: 3rem;
+    text-align: center;
+}
+
+.juice01 h3, .juice02 h3, .juice03 h3{
+    font-size: 2rem;
+}
+
+/*footer*/
+footer{
+    text-align: center;
+}
+
+footer a{
+    color: black;
+}
+
+footer h2{
+    margin-bottom: 1rem;
+}
+
+
+.footer-container{
+    background-color: #394B2A ;
+    margin-top: 10rem;
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(5 1fr);
+    grid-template-rows: 20rem 20rem;
+    grid-template-areas: 
+    "footer-pics footer-pics footer-pics footer-pics footer-pics"
+    "column-1 column-2 column-3 column-3 column-4";
+    color: white;
+    padding: 0 3rem 0 3rem;
+}
+
+.footer-container ul{
+    list-style: none;
+    font-size: 1.1rem ;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+}
+
+li{
+    margin: 1rem 0;
+}
+
+.footer-container h3{
+    text-align: left;
+    font-size: 1.3rem;
+}
+
+.column-1 h3, .column-2 h3{
+    padding-left: 2.5rem;
+}
+
+.footer-pics{
+    grid-area: footer-pics;
+    margin-top: -5rem;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.footer-img1{
+    transform:rotate(340deg);
+    object-fit: contain;
+    margin-right: -5rem;
+}
+
+
+.footer-img2{
+    transform:rotate(20deg);
+  
+}
+
+.footer-img3{
+    transform:rotate(350deg);
+    margin-right: -3rem;
+
+}
+
+.footer-img4{
+    transform:rotate(20deg);
+}
+
+
+.footer-pics img{
+    width: 17rem;
+}
+
+.column-1{
+    grid-area: column-1;
+}
+
+.column-2{
+    grid-area: column-2;
+}
+
+.column-3{
+    margin-left: 3rem;
+    grid-area: column-3;
+}
+
+.column-4{
+    grid-area: column-4;
+}
+#email{
+    width: 10rem;
+    height: 3.3rem;
+    background-color: transparent;
+    border: none;
+    margin-right: 1rem;
+    border-bottom: solid white 0.2rem;
+
+}
+
+#email:hover{
+    border: none;
+    border-bottom: solid #E6FAC0 0.2rem;
+
+}
+
+#email::grammar-error{
+    border: none;
+    border-bottom: solid #fe9c72 0.2rem;
+    margin-right: 2rem;
+}
+
+.submit{
+    width: 10rem;
+    height: 4rem;
+    border: solid white 0.2rem;
+    color: white;
+
+}
+
+.submit:hover{
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+
+.email-label{
+    font-family: 'Raleway', sans-serif;
+    margin: 0 2rem 0 0;
+}
+
+.column-4 a{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.JB{
+    border:solid white;
+    border-radius: 8rem;
+    width: 5.4rem;
+    text-align: center;
+}
+
 
