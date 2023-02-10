@@ -1,0 +1,28 @@
+:root {
+    --blue: #0050FF;
+    --black: #000000;
+    --white: #FFFFFF;
+    --leather: #E6DACE;
+    --ivory: #F4ECE6;
+
+}
+
+
+.parent { 
+    display: grid; 
+    grid-template-columns: repeat(12, 1fr); 
+    grid-template-rows: repeat(7, 1fr); 
+    grid-column-gap: 8px;
+    grid-row-gap: 0px; 
+    height: 100vh;
+    width: 100vw;
+    }
+.div1 { grid-area: 1 / 1 / 2 / 6; } 
+.div2 { grid-area: 1 / 6 / 2 / 13; } 
+.div3 { grid-area: 2 / 1 / 7 / 6; } 
+.div4 { grid-area: 2 / 6 / 7 / 13; } 
+.div5 { grid-area: 3 / 4 / 6 / 7; } 
+.div6 { grid-area: 3 / 7 / 6 / 10; } 
+.div7 { grid-area: 7 / 1 / 8 / 6; } 
+.div8 { grid-area: 7 / 6 / 8 / 13; } 
+
