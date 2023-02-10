@@ -1,3 +1,130 @@
-/* Add your CSS here */
+:root {
+  --dark-beige: #e6dacd;
+  --light-beige: #f4ece6;
+  --royal-blue: #0150fd;
+  --black: #000;
+  --white: #fff;
+  --shd: -11.31px 11.31px 17px 0px rgba(138, 131, 124, 0.23);
+}
 
-/* Dont' forget to link this file to your HTML in the <head> */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--white);
+  font-family: "Poppins", sans-serif;
+  font-family: "Quicksand", sans-serif;
+}
+
+.font-4 {
+  font-family: "poppins", sans-serif;
+  line-height: 1em;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--black);
+}
+
+.font-7 {
+  color: var(--black);
+  font-family: "Quicksand", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.super-container {
+  margin-top: 2rem;
+}
+.mobile-content-container {
+  margin: 0 auto;
+  outline: 2px dashed red;
+  width: 330px;
+}
+
+.mobile-header {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: auto auto;
+  outline: 2px dotted green;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+}
+
+.logo-name-title::before {
+  content: "";
+  display: inline-block;
+  margin-right: 0.6rem;
+  background-color: var(--royal-blue);
+  height: 1rem;
+  width: 1rem;
+}
+
+.logo-name-job-title {
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+}
+
+.burger-container {
+  outline: 2px dashed red;
+  grid-column: 2;
+  grid-row: 1 / 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.burger-logo {
+  outline: 2px dotted green;
+  width: 26px;
+  height: 21px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.burger-logo-line-1 {
+  width: 50%;
+  height: 3px;
+  border-radius: 1.5px;
+  background-color: var(--royal-blue);
+}
+.burger-logo-line-2 {
+  width: 100%;
+  height: 3px;
+  border-radius: 1.5px;
+  background-color: var(--royal-blue);
+}
+.burger-logo-line-3 {
+  width: 50%;
+  height: 3px;
+  border-radius: 1.5px;
+  background-color: var(--royal-blue);
+  align-self: flex-end;
+}
+
+.content-spacer {
+  height: 10rem;
+}
+
+main {
+  background-color: var(--dark-beige);
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-card {
+  background-color: var(--light-beige);
+  height: 375px;
+  /* width: 330px; */
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-top: -160px;
+  margin-bottom: 26px;
+
+  box-shadow: var(--shd, 0 1px 4px rgba(0, 0, 0, 0.6));
+}
+.about-me {
+}
