@@ -233,15 +233,28 @@ h1 {
 }
 
 .btn-primary {
-    background-color: #0150FD;
-    border: 1px solid var(--blue);
+    background-color: var(--blue);
+    border: 2px solid var(--blue);
     color: var(--white);
     margin-right: 1rem;
 }
 
+.btn-primary:hover, 
+.btn-primary:active {
+    background-color: var(--white);
+    color: var(--black);
+}
+
 .btn-secondary {
     background-color: var(--white);
-    border: 1px solid var(--black);
+    border: 2px solid var(--black);
+}
+
+.btn-secondary:hover, 
+.btn-secondary:active {
+    background-color: var(--blue);
+    border: 2px solid var(--blue);
+    color: var(--white);
 }
 
 .div4 p {
@@ -269,7 +282,7 @@ footer {
 
 
 .footer-right div {
-    margin-left: 2rem;
+    margin-left: 5rem;
     text-align: center;
 
 }
