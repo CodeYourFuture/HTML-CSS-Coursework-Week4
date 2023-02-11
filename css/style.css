@@ -93,6 +93,9 @@ header {
     font-weight: 300;
 }
 
+
+
+
 /* ++++++++++++++++++ */
 /* NAVIGATION */
 /* ++++++++++++++++++ */
@@ -113,6 +116,11 @@ header {
     color: var(--blue);
 }
 
+a.current:link,
+a.current:visited {
+    color:var(--blue);
+    
+}
 
 /* ++++++++++++++++++ */
 /* HERO SECTION */
@@ -163,18 +171,26 @@ header {
     margin-bottom: 3rem;
     /* width: 100%;   */
 }
+.line {
 
+    width: 5rem;
+    margin-top: 2rem;
+    border: none;
+    border-top: 2px solid var(--blue);
+
+    
+}
 .last-name {
     position: relative;
 }
 
-.last-name::after {
+/* .last-name::after {
     content: '-';
     position: absolute;
     top: 3rem;
     right: 3rem;
     color: blue;
-}
+} */
 
 .icon-bar {
     background-color: var(--white);
