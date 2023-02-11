@@ -1,0 +1,21 @@
+:root {
+    --blue: #0150FD;
+    --black: #000000;
+    --white: #FFFFFF;
+    --leather: #E6DACD;
+    --ivory: #F4ECE6;
+}
+
+.container {
+    background-color: var(--leather);
+}
+
+.heading-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading {
+    font-size: 3rem;
+}
+

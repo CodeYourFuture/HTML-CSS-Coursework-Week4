@@ -73,7 +73,7 @@ header {
     font-family: var(--heading-font);
 }
 
-.header-left span {
+.blue-square {
     display: block;
     height: 1.4rem;
     width: 1.4rem;
