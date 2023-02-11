@@ -53,6 +53,7 @@ nav {
     display: grid;
     grid-template-columns: 42% 58%;
     height: 680px;
+    column-gap: 6rem;
 }
 
 .main__content {
@@ -92,4 +93,52 @@ nav {
     align-items: center;
     justify-content: center;
 
+}
+
+.main__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+}
+
+.main__text button:first-child {
+    border: none;
+    background: var(--rb);
+    color: #fff;
+}
+
+.main__text button:first-child:hover {
+    background: var(--white) ;
+    color: #000;
+    border: 1px solid var(--rb);
+    transition: 0.4s ease 0s;
+}
+.main__text button:last-child {
+    border: 1px solid;
+    background: var(--white);
+    color: var(--rb);
+}
+
+.main__text button:last-child:hover {
+    border: 1px solid;
+    background: var(--rb);
+    color: var(--white);
+    transition: 0.4s ease 0s;
+}
+
+.main__text button {
+    height: 2rem;
+    width: 8rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.main__text h1 {
+    font-size: 5rem;
+    margin: unset;
+}
+
+footer {
+    height: 100px;
 }
