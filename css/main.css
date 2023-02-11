@@ -21,6 +21,7 @@ body {
 
 button {
     font-family: 'Raleway', sans-serif;
+    background-color: transparent;
 }
 
 h1,
@@ -91,7 +92,6 @@ p {
 /** Buttons **/
 
 button {
-    background-color: #fff;
     border: 2px solid var(--black);
     padding: 0.8rem 1rem;
     font-weight: 400;
@@ -108,7 +108,7 @@ button {
 .hero {
     grid-column: 1/-1;
     background-color: var(--white);
-    padding: 2rem;
+    padding: 2rem 0;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -132,7 +132,7 @@ button {
     color: var(--black);
 }
 
-/** Selling Point **/
+/** Selling Points **/
 
 .selling_points_section {
     grid-column: 1/-1;
@@ -144,18 +144,54 @@ button {
 }
 
 .selling_point {
-    margin: 1rem 7rem;
+    margin: 1rem 5rem;
 }
 
 .selling_point h3 {
     margin: 1rem 0;
 }
 
+/** Boosting Immunity **/
 
+.boosting_immunity_section {
+    grid-column: 1/-1;
+    background-color: var(--light-green);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
 
+.boosting_immunity h2 {
+    margin: 1rem 7rem;
+}
+
+.boosting_immunity p {
+    margin: 0 5rem;
+}
 
 /** Wellness Product **/
 
+.wellness_path_section {
+    grid-column: 1/-1;
+    background-color: var(--lylac);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.wellness_path h2 {
+    margin-bottom: 1rem;
+}
+
+.wellness_path h3 {
+    margin: 1rem 7rem;
+}
+
+.wellness_path p {
+    margin: 1rem 5rem;
+}
 
 /** Getting Juice **/
 /** Gallery **/
