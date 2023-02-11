@@ -1,3 +1,7 @@
-/* Add your CSS here */
-
-/* Dont' forget to link this file to your HTML in the <head> */
+:root {
+    --white:#FFF;
+    --black:#000;
+    --db:#E6DACD;
+    --lb:#F4ECE6;
+    --rb:#0150FD;
+}
