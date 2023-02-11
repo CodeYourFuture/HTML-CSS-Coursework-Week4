@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Quicksand:wght@300;400;500;600&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    width: 320px;
+}
+
+/* main */
+.main2 {
+    background-color: #E6DACD;
+    height: 736px;
+    margin-top: 20px;
+}
+
+.head1 {
+    display: flex;
+    padding: 10px 0px 40px 60px;
+
+}
+
+.comment {
+    width: auto;
+    font-family: 'Poppins', sans-serif;
+    font-size: 29px;
+    font-style: bold;
+    font-weight: 700;
+    width: 200px;
+    float: right;
+
+}
+
+
+.square1 {
+    height: 20px;
+    width: 20px;
+    background-color: rgb(61, 52, 246);
+    margin: 12px 12px 10px 88px;
+    float: left;
+}
+
+/* form */
+
+.form {
+    width: 278px;
+    height: 576px;
+    background-color: #fff;
+    margin: 85px 2px 20px 22px;
+    padding: 40px 2px 50px 10px;
+    box-shadow: -15px 10px 23px #adabab;
+}
+
+
+.label {
+    font-weight: 700;
+
+}
+
+.label1 {
+    font-weight: 700;
+
+}
+
+.label2 {
+    font-weight: 700;
+
+}
+.label3 {
+    font-weight: 700;
+
+}
+
+.label4 {
+    font-weight: 700;
+
+}
+
+.text-line {
+    background-color: transparent;
+    color:blue;
+    font-size: 14px;
+    font-weight: 700;
+    outline: none;
+    outline-style: none;
+    outline-offset: 0;
+    margin-top: 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #050404 4;
+    padding-right: 64px;
+    padding-top: 3px;
+    padding-bottom: 7px;
+}
+
+.text-line1 {
+    background-color: transparent;
+    color: blue;
+    font-size: 14px;
+    font-weight: 700;
+    outline: none;
+    outline-style: none;
+    outline-offset: 0;
+    margin-top: 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #050404 4;
+    padding-right: 64px;
+    padding-top: 3px;
+    padding-bottom: 7px;
+}
+
+.text-line2 {
+    background-color: transparent;
+    color: blue;
+    font-size: 14px;
+    font-weight: 700;
+    outline: none;
+    outline-style: none;
+    outline-offset: 0;
+    margin-top: 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #050404 4;
+    padding-right: 64px;
+    padding-top: 3px;
+    padding-bottom: 7px;
+}
+
+.text-line3 {
+    background-color: transparent;
+    color: blue;
+    font-size: 14px;
+    font-weight: 700;
+    outline: none;
+    outline-style: none;
+    outline-offset: 0;
+    margin-top: 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #050404 4;
+    padding-right: 64px;
+    padding-top: 3px;
+    padding-bottom: 7px;
+}
+
+.text-line4 {
+    background-color: transparent;
+    color: blue;
+    font-size: 14px;
+    font-weight: 700;
+    outline: none;
+    outline-style: none;
+    outline-offset: 0;
+    margin-top: 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #050404 4;
+    padding-right: 64px;
+    padding-top: 3px;
+    padding-bottom: 7px;
+}
+
+.text-line:hover {
+    opacity: 0.8;
+}
+
+.bottoni {
+    margin: 0px 10px 35px 70px;
+    padding: 4px 33px;
+    border: none;
+    border-radius: 20px;
+    background-color: #0150FD;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: #fff;
+}
+
+
+
+footer {
+    margin-top: 1.5rem;
+}
+
+/* responsiveness  */
+
+@media only screen and (min-width: 440px) { 
+    body {
+        width: 100%;
+    }
+    .menu {
+        margin-left: 19rem;
+
+    }
+    .nav-wrapper {
+        width: 100%;
+
+    }
+    .menu a {
+        display: inline-block;
+        margin-right: -1rem;
+        padding: 9px 25px 70px 10px;
+
+
+
+    }
+
+
+
+    .main2 {
+        width: 91rem;
+        padding-top: 12px;
+        margin-top: 45px;
+        height: 60rem;
+    }
+
+    .mam{
+        margin-top: 21px;
+        margin-bottom: -19px;
+        float: none;
+        margin-left: 38.8rem;
+        font-size: 35px;
+    }
+
+    .square1 {
+        margin-left: 36.9rem;
+        margin-top: 70px;
+        margin-bottom: -58px;
+        float: none;
+    }
+
+    .form {
+        width: 42.5rem;
+        margin-left: 22rem;
+        padding: 60px 68px 10px 68px;
+        height: 39rem;
+    }
+
+    .label, .label1, .label2, .label3, .label4 {
+        font-size: 13.5px;
+        font-weight: 800;
+        margin-top: 30px;
+    }
+
+    .label1 {
+        float: right;
+        margin-top: -87px;
+        margin-right: 188px;
+    }
+
+
+    .text-line1 {
+        float: right;
+        margin-top: -68px;
+
+    }
+
+    .label2 {
+        margin-top: 100px;
+    }
+
+    .text-line2, .text-line3 {
+        width: 30rem;
+    }
+
+    .text-line4 {
+        width: 500px;
+        margin-top: 70px;
+    }
+
+    .bottoni {
+        margin-left: 0px;
+        padding: 5px 34px 8px 34px;
+    }
+
+    .table {
+        margin-top: 2.4rem;
+    }
+
+
+    footer {
+        margin-top: -10px;
+    }
+    .last-p {
+        width: 640px;
+    }
+
+}
