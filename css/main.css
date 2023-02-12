@@ -1,3 +1,160 @@
 /* Add your CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
+
+body {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 300;
+    background-color: var(--White);
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 1.5rem;        
+}
+
+:root {
+--Dark-beige: #E6DACD;
+--Light-beige: #F4ECE6;
+--Royal-blue: #0150FD;
+--Black: #000;
+--White: #FFF;
+}
+
+/* Header */
+
+
+/* Main */
+
+.display-image {
+border-radius: 50%;
+}
+
+.hero-container {
+background-color: var(--Dark-beige);
+padding-top: 2rem;
+padding-bottom: 1rem;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.display-name > h2 {
+display: flex;
+flex-direction: column;
+}
+
+
+.social-media-ribbon {
+background-color: var(--White);
+width: 100%;
+display: flex;
+justify-content: center;
+}
+
+.social-media-icons-block {
+    width: 50%;
+    padding: 0.3rem 0;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+.text-center {
+text-align: center;
+}
+
+button {
+padding: 0.3rem 1.2rem;
+border-style: none;
+border-radius: 5rem;
+
+}
+
+.btn-blue {
+background-color: var(--Royal-blue);
+color: var(--White);
+padding: 0.4rem 1.3rem;
+}
+
+.btn-clear {
+background-color: transparent;
+border: 0.1rem solid var(--Black);
+}
+
+
+.underline {
+width: 4rem;
+border-bottom: 0.15rem solid var(--Royal-blue);
+margin-left: auto;
+margin-right: auto;
+padding-top: 0.8rem;
+
+}
+
+.btn-container {
+/* Flex does not work with buttons */
+/*  
+display: flex;
+justify-content: space-between;
+*/
+margin: 1rem;
+display: grid;
+grid-template-columns: 1fr 1fr;
+column-gap: 1rem;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+header, footer {
+    margin: 1rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blue-icon {
+    background-color: var(--Royal-blue);
+    height: 1.2rem;
+    width: 1.2rem;
+    margin-right: 1rem;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    background-color: gold;
+    line-height: 0;
+}
+
+.job-title {
+    background-color: pink;
+    margin: 0;
+}
+
+.hamburger-menu {
+    background-color: green;
+    height: 1rem;
+    width: 1rem;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+}
