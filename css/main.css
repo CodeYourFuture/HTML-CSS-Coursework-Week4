@@ -47,8 +47,9 @@ a, button{
     width: 100%;
     top: 0;
     height: 6rem;
-    position: fixed;
+    position:fixed;
     background-color: rgb(244, 244, 244);
+    z-index: 1;
 }
 
 .line{
@@ -103,7 +104,42 @@ h1{
     text-align: center;
     margin-top: 10rem;
     font-family: 'Questrial', sans-serif;
+    background-color:rgb(244, 244, 244) ;
+
+ 
 }
+.wrapper-outer{
+    height: 30rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+    z-index: -1;
+
+}
+
+.wrapper{
+    margin-top: 10rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+
+}
+
+.background-img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    transform: translateZ(-10px) scale(2);
+
+}
+
+
 
 h2{
     font-size: 3.5rem;
@@ -130,18 +166,22 @@ button:hover{
     
 }
 
-.header-picture img{
-    width: 100%;
 
-}
  /*main*/
+ main{
+    margin-top: 2.5rem;
+    
+ }
 
 .discount {
+    margin-top: -10rem;
     height: 5rem;
     background-color:#f5e8ff;
     font-size: 1.4rem;
     font-weight: 100;
     text-align: center;
+    z-index: 1;
+
 }
 
 .discount h4{
