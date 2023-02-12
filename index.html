@@ -4,18 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Add a link to your custom CSS here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/main.css">
 
-    <title>Responsive grid project</title>
+     <title>Navid Hejazi</title>
 </head>
 
 <body>
+    <div class=".container">
+    <!-- Header section -->
+    <header>
+        <nav class="nav">
+            <input type="checkbox" name="" id="nav-checkbox" class="nav-checkbox">
+            <label for="nav-checkbox" class="nav-toggle">
+                <svg class="menu" viewBox="0 0 448 512" width="100" title="bars">
+                    <path
+                      d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+                    />
+                  </svg>
+                  <svg class="close" viewBox="0 0 384 512" width="100" title="times">
+                    <path
+                      d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+                    />
+                  </svg>
+            </label>
+            <ul class="nav-menu">
+                <li><a href="#"><div class="square"></div></a><strong>Maya Nelson</strong> <br><span class="occupation">PROJECT MANAGER</span> </li>
+                <li><a class="active" href="index.html">ABOUT ME</a></li>
+                <li><a href="resume.html">RESUME</a></li>
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- Add your markup here -->
+    <!-- Main section -->
+    <main>
+        <!-- Description Section  -->
+        <section class="description">
+            <h1>Hello</h1>
+            <h3>Here's who I am & what I do</h3>
+            <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click &ldquo; Edit Text &rdquo; or double click me to add your own content and make changes to the font. <br><br>
+                I’m a great place for you to tell a story and let your users know a little more about you.</p>
+        </section>
 
+        <!-- Introduction -->
+        <section class="introduction">
+            <div class="row">
+                <div class="col">
+                    <img src="./img/maya.jpg" alt="Maya images">
+                </div>
+                <div class="col">
+                    <h2><strong> Maya <br> Nelson</strong></h2>
+                </div>
+                <div class="col blue-line">
 
-    <!-- Please leave this in to credit the creators of this design -->
-    <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
+                </div>
+                <div class="col btns">
+                    <a class="btn btn-primary" href="resume.html">RESUME</a>
+                    <a class="btn btn-secondary" href="contact.html">PROJECTS</a>
+                </div>
+                <div class="col col-icons">
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fa-brands fa-facebook-f fa-2x"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter fa-2x"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin-in fa-2x"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a></li> 
+                    </ul>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer section -->
+    <footer></footer>
+
+</div>
 </body>
 
 </html>
+

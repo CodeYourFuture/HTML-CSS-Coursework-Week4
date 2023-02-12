@@ -1,3 +1,202 @@
-/* Add your CSS here */
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-SemiBold.ttf") format("truetype");
+}
 
-/* Dont' forget to link this file to your HTML in the <head> */
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/Quicksand-Light.ttf") format("truetype");
+}
+
+:root {
+  --beige-dark: #e6dacd;
+  --beige-light: #f4ece6;
+  --blue-royal: #0150fd;
+  --black: #000;
+  --white: #fff;
+
+  --max-width: 1100px;
+
+  --heading-font: "Poppins", sans-serif;
+  --body-font: "Quicksand", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: var(--body-font);
+  color: var(--black);
+}
+
+/* Utilities */
+.container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 2rem;
+  overflow: hidden;
+}
+li {
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: var(--black);
+}
+.active {
+  color: var(--blue-royal)
+}
+.btn {
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 50px;
+}
+.btn-primary{
+  background-color: var(--blue-royal);
+  color: var(--white);
+}
+.btn-secondary{
+  background-color: var(--beige-light);
+  color: var(--black);
+  border: 1px solid var(--black);
+}
+
+
+/* Header */
+.nav {
+  font-family: var(--heading-font);
+  font-size: 22px;
+  height: 35vh;
+}
+.nav .nav-menu .occupation {
+  font-family: var(--body-font);
+}
+.nav-toggle {
+  position: absolute;
+  cursor: pointer;
+  margin: 0rem 1rem;
+  right: 0;
+}
+.nav svg {
+  width: 1.5rem;
+}
+.nav .close {
+  display: none;
+}
+.nav .menu {
+  margin-top: 0.2rem;
+}
+.nav .nav-checkbox{
+  display: none;
+}
+.nav .nav-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  margin: 1rem;
+} 
+.nav .nav-menu li {
+  display: none;
+  font-size: 25px;
+}
+.nav .nav-menu li:first-child{
+  margin-right: auto;
+  display: block;
+}
+.nav #nav-checkbox:checked ~ ul {
+  background-color: var(--beige-dark);
+  height: 100vh;
+  margin: 0;
+  z-index: 1;
+}
+.nav #nav-checkbox:checked ~ ul.nav-menu li:nth-child(2){
+  margin-top: 10rem;
+}
+.nav #nav-checkbox:checked ~ ul.nav-menu li:first-child{
+  display: none;
+}
+.nav #nav-checkbox:checked ~ ul.nav-menu li{
+  display: block;
+}
+.nav #nav-checkbox:checked ~ label.nav-toggle .close{
+  display: block;
+  margin-top: 1rem;
+}
+.nav #nav-checkbox:checked ~ label.nav-toggle .menu{
+  display: none;
+}
+.nav .square {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: var(--blue-royal);
+  margin-right: 0.5rem;
+}
+
+/* Description */
+.description {
+  background-color: var(--beige-dark);
+  height: 100vh;
+  padding: 0rem 2rem;
+}
+.description h1 {
+  padding-top: 29rem;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: var(--heading-font);
+}
+.description h3 {
+  margin: 1.5rem 0rem;
+  font-family: var(--heading-font);
+  font-size: 23px;
+}
+
+/* Introduction */
+.introduction {
+  text-align: center;
+  background-color: var(--beige-light);
+  position: absolute;
+  width: 90%;
+  top: 120px;
+  left: 27px;
+}
+.introduction .row {
+  padding: 1rem 0rem;
+}
+.introduction img {
+  margin-top: 1.5rem;
+  border-radius: 50%;
+}
+.introduction h2 {
+  margin-top:  1rem;
+  font-family: var(--heading-font);
+}
+.introduction .blue-line {
+  width: 80px;
+  border-bottom: 2px solid var(--blue-royal);
+  margin: 0 auto;
+  margin-top: 0.5rem;
+}
+.introduction .btns {
+  margin-top: 2rem;
+}
+.introduction .btn-secondary {
+  margin-left: 1rem;
+}
+.introduction .col-icons {
+  margin-top: 2.5rem;
+  padding: 1rem 0rem;
+  background: var(--white);
+}
+.introduction .col-icons .social-icons {
+  display: flex;
+  justify-content: center;
+}
+.introduction .col-icons .social-icons li {
+  padding: 0rem 1rem;
+}
