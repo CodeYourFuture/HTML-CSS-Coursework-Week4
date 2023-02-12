@@ -35,8 +35,8 @@
         <div class="juicebar_logo_menu">
             <p>Juice Bar</p>
             <!--
-        <nav>
-            <ul class="nav_list">
+        <nav class="nav_list">
+            <ul>
                 <li class="nav_item"> <a class="nav_link" href="#">Home</a> </li>
                 <li class="nav_item"> <a class="nav_link" href="#">Story</a> </li>
                 <li class="nav_item"> <a class="nav_link" href="#">Menu</a> </li>
@@ -58,7 +58,7 @@
                 <p>Organic Cold Pressed Juices & Smoothies</p>
                 <button>Explore Flavors</button>
 
-                <img class="hero_image" src="images/hero_image" alt="Image of fresh fruit and juices" />
+                <img class="hero_image" src="images/hero_image.webp" alt="Image of fresh fruit and juices" />
 
                 <div class="hero_offer">
                     <p>Get 10% off your first online Order.<br>
@@ -141,7 +141,7 @@
             <section class="special_cleanse_kit_section">
 
                 <div class="special_cleanse_kit">
-                    <img src="" alt="Image of cleanse kit">
+                    <img src="images/cleansekit.webp" alt="Image of cleanse kit">
                     <h2>Discover Our Special Cleanse Kit</h2>
                     <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text”
                         or double click me to add your own content and make changes to the font. I’m a great place for
@@ -178,15 +178,20 @@
 
             </section>
 
-            <section class="follow_us">
-                <p><a href="#" class="link">@juicebar</a></p>
+            <section class="follow_us_section">
+                <div class="follow_us">
+                    <h2>Follow Us</h2>
+                    <p><a href="#" class="link">@juicebar</a></p>
+                </div>
             </section>
 
-            <section class="rotated_images">
-                <img src="" alt="Image of fruit in a bag">
-                <img src="" alt="Image green fruit and juice">
-                <img src="" alt="Image of yellow fruit and juice">
-                <img src="" alt="Image of hand reaching for fruit">
+            <section class="rotated_images_section">
+                <div class="rotated_images">
+                    <img src="images/gallery_img1.webp" alt="Image of fruit in a bag">
+                    <img src="images/gallery_img2.webp" alt="Image green fruit and juice">
+                    <img src="images/gallery_img3.webp" alt="Image of yellow fruit and juice">
+                    <img src="images/gallery_img4.webp" alt="Image of hand reaching for fruit">
+                </div>
             </section>
 
         </main>
@@ -194,37 +199,39 @@
 
         <footer class="footer">
 
-            <div class="get_started">
-                <p>Get Started</p>
-                <nav>
-                    <ul class="footer_nav_list">
-                        <li class="nav_item"> <a class="nav_link" href="#">Home</a> </li>
-                        <li class="nav_item"> <a class="nav_link" href="#">Story</a> </li>
-                        <li class="nav_item"> <a class="nav_link" href="#">Menu</a> </li>
-                        <li class="nav_item"> <a class="nav_link" href="#">Order Online</a> </li>
-                        <li class="nav_item"> <a class="nav_link" href="#">Locations & Hours</a> </li>
-                        <li class="nav_item"> <a class="nav_link" href="#">Contact</a> </li>
-                    </ul>
-                </nav>
+            <div class="footer_menu_socials">
+                <div class="get_started">
+                    <p>Get Started</p>
+                    <nav class="nav_list">
+                        <ul class="footer_nav_list">
+                            <li class="nav_item"> <a class="nav_link" href="#">Home</a> </li>
+                            <li class="nav_item"> <a class="nav_link" href="#">Story</a> </li>
+                            <li class="nav_item"> <a class="nav_link" href="#">Menu</a> </li>
+                            <li class="nav_item"> <a class="nav_link" href="#">Order Online</a> </li>
+                            <li class="nav_item"> <a class="nav_link" href="#">Locations & Hours</a> </li>
+                            <li class="nav_item"> <a class="nav_link" href="#">Contact</a> </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="connect">
+                    <p>Connect</p>
+                    <nav class="nav_list">
+                        <ul class="footer_nav_list">
+                            <li class="nav_item"> <a class="nav_link" href="#">Instagram</a> </li>
+                            <li class="nav_item"> <a class="nav_link" href="#">Facebook</a> </li>
+                            <li class="nav_item"> <a class="nav_link" href="#">Youtube</a> </li>
+                        </ul>
+
+                    </nav>
+                </div>
             </div>
 
-            <div class="connect">
-                <p>Connect</p>
-                <nav>
-                    <ul class="footer_socialmedia">
-                        <li class="nav_item"> <a class="nav_link" href="#">Instagram</a> </li>
-                        <li class="nav_item"> <a class="nav_link" href="#">Facebook</a> </li>
-                        <li class="nav_item"> <a class="nav_link" href="#">Youtube</a> </li>
-                    </ul>
-                    <div data-mesh-id="comp-kplqii4cinlineContent-gridContainer" data-testid="mesh-container-content">
-                        grid
-                </nav>
-            </div>
 
             <div class="mailing_list">
                 <p>Join Our Mailing List</p>
-                <fieldset class="mailing_list_form">
-                    <form action="customer.html" method="get"> <!----ADD---->
+                <fieldset>
+                    <form class="mailing_list_form" action="customer.html" method="get"> <!----ADD---->
                         <div class="customer_email">
                             <label for="Email">Email *</label>
                             <input class="customer_email" type="email" name="Email" id="Email" required>
@@ -240,7 +247,7 @@
             </div>
 
             <div class="logo">
-                <a href="#"><img src="" alt="Logo for Juice Bar" class="footer_logo"></a>
+                <a href="#"><img src="images/logo.jpeg" alt="Logo for Juice Bar" class="footer_logo"></a>
             </div>
 
             <div class="creators_credit">
