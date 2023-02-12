@@ -43,4 +43,16 @@
 .left_navbar {
     font-size: 22px;
 }
+.main_links {
+    display: flex;
+
+}
+.main_links a {
+    text-decoration: none;
+}
+#resume {
+    margin-right: 4rem;
+    background-color: #0150FD;
+    
+}
 
