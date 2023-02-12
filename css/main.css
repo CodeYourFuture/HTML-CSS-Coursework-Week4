@@ -73,7 +73,7 @@ nav {
     background: var(--lb);
     position: relative;
     top: 14%;
-    left: 13rem;
+    left: 16vw;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -178,4 +178,25 @@ footer img {
 .footer__links {
     display: flex;
     text-align: center;
+}
+@media (max-width: 1150px) {
+    .main__card {
+        left: 13vw;
+    }
+}
+
+@media (max-width: 1040px) {
+    .main__card {
+        left: 8.5vw;
+    }
+}
+
+@media (max-width: 900px) {
+    .nav__right {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    
 }
