@@ -55,6 +55,86 @@ nav {
     padding-right: 1rem;
 }
 
+/* Hamburger */
+
+menu {
+    display: none;
+    text-align: center;
+    height: 45px;
+    padding-right: 2rem;
+}
+
+.hamburger1 {
+    height: 40px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    z-index: 2;
+    position: relative;
+}
+  
+.hamburger1 div {
+    background-color: rgb(61, 61, 61);
+    position: relative;
+    width: 40px;
+    height: 5px;
+    margin-top: 7px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+  
+#toggle1 {
+    display: none;
+}
+  
+#toggle1:checked + .hamburger1 .top {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    margin-top: 22.5px;
+}
+  
+#toggle1:checked + .hamburger1 .meat {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    margin-top: -5px;
+}
+  
+#toggle1:checked + .hamburger1 .bottom {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+  
+#toggle1:checked ~ .navbar--mobile {
+    height: 100%;
+}
+  
+.navbar--mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 2rem;
+    background-color: var(--db);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.navbar--mobile a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+}
+
+.navbar--mobile a:first-child {
+    margin-top: 1rem;
+}
+
+.navbar--mobile a:last-child {
+    margin-bottom: 1rem;
+}
 .main__wrapper {
     display: grid;
     grid-template-columns: 42% 58%;
@@ -195,8 +275,13 @@ footer img {
     .nav__right {
         display: none;
     }
+
+    menu {
+        display: flex;
+    }
 }
 
 @media (max-width: 800px) {
     
 }
+
