@@ -20,100 +20,14 @@ h1 {
 }
 
 :root {
---Dark-beige: #E6DACD;
---Light-beige: #F4ECE6;
---Royal-blue: #0150FD;
---Black: #000;
---White: #FFF;
+    --Dark-beige: #E6DACD;
+    --Light-beige: #F4ECE6;
+    --Royal-blue: #0150FD;
+    --Black: #000;
+    --White: #FFF;
 }
 
 /* Header */
-
-
-/* Main */
-
-.display-image {
-border-radius: 50%;
-}
-
-.hero-container {
-background-color: var(--Dark-beige);
-padding-top: 2rem;
-padding-bottom: 1rem;
-display: flex;
-flex-direction: column;
-align-items: center;
-}
-
-.display-name > h2 {
-display: flex;
-flex-direction: column;
-}
-
-
-.social-media-ribbon {
-background-color: var(--White);
-width: 100%;
-display: flex;
-justify-content: center;
-}
-
-.social-media-icons-block {
-    width: 50%;
-    padding: 0.3rem 0;
-    display: flex;
-    justify-content: space-between;
-    
-}
-
-
-.text-center {
-text-align: center;
-}
-
-button {
-padding: 0.3rem 1.2rem;
-border-style: none;
-border-radius: 5rem;
-
-}
-
-.btn-blue {
-background-color: var(--Royal-blue);
-color: var(--White);
-padding: 0.4rem 1.3rem;
-}
-
-.btn-clear {
-background-color: transparent;
-border: 0.1rem solid var(--Black);
-}
-
-
-.underline {
-width: 4rem;
-border-bottom: 0.15rem solid var(--Royal-blue);
-margin-left: auto;
-margin-right: auto;
-padding-top: 0.8rem;
-
-}
-
-.btn-container {
-/* Flex does not work with buttons */
-/*  
-display: flex;
-justify-content: space-between;
-*/
-margin: 1rem;
-display: grid;
-grid-template-columns: 1fr 1fr;
-column-gap: 1rem;
-}
-
-.text-uppercase {
-    text-transform: uppercase;
-}
 
 header, footer {
     margin: 1rem;
@@ -150,11 +64,100 @@ header {
     width: 1rem;
 }
 
-.bold {
-    font-weight: bold;
+
+/* Main */
+
+.display-image {
+    border-radius: 50%;
 }
+
+.hero-container {
+    background-color: var(--Dark-beige);
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.display-name > h2 {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.social-media-ribbon {
+    background-color: var(--White);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.social-media-icons-block {
+    width: 50%;
+    padding: 0.3rem 0;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+button {
+    padding: 0.3rem 1.2rem;
+    border-style: none;
+    border-radius: 5rem;
+
+}
+
+.btn-blue {
+    background-color: var(--Royal-blue);
+    color: var(--White);
+    padding: 0.4rem 1.3rem;
+}
+
+.btn-clear {
+    background-color: transparent;
+    border: 0.1rem solid var(--Black);
+}
+
+
+.underline {
+    width: 4rem;
+    border-bottom: 0.15rem solid var(--Royal-blue);
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0.8rem;
+}
+
+.btn-container {
+/* Flex does not work with buttons */
+/*  
+display: flex;
+justify-content: space-between;
+*/
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+}
+
+
+/* Footer Section */
 
 .contact-container {
     display: flex;
     justify-content: space-between;
+}
+
+/* Utility Classes */
+
+.text-center {
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
 }
