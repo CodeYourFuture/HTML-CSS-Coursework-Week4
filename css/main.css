@@ -40,9 +40,15 @@ nav {
 .nav__left {
     display: flex;
     align-items: center;
-    padding-left: 10%;
+    padding-left: 8%;
+    column-gap: 0.5rem;
 }
 
+.nav__left div {
+    width: 16px;
+    height: 16px;
+    background: var(--rb);
+}
 .nav__right {
     display: flex;
     column-gap: 2rem;
@@ -71,7 +77,7 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    row-gap: 2rem;
+    row-gap: 1rem;
     align-items: center;
     box-shadow: -15px 15px 15px gray;
 }
@@ -85,6 +91,12 @@ nav {
     background: var(--black);
 }
 
+.main__line {
+    width: 50px;
+    height: 2px;
+    background: var(--rb);
+}
+
 .main__links {
     display: flex;
     width: 100%;
@@ -92,6 +104,7 @@ nav {
     height: 50px;
     align-items: center;
     justify-content: center;
+    margin-top: 1rem;
 }
 
 .main__text {
