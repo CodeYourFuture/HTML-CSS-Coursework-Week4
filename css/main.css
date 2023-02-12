@@ -22,6 +22,7 @@ a {
 a:hover {
     color: var(--rb);
 }
+
 nav {
     height: 150px;
 }
@@ -44,7 +45,18 @@ nav {
     column-gap: 0.5rem;
 }
 
-.nav__left div {
+.nav__left div:first-child {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+
+}
+
+.p__mobile {
+    display: none;
+}
+
+.nav__cube{
     width: 16px;
     height: 16px;
     background: var(--rb);
@@ -128,13 +140,8 @@ menu {
     font-size: 1.5rem;
 }
 
-.navbar--mobile a:first-child {
-    margin-top: 1rem;
-}
+/* Hamburger end */
 
-.navbar--mobile a:last-child {
-    margin-bottom: 1rem;
-}
 .main__wrapper {
     display: grid;
     grid-template-columns: 42% 58%;
@@ -148,7 +155,7 @@ menu {
 
 .main__card {
     height: 526px;
-    max-width: 375px;
+    max-width: 400px;
     width: 100%;
     background: var(--lb);
     position: relative;
@@ -195,37 +202,54 @@ menu {
     row-gap: 1.5rem;
 }
 
-.main__text button:first-child {
+ /* Buttons section */
+
+.main__button {
+    min-width: 280px;
+ }
+
+.main__button button {
+    height: 2rem;
+    width: 8rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.main__button button:first-child {
     border: none;
     background: var(--rb);
     color: #fff;
 }
 
-.main__text button:first-child:hover {
+.main__button button:first-child:hover {
     background: var(--white) ;
     color: #000;
     border: 1px solid var(--rb);
     transition: 0.4s ease 0s;
 }
-.main__text button:last-child {
+.main__button button:last-child {
     border: 1px solid;
     background: var(--white);
     color: var(--rb);
 }
 
-.main__text button:last-child:hover {
+.main__button button:last-child:hover {
     border: 1px solid;
     background: var(--rb);
     color: var(--white);
     transition: 0.4s ease 0s;
 }
 
-.main__text button {
-    height: 2rem;
-    width: 8rem;
-    border-radius: 20px;
-    cursor: pointer;
+.mobile__button {
+    display: none;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    justify-content: center;
+    column-gap: 0.5rem;
 }
+
+ /* Buttons section end */
 
 .main__text h1 {
     font-size: 7rem;
@@ -282,6 +306,96 @@ footer img {
 }
 
 @media (max-width: 800px) {
-    
+    .main__text {
+        row-gap: 0.5rem;
+    }
+
+    .main__text h1 {
+        font-size: 5rem;
+    }
+
 }
 
+@media (max-width: 600px) {
+    nav {
+        height: 400px;
+    }
+    
+    .nav__container {
+        position: relative;
+    }
+    .nav__left {
+        flex-direction: column;
+    }
+
+    .nav__left p {
+        margin: 0;
+    }
+
+    .p__desktop {
+        display: none;
+    }
+
+    .p__mobile {
+        display: block;
+    }
+
+    .main__wrapper {
+        display: flex;
+        flex-direction: column;
+        background: var(--db);
+        align-items: center;
+    }
+
+    .main__content {
+        display: flex;
+        justify-content: center;
+    }
+
+    .main__card {
+        top: -47%;
+        left: unset;
+        width: 90%;
+    }
+
+    .mobile__button {
+        display: flex;
+    }
+
+    .desktop__button {
+        display: none;
+    }
+
+    .main__text {
+        position: relative;
+        top: -30%;
+        width: 90%;
+    }
+
+    .main__text h1 {
+        font-size: 3rem;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 300px;
+    }
+
+    footer div:first-child {
+        width: 90%;
+    }
+    
+    .footer__contacts {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer__contacts p {
+        text-align: start;
+    }
+
+    .footer__links {
+        text-align: unset;
+    }
+}
