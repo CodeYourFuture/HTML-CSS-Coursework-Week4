@@ -10,7 +10,7 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 
-h1 {
+h1, h2 {
     font-family: 'Poppins', sans-serif;
 }
 
@@ -52,7 +52,7 @@ nav {
 .main__wrapper {
     display: grid;
     grid-template-columns: 42% 58%;
-    height: 680px;
+    height: 750px;
     column-gap: 6rem;
 }
 
@@ -66,7 +66,7 @@ nav {
     width: 100%;
     background: var(--lb);
     position: relative;
-    top: 12%;
+    top: 14%;
     left: 13rem;
     display: flex;
     flex-direction: column;
@@ -92,7 +92,6 @@ nav {
     height: 50px;
     align-items: center;
     justify-content: center;
-
 }
 
 .main__text {
@@ -100,6 +99,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     width: 60%;
+    row-gap: 1.5rem;
 }
 
 .main__text button:first-child {
@@ -135,10 +135,34 @@ nav {
 }
 
 .main__text h1 {
-    font-size: 5rem;
+    font-size: 7rem;
     margin: unset;
 }
 
 footer {
-    height: 100px;
+    height: 120px;
+    display: grid;
+    grid-template-columns: 30% 50%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer__contacts {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer__contacts p {
+    text-align: center;
+    font-weight: bold;
+}
+footer img {
+    background: var(--black);
+    border-radius: 50%;
+    width: 50%;
+}
+
+.footer__links {
+    display: flex;
+    text-align: center;
 }
