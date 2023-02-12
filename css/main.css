@@ -37,6 +37,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 60%;
 }
 
 .blue-icon {
@@ -69,15 +70,20 @@ header {
 
 .display-image {
     border-radius: 50%;
+    width: 8rem;
 }
 
 .hero-container {
-    background-color: var(--Dark-beige);
+    position: absolute;
+    top: 16%;
+    left: 6%;
+    background-color: var(--Light-beige);
     padding-top: 2rem;
     padding-bottom: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 92%;
 }
 
 .display-name > h2 {
@@ -138,6 +144,16 @@ justify-content: space-between;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 1rem;
+}
+
+/* Main Article Section */
+
+.main-article {
+    background-color: var(--Dark-beige);
+    padding-top: 80%;
+    padding-bottom: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1rem;
 }
 
 
