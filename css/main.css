@@ -264,6 +264,50 @@ button {
 
 /** Gallery **/
 
+.rotated_images_section {
+    grid-column: 1/-1;
+    background-color: var(--white);
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.rotated_images {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.rotated_images img {
+    position: absolute;
+    z-index: 10;
+}
+
+.img1 {
+    left: 1rem;
+    top: 5rem;
+    transform: rotate(15deg);
+}
+
+.img2 {
+    right: 1rem;
+    transform: rotate(-15deg);
+}
+
+.img3 {
+    left: 1rem;
+    top: 5rem;
+    transform: rotate(15deg);
+}
+
+.img4 {
+    left: 20rem;
+    top: 3rem;
+}
+
+
 
 /** Footer **/
 
