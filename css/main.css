@@ -93,7 +93,7 @@ p {
 
 button {
     border: 2px solid var(--black);
-    padding: 0.8rem 1rem;
+    padding: 0.8rem 2rem;
     font-weight: 400;
     align-self: center;
     margin: 1rem;
@@ -144,11 +144,13 @@ button {
 }
 
 .selling_point {
-    margin: 1rem 5rem;
+    margin: 1rem auto;
+    max-width: 200px;
 }
 
 .selling_point h3 {
-    margin: 1rem 0;
+    margin: 1rem auto;
+    max-width: 200px;
 }
 
 /** Boosting Immunity **/
@@ -163,11 +165,13 @@ button {
 }
 
 .boosting_immunity h2 {
-    margin: 1rem 7rem;
+    margin: 1rem auto;
+    max-width: 200px;
 }
 
 .boosting_immunity p {
-    margin: 0 5rem;
+    margin: 1rem auto;
+    max-width: 250px;
 }
 
 /** Wellness Product **/
@@ -186,12 +190,36 @@ button {
 }
 
 .wellness_path h3 {
-    margin: 1rem 7rem;
+    margin: 1rem auto;
+    max-width: 200px;
 }
 
 .wellness_path p {
-    margin: 1rem 5rem;
+    margin: 1rem auto;
+    max-width: 200px;
 }
+
+/** Special Cleanse Kit **/
+
+.special_cleanse_kit_section {
+    grid-column: 1/-1;
+    background-color: var(--white);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.special_cleanse_kit h2 {
+    margin: 1rem auto;
+    max-width: 200px;
+}
+
+.special_cleanse_kit p {
+    margin: 1rem auto;
+    max-width: 250px;
+}
+
 
 /** Getting Juice **/
 /** Gallery **/
