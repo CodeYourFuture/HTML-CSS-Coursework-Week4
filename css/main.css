@@ -48,22 +48,23 @@ nav {
     column-gap: 0.5rem;
 }
 
-.nav__left div:first-child {
+.nav__cube {
     display: flex;
     align-items: center;
     column-gap: 0.5rem;
 
 }
 
-.p__mobile {
-    display: none;
-}
-
-.nav__cube{
+.blue-cube {
     width: 16px;
     height: 16px;
     background: var(--rb);
 }
+
+.p__mobile {
+    display: none;
+}
+
 .nav__right {
     display: flex;
     column-gap: 2rem;

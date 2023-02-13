@@ -7,3 +7,15 @@
     --header-font: 'Poppins', sans-serif;
     --gen-font: 'Quicksand', sans-serif;
 }
+
+section {
+    background: var(--db);
+    height: 1050px;
+}
+
+.section__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+}

@@ -20,12 +20,6 @@ section {
     row-gap: 2rem;
 }
 
-.section__container div:first-child {
-    display: flex;
-    align-items: center;
-    column-gap: 0.5rem;
-}
-
 .section__subheader {
     width: 60%;
     display: flex;
