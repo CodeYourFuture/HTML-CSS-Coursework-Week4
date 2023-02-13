@@ -6,16 +6,91 @@
     --ivory: #F4ECE6;
 }
 
-.container {
+
+main {
+    display: grid;
+    grid-template-columns: auto 65rem auto;
     background-color: var(--leather);
+}
+
+.container {
+    grid-column: 2/3;
+
 }
 
 .heading-box {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 10rem 0 5rem 0;
 }
 .heading {
     font-size: 3rem;
+    font-weight: 600;
 }
 
+.center-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+
+}
+
+h2 {
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+/* Experience card  */
+
+.card {
+    background-color: var(--white);
+    padding: 5rem;
+    margin-bottom: 4rem;
+}
+
+.job-card {
+    display: flex;
+    /* justify-content: space-between; */
+
+}
+
+/* .job-card > * { flex: 1; } */
+
+.card-left {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    width: 40%;
+}
+
+.time-heading {
+    color: var(--blue);
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1.6rem;
+}
+
+.job-position {
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 1.6rem;
+}
+
+.company {
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+.card-right {
+    width: 60%;
+}
+
+.card-right p {
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+
+}
