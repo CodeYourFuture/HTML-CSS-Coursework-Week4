@@ -38,4 +38,12 @@ h3 {
   font-family: "Poppins", sans-serif;
 }
 
+/* style button*/
+button {
+  font-size: 1em;
+  text-transform: uppercase;
+  padding: 0.5em 1em;
+  border-radius: 20%;
+}
+
 /* Dont' forget to link this file to your HTML in the <head> */
