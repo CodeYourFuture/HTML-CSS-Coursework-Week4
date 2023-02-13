@@ -149,4 +149,16 @@ i {
 .contact a .fa-facebook-f {
   margin-left: 0;
 }
+
+@media (min-width: 400px) {
+  footer {
+    align-items: center;
+  }
+  footer .contact {
+    column-gap: 8em;
+  }
+  footer > p {
+    width: 100%;
+  }
+}
 /* Dont' forget to link this file to your HTML in the <head> */
