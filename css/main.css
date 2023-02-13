@@ -161,4 +161,57 @@ i {
     width: 100%;
   }
 }
+
+@media (min-width: 730px) {
+  .content-2 {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    width: 740px;
+    height: 647px;
+    margin: auto;
+  }
+  .content-2 .part-2 button {
+    display: inline;
+    margin: 2em 0;
+  }
+  .content-2 .part-2 h1 {
+    font-size: 3em;
+  }
+  footer {
+    flex-direction: row;
+    padding: 0;
+    justify-content: space-between;
+  }
+  footer .contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 1.5em;
+  }
+  footer > p {
+    width: 30%;
+  }
+  footer .content > div {
+    padding: 0;
+  }
+  .desktop {
+    position: absolute;
+    bottom: 0;
+
+    background: var(--White);
+    width: 100%;
+    height: 100vh;
+    z-index: -2;
+  }
+  .content-1 {
+    position: absolute;
+    bottom: 0;
+
+    background: var(--DarkBeige);
+    width: 45%;
+    height: 100vh;
+    z-index: -1;
+  }
+}
 /* Dont' forget to link this file to your HTML in the <head> */
