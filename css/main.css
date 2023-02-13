@@ -49,10 +49,35 @@
 }
 .main_links a {
     text-decoration: none;
+    
 }
 #resume {
     margin-right: 4rem;
     background-color: #0150FD;
+    border-radius: 3rem;
+    padding: 0.4rem 1rem 0.4rem 1rem;
+    color: white;
+    font-weight: bolder;
+    
+}
+#projects {
+    border-style: solid;
+    border-color: rgb(190, 186, 186);
+    border-radius: 3rem;
+    padding: 0.4rem 1rem 0.4rem 1rem;
     
 }
 
+.information_footer img {
+    width: 2rem;
+    height: 2rem;
+}
+#image {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+}
+.footer_images img {
+    width: 2rem;
+    height: 2rem;
+}
