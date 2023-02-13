@@ -46,6 +46,7 @@ section {
     display: flex;
     flex-direction: column;
     width: 38%;
+    text-align: center;
 }
 
 .section__block div:last-child {
@@ -86,9 +87,9 @@ article {
 .article__block {
     margin: 3rem 0 0 2rem;
 }
+
 .article__block div {
     display: flex;
-    
 }
 
 .article__block ul {
