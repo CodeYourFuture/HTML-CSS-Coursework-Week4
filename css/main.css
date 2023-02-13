@@ -15,6 +15,7 @@
 
 body {
   background-color: var(--white);
+  font-family: "Nunito Sans", sans-serif;
   font-family: "Poppins", sans-serif;
   font-family: "Quicksand", sans-serif;
 }
@@ -23,13 +24,14 @@ body {
   font-family: "poppins", sans-serif;
   line-height: 1em;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--black);
 }
 
 .font-7 {
   color: var(--black);
-  font-family: "Quicksand", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
+  letter-spacing: 0.04rem;
   font-size: 14px;
   font-weight: 300;
 }
@@ -48,7 +50,7 @@ body {
   grid-template-rows: auto auto;
   margin-left: 1rem;
   margin-right: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 18px;
 }
 
 .logo-name-title::before {
@@ -113,13 +115,14 @@ main {
 
 .profile-card {
   background-color: var(--light-beige);
-  height: 375px;
+  height: 370px;
   /* width: 330px; */
   margin-left: 1.5rem;
   margin-right: 1.5rem;
   margin-top: -160px;
   margin-bottom: 26px;
   box-shadow: -11.31px 11.31px 17px 0px rgba(138, 131, 124, 0.23);
+
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: repeat(4, min-content) 1fr;
@@ -127,15 +130,147 @@ main {
 
 .profile-container {
   margin: 28px 0px 13px 0;
-  outline: 2px dashed red;
 }
 
 .profile-pic {
+  border-radius: 50%;
+  display: block;
   width: 120px;
   height: 120px;
   /* object-fit: cover; */
   margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 13px;
+}
+
+.profile-name {
+  font-family: "poppins", sans-serif;
+  line-height: 1.2em;
+  font-size: 21px;
+  /* font-weight: 600; */
+  font-weight: var(--very-bold);
+  color: var(--black);
+  text-align: center;
+}
+
+.profile-line-break {
+  border-top: 2px solid var(--royal-blue);
+  height: 3px;
+  width: 65px;
+  margin-top: 1rem;
+  margin-bottom: 26px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile-buttons-container {
+  display: flex;
+  justify-content: space-around;
+  height: 2rem;
+  margin-bottom: 2rem;
+}
+
+.resume-button-container {
+  border: 1px solid var(--royal-blue);
+  border-radius: 15px;
+  width: 7.5rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--royal-blue);
+}
+
+.resume-button {
+  font-size: 15px;
+  color: var(--white);
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: var(--royal-blue);
+}
+
+.projects-button-container {
+  border: 1px solid var(--black);
+  border-radius: 15px;
+  width: 7.5rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-button {
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.socials-bar {
+  background-color: var(--white);
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+.social-container {
+  width: 125px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .about-me {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.hello-header {
+  font-size: 40px;
+  font-weight: 700;
+  font-family: poppins-semibold, poppins, sans-serif;
+  margin-bottom: 1rem;
+}
+
+.hello-sub-header {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+
+  margin-bottom: 1rem;
+}
+
+.hello-para {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.04rem;
+  line-height: 1.4rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.footer-comms-container {
+  margin: 27px 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+.footer-socials-container {
+  margin: 27px 1rem;
+}
+
+.social-icon-larger {
+  font-size: 20px;
+}
+
+.footer-label {
+  margin-bottom: 0.75rem;
+  font-family: "Quicksand", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.footer-text {
+  font-family: "Nunito Sans", sans-serif;
+  /* font-family: "Quicksand", sans-serif; */
+  font-size: 13px;
+  font-weight: 300;
 }
