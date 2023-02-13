@@ -11,6 +11,7 @@
 :root {
   --beige-dark: #e6dacd;
   --beige-light: #f4ece6;
+
   --blue-royal: #0150fd;
   --black: #000;
   --white: #fff;
@@ -28,9 +29,10 @@
 }
 
 body {
-  font-size: 16px;
+  font-size: 20px;
   font-family: var(--body-font);
   color: var(--black);
+  font-weight: 800;
 }
 
 /* Utilities */
@@ -43,28 +45,50 @@ body {
 li {
   list-style: none;
 }
-a{
+a {
   text-decoration: none;
   color: var(--black);
+  font-weight: bolder;
 }
 .active {
-  color: var(--blue-royal)
+  color: var(--blue-royal);
 }
 .btn {
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 1.75rem;
   border: none;
   border-radius: 50px;
 }
-.btn-primary{
+.btn-primary {
   background-color: var(--blue-royal);
   color: var(--white);
 }
-.btn-secondary{
+.btn-secondary {
   background-color: var(--beige-light);
   color: var(--black);
   border: 1px solid var(--black);
 }
-
+.bolder {
+  font-weight: bolder;
+}
+.square {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: var(--blue-royal);
+  margin-right: 0.5rem;
+}
+.text-center {
+  text-align: center;
+}
+.primary-font {
+  font-family: var(--heading-font);
+}
+.secondary-font {
+  font-family: var(--body-font);
+}
+.blue-color {
+  color: var(--blue-royal);
+}
 
 /* Header */
 .nav {
@@ -90,7 +114,7 @@ a{
 .nav .menu {
   margin-top: 0.2rem;
 }
-.nav .nav-checkbox{
+.nav .nav-checkbox {
   display: none;
 }
 .nav .nav-menu {
@@ -99,50 +123,51 @@ a{
   gap: 2rem;
   align-items: center;
   margin: 1rem;
-} 
+}
 .nav .nav-menu li {
   display: none;
   font-size: 25px;
 }
-.nav .nav-menu li:first-child{
+.nav .nav-menu li:first-child {
   margin-right: auto;
   display: block;
 }
 .nav #nav-checkbox:checked ~ ul {
   background-color: var(--beige-dark);
   height: 100vh;
+  position: absolute;
+  width: 100%;
+  height: 100%;
   margin: 0;
   z-index: 1;
 }
-.nav #nav-checkbox:checked ~ ul.nav-menu li:nth-child(2){
-  margin-top: 10rem;
+
+.nav #nav-checkbox:checked ~ ul.nav-menu li:nth-child(2) {
+  margin-top: 11rem;
 }
-.nav #nav-checkbox:checked ~ ul.nav-menu li:first-child{
+.nav #nav-checkbox:checked ~ ul.nav-menu li:first-child {
   display: none;
 }
-.nav #nav-checkbox:checked ~ ul.nav-menu li{
+.nav #nav-checkbox:checked ~ ul.nav-menu li {
   display: block;
 }
-.nav #nav-checkbox:checked ~ label.nav-toggle .close{
+.nav #nav-checkbox:checked ~ label.nav-toggle .close {
   display: block;
-  margin-top: 1rem;
+  position: absolute;
+  z-index: 2;
+  right: 0.25rem;
+  margin-top: 0.75rem;
 }
-.nav #nav-checkbox:checked ~ label.nav-toggle .menu{
+.nav #nav-checkbox:checked ~ label.nav-toggle .menu {
   display: none;
 }
-.nav .square {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-color: var(--blue-royal);
-  margin-right: 0.5rem;
-}
+
+/* Main - About Me Page */
 
 /* Description */
 .description {
   background-color: var(--beige-dark);
-  height: 100vh;
-  padding: 0rem 2rem;
+  padding: 0rem 2rem 2rem 2rem;
 }
 .description h1 {
   padding-top: 29rem;
@@ -173,7 +198,7 @@ a{
   border-radius: 50%;
 }
 .introduction h2 {
-  margin-top:  1rem;
+  margin-top: 1rem;
   font-family: var(--heading-font);
 }
 .introduction .blue-line {
@@ -199,4 +224,82 @@ a{
 }
 .introduction .col-icons .social-icons li {
   padding: 0rem 1rem;
+}
+/* ---------------------------- */
+
+/* Main - Resume Page */
+.second-nav {
+  height: 15vh;
+}
+.resume {
+  background: var(--beige-dark);
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+  line-height: 1.7;
+}
+.resume h1 {
+  font-size: 40px;
+}
+.resume .title {
+  padding-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.resume .square {
+  width: 25px;
+  height: 25px;
+}
+.resume .exp-title {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  font-size: 18px;
+}
+.resume .exp-title .btn {
+  padding: 0.5rem 1rem;
+}
+.resume article,
+.resume .skill {
+  background-color: var(--white);
+  width: 97%;
+  padding: 2rem 1rem 2rem 2rem;
+  margin: 3.5rem 0rem;
+}
+.resume .title-art1,
+.resume .title-art2 {
+  margin-bottom: 1.5rem;
+}
+.resume .skill h3 {
+  margin-bottom: 1rem;
+}
+.resume ul .square {
+  width: 17px;
+  height: 17px;
+}
+.resume ul li {
+  display: flex;
+  align-items: center;
+}
+
+/* Footer section */
+.rows {
+  margin: 2rem 1rem;
+}
+.row1 {
+  display: flex;
+  justify-content: space-between;
+}
+.row2 {
+  margin: 1.5rem 0rem;
+}
+.row2 ul {
+  display: flex;
+  margin-top: 0.5rem;
+}
+.row2 li {
+  margin-right: 1rem;
+}
+.row3 a {
+  text-decoration: underline;
 }
