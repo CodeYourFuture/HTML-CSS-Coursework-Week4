@@ -68,7 +68,7 @@ h2 {
     width: 40%;
 }
 
-.time-heading {
+.blue-heading {
     color: var(--blue);
     font-size: 1.6rem;
     letter-spacing: 0.1rem;
@@ -90,7 +90,7 @@ h2 {
     width: 60%;
 }
 
-.card-right p {
+.card-text {
     font-size: 1.4rem;
     font-weight: 300;
     line-height: 1.6;

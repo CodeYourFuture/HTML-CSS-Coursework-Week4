@@ -1,0 +1,23 @@
+:root {
+    --blue: #0150FD;
+    --black: #000000;
+    --white: #FFFFFF;
+    --leather: #E6DACD;
+    --ivory: #F4ECE6;
+}
+
+.project-card {
+    display: flex;
+}
+
+.project-left {
+    width: 60%;
+}
+
+.project-right {
+    width: 40%;
+}
+
+.project-right img {
+    width: 100%;
+}
