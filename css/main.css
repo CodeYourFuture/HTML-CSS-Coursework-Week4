@@ -11,14 +11,31 @@
   --Black: #000;
   --White: #fff;
 }
+/* grid on the body*/
 
 body {
   font-family: "Quicksand", sans-serif;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
 }
-
+header {
+  grid-area: header;
+}
+main {
+  grid-area: main;
+}
+footer {
+  grid-area: footer;
+}
 h1,
 h2,
 h3 {
   font-family: "Poppins", sans-serif;
 }
+
 /* Dont' forget to link this file to your HTML in the <head> */
