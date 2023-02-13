@@ -123,7 +123,7 @@ footer {
   padding-right: 1em;
 }
 footer > p {
-  width: 60%;
+  width: 80%;
 }
 
 footer .contact {
@@ -132,8 +132,21 @@ footer .contact {
   grid-template-rows: repeat(2, auto);
   justify-content: space-between;
 }
-footer div,
-p {
+footer div {
   margin-top: 0.5em;
+}
+.contact div > p {
+  margin-top: 0;
+}
+/*Added font awsome*/
+i {
+  margin: 0.5em;
+  color: var(--Black);
+}
+.contact a {
+  text-decoration: none;
+}
+.contact a .fa-facebook-f {
+  margin-left: 0;
 }
 /* Dont' forget to link this file to your HTML in the <head> */
