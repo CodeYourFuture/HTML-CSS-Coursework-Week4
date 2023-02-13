@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+  padding-top: 2rem;
+}
+.container {
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 40px 200px 40px;
+}
+
+.search {
+    grid-column: 1 / -1;
+}
+
+.menu {}
+
+.content {}
+
+.footer {}
+
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+  }
+  
+  .searchTerm {
+    width: 100%;
+    border: 3px solid #00B4CC;
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+  }
+  
+  .searchTerm:focus{
+    color: #00B4CC;
+  }
+  
+  .searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #00B4CC;
+    background: #00B4CC;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  /*Resize the wrap to see the search bar change!*/
+  .wrap{
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+li{
+    list-style: none;
+}
+
+.hamburger input[type="checkbox"]{
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: 5px;
+    left: 6px;
+    display: block;
+    z-index: 3;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.hamburgerlines{
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: 8px;
+    left: 7px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hamburgerlines .lines{
+    display: block;
+    height: 4px;
+    width: 100%;
+    background: #232323;
+    border-radius: 10px;
+}
+
+.hamburger{
+    position: relative;
+}
+
+.menu-items{
+    padding-top: 90px;
+    transform: translate(-110%);
+    transition: transform 0.5s ease-in-out;
+    padding-left: 15px;
+    background: #fff;
+    margin-top: -10px;
+    color: #fff;
+    padding-bottom: 1rem;
+    max-width: 400px;
+    width: 90%;
+    height: 100vh;
+    overflow: scroll;
+}
+
+.menu-items li{
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.hamburger input[type="checkbox"]:checked ~ .menu-items{
+    display: block;
+    transform: translate(0%);
+    background: #232323;
+    
+}
+
+.hamburger input[type="checkbox"]:checked ~ .hamburgerlines .lines{
+    background: #fff;
+}
+
+.hamburgerlines .line1{
+   transform-origin: 0% 0%;
+   transition: transform 0.3s ease-in-out;    
+}
+
+.hamburgerlines .line3{ 
+   transform-origin: 0% 100%;
+   transition: transform 0.3s ease-in-out;  
+}
+
+.hamburger input[type="checkbox"]:checked ~ .hamburgerlines .line1{
+    transform: rotate(45deg);
+}
+
+.hamburger input[type="checkbox"]:checked ~ .hamburgerlines .line2{
+    display: none;
+}
+
+
+.hamburger input[type="checkbox"]:checked ~ .hamburgerlines .line3{
+    transform: rotate(-45deg);
+}
