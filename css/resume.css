@@ -94,3 +94,19 @@ h2 {
     margin-bottom: 1.2rem;
 
 }
+
+.skills-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.point {
+    font-size: 1.2rem;
+    font-weight: 200;
+    margin-bottom: 1.4rem;
+}
+
+.card-left span {
+    display: inline;
+}

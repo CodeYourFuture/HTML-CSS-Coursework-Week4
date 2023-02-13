@@ -74,7 +74,7 @@ header {
 }
 
 .blue-square {
-    display: block;
+    display: inline-block;
     height: 1.4rem;
     width: 1.4rem;
     background-color: var(--blue);
