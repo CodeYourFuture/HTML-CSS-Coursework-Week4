@@ -70,7 +70,7 @@ header {
 
 .display-image {
     border-radius: 50%;
-    width: 8rem;
+    max-width: 8rem;
 }
 
 .hero-container {
@@ -84,6 +84,7 @@ header {
     flex-direction: column;
     align-items: center;
     width: 92%;
+    box-shadow: -10px 10px 20px darkgrey;
 }
 
 .display-name > h2 {
@@ -111,6 +112,7 @@ button {
     padding: 0.3rem 1.2rem;
     border-style: none;
     border-radius: 5rem;
+    cursor: pointer;
 
 }
 
