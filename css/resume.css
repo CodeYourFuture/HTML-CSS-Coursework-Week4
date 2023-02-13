@@ -1,0 +1,55 @@
+:root {
+    --white:#FFF;
+    --black:#000;
+    --db:#E6DACD;
+    --lb:#F4ECE6;
+    --rb:#0150FD;
+    --header-font: 'Poppins', sans-serif;
+    --gen-font: 'Quicksand', sans-serif;
+}
+
+section {
+     background: var(--db);
+}
+
+.section__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section__container div:first-child {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+.section__subheader {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section__block {
+    height: 368px;
+    width: 60%;
+    background: var(--white);
+}
+
+.resume__button {
+    height: 2rem;
+    width: 8rem;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    background: var(--rb);
+    color: #fff;
+}
+
+.resume__button:hover {
+    background: var(--white) ;
+    color: #000;
+    border: 1px solid var(--rb);
+    transition: 0.4s ease 0s;
+}

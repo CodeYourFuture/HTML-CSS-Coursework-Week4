@@ -4,14 +4,17 @@
     --db:#E6DACD;
     --lb:#F4ECE6;
     --rb:#0150FD;
+    --header-font: 'Poppins', sans-serif;
+    --gen-font: 'Quicksand', sans-serif;
 }
+
 body {
     margin: 0 auto;
-    font-family: 'Quicksand', sans-serif;
+    font-family: var(--gen-font);
 }
 
 h1, h2 {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--header-font);
 }
 
 a {
@@ -227,6 +230,7 @@ menu {
     border: 1px solid var(--rb);
     transition: 0.4s ease 0s;
 }
+
 .main__button button:last-child {
     border: 1px solid;
     background: var(--white);
