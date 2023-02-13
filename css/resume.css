@@ -10,12 +10,14 @@
 
 section {
      background: var(--db);
+     height: 1050px;
 }
 
 .section__container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    row-gap: 2rem;
 }
 
 .section__container div:first-child {
@@ -32,9 +34,22 @@ section {
 }
 
 .section__block {
+    display: flex;
+    align-items: center;
+    column-gap: 15%;
     height: 368px;
     width: 60%;
     background: var(--white);
+}
+
+.section__block div:first-child {
+    display: flex;
+    flex-direction: column;
+    width: 38%;
+}
+
+.section__block div:last-child {
+    width: 45%;
 }
 
 .resume__button {
@@ -52,4 +67,81 @@ section {
     color: #000;
     border: 1px solid var(--rb);
     transition: 0.4s ease 0s;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    background: var(--db);
+}
+
+.article__container {
+    height: 470px;
+    background: var(--white);
+    width: 60%;
+    margin-top: -8rem;
+    margin-bottom: 4rem;
+}
+
+.article__block {
+    margin: 3rem 0 0 2rem;
+}
+.article__block div {
+    display: flex;
+    
+}
+
+.article__block ul {
+    min-width: 200px;
+}
+
+.article__block li::marker {
+    content:  url(/files/square-16.ico);
+    
+}
+
+.article__block li {
+    list-style: none;
+    padding-left: 1rem;
+    margin-top: 1rem;
+}
+
+@media (max-width: 900px) {
+    .section__subheader {
+        width: 75%;
+    }
+
+    .section__block {
+        width: 75%;
+    }
+
+    .article__container {
+        width: 75%;
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        height: 150px;
+    }
+
+    .section__subheader {
+        width: 90%;
+    }
+    
+    .section__block {
+        width: 90%;
+    }
+
+    .article__container {
+        width: 90%;
+    }
+
+    .article__block div {
+        flex-direction: column;
+    }
+
+    .article__block ul {
+        margin-top: -1rem;
+    }
 }
