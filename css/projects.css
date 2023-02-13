@@ -45,6 +45,45 @@ h5 {
 .project-right img {
     width: 100%;
     height: 100%;
+}
 
     
-    
+@media only screen and (max-width: 600px) { 
+    .container {
+        width: 100vw;
+
+    }
+
+    .container .card-text {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .card-text {
+        font-size: 1.6rem;
+        margin-bottom: 0rem;
+    }
+
+    .project-card {
+        display: flex;
+        flex-direction: column;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .project-left,
+    .project-right {
+        width: 100%;
+        height: 100%;
+        padding-bottom: 0;
+
+    }
+
+    .project-right img {
+        height: 30%;
+        display: block;
+    }
+
+
+
+}
