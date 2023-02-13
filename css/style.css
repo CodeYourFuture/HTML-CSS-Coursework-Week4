@@ -1,0 +1,19 @@
+/* Add your CSS here */
+
+/* Dont' forget to link this file to your HTML in the <head> */
+
+@import url('https://fonts.googleapis.com/css2?family=Arial&family=Karla&family=Rubik&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10rem;
+}
+
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
