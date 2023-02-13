@@ -42,13 +42,14 @@ h3 {
 button {
   font-size: 1em;
   text-transform: uppercase;
-  padding: 0.8em 1.5em;
+  padding: 0.8em 2em;
   border-radius: 999em 999em 999em 999em;
   font-weight: bold;
 }
 .projects {
   margin-left: 1em;
   background-color: inherit;
+  border: 1px solid var(--Black);
 }
 .resume {
   background-color: var(--RoyalBlue);
@@ -101,5 +102,38 @@ button {
 p,
 div {
   margin-top: 1.5em;
+}
+.content-2 .part-1 h1 {
+  border-bottom: 1px solid var(--RoyalBlue);
+  width: 30%;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 1em;
+}
+.content-2 .part-2 h1 {
+  font-size: 2.5em;
+}
+
+/*style footer element*/
+
+footer {
+  display: flex;
+  flex-direction: column-reverse;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+footer > p {
+  width: 60%;
+}
+
+footer .contact {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  justify-content: space-between;
+}
+footer div,
+p {
+  margin-top: 0.5em;
 }
 /* Dont' forget to link this file to your HTML in the <head> */
