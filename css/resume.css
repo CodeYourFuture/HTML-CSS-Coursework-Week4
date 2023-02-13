@@ -117,4 +117,48 @@ h2 {
 
 }
 
-@media only screen and (max-width: 600px) { }
+@media only screen and (max-width: 600px) { 
+    .container {
+        width: 100vw;
+    }
+
+    .center-section {
+        padding-left: 2rem;
+        padding-right: 2rem;
+
+    }
+
+    .center-heading {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .btn .btn-primary {
+        margin: 0;
+    }
+
+    .job-card {
+        display: block;
+    }
+
+    .card-left, 
+    .card-right,
+    .skill-left,
+    .skill-right {
+        width: 100%;
+    }
+
+    .card-left {
+        margin-bottom: 1.6rem;
+    }
+
+    .skills-box {
+        flex-direction: column;
+    }
+
+    .blue-square {
+        width: 1.4rem;
+        height: 1.4rem;
+        margin-right: 1.6rem;
+    }
+}
