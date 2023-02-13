@@ -1,3 +1,24 @@
 /* Add your CSS here */
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Quicksand:wght@300&display=swap");
+
+:root {
+  --DarkBeige: #e6dacd;
+  --LightBeige: #f4ece6;
+  --RoyalBlue: #0150fd;
+  --Black: #000;
+  --White: #fff;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
+}
 /* Dont' forget to link this file to your HTML in the <head> */
