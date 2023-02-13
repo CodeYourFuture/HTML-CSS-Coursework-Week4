@@ -15,6 +15,7 @@ main {
 
 .container {
     grid-column: 2/3;
+    padding: 7rem 0;
 
 }
 
@@ -22,8 +23,9 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10rem 0 5rem 0;
+    margin: 5rem 0;
 }
+
 .heading {
     font-size: 3rem;
     font-weight: 600;
@@ -48,6 +50,7 @@ h2 {
     background-color: var(--white);
     padding: 5rem;
     margin-bottom: 4rem;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .job-card {
@@ -97,16 +100,26 @@ h2 {
 
 .skills-box {
     display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+}
+
+.skill-left {
+    width: 40%;
+}
+
+.skill-right {
+    width: 40%;
 }
 
 .point {
     font-size: 1.2rem;
     font-weight: 200;
-    margin-bottom: 1.4rem;
+ 
 }
 
-.card-left span {
-    display: inline;
+
+.skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.6rem;
+
 }
