@@ -104,12 +104,32 @@ h1{
     text-align: center;
     margin-top: 10rem;
     font-family: 'Questrial', sans-serif;
-    background-color:rgb(244, 244, 244) ;
-
- 
+    background-color:rgb(244, 244, 244);
 }
-.wrapper-outer{
-    height: 30rem;
+/*
+.fade-in{
+   opacity: 0;
+   transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear{
+    opacity: 1;
+}
+*/
+/*
+@-webkit-keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+*/
+
+
+.wrapper{
+    height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
     perspective: 10px;
@@ -117,8 +137,7 @@ h1{
 
 }
 
-.wrapper{
-    margin-top: 10rem;
+header{
     position: relative;
     display: flex;
     justify-content: center;
@@ -129,7 +148,7 @@ h1{
 
 }
 
-.background-img{
+.background{
     position: absolute;
     height: 100%;
     width: 100%;
@@ -170,6 +189,7 @@ button:hover{
  /*main*/
  main{
     margin-top: 2.5rem;
+    background-color:rgb(244, 244, 244) ;
     
  }
 
