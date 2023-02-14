@@ -265,7 +265,7 @@ button {
 /** Gallery **/
 
 .rotated_images_section {
-    grid-column: 1/-1;
+    grid-column-start: 6;
     background-color: var(--white);
     padding: 2rem 0;
     display: flex;
@@ -283,28 +283,30 @@ button {
 .rotated_images img {
     position: absolute;
     z-index: 10;
+    display: block;
+
 }
 
 .img1 {
-    left: 1rem;
+    left: 2px;
     top: 5rem;
     transform: rotate(15deg);
 }
 
 .img2 {
-    right: 1rem;
+    right: 1px;
     transform: rotate(-15deg);
 }
 
 .img3 {
-    left: 1rem;
-    top: 5rem;
+    right: 2px;
+    top: 10rem;
     transform: rotate(15deg);
 }
 
 .img4 {
-    left: 20rem;
-    top: 3rem;
+    transform: rotate(-25deg);
+    top: 15rem;
 }
 
 
