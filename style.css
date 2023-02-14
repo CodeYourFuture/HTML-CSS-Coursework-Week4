@@ -5,7 +5,11 @@
     --black: #000;  
     --white: #FFF; 
 }
-* {
+body {
     margin: 0;
     padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20rem 50rem 40rem;
+
 }
