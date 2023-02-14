@@ -26,6 +26,11 @@ section {
     background: var(--white);
 }
 
+.section__block h2 {
+    color: var(--rb); 
+    font-size: 1.3rem;   
+}
+
 .section__block div:first-child {
     display: flex;
     flex-direction: column;
@@ -44,12 +49,12 @@ section {
     cursor: pointer;
     border: none;
     background: var(--rb);
-    color: #fff;
+    color: var(--white);
 }
 
 .resume__button:hover {
     background: var(--white) ;
-    color: #000;
+    color: var(--black);
     border: 1px solid var(--rb);
     transition: 0.4s ease 0s;
 }

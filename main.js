@@ -1,16 +1,4 @@
 
-const OVERFLOW = document.querySelector('#toggle1');
+const OVERFLOW = $('#toggle1');
 
-OVERFLOW.addEventListener('click', (event) => {
-    if (event.target.checked) {
-        OVERFLOW_HIDE();
-    } else (OVERFLOW_SHOW())
-});
-
-const OVERFLOW_HIDE = () => {
-    $("body").css("overflow-y", "hidden"); 
-} 
-
-const OVERFLOW_SHOW = () => {
-    $("body").css("overflow-y", "auto");
-}
+OVERFLOW.click(e => e.target.checked ? $("body").css("overflow-y", "hidden") : $("body").css("overflow-y", "auto"));

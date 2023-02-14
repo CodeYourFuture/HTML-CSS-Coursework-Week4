@@ -90,12 +90,11 @@ menu {
 }
   
 .hamburger1 div {
-    background-color: rgb(61, 61, 61);
+    background: var(--black);
     position: relative;
     width: 40px;
     height: 5px;
     margin-top: 7px;
-    -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
   
@@ -104,19 +103,16 @@ menu {
 }
   
 #toggle1:checked + .hamburger1 .top {
-    -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
     margin-top: 22.5px;
 }
   
 #toggle1:checked + .hamburger1 .meat {
-    -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
     margin-top: -5px;
 }
   
 #toggle1:checked + .hamburger1 .bottom {
-    -webkit-transform: scale(0);
     transform: scale(0);
 }
   
@@ -217,19 +213,18 @@ menu {
     width: 8rem;
     border-radius: 20px;
     cursor: pointer;
+    transition: 0.4s ease 0s;
 }
 
 .main__button button:first-child {
-    border: none;
+    border: 1px solid var(--rb);
     background: var(--rb);
-    color: #fff;
+    color: var(--white);
 }
 
 .main__button button:first-child:hover {
     background: var(--white) ;
-    color: #000;
-    border: 1px solid var(--rb);
-    transition: 0.4s ease 0s;
+    color: var(--black);
 }
 
 .main__button button:last-child {
@@ -239,10 +234,8 @@ menu {
 }
 
 .main__button button:last-child:hover {
-    border: 1px solid;
     background: var(--rb);
     color: var(--white);
-    transition: 0.4s ease 0s;
 }
 
 .mobile__button {

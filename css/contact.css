@@ -27,12 +27,12 @@ section {
     cursor: pointer;
     border: none;
     background: var(--rb);
-    color: #fff;
+    color: var(--white);
 }
 
 .contact__btn:hover {
     background: var(--white) ;
-    color: #000;
+    color: var(--black);
     border: 1px solid var(--rb);
     transition: 0.4s ease 0s;
 }
