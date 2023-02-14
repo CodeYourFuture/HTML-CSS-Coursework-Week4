@@ -1,13 +1,3 @@
-:root {
-    --white:#FFF;
-    --black:#000;
-    --db:#E6DACD;
-    --lb:#F4ECE6;
-    --rb:#0150FD;
-    --header-font: 'Poppins', sans-serif;
-    --gen-font: 'Quicksand', sans-serif;
-}
-
 section {
     background: var(--db);
     height: 1000px;
