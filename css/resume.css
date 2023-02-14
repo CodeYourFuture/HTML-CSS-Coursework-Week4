@@ -141,6 +141,16 @@ h2 {
         display: block;
     }
 
+    /* .snaps-card {
+        scroll-snap-type: block mandatory;
+        /* scroll-padding-top: 2rem; */
+
+    
+
+    /* .snaps-card > * {
+        scroll-snap-align: start;
+    } */ 
+
     .card-left, 
     .card-right,
     .skill-left,
