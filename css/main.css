@@ -105,8 +105,11 @@ a {
   margin: 0rem 1rem;
   right: 0;
 }
-.nav svg {
+.nav svg{
   width: 1.5rem;
+}
+.nav img {
+  width: 4rem;
 }
 .nav .close {
   display: none;
@@ -155,12 +158,13 @@ a {
   display: block;
   position: absolute;
   z-index: 2;
-  right: 0.25rem;
-  margin-top: 0.75rem;
+  right: 0.75rem;
+  margin-top: 2rem;
 }
 .nav #nav-checkbox:checked ~ label.nav-toggle .menu {
   display: none;
 }
+
 
 /* Main - About Me Page */
 
@@ -363,29 +367,6 @@ a {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Footer section */
 .rows {
   margin: 2rem 1rem;
@@ -404,6 +385,49 @@ a {
 .row2 li {
   margin-right: 1rem;
 }
+.row3 {
+  display: flex;
+  justify-content: space-between;
+}
 .row3 a {
   text-decoration: underline;
+}
+.circle {
+  display: inline-block;
+  vertical-align: middle;
+}
+.circle a {
+  display: inline-block;
+  border-radius: 50%;
+  background-color: var(--blue-royal);
+}
+.top {
+  display: inline-block;
+  width: 1.5em;
+  height: 2em;
+  border-radius: 50%;
+  margin-right: 0.75em;
+}
+
+.top:after {
+  content: '';
+	display: inline-block;
+  margin-top: 0.80em;
+  margin-left: 0.85em;
+  width: 0.5em;
+  height: 0.5em;
+  border-top: 0.1em solid var(--white);
+  border-right: 0.1em solid var(--white);
+  -moz-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.hide-me {
+  animation: cssAnimation 0s 5s forwards;
+  visibility: visible;
+}
+
+@keyframes cssAnimation {
+  to   { visibility: hidden; }
 }
