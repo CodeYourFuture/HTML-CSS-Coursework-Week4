@@ -7,9 +7,8 @@ h2 {
 html, body {
   margin: 0;
   height: 100%;
-  background-image: url(./images/pickles-background-white-wooden-table-with-green-red-chili-peppers-fennel-salt-black-peppercorns-garlic-pea-close-up-healthy-concept-top-view-flat-lay_114579-1698.jpg);
+  background-image:url(./images/pickles-background-white-wooden-table-with-green-red-chili-peppers-fennel-salt-black-peppercorns-garlic-pea-close-up-healthy-concept-top-view-flat-lay_114579-1698.jpg)
 }
-
 * {
   font-family: "Raleway";
   box-sizing: border-box;
@@ -94,7 +93,7 @@ html, body {
   transform: rotate(-405deg);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
   .menu-button-container {
     display: flex;
   }
@@ -134,22 +133,43 @@ html, body {
     border-bottom: 1px solid #444;
   }
 }
-main {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
+
 .container {
     display: grid;
-    grid-gap: 3px;
+    grid-gap: 0px;
     grid-template-columns: ifr;
     grid-template-rows: 200px 200px 40px 40px;
     text-align: center;
 }
+.stab {
+    text-align: center;
+    padding-top: 200px;
+    display: grid;
+
+}
+.button {
+    size: 150px;
+}
 button {
     background-color: black;
     color: white;;
+    cursor: pointer;
+    size: 100px;
 }
 .prickles {
-    text-align: right;
-    padding-left: 100px;
+    text-align: center;
+    padding-top: 120px;
+}
+footer {
+    background: gray;
+    text-align: center;
+    padding-top: 30px;
+
+}
+.footer {
+    margin: 0px;
+    border: opx;
+    padding-top: 400px;
+    background-color:transparent;
+    text-align: end;
 }
