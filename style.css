@@ -31,16 +31,17 @@ header{
 main{
     background-color: var(--dark-beige);
     position: relative;
+    
    
 }
 .main_info_box{
-    width: 22rem;
+    width: 20rem;
     height: 27rem;
     position:absolute;
     background-color: var(--light-beige);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 10rem 2rem 5rem 5rem;
+    grid-template-rows: 10rem 7rem 3rem 7rem;
     grid-template-areas: 
     "img      img "
     "name     name"
@@ -50,13 +51,24 @@ main{
     z-index: 11;
 }
 .main_info_box h2{
+    font-size: 1.4rem;
+    text-align: center;
+    width: 4rem;
     grid-area: name;
+    justify-self: center;
+    border-bottom: 0.15rem solid var(--royal-blue);
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.8rem;
+
+    
 }
 .main-image{
+ justify-self: center;
+ margin-top: 2rem;
  width: 8rem;
  border-radius: 50%;
  grid-area: img;
- 
+
 }
 .button_resume{
 background-color: var(--royal-blue);
@@ -87,14 +99,16 @@ border-radius: 2rem;
 
 }
 .main_social_media{
-    grid-area: media;;
-    justify-self: flex-end;
+    grid-area: media;
+    align-self:flex-end;
     text-align: center;
     background-color: var(--white);
     width: 100%;
     margin-bottom: 1rem;
 }
 .main_box_icons{
+    width: 1.3rem;
+    padding: 0.5rem;
 
 }
 .main-text{
