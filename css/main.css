@@ -379,3 +379,55 @@ input[type=email] {
 }
 
 /** Media Queries **/
+
+/* Desktop - for screens 900px + */
+
+@media screen and (min-width:900px) {
+
+    /** menu, name, login(appears), order online move to 1 row  **/
+    /** h1 moves to 1 row  **/
+    /** try now moves to 1 row  **/
+    /** selling points move to 1 row  **/
+    .selling_points_section {
+        grid-column: 1/-1;
+        padding: 2rem;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+
+    /** boost immunity image & content move to 1 row **/
+
+
+
+    /** wellness paths move to 1 row **/
+
+
+    /** special cleanse kit image & content move to 1 row **/
+    /** get juice types move to 1 row **/
+    /** gallery spreads on 1 row **/
+    .rotated_images_section {
+        display: none;
+    }
+
+    /** footer spreads on 1 row **/
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /** ????????
+
+    .serving_safely,
+    .logo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .creators_credit {
+        display: none;
+    }
+
+    ????????? **/
+}
