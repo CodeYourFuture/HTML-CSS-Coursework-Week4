@@ -39,6 +39,10 @@ main {
 
 }
 
+.skill-right:last-child {
+    margin-bottom: 5rem;
+}
+
 h2 {
     font-size: 2.2rem;
     font-weight: 600;
