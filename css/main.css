@@ -246,9 +246,12 @@ a {
   justify-content: center;
   align-items: center;
 }
-.resume .square {
+.resume .square,
+.projects .square,
+.contact .square{
   width: 25px;
   height: 25px;
+  margin-right: 0.75rem;
 }
 .resume .exp-title {
   display: flex;
@@ -281,6 +284,107 @@ a {
   display: flex;
   align-items: center;
 }
+
+/* Main - Project Page */
+.projects {
+  background-color: var(--beige-dark);
+  padding: 4rem 0rem 2rem 2rem ;
+  line-height: 1.7;
+}
+.projects .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.projects .title ~ p {
+  margin-top: 1.5rem;
+}
+
+.projects .pro-articles {
+  width: 97%;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.projects .article {
+  background-color: var(--white);
+  padding-top: 1.3rem;
+}
+.projects .article .article-title {
+  border-left: 12px solid var(--blue-royal);
+  padding-left: 1.2rem;
+}
+.projects .article .article-title ~ p{
+  padding: 2rem 1.2rem 1.5rem 1.2rem ;
+}
+.projects .article img {
+  width: 100%;
+}
+
+/* Main - Contact Page */
+.contact {
+  background-color: var(--beige-dark);
+  padding: 2.5rem 0.5rem 2rem 2rem;
+  line-height: 2;
+}
+.contact .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact form {
+  background-color: var(--white);
+  padding: 2rem 0.75rem;
+  margin-top: 2.5rem;
+}
+.contact form div {
+  display: flex;
+  flex-direction: column;
+  margin-top: .5rem;
+}
+.contact form input {
+  height: 30px;
+  padding-left: 1rem;
+  border: none;
+  border-bottom: 2px solid var(--black);
+}
+.contact form input:focus {
+  outline: none;
+  border-bottom: 2px solid var(--blue-royal);
+}
+.contact form .form-btn {
+  margin-top: 1.5rem;
+}
+.contact form a {
+  /* display: inline-block; */
+  margin: 0 auto;
+  padding: 0.2rem 3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Footer section */
 .rows {
