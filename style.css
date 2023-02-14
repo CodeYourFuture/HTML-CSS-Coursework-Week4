@@ -11,7 +11,7 @@ body {
     padding: 0;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 17rem 50rem 20rem;
+    grid-template-rows: 17rem 45rem 1rem;
     font-family: 'Quicksand', sans-serif; 
 }
 
@@ -156,14 +156,14 @@ margin-right: 2.5rem;
 
 }
 .main-text p{
-
+    font-size: 1.1rem;
 }
 
 /* ------------FOOTER---------------- */
 footer{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 5rem 5rem 10rem;
+    grid-template-rows: 5rem 6rem 6rem;
     grid-template-areas: 
     "call    write"
     "follow    .  "
@@ -172,12 +172,12 @@ footer{
 
 }
 footer p{
-    font-size: 0.85rem;
+    font-size: 1rem;
 }
 footer h5{
     margin-bottom: 0;
     font-family: 'Poppins', sans-serif;
-    font-size: 0.9rem;
+    font-size: 1rem;
 
 }
 .footer_info_call{
@@ -192,7 +192,27 @@ grid-area: call;
 }
 .end{
     grid-area: end;
+    margin-bottom: 0;
 }
 .footer_icons{
  width: 1.5rem;
 }
+#arrow_button {
+    display: none;
+    position: fixed;
+    bottom: 6rem;
+    right: 2rem;
+    z-index: 5;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    background-color: var(--royal-blue);
+    color: white;
+    cursor: pointer;
+    padding: 0.6rem;
+    border-radius: 50%;
+  }
+  
+  #arrow_button:hover {
+    background-color: var(--black);
+  }
