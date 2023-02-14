@@ -20,6 +20,7 @@
   
   a {
     text-decoration: none;
+    color: black;
   }
   .header{
    display: grid;
@@ -183,13 +184,14 @@ main{
 }
 .grid-overwrite{
   display: grid;
-  grid-template-rows: repeat(4, min-content) 1fr;
+  grid-template-rows: repeat(5, min-content) 1fr;
   grid-template-columns: 100%;
   grid-template-areas:
   "row1"
   "row2"
   "row3"
-  "row4";
+  "row4"
+  "row5";
   text-align: left;
   margin-left: 1.2rem;
   margin-right: 0.5rem;
@@ -212,10 +214,13 @@ main{
 .image{
   grid-area: row1;
   justify-self: center;
-  padding: 1rem 0;
+  padding: 2rem 0;
 }
-img{
+.image img{
   border-radius: 50%;
+  width: 12rem;
+    height:12rem;
+    object-fit: cover;
 }
 .name-maya{
   grid-area:row2;
@@ -225,12 +230,15 @@ img{
 }
 .border-line{
 width: 20%;
-height: 3px;
+height: 1.5px;
 background-color: #0150FD;
 margin: 1.5rem auto 0rem auto;
 
 }
-.buttons{
+.project-manager{
+  display: none;
+}
+.left-buttons{
   grid-area: row3;
   display: flex;
   justify-content:center;
@@ -283,7 +291,7 @@ margin: 1.5rem auto 0rem auto;
   grid-area: intro-text;
   /* background-color: ; */
   margin-left: 1.8rem;
-  
+  height:auto;
 }
 .hello{
 grid-area: row1;
@@ -295,17 +303,22 @@ grid-area: row2;
 font-size: 20px;
 padding-bottom: 1.5rem;
 }
+.right-buttons{
+  display: none;
+  grid-area: row3;
+}
 .intro-p{
-grid-area: row3;
+grid-area: row4;
 font-family: "Quicksand", sans-serif;
 font-size: 18px;
-line-height: 24px;
+line-height: 1.5em;
 padding-bottom: 1.5rem;
+
 }
 .intro2-p{
-grid-area: row4;
+grid-area: row5;
 font-size: 18px;
-line-height: 24px;
+line-height: 1.5em;
 padding-bottom: 2rem;
 }
 footer{
@@ -336,10 +349,14 @@ footer{
   grid-area: copy-write;
   font-weight: normal;
 }
+.copywrite a{
+  color: black;
+  text-decoration: underline;
+}
 footer p{
-  padding-bottom:0.8rem;
+  padding-bottom:0.7rem;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
 }
 .follow .social-media{
   justify-content: flex-start;
@@ -410,6 +427,7 @@ footer p{
     color: #0150FD;
   }
   main{
+    padding-right: 13rem;
     /* display: flex;
     justify-content: center;
     align-items: center;
@@ -438,22 +456,68 @@ footer p{
   }
  
 .introduction{
-  width: 100%;
+  width: 25rem;
  /* margin-top: 8rem;  */
  /* margin-bottom: 8rem; */
  grid-area: section1;
  padding-bottom: 0;
 }
-.introduction-text{
- width: 100%;
-  grid-area: section2;
-  margin-left: 4rem;
-  /* margin-top: 8rem; */
+.project-manager{
+  display: block;
+  padding: 2.5rem;
+  font-size: larger;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+}
+.image img{
+  width: 15rem;
+  height: 15rem;
+  object-fit: cover;
+  margin-top: 2rem;
 }
 .introduction .fa{
   font-size: x-large;
   padding-top: 1.2rem;
   padding-bottom: 1.2rem;
+}
+
+.introduction-text{
+ width: 100%;
+  grid-area: section2;
+  margin-left: 3rem;
+  /* margin-top: 8rem; */
+}
+.hello{
+  font-size: 110px;
+  /* margin-top: ; */
+}
+.subtitle{
+  font-size: 25px;
+  padding-bottom: 1rem;
+}
+.left-buttons{
+  display: none;
+}
+.right-buttons{
+  display: flex;
+  justify-content: flex-start;
+  padding: 2rem 0;
+}
+.btn{
+  padding: 0.6rem 2.3rem ;
+}
+.resume-btn{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+.projects-btn:hover{
+  background-color: #0150FD;
+  color: white;
+  border: none;
+}
+.intro-p{
+  padding-top: 1.5rem;
+  /* font-size: 19px; */
 }
 footer{
   width: 100%;
