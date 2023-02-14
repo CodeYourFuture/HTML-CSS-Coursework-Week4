@@ -5,3 +5,9 @@
     --Black: #000;
     --White: #FFF;
 }
+/* font-family: 'Poppins', sans-serif; HEADINGS
+font-family: 'Quicksand', sans-serif; BODY */ 
+
+body {
+    font-family: 'Quicksand', sans-serif;  
+}
