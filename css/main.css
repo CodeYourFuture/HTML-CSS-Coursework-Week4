@@ -12,7 +12,10 @@ font-family: 'Quicksand', sans-serif; */
     --Black: #000;
     --White: #FFF;
 }
-body{
-
-
-}
+@media screen and (max-width 400px) {
+    body{
+        {
+            
+        }
+    }
+    
