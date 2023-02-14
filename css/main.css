@@ -1,0 +1,318 @@
+/* Add your CSS here */
+
+/* Dont' forget to link this file to your HTML in the <head> */
+
+@import url('https://fonts.googleapis.com/css2?family=Arial&family=Karla&family=Rubik&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+html, body{
+  background-color: #f9fafa;
+  font-family: Madefor,Helvetica Neue,Helvetica,Arial, pro w3,hiragino kaku gothic pro,sans-serif;;
+}
+
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+ 
+/*   header.   */
+
+.header{
+  position: static;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "search-box fa-shopping-bag"
+  "nav text";
+  margin: 0px 3rem -7rem 3rem;
+  padding: 1rem;
+  border: 1px solid black;
+  z-index: 999;
+  color: #a05841;
+}
+
+.search-bar{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 319px;
+  flex-grow: 1;
+  color: #a05841;
+  border-style: none;
+}
+.fa-search{
+  background-color: white;
+  color: #a05841;
+}
+.fa-search-box:hover{
+  color: #a05841;
+  border-style: none;
+}
+
+.icons{
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 3rem;
+}
+.fa-shopping-bag{
+  padding-left: 2rem;
+}
+.fa-user-circle{
+  padding-right: 1rem;
+}
+
+/*.desktop-navbar{
+  display: none;
+}
+.mobile-navbar{
+  grid-area: nav;
+  align-self: start;
+  justify-self: end;
+
+}. */
+.desktop-navbar{
+  display: block;
+  justify-content: flex-start;
+  color: #a05841;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.nav-menu-active{
+  left: 0;
+}
+.nav-item{
+  margin: 1rem 0;
+}
+.nav-link{
+  color: #a05841;
+}
+/*.hamburger{
+  display: block;
+  cursor: pointer;
+}
+.bar{
+  display: block;
+  width: 40px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.2ms ease-in-out;
+  background-color: white;
+}
+*/
+
+.masterPage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ /* height: 100vh;  */
+  background-image: url(../Cactus.webp);
+  background-size: cover;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  height: 792px;
+  
+}
+
+.masterPage{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8rem;
+}
+
+.masterpage-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8rem;
+}
+
+
+.logo{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: white;
+  padding-top: 3rem;
+}
+
+.name{
+  letter-spacing: 0.4em;
+  font-size: 15px;
+  border-bottom: 15px;
+  border-bottom: 2px solid white;
+  padding-top: 7.5rem;
+}
+.date{
+  letter-spacing: 0.4em;
+  font-size: 15px;
+  border-bottom: 2px solid white;
+  padding-top: 7.5rem;
+}
+
+
+.title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6rem;
+  font-weight: lighter;
+  color: white;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  line-height: normal;
+}
+
+.ads{
+  color: white;
+  font-size: 17px;
+  font-size: 20px;
+  letter-spacing: 0.4em;
+  font-weight: lighter;
+}
+
+.shop-btn{
+  background-color: #a05841;
+  padding: 10px 50px;
+  margin-top: 3rem;
+  color: white;
+  font-weight: lighter;
+}
+
+.chat-btn{
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: flex-end;
+  margin-right: 3rem;
+  padding: 10px 40px;
+  background: #a05841;
+  color: white;
+  margin-bottom: 3rem;
+}
+
+.footer{
+  margin-top: 8rem;
+}
+
+
+/*.      tablet.    */
+/*
+@media  screen and (min-width: 540px){
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas:
+    "h h h h h h h h h h h h"
+    "n n n n n n n n n n n n"
+    "m m m m m m m m m m m m"
+    "f f f f f f f f f f f f";
+  }
+  .header{
+    grid-area: h;
+    grid-template-areas: 
+    "search svg"
+    "Logo ."
+    "text .";
+  }
+  h1{
+    font-size: 112px;
+  }
+  .nav-text{
+    font-size: 2rem;
+  }
+  .mobile-navbar{
+    display: none;
+  }
+
+  .desktop-navbar{
+    grid-area: n;
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1.5rem;
+  }
+
+  .desktop-nav-menu{
+    display: grid; 
+    grid-template-columns: 5, 1fr;
+    column-gap: 1rem;
+  }
+  .desktop-nav-item{
+    margin-right: 0;
+  }
+  .desktop-nav-link{
+    color: #a05841;
+    padding: 50px 50px;
+    font-size: 1rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  .desktop-nav-link:hover{
+    color: black;
+    transition: 0.4ms;
+  }
+  .homepage-main{
+    grid-area: m;
+  }
+  .hero{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "image image image";
+  }
+  .product1{
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "text text image image";
+  }
+  .product2{
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "image text";
+  }
+  footer{
+    grid-area: f;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+}
+
+/*.    Desktop.   */
+/*
+@media  screen and (min-width: 980) {
+
+  .container{
+    grid-template-areas: 
+    "h h h h h h h h h h h h"
+    "n n n n n n n n n n n n"
+    "m m m m m m m m m m m m"
+    "f f f f f f f f f f f f";
+  }
+  .header{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: block;
+    position: absolute;
+  }
+  
+  
+}
+  
