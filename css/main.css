@@ -14,7 +14,7 @@ body {
     background-color: 000;
     background-size: cover;
     background-position: center;
-    
+    background-image: url(https://i.stack.imgur.com/p9mUO.jpg);
 }
 
 li {
@@ -28,13 +28,13 @@ a {
 }
 
 a:hover {
-    color: darkslategrey;
+    color: rgb(22, 37, 37);
 }
 
 header {
     position: relative;
     padding: 3rem;
-    background-image: url(https://i.stack.imgur.com/p9mUO.jpg);
+    
 }
 
 .navbar {
@@ -64,3 +64,67 @@ header {
     cursor: pointer;
     display: none;
 }
+
+.action_btn {
+    background-color: darkslategray;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.action_btn:hover{
+    scale: 1.05;
+    color: #fff6f6;
+}
+
+.action_btn:active{
+    scale: 0.95;
+}
+
+/*Dropdown menu*/
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 160px;
+    height: 0;
+    width: 250px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.dropdown_menu.open{
+    height: 250px;
+}
+.dropdown_menu li{
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dropdown_menu .action_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Responsive design */
+
+@media(max-width: 992px){
+    .navbar .links, .navbar .action_btn{
+        display: none;
+    }    
+    .navbar .toogle_btn{
+        display: block;
+    }
+    .dropdown_menu{
+        display: block;
+    }
+}
+

@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Responsive grid project</title>
 </head>
 
@@ -30,9 +31,26 @@
                 <li><a href="contact">Contact</a></li>
             </ul>
             <a href="#" class="action_btn">Get Started</a>
-            <div class="toogle_btn"><i class="fa-solid fa-bars"></i></div>
+            <div class="toogle_btn"><i class="fa-light fa-bars"></i></div>
+        </div>
+        <div class="dropdown_menu">
+            <li><a href="home">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="services">Services</a></li>
+            <li><a href="contact">Contact</a></li>
+            <li><a href="#" class="action_btn">Get Started</a></li>
         </div>
     </header>
+
+    <script>
+        const toogleBtn = document.querySelector('.toogle_btn')
+        const toogleBtnIcom = document.querySelector('.toogle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toogleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+        }
+    </script>
 </body>
 
 </html>
