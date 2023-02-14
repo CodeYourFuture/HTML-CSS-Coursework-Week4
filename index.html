@@ -20,100 +20,251 @@
 </head>
 
 <body>
+    
+       
     <div class="super-container">
-        <header class="header-maya">
-                <div class="project-mgr">
-                    <h1>Maya Nelson</h1>
-                    <p>PROJECT MANAGER</p>
-                </div>
-                    <div  class="hamburger">
-                        <a href="#">About Me</a>
-                        <a href="#">Resume</a>
-                        <a href="#">Project</a>
-                        <a href="#">Contact</a>
+        <div class="super-mobile-container">
+        
+            <header class="header-maya">
+                    <div class="project-mgr">
+                        <h1 class="maya">Maya Nelson</h1>
+                        <p class="mgr">PROJECT MANAGER</p>
                     </div>
+                    <div id="myNav" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <div class="overlay-content">
+                                <a href="./index.html">About me</a>
+                                <a href="./resume.html">Resume</a>
+                                <a href="./projects.html">Projects</a>
+                                <a href="#">Contact</a>
+                            </div>
+                    </div>
+                <span class="nav"style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
                 
-        </header>
-    <article class="nelson">
-        <div class="img-maya">
-            <img class="img" src="https://static.wixstatic.com/media/2e2a49_bd3a1599bc1b4265a01b2754b99b8536~mv2_d_5760_3840_s_4_2.jpeg/v1/crop/x_2703,y_43,w_2199,h_2205/fill/w_120,h_120,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/AdobeStock_230407429.jpeg"/>
-            <h2>Maya Nelson</h2>
-        </div>
-        <div class="btn">
-            <button class="resume">Resume</button>
-            <button class="project">Project</button>
-        </div>
-        <footer1 class="social-media-container">
-            <ol>
-                <div class="media">
-                    <div>
-                        <i class="fab fa-facebook-f"></i>
+            </header>
+
+                <article class="nelson">
+                    <div class="img-maya">
+                        <img class="img" src="https://static.wixstatic.com/media/2e2a49_bd3a1599bc1b4265a01b2754b99b8536~mv2_d_5760_3840_s_4_2.jpeg/v1/crop/x_2703,y_43,w_2199,h_2205/fill/w_120,h_120,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/AdobeStock_230407429.jpeg" alt="maya"/>
+                            <div class="may">
+                                <h2>Maya</h2>
+                                <h3>Nelson</h3>
+                                    <div class="v">
+                                        
+                                    </div>
+                            </div>
+                    </div>
+                    <div class="btn">
+                        <button class="resume"><a href="./resume.html">Resume</a></button>
+                        <button class="project"><a href="./projects.html">Project</a></button>
+                    </div>
+                    
+                    <nav class="social-media-container">
+                        <ol>
+                            <div class="media">
+                                <div class="face">
+                                    <i class="fab fa-facebook-f"></i>
+                                    
+                                </div>
+                                <div>
+                                    <i class="fab fa-twitter fa-2x"></i>
+                                    
+                                </div>
+                                <div>
+                                    <i class="fab fa-linkedin-in fa-2x"></i>
+                                    
+                                    
+                                </div>
+                                <div>
+                                    <i class="fab fa-instagram fa-2x"></i>
+                                </div>
+                                    
+                            </div>
+                        </ol>
+                    </nav>    
+                </article>
+            <main class="hello-content">
+                <h4 class="hello">Hello</h4><br>
+                
+                    <p class="strong"> Here's who I am & what I do.</p><br><br>
+                    
+                    <p class="story">
+                        I'm a paragraph. Click here to add your own text and edit me.It's easy.
+                        Just click "Edit Text" or double click me to add your own content and
+                        make changes to the font.<br><br>
+                        I'm a great place for you to tell a story and let your users know a little
+                        more about you.
+                    </p>
+                
+            </main>
+        
+
+                <footer class="footer-content">
+                    <div class="info">
+                            <div class="call">
+                                <p>Call</p>
+                                <p>123-456-7890</p>
+                            </div>
+
+                            <div class="write">
+                                <p>Write</p>
+                                <p>info@mysite.com</p>
+                            </div>
+                    </div>
+
+                    <h5>Follow</h5>
+                    <div class="social">
+                        <div class="facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                        <div class="twitter">
+                            <i class="fab fa-twitter fa-2x"></i>
+                        </div>
+                        <div class="instagram">
+                            
+                            <i class="fab fa-linkedin-in fa-2x"></i>
+                        </div>
+                        <div class="linkedin">
+                            <i class="fab fa-instagram fa-2x"></i>
+
+                        </div>
+                    </div>
+                    <p class="mp">@2035 by Maya Nelson.</p>
+                </footer>
+
+
+               <!-- Please leave this in to credit the creators of this design -->
+               <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
+        
+
+          <script src="script.js"></script>
+        </div> 
+    
+
+        <div class="super-desktop-container">
+            <header class="desktop-header">
+                    <div class="d-header-name-container">
+                        <p class="d-header-name-maya">Maya Nelson</p>
+                        <p class="d-header-job-title">
+                            /Project Manager
+                        </p>
+                    </div>    
+                <div class="d-header-nav-container">
+                    <nav class="d-nav-items-container">
+                        <ul class="d-nav-items-list">
+                            <span class="d-nav-list-item"><a href="#">About Me</a></span>
+                            <span class="d-nav-list-item"><a href="#">Resume</a></span>
+                            <span class="d-nav-list-item"><a href="#">Projects</a></span>
+                            <span class="d-nav-list-item"><a href="#">Contact</a></span>
+                        </ul>
+                    </nav>
+                </div>
+            </header> 
+                <div class="d-group-container">
+                    <article class="nelson-m">
+                        <div class="d-maya">
+                            <div class="img-maya-n">
+                                <img class="img-m" src="https://static.wixstatic.com/media/2e2a49_bd3a1599bc1b4265a01b2754b99b8536~mv2_d_5760_3840_s_4_2.jpeg/v1/crop/x_2703,y_43,w_2199,h_2205/fill/w_120,h_120,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/AdobeStock_230407429.jpeg" alt="maya"/>
+                                    <div class="may-n">
+                                        <h2>Maya</h2>
+                                        <h3>Nelson</h3>
+                                        
+                                            <div class="v-m">
+                                                
+                                            </div>
+                                        <h4 class="de-pro-mgr">Project Manager</h4>
+                                    </div>
+                            </div>
                         
-                    </div>
-                    <div>
-                        <i class="fab fa-twitter-square fa-2x"></i>
-                    </div>
-                    <div>
-                        <i class="fab fa-instagram fa-2x"></i>
-                    </div>
-                    <div>
-                        <i class="fab fa-linkedin fa-2x"></i>
-
-                    </div>
                         
-                </div>
-            </ol>
-        </footer1>    
-    </article>
-    <article class="hello-content">
-        <h3 class="hello">Hello</h3>
-        <p>
-            <strong>Here's who I am & what I do.</strong><br><br>
-            <div class="story">
-            I'm a paragraph. Click here to add your own text and edit me.It's easy.
-            Just click "Edit Text" or double click me to add your own content and
-            make changes to the font.<br><br>
-            I'm a great place for you to tell a story and let your users know a little
-            more about you.
-            </div>
-        </p>
-    </article>
-    <footer2 class="footer-content">
-        <div class="info">
-                <p class="call">
-                    <strong>Call</strong>
-                    123-456-7890
-                </p>
+                            <nav class="d-social-media-container">
+                                <ol>
+                                    <div class="d-media">
+                                        <div class="face">
+                                            <i class="fab fa-facebook-f"></i>
+                                            
+                                        </div>
+                                        <div>
+                                            <i class="fab fa-twitter fa-2x"></i>
+                                            
+                                        </div>
+                                        <div>
+                                            <i class="fab fa-linkedin-in fa-2x"></i>
+                                            
+                                            
+                                        </div>
+                                        <div>
+                                            <i class="fab fa-instagram fa-2x"></i>
+                                        </div>
+                                            
+                                    </div>
+                                </ol>
+                            </nav>
+                        </div>     
+                    </article>
+                    <main class="d-hello-content">
+                        <h5 class="d-hello">Hello</h5><br>
+                        
+                            <p class="d-strong"> Here's who I am & what I do.</p><br><br>
+                                    <div class="btn-j">
+                                        <button class="d-resume"><a href="./resume.html">Resume</a></button>
+                                        <button class="d-project"><a href="./projects.html">Project</a></button>
+                                    </div>
+                                    <p class="d-story">
+                                        I'm a paragraph. Click here to add your own text and edit me.It's easy.
+                                        Just click "Edit Text" or double click me to add your own content and
+                                        make changes to the font.<br><br>
+                                        I'm a great place for you to tell a story and let your users know a little
+                                        more about you.
+                                    </p>
+                        
+                    </main>
+                </div>        
+                <footer class="d-footer-content">
+                    <div class="d-follow">
+                        <div class="d-info">
+                                <div class="d-call">
+                                    <p class="de-call">Call</p>
+                                    <p>123-456-7890</p>
+                                </div>
 
-                <p class="write">
-                    <strong>Write</strong>
-                    info@mysite.com
-                </p>
+                                <div class="d-write">
+                                    <p class="de-write">Write</p>
+                                    <p>info@mysite.com</p>
+                                </div>
+                        </div>
+
+                      <h6 class="de-follow">Follow</h6>
+                        <div class="d-social">
+                            <div class="d-facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </div>
+                            <div class="twitter">
+                                <i class="fab fa-twitter fa-2x"></i>
+                            </div>
+                            <div class="instagram">
+                                
+                                <i class="fab fa-linkedin-in fa-2x"></i>
+                            </div>
+                            <div class="linkedin">
+                                <i class="fab fa-instagram fa-2x"></i>
+
+                            </div>
+                        </div>
+                    </div>  
+                    <p class="d-mp">@2035 by Maya Nelson.</p>
+                </footer>
+                <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
+        
+                
         </div>
-
-          <h4>Follow</h4>
-            <div class="social">
-                <div class="facebook">
-                    <i class="fab fa-facebook-square fa-2x"></i>
-                </div>
-                <div class="twitter">
-                    <i class="fab fa-twitter-square fa-2x"></i>
-                </div>
-                <div class="instagram">
-                    <i class="fab fa-instagram fa-2x"></i>
-                </div>
-                <div class="linkedin">
-                    <i class="fab fa-linkedin fa-2x"></i>
-
-                </div>
-            </div>
-         <p class="mp">@2035 by Maya Nelson.</p>
-    </footer2>
- </div>
-
-    <!-- Please leave this in to credit the creators of this design -->
-    <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
-   
+    </div>
+                       
 </body>
 
 </html>
+        
+                            
+
+            
+            

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+
+    
+    <link rel="stylesheet" href="/css/main.css"/>
+
+    <title>Responsive grid project</title>
+</head>
+
+<body>
+    <div class="super-container">
+        <header class="header-maya">
+                <div class="project-mgr">
+                    <h1 class="maya">Maya Nelson</h1>
+                    <p class="mgr">PROJECT MANAGER</p>
+                </div>
+                <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+                      <a href="./index.html">About me</a>
+                      <a href="./resume.html">Resume</a>
+                      <a href="./projects.html">Projects</a>
+                      <a href="#">Contact</a>
+                    </div>
+                 </div>
+                  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+        </header>
+        <div class="project-page">
+            <h1 class="prj">Projects</h1>
+            <p class="p">I'm a paragraph.Click here to add your own text and edit me.
+                It's easy.Just click "Edit Text" or double click me to add your own content and make changes to the font.<br><br>
+                I'm a great place for you to tell a story and let your users know a little more about you.
+            </p>
+        </div>
+        <div class="alpha">
+            <h2 class="pname">Project name 01</h2><br>
+            <p class="role">Role Title</p><br>
+            <p class="p">I'm a paragraph.Click here to add your own text and edit me.
+                It's easy.Just click "Edit Text" or double click me to add your own content and make changes to the font.<br><br>
+                I'm a great place for you to tell a story and let your users know a little more about you.<br><br>
+            </p>
+        
+                <img class="img-alpha" src="https://static.wixstatic.com/media/11062b_6369a82539704f78b4fffed0ef058629~mv2_d_2346_1998_s_2.jpg/v1/crop/x_178,y_249,w_1998,h_1422/fill/w_336,h_238,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Leaflet.jpg"alt="alpha"/>
+            
+        </div>
+        
+        <div class="pop">
+            <h3 class="pname">Project name 02</h3><br>
+            <p class="role">Role Title</p><br>
+            <p class="p">I'm a paragraph.Click here to add your own text and edit me.
+                It's easy.Just click "Edit Text" or double click me to add your own content and make changes to the font.<br><br>
+                I'm a great place for you to tell a story and let your users know a little more about you.<br><br>
+            </p>
+                <img class="img-pop" src="https://static.wixstatic.com/media/84770f_30b5b37a554c487d85fffde598298a77~mv2.jpg/v1/crop/x_429,y_0,w_1514,h_1900/fill/w_336,h_238,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Website_Mockup.jpg"alt="pop"/>
+            
+        </div>
+        <div class="samsu">
+            <h4 class="pname">Project name 03</h4><br>
+            <p class="role">Role Title</p><br>
+            <p class="p">I'm a paragraph.Click here to add your own text and edit me.
+                It's easy.Just click "Edit Text" or double click me to add your own content and make changes to the font.<br><br>
+                I'm a great place for you to tell a story and let your users know a little more about you.<br><br>
+            </p>  
+                <img class="img-samsu" src="https://static.wixstatic.com/media/9dbeebdedcd94c2489ccaca2b9fd1aa4.jpg/v1/crop/x_413,y_330,w_2891,h_2064/fill/w_336,h_240,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/App%20Screen.jpg"alt="samsu"/>
+            
+        </div>
+    <footer2 class="footer-content">
+        <div class="info">
+                <p class="call">
+                    <strong>Call</strong>
+                    123-456-7890
+                </p>
+
+                <p class="write">
+                    <strong>Write</strong>
+                    info@mysite.com
+                </p>
+        </div>
+
+          <h5>Follow</h5>
+            <div class="social">
+                <div class="facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+                <div class="twitter">
+                    <i class="fab fa-twitter fa-2x"></i>
+                </div>
+                <div class="instagram">
+                    
+                    <i class="fab fa-linkedin-in fa-2x"></i>
+                </div>
+                <div class="linkedin">
+                    <i class="fab fa-instagram fa-2x"></i>
+
+                </div>
+            </div>
+         <p class="mp">@2035 by Maya Nelson.</p>
+    </footer2>
+ </div>
+
+    <!-- Please leave this in to credit the creators of this design -->
+    <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
+
+    <script>
+        function openNav() {
+          document.getElementById("myNav").style.height = "100%";
+        }
+        
+        function closeNav() {
+          document.getElementById("myNav").style.height = "0%";
+        }
+        </script>
+             
+   
+</body>
+
+</html>
