@@ -382,6 +382,14 @@ main {
   grid-template-columns: 3fr 5fr;
 }
 
+.d-main-container {
+  position: relative;
+  margin-left: 25rem;
+  /* outline: 3px dotted red; */
+  /* width: 900px; */
+  display: grid;
+  grid-template-columns: auto auto;
+}
 .d-main-left {
   /* display: grid;
   grid-template-columns: 1fr 1fr; */
@@ -390,23 +398,19 @@ main {
   background-color: var(--dark-beige);
 }
 
-.d-main-right {
-  background-color: var(--white);
-}
-
 .profile-container {
   margin: 28px 0px 13px 0;
 }
 
 .d-profile-card {
   background-color: var(--light-beige);
-  outline: 3px dashed green;
+  /* outline: 3px dashed green; */
   height: 526px;
   width: 375px;
-  position: relative;
+  /* position: relative; */
   /* width: 330px; */
-  margin-left: 25rem;
-  margin-right: 1.5rem;
+  /* margin-left: 25rem; */
+  margin-right: 2rem;
   /* margin-top: -160px; */
   margin-top: 16rem;
   margin-bottom: 26px;
@@ -415,6 +419,17 @@ main {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: repeat(4, min-content) 1fr;
+}
+
+.d-main-right-container {
+  /* border: 3px dashed purple; */
+
+  margin-top: 16rem;
+  width: 400px;
+}
+
+.d-main-right {
+  background-color: var(--white);
 }
 
 .d-profile-pic {
@@ -471,6 +486,120 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.d-about-me {
+  /* margin-left: 1.5rem; */
+  /* margin-right: 1.5rem; */
+}
+
+.d-hello-header {
+  font-size: 100px;
+  font-weight: 700;
+  font-family: poppins-semibold, poppins, sans-serif;
+  margin-bottom: 1rem;
+}
+
+.d-hello-sub-header {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+
+  margin-bottom: 38px;
+}
+
+.d-profile-buttons-container {
+  display: flex;
+  /* justify-content: space-around; */
+  gap: 10px;
+  height: 2rem;
+  margin-bottom: 56px;
+}
+
+.d-resume-button-container {
+  border: 1px solid var(--royal-blue);
+  border-radius: 15px;
+  width: 7.5rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--royal-blue);
+}
+
+.d-resume-button {
+  font-size: 15px;
+  color: var(--white);
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: var(--royal-blue);
+}
+
+.d-projects-button-container {
+  border: 1px solid var(--black);
+  border-radius: 15px;
+  width: 7.5rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.d-hello-para {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+  letter-spacing: 0.04rem;
+  line-height: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.d-footer-container {
+  margin-top: 43px;
+  margin-bottom: 33px;
+  margin-left: 49px;
+  margin-right: 49px;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.d-footer-comms-container {
+  /* margin: 27px 1rem; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+.d-call-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.d-write-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.d-footer-socials-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.d-footer-label {
+  margin-bottom: 0.75rem;
+  font-family: "Quicksand", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.d-footer-text {
+  font-family: "Nunito Sans", sans-serif;
+  /* font-family: "Quicksand", sans-serif; */
+  font-size: 13px;
+  font-weight: 300;
 }
 
 @media (min-width: 950px) {
