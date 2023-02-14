@@ -53,12 +53,38 @@
                 <h1>Let's talk</h1>
             </div>
             <div class="section__block">
-                <div>
-                    
+               <form action="">
+                <fieldset>
+                    <div class="name__wrapper">
+                        <div>
+                            <label for="firstName">First Name *</label>
+                            <input type="text" name="" id="firstName" required>
+                        </div>
+                        <div>
+                            <label for="lasttName">Last Name *</label>
+                            <input type="text" name="" id="lasttName" required>
+                        </div>
+                        
+                    </div>
+                    <div>
+                        <div class="form__wrapper">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" required>
+                        </div>
+                    </div>
+                    <div class="form__wrapper">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" required>
+                    </div>
+                    <div class="msg__wrapper">
+                        <label for="message">Message</label>
+                        <input type="text" id="Message" required>
+                    </div>
+                </fieldset>
+                <div class="form__btn">
+                    <button class="contact__btn" type="submit">SEND</button>
                 </div>
-                <div>
-                    
-                </div>
+               </form>
             </div>
         </div>
     </section>
