@@ -11,8 +11,8 @@ body {
     padding: 0;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr 1fr;
-    /* font-family: 'Quicksand', sans-serif; */
+    grid-template-rows: 17rem 50rem 20rem;
+    font-family: 'Quicksand', sans-serif; 
 }
 
 /* HEADER */
@@ -22,9 +22,29 @@ header{
     justify-content: space-between;
 }
 .title{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    line-height: 0rem;
+}
+.title h2{
+    font-size: 1.4rem;
+    font-family: 'Poppins', sans-serif;
+}
+.name{
+    display: flex;
+    flex-direction: row;
 
 }
 .blue_box{
+    background-color: var(--royal-blue);
+    width: 1rem;
+    height: 1rem;
+    align-self: center;
+    margin-right: 1rem;
+    margin-left: 1rem;
 
 }
 /* MAIN CONTENT */
