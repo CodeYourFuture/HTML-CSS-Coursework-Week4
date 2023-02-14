@@ -1,3 +1,7 @@
-/* Add your CSS here */
-
-/* Dont' forget to link this file to your HTML in the <head> */
+:root {
+    --dark-beige: #E6DACD;
+    --Light-beige: #F4ECE6;
+    --Royal-blue: #0150FD;
+    --Black: #000;
+    --White: #FFF;
+}
