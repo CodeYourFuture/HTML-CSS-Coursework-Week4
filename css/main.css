@@ -9,5 +9,12 @@
 font-family: 'Quicksand', sans-serif; BODY */ 
 
 body {
-    font-family: 'Quicksand', sans-serif;  
+    font-family: 'Quicksand', sans-serif; 
+    display: grid; 
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 800px 300px;
 }
+
+
+
+
