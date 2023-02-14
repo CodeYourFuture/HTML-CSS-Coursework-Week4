@@ -14,6 +14,7 @@
 }
 
 body {
+  position: relative;
   background-color: var(--white);
   font-family: "Nunito Sans", sans-serif;
   font-family: "Poppins", sans-serif;
@@ -28,6 +29,14 @@ body {
   color: var(--black);
 }
 
+.d-header-name-font {
+  font-family: "poppins", sans-serif;
+  line-height: 1em;
+  font-size: 25px;
+  font-weight: 700;
+  color: var(--black);
+}
+
 .font-7 {
   color: var(--black);
   font-family: "Nunito Sans", sans-serif;
@@ -36,11 +45,21 @@ body {
   font-weight: 300;
 }
 
+.d-header-title-font {
+  color: var(--black);
+  font-family: "Nunito Sans", sans-serif;
+  letter-spacing: 0.04rem;
+  font-size: 17px;
+  font-weight: 300;
+}
+
 .super-container {
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
 }
 .mobile-content-container {
-  margin: 0 auto;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
   width: 330px;
 }
 
@@ -113,6 +132,10 @@ main {
   flex-direction: column;
 }
 
+.profile-container {
+  margin: 28px 0px 13px 0;
+}
+
 .profile-card {
   background-color: var(--light-beige);
   height: 370px;
@@ -126,10 +149,6 @@ main {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: repeat(4, min-content) 1fr;
-}
-
-.profile-container {
-  margin: 28px 0px 13px 0;
 }
 
 .profile-pic {
@@ -273,4 +292,192 @@ main {
   /* font-family: "Quicksand", sans-serif; */
   font-size: 13px;
   font-weight: 300;
+}
+
+/* ******************************************************************************** */
+/* ******************************************************************************** */
+/* ******************************************************************************** */
+/* desktop styling */
+/* ******************************************************************************** */
+/* ******************************************************************************** */
+/* ******************************************************************************** */
+
+.desktop-content-container {
+  display: none;
+}
+
+.desktop-header-outer {
+  background-color: var(--white);
+  /* background-color: pink; */
+  /* margin-left: 4rem;
+  margin-right: 4rem; */
+  /* height: 76px; */
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
+.desktop-header-inner {
+  margin-left: 4rem;
+  margin-right: 4rem;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+}
+
+.d-header-name-title-container {
+  display: flex;
+  /* align-items: flex-end; */
+  gap: 1rem;
+}
+
+.d-logo-name-title::before {
+  content: "";
+  display: inline-block;
+  margin-right: 0.6rem;
+  background-color: var(--royal-blue);
+  height: 1rem;
+  width: 1rem;
+}
+
+.d-logo-name-job-title {
+  text-transform: uppercase;
+}
+
+.d-header-nav-container {
+  text-align: right;
+}
+
+.d-nav-list-item {
+  /* removes bullet points */
+  list-style: none;
+  text-align: center;
+}
+
+.d-nav-items-list > li {
+  display: inline-block;
+  padding-right: 2rem;
+}
+
+.d-nav-items-list > li > a {
+  text-decoration: none;
+  color: var(--black);
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.d-nav-items-list > li > a:hover {
+  color: var(--royal-blue);
+}
+
+.d-nav-items-list li:first-child > a {
+  color: var(--royal-blue);
+}
+
+.desktop-main-container {
+  display: grid;
+  grid-template-columns: 3fr 5fr;
+}
+
+.d-main-left {
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */
+  height: 952px;
+  width: 500px;
+  background-color: var(--dark-beige);
+}
+
+.d-main-right {
+  background-color: var(--white);
+}
+
+.profile-container {
+  margin: 28px 0px 13px 0;
+}
+
+.d-profile-card {
+  background-color: var(--light-beige);
+  outline: 3px dashed green;
+  height: 526px;
+  width: 375px;
+  position: relative;
+  /* width: 330px; */
+  margin-left: 25rem;
+  margin-right: 1.5rem;
+  /* margin-top: -160px; */
+  margin-top: 16rem;
+  margin-bottom: 26px;
+  box-shadow: -11.31px 11.31px 17px 0px rgba(138, 131, 124, 0.23);
+
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(4, min-content) 1fr;
+}
+
+.d-profile-pic {
+  border-radius: 50%;
+  display: block;
+  width: 120px;
+  height: 120px;
+  /* object-fit: cover; */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 43px;
+  margin-bottom: 43px;
+}
+
+.d-profile-name {
+  font-family: "poppins", sans-serif;
+  line-height: 1.2em;
+  font-size: 27px;
+  /* font-weight: 600; */
+  font-weight: 700;
+  color: var(--black);
+  text-align: center;
+}
+
+.d-profile-line-break {
+  border-top: 2px solid var(--royal-blue);
+  height: 3px;
+  width: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.d-profile-job-title {
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  text-align: center;
+  margin-bottom: 51px;
+}
+
+.d-social-icon-larger {
+  font-size: 25px;
+}
+
+.d-socials-bar {
+  background-color: var(--white);
+  height: 53px;
+  display: flex;
+  justify-content: center;
+}
+.d-social-container {
+  width: 154px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 950px) {
+  .mobile-content-container {
+    display: none;
+  }
+  .desktop-content-container {
+    display: grid;
+  }
 }
