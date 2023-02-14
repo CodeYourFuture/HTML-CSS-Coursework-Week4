@@ -1,3 +1,47 @@
-/* Add your CSS here */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Quicksand:wght@300&display=swap');
 
-/* Dont' forget to link this file to your HTML in the <head> */
+:root{
+--dark-beige: #E6DACD;
+--light_beige: #F4ECE6;
+--royal_blue: #0150FD;
+--black: #000;
+--white: #FFF;
+--headings_font: 'Poppins', sans-serif;
+--subheadings_and_body_font: 'Quicksand', sans-serif;
+
+}
+
+body{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr auto 1fr; 
+    grid-template-areas: 
+    "header header"
+    "nav nav"
+    "main main"
+    "footer footer";
+
+}
+header{
+    /* display: relative; */
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+}
+
+.img_logo{
+    left: 50vw;
+    width: 20px;
+    height: 20px;
+}
+nav{
+    grid-area: nav;
+}
+main{
+    grid-area: main;
+
+}
+footer{
+    grid-area: footer;
+}
