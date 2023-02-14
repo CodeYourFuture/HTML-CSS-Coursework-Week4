@@ -5,11 +5,62 @@
     --black: #000;  
     --white: #FFF; 
 }
+/* GENERAL STYLES */
 body {
     margin: 0;
     padding: 0;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 20rem 50rem 40rem;
+}
+/* HEADER */
+header{
+
+}
+.title{
+}
+.blue_box{
+
+}
+/* MAIN CONTENT */
+main{
+
+}
+.main_info_box{
+
+}
+.main-image{
+
+}
+.buttons{
+
+}
+.button_resume{
+
+}
+.button_projects{
+
+}
+.main_social_media{
+
+}
+.main_box_icons{
+
+}
+.main-text{
+    
+}
+
+/* FOOTER */
+footer{
+
+}
+.footer_info{
+
+}
+.footer_media{
+
+}
+.footer_icons{
 
 }
