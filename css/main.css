@@ -38,6 +38,22 @@ h3 {
   font-family: "Poppins", sans-serif;
 }
 
+/*style header element*/
+
+header .logo p {
+  display: block;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  margin-top: -0.75em;
+}
+header .logo h1 span.before {
+  display: inline-block;
+  width: 0.75em;
+  height: 0.75em;
+  background-color: var(--RoyalBlue);
+  margin-right: 0.5em;
+}
+
 /* style button*/
 button {
   font-size: 1em;
@@ -45,6 +61,7 @@ button {
   padding: 0.8em 2em;
   border-radius: 999em 999em 999em 999em;
   font-weight: bold;
+  cursor: pointer;
 }
 .projects {
   margin-left: 1em;
@@ -57,6 +74,17 @@ button {
   border: var(--RoyalBlue);
 }
 
+.projects:hover {
+  background: var(--RoyalBlue);
+  color: var(--White);
+  border: var(--RoyalBlue);
+}
+
+.resume:hover {
+  background: var(--White);
+  color: var(--Black);
+  border: 1px solid var(--RoyalBlue);
+}
 /*style the main element*/
 .content {
   position: relative;
@@ -104,7 +132,7 @@ div {
   margin-top: 1.5em;
 }
 .content-2 .part-1 h1 {
-  border-bottom: 1px solid var(--RoyalBlue);
+  border-bottom: 2px solid var(--RoyalBlue);
   width: 30%;
   text-align: center;
   margin: 0 auto;
@@ -212,6 +240,17 @@ i {
     width: 45%;
     height: 100vh;
     z-index: -1;
+  }
+  .content-2 .part-1 button {
+    display: none;
+  }
+  .content-2 .part-1 p {
+    display: block;
+    text-transform: uppercase;
+    font-size: 1.5em;
+  }
+  .content-2 .part-2 p:nth-of-type(1) {
+    font-size: 1.5em;
   }
 }
 /* Dont' forget to link this file to your HTML in the <head> */
