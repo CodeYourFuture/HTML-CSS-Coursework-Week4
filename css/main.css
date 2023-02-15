@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Outfit:wght@200&display=swap');
+
+/* Fonts and Colors */
+
+:root{    
+    --redBrown: #A05941;
+    --greenBlack: #133032;
+    --lightGray: #EDEDEE;
+    --white: #fff;
+    --transparentWhite: rgb(0,0,0,0.75);
+
+    --font1: 'Fjalla One',sans-serif;
+    --font2: 'Outfit',sans-serif;
+}
+
