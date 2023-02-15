@@ -1,3 +1,54 @@
 /* Add your CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
+
+.contianer{
+
+    display: grid;
+    grid-auto-rows: minmax(100px auto);
+    grid-gap: 0;
+    grid-template-areas: 
+    "h h h h h h h h"
+    "nav nav nav nav nav nav nav nav"
+    "left left left left left left left left"
+    "left left left left left left left left"
+    "left left left left left left left left"
+    "right right right right right right right right"
+    "right right right right right right right right"
+    "right right right right right right right right"
+    "foo foo foo foo foo foo foo foo"
+    "foo foo foo foo foo foo foo foo"
+    ;
+}
+
+.box{
+ background-color: rgb(192, 125, 43);
+}
+
+.header{
+ grid-area: h;
+}
+
+.nav{
+    grid-area: nav;
+}
+
+.left{
+    grid-area: left;
+}
+
+.btn1{
+
+}
+
+.btn2{
+
+}
+
+.right{
+    grid-area: right;
+}
+
+.footer{
+    grid-area: foo;
+}
