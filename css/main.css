@@ -2,9 +2,140 @@
 
 /* Dont' forget to link this file to your HTML in the <head> */
 
-
-.name {
-    font-size: 3rem;
-    font-family: ;
+html {
+    font-size: 10px;
 }
+
+:root {
+    --color_15: rgb(0,0,0);
+    --color_11_square: rgb(255,255,255);
+    --color_18: rgb(0,80,255);
+    --font_4: poppins-semibold,poppins,sans-serif;
+    
+}
+
+body {
+    font-family: Arial,Helvetica,sans-serif;
+    width: 320px;
+    height: 1094.4px;
+    border: green solid 0.5px;
+    
+}
+
+/* header section */
+
+header {
+    width: 32rem;
+    height: 9.1rem;
+}
+
+.header-name::before {
+    content: "";
+    display: inline-block;
+    margin: 2.4rem 0rem 1.2rem 2rem;
+    place-self: start;
+    width: 1.6rem;
+    height: 1.6rem;
+    background-color: var(--color_18);
+    padding: -1px;
+    margin: -1px;
+    margin-right:  0.6rem;
+    /* firstChildMarginTop: -1px;
+    lastChildMarginBottom: -1px; */
+}
+
+.header-name {
+    display: inline-block;
+    left: 4.8rem;
+    margin: 2.2rem 0px 1rem;
+}
+
+.header-name, .card-names {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: var(--font_4);
+    /* background-color: var(--color_); */
+}
+
+.header-text {
+    display: block;
+    height: 1.68rem;
+    text-transform: uppercase;
+}
+
+/* card section */
+
+card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 28rem;
+    height: 37.54rem;
+    border: palevioletred solid 0.25rem;
+
+}
+
+.card-photo {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 10rem;
+    margin-top: 3rem;;
+}
+
+/* How to adjust the sizes bellow a/c to grid */
+.card-names {
+    display: block;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+    height: 5.04rem;
+    border: darkcyan solid 0.2rem;
+}
+
+.card-name-first {
+    padding: 0rem;
+    margin: 0rem;
+}
+
+.card-name-last {
+    padding: 0rem;
+    margin: 0rem;
+}
+
+.card-btn {
+    display: flex;
+    gap: 1.25rem;
+}
+
+.card-btn-1 {
+    text-transform: uppercase;
+    width: 12rem;
+    height: 3.3rem;
+    /* check exact boarder radius */
+    border-radius: 3rem;
+}
+
+.card-btn-2 {
+    text-transform: uppercase;
+    width: 11.4rem;
+    height: 3.3rem;
+    border-radius: 3rem;
+}
+
+
+.card-bottom-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 28rem;
+    height: 4rem;
+    margin: 5rem 0 1rem 0;
+    border: powderblue solid 0.25rem;
+}
+
+.card-bottom-nav-icon {
+    margin: 0rem 0.5rem;
+}
+
 
