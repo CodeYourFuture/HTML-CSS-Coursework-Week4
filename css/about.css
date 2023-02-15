@@ -88,19 +88,22 @@ div{
     align-items: center;
     justify-content: center;
     color: aliceblue;
-    z-index: 10;
+    z-index: 3;
     margin-top: -870px;
     padding: 70px;
 }
-.box3 > img {
+.box3 > section > img {
     border-radius: 50%;
     height: 150px;
     width: 150px;
-    top: 20px;
+    align-content: start;
 }
-.box3 > h2{
+.box3 > section > h2{
     color: var(--black);
     font-family: var(--heading-font);
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 10px;
 }
 
 .btn .bttn{
