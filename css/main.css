@@ -39,7 +39,19 @@ h3 {
 }
 
 /*style header element*/
-
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 15vh;
+  background-color: var(--White);
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+header .logo {
+  margin-left: 1em;
+}
 header .logo p {
   display: block;
   text-transform: uppercase;
@@ -48,10 +60,96 @@ header .logo p {
 }
 header .logo h1 span.before {
   display: inline-block;
-  width: 0.75em;
-  height: 0.75em;
+  width: 0.7em;
+  height: 0.7em;
   background-color: var(--RoyalBlue);
   margin-right: 0.5em;
+}
+
+header .menu .menu-bar {
+  width: 40px;
+  height: 30px;
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  cursor: pointer;
+}
+
+.one {
+  width: 50%;
+  height: 5px;
+  background: var(--RoyalBlue);
+  margin: auto;
+  margin-left: 0;
+  backface-visibility: hidden;
+  transition-duration: 0.3s;
+}
+
+.two {
+  width: 100%;
+  height: 5px;
+  background: var(--RoyalBlue);
+  margin: 6px auto;
+  backface-visibility: hidden;
+  transition-duration: 0.3s;
+}
+
+.three {
+  width: 50%;
+  height: 5px;
+  background: var(--RoyalBlue);
+  margin: 6px auto;
+  margin-right: 0;
+  backface-visibility: hidden;
+  transition-duration: 0.3s;
+}
+.hidden {
+  display: none;
+}
+.one-1 {
+  transform: rotate(45deg) translate(7px, 7px);
+  width: 100%;
+}
+
+.two-2 {
+  opacity: 0;
+}
+
+.three-3 {
+  transform: rotate(-45deg) translate(8px, -10px);
+  width: 100%;
+}
+
+.on {
+  position: absolute;
+  top: 0;
+  background: var(--LightBeige);
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin: 10em auto;
+  text-align: center;
+}
+
+nav ul li a {
+  transition-duration: 0.5s;
+  text-decoration: none;
+  color: var(--Black);
+  font-size: 1.5em;
+  line-height: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 100%;
+  display: block;
+  margin-top: 1em;
+}
+nav ul li a:hover {
+  color: var(--RoyalBlue);
 }
 
 /* style button*/
@@ -104,7 +202,7 @@ button {
 
 .content-2 .part-1 {
   background: var(--LightBeige);
-  box-shadow: -5px 5px 50px lightgray;
+  box-shadow: -5px 5px 50px -20px rgb(139, 136, 136);
   text-align: center;
   margin-bottom: 2em;
   padding-bottom: 0.5em;
@@ -251,6 +349,16 @@ i {
   }
   .content-2 .part-2 p:nth-of-type(1) {
     font-size: 1.5em;
+  }
+  header .logo h1 .after {
+    content: "/";
+    display: inline-block;
+    width: 0.75em;
+    height: 0.75em;
+    background-color: var(--RoyalBlue);
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    color: var(--Black);
   }
 }
 /* Dont' forget to link this file to your HTML in the <head> */
