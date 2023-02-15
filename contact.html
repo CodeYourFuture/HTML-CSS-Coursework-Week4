@@ -7,12 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/about-me.css" />
-    <title>Maya Nelson - About Me</title>
+    <link rel="stylesheet" href="css/contact.css" />
+    <title>Maya Nelson - Contact</title>
   </head>
   <body>
-    <!-- MOBILE FIRST LAYOUT -->
-    <!-- SPACED FOR EASE OF VIEWING COMPOSITE PARTS -->
     <header>
       <a class="header-name-title-container" href="index.html">
         <div class="header-name-container">
@@ -30,15 +28,6 @@
           <span class="nav-mobile-burger-bottom-layer"></span>
         </a>
       </nav>
-
-      <!-- 
-      <nav class="nav-mobile-expanded">
-      <a class="nav-mobile-expanded-link" href="index.html">ABOUT ME</a>
-      <a class="nav-mobile-expanded-link" href="resume.html">RESUME</a>
-      <a class="nav-mobile-expanded-link" href="projects.html">PROJECTS</a>
-      <a class="nav-mobile-expanded-link" href="contact.html">CONTACT</a>
-    </nav> 
-    -->
 
       <nav class="nav-desktop">
         <ul class="nav-desktop-list">
@@ -73,67 +62,75 @@
         </ul>
       </nav>
     </header>
-
     <main>
-      <section class="card-section-one">
-        <img
-          class="card-section-one-photo"
-          srcset="
-            images/profile-photo-mobile.webp  120w,
-            images/profile-photo-desktop.webp 205w
-          "
-          sizes="(max-width: 749px) 120px, (min-width: 750px) 205px"
-          src="https://static.wixstatic.com/media/2e2a49_bd3a1599bc1b4265a01b2754b99b8536~mv2_d_5760_3840_s_4_2.jpeg/v1/crop/x_2703,y_43,w_2199,h_2205/fill/w_410,h_410,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/AdobeStock_230407429.jpeg"
-          alt="profile photo"
-        />
-        <h1 class="card-section-one-name">maya<br />nelson</h1>
-        <span class="card-section-one-line"></span>
-        <h2 class="card-section-one-title">project manager</h2>
-        <div class="card-section-one-links-container">
-          <a class="card-section-one-link-resume" href="resume.html">resume</a>
-          <a class="card-section-one-link-projects" href="projects.html"
-            >projects</a
-          >
+      <div class="main-container">
+        <div class="contact-heading-container">
+          <span class="contact-heading-square"></span>
+          <h1 class="contact-heading">Let's talk</h1>
         </div>
-        <div class="card-section-one-follow-icons-container">
-          <a class="card-section-one-follow-icon-link" href="">
-            <i class="card-section-one-follow-icon fa-brands fa-facebook-f"></i>
-          </a>
-          <a class="card-section-one-follow-icon-link" href="">
-            <i class="card-section-one-follow-icon fa-brands fa-twitter"></i>
-          </a>
-          <a class="card-section-one-follow-icon-link" href="">
-            <i
-              class="card-section-one-follow-icon fa-brands fa-linkedin-in"
-            ></i>
-          </a>
-          <a class="card-section-one-follow-icon-link" href="">
-            <i class="card-section-one-follow-icon fa-brands fa-instagram"></i>
-          </a>
-        </div>
-      </section>
 
-      <section class="card-section-two">
-        <h1 class="card-section-two-heading">Hello</h1>
-        <h2 class="class-section-two-subheading">
-          Here's who I am & what I do
-        </h2>
-        <div class="card-section-two-links-container">
-          <a class="card-section-two-link-resume" href="resume.html">resume</a>
-          <a class="card-section-two-link-projects" href="projects.html"
-            >projects</a
-          >
-        </div>
-        <p class="card-section-two-paragraph">
-          I'm a paragraph. Click here to add your own text and edit me. It's
-          easy. Just click “Edit Text” or double click me to add your own
-          content and make changes to the font.
-        </p>
-        <p class="card-section-two-paragraph">
-          I'm a great place for you to tell a story and let your users know a
-          little more about you.
-        </p>
-      </section>
+        <form action="/contact" method="POST">
+          <!-- send a POST Request to the /contact ROUTE -->
+
+          <div class="form-first-name-container">
+            <label class="form-first-name-label" for="form-first-name"
+              >First Name <span class="form-label-asterisk">*</span></label
+            >
+            <input
+              id="first-name"
+              class="form-first-name-input"
+              type="text"
+              required
+              min="2"
+            />
+          </div>
+
+          <div class="form-last-name-container">
+            <label class="form-last-name-label" for="form-last-name"
+              >Last Name <span class="form-label-asterisk">*</span></label
+            >
+            <input
+              id="form-last-name"
+              class="form-last-name-input"
+              type="text"
+              required
+              min="2"
+            />
+          </div>
+
+          <div class="form-email-container">
+            <label class="form-email-label" for=""
+              >Email <span class="form-label-asterisk">*</span></label
+            >
+            <input
+              id="form-email"
+              class="form-email-input"
+              type="email"
+              required
+            />
+          </div>
+
+          <div class="form-subject-container">
+            <label class="form-subject-label" for="form-subject">Subject</label>
+            <input id="form-subject" class="form-subject-input" type="text" />
+          </div>
+
+          <div class="form-message-container">
+            <label class="form-message-label" for="form-message">Message</label>
+            <input
+              id="form-message-mobile"
+              class="form-message-input-mobile"
+              type="text"
+            />
+            <textarea
+              id="form-message-desktop"
+              class="form-message-textarea-desktop"
+            ></textarea>
+          </div>
+
+          <input class="form-submit" type="submit" value="SEND" />
+        </form>
+      </div>
     </main>
 
     <footer>

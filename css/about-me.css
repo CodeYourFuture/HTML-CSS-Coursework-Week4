@@ -1,0 +1,308 @@
+/* DESKTOP NAV ADJUSTMENT */
+.nav-desktop-list-item-about-me {
+  color: var(--royal-blue);
+}
+
+/* MAIN */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 1rem 4rem 1rem;
+  background: linear-gradient(180deg, var(--white) 25%, var(--dark-beige) 25%);
+  /* horizontal split white / beige background */
+}
+
+@media screen and (min-width: 800px) {
+  main {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3.5rem;
+    /* gap between card one and card two */
+    padding: 12rem 0;
+    /* padding of beige/white background */
+    background: linear-gradient(90deg, var(--dark-beige) 45%, var(--white) 45%);
+    /* vertical split beige / white background */
+    height: 82.6rem;
+    /* ^height value from WIX */
+    /* but i don't like fixed values */
+  }
+}
+
+/* CARD SECTION ONE */
+.card-section-one {
+  width: 28rem;
+  /* ^ THIS IS SO JANKY */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2.5rem;
+  padding-bottom: 1rem;
+  background-color: var(--light-beige);
+  box-shadow: var(--shadow) -11.31px 11.31px 17px 0px;
+}
+
+@media screen and (min-width: 800px) {
+  .card-section-one {
+    width: 37.5rem;
+    /* ^ THIS IS SO JANKY*/
+    padding-top: 4rem;
+    /* ^space above photo */
+    padding-bottom: 0;
+  }
+}
+
+.card-section-one-photo {
+  border-radius: 100%;
+  max-width: 12rem;
+}
+
+@media screen and (min-width: 800px) {
+  .card-section-one-photo {
+    max-width: 20.5rem;
+  }
+}
+
+.card-section-one-name {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 2.1rem;
+  text-transform: capitalize;
+}
+
+@media screen and (min-width: 800px) {
+  .card-section-one-name {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 2.7rem;
+  }
+}
+
+.card-section-one-line {
+  background-color: var(--royal-blue);
+  width: 6.5rem;
+  height: 0.2rem;
+}
+
+@media screen and (min-width: 800px) {
+  .card-section-one-line {
+    width: 5rem;
+  }
+}
+
+.card-section-one-title {
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+  .card-section-one-title {
+    display: block;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    font-family: "Avenir LT W01 35 Light", sans-serif;
+    font-weight: 400;
+    font-size: 1.7rem;
+    letter-spacing: 0.35rem;
+    text-transform: uppercase;
+  }
+}
+
+.card-section-one-links-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 1.5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+@media screen and (min-width: 800px) {
+  .card-section-one-links-container {
+    display: none;
+  }
+}
+
+.card-section-one-link-resume,
+.card-section-one-link-projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12rem;
+  height: 3.3rem;
+  /* ^ I DO NOT LIKE HARD CODING WIDTH / HEIGHT -- maybe flex-basis: 40% */
+  border-radius: 2rem;
+  font-family: "Avenir LT W01 85 Heavy", sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.card-section-one-link-resume {
+  color: var(--white);
+  background-color: var(--royal-blue);
+  border: 0.2rem solid var(--royal-blue);
+}
+
+.card-section-one-link-resume:active {
+  color: var(--black);
+  background-color: transparent;
+  transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
+}
+
+.card-section-one-link-projects {
+  color: inherit;
+  border: 0.16rem solid var(--black);
+}
+
+.card-section-one-link-projects:active {
+  color: var(--white);
+  background-color: var(--royal-blue);
+  border: 0.16rem solid var(--royal-blue);
+  transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
+}
+
+.card-section-one-follow-icons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  height: 4rem;
+  background-color: var(--white);
+}
+
+@media screen and (min-width: 800px) {
+  .card-section-one-follow-icons-container {
+    gap: 2.4rem;
+    height: 5.3rem;
+  }
+}
+
+.card-section-one-follow-icon-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.card-section-one-follow-icon {
+  font-size: 1.6rem;
+  /* this might need shrinking? */
+}
+
+@media screen and (min-width: 800px) {
+  .card-section-one-follow-icon {
+    font-size: 2rem;
+  }
+}
+
+/* CARD SECTION TWO */
+.card-section-two {
+  display: flex;
+  flex-direction: column;
+  max-width: 28rem;
+}
+
+@media screen and (min-width: 800px) {
+  .card-section-two {
+    max-width: 37rem;
+  }
+}
+
+.card-section-two-heading {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+  padding-top: 2.5rem;
+}
+
+@media screen and (min-width: 800px) {
+  .card-section-two-heading {
+    font-size: 10rem;
+    padding-top: 3rem;
+  }
+}
+
+.class-section-two-subheading {
+  font-family: "Avenir LT W01 35 Light", sans-serif;
+  font-size: 1.9rem;
+  padding-top: 1.5rem;
+}
+
+@media screen and (min-width: 800px) {
+  .class-section-two-subheading {
+    font-size: 2.5rem;
+    padding-top: 0;
+    padding-bottom: 3rem;
+  }
+}
+
+.card-section-two-links-container {
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+  .card-section-two-links-container {
+    display: flex;
+    width: 100%;
+    gap: 1.6rem;
+    padding-bottom: 5rem;
+  }
+}
+
+.card-section-two-link-resume,
+.card-section-two-link-projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 13rem;
+  height: 3.5rem;
+  border-radius: 2rem;
+  font-family: "Avenir LT W01 85 Heavy", sans-serif;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.card-section-two-link-resume {
+  color: var(--white);
+  background-color: var(--royal-blue);
+  border: 0.2rem solid var(--royal-blue);
+}
+
+.card-section-two-link-resume:hover {
+  color: var(--black);
+  background-color: var(--white);
+  transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
+}
+
+.card-section-two-link-projects {
+  color: inherit;
+  border: 0.16rem solid var(--black);
+}
+
+.card-section-two-link-projects:hover {
+  color: var(--white);
+  background-color: var(--royal-blue);
+  border: 0.16rem solid var(--royal-blue);
+  transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
+}
+
+.card-section-two-paragraph {
+  font-family: "Avenir LT W01 35 Light", sans-serif;
+  font-size: 1.6rem;
+  padding-top: 2rem;
+}
+
+@media screen and (min-width: 800px) {
+  .card-section-two-paragraph {
+    font-size: 1.7rem;
+    padding-top: 0;
+    padding-bottom: 3rem;
+  }
+}
