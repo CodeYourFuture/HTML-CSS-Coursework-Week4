@@ -62,5 +62,75 @@
         </ul>
       </nav>
     </header>
+    <main>
+      <div class="main-container">
+        <div class="contact-heading-container">
+          <span class="contact-heading-square"></span>
+          <h1 class="contact-heading">Let's talk</h1>
+        </div>
+
+        <form action="/contact" method="POST">
+          <!-- send a POST Request to the /contact ROUTE -->
+
+          <div class="form-first-name-container">
+            <label class="form-first-name-label" for="form-first-name"
+              >First Name <span class="form-label-asterisk">*</span></label
+            >
+            <input
+              id="first-name"
+              class="form-first-name-input"
+              type="text"
+              required
+              min="2"
+            />
+          </div>
+
+          <div class="form-last-name-container">
+            <label class="form-last-name-label" for="form-last-name"
+              >Last Name <span class="form-label-asterisk">*</span></label
+            >
+            <input
+              id="form-last-name"
+              class="form-last-name-input"
+              type="text"
+              required
+              min="2"
+            />
+          </div>
+
+          <div class="form-email-container">
+            <label class="form-email-label" for=""
+              >Email <span class="form-label-asterisk">*</span></label
+            >
+            <input
+              id="form-email"
+              class="form-email-input"
+              type="email"
+              required
+            />
+          </div>
+
+          <div class="form-subject-container">
+            <label class="form-subject-label" for="form-subject">Subject</label>
+            <input id="form-subject" class="form-subject-input" type="text" />
+          </div>
+
+          <div class="form-message-container">
+            <label class="form-message-label" for="form-message">Message</label>
+            <input
+              id="form-message-mobile"
+              class="form-message-input-mobile"
+              type="text"
+            />
+            <textarea
+              id="form-message-desktop"
+              class="form-message-textarea-desktop"
+            ></textarea>
+          </div>
+
+          <input class="form-submit" type="submit" value="SEND" />
+        </form>
+      </div>
+    </main>
   </body>
 </html>
