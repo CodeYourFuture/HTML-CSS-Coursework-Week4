@@ -48,3 +48,27 @@ body {
 
 
 /* BUTTONS */
+
+
+
+
+
+.square {
+    width: 18px;
+    height: 18px;
+    background-color: var(--Royal-blue);
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 4px;
+}
+.name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
