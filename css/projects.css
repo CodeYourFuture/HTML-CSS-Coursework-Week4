@@ -1,0 +1,91 @@
+:root {
+    --blue: #0150FD;
+    --black: #000000;
+    --white: #FFFFFF;
+    --leather: #E6DACD;
+    --ivory: #F4ECE6;
+}
+
+h5 {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.card {
+    padding: 0;
+}
+
+.project-card {
+    display: flex;
+    margin: 5rem 0;
+}
+
+.project-name {
+    border-left: 1rem solid var(--blue);
+    padding-left: 2rem;
+}
+
+.project-name .blue-heading {
+    margin-bottom: 0.5rem;
+}
+
+.project-left {
+    width: 60%;
+    padding: 5rem 0rem;
+}
+
+.project-left .card-text {
+    padding: 3rem;
+}
+
+.project-right {
+    width: 40%;
+}
+
+.project-right img {
+    width: 100%;
+    height: 100%;
+}
+
+    
+@media only screen and (max-width: 600px) { 
+    .container {
+        width: 100vw;
+
+    }
+
+    .container .card-text {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .card-text {
+        font-size: 1.6rem;
+        margin-bottom: 0rem;
+    }
+
+    .project-card {
+        display: flex;
+        flex-direction: column;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .project-left,
+    .project-right {
+        width: 100%;
+        height: 100%;
+        padding-bottom: 0;
+
+    }
+
+    .project-right > img {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        display: block;
+    }
+
+
+
+}

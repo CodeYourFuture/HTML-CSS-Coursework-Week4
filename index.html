@@ -1,21 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Add a link to your custom CSS here -->
 
-    <title>Responsive grid project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Quicksand:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="./css/style.css">
+    
+
+    <title>Maya Nelson's' Website</title>
 </head>
 
 <body>
+    <!--++++++++++++++++++ 
+        +++++HEADER+++++
+        ++++++++++++++++++-->
+    <header class="flex">
+        <div class="header-left flex mrg-left">
+            
+            <h2 class="name"><span class="blue-square"> </span>Maya Nelson
+                <h2 />
+                <p class="title"> &#47; Project manager</p>
+        </div>
 
-    <!-- Add your markup here -->
+        <div class="header-right mrg-right">
+            <nav>
+                <ul class="main-nav flex hidden">
+                    <li><a class="current" href="#">About me</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+                <a  href="index.html"><img class="menu-icon hidden" src="./img/waves.svg" alt="menu logo"></a>
+            </nav>
+        </div>
+    </header>
+    <!--++++++++++++++++++
+    /* MAIN SECTION */
+++++++++++++++++++ -->
+    <main>
+        <div class="parent">
+            <div class="div1 main-left">
 
+            </div>
+            <div class="div2 main-right"> </div>
+            <div class="div3 main-photo">
+                <figure>
+                    <img src="./img/hero-photo.jpeg" alt="Maya Nelson profile photo">
+                </figure>
+                <h2 class="name">Maya
+                    <h2 />
+                    <h2 class="name last-name">Nelson</h2>
+                    <hr class="line">
 
-    <!-- Please leave this in to credit the creators of this design -->
-    <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
+                    <p class="title">
+                        Project manager
+                    </p>
+                    <div class="icon-bar">
+                        <div class="icons">
+                            <a href="#"><img class="icon" src="./img/facebook-logo.svg" alt="instagram-logo"></i></a>
+                            <a href="#"><img class="icon" src="./img/twitter-logo.svg" alt="instagram-logo"></i></a>
+                            <a href="#"><img class="icon" src="./img/linkedin-logo.svg" alt="LinkedIn logo"></i></a>
+                            <a href="#"><img class="icon" src="./img/instagram-logo.svg" alt="instagram-logo"></i></a>
+                        </div>
+                    </div>
+
+            </div>
+            <div class="div4 main-discription">
+                <h1>Hello</h1>
+                <h2>Here's who I am & what I do</h2>
+                <div>
+                    <a class="btn btn-primary" href="resume.html">Resume</a>
+                    <a class="btn btn-secondary" href="projects.html">Projects</a>
+                </div>
+                <p class="card-text">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or
+                    double
+                    click me to add your own content and make changes to the font.
+                </p>
+
+                <p class="card-text">I’m a great place for you to tell a story and let your users know a little more about you.</p>
+
+            </div>
+        </div>
+
+    </main>
+
+    <!--++++++++++++++++++
+    FOOTER SECTION
+++++++++++++++++++ -->
+    <footer class="flex">
+        <div class="footer-left mrg-left">
+
+            <p>&copy; 2035 by Maya Nelson</p>
+
+            <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
+        </div>
+        <div class="footer-right flex">
+            <div>
+                <p class="action">
+                    Call
+                </p>
+                <p>
+                    123-456-7890
+                </p>
+            </div>
+            <div>
+                <p class="action">Write</p>
+                <p>info@mysite.com</p>
+            </div>
+            <div class="mrg-right">
+                <p class="action contact-social">Follow</p>
+                <a href="#"><img class="icon" src="./img/facebook-logo.svg" alt="instagram-logo"></i></a>
+                <a href="#"><img class="icon" src="./img/twitter-logo.svg" alt="instagram-logo"></i></a>
+                <a href="#"><img class="icon" src="./img/linkedin-logo.svg" alt="LinkedIn logo"></i></a>
+                <a href="#"><img class="icon" src="./img/instagram-logo.svg" alt="instagram-logo"></i></a>
+
+            </div>
+
+        </div>
+    </footer>
+
 </body>
 
 </html>
