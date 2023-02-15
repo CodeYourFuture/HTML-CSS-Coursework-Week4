@@ -1,5 +1,5 @@
 section {
-    background: var(--db);
+    background: var(--color-dark-beige);
     height: 1650px;
 }
 
@@ -29,7 +29,7 @@ section {
 }
 
 .block__left h2 {
-    color: var(--rb);
+    color: var(--color-blue);
 }
 
 .section__p {

@@ -1,9 +1,9 @@
 :root {
     --white:#FFF;
     --black:#000;
-    --db:#E6DACD;
-    --lb:#F4ECE6;
-    --rb:#0150FD;
+    --color-dark-beige:#E6DACD;
+    --color-light-beige:#F4ECE6;
+    --color-blue:#0150FD;
     --header-font: 'Poppins', sans-serif;
     --gen-font: 'Quicksand', sans-serif;
 }
@@ -19,11 +19,11 @@ h1, h2 {
 
 a {
     text-decoration: none;
-    color: #000;
+    color: var(--black);
 }
 
 a:hover {
-    color: var(--rb);
+    color: var(--color-blue);
 }
 
 nav {
@@ -58,7 +58,7 @@ nav {
 .blue-cube {
     width: 16px;
     height: 16px;
-    background: var(--rb);
+    background: var(--color-blue);
 }
 
 .p__mobile {
@@ -125,7 +125,7 @@ menu {
     flex-direction: column;
     justify-content: center;
     row-gap: 2rem;
-    background-color: var(--db);
+    background-color: var(--color-dark-beige);
     position: fixed;
     top: 0;
     left: 0;
@@ -150,14 +150,14 @@ menu {
 }
 
 .main__content {
-    background: var(--db);
+    background: var(--color-dark-beige);
 }
 
 .main__card {
     height: 526px;
     max-width: 400px;
     width: 100%;
-    background: var(--lb);
+    background: var(--color-light-beige);
     position: relative;
     top: 14%;
     left: 16vw;
@@ -181,7 +181,7 @@ menu {
 .main__line {
     width: 50px;
     height: 2px;
-    background: var(--rb);
+    background: var(--color-blue);
 }
 
 .main__links {
@@ -217,8 +217,8 @@ menu {
 }
 
 .main__button button:first-child {
-    border: 1px solid var(--rb);
-    background: var(--rb);
+    border: 1px solid var(--color-blue);
+    background: var(--color-blue);
     color: var(--white);
 }
 
@@ -230,11 +230,11 @@ menu {
 .main__button button:last-child {
     border: 1px solid;
     background: var(--white);
-    color: var(--rb);
+    color: var(--color-blue);
 }
 
 .main__button button:last-child:hover {
-    background: var(--rb);
+    background: var(--color-blue);
     color: var(--white);
 }
 
@@ -298,6 +298,14 @@ footer img {
         display: none;
     }
 
+    .main__wrapper {
+        column-gap: 4rem;
+    }
+
+    .main__card {
+        left: 5.5vw;
+    }
+
     menu {
         display: flex;
     }
@@ -341,7 +349,7 @@ footer img {
     .main__wrapper {
         display: flex;
         flex-direction: column;
-        background: var(--db);
+        background: var(--color-dark-beige);
         align-items: center;
     }
 
