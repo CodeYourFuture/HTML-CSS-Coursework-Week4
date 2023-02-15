@@ -12,9 +12,39 @@ body {
     font-family: 'Quicksand', sans-serif; 
     display: grid; 
     grid-template-columns: 1fr;
-    grid-template-rows: 300px 800px 300px;
+    grid-template-rows: 300px 800px 400px;
+    grid-template-areas: 
+    "header"
+    "photo"
+    "footer";
+}
+/* BODY GRID */
+
+.header {
+    background-color: var(White);
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.main-container {
+    background-color: var(--dark-beige);
+    grid-area: photo;
+}
+
+.footer-container {
+    background-color: var(--White);
+    grid-area: footer;
+}
+
+/* PHOTO */
+
+.photo-maya {
+    width: 130px;
+    border-radius: 50%;
 }
 
 
-
-
+/* BUTTONS */
