@@ -9,6 +9,7 @@
 font-family: 'Quicksand', sans-serif; BODY */ 
 
 body {
+    
     font-family: 'Quicksand', sans-serif; 
     display: grid; 
     grid-template-columns: 1fr;
@@ -45,7 +46,7 @@ body {
     top: 100px;
     display:flex;
     flex-direction:column;
-    justify-content:space-around;;
+    justify-content:space-around;
     align-items: center;
     width: 300px;
     height: 400px;
@@ -65,6 +66,7 @@ body {
 .photo-maya {
     width: 130px;
     border-radius: 50%;
+    margin-top: 30px;
 }
 
 
@@ -78,26 +80,63 @@ body {
 .name-under-photo {
     font-family: 'Poppins', sans-serif;
     border-bottom: 2px solid var(--Royal-blue);
-    padding: 7px;
+    padding-bottom: 10px;
+    padding-top:0;
+    margin-top:0;
  
 }
 
 .square {
-    width: 18px;
-    height: 18px;
+    width: 17px;
+    height: 17px;
     background-color: var(--Royal-blue);
 }
 a {
     text-decoration: none;
     color: black;
-    font-size: 22px;
+    font-size: 21px;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
-    padding-left: 4px;
+    padding-left: 7px;
 }
 .name {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 10px;
+}
+.job-title {
+    margin-top:0;
+}
+/* .name-and-title {
+    display:flex;
+    flex-direction: column;
+    
+} */
+.resume-button {
+    margin-right: 15px;
+    background-color: var(--Royal-blue);
+    border:none;
+    padding: 10px 27px;
+    color: white;
+    border-radius: 20px;
+
+}
+
+.projects-button {
+    margin-left: 15px;
+    background-color: transparent;
+    padding: 9px 25px;
+    border-radius: 20px;
+    border: 1px solid black;
+
+}
+
+.social-media {
+    background-color: var(--White);
+    align-self: stretch;
+}
+.social-media-icon {
+    width: 20px;
+    padding: 7px;
 }
