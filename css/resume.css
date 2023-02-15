@@ -1,0 +1,295 @@
+/* DESKTOP NAV ADJUSTMENT */
+.nav-desktop-list-item-resume {
+  color: var(--royal-blue);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  background-color: #e6dacd;
+}
+
+.main-container {
+  min-width: 28rem;
+  max-width: 28rem;
+  /* ^ THIS IS JANKY AND NOT FLEXIBLE */
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  /* this is controlling all the gaps between the cards */
+  /* maybe i need another wrapper for each section for finer control */
+  padding-bottom: 5rem;
+}
+
+@media screen and (min-width: 800px) {
+  .main-container {
+    min-width: 72.5rem;
+    max-width: 72.5rem;
+    /* ^ THIS IS JANKY AND NOT FLEXIBLE */
+    gap: 4rem;
+    /* this is controlling all the gaps between the cards */
+    /* maybe i need another wrapper for each section for finer control */
+    padding-bottom: 8rem;
+  }
+}
+
+.resume-heading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 5rem;
+}
+
+@media screen and (min-width: 800px) {
+  .resume-heading-container {
+    padding-top: 9rem;
+  }
+}
+
+.resume-heading-square {
+  width: 1.6rem;
+  height: 1.6rem;
+  background-color: var(--royal-blue);
+}
+
+@media screen and (min-width: 800px) {
+  .resume-heading-square {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+.resume-heading {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 2.9rem;
+}
+
+@media screen and (min-width: 800px) {
+  .resume-heading {
+    font-size: 3.5rem;
+  }
+}
+
+.resume-subheading-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+@media screen and (min-width: 800px) {
+  .resume-subheading-container {
+    padding-top: 9rem;
+  }
+}
+
+.resume-subheading-experience,
+.resume-subheading-education,
+.resume-subheading-professional-skillset,
+.resume-subheading-languages {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+@media screen and (min-width: 800px) {
+  .resume-subheading-experience,
+  .resume-subheading-education,
+  .resume-subheading-professional-skillset,
+  .resume-subheading-languages {
+    font-size: 2.5rem;
+  }
+}
+
+.resume-link-download-cv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12.5rem;
+  height: 3.3rem;
+  border-radius: 2rem;
+  border: 0.2rem solid var(--royal-blue);
+  color: var(--white);
+  background-color: var(--royal-blue);
+  font-family: "Avenir LT W01 85 Heavy";
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.resume-link-download-cv:hover {
+  color: var(--black);
+  background-color: transparent;
+  transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
+}
+
+@media screen and (min-width: 800px) {
+  .resume-link-download-cv {
+    width: 15.4rem;
+    height: 4rem;
+    font-size: 1.4rem;
+  }
+}
+
+.resume-experience-container,
+.resume-education-container,
+.resume-skills-container {
+  background-color: var(--white);
+  padding: 3.2rem 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  box-shadow: var(--shadow) -11.31px 11.31px 25px 0px;
+}
+
+@media screen and (min-width: 800px) {
+  .resume-experience-container,
+  .resume-education-container {
+    flex-direction: row;
+    padding: 6.4rem 4.8rem;
+  }
+}
+
+.resume-experience-subcontainer-one,
+.resume-education-subcontainer-one {
+  /* here if needed */
+}
+
+@media screen and (min-width: 800px) {
+  .resume-experience-subcontainer-one,
+  .resume-education-subcontainer-one {
+    flex-basis: 50%;
+  }
+}
+
+.resume-experience-date,
+.resume-education-date {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--royal-blue);
+  padding-bottom: 0.8rem;
+}
+
+@media screen and (min-width: 800px) {
+  .resume-experience-date,
+  .resume-education-date {
+    font-size: 2rem;
+  }
+}
+
+.resume-experience-position,
+.resume-education-establishment-name {
+  font-family: "Avenir LT W01 35 Light";
+  font-weight: 400;
+  font-size: 1.6rem;
+  padding-bottom: 1.2rem;
+}
+
+@media screen and (min-width: 800px) {
+  .resume-experience-position,
+  .resume-education-establishment-name {
+    font-size: 1.7rem;
+  }
+}
+
+.resume-experience-company-name,
+.resume-experience-company-location,
+.resume-education-level,
+.resume-education-location {
+  font-family: "Avenir LT W01 35 Light";
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 800px) {
+  .resume-experience-company-name,
+  .resume-experience-company-location,
+  .resume-education-level,
+  .resume-education-location {
+    font-size: 1.4rem;
+    padding-bottom: 1.6rem;
+  }
+}
+
+.resume-experience-subcontainer-two,
+.resume-education-subcontainer-two {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+@media screen and (min-width: 800px) {
+  .resume-experience-subcontainer-two,
+  .resume-education-subcontainer-two {
+    flex-basis: 50%;
+  }
+}
+
+.resume-experience-paragraph,
+.resume-education-paragraph {
+  font-family: "Avenir LT W01 35 Light";
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 800px) {
+  .resume-experience-paragraph,
+  .resume-education-paragraph {
+    padding-top: 3.2rem;
+  }
+}
+
+.resume-skills-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+@media screen and (min-width: 800px) {
+  .resume-skills-container {
+    padding: 6.4rem 4.8rem;
+    gap: 9rem;
+  }
+}
+
+.resume-skills-subcontainer-one,
+.resume-skills-subcontainer-two {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.resume-professional-skillset-list,
+.resume-languages-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 2.4rem;
+}
+
+@media screen and (min-width: 800px) {
+  .resume-professional-skillset-list,
+  .resume-languages-list {
+    grid-template-columns: 35% 35%;
+  }
+}
+
+.resume-professional-skillset-list-item,
+.resume-languages-list-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-family: "Avenir LT W01 35 Light";
+  font-size: 1.4rem;
+}
+
+.resume-list-item-square {
+  display: block;
+  width: 1.3rem;
+  height: 1.3rem;
+  background-color: var(--royal-blue);
+}
