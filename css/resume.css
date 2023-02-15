@@ -131,3 +131,48 @@ main {
   font-weight: 400;
   line-height: 25.5px;
 }
+
+.skills-title-container {
+  margin-top: 30px;
+  margin-bottom: 29px;
+}
+
+.skills-heading {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.languages-title-container {
+  margin-top: 62px;
+  margin-bottom: 38px;
+}
+
+.languages-heading {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.skill-list-item-container {
+  margin-bottom: 26px;
+}
+.skill-list-item {
+  font-size: 14px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  position: relative;
+  margin-left: 22px;
+}
+
+.skill-list-item::before {
+  content: "";
+  height: 13px;
+  width: 13px;
+  display: inline-block;
+  background-color: var(--royal-blue);
+  margin-right: 13px;
+  position: absolute;
+  left: -22px;
+  top: 3px;
+}
