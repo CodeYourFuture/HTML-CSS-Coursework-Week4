@@ -8,10 +8,9 @@ body{
 
   .contact-main{
     background-color: #E6DACD;
-    height: 100%;
-   
+    width: 100%;
     display: grid;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto;
     grid-template-columns: 1fr;
     grid-template-areas: "title"
     "form";
@@ -36,16 +35,14 @@ body{
     font-size: 2.5rem;
     font-weight:800;
 }
-.form{
+
+.form-section{
     margin: 0.5rem 0.4rem 3rem 1.2rem;
     grid-area: form;
-
-}
-.form-section{
     background-color: white;
     display: grid;  
     grid-template-columns:1fr ;
-    grid-template-rows: repeat(7,min-content)1fr;
+    grid-template-rows: repeat(7, min-content) 1fr;
     grid-template-areas:
     "first-name"
     "last-name"
@@ -55,9 +52,8 @@ body{
     "send"
     "submit-message";
     box-shadow: -15px 10px 23px #adabab;
-    padding: 3rem 1rem 0rem 1rem;
+    padding: 3rem 0.5rem 5rem 0.5rem;
    
-    
 }
 .form-section div{
     display: flex;
@@ -66,7 +62,6 @@ body{
 }
 .form-label{
   color: black;
-  display: inline-block;
   text-align: left;
   font-size: 16px;
   line-height: 16px;
@@ -116,16 +111,13 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 .form-input{
-    pointer-events: auto;
-    appearance: none;
-    background-color: transparent;
+   
     font-size: 14px;
     font-weight: 600;
     border-top: none;
     border-left: none;
     border-right: none;
     border-bottom: 2px solid #333232;
-    padding-left: 1rem;
     margin-bottom: 0.6rem;
     padding-top: 3rem;
     padding-bottom: 0.7rem;   
