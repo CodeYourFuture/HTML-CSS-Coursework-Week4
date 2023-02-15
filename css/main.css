@@ -308,11 +308,7 @@ main {
 
 .desktop-header-outer {
   background-color: var(--white);
-  /* background-color: pink; */
-  /* margin-left: 4rem;
-  margin-right: 4rem; */
-  /* height: 76px; */
-  height: 100px;
+  height: 126px;
   width: 100%;
   position: fixed;
   z-index: 1;
@@ -324,12 +320,12 @@ main {
   height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
   align-content: center;
 }
 
 .d-header-name-title-container {
   display: flex;
-  /* align-items: flex-end; */
   gap: 1rem;
 }
 
@@ -566,12 +562,14 @@ main {
 }
 
 .d-footer-container {
-  margin-top: 43px;
-  margin-bottom: 33px;
-  margin-left: 49px;
-  margin-right: 49px;
+  padding-top: 43px;
+  padding-bottom: 33px;
+  padding-left: 49px;
+  padding-right: 49px;
+
   display: grid;
   grid-template-columns: auto auto;
+  background-color: var(--white);
 }
 
 .d-footer-comms-container {

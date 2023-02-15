@@ -19,7 +19,13 @@ body {
   font-family: "Quicksand", sans-serif;
 }
 
+.spacer-30 {
+  height: 30px;
+}
 .content-container {
+  background-color: var(--dark-beige);
+}
+.desktop-content-container {
   background-color: var(--dark-beige);
 }
 
@@ -86,7 +92,8 @@ main {
 
 .resume-card-container {
   background-color: var(--white);
-  margin-bottom: 40px;
+  margin-bottom: 50px;
+  box-shadow: -11.31px 11.31px 17px 0px rgba(138, 131, 124, 0.23);
 }
 
 .resume-card-content {
@@ -175,4 +182,109 @@ main {
   position: absolute;
   left: -22px;
   top: 3px;
+}
+
+.d-content-container {
+  margin-top: 126px;
+}
+
+.d-resume-main-container {
+  width: 724px;
+  margin: 0 auto;
+}
+
+.d-resume-title {
+  margin-top: 100px;
+  margin-bottom: 95px;
+}
+.d-resume-header {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+  text-align: center;
+}
+
+.d-resume-header::before {
+  content: "";
+  margin-right: 10px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: var(--royal-blue);
+}
+
+.d-resume-experience-title-container {
+  height: 98px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.d-resume-experience-heading {
+  margin-top: 8px;
+}
+.d-resume-experience-header {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.d-download-cv-container {
+  width: 154px;
+  height: 40px;
+  background-color: var(--royal-blue);
+  color: var(--white);
+  text-align: center;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.d-download-btn-text {
+  text-transform: uppercase;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.d-resume-card-container {
+  background-color: var(--white);
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin-bottom: 39px;
+  display: grid;
+  grid-template-columns: 52px 191px 345px 52px;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    ". timings . ."
+    ". position wording .";
+}
+
+.timings {
+  grid-area: timings;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--royal-blue);
+}
+
+.position {
+  grid-area: position;
+}
+
+.d-r-card-position {
+  text-transform: uppercase;
+}
+.d-r-card-sub-info {
+  margin-top: 1rem;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+.wording {
+  grid-area: wording;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.5rem;
 }
