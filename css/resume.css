@@ -1,6 +1,5 @@
 section {
-     background: var(--color-dark-beige);
-     height: 1050px;
+    background: var(--color-dark-beige);
 }
 
 .section__container {

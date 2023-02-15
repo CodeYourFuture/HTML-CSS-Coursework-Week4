@@ -155,7 +155,7 @@ menu {
 }
 
 .main__card {
-    height: 526px;
+    padding-top: 4rem;
     max-width: 400px;
     width: 100%;
     background: var(--color-light-beige);
