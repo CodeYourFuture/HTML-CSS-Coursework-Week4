@@ -213,16 +213,23 @@ main {
   background-color: var(--royal-blue);
 }
 
+.d-resume-education-title-container {
+  margin-top: 48px;
+  height: 98px;
+}
+
 .d-resume-experience-title-container {
   height: 98px;
   display: flex;
   justify-content: space-between;
 }
 
-.d-resume-experience-heading {
+.d-resume-experience-heading,
+.d-resume-education-heading {
   margin-top: 8px;
 }
-.d-resume-experience-header {
+.d-resume-experience-header,
+.d-resume-education-header {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 25px;
