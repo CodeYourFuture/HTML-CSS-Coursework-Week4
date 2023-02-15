@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Quicksand:wght@300&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
     <!-- Add a link to your custom CSS here -->
     <link rel="stylesheet" href="css/main.css">
-    <title>Responsive grid project</title>
+    <title>Maya Nelson</title>
 </head>
 
 <body>
@@ -19,29 +21,26 @@
     <header class="header">
         <div class="header-left">
             <div class="title">
-                <div class="logo"></div>
-                <a href=""><h1 class="name">Maya Nelson</h1></a>
+              <div class="logo"></div>
+              <a href=""><h1 class="name">Maya Nelson</h1></a>
             </div>  
-       
             <div>
-                
-                <p><a class="job-title" href=""><span class="slash">/</span>Project manager</a></p>
+              <p><a class="job-title" href=""><span class="slash">/</span>Project manager</a></p>
             </div>
-           
         </div>
         <nav class="navbar-mobile">
-            <ul class="nav-menu">
+            <ul class="nav-menu" id="menuList">
                 <li class="nav-item">
-                    <a href="#" class="nav-link">ABOUT ME</a>
+                    <a href="#" class="nav-link" style="color: #0150FD;">ABOUT ME</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">RESUME</a>
+                    <a href="resume.html" class="nav-link">RESUME</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">PROJECTS</a>
+                    <a href="projects.html" class="nav-link">PROJECTS</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">CONTACT</a>
+                    <a href="contact.html" class="nav-link">CONTACT</a>
                 </li>
             </ul>
             <div class="hamburger">
@@ -51,7 +50,7 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main class="about-main">
      
         <section class="introduction grid-overwrite">
             <div class="image">
@@ -82,8 +81,12 @@
                 <button class="resume-btn btn">RESUME</button>
                 <button class="projects-btn btn">PROJECTS</button>
             </div>
-            <p class="intro-p">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.</p>
-            <p class="intro2-p">I’m a great place for you to tell a story and let your users know a little more about you.</p>
+            <p class="intro-p">
+                I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.
+            </p>
+            <p class="intro2-p">
+                I’m a great place for you to tell a story and let your users know a little more about you.
+            </p>
         </section>
     </main>
     <footer>
@@ -109,6 +112,9 @@
             >Wix</a></p>
     </footer>
 
+
+
+    
     <script>
         const hamburger = document.querySelector(".hamburger");
         const navMenu = document.querySelector(".nav-menu");
@@ -127,6 +133,9 @@
        hamburger.classList.remove("active");
        navMenu.classList.remove("active");
        }
+       $('.menu-link').click(function(){
+        $(this).addClass('active').siblings().removeClass('active');
+        });
       </script>
     <!-- Please leave this in to credit the creators of this design -->
     <!-- <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p> -->

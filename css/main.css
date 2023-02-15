@@ -1,13 +1,11 @@
-/* Add your CSS here */
+/* Mobile-first design */
 
-/* Don't forget to link this file to your HTML in the <head> */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   body{
-  
     font-family: 'Quicksand', sans-serif;
   }
   h1,h2,h3,h4,h5{
@@ -17,11 +15,11 @@
   li {
     list-style: none;
   }
-  
   a {
     text-decoration: none;
     color: black;
   }
+
   .header{
    display: grid;
    height: auto;
@@ -30,7 +28,7 @@
    grid-template-rows: auto;
    grid-template-areas: "name nav";
    padding: 1rem;
-   /* background-color: yellow; */
+
   }
   .slash{
     display: none;
@@ -44,26 +42,23 @@
   .nav-menu {
     position: fixed;
     top: -100%;
-  display: flex;
+    display: flex;
     flex-direction: column;
     background-color:rgb(244,236,230);
     width: 100%;
-    /* border-radius: 10px; */
     text-align: center;
     transition: 0.7s;
-    
     height: 100%;
     right: 0;
-    
-    /* box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05); */
+   
   }
-  
   .nav-menu.active {
-  top: 0;
-  padding-top: 4rem;
-  transition: all 0.8s ease-in-out;
+   top: 0;
+   padding-top: 4rem;
+   transition: all 0.6s ease-in-out;
+   
   }
-  
+ 
   .nav-item {
     margin: 1rem 0;
     
@@ -81,18 +76,15 @@
   .hamburger {
     display: block;
     cursor: pointer;
-    /* z-index: 999; */
   }
   .bar {
       display: block;
       width: 27px;
       height: 4px;
       margin: 6px auto;
-      /* -webkit-transition: all 0.3s ease-in-out; */
-      /* transition: all 0.3s ease-in-out; */
       background-color:#0150FD;
       border-radius: 2px;
-      /* transform: rotate(-45deg); */
+      z-index: 2;
   }
  .bar:first-child{
   margin-left: 0px;
@@ -106,26 +98,21 @@
  }
  
  .hamburger.active .bar {
- 
   transform: rotate(-45deg);
   background-color: black;
 }
-
+/* Need to work on this part more */
 .hamburger.active .bar:nth-child(1) {
-  
   transform: rotate(-90deg) translateX(4px);
-  
-    transform-origin: right;
-    transition: transform .33s cubic-bezier(.54,-.81,.57,.57);
-    
+  transform-origin: right;
+  transition: transform .33s cubic-bezier(.54,-.81,.57,.57); 
 }
 
 .hamburger.active .bar:nth-child(3) {
-
   transform: rotate(-90deg) translateX(-4px);
   align-self: flex-end;
-    transform-origin: left;
-    transition: transform .33s cubic-bezier(.54,-.81,.57,.57);
+  transform-origin: left;
+  transition: transform .33s cubic-bezier(.54,-.81,.57,.57);
 }
 
   .header-left{
@@ -138,7 +125,7 @@
 .title{
   display: flex;
   align-items: center;
-padding-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
 
 }
 .logo{
@@ -154,7 +141,6 @@ padding-bottom: 0.5rem;
   line-height: 20px;
   font-weight:700;
   color: black;
-  /* margin-top: 0.4rem; */
 }
 .job-title{
   color: rgb(0, 0, 0);
@@ -162,18 +148,15 @@ padding-bottom: 0.5rem;
   font-weight: 500;
 }
 
-main{
+.about-main{
   margin-top: 1rem;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  /* gap: 1rem; */
   grid-template-areas: 
   "intro"
   "intro-text";
-  /* background-image: linear-gradient(white,#E6DACD); */
   width: 100%;
-  /* height: 100vh; */
   background: linear-gradient(
     to top,
     #E6DACD 0%,
@@ -196,20 +179,12 @@ main{
   margin-left: 1.2rem;
   margin-right: 0.5rem;
   padding-top: 2rem;
-  /* gap: 1.5rem; */
 }
 .introduction{
  text-align: center;
   background-color: rgb(244,236,230);
   grid-area: intro;
-  /* -shc-mutated-brightness: 122,118,115; */
- /* box-shadow:#294d4f; */
- /* box-shadow: var(--shd,0 1px 4px rgba(0,0,0,.6)); */
- /* position: relative; */
- /* box-shadow: var(--shd,0 -1px 9px rgba(0,0,0,.6)); */
- box-shadow: -5px 0 5px -5px rgba(0,0,0,.6),0 5px 5px -5px #333;
- /* box-shadow: 0 5px 5px -5px #333; */
- 
+ box-shadow: -15px 10px 23px #adabab;
 }
 .image{
   grid-area: row1;
@@ -219,8 +194,8 @@ main{
 .image img{
   border-radius: 50%;
   width: 12rem;
-    height:12rem;
-    object-fit: cover;
+  height:12rem;
+  object-fit: cover;
 }
 .name-maya{
   grid-area:row2;
@@ -246,15 +221,12 @@ margin: 1.5rem auto 0rem auto;
   padding: 3rem 0;
 }
 .resume-btn{
-  /* border-radius: 2rem; */
   padding: 0.6rem 2rem;
   font-size: 15px;
   background-color: #0150FD;
   color: white;
-  /* cursor: pointer; */
    border: none;
    margin-right: 0.4rem;
-   /* font-weight: bold; */
 }
 .btn{
   font-weight: bold;
@@ -264,13 +236,9 @@ margin: 1.5rem auto 0rem auto;
 }
 .projects-btn{
   background-color: transparent;
-  /* border-radius: 2rem; */
   padding: 0.6rem 1.5rem;
-  /* cursor: pointer; */
-  /* font-size: 15px; */
   border: 0.9px solid black;
   margin-left: 0.4rem;
-  /* font-weight: bold; */
 }
 .social-media{
   grid-area: row4;
@@ -278,18 +246,15 @@ margin: 1.5rem auto 0rem auto;
   justify-content: center;
   align-items: center;
   background-color: white;
-  /* padding-top: 1rem; */
-  /* margin-bottom: 0.7rem; */
- 
+  margin-bottom: 0.5rem;
 }
 .fa{
-  color: black;
+   color: black;
    font-weight: bolder;
- padding: 1rem 1rem;
+   padding: 1rem 1rem;
 }
 .introduction-text{
   grid-area: intro-text;
-  /* background-color: ; */
   margin-left: 1.8rem;
   height:auto;
 }
@@ -309,7 +274,6 @@ padding-bottom: 1.5rem;
 }
 .intro-p{
 grid-area: row4;
-font-family: "Quicksand", sans-serif;
 font-size: 18px;
 line-height: 1.5em;
 padding-bottom: 1.5rem;
@@ -320,6 +284,7 @@ grid-area: row5;
 font-size: 18px;
 line-height: 1.5em;
 padding-bottom: 2rem;
+font-family: "Quicksand", sans-serif;
 }
 footer{
   padding:1.8rem;
@@ -330,7 +295,6 @@ footer{
   "call write"
   "follow ."
   "copy-write .";
-  /* gap: 2rem; */
 }
 
 .call{
@@ -362,7 +326,6 @@ footer p{
   justify-content: flex-start;
 }
 .follow .social-media a{
- /* font-weight: 900; */
  font-size: 18px;
 }
 .follow .social-media .fa:first-child{
@@ -370,12 +333,10 @@ footer p{
   padding-left: 0rem;
 
 }
-  @media screen and (min-width: 750px) {
-    body{
-    
-    }
+
+  @media screen and (min-width: 800px) {
     .header{
-    top: 0;
+      top: 0;
       padding: 2.5rem;
       position: sticky;
       background-color: white;
@@ -409,11 +370,10 @@ footer p{
     background-color: white;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /* column-gap: 0.5rem; */
     padding: 0;
     transition: none;
   }
-  
+ 
   .nav-item {
       margin-left: 2rem; 
   }
@@ -423,33 +383,21 @@ footer p{
       font-family: 'Quicksand', sans-serif;
       color:black;
   }
-  .nav-item:first-child .nav-link{
-    color: #0150FD;
-  }
-  main{
+
+  .about-main{
     padding-right: 13rem;
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto; */
     grid-template-columns: repeat(4,1fr);
-    /* grid-template-rows: 25rem 25rem; */
     grid-template-areas: 
     ". . . ."
     ". section1 section2 ."
     ". . . .";
     row-gap: 8rem;
-  /* column-gap: 2rem; */
     margin-top: 0;
-    /* width: 50%; */
     width: 100%;
-    /* height:100% ; */
-    /* height: 100vh; */
-  background: linear-gradient(
+    background: linear-gradient(
     to right,
     #E6DACD 0%,
-  #E6DACD 40%,
+    #E6DACD 40%,
     #fff 40%,
     #fff 100%
   );
@@ -457,10 +405,8 @@ footer p{
  
 .introduction{
   width: 25rem;
- /* margin-top: 8rem;  */
- /* margin-bottom: 8rem; */
- grid-area: section1;
- padding-bottom: 0;
+  grid-area: section1;
+  padding-bottom: 0;
 }
 .project-manager{
   display: block;
@@ -475,6 +421,9 @@ footer p{
   object-fit: cover;
   margin-top: 2rem;
 }
+.social-media{
+  margin-bottom: 0rem;
+}
 .introduction .fa{
   font-size: x-large;
   padding-top: 1.2rem;
@@ -485,11 +434,9 @@ footer p{
  width: 100%;
   grid-area: section2;
   margin-left: 3rem;
-  /* margin-top: 8rem; */
 }
 .hello{
   font-size: 110px;
-  /* margin-top: ; */
 }
 .subtitle{
   font-size: 25px;
@@ -517,20 +464,17 @@ footer p{
 }
 .intro-p{
   padding-top: 1.5rem;
-  /* font-size: 19px; */
 }
 footer{
   width: 100%;
   grid-template-columns: repeat(3,1fr) ;
-grid-template-areas:"copy-write . . . call write follow" ;
-column-gap: 5rem;
-
-padding: 1rem 3rem;
+  grid-template-areas:"copy-write . . . call write follow" ;
+  column-gap: 5rem;
+  padding: 1rem 3rem;
 }
 footer p{
   font-size: 14px;
   text-align: center;
-  /* font-family: Arial, Helvetica, sans-serif; */
 }
 .copywrite{
   text-align: left;

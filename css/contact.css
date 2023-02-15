@@ -1,0 +1,198 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Quicksand:wght@300&display=swap');
+ 
+body{
+    margin: 0;
+    padding: 0;
+}
+
+  .contact-main{
+    background-color: #E6DACD;
+    height: 100%;
+   
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+    grid-template-areas: "title"
+    "form";
+}
+.contact-title{
+    grid-area: title;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0rem 3rem 0rem;
+}
+.square{
+    width: 1.47rem;
+    height: 1.47rem;
+    background-color: #0150FD;
+    padding-right: 0.5rem;
+}
+.lets-talk{
+    font-family: 'Poppins', sans-serif;
+    padding-left: 0.5rem;
+    line-height: 0.95em;
+    font-size: 2.5rem;
+    font-weight:800;
+}
+.form{
+    margin: 0.5rem 0.4rem 3rem 1.2rem;
+    grid-area: form;
+
+}
+.form-section{
+    background-color: white;
+    display: grid;  
+    grid-template-columns:1fr ;
+    grid-template-rows: repeat(7,min-content)1fr;
+    grid-template-areas:
+    "first-name"
+    "last-name"
+    "email"
+    "subject"
+    "message"
+    "send"
+    "submit-message";
+    box-shadow: -15px 10px 23px #adabab;
+    padding: 3rem 1rem 0rem 1rem;
+   
+    
+}
+.form-section div{
+    display: flex;
+    flex-direction: column;
+   
+}
+.form-label{
+  color: black;
+  display: inline-block;
+  text-align: left;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  font-family: 'poppins', sans-serif;
+  position: relative;
+ padding-left: 1rem;
+}
+.required-sign::after{
+    display: inline;
+    content: "*";
+    color: #0150FD;
+    padding-left: 0.3rem;
+   
+}
+.first-name{
+    grid-area: first-name;
+  
+}
+.last-name{
+    grid-area: last-name;
+}
+.email{
+    grid-area: email;
+}
+.subject{
+    grid-area: subject;
+}
+.message{
+    grid-area: message;
+    
+}
+.send{
+    grid-area:send;
+    justify-self: center;
+    padding-top: 1rem ;
+}
+.send-btn{
+    background-color: #0150FD;
+    cursor: pointer;
+    color: white;
+    border-radius: 4rem;
+    padding: 0.5rem 2.5rem;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+.form-input{
+    pointer-events: auto;
+    appearance: none;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #333232;
+    padding-left: 1rem;
+    margin-bottom: 0.6rem;
+    padding-top: 3rem;
+    padding-bottom: 0.7rem;   
+    color: blue;
+    outline: none;
+    outline-style: none;
+    outline-offset: 0;
+  
+}
+.text-area{
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+.form-input:hover{
+    border-bottom: 0.2rem solid #0150FD;
+}
+.form-input:focus{
+    border-bottom: 0.2rem solid #0150FD;
+}
+/* red border for required inputs didn't work properly :( */
+/* .form-input:invalid:{
+    border-bottom: 0.1rem solid red;
+} */
+.submit-message{
+    grid-area:submit-message;
+    visibility: hidden;
+}
+/* unable to make the message visible after submitting with css */
+.submit-message{
+    text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+   
+    .form-section{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+          "first-name last-name"
+          "email email"
+          "subject subject"
+          "message message"
+          "send ."
+          "submit-message submit-message";
+          column-gap: 3rem;
+        padding: 6rem 4rem;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    .contact-title{
+        padding-top: 8rem;
+        padding-bottom: 5rem;
+    }
+    .form-input{
+        margin-bottom: 2rem;
+    }
+     .email{
+        padding-top: 2rem;
+    }
+    .text-area{
+        padding-bottom: 4rem;
+    }
+    .send{
+        justify-self: start;
+        padding-top: 0rem;
+    }
+    .form-label{
+        font-size: 1rem;
+    }
+}

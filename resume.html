@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            <div class="title">
+                <div class="logo"></div>
+                <a href=""><h1 class="name">Maya Nelson</h1></a>
+            </div>  
+            <div>
+                <p><a class="job-title" href=""><span class="slash">/</span>Project manager</a></p>
+            </div>
+        </div>
+        <nav class="navbar-mobile">
+            <ul class="nav-menu">
+                <li class="nav-item" id="menuList">
+                    <a href="index.html" class="nav-link">ABOUT ME</a>
+                </li>
+                <li class="nav-item">
+                    <a href="resume.html" class="nav-link" style="color: #0150FD ">RESUME</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link">PROJECTS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link" >CONTACT</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+<!-- To be completed -->
+
+
+
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+   
+        hamburger.addEventListener("click", mobileMenu);
+   
+       function mobileMenu() {
+       hamburger.classList.toggle("active");
+       navMenu.classList.toggle("active");
+      }
+     const navLink = document.querySelectorAll(".nav-link");
+   
+      navLink.forEach(n => n.addEventListener("click", closeMenu));
+   
+       function closeMenu() {
+       hamburger.classList.remove("active");
+       navMenu.classList.remove("active");
+       }
+  
+ 
+    </script>
+</body>
+</html>
