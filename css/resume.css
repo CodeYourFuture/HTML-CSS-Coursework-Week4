@@ -299,8 +299,9 @@ main {
 .d-skills-card-container {
   background-color: var(--white);
   padding-top: 40px;
-  padding-bottom: 80px;
-  margin-bottom: 39px;
+  padding-bottom: 30px;
+  margin-top: 35px;
+  margin-bottom: 80px;
   padding-left: 52px;
 }
 
