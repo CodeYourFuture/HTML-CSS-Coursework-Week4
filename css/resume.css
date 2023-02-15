@@ -295,3 +295,38 @@ main {
   font-weight: 400;
   line-height: 1.5rem;
 }
+
+.d-skills-card-container {
+  background-color: var(--white);
+  padding-top: 40px;
+  padding-bottom: 80px;
+  margin-bottom: 39px;
+  padding-left: 52px;
+}
+
+.d-skills-title-container {
+  margin-top: 30px;
+  margin-bottom: 29px;
+}
+
+.d-skills-heading,
+.d-languages-heading {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.d-languages-title-container {
+  margin-top: 62px;
+  margin-bottom: 38px;
+}
+
+.d-skill-list-item-container {
+  margin-bottom: 26px;
+}
+
+.d-skills-list-container {
+  display: grid;
+  grid-template-columns: 250px 250px;
+  grid-template-rows: 50px 50px;
+}
