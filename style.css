@@ -1,16 +1,17 @@
-.title {
+.cyf-title {
   font-size: 4em;
 }
 
-/* .title::before {
+.cyf-title::before {
   content: "";
   display: inline-block;
-  width: 20px;
-  height: 20px;
-  margin-bottom: 1.3rem;
-  margin-right: 0.5rem;
-  background-color: black;
-} */
+  width: 30px;
+  height: 30px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  border-radius: 50px;
+  background-color: yellow;
+}
 
 .mobile-container {
   width: 400px;
@@ -53,6 +54,16 @@
   background-color: purple;
   height: 200px;
 }
+
+/* .title::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 1.3rem;
+  margin-right: 0.5rem;
+  background-color: black;
+} */
 
 @media (min-width: 1100px) {
   /* … */

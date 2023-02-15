@@ -527,12 +527,22 @@ main {
   background-color: var(--royal-blue);
 }
 
+.d-resume-button-container:hover {
+  color: var(--royal-blue);
+  background-color: var(--white);
+}
+
 .d-resume-button {
   font-size: 15px;
   color: var(--white);
   font-weight: 600;
   text-transform: uppercase;
   background-color: var(--royal-blue);
+}
+
+.d-resume-button:hover {
+  color: var(--black);
+  background-color: var(--white);
 }
 
 .d-projects-button-container {

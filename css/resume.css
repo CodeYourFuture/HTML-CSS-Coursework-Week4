@@ -1,0 +1,133 @@
+:root {
+  --dark-beige: #e6dacd;
+  --light-beige: #f4ece6;
+  --royal-blue: #0150fd;
+  --black: #000;
+  --white: #fff;
+  --shd: -11.31px 11.31px 17px 0px rgba(138, 131, 124, 0.23);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Quicksand", sans-serif;
+}
+
+.content-container {
+  background-color: var(--dark-beige);
+}
+
+main {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.resume-title {
+  margin-top: 61px;
+  margin-bottom: 49px;
+}
+
+.resume-header {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 29px;
+  text-align: center;
+}
+
+.resume-header::before {
+  content: "";
+  margin-right: 10px;
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  background-color: var(--royal-blue);
+}
+
+.experience-title-area,
+.education-title-area {
+  display: flex;
+  justify-content: space-between;
+}
+
+.experience-heading,
+.education-heading {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 3px;
+  margin-bottom: 36px;
+}
+
+.download-cv-container {
+  width: 121px;
+  height: 29px;
+  background-color: var(--royal-blue);
+  color: var(--white);
+  text-align: center;
+  border-radius: 15px;
+}
+
+.download-cv-button {
+  margin: 2px;
+}
+
+.download-btn-text {
+  text-transform: uppercase;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 12.5px;
+  font-weight: 400;
+}
+
+.resume-card-container {
+  background-color: var(--white);
+  margin-bottom: 40px;
+}
+
+.resume-card-content {
+  margin-left: 22px;
+}
+
+.resume-card-date {
+  color: var(--royal-blue);
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  margin-top: 36px;
+  margin-bottom: 8px;
+}
+
+.resume-card-title-1 {
+  font-size: 1rem;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 17px;
+}
+.resume-card-title-2 {
+  font-size: 15px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+}
+.resume-card-title-3 {
+  font-size: 15px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  margin-bottom: 19px;
+}
+
+.resume-card-paras-container {
+  margin-bottom: 46px;
+}
+
+.resume-card-para {
+  font-size: 17px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  line-height: 25.5px;
+}
