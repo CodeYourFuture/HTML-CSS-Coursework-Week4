@@ -1,0 +1,108 @@
+/* Add your CSS here */
+
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Quicksand', sans-serif; */
+
+/* Don't' forget to link this file to your HTML in the <head> */
+
+  :root {
+    --beige-dark: #e6dacd;
+    --beige-light: #f4ece6;
+  
+    --blue-royal: #0150fd;
+    --black: #000;
+    --white: #fff;
+  
+    --heading-font: "Poppins", sans-serif;
+    --body-font: "Quicksand", sans-serif;
+  }
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    line-height: 1.4;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+}
+.head{
+    background-color:var(--white);
+    width: 100%;
+    padding: 20px 30px;
+}
+.head h1 {
+    grid-column: 1/7;
+    grid-row: 1;
+    font-family: var(--heading-font);
+    font-size: 1.7rem;
+}
+.head h3 {
+    grid-column: 1/5;
+    grid-row: 2;
+    font-family: var(--body-font);
+    padding: 0;
+}
+/* header blue box1 */
+.head > h1::before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: var(--blue-royal);
+    
+}
+div{
+    position: relative;
+}
+
+.box1{
+    grid-column: 1/9;
+    width: 375px;
+    height: 150px;
+    background-color: var(--white);
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+}
+.box2{
+    grid-column: 1/9;
+    display: block;
+    width: 375px;
+    height: 700px;
+    background-color:var(--beige-dark);
+    color: aliceblue;
+    
+}
+.box3{
+    display: grid;
+    grid-column: 2/7;
+    width: 290px;
+    height: 400px;
+    background-color:var(--beige-light);
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    z-index: 10;
+    margin-top: -870px;
+    padding: 70px;
+}
+.box3 > img {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    top: 20px;
+}
+.box3 > h2{
+    color: var(--black);
+    font-family: var(--heading-font);
+}
+
+.btn .bttn{
+    
+}
