@@ -7,6 +7,10 @@
   font-family: "Quicksand";
   src: url("../fonts/Quicksand-Light.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/Quicksand-Bold.ttf") format("truetype"); font-weight: bold;
+}
 
 :root {
   --beige-dark: #e6dacd;
@@ -32,7 +36,6 @@ body {
   font-size: 20px;
   font-family: var(--body-font);
   color: var(--black);
-  font-weight: 800;
 }
 
 /* Utilities */
@@ -265,6 +268,7 @@ a {
 }
 .resume .exp-title .btn {
   padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
 }
 .resume article,
 .resume .skill {
@@ -302,6 +306,7 @@ a {
 }
 .projects .title ~ p {
   margin-top: 1.5rem;
+  margin-right: 0.5rem;
 }
 
 .projects .pro-articles {
@@ -368,30 +373,29 @@ a {
 
 
 /* Footer section */
-.rows {
-  margin: 2rem 1rem;
+footer {
+  padding: 2rem 2rem;
 }
-.row1 {
+footer .row1{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-gap:1rem;
+  margin-bottom:1.5rem ;
+}
+footer .first-three-div .col3 .social-icons {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 0.25rem;
 }
-.row2 {
-  margin: 1.5rem 0rem;
-}
-.row2 ul {
-  display: flex;
-  margin-top: 0.5rem;
-}
-.row2 li {
+footer .first-three-div .col3 .social-icons li {
   margin-right: 1rem;
 }
-.row3 {
+footer .row2{
   display: flex;
   justify-content: space-between;
 }
-.row3 a {
-  text-decoration: underline;
-}
+
 .circle {
   display: inline-block;
   vertical-align: middle;
@@ -431,3 +435,34 @@ a {
 @keyframes cssAnimation {
   to   { visibility: hidden; }
 }
+
+
+
+ @media  (min-width:541px) and (max-width:768px){
+  /* Index Page -Description  */
+  .description h1 {
+    padding-top: 20rem;
+  }
+
+  /* Resume Page  */
+  .resume .exp-title .btn{
+    margin-right: 1rem;
+  }
+  /* Project page */
+  .projects .title ~ p {
+    margin-right: 1rem;
+  }
+  /* Contact Page */
+  .contact form {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  /* Footer */
+  footer .first-three-div {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+} 
