@@ -8,14 +8,17 @@ body{
 
   .contact-main{
     background-color: #E6DACD;
-    width: 100%;
+    width: 30.5rem;
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 1fr;
     grid-template-areas: "title"
     "form";
+    box-sizing: border-box;
 }
+
 .contact-title{
+    width: 100%;
     grid-area: title;
     display: flex;
     justify-content: center;
@@ -37,6 +40,7 @@ body{
 }
 
 .form-section{
+   
     margin: 0.5rem 0.4rem 3rem 1.2rem;
     grid-area: form;
     background-color: white;
@@ -52,14 +56,14 @@ body{
     "send"
     "submit-message";
     box-shadow: -15px 10px 23px #adabab;
-    padding: 3rem 0.5rem 5rem 0.5rem;
+    padding: 3rem 1rem 5rem 1rem;
    
 }
 .form-section div{
     display: flex;
     flex-direction: column;
-   
 }
+
 .form-label{
   color: black;
   text-align: left;
@@ -110,8 +114,8 @@ body{
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
 }
+
 .form-input{
-   
     font-size: 14px;
     font-weight: 600;
     border-top: none;
@@ -125,8 +129,8 @@ body{
     outline: none;
     outline-style: none;
     outline-offset: 0;
-  
 }
+
 .text-area{
     padding-top: 1rem;
     padding-bottom: 2rem;
@@ -149,9 +153,13 @@ body{
 .submit-message{
     text-align: center;
 }
-
+@media screen and (min-width: 540px) {
+  
+}
 @media screen and (min-width: 800px) {
-   
+   .contact-main{
+    width: 100%;
+   }
     .form-section{
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
@@ -165,7 +173,7 @@ body{
         padding: 6rem 4rem;
         margin-left: auto;
         margin-right: auto;
-        width: 50%;
+        width: 55rem
     }
     .contact-title{
         padding-top: 8rem;

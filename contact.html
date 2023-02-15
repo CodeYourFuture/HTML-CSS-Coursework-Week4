@@ -53,44 +53,59 @@
     </header>
     <!-- End of Header -->
     <main class="contact-main">
-        <div class="contact-title">
-            <div class="square"></div>
-            <h1 class="lets-talk">Let's talk</h1>
-        </div>
         
+        <section class="contact-form">
+            <div class="contact-title">
+                <div class="square"></div>
+                <h1 class="lets-talk">Let's talk</h1>
+            </div>
             <form class="form-section" action=""/action_page.php"">
-              <div class="first-name">
-                <label for="fname" class="form-label required-sign">First Name</label>
-                <input type="text" id="fname" name="fname" class="form-input required-input" minlength="2" maxlength="100" required >
-              </div>
-              <div class="last-name">
-                <label for="lname" class="form-label required-sign">Last Name</label>
-                <input type="text" id="lname" name="lname" class="form-input required-input" minlength="2" maxlength="100" required >
-              </div>
-              <div class="email">
-                <label for="email" class="form-label required-sign">Email</label>
-                <input type="email" id="email" name="email" class="form-input email-input required-input"  pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" size="50"
-                required >
-              </div>
-              <div class="subject">
-                <label for="subject" class="form-label">Subject</label>
-                <input type="text" id="subject" name="subject" class="form-input" >
-              </div>
-              <div class="message">
-                <label for="message" class="form-label">Message</label>
-                <textarea id="message" name="message" class="form-input text-area"></textarea>
-              </div>
-              <div class="send">
-                <button id="submit" type="submit" class="send-btn">SEND</button>
-              </div>
-              <div id="thanks" class="submit-message">
-                <p>
-                    Thanks for submitting!
-                </p>
-                
-              </div>
-            </form>
-     
+                <div class="first-name">
+                  <label for="fname" class="form-label required-sign">First Name</label>
+                  <div>
+                      <input type="text" id="fname" name="fname" class="form-input required-input" minlength="2" maxlength="100" required >
+                  </div>
+                  
+                </div>
+                <div class="last-name">
+                  <label for="lname" class="form-label required-sign">Last Name</label>
+                  <div>
+                      <input type="text" id="lname" name="lname" class="form-input required-input" minlength="2" maxlength="100" required >
+                  </div>
+                 
+                </div>
+                <div class="email">
+                  <label for="email" class="form-label required-sign">Email</label>
+                  <div>
+                      <input type="email" id="email" name="email" class="form-input email-input required-input"  pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" size="50"
+                      required >
+                  </div>
+                 
+                </div>
+                <div class="subject">
+                  <label for="subject" class="form-label">Subject</label>
+                  <div>
+                      <input type="text" id="subject" name="subject" class="form-input" >
+                  </div>
+                  
+                </div>
+                <div class="message">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea id="message" name="message" class="form-input text-area"></textarea>
+                </div>
+                <div class="send">
+                  <button id="submit" type="submit" class="send-btn">SEND</button>
+                </div>
+                <div id="thanks" class="submit-message">
+                  <p>
+                      Thanks for submitting!
+                  </p>
+                  
+                </div>
+              </form>
+       
+        </section>
+            
 
     </main>
 

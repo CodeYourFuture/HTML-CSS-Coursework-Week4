@@ -56,7 +56,7 @@
    top: 0;
    padding-top: 4rem;
    transition: all 0.6s ease-in-out;
-   
+  
   }
  
   .nav-item {
@@ -184,7 +184,7 @@
  text-align: center;
   background-color: rgb(244,236,230);
   grid-area: intro;
- box-shadow: -15px 10px 23px #adabab;
+ box-shadow: -15px 10px 23px #7d7b7b;
 }
 .image{
   grid-area: row1;
