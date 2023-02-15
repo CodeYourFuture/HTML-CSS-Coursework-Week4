@@ -7,6 +7,10 @@
     <!-- Add a link to your custom CSS here -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" rel='stylesheet'  href="media.css">
+    <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
     <title>Responsive grid project</title>
 </head>
 
@@ -26,6 +30,22 @@
             <p>We Deliver to Your Doorstep</p>
         </div>
         
+        <section class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+        
+            <ul class="menu__box">
+              <li><a class="menu__item" href="Meet Karma">Meet Karma</a></li>
+                    <li><a class="menu__item" href="How it Works">How it Works</a></li>
+                    <li><a class="menu__item" href="store.html">Store</a></li>
+                    <li><a class="menu__item" href="Blog">Blog</a></li>
+                    <li><a class="menu__item" href="Help">Help</a></li>
+                    <li><a class="menu__item" href="Login">Login</a></li>
+            </ul>
+        </section>
+
             <nav>
                 <ul class="nav-list">
                     <input type="checkbox" id="check">
@@ -51,6 +71,63 @@
         <p>bring nature indoors</p>
         <button>Shop Now</button>
     </section>
+
+    <section class="products">
+
+        <article class="frame capital title cacti">
+            <p>cacti</p>
+            <p>-</p>
+            <button>Shop Collection</button>
+        </article>
+            
+        <article class="frame capital title plants">
+            <p>plants</p>
+            <p>-</p>
+            <button>Shop Collection</button>
+        </article>
+        
+        <article class="frame capital title succulents">
+            <p>Succulents</p>
+            <p>-</p>
+            <button>Shop Collection</button>
+        </article>
+
+    </section>
+
+    <section class="about">
+
+        <p class="capital">about us</p>
+        <p class="capital">-</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Similique vero tenetur voluptas ab minima, ex
+            voluptatum assumenda,!</p>
+        <br>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Similique vero tenetur voluptas ab minima, ex
+            voluptatum assumenda,!</p>
+</section>
+
+<section class="about-img">
+
+    <div class="img-wrapper test">
+        <img src="./img/Screenshot 1.jpg" alt="">
+    </div>
+    <div class="img-wrapper">
+        <img src="./img/Screenshot 2.jpg" alt="">
+    </div>
+
+</section>
+
+<section class="buy-img">
+    <div class="img-wrapper">
+        <img src="./img/Screenshot 3.jpg" alt="">
+    </div>
+</section>
+
+<section class="buy-online">
+    <p class="capital">buy online now & get 10% off !</p>
+    <button>Shop Now</button>
+</section>
 
 
 </body>
