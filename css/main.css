@@ -12,7 +12,7 @@ body {
     font-family: 'Quicksand', sans-serif; 
     display: grid; 
     grid-template-columns: 1fr;
-    grid-template-rows: 300px 800px 400px;
+    grid-template-rows: 1fr 2fr 1fr;
     grid-template-areas: 
     "header"
     "photo"
@@ -26,17 +26,35 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    
 
 }
 
 .main-container {
     background-color: var(--dark-beige);
     grid-area: photo;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding-top: 150px;
 }
-
+.main-photo {
+    background-color: var(--Light-beige);
+    position:absolute;
+    right: 5%;
+    top: 100px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    width: 300px;
+    height: 400px;
+    z-index:1;
+}
 .footer-container {
     background-color: var(--White);
     grid-area: footer;
+    z-index:0;
 }
 
 /* PHOTO */
