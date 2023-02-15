@@ -4,17 +4,18 @@
     --color-dark-beige:#E6DACD;
     --color-light-beige:#F4ECE6;
     --color-blue:#0150FD;
-    --header-font: 'Poppins', sans-serif;
-    --gen-font: 'Quicksand', sans-serif;
+    --heading-font: 'Poppins', sans-serif;
+    --body-font: 'Quicksand', sans-serif;
+    --width-block:clamp(320px, 75%, 763px);
 }
 
 body {
     margin: 0 auto;
-    font-family: var(--gen-font);
+    font-family: var(--body-font);
 }
 
 h1, h2 {
-    font-family: var(--header-font);
+    font-family: var(--heading-font);
 }
 
 a {
@@ -338,12 +339,8 @@ footer img {
         margin: 0;
     }
 
-    .p__desktop {
+    .p--hide{
         display: none;
-    }
-
-    .p__mobile {
-        display: block;
     }
 
     .main__wrapper {
