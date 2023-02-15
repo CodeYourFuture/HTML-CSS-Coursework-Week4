@@ -140,3 +140,10 @@ a {
     width: 20px;
     padding: 7px;
 }
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+}
+h3 {
+    font-family: 'Quicksand', sans-serif;
+}
