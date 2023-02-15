@@ -41,15 +41,18 @@ body {
 .main-photo {
     background-color: var(--Light-beige);
     position:absolute;
-    right: 5%;
+    left: 10%;
     top: 100px;
     display:flex;
     flex-direction:column;
-    justify-content:center;
+    justify-content:space-around;;
     align-items: center;
     width: 300px;
     height: 400px;
     z-index:1;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.176) -10px 10px 15px;
+    
 }
 .footer-container {
     background-color: var(--White);
@@ -67,9 +70,17 @@ body {
 
 /* BUTTONS */
 
+/* .button {
+    display:flex;
+    justify-content: space-between;
+} */
 
-
-
+.name-under-photo {
+    font-family: 'Poppins', sans-serif;
+    border-bottom: 2px solid var(--Royal-blue);
+    padding: 7px;
+ 
+}
 
 .square {
     width: 18px;
@@ -79,7 +90,7 @@ body {
 a {
     text-decoration: none;
     color: black;
-    font-size: large;
+    font-size: 22px;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
     padding-left: 4px;
