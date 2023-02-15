@@ -1,14 +1,14 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Quicksand:wght@300&display=swap');
  
-body{
-    margin: 0;
-    padding: 0;
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
-
   .contact-main{
+    display: block;
     background-color: #E6DACD;
-    width: 30.5rem;
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 1fr;
