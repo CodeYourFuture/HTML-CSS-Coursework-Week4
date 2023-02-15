@@ -1,6 +1,5 @@
 section {
     background: var(--color-dark-beige);
-    height: 1000px;
 }
 
 .section__container {
@@ -13,28 +12,11 @@ section {
 .section__block {
     display: flex;
     justify-content: center;
-    height: 750px;
+    margin-bottom: 4rem;
     width: var(--width-block);
     background: var(--white);
     padding-top: 4rem;
     box-shadow: -15px 15px 15px grey;
-}
-
-.contact__btn {
-    height: 2rem;
-    width: 8rem;
-    border-radius: 20px;
-    cursor: pointer;
-    border: none;
-    background: var(--color-blue);
-    color: var(--white);
-}
-
-.contact__btn:hover {
-    background: var(--white) ;
-    color: var(--black);
-    border: 1px solid var(--color-blue);
-    transition: 0.4s ease 0s;
 }
 
 form {
@@ -42,16 +24,15 @@ form {
     display: flex;
     flex-direction: column;
     row-gap: 4rem;
-    height: 660px;
 }
 
-form input {
+form input, textarea {
     border: transparent;
     border-bottom: 2px solid;
     height: 40px;
 }
 
-form input:focus {
+form input:focus, textarea:focus {
     outline: none;
     border-bottom: 2px solid var(--color-blue);
 }
@@ -60,7 +41,7 @@ form label {
     font-family: var(--heading-font);
 }
 
-.msg__wrapper input {
+textarea {
     height: 100px;
 }
 
@@ -80,9 +61,8 @@ form label {
     flex-direction: column;
 }
 
-.msg__wrapper {
-    display: flex;
-    flex-direction: column;
+.form__btn {
+    margin-bottom: 2rem;
 }
 
 @media (max-width: 600px) {
