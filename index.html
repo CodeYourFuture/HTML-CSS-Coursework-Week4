@@ -17,29 +17,43 @@
 
 
 <body>
+
   <header class="container">
     <header class="header">
-        <div class="search-bar">
-      <!------     <button type="search"><i class="fa fa-search" placeholder="Search..." ></i>
-               <input type="search" placeholder="Search..." name="search"></button> ----> 
-               
-                <input type="search" placeholder="Search..." name="search">   
-        </div>
 
-        <div class="icons">
-            <i class="fa fa-user-circle"></i>
-            <span>Log in</span>
-            <i class="fa fa-shopping-bag"></i>
-        </div>
+        <nav class="search-navbar">
+        
+        <ul class="search-nav-list">
+                <li class="search-nav-item"><input class="input" type="search" placeholder="Search..." name="search"></li>
+                <li class="search-nav-item">
+                    <a href=""><i class="fa fa-user-circle" style="font-size:36px"></i></a>
+                </li>
+                <li class="search-nav-item">
+                    <a href="">Log in</a>
+                </li>
+                <li class="search-nav-item">
+                    <a href=""><i class="fa fa-shopping-bag" style="font-size:36px"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-        </header>
-
-  <!----------
-
+        <!-------Mobile-navbar------->
+        
+        <section class="header2">
         <nav class="mobile-navbar">
-            <ul class="mobile-nav-menu">
+            <div class="nav-title">
+                <span>PRICKLES & CO.</span>
+                <p class="navbar-text">
+                    <span>
+                    We Deliver to Your Doorstep
+                    </span>
+                </p>
+            </div>
+    <!-----   <nav>.  --->
+            <ul class="nav-list">
                 <li class="nav-item">
-                    <a href="#" class="nav-link" id="PRICKLESS & CO.">PRICKLESS & CO.</a>
+                    <a href="#" class="nav-link" id="PRICKLES & CO">PRICKLES & CO.</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">Shop</a>
@@ -62,37 +76,32 @@
                 </label>
               </div>
         </nav>
-    
-    </header>.   ------->
+    </section>
 
-<!---------------Desktop-navbar-------------->
+    <!--------Desktop-navbar------->
 
     <nav class="desktop-navbar">
-        <ul class="desktop-nav-menu">
-            <li class="nav-item">
-                <a href="#" class="nav-link" id="PRICKLESS & CO.">PRICKLESS & CO.</a>
+
+        <ul class="desktop-nav-list">
+
+            <li class="desktop-nav-item">
+                <a href="#" class="desktop-nav-link" id="PRICKLES & CO.">PRICKLES & CO.</a>
             </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Shop</a>
+            <li class="desktop-nav-item">
+                <a href="#" class="desktop-nav-link">Shop</a>
             </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">About</a>
+            <li class="desktop-nav-item">
+                <a href="#" class="desktop-nav-link">About</a>
             </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">FAQ</a>
+            <li class="desktop-nav-item">
+                <a href="#" class="desktop-nav-link">FAQ</a>
             </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Contact</a>
+            <li class="desktop-nav-item">
+                <a href="#" class="desktop-nav-link">Contact</a>
             </li>
         </ul>
+    </nav>
 
-            <div class="nav-text">
-            <p>We Delivar to Your Doorste</p>
-            <p>Call Us Now! 123-456-7890</p>   
-            </div>
-
-        </nav>
-    
 
         <!------masterPage-->
 
@@ -100,7 +109,7 @@
             <div class="logo">
             
         <span class="name">E S T B</span>
-            <svg>
+            <svg class="prickles-logo">
                 <g>
                 <path d="M105.6 52.7c-1.8-1.5-3.5-2.4-5.1-2.4-1.6.1-3.3 1-5.1 2.4-11.2 9.2-16.3 21-17 35.2-.4 7.5-1.3 14.8 10.2 12.6 1.3-.2 3.1-.2 4.3.6 1 .6 1.9 1.4 2.6 2.4 3 4.3 2.2 9.1 1 13.9-1.8 7-2.5 14.2-1.6 21.3.6 4.9-.6 13.1 5.6 12.8 6.3.3 5-7.9 5.6-12.8.9-7.2.2-14.3-1.6-21.3-1.2-4.8-2.1-9.7 1-13.9.7-.9 1.6-1.7 2.6-2.4 1.2-.8 3-.8 4.3-.6 11.5 2.1 10.6-5.2 10.2-12.6-.7-14.2-5.8-26-17-35.2z"></path>
                 <path d="M57.6 128.4c1.5-2.3 3.7-6.5 3.6-11.2-.2-5.8-4-10.6-5.4-12.2-.3-.3-.7-.3-1 0-1.2 1.5-4.4 6.1-4.2 11.8.1 3.7 3 8.4 4.8 10.8-.2 2-.2 4 0 5.5v.2c-4.4-2.4-8.9-5.5-12.9-9.7-.1-.2-.2-.3-.4-.4-1.5-1.6-2.9-3.2-4.1-5.1-.3-.4-.5-.8-.8-1.2-.8-2.6-.5-5.5.9-7.9 2.7-.7 6.4-2.2 9.1-5.2 4-4.3 4.6-10.5 4.7-12.5 0-.4-.3-.6-.7-.6-2 .3-8 1.5-12 5.8-2.6 2.7-3.4 8.2-3.2 11.6-.7 1.3-1.2 2.8-1.4 4.2-2.5-5-4.2-10.6-4.9-16.6.1-3 1.7-5.7 3.9-6.9 2.1-.1 5.5-.6 8.1-2.7 3.2-2.6 4.2-6.9 4.5-8.7.1-.4-.2-.8-.7-.8-1.7 0-6.2.1-9.3 2.7-2.8 2.3-3.9 5.9-4.3 8-1 .7-1.9 1.6-2.5 2.6-.2-5.6.4-11.7 1.6-18.1 1.8-.5 5.6-2.1 8.1-5 3.2-3.6 3.8-8.4 3.8-10.3 0-.4-.4-.7-.8-.7-1.9.4-5.9 1.8-9.4 5.2-2.6 2.6-3.4 6.4-3.6 8.5-2 9.5-2.6 18.2-1.6 26.1v.2c-1.1-1.4-2.3-2.7-3.4-3.8-.1-2.4-.7-6.2-3.1-9.2-3.1-3.9-8.2-5.1-9.9-5.4-.3-.1-.6.2-.7.5-.1 1.7 0 6.6 3 10.4 1.8 2.3 5.7 3.9 8.3 4.6 2.5 1.7 6 6.4 6.9 9.1 1.3 5.7 3.5 10.9 6.6 15.6v.1c.3.5.6 1 .9 1.4l.9 1.2c-1.3-.4-2.7-.8-4.1-.8-.1-.2-.1-.4-.3-.6-1.9-2.3-5.4-5.6-9.1-6.2-5.6-1-10.9 1.6-12.8 2.7-.4.2-.5.8-.2 1.2 1.5 1.7 5.6 5.8 11.2 6.8 3.8.6 7.5-.4 10.1-1.4.1-.1.2-.2.3-.2 3.2-.3 7.5 2 8.4 2.7 5.5 5.9 11.9 9.8 17.6 12.4-.6.4-1.6.8-3.1 1.1-5-3.4-12.7-4-16.4-3.2-7.8 1.8-12.9 7.4-14.5 9.6-.3.4-.2.9.3 1.1 2.4 1.2 10.2 4.6 18 2.8 5.8-1.4 10.3-5.2 12.9-8.1v-.1c1.2-.2 2.3-.5 3.2-.9.9-.4 1.5-.9 1.9-1.3 7.5 3.1 13.4 4 13.9 4l.3-2.2c-.1 0-7.7-1.1-16.5-5.4-.2 0-.8-2.1-.5-5.9z"></path>
@@ -111,11 +120,12 @@
             <span class="date">
                 2035
             </span>
+
             </div>
 
             <div class="title"> 
                 <span>
-                    <h1 class="title">PRICKLESS & CO</h1>
+                    <h1>PRICKLES & CO</h1>
                 </span>              
             </div>
 
@@ -123,16 +133,12 @@
                 <label class="shop-btn">
                     <span>Shop Now</span> 
                 </label>
-                </div>
+                
 
-                <button class="chat-btn">
-                    <i class="fa fa-fa-comment-dots">
-                    Let's Chat!</i>
-                    </button>
-            
-               
-
-             
+            <div class="chat-btn">
+                <button class="chat-btn"><i class='fa fa-comment-dots'></i>Let's Chat</button> 
+            </div> 
+        </div>   
 
 
 
@@ -153,6 +159,7 @@
 </body>
 </div>
 </html>
+
 
 
 
