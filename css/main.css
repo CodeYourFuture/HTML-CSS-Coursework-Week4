@@ -1,3 +1,17 @@
+/* Root */
+:root {
+    --clr-dark: #000;
+    --clr-light: #fff;
+    --clr-100: #f5e8ff;
+    --clr-200: #E6FAC0;
+    --clr-300: #5E7D1F;
+    --clr-400: #394B2A;
+
+    --ff-accent-400: 'Questrial', sans-serif;
+    --ff-button-400: 'Raleway', sans-serif;
+    --ff-body-300: 'Roboto', sans-serif;
+}
+
 /* Utility Grid */
 .grid-r3 {
     /* This will be a grid of 3 rows and 1 column */
