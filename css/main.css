@@ -1,3 +1,132 @@
-/* Add your CSS here */
+:root{
+    --Black: #000;
+    --White: #FFF;
+    --Lylac: #f5e8ff;
+    --Light-Green: #E6FAC0;
+    --Medium-Green: #5E7D1F;
+    --Dark-Green: #394B2A;
+}
 
-/* Dont' forget to link this file to your HTML in the <head> */
+    body{margin:0;
+    font-family:'Roboto',sans-serif;
+    font-size: 20px;}
+
+
+    h1,h2,h3,h4{font-family: 'Questrial', sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;}
+
+    button{font-family: 'Raleway', sans-serif;}
+
+    /**Header**/
+
+   .order{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color:var(--Black);
+    padding: 0.1rem;
+    margin-bottom: 5px;;
+
+   }
+
+   .order a{
+    color: var(--White);
+    text-decoration: none;
+    font-size: 30px;
+    font-family:Questrial,sans-serif;
+
+   }
+    .site-header{display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "j n";}
+
+    .head-bar{display: flex;
+     justify-content: flex-start;
+     color:var(--Black);
+     text-decoration: none;
+     grid-area:j;}
+
+    .hamburger{display: flex;
+     justify-content: flex-end;
+     align-items: flex-end;
+     grid-area: n;
+     margin-right: 16px;}
+
+.line {
+display: block;
+height: 5px;
+width: 50px;
+background: gray;
+border-radius: 4px;
+margin-bottom: 7px;
+transition: all 250ms cubic-bezier(0,-0.64,.76,1.39);
+}
+     
+.third{
+ margin-bottom: 0;
+ }
+      
+.hamburger {
+ cursor: pointer;
+}
+      
+#menu{
+display: none;
+}
+      
+#menu:checked + .hamburger .second {
+transform: scale(0);  
+}
+      
+#menu:checked + .hamburger .first {
+transform: translateY(20px) rotate(45deg);
+}
+      
+#menu:checked + .hamburger .third {
+transform: translateY(-20px) rotate(-45deg);
+}
+
+/**main**/
+.showcase{display: flex;
+    flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-bottom: 20px;}
+
+h1
+{text-align: center;
+size: 55px;
+margin-top: 5rem;
+line-height: 1.3rem;}
+
+.para{text-align: center;
+size: 24px;
+line-height: 1.5rem;}
+
+button{margin: 2rem;
+background-color: transparent;}
+
+button a {display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color:var(--Black);
+    padding: 10px; 
+}
+
+.hero-image{display: block;
+max-width:100%;
+margin-bottom: 0;}
+
+.offer{text-align: center;
+size:16px;
+background-color: var(--Light-Green);}
+
+.offer p{margin-top: 0%;}
+ 
+
+
+
