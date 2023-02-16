@@ -221,6 +221,7 @@ h1,
 h2,
 h3 {
     font-family: var(--ff-accent-400);
+    line-height: 1.2;
 }
 
 button {
