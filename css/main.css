@@ -242,14 +242,18 @@ li a {
 }
 
 /* Button Styling */
+
+.order-button-container {
+    text-align: center;
+}
+
 .order-button-container button {
     margin: 0;
     background-color: var(--clr-dark);
     border: none;
-    padding: 15px 32px;
+    padding: 15px 0;
     text-align: center;
     cursor: pointer;
-    transition: 300ms;
 }
 
 /* Circles */
