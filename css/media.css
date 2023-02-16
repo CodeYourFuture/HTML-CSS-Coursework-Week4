@@ -23,7 +23,7 @@
     body{
             grid-template-areas:
                 "header header"
-                "prod prod"
+                "hero hero"
                 "products products"
                 "about about-img"
                 "buy-img buy-online"
@@ -31,7 +31,7 @@
                 "footer footer";
         }
 
-        .prod{
+        .hero{
             background-attachment: fixed;
             margin-top: 180px;
         }
@@ -45,9 +45,10 @@
             display: none;
         }
 
-        .
-about-img{
+        .about-img{
             flex-direction: row;
             
         }
 }
+
+/* Dont' forget to link this file to your HTML in the <head> */
