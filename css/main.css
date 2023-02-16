@@ -1,3 +1,8 @@
-/* Add your CSS here */
+/* Utility Grid */
+.grid-r3 {
+    /* This will be a grid of 3 rows and 1 column */
+}
 
-/* Dont' forget to link this file to your HTML in the <head> */
+.grid-r4 {
+    /* This will be a grid of 4 rows and 1 column */
+}
