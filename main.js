@@ -6,3 +6,4 @@ window.onscroll = function(ev) {
     circleBlue.classList.add('hide-me')
   }
 };
+
