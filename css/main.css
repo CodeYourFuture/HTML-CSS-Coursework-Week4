@@ -534,6 +534,7 @@ footer .row2 {
     position: absolute;
     top: 26vh;
     margin: 0rem 1rem 0rem 7rem;
+    max-width: 960px;
   }
   .overlay .description,
   .overlay .introduction {
