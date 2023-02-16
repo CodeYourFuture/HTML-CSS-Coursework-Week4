@@ -37,7 +37,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items:center;
-    padding-top: 150px;
+    padding: 110px 20px 20px 20px;
+    
 }
 .main-photo {
     background-color: var(--Light-beige);
@@ -61,31 +62,7 @@ body {
     z-index:0;
 }
 
-/* PHOTO */
-
-.photo-maya {
-    width: 130px;
-    border-radius: 50%;
-    margin-top: 30px;
-}
-
-
-/* BUTTONS */
-
-/* .button {
-    display:flex;
-    justify-content: space-between;
-} */
-
-.name-under-photo {
-    font-family: 'Poppins', sans-serif;
-    border-bottom: 2px solid var(--Royal-blue);
-    padding-bottom: 10px;
-    padding-top:0;
-    margin-top:0;
- 
-}
-
+/* HEADER */
 .square {
     width: 17px;
     height: 17px;
@@ -99,6 +76,24 @@ a {
     font-family: 'Poppins', sans-serif;
     padding-left: 7px;
 }
+
+/* PHOTO CONTAINER*/
+
+.photo-maya {
+    width: 130px;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+
+
+.name-under-photo {
+    font-family: 'Poppins', sans-serif;
+    border-bottom: 2px solid var(--Royal-blue);
+    padding-bottom: 10px;
+    padding-top:0;
+    margin-top:0;
+ 
+}
 .name {
     display: flex;
     justify-content: space-between;
@@ -108,11 +103,7 @@ a {
 .job-title {
     margin-top:0;
 }
-/* .name-and-title {
-    display:flex;
-    flex-direction: column;
-    
-} */
+
 .resume-button {
     margin-right: 15px;
     background-color: var(--Royal-blue);
@@ -141,9 +132,21 @@ a {
     padding: 7px;
 }
 
+/* ABOUT */
+
 h1 {
     font-family: 'Poppins', sans-serif;
+    font-size: 40px
 }
 h3 {
     font-family: 'Quicksand', sans-serif;
+    padding-bottom: 10px;
 }
+
+/* FOOTER CONTACT */
+
+
+/* FOOTER SOCIAL MEDIA*/
+
+
+/* FOOTER */
