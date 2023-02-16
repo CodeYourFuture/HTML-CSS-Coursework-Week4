@@ -21,6 +21,14 @@
 
     --fw-light: 300;
     --fw-regular: 400;
+
+    --size-200: 0.5rem;
+    --size-300: 0.75rem;
+    --size-400: 1rem;
+    --size-500: 2rem;
+    --size-600: 3rem;
+    --size-700: 4rem;
+    --size-800: 5rem;
 }
 
 /* Andy Bell Reset */
@@ -31,9 +39,12 @@
   box-sizing: border-box;
 }
 
-/* Remove default margin */
+/* Remove default margin and padding */
+/* Reset font styling too */
 * {
   margin: 0;
+  padding: 0;
+  font: inherit;
 }
 
 /* Set core root defaults */
@@ -41,6 +52,7 @@ html:focus-within {
     scroll-behavior: smooth;
   }
 
+/* For when you need to use the body's height sometimes */
 html,
 body {
 height: 100%;
@@ -162,9 +174,39 @@ ol[role='list'] {
     margin-inline: auto;
 }
 
+/* Spacing */
+.padding-500 {
+    padding-block: var(--size-500);
+}
+
+.padding-400 {
+    padding-block: var(--size-400);
+}
+
+.padding-300 {
+    padding-block: var(--size-400);
+}
+
+.even-columns {
+    display: grid;
+    gap: 1rem;
+}
+
+/* em in media query looks at default browser setting */
+@media (min-width: 50em) {
+    .even-columns {
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+    }
+}
+
 /* Font Colours */
 .text-clr-light {
     color: var(--clr-light);
+}
+
+.text-clr-dark {
+    color: var(--clr-dark);
 }
 
 /* ------------------------------- */
@@ -172,6 +214,29 @@ ol[role='list'] {
 body {
     font-size: var(--fs-500);
     font-family: var(--ff-body-300);
+    color: var(--clr-dark);
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--ff-accent-400);
+}
+
+button {
+    font-family: var(--ff-button-400);
+}
+
+li a {
+    text-decoration: none;
+}
+
+.logo-text {
+    text-decoration: none;
+    color: var(--clr-dark);
+}
+
+.main-nav li a {
     color: var(--clr-dark);
 }
 
