@@ -1,3 +1,5 @@
+/* Media Query */
+
 @media screen and (min-width:540px) {
 
 
@@ -23,7 +25,7 @@
     body{
             grid-template-areas:
                 "header header"
-                "hero hero"
+                "prod prod"
                 "products products"
                 "about about-img"
                 "buy-img buy-online"
@@ -31,7 +33,7 @@
                 "footer footer";
         }
 
-        .hero{
+        .prod{
             background-attachment: fixed;
             margin-top: 180px;
         }
@@ -45,7 +47,8 @@
             display: none;
         }
 
-        .about-img{
+        .
+about-img{
             flex-direction: row;
             
         }

@@ -41,7 +41,7 @@ body {
     grid-template-rows: repeat(10, auto);
     grid-template-areas: 
     "header       header"
-    "hero         hero"
+    "prod         prod"
     "products     products"
     "about        about"
     "about-img    about-img"
@@ -158,8 +158,8 @@ nav {
     padding: 5px 10px;
 }
 
-.hero{
-    grid-area: hero;
+.prod{
+    grid-area: prod;
     background-image: url("../img/hero.jpg");
     background-size: cover;
     padding: 10%;
@@ -168,11 +168,11 @@ nav {
     color: var(--white);
 }
 
-.hero span{
+.prod span{
     text-decoration-line: underline;
 }
 
-.hero img{
+prod img{
     filter: invert(100%);
 }
 
@@ -187,7 +187,7 @@ nav {
 }
 
 .products button,
-.hero button{
+.prod button{
     background-color: var(--redBrown);
     border: none;
     padding: 15px 30px;
@@ -325,3 +325,64 @@ form button{
 .footer{
     grid-area: footer;
 }
+
+
+/* Media Query */
+
+@media screen and (min-width:540px) {
+
+
+    header{
+        position: fixed;
+        top:0;
+    }
+
+    .open-menu,
+    .close-menu {
+        display: none;
+    }
+
+    .nav-list {
+        margin: 0 2rem;
+    }
+
+    .nav-link,
+    .footer-wrapper {
+        padding: 1rem;
+    }
+
+    body{
+            grid-template-areas:
+                "header header"
+                "prod prod"
+                "products products"
+                "about about-img"
+                "buy-img buy-online"
+                "request-form request-form"
+                "footer footer";
+        }
+
+        .prod{
+            background-attachment: fixed;
+            margin-top: 180px;
+        }
+
+        .products{
+            flex-direction: row;
+            
+        }
+
+        .leaf{
+            display: none;
+        }
+
+        .about-img{
+            flex-direction: row;
+            
+        }
+}
+
+/* Dont' forget to link this file to your HTML in the <head> */
+
+
+
