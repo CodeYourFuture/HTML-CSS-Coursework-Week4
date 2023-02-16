@@ -15,6 +15,8 @@
     --fs-400: 0.906rem;
     --fs-500: 0.938rem;
     --fs-600: 1rem;
+    --fs-700: 1.375rem;
+    --fs-750: 1.5rem;
     --fs-800: 2rem;
 
     --fw-light: 300;
@@ -107,8 +109,18 @@ ol[role='list'] {
     font-family: var(--ff-accent-400);
 }
 
+/* Font Sizes */
+
 .fs-h1-h2 {
     font-size: var(--fs-800);
+}
+
+.fs-medium {
+    font-size: var(--fs-700);
+}
+
+.fs-menu {
+    font-size: var(--fs-750);
 }
 
 .fs-h3 {
@@ -127,7 +139,8 @@ ol[role='list'] {
     font-size: var(--fs-300);
 }
 
-.text-light {
+/* Font Colours */
+.text-clr-light {
     color: var(--clr-light);
 }
 
@@ -138,10 +151,11 @@ ol[role='list'] {
     border: none;
     padding: 15px 32px;
     text-align: center;
-    font-size: 16px;
     cursor: pointer;
     transition: 300ms;
 }
+
+
 
 /* Grid Utility */
 /* .grid-r3 {
