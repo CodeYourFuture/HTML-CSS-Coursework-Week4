@@ -12,6 +12,7 @@
 body {
     margin: 0 auto;
     font-family: var(--body-font);
+    overflow-y: auto;
 }
 
 h1, h2 {
