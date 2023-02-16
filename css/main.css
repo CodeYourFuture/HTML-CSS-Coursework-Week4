@@ -277,6 +277,15 @@ li a {
     width: 45%;
 }
 
+/* Header */
+/* Mobile Menu */
+
+.header {
+    background-color: var(--clr-light);
+}
+
+
+
 /* Circles */
 .green-circle {
     width: 70px;
