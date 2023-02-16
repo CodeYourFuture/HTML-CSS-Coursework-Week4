@@ -1,86 +1,53 @@
-/* add media */
+@media screen and (min-width:540px) {
 
 
-@media screen and (min-width: 540px) {
-    .grid {
-        grid-template-rows:  15rem 4rem 20rem 13rem 10rem 3rem;
-        grid-gap: 1rem;
-        grid-template-areas:
-        "header   header"
-        "nav      nav"
-        "image    welcome"
-        "cake     cake"
-        "media    media"
-        "footer   footer"
-  
+    header{
+        position: fixed;
+        top:0;
     }
-    .images-cakes {
-        grid-template-columns: repeat(4,1fr);
-        grid-template-rows: 20rem;
-        grid-template-areas:
-        "cake1 cake2 cake3 cake4";
+
+    .open-menu,
+    .close-menu {
+        display: none;
     }
-    .social-media {
-        display: flex;
-        justify-content: center;
-        
-        align-items:center;
+
+    .nav-list {
+        margin: 0 2rem;
     }
-    .insta {
-        padding: 0 5rem;
+
+    .nav-link,
+    .footer-wrapper {
+        padding: 1rem;
     }
-    .hamburger {
-        display:none;
-    }
-    .title {
-        font-size:x-large;
-        max-width: 30rem;
-    }
-    .navigation {
-        display:block;
-        grid-area: nav;
-        background-color: #333;
-        
-    }
-    .navigation__list {
-        display: flex;
-        list-style: none;
-        justify-content: flex-end;
-       
-    }    
-        
-    .navigation__item {
-        padding: 0.5rem 0.5rem;
-        color: white;
-       
-      }
-      .navigation__item:hover {
-        color: #FAF9F6;
-       
-      }
-      .navigation__link {
-        color: var(--grey-dark);
-        font-weight: 600;
-        text-transform: uppercase;
-        text-decoration: none;
-        padding: 0 1rem;
-      }
-      h1 {
-        margin: 0 auto;
-      }  
-  }
-  
-  @media screen and (min-width: 900px) {
-    .grid {
-        grid-template-columns: 1fr 4fr 4fr 1fr;
-        grid-template-rows:  15rem 4rem 22rem 15rem 10rem 3rem;
-        grid-gap: 1rem;
-        grid-template-areas:
-        "header  header   header  header"
-        ".       nav      nav      ."
-        ".       image    welcome   ."
-        ".        cake     cake     ."
-        "media    media    media    media"
-        "footer   footer   footer   footer";
-    }
-  }
+
+    body{
+            grid-template-areas:
+                "header header"
+                "prod prod"
+                "products products"
+                "about about-img"
+                "buy-img buy-online"
+                "request-form request-form"
+                "footer footer";
+        }
+
+        .prod{
+            background-attachment: fixed;
+            margin-top: 180px;
+        }
+
+        .products{
+            flex-direction: row;
+            
+        }
+
+        .leaf{
+            display: none;
+        }
+
+        .
+about-img{
+            flex-direction: row;
+            
+        }
+}
