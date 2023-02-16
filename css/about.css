@@ -31,6 +31,7 @@ body{
     grid-template-columns: repeat(8, 1fr);
     gap: 10px;
 }
+/* start header  */
 .head{
     background-color:var(--white);
     width: 100%;
@@ -48,6 +49,7 @@ body{
     font-family: var(--body-font);
     padding: 0;
 }
+
 /* header blue box1 */
 .head > h1::before {
     content: "";
@@ -55,12 +57,12 @@ body{
     width: 15px;
     height: 15px;
     background-color: var(--blue-royal);
-    
 }
-div{
-    position: relative;
-}
+/* end header  */
 
+/* start main  */
+
+/* box1 style  */
 .box1{
     grid-column: 1/9;
     width: 375px;
@@ -68,8 +70,10 @@ div{
     background-color: var(--white);
     align-items: center;
     justify-content: center;
-    color: aliceblue;
 }
+
+/* box2 style  */
+
 .box2{
     grid-column: 1/9;
     display: block;
@@ -79,33 +83,70 @@ div{
     color: aliceblue;
     
 }
+
+/* box3 style  */
+
 .box3{
-    display: grid;
-    grid-column: 2/7;
-    width: 290px;
-    height: 400px;
+    /* display: grid;
+    grid-column: 2/8; */
+    width: 320px;
+    height: 450px;
     background-color:var(--beige-light);
-    align-items: center;
-    justify-content: center;
     color: aliceblue;
-    z-index: 3;
+    /* z-index: 3; */
     margin-top: -870px;
     padding: 70px;
+    margin-left: 30px;
 }
 .box3 > section > img {
     border-radius: 50%;
     height: 150px;
     width: 150px;
-    align-content: start;
+    display: block;
+    margin-block-start: -50px;
+    margin-left: 20px;
 }
+
 .box3 > section > h2{
     color: var(--black);
     font-family: var(--heading-font);
     text-align: center;
-    padding-bottom: 30px;
-    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-top: 30px;
+    font-size: 1.9rem;
 }
-
-.btn .bttn{
+.box3 .btn{
+    border-radius: 30px;
+    padding: 15px;
+    background-color: var(--blue-royal);
+    color: var(--white);
+    font-family: var(--heading-font);
+    text-transform: uppercase;
+}
+.box3 .bttn{
+    border-radius: 30px;
+    border-color: var(--black);
+    background-color: var(--beige-light);
+    color: var(--black);
+    font-family: var(--heading-font);
+    text-transform: uppercase;
+    padding: 13px;
+}
+.but{
+    display: block;
+    width: 160;
+    height: 33;
     
 }
+
+
+/* .box3 .social-icon{
+    display: inline-block;
+    width: 290px;
+    height: 50px;
+    background-color: var(--white);
+    bottom: 0;
+} */
+
+
+/* end main  */
