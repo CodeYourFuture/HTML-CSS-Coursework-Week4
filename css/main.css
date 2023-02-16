@@ -51,8 +51,7 @@ body{
 
 .main{
     grid-area: main;
-    padding-left: 70px;
-    padding-right: 70px;
+    
     padding-bottom: 0px; 
     background-color: #E6DACD;
     line-height: 30px;
@@ -60,6 +59,12 @@ body{
 }
 .main-space{
     margin-top: 250px;
+    padding-left: 70px;
+    padding-right: 70px; 
+}
+.main-space2{
+    padding-left: 70px;
+    padding-right: 70px;
 }
 #main-padding-top{
     padding-top: 300px;
@@ -86,18 +91,27 @@ body{
 #blue-squre{
     width: 16px;
     height: 16px;
-    background-color: #0150FD;    
+    background-color: #0150FD; 
+    margin-bottom: 6px;   
 }
 .maya-squre{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: end;
+}
+.maya-squre h2{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+#project-manager-bottom{
+    margin-bottom: 10px;
 }
 .header-squre{
     display: flex;
     flex-direction: column;
     justify-content: start;
 }
+
 .profile-div-1{
     display: flex;
     flex-direction: column;
@@ -250,7 +264,9 @@ width: 280px;
 }
 
 .space-line{
-    line-height: 30px;
+    line-height: 1.5em;
+    font-size: 17px;
+    font-weight: 30px;
 }
 .job-position{
     background-color: white;
@@ -279,3 +295,78 @@ width: 280px;
     width: 280px;
     margin-top: 30px;
     }
+    .skillset{
+    background-color: white;
+    padding: 40px 10px 40px 10px;
+    width: 280px;
+    margin-top: 30px;
+    }
+    .skillset-last{
+        background-color: white;
+        padding: 40px 10px 40px 10px;
+        width: 280px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        }
+
+    .skillset p{
+        font-size: 17px;
+        font-weight: 30px;
+    }
+    .skillset-box{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+    .skillset-margin-left{
+        margin-left: 10px;
+    }
+#digital-analitics-margin{
+    margin-bottom: 60px;
+}
+/** projects styling  */
+
+.main-project{
+    padding-bottom: 0px;
+    padding-left: 20px;
+    padding-right: 20px; 
+    background-color: #E6DACD;
+    line-height: 30px;
+    overflow: scroll;   
+}
+.projects-margin{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.project-name{
+    display: flex;
+    flex-direction: column;
+background-color: white;
+}
+.project-name-title{
+display: absolute;
+top: 10px;
+right: 0px;
+}
+.blue-projects{
+    display: absolute;
+    top: 0px;
+    right: 0px;
+    width: 10px;
+    height: 80px;
+    background-color: #0150FD;
+}
+.project-name-title h2{
+color: #0150FD;
+font-size: 20px;
+margin-bottom: 0px;
+}
+.project-name-title p{
+    font-size: 15px; 
+    margin-top: 0px; 
+}
+.project-name-padding{
+    padding: 20px
+}
