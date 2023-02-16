@@ -74,8 +74,12 @@ ol[role='list'] {
 }
 
 
-/* General Styling */
+/* Utility Classes */
 /* Background Colours */
+.bg-light {
+    background-color: var(--clr-light);
+}
+
 .bg-dark {
     background-color: var(--clr-dark);
 }
@@ -139,9 +143,36 @@ ol[role='list'] {
     font-size: var(--fs-300);
 }
 
+/* Font Weights */
+.fw-light {
+    font-weight: var(--fw-light);
+}
+
+.fw-regular {
+    font-weight: var(--fw-regular);
+}
+
+/* Container to work at small screen sizes*/
+.container {
+    --max-width: 1110px;
+    --padding: 1rem;
+
+    /* min will choose the smaller value */
+    width: min(var(--max-width), 100% - var(--padding)*2);
+    margin-inline: auto;
+}
+
 /* Font Colours */
 .text-clr-light {
     color: var(--clr-light);
+}
+
+/* ------------------------------- */
+/* General Styling */
+body {
+    font-size: var(--fs-500);
+    font-family: var(--ff-body-300);
+    color: var(--clr-dark);
 }
 
 /* Button Styling */
