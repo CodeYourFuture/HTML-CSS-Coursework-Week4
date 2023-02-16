@@ -38,12 +38,11 @@ body {
 article {
     display: flex;
     justify-content: center;
-    background: var(--color-dark-beige);
 }
 
 .article__container {
     background: var(--white);
-    width: clamp(320px, 75%, 763px);
+    width: var(--width-block);
     padding: 3rem 0 0 2rem;
     margin-bottom: 4rem;
     box-shadow: -15px 15px 15px grey;
