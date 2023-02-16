@@ -10,6 +10,15 @@
     --ff-accent-400: 'Questrial', sans-serif;
     --ff-button-400: 'Raleway', sans-serif;
     --ff-body-300: 'Roboto', sans-serif;
+
+    --fs-300: 0.875rem;
+    --fs-400: 0.906rem;
+    --fs-500: 0.938rem;
+    --fs-600: 1rem;
+    --fs-800: 2rem;
+
+    --fw-light: 300;
+    --fw-regular: 400;
 }
 
 /* Andy Bell Reset */
@@ -28,6 +37,17 @@
 /* Set core root defaults */
 html:focus-within {
     scroll-behavior: smooth;
+  }
+
+html,
+body {
+height: 100%;
+}
+
+/* Set core body defaults */
+body {
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
   }
 
 /* Make images easier to work with */
@@ -52,13 +72,82 @@ ol[role='list'] {
 }
 
 
-/* Styling Begins */
-/* Utility Grid */
-.grid-r3 {
-    /* This will be a grid of 3 rows and 1 column */
+/* General Styling */
+/* Background Colours */
+.bg-dark {
+    background-color: var(--clr-dark);
+}
+
+.bg-100 {
+    background-color: var(--clr-100);
+}
+
+.bg-200 {
+    background-color: var(--clr-200);
+}
+
+.bg-300 {
+    background-color: var(--clr-300);
+}
+
+.bg-400 {
+    background-color: var(--clr-400);
+}
+
+/* Fonts */
+.ff-body {
+    font-family: var(--ff-body-300);
+}
+
+.ff-button {
+    font-family: var(--ff-button-400);
+}
+
+.ff-accent {
+    font-family: var(--ff-accent-400);
+}
+
+.fs-h1-h2 {
+    font-size: var(--fs-800);
+}
+
+.fs-h3 {
+    font-size: var(--fs-600);
+}
+
+.fs-body {
+    font-size: var(--fs-500);
+}
+
+.fs-button {
+    font-size: var(--fs-400);
+}
+
+.fs-small {
+    font-size: var(--fs-300);
+}
+
+.text-light {
+    color: var(--clr-light);
+}
+
+/* Button Styling */
+.order-button-container button {
+    margin: 0;
+    background-color: var(--clr-dark);
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+/* Grid Utility */
+/* .grid-r3 {
+    This will be a grid of 3 rows and 1 column
 }
 
 .grid-r4 {
-    /* This will be a grid of 4 rows and 1 column */
-}
-
+    This will be a grid of 4 rows and 1 column
+} */
