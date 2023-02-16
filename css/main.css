@@ -251,9 +251,30 @@ li a {
     margin: 0;
     background-color: var(--clr-dark);
     border: none;
-    padding: 15px 0;
+    padding: 1em 0;
     text-align: center;
     cursor: pointer;
+}
+
+.button {
+    margin: 0;
+    background-color: transparent;
+    border: 2px solid var(--clr-dark);
+    padding: 0.8em 0;
+    text-align: center;
+    cursor: pointer;
+    width: 45%;
+    box-shadow: 0 1px 5px rgb(0 0 0 / 0.2);
+}
+
+.white-button {
+    margin: 0;
+    background-color: transparent;
+    border: 2px solid var(--clr-light);
+    padding: 0.8em 0;
+    text-align: center;
+    cursor: pointer;
+    width: 45%;
 }
 
 /* Circles */
