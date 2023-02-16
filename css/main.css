@@ -74,6 +74,27 @@ nav {
     padding-right: 1rem;
 }
 
+/* Universal section */
+
+.section__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+    margin-bottom: 3rem;
+    padding-top: 3rem;
+}
+
+.section__block {
+    display: flex;
+    justify-content: center;
+    width: var(--width-block);
+    background: var(--white);
+    box-shadow: -15px 15px 15px grey;
+}
+
+/* Universal section end */
+
 /* Hamburger */
 
 menu {

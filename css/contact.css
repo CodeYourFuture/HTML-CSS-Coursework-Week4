@@ -1,22 +1,9 @@
-section {
+body {
     background: var(--color-dark-beige);
 }
 
-.section__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 2rem;
-}
-
 .section__block {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 4rem;
-    width: var(--width-block);
-    background: var(--white);
     padding-top: 4rem;
-    box-shadow: -15px 15px 15px grey;
 }
 
 form {

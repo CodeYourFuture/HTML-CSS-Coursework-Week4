@@ -1,23 +1,10 @@
-section {
+body {
     background: var(--color-dark-beige);
-}
-
-.section__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 2rem;
-}
-
-.block--margin {
-    margin-bottom: 5rem;
 }
 
 .section__block {
     display: grid;
     grid-template-columns: 58% 42%;
-    width: var(--width-block);
-    background: var(--white);
 }
 
 .section__block img {
