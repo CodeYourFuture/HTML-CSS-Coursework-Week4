@@ -12,6 +12,47 @@
     --ff-body-300: 'Roboto', sans-serif;
 }
 
+/* Andy Bell Reset */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+  }
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+
+/* Styling Begins */
 /* Utility Grid */
 .grid-r3 {
     /* This will be a grid of 3 rows and 1 column */
@@ -20,3 +61,4 @@
 .grid-r4 {
     /* This will be a grid of 4 rows and 1 column */
 }
+
