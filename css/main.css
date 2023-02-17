@@ -296,7 +296,7 @@ i {
     gap: 2em;
     width: 740px;
     height: 647px;
-    margin: 5em auto 5.3em auto;
+    margin: 15em auto 5.3em auto;
   }
   .content-2 .part-2 button {
     display: inline;
@@ -357,6 +357,7 @@ i {
   }
 
   header {
+    position: fixed;
     top: 0;
     margin-bottom: 0;
     height: 15vh;
