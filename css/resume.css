@@ -1,0 +1,330 @@
+/* Add your CSS here */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Quicksand:wght@300&display=swap");
+
+:root {
+  --DarkBeige: #e6dacd;
+  --LightBeige: #f4ece6;
+  --RoyalBlue: #0150fd;
+  --Black: #000;
+  --White: #fff;
+}
+/* grid on the body*/
+
+body {
+  position: relative;
+  font-family: "Quicksand", sans-serif;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+header {
+  grid-area: header;
+}
+main {
+  grid-area: main;
+}
+footer {
+  grid-area: footer;
+}
+h1,
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
+}
+
+/*style header element*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 15vh;
+  background-color: var(--White);
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+header .logo {
+  margin-left: 1em;
+}
+header .logo p {
+  display: block;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  margin-top: -0.75em;
+}
+header .logo h1 span.before {
+  display: inline-block;
+  width: 0.7em;
+  height: 0.7em;
+  background-color: var(--RoyalBlue);
+  margin-right: 0.5em;
+}
+
+header .menu .menu-bar {
+  width: 40px;
+  height: 30px;
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  cursor: pointer;
+}
+
+.one {
+  width: 50%;
+  height: 5px;
+  background: var(--RoyalBlue);
+  margin: auto;
+  margin-left: 0;
+  backface-visibility: hidden;
+  transition-duration: 0.3s;
+}
+
+.two {
+  width: 100%;
+  height: 5px;
+  background: var(--RoyalBlue);
+  margin: 6px auto;
+  backface-visibility: hidden;
+  transition-duration: 0.3s;
+}
+
+.three {
+  width: 50%;
+  height: 5px;
+  background: var(--RoyalBlue);
+  margin: 6px auto;
+  margin-right: 0;
+  backface-visibility: hidden;
+  transition-duration: 0.3s;
+}
+.hidden {
+  display: none;
+}
+.one-1 {
+  transform: rotate(45deg) translate(7px, 7px);
+  width: 100%;
+}
+
+.two-2 {
+  opacity: 0;
+}
+
+.three-3 {
+  transform: rotate(-45deg) translate(8px, -10px);
+  width: 100%;
+}
+
+.on {
+  position: absolute;
+  top: 0;
+  background: var(--LightBeige);
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin: 10em auto;
+  text-align: center;
+}
+
+nav ul li a {
+  transition-duration: 0.5s;
+  text-decoration: none;
+  color: var(--Black);
+  font-size: 1.5em;
+  line-height: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 100%;
+  display: block;
+  margin-top: 1em;
+}
+nav ul li a:hover {
+  color: var(--RoyalBlue);
+}
+
+/* style button*/
+button {
+  font-size: 1em;
+  text-transform: uppercase;
+  padding: 0.8em 2em;
+  border-radius: 999em 999em 999em 999em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/*style the main element*/
+
+/*style footer element*/
+
+footer {
+  display: flex;
+  flex-direction: column-reverse;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+footer > p {
+  width: 80%;
+}
+
+footer .contact {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  justify-content: space-between;
+}
+footer div {
+  margin-top: 0.5em;
+}
+.contact div > p {
+  margin-top: 0;
+}
+/*Added font awsome*/
+i {
+  margin: 0.5em;
+  color: var(--Black);
+}
+.contact a {
+  text-decoration: none;
+}
+.contact a .fa-facebook-f {
+  margin-left: 0;
+}
+
+@media (min-width: 400px) {
+  footer {
+    align-items: center;
+  }
+  footer .contact {
+    column-gap: 8em;
+  }
+  footer > p {
+    width: 100%;
+  }
+}
+
+@media (min-width: 730px) {
+  footer {
+    flex-direction: row;
+    padding: 0;
+    justify-content: space-between;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+  footer .contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 1.5em;
+  }
+  footer > p {
+    width: 30%;
+  }
+  footer .content > div {
+    padding: 0;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    margin-bottom: 0;
+    height: 15vh;
+    z-index: 1;
+  }
+  header .menu .menu-bar {
+    display: none;
+  }
+  .hidden {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+    margin-right: 3em;
+    cursor: pointer;
+  }
+  nav ul li a {
+    font-size: 1em;
+    display: inline;
+    cursor: pointer;
+  }
+  nav ul li a:hover {
+    color: var(--RoyalBlue);
+  }
+}
+
+@media (min-width: 1000px) {
+  footer {
+    flex-direction: row;
+    padding: 0;
+    justify-content: space-between;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+  footer .contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 1.5em;
+  }
+  footer > p {
+    width: 30%;
+  }
+  footer .content > div {
+    padding: 0;
+  }
+
+  header .logo h1 span.after::after {
+    content: "/";
+    font-size: 0.75em;
+    display: inline-block;
+    font-family: "Quicksand", sans-serif;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    color: var(--Black);
+  }
+  header .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  header .logo p {
+    margin-top: 1em;
+  }
+  header {
+    position: fixed;
+    top: 0;
+    margin-bottom: 0;
+    height: 15vh;
+    z-index: 1;
+  }
+  header .menu .menu-bar {
+    display: none;
+  }
+  .hidden {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+    margin-right: 3em;
+    cursor: pointer;
+  }
+  nav ul li a {
+    font-size: 1em;
+    display: inline;
+    cursor: pointer;
+  }
+  nav ul li a:hover {
+    color: var(--RoyalBlue);
+  }
+}
+/* Dont' forget to link this file to your HTML in the <head> */
