@@ -15,13 +15,13 @@
 <body>
 
     <!-- Add your markup here -->
-<header class="header-index">
+<header>
     <div>
         <div class="header-container">
             <div class="blue-icon"></div>
-            <h1><a href="index.html">Maya Nelson</a></h1>
+            <h1>Maya Nelson</h1>
         </div>    
-        <p class="job-title text-uppercase"><a href="index.html">Project Manager</a></p>
+        <p class="job-title text-uppercase">Project Manager</p>
     </div>
     <input type="checkbox" id="header-checkbox">
     <label for="header-checkbox">
@@ -34,7 +34,7 @@
     <div  class="navi-container text-uppercase" >
         <ul>        
             <li>
-                <a class="blue" href="index.html"><h2>About Me</h2></a>
+                <a href="index.html"><h2>About Me</h2></a>
             </li>
             <li>
                 <a href="resume.html"><h2>Resume</h2></a>
@@ -43,59 +43,35 @@
                 <a href="projects.html"><h2>Projects</h2></a>
             </li>
             <li>
-                <a href="contact.html"><h2>Contact</h2></a>
+                <a class="blue" href="contact.html"><h2>Contact</h2></a>
             </li>
         </ul>
     </div>
-    
 </header>
 
 <main>
-    <div class="hero-container">        
-        <img class="display-image" src="img/DP.webp" alt="self portrait of user">
-        <div class="display-name text-center">
-            <h2>
-                <span class="display-fname">Maya</span>
-                <span class="display-lname">Nelson</span>
-            </h2>
-            
-            <hr class="underline"/>
-        </div>        
-        <div class="btn-container">
-            <div>
-                <a href="resume.html"><button class="btn-resume btn-blue" href="resume.html">Resume</button></a>                
-            </div>
-            <div>
-                <a href="projects.html"><button class="btn-project btn-clear" >Projects</button></a>
-            </div>                
+    <div class="standard-article">
+        <div class="heading">
+            <div class="blue-icon"></div>
+            <h1>Let's talk</h1>
         </div>
-        <div class="social-media-ribbon">
-            <div class="social-media-icons-block">
-                <a href="https://www.facebook.com/wix">
-                    <img class="media-icon" src="img/fb-icon.webp" alt="facebook icon">
-                </a>
-                <a href="https://www.twitter.com/wix">
-                    <img class="media-icon" src="img/twitter-icon.webp" alt="twitter icon">
-                </a>
-                <a href="https://www.linkedin.com/company/wix-com">
-                    <img class="media-icon" src="img/linkdin-icon.webp" alt="linkdin icon">
-                </a>
-                <a href="https://www.instagram.com/wix">
-                    <img class="media-icon" src="img/instagram-icon.webp" alt="instagram icon">
-                </a>               
-            </div>            
-        </div>       
+         <div class="article-insert">
+            <form class="contact-form">
+                <label for="fname"><h3>First Name <span>*</span></h3></label>
+                <input type="text" name="fname" id="fname" placeholder=" " required>
+                <label for="lname"><h3>Last Name <span>*</span></h3></label>
+                <input type="text" name="lname" id="lname" required>
+                <label for="email"><h3>Email <span>*</span></h3></label>
+                <input type="email" name="email" id="email" required>
+                <label for="subject"><h3>Subject</h3></label>
+                <input type="text" name="subject" id="subject">
+                <label for="message"><h3>Message</h3></label>
+                <textarea name="message" id="message"></textarea>
+                <input class="btn-blue text-uppercase" type="button" value="Send">
+            </form>          
+        </div>
+    
     </div>
-    <article class="index-article">
-        <h2>Hello</h2>
-        <p class="bold">Here's who I am & what I do</p>
-        <p>
-            I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.
-        </p>
-        <p>
-            I'm a great place for you to tell a story and let your users know a little more about you.
-        </p>
-    </article>    
 </main>
 
 <footer>

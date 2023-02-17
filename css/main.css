@@ -241,7 +241,7 @@ z-index: 998;
     
 }
 
-button {
+button, input[type="button"] {
     padding: 0.3rem 1.2rem;
     border-style: none;
     border-radius: 5rem;
@@ -252,7 +252,7 @@ button {
 .btn-blue {
     background-color: var(--Royal-blue);
     color: var(--White);
-    padding: 0.4rem 1.3rem;
+    padding: 0.6rem 1.3rem;
 }
 
 .btn-clear {
@@ -336,12 +336,12 @@ justify-content: space-between;
     align-items: center;
 }
 
-.article-insert > ul {
+.article-text > ul {
     padding-left: 0;
 
 }
 
-.article-insert > ul > li {
+.article-text > ul > li {
     list-style: none;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
@@ -391,4 +391,48 @@ justify-content: space-between;
     width: 100%;
     padding: 0;
     margin: 0;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 3rem 0.5rem;
+}
+
+
+.contact-form > label > h3 {
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.contact-form > label > h3 > span {
+    color: var(--Royal-blue);
+}
+
+.contact-form > input[type="text"], input[type="email"], textarea {
+    border: none;
+    color: var(--Royal-blue);
+    border-bottom: 2px solid var(--Black);
+    padding-bottom: 20px;
+    text-indent: 20px;
+}
+
+.contact-form > input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    outline: none;
+    border-bottom: 3px solid var(--Royal-blue);
+}
+
+.contact-form > input[type="text"]:hover, input[type="email"]:hover, textarea:hover {
+    outline: none;
+    border-bottom: 3px solid var(--Royal-blue);
+}
+
+/* .contact-form > input[type="text"]:not(:placeholder-shown) {
+    outline: none;
+    border-bottom: 3px solid red;
+} */
+
+.contact-form > input[type="button"] {
+    align-self: center;
 }
