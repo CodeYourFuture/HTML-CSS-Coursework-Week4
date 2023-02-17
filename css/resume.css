@@ -23,6 +23,7 @@ body {
     "header"
     "main"
     "footer";
+  background-color: var(--DarkBeige);
 }
 header {
   grid-area: header;
@@ -32,6 +33,7 @@ main {
 }
 footer {
   grid-area: footer;
+  background-color: var(--White);
 }
 h1,
 h2,
@@ -157,14 +159,72 @@ nav ul li a:hover {
 button {
   font-size: 1em;
   text-transform: uppercase;
-  padding: 0.8em 2em;
   border-radius: 999em 999em 999em 999em;
   font-weight: bold;
   cursor: pointer;
+  background-color: var(--RoyalBlue);
+  color: var(--White);
+  border: none;
 }
 
+.download {
+  padding: 0 1.5em;
+}
 /*style the main element*/
+main h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+main h1 span.blue {
+  display: inline-block;
+  background-color: var(--RoyalBlue);
+  height: 20px;
+  width: 20px;
+  margin-right: 0.5em;
+}
+main h2 {
+  margin: 2em 1em;
+}
+main .exp-title h2,
+.skills h2 {
+  margin-left: 0;
+}
+main .exp-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 1em;
+}
 
+main section {
+  background-color: var(--White);
+  padding: 1.5em 1em 1.5em 1.5em;
+  margin: 1em 1em;
+}
+
+main section h3 {
+  color: var(--RoyalBlue);
+  margin-bottom: 0;
+}
+main section .p-1 {
+  font-size: 1.5em;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+main section .p-3 {
+  margin-top: -0.5em;
+  margin-bottom: 1.5em;
+}
+main section.skills {
+  margin: 3em 1em;
+}
+main section.skills span {
+  display: inline-block;
+  background-color: var(--RoyalBlue);
+  width: 11px;
+  height: 11px;
+  margin-right: 0.5em;
+}
 /*style footer element*/
 
 footer {
