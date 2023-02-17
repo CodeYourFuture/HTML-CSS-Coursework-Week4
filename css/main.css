@@ -1,47 +1,191 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Quicksand:wght@300&display=swap');
-
-:root{
---dark-beige: #E6DACD;
---light_beige: #F4ECE6;
---royal_blue: #0150FD;
---black: #000;
---white: #FFF;
---headings_font: 'Poppins', sans-serif;
---subheadings_and_body_font: 'Quicksand', sans-serif;
-
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+:root {
+  --black: #000;
+  --white: #fff;
+  --lylac: #f5e8ff;
+  --light-green: #e6fac0;
+  --medium-green: #5e7d1f;
+  --dark-green: #394b2a;
+  --headings_and_subheadings: "Questrial", sans-serif;
+  --buttons: "Raleway", sans-serif;
+  --body: "Roboto", sans-serif;
 }
 
-body{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr 1fr auto 1fr; 
-    grid-template-areas: 
-    "header header"
-    "nav nav"
-    "main main"
-    "footer footer";
+body {
+  /* grid-template-columns: auto;
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "section1"
+    "footer"; */
+  margin: 0;
+  background-color: var(--white);
+}
+p {
+  font-family: var(--body);
+}
+h1,
+h2 {
+  font-family: var(--headings_and_subheadings);
+}
+button {
+  font-family: var(--buttons);
+  border: 2.5px solid var(--black);
+  font-size: medium;
+  padding: 13px 60px;
+  margin: 1.5rem;
+}
+header {
+  grid-area: header;
+}
+.order_link {
+  background-color: var(--black);
+  padding: 0.7rem;
+  text-align: center;
+}
+.order_link a {
+  color: var(--white);
+  font-family: var(--body);
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.juice_text_area {
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+.juice_text_area a {
+  color: var(--black);
+  text-decoration: none;
+  font-family: var(--body);
+  font-size: 1.3rem;
+}
+#welcome {
+  display: flex;
+  flex-direction: column;
+}
 
+#h1_main {
+  text-align: center;
 }
-header{
-    /* display: relative; */
-    grid-area: header;
-    display: flex;
-    flex-direction: row;
+h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 2.8rem;
+}
+#subhead_h1 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  text-align: center;
+}
+.button_explore {
+  background-color: var(--white);
+  margin: auto;
+  margin-bottom: 2.5rem;
+}
+.main_image {
+  max-width: 100%;
+  height: auto;
 }
 
-.img_logo{
-    left: 50vw;
-    width: 20px;
-    height: 20px;
+#online_order {
+  margin: 0;
 }
-nav{
-    grid-area: nav;
+.try_now {
+  background-color: var(--lylac);
+  padding: 0.8em 0;
+  text-align: center;
+  line-height: 1.2rem;
+  font-family: var(--body);
 }
-main{
-    grid-area: main;
 
+.try_now a {
+  color: var(--black);
 }
-footer{
-    grid-area: footer;
+#benefit_h1 {
+  text-align: center;
+}
+.benefit_child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h2 {
+  font-size: 22px;
+  font-weight: 50;
+}
+
+.benefit_child p {
+  font-size: medium;
+  line-height: 3ch;
+  text-align: center;
+  padding: 0.5rem;
+}
+#about {
+  background-color: var(--light-green);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about_image {
+  margin-top: 3vh;
+  max-width: 85%;
+  height: auto;
+}
+#about h1 {
+  text-align: center;
+}
+.describe_section {
+  text-align: center;
+  padding: 0 2rem;
+  margin: 0;
+  line-height: 3ch;
+}
+
+.button_vision {
+  background-color: var(--light-green);
+}
+#promotional {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  padding: 1.5rem;
+}
+#promotional {
+  background-color: var(--lylac);
+}
+.button_view_all {
+  background-color: var(--lylac);
+}
+.promotional_child > img {
+  width: 90%;
+  height: auto;
+}
+#feature_product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#feature_product p {
+  margin: 1rem;
+  font-size: medium;
+  line-height: 3ch;
+  text-align: center;
+}
+.button_try_it {
+  background-color: var(--white);
+}
+#benefits_2 {
+  background-color: var(--light-green);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
