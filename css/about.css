@@ -112,7 +112,7 @@ body{
     font-family: var(--heading-font);
     text-align: center;
     padding-bottom: 20px;
-    padding-top: 30px;
+    padding-top: 10px;
     font-size: 1.9rem;
 }
 .box3 .btn{
@@ -133,20 +133,34 @@ body{
     padding: 13px;
 }
 .but{
-    display: block;
-    width: 160;
+    /* display: block; */
+    display: inline-flex;
+    gap: 10px;
+    margin: 10px 0;
+    width: 190;
     height: 33;
     
 }
 
 
 /* .box3 .social-icon{
-    display: inline-block;
+    display: flex;
+    justify-content: right;
     width: 290px;
     height: 50px;
     background-color: var(--white);
-    bottom: 0;
+    top: 0;
 } */
-
-
 /* end main  */
+
+/* box2 style  */
+
+.box2{
+    color:var(--black)
+}
+
+.box3 .social-icon {
+    width: 290px;
+    height: 50px;
+    background-color: var(--white);
+}
