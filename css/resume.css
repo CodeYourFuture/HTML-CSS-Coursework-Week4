@@ -168,6 +168,8 @@ button {
 }
 
 .download {
+  display: inline-block;
+  height: 2em;
   padding: 0 1.5em;
 }
 /*style the main element*/
@@ -192,6 +194,7 @@ main .exp-title h2,
 main .exp-title {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
   margin: 0 1em;
 }
@@ -320,6 +323,54 @@ i {
   nav ul li a:hover {
     color: var(--RoyalBlue);
   }
+
+  main .flex-1,
+  .flex-2,
+  .flex-3,
+  .flex-4 {
+    display: flex;
+    gap: 8em;
+    align-items: center;
+  }
+  main .comp-info {
+    width: 100%;
+  }
+  main .skills .grid-1,
+  .grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+  }
+  main section {
+    padding: 3em 3em;
+  }
+  main h1 {
+    margin-top: 10em;
+  }
+  main {
+    margin: 0 auto;
+    width: 760px;
+  }
+  main .flex-1,
+  .flex-2,
+  .flex-3,
+  .flex-4 {
+    gap: 5em;
+  }
+  main section .p-1 {
+    font-size: 1.1em;
+  }
+  main section h3 {
+    margin-bottom: -1em;
+  }
+  main .exp-1,
+  .exp-2,
+  .edu-1,
+  .edu-2 {
+    height: 220px;
+  }
+  main .skills {
+    height: 450px;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -385,6 +436,31 @@ i {
   }
   nav ul li a:hover {
     color: var(--RoyalBlue);
+  }
+  main {
+    margin: 0 auto;
+    width: 760px;
+  }
+  main .flex-1,
+  .flex-2,
+  .flex-3,
+  .flex-4 {
+    gap: 5em;
+  }
+  main section .p-1 {
+    font-size: 1.1em;
+  }
+  main section h3 {
+    margin-bottom: -1em;
+  }
+  main .exp-1,
+  .exp-2,
+  .edu-1,
+  .edu-2 {
+    height: 220px;
+  }
+  main .skills {
+    height: 450px;
   }
 }
 /* Dont' forget to link this file to your HTML in the <head> */
