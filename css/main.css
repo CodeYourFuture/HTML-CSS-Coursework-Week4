@@ -13,6 +13,8 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -79,7 +81,7 @@ header {
 .header-container {
     display: flex;
     align-items: center;
-    line-height: 0;
+
 }
 
 .job-title {
@@ -297,9 +299,11 @@ justify-content: space-between;
 .article-insert {
     background-color: var(--White);
     box-shadow: -10px 10px 20px darkgrey;
-    padding: 20px 5px 30px 25px;
-
     margin-bottom: 40px;
+}
+
+.article-text {
+    padding: 20px 5px 30px 25px;
 }
 
 /* Footer Section */
@@ -345,7 +349,6 @@ justify-content: space-between;
 
 .heading {
     display: flex;
-    line-height: 0;
     align-items: center;
     justify-content: center;
     margin-top: 40px;
@@ -359,4 +362,33 @@ justify-content: space-between;
     line-height: 0;
     align-items: center;
     justify-content: space-between;
+}
+
+.job-heading {
+    display: grid;
+    grid-template-columns: 25px auto;
+    padding-top: 25px;
+}
+
+.job-heading > .blue-icon {
+    grid-row: 1 / 2;
+    height: 100%;
+    width: 40%;
+}
+
+.project {
+    grid-row: 2 / -1;
+    padding: 0;
+    margin: 0;
+}
+
+.project > h3 {
+    color: var(--Royal-blue);
+}
+
+.article-img {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
