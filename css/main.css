@@ -324,6 +324,737 @@ form button{
 
 .footer{
     grid-area: footer;
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* Media Query */
+
+@media screen and (min-width:540px) {
+
+
+    header{
+        position: fixed;
+        top:0;
+    }
+
+    .open-menu,
+    .close-menu {
+        display: none;
+    }
+
+    .nav-list {
+        margin: 0 2rem;
+    }
+
+    .nav-link,
+    .footer-wrapper {
+        padding: 1rem;
+    }
+
+    body{
+            grid-template-areas:
+                "header header"
+                "prod prod"
+                "products products"
+                "about about-img"
+                "buy-img buy-online"
+                "request-form request-form"
+                "footer footer";
+        }
+
+        .prod{
+            background-attachment: fixed;
+            margin-top: 180px;
+        }
+
+        .products{
+            flex-direction: row;
+            
+        }
+
+        .leaf{
+            display: none;
+        }
+
+        .about-img{
+            flex-direction: row;
+            
+        }
+}
+
+* Add your CSS here */
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Outfit:wght@200&display=swap');
+
+/* Fonts and Colors */
+
+:root{    
+    --redBrown: #A05941;
+    --greenBlack: #133032;
+    --lightGray: #EDEDEE;
+    --white: #fff;
+    --transparentWhite: rgb(0,0,0,0.75);
+
+    --font1: 'Fjalla One',sans-serif;
+    --font2: 'Outfit',sans-serif;
+}
+
+/* General */
+
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body */
+
+body {
+    font-family: var(--font1);
+    text-align: center;
+    background-color: var(--lightGray);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(10, auto);
+    grid-template-areas: 
+    "header       header"
+    "prod         prod"
+    "products     products"
+    "about        about"
+    "about-img    about-img"
+    "buy-img      buy-img"
+    "buy-online   buy-online"
+    "request-form request-form"
+    "leaf         leaf"
+    "footer       footer";
+}
+
+/* Header */
+
+.header{
+    grid-area: header;
+    width: 100%;
+}
+
+.header-search{
+    background-color: var(--white);
+    display: flex;
+}
+
+.header-search i{
+    color: var(--redBrown);
+   padding: 20px 0px 0px 20px;
+   font-size: 30px;
+}
+
+.header-search input{
+    width: 100%;
+    border: none;
+    padding-left: 20PX;
+    font-size: 20PX;
+}
+
+.header-search img {
+    height: 80px;
+    padding: 20px 0px;
+}
+
+.header-title{
+    color: var(--redBrown);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    text-align: left;
+    background-color: var(--lightGray);
+}
+
+.header-title p{
+    font-size: 20px;
+}
+
+.nav-list {
+    list-style: none;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 1;
+    background-color: var(--lightGray);
+    transition: 0.5s ease-in-out;
+}
+
+.open-menu,
+.close-menu {
+    position: absolute;
+    cursor: pointer;
+    font-size: 2rem;
+    display: block;
+}
+
+.open-menu {
+    top: 5.5rem;
+    right: 1.5rem;
+}
+
+.close-menu {
+    top: 5.5rem;
+    right: 2rem;
+}
+
+#check {
+    display: none;
+}
+
+#check:checked~.menu {
+    right: 0;
+}
+
+.nav-link,
+.footer-wrapper {
+    padding: 1.5rem;
+}
+
+.nav-link a {
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    color: var(--redBrown);
+    padding: 5px 10px;
+}
+
+.prod{
+    grid-area: prod;
+    background-image: url("../img/hero.jpg");
+    background-size: cover;
+    padding: 10%;
+    line-height: 100px;
+    height: auto;
+    color: var(--white);
+}
+
+.prod span{
+    text-decoration-line: underline;
+}
+
+prod img{
+    filter: invert(100%);
+}
+
+.capital{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.title{
+    font-size: 30px;
+    color: var(--redBrown);
+}
+
+.products button,
+.prod button{
+    background-color: var(--redBrown);
+    border: none;
+    padding: 15px 30px;
+    color: var(--white);
+    font-size: 15px;
+}
+
+.line{
+    width: 10px;
+    height: 5x;
+    background-color: var(--redBrown);
+    display: block;
+    position: absolute;
+}
+
+.products{
+    grid-area: products;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.frame{
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 364px;
+    width: 100%;
+    background-color: var(--white);
+    margin: 20px 0px;
+    padding-top: 10%;
+}
+
+.cacti {
+    background-image: url("../img/Cacti.jpg");
+}
+
+.plants{
+    background-image: url("../img/Plants.jpg");
+}
+
+.succulents{
+    background-image: url("../img/Succulents.jpg");
+}
+
+.img-wrapper{
+    position: relative;
+    padding-bottom: 72%;
+}
+
+.img-wrapper img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.about{
+    grid-area: about;
+    color: var(--redBrown);
+    font-family: var(--font2);
+    font-size: 20px;
+    background-color: var(--white);
+    padding: 40px 30px;
+}
+
+.about-img{
+    grid-area: about-img;
+    display: flex;
+    flex-direction: column;
+    width:100%;
+}
+
+.buy-img{
+    grid-area: buy-img;
+}
+
+.buy-online{
+    grid-area: buy-online;
+    padding: 20% 10%;
+    font-size: 65px;
+    background-color: var(--greenBlack);
+    color: var(--white);
+}
+
+.buy-online button{
+    background-color: var(--white);
+    border: none;
+    padding: 15px 30px;
+    font-size: 15px;
+}
+
+.request-form{
+    grid-area: request-form;
+    background-color: var(--white);
+    margin: 50px 20px 0px 20px;
+    padding: 40px;
+}
+
+.request-form p{
+    color: var(--redBrown);
+    font-size: 40px;
+    padding: 20px 60px;
+    font-weight: normal;
+    font-family: var(--font2);
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 20px;
+}
+form input,
+form textarea{
+    width: 100%;
+    margin: 15px 0px;
+    padding: 10px;
+}
+
+form button{
+    background-color: var(--redBrown);
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: var(--white);
+    margin: 20px 0px;
+}
+
+.leaf{
+    grid-area: leaf;
+}
+
+.footer{
+    grid-area: footer;
+display: grid;    
+    
+}
+
+ footer {
+    font-family: var(--font1);
+    text-align: center;
+    background-color: var(--lightGray);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: 
+    "capital1      capital2   capital3"
+    ". credit ."
+    
+ }
+.credit{
+justify-content: center
+}
+* Add your CSS here */
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Outfit:wght@200&display=swap');
+
+/* Fonts and Colors */
+
+:root{    
+    --redBrown: #A05941;
+    --greenBlack: #133032;
+    --lightGray: #EDEDEE;
+    --white: #fff;
+    --transparentWhite: rgb(0,0,0,0.75);
+
+    --font1: 'Fjalla One',sans-serif;
+    --font2: 'Outfit',sans-serif;
+}
+
+/* General */
+
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body */
+
+body {
+    font-family: var(--font1);
+    text-align: center;
+    background-color: var(--lightGray);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(10, auto);
+    grid-template-areas: 
+    "header       header"
+    "prod         prod"
+    "products     products"
+    "about        about"
+    "about-img    about-img"
+    "buy-img      buy-img"
+    "buy-online   buy-online"
+    "request-form request-form"
+    "leaf         leaf"
+    "footer       footer";
+}
+
+/* Header */
+
+.header{
+    grid-area: header;
+    width: 100%;
+}
+
+.header-search{
+    background-color: var(--white);
+    display: flex;
+}
+
+.header-search i{
+    color: var(--redBrown);
+   padding: 20px 0px 0px 20px;
+   font-size: 30px;
+}
+
+.header-search input{
+    width: 100%;
+    border: none;
+    padding-left: 20PX;
+    font-size: 20PX;
+}
+
+.header-search img {
+    height: 80px;
+    padding: 20px 0px;
+}
+
+.header-title{
+    color: var(--redBrown);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    text-align: left;
+    background-color: var(--lightGray);
+}
+
+.header-title p{
+    font-size: 20px;
+}
+
+.nav-list {
+    list-style: none;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 1;
+    background-color: var(--lightGray);
+    transition: 0.5s ease-in-out;
+}
+
+.open-menu,
+.close-menu {
+    position: absolute;
+    cursor: pointer;
+    font-size: 2rem;
+    display: block;
+}
+
+.open-menu {
+    top: 5.5rem;
+    right: 1.5rem;
+}
+
+.close-menu {
+    top: 5.5rem;
+    right: 2rem;
+}
+
+#check {
+    display: none;
+}
+
+#check:checked~.menu {
+    right: 0;
+}
+
+.nav-link,
+.footer-wrapper {
+    padding: 1.5rem;
+}
+
+.nav-link a {
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    color: var(--redBrown);
+    padding: 5px 10px;
+}
+
+.prod{
+    grid-area: prod;
+    background-image: url("../img/hero.jpg");
+    background-size: cover;
+    padding: 10%;
+    line-height: 100px;
+    height: auto;
+    color: var(--white);
+}
+
+.prod span{
+    text-decoration-line: underline;
+}
+
+prod img{
+    filter: invert(100%);
+}
+
+.capital{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.title{
+    font-size: 30px;
+    color: var(--redBrown);
+}
+
+.products button,
+.prod button{
+    background-color: var(--redBrown);
+    border: none;
+    padding: 15px 30px;
+    color: var(--white);
+    font-size: 15px;
+}
+
+.line{
+    width: 10px;
+    height: 5x;
+    background-color: var(--redBrown);
+    display: block;
+    position: absolute;
+}
+
+.products{
+    grid-area: products;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.frame{
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 364px;
+    width: 100%;
+    background-color: var(--white);
+    margin: 20px 0px;
+    padding-top: 10%;
+}
+
+.cacti {
+    background-image: url("../img/Cacti.jpg");
+}
+
+.plants{
+    background-image: url("../img/Plants.jpg");
+}
+
+.succulents{
+    background-image: url("../img/Succulents.jpg");
+}
+
+.img-wrapper{
+    position: relative;
+    padding-bottom: 72%;
+}
+
+.img-wrapper img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.about{
+    grid-area: about;
+    color: var(--redBrown);
+    font-family: var(--font2);
+    font-size: 20px;
+    background-color: var(--white);
+    padding: 40px 30px;
+}
+
+.about-img{
+    grid-area: about-img;
+    display: flex;
+    flex-direction: column;
+    width:100%;
+}
+
+.buy-img{
+    grid-area: buy-img;
+}
+
+.buy-online{
+    grid-area: buy-online;
+    padding: 20% 10%;
+    font-size: 65px;
+    background-color: var(--greenBlack);
+    color: var(--white);
+}
+
+.buy-online button{
+    background-color: var(--white);
+    border: none;
+    padding: 15px 30px;
+    font-size: 15px;
+}
+
+.request-form{
+    grid-area: request-form;
+    background-color: var(--white);
+    margin: 50px 20px 0px 20px;
+    padding: 40px;
+}
+
+.request-form p{
+    color: var(--redBrown);
+    font-size: 40px;
+    padding: 20px 60px;
+    font-weight: normal;
+    font-family: var(--font2);
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 20px;
+}
+form input,
+form textarea{
+    width: 100%;
+    margin: 15px 0px;
+    padding: 10px;
+}
+
+form button{
+    background-color: var(--redBrown);
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: var(--white);
+    margin: 20px 0px;
+}
+
+.leaf{
+    grid-area: leaf;
+}
+
+.footer{
+    grid-area: footer;
 }
 
 
@@ -383,6 +1114,3 @@ form button{
 }
 
 /* Dont' forget to link this file to your HTML in the <head> */
-
-
-
