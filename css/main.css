@@ -107,6 +107,7 @@ body{
   font-size: 60px;
 }
 
+
 .nelson{
   margin-left: 3rem;
   align-content: center;
@@ -248,6 +249,7 @@ body{
   font-size:18px;
   
 }
+/* Resume */
 
 .res{
   height: 20%;
@@ -431,6 +433,8 @@ body{
   height: 0.7rem;
   width: 0.7rem;
 }
+   /* Project */
+
 .project-page{
   display: grid;
   height: 40vh;
@@ -526,8 +530,12 @@ body{
     display: grid;
   }
   .desktop-header{
+    /* border: 5px solid red; */
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    height: 35vh;
+    width: 118rem;
   }
   .d-header-name-container{
     display: flex;
@@ -572,6 +580,11 @@ body{
   }
   .d-group-container{
     display: flex;
+    margin-top: 7rem;
+    scroll-snap-type:y proximity;
+    scroll-padding-top: 25vh;
+    /* overflow-y: scroll; */
+    scroll-snap-align: start;
   }
   .d-hello-content{
     margin-top: 2rem;
@@ -600,6 +613,7 @@ body{
   .may-n h2,h3{
     font-size: 28px;
     font-weight: bolder;
+    
   }
   .de-pro-mgr{
     font-size: 24px;
@@ -621,7 +635,7 @@ body{
     border-radius: 10rem;
     background-color: var(--royal-blue);
     font-size: large;
-    color: var(--white);
+    /* color: var(--white); */
     
   }
   .d-project{
@@ -678,12 +692,295 @@ body{
   .d-mp{
     font-size: large;
   }
-  .v-m{
+  .underline{
     border-bottom: 2px solid var(--royal-blue);
-    margin-top: 1rem;
+    padding-bottom:8px ;
+    /* margin-right: 10rem; */
     
   }
+  
+  .resume-desktop-header{
+    display: flex;
+    justify-content: space-between;
+    height: 8rem;
   }
+  .resume-desktop{
+    background-color: var(--dark-beige);
+    margin-top: 3rem;
+    /* scroll-snap-type:y proximity; */
+    /* scroll-padding-top: 25vh; */
+    /* scroll-snap-align: start; */
+  }
+  .r-resuma{
+    margin-top: 6rem;
+  }
+  .r-res{
+    /* border: 5px solid red; */
+    height: 5rem;
+    font-size: 52px;
+    text-align: center;
+    
+  }
+  .r-res::before{
+    margin-left: 1rem;
+   content: "";
+   display: inline-block;
+   margin-right: 0.6rem;
+   background-color: var(--royal-blue);
+   height: 2rem;
+   width: 2rem;
+  }
+  .r-ed{
+    /* border: 5px solid blue; */
+    height: 7rem;
+    /* text-align: center; */
+    
+    
+  }
+  .r-exp{
+    font-size: 32px;
+    margin-left: 30rem;
+    
+  }
+  .r-download{
+    font-size: 26px;
+    margin-top: 4rem;
+    margin-left: 39rem;
+    border-radius: 8rem;
+    background-color: var(--royal-blue);
+    color: var(--white);
+    
+  }
+  .r-position{
+    background-color: var(--white);
+    display: flex;
+    height: 18rem;
+    width: 63rem;
+    margin-left: 30rem;
+  
+  }
+  .re-present{
+    /* border: 5px solid red; */
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+  .r-present{
+    margin-top: 1rem;
+  font-size: 30px;
+  margin-left: 1rem;
+  font-weight: bolder;
+  color: var(--royal-blue);
+  
+  }
+  .re-p{
+    /* border: 5px solid blue; */
+    width: 30rem;
+    margin-left: 16rem;
+    margin-top: 3rem;
+  }
+  .r-p{
+   font-size: 24px;
+  }
+  .r-j{
+    font-size: 24px;
+    margin-left: 1rem;
+
+  }
+  .r-c{
+    font-size: 18px;
+    margin-left: 1rem;
+  }
+  .r-job{
+    background-color: var(--white);
+    display: flex;
+    height: 18rem;
+    width: 63rem;
+    margin-left: 30rem;
+    margin-top: 2rem;
+  }
+  .r-edu{
+    margin-left: 30rem;
+    margin-top: 2rem;
+    font-size: 30px;
+    font-weight: bolder;
+  }
+  .r-university{
+    background-color: var(--white);
+    display: flex;
+    height: 18rem;
+    width: 63rem;
+    margin-left: 30rem;
+    margin-top: 2rem;
+  }
+  .r-degree{
+    background-color: var(--white);
+    display: flex;
+    height: 18rem;
+    width: 63rem;
+    margin-left: 30rem;
+    margin-top: 2rem;
+  }
+  .r-pro{
+    background-color: var(--white);
+    height: 20rem;
+    width: 63rem;
+    margin-left: 30rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    
+
+  }
+  .r-profes{
+    font-size: 32px;
+    font-weight: bolder;
+    margin-left: 2rem;
+  }
+  .r-skill{
+    font-size: 18px;
+  }
+  .mkt{
+    display: flex;
+    margin-left: 1rem;
+    gap: 2rem;
+  }
+  .r-team{
+    display: flex;
+    margin-left: 1rem;
+    gap: 4rem;
+    margin-top: 2rem;
+    
+  }
+  .r-mind::before{
+    margin-left: 1rem;
+    content: "";
+    display: inline-block;
+    margin-right: 0.6rem;
+    background-color: var(--royal-blue);
+    height: 0.7rem;
+    width: 0.7rem;
+  }
+  
+  .r-go::before{
+    margin-left: 1rem;
+    content: "";
+    display: inline-block;
+    margin-right: 0.6rem;
+    background-color: var(--royal-blue);
+    height: 0.7rem;
+    width: 0.7rem;
+  }
+  .res-team::before{
+    margin-left: 1rem;
+    content: "";
+    display: inline-block;
+    margin-right: 0.6rem;
+    background-color: var(--royal-blue);
+    height: 0.7rem;
+    width: 0.7rem;
+  }
+  
+  .r-digital::before{
+    margin-left: 1rem;
+    content: "";
+    display: inline-block;
+    margin-right: 0.6rem;
+    background-color: var(--royal-blue);
+    height: 0.7rem;
+    width: 0.7rem;
+  }
+  .r-lang{
+    font-size: 32px;
+    font-weight: bolder;
+    margin-left: 1rem;
+    margin-top: 2rem;
+  }
+  .r-language{
+    display: flex;
+    /* margin-left: 1rem; */
+  }
+  .english-spanish{
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+  .r-fre{
+    margin-left: 15rem;
+  }
+  .r-fre::before{
+    margin-left: 1rem;
+    content: "";
+    display: inline-block;
+    margin-right: 0.6rem;
+    background-color: var(--royal-blue);
+    height: 0.7rem;
+    width: 0.7rem;
+  }
+  .r-eng::before{
+    margin-left: 1rem;
+    content: "";
+    display: inline-block;
+    margin-right: 0.6rem;
+    background-color: var(--royal-blue);
+    height: 0.7rem;
+    width: 0.7rem;
+  }
+  .r-spa::before{
+    margin-left: 1rem;
+    content: "";
+    display: inline-block;
+    margin-right: 0.6rem;
+    background-color: var(--royal-blue);
+    height: 0.7rem;
+    width: 0.7rem;
+  }
+.pro-project-page{
+  background-color: var(--dark-beige);
+}
+
+  .p-project-page{
+    height: 17rem;
+  }
+  .project-par{
+    height: 15rem;
+    width: 50rem;
+    font-size: 20px;
+    margin-left: 35rem;
+    margin-top: 3rem;
+    
+  }
+  .proj-alpha{
+    display: flex;
+    background-color: var(--white);
+    width: 50rem;
+    margin-left: 35rem;
+    margin-top: 2rem;
+    height: 19rem;
+  }
+  .proj-pname{
+    margin-top: 1rem;
+  }
+  .proj-pop{
+    display: flex;
+    background-color: var(--white);
+    width: 50rem;
+    margin-left: 35rem;
+    margin-top: 2rem;
+    height: 19rem;
+  }
+  .proj-samsu{
+    display: flex;
+    background-color: var(--white);
+    width: 50rem;
+    margin-left: 35rem;
+    margin-top: 2rem;
+    height: 21rem;
+    margin-bottom: 2rem;
+  }
+  .project-img-samsu{
+    height: 21rem;
+  }
+  }
+  
+  
   
   
   
