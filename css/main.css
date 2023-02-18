@@ -139,7 +139,7 @@ body{
     display: grid;
     border-bottom: 2px solid var(--royal-blue);
     margin-top: 1rem;
-    margin-right: 3rem;
+    width: 60px;
     
   }
   
@@ -172,7 +172,7 @@ body{
   font-size: large;
   border-radius: 18px;
   background-color: var(--royal-blue) ;
-  /* color: var(--white); */
+  
   
 
 }
@@ -607,8 +607,19 @@ body{
     background-color: var(--white);
   }
   .may-n{
+    /* border: 5px solid blue; */
     text-align: center;
     margin-right: 3rem;
+  }
+  .d-may-m{
+    text-align: center;
+    margin-right: 1rem;
+  }
+  .v-m{
+    border-bottom: 2px solid var(--royal-blue);
+    width: 150px;
+    margin-left: 4rem;
+    margin-top: 1rem;
   }
   .may-n h2,h3{
     font-size: 28px;
@@ -695,6 +706,7 @@ body{
   .underline{
     border-bottom: 2px solid var(--royal-blue);
     padding-bottom:8px ;
+    width: 70px;
     /* margin-right: 10rem; */
     
   }
