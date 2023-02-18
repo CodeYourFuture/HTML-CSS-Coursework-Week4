@@ -242,8 +242,17 @@ body{
   height: 55vh;
   margin-top: -10rem;
 }
-.facebook{
-  font-size: x-large;
+.m-facebook{
+  font-size: 18px;
+}
+.m-twitter{
+  font-size: 12px;
+}
+.m-instagram{
+  font-size: 12px;
+}
+.m-linkedin{
+  font-size: 12px;
 }
 .story{
   font-size:18px;
@@ -458,6 +467,7 @@ body{
   width: 1.5rem;
 }
 .alpha{
+  /* border: 5px solid black; */
   display: grid;
   height: 74vh;
   margin-left: 2rem;
@@ -467,6 +477,7 @@ body{
   margin-bottom: 5rem;
   
 }
+
 .pname{
   margin-left: 1rem;
   color: var(--royal-blue);
@@ -479,39 +490,42 @@ body{
   font-weight: bold;
 }
 .img-alpha{
-  width: 25rem;
-  height: 19rem;
+  width: 25.2rem;
+  height: 14rem;
   
 }
 .pop{
+  /* border: 5px solid black; */
   display: grid;
   height: 73vh;
   width: 80vw;
   margin-left: 2rem;
   margin-right: 1rem;
   background-color:var(--white);
-  margin-bottom: 5rem;
+  /* margin-bottom: 2rem; */
+  margin-top: -2rem;
 }
 .img-pop{
-  height: 19rem;
+  height: 13rem;
   width: 25rem;
   
   
 }
 .samsu{
-  
+  /* border: 5px solid black; */
   display: grid;
   margin-left: 2rem;
   margin-right: 1rem;
   height: 66vh;
   width: 80vw;
   background-color: var(--white);
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 
 }
 .img-samsu{
-  height: 15rem;
-  width: 25rem;
+  height: 10.2rem;
+  width: 25.1rem;
 }
 
   
@@ -646,7 +660,7 @@ body{
     border-radius: 10rem;
     background-color: var(--royal-blue);
     font-size: large;
-    /* color: var(--white); */
+    color: var(--white);
     
   }
   .d-project{
@@ -685,8 +699,17 @@ body{
     gap: 2rem;
   }
   .d-facebook{
-    font-size: 28px;
+    font-size: 18px;
   }
+  .d-twitter{
+    font-size: 12px;
+  }
+   .d-instagram{
+    font-size: 12px;
+   }
+   .d-linkedin{
+    font-size: 12px;
+   }
   .de-call{
     font-size: 18px;
     font-weight: bolder;
@@ -699,16 +722,10 @@ body{
     font-size: larger;
     font-weight: bolder;
     
+    
   }
   .d-mp{
     font-size: large;
-  }
-  .underline{
-    border-bottom: 2px solid var(--royal-blue);
-    padding-bottom:8px ;
-    width: 70px;
-    /* margin-right: 10rem; */
-    
   }
   
   .resume-desktop-header{
