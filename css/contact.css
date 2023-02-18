@@ -6,9 +6,18 @@
     padding: 0px;
     box-sizing: border-box;
 }
-  .contact-main{
-    display: block;
+.contact-main{
+    display: flex;
+    justify-content: center;
     background-color: #E6DACD;
+}
+
+.form-container{
+    width: 80%;
+    margin: auto;
+}
+
+  .contact-form{
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 1fr;
@@ -18,7 +27,6 @@
 }
 
 .contact-title{
-    width: 100%;
     grid-area: title;
     display: flex;
     justify-content: center;
@@ -41,7 +49,7 @@
 
 .form-section{
    
-    margin: 0.5rem 0.4rem 3rem 1.2rem;
+    /* margin: 0.5rem 0.4rem 3rem 1.2rem; */
     grid-area: form;
     background-color: white;
     display: grid;  
@@ -56,12 +64,14 @@
     "send"
     "submit-message";
     box-shadow: -15px 10px 23px #adabab;
-    padding: 3rem 1rem 5rem 1rem;
+    padding: 3rem 2rem 5rem 1rem;
    
 }
 .form-section div{
+    padding: 0;
     display: flex;
     flex-direction: column;
+    justify-content:flex-start;
 }
 
 .form-label{
@@ -72,7 +82,7 @@
   font-weight: 500;
   font-family: 'poppins', sans-serif;
   position: relative;
- padding-left: 1rem;
+
 }
 .required-sign::after{
     display: inline;
@@ -81,9 +91,12 @@
     padding-left: 0.3rem;
    
 }
+.form-input-width{
+    width: 80%;
+}
+
 .first-name{
-    grid-area: first-name;
-  
+    grid-area: first-name;  
 }
 .last-name{
     grid-area: last-name;
@@ -157,7 +170,7 @@
   
 }
 @media screen and (min-width: 800px) {
-   .contact-main{
+   .contact-form{
     width: 100%;
    }
     .form-section{
@@ -181,6 +194,9 @@
     }
     .form-input{
         margin-bottom: 2rem;
+    }
+    .form-input-width{
+        width: 100%;
     }
      .email{
         padding-top: 2rem;
