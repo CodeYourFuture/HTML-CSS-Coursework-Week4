@@ -183,9 +183,68 @@ h2 {
   background-color: var(--white);
 }
 #benefits_2 {
+  padding-top: 10px;
   background-color: var(--light-green);
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+#benefits_2 p {
+  margin: 1rem;
+}
+.number {
+  max-width: 40px;
+  height: auto;
+}
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.gallery a {
+  font-family: var(--body);
+  color: var(--black);
+}
+.rotated_images_gallery {
+  padding: 8rem 0;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.rotated_images img {
+  position: absolute;
+  max-width: 130px;
+}
+
+.img1 {
+  transform: rotate(-15deg) translate(-55px, -90px);
+  z-index: 3;
+}
+
+.img2 {
+  transform: rotate(15deg) translate(-120px, 20px);
+  z-index: 2;
+}
+
+.img3 {
+  transform: rotate(15deg) translate(-10px, 0);
+  z-index: 4;
+}
+
+.img4 {
+  transform: rotate(-25deg) translate(-80px, 40px);
+  z-index: 1;
+}
+footer {
+  background-color: var(--dark-green);
+  padding-top: 200px;
+}
+.submit_button {
+  background-color: var(--dark-green);
+  border: 2.5px solid var(--white);
+  color: var(--white);
 }
