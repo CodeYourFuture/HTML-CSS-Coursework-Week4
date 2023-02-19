@@ -332,6 +332,15 @@ main {
   grid-template-rows: 50px 50px;
 }
 
+.mob-centered-mini-para {
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
 .centered-mini-para {
   text-align: center;
   margin-bottom: 50px;
@@ -346,6 +355,19 @@ main {
   grid-template-columns: 428px 322px;
   grid-template-rows: 404px;
   box-shadow: -11.31px 11.31px 17px 0px rgba(138, 131, 124, 0.23);
+}
+
+.m-projects-card-container {
+  background-color: var(--white);
+  margin-bottom: 69px;
+  display: grid;
+  grid-template-columns: 290px;
+  grid-template-rows: 330px 198px;
+  box-shadow: -11.31px 11.31px 17px 0px rgba(138, 131, 124, 0.23);
+}
+
+.m-project-details-container {
+  margin: 0 25px;
 }
 
 .project-details-container {
@@ -373,10 +395,36 @@ main {
   top: 3px;
 }
 
+.m-project-card-title-text {
+  color: var(--royal-blue);
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  margin-top: 36px;
+  position: relative;
+  /* margin-bottom: 8px; */
+}
+
+.m-project-card-title-text::before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  height: 46px;
+  width: 10px;
+  background-color: var(--royal-blue);
+  left: -25px;
+  top: -7px;
+}
 .project-card-subtitle-text {
   font-size: 14px;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 700;
+  margin-bottom: 8px;
+}
+.m-project-card-subtitle-text {
+  font-size: 12px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
   margin-bottom: 8px;
 }
 
@@ -384,9 +432,31 @@ main {
   margin-top: 39px;
 }
 
+.m-project-card-wording {
+  margin-top: 16px;
+}
+
+.m-project-card-wording-text {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
 .project-card-wording-text {
   font-family: "Nunito Sans", sans-serif;
   font-size: 17px;
   line-height: 25.5px;
   font-weight: 400;
+}
+
+.m-project-image-container {
+  height: 100%;
+}
+
+.m-project-image {
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
 }
