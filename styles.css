@@ -1,0 +1,188 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+h2 {
+  vertical-align: center;
+  text-align: center;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+  background-image:url(./images/High_resolution_wallpaper_background_ID_77700445501.jpg);
+}
+* {
+  font-family: "Raleway";
+  box-sizing: border-box;
+}
+
+.top-nav {
+  display:flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content:space-between;
+  background-color: rgb(75, 118, 125);
+  color: white;
+  height: 100px;
+  padding: 1em;
+  text-align: center;
+}
+
+ul {
+  text-align: center;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu > li {
+  margin: 0 1rem;
+  overflow: hidden;
+}
+
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 0px;
+}
+
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+@media (max-width: 600px) {
+  .menu-button-container {
+    display: flex;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu-toggle:checked ~ .menu li {
+    border: .25 solid;
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    color: black;
+  }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: rgb(11, 3, 3);
+    background-color: gray;
+  }
+  .menu > li:not(:last-child) {
+    border-bottom: 1px solid rgb(17, 16, 16);
+  }
+}
+
+.container {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: ifr;
+    grid-template-rows: 200px 200px 40px 40px;
+    text-align: center;
+}
+.stab {
+    text-align: center;
+    padding-top: 200px;
+    display: grid;
+    color: white;
+
+}
+.buttom {
+  border-radius: 0px;
+  margin-top: 70px;
+}
+
+button {
+    background: black;
+    color: white;
+    cursor: pointer;
+    width: 159px;
+    height: 40px;
+    padding-bottom: 50px;
+}
+.prickles {
+    text-align: center;
+    padding-top: 120px;
+    color:white
+}
+footer {
+    background: gray;
+    text-align: center;
+    padding-top: 30px;
+   
+
+    
+
+}
+.footer {
+    margin: 0px;
+    border: opx;
+    padding-top: 400px;
+    background-color:transparent;
+    left: 0 ; right: 0; bottom: 0; 
+    height:[footer-height] 
+}
+h4 {
+  color: white;
+}
