@@ -33,15 +33,16 @@ a:hover {
 
 nav {
     height: 150px;
+    background: var(--white);
 }
 
 .nav__container {
     display: flex;
     justify-content: space-between;
+    background: var(--white);
     width: 100%;
     align-items: center;
     height: 150px;
-    background: var(--white);
     position: fixed;
     z-index: 1;
 }
@@ -164,6 +165,8 @@ menu {
 .navbar--mobile a {
     font-family: 'Poppins', sans-serif;
     font-size: 1.5rem;
+    width: 30%;
+    margin: 0 auto;
 }
 
 /* Hamburger end */
