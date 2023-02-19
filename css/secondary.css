@@ -195,7 +195,7 @@ main {
 
 .d-resume-title {
   margin-top: 100px;
-  margin-bottom: 95px;
+  margin-bottom: 55px;
 }
 .d-resume-header {
   font-family: "Poppins", sans-serif;
@@ -330,4 +330,63 @@ main {
   display: grid;
   grid-template-columns: 250px 250px;
   grid-template-rows: 50px 50px;
+}
+
+.centered-mini-para {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.d-projects-card-container {
+  background-color: var(--white);
+  margin-bottom: 69px;
+  display: grid;
+  grid-template-columns: 428px 322px;
+  grid-template-rows: 404px;
+  box-shadow: -11.31px 11.31px 17px 0px rgba(138, 131, 124, 0.23);
+}
+
+.project-details-container {
+  margin: 37px;
+}
+
+.project-card-title-text {
+  color: var(--royal-blue);
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  margin-top: 36px;
+  position: relative;
+  /* margin-bottom: 8px; */
+}
+
+.project-card-title-text::before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  height: 50px;
+  width: 10px;
+  background-color: var(--royal-blue);
+  left: -38px;
+  top: 3px;
+}
+
+.project-card-subtitle-text {
+  font-size: 14px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.project-card-wording {
+  margin-top: 39px;
+}
+
+.project-card-wording-text {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 17px;
+  line-height: 25.5px;
+  font-weight: 400;
 }
