@@ -72,6 +72,10 @@ body {
   margin-bottom: 18px;
 }
 
+.mobile-header a {
+  text-decoration: none;
+}
+
 .logo-name-title::before {
   content: "";
   display: inline-block;
@@ -218,6 +222,10 @@ main {
   align-items: center;
 }
 
+.projects-button-container a {
+  text-decoration: none;
+}
+
 .projects-button {
   font-size: 15px;
   font-weight: 700;
@@ -340,6 +348,7 @@ main {
 
 .d-logo-name-job-title {
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .d-header-nav-container {
