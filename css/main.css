@@ -211,12 +211,17 @@ menu {
 
 .main__links {
     display: flex;
+    column-gap: 2rem;
     width: 100%;
     background: var(--white);
     height: 50px;
     align-items: center;
     justify-content: center;
     margin-top: 1rem;
+}
+
+.main__links i {
+    font-size: 20px;
 }
 
 .main__text {
@@ -238,7 +243,7 @@ button {
 }
 
 .button--blue {
-    border: 1px solid var(--color-blue);
+    border: 2px solid var(--color-blue);
     background: var(--color-blue);
     color: var(--white);
 }
@@ -251,7 +256,7 @@ button {
 .button--white {
     border: 1px solid;
     background: var(--white);
-    color: var(--color-blue);
+    color: var(--black);
 }
 
 .button--white:hover {
@@ -302,6 +307,7 @@ footer img {
 .footer__links {
     display: flex;
     text-align: center;
+    column-gap: 1rem;
 }
 @media (max-width: 1150px) {
     .main__card {
@@ -382,6 +388,10 @@ footer img {
         width: 90%;
     }
 
+    .p__desktop {
+        display: none;
+    }
+
     .mobile__button {
         display: flex;
     }
@@ -392,7 +402,7 @@ footer img {
 
     .main__text {
         position: relative;
-        top: -30%;
+        top: -25%;
         width: 90%;
     }
 
