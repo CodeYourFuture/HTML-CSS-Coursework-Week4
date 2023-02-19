@@ -15,39 +15,41 @@
 <body>
 
     <!-- Add your markup here -->
-<header>
-    <div>
+    <header>
         <div class="header-container">
-            <div class="blue-icon"></div>
-            <h1><a href="index.html">Maya Nelson</a></h1>
-        </div>    
-        <p class="job-title text-uppercase"><a href="index.html">Project Manager</a></p>
-    </div>
-    <input type="checkbox" id="header-checkbox">
-    <label for="header-checkbox">
-        <div class="hamburger-menu">
-            <div class="menu-1"></div>
-            <div class="menu-2"></div>
-            <div class="menu-3"></div>
+            <div class="header-name-bulleted">
+                <div class="blue-icon"></div>
+                <h1><a href="index.html">Maya Nelson</a></h1>
+            </div>
+            <span class="mobile-hide">/</span>
+            <p class="header-job-title text-uppercase"><a href="index.html">Project Manager</a></p>
         </div>
-    </label>
-    <div  class="navi-container text-uppercase" >
-        <ul>        
-            <li>
-                <a href="index.html"><h2>About Me</h2></a>
-            </li>
-            <li>
-                <a href="resume.html"><h2>Resume</h2></a>
-            </li>
-            <li>
-                <a href="projects.html"><h2>Projects</h2></a>
-            </li>
-            <li>
-                <a class="blue" href="contact.html"><h2>Contact</h2></a>
-            </li>
-        </ul>
-    </div>
-</header>
+        <input type="checkbox" id="header-checkbox">
+        <label for="header-checkbox">
+            <div class="hamburger-menu">
+                <div class="menu-1"></div>
+                <div class="menu-2"></div>
+                <div class="menu-3"></div>
+            </div>
+        </label>
+        <div  class="navi-container text-uppercase">
+            <ul>        
+                <li>
+                    <a href="index.html"><h2>About Me</h2></a>
+                </li>
+                <li>
+                    <a href="resume.html"><h2>Resume</h2></a>
+                </li>
+                <li>
+                    <a href="projects.html"><h2>Projects</h2></a>
+                </li>
+                <li>
+                    <a class="blue" href="contact.html"><h2>Contact</h2></a>
+                </li>
+            </ul>
+        </div>
+        
+    </header>
 
 <main>
     <div class="standard-article">
@@ -57,10 +59,16 @@
         </div>
          <div class="article-insert">
             <form class="contact-form">
-                <label for="fname"><h3>First Name <span>*</span></h3></label>
-                <input type="text" name="fname" id="fname" placeholder=" " required>
-                <label for="lname"><h3>Last Name <span>*</span></h3></label>
-                <input type="text" name="lname" id="lname" required>
+                <div class="form-name-container">
+                    <div class="form-fname-block">
+                        <label for="fname"><h3>First Name <span>*</span></h3></label>
+                        <input type="text" name="fname" id="fname" placeholder=" " required>
+                    </div>
+                    <div class="form-lname-block">
+                        <label for="lname"><h3>Last Name <span>*</span></h3></label>
+                        <input type="text" name="lname" id="lname" required>
+                    </div>                   
+                </div>
                 <label for="email"><h3>Email <span>*</span></h3></label>
                 <input type="email" name="email" id="email" required>
                 <label for="subject"><h3>Subject</h3></label>
@@ -75,18 +83,16 @@
 </main>
 
 <footer>
-    <div class="contact-container">
-        <div>
-            <p class="bold">Call</p>
-            <a href="tel:123-456-7890">123-456-7890</a>
-        </div>
-        <div>
-            <p class="bold">Write</p>
-            <a href="mailto:info@mysite.com">info@mysite.com</a>
-        </div>
+    <div class="footer-call">
+        <p class="bold">Call</p>
+        <a href="tel:123-456-7890">123-456-7890</a>
+    </div>
+    <div class="footer-email">
+        <p class="bold">Write</p>
+        <a href="mailto:info@mysite.com">info@mysite.com</a>
     </div>
 
-    <div>
+    <div class="footer-social">
         <p class="bold">Follow</p>
         <div class="social-media-icons-block">
             <a href="https://www.facebook.com/wix">
@@ -104,7 +110,7 @@
         </div>
     </div>
 
-    <div>
+    <div class="footer-credits">
         <p>© 2035 by Maya Nelson.</p>
         <p>Powered and secured by <a href="https://wix.com/?utm_campaign=vir_created_with">Wix</a></p>
     </div>

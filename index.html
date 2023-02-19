@@ -9,19 +9,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Responsive grid project</title>
 </head>
 
 <body>
 
     <!-- Add your markup here -->
+    <!-- <span class="material-symbols-rounded">expand_less</span> -->
+
 <header class="header-index">
-    <div>
-        <div class="header-container">
+    <div class="header-container">
+        <div class="header-name-bulleted">
             <div class="blue-icon"></div>
             <h1><a href="index.html">Maya Nelson</a></h1>
-        </div>    
-        <p class="job-title text-uppercase"><a href="index.html">Project Manager</a></p>
+        </div>
+        <span class="mobile-hide">/</span>
+        <p class="header-job-title text-uppercase"><a href="index.html">Project Manager</a></p>
     </div>
     <input type="checkbox" id="header-checkbox">
     <label for="header-checkbox">
@@ -31,7 +35,7 @@
             <div class="menu-3"></div>
         </div>
     </label>
-    <div  class="navi-container text-uppercase" >
+    <div  class="navi-container text-uppercase">
         <ul>        
             <li>
                 <a class="blue" href="index.html"><h2>About Me</h2></a>
@@ -51,66 +55,70 @@
 </header>
 
 <main>
-    <div class="hero-container">        
-        <img class="display-image" src="img/DP.webp" alt="self portrait of user">
-        <div class="display-name text-center">
-            <h2>
-                <span class="display-fname">Maya</span>
-                <span class="display-lname">Nelson</span>
-            </h2>
-            
-            <hr class="underline"/>
-        </div>        
-        <div class="btn-container">
-            <div>
+    <div class="main-bg"></div>
+    <div class="main-content">
+        <div class="hero-container">        
+            <img class="display-image" src="img/DP.webp" alt="self portrait of user">
+            <div class="display-name text-center">
+                <h2>
+                    <span class="display-fname">Maya</span>
+                    <span class="display-lname">Nelson</span>
+                </h2>
+                
+                <hr class="underline"/>
+                
+            </div>     
+            <p class="mobile-hide">Project Manager</p>   
+            <div class="btn-container desktop-hide">
                 <a href="resume.html"><button class="btn-resume btn-blue" href="resume.html">Resume</button></a>                
+                <a href="projects.html"><button class="btn-project btn-clear" >Projects</button></a>              
             </div>
-            <div>
-                <a href="projects.html"><button class="btn-project btn-clear" >Projects</button></a>
-            </div>                
+            <div class="social-media-ribbon">
+                <div class="social-media-icons-block">
+                    <a href="https://www.facebook.com/wix">
+                        <img class="media-icon" src="img/fb-icon.webp" alt="facebook icon">
+                    </a>
+                    <a href="https://www.twitter.com/wix">
+                        <img class="media-icon" src="img/twitter-icon.webp" alt="twitter icon">
+                    </a>
+                    <a href="https://www.linkedin.com/company/wix-com">
+                        <img class="media-icon" src="img/linkdin-icon.webp" alt="linkdin icon">
+                    </a>
+                    <a href="https://www.instagram.com/wix">
+                        <img class="media-icon" src="img/instagram-icon.webp" alt="instagram icon">
+                    </a>               
+                </div>            
+            </div>       
         </div>
-        <div class="social-media-ribbon">
-            <div class="social-media-icons-block">
-                <a href="https://www.facebook.com/wix">
-                    <img class="media-icon" src="img/fb-icon.webp" alt="facebook icon">
-                </a>
-                <a href="https://www.twitter.com/wix">
-                    <img class="media-icon" src="img/twitter-icon.webp" alt="twitter icon">
-                </a>
-                <a href="https://www.linkedin.com/company/wix-com">
-                    <img class="media-icon" src="img/linkdin-icon.webp" alt="linkdin icon">
-                </a>
-                <a href="https://www.instagram.com/wix">
-                    <img class="media-icon" src="img/instagram-icon.webp" alt="instagram icon">
-                </a>               
-            </div>            
-        </div>       
+        <article class="index-article">
+            <h2>Hello</h2>
+            <p class="bold">Here's who I am & what I do</p>
+            <div class="btn-container mobile-hide">
+                <a href="resume.html"><button class="btn-resume btn-blue" href="resume.html">Resume</button></a>                
+                <a href="projects.html"><button class="btn-project btn-clear" >Projects</button></a>             
+            </div>
+            <p>
+                I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.
+            </p>
+            <p>
+                I'm a great place for you to tell a story and let your users know a little more about you.
+            </p>
+        </article>
     </div>
-    <article class="index-article">
-        <h2>Hello</h2>
-        <p class="bold">Here's who I am & what I do</p>
-        <p>
-            I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.
-        </p>
-        <p>
-            I'm a great place for you to tell a story and let your users know a little more about you.
-        </p>
-    </article>    
+        
 </main>
 
 <footer>
-    <div class="contact-container">
-        <div>
-            <p class="bold">Call</p>
-            <a href="tel:123-456-7890">123-456-7890</a>
-        </div>
-        <div>
-            <p class="bold">Write</p>
-            <a href="mailto:info@mysite.com">info@mysite.com</a>
-        </div>
+    <div class="footer-call">
+        <p class="bold">Call</p>
+        <a href="tel:123-456-7890">123-456-7890</a>
+    </div>
+    <div class="footer-email">
+        <p class="bold">Write</p>
+        <a href="mailto:info@mysite.com">info@mysite.com</a>
     </div>
 
-    <div>
+    <div class="footer-social">
         <p class="bold">Follow</p>
         <div class="social-media-icons-block">
             <a href="https://www.facebook.com/wix">
@@ -128,7 +136,7 @@
         </div>
     </div>
 
-    <div>
+    <div class="footer-credits">
         <p>© 2035 by Maya Nelson.</p>
         <p>Powered and secured by <a href="https://wix.com/?utm_campaign=vir_created_with">Wix</a></p>
     </div>

@@ -15,39 +15,41 @@
 <body>
 
     <!-- Add your markup here -->
-<header>
-    <div>
+    <header>
         <div class="header-container">
-            <div class="blue-icon"></div>
-            <h1><a href="index.html">Maya Nelson</a></h1>
-        </div>    
-        <p class="job-title text-uppercase"><a href="index.html">Project Manager</a></p>
-    </div>
-    <input type="checkbox" id="header-checkbox">
-    <label for="header-checkbox">
-        <div class="hamburger-menu">
-            <div class="menu-1"></div>
-            <div class="menu-2"></div>
-            <div class="menu-3"></div>
+            <div class="header-name-bulleted">
+                <div class="blue-icon"></div>
+                <h1><a href="index.html">Maya Nelson</a></h1>
+            </div>
+            <span class="mobile-hide">/</span>
+            <p class="header-job-title text-uppercase"><a href="index.html">Project Manager</a></p>
         </div>
-    </label>
-    <div  class="navi-container text-uppercase" >
-        <ul>        
-            <li>
-                <a href="index.html"><h2>About Me</h2></a>
-            </li>
-            <li>
-                <a href="resume.html"><h2>Resume</h2></a>
-            </li>
-            <li>
-                <a class="blue" href="projects.html"><h2>Projects</h2></a>
-            </li>
-            <li>
-                <a href="contact.html"><h2>Contact</h2></a>
-            </li>
-        </ul>
-    </div>
-</header>
+        <input type="checkbox" id="header-checkbox">
+        <label for="header-checkbox">
+            <div class="hamburger-menu">
+                <div class="menu-1"></div>
+                <div class="menu-2"></div>
+                <div class="menu-3"></div>
+            </div>
+        </label>
+        <div  class="navi-container text-uppercase">
+            <ul>        
+                <li>
+                    <a href="index.html"><h2>About Me</h2></a>
+                </li>
+                <li>
+                    <a href="resume.html"><h2>Resume</h2></a>
+                </li>
+                <li>
+                    <a class="blue" href="projects.html"><h2>Projects</h2></a>
+                </li>
+                <li>
+                    <a href="contact.html"><h2>Contact</h2></a>
+                </li>
+            </ul>
+        </div>
+        
+    </header>
 
 <main>
 <div class="standard-article">
@@ -57,8 +59,8 @@
     </div>
     <p>I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I'm a great place for you to tell a story and let your users know a little more about you.</p>
     
-    <div class="article-insert">
-        <div class="job-heading">
+    <div class="article-insert article-project-container">
+        <div class="job-heading article-project-heading">
             <div class="blue-icon"></div>
             <div class="project">
                 <h3 class="job-name">Project name 01</h3>
@@ -66,7 +68,7 @@
             </div>
             
         </div>
-        <div class="article-text">
+        <div class="article-body article-project-body">
             <p>Job Position</p>
             <p>Company Name</p>
             <p>Company Location</p>
@@ -74,11 +76,14 @@
             <p>I'm a great place for you to tell a story and let your users know a little more about you.</p>
         </div>        
         
-        <img class="article-img" src="img/mobile-view/Leaflet.webp" alt="leaflet for a scientific conference">
+        <picture class="article-project-img">
+            <source media="(min-width:900px)" srcset="img/desktop-view/Leaflet.webp">
+            <img class="article-img" src="img/mobile-view/Leaflet.webp" alt="leaflet for a scientific conference">
+        </picture>
     </div>
 
-    <div class="article-insert">
-        <div class="job-heading">
+    <div class="article-insert article-project-container">
+        <div class="job-heading article-project-heading">
             <div class="blue-icon"></div>
             <div class="project">
                 <h3 class="job-name">Project name 02</h3>
@@ -86,7 +91,7 @@
             </div>
             
         </div>
-        <div class="article-text">
+        <div class="article-body article-project-body">
             <p>Job Position</p>
             <p>Company Name</p>
             <p>Company Location</p>
@@ -94,11 +99,14 @@
             <p>I'm a great place for you to tell a story and let your users know a little more about you.</p>
         </div>        
         
-        <img class="article-img" src="img/mobile-view/Website_Mockup.webp" alt="computer screen with a mockup of a website">
+        <picture class="article-project-img">
+            <source media="(min-width:900px)" srcset="img/desktop-view/Website_Mockup.webp">
+            <img class="article-img" src="img/mobile-view/Website_Mockup.webp" alt="leaflet for a scientific conference">
+        </picture>
     </div>
 
-    <div class="article-insert">
-        <div class="job-heading">
+    <div class="article-insert article-project-container">
+        <div class="job-heading article-project-heading">
             <div class="blue-icon"></div>
             <div class="project">
                 <h3 class="job-name">Project name 03</h3>
@@ -106,7 +114,7 @@
             </div>
             
         </div>
-        <div class="article-text">
+        <div class="article-body article-project-body">
             <p>Job Position</p>
             <p>Company Name</p>
             <p>Company Location</p>
@@ -114,7 +122,10 @@
             <p>I'm a great place for you to tell a story and let your users know a little more about you.</p>
         </div>        
         
-        <img class="article-img" src="img/mobile-view/App_Screen.webp" alt="app splashscreen on smartphone">
+        <picture class="article-project-img">
+            <source media="(min-width:900px)" srcset="img/desktop-view/App_Screen.webp">
+            <img class="article-img" src="img/mobile-view/App_Screen.webp" alt="leaflet for a scientific conference">
+        </picture>
     </div>
 </div>
                
@@ -122,18 +133,16 @@
 </main>
 
 <footer>
-    <div class="contact-container">
-        <div>
-            <p class="bold">Call</p>
-            <a href="tel:123-456-7890">123-456-7890</a>
-        </div>
-        <div>
-            <p class="bold">Write</p>
-            <a href="mailto:info@mysite.com">info@mysite.com</a>
-        </div>
+    <div class="footer-call">
+        <p class="bold">Call</p>
+        <a href="tel:123-456-7890">123-456-7890</a>
+    </div>
+    <div class="footer-email">
+        <p class="bold">Write</p>
+        <a href="mailto:info@mysite.com">info@mysite.com</a>
     </div>
 
-    <div>
+    <div class="footer-social">
         <p class="bold">Follow</p>
         <div class="social-media-icons-block">
             <a href="https://www.facebook.com/wix">
@@ -151,7 +160,7 @@
         </div>
     </div>
 
-    <div>
+    <div class="footer-credits">
         <p>© 2035 by Maya Nelson.</p>
         <p>Powered and secured by <a href="https://wix.com/?utm_campaign=vir_created_with">Wix</a></p>
     </div>
