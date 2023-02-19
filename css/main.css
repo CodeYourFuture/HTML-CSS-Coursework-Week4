@@ -342,15 +342,23 @@ footer img {
     }
     
     .nav__container {
-        position: relative;
+        position: static;
+        width: 90%;
+        margin: 0 auto;
     }
 
     .nav__left {
         flex-direction: column;
+        padding-left: unset;
     }
 
     .nav__left p {
         margin: 0;
+        margin-left: -2rem;
+    }
+
+    menu {
+        padding-right: unset;
     }
 
     .p--hide{
@@ -401,11 +409,5 @@ footer img {
 
     .footer__contacts p {
         text-align: start;
-    }
-
-}
-@media (max-width: 430px) {
-    menu {
-        padding-right: 1rem;
     }
 }
