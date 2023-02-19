@@ -41,10 +41,6 @@ body {
 }
 
 @media (max-width: 600px) {
-    nav {
-        height: 150px;
-    }
-    
     .section__block {
         grid-template-columns: none;
         grid-template-rows: 60% 40%;

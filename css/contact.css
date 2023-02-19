@@ -53,10 +53,6 @@ textarea {
 }
 
 @media (max-width: 600px) {
-    nav {
-        height: 150px;
-    }
-
     .form__btn {
         text-align: center;
     }

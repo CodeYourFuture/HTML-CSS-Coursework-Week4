@@ -73,10 +73,6 @@ article {
 }
 
 @media (max-width: 600px) {
-    nav {
-        height: 150px;
-    }
-
     .article__block div {
         display: block;
     }
