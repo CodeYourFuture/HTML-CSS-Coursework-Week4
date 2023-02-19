@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Add a link to your custom CSS here -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+    <title>Responsive grid project</title>
+</head>
+
+<body>
+
+    <!-- Add your markup here -->
+    <header>
+        <div class="header-container">
+            <div class="header-name-bulleted">
+                <div class="blue-icon"></div>
+                <h1><a href="index.html">Maya Nelson</a></h1>
+            </div>
+            <span class="mobile-hide">/</span>
+            <p class="header-job-title text-uppercase"><a href="index.html">Project Manager</a></p>
+        </div>
+        <input type="checkbox" id="header-checkbox">
+        <label for="header-checkbox">
+            <div class="hamburger-menu">
+                <div class="menu-1"></div>
+                <div class="menu-2"></div>
+                <div class="menu-3"></div>
+            </div>
+        </label>
+        <div  class="navi-container text-uppercase">
+            <ul>        
+                <li>
+                    <a href="index.html"><h2>About Me</h2></a>
+                </li>
+                <li>
+                    <a href="resume.html"><h2>Resume</h2></a>
+                </li>
+                <li>
+                    <a href="projects.html"><h2>Projects</h2></a>
+                </li>
+                <li>
+                    <a class="blue" href="contact.html"><h2>Contact</h2></a>
+                </li>
+            </ul>
+        </div>
+        
+    </header>
+
+<main>
+    <div class="standard-article">
+        <div class="heading">
+            <div class="blue-icon"></div>
+            <h1>Let's talk</h1>
+        </div>
+         <div class="article-insert">
+            <form class="contact-form">
+                <div class="form-name-container">
+                    <div class="form-fname-block">
+                        <label for="fname"><h3>First Name <span>*</span></h3></label>
+                        <input type="text" name="fname" id="fname" placeholder=" " required>
+                    </div>
+                    <div class="form-lname-block">
+                        <label for="lname"><h3>Last Name <span>*</span></h3></label>
+                        <input type="text" name="lname" id="lname" required>
+                    </div>                   
+                </div>
+                <label for="email"><h3>Email <span>*</span></h3></label>
+                <input type="email" name="email" id="email" required>
+                <label for="subject"><h3>Subject</h3></label>
+                <input type="text" name="subject" id="subject">
+                <label for="message"><h3>Message</h3></label>
+                <textarea name="message" id="message"></textarea>
+                <input class="btn-blue text-uppercase" type="button" value="Send">
+            </form>          
+        </div>
+    
+    </div>
+</main>
+
+<footer>
+    <div class="footer-call">
+        <p class="bold">Call</p>
+        <a href="tel:123-456-7890">123-456-7890</a>
+    </div>
+    <div class="footer-email">
+        <p class="bold">Write</p>
+        <a href="mailto:info@mysite.com">info@mysite.com</a>
+    </div>
+
+    <div class="footer-social">
+        <p class="bold">Follow</p>
+        <div class="social-media-icons-block">
+            <a href="https://www.facebook.com/wix">
+                <img class="media-icon" src="img/fb-icon.webp" alt="facebook icon">
+            </a>
+            <a href="https://www.twitter.com/wix">
+                <img class="media-icon" src="img/twitter-icon.webp" alt="twitter icon">
+            </a>
+            <a href="https://www.linkedin.com/company/wix-com">
+                <img class="media-icon" src="img/linkdin-icon.webp" alt="linkdin icon">
+            </a>
+            <a href="https://www.instagram.com/wix">
+                <img class="media-icon" src="img/instagram-icon.webp" alt="instagram icon">
+            </a>               
+        </div>
+    </div>
+
+    <div class="footer-credits">
+        <p>© 2035 by Maya Nelson.</p>
+        <p>Powered and secured by <a href="https://wix.com/?utm_campaign=vir_created_with">Wix</a></p>
+    </div>
+    
+</footer>
+    <!-- Please leave this in to credit the creators of this design -->
+    <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
+</body>
+
+</html>
