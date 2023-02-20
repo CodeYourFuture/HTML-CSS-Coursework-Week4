@@ -39,7 +39,13 @@ main {
   margin-bottom: 49px;
 }
 
-.resume-header {
+.contact-title {
+  margin-top: 45px;
+  margin-bottom: 40px;
+}
+
+.resume-header,
+.contact-header {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 29px;
@@ -47,6 +53,15 @@ main {
 }
 
 .resume-header::before {
+  content: "";
+  margin-right: 10px;
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  background-color: var(--royal-blue);
+}
+
+.contact-header::before {
   content: "";
   margin-right: 10px;
   display: inline-block;
@@ -459,4 +474,43 @@ main {
   max-height: 100%;
   object-fit: cover;
   object-position: 50% 50%;
+}
+
+.m-contact-form-container {
+  background-color: var(--white);
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+}
+
+.m-contact-form {
+  margin: 25px 10px;
+}
+
+.m-contact-form fieldset {
+  border: 0;
+}
+
+.m-contact-form label {
+  /* font-family: "Poppins", sans-serif; */
+  font-weight: 700;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  /* font-weight: 400; */
+}
+
+.label-mandatory::after {
+  content: " *";
+  color: var(--royal-blue);
+}
+
+.input-line {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0 0 (3px solid blue) 0;
 }
