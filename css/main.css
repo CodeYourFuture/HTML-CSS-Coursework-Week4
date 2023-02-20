@@ -529,6 +529,10 @@ body{
   height: 10.2rem;
   width: 25.1rem;
 }
+  /* contact */
+.form{
+  margin-top: 2rem;
+}
 .talk{
   /* border: 5px solid black; */
   font-size: 32px;
@@ -559,21 +563,27 @@ body{
   font-size: 20px;
   margin-left: 0.5rem;
   font-weight: bolder;
+  
 
+}
+.first-line{
+  border: none;
+  height: 2px;
+  background-color: #000;
+  /* margin: 10px 0; */
+  transition:background-color 0.3s ease;
+  margin-top: 2rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 .first-name::after{
   content: "*";
   margin-left: 0.3rem;
   color: var(--royal-blue);
 }
-.first-co{
-  border-bottom: 2px solid var(--black);
-  margin-top: 3rem;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-}
-.first-co:hover{
-  color: var(--royal-blue);
+
+.first-line:hover{
+background-color: var(--royal-blue);
 }
 
 .last-name{
@@ -587,11 +597,17 @@ body{
   margin-left: 0.3rem;
   color: var(--royal-blue);
 }
-.last-co{
-  border-bottom: 2px solid var(--black);
-    margin-top: 3rem;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+.last-line{
+ border: none;
+  height: 2px;
+  background-color: #000;
+  transition: background-color 0.3s ease;
+  margin-top: 2rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+.last-line:hover{
+  background-color: var(--royal-blue);
 }
 .email{
   font-size: 20px;
@@ -603,33 +619,54 @@ body{
     margin-left: 0.3rem;
     color: var(--royal-blue);
 }
-.email-co{
-  border-bottom: 2px solid var(--black);
-    margin-top: 3rem;
+.email-line{
+  border: none;
+    height: 2px;
+    background-color: #000;
+    /* margin: 10px 0; */
+    transition: background-color 0.3s ease;
+    margin-top: 2rem;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
+}
+.email-line:hover{
+  background-color: var(--royal-blue);
 }
 .subject{
   font-size: 20px;
   margin-left: 0.5rem;
   font-weight: bolder;
 }
-.subject-co{
-  border-bottom: 2px solid var(--black);
-    margin-top: 3rem;
+.subject-line{
+  border: none;
+    height: 2px;
+    background-color: #000;
+    /* margin: 10px 0; */
+    transition: background-color 0.3s ease;
+    margin-top: 2rem;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
+}
+.subject-line:hover{
+  background-color: var(--royal-blue);
 }
 .message{
   font-size: 20px;
   margin-left: 0.5rem;
   font-weight: bolder;
 }
-.message-co{
-  border-bottom: 2px solid var(--black);
-    margin-top: 3rem;
+.message-line{
+    border: none;
+    height: 2px;
+    background-color: #000;
+    /* margin: 10px 0; */
+    transition: background-color 0.3s ease;
+    margin-top: 2rem;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
+}
+.message-line:hover{
+  background-color: var(--royal-blue);
 }
 .send{
   margin-left: 9rem;
@@ -850,15 +887,12 @@ body{
   .resume-desktop{
     background-color: var(--dark-beige);
     margin-top: 3rem;
-    /* scroll-snap-type:y proximity; */
-    /* scroll-padding-top: 25vh; */
-    /* scroll-snap-align: start; */
+    
   }
   .r-resuma{
     margin-top: 6rem;
   }
   .r-res{
-    /* border: 5px solid red; */
     height: 5rem;
     font-size: 52px;
     text-align: center;
@@ -874,10 +908,7 @@ body{
    width: 2rem;
   }
   .r-ed{
-    /* border: 5px solid blue; */
     height: 7rem;
-    /* text-align: center; */
-    
     
   }
   .r-exp{
@@ -1121,6 +1152,197 @@ body{
   .project-img-samsu{
     height: 21rem;
   }
+  .contact-desktop{
+    background-color: var(--dark-beige);
+  }
+  .talk-contact{
+    /* border: 5px solid black; */
+     margin-left: 2rem;
+     margin-bottom: 5rem;
+      margin-top: 5rem;
+      
+  }
+  .talk-cont{
+    text-align: center;
+    font-size: 62px;
+    font-weight: bolder;
+    margin-right: 2rem;
+  }
+  .talk-cont::before{
+    margin-left: 1rem;
+      content: "";
+      display: inline-block;
+      margin-right: 0.6rem;
+      background-color: var(--royal-blue);
+      height: 2rem;
+      width: 2rem;
+      margin-bottom: 0.3rem;
+  }
+  .first-last{
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    gap: 19rem;
+  }
+  .last-first{
+    display: flex;
+    margin-bottom: 4rem;
+  }
+  .contact-talk-cot{
+    background-color: var(--white);
+    margin-left: 28rem;
+    margin-right: 28rem;
+    height: 87vh;
+    margin-bottom: 3rem;
+  }
+    .d-first-name {
+      font-size: 20px;
+      margin-left: 4rem;
+      font-weight: bolder;
+      margin-top: 2rem;
+  
+  
+    }
+  
+    .d-first-line {
+      
+      border: none;
+      height: 4px;
+      background-color: var(--black);
+      /* margin: 10px 0; */
+      transition: background-color 0.3s ease;
+      /* margin-top: 1rem; */
+      margin-left: 4rem;
+      margin-right: 0.5rem;
+      width: 25rem;
+    }
+  
+    .d-first-name::after {
+      content: "*";
+      margin-left: 0.3rem;
+      color: var(--royal-blue);
+    }
+  
+    .d-first-line:hover {
+      background-color: var(--royal-blue);
+    }
+  
+    .d-last-name {
+      font-size: 20px;
+      margin-left: 0.5rem;
+      font-weight: bolder;
+      margin-top: 2rem;
+  
+    }
+  
+    .d-last-name::after {
+      content: "*";
+      margin-left: 0.3rem;
+      color: var(--royal-blue);
+    }
+  
+    .d-last-line {
+      border: none;
+      height: 4px;
+      background-color: var(--black);
+      transition: background-color 0.3s ease;
+      /* margin-top: 2rem; */
+      margin-left: 0.5rem;
+      margin-right: 4rem;
+      width: 25rem;
+    }
+
+        
+    .d-last-line:hover {
+      background-color: var(--royal-blue);
+    }
+  
+    .d-email {
+      font-size: 20px;
+      margin-left: 4rem;
+      font-weight: bolder;
+      
+    }
+  
+    .d-email::after {
+      content: "*";
+      margin-left: 0.3rem;
+      color: var(--royal-blue);
+    }
+  
+    .d-email-line {
+      border: none;
+      height: 4px;
+      background-color: var(--black);
+      /* margin: 10px 0; */
+      transition: background-color 0.3s ease;
+      margin-top: 2rem;
+      margin-left: 4rem;
+      margin-right: 4rem;
+      margin-bottom: 4rem;
+    }
+  
+    .d-email-line:hover {
+      background-color: var(--royal-blue);
+    }
+  
+    .d-subject {
+      font-size: 20px;
+      margin-left: 4rem;
+      font-weight: bolder;
+    }
+  
+    .d-subject-line {
+      border: none;
+      height: 4px;
+      background-color: var(--black);
+      /* margin: 10px 0; */
+      transition: background-color 0.3s ease;
+      margin-top: 2rem;
+      margin-left: 4rem;
+      margin-right: 4rem;
+      margin-bottom: 4rem;
+    }
+  
+    .d-subject-line:hover {
+      background-color: var(--royal-blue);
+    }
+  
+    .d-message {
+      font-size: 20px;
+      margin-left: 4rem;
+      font-weight: bolder;
+    }
+  
+    .d-message-line {
+      border: none;
+      height: 4px;
+      background-color: var(--black);
+      /* margin: 10px 0; */
+      transition: background-color 0.3s ease;
+      margin-top: 2rem;
+      margin-left: 4rem;
+      margin-right: 4rem;
+      margin-bottom: 1rem;
+    }
+  
+    .d-message-line:hover {
+      background-color: var(--royal-blue);
+    }
+  
+    .d-send {
+      margin-left: 4rem;
+      height: 4rem;
+      width: 9rem;
+      border-radius: 7rem;
+      /* margin-top: 1rem; */
+      margin-bottom: 3rem;
+      font-weight: bolder;
+      font-size: 20px;
+      background-color: var(--royal-blue);
+      color: var(--white);
+      
+    }
   }
   
   
