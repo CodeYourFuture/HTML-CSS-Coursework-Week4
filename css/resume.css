@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--color-dark-beige);
+}
+
+.section__subheader {
+    width: var(--width-block);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section__block {
+    align-items: center;
+    column-gap: 15%;
+    height: 368px;
+}
+
+.section__block h2 {
+    color: var(--color-blue); 
+    font-size: 1.3rem;   
+}
+
+.section__block div:first-child {
+    display: flex;
+    flex-direction: column;
+    width: 38%;
+    text-align: center;
+}
+
+.section__block div:last-child {
+    width: 45%;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+}
+
+.article__container {
+    background: var(--white);
+    width: var(--width-block);
+    padding: 3rem 0 0 2rem;
+    margin-bottom: 4rem;
+    box-shadow: -15px 15px 15px grey;
+}
+
+.article__block div {
+    display: flex;
+}
+
+.article__block div:last-child {
+    margin-bottom: 2rem;
+}
+
+.article__block ul {
+    max-width: 250px;
+    width: 100%;
+    padding-left: 1rem;
+}
+
+.article__block li::marker {
+    content:  url(/files/square-16.ico);
+}
+
+.article__block li {
+    list-style: none;
+    padding-left: 0.5rem;
+    margin-top: 1rem;
+}
+
+@media (max-width: 600px) {
+    .article__block div {
+        display: block;
+    }
+}
