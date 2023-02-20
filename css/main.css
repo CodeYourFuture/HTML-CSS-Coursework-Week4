@@ -447,9 +447,11 @@ body{
    /* Project */
 
 .project-page{
+  /* border: 5px solid red; */
   display: grid;
   height: 40vh;
   width: 90vw;
+  margin-bottom: 2rem;
   
 }
 .prj{
@@ -493,7 +495,7 @@ body{
 }
 .img-alpha{
   width: 25.2rem;
-  height: 14rem;
+  height: 11rem;
   
 }
 .pop{
@@ -504,11 +506,11 @@ body{
   margin-left: 2rem;
   margin-right: 1rem;
   background-color:var(--white);
-  /* margin-bottom: 2rem; */
-  margin-top: -2rem;
+  margin-bottom: 2rem;
+  /* margin-top: -2rem; */
 }
 .img-pop{
-  height: 13rem;
+  height: 10.5rem;
   width: 25rem;
   
   
@@ -526,7 +528,7 @@ body{
 
 }
 .img-samsu{
-  height: 10.2rem;
+  height: 8rem;
   width: 25.1rem;
 }
   /* contact */
