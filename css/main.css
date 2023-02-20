@@ -499,7 +499,8 @@ a{
 }
 .img-alpha{
   width: 25.2rem;
-  height: 11rem;
+  height: 15.9rem;
+  display: grid;
   
 }
 .pop{
@@ -514,8 +515,9 @@ a{
   /* margin-top: -2rem; */
 }
 .img-pop{
-  height: 10.5rem;
+  height: 16rem;
   width: 25rem;
+  display: grid;
   
   
 }
@@ -532,8 +534,9 @@ a{
 
 }
 .img-samsu{
-  height: 8rem;
+  height: 13rem;
   width: 25.1rem;
+  display: grid;
 }
   /* contact */
 .form{
