@@ -484,15 +484,38 @@ main {
   margin-bottom: 25px;
 }
 
+.d-contact-form-container {
+  background-color: var(--white);
+  width: 679px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
 .m-contact-form {
   margin: 25px 10px;
+}
+
+.d-contact-form {
+  margin: 56px 56px;
 }
 
 .m-contact-form fieldset {
   border: 0;
 }
 
+.d-contact-form fieldset {
+  border: 0;
+}
+
 .m-contact-form label {
+  /* font-family: "Poppins", sans-serif; */
+  font-weight: 700;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  /* font-weight: 400; */
+}
+.d-contact-form label {
   /* font-family: "Poppins", sans-serif; */
   font-weight: 700;
   font-family: "Nunito Sans", sans-serif;
@@ -523,6 +546,31 @@ main {
   background-color: var(--royal-blue);
   display: block;
   margin: 0 auto 20px auto;
+  color: var(--white);
+  border-radius: 20px;
+  border: none;
+  width: 98px;
+  height: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 15px;
+}
+
+.d-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.full-row {
+  grid-column: 1/3;
+}
+
+.d-send-button {
+  background-color: var(--royal-blue);
+  display: block;
+  /* margin: 0 auto 20px auto; */
   color: var(--white);
   border-radius: 20px;
   border: none;
