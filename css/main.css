@@ -1,3 +1,372 @@
-/* Add your CSS here */
+@font-face {
+    font-family: quicksand;
+    src: url(https://fonts.google.com/specimen/Quicksand);
+}
+@font-face {
+    font-family: poppins;
+    src: url(https://fonts.google.com/specimen/Poppins);
+}
 
-/* Dont' forget to link this file to your HTML in the <head> */
+body{
+    font-family: quicksand;
+}
+.header-font{
+    font-family: poppins; 
+}
+.root{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 80px auto 80px 50px 150px;
+    grid-template-areas: 
+               "header-squre nav"
+               "main main"
+               "footer-call footer-write"
+               "footer-follow ."
+               "footer-last .";
+               
+    }
+
+
+.header-squre{
+    grid-area: header-squre;
+    margin-left: 20px;
+
+}
+.maya-squre{
+    display: flex;
+    height: 40px;
+    width: 200px;
+    padding-bottom: 0px;
+
+}
+.maya-squre h2{
+    font-family: poppins;
+    margin-left: 10px;
+}
+
+.nav{
+    grid-area: nav;
+}
+
+
+.main{
+    grid-area: main;
+    
+    padding-bottom: 0px; 
+    background-color: #E6DACD;
+    line-height: 30px;
+    overflow: scroll;   
+}
+.main-space{
+    margin-top: 250px;
+    padding-left: 70px;
+    padding-right: 70px; 
+}
+.main-space2{
+    padding-left: 70px;
+    padding-right: 70px;
+}
+#main-padding-top{
+    padding-top: 300px;
+}
+.footer-call{
+    grid-area: footer-call;
+    margin-left: 20px;
+}
+.footer-write{
+    grid-area: footer-write;
+}
+
+.footer-follow{
+    grid-area: footer-follow;
+    margin-left: 20px;
+}
+.footer-last{
+    grid-area: footer-last;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+#blue-squre{
+    width: 16px;
+    height: 16px;
+    background-color: #0150FD; 
+    margin-bottom: 6px;   
+}
+.maya-squre{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
+.maya-squre h2{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+#project-manager-bottom{
+    margin-bottom: 10px;
+}
+.header-squre{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.profile-div-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+#profile-maya{
+    margin-bottom: 0px;
+}
+.profile-div-1-blue{
+    border-top: 2px solid blue;
+    width: 50px;
+}
+.profile-img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.profile-btn{
+    display: flex;
+    justify-content:center;
+    margin-top: 40px;
+}
+.profile-btn button{
+    width: 140px;
+    height: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 20px;
+    font-size: large;
+}
+#btn-1{
+    background-color: #0150FD;
+    border: 0px;
+}
+#btn-2{
+    border: 1px solid black;
+}
+.profile-btn a{
+    text-decoration: none;
+}
+.profile-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+    height: 60px;
+    background-color: white;
+}
+
+.blue{
+    width: 400px;
+    height: 100px;
+    background-color: #0150FD;
+    overflow: hidden;
+    overscroll-behavior: smooth;
+}
+.footer-last svg{
+width: 1.5rem;
+}
+#tweeter{
+margin-top: 1rem;
+}
+#instagram{
+    margin-top: 1rem;
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.c2035 p{
+margin: 0px;
+padding: 0px;
+}
+.c2035 a{
+    color: black;
+}
+
+
+/** styling resume's page  */
+
+
+.main-resume-display{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #E6DACD ;
+    margin-top: 0px;
+    width: 280px;
+    
+}
+.header-squre-resume{
+    margin-bottom: 0px;
+}
+
+.resume-squre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+.resume-squre h2{
+    margin-left: 10px;
+}
+.btm{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px 30px 0px;
+   
+    width: 280;
+}
+.btm strong{
+    font-size: 25px;
+}
+.btm button{
+    border-radius: 20px;
+    background-color: #0150FD;
+    padding: 10px;
+    border: 0px;
+}
+.btm a{
+    text-decoration: none;
+    color: white;
+}
+#present{
+ color: #0150Fd;   
+}
+.present-job-position{
+background-color: white;
+padding: 50px 10px 40px 10px;
+align-items: center;
+width: 280px;
+}
+
+.present-job-position div{
+    display: flex;
+    flex-direction: column;
+}
+#company-location{
+    margin-top: 0px;
+    padding-top: 0px;
+}
+#company-name{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.space-line{
+    line-height: 1.5em;
+    font-size: 17px;
+    font-weight: 30px;
+}
+.job-position{
+    background-color: white;
+    padding: 40px 10px 40px 10px;
+    align-items: center;
+    width: 280px;
+    margin-top: 30px;
+    }
+
+
+
+
+.profile-div{
+    width: 350px;
+    height: 500px;
+    background-color: #F4ECE6 ;
+    position: absolute;
+    top: 100px;
+    left: 30px;
+    z-index: 5;
+}
+.university-name1{
+    background-color: white;
+    padding: 40px 10px 40px 10px;
+    align-items: center;
+    width: 280px;
+    margin-top: 30px;
+    }
+    .skillset{
+    background-color: white;
+    padding: 40px 10px 40px 10px;
+    width: 280px;
+    margin-top: 30px;
+    }
+    .skillset-last{
+        background-color: white;
+        padding: 40px 10px 40px 10px;
+        width: 280px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        }
+
+    .skillset p{
+        font-size: 17px;
+        font-weight: 30px;
+    }
+    .skillset-box{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+    .skillset-margin-left{
+        margin-left: 10px;
+    }
+#digital-analitics-margin{
+    margin-bottom: 60px;
+}
+/** projects styling  */
+
+.main-project{
+    padding-bottom: 0px;
+    padding-left: 20px;
+    padding-right: 20px; 
+    background-color: #E6DACD;
+    line-height: 30px;
+    overflow: scroll;   
+}
+.projects-margin{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.project-name{
+    display: flex;
+    flex-direction: column;
+background-color: white;
+}
+.project-name-title{
+display: absolute;
+top: 10px;
+right: 0px;
+}
+.blue-projects{
+    display: absolute;
+    top: 0px;
+    right: 0px;
+    width: 10px;
+    height: 80px;
+    background-color: #0150FD;
+}
+.project-name-title h2{
+color: #0150FD;
+font-size: 20px;
+margin-bottom: 0px;
+}
+.project-name-title p{
+    font-size: 15px; 
+    margin-top: 0px; 
+}
+.project-name-padding{
+    padding: 20px
+}
