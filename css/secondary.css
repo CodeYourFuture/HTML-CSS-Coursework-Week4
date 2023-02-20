@@ -507,10 +507,29 @@ main {
 
 .input-line {
   width: 100%;
-  margin-top: 20px;
+  margin-top: 30px;
   margin-bottom: 5px;
   border-top: 0;
   border-left: 0;
   border-right: 0;
-  border-bottom: 0 0 (3px solid blue) 0;
+  border-bottom: 2px solid var(--black);
+}
+
+.input-line:hover {
+  border-bottom: 2px solid var(--royal-blue);
+}
+
+.send-button {
+  background-color: var(--royal-blue);
+  display: block;
+  margin: 0 auto 20px auto;
+  color: var(--white);
+  border-radius: 20px;
+  border: none;
+  width: 98px;
+  height: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 15px;
 }
