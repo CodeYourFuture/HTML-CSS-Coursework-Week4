@@ -159,7 +159,7 @@ body{
   
 }
 .social-media-container{
-  margin-top: 3rem;
+  margin-top: 1rem;
   margin-left: 0.9rem;
   width: 20rem;
 }
@@ -167,16 +167,20 @@ body{
   font-size: x-large;
   margin-left: 3rem;
 }
-.resume{
+.mob-resume{
   width: 8rem;
   font-size: 20px;
   font-weight: bolder;
   border-radius: 18px;
-  background-color: var(--royal-blue) ;
-  /* color: var(--white); */
+  background-color:var(--royal-blue) ;
+  color: var(--white);
+  
   
   
 
+}
+a{
+  text-decoration: none;
 }
 .project{
   width: 8rem;
