@@ -160,9 +160,9 @@ body {
 
 /* button style   */
 .but {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    gap: 2px;
+    display: flex;
+    justify-content:center;
+    margin-top: 30px;
 }
 
 .btn {
@@ -174,8 +174,6 @@ body {
 }
 
 .but .btn1 {
-    grid-column: 1/2;
-    grid-row: 1;
     background-color: var(--blue-royal);
     color: var(--white);
     font-family: var(--heading-font);
@@ -184,8 +182,6 @@ body {
 }
 
 .but .btn2 {
-    grid-column: 4/5;
-    grid-row: 1;
     border-color: var(--black);
     background-color: var(--beige-light);
     color: var(--black);
@@ -194,17 +190,32 @@ body {
     margin-left: 20px;
 }
 
+
 /* social icon style  */
 
-/* .social-icon box3 {
-    display: block;
-    justify-content: center;
-    align-items: center;
-    width: 290px;
+.social-icon {
+    position: absolute;
+    right: 27px;
+    width: 320px;
     height: 50px;
-    background-color: red;
-    top: 0;
-} */
+    background-color:var(--white);
+    margin-top: 50px;
+}
+.icon {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-decoration: none;
+    list-style: none;
+    color: #000;
+    margin: 8px 0px 0px;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+.icon a{
+    color: var(--black);
+    font-size: 20px;
+}
 
 /* end main  */
 

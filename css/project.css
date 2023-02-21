@@ -80,6 +80,15 @@ main>h1::before {
     height: 198px;
     width: 300px;
 }
+.box9>h1::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 35px;
+    background-color: var(--blue-royal);
+    position: absolute;
+    left: 10%;
+}
 
 
 .box10 {
@@ -110,6 +119,15 @@ main>h1::before {
     height: 198px;
     width: 300px;
 }
+.box10>h1::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 35px;
+    background-color: var(--blue-royal);
+    position: absolute;
+    left: 10%
+}
 
 .box11 {
     display: flex;
@@ -137,5 +155,14 @@ main>h1::before {
     right: 37px;
     height: 198px;
     width: 300px;
+}
+.box11>h1::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 35px;
+    background-color: var(--blue-royal);
+    position: absolute;
+    left: 10%
 }
 

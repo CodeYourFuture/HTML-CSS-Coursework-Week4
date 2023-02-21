@@ -61,6 +61,7 @@ main>h1::before {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-bottom: 40px;
 }
 .box4{
     display: flex;

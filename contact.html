@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,32 +10,36 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="./css/about.css">
     <link rel="stylesheet" href="./css/menu.css">
     <link rel="stylesheet" href="./css/contact.css">
     <title>Document</title>
 </head>
+
 <body>
     <header class="head grid">
         <h1> Maya Nelson</h1>
         <h3>Project Manager</h3>
 
-    <div class="menu-wrap">
-        <input type="checkbox" class="toggler">
-        <div class="humburger"><div></div></div>
-        <div class="menu">
-            <div>
+        <div class="menu-wrap">
+            <input type="checkbox" class="toggler">
+            <div class="humburger">
+                <div></div>
+            </div>
+            <div class="menu">
                 <div>
-                    <ul>
-                        <li><a href="./about.html">About me</a></li>
-                        <li><a href="./resume.html">resume</a></li>
-                        <li><a href="./project.html">Project</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
-                    </ul>
+                    <div>
+                        <ul>
+                            <li><a href="./about.html">About me</a></li>
+                            <li><a href="./resume.html">resume</a></li>
+                            <li><a href="./project.html">Project</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     </header>
 
     <main>
@@ -44,9 +49,74 @@
     <section class="cont">
 
         <div class="box12">
-            
+            <form action="/action_page.php">
+                <label for="first-name">First Name<em>*</em></label>
+
+                <div>
+                    <input type="text" id="name" placeholder-r="Enter Your Name">
+                </div>
+
+                <label for="last-name">Last Name<em>*</em></label>
+
+                <div>
+                    <input type="text" id="name" placeholder-r="Enter Your Last Name">
+                </div>
+
+                <label for="email">Email<em>*</em></label>
+
+                <div>
+                    <input type="email" id="name" placeholder-r="Enter Your Email">
+                </div>
+
+                <label for="first-name">Subject</label>
+
+                <div>
+                    <input type="text" id="name" placeholder-r="Enter Your Name">
+                </div>
+
+                <label for="first-name">Message</label>
+
+                <div>
+                    <input type="text" id="name" placeholder-r="Enter Your Name">
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+    <div class="send-wrapper">
+        <button class="send">SEND</button>
+    </div>
+
+    <footer class="foot">
+        <section class="se1">
+            <div class="foot1">
+                <h4>Call</h4>
+                <p>123-456-7890</p>
+            </div>
+
+            <div class="foot2">
+                <h4>Writee</h4>
+                <p>info@mysite.com</p>
+            </div>
+        </section>
+
+        <div class="foot3">
+            <h3>Follow</h3>
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
         </div>
 
-    </section>
+        <div class="foot4">
+            <p>&copy;2035 by Maya Nelson.
+                <br>Powered and secured by <strong class="w1">Wix</strong>
+            </p>
+        </div>
+
+    </footer>
+
 </body>
+
 </html>
