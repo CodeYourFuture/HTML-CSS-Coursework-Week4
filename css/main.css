@@ -158,9 +158,9 @@ nav {
     padding: 5px 10px;
 }
 
-.prod{
+.prod {
     grid-area: prod;
-    background-image: url("../");
+    background-image: url("../img/flower-woman.jpg");
     background-size: cover;
     padding: 10%;
     line-height: 100px;
@@ -206,7 +206,7 @@ prod img{
 .products{
     grid-area: products;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
 }
 
@@ -221,15 +221,15 @@ prod img{
 }
 
 .cacti {
-    background-image: url("../img/Cacti.jpg");
+    background-image: url("../designs/cacti.jpg");
 }
 
 .plants{
-    background-image: url("../img/Plants.jpg");
+    background-image: url("../designs/plant.jpg");
 }
 
 .succulents{
-    background-image: url("../img/Succulents.jpg");
+    background-image: url("../designs/succulents.jpg");
 }
 
 .img-wrapper{
@@ -326,115 +326,4 @@ form button{
     grid-area: footer;
     display: flex;
     flex-direction: row;
-}
-
-
-/* Media Query */
-
-@media screen and (min-width:540px) {
-
-
-    header{
-        position: fixed;
-        top:0;
-    }
-
-    .open-menu,
-    .close-menu {
-        display: none;
-    }
-
-    .nav-list {
-        margin: 0 2rem;
-    }
-
-    .nav-link,
-    .footer-wrapper {
-        padding: 1rem;
-    }
-
-    body{
-            grid-template-areas:
-                "header header"
-                "prod prod"
-                "products products"
-                "about about-img"
-                "buy-img buy-online"
-                "request-form request-form"
-                "footer footer";
-        }
-
-        .prod{
-            background-attachment: fixed;
-            margin-top: 180px;
-        }
-
-        .products{
-            flex-direction: row;
-            
-        }
-
-        .leaf{
-            display: none;
-        }
-
-        .about-img{
-            flex-direction: row;
-            
-        }
-}
-
-/* Media Query */
-
-@media screen and (min-width:540px) {
-
-
-    header {
-        position: fixed;
-        top: 0;
-    }
-
-    .open-menu,
-    .close-menu {
-        display: none;
-    }
-
-    .nav-list {
-        margin: 0 2rem;
-    }
-
-    .nav-link,
-    .footer-wrapper {
-        padding: 1rem;
-    }
-
-    body {
-        grid-template-areas:
-            "header header"
-            "prod prod"
-            "products products"
-            "about about-img"
-            "buy-img buy-online"
-            "request-form request-form"
-            "footer footer";
-    }
-
-    .prod {
-        background-attachment: fixed;
-        margin-top: 180px;
-    }
-
-    .products {
-        flex-direction: row;
-
-    }
-
-    .leaf {
-        display: none;
-    }
-
-    . about-img {
-        flex-direction: row;
-
-    }
 }
