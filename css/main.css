@@ -1,3 +1,629 @@
-/* Add your CSS here */
+:root {
+  --dark-beige: #e6dacd;
+  --light-beige: #f4ece6;
+  --royal-blue: #0150fd;
+  --black: #000;
+  --white: #fff;
+  --shd: -11.31px 11.31px 17px 0px rgba(138, 131, 124, 0.23);
+}
 
-/* Dont' forget to link this file to your HTML in the <head> */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  background-color: var(--white);
+  font-family: "Nunito Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Quicksand", sans-serif;
+}
+
+.font-4 {
+  font-family: "poppins", sans-serif;
+  line-height: 1em;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--black);
+}
+
+.d-header-name-font {
+  font-family: "poppins", sans-serif;
+  line-height: 1em;
+  font-size: 25px;
+  font-weight: 700;
+  color: var(--black);
+}
+
+.font-7 {
+  color: var(--black);
+  font-family: "Nunito Sans", sans-serif;
+  letter-spacing: 0.04rem;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.d-header-title-font {
+  color: var(--black);
+  font-family: "Nunito Sans", sans-serif;
+  letter-spacing: 0.04rem;
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.super-container {
+  /* margin-top: 2rem; */
+}
+.mobile-content-container {
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 330px;
+}
+
+.mobile-header {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: auto auto;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 18px;
+}
+
+.mobile-header a {
+  text-decoration: none;
+}
+
+.logo-name-title::before {
+  content: "";
+  display: inline-block;
+  margin-right: 0.6rem;
+  background-color: var(--royal-blue);
+  height: 1rem;
+  width: 1rem;
+}
+
+.logo-name-job-title {
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+}
+
+.burger-container {
+  grid-column: 2;
+  grid-row: 1 / 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.burger-logo {
+  width: 26px;
+  height: 21px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.burger-logo-line-1 {
+  width: 50%;
+  height: 3px;
+  border-radius: 1.5px;
+  background-color: var(--royal-blue);
+}
+.burger-logo-line-2 {
+  width: 100%;
+  height: 3px;
+  border-radius: 1.5px;
+  background-color: var(--royal-blue);
+}
+.burger-logo-line-3 {
+  width: 50%;
+  height: 3px;
+  border-radius: 1.5px;
+  background-color: var(--royal-blue);
+  align-self: flex-end;
+}
+
+.content-spacer {
+  height: 10rem;
+}
+
+main {
+  background-color: var(--dark-beige);
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-container {
+  margin: 28px 0px 13px 0;
+}
+
+.profile-card {
+  background-color: var(--light-beige);
+  height: 370px;
+  /* width: 330px; */
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-top: -160px;
+  margin-bottom: 26px;
+  box-shadow: -11.31px 11.31px 17px 0px rgba(138, 131, 124, 0.23);
+
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(4, min-content) 1fr;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  display: block;
+  width: 120px;
+  height: 120px;
+  /* object-fit: cover; */
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 13px;
+}
+
+.profile-name {
+  font-family: "poppins", sans-serif;
+  line-height: 1.2em;
+  font-size: 21px;
+  /* font-weight: 600; */
+  font-weight: var(--very-bold);
+  color: var(--black);
+  text-align: center;
+}
+
+.profile-line-break {
+  border-top: 2px solid var(--royal-blue);
+  height: 3px;
+  width: 65px;
+  margin-top: 1rem;
+  margin-bottom: 26px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile-buttons-container {
+  display: flex;
+  justify-content: space-around;
+  height: 2rem;
+  margin-bottom: 2rem;
+}
+
+.resume-button-container {
+  border: 1px solid var(--royal-blue);
+  border-radius: 15px;
+  width: 7.5rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--royal-blue);
+}
+
+.resume-button {
+  font-size: 15px;
+  color: var(--white);
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: var(--royal-blue);
+}
+
+.projects-button-container {
+  border: 1px solid var(--black);
+  border-radius: 15px;
+  width: 7.5rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-button-container a {
+  text-decoration: none;
+}
+
+.projects-button {
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.socials-bar {
+  background-color: var(--white);
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+.social-container {
+  width: 125px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-me {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.hello-header {
+  font-size: 40px;
+  font-weight: 700;
+  font-family: poppins-semibold, poppins, sans-serif;
+  margin-bottom: 1rem;
+}
+
+.hello-sub-header {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+
+  margin-bottom: 1rem;
+}
+
+.hello-para {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.04rem;
+  line-height: 1.4rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.footer-comms-container {
+  margin: 27px 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+.footer-socials-container {
+  margin: 27px 1rem;
+}
+
+.social-icon-larger {
+  font-size: 20px;
+}
+
+.footer-label {
+  margin-bottom: 0.75rem;
+  font-family: "Quicksand", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.footer-text {
+  font-family: "Nunito Sans", sans-serif;
+  /* font-family: "Quicksand", sans-serif; */
+  font-size: 13px;
+  font-weight: 300;
+}
+
+/* ******************************************************************************** */
+/* ******************************************************************************** */
+/* ******************************************************************************** */
+/* desktop styling */
+/* ******************************************************************************** */
+/* ******************************************************************************** */
+/* ******************************************************************************** */
+
+.desktop-content-container {
+  display: none;
+}
+
+.desktop-header-outer {
+  background-color: var(--white);
+  height: 126px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
+.desktop-header-inner {
+  margin-left: 4rem;
+  margin-right: 4rem;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  align-content: center;
+}
+
+.d-header-name-title-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.d-logo-name-title::before {
+  content: "";
+  display: inline-block;
+  margin-right: 0.6rem;
+  background-color: var(--royal-blue);
+  height: 1rem;
+  width: 1rem;
+}
+
+.d-logo-name-job-title {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.d-header-nav-container {
+  text-align: right;
+}
+
+.d-nav-list-item {
+  /* removes bullet points */
+  list-style: none;
+  text-align: center;
+}
+
+.d-nav-items-list > li {
+  display: inline-block;
+  padding-right: 2rem;
+}
+
+.d-nav-items-list > li > a {
+  text-decoration: none;
+  color: var(--black);
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.d-nav-items-list > li > a:hover {
+  color: var(--royal-blue);
+}
+
+.d-nav-items-list li:first-child > a {
+  color: var(--royal-blue);
+}
+
+.desktop-main-container {
+  display: grid;
+  grid-template-columns: 3fr 5fr;
+}
+
+.d-main-container {
+  position: relative;
+  margin-left: 25rem;
+  /* outline: 3px dotted red; */
+  /* width: 900px; */
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.d-main-left {
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */
+  height: 952px;
+  width: 500px;
+  background-color: var(--dark-beige);
+}
+
+.profile-container {
+  margin: 28px 0px 13px 0;
+}
+
+.d-profile-card {
+  background-color: var(--light-beige);
+  /* outline: 3px dashed green; */
+  height: 526px;
+  width: 375px;
+  /* position: relative; */
+  /* width: 330px; */
+  /* margin-left: 25rem; */
+  margin-right: 2rem;
+  /* margin-top: -160px; */
+  margin-top: 16rem;
+  margin-bottom: 26px;
+  box-shadow: -11.31px 11.31px 17px 0px rgba(138, 131, 124, 0.23);
+
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(4, min-content) 1fr;
+}
+
+.d-main-right-container {
+  /* border: 3px dashed purple; */
+
+  margin-top: 16rem;
+  width: 400px;
+}
+
+.d-main-right {
+  background-color: var(--white);
+}
+
+.d-profile-pic {
+  border-radius: 50%;
+  display: block;
+  width: 120px;
+  height: 120px;
+  /* object-fit: cover; */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 43px;
+  margin-bottom: 43px;
+}
+
+.d-profile-name {
+  font-family: "poppins", sans-serif;
+  line-height: 1.2em;
+  font-size: 27px;
+  /* font-weight: 600; */
+  font-weight: 700;
+  color: var(--black);
+  text-align: center;
+}
+
+.d-profile-line-break {
+  border-top: 2px solid var(--royal-blue);
+  height: 3px;
+  width: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.d-profile-job-title {
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  text-align: center;
+  margin-bottom: 51px;
+}
+
+.d-social-icon-larger {
+  font-size: 25px;
+}
+
+.d-socials-bar {
+  background-color: var(--white);
+  height: 53px;
+  display: flex;
+  justify-content: center;
+}
+.d-social-container {
+  width: 154px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.d-about-me {
+  /* margin-left: 1.5rem; */
+  /* margin-right: 1.5rem; */
+}
+
+.d-hello-header {
+  font-size: 100px;
+  font-weight: 700;
+  font-family: poppins-semibold, poppins, sans-serif;
+  margin-bottom: 1rem;
+}
+
+.d-hello-sub-header {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+
+  margin-bottom: 38px;
+}
+
+.d-profile-buttons-container {
+  display: flex;
+  /* justify-content: space-around; */
+  gap: 10px;
+  height: 2rem;
+  margin-bottom: 56px;
+}
+
+.d-resume-button-container {
+  border: 1px solid var(--royal-blue);
+  border-radius: 15px;
+  width: 7.5rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--royal-blue);
+}
+
+.d-resume-button-container:hover {
+  color: var(--royal-blue);
+  background-color: var(--white);
+}
+
+.d-resume-button {
+  font-size: 15px;
+  color: var(--white);
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: var(--royal-blue);
+}
+
+.d-resume-button:hover {
+  color: var(--black);
+  background-color: var(--white);
+}
+
+.d-projects-button-container {
+  border: 1px solid var(--black);
+  border-radius: 15px;
+  width: 7.5rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.d-hello-para {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+  letter-spacing: 0.04rem;
+  line-height: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.d-footer-container {
+  padding-top: 43px;
+  padding-bottom: 33px;
+  padding-left: 49px;
+  padding-right: 49px;
+
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: var(--white);
+}
+
+.d-footer-comms-container {
+  /* margin: 27px 1rem; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+.d-call-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.d-write-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.d-footer-socials-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.d-footer-label {
+  margin-bottom: 0.75rem;
+  font-family: "Quicksand", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.d-footer-text {
+  font-family: "Nunito Sans", sans-serif;
+  /* font-family: "Quicksand", sans-serif; */
+  font-size: 13px;
+  font-weight: 300;
+}
+
+@media (min-width: 950px) {
+  .mobile-content-container {
+    display: none;
+  }
+  .desktop-content-container {
+    display: grid;
+  }
+}
