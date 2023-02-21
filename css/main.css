@@ -242,9 +242,30 @@ h2 {
 footer {
   background-color: var(--dark-green);
   padding-top: 200px;
+  color: var(--white);
+}
+.social {
+  display: flex;
+  flex-direction: row;
 }
 .submit_button {
   background-color: var(--dark-green);
   border: 2.5px solid var(--white);
   color: var(--white);
+}
+.footer_ul {
+  list-style: none;
+}
+.nav_item {
+  padding: 0.3rem;
+}
+.nav_link {
+  text-decoration: none;
+  color: var(--white);
+  font-family: var(--headings_and_subheadings);
+}
+footer p {
+  font-family: var(--headings_and_subheadings);
+  font-size: 23px;
+  padding-left: 35px;
 }
