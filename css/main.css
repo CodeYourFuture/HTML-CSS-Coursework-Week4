@@ -179,8 +179,16 @@ h1 {
 .try_now a {
   color: var(--black);
 }
+
+/* benefit */
+
 #benefit_h1 {
   text-align: center;
+}
+#benefits {
+  display: flex;
+  flex-direction: column;
+  margin: 25px;
 }
 .benefit_child {
   display: flex;
@@ -198,16 +206,23 @@ h2 {
   text-align: center;
   padding: 0.5rem;
 }
+
+/* about */
+
 #about {
   background-color: var(--light-green);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
+#about_media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .about_image {
   margin-top: 3vh;
-  max-width: 85%;
+  max-width: 350px;
   height: auto;
 }
 #about h1 {
@@ -223,6 +238,10 @@ h2 {
 .button_vision {
   background-color: var(--light-green);
 }
+#h1_promotional {
+  margin-top: 7rem;
+  text-align: center;
+}
 #promotional {
   display: flex;
   flex-direction: column;
@@ -230,17 +249,28 @@ h2 {
   text-align: center;
   margin: 0;
   padding: 1.5rem;
-}
-#promotional {
   background-color: var(--lylac);
+}
+
+#view_button_div {
+  background-color: var(--lylac);
+  position: relative;
 }
 .button_view_all {
   background-color: var(--lylac);
+  margin-top: 2rem;
+  position: inherit;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
-.promotional_child > img {
-  width: 90%;
+
+.promotional_img {
+  max-width: 90%;
   height: auto;
 }
+
 #feature_product {
   display: flex;
   flex-direction: column;
@@ -256,6 +286,10 @@ h2 {
 .button_try_it {
   background-color: var(--white);
 }
+#benefit2_h1 {
+  text-align: center;
+  margin: 7rem;
+}
 #benefits_2 {
   padding-top: 10px;
   background-color: var(--light-green);
@@ -267,6 +301,7 @@ h2 {
 #benefits_2 p {
   margin: 1rem;
 }
+
 .number {
   max-width: 40px;
   height: auto;
@@ -387,7 +422,7 @@ input[type="email"] {
   padding: 20px;
 }
 .logo_img {
-  max-width: 20vw;
+  max-width: 60px;
   height: auto;
   margin: 20px;
 }
@@ -396,4 +431,89 @@ input[type="email"] {
   font-family: var(--body);
   font-size: medium;
   padding: 20px;
+}
+
+@media (min-width: 900px) {
+  h1 {
+    font-size: 3rem;
+    line-height: 3ch;
+  }
+  #benefits {
+    flex-direction: row;
+    text-align: center;
+  }
+  .benefit_child {
+    margin: 3rem;
+  }
+  #about {
+    flex-direction: row;
+  }
+  #about_media {
+    padding-left: 70px;
+    max-width: 600px;
+  }
+  .about_image {
+    max-width: 600px;
+    padding-left: 100px;
+    transform: translateY(50px);
+  }
+  #h1_promotional {
+    margin: 9rem;
+  }
+  #promotional {
+    padding-top: 5rem;
+    flex-direction: row;
+  }
+  #promotional_child_2 {
+    transform: translateY(-200px);
+  }
+  .promotional_child {
+    transform: translateY(-100px);
+  }
+  #feature_product {
+    flex-direction: row;
+  }
+  #discover_child {
+    max-width: 700px;
+  }
+  #benefits_2 {
+    flex-direction: row;
+    padding: 5rem;
+  }
+  .img1 {
+    transform: rotate(-15deg) translate(-40px, -60px);
+    z-index: 3;
+  }
+
+  .img2 {
+    transform: rotate(15deg) translate(-320px, 50px);
+    z-index: 2;
+  }
+
+  .img3 {
+    transform: rotate(15deg) translate(200px, -100px);
+    z-index: 4;
+  }
+
+  .img4 {
+    transform: rotate(-20deg) translate(-550px, -220px);
+    z-index: 1;
+  }
+  .rotated_images img {
+    position: absolute;
+    max-width: 350px;
+  }
+  .social {
+    gap: 5rem;
+  }
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  #footer_end {
+    background-color: var(--dark-green);
+    margin: 0;
+    text-align: center;
+  }
 }
