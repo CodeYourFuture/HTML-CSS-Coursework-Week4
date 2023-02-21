@@ -1,3 +1,8 @@
-/* Add your CSS here */
+body{
+    background-color: white;
+    width: 100%;
+    margin: 0px;
+    height: 0px;
+    padding: 0px;
 
-/* Dont' forget to link this file to your HTML in the <head> */
+}
