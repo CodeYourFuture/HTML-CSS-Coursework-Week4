@@ -383,3 +383,58 @@ form button{
             
         }
 }
+
+/* Media Query */
+
+@media screen and (min-width:540px) {
+
+
+    header {
+        position: fixed;
+        top: 0;
+    }
+
+    .open-menu,
+    .close-menu {
+        display: none;
+    }
+
+    .nav-list {
+        margin: 0 2rem;
+    }
+
+    .nav-link,
+    .footer-wrapper {
+        padding: 1rem;
+    }
+
+    body {
+        grid-template-areas:
+            "header header"
+            "prod prod"
+            "products products"
+            "about about-img"
+            "buy-img buy-online"
+            "request-form request-form"
+            "footer footer";
+    }
+
+    .prod {
+        background-attachment: fixed;
+        margin-top: 180px;
+    }
+
+    .products {
+        flex-direction: row;
+
+    }
+
+    .leaf {
+        display: none;
+    }
+
+    . about-img {
+        flex-direction: row;
+
+    }
+}
