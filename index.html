@@ -18,11 +18,20 @@
     <div class="juice_text_area">
       <a class="juice_bar" href="/index.html">Juice Bar</a>
     </div>
-    <!-- <input type="checkbox" id="menu" /><label class="hamburger" for="menu">
-      <div class="lines">
-        <span class="first line"></span>
-        <span class="third line"></span></div
-    ></label> -->
+    <div class="hamburger">
+      <input id="menu__toggle" type="checkbox" />
+      <label class="menu__btn" for="menu__toggle">
+        <span></span>
+      </label>
+
+      <ul class="menu__box">
+        <li><a class="menu__item" href="#">Home</a></li>
+        <li><a class="menu__item" href="#">Story</a></li>
+        <li><a class="menu__item" href="#">Menu</a></li>
+        <li><a class="menu__item" href="#">Order Online</a></li>
+        <li><a class="menu__item" href="#">Locations & Hours</a></li>
+      </ul>
+    </div>
 
     <main>
       <div id="welcome">
@@ -217,29 +226,40 @@
         </div>
         <div class="connect">
           <p>Connect</p>
-          <ul>
+          <ul class="footer_ul">
             <li class="nav_item"><a class="nav_link" href="#">Instagram</a></li>
             <li class="nav_item"><a class="nav_link" href="#">Facebook</a></li>
             <li class="nav_item"><a class="nav_link" href="#">Youtube</a></li>
           </ul>
         </div>
       </div>
-      <p>Join Our Mailing List</p>
+
       <div class="customer_email">
-        <label for="Email">Email *</label>
-        <input class="customer_email" type="email" name="Email" id="Email" required>
-    </div>
-    
-        <button class="submit_button" type="button">SUBMIT</button>
+        <p>Join Our Mailing List</p>
+        <div id="row_div">
+          <div class="customer_email">
+            <label for="Email" id="email_id">Email *</label>
+            <input
+              class="cust_email"
+              type="email"
+              name="Email"
+              id="Email"
+              required
+            />
+          </div>
+          <button class="submit_button" type="button">SUBMIT</button>
+        </div>
       </div>
+
       <div class="serving">
         <a href="">Serving You Safely :)</a>
-        <img src="/images/logo.jpeg" alt="logo J B" />
+        <img class="logo_img" src="/images/logo.jpeg" alt="logo J B" />
       </div>
+
+      <p id="footer_end">
+        © This website design was created by Wix.com, and is used here for
+        strictly educational purposes.
+      </p>
     </footer>
-    <p>
-      © This website design was created by Wix.com, and is used here for
-      strictly educational purposes.
-    </p>
   </body>
 </html>
