@@ -1,3 +1,406 @@
 /* Add your CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
+
+@import url('https://fonts.googleapis.com/css2?family=Arial&family=Karla&family=Rubik&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Fjalla One', sans-serif;
+  font-family: 'Outfit', sans-serif;
+}
+
+html, body{
+  background-color: #ededee;
+  font-family: 'Fjalla One', sans-serif;
+  font-family: 'Outfit', sans-serif;
+}
+
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+ 
+/*   header.   */
+.header{
+  color: #a05841;
+  display: grid;
+  grid-area: h;
+}
+
+.header2{ 
+  color: #a05841;
+}
+
+.input{
+  display: grid;
+  grid-area: h;
+  display: flex;
+  align-items: center;
+  width: 319px;
+  flex-grow: 1;
+  color: #a05841;
+  border-style: none;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2rem;
+  font-family: 'Fjalla One', sans-serif;
+}
+.search-navbar{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-left: 3rem;
+  grid-area: h;
+  align-items: center;
+}
+.desktop-navbar{
+  display: none;
+}
+.mobile-navbar{
+  grid-area: nav;
+  align-self: start;
+  justify-self: end;
+}
+.mobile-navbar{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "nav-title nav"
+  "text text";
+  padding: 1rem;
+  padding-left: 3rem;
+  padding-right: 1rem;
+  color: #a05841;
+} 
+
+/*.    search-navbar.      */
+
+.search-navbar{
+
+}
+
+.search-nav-list{
+  background-color: white;
+  margin: 0;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.search-nav-item{
+  margin-right: 1rem;
+}
+.search-nav-item a{
+  color: #a05841;
+}
+.search-navbar:first-child{
+
+  
+}
+
+.input{
+  color: #a05841;
+}
+
+.nav{
+  position: fixed;
+  grid-area: nav;
+  align-self: start;
+  justify-self: start;
+  margin-top: 1rem;
+  height: 3rem;
+}
+
+.nav-list{
+  position: fixed;
+  left: -100%;
+  flex-direction: column;
+  background-color: rgb(226, 232, 232);
+  width: 100%;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 400ms ease-in-out;
+  box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+}
+.nav-menu.active{
+  left: 0;
+}
+.nav-item{
+  margin: 1rem 0;
+}
+.nav-link{
+  color: #a05841;
+}.  
+.hamburger{
+  display: block;
+  cursor: pointer;
+}
+.bar{
+  display: block;
+  width: 40px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.2ms ease-in-out;
+  background-color: #a05841;
+}
+.search-navbar{
+  grid-area: search-bar;
+  align-self: flex-end;
+}
+.fa-shopping-bag{
+  width: 100%;
+  height: 100%;
+}
+.mobile-navbar{
+  grid-area: navbar;
+}
+.nav-title > span{
+  font-size: 1.5rem;
+  justify-self: start;
+  align-self: flex-start;
+}
+.nav-title > p{
+  grid-area: text;
+  padding-top: 0.5rem;
+}
+
+.nav-text{
+  font-size: 20px;
+  text-align: right;
+  justify-self: end;
+  grid-area: text;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+  display: grid;
+  grid-area: n;
+
+}
+
+
+
+/*.     Masterpage.     */
+
+.masterPage{
+  background-image: url(../Cactus.webp);
+  background-size: cover;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  height: 792px;
+  grid-area: m;
+}
+
+.masterPage{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+  font-size: 7rem;
+  font-weight: 400;
+}
+
+.logo{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: white;
+}
+.name{
+  letter-spacing: 0em;
+  font-size: 13px;
+  border-bottom: 15px;
+  border-bottom: 2px solid white;
+  padding-top: rem;
+  margin-left: 1rem;
+}
+.prickles-logo{
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  margin-right: -3rem;
+  margin-top: -5rem;
+}
+
+/*.horizontal-line2{
+  position: relative;
+    margin: 0px 0px 59px 0;
+    left: 22px;
+    grid-area: 2 / 1 / 3 / 2;
+    justify-self: start;
+    align-self: start;
+}. */
+.date{
+  letter-spacing: 0.45em;
+  font-size: 13px;
+  border-bottom: 2px solid white;
+  padding-top: 7.5rem;
+  margin-right: 1rem;
+  margin-top: -7.5rem;
+}
+/*.horizontal-line1{
+    position: relative;
+    margin: 0px 0px 59px 0;
+    left: 246px;
+    grid-area: 2 / 1 / 3 / 2;
+    justify-self: start;
+    align-self: start;
+}.   */
+
+
+.title > span > h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 7rem;
+  color: rgba(255,255,255,1);
+  padding-bottom: 2rem;
+}
+
+.ads{
+  color: white;
+  font-size: 16px;
+  letter-spacing: 0.36em;
+}
+
+.shop-btn{
+  background-color: #a05841;
+  padding: 10px 30px;
+  margin-top: 3rem;
+  color: white;
+  font-weight: lighter;
+}
+
+.chat-btn{
+  display: flex;
+  justify-self: flex-end;
+  align-self: flex-end;
+  margin-right: -3rem;
+  margin-bottom: -7.5rem;
+  padding: 20px 70px;
+  background: #a05841;
+  color: #fff;
+  font-size: 17px;
+  font-weight: lighter;
+  
+}
+
+
+/*.      tablet.    */
+
+@media  screen and (min-width: 540px){
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas:
+    "h h h h h h h h h h h h"
+    "n n n n n n n n n n n n"
+    "m m m m m m m m m m m m"
+    "f f f f f f f f f f f f";
+  }
+  .header{
+    grid-area: h;
+    grid-template-areas: 
+    "search shopping-bag"
+  }
+  h1{
+    font-size: 44px;
+    color: rgb(255, 255, 255);
+  }
+  .nav-text{
+    font-size: 2rem;
+  }
+  .mobile-navbar{
+    display: none;
+  }
+  .desktop-navbar{
+    grid-area: n;
+    margin: 2rem 0;
+    display: flex;
+    text-align: left;
+    justify-content: flex-start;
+    padding: 1.5rem 1.5rem;
+  }
+
+  .desktop-nav-list{
+    display: grid; 
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 2rem;
+  }
+  .desktop-nav-item{
+    margin-left: 0rem;
+  }
+  .desktop-nav-link{
+    color: #a05841;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 3rem;
+  }
+  .desktop-nav-link:hover{
+    color: black;
+    transition: 0.4ms;
+  }
+
+  .navbar-text{
+    grid-area: n;
+    text-align: right;
+    font-size: 20px;
+    letter-spacing: 0.15;
+    vertical-align: baseline;
+  }
+  .homepage-main{
+    grid-area: m;
+  }
+  .chat-btn{
+    display: -moz-popup;
+  }
+ /* .hero{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "image image image";
+  }
+  .product1{
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "text text image image";
+  }
+  .product2{
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "image text";
+  }. */
+ 
+  }
+
+
+/*.    Desktop.   */
+
+@media  screen and (min-width: 980) {
+
+  .container{
+    grid-template-areas: 
+    "h h h h h h h h h h h h"
+    "n n n n n n n n n n n n"
+    "m m m m m m m m m m m m"
+    "f f f f f f f f f f f f";
+  }
+ 
+}
+  
+
+
+
+  
