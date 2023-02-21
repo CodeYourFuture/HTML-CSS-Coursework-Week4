@@ -265,7 +265,7 @@ prod img{
     grid-area: about2-img;
     
     width: 100%;
-
+}
 .buy-img{
     grid-area: buy-img;
 }
