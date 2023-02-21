@@ -83,7 +83,7 @@ header {
   left: 0 !important;
 }
 .menu__btn {
-  position: fixed;
+  position: absolute;
   top: 75px;
   right: 20px;
   width: 26px;
@@ -98,7 +98,7 @@ header {
   position: absolute;
   width: 100%;
   height: 2px;
-  background-color: #616161;
+  background-color: var(--black);
   transition-duration: 0.25s;
 }
 .menu__btn > span::before {
@@ -119,15 +119,14 @@ header {
   margin: 0;
   padding: 80px 0;
   list-style: none;
-  background-color: #eceff1;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  background-color: var(--white);
   transition-duration: 0.25s;
 }
 .menu__item {
   display: block;
   padding: 12px 24px;
   color: #333;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--headings_and_subheadings);
   font-size: 20px;
   font-weight: 600;
   text-decoration: none;
