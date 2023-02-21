@@ -37,19 +37,17 @@ body {
     text-align: center;
     background-color: var(--lightGray);
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(10, auto);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(8, auto);
     grid-template-areas: 
-    "header       header"
-    "prod         prod"
-    "products     products"
-    "about        about"
-    "about-img    about-img"
-    "buy-img      buy-img"
-    "buy-online   buy-online"
-    "request-form request-form"
-    "leaf         leaf"
-    "footer       footer";
+    "header       header        header      header"
+    "prod         prod          prod        prod"
+    "products     products      products    products"
+    "about        about         about1-img  about2-img"
+    "buy-online   buy-online    buy-img     buy-img"
+    "request-form request-form  request-form    request-form"
+    "leaf         leaf          leaf        leaf"
+    "footer       footer        footer      footer"       
 }
 
 /* Header */
@@ -237,6 +235,7 @@ prod img{
     padding-bottom: 72%;
 }
 
+
 .img-wrapper img{
     position: absolute;
     top: 0;
@@ -248,6 +247,7 @@ prod img{
 
 .about{
     grid-area: about;
+    
     color: var(--redBrown);
     font-family: var(--font2);
     font-size: 20px;
@@ -255,12 +255,16 @@ prod img{
     padding: 40px 30px;
 }
 
-.about-img{
-    grid-area: about-img;
-    display: flex;
-    flex-direction: column;
+.about1-img{
+    grid-area: about1-img;
+    
     width:100%;
 }
+
+.about2-img {
+    grid-area: about2-img;
+    
+    width: 100%;
 
 .buy-img{
     grid-area: buy-img;
