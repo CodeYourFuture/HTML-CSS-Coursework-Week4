@@ -1,3 +1,519 @@
-/* Add your CSS here */
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+:root {
+  --black: #000;
+  --white: #fff;
+  --lylac: #f5e8ff;
+  --light-green: #e6fac0;
+  --medium-green: #5e7d1f;
+  --dark-green: #394b2a;
+  --headings_and_subheadings: "Questrial", sans-serif;
+  --buttons: "Raleway", sans-serif;
+  --body: "Roboto", sans-serif;
+}
 
-/* Dont' forget to link this file to your HTML in the <head> */
+body {
+  /* grid-template-columns: auto;
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "section1"
+    "footer"; */
+  margin: 0;
+  background-color: var(--white);
+  overflow-x: hidden;
+}
+p {
+  font-family: var(--body);
+}
+h1,
+h2 {
+  font-family: var(--headings_and_subheadings);
+}
+button {
+  font-family: var(--buttons);
+  border: 2.5px solid var(--black);
+  font-size: medium;
+  padding: 13px 60px;
+  margin: 1.5rem;
+}
+header {
+  grid-area: header;
+}
+.order_link {
+  background-color: var(--black);
+  padding: 0.7rem;
+  text-align: center;
+}
+.order_link a {
+  color: var(--white);
+  font-family: var(--body);
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.juice_text_area {
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+.juice_text_area a {
+  color: var(--black);
+  text-decoration: none;
+  font-family: var(--body);
+  font-size: 1.3rem;
+}
+
+#menu__toggle {
+  opacity: 0;
+}
+#menu__toggle:checked + .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+#menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  left: 0 !important;
+}
+.menu__btn {
+  position: absolute;
+  top: 75px;
+  right: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: var(--black);
+  transition-duration: 0.25s;
+}
+.menu__btn > span::before {
+  content: "";
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: "";
+  top: 8px;
+}
+.menu__box {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: var(--white);
+  transition-duration: 0.25s;
+}
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: var(--headings_and_subheadings);
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: 0.25s;
+}
+.menu__item:hover {
+  background-color: #cfd8dc;
+}
+/* main */
+
+#welcome {
+  display: flex;
+  flex-direction: column;
+}
+
+#h1_main {
+  text-align: center;
+}
+h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 2.8rem;
+}
+#subhead_h1 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  text-align: center;
+}
+.button_explore {
+  background-color: var(--white);
+  margin: auto;
+  margin-bottom: 2.5rem;
+}
+.main_image {
+  max-width: 100%;
+  height: auto;
+}
+
+#online_order {
+  margin: 0;
+}
+.try_now {
+  background-color: var(--lylac);
+  padding: 0.8em 0;
+  text-align: center;
+  line-height: 1.2rem;
+  font-family: var(--body);
+}
+
+.try_now a {
+  color: var(--black);
+}
+
+/* benefit */
+
+#benefit_h1 {
+  text-align: center;
+}
+#benefits {
+  display: flex;
+  flex-direction: column;
+  margin: 25px;
+}
+.benefit_child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h2 {
+  font-size: 22px;
+  font-weight: 50;
+}
+
+.benefit_child p {
+  font-size: medium;
+  line-height: 3ch;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+/* about */
+
+#about {
+  background-color: var(--light-green);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#about_media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about_image {
+  margin-top: 3vh;
+  max-width: 350px;
+  height: auto;
+}
+#about h1 {
+  text-align: center;
+}
+.describe_section {
+  text-align: center;
+  padding: 0 2rem;
+  margin: 0;
+  line-height: 3ch;
+}
+
+.button_vision {
+  background-color: var(--light-green);
+}
+#h1_promotional {
+  margin-top: 7rem;
+  text-align: center;
+}
+#promotional {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  padding: 1.5rem;
+  background-color: var(--lylac);
+}
+
+#view_button_div {
+  background-color: var(--lylac);
+  position: relative;
+}
+.button_view_all {
+  background-color: var(--lylac);
+  margin-top: 2rem;
+  position: inherit;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.promotional_img {
+  max-width: 90%;
+  height: auto;
+}
+
+#feature_product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#feature_product p {
+  margin: 1rem;
+  font-size: medium;
+  line-height: 3ch;
+  text-align: center;
+}
+.button_try_it {
+  background-color: var(--white);
+}
+#benefit2_h1 {
+  text-align: center;
+  margin: 7rem;
+}
+#benefits_2 {
+  padding-top: 10px;
+  background-color: var(--light-green);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#benefits_2 p {
+  margin: 1rem;
+}
+
+.number {
+  max-width: 40px;
+  height: auto;
+}
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.gallery a {
+  font-family: var(--body);
+  color: var(--black);
+}
+.rotated_images_gallery {
+  padding: 8rem 0;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.rotated_images img {
+  position: absolute;
+  max-width: 130px;
+}
+
+.img1 {
+  transform: rotate(-15deg) translate(-55px, -90px);
+  z-index: 3;
+}
+
+.img2 {
+  transform: rotate(15deg) translate(-120px, 20px);
+  z-index: 2;
+}
+
+.img3 {
+  transform: rotate(15deg) translate(-10px, 0);
+  z-index: 4;
+}
+
+.img4 {
+  transform: rotate(-25deg) translate(-80px, 40px);
+  z-index: 1;
+}
+footer {
+  background-color: var(--dark-green);
+  padding-top: 200px;
+  color: var(--white);
+}
+.social {
+  display: flex;
+  flex-direction: row;
+}
+.submit_button {
+  background-color: var(--dark-green);
+  border: 2.5px solid var(--white);
+  color: var(--white);
+}
+.footer_ul {
+  list-style: none;
+  padding-left: 20px;
+}
+.nav_item {
+  padding: 0.3rem;
+}
+.connect {
+  padding-left: 20px;
+}
+
+.nav_link {
+  text-decoration: none;
+  color: var(--white);
+  font-family: var(--body);
+}
+footer p {
+  font-family: var(--headings_and_subheadings);
+  font-size: 25px;
+  padding-left: 20px;
+}
+.customer_email {
+  display: flex;
+  flex-direction: column;
+  padding-left: 4px;
+}
+
+#row_div {
+  display: flex;
+  align-items: flex-start;
+  padding: 0 1rem;
+}
+.submit_button {
+  padding: 13px 37px;
+}
+#email_id {
+  font-family: var(--body);
+  padding: 10px;
+  margin-top: 5px;
+  padding-left: 0;
+}
+.cust_email {
+  margin-top: 10px;
+}
+input[type="email"] {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid var(--white);
+}
+.serving {
+  display: flex;
+  flex-direction: column;
+}
+.serving a {
+  font-family: var(--headings_and_subheadings);
+  color: var(--white);
+  font-size: x-large;
+  padding: 20px;
+}
+.logo_img {
+  max-width: 60px;
+  height: auto;
+  margin: 20px;
+}
+
+#footer_end {
+  font-family: var(--body);
+  font-size: medium;
+  padding: 20px;
+}
+
+@media (min-width: 900px) {
+  h1 {
+    font-size: 3rem;
+    line-height: 3ch;
+  }
+  #benefits {
+    flex-direction: row;
+    text-align: center;
+  }
+  .benefit_child {
+    margin: 3rem;
+  }
+  #about {
+    flex-direction: row;
+  }
+  #about_media {
+    padding-left: 70px;
+    max-width: 600px;
+  }
+  .about_image {
+    max-width: 600px;
+    padding-left: 100px;
+    transform: translateY(50px);
+  }
+  #h1_promotional {
+    margin: 9rem;
+  }
+  #promotional {
+    padding-top: 5rem;
+    flex-direction: row;
+  }
+  #promotional_child_2 {
+    transform: translateY(-200px);
+  }
+  .promotional_child {
+    transform: translateY(-100px);
+  }
+  #feature_product {
+    flex-direction: row;
+  }
+  #discover_child {
+    max-width: 700px;
+  }
+  #benefits_2 {
+    flex-direction: row;
+    padding: 5rem;
+  }
+  .img1 {
+    transform: rotate(-15deg) translate(-40px, -60px);
+    z-index: 3;
+  }
+
+  .img2 {
+    transform: rotate(15deg) translate(-320px, 50px);
+    z-index: 2;
+  }
+
+  .img3 {
+    transform: rotate(15deg) translate(200px, -100px);
+    z-index: 4;
+  }
+
+  .img4 {
+    transform: rotate(-20deg) translate(-550px, -220px);
+    z-index: 1;
+  }
+  .rotated_images img {
+    position: absolute;
+    max-width: 350px;
+  }
+  .social {
+    gap: 5rem;
+  }
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  #footer_end {
+    background-color: var(--dark-green);
+    margin: 0;
+    text-align: center;
+  }
+}
