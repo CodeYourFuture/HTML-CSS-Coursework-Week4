@@ -1,3 +1,491 @@
-/* Add your CSS here */
+/* Mobile-first design */
 
-/* Dont' forget to link this file to your HTML in the <head> */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    font-family: 'Quicksand', sans-serif;
+  }
+  h1,h2,h3,h4,h5{
+    font-family: 'Poppins', sans-serif;
+    color: black;
+  }
+  li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .header{
+   display: grid;
+   height: auto;
+   width: 100%;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: auto;
+   grid-template-areas: "name nav";
+   padding: 1rem;
+
+  }
+  .slash{
+    display: none;
+  }
+  .navbar-mobile{
+    grid-area: nav;
+    align-self:start;
+    justify-self: end;
+  
+  }
+  .nav-menu {
+    position: fixed;
+    top: -100%;
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(244,236,230);
+    width: 100%;
+    text-align: center;
+    transition: 0.7s;
+    height: 100%;
+    right: 0;
+   
+  }
+  .nav-menu.active {
+   top: 0;
+   padding-top: 4rem;
+   transition: all 0.6s ease-in-out;
+  
+  }
+ 
+  .nav-item {
+    margin: 1rem 0;
+    
+  }
+  .nav-link{
+    color: black;
+    font-weight: 800;
+    font-size: 20px;
+    font-family: 'Poppins';
+    transition: color 0.2s ease-in-out;
+  }
+  .nav-link:hover {
+    color: #0150fd;
+  }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .bar {
+      display: block;
+      width: 27px;
+      height: 4px;
+      margin: 6px auto;
+      background-color:#0150FD;
+      border-radius: 2px;
+      z-index: 2;
+  }
+ .bar:first-child{
+  margin-left: 0px;
+  width: 50%;
+  height: 3.4px;
+ }
+ .bar:last-child{
+  margin-right: 0px;
+  width: 50%;
+  height: 3px;
+ }
+ 
+ .hamburger.active .bar {
+  transform: rotate(-45deg);
+  background-color: black;
+}
+/* Need to work on this part more */
+.hamburger.active .bar:nth-child(1) {
+  transform: rotate(-90deg) translateX(4px);
+  transform-origin: right;
+  transition: transform .33s cubic-bezier(.54,-.81,.57,.57); 
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: rotate(-90deg) translateX(-4px);
+  align-self: flex-end;
+  transform-origin: left;
+  transition: transform .33s cubic-bezier(.54,-.81,.57,.57);
+}
+
+  .header-left{
+    grid-area: name;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.4rem;
+    padding-left: 0.3rem;
+  }
+.title{
+  display: flex;
+  align-items: center;
+  padding-bottom: 0.5rem;
+
+}
+.logo{
+  width: 1rem;
+  height: 1rem;
+  background-color: #0150FD;
+  margin-right: 0.8rem;
+
+}  
+.name {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight:700;
+  color: black;
+}
+.job-title{
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.about-main{
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "intro"
+  "intro-text";
+  width: 100%;
+  background: linear-gradient(
+    to top,
+    #E6DACD 0%,
+    #E6DACD 78%,
+    #fff 78%,
+    #fff 100%
+  );
+}
+.grid-overwrite{
+  display: grid;
+  grid-template-rows: repeat(5, min-content) 1fr;
+  grid-template-columns: 100%;
+  grid-template-areas:
+  "row1"
+  "row2"
+  "row3"
+  "row4"
+  "row5";
+  text-align: left;
+  margin-left: 1.2rem;
+  margin-right: 0.5rem;
+  padding-top: 2rem;
+}
+.introduction{
+ text-align: center;
+  background-color: rgb(244,236,230);
+  grid-area: intro;
+ box-shadow: -15px 10px 23px #7d7b7b;
+}
+.image{
+  grid-area: row1;
+  justify-self: center;
+  padding: 2rem 0;
+}
+.image img{
+  border-radius: 50%;
+  width: 12rem;
+  height:12rem;
+  object-fit: cover;
+}
+.name-maya{
+  grid-area:row2;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.6em;
+}
+.border-line{
+width: 20%;
+height: 1.5px;
+background-color: #0150FD;
+margin: 1.5rem auto 0rem auto;
+
+}
+.project-manager{
+  display: none;
+}
+.left-buttons{
+  grid-area: row3;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  padding: 3rem 0;
+}
+.resume-btn{
+  padding: 0.6rem 2rem;
+  font-size: 15px;
+  background-color: #0150FD;
+  color: white;
+   border: none;
+   margin-right: 0.4rem;
+}
+.btn{
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 2rem;
+}
+.projects-btn{
+  background-color: transparent;
+  padding: 0.6rem 1.5rem;
+  border: 0.9px solid black;
+  margin-left: 0.4rem;
+}
+.social-media{
+  grid-area: row4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin-bottom: 0.5rem;
+}
+.fa{
+   color: black;
+   font-weight: bolder;
+   padding: 1rem 1rem;
+}
+.introduction-text{
+  grid-area: intro-text;
+  margin-left: 1.8rem;
+  height:auto;
+}
+.hello{
+grid-area: row1;
+font-size: 2.5rem;
+padding-bottom: 1rem;
+}
+.subtitle{
+grid-area: row2;
+font-size: 20px;
+padding-bottom: 1.5rem;
+}
+.right-buttons{
+  display: none;
+  grid-area: row3;
+}
+.intro-p{
+grid-area: row4;
+font-size: 18px;
+line-height: 1.5em;
+padding-bottom: 1.5rem;
+
+}
+.intro2-p{
+grid-area: row5;
+font-size: 18px;
+line-height: 1.5em;
+padding-bottom: 2rem;
+font-family: "Quicksand", sans-serif;
+}
+footer{
+  padding:1.8rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "call write"
+  "follow ."
+  "copy-write .";
+}
+
+.call{
+  grid-area: call;
+}
+.write{
+  grid-area: write;
+}
+.follow{
+  padding-top: 1rem;
+  grid-area: follow;
+  text-align: left;
+}
+.copywrite{
+  margin-top: 1rem;
+  grid-area: copy-write;
+  font-weight: normal;
+}
+.copywrite a{
+  color: black;
+  text-decoration: underline;
+}
+footer p{
+  padding-bottom:0.7rem;
+  font-size: 18px;
+  font-weight: 700;
+}
+.follow .social-media{
+  justify-content: flex-start;
+}
+.follow .social-media a{
+ font-size: 18px;
+}
+.follow .social-media .fa:first-child{
+ 
+  padding-left: 0rem;
+
+}
+
+  @media screen and (min-width: 800px) {
+    .header{
+      top: 0;
+      padding: 2.5rem;
+      position: sticky;
+      background-color: white;
+    }
+    .hamburger{
+      display: none;
+    }
+    .header-left{
+      flex-direction: row;
+      align-items: center;
+    }
+    .title{
+      padding-bottom: 0;
+    }
+    .name{
+      font-size: 27px;
+    }
+    .job-title{
+      font-size: 20px;
+    }
+    .slash{
+      display: block;
+      font-size: 20px;
+      font-weight: 300;
+      float: left;
+      padding:0 0.5rem;
+    }
+  
+  .nav-menu{
+    position: relative;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0;
+    transition: none;
+  }
+ 
+  .nav-item {
+      margin-left: 2rem; 
+  }
+  
+  .nav-link{
+      font-size: 14px;
+      font-family: 'Quicksand', sans-serif;
+      color:black;
+  }
+
+  .about-main{
+    padding-right: 13rem;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas: 
+    ". . . ."
+    ". section1 section2 ."
+    ". . . .";
+    row-gap: 8rem;
+    margin-top: 0;
+    width: 100%;
+    background: linear-gradient(
+    to right,
+    #E6DACD 0%,
+    #E6DACD 40%,
+    #fff 40%,
+    #fff 100%
+  );
+  }
+ 
+.introduction{
+  width: 25rem;
+  grid-area: section1;
+  padding-bottom: 0;
+}
+.project-manager{
+  display: block;
+  padding: 2.5rem;
+  font-size: larger;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+}
+.image img{
+  width: 15rem;
+  height: 15rem;
+  object-fit: cover;
+  margin-top: 2rem;
+}
+.social-media{
+  margin-bottom: 0rem;
+}
+.introduction .fa{
+  font-size: x-large;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+}
+
+.introduction-text{
+ width: 100%;
+  grid-area: section2;
+  margin-left: 3rem;
+}
+.hello{
+  font-size: 110px;
+}
+.subtitle{
+  font-size: 25px;
+  padding-bottom: 1rem;
+}
+.left-buttons{
+  display: none;
+}
+.right-buttons{
+  display: flex;
+  justify-content: flex-start;
+  padding: 2rem 0;
+}
+.btn{
+  padding: 0.6rem 2.3rem ;
+}
+.resume-btn{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+.projects-btn:hover{
+  background-color: #0150FD;
+  color: white;
+  border: none;
+}
+.intro-p{
+  padding-top: 1.5rem;
+}
+footer{
+  width: 100%;
+  grid-template-columns: repeat(3,1fr) ;
+  grid-template-areas:"copy-write . . . call write follow" ;
+  column-gap: 5rem;
+  padding: 1rem 3rem;
+}
+footer p{
+  font-size: 14px;
+  text-align: center;
+}
+.copywrite{
+  text-align: left;
+}
+.follow{
+  padding-top: 0;
+}
+.follow .fa{
+  padding: 4px;
+  font-size: 10px;
+  font-weight: normal;
+}
+
+}
