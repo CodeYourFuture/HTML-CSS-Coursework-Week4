@@ -48,10 +48,22 @@
         }
 
         .
-about-img{
+.about-img1{
             flex-direction: row;
             
         }
+.about-img2 {
+    flex-direction: row;
+    
 }
+
+
+.chat-btn {
+    display: -moz-popup;
+}
+
+}
+
+
 
 /* Dont' forget to link this file to your HTML in the <head> */
