@@ -5,6 +5,9 @@ font-family: 'Quicksand', sans-serif; */
 
 /* Don't' forget to link this file to your HTML in the <head> */
 
+
+/* mobile frist  */
+
 :root {
     --beige-dark: #e6dacd;
     --beige-light: #f4ece6;
@@ -16,7 +19,6 @@ font-family: 'Quicksand', sans-serif; */
     --heading-font: "Poppins", sans-serif;
     --body-font: "Quicksand", sans-serif;
 }
-
 
 * {
     box-sizing: border-box;
@@ -159,6 +161,11 @@ body {
 }
 
 /* button style   */
+
+.but-out{
+    display: none;
+}
+
 .but {
     display: flex;
     justify-content:center;
@@ -166,7 +173,7 @@ body {
 }
 
 .btn {
-    padding: 0.3rem 1rem;
+    padding:0.3rem 1rem;
     border-radius: 50px;
     font-size: 20px;
     text-transform: uppercase;
@@ -188,6 +195,10 @@ body {
     font-family: var(--heading-font);
     border: 1px solid var(--black);
     margin-left: 20px;
+}
+
+.pro{
+    display: none;
 }
 
 
@@ -270,4 +281,88 @@ body {
 }
 
 
+
+/* media query  */
+
+@media screen and (min-width: 620px) {
+    .menu-wrap{
+        display: none;
+    }
+    
+}
+
+@media screen and (min-width: 620px) {
+    .content{
+        display: flex;
+    }
+    .box2 {
+        width: 490px;
+        height: 500px;
+        padding: 40px;
+        background-color: var(--white);
+    }
+    .box2 p{
+        font-size: 0.8rem;
+        padding-right: 80px;
+    }
+    .box1{
+        background-color:var(--beige-dark);
+        width: 390px;
+        height: 500px;
+    }
+    .box3 {
+        margin-top:  20px;
+        margin-left: -790px;
+    }
+
+    /* button style   */
+
+    .but{
+        display:none;
+    }
+
+    .but-out{
+        display: flex;
+        padding-bottom: 30px;
+    }
+        .but-out .btn2 {
+        border-color: var(--black);
+        background-color: var(--beige-light);
+        color: var(--black);
+        font-family: var(--heading-font);
+        border: 1px solid var(--black);
+        margin-left: 20px;
+    }
+        .but-out .btn1 {
+        background-color: var(--blue-royal);
+        color: var(--white);
+        font-family: var(--heading-font);
+        text-transform: uppercase;
+        border: none;
+    }
+    .line{
+        display: inline;
+        width: 70px;
+        color: var(--blue-royal);
+        
+    }
+    .pro{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+        color: var(--black);
+        font-family: var(--body-font);
+        font-size: 1.4rem;
+        bottom: 0x;
+    }
+
+    .social-icon{
+        left: 95px;
+        bottom: 100px;
+    }
+
+
+
+}
 

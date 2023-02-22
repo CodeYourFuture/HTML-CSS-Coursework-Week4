@@ -9,6 +9,7 @@
     --heading-font: "Poppins", sans-serif;
     --body-font: "Quicksand", sans-serif;
 }
+
 body {
     background-color: var(--beige-dark);
 }
@@ -165,4 +166,8 @@ main>h1::before {
     position: absolute;
     left: 10%
 }
+
+
+
+/* media query  */
 
