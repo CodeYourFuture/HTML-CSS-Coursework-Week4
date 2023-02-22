@@ -16,7 +16,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
     <title>Responsive grid project</title>
   </head>
   <body>
@@ -53,60 +53,41 @@
   <div class="ham-span"></div>
   </nav> -->
     </header>
-
     <main>
-      <section class="section-one-left">
-        <div class="image-maya-contaner">
-          <img class="image-maya-item" src="img/image-maya.webp" />
-        </div>
-        <div class="text-maya-contaner">
-          <h1 class="text-maya-item">Maya<br />Nelson</h1>
-        </div>
-        <span class="section-one-span"></span>
-        <div class="section-one-paragraf-maya-contaner">
-          <h2 class="section-one-desktop-h2">PROJECT MANAGER</h2>
-        </div>
-        <!-- Buttons for mobile-->
-        <div class="section-one-buttons-mobile">
-          <button class="section-one-button resume-button">
-            <a href="#" ">RESUME</a></button>
-          <button class="section-one-button projects-button">
-            <a href="#">PROJECTS</a>
-          </button>
-        </div>
-        <div class="section-one-container-social">
-          <i class="fa fa-facebook social" style="font-size: 22px"></i>
-          <i class="fa fa-twitter social" style="font-size: 24px"></i>
-          <i class="fa fa-linkedin social" style="font-size: 24px"></i>
-          <i class="fa fa-instagram social" style="font-size: 24px"></i>
-        </div>
-      </section>
+      <section class="main-form-contaner">
+        <h1 class="main-header"><div class="header-square"></div>Let's talk</h1>
+        <form action="index.html" method="get">
 
-      <section class="section-two-right">
-        <h1 class="section-two-heading">Hello</h1>
-        <h2 class="section-two-subheading">Here's who I am & what I do</h2>
-        <div class="section-one-buttons-desktop">
-          <button class="section-one-button resume-button">
-            <a href="#">RESUME</a></button>
-          <button class="section-one-button projects-button">
-            <a href="#">PROJECTS</a>
-          </button>
-        </div>
-        <div class="section-two-paragraf">
-          <p>
-            I'm a paragraph. Click here to add your own text and edit me. It's
-            easy. Just click “Edit Text” or double click me to add your own
-            content and make changes to the font.
-          </p>
-          <br />
-          <p>
-            I'm a great place for you to tell a story and let your users know a
-            little more about you.
-          </p>
-        </div>
+          <label for="firstname">First Name<span class="form-star">*<span></label>
+          <br>
+          <input type="text" id="firstname" name="firstname" >
+          <br><br>
+
+          <label for="lname">Last Name<span class="form-star">*<span></label>
+          <br>
+          <input type="text" id="lastname" name="lastname" >
+          <br><br>
+
+          <label for="lname">Email<span class="form-star">*<span></label>
+          <br>
+          <input type="text" id="lname" name="lastname" >
+          <br><br>
+
+          <label for="lname">Subject</label>
+          <br>
+          <input type="text" id="lname" name="lastname" >
+          <br><br>
+
+          <label for="lname">Message</label>
+          <br>
+          <textarea id="message" name="message" ></textarea>
+          <br><br>
+          <div class="button-contaner">
+            <button type="submit">SEND</button>
+          </div>
+        </form>
       </section>
     </main>
-
     <footer>
       <div class="footer-call">
         <h3>Call</h3>

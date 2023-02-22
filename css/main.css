@@ -27,8 +27,6 @@ header {
   font-family: "Poppins", sans-serif;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
-  /* justify-content: space-between;
-  align-items: center; */
 }
 
 .header-person-initials {
@@ -220,9 +218,31 @@ footer {
   /* HEADER */
 
   header {
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto 400px;
     grid-template-rows: auto;
+    padding: 20px 0 20px 0;
   }
+
+  .header-navbar-container-desktop {
+    display: flex;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    justify-content: space-around;
+    padding-right: 4rem;
+  }
+
+  .header-nav-item {
+    background-color: white;
+    text-decoration: none;
+    border: none;
+    font-size: 0.9rem;
+    font-family: "Quicksand", sans-serif;
+  }
+
+  /* #blue-for-first-child {
+    color: #0150fd;
+  } */
+
   .header-slash {
     display: inline-flex;
   }
@@ -230,7 +250,7 @@ footer {
   .header-person-initials {
     align-items: center;
     display: grid;
-    grid-template-columns: 280px auto;
+    grid-template-columns: 200px auto;
     grid-template-rows: auto;
   }
 
@@ -247,8 +267,8 @@ footer {
   }
 
   .header-square {
-    width: 1.3rem;
-    height: 1.3rem;
+    width: 1rem;
+    height: 1rem;
   }
 
   /* MAIN */
@@ -344,5 +364,35 @@ footer {
   .section-two-paragraf {
     font-size: 18px;
     line-height: 1.5;
+  }
+
+  /* FOOTER */
+
+  footer {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    text-align: center;
+  }
+  .footer-call {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .footer-email {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+
+  .footer-sosial {
+    grid-column: 4/5;
+    grid-row: 1/2;
+  }
+  .footer-p {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: start;
   }
 }

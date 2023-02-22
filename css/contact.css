@@ -1,0 +1,184 @@
+* {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  /* border: 0.1rem solid rgb(241, 142, 11); */
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+body {
+  background-color: #fff;
+  font-family: "Quicksand", sans-serif;
+}
+/* Dark beige: #E6DACD
+  Light beige: #F4ECE6 
+  colors*/
+
+/* HEADER */
+
+header {
+  display: grid;
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+}
+
+.header-person-initials {
+  color: black;
+  padding: 24px;
+}
+
+.header-item-maya-name {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 2.1rem;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.header-item-maya-posision {
+  font-size: 1.5rem;
+  font-family: "Quicksand", sans-serif;
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.header-square {
+  width: 1.6rem;
+  height: 1.6rem;
+  background-color: #0150fd;
+  display: inline-block;
+}
+
+.header-slash {
+  display: none;
+}
+
+.header-navbar-container-mobile {
+}
+
+.header-navbar-container-desktop {
+  display: none;
+}
+
+/* MAIN FORM */
+
+/* FOOTER */
+footer {
+  background-color: white;
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.footer-call {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.footer-email {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.footer-sosial {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.footer-p {
+  grid-row: 3/4;
+  grid-column: 1/3;
+}
+
+@media (min-width: 800px) {
+  /* HEADER */
+
+  header {
+    grid-template-columns: auto auto 400px;
+    grid-template-rows: auto;
+    padding: 20px 0 20px 0;
+  }
+
+  .header-navbar-container-desktop {
+    display: flex;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    justify-content: space-around;
+    padding-right: 4rem;
+  }
+
+  .header-nav-item {
+    background-color: white;
+    text-decoration: none;
+    border: none;
+    font-size: 0.9rem;
+    font-family: "Quicksand", sans-serif;
+  }
+
+  /* #blue-for-first-child {
+    color: #0150fd;
+  } */
+
+  .header-slash {
+    display: inline-flex;
+  }
+
+  .header-person-initials {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-rows: auto;
+  }
+
+  .header-item-maya-name {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-size: 1.5rem;
+  }
+
+  .header-item-maya-posision {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    font-size: 1.1rem;
+  }
+
+  .header-square {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  /* FOOTER */
+
+  footer {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    text-align: center;
+  }
+  .footer-call {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .footer-email {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+
+  .footer-sosial {
+    grid-column: 4/5;
+    grid-row: 1/2;
+  }
+  .footer-p {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: start;
+  }
+}
