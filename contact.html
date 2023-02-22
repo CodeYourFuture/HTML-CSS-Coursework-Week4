@@ -38,14 +38,18 @@
         <span class="header-navbar-item-mobile"></span>
       </div>
       <div class="header-navbar-container-desktop">
-        <button id="blue-for-first-child" class="header-nav-item"><a href="index.html"
-          >ABOUT ME</a></button>
-        <button class="header-nav-item"><a href="resume.html" 
-          >RESUME</a></button>
-        <button class="header-nav-item"><a href="projects.html"
-          >PROJECTS</a></button>
-        <button class="header-nav-item"><a href="contact.html"
-          >CONTACT</a></button>
+        <button id="blue-for-first-child" class="header-nav-item">
+          <a href="index.html">ABOUT ME</a>
+        </button>
+        <button class="header-nav-item">
+          <a href="resume.html">RESUME</a>
+        </button>
+        <button class="header-nav-item">
+          <a href="projects.html">PROJECTS</a>
+        </button>
+        <button class="header-nav-item">
+          <a href="contact.html">CONTACT</a>
+        </button>
       </div>
       <!-- <nav class="hamburger">
   <div class="ham-span"></div>
@@ -54,36 +58,58 @@
   </nav> -->
     </header>
     <main>
+      <h1 class="main-header">
+        <div class="header-square"></div>
+        Let's talk
+      </h1>
       <section class="main-form-contaner">
-        <h1 class="main-header"><div class="header-square"></div>Let's talk</h1>
         <form action="index.html" method="get">
+          <div class="firstname">
+            <label for="firstname"
+              >First Name<span class="form-star">*</span></label
+            >
+            <input
+              type="text"
+              id="firstname"
+              name="firstname"
+              required=""
+              min="2"
+            />
+          </div>
 
-          <label for="firstname">First Name<span class="form-star">*<span></label>
-          <br>
-          <input type="text" id="firstname" name="firstname" >
-          <br><br>
+          <div class="lastname">
+            <label for="lname">Last Name<span class="form-star">*</span></label>
+            <input
+              type="text"
+              id="lastname"
+              name="lastname"
+              required=""
+              min="2"
+            />
+          </div>
 
-          <label for="lname">Last Name<span class="form-star">*<span></label>
-          <br>
-          <input type="text" id="lastname" name="lastname" >
-          <br><br>
+          <div class="email">
+            <label for="lname">Email<span class="form-star">*</span></label>
+            <input type="text" id="lname" name="lastname" required="" min="2" />
+          </div>
+          <div class="subject">
+            <label for="lname">Subject</label>
+            <input type="text" id="lname" name="lastname" required="" min="2" />
+          </div>
 
-          <label for="lname">Email<span class="form-star">*<span></label>
-          <br>
-          <input type="text" id="lname" name="lastname" >
-          <br><br>
-
-          <label for="lname">Subject</label>
-          <br>
-          <input type="text" id="lname" name="lastname" >
-          <br><br>
-
-          <label for="lname">Message</label>
-          <br>
-          <textarea id="message" name="message" ></textarea>
-          <br><br>
+          <div class="message">
+            <label for="lname">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              required=""
+              min="2"
+            ></textarea>
+          </div>
           <div class="button-contaner">
-            <button type="submit">SEND</button>
+            <button id="submit" class="form-sudmit-button" type="submit">
+              SEND
+            </button>
           </div>
         </form>
       </section>
@@ -106,7 +132,11 @@
       </div>
       <div class="footer-p">
         <p>
-          © 2035 by Maya Nelson.<br />Powered and secured by<a href="#">Wix</a>
+          © 2035 by Maya Nelson.<br />Powered and secured by<a
+            class="link-underline"
+            href="#"
+            >Wix</a
+          >
         </p>
       </div>
     </footer>

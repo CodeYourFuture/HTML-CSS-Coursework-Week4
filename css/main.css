@@ -50,8 +50,8 @@ header {
 }
 
 .header-square {
-  width: 1.6rem;
-  height: 1.6rem;
+  width: 1.3rem;
+  height: 1.3rem;
   background-color: #0150fd;
   display: inline-block;
 }
@@ -213,6 +213,9 @@ footer {
 .footer-p {
   grid-row: 3/4;
   grid-column: 1/3;
+}
+.link-underline {
+  text-decoration: underline;
 }
 @media (min-width: 800px) {
   /* HEADER */
