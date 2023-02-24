@@ -154,10 +154,15 @@ text {
   color: var(--Red-Brown);
   font-size: 1.09em;
   font-weight: 700;
-  letter-spacing: 1.9px;
-  /* display: flex;
-    justify-content: flex-end;  set it in desktop*/
+  letter-spacing: 1.8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;  
 }
+.p1{
+  margin-right: 6em;
+}
+
 /* main  */
 .main {
   grid-area: m;
@@ -214,11 +219,13 @@ text {
     font-size: 1.2em;
     margin-left: 3%;
     width: 100%;
+    background-image: none;
+       
   }
   .header-grid {
     grid-template-rows: 90px 100px;
     position: fixed;
-    width: 1275px;
+    width: 1280px;
     z-index: 1;
   }
   .header-searchbar-and-icons,
@@ -288,4 +295,8 @@ text {
     justify-content: center;
     padding-top: 12px;
   }
+    .p1 {
+      margin-left: none;
+    }
+  
 }
