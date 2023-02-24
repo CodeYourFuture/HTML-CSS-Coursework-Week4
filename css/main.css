@@ -1,13 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');/* use in headings */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Quicksand:wght@300&display=swap');/* use in the web*/
 
+ :root {
+     --beige-dark: #e6dacd;
+     --beige-light: #f4ece6;
+
+     --blue-royal: #0150fd;
+     --black: #000;
+     --white: #fff;
+
+     --heading-font: "Poppins", sans-serif;
+     --body-font: "Quicksand", sans-serif;
+ }
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+body {
+    line-height: 1.4;
+}
 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+}
 
 .header {
     display: flex;
@@ -34,94 +54,3 @@ flex-direction: column;
 
 }
 
-@import "compass/css3";
-.menu-toggle {
-    width: 40px;
-    height: 30px;
-    position: absolute;
-    top: 20px;
-    right: 25px;
-    cursor: pointer;
-
-    &.on {
-        .one {
-            @include transform(rotate(45deg) translate(7px, 7px));
-        }
-
-        .two {
-            opacity: 0;
-        }
-
-        .three {
-            @include transform (rotate(-45deg) translate(8px, -10px));
-        }
-    }
-}
-
-.one,
-.two,
-.three {
-    width: 100%;
-    height: 5px;
-    background: white;
-    margin: 6px auto;
-    backface-visibility: hidden;
-    @include transition-duration(0.3s);
-}
-
-nav ul {
-    margin: 0;
-    padding: 0;
-    font-family: Open Sans;
-    list-style: none;
-    margin: 4em auto;
-    text-align: center;
-
-    &.hidden {
-        display: none;
-    }
-
-    a {
-        @include transition-duration(0.5s);
-        text-decoration: none;
-        color: white;
-        font-size: 3em;
-        line-height: 1.5;
-        width: 100%;
-        display: block;
-
-        &:hover {
-            background-color: rgba(0, 0, 0, 0.5);
-        }
-    }
-}
-
-.menu-section {
-    &.on {
-        z-index: 10;
-        width: 100%;
-        height: 100%;
-        display: block;
-        background-color: rgba(0, 0, 0, 0.5);
-        position: absolute;
-    }
-}
-.page_container {
-    display:block;
-    position:relative;
-    height: auto;
-    width: 100%;
-    min-height: auto;
-    
-}
-
-.img {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 120px;
-    width: 120px;
-    object-fit: cover;
-    
-
-}
