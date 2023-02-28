@@ -49,7 +49,6 @@ body {
     "request-form request-form  request-form    request-form"
     "leaf         leaf          leaf        leaf"
     "footer       footer        footer      footer"
-    "email        email          email      email"  
     "credit       credit        credit      credit"     
 }
 
@@ -371,26 +370,43 @@ form button{
     justify-content: center;
     display: flex;
     flex-direction: row;
-    
-}
-
-.capital1{
-    margin-right: 50px;
-}
-
-.capital2{ 
-    margin-right: 50px;
+    background-color: var(--greenBlack);
+    color:#fff;
 }
 
 .credit{
     grid-area: credit;
     justify-content: center;
-    margin-top: 50px;
+    padding-top: 50px;
+    background-color: var(--greenBlack);
+    color: var(--white);
 }
 
 .email{
 justify-content:center;
+padding-bottom: 10px;
+background-color: var(--greenBlack);
+color: #fff;
 }
+
+#email-label{
+        width: 10%;
+        border: none;
+        padding: 15px;
+        
+        color: var(--white);
+        margin: 20px 0px;
+}
+
+#subscribe {
+            width: 10%;
+            border: none;
+            padding: 15px;
+            background-color: var(--redBrown);
+            color: var(--white);
+            margin: 20px 0px;
+}
+
 
 .chat-btn {
     display: flex;
