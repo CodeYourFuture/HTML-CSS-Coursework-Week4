@@ -37,6 +37,7 @@ body {
     text-align: center;
     background-color: var(--lightGray);
     display: grid;
+    padding: 40px 40px 40px 40px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(9, auto);
     grid-template-areas: 
@@ -47,7 +48,8 @@ body {
     "buy-online   buy-online    buy-img     buy-img"
     "request-form request-form  request-form    request-form"
     "leaf         leaf          leaf        leaf"
-    "footer       footer        footer      footer"  
+    "footer       footer        footer      footer"
+    "email        email          email      email"  
     "credit       credit        credit      credit"     
 }
 
@@ -56,23 +58,29 @@ body {
 .header{
     grid-area: header;
     width: 100%;
+    
 }
 
 .header-search{
     background-color: var(--white);
     display: flex;
+
 }
 
 .header-search i{
     color: var(--redBrown);
    padding: 20px 0px 0px 20px;
    font-size: 30px;
+   
 }
 
 .header-search input{
     width: 100%;
     border: none;
-    padding-left: 20PX;
+    padding-left: 20px;
+    margin-right: 1200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-size: 20PX;
 }
 
@@ -92,6 +100,7 @@ body {
 
 .header-title p{
     font-size: 20px;
+    
 }
 
 .nav-list {
@@ -216,6 +225,7 @@ prod img{
     display: flex;
     flex-direction: row;
     justify-content: center;
+     
 }
 
 .frame{
@@ -361,12 +371,25 @@ form button{
     justify-content: center;
     display: flex;
     flex-direction: row;
-        
+    
+}
+
+.capital1{
+    margin-right: 50px;
+}
+
+.capital2{ 
+    margin-right: 50px;
 }
 
 .credit{
     grid-area: credit;
     justify-content: center;
+    margin-top: 50px;
+}
+
+.email{
+justify-content:center;
 }
 
 .chat-btn {
