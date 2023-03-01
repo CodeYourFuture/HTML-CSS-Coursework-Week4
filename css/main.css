@@ -1164,9 +1164,11 @@ background-color: var(--royal-blue);
   .project-img-samsu{
     height: 21rem;
   }
+
   .contact-desktop{
     background-color: var(--dark-beige);
   }
+ 
   .talk-contact{
     /* border: 5px solid black; */
      margin-left: 2rem;
@@ -1178,7 +1180,7 @@ background-color: var(--royal-blue);
     text-align: center;
     font-size: 62px;
     font-weight: bolder;
-    margin-right: 2rem;
+    margin-right: 16rem;
   }
   .talk-cont::before{
     margin-left: 1rem;
@@ -1201,10 +1203,13 @@ background-color: var(--royal-blue);
     margin-bottom: 4rem;
   }
   .contact-talk-cot{
+    /* border: 5px solid blue; */
+    display: grid;
     background-color: var(--white);
     margin-left: 28rem;
     margin-right: 28rem;
     height: 87vh;
+  
     margin-bottom: 3rem;
   }
     .d-first-name {
