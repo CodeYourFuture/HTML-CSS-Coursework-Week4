@@ -1203,12 +1203,12 @@ background-color: var(--royal-blue);
     margin-bottom: 4rem;
   }
   .contact-talk-cot{
-    /* border: 5px solid blue; */
+    border: 5px solid blue;
     display: grid;
     background-color: var(--white);
     margin-left: 28rem;
     margin-right: 28rem;
-    height: 87vh;
+    height: 89vh;
   
     margin-bottom: 3rem;
   }
