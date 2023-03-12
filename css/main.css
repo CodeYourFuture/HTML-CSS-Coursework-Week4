@@ -1,3 +1,24 @@
-/* Add your CSS here */
 
-/* Dont' forget to link this file to your HTML in the <head> */
+
+/* ### Fonts
+**Headings:** Fjalla One - Regular 400  
+https://fonts.google.com/specimen/Fjalla+One  
+**Subheadings:** Outfit - Extra-light 200  
+https://fonts.google.com/specimen/Outfit  
+**Body:** Outfit - Extra-light 200  
+https://fonts.google.com/specimen/Outfit  
+
+font-family: 'Fjalla One',
+sans-serif;
+font-family: 'Outfit',
+sans-serif;
+
+
+/* Colours */
+:root {
+    --redBrown: #A05941;
+    --greenBlack: #133032;
+    --lightGrey: #EDEDEE;
+    --white: #FFF;
+    --transparentWhite: rgba(0, 0, 0, 0.75);
+}
