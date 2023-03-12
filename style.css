@@ -51,6 +51,41 @@ header p{
     margin-left: 1rem;
 
 }
+/* --------- HAMBURGER MENU----------- */
+.hamburger {
+    width: 4rem;
+    height: auto;
+    display: block;
+    margin-right: 3rem;
+    margin-top: 1rem;
+}
+
+/* ------------Navigation-------------- */
+nav {
+    display: none;
+    grid-area: nav;
+
+}
+
+.navigation__list {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+.navigation__item {
+    padding: 0.5rem 0;
+}
+
+.navigation__link {
+    color: var(--black);
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 0.6rem;
+}
+
 /* --------MAIN CONTENT----------*/
 main{
     background-color: var(--dark-beige);
@@ -216,3 +251,42 @@ grid-area: call;
   #arrow_button:hover {
     background-color: var(--black);
   }
+
+
+@media (min-width: 900px) {
+    footer {
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: 6rem;
+        grid-template-areas:
+            " end end . . .   call  write follow";
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+
+    .title {
+
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .title p {
+        margin-top: 1.2rem;
+    }
+
+    span {
+        margin-top: 1.2rem;
+        display: block;
+    }
+        body {
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: 17rem 45rem 1rem;
+            font-family: 'Quicksand', sans-serif;
+        }
+}

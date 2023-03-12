@@ -14,3 +14,9 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+$(".menu-toggle").on('click', function() {
+    $(this).toggleClass("on");
+    $('.menu-section').toggleClass("on");
+    $("nav ul").toggleClass('hidden');
+  });
