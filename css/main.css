@@ -22,3 +22,31 @@ sans-serif;
     --white: #FFF;
     --transparentWhite: rgba(0, 0, 0, 0.75);
 }
+
+.shopCollection {
+    background-color: #A05941;
+    color: #EDEDEE;
+    width: 140px;
+    min-height: 40px;
+    border: none;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+}
+
+footer {
+    background-color: var(--lightGrey);
+    color: #A05941;
+    text-align: center;
+    margin: 0;
+    
+}
+
+#chatOption img {
+    background-color: #A05941;
+    position: fixed;
+    padding: 10px;
+    width: 40px;
+    border-radius: 50%;
+    bottom: 1rem;
+    right: 1rem;
+}
