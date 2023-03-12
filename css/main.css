@@ -241,6 +241,10 @@ li a {
     color: var(--clr-dark);
 }
 
+.center-content {
+    text-align: center;
+}
+
 /* Button Styling */
 
 .order-button-container {
@@ -277,14 +281,17 @@ li a {
     width: 45%;
 }
 
-/* Header */
+/* HEADER */
+.logo-and-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
 /* Mobile Menu */
 
 .header {
     background-color: var(--clr-light);
 }
-
-
 
 /* Circles */
 .green-circle {
