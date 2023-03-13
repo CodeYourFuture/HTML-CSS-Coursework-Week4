@@ -212,7 +212,7 @@ h3 {
 @media screen and (min-width: 700px) {
      body { 
     grid-template-columns: repeat(5, 1fr) ;
-    grid-template-rows: 150px 600px 1fr 30px;
+    grid-template-rows: 150px 700px 1fr 30px;
     grid-template-areas:
         "header header header header header"
         "photo photo . . ."
@@ -247,11 +247,21 @@ h3 {
         .nav-button {
             display: none;
         }
+        /* MAIN */
+        main {
+            display: grid;
+
+        }
         /* PHOTO */
         .main-photo {
             width: 400px;
             height: 500px;
             justify-content: space-around;
+            margin-top: 200px;
+            left:15%;
+        }
+        .photo-maya {
+            width: 200px;
         }
         .social-media {
             
@@ -262,8 +272,12 @@ h3 {
             width: 30px;
         }
 
-
-
+        /* MAIN TEXT */
+        .main-about {
+            position: absolute;
+            left: 600px;
+            width: 30%;
+        }
 
         /* FOOTER */
 
@@ -303,29 +317,20 @@ h3 {
         .add {
             grid-area: add;
         }
+                  /* .main-text {
+                      position: absolute;
+                      width: 30%;
+                      left: 550px;
+                      margin-top: 0px;
+                      margin-bottom: 1.5rem;
+                      margin-left: 3rem;
+                      margin-right: 3rem;
+                      display: flex;
+                      flex-direction: column;
+                      gap: 3rem;
+        
+                  } */
 }
-/* .header {
-    
-}
-.main-container {
-    background-color: var(--dark-beige);
-    grid-area: photo;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0px;
 
-} */
- /* main {
-     display: grid;
-     grid-template-columns: 1fr 2fr;
-     grid-template-rows: 1fr;
-     grid-column-gap: 0px;
-     grid-row-gap: 0px;
-     grid-template-areas: 
-     "beige white" */
-/* } */
-/* .main-container {
-    grid-area: beige;
-    margin-top: 0; */
-/* } */
+    
+
