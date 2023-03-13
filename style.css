@@ -89,7 +89,7 @@ nav {
 /* --------MAIN CONTENT----------*/
 main{
     background-color: var(--dark-beige);
-    position: relative;
+    /* position: relative; */
     
    
 }
@@ -97,8 +97,8 @@ main{
     width: 20rem;
     height: 27rem;
     position:absolute;
-    margin-top: -11rem;
-    margin-left: 2.5rem;
+    top: 6rem;
+    left: 10%;
     background-color: var(--light-beige);
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -121,8 +121,9 @@ main{
     border-bottom: 0.15rem solid var(--royal-blue);
     font-family: 'Poppins', sans-serif;
     line-height: 1.8rem;
-
-    
+}
+.main_info_box h3 {
+    display:none;
 }
 .main-image{
  justify-self: center;
@@ -144,6 +145,7 @@ font-weight: 600;
 width: 7rem;
 height: 2rem;
 border-radius: 2rem;
+display: block;
 
 }
 .button_projects{
@@ -158,6 +160,38 @@ font-weight: 600;
 width: 7rem;
 height: 2rem;
 border-radius: 2rem;
+display: block;
+
+}
+.button_resume1 {
+    background-color: var(--royal-blue);
+    border: 0.15rem solid var(--royal-blue);
+    color: var(--white);
+    align-self: center;
+    justify-self: center;
+    grid-area: button1;
+    font-size: 0.9rem;
+    font-weight: 600;
+    width: 7rem;
+    height: 2rem;
+    border-radius: 2rem;
+    display: none;
+
+}
+
+.button_projects1 {
+    background-color: var(--light-beige);
+    border: 0.1rem solid var(--black);
+    color: var(--black);
+    align-self: center;
+    justify-self: center;
+    grid-area: button2;
+    font-size: 0.9rem;
+    font-weight: 600;
+    width: 7rem;
+    height: 2rem;
+    border-radius: 2rem;
+    display: none;
 
 }
 .main_social_media{
@@ -259,6 +293,7 @@ grid-area: call;
         grid-template-rows: 6rem;
         grid-template-areas:
             " end end . . .   call  write follow";
+            grid-area: footer;
     }
 
     .hamburger {
@@ -284,9 +319,89 @@ grid-area: call;
         margin-top: 1.2rem;
         display: block;
     }
-        body {
-            grid-template-columns: repeat(5,1fr);
-            grid-template-rows: 17rem 45rem 1rem;
-            font-family: 'Quicksand', sans-serif;
+    body {
+         grid-template-columns: repeat(5,1fr);
+        grid-template-rows: 8rem 45rem 2rem;
+        grid-template-areas:
+        "header header header header header"
+        "main main . . ."
+        "footer footer footer footer footer"
+        ;
+        font-family: 'Quicksand', sans-serif;
+            
         }
+    main{
+        grid-area: main;
+    }
+    header{
+        margin-top: 2rem;
+        grid-area: header;
+    }
+        .main_info_box {
+            width: 23rem;
+            height: 32rem;
+            top: 18rem;
+            left: 16%;
+        grid-template-rows: 15rem 7rem 3rem 7rem;
+        grid-template-areas:
+                "img      img "
+                "name     name"
+                "h3       h3"
+                "media    media"
+            ;
+        }
+    .main-image {
+        justify-self: center;
+        margin-top: 2rem;
+        width: 13rem;
+        border-radius: 50%;
+        grid-area: img;
+    
+    }
+    .button_resume {
+        display: none;
+
+    }
+    .title h2 {
+        font-size: 1.4rem;
+        font-family: 'Poppins', sans-serif;
+    }
+    .button_projects {
+        display: none;
+}
+.main_info_box h3 {
+    display: block;
+    grid-area: h3;
+    justify-self: center;
+    font-size: 1.3rem;
+}
+.main_info_box h2{
+    font-size: 1.7rem;
+}
+.main-text {
+    position: absolute;
+    top:-3rem;
+    left:50%;
+     width: 35%;
+}
+.main-text h1 {
+    font-size: 6rem;
+}
+
+.main-text h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+}
+.buttons_main_text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+  .button_resume1 {
+      display: block;
+  }
+  .button_projects1 {
+      display: block;
+  }
 }
