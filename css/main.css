@@ -23,6 +23,11 @@ sans-serif;
     --transparentWhite: rgba(0, 0, 0, 0.75);
 }
 
+body {
+    background-color: #EDEDEE;
+}
+
+/* buttons styling */
 .shopCollection {
     background-color: #A05941;
     color: #EDEDEE;
@@ -32,13 +37,57 @@ sans-serif;
     font-family: 'Outfit', sans-serif;
     font-weight: 400;
 }
+/* articles styling */
+#cacti {
+    background-image: url(/images/images/cactus-in-a-pot.webp);
+}
+
+#plants {
+    background-image: url(/images/images/flowers\ in\ a\ pot.webp);
+}
+
+#succulents {
+    background-image: url(/images/images/sucullent.webp);
+}
+
+article {
+    background-size: 350px, 400px;
+    width: 320px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: contain;
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding-top: 20px;
+    color: #A05941;
+    font-family: 'Fjalla One', sans-serif;
+    
+}
+
+.horizontalLine {
+    width: 10px;
+    height: 5px;
+    background-color: #A05941;
+    position: relative;
+    margin: 0px 0px 11px 0;
+    left: 156px;
+    justify-self: start;
+    align-self: start;
+}
+
+#articles {
+    display: block;
+}
 
 footer {
     background-color: var(--lightGrey);
     color: #A05941;
     text-align: center;
     margin: 0;
-    
+    padding: 10px;
 }
 
 #chatOption img {
