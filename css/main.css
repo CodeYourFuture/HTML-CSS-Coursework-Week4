@@ -209,7 +209,7 @@ h3 {
     font-size: 15px;;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 900px) {
      body { 
     grid-template-columns: repeat(5, 1fr) ;
     grid-template-rows: 150px 700px 1fr 30px;
@@ -257,8 +257,8 @@ h3 {
             width: 400px;
             height: 500px;
             justify-content: space-around;
-            margin-top: 200px;
-            left:15%;
+            margin-top: 130px;
+            left:13%;
         }
         .photo-maya {
             width: 200px;
@@ -271,12 +271,22 @@ h3 {
         .social-media-icon-top {
             width: 30px;
         }
+        .name-under-photo {
+            font-size: 25px;
+           
+        }
 
         /* MAIN TEXT */
         .main-about {
             position: absolute;
             left: 600px;
             width: 30%;
+        }
+        .p-first {
+            font-size: 7rem;
+        }
+        .main-container {
+            padding: 0px;
         }
 
         /* FOOTER */
@@ -303,6 +313,9 @@ h3 {
             display: flex;
             list-style: none;
             justify-content: space-evenly;
+        }
+        li a:hover {
+            color: var(--Royal-blue);
         }
         .navigation__item {
             padding: 0.5rem 0;
