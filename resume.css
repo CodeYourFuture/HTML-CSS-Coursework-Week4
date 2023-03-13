@@ -102,6 +102,7 @@ main {
     flex-direction: column;
     gap: 1rem;
 
+
 }
 
 .title-main {
@@ -125,6 +126,8 @@ main {
 .experience_title {
     display: flex;
     justify-content: space-around;
+    height: 3rem;
+    align-items: center;
 }
 
 .experience_title h2 {
@@ -267,6 +270,9 @@ footer h5 {
 
 
 @media (min-width: 900px) {
+    header {
+        align-items: center;
+    }
     footer {
             grid-template-columns: repeat(8,1fr);
             grid-template-rows: 6rem;
@@ -292,4 +298,26 @@ footer h5 {
         margin-top:1.2rem;
             display: block;
         }
+    .resume_box {
+        width: 600px;
+    }
+    .skill_box {
+        width: 600px;
+    }
+      main{
+        justify-content: center;
+        align-items: center;
+      }
+    .experience_title {
+        gap: 20rem
+    }
+    .title-main{
+        margin-top: 5rem;
+    }
+    main p{
+        font-size: 1.2rem;
+    }
+    main h4{
+        font-size: 1.5rem;
+    }
 }
