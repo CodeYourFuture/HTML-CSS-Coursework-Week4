@@ -1,3 +1,349 @@
-/* Add your CSS here */
+:root {
+    --dark-beige: #E6DACD;
+    --Light-beige: #F4ECE6;
+    --Royal-blue: #0150FD;
+    --Black: #000;
+    --White: #FFF;
+}
+/* font-family: 'Poppins', sans-serif; HEADINGS
+font-family: 'Quicksand', sans-serif; BODY */ 
 
-/* Dont' forget to link this file to your HTML in the <head> */
+body {
+    
+    font-family: 'Quicksand', sans-serif; 
+    display: grid; 
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas: 
+    "header"
+    "photo"
+    "footer";
+}
+/* BODY GRID */
+
+.header {
+    background-color: var(White);
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+
+}
+main {
+    grid-area: photo;
+}
+.main-container {
+    background-color: var(--dark-beige);
+    /* grid-area: photo; */
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding: 200px 20px 20px 20px;
+    
+}
+.main-photo {
+    background-color: var(--Light-beige);
+    position:absolute;
+    left: 10%;
+    top: 100px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items: center;
+    width: 300px;
+    height: 400px;
+    z-index:1;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.176) -10px 10px 15px;
+    
+}
+.footer-container {
+    background-color: var(--White);
+    grid-area: footer;
+    z-index:0;
+}
+
+/* HEADER */
+.square {
+    width: 17px;
+    height: 17px;
+    background-color: var(--Royal-blue);
+}
+.name a {
+    text-decoration: none;
+    color: black;
+    font-size: 21px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 7px;
+}
+.nav-button {
+    width: 70px;
+}
+nav {
+    display:none;
+}
+/* PHOTO CONTAINER*/
+
+.photo-maya {
+    width: 130px;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+
+
+.name-under-photo {
+    font-family: 'Poppins', sans-serif;
+    border-bottom: 2px solid var(--Royal-blue);
+    padding-bottom: 10px;
+    padding-top:0;
+    margin-top:0;
+ 
+}
+.name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+.job-title {
+    margin-top:0;
+}
+.main-about .button {
+    display: none;
+}
+.main-photo .button {
+    display: block; 
+}
+.resume-button {
+    margin-right: 15px;
+    background-color: var(--Royal-blue);
+    border:none;
+    padding: 10px 27px;
+    color: white;
+    border-radius: 20px;
+
+}
+
+.projects-button {
+    margin-left: 15px;
+    background-color: transparent;
+    padding: 9px 25px;
+    border-radius: 20px;
+    border: 1px solid black;
+
+}
+
+.social-media {
+    background-color: var(--White);
+    align-self: stretch;
+}
+.social-media-icon-top {
+    width: 20px;
+    padding: 7px;
+}
+
+/* ABOUT */
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+h3 {
+    font-family: 'Quicksand', sans-serif;
+    padding-bottom: 10px;
+}
+
+/* FOOTER CONTACT */
+.contact {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    padding-top: 8px;
+    margin-right: 15px;
+    font-size: 15px;
+}
+.telephone {
+    display:flex;
+    flex-direction: column;
+}
+.email {
+    display:flex;
+    flex-direction: column;
+}
+
+/* FOOTER SOCIAL MEDIA*/
+.social-media-bottom {
+    display:flex;
+    flex-direction: column;
+    padding-bottom: 8px;
+}
+.social-media-icon-bottom {
+    width: 26px;
+    padding: 4px;
+    margin-bottom: 15px;
+}
+
+/* FOOTER */
+
+.footer {
+    display:flex;
+    flex-direction: column;
+    padding-bottom: 15px; 
+}
+
+/* PARAGRAPH*/
+.paragraph-margin {
+    margin-top:5px;
+    margin-bottom:0px;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.title-bold {
+    margin-bottom:0px;
+    margin-left: 10px;
+    font-weight: bolder;
+    font-size: 15px;;
+}
+
+@media screen and (min-width: 900px) {
+     body { 
+    grid-template-columns: repeat(5, 1fr) ;
+    grid-template-rows: 150px 700px 1fr 30px;
+    grid-template-areas:
+        "header header header header header"
+        "photo photo . . ."
+        "footer footer footer footer footer"
+        "add add add add add" ;
+    }  
+        .header {}
+
+        .name-and-title {
+            display:flex;
+            flex-direction: row;  
+        }
+
+        .name {
+            padding-top: 0px;
+        }
+       
+    .job-title {
+        margin: auto;
+        padding-left: 10px;
+        
+    }
+        .main-photo .button {
+            display: none;
+        }
+    
+        .main-about .button {
+            display: block;
+        }
+    
+       
+        .nav-button {
+            display: none;
+        }
+        /* MAIN */
+        main {
+            display: grid;
+
+        }
+        /* PHOTO */
+        .main-photo {
+            width: 400px;
+            height: 500px;
+            justify-content: space-around;
+            margin-top: 130px;
+            left:13%;
+        }
+        .photo-maya {
+            width: 200px;
+        }
+        .social-media {
+            
+            margin-bottom: 0;
+            height: 50px; 
+        }
+        .social-media-icon-top {
+            width: 30px;
+        }
+        .name-under-photo {
+            font-size: 25px;
+           
+        }
+
+        /* MAIN TEXT */
+        .main-about {
+            position: absolute;
+            left: 600px;
+            width: 30%;
+        }
+        .p-first {
+            font-size: 7rem;
+        }
+        .main-container {
+            padding: 0px;
+        }
+
+        /* FOOTER */
+
+        .footer-container {
+            display: flex;
+            gap: 40px;
+            flex-direction: row-reverse;
+         
+        }
+        .footer {
+            align-self:center;
+            margin-right: auto;
+          
+        }
+        .telephone {
+            padding-right: 40px;
+        }
+        nav {
+            display: block;
+            
+        }
+        .navigation__list {
+            display: flex;
+            list-style: none;
+            justify-content: space-evenly;
+        }
+        li a:hover {
+            color: var(--Royal-blue);
+        }
+        .navigation__item {
+            padding: 0.5rem 0;
+        }
+        .navigation__link {
+            color: var(--black);
+            font-weight: 600;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 0 1rem;
+        }
+        .add {
+            grid-area: add;
+        }
+                  /* .main-text {
+                      position: absolute;
+                      width: 30%;
+                      left: 550px;
+                      margin-top: 0px;
+                      margin-bottom: 1.5rem;
+                      margin-left: 3rem;
+                      margin-right: 3rem;
+                      display: flex;
+                      flex-direction: column;
+                      gap: 3rem;
+        
+                  } */
+}
+
+    
+
