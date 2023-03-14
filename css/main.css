@@ -137,10 +137,60 @@ h6 {
     font-size: medium;
 }
 
+/* form styling */
+
+form {
+    background-color: #FFF;
+    width: 310px;
+    padding: 20px 5px 20px 10px;
+    margin-top: 30px;
+}
+
+#formDiv {
+    width: 20px;
+}
+
+legend {
+    font-family: 'Outfit', sans-serif;
+    color: #A05941;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 0.5rem;
+    margin: 10px 10px 20px 10px;
+    line-height: 18px;
+}
+
+input + label {
+    display: block;
+}
 
 
+label {
+    color: #133032;
+    font-family: 'Outfit', sans-serif;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+input {
+    height: 33px;
+    width: 100%;
+    box-sizing: border-box;
+}
 
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    height: 153px;
+    padding: 2px;
+}
 
+#sendButton {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    color: #FFF;
+}
 
 
 

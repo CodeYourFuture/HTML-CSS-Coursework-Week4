@@ -101,7 +101,7 @@
         <section id="form">
             <form>
                 <legend>FOR SPECIAL REQUESTS & ORDERS</legend>
-                <div class="horizontalLine"></div>
+                <div id="formDiv" class="horizontalLine"></div>
                 <label for="firstName">First Name *</label>
                 <input id="firstName" name="firstName" type="text" required/>
                 <label for="lastName">Last Name *</label>
@@ -109,11 +109,12 @@
                 <label for="emailInput">Email *</label>
                 <input id="emailInput" name="email" type="email" required />
                 <label for="phoneNumber">Phone</label>
-                <input id="phoneNumber" name="phone" type="number" />
+                <input id="phoneNumber" name="phone" type="tel" />
                 <label for="message">Message</label>
                 <textarea id="message" name="message"></textarea>
+                <button id="sendButton" class="shopCollection" type="submit">Send</button>
             </form>
-            <button id="sendButton" type="submit">Send</button>
+            
             <img src="/images/images/background.webp" alt="plant-ficus" />
         </section>
         <section id="contact-details">
