@@ -37,7 +37,7 @@ body {
     font-family: 'Outfit', sans-serif;
     font-weight: 400;
 }
-/* articles styling */
+/* articles with plants styling */
 #cacti {
     background-image: url(/images/images/cactus-in-a-pot.webp);
 }
@@ -80,6 +80,45 @@ article {
 
 #articles {
     display: block;
+}
+
+/* about section styling */
+
+.photos {
+    width: 320px;
+    height: 223px;
+    padding: 0;
+    margin: 0;
+}
+.fullImg {
+    width: 320px;
+    height: 223px;
+}
+
+.photos:last-child {
+    background-color: #133032;
+    color: #FFF;
+    height: 410px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#buyOnline {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 54px;
+    font-weight: 100;
+    line-height: 1.1em;
+    margin-top: 0.5rem;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.photos:last-child button {
+    background-color: #FFF;
+    color: #133032;
+    font-size: medium;
 }
 
 footer {
