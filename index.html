@@ -1,21 +1,335 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Add a link to your custom CSS here -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Questrial&family=Raleway&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
 
-    <title>Responsive grid project</title>
-</head>
+    <title>Fruit Box</title>
+  </head>
 
-<body>
+  <body>
+    <header class="header">
+      <div class="order_online">
+        <button>Log In</button>
+        <a href="#">
+          <p>Order Online</p>
+        </a>
+      </div>
 
-    <!-- Add your markup here -->
+      <p>Juice Bar</p>
+      <svg
+        width="24"
+        height="16"
+        viewBox="0 0 24 16"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M0 1C0 0.447715 0.447715 0 1 0H23C23.5523 0 24 0.447715 24 1V1.28572C24 1.838 23.5523 2.28572 23 2.28572H1C0.447716 2.28572 0 1.838 0 1.28572V1ZM0 7.85714C0 7.30485 0.447715 6.85713 1 6.85713H23C23.5523 6.85713 24 7.30485 24 7.85713V8.14285C24 8.69513 23.5523 9.14285 23 9.14285H1C0.447716 9.14285 0 8.69513 0 8.14285V7.85714ZM1 13.7143C0.447715 13.7143 0 14.162 0 14.7143V15C0 15.5523 0.447716 16 1 16H23C23.5523 16 24 15.5523 24 15V14.7143C24 14.162 23.5523 13.7143 23 13.7143H1Z"
+          fill="black"
+        />
+      </svg>
 
+      <nav class="nav_list">
+        <ul>
+          <li class="nav_item"><a class="nav_link" href="#">Home</a></li>
+          <li class="nav_item"><a class="nav_link" href="#">Story</a></li>
+          <li class="nav_item"><a class="nav_link" href="#">Menu</a></li>
+          <li class="nav_item">
+            <a class="nav_link" href="#">Order Online</a>
+          </li>
+          <li class="nav_item">
+            <a class="nav_link" href="#">Locations & Hours</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="content">
+      <main class="main">
+        <section class="hero">
+          <h1>Fuel Your Body.<br />Balance Your Mind.</h1>
+          <p>Organic Cold Pressed Juices & Smoothies</p>
+          <button>Explore Flavors</button>
 
-    <!-- Please leave this in to credit the creators of this design -->
-    <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
-</body>
+          <img
+            class="hero_image"
+            src="https://cdn.shopify.com/s/files/1/0047/1524/9737/files/Is_Naked_Juice_Healthy_Article_Headaer_Image_Optimized.png?v=1661911606"
+            alt="Image of fresh fruit and juices"
+          />
 
+          <div class="hero_offer">
+            <p>
+              Get 10% off your first online Order.<br />
+              <a href="#">Try Now</a>
+            </p>
+          </div>
+        </section>
+
+        <section class="selling_points_section">
+          <h2>What Makes Us <br />Different</h2>
+
+          <div class="selling_point">
+            <img src="1.jpeg" alt="Locally Sourced Icon" />
+            <h3>Locally Sourced</h3>
+            <p>
+              I'm a paragraph. Click here to add your own text and edit me. Let
+              your users get to know you.
+            </p>
+          </div>
+
+          <div class="selling_point">
+            <img src="3.jpeg" alt="Natural Ingredients Icon" />
+            <h3>100% Natural Ingredients</h3>
+            <p>
+              I'm a paragraph. Click here to add your own text and edit me. Let
+              your users get to know you.
+            </p>
+          </div>
+
+          <div class="selling_point">
+            <img src="4.jpeg" alt="Just Picked Freshness Icon" />
+            <h3>Just Picked Freshness</h3>
+            <p>
+              I'm a paragraph. Click here to add your own text and edit me. Let
+              your users get to know you.
+            </p>
+          </div>
+        </section>
+
+        <section class="boosting_immunity_section">
+          <div class="boosting_immunity">
+            <img
+              src="https://static.wixstatic.com/media/c837a6_8172122a715c426caa6320c37c94eb0b~mv2.jpg/v1/crop/x_3130,y_1104,w_2143,h_2917/fill/w_557,h_749,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/CHOSEN_IMG_0119%20(1).jpg"
+              alt="Image of immunity boosting fruit"
+            />
+            <h2>
+              Boosting <br />Immunity the Way<br />
+              Nature Intended
+            </h2>
+            <p>
+              I'm a paragraph. Click here to add your own text and edit me. It’s
+              easy. Just click “Edit Text” or double click me to add your own
+              content and make changes to the font. I’m a great place for you to
+              tell a story and let your users know a little more about you.
+            </p>
+            <button>Our Vision</button>
+          </div>
+        </section>
+
+        <section class="wellness">
+          <h2>Choose Your Wellness Path</h2>
+          <div class="wellness_column">
+            <div class="wellness_product">
+              <img
+                src="https://static.wixstatic.com/media/c837a6_c055895f2b6b4d17b03091bc6723cf25~mv2.jpg/v1/crop/x_672,y_842,w_2887,h_3691/fill/w_305,h_385,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Rectangle%20Copy%208.jpg"
+                alt="Image of cold pressed juices"
+              />
+              <h3>Pure Hydration with Cold Pressed Juices</h3>
+              <p>
+                I'm a paragraph. Click here to add your own text and edit me.
+                Let your users get to know you.
+              </p>
+            </div>
+
+            <div class="wellness_product">
+              <img
+                src="https://static.wixstatic.com/media/c837a6_a851877ee41f429d87878b82dafda5f5~mv2.jpg/v1/crop/x_872,y_349,w_1141,h_1459/fill/w_310,h_391,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/CHOSEN_IMG_0364_crop%20copy.jpg"
+                alt="Image of organic smoothies"
+              />
+              <h3>Soft & Creamy Organic Smoothies</h3>
+              <p>
+                I'm a paragraph. Click here to add your own text and edit me.
+                Let your users get to know you.
+              </p>
+            </div>
+
+            <div class="wellness_product">
+              <img
+                src="https://static.wixstatic.com/media/c837a6_22f4e3e8ca9240ec86ad47ae5ff74978~mv2.jpg/v1/crop/x_1982,y_979,w_2680,h_3423/fill/w_310,h_394,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/choosen_IMG_0242%20copy.jpg"
+                alt="Image of wellness shots"
+              />
+              <h3>The Power of Wellness Shots</h3>
+              <p>
+                I'm a paragraph. Click here to add your own text and edit me.
+                Let your users get to know you.
+              </p>
+            </div>
+          </div>
+          <button>View All</button>
+        </section>
+
+        <section class="special_cleanse_kit_section">
+          <div class="special_cleanse_kit">
+            <img
+              src="https://static.wixstatic.com/media/c837a6_52139b2c59d3463dbd59d2818ca93af1~mv2.jpg/v1/crop/x_449,y_993,w_1225,h_1415/fill/w_550,h_630,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/IMG_0643%20copy.jpg"
+              alt="Image of cleanse kit"
+            />
+            <h2>Discover Our Special Cleanse Kit</h2>
+            <p>
+              I'm a paragraph. Click here to add your own text and edit me. It’s
+              easy. Just click “Edit Text” or double click me to add your own
+              content and make changes to the font. I’m a great place for you to
+              tell a story and let your users know a little more about you.
+            </p>
+            <button>Try It</button>
+          </div>
+        </section>
+
+        <section class="get_juice_section">
+          <div class="get_juice">
+            <h2>Get Juice Bar</h2>
+            <div class="getting_juice">
+              <p>01</p>
+              <h3>Local Delivery</h3>
+              <p>
+                I'm a paragraph. Click here to add your own text and edit me.
+              </p>
+            </div>
+
+            <div class="getting_juice">
+              <p>02</p>
+              <h3>In Store Pick Up</h3>
+              <p>
+                I'm a paragraph. Click here to add your own text and edit me.
+              </p>
+            </div>
+
+            <div class="getting_juice">
+              <p>03</p>
+              <h3>Curbside Pick Up</h3>
+              <p>
+                I'm a paragraph. Click here to add your own text and edit me.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="follow_us_section">
+          <div class="follow_us">
+            <h2>Follow Us</h2>
+            <p><a href="#" class="link">@juicebar</a></p>
+          </div>
+        </section>
+
+        <section class="rotated_images_section">
+          <div class="rotated_images">
+            <img
+              class="img4"
+              src="https://static.wixstatic.com/media/84770f_1cd1cabd702d4890a3a5bb6f849d5838~mv2.png/v1/fill/w_259,h_310,al_c,q_85,enc_auto/IMG_0715.png"
+              alt="Image of fruit in a bag"
+            />
+            <img
+              class="img3"
+              src="https://static.wixstatic.com/media/84770f_64a43f38d4e94f4eb83e285435046e51~mv2.png/v1/fill/w_250,h_308,al_c,q_85,enc_auto/CHOSEN_IMG_0066.png"
+              alt="Image green fruit and juice"
+            />
+            <img
+              class="img2"
+              src="https://static.wixstatic.com/media/84770f_6119bdc3ded947bb94c80fd2fa201192~mv2.png/v1/fill/w_241,h_297,al_c,q_85,enc_auto/CHOSEN_IMG_0331.png"
+              alt="Image of yellow fruit and juice"
+            />
+            <img
+              class="img1"
+              src="https://static.wixstatic.com/media/c837a6_fb05aeb9f70044aab6e4e3820309b878~mv2.jpg/v1/fill/w_239,h_291,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/IMG_0441.jpg"
+              alt="Image of hand reaching for fruit"
+            />
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer_menu_socials">
+          <div class="get_started">
+            <p>Get Started</p>
+            <nav class="nav_list">
+              <ul class="footer_nav_list">
+                <li class="nav_item"><a class="nav_link" href="#">Home</a></li>
+                <li class="nav_item"><a class="nav_link" href="#">Story</a></li>
+                <li class="nav_item"><a class="nav_link" href="#">Menu</a></li>
+                <li class="nav_item">
+                  <a class="nav_link" href="#">Order Online</a>
+                </li>
+                <li class="nav_item">
+                  <a class="nav_link" href="#">Locations & Hours</a>
+                </li>
+                <li class="nav_item">
+                  <a class="nav_link" href="#">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="connect">
+            <p>Connect</p>
+            <nav class="nav_list">
+              <ul class="footer_nav_list">
+                <li class="nav_item">
+                  <a class="nav_link" href="#">Instagram</a>
+                </li>
+                <li class="nav_item">
+                  <a class="nav_link" href="#">Facebook</a>
+                </li>
+                <li class="nav_item">
+                  <a class="nav_link" href="#">Youtube</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <div class="mailing_list">
+          <p>Join Our Mailing List</p>
+          <fieldset>
+            <form class="mailing_list_form" action="customer.html" method="get">
+              <!----ADD---->
+              <div class="customer_email">
+                <label for="Email">Email *</label>
+                <input
+                  class="customer_email"
+                  type="email"
+                  name="Email"
+                  id="Email"
+                  required
+                />
+              </div>
+
+              <button type="submit">Submit</button>
+            </form>
+          </fieldset>
+        </div>
+
+        <div class="serving_safely">
+          <p><a href="#">Serving You Safely</a> :)</p>
+        </div>
+
+        <div class="logo">
+          <a href="#"
+            ><img src="4.jpeg" alt="Logo for Juice Bar" class="footer_logo"
+          /></a>
+        </div>
+
+        <div class="creators_credit">
+          <p>
+            This website design was created by Wix.com, and is used here for
+            strictly educational purposes.
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <p>
+      This website design was created by Wix.com, and is used here for strictly
+      educational purposes.
+    </p>
+  </body>
 </html>
