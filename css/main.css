@@ -156,6 +156,9 @@ button {
     flex-direction: column;
     text-align: center;
 }
+.selling_points_row{
+display: flex;
+}
 
 .selling_point {
     margin: 1rem auto;
@@ -177,7 +180,10 @@ button {
     flex-direction: column;
     text-align: center;
 }
-
+.boosting_immunity{
+    display: flex;
+    justify-content: center;
+}
 .boosting_immunity h2 {
     margin: 1rem auto;
     max-width: 200px;
@@ -249,7 +255,18 @@ button {
     flex-direction: column;
     text-align: center;
 }
-
+.get_juice{
+    display: flex;
+    justify-content: center;
+    
+}
+.getting_juice p:first-child{
+   display: flex;
+   justify-content: space-around;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 10px;
+}
 .get_juice h2 {
     margin-bottom: 1rem;
 }
