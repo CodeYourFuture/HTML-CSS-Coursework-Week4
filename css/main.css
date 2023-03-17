@@ -61,6 +61,11 @@ header {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    background-color: white;
 }
 
 .order_online {
@@ -265,7 +270,7 @@ display: flex;
    justify-content: space-around;
     border: 1px solid black;
     border-radius: 30px;
-    padding: 10px;
+    
 }
 .get_juice h2 {
     margin-bottom: 1rem;
@@ -329,7 +334,7 @@ display: flex;
 }
 
 .img2 {
-    right: 1px;
+    right: 2px;
     transform: rotate(-15deg);
 }
 
