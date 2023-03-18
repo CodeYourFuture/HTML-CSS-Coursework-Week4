@@ -1,3 +1,421 @@
-/* Add your CSS here */
 
-/* Dont' forget to link this file to your HTML in the <head> */
+
+:root {
+    --black: #000;
+    --white: #FFF;
+    --lylac: #f5e8ff;
+    --light-green: #E6FAC0;
+    --medium-green: #5E7D1F;
+    --dark-green: #394B2A;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: var(--black);
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+button {
+    font-family: 'Raleway', sans-serif;
+    background-color: transparent;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Questrial', sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.8rem;
+}
+
+
+.header,
+.footer {
+    padding: 0;
+ 
+    margin: 0 auto;
+}
+
+.main {
+    height: 100%;
+   
+
+    /** HELP!! Is this correct using rem or should it be 5fr? **/
+    grid-auto-rows: fit-content(15rem);
+}
+
+
+
+/** Header **/
+
+header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    background-color: white;
+}
+
+.order_online {
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    align-items: center;
+}
+.order_online button{
+    background-color: white;
+}
+.order_online a {
+    background-color: var(--black);
+    color: var(--white);
+    text-decoration: none;
+    font-family: 'Questrial', sans-serif;
+    font-size: 1.5rem;
+
+}
+
+.juicebar_logo_menu {
+    grid-column: 1/-1;
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.juicebar_logo_menu p {
+    font-size: 1.5rem;
+    font-family: 'Questrial', sans-serif;
+}
+
+.header p{
+    font-size: xx-large;
+    padding: 20px;
+
+}
+/** Navigation **/
+/** Text Styles **/
+/** Buttons **/
+
+button {
+    border: 2px solid var(--black);
+    padding: 0.8rem 3rem;
+    font-weight: 400;
+    align-self: center;
+    margin: 1rem;
+}
+
+/** Content **/
+
+.nav_list{
+    display:none;
+}
+/** Hero **/
+
+.hero {
+    grid-column: 1/-1;
+    background-color: var(--white);
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.hero p {
+    font-weight: 400;
+    padding: 1rem 0;
+}
+
+.hero_offer {
+    background-color: var(--lylac);
+}
+
+.hero_offer a {
+    color: var(--black);
+}
+
+/** Selling Points **/
+
+.selling_points_section {
+    grid-column: 1/-1;
+    background-color: var(--white);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.selling_points_row{
+display: flex;
+}
+
+.selling_point {
+    margin: 1rem auto;
+    max-width: 200px;
+}
+
+.selling_point h3 {
+    margin: 1rem auto;
+    max-width: 200px;
+}
+
+/** Boosting Immunity **/
+
+.boosting_immunity_section {
+    grid-column: 1/-1;
+    background-color: var(--light-green);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.boosting_immunity{
+    display: flex;
+    justify-content: center;
+}
+.boosting_immunity h2 {
+    margin: 1rem auto;
+    max-width: 200px;
+}
+
+.boosting_immunity p {
+    margin: 1rem auto;
+    max-width: 250px;
+}
+
+/** Wellness Product **/
+
+.wellness{
+    text-align: center;
+    padding: 20px;
+    margin:20px
+}
+.wellness_column{
+    display: flex;
+}
+
+.wellness_product{
+    
+}
+
+.wellness_path h2 {
+    margin-bottom: 1rem;
+}
+
+.wellness_path h3 {
+    margin: 1rem auto;
+    max-width: 200px;
+}
+
+.wellness_path p {
+    margin: 1rem auto;
+    max-width: 200px;
+}
+
+/** Special Cleanse Kit **/
+
+.special_cleanse_kit_section {
+  
+    background-color: var(--white);
+    padding: 2rem;
+  
+    flex-direction: column;
+    text-align: center;
+}
+
+.special_cleanse_kit h2 {
+    margin: 1rem auto;
+    max-width: 200px;
+}
+
+.special_cleanse_kit p {
+    margin: 1rem auto;
+    max-width: 250px;
+}
+
+
+/** Getting Juice **/
+
+.get_juice_section {
+   
+    background-color: var(--light-green);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.get_juice{
+    display: flex;
+    justify-content: center;
+    
+}
+.getting_juice p:first-child{
+   display: flex;
+   justify-content: space-around;
+    border: 1px solid black;
+    border-radius: 30px;
+    
+}
+.get_juice h2 {
+    margin-bottom: 1rem;
+}
+
+.get_juice h3 {
+    margin: 1rem auto;
+    max-width: 200px;
+}
+
+.get_juice p {
+    margin: 1rem auto;
+    max-width: 200px;
+}
+
+
+/** Follow Us **/
+
+.follow_us_section {
+    grid-column: 1/-1;
+    background-color: var(--white);
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.follow_us a {
+    color: var(--black);
+}
+
+/** Gallery **/
+
+.rotated_images_section {
+    grid-column-start: 6;
+    background-color: var(--white);
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.rotated_images {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.rotated_images img {
+    position: absolute;
+    z-index: 10;
+    display: block;
+
+}
+
+.img1 {
+    left: 2px;
+    top: 5rem;
+    transform: rotate(15deg);
+}
+
+.img2 {
+    right: 2px;
+    transform: rotate(-15deg);
+}
+
+.img3 {
+    right: 2px;
+    top: 10rem;
+    transform: rotate(15deg);
+}
+
+.img4 {
+    transform: rotate(-25deg);
+    top: 15rem;
+}
+
+
+
+/** Footer **/
+
+.footer {
+    grid-column: 1/-1;
+    grid-row-end: auto;
+    background-color: var(--dark-green);
+    padding: 2rem;
+}
+
+.footer_menu_socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.footer_nav_list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav_link {
+    text-decoration: none;
+    color: var(--white);
+    line-height: 2rem;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.mailing_list_form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.customer_email {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=email] {
+    padding: 0.5rem 0;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid var(--white);
+}
+
+.serving_safely {
+    font-size: 1.5rem;
+    color: var(--white);
+    margin-bottom: 2rem;
+}
+
+.serving_safely a {
+    color: var(--white);
+}
+
+.creators_credit {
+    margin: 2rem 0;
+    color: var(--white);
+}
+
+/** Media Queries **/
