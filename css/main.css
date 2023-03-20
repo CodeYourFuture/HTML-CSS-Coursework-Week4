@@ -111,6 +111,7 @@ card {
     text-transform: uppercase;
     width: 12rem;
     height: 3.3rem;
+    background-color: #0150FD;
     /* check exact boarder radius */
     border-radius: 3rem;
 }
