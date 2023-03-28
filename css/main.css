@@ -23,10 +23,31 @@ body {
     line-height: 1.4;
 }
 
-.grid {
+/*.grid {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     gap: 10px;
+}*/
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 100px;
+}
+
+.box2 {
+    display: grid;
+    justify-content: flex-end;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+}
+
+.box3 {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    grid-row-end: 4;
 }
 
 .header {
@@ -52,5 +73,8 @@ flex-direction: column;
     flex-direction: row;
     align-items: center;
 
+}
+.navigation{
+    
 }
 
