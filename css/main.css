@@ -12,14 +12,20 @@
     --orange: #ec7a17;
 }
 
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
 body {
+    width: 100vw;
     font-family: Raleway, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: .9275rem;
     line-height: 1.8em;
     word-spacing: .1em;
     text-align: center;
-    margin: 0;
-    padding: 0;
 } 
 
 h1, h2 {
@@ -39,6 +45,12 @@ h3 {
     text-align: center;
     padding: 0;
     margin-bottom: 0;
+    border: 2px dotted red;
+}
+
+p { 
+    font-size: 17px;
+    line-height: 1.6em;
 }
 
 .button {
@@ -255,11 +267,15 @@ img {
 
 @media only screen and (min-width: 900px) {
     .hero-wrapper {
-        margin: 0 0 50px 0;
         background-image: url("../hero-image.jpg");
+        background-attachment:fixed; 
+        background-position: center;
+        background-repeat: no-repeat;
         background-size: cover;
-        max-width: 100%;
-        height: 700px;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+        height: 720px;
     }
 
     .hero-img {
@@ -268,8 +284,12 @@ img {
 
     .hero-text-wrapper {
         background-color: var(--white);
-        padding-top: 70px;
+        padding-top: 80px;
         padding-bottom: 55px;
+        width: 100%;
+        margin: 0 0 50px 0;
+        width: 100%;
+        background-color: transparent;
     }
 
     .hero-title {
@@ -288,9 +308,10 @@ img {
 
     .hero-window {
         display: block;
-        margin: 320px 0 0 0;
-        padding: 20px 0 20px 0;
+        margin: 0;
+        padding: 35px 0;
         font-size: 1.3em;
+        /* background-color: transparent; */
     }
 }
 
@@ -577,7 +598,7 @@ img {
 
 /* Section 5 */
 .section5-wrapper {
-    padding: 20px;
+    padding: 0;
     margin-bottom: 40px;
 }
 .section5-img {
@@ -588,15 +609,13 @@ img {
 
 .section5-h2 {
     margin-bottom: 0;
+    padding: 10px;
 }
 
 .section5-p {
     margin-top: 0;
+    padding: 0 20px;
 } 
-
-.section5-h2-break {
-    display: none;
-}
 
 .section5-button {
     font-family: Raleway, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -734,7 +753,7 @@ img {
     background-color: var(--dark-green);
     padding: 0 20px 0 20px;
     color: var(--white);
-    margin-top: 190px;
+    margin-top: 160px;
 }
 
 .footer-overlap-imgs {
@@ -749,10 +768,10 @@ img {
     height: 148px;
     object-fit: contain;
     position: absolute;
-    bottom: 60px;
-    left: 137px;
-    transform:rotate(18deg);
-}
+    bottom: 65px;
+    left: 127px;
+    transform:rotate(20deg);
+} 
 
 .footer-img2 {
     z-index: 200;
@@ -760,20 +779,20 @@ img {
     height: 178px;
     object-fit: contain;
     position: absolute;
-    bottom: 148px;
-    left: 65px;
-    transform:rotate(-12deg);
+    bottom: 145px;
+    left: 67px;
+    transform:rotate(-10deg);
 }
 
 .footer-img3 {
     z-index: 100;
-    width: 135px;
-    height: 179px;
-    object-fit: contain;
+    width: 123px;
+    height: 150px;
+    object-fit: cover;
     position: absolute;
-    bottom: 75px;
+    bottom: 87px;
     left: 20px;
-    transform:rotate(18deg);
+    transform:rotate(20deg);
 }
 
 .footer-img4 {
@@ -782,16 +801,18 @@ img {
     height: 187px;
     object-fit: contain;
     position: relative;
-    top: 30px;
-    transform:rotate(-12deg);
-}
+    right: 15px;
+    top: 15px;
+    transform:rotate(30deg);
+} 
 
 .footer-grid {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     text-align: left;
     display: grid;
     grid-template-columns: 60% 40%;
     padding-bottom: 30px;
+    margin: 30px 0 30px 0;
 }
 
 .footer-gridblock {
@@ -805,7 +826,7 @@ img {
     font-weight: 100;
     font-size: 1.375rem;
     padding: 0;
-    margin-bottom: 30px;
+    
 }
 
 .footer-sub-links {
@@ -863,6 +884,7 @@ label {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    gap: 20px;
 } 
 
 .footer-serve-link {
@@ -906,6 +928,10 @@ label {
 }
 
 @media only screen and (min-width: 900px) {
+
+    .footer-wrapper {
+        /* border: 2px dotted red; */
+    }
     .footer-h2 {
         font-size: 3.5rem;
         margin-top: 50px;
@@ -919,6 +945,11 @@ label {
         padding: 0 40px;
     }
 
+    .footer-overlap-imgs {
+        top: 100px;
+        left: 30px;
+    }
+
 
     .footer-img1 {
         width: 320px;
@@ -926,7 +957,8 @@ label {
         object-fit: contain;
         position: absolute;
         bottom: 60px;
-        left: 137px;
+        /* left: 900px; */
+        left: 0;
         transform:rotate(18deg);
     }
 
@@ -935,8 +967,8 @@ label {
         height: 353px;
         object-fit: contain;
         position: absolute;
-        bottom: 148px;
-        left: 65px;
+        bottom: 100px;
+        left: 600px;
         transform:rotate(-12deg);
     }
 
@@ -947,19 +979,20 @@ label {
         object-fit: contain;
         position: absolute;
         bottom: 75px;
-        left: 20px;
+        left: 700px;
         transform:rotate(18deg);
     }
 
     .footer-img4 {
         width: 320px;
         height: 353px;
-        object-fit: contain;
-        position: relative;
-        bottom: 1000px;
+        object-fit: cover;
+        position: absolute;
+        bottom: 300px;
+        right: 400px;
         transform:rotate(-12deg);
         border: 2px dotted white;
-        display: none;
+        
     }
 
     .footer-desktopv-flex {
@@ -976,11 +1009,13 @@ label {
     .footer-flex1 {
         flex: 3;
         margin-left: 30px;
+        margin-top: 200px;
     }
 
     .footer-flex3 {
         padding-top: 20px;
         flex: 1;
+        margin-top: 200px;
     }
 
     .footer-copyright-p {
@@ -990,6 +1025,7 @@ label {
 
     .footer-grid-p {
         font-size: 1.5rem;
+        margin-top: 200px;
     }
 
     .footer-sub-links {
