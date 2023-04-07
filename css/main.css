@@ -39,7 +39,7 @@ body {
     display: grid;
     padding: 40px 40px 40px 40px;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(9, auto);
+    grid-template-rows: repeat(10, auto);
     grid-template-areas: 
     "header       header        header      header"
     "prod         prod          prod        prod"
@@ -48,9 +48,12 @@ body {
     "buy-online   buy-online    buy-img     buy-img"
     "request-form request-form  request-form    request-form"
     "leaf         leaf          leaf        leaf"
+"contact-details contact-details contact-details contact-details"
     "footer       footer        footer      footer"
     "credit       credit        credit      credit"     
 }
+
+
 
 /* Header */
 
@@ -193,14 +196,15 @@ prod img{
     color: var(--redBrown);
 }
 
-/* logo {
+.logospan {
     display: flex;
+    flex-direction: row;
     justify-self: center;
-    align-self: center;
+        align-self: center;
     color: var (-- white);
     margin-right: 50px;
     margin-top: -5rem;
-} */
+}
 
 .products button,
 .prod button{
@@ -365,6 +369,37 @@ form button{
     
     }
 
+.contact-details {
+    grid-area: contact-details;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--greenBlack);
+    color: #fff;
+}
+
+.capitalX {
+display: flex;
+flex-direction: row;
+}
+
+
+.email {
+    justify-content: center;
+    padding-bottom: 10px;
+    background-color: var(--greenBlack);
+    color: #fff;
+}
+
+#email-label {
+    width: 10%;
+    border: none;
+    padding: 15px;
+
+    color: var(--white);
+    margin: 20px 0px;
+}
+
 .footer{
     grid-area: footer;
     justify-content: center;
@@ -374,7 +409,7 @@ form button{
     color:#fff;
 }
 
-.credit{
+.credit {
     grid-area: credit;
     justify-content: center;
     padding-top: 50px;
@@ -382,42 +417,16 @@ form button{
     color: var(--white);
 }
 
-.email{
-justify-content:center;
-padding-bottom: 10px;
-background-color: var(--greenBlack);
-color: #fff;
-}
 
-#email-label{
-        width: 10%;
-        border: none;
-        padding: 15px;
-        
-        color: var(--white);
-        margin: 20px 0px;
-}
-
-#subscribe {
-            width: 10%;
-            border: none;
-            padding: 15px;
-            background-color: var(--redBrown);
-            color: var(--white);
-            margin: 20px 0px;
-}
-
-
-.chat-btn {
-    display: flex;
-    justify-self: flex-end;
-    align-self: flex-end;
-    margin-right: -3rem;
-    margin-bottom: -7.5rem;
-    padding: 20px 70px;
+ #chatOption :first-child { 
     background: var(--redBrown);
-    color: var(--white);
+        color: var(--white);
+    
+    position: fixed;
+    
+        padding: 20px 70px;
+        bottom: 1rem;
+    right: 1rem; 
     font-size: 17px;
     font-weight: lighter;
-
 }
