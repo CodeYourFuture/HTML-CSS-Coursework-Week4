@@ -62,8 +62,8 @@ body {
 
 #navbar {
     color: #A05941;
-    margin-left: 25px;
-    
+    padding-left: 25px;
+    background-color: #EDEDEE;
 }
 
 #p1 {
@@ -79,7 +79,6 @@ body {
             font-weight: 800;
             letter-spacing: 0.1em;
     margin-bottom: 10px;
-            
 }
 
 /* buttons styling */
@@ -113,8 +112,8 @@ body {
 
 #firstDiv {
     display: grid;
-    grid-template-columns: repeat(2, 75px);
-    column-gap: 140px;
+    grid-template-columns: 75px 100px 75px;
+    column-gap: 20px;
     width: 100%;
     box-sizing: border-box;
     padding: 10px 10px;
@@ -141,9 +140,9 @@ h4 {
 /* articles with plants styling */
 
 article {
-    background-size: 350px, 400px;
-    width: 320px;
-    height: 400px;
+    background-size: 350px, auto;
+    min-width: 320px;
+    min-height: 400px;
     background-repeat: no-repeat;
     background-position: contain;
     display: flex;
@@ -173,10 +172,7 @@ article {
     height: 5px;
     background-color: #A05941;
     position: relative;
-    margin: 0px 0px 11px 0;
-    left: 156px;
-    justify-self: start;
-    align-self: start;
+    margin: 0px auto 11px auto;
 }
 
 h6 {

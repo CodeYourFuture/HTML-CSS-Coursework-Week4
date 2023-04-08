@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/fullscreen.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Outfit:wght@200&display=swap" rel="stylesheet">
@@ -26,9 +27,19 @@
             <div>
                 <p id="p1">PRICKLES & CO.</p>
             </div>
-            <div id="navMenu"></div>
+            <div id="navMenu">
+                <div class="navmenu">
+                    <ul>
+                        <li>Shop</li>
+                        <li>About</li>
+                        <li>FAQ</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+            </div>
             <div>
                 <p id="p2">We Deliver To Your Doorstep</p>
+                
                 <!-- <p id="p2">Call Us Now! 123-456-7890</p> -->
             </div>
         </div>
@@ -38,6 +49,7 @@
         <section id="frontPage">
             <div id="firstDiv">
                 <p>ESTB</p>
+                <img id="logotree" src="/images/images/Mediamodifier-Design.svg" />
                 <p>2035</p>
             </div>
             <div>
@@ -83,9 +95,9 @@
                 <img class="fullImg" src="/images/images/leave.webp" alt="leave" />
             </div>
             <div class="photos">
-                <img class="fullImg" src="/images/images/woman in branches.webp" alt="woman among plants" />
+                <img id="lastphoto" class="fullImg" src="/images/images/woman in branches.webp" alt="woman among plants" />
             </div>
-            <div class="photos">
+            <div id="greenarea" class="photos">
                 <p id="buyOnline">BUY ONLINE NOW & GET 10% OFF !</p>
                 <button class="shopCollection" type="button">Shop Now</button>
             </div>
@@ -94,10 +106,14 @@
             <form>
                 <legend>FOR SPECIAL REQUESTS & ORDERS</legend>
                 <div id="formDiv" class="horizontalLine"></div>
+                <div class="firstLineForm">
                 <label for="firstName">First Name *</label>
                 <input id="firstName" name="firstName" type="text" required/>
+                </div>
+                <div class="firstLineForm2">
                 <label for="lastName">Last Name *</label>
                 <input id="lastName" name="lastName" type="text" required />
+                </div>
                 <label for="emailInput">Email *</label>
                 <input id="emailInput" name="email" type="email" required />
                 <label for="phoneNumber">Phone</label>
@@ -107,7 +123,7 @@
                 <button id="sendButton" class="shopCollection" type="submit">Send</button>
             </form>
             
-            <img src="/images/images/background.webp" alt="plant-ficus" />
+            <img id="formbackground" src="/images/images/background.webp" alt="plant-ficus" />
         </section>
         <section id="contact-details">
             <div id="store-address" class="contact-details">
