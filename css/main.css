@@ -9,7 +9,7 @@
     --lightGray: #EDEDEE;
     --white: #fff;
     --transparentWhite: rgba(247, 238, 238, 0.75);
-
+/* --transparentWhite: rgba(0, 0, 0, 0.75); */
     --font1: 'Fjalla One',sans-serif;
     --font2: 'Outfit',sans-serif;
 }
@@ -321,11 +321,9 @@ prod img{
 
 .request-form{
     grid-area: request-form;   
-    margin: 50px 400px 0px 400px;
-    padding: 40px;
+    align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     color: var(--transparentWhite);
 }
 
@@ -371,16 +369,24 @@ form button{
 
 .contact-details {
     grid-area: contact-details;
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
     background-color: var(--greenBlack);
-    color: #fff;
+    color: var(--white);
 }
 
 .capitalX {
 display: flex;
 flex-direction: row;
+justify-content: center;
+padding-top: 60px;
+padding-bottom: 30px;
+}
+
+.ourstore {
+    padding-right: 30px;
+}
+
+.open {
+    padding-right: 30px;
 }
 
 
@@ -388,16 +394,21 @@ flex-direction: row;
     justify-content: center;
     padding-bottom: 10px;
     background-color: var(--greenBlack);
-    color: #fff;
+    color: var(--white);
 }
 
 #email-label {
     width: 10%;
     border: none;
     padding: 15px;
+    color: var(--while);
+    margin: 20px 10px;
+}
 
-    color: var(--white);
-    margin: 20px 0px;
+.google-maps {
+    background-color: var(--greenBlack);
+        color: var(--redBrown);
+    
 }
 
 .footer{
@@ -405,25 +416,28 @@ flex-direction: row;
     justify-content: center;
     display: flex;
     flex-direction: row;
-    background-color: var(--greenBlack);
-    color:#fff;
+    background-color: var(--white);
+    color: var(--white);
 }
 
 .credit {
     grid-area: credit;
     justify-content: center;
     padding-top: 50px;
-    background-color: var(--greenBlack);
-    color: var(--white);
+    background-color: var(--white);
+    color: var(--redBrown);
+}
+
+.soc-med {
+    padding-top: 20px;
+    padding-bottom: 50px;
 }
 
 
  #chatOption :first-child { 
     background: var(--redBrown);
         color: var(--white);
-    
-    position: fixed;
-    
+        position: fixed;
         padding: 20px 70px;
         bottom: 1rem;
     right: 1rem; 

@@ -43,8 +43,33 @@
                 </ul>
             </nav>
             <div>
-                <p id="p2">We Deliver To Your Doorstep</p>
+                
+                <p id="p1">We Deliver To Your Doorstep</p>
                 <p id="p2">Call Us Now! 123-456-7890</p>
+<script>
+    
+        const p1 = document.getElementById("p1");
+        const p2 = document.getElementById("p2");
+
+                let current = p1;
+
+        function switchParagraphs() {
+                        current.style.display = "none";
+
+            if (current === p1) {
+                current = p2;
+            } else {
+                current = p1;
+            }
+
+            // Show the new <p> element
+            current.style.display = "block";
+        }
+
+        // Call the switchParagraphs() function every 5 seconds
+        setInterval(switchParagraphs, 5000);
+
+            </script>
             </div>
         </section>
 
@@ -74,22 +99,16 @@
         <span>2023</span></p>
         <h1>Prickles & co</h1>
         <p>bring nature indoors</p>
-        <button>Shop Now</button>
-
+        
+<button class="shopNow" type="button">Shop Now</button>
         </section>
-
-        
-        
-        
-
 </section>
    
 
-           
 
     <section class="products">
 
-        <button class="shopNow" type="button">Shop Now</button>
+        
 
         <article class="frame capital title cacti">
             <p>cacti</p>
@@ -150,8 +169,6 @@
         <button>Shop Now</button>
     </section>
 
-    
-
        <section class="request-form">
         <p class="capital">for special requests & orders</p>
         <form action="" method="post" class="form">
@@ -169,8 +186,6 @@
         </form>
     </section>
 
-
-    
     <section class="leaf">
         <div class="img-wrapper">
             <img src="./img/leafs.jpg" alt="Leafs">
@@ -181,7 +196,7 @@
 
         <section class="capitalX">
 
-    <div class="capital1">
+    <div class="ourstore">
         <h2>OUR STORE</h2>
     
         <p>Address: 500 Terry Francois Street San Francisco, CA 94158</p>
@@ -189,14 +204,14 @@
         <p>Email: info@mysite.com</p>
     </div>
     
-    <div class="capital2">
+    <div class="open">
         <h2>OPENING HOURS</h2>
         <p>Mon - Fri: 7am - 10pm</p>
         <p>Saturday: 8am - 10pm</p>
         <p>Sunday: 8am - 11pm</p>
     </div>
     
-    <div class="capital3">
+    <div class="help">
         <h2>HELP</h2>
         <p>Shipping & Returns</p>
         <p>Privacy Policy</p>
@@ -204,7 +219,7 @@
     </div>
 
         </section>
-        </section>
+        
     
     <section class="email">
         <H2>SUBSCRIBE</H2>
@@ -212,27 +227,40 @@
         <label id="email-label"></label><input type="email" id="email" name="email" placeholder="Enter your Email" required>
         </label>
         <input id="subscribe" type="subscribe" value="subscribe">
-    
-    
-    </section>
+        </section>
 
+        <section class="soc-med" id="soc-media">
+            <a href=""><img src="/images/images/facebook.webp" /></a>
+            <a href=""><img src="/images/images/pinterest.webp" /></a>
+            <a href=""><img src="/images/images/instagram.webp" /></a>
+        </section>
+
+        <section class="google-maps" id="google-maps">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8294844261723!2d-122.38939518523193!3d37.77059622017397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7f1a33f38ea7%3A0xe4941e6c1dc4022b!2zNTAwIFRlcnJ5IEEgRnJhbmNvaXMgQmx2ZCwgU2FuIEZyYW5jaXNjbywgQ0EgOTQxNTgsINCh0L_QvtC70YPRh9C10L3RliDQqNGC0LDRgtC4INCQ0LzQtdGA0LjQutC4!5e0!3m2!1suk!2suk!4v1678652000164!5m2!1suk!2suk"
+                width="90%" height="400" style="border:0;" allowfullscreen="" loading="lazy" -->
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
 </section>
+</section>
+
+
 </body>
     <footer class="footer">
+        <!-- Please leave this in to credit the creators of this design -->
+        <div class="credit">
         
+        
+            <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
+        
+        </div>
     </footer>
 
     <section class="ChatOption" id="chatOption">
-        <img src="/images/images/image (2).svg" alt="chat bubble icon" />
+        <img src="/images/images/image (2).svg" alt="Lets chat" />
     </section>
 
-    <!-- Please leave this in to credit the creators of this design -->
-    <div class="credit">
-        
-        
-        <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
     
-    </div>
 
 </body>
 
