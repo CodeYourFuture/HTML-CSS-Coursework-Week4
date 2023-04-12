@@ -284,7 +284,6 @@ prod img{
 
 .about{
     grid-area: about;
-    
     color: var(--redBrown);
     font-family: var(--font2);
     font-size: 20px;
@@ -403,20 +402,37 @@ justify-content: space-evenly;
     padding-right: 30px;
 }
 
-
 .email {
     justify-content: center;
-    padding-bottom: 10px;
     background-color: var(--greenBlack);
-    color: var(--white);
+    color: var(--greenBlack);
 }
 
-#email-label {
+input [type="email"] {
     width: 10%;
-    border: none;
+    height: 50px;
+    border: var(--white);
     padding: 15px;
-    color: var(--while);
-    margin: 20px 10px;
+    color: var(--greenBlack);
+    background-color: var(--greenBlack);
+    }
+
+.submit {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+input[type="submit"] {
+    width: 10%;
+    height: 50px;
+    text-align: center;
+    color: var(--greenBlack);
+    background-color: var(--white);
+    border: 1px solid var(--white);
+    margin-bottom: 50px;
 }
 
 .google-maps {

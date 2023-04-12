@@ -1,5 +1,7 @@
 /* Media Query */
 
+
+
 @media screen and (min-width:540px) {
 
 
@@ -8,10 +10,13 @@
         top:0;
     }
 
-    .open-menu,
-    .close-menu {
-        display: none;
-    }
+        .open-menu,
+        .close-menu {
+            display: none;
+            
+        }
+
+       
 
     .nav-list {
         margin: 0 2rem;
@@ -24,13 +29,16 @@
 
     body{
             grid-template-areas:
-                "header header"
-                "prod prod"
-                "products products"
-                "about about-img"
-                "buy-img buy-online"
-                "request-form request-form"
-                "footer footer";
+                "header header header header"
+                "prod prod prod prod"
+                "products products products products"
+                "about about about1-img about2-img"
+                "buy-online buy-online buy-img buy-img"
+                "request-form request-form request-form request=form"
+                "leaf leaf leaf leaf"
+                "contact contact contact contact"
+                "footer footer footer footer";
+                    
         }
 
         .prod{

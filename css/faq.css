@@ -39,22 +39,26 @@ body {
 }
 
 
-/*Header */
+/* Header */
+
 .header {
-    
+    grid-area: header;
     width: 100%;
     margin-top: 10px;
+    
 }
 
 .header-search {
     background-color: var(--white);
     display: flex;
+
 }
 
 .header-search i {
     color: var(--redBrown);
     padding: 20px 0px 0px 20px;
     font-size: 30px;
+
 }
 
 .header-search input {
@@ -69,6 +73,7 @@ body {
 
 
 .nav-link-search {
+
     color: var(--redBrown);
     margin-right: 30px;
     padding-top: 30px;
@@ -90,13 +95,14 @@ body {
 
 .header-title h1 {
     font-size: 20px;
+
 }
 
 .nav-list {
     list-style: none;
 }
 
-nav {
+.nav {
     display: flex;
     flex-direction: column;
 }
@@ -153,35 +159,30 @@ nav {
     position: relative;
     color: var(--redBrown);
     padding: 5px 10px;
-} */
+}
 
-.shoppage {
-   
-    background-image: url("../img/flowerhouse.jpg");
-    background-size: cover;
-    padding: 10%;
-    line-height: 100px;
-    height: auto;
-    color: var(--white);
+
+.faq {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    font-size: 40px;
     justify-content: center;
+    padding-top: 300px;
+    padding-bottom: 50px;
+    background-color: var(--white);
+    color: var(--redBrown);
+}
+
+.list {
     align-items: center;
+    padding-bottom: 15px;
 }
 
-h2 {
-    font-size: 60px;
-}
-
-.shoptext {
-    color: var(--white);
-    justify-content: center;
-}
-
-.shopall {
-font-size: 40px;
-color: var(--greenBlack);
-padding-top: 50px;
-padding-bottom: 50px;
-justify-items: center;
+.answer {
+    display: none;
+    padding-top: 60px;
+    padding-bottom: 40px;
 }
 
 .contact {
@@ -197,6 +198,14 @@ justify-items: center;
     padding-top: 60px;
     padding-bottom: 30px;
     justify-content: space-evenly;
+}
+
+.ourstore {
+    padding-right: 30px;
+}
+
+.open {
+    padding-right: 30px;
 }
 
 .email {
@@ -232,10 +241,10 @@ input[type="submit"] {
     margin-bottom: 50px;
 }
 
-
 .google-maps {
     background-color: var(--greenBlack);
     color: var(--redBrown);
+
 }
 
 .footer {
@@ -259,6 +268,7 @@ input[type="submit"] {
     padding-top: 20px;
     padding-bottom: 50px;
 }
+
 
 #chatOption :first-child {
     background: var(--redBrown);
