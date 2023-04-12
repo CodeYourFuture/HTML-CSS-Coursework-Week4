@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Add a link to your custom CSS here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" rel='stylesheet' href="media.css">
+    <link rel="stylesheet" rel='stylesheet' href="shop.css">
+    <link rel="stylesheet" rel='stylesheet' href="faq.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <title>Responsive grid project</title>
+</head>
+
+
+<body>
+
+
+<header class="header">
+
+    <section class="header-search">
+
+        <i class="fa fa-search"></i>
+        <input type="text" name="search" id="search" placeholder="Search...">
+
+        <li class="nav-link-search"><a href="login.html">LogIn</a></li>
+        <div class="links">
+            <a href="#"></a>
+        </div>
+        <a href="#"><img src="./img/shopping-cart.png" alt="Shopping Cart"></a>
+
+    </section>
+
+
+    <section class="header-title">
+        <div>
+            <h1>PRICKLES & CO.</h1>
+
+
+        </div>
+
+      
+<nav class="nav">
+
+    <ul class="nav-list">
+        <input type="checkbox" id="check">
+
+        <span class="menu">
+            <li class="nav-link"><a href="login.html">Log In</a></li>
+            <li class="nav-link"><a href="shop.html">Shop</a></li>
+            <li class="nav-link"><a href="about">About</a></li>
+            <li class="nav-link"><a href="faq.html">FAQ</a></li>
+            <li class="nav-link"><a href="contact">Contact</a></li>
+            <label for="check" class="close-menu"><i class="fa fa-times"></i></label>
+        </span>
+        <label for="check" class="open-menu"><i class="fa fa-bars"></i></label>
+    </ul>
+
+</nav>
+
+<div class="links">
+
+    <a href="shop.html">Shop</a>
+    <a href="#about">About</a>
+    <a href="faq.html">FAQ</a>
+    <a href="#contact">Contact</a>
+</div>
+
+<div>
+
+    <p id="p1">We Deliver To Your Doorstep</p>
+    <p id="p2">Call Us Now! 123-456-7890</p>
+    <script>
+
+        const p1 = document.getElementById("p1");
+        const p2 = document.getElementById("p2");
+
+        let current = p1;
+
+        function switchParagraphs() {
+            current.style.display = "none";
+
+            if (current === p1) {
+                current = p2;
+            } else {
+                current = p1;
+            }
+
+            // Show the new <p> element
+            current.style.display = "block";
+        }
+
+        // Call the switchParagraphs() function every 5 seconds
+        setInterval(switchParagraphs, 5000);
+
+    </script>
+
+</div>
+</section>
+
+
+<section class="faq">FAQ<input type="checkbox" id="check">
+
+<ul class="list">
+    <ul><a href="#" class="question">How do I add a new question & answer?</a>
+        <p class="answer">To add a new FAQ follow these steps:<br>
+            <br>
+            1. Click “Manage FAQs” button<br>
+            2. From your site’s dashboard you can add, edit and manage all your questions and answers<br>
+            3. Each question and answer should be added to a category<br>
+            4. Save and publish.</p>
+        </ul>
+    <ul><a href="#" class="question">Can I insert an image, video, or gif in my FAQ?
+</a>
+    
+        <p class="answer">Yes. To add media follow these steps:
+        
+        1. Enter the app’s Settings<br>
+        2. Click on the “Manage FAQs” button<br>
+        3. Select the question you would like to add media to<br>
+        4. When editing your answer click on the camera, video, or GIF icon<br>
+        5. Add media from your library.<br></p>
+        </ul>
+    <ul><a href="#" class="question">How do I edit or remove the “FAQ” title?</a>
+                
+        <p class="answer">You can edit the title from the Settings tab in the app.<br>
+            If you don’t want to display the title, simply disable the Title under “Info to Display”.</p>
+    </ul>
+</ul>
+
+
+<script>
+    // Add a click event listener to all questions
+    const questions = document.querySelectorAll('.question');
+    questions.forEach(question => {
+        question.addEventListener('click', (e) => {
+            // Prevent the default link behavior
+            e.preventDefault();
+            // Toggle the answer's display property
+            const answer = e.target.nextElementSibling;
+            answer.style.display = answer.style.display === 'none' ? 'block' : 'none';
+        });
+    });
+</script>
+
+</div>
+
+</section>
+
+</header>
+
+
+
+
+<section class="contact">
+
+    <section class="capitalX">
+
+        <div class="ourstore">
+            <h2>OUR STORE</h2>
+
+            <p>Address: 500 Terry Francois Street San Francisco, CA 94158</p>
+            <p>Phone: 123-456-7890</p>
+            <p>Email: info@mysite.com</p>
+        </div>
+
+        <div class="open">
+            <h2>OPENING HOURS</h2>
+            <p>Mon - Fri: 7am - 10pm</p>
+            <p>Saturday: 8am - 10pm</p>
+            <p>Sunday: 8am - 11pm</p>
+        </div>
+
+        <div class="help">
+            <h2>HELP</h2>
+            <p>Shipping & Returns</p>
+            <p>Privacy Policy</p>
+            <p>FAQ</p>
+        </div>
+
+    </section>
+
+        <section class="email">
+            <H2>SUBSCRIBE</H2>
+            <p>Enter your email here*</p>
+            <input type="email" id="email" name="email" required>
+            <input id="submit" name="submit" type="submit" value="Subscribe Now" />
+        </section>
+
+    <section class="soc-med" id="soc-media">
+        <a href=""><img src="./img/whitefacebook.webp" alt="facebook icon"></a>
+        <a href=""><img src="./img/whitepinterest.webp" alt="pinterest icon"></a>
+        <a href=""><img src="./img/whiteinstagram.webp" alt="instagram icon"></a>
+    </section>
+
+    <section class="google-maps" id="google-maps">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8294844261723!2d-122.38939518523193!3d37.77059622017397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7f1a33f38ea7%3A0xe4941e6c1dc4022b!2zNTAwIFRlcnJ5IEEgRnJhbmNvaXMgQmx2ZCwgU2FuIEZyYW5jaXNjbywgQ0EgOTQxNTgsINCh0L_QvtC70YPRh9C10L3RliDQqNGC0LDRgtC4INCQ0LzQtdGA0LjQutC4!5e0!3m2!1suk!2suk!4v1678652000164!5m2!1suk!2suk"
+            width="90%" height="400" style="border:0;" allowfullscreen="" loading="lazy" -->
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+</section>
+</section>
+
+
+</body>
+<footer class="footer">
+    <!-- Please leave this in to credit the creators of this design -->
+    <div class="credit">
+
+
+        <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
+
+    </div>
+</footer>
+
+<section class="ChatOption" id="chatOption">
+    <img src="/images/images/image (2).svg" alt="Lets chat" />
+</section>
+
+</html>

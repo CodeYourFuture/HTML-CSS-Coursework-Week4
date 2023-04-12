@@ -1,0 +1,77 @@
+/* Media Query */
+
+
+
+@media screen and (min-width:540px) {
+
+
+    header{
+        position: fixed;
+        top:0;
+    }
+
+        .open-menu,
+        .close-menu {
+            display: none;
+            
+        }
+
+       
+
+    .nav-list {
+        margin: 0 2rem;
+    }
+
+    .nav-link,
+    .footer-wrapper {
+        padding: 1rem;
+    }
+
+    body{
+            grid-template-areas:
+                "header header header header"
+                "prod prod prod prod"
+                "products products products products"
+                "about about about1-img about2-img"
+                "buy-online buy-online buy-img buy-img"
+                "request-form request-form request-form request=form"
+                "leaf leaf leaf leaf"
+                "contact contact contact contact"
+                "footer footer footer footer";
+                    
+        }
+
+        .prod{
+            background-attachment: fixed;
+            margin-top: 180px;
+        }
+
+        .products{
+            flex-direction: row;
+            
+        }
+
+        .leaf{
+            display: none;
+        }
+
+        .
+.about-img1{
+            flex-direction: row;
+            
+        }
+.about-img2 {
+    flex-direction: row;
+    
+}
+
+
+.chat-btn {
+    display: -moz-popup;
+}
+
+}
+
+
+
+/* Dont' forget to link this file to your HTML in the <head> */

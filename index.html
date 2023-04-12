@@ -5,17 +5,300 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Add a link to your custom CSS here -->
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" rel='stylesheet'  href="media.css">
+    <link rel="stylesheet" rel='stylesheet' href="shop.css">
+    <link rel="stylesheet" rel='stylesheet' href="faq.css">
+    <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
     <title>Responsive grid project</title>
 </head>
 
 <body>
 
-    <!-- Add your markup here -->
+    
+    <header class="header">
+
+        <section class="header-search">
+        
+            <i class="fa fa-search"></i>
+            <input type="text" name="search" id="search" placeholder="Search...">
+            
+            <li class="nav-link-search"><a href="login.html">LogIn</a></li>
+                        <div class="links">
+                            <a href="#"></a>
+                        </div>
+            <a href="#"><img src="./img/shopping-cart.png" alt="Shopping Cart"></a>
+        
+            
+        </section>
+        
+
+        <section class="header-title">
+            <div>
+                <h1>PRICKLES & CO.</h1>
+                
+
+            </div>
+
+                <nav>
+                
+                <ul class="nav-list">
+                    <input type="checkbox" id="check">
+                    
+                    <span class="menu">
+                        <li class="nav-link"><a href="login.html">Log In</a></li>
+                        <li class="nav-link"><a href="shop.html">Shop</a></li>
+                        <li class="nav-link"><a href="#about">About</a></li>
+                        <li class="nav-link"><a href="faq.html">FAQ</a></li>
+                        <li class="nav-link"><a href="#contact">Contact</a></li>
+                        <label for="check" class="close-menu"><i class="fa fa-times"></i></label>
+                    </span>
+                    <label for="check" class="open-menu"><i class="fa fa-bars"></i></label>
+               
+                </ul>
+                
+                </nav>
+
+            <div class="links">
+                
+                <a href="shop.html">Shop</a>
+                <a href="#about">About</a>
+                <a href="faq.html">FAQ</a>
+                <a href="#contact">Contact</a>
+            </div>
+               
+            
+       
+            
+            
+            <div>
+                
+                <p id="p1">We Deliver To Your Doorstep</p>
+                <p id="p2">Call Us Now! 123-456-7890</p>
+<script>
+    
+        const p1 = document.getElementById("p1");
+        const p2 = document.getElementById("p2");
+
+                let current = p1;
+
+        function switchParagraphs() {
+                        current.style.display = "none";
+
+            if (current === p1) {
+                current = p2;
+            } else {
+                current = p1;
+            }
+
+            // Show the new <p> element
+            current.style.display = "block";
+        }
+
+        // Call the switchParagraphs() function every 5 seconds
+        setInterval(switchParagraphs, 5000);
+
+            </script>
+
+            </div>
+        </section>
+
+    </header>
+
+       <section class="prod capital">
+        <!-- <img id="logotree" src="/images/images/Mediamodifier-Design.svg" /> -->
+        <section class="logospan"></section>
+        <p><span>estb</span>
+        
+            
+
+        <svg class = "logo">
+                <g>
+                    <path
+                        d="M105.6 52.7c-1.8-1.5-3.5-2.4-5.1-2.4-1.6.1-3.3 1-5.1 2.4-11.2 9.2-16.3 21-17 35.2-.4 7.5-1.3 14.8 10.2 12.6 1.3-.2 3.1-.2 4.3.6 1 .6 1.9 1.4 2.6 2.4 3 4.3 2.2 9.1 1 13.9-1.8 7-2.5 14.2-1.6 21.3.6 4.9-.6 13.1 5.6 12.8 6.3.3 5-7.9 5.6-12.8.9-7.2.2-14.3-1.6-21.3-1.2-4.8-2.1-9.7 1-13.9.7-.9 1.6-1.7 2.6-2.4 1.2-.8 3-.8 4.3-.6 11.5 2.1 10.6-5.2 10.2-12.6-.7-14.2-5.8-26-17-35.2z">
+
+                    </path>
+                    <path
+                        d="M57.6 128.4c1.5-2.3 3.7-6.5 3.6-11.2-.2-5.8-4-10.6-5.4-12.2-.3-.3-.7-.3-1 0-1.2 1.5-4.4 6.1-4.2 11.8.1 3.7 3 8.4 4.8 10.8-.2 2-.2 4 0 5.5v.2c-4.4-2.4-8.9-5.5-12.9-9.7-.1-.2-.2-.3-.4-.4-1.5-1.6-2.9-3.2-4.1-5.1-.3-.4-.5-.8-.8-1.2-.8-2.6-.5-5.5.9-7.9 2.7-.7 6.4-2.2 9.1-5.2 4-4.3 4.6-10.5 4.7-12.5 0-.4-.3-.6-.7-.6-2 .3-8 1.5-12 5.8-2.6 2.7-3.4 8.2-3.2 11.6-.7 1.3-1.2 2.8-1.4 4.2-2.5-5-4.2-10.6-4.9-16.6.1-3 1.7-5.7 3.9-6.9 2.1-.1 5.5-.6 8.1-2.7 3.2-2.6 4.2-6.9 4.5-8.7.1-.4-.2-.8-.7-.8-1.7 0-6.2.1-9.3 2.7-2.8 2.3-3.9 5.9-4.3 8-1 .7-1.9 1.6-2.5 2.6-.2-5.6.4-11.7 1.6-18.1 1.8-.5 5.6-2.1 8.1-5 3.2-3.6 3.8-8.4 3.8-10.3 0-.4-.4-.7-.8-.7-1.9.4-5.9 1.8-9.4 5.2-2.6 2.6-3.4 6.4-3.6 8.5-2 9.5-2.6 18.2-1.6 26.1v.2c-1.1-1.4-2.3-2.7-3.4-3.8-.1-2.4-.7-6.2-3.1-9.2-3.1-3.9-8.2-5.1-9.9-5.4-.3-.1-.6.2-.7.5-.1 1.7 0 6.6 3 10.4 1.8 2.3 5.7 3.9 8.3 4.6 2.5 1.7 6 6.4 6.9 9.1 1.3 5.7 3.5 10.9 6.6 15.6v.1c.3.5.6 1 .9 1.4l.9 1.2c-1.3-.4-2.7-.8-4.1-.8-.1-.2-.1-.4-.3-.6-1.9-2.3-5.4-5.6-9.1-6.2-5.6-1-10.9 1.6-12.8 2.7-.4.2-.5.8-.2 1.2 1.5 1.7 5.6 5.8 11.2 6.8 3.8.6 7.5-.4 10.1-1.4.1-.1.2-.2.3-.2 3.2-.3 7.5 2 8.4 2.7 5.5 5.9 11.9 9.8 17.6 12.4-.6.4-1.6.8-3.1 1.1-5-3.4-12.7-4-16.4-3.2-7.8 1.8-12.9 7.4-14.5 9.6-.3.4-.2.9.3 1.1 2.4 1.2 10.2 4.6 18 2.8 5.8-1.4 10.3-5.2 12.9-8.1v-.1c1.2-.2 2.3-.5 3.2-.9.9-.4 1.5-.9 1.9-1.3 7.5 3.1 13.4 4 13.9 4l.3-2.2c-.1 0-7.7-1.1-16.5-5.4-.2 0-.8-2.1-.5-5.9z">
+                    </path>
+                    <path
+                        d="M190.1 115.9c-1.9-1.1-7.3-3.7-12.8-2.7-3.7.7-7.2 3.9-9.1 6.2l-.3.6c-1.4 0-2.8.3-4.1.8l.9-1.2c.3-.5.6-1 .9-1.4v-.1c3-4.7 5.2-9.9 6.6-15.6.9-2.6 4.4-7.4 6.9-9.1 2.5-.7 6.4-2.3 8.3-4.6 3-3.8 3.1-8.7 3-10.4 0-.3-.3-.6-.7-.5-1.7.3-6.8 1.5-9.9 5.4-2.4 3-3 6.8-3.1 9.2-1.2 1-2.4 2.3-3.4 3.8v-.2c.9-7.9.4-16.6-1.6-26.1-.2-2.1-1-5.9-3.6-8.5-3.5-3.4-7.5-4.9-9.4-5.2-.4-.1-.8.2-.8.7 0 1.9.6 6.7 3.8 10.3 2.6 2.9 6.3 4.4 8.1 5 1.3 6.4 1.8 12.4 1.6 18.1-.7-1.1-1.5-2-2.5-2.6-.4-2-1.5-5.6-4.3-8-3.2-2.6-7.6-2.8-9.3-2.7-.4 0-.7.4-.7.8.3 1.7 1.3 6 4.5 8.7 2.6 2.1 6 2.6 8.1 2.7 2.2 1.2 3.7 3.9 3.9 6.9-.7 6.1-2.4 11.6-4.9 16.6-.2-1.5-.7-2.9-1.4-4.2.2-3.4-.6-8.9-3.2-11.6-4-4.2-10-5.5-12-5.8-.4-.1-.7.2-.7.6.1 2 .7 8.2 4.7 12.5 2.7 3 6.4 4.4 9.1 5.2 1.4 2.4 1.7 5.2.9 7.9-.3.4-.5.8-.8 1.2-1.3 1.8-2.7 3.5-4.1 5.1l-.4.4c-4 4.2-8.5 7.4-12.9 9.7v-.2c.2-1.6.2-3.5 0-5.5 1.8-2.4 4.7-7 4.8-10.8.2-5.7-3-10.3-4.2-11.8-.2-.3-.7-.3-1 0-1.4 1.6-5.2 6.3-5.4 12.2-.2 4.7 2.1 8.9 3.6 11.2.3 3.7-.2 5.8-.5 6.4-8.9 4.3-16.5 5.4-16.6 5.4l.3 2.2c.5-.1 6.4-.9 13.9-4 .4.4.9.9 1.9 1.3.9.4 2 .7 3.2.9v.1c2.6 2.8 7.1 6.7 12.9 8.1 7.8 1.8 15.6-1.6 18-2.8.4-.2.5-.7.3-1.1-1.6-2.2-6.7-7.8-14.5-9.6-3.7-.8-11.3-.2-16.4 3.2-1.5-.3-2.5-.7-3.1-1.1 5.7-2.6 12.1-6.6 17.6-12.4.9-.8 5.1-3 8.4-2.7.1.1.2.2.3.2 2.6 1.1 6.3 2.1 10.1 1.4 5.6-.9 9.8-5.1 11.2-6.8.4-.9.3-1.4-.1-1.7z">
+                    </path>
+                </g>
+                </svg>
+
+        
+        <span>2023</span></p>
+        <h1>Prickles & co</h1>
+        <p>bring nature indoors</p>
+        
+       <a href="shop.html"><button class="shopNow" type="button">Shop Now</button></a>
+
+        </section>
+</section>
+   
 
 
-    <!-- Please leave this in to credit the creators of this design -->
-    <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
+    <section class="products">
+
+        
+
+        <article class="frame capital title cacti">
+            <p>cacti</p>
+            <p>-</p>
+            <a href="shopcacti.html"><button class="shopcacti" type="button">Shop Collection</button></a>
+            
+        </article>
+            
+        <article class="frame capital title plants">
+            <p>plants</p>
+            <p>-</p>
+            <a href="shopplants.html"><button class="shopplants" type="button">Shop Collection</button></a>
+                    </article>
+        
+        <article class="frame capital title succulents">
+            <p>Succulents</p>
+            <p>-</p>
+            <a href="shopsucculents.html"><button class="shopsucculents" type="button">Shop Collection</button></a>
+                    </article>
+
+    </section>
+
+    <section class="about" id="about">
+        
+            <p class="capital">about us</p>
+            <p class="capital">-</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique vero tenetur voluptas ab minima, ex
+                voluptatum assumenda,!</p>
+            <br>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique vero tenetur voluptas ab minima, ex
+                voluptatum assumenda,!</p>
+        
+    
+    </section>
+
+    <section class="about1-img">
+
+        <div class="img-wrapper test">
+            <img src="./img/nature.jpg" alt="nature">
+        </div>
+    </section>
+    
+
+<section class="about2-img">
+        <div class="img-wrapper">
+            <img src="./img/greenhouse.jpg" alt="greenhouse">
+        </div>
+
+    </section>
+
+    <section class="buy-img">
+        <div class="img-wrapper">
+            <img src="./img/pots.jpg" alt="pots">
+        </div>
+    </section>
+
+    <section class="buy-online">
+        <p class="capital">buy online now & get 10% off !</p>
+        <a href="shop.html"><button class="shopNow" type="button">Shop Now</button></a>
+       
+    </section>
+
+       <section class="request-form">
+        <p class="capital">for special requests & orders</p>
+        <form action="" method="post" class="form">
+            <label for="first-name">First Name *</label>
+            <input type="text" name="first-name" id="first-name">
+            <label for="last-name">Last Name *</label>
+            <input type="text" name="last-name" id="last-name">
+            <label for="email">Email *</label>
+            <input type="email" name="email" id="email">
+            <label for="Phone">Phone</label>
+            <input type="tel" name="phone" id="phone">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="10" rows="10"></textarea>
+            <button>Send</button>
+        </form>
+    </section>
+
+    <section class="leaf">
+        <div class="img-wrapper">
+            <img src="./img/leafs.jpg" alt="Leafs">
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+
+        <section class="capitalX">
+
+    <div class="ourstore">
+        <h2>OUR STORE</h2>
+    
+        <p>Address: 500 Terry Francois Street San Francisco, CA 94158</p>
+        <p>Phone: 123-456-7890</p>
+        <p>Email: info@mysite.com</p>
+    </div>
+    
+    <div class="open">
+        <h2>OPENING HOURS</h2>
+        <p>Mon - Fri: 7am - 10pm</p>
+        <p>Saturday: 8am - 10pm</p>
+        <p>Sunday: 8am - 11pm</p>
+    </div>
+    
+    <div class="help">
+        <h2>HELP</h2>
+        <p>Shipping & Returns</p>
+        <p>Privacy Policy</p>
+        <p>FAQ</p>
+    </div>
+
+        </section>
+        
+        
+    <section class="email">
+        <H2>SUBSCRIBE</H2>
+        <p>Enter your email here*</p>
+        <input type="email" id="email" name="email" required>
+        <input id="submit" name="submit" type="submit" value="Subscribe Now" />
+        </section>
+
+    
+
+        <section class="soc-med" id="soc-media">
+            <a href=""><img src="./img/whitefacebook.webp" alt="facebook icon"></a>
+            <a href=""><img src="./img/whitepinterest.webp" alt="pinterest icon"></a>
+            <a href=""><img src="./img/whiteinstagram.webp" alt="instagram icon"></a>
+        </section>
+
+        <section class="google-maps" id="google-maps">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8294844261723!2d-122.38939518523193!3d37.77059622017397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7f1a33f38ea7%3A0xe4941e6c1dc4022b!2zNTAwIFRlcnJ5IEEgRnJhbmNvaXMgQmx2ZCwgU2FuIEZyYW5jaXNjbywgQ0EgOTQxNTgsINCh0L_QvtC70YPRh9C10L3RliDQqNGC0LDRgtC4INCQ0LzQtdGA0LjQutC4!5e0!3m2!1suk!2suk!4v1678652000164!5m2!1suk!2suk"
+                width="90%" height="400" style="border:0;" allowfullscreen="" loading="lazy" -->
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+</section>
+</section>
+
+
+</body>
+    <footer class="footer">
+        <!-- Please leave this in to credit the creators of this design -->
+        <div class="credit">
+        
+        
+            <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
+        
+        </div>
+    </footer>
+
+    <section class="ChatOption" id="chatOption">
+        <img src="/images/images/image (2).svg" alt="Lets chat" />
+    </section>
+
+    
+
 </body>
 
 </html>
