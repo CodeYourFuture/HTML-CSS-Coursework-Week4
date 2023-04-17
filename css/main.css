@@ -1,3 +1,119 @@
-/* Add your CSS here */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');/* use in headings */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Quicksand:wght@300&display=swap');/* use in the web*/
 
-/* Dont' forget to link this file to your HTML in the <head> */
+ :root {
+     --beige-dark: #e6dacd;
+     --beige-light: #f4ece6;
+
+     --blue-royal: #0150fd;
+     --black: #000;
+     --white: #fff;
+
+     --heading-font: "Poppins", sans-serif;
+     --body-font: "Quicksand", sans-serif;
+ }
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.4;
+}
+
+/*.grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+}*/
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 100px;
+}
+
+.box2 {
+    display: grid;
+    justify-content: flex-end;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+}
+
+.box3 {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+.header-content {
+display: flex;
+flex-direction: column;
+
+}
+.square {
+    background-color: blue;
+    height: 2rem;
+    width: 2rem;
+    margin-right: 1rem;
+
+}
+.first-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.hidden{
+ display: flex; 
+ flex-direction: row; 
+ margin: 0 10px 0 0; 
+
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 3px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: white;
+    color: #3B5998;
+}
+
+.fa-twitter {
+    background: white;
+    color: #55ACEE;
+}
+
+.fa-linkedin {
+    background: white;
+    color: #007bb5;
+}
+
+.fa-instagram {
+    background: white;
+    color: #125688;
+}
+.social-media{
+  display: flex;
+  flex-direction: row;
+  align-items:;
+}
