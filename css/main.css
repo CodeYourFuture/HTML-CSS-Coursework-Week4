@@ -1,3 +1,143 @@
 /* Add your CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
+* {
+    
+    font-family: 'Quicksand', sans-serif;
+}
+
+.square {
+    width: 17px;
+    height: 17px;
+    background-color: #0150FD;
+    border: 1px;
+    border-style: solid;
+    margin-left: 50px;
+    margin-right: 10px;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+.navbar a {
+    text-decoration: none;
+    color:black;
+}
+.right_navbar {
+    display: flex;
+    margin-left: auto;
+    
+
+}
+
+.navbar_links {
+    margin-right: 50px;
+}
+#name {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    
+
+}
+.left_navbar {
+    font-size: 22px;
+}
+.main_links {
+    display: flex;
+
+}
+.main_links a {
+    text-decoration: none;
+    
+}
+#resume {
+    margin-right: 2rem;
+    background-color: #0150FD;
+    border-radius: 3rem;
+    padding: 0.4rem 1rem 0.4rem 1rem;
+    color: white;
+    font-weight: bolder;
+    
+}
+#projects {
+    border-style: solid;
+    border-color: rgb(190, 186, 186);
+    border-radius: 3rem;
+    padding: 0.4rem 1rem 0.4rem 1rem;
+    
+}
+
+.information_footer img {
+    width: 2rem;
+    height: 2rem;
+}
+#image {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    margin-top: 2rem;
+}
+#information_name {
+    font-size: 1.8rem;
+    font-weight:bolder
+}
+#information_job {
+    font-size: 1.8rem;
+    margin-bottom: 8rem;
+}
+
+.footer_images img {
+    width: 2rem;
+    height: 2rem;
+}
+
+
+footer {
+    display: flex;
+    margin-left: 4rem;
+    margin-top: 5rem;
+}
+.footer_right_section {
+    display: flex;
+    margin-left: auto;
+}
+.call, .write, .follow {
+    margin-right: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer_right_section span {
+    font-weight: 900;
+}
+.write a {
+    text-decoration: none;
+    color: black;
+}
+main {
+    margin-top: 20rem;
+    margin-bottom: 20rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+
+}
+.information_area {
+    width: 25rem;
+    height: 35rem;
+}
+.picture_area {
+    background-color: #f4ece6;
+    margin-right: 3rem;
+    width: 25rem;
+    height: 35rem;
+    border-style: solid;
+    border-color: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+

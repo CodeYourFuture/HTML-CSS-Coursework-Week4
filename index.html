@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Add a link to your custom CSS here -->
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+
 
     <title>Responsive grid project</title>
 </head>
@@ -12,10 +20,78 @@
 <body>
 
     <!-- Add your markup here -->
+   <header>
+        <nav class="navbar">
+            <div class="square"></div>
+            <div class="navbar left_navbar"><span id="name">Maya Nelson</span> / PROJECT MANAGER</div>
+            <div class="navbar right_navbar">
+                <div class="navbar_links"><a href="#">About Me</a></div>
+                <div class="navbar_links"><a href="#">RESUME</a></div>
+                <div class="navbar_links"><a href="#">PROJECTS</a></div>
+                <div class="navbar_links"><a href="#">CONTACT</a></div>
+            </div>
+
+        </nav>
+        
+    
+   </header>
+    <main>
+        
+        <div class="information_area">
+            <div id="title">Hello</div>
+            <p id="sub_title">Here's who I am & what I do</p>
+            <div class="main_links">
+                <div><a id="resume" href="#">RESUME</a></div>
+                <div><a id="projects" href="#">PROJECTS</a></div>
+            </div>
+            <div>
+                <p>I'm a paragraph. Click here to add your own text and edit me. It is easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.</p>
+                <br>
+                <p>I am a great place for you to tell a story and let your users know a little more about you.</p>
+            </div>
+        </div>
+        <div class="picture_area">
+            <img id="image" src="./images/images.jpeg" alt="cv image">
+            <p id="information_name">Maya<br>Nelson</p>
+            <hr style="width: 28%">
+            <p id="information_job">PROJECT MANAGER</p>
+            <div class="information_footer">
+                <a href="#"><img src="./images/facebook-icon.svg"></a>
+                <a href="#"><img src="./images/twitter-icon.svg"></a>
+                <a href="#"><img src="./images/instagram-icon.svg"></a>
+            </div>
+            
+        
+        </div>
+        
+
+
+   </main>
+   <footer>
+    <p>This website design was created by Wix.com,<br> and is used here for strictly educational purposes.</p>
+    <div class="footer_right_section">
+        <di class="call">
+            <span><p>call</p></span>
+            <p>123-456-7890</p>
+        </di>
+        <div class="write">
+            <span><p>Write</p></span>
+            <p><a href="#">info@maya.com</a></p>
+        </div>
+        <div class="follow">
+            <span><p>follow</p></span>
+            <div class="footer_images">
+                <a href="#"><img src="./images/facebook-icon.svg"></a>
+                <a href="#"><img src="./images/twitter-icon.svg"></a>
+                <a href="#"><img src="./images/instagram-icon.svg"></a> 
+            </div>
+        </div>
+    </div>
+   </footer>
 
 
     <!-- Please leave this in to credit the creators of this design -->
-    <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
+    
 </body>
 
 </html>
