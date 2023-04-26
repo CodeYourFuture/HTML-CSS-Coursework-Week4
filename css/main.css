@@ -1,7 +1,145 @@
-body{
-    background-color: white;
-    width: 100%;
-    margin: 35px;
-    height: 20px;
-    padding: 5px;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Quicksand:wght@300&display=swap');
+
+/* Colors */
+:root {
+  --dark-beige: #E6DACD;
+  --light-beige: #F4ECE6;
+  --royal-blue: #0150FD;
+  --black: #000;
+  --white: #FFF;
 }
+
+/* Body */
+body {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+
+/* Headings */
+h1, h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Header */
+header {
+  background-color: var(--light-beige);
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 32px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-menu {
+  display: none;
+}
+
+.navbar-title {
+  margin: 0 32px;
+}
+
+.navbar-title h1 {
+  color: var(--royal-blue);
+}
+
+.navbar-buttons-login {
+  display: flex;
+  align-items: center;
+  margin-right: 16px;
+}
+
+.navbar-buttons-login a {
+  color: var(--black);
+  text-decoration: none;
+  margin-left: 8px;
+}
+
+.navbar-buttons-orderonline {
+  background-color: var(--royal-blue);
+  padding: 8px 16px;
+  border-radius: 16px;
+}
+
+.navbar-buttons-orderonline button {
+  color: var(--white);
+  font-weight: 600;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* Content Section 1 */
+.content-section-1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px;
+  background-color: var(--dark-beige);
+  color: var(--white);
+}
+
+.content-section-1 h1 {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.content-section-1 h2 {
+  font-size: 24px;
+  margin-bottom: 32px;
+}
+
+.content-section-1-explore-flavours button {
+  background-color: var(--white);
+  color: var(--royal-blue);
+  font-weight: 600;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+/* Juice Banner */
+.juice-banner {
+  background-image: url('https://via.placeholder.com/1200x400');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.juice-banner p {
+  font-size: 24px;
+  margin-bottom: 16px;
+  color: var(--white);
+}
+
+.juice-banner a {
+  background-color: var(--royal-blue);
+  color: var(--white);
+  font-weight: 600;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Content Section 2 */
+.content-section-2 {
+  padding: 64px 32px;
+  text-align: center;
+}
+
+.content-section-2 h1 {
+  font-size: 48
