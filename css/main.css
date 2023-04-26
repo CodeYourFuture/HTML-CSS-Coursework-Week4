@@ -2,6 +2,8 @@
 
 /* Dont' forget to link this file to your HTML in the <head> */
 
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Climate+Crisis&family=Fraunces:opsz,wght@9..144,700&family=Hanken+Grotesk:wght@500;700;800&family=Inter:wght@400;700&family=Lexend+Deca&family=Montserrat:wght@500;700&family=Rock+Salt&display=swap');
+
 :root {
     --black: #000;
     --white: #FFF;
@@ -23,6 +25,7 @@ body {
     width: 100vw;
     font-family: Raleway, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: .9275rem;
+    font-weight: 300;
     line-height: 1.8em;
     word-spacing: .1em;
     text-align: center;
@@ -45,7 +48,6 @@ h3 {
     text-align: center;
     padding: 0;
     margin-bottom: 0;
-    border: 2px dotted red;
 }
 
 p { 
@@ -76,12 +78,19 @@ p {
 .call-to-action-button {
     font-family: Raleway, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 300;
-    padding: 20px 30px;
+    padding: 15px 35px;
     margin: 0;
     border: 2px solid var(--black);
     font-size: 1em;
     background-color: var(--white);
 }
+
+@media only screen and (min-width: 900px) {
+    .call-to-action-button {
+        padding: 25px 80px;
+    }
+}
+
 
 .call-to-action-button:hover {
     background-color: var(--black);
@@ -229,7 +238,6 @@ img {
 .hero-wrapper {
     display: flex;
     flex-direction: column;
-    /* background-color: var(--white); */
     padding: 0;
     text-align: center;
     margin: 0;
@@ -289,7 +297,7 @@ img {
         width: 100%;
         margin: 0 0 50px 0;
         width: 100%;
-        background-color: transparent;
+        /* background-color: transparent; */
     }
 
     .hero-title {
@@ -311,20 +319,23 @@ img {
         margin: 0;
         padding: 35px 0;
         font-size: 1.3em;
-        /* background-color: transparent; */
     }
-}
-
-.section2-content-wrapper {
-    margin: 0;
-    padding: 0 30px; 
 }
 
 .section2-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 10px;
+    gap: 20px;
+    padding: 0 10px 10px 10px;
+}
+
+.section2-content-wrapper {
+    margin: 0;
+    padding: 0 30px; 
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .section2-title {
@@ -336,6 +347,7 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 20px;
     width: 100%;
     margin-bottom: 10px;
     padding: 0;
@@ -354,11 +366,10 @@ img {
 
     .section2-content-wrapper {
         display: grid;
-        grid-gap: 50px;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(1, 1fr); 
         margin: 10px 0 0 0;
-        padding: 0 30px;
+        padding: 0 0 0 60px;
         max-width: 100%;
     }
 
@@ -367,6 +378,15 @@ img {
         justify-content: flex-start;
         margin-bottom: 0;
         padding: 0 0 60px 0;
+        gap: 20px;
+    }
+
+    .section2-content-padding {
+        padding-left: 100px;
+    }
+
+    .section2-content-padding-a {
+        padding-left: 50px;
     }
     
     .section2-title {
@@ -406,7 +426,7 @@ img {
 
 .section3-wrapper {
     background-color: var(--light-green);
-    padding: 20px;
+    padding: 25px 20px;
 }
 
 .section3-img {
@@ -422,7 +442,7 @@ img {
 }
 
 .section3-title {
-    padding: 20px 0 0 0;
+    padding: 20px 0 10px 0;
     margin: 0;
 }
 
@@ -430,7 +450,7 @@ img {
     font-family: Raleway, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 300;
     padding: 15px 40px;
-    margin-top: 15px;
+    margin-top: 30px;
     border: 2px solid var(--black);
     font-size: 1em;
     background-color: var(--light-green);   
@@ -449,34 +469,29 @@ img {
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: 
         "image c";
-        padding: 70px 0 20px 50px;
-        height: 650px;
+        padding: 70px 0 30px 70px;
+        height: 680px;
         margin-bottom:  100px;
     }
 
     .section3-content-wrapper {
         grid-area: c;
-    }
-
-    .section3-content-wrapper {
         align-items: flex-start;
         justify-content: flex-start;
-        margin-top: 100px;
+        margin-top: 50px;
         padding: 0 0 100px 0;
     }
 
     .section3-img {
         grid-area: image;
-        width: 600px;
-        height: 749px;
-        overflow: visible;
-        object-fit: cover;
-
+        width: 560px;
+        height: 680px;
     }
 
     .section3-title {
         text-align: left;
         padding-right: 10px;
+        padding-bottom: 0;
         margin: 0;
         font-size: 3.5em;
         line-height: 1.3em;
@@ -486,21 +501,19 @@ img {
        font-size: 1.1em;
        line-height: 1.8em;
        text-align: left;
-       padding-right: 120px;
-
+       padding-right: 140px;
     }
 
     .section3-button {
-        padding: 25px 70px;
-        margin-top: 10px;
+        padding: 25px 90px;
+        margin-top: 20px;
         text-align: center;
     }
-
 }
 
 .section4-wrapper {
     background-color: var(--lylac);
-    padding: 20px 25px 30px 25px;
+    padding: 20px 15px 30px 15px;
     margin-bottom: 30px;
 }
 
@@ -525,11 +538,27 @@ img {
     font-family: Raleway, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 300;
     padding: 12px 50px;
-    margin: 15px 0 10px 0;
+    margin: 0 0 10px 0;
     border: 2px solid var(--black);
     font-size: 1em;
     background-color: var(--lylac);   
 }
+
+.section4-button:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.section4-column-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    padding-bottom: 40px;
+}
+
+
 
 @media only screen and (min-width: 900px) {
     .section4-wrapper {
@@ -559,12 +588,10 @@ img {
     } 
     
     .section4-column-wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
         text-align: left;
         font-size: 1.06rem;
+        gap: 0;
+        padding-bottom: 0;
     }
 
     .section4-column-end {
@@ -591,7 +618,7 @@ img {
 
     .section4-button {
     padding: 25px 100px;
-    margin: 0 0 10px 0;
+    margin: 60px 0 10px 0;
     border: 2px solid var(--black);
     } 
 }
@@ -627,13 +654,18 @@ img {
     background-color: var(--white);   
 }
 
+.section5-button:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
+
 @media only screen and (min-width: 900px) {
     .section5-wrapper {
         display: grid;
-        grid-template-columns: 40%, 60%;
-        padding: 70px 0 20px 50px;
-        height: 650px;
+        grid-template-columns: 35%, 65%;
+        padding: 70px 50px 0 30px;
         margin-bottom: 80px;
+        gap: 0;
     }
 
     .section5-img {
@@ -656,12 +688,9 @@ img {
     .section5-h2 {
         text-align: left;
         margin: 0 0 15px 0;
-        font-size: 3.5em;
+        font-size: 3.8em;
         line-height: 1.3em;
-    }
-
-    .section5-h2-break {
-        display: block;
+        padding: 0;
     }
 
     .section5-p {
@@ -669,6 +698,7 @@ img {
         margin: 0 20px 30px 0; 
         width: 467px;
         font-size: 1.062rem;
+        padding:0
     }
 
     .section5-button {
@@ -677,6 +707,10 @@ img {
 }
 
 /* Section 6 Styles */
+
+.section6-wrapper {
+    padding: 80px 0 100px 0;
+}
 
 .section6-content-wrapper {
     background-color: var(--light-green);
@@ -698,7 +732,8 @@ img {
 @media only screen and (min-width: 900px) {
 
     .section6-h2 {
-        font-size: 3.5rem;
+        font-size: 3.2rem;
+        padding-bottom: 40px;
     }
 
     .section6-content-wrapper {
@@ -707,6 +742,7 @@ img {
         justify-content: space-evenly;
         margin: 0;
         padding: 0;
+     
     }
 
     .section6-flex-column {
@@ -714,8 +750,10 @@ img {
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
+        gap: 10px;
         width: 280px;
         padding-top: 50px;
+        /* border: 2px dotted red; */
     }
 
     .section6-h3 {
@@ -727,6 +765,7 @@ img {
         border-radius: 50%;
         padding: 10px 15px 10px 15px;
         font-size: 1.0625rem;
+        margin-bottom: 10px;
     }
 
     .section6-p {
@@ -841,6 +880,7 @@ img {
 .footer-list {
     font-family: "Questrial", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 100;
+    text-align: left;
     font-size: 1.375rem;
     grid-column: 1 / -1;
     padding: 0;
