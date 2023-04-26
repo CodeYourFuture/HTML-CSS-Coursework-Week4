@@ -11,16 +11,23 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <!-- Add a link to your custom CSS here -->
 
     <title>Responsive grid project</title>
   </head>
 
   <body>
-    <header>
+    <!---- Header ---->
+    <section class="header">
       <div class="blue_square"></div>
-      <h1 class="headings">Maya Nelson</h1>
-      <h2>Project Manager</h2>
+      <span>
+        <h1 class="headings">Maya Nelson</h1>
+        <h2>PROJECT MANAGER</h2>
+      </span>
       <nav class="navbar">
         <ul class="nav_link">
           <li class="nav_item">About Me</li>
@@ -29,36 +36,99 @@
           <li class="nav_item">Contact</li>
         </ul>
       </nav>
-    </header>
+    </section>
 
-    <section class="hero"></section>
+    <!---- Main ---->
+    <section class="main">
+      <h1 class="headings">Hello</h1>
+      <h2>Here's who I am & what I do</h2>
+      <p>
+        I'm a paragraph. Click here to add your own text and edit me. It’s easy.
+        Just click “Edit Text” or double click me to add your own content and
+        make changes to the font. I’m a great place for you to tell a story and
+        let your users know a little more about you.
+      </p>
+    </section>
 
-    <section class="about_me"></section>
-    <!-- Add your markup here -->
+    <!---- About Me ---->
+    <section class="about_me">
+      <img
+        src="https://static.wixstatic.com/media/2e2a49_bd3a1599bc1b4265a01b2754b99b8536~mv2_d_5760_3840_s_4_2.jpeg/v1/crop/x_2703,y_43,w_2199,h_2205/fill/w_205,h_205,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/AdobeStock_230407429.jpeg"
+        alt=""
+        style="width: 205px; height: 205px; object-fit: cover"
+        srcset="
+          https://static.wixstatic.com/media/2e2a49_bd3a1599bc1b4265a01b2754b99b8536~mv2_d_5760_3840_s_4_2.jpeg/v1/crop/x_2703,y_43,w_2199,h_2205/fill/w_205,h_205,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/AdobeStock_230407429.jpeg 1x,
+          https://static.wixstatic.com/media/2e2a49_bd3a1599bc1b4265a01b2754b99b8536~mv2_d_5760_3840_s_4_2.jpeg/v1/crop/x_2703,y_43,w_2199,h_2205/fill/w_410,h_410,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/AdobeStock_230407429.jpeg 2x
+        "
+        fetchpriority="high"
+      />
+      <h1 class="headings">
+        Maya
+        <br />
+        Nelson
+      </h1>
+      <div class="hr_line"></div>
+      <div class="button_wrap">
+        <button class="resume_btn">RESUME</button>
+        <button class="project_btn">PROJECTS</button>
+      </div>
+      <div class="about_me_social_media">
+        <div class="facebook">
+          <a href="https://www.facebook.com/wix">Facebook</a>
+        </div>
 
-    <!-- Please leave this in to credit the creators of this design -->
+        <div class="twitter">
+          <a href="https://twitter.com/wix">Twitter</a>
+        </div>
+
+        <div class="linkedin">
+          <a href="https://www.linkedin.com/company/wix-com/">linkedin</a>
+        </div>
+
+        <div class="instagram">
+          <a href="https://www.instagram.com/wix/">Instagram</a>
+        </div>
+      </div>
+    </section>
+
+    <!---- Footer ---->
     <footer class="footer">
       <div class="call">
-        <h1>Call</h1>
+        <h1 class="title">Call</h1>
         <div class="phone_number">123-456-7890</div>
       </div>
 
       <div class="email">
-        <h1>Write</h1>
+        <h1 class="title">Write</h1>
         <div class="email_address">info@mysite.com</div>
       </div>
 
-      <div class="follow">
-        <h1>Follow</h1>
-        <div class="facebook">Facebook</div>
-        <div class="twitter">Twitter</div>
-        <div class="linkedin">linkedin</div>
-        <div class="instagram">Instagram</div>
+      <!---- Footer Social Media ---->
+
+      <h1 class="title">Follow</h1>
+      <div class="social_media">
+        <div class="facebook">
+          <a href="https://www.facebook.com/wix"> Facebook </a>
+        </div>
+
+        <div class="twitter">
+          <a href="https://twitter.com/wix">Twitter</a>
+        </div>
+
+        <div class="linkedin">
+          <a href="https://www.linkedin.com/company/wix-com/">linkedin</a>
+        </div>
+
+        <div class="instagram">
+          <a href="https://www.instagram.com/wix/">Instagram</a>
+        </div>
       </div>
+      <!---- Footer Copyright ---->
 
       <div class="copyright">
-        This website design was created by Wix.com, and is used here for
-        strictly educational purposes.
+        This website design was created by
+        <a href="https://www.wix.com/">Wix</a> and is used here for strictly
+        educational purposes.
       </div>
     </footer>
   </body>
