@@ -24,7 +24,7 @@ h1 {
   font-size: 100px;
 }
 
-/* Style for footer */
+/* Style for header */
 .header {
   position: fixed;
   top: 0;
@@ -130,7 +130,7 @@ h1 {
 /* Style for card */
 .card {
   margin-top: 90px;
-  background-color: #F4ECE6;
+  background-color: #f4ece6;
   padding: 10px;
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
@@ -139,8 +139,8 @@ h1 {
   height: 600px;
   width: 350px;
   position: absolute;
-    top: 60%; /* added */
-  left: 30%; /* added */
+  top: 60%;
+  left: 30%;
   transform: translate(-50%, -50%);
   text-align: center;
 }
@@ -161,12 +161,12 @@ h1 {
 }
 
 .card .social-media {
-/*   list-style: none;
+  /*   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
   justify-content: center; */
-    list-style: none;
+  list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
@@ -196,7 +196,7 @@ h1 {
   line-height: 20px;
   padding-bottom: 0%;
 }
-
+/* footer */
 footer {
   background-color: white;
   color: #333;
@@ -235,10 +235,9 @@ footer div:last-of-type p:first-of-type {
   margin-bottom: 5px;
 }
 
-footer div ul{
-    display: flex;
+footer div ul {
+  display: flex;
 }
-
 
 footer div:last-of-type {
   display: flex;
@@ -272,20 +271,4 @@ footer div:last-of-type ul li a {
   height: 30px;
   background-repeat: no-repeat;
   background-size: contain;
-}
-
-footer div:last-of-type ul li a[href*="face-black.png"] {
-  background-image: url(../designs/face-black.png);
-}
-
-footer div:last-of-type ul li a[href*="twitter-black.png"] {
-  background-image: url(../designs/twitter-black.png);
-}
-
-footer div:last-of-type ul li a[href*="in-black.png"] {
-  background-image: url(./designs/in-black.png);
-}
-
-footer div:last-of-type ul li a[href*="insta-black.png"] {
-  background-image: url(./designs/insta-black.png);
 }
