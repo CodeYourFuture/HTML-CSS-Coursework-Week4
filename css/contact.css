@@ -71,3 +71,181 @@ h1 {
 .header .right ul li a:hover {
   color: #0150fd;
 }
+
+/* MAIN */
+
+main {
+  background-color: #e6dacd;
+  height: 1100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#main-head {
+  display: flex;
+  align-items: center;
+  margin-top: 200px;
+  margin-bottom: 15px;
+  margin-left: 240px;
+}
+
+#main-head #box {
+  width: 30px;
+  height: 30px;
+  background-color: blue;
+  margin-left: 100px;
+}
+h1 {
+  font-size: 40px;
+  margin-right: 350px;
+  margin-left: 5px;
+}
+
+
+/* FORM */
+form {
+  width: 900px;
+  margin: 30px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+    background-color: white;
+
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.form-group {
+  width: 48%;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #ddd;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-bottom: 2px solid #0150FD;
+}
+
+.form-group span {
+  color: #0150FD;
+}
+
+.form-group textarea {
+  height: 150px;
+}
+
+.send-btn {
+  float: left;
+  background-color: #0150FD;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: 2px solid #0150FD;
+  border-radius: 35px;
+  width: 100px;
+}
+
+.send-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+
+/* FOOTER */
+
+footer {
+  background-color: white;
+  color: #333;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer div {
+  display: flex;
+  align-items: center;
+}
+
+footer div > div {
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+footer div p {
+  margin: 0;
+  font-weight: bold;
+}
+
+footer div a {
+  text-decoration: none;
+  color: #333;
+}
+
+footer div:last-of-type p:first-of-type {
+  margin-bottom: 5px;
+}
+
+footer div ul {
+  display: flex;
+}
+
+footer div:last-of-type {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer div:last-of-type p {
+  margin: 0;
+  font-weight: bold;
+}
+
+footer div:last-of-type ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer div:last-of-type ul li {
+  margin-left: 20px;
+}
+
+footer div:last-of-type ul li:first-of-type {
+  margin-left: 0;
+}
+
+footer div:last-of-type ul li a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
