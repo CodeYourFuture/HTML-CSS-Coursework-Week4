@@ -1,3 +1,374 @@
-/* Add your CSS here */
 
-/* Dont' forget to link this file to your HTML in the <head> */
+
+/* ### Fonts
+**Headings:** Fjalla One - Regular 400  
+https://fonts.google.com/specimen/Fjalla+One  
+**Subheadings:** Outfit - Extra-light 200  
+https://fonts.google.com/specimen/Outfit  
+**Body:** Outfit - Extra-light 200  
+https://fonts.google.com/specimen/Outfit  
+
+font-family: 'Fjalla One',
+sans-serif;
+font-family: 'Outfit',
+sans-serif;
+
+
+/* Colours */
+:root {
+    --redBrown: #A05941;
+    --greenBlack: #133032;
+    --lightGrey: #EDEDEE;
+    --white: #FFF;
+    --transparentWhite: rgba(0, 0, 0, 0.75);
+}
+
+body {
+    background-color: #EDEDEE;
+    
+}
+
+#seachBar {
+    background-color: #FFF;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    
+}
+
+.searchGlass {
+    color: #A05941;
+    border: none;
+    background-color: #FFF;
+    font-family: 'Outfit', sans-serif;  
+    text-align: left;
+    padding-left: 10px;
+    
+}
+
+#bagDiv {
+    display: flex;
+    justify-content: right;
+}
+
+#magnitGlass {
+    display: flex;
+}
+
+.searchIMG {
+    width: 30px;
+    height: 30px;
+}
+
+#navbar {
+    color: #A05941;
+    padding-left: 25px;
+    background-color: #EDEDEE;
+}
+
+#p1 {
+    font-family: 'Fjalla One',
+            sans-serif;
+        font-size: 25px;
+        margin-bottom: 5px;
+}
+
+#p2 {
+    font-family: 'Outfit',
+            sans-serif;
+            font-weight: 800;
+            letter-spacing: 0.1em;
+    margin-bottom: 10px;
+}
+
+/* buttons styling */
+.shopCollection {
+    background-color: #A05941;
+    color: #EDEDEE;
+    width: 140px;
+    min-height: 40px;
+    border: none;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+}
+
+/* front page styling */
+#frontPage {
+    background-image: url(/images/images/main\ pic.webp);
+    background-size: 320px, 475px;
+    background-repeat: no-repeat;
+    background-position: cover;
+    margin: 5px 20px 20px 20px;
+    padding: 20px 5px 80px 5px;
+    color: #FFF;
+    font-family: 'Outfit', sans-serif;
+    letter-spacing: 0.5em;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#firstDiv {
+    display: grid;
+    grid-template-columns: 75px 100px 75px;
+    column-gap: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 10px;
+}
+
+#firstDiv p {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+    margin-top: 6em;
+}
+
+h1 {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    margin: 35px 0px 15px 5px;
+}
+
+h4 {
+    margin-bottom: 45px;
+}
+
+
+/* articles with plants styling */
+
+article {
+    background-size: 350px, auto;
+    min-width: 320px;
+    min-height: 400px;
+    background-repeat: no-repeat;
+    background-position: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding-top: 20px;
+    color: #A05941;
+    font-family: 'Fjalla One', sans-serif;
+    
+}
+
+#cacti {
+    background-image: url(/images/images/cactus-in-a-pot.webp);
+}
+
+#plants {
+    background-image: url(/images/images/flowers\ in\ a\ pot.webp);
+}
+
+#succulents {
+    background-image: url(/images/images/sucullent.webp);
+}
+
+.horizontalLine {
+    width: 10px;
+    height: 5px;
+    background-color: #A05941;
+    position: relative;
+    margin: 0px auto 11px auto;
+}
+
+h6 {
+    font-size: 16px;
+    letter-spacing: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#articles {
+    display: block;
+}
+
+/* about section styling */
+#aboutUs {
+    color: #A05941;
+    background-color: #FFF;
+    font-family: 'Outfit', sans-serif;
+    text-align: center;
+    line-height: 1.6em;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    padding: 1rem 1rem 2rem 1.3rem ;
+    
+}
+.photos {
+    width: 320px;
+    height: 223px;
+    padding: 0;
+    margin: 0;
+}
+.fullImg {
+    width: 320px;
+    height: 223px;
+}
+
+.photos:last-child {
+    background-color: #133032;
+    color: #FFF;
+    height: 410px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#buyOnline {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 54px;
+    font-weight: 100;
+    line-height: 1.1em;
+    margin-top: 0.5rem;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.photos:last-child button {
+    background-color: #FFF;
+    color: #133032;
+    font-size: medium;
+}
+
+/* form styling */
+
+form {
+    background-color: #FFF;
+    width: 310px;
+    padding: 20px 5px 20px 10px;
+    margin-top: 30px;
+}
+
+#formDiv {
+    width: 20px;
+}
+
+legend {
+    font-family: 'Outfit', sans-serif;
+    color: #A05941;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 0.5rem;
+    margin: 10px 10px 20px 10px;
+    line-height: 18px;
+}
+
+input + label {
+    display: block;
+}
+
+
+label {
+    color: #133032;
+    font-family: 'Outfit', sans-serif;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+input {
+    height: 33px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    height: 153px;
+    padding: 2px;
+}
+
+#sendButton {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    color: #FFF;
+}
+
+#form img {
+    width: 320px;
+}
+
+#contact-details {
+    background-color: #133032;
+    color: #EDEDEE;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+
+}
+
+#contact-details p {
+    margin: 3px;
+}
+
+#contact-details a {
+    text-decoration: none;
+    color: #EDEDEE;
+}
+
+.contact-details {
+    margin-top: 2rem;
+    text-align: center;
+    
+}
+.contact-details1 {
+    padding-left: 20px;
+    padding-right: 10px;
+}
+#labelEmail {
+    color: #EDEDEE;
+    font-family: 'Outfit', sans-serif;
+}
+
+#subscribtion {
+    margin-top: 10px;
+    border-color: #EDEDEE;
+    background-color: transparent;
+    height: 40px;
+}
+
+#subscribeBtn {
+    background-color: #FFF;
+        color: #133032;
+        font-size: medium;
+        width: 100%;
+        font-family: 'Outfit', sans-serif;
+        padding: 12px;
+        margin-top: 10px;
+
+}
+.contact-details1 h6 {
+    text-align: center;
+}
+
+#soc-media {
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+}
+
+footer {
+    background-color: var(--lightGrey);
+    color: #A05941;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    font-family: 'Outfit', sans-serif;
+}
+
+#chatOption :first-child {
+    background-color: #A05941;
+    position: fixed;
+    padding: 10px;
+    width: 40px;
+    border-radius: 50%;
+    bottom: 1rem;
+    right: 1rem;
+}

@@ -4,18 +4,172 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Add a link to your custom CSS here -->
-
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/fullscreen.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Outfit:wght@200&display=swap" rel="stylesheet">
     <title>Responsive grid project</title>
 </head>
 
 <body>
+    <header>
+        <div id="seachBar">
+            <div id="magnitGlass">
+                <img class="searchIMG" src="/images/images/magnifying-glass-svgrepo-com.svg" />
+                <input type="submit" class="searchGlass" tabindex="-1" aria-hidden="true" value="Search...">
+            </div>
+            <div id="bagDiv">
+                <img id="bag" class="searchIMG" src="/images/images/Mediamodifier-Design-Template.jpg"/>
+            </div>
+        </div>
+        <div id="navbar">
+            <div>
+                <p id="p1">PRICKLES & CO.</p>
+            </div>
+            <div id="navMenu">
+                <div class="navmenu">
+                    <ul>
+                        <li>Shop</li>
+                        <li>About</li>
+                        <li>FAQ</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <p id="p2">We Deliver To Your Doorstep</p>
+                
+                <!-- <p id="p2">Call Us Now! 123-456-7890</p> -->
+            </div>
+        </div>
+    </header>
 
-    <!-- Add your markup here -->
+    <main>
+        <section id="frontPage">
+            <div id="firstDiv">
+                <p>ESTB</p>
+                <img id="logotree" src="/images/images/Mediamodifier-Design.svg" />
+                <p>2035</p>
+            </div>
+            <div>
+                <h1>PRICKLES & CO</h1>
+                <h4>BRING NATURE INDOORS</h4>
+            </div>
+            <button class="shopCollection" type="button">Shop Now</button>
+            <div id="chatOption">
+                <img src="/images/images/image (2).svg" alt="chat bubble icon"/>
+            </div>
+        </section>
+        <section id="articles">
+            <article id="cacti">
+                <p class="articleName">C A C T I</p>
+                <div class="horizontalLine"></div>
+                <button type="button" class="shopCollection">Shop Collection</button>
+            </article>
+            <article id="plants">
+                <p class="articleName">P L A N T S</p>
+                <div class="horizontalLine"></div>
+                <button type="button" class="shopCollection">Shop Collection</button>
+            </article>
+            <article id="succulents">
+                <p class="articleName">S U C C U L E N T S</p>
+                <div class="horizontalLine"></div>
+                <button type="button" class="shopCollection">Shop Collection</button>
+            </article>
+        </section>
+        <section id="description">
+            <div id="aboutUs">
+            <h6>ABOUT US</h6>
+            <div class="horizontalLine"></div>
+            <p>I'm a paragraph. Click here to add your own  text and edit me. It’s easy. Just click “Edit Text” or double click me to
+            add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a
+            great place for you to tell a story and let your users know a little more about you.</p>
+            <p>This is a great space to write long text about your company and your services. You can use this space to go into a
+            little more detail about your company. Talk about your team and what services you provide.</p>
+            </div>
+            <div class="photos">
+                <img class="fullImg" src="/images/images/teplitsa.webp" alt="teplitsa" />
+            </div>
+            <div class="photos">
+                <img class="fullImg" src="/images/images/leave.webp" alt="leave" />
+            </div>
+            <div class="photos">
+                <img id="lastphoto" class="fullImg" src="/images/images/woman in branches.webp" alt="woman among plants" />
+            </div>
+            <div id="greenarea" class="photos">
+                <p id="buyOnline">BUY ONLINE NOW & GET 10% OFF !</p>
+                <button class="shopCollection" type="button">Shop Now</button>
+            </div>
+        </section>
+        <section id="form">
+            <form>
+                <legend>FOR SPECIAL REQUESTS & ORDERS</legend>
+                <div id="formDiv" class="horizontalLine"></div>
+                <div class="firstLineForm">
+                <label for="firstName">First Name *</label>
+                <input id="firstName" name="firstName" type="text" required/>
+                </div>
+                <div class="firstLineForm2">
+                <label for="lastName">Last Name *</label>
+                <input id="lastName" name="lastName" type="text" required />
+                </div>
+                <label for="emailInput">Email *</label>
+                <input id="emailInput" name="email" type="email" required />
+                <label for="phoneNumber">Phone</label>
+                <input id="phoneNumber" name="phone" type="tel" />
+                <label for="message">Message</label>
+                <textarea id="message" name="message"></textarea>
+                <button id="sendButton" class="shopCollection" type="submit">Send</button>
+            </form>
+            
+            <img id="formbackground" src="/images/images/background.webp" alt="plant-ficus" />
+        </section>
+        <section id="contact-details">
+            <div id="store-address" class="contact-details">
+                <h6>OUR STORE</h6>
+                <p>Address: 500 Terry Francois Street San</p>
+                <p>Francisco, CA 94158</p>
+                <p>Phone: 123-456-7890</p>
+                <p>Email: info@mysite.com</p>
+            </div>
+            <div id="opening-hours" class="contact-details">
+                <h6>OPENING HOURS</h6>
+                <p>Mon - Fri: 7am - 10pm</p>
+                <p>Saturday: 8am - 10pm</p>
+                <p>Sunday: 8am - 11pm</p>
+            </div>
+            <div id="HELP" class="contact-details">
+                <h6>HELP</h6>
+                <p><a href="">Shipping & Return</a></p>
+                <p><a href="">Privacy Policy</a></p>
+                <p><a href="">FAG</a></p>
+            </div>
+            <div id="subscribe" class="contact-details1">
+                <h6>SUBSCRIBE</h6>
+                <div id="emailLable">
+                <label id="labelEmail" for="subscribtion">Enter your email here *</label>
+                <input id="subscribtion" name="subscribe" type="email" />
+                <button type="button" id="subscribeBtn">Subscibe Now</button>
+            </div>
+                <div id="soc-media">
+                    <a href=""><img src="/images/images/facebook.webp"/></a>
+                    <a href=""><img src="/images/images/pinterest.webp" /></a>
+                    <a href=""><img src="/images/images/instagram.webp" /></a>
+                </div>
+            </div>
+            <div id="google-maps">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8294844261723!2d-122.38939518523193!3d37.77059622017397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7f1a33f38ea7%3A0xe4941e6c1dc4022b!2zNTAwIFRlcnJ5IEEgRnJhbmNvaXMgQmx2ZCwgU2FuIEZyYW5jaXNjbywgQ0EgOTQxNTgsINCh0L_QvtC70YPRh9C10L3RliDQqNGC0LDRgtC4INCQ0LzQtdGA0LjQutC4!5e0!3m2!1suk!2suk!4v1678652000164!5m2!1suk!2suk"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
 
-
-    <!-- Please leave this in to credit the creators of this design -->
-    <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
+    <footer>
+        <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
+    </footer>
 </body>
 
 </html>
