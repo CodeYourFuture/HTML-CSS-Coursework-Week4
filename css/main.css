@@ -5,3 +5,142 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 /* Dont' forget to link this file to your HTML in the <head> */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding-left:3rem;
+    padding-right: 3rem;
+  }
+  
+  .nav-left {
+    display: flex;
+    align-items: center;
+  }
+  .name {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 1.4em;
+    font-family: 'Poppins Semibold', 'Poppins', sans-serif;
+  }
+  .job-title{
+    font-size: 17px;
+  }
+  .square {
+    width: 20px;
+    height: 20px;
+    background-color:blue;
+    margin-right: 10px;
+  }
+  
+  .nav-left p {
+    margin: 0;
+  }
+  
+  .nav-right {
+    display: inline-block;
+    margin: 0;
+  }
+  
+  .nav-right a {
+    display: inline-block;
+    margin: 0 10px;
+   
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.4em;
+    text-decoration: none;
+    color: black;
+      
+  }
+  .nav-right a:hover {
+    color:blue;
+  }
+  .separator {
+    height: 5px;
+    width: 50px;
+    margin: 20px auto;
+    border-bottom: 2px solid blue;
+  }
+  .icons img{
+  width:20px;
+  margin: 0 10px;
+  }
+
+  /* .overlay-container{
+  background-color: #E6DACE;
+  width: 40%; */
+  
+  
+
+  main{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: ". card content ." ;
+   
+  }
+
+  .main-container{
+  background-color: #F4ECE6;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  width: fit-content;
+  margin: 4rem;
+  grid-area: card;
+  }    
+  
+  .img-maya{
+  width: 205px;
+  height: 205px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.icons{
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+
+}
+.main-info{
+  padding: 60px;
+
+}
+.aside{
+  grid-area: content;
+
+
+}
+h1{
+   line-height: 1.4em;
+    text-align: center;
+    font-size: 27px;
+    font-family:'Poppins Semibold', 'Poppins', sans-serif ;
+    font-weight: bold;
+}
+.job-title{
+  letter-spacing: 0.25em;
+  font-size: 17px;
+}
+.aside p:first-child {
+
+  display: flex;
+  font-size: 100px;
+  font-weight: bold;
+  line-height: 1.4em;
+  font-family:'Poppins Semibold', 'Poppins', sans-serif ;
+  white-space: nowrap;
+  overflow: hidden;
+
+}
+.aside p:nth-child(2) {
+  /* styles for second p */
+  display: block;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1.4em;
+}
