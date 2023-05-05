@@ -4,18 +4,189 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/fullscreen.css">
     <!-- Add a link to your custom CSS here -->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Outfit:wght@200&display=swap" rel="stylesheet">
     <title>Responsive grid project</title>
 </head>
-
 <body>
+    <header>
+<div id = "searchBar">
+<div id = "magnetGlass">
+<img class = "searchIMG" src=""/>
+<input type = "submit" class = "SearchGlass" tabindex="-1" aria-hidden="true" value="Search...">
+</div>
 
-    <!-- Add your markup here -->
+    <div id = "bagLogo"> <img id = "bag" class = "searchIMG" src=""/>
+    </div>
+    </div>
 
+    <div id = "navbar">
+        <div>
+            <p id ="p1"> PRICKLES & CO</p>
+    </div>
+    <div id = "navMenu">
+    <ul>
+        <li>shop</li>
+        <li>About</li>
+        <li>FAQ</li>
+        <li>Contact</li>
+    </ul>
+    </div>
+    </div>
+<div>
+    <p id = "p2">We Deliver to Your Doorstep</p>
+</div>
+    </div>
+</header>
 
-    <!-- Please leave this in to credit the creators of this design -->
+<main>
+    <section id = "frontPage">
+        <div id = "firstDiv">
+            <p>E S T B</p>
+            <img id = "treeLogo" src=""/>
+            <p>2023</p>
+        </div>
+        <div>
+            <h1>PRICKLES & CO</h1>
+            <h4>BRING NATURE INDOORS</h4>
+        </div>
+
+        <button class = "shopCollection" type = "button"> shopNow</button>
+        <div id = "chatOption">
+            <img src = " " alt = ""/>
+        </div>
+    </section>
+
+    <section id = "images">
+    <image id = "cacti">
+    <p class = "imageName"> CACTI</p>
+    <div class = "horizontalLine"></div>
+    <button type = "button" class = "Shop Collection">Shop Collection</button>
+    </image>
+
+    <image id = "plants">
+    <p class = "imageName">PLANTS</p>
+    <div class = "horizontalLine"></div>
+    <button type="button" class="Shop Collection">Shop Collection </button>
+    </image>
+
+    <image id = "succulents">
+    <p class = "imageName">SUCCULENTS</p>
+    <div class = "horizontalLine"></div>
+    <button type = "button" class = "Shop Collection">Shop Collection</button>
+    </image>
+
+    </section>
+
+    <section id = "description">
+    <div id = "aboutUs">
+        <h6>ABOUT US</h6>
+        <div class = "horizontalLine"></div>
+        <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+            
+        <p>This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide.</p>
+    </div>
+
+    <div class = "photos">
+    <img id = "firstPhoto" class = "fullImg" src = "/images/images/teplitsa.webp" alt="teplitsa" />
+    </div>
+
+    <div class = "photos">
+        <img id = "secondPhoto" class = "fullImg" src = "/images/images/leave.webp" alt="leave" />
+    </div>
+
+    <div class = "photos">
+        <img id = "lastPhoto" class = "fullImg" src = "/images/images/woman in branches.webp" alt="woman among plants" />
+    </div>
+
+    <div class = "photos">
+    <img id = "greenArea">
+    <p id = "buyOnline"> BUY ONLINE NOW & GET 10% OFF !</p>
+    <button class = "shopCollection" type = "button">Shop Now</button>
+    </div>
+    </section>
+
+    <section id = "form">
+     <form>
+        <fieldset>
+        <legend>FOR SPECIAL REQUESTS & ORDERS</legend>
+        
+        <div id = "formDiv" class = "horizontalLine"></div>
+
+        <label>Enter your First Name *</label><br>
+        <input type="text" name = "fName"><br>
+        <label>Enter your Last Name *</label><br>
+        <input type = "text" name = "lName"><br>
+        <label>Enter your email*</label><br>
+        <input type="email" name = "email"><br>
+        <label>Enter your Phone</label><br>
+        <input type ="number" name = "Phone"></br>
+        <label>Enter your message</label><br>
+        <input type = "text" name ="message"><br>
+    <button id = "sendButton" class = "shop Collection" type = "submit">send</button>
+        </fieldset>
+     </form> 
+     
+     <img id = "form background" src = "/images/images/background.webp" alt="plant-ficus" />
+    </section>
+
+    <section id = "contact-details">
+        <div id = "store-address" class = "contact-details">
+        <h6>OUR STORE</h6>
+        <p>Address: 500 Terry Francine</p>
+        <p>Street San Francisco, CA 94158</p>
+        <p>phone:123-456-7890</p>
+        <p>Email: info@mysite.com</p>
+        </div>
+
+        <div id = "opening-time"> class = "contact-details">
+            <h6>OPENING HOURS</h6>
+            <P>Mon-Fri:7am - 10pm</P>
+            <p>Saturday: 8am - 10pm</p>
+            <p>Sunday: 8am -11pm</p>
+        </div>
+
+    <div id = "Help"> class = "contact-details">
+        <h6>HELP</h6>
+        <p>Shipping & Returns</p>
+        <p>Privacy Policy</p>
+        <p>FAQ</p>
+    </div>
+
+    <div id = "Subscribe"> class = "contact-details">
+            <h6>SUBSCRIBE</h6>
+        <div id = "email Label">
+        <label id = "label Email" for ="subscription">Enter your email here</label>
+        <input id = "subscription" name = "subscribe" type = "email"/>
+        <button type = "button" id = "subscribeBtn">subscribe Now</button>
+        </div>
+    <div id = "soc-media">
+        <a href = ""><img src ="/images/images/facebook.webp "/></a>
+        <a href = ""><img src ="/images/images/pinterest.webp "/></a>
+        <a href = ""><img src = "/images/images/instagram.webp "/></a>
+    </div>
+    </div>
+
+    <div id = "google-maps">
+        <iframe                
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8294844261723!2d-122.38939518523193!3d37.77059622017397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7f1a33f38ea7%3A0xe4941e6c1dc4022b!2zNTAwIFRlcnJ5IEEgRnJhbmNvaXMgQmx2ZCwgU2FuIEZyYW5jaXNjbywgQ0EgOTQxNTgsINCh0L_QvtC70YPRh9C10L3RliDQqNGC0LDRgtC4INCQ0LzQtdGA0LjQutC4!5e0!3m2!1suk!2suk!4v1678652000164!5m2!1suk!2suk"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">                             
+        </iframe>
+    
+    </div>
+    </section>
+</main>
+
+<footer>
     <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
+</footer>
+
+    
 </body>
 
 </html>
