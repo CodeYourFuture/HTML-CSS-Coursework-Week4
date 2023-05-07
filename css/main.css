@@ -3,22 +3,34 @@
 body {
     margin: 0 auto;
     font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(90deg,#e6dacd 44%, white 44%);
+    overflow-y: auto;
+
 }
-/* Dont' forget to link this file to your HTML in the <head> */
-nav {
+/*nav bar */
+nav{
+  background: white;
+  height: 150px;
+
+}
+.nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    padding-left:3rem;
-    padding-right: 3rem;
+    position: fixed;
+    align-items: center;
+    width: calc(100% - 60px); 
+    z-index:1;
+    height:150px ;
+    padding: 0 30px; 
+    background: white;
   }
   
   .nav-left {
     display: flex;
     align-items: center;
   }
+
   .name {
     font-style: normal;
     font-weight: normal;
@@ -26,9 +38,7 @@ nav {
     line-height: 1.4em;
     font-family: 'Poppins Semibold', 'Poppins', sans-serif;
   }
-  .job-title{
-    font-size: 17px;
-  }
+  
   .square {
     width: 20px;
     height: 20px;
@@ -48,7 +58,6 @@ nav {
   .nav-right a {
     display: inline-block;
     margin: 0 10px;
-   
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -60,35 +69,25 @@ nav {
   .nav-right a:hover {
     color:blue;
   }
-  .separator {
-    height: 5px;
-    width: 50px;
-    margin: 20px auto;
-    border-bottom: 2px solid blue;
-  }
-  .icons img{
-  width:20px;
-  margin: 0 10px;
-  }
 
-  /* .overlay-container{
-  background-color: #E6DACE;
-  width: 40%; */
-  
   
 
+  
+  
+/* centered card and text*/
   main{
     display: grid;
     grid-template-columns: 1fr 2fr 2fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: ". card content ." ;
+
    
   }
 
   .main-container{
   background-color: #F4ECE6;
   border-radius: 5px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
   width: fit-content;
   margin: 4rem;
   grid-area: card;
@@ -107,6 +106,7 @@ nav {
 
 }
 .main-info{
+  display: inline-block;
   padding: 60px;
 
 }
@@ -115,6 +115,18 @@ nav {
 
 
 }
+
+.separator {
+  height: 5px;
+  width: 50px;
+  margin: 20px auto;
+  border-bottom: 2px solid blue;
+}
+.icons img{
+width:20px;
+margin: 0 10px;
+} 
+
 h1{
    line-height: 1.4em;
     text-align: center;
@@ -126,15 +138,21 @@ h1{
   letter-spacing: 0.25em;
   font-size: 17px;
 }
+.aside p {
+  display: inline-block;
+  margin: 0;
+
+}
+
 .aside p:first-child {
 
-  display: flex;
   font-size: 100px;
   font-weight: bold;
   line-height: 1.4em;
   font-family:'Poppins Semibold', 'Poppins', sans-serif ;
   white-space: nowrap;
   overflow: hidden;
+  padding-top: 1em;
 
 }
 .aside p:nth-child(2) {
@@ -143,4 +161,107 @@ h1{
   font-size: 25px;
   font-weight: bold;
   line-height: 1.4em;
+  padding-bottom: 1em;
 }
+
+.paragraph3 {
+  line-height: 1.5em;
+  padding-bottom: 1rem;
+  font-size: 17px;
+  text-align: start;
+  overflow-wrap: break-word;
+  width:369px;
+  }
+  .paragraph4{
+  width: 369px;
+  font-size: 17px;
+  text-align: start;
+  padding-top:1rem ;
+  line-height: 1.5em;
+}
+/* button's styling*/
+button{
+  display: inline-flex;
+  box-sizing: border-box;
+  width: max-content;
+  font-size: 14px;
+  border-radius: 100px 100px 100px 100px;
+  text-align: center; 
+  padding: 7px 20px;
+  margin-right: 10px;
+  margin-bottom: 3rem;
+  margin-top: 1em;
+  border-width: 1px;
+  background-color: white;
+
+}
+.blue-btn{
+  border: 2px solid blue;
+  background: blue;
+  color: white;
+}
+.blue-btn:hover{
+  background: white;
+  color: black;
+}
+ .white-btn{
+  border: 1px solid;
+  background: white;
+  color: black;
+ }
+.white-btn:hover{
+  background-color: blue;
+  color: white;
+}
+
+/*footer */
+footer{
+  background: white;
+}
+.footer-container {
+  display: grid;
+  grid-template-columns: 30% 50%;
+  padding: 1rem 0 1rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-p{
+  display: block;
+  margin-top: 40px;
+  font-size: 12px;
+}
+.contacts-section {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 2rem;
+}
+.contacts-section p{
+  text-align: center;
+  font-weight: bold;
+  font-family: 'avenir-lt-w01_85-heavy1475544', 'avenir-lt-w05_85-heavy', sans-serif;
+  font-size: 14px;
+  line-height: 1.2em;
+  font-style: normal;
+  font-weight: normal;
+
+}
+.email a{
+  text-decoration: none;
+  color: inherit;
+}
+.social .soc-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.soc-icons img{
+  width: 20px;
+  margin: 0 10px;
+}
+
+
+
+
+
+
