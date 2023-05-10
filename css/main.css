@@ -1,3 +1,116 @@
 /* Add your CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
+
+
+/* ### Fonts **Headings:** Poppins - Semi-bold 600 https: //fonts.google.com/specimen/Poppins  
+**Body:** Quicksand - Light 300 https: //fonts.google.com/specimen/Quicksand  
+
+### Colors Dark beige: #E6DACD Light beige: #F4ECE6 Royal blue: #0150FD Black: #000 White: #FFF */
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 140px 800px 200px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 8px 40px;
+    margin-bottom: 30px;
+}
+
+header a {
+    text-decoration: none;
+    padding: 10px;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    line-height: 0%;
+    margin-top: 16px;
+}
+
+.box {
+    background-color: #0150FD;
+    width: 16px;
+    height: 16px;
+    margin-right: 16px;
+    margin-left: 16px;
+    align-self: center;
+}
+
+.name {
+font-family: 'Poppins', sans-serif;
+font-weight: 600;
+font-size: 25px;
+
+}
+
+.portfolio-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 400px;
+    height: 500px;
+    background-color:#F4ECE6;
+    
+
+   
+}
+
+.portfolio-card img {
+    width: 130px;
+    border-radius: 50%;
+}
+
+.social-media-nav img {
+    width: 1.3rem;
+    padding: 0.5rem;
+    border-radius: 0%;
+}
+
+.first-button {
+    background-color: #0150FD;
+    color: #FFF;
+    align-self: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 300;
+    width: 135px;
+    height: 35px;
+    border-radius: 35px;
+    border: none;
+}
+
+.second-button {
+    background-color: #FFF;
+        color: #000;
+        align-self: center;
+        justify-content: center;
+        font-size: 15px;
+        font-weight: 300;
+        width: 135px;
+        height: 35px;
+        border-radius: 35px;
+        border: 1px solid #000;
+
+}
+
+
+
+
+
+
+
+
+
