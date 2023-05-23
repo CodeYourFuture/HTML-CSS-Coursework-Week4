@@ -1,0 +1,579 @@
+:root {
+  --dark-beige: #e6dacd;
+  --light-beige: #f4ece6;
+  --royal-blue: #0150fd;
+  --black: #000;
+  --white: #fff;
+  --shd: -11.31px 11.31px 17px 0px rgba(138, 131, 124, 0.23);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Nunito Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Quicksand", sans-serif;
+}
+.spacer-30 {
+  height: 30px;
+}
+.content-container {
+  background-color: var(--dark-beige);
+}
+.desktop-content-container {
+  background-color: var(--dark-beige);
+}
+main {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.resume-title {
+  margin-top: 61px;
+  margin-bottom: 49px;
+}
+.contact-title {
+  margin-top: 45px;
+  margin-bottom: 40px;
+}
+.resume-header,
+.contact-header {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 29px;
+  text-align: center;
+}
+.resume-header::before {
+  content: "";
+  margin-right: 10px;
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  background-color: var(--royal-blue);
+}
+.contact-header::before {
+  content: "";
+  margin-right: 10px;
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  background-color: var(--royal-blue);
+}
+.experience-title-area,
+.education-title-area {
+  display: flex;
+  justify-content: space-between;
+}
+.experience-heading,
+.education-heading {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 3px;
+  margin-bottom: 36px;
+}
+.download-cv-container {
+  width: 121px;
+  height: 29px;
+  background-color: var(--royal-blue);
+  color: var(--white);
+  text-align: center;
+  border-radius: 15px;
+}
+.download-cv-button {
+  margin: 2px;
+}
+.download-btn-text {
+  text-transform: uppercase;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 12.5px;
+  font-weight: 400;
+}
+.resume-card-container {
+  background-color: var(--white);
+  margin-bottom: 50px;
+  box-shadow: -11.31px 11.31px 17px 0px rgba(138, 131, 124, 0.23);
+}
+.resume-card-content {
+  margin-left: 22px;
+}
+.resume-card-date {
+  color: var(--royal-blue);
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  margin-top: 36px;
+  margin-bottom: 8px;
+}
+.resume-card-title-1 {
+  font-size: 1rem;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 17px;
+}
+.resume-card-title-2 {
+  font-size: 15px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+}
+.resume-card-title-3 {
+  font-size: 15px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  margin-bottom: 19px;
+}
+.resume-card-paras-container {
+  margin-bottom: 46px;
+}
+.resume-card-para {
+  font-size: 17px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  line-height: 25.5px;
+}
+.skills-title-container {
+  margin-top: 30px;
+  margin-bottom: 29px;
+}
+.skills-heading {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+.languages-title-container {
+  margin-top: 62px;
+  margin-bottom: 38px;
+}
+.languages-heading {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+.skill-list-item-container {
+  margin-bottom: 26px;
+}
+.skill-list-item {
+  font-size: 14px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  position: relative;
+  margin-left: 22px;
+}
+.skill-list-item::before {
+  content: "";
+  height: 13px;
+  width: 13px;
+  display: inline-block;
+  background-color: var(--royal-blue);
+  margin-right: 13px;
+  position: absolute;
+  left: -22px;
+  top: 3px;
+}
+.d-content-container {
+  margin-top: 126px;
+}
+.d-resume-main-container {
+  width: 724px;
+  margin: 0 auto;
+}
+.d-resume-title {
+  margin-top: 100px;
+  margin-bottom: 55px;
+}
+.d-resume-header {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+  text-align: center;
+}
+.d-resume-header::before {
+  content: "";
+  margin-right: 10px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: var(--royal-blue);
+}
+.d-resume-education-title-container {
+  margin-top: 48px;
+  height: 98px;
+}
+.d-resume-experience-title-container {
+  height: 98px;
+  display: flex;
+  justify-content: space-between;
+}
+.d-resume-experience-heading,
+.d-resume-education-heading {
+  margin-top: 8px;
+}
+.d-resume-experience-header,
+.d-resume-education-header {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+}
+.d-download-cv-container {
+  width: 154px;
+  height: 40px;
+  background-color: var(--royal-blue);
+  color: var(--white);
+  text-align: center;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.d-download-btn-text {
+  text-transform: uppercase;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+.d-resume-card-container {
+  background-color: var(--white);
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin-bottom: 39px;
+  display: grid;
+  grid-template-columns: 52px 191px 345px 52px;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    ". timings . ."
+    ". position wording .";
+}
+.timings {
+  grid-area: timings;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--royal-blue);
+}
+.position {
+  grid-area: position;
+}
+.d-r-card-position {
+  text-transform: uppercase;
+}
+.d-r-card-sub-info {
+  margin-top: 1rem;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+.wording {
+  grid-area: wording;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+.d-skills-card-container {
+  background-color: var(--white);
+  padding-top: 40px;
+  padding-bottom: 30px;
+  margin-top: 35px;
+  margin-bottom: 80px;
+  padding-left: 52px;
+}
+.d-skills-title-container {
+  margin-top: 30px;
+  margin-bottom: 29px;
+}
+.d-skills-heading,
+.d-languages-heading {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+}
+.d-languages-title-container {
+  margin-top: 62px;
+  margin-bottom: 38px;
+}
+.d-skill-list-item-container {
+  margin-bottom: 26px;
+}
+.d-skills-list-container {
+  display: grid;
+  grid-template-columns: 250px 250px;
+  grid-template-rows: 50px 50px;
+}
+.mob-centered-mini-para {
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.centered-mini-para {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.d-projects-card-container {
+  background-color: var(--white);
+  margin-bottom: 69px;
+  display: grid;
+  grid-template-columns: 428px 322px;
+  grid-template-rows: 404px;
+  box-shadow: -11.31px 11.31px 17px 0px rgba(138, 131, 124, 0.23);
+}
+.m-projects-card-container {
+  background-color: var(--white);
+  margin-bottom: 69px;
+  display: grid;
+  grid-template-columns: 290px;
+  grid-template-rows: 330px 198px;
+  box-shadow: -11.31px 11.31px 17px 0px rgba(138, 131, 124, 0.23);
+}
+.m-project-details-container {
+  margin: 0 25px;
+}
+.project-details-container {
+  margin: 37px;
+}
+.project-card-title-text {
+  color: var(--royal-blue);
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  margin-top: 36px;
+  position: relative;
+  /* margin-bottom: 8px; */
+}
+.project-card-title-text::before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  height: 50px;
+  width: 10px;
+  background-color: var(--royal-blue);
+  left: -38px;
+  top: 3px;
+}
+.m-project-card-title-text {
+  color: var(--royal-blue);
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  margin-top: 36px;
+  position: relative;
+  /* margin-bottom: 8px; */
+}
+.m-project-card-title-text::before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  height: 46px;
+  width: 10px;
+  background-color: var(--royal-blue);
+  left: -25px;
+  top: -7px;
+}
+.project-card-subtitle-text {
+  font-size: 14px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.m-project-card-subtitle-text {
+  font-size: 12px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.project-card-wording {
+  margin-top: 39px;
+}
+.m-project-card-wording {
+  margin-top: 16px;
+}
+.m-project-card-wording-text {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.project-card-wording-text {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 17px;
+  line-height: 25.5px;
+  font-weight: 400;
+}
+.m-project-image-container {
+  height: 100%;
+}
+.m-project-image {
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+.m-contact-form-container {
+  background-color: var(--white);
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+}
+
+.d-contact-form-container {
+  background-color: var(--white);
+  width: 679px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+.m-contact-form {
+  margin: 25px 10px;
+}
+
+.d-contact-form {
+  margin: 56px 56px;
+}
+
+.m-contact-form fieldset {
+  border: 0;
+}
+
+.d-contact-form fieldset {
+  border: 0;
+}
+
+.m-contact-form label {
+  /* font-family: "Poppins", sans-serif; */
+  font-weight: 700;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  /* font-weight: 400; */
+}
+.d-contact-form label {
+  /* font-family: "Poppins", sans-serif; */
+  font-weight: 700;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  /* font-weight: 400; */
+}
+
+.label-mandatory::after {
+  content: " *";
+  color: var(--royal-blue);
+}
+.input-line {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 2px solid var(--black);
+}
+.input-line:hover {
+  border-bottom: 2px solid var(--royal-blue);
+}
+.send-button {
+  background-color: var(--royal-blue);
+  display: block;
+  margin: 0 auto 20px auto;
+  color: var(--white);
+  border-radius: 20px;
+  border: none;
+  width: 98px;
+  height: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 15px;
+}
+
+.d-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.full-row {
+  grid-column: 1/3;
+}
+
+.d-send-button {
+  background-color: var(--royal-blue);
+  display: block;
+  /* margin: 0 auto 20px auto; */
+  color: var(--white);
+  border-radius: 20px;
+  border: none;
+  width: 98px;
+  height: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 15px;
+}
+
+
+
+
+
+
+
+/* contact
+.contact{
+    grid-area: contact;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+
+
+/* social */
+/*.social{
+    grid-area: social;
+
+    .call{
+        grid-area: social;
+        margin-left: 20px;
+    }
+    .write{
+        grid-area: social;
+    }
+    
+    .follow{
+        grid-area: social;
+        margin-left: 20px;
+    }
+    .icons{
+        grid-area: social;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-evenly;
+    }
+    .social-icons svg{
+        width: 1.5rem;
+        grid-template-rows: ;
+        }
+        #tweeter{
+        margin-top: 1rem;
+        }
+        #instagram{
+            margin-top: 1rem;
+        }
+        
+        
+}
+
+
+
+
+/* footer */
+/*.footer{
+    grid-area: footer;
+    margin-left: 5px;
+}*

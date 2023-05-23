@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://kit.fontawesome.com/b5867e4f17.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/secondary.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700&family=Poppins:wght@600;700&family=Quicksand:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Responsive grid project</title>
+  </head>
+  <body>
+    <div class="super-container">
+      <div class="mobile-content-container">
+        <header class="mobile-header">
+          <a href="index.html">
+            <p class="font-4 logo-name-title">Maya Nelson</p>
+          </a>
+          <nav class="burger-container">
+            <div class="burger-logo">
+              <div class="burger-logo-line-1"></div>
+              <div class="burger-logo-line-2"></div>
+              <div class="burger-logo-line-3"></div>
+            </div>
+          </nav>
+          <p class="font-7 logo-name-job-title">Project Manager</p>
+        </header>
+        <div class="content-container">
+          <main>
+            <div class="contact-title-container">
+              <div class="contact-title">
+                <h1 class="contact-header">Let's Talk</h1>
+              </div>
+            </div>
+            <div class="m-contact-form-container">
+              <form class="m-contact-form">
+                <fieldset>
+                  <label class="label-mandatory" for="fname">First Name</label>
+                  <input
+                    class="input-line"
+                    type="text"
+                    id="fname"
+                    name="fname"
+                  /><br />
+                  <label class="label-mandatory" for="lname">Last Name</label>
+                  <input
+                    class="input-line"
+                    type="text"
+                    id="lname"
+                    name="lname"
+                  /><br />
+                  <label class="label-mandatory" for="email">Email</label><br />
+                  <input
+                    class="input-line"
+                    type="email"
+                    id="email"
+                    name="email"
+                  /><br />
+                  <label for="subject">Subject</label>
+                  <input
+                    class="input-line"
+                    type="text"
+                    id="subject"
+                    name="subject"
+                  /><br />
+                  <label for="message">Message</label>
+                  <textarea
+                    class="input-line"
+                    id="message"
+                    name="message"
+                    rows="1"
+                    cols="20"
+                  ></textarea>
+                  <br /><br />
+                  <input class="send-button" type="button" value="Send" />
+                </fieldset>
+              </form>
+            </div>
+          </main>
+        </div>
+        <footer>
+          <div class="footer-comms-container">
+            <div class="call-container">
+              <p class="footer-label">Call</p>
+              <p class="footer-text">123-456-7890</p>
+            </div>
+            <div class="write-container">
+              <p class="footer-label">Write</p>
+              <p class="footer-text">info@mysite.com</p>
+            </div>
+          </div>
+          <div class="footer-socials-container">
+            <p class="footer-label">Follow</p>
+            <div class="social-container">
+              <i class="fa-brands fa-facebook-f social-icon-larger"></i>
+              <i class="fa-brands fa-twitter social-icon-larger"></i>
+              <i class="fa-brands fa-linkedin-in social-icon-larger"></i>
+              <i class="fa-brands fa-instagram social-icon-larger"></i>
+            </div>
+          </div>
+          <div class="copyright-container">
+            <p class="footer-text">© 2035 by Maya Nelson.</p>
+            <p class="footer-text">Powered and secured by Wix</p>
+            <p class="footer-text">
+              This website design was created by Wix.com, and is used here for
+              strictly educational purposes.
+            </p>
+          </div>
+        </footer>
+      </div>
+      <div class="desktop-content-container">
+        <header class="desktop-header-outer">
+          <div class="desktop-header-inner">
+            <div class="d-header-name-title-container">
+              <p class="d-header-name-font d-logo-name-title">Maya Nelson</p>
+              <p class="d-header-title-font d-logo-name-job-title">
+                / Project Manager
+              </p>
+            </div>
+            <div class="d-header-nav-container">
+              <nav class="d-nav-items-container">
+                <ul class="d-nav-items-list">
+                  <li class="d-nav-list-item">
+                    <a href="./index.html">About Me</a>
+                  </li>
+                  <li class="d-nav-list-item">
+                    <a href="./resume.html">Resume</a>
+                  </li>
+                  <li class="d-nav-list-item">
+                    <a href="./projects.html">Projects</a>
+                  </li>
+                  <li class="d-nav-list-item">
+                    <a href="./contact.html">Contact</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </header>
+        <div class="d-content-container">
+          <main class="d-resume-main-container">
+            <div class="d-resume-title-container">
+              <div class="d-resume-title">
+                <h1 class="d-resume-header">Let's talk</h1>
+              </div>
+            </div>
+            <div class="d-contact-form-container">
+              <form class="d-contact-form">
+                <fieldset>
+                  <div class="d-form-grid">
+                    <div>
+                      <label class="label-mandatory" for="fname"
+                        >First Name</label
+                      >
+                      <input
+                        class="input-line"
+                        type="text"
+                        id="fname"
+                        name="fname"
+                      />
+                    </div>
+                    <div>
+                      <label class="label-mandatory" for="lname"
+                        >Last Name</label
+                      >
+                      <input
+                        class="input-line"
+                        type="text"
+                        id="lname"
+                        name="lname"
+                      />
+                    </div>
+                    <div class="full-row">
+                      <label class="label-mandatory" for="email">Email</label
+                      ><br />
+                      <input
+                        class="input-line"
+                        type="email"
+                        id="email"
+                        name="email"
+                      />
+                    </div>
+                    <div class="full-row">
+                      <label for="subject">Subject</label>
+                      <input
+                        class="input-line"
+                        type="text"
+                        id="subject"
+                        name="subject"
+                      />
+                    </div>
+                    <div class="full-row">
+                      <label for="message">Message</label>
+                      <textarea
+                        class="input-line"
+                        id="message"
+                        name="message"
+                        rows="4"
+                        cols="20"
+                      ></textarea>
+                    </div>
+                    <div>
+                      <input class="d-send-button" type="button" value="Send" />
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </main>
+        </div>
+        <footer>
+          <div class="d-footer-container">
+            <div class="copyright-container">
+              <p class="footer-text">© 2035 by Maya Nelson.</p>
+              <p class="footer-text">Powered and secured by Wix</p>
+              <p class="footer-text">
+                This website design was created by Wix.com, and is used here for
+                strictly educational purposes.
+              </p>
+            </div>
+            <div class="d-footer-comms-container">
+              <div class="d-call-container">
+                <p class="d-footer-label">Call</p>
+                <p class="d-footer-text">123-456-7890</p>
+              </div>
+              <div class="d-write-container">
+                <p class="footer-label">Write</p>
+                <p class="footer-text">info@mysite.com</p>
+              </div>
+              <div class="d-footer-socials-container">
+                <p class="footer-label">Follow</p>
+                <div class="social-container">
+                  <i class="fa-brands fa-facebook-f"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-linkedin-in"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
