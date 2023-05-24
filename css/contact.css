@@ -1,14 +1,3 @@
-/* Add your CSS here */
-
-/* Dont' forget to link this file to your HTML in the <head> */
-
-/* Dark beige: #E6DACD
-Light beige: #F4ECE63
-Royal blue: #0150FD
-Black: #000
-White: #FFF */
-
-/* Set body margin and padding to 0 to remove default spacing */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 body {
@@ -23,8 +12,7 @@ p {
 h1 {
   font-size: 100px;
 }
-
-/* Style for header */
+/* HEADER */
 .header {
   position: fixed;
   top: 0;
@@ -83,120 +71,109 @@ h1 {
 .header .right ul li a:hover {
   color: #0150fd;
 }
-/* Style for containers */
-.container1 {
-  width: 40%;
-  float: left;
-  height: 1000px;
+
+/* MAIN */
+
+main {
   background-color: #e6dacd;
-  z-index: 1;
+  height: 1100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#main-head {
+  display: flex;
+  align-items: center;
+  margin-top: 200px;
+  margin-bottom: 15px;
+  margin-left: 240px;
+}
+
+#main-head #box {
+  width: 30px;
+  height: 30px;
+  background-color: blue;
+  margin-left: 100px;
+}
+h1 {
+  font-size: 40px;
+  margin-right: 350px;
+  margin-left: 5px;
+}
+
+
+/* FORM */
+form {
+  width: 900px;
+  margin: 30px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+    background-color: white;
+
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.form-group {
+  width: 48%;
+  margin-bottom: 10px;
   position: relative;
 }
 
-.container2 {
-  width: 60%;
-  float: left;
-  height: 1000px;
-  background-color: white;
-  z-index: 1;
-  position: relative;
-}
-.white-card {
-  margin-left: 120px;
-  margin-top: 220px;
-}
-
-#resume-btn {
-  background-color: #0150fd;
-  height: 35px;
-  width: 110px;
-  border-radius: 35px;
-  margin-right: 7px;
-}
-#resume-btn:hover {
-  background-color: white;
-}
-#project-btn {
-  background-color: #fff;
-  height: 35px;
-  width: 110px;
-  border-radius: 35px;
-  margin-left: 7px;
-}
-#project-btn:hover {
-  background-color: #0150fd;
-}
-
-/* Style for card */
-.card {
-  margin-top: 90px;
-  background-color: #f4ece6;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  z-index: 2;
-  height: 600px;
-  width: 350px;
-  position: absolute;
-  top: 60%;
-  left: 30%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.card img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: center;
-  margin-top: 40px;
-  padding-top: 10px;
-}
-
-.card h2 {
-  margin-top: 100px;
+.form-group label {
+  display: block;
   margin-bottom: 5px;
 }
 
-.card .social-media {
-  /*   list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center; */
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  bottom: 0px;
-  left: 50%;
-  transform: translate(-50%, 0);
-  background-color: white;
-  width: 370px;
-  height: 60px;
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #ddd;
 }
 
-.card .social-media li {
-  margin: 0 5px;
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-bottom: 2px solid #0150FD;
 }
 
-.card .social-media li a {
-  display: block;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: #333;
+.form-group span {
+  color: #0150FD;
+}
+
+.form-group textarea {
+  height: 150px;
+}
+
+.send-btn {
+  float: left;
+  background-color: #0150FD;
   color: #fff;
-  font-size: 20px;
-  line-height: 20px;
-  padding-bottom: 0%;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: 2px solid #0150FD;
+  border-radius: 35px;
+  width: 100px;
 }
-/* footer */
+
+.send-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+
+/* FOOTER */
+
 footer {
   background-color: white;
   color: #333;

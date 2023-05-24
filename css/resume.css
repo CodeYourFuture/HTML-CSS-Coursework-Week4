@@ -1,14 +1,3 @@
-/* Add your CSS here */
-
-/* Dont' forget to link this file to your HTML in the <head> */
-
-/* Dark beige: #E6DACD
-Light beige: #F4ECE63
-Royal blue: #0150FD
-Black: #000
-White: #FFF */
-
-/* Set body margin and padding to 0 to remove default spacing */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 body {
@@ -23,8 +12,8 @@ p {
 h1 {
   font-size: 100px;
 }
+/* HEADER */
 
-/* Style for header */
 .header {
   position: fixed;
   top: 0;
@@ -53,6 +42,11 @@ h1 {
   background-color: #0150fd;
   height: 20px;
   width: 20px;
+}
+#box-small {
+  background-color: #0150fd;
+  height: 10px;
+  width: 10px;
 }
 
 .header .right {
@@ -83,119 +77,160 @@ h1 {
 .header .right ul li a:hover {
   color: #0150fd;
 }
-/* Style for containers */
-.container1 {
-  width: 40%;
-  float: left;
-  height: 1000px;
+
+/* MAIN */
+
+main {
   background-color: #e6dacd;
-  z-index: 1;
-  position: relative;
+  height: 2500px;
 }
 
-.container2 {
-  width: 60%;
-  float: left;
-  height: 1000px;
-  background-color: white;
-  z-index: 1;
-  position: relative;
-}
-.white-card {
-  margin-left: 120px;
-  margin-top: 220px;
-}
-
-#resume-btn {
-  background-color: #0150fd;
-  height: 35px;
-  width: 110px;
-  border-radius: 35px;
-  margin-right: 7px;
-}
-#resume-btn:hover {
-  background-color: white;
-}
-#project-btn {
-  background-color: #fff;
-  height: 35px;
-  width: 110px;
-  border-radius: 35px;
-  margin-left: 7px;
-}
-#project-btn:hover {
-  background-color: #0150fd;
-}
-
-/* Style for card */
-.card {
-  margin-top: 90px;
-  background-color: #f4ece6;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+main div {
+  width: 700px;
   text-align: center;
-  z-index: 2;
-  height: 600px;
-  width: 350px;
-  position: absolute;
-  top: 60%;
-  left: 30%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+  margin-left: 0px;
 }
-
-.card img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: center;
-  margin-top: 40px;
-  padding-top: 10px;
-}
-
-.card h2 {
-  margin-top: 100px;
-  margin-bottom: 5px;
-}
-
-.card .social-media {
-  /*   list-style: none;
-  padding: 0;
-  margin: 0;
+main {
   display: flex;
-  justify-content: center; */
-  list-style: none;
-  padding: 0;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+#main-head {
+  display: flex;
+  align-items: center;
+  margin-top: 200px;
+  margin-bottom: 150px;
+  margin-left: 240px;
+}
+
+#main-head #box {
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  margin-right: 10px;
+}
+
+#main-head h1 {
   margin: 0;
+}
+#top{
+width: 1300px;
+}
+#edu{
+  margin-right: 600px;
+}
+#box {
+  background-color: #0150fd;
+  width: 30px;
+  height: 30px;
+}
+
+div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+div:nth-child(2) h2 {
+  text-align: left;
+  margin-left: 300px;
+}
+
+div:nth-child(2) button {
+  text-align: right;
+  margin-right: 300px;
+  background-color: #0150fd;
+  height: 40px;
+  border-radius: 35px;
+  border: 2px solid #0150fd;
+  color: white;
+}
+div:nth-child(2) button:hover {
+  background-color: #e6dacd;
+}
+
+.infos {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  height: 300px;
+  align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.infos p {
+  padding: 50px;
+}
+.infos h4 {
+  padding-left: 30px;
+}
+
+#list-of-skills li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+#skills {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  bottom: 0px;
-  left: 50%;
-  transform: translate(-50%, 0);
+  flex-wrap: wrap;
   background-color: white;
-  width: 370px;
-  height: 60px;
+  height: 400px;
 }
 
-.card .social-media li {
-  margin: 0 5px;
+#skills > div {
+  flex: 1 1 50%;
+  margin: 10px;
+  padding: 20px;
 }
 
-.card .social-media li a {
-  display: block;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: #333;
-  color: #fff;
-  font-size: 20px;
-  line-height: 20px;
-  padding-bottom: 0%;
+#skills > div:nth-child(1) {
+  order: 1;
 }
+
+#skills > div:nth-child(2) {
+  order: 2;
+}
+
+#skills h2 {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+#skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#skills li {
+  display: flex;
+  flex-basis: 50%;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+#skills #box-small {
+  height: 15px;
+  width: 15px;
+  background-color: blue;
+  margin-right: 10px;
+}
+#languages {
+  display: flex;
+  flex-direction: column;
+}
+#languages h2 {
+  margin-left: 0%;
+}
+
 /* footer */
 footer {
   background-color: white;
