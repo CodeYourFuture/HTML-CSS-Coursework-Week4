@@ -1,3 +1,7 @@
 /* Add your CSS here */
 
-/* Dont' forget to link this file to your HTML in the <head> */
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
