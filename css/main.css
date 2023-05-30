@@ -1,3 +1,119 @@
-/* Add your CSS here */
 
-/* Dont' forget to link this file to your HTML in the <head> */
+
+    body{
+        background-color: var(--main-background-color);
+        width: 100%;
+        margin: 0px;
+        height: 0px;
+        padding: 0px;
+    }
+
+    h1, h2, h3, h4, h5, h6, a, span{
+       font-weight: lighter; 
+    }
+
+    button{
+        background-color: var(--main-background-color);
+        border: solid var(--Black);
+        cursor: pointer!important;
+        border-width: medium;
+    }
+
+    /* --------------------------------------- */
+
+                /* Header Section  */
+
+    /* --------------------------------------- */
+    .page-div-box{
+        height: 9%;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #f9fafa;
+    }
+
+      header {
+        background-color: var(--White);
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        font-size: 23px;
+        font-family: var(--font1);
+
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+
+      .navbar-icon {
+        margin: 39px 79px;
+      }
+
+      .navbar-content {
+        display: flex;
+        align-items: center;
+      }
+
+      .navbar-content-login {
+        font-size: 18px;
+      }
+      .navbar-content-login a {
+        text-decoration: none;
+        padding-right: 12px;
+      }
+
+      .navbar-content-orderOnline button{
+        padding: 31px 52px; 
+        background-color: var(--Black);
+        color: var(--White);
+        font-size: 17px;
+      }
+    
+    /* --------------------------------------- */
+
+                /* fuel Your body Section  */
+                
+    /* --------------------------------------- */
+
+    .main-section-1{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        background-color: var(--White);
+        padding-bottom: 15px;
+
+        margin-top: 5%;
+    }
+    .main-section-1-heading h1{
+        line-height: 1.2em;
+        font-size: 50px;
+    }
+     
+    .main-section-1-heading h3{
+        font-size: 25px;
+    }
+
+    .main-section-1-button button{
+        padding: 23px 71px;
+    }
+
+      /* --------------------------------------- */
+
+                /* fuel Your body Section  */
+                
+    /* --------------------------------------- */
+    .heroBanner{
+      display:flex;
+
+    }
+    .heroBanner-image{
+        background-image: url("https://static.wixstatic.com/media/c837a6_e9a98eea8cf6418088d411361c2f32a1~mv2.jpg/v1/fill/w_1903,h_903,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_e9a98eea8cf6418088d411361c2f32a1~mv2.jpg");
+        height: 600px;
+        width: auto;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-position: center;
+    }

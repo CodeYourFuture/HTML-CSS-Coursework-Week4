@@ -1,0 +1,38 @@
+:root {
+    /* colors */
+    --red:blue;
+    --lylac: #f5e8ff;
+    --LightGreen: #E6FAC0;
+    --MediumGreen: #5E7D1F;
+    --DarkGreen: #394B2A;
+    --White: #fff;
+    --Black: #000;
+
+    --main-background-color: #f9fafa;
+
+    --font1: normal normal normal 30px/1.4em questrial,sans-serif;
+
+
+
+    /* transition */
+    --transit: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
+
+
+    /* flex */
+    --display: flex;
+    --display-center: center;
+
+
+    /* second flex */
+
+}
+
+/* 
+header{
+    transform: translateY(-500%);
+    transition: transform 9s ease-in-out;
+  }
+
+  header.show {
+    transform: translateZ(0);
+  } */
