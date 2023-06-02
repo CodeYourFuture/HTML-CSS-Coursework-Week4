@@ -71,9 +71,65 @@ body {
 
 
 
-footer {
+/* footer {
     background-color: white;
     padding:50px;
 
 
+} */
+.footer-container {
+    /* position: fixed; */
+    
+    /* float: left; */
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: black;
+    text-align: center;
 }
+.row{
+}
+.the-number{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    float:left;
+    width: 25%;
+    /* width: 100%; */
+    background-color: white;
+    color: black;
+    text-align: left;
+    
+}
+.tlf {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: black;
+    text-align: center;
+
+}
+.number {
+    float:left;
+    width: 25%;
+    /* position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: black;
+    text-align: center; */
+
+}
+/* .email {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: black;
+    text-align: center;
+
+} */
