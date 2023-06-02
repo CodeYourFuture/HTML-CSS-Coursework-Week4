@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+
+    
+    <link rel="stylesheet" href="/css/main.css"/>
+
+    <title>Responsive grid project</title>
+</head>
+
+<body>
+    <div class="super-container">
+        <div class="super-mobile-container">
+            <header class="header-maya">
+                    <div class="project-mgr">
+                        <h1 class="maya">Maya Nelson</h1>
+                        <p class="mgr">PROJECT MANAGER</p>
+                    </div>
+                    <div id="myNav" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="overlay-content">
+                        <a href="./index.html">About me</a>
+                        <a href="./resume.html">Resume</a>
+                        <a href="./projects.html">Projects</a>
+                        <a href="./contact.html">Contact</a>
+                        </div>
+                    </div>
+                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+            </header>
+            
+                <div class="talk">
+                    <h2 class="talk-co">Let's talk</h2>
+                </div>
+            <form class="form">
+                <div class="contact-talk">
+                    <label class="first-name">First Name</label>
+                    <hr class="first-line">
+                    
+                    <label class="last-name">Last Name</label>
+                    <hr class="last-line">
+                    
+                    
+                    <label class="email">Email</label>
+                    <hr class="email-line">
+                    
+                    
+                    <label class="subject">Subject</label>
+                    <hr class="subject-line">
+                    
+                    
+                    <label class="message">Message</label>
+                    <hr class="message-line">
+                    
+                    
+                    <button class="send">Send</button>
+                </div>
+            </form> 
+
+                
+                    
+            <footer class="footer-content">
+                        <div class="info">
+                                <div class="call">
+                                    <label>Call</label>
+                                    <p>123-456-7890</p>
+                                </div>
+
+                                <div class="write">
+                                    <label>Write</label>
+                                    <p>info@mysite.com</p>
+                                </div>
+                        </div>
+
+                        <h6 class="m-follow">Follow</h6>
+                        <div class="social">
+                            <div class="m-facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </div>
+                            <div class="m-twitter">
+                                <i class="fab fa-twitter fa-2x"></i>
+                            </div>
+                            <div class="m-instagram">
+                                
+                                <i class="fab fa-linkedin-in fa-2x"></i>
+                            </div>
+                            <div class="m-linkedin">
+                                <i class="fab fa-instagram fa-2x"></i>
+
+                            </div>
+                        </div>
+                        <p class="mp">@2035 by Maya Nelson.</p>
+            </footer>
+ 
+
+         <!-- Please leave this in to credit the creators of this design -->
+         <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
+
+            <script>
+                function openNav() {
+                document.getElementById("myNav").style.height = "100%";
+                }
+                
+                function closeNav() {
+                document.getElementById("myNav").style.height = "0%";
+                }
+            </script>
+        </div>  
+        
+        <!-- Desktop-version -->
+
+        <div class="super-desktop-container">
+            <header class="resume-desktop-header">
+                    <div class="d-header-name-container">
+                        <p class="d-header-name-maya">Maya Nelson</p>
+                        <p class="d-header-job-title">
+                            /Project Manager
+                        </p>
+                    </div>    
+                <div class="d-header-nav-container">
+                    <nav class="d-nav-items-container">
+                        <ul class="d-nav-items-list">
+                            <span class="d-nav-list-item"><a href="./index.html">About Me</a></span>
+                            <span class="d-nav-list-item"><a href="./resume.html">Resume</a></span>
+                            <span class="d-nav-list-item"><a href="./projects.html">Projects</a></span>
+                            <span class="d-nav-list-item"><a href="./contact.html">Contact</a></span>
+                        </ul>
+                    </nav>
+                </div>
+            </header> 
+            <div class="contact-desktop">
+                
+                <div class="talk-contact">
+                    <h2 class="talk-cont">Let's talk</h2>
+                </div>
+                <form class="form">
+                    <div class="contact-talk-cot">
+                        <div class="first-last">
+                            <label class="d-first-name">First Name</label>
+                         <label class="d-last-name">Last Name</label>
+                        </div>
+                        <div class="last-first">
+                            <hr class="d-first-line">
+                            <hr class="d-last-line">
+                        </div>
+                
+                        <label class="d-email">Email</label>
+                        <hr class="d-email-line">
+                
+                
+                        <label class="d-subject">Subject</label>
+                        <hr class="d-subject-line">
+                
+                
+                        <label class="d-message">Message</label>
+                        <hr class="d-message-line">
+                
+                
+                        <button class="d-send">Send</button>
+                    </div>
+                </form>
+
+               
+            </div>
+            <footer class="d-footer-content">
+                <div class="d-follow">
+                    <div class="d-info">
+                            <div class="d-call">
+                                <p class="de-call">Call</p>
+                                <p>123-456-7890</p>
+                            </div>
+
+                            <div class="d-write">
+                                <p class="de-write">Write</p>
+                                <p>info@mysite.com</p>
+                            </div>
+                    </div>
+
+                  <h6 class="de-follow">Follow</h6>
+                    <div class="d-social">
+                        <div class="d-facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                        <div class="d-twitter">
+                            <i class="fab fa-twitter fa-2x"></i>
+                        </div>
+                        <div class="d-instagram">
+                            
+                            <i class="fab fa-linkedin-in fa-2x"></i>
+                        </div>
+                        <div class="d-linkedin">
+                            <i class="fab fa-instagram fa-2x"></i>
+
+                        </div>
+                    </div>
+                </div>  
+                <p class="d-mp">@2035 by Maya Nelson.</p>
+            </footer>
+            <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
+
+        </div>
+
+    </div>  
+</body>
+
+</html>
