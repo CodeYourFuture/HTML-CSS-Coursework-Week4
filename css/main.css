@@ -1,3 +1,93 @@
-/* Add your CSS here */
+* {
+    font-family: 'Quicksand', sans-serif;
+}
 
-/* Dont' forget to link this file to your HTML in the <head> */
+.logo {
+    width: 17px;
+    height: 17px;
+    background-color: #0150FD;
+    border: 1px solid;
+    margin-left: 50px;
+    margin-right: 10px;
+}
+
+.custom-nav {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.nav-items--left {
+    font-size: 22px;
+}
+
+.nav-items--right {
+    display: flex;
+    margin-left: auto;
+}
+
+.nav-link {
+    margin-right: 50px;
+}
+
+.name {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+}
+
+main {
+    background-color: antiquewhite;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-section {
+    width: 25rem;
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.picture-section {
+    background-color: #f4ece6;
+    margin-right: 3rem;
+    width: 36rem;
+    height: 35rem;
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#profile-image {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    margin-top: 2rem;
+}
+
+#person-name {
+    font-size: 1.8rem;
+    font-weight: bolder;
+}
+
+#person-job {
+    font-size: 1.8rem;
+    margin-bottom: 8rem;
+}
+
+.footer-icons img {
+    width: 2rem;
+    height: 2rem;
+}
+
+footer {
+    display: flex;
+    margin-left: 4rem;
+    margin-top: 5rem;
+}
