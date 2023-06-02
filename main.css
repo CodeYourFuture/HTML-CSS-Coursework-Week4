@@ -1,0 +1,69 @@
+/* Add your CSS here */
+body{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    background-color: #fff;
+}
+
+.hero{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "overlap";
+}
+header, main, footer{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+img{
+ 
+  
+  border-radius: 50%;
+}
+
+.main-background-colour{
+    background-color: #E6DACD;
+    width: 40%;
+}
+.main-info{
+    display: flex;
+}
+
+
+.nav-container, .page-title{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav{
+    width: 40%;
+}
+nav ul{
+display: flex;
+justify-content: space-between;
+
+}
+
+ul li{
+    list-style: none;
+}
+
+
+h1, h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+
+}
+
+
+.blue-box{
+    width: 16px;
+    height: 16px;
+    background-color: #0150FD;
+}
