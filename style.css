@@ -1,0 +1,13 @@
+.three-div-container {
+  display: flex;
+}
+
+.plant-pic {
+  flex: 1;
+}
+
+#plant_3 {
+  background-image: url("https://static.wixstatic.com/media/697bc8_b067d0a4b500479b8a3930782976779e~mv2_d_1920_1920_s_2.jpg/v1/fill/w_368,h_565,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/697bc8_b067d0a4b500479b8a3930782976779e~mv2_d_1920_1920_s_2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
