@@ -6,7 +6,6 @@ re-create the design to perfection, using CSS Grid, and media queries to make th
 
 1) Create a mobile-first, responsive website
 2) Use CSS Grid and flexbox for layouts and alignment
-3) Save fonts and colours in CSS variables
 
 ## Style guide
 
