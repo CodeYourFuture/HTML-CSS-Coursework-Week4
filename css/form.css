@@ -1,0 +1,174 @@
+.form-container {
+  background-color: var(--dark-beige);
+  position: static;
+  height: auto;
+  min-height: 200px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 320px;
+  margin:  auto;
+  padding-top: 150px ;
+
+
+
+  font-family: Poppins;
+  gap: 20px;
+
+
+}
+
+.form {
+  display: block;
+
+  justify-content: center;
+  background-color: white;
+  padding: 20px;
+  margin: 0px 0px;
+  padding-bottom: 90px;
+}
+.form-container > div:nth-child(1) {
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+h1 {
+  margin: 10px;
+}
+#square {
+  padding: 10px;
+}
+
+.form-container > div:nth-child(2) {
+  grid-column: 1/-1;
+}
+.form-input {
+  border: none;
+  border-bottom: 3px solid black;
+  width: 90%;
+  padding: 10px;
+  margin: 0px 5px;
+  height: auto;
+}
+label {
+  margin: 0px 10px;
+  border: none;
+}
+.form-input:hover {
+  border: none;
+
+  border-bottom: 3px solid blue;
+}
+.form-input:active,
+:visited {
+  border: none;
+}
+.form-input:active {
+  border: none;
+}
+.sub-btn {
+  width: 96px;
+  height: 26px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 13px;
+  background-color: #0050ff;
+  color: beige;
+  margin-left: 70px;
+  margin-top: 20px;
+}
+
+
+@media screen and (min-width: 580px){
+  .form-container{
+    width: 100%;
+
+
+  }
+  .form-container > div{
+      display: grid;
+      grid-template-columns: 1fr ;
+      justify-content: center;
+      align-items: center;
+      padding: 0px 0px;
+      margin: 50px auto;
+      width:50%;
+
+      gap: 20px;
+
+
+      box-shadow: var(--shd,0 1px 4px rgba(0,0,0,.6));
+  }
+  .form-container > div:nth-child(1){
+    background-color: none ;
+    height: 0px;
+    box-shadow:none;
+    margin: 10px auto;
+
+
+
+  }
+.form-container >div:nth-child(2){
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 679px ;
+
+}
+
+label {
+
+  margin: 0px 10px;
+  border: none;
+}
+.form-input {
+  border: none;
+  border-bottom: 3px solid black;
+  width: 100%; /* set the width to 100% to fill the container */
+  height: 40px; /* adjust the height to your preference */
+  padding: 5px 1px ;
+  margin: 5px 4px ; /* adjust the margin to your preference */
+}
+
+.fname-lname{
+  display: flex;
+  gap: 50px ;
+  padding: 1px px ;
+  width: 100%;
+  margin: 1px px;
+  padding-top:20px;
+
+
+}
+.form{
+  width: 100%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  .sub-btn {
+    width: 96px;
+    height: 26px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 13px;
+    background-color: #0050ff;
+    color: beige;
+    margin-left: 70px;
+    margin-top: 20px;
+
+    float:right;
+  }
+
+  }

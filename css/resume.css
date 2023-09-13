@@ -1,0 +1,360 @@
+/*----------------------RESUME STYLE------------------------------*/
+.resume-container {
+  background-color: var(--dark-beige);
+  position: static;
+  height: auto;
+  min-height: 200px;
+  box-sizing: border-box;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(1fr);
+  width: 380px;
+  font-family: Poppins;
+  font-size: 1rem;
+  padding-top: 100px;
+  gap: 20px;
+}
+
+.resume-container > div {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 40px;
+  margin: 10px 30px;
+  background-color: var(--White);
+  box-shadow: var(--shd, 0 1px 4px rgba(0, 0, 0, 0.6));
+}
+
+.resume-container > div:nth-child(1) {
+  grid-column: 1/ -1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dark-beige);
+  box-shadow: none;
+}
+#square {
+  font-size: 1.5rem;
+}
+
+.head > div:nth-child(1) {
+  grid-column: 1/ -1;
+  display: flex;
+  justify-content: center;
+}
+
+.head > div:nth-child(2) {
+  margin-right: 150px;
+  grid-column: 2/1;
+}
+
+.head > div:nth-child(3) {
+  grid-column: 2 / span 2;
+
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 40px;
+}
+
+.resume-container > div:nth-child(2) {
+  grid-column: 1/ -1;
+  display: block;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.resume-container > div:nth-child(3) {
+  grid-column: 1/ -1;
+  display: block;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.resume-container > div:nth-child(4) {
+  grid-column: 1/ -1;
+  display: block;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.resume-container > div:nth-child(5) {
+  grid-column: 1/ -1;
+  display: block;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.resume-container > div:nth-child(6) {
+  grid-column: 1/ -1;
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+
+#head-btn {
+  width: 125px;
+  height: 33px;
+
+  border: 2px solid var(--Royal-blue);
+  border-radius: 19px;
+  background-color: var(--Royal-blue);
+}
+
+#head-btn:hover {
+  background-color: var(--White);
+  cursor: pointer;
+}
+
+i {
+  font-size: rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: var(--Royal-blue);
+  width: 20px;
+  height: 5px;
+  border-radius: 0px;
+}
+
+.exp-pos1,
+.exp-pos2,
+.edu-uni1,
+.edu-uni2 {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+  background-color: var(--White);
+}
+
+.head2 {
+  margin-left: 50px;
+}
+
+@media screen and (min-width: 600px) {
+  .resume-container {
+    background-color: var(--dark-beige);
+    position: static;
+    height: auto;
+    min-height: 200px;
+    box-sizing: border-box;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    width: 100%;
+
+    gap: 20px;
+  }
+
+  .resume-container > div {
+    width: 550px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 40px;
+    margin: 10px auto;
+
+    background-color: var(--White);
+  }
+
+  .resume-container > div:nth-child(1) {
+    width: ;
+  }
+
+  .resume-container > div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+
+    gap: 40px;
+
+    height: 368px;
+  }
+
+  .resume-container > div:nth-child(3) {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+    height: 368px;
+  }
+
+  .container > div:nth-child(4) {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+    height: 368px;
+  }
+
+  .resume-container > div:nth-child(5) {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+    height: 368px;
+  }
+
+  .resume-container > div:nth-child(6) {
+    display: flex;
+    justify-content: center;
+
+    gap: 40px;
+
+    height: 368px;
+  }
+
+  .head-box {
+    display: block;
+    width: 215px;
+  }
+
+  .text-box {
+    width: 345px;
+    display: block;
+  }
+
+  .exp-pos1,
+  .exp-pos2,
+  .edu-uni1,
+  .edu-uni2 {
+    width: 100%;
+    height: 368px;
+  }
+
+  .skill-lang {
+    height: 511px;
+    display: block;
+  }
+}
+@media screen and (min-width: 900px) {
+  .resume-container {
+    background-color: var(--dark-beige);
+    position: static;
+    height: auto;
+    min-height: 200px;
+    box-sizing: border-box;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    width: 100%;
+    font-size: 0.8rem;
+
+    gap: 20px;
+  }
+
+  .resume-container > div {
+    width: 774px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 40px;
+    margin: 10px auto;
+
+    background-color: var(--White);
+  }
+
+  .resume-container > div:nth-child(1) {
+    width: ;
+  }
+
+  .resume-container > div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+
+    gap: 40px;
+
+    height: 368px;
+  }
+
+  .resume-container > div:nth-child(3) {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+    height: 368px;
+  }
+
+  .container > div:nth-child(4) {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+    height: 368px;
+  }
+
+  .resume-container > div:nth-child(5) {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+    height: 368px;
+  }
+
+  .resume-container > div:nth-child(6) {
+    display: flex;
+    justify-content: center;
+
+    gap: 80px;
+
+    height: 368px;
+  }
+  .head2 {
+    padding-left: 500px;
+  }
+
+  .head-box {
+    display: block;
+    width: 300px;
+    margin-bottom: 80px;
+    margin-right: 30px;
+    margin-left: -10px;
+    line-height: 5px;
+  }
+  .head-box h2 {
+    color: blue;
+  }
+
+  .text-box {
+    width: 360px;
+    display: block;
+  }
+
+  .exp-pos1,
+  .exp-pos2,
+  .edu-uni1,
+  .edu-uni2 {
+    width: 100%;
+    height: 368px;
+  }
+
+  .skill-lang {
+    height: 511px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+  .skill,
+  .lang {
+    display: flex;
+
+    gap: 70px;
+  }
+  .lang {
+    padding-right: 50px;
+    gap: 150px;
+  }
+  .head-cont {
+    font-family: Poppins;
+  }
+  #head-btn {
+    font-size: 0.7rem;
+  }
+}

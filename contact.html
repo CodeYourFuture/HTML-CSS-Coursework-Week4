@@ -6,27 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="../css/main.css" />
-    <link rel="stylesheet" href="../css/index.css" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:ital,wght@0,200;0,600;1,500&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="../css/forms.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7./css/font-awesome.min.css" />
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
-
     <title>Responsive grid project</title>
 </head>
-
-
-
 <body>
-
     <header class="header">
         <nav class="navBar">
             <div class="head-logo">
@@ -59,55 +47,50 @@
 
     <!-- Add your markup here -->
 
-    <main class="main-container">
+    <main class="form-container">
+        <div>
+            <h1 class="head-form"><i class="fa fa-square " id="square"></i>Let's talk</h1>
 
-        <div class="middle">
-            <div class="card">
-                <div class="info">
-                    <img src="img/profile.webp" class="profile-pic" alt="profile-pic" />
-                    <p id="name">Maya <br>Nelson</p>
-
-                    <hr>
-                    <p>PROJECT MANAGEMENT</p>
-                </div>
-
-                <div class="social-buttons">
-                    <a href="#" class="fa fa-facebook"></a>
-                    <a href="#" class="fa fa-twitter"></a>
-                    <a href="#" class="fa fa-linkedin"></a>
-                    <a href="#" class="fa fa-github"></a>
-
-                </div>
-            </div>
-
-            <div class="main-content">
-
-
-                <p class="intro-head">Hello</p>
-                <p class="sub-head">Here's who I am & what I do</p>
-                <div class="rp-buttons">
-                    <button type="button" class="resume-btn proj-btn "><a href="resume.html"> RESUME</a></button>
-                    <button type="button" class="proj-btn ">PROJECTS</button>
-
-                </div>
-
-                <div class="content-text">
-                    <p class="intro-txt">
-                        I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text”
-                        or
-                        double
-                        click me to add your own content and make changes to the font.
-                        I’m a great place for you to tell a story and let your users know a little more about you.
-                    </p>
-
-                </div>
-
-                <!-- add two elements in the middle of the page here -->
-
-            </div>
         </div>
-    </main>
+        <div>
+            <form action="submit" method="post" class="form">
+                <div>
+                    <div class="fname-lname">
+                        <label for="fname">First Name *
+                        <input type="text" class="form-input" id="fname" name="fname" required></label>
 
+                        <label for="lname">Last Name *
+                        <input type="text" class="form-input"  id="lname" name="lname" required></label >
+
+                    </div>
+
+
+                    <label for="email">Email *
+                        <input type="email" class="form-input"  id="email" name="email" required>
+                    </label>
+                    <label for="subject">subject *
+                        <input type="text" class="form-input"  id="subject" name="subject">
+                    </label>
+
+
+                        <textarea class="form-input" > Message</textarea>
+                        <div class="BTN"><button type="submit" class="sub-btn">Send</button></div>
+
+
+
+                </div>
+
+
+
+
+            </form>
+
+
+        </div>
+
+
+
+    </main>
     <footer class="footer-container">
         <div class="contact-details">
             <div class="phone">
@@ -131,35 +114,11 @@
         <p class="rights">&copy;2023 by Haroun</p>
     </footer>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-       <script src="./css/menu.js"></script>
-
+        <p>
+            This website design was created by Wix.com, and is used here for
+            strictly educational purposes.
+        </p>
+        </div>
 </body>
 
 </html>
