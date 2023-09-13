@@ -1,3 +1,390 @@
-/* Add your CSS here */
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:ital,wght@0,200;0,700;1,700&family=Quicksand:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:ital,wght@0,200;0,700;1,700&family=Quicksand:wght@300&display=swap");
+@import url("header.css");
+@import url("resume.css");
+@import url("project.css");
+@import url("form.css");
+:root {
+  --dark-beige: #e6dacd;
+  --light-beige: #f4ece6;
+  --Royal-blue: #0150fd;
+  --Black: #000;
+  --White: #fff;
+}
+body {
+  padding: 0%;
+  margin: 0%;
+}
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  height: 100vh;
+  font-family: "Abril Fatface", cursive;
+  font-family: "Poppins", sans-serif;
+  margin-top: 0px;
+}
 
-/* Dont' forget to link this file to your HTML in the <head> */
+.card {
+  background-color: var(--light-beige);
+  display: flex;
+  flex-direction: column;
+  z-index: 20;
+  font-family: "Abril Fatface", cursive;
+  font-family: "Poppins", sans-serif;
+  align-items: center;
+  font-size: 1rem;
+  width: 375px;
+  height: 525px;
+  box-shadow: 1px 2px 5px 1px rgb(144, 112, 112);
+}
+.info {
+  font-size: 1.7rem;
+}
+.card p {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+
+  padding-bottom: 0px;
+  margin: 0px auto;
+  display: none;
+}
+.profile-pic {
+  border: 0;
+  border-radius: 50%;
+  width: 150px;
+  margin-top: 50px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.main-content {
+  font-family: "Abril Fatface", cursive;
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+  padding: 0px 20px;
+  line-height: 0px;
+  width: 375px;
+  font-size: 1rem;
+  height: 525px;
+}
+hr {
+  width: 70px;
+  height: 1px;
+  background-color: var(--Royal-blue);
+  margin: 30px auto;
+}
+
+#name {
+  font-size: 27px;
+  font-weight: 900;
+  margin: 10px auto;
+  padding-top: 10px;
+  display: block;
+  text-align: center;
+  text-transform: capitalize;
+}
+.intro-head {
+  font-size: 70px;
+  font-weight: 700;
+  font-stretch: 100%;
+  line-height: 1px;
+}
+.intro-txt {
+  line-height: 1.5em;
+  font-size: 17px;
+  position: relative;
+  top: 100%;
+  left: -0px;
+}
+.content-text {
+  line-height: 10px;
+  position: relative;
+  top: -40%;
+  left: -0px;
+}
+.sub-head {
+  font-size: 20px;
+  font-stretch: 100%;
+  font-weight: 600;
+  position: relative;
+  top: -10%;
+}
+
+.social-buttons {
+  background-color: var(--White);
+  height: 60px;
+  width: 375px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 70px;
+}
+.social-buttons a {
+  text-decoration: none;
+  margin: 0px auto;
+  color: black;
+  font-size: 2rem;
+}
+.proj-btn {
+  padding: 0px;
+
+  border-radius: 20px;
+  width: 125px;
+  height: 33px;
+}
+.resume-btn {
+  background-color: blue;
+  color: white;
+  border: none;
+}
+.rp-buttons {
+  transform: translate(50px, 50px);
+  position: relative;
+  top: -95%;
+  left: -0px;
+  -webkit-transform: ;
+  -moz-transform: ;
+  -ms-transform: ;
+  -o-transform: ;
+}
+
+@media screen and (min-width: 580px) {
+  .main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    height: 100vh;
+    font-family: "Abril Fatface", cursive;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .middle {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    font-size: 2rem;
+    background-color: white;
+    width: 760px;
+    height: 700px;
+    font-size: 1rem;
+  }
+
+  .card {
+    background-color: var(--light-beige);
+    display: flex;
+    flex-direction: column;
+    z-index: 20;
+
+    align-items: center;
+    font-size: 1rem;
+    width: 375px;
+    height: 525px;
+    box-shadow: 1px 2px 5px 1px gray;
+  }
+
+  .card p {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-family: "Abril Fatface", cursive;
+    font-family: "Poppins", sans-serif;
+    padding-bottom: 0px;
+    margin: 0px auto;
+    display: flex;
+  }
+  .profile-pic {
+    border: 0;
+    border-radius: 50%;
+    width: 150px;
+    margin-top: 50px;
+  }
+  .main-content {
+    font-family: "Abril Fatface", cursive;
+    font-family: "Poppins", sans-serif;
+
+    background-color: white;
+    padding: 0px 20px;
+    line-height: 100px;
+    width: 375px;
+    font-size: 1rem;
+    height: 525px;
+  }
+  .intro-head {
+    font-size: 100px;
+    font-weight: 700;
+    font-stretch: 100%;
+    line-height: 0px;
+  }
+  .intro-txt {
+    line-height: 1.5em;
+    font-size: 17px;
+  }
+  .sub-head {
+    font-size: 20px;
+    font-stretch: 100%;
+    font-weight: 600;
+  }
+  .content-text {
+    padding-top: 80px;
+  }
+  .social-buttons {
+    background-color: var(--White);
+    width: 375px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .social-buttons a {
+    text-decoration: none;
+    margin: 0px auto;
+    color: black;
+    font-size: 2rem;
+  }
+
+  .proj-btn {
+    padding: 0px;
+    border: none;
+    border-radius: 20px;
+    width: 125px;
+    height: 33px;
+  }
+  .resume-btn {
+    background-color: blue;
+    color: white;
+  }
+  .rp-buttons {
+    transform: translate(50px, 50px);
+
+    position: relative;
+    top: -31%;
+    left: -30px;
+    padding: top 20px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    height: 300vh;
+    font-family: "Abril Fatface", cursive;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .left {
+    background-color: #6a3535;
+    width: 50%;
+    height: auto;
+  }
+
+  .right {
+    background-color: #cb1212;
+    width: 50%;
+  }
+
+  .middle {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    font-size: 2rem;
+    background-color: white;
+    width: 760px;
+    height: 700px;
+    font-size: 1rem;
+    margin-top: 150px;
+  }
+
+  .card {
+    background-color: var(--light-beige);
+    display: flex;
+    flex-direction: column;
+    z-index: 20;
+
+    align-items: center;
+    font-size: 1rem;
+    width: 375px;
+    height: 525px;
+    box-shadow: 1px 2px 5px 1px gray;
+  }
+
+  .card p {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-family: "Abril Fatface", cursive;
+    font-family: "Poppins", sans-serif;
+    padding-bottom: 0px;
+    margin: 0px auto;
+    display: flex;
+  }
+  .profile-pic {
+    border: 0;
+    border-radius: 50%;
+    width: 150px;
+    margin-top: 50px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+  .main-content {
+    font-family: "Abril Fatface", cursive;
+    font-family: "Poppins", sans-serif;
+
+    background-color: white;
+    padding: 0px 20px;
+    line-height: 100px;
+    width: 375px;
+    font-size: 1rem;
+    height: 525px;
+  }
+  .intro-head {
+    font-size: 100px;
+    font-weight: 700;
+    font-stretch: 100%;
+    line-height: 0px;
+  }
+  .intro-txt {
+    line-height: 1.5em;
+    font-size: 17px;
+  }
+  .sub-head {
+    font-size: 20px;
+    font-stretch: 100%;
+    font-weight: 600;
+  }
+  .social-buttons {
+    background-color: var(--White);
+    width: 375px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .social-buttons a {
+    text-decoration: none;
+    margin: 0px auto;
+    color: black;
+    font-size: 2rem;
+  }
+
+  .proj-btn {
+    padding: 0px;
+    border: none;
+    border-radius: 20px;
+    width: 125px;
+    height: 33px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+  }
+  .resume-btn {
+    background-color: blue;
+    color: white;
+  }
+}

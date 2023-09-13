@@ -1,0 +1,64 @@
+/* Define font and color variables */
+
+.menu-button {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+  }
+  
+  .menu-line {
+    display: block;
+    width: 36px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #2a2222;
+    position: absolute;
+    left: 0;
+    transition: all 0.3s ease;
+  }
+  
+  .menu-line:nth-child(1) {
+    top: 12px;
+  }
+  
+  .menu-line:nth-child(2) {
+    top: 24px;
+  }
+  
+  .menu-line:nth-child(3) {
+    top: 36px;
+  }
+  
+  .menu {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+  
+  .menu-open .menu {
+    height: auto;
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .menu-open .menu-line:nth-child(1) {
+    transform: rotate(45deg);
+    top: 24px;
+  }
+  
+  .menu-open .menu-line:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .menu-open .menu-line:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 24px;
+  }
+  
