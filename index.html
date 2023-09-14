@@ -4,18 +4,231 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Add a link to your custom CSS here -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>Responsive grid project</title>
 </head>
 
 <body>
 
-    <!-- Add your markup here -->
+
+    <body>
+      <header>
+      
+          
+        <div class="header-first"> 
+            <div class="search">
+                <form role="search" method="get" class="search-form" action="#">
+                    
+                    <button type="submit" class="button">
+                        <img class="search-logo" src="images/search-icon-simple-free-illustration-free-vector.jpg"/>
+                    
+                    <input src="images/search-icon-simple-free-illustration-free-vector.jpg" type="search" class="search-field" placeholder="Search" s>
+                </button>
+                </form>                       
+            </div>
+            
+
+            <div class="login-basket">
+                <div class="login">
+                    <img src="svg/data-bbox.svg" alt="login logo" />
+                    <p>Log In</p> 
+                </div>
+                <div> 
+                    <img class="basket" src="svg/basket.svg" />
+                </div>
+            </div>
+        </div>
+
+            <div class="header-second">
+                <div class="name-nav">
+                    <p>PRICKLES & CO.</p>
+                    <ul class="navigation">
+                        <a href="#shop"><li class="nav-item">Shop</li></a>
+                        <a href="#about"><li class="nav-item"> About</li></a>
+                        <a href="#"><li class="nav-item">FAQ</li></a>
+                        <a href="#contact"><li class="nav-item">Contact</li></a>
+                    </ul>
+                    <div class="nav-mob">                   
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction();">
+                        <i class="fa fa-bars"></i>
+                        </a>
+                    </div>
+    
+                </div>
+               
+            
+            
+                <div class="delivery-text">
+                 <p>We Deliver To Your Doorsite</p>
+                </div>
+
+               
+               
+          </div>
+
+         
+    </header>
 
 
-    <!-- Please leave this in to credit the creators of this design -->
-    <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
-</body>
+      <main>
+          <div class="hero"> 
+             <img class="logo" src="svg/logo.svg" />
+              <h1>PRICKLES & CO</h1>
+              <p>BRING NATURE INDOORS</p>
+              <button class="button-general">Shop now</button>
+          </div>
 
-</html>
+          <div class="three-plants">
+
+              <div class="plant-one">
+                  <h2 class="plant-name">CACTI</h2>
+                  <hr>
+                  <button class="button-general">Shop Collection</button>
+
+              </div>
+
+              <div class="plant-two">
+                <h2 class="plant-name">PLANTS</h2>
+                <hr>
+                <button class="button-general">Shop Collection</button>
+            </div>
+
+            <div class="plant-three">
+            
+                <h2 class="plant-name">SUCCILENTS</h2>
+                <hr>
+                <button class="button-general">Shop Collection</button>
+             
+            </div>             
+             
+          </div>
+
+          <section class="about-us">
+             
+                    <div  class="paragraph">
+                        <h2 id="about">ABOUT US</h2>
+                        <hr>
+                        <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.</p><br>
+                        <p>This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide.</p>
+                    </div>
+
+                    <div class="img-window">
+                    
+                    </div>
+
+                    <div class="img-leaf">
+                      
+                    </div>
+            
+                <div class="img-girl">        
+                    
+                </div>
+
+                <div class="buy-online">
+                    <h2>BUY ONLINE</h2>
+                    <h2>NOW & GET</h2>
+                    <h2>10% OFF !</h2>
+                    <button class="button-white">Shop Now</button>
+                </div>
+
+        </section>
+
+            <!--add opacity for the form background-->
+        <section class="form">
+            <div class="form-backgr">
+                <div class="white-form">
+                    
+                    <fieldset>
+                        
+
+                        <h2 id="contact" class="brown-text">FOR SPECIAL REQUESTS & ORDERS</h2>
+                        <hr>
+                        <div class="name"> 
+                            <div class="firstname">
+                                <label for="firstname">First Name*</label><br>
+                                <input type="text" id="firstname" required minlength="2">
+                            </div>
+
+                            <div class="lastmane">
+                                <label for="lastname">Last Name*</label><br>
+                                <input type="text" id="lastname" required minlength="2">
+                            </div>
+                        </div>
+
+                        <div class="email">
+                            <label for="email">Email*</label><br>
+                            <input type="email" id="email" required>                       
+                        </div>
+
+                        <div class="phone">
+                            <label for="phone">Phone</label><br>
+                            <input type="number" id="phone">
+                        </div>
+
+                        <div>
+                            <label for="message">Message</label><br>
+                            <textarea id="message" name="message"></textarea>
+                        </div>
+
+                        <input class="input-button" type="submit" value="Send">
+
+
+
+                    </fieldset>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+      </main>
+
+
+      <footer>
+          <div class="info">
+              <div class="our-store">
+                  <h3 class="footer-h3">OUR STORE</h3>
+                  <p>Address: 500 Terry Francois</p>
+                  <p>Street San Francisco, CA 94158</p>
+                  <p>Phone: 123-456-7890</p>
+                  <p>Email: info@mysite.com</p>
+              </div>
+
+              <div class="opening-hours">
+                  <h3 class="footer-h3">OPENING HOURS</h3>
+                  <p>Mon-Fri: 7am - 10pm</p>
+                  <p>Saturday: 8am - 10pm</p>
+                  <p>Sunday: 8am - 11pm</p>
+              </div>
+
+              <div class="help">
+                 <h3 class="footer-h3">HELP</h3>
+                 <a href="#"><p>Shipping & Returns</p></a>
+                 <a href="#"><p>Privacy Policy</p></a>
+                 <a href="#"><p>FAQ</p></a>
+              </div>
+          </div>
+
+          <div class="subscribe">
+              <h2>SUBSCRIBE</h2>
+              <div class="footer-form">
+                <div class="footer-email">
+                    <label for="footer-email">Enter your email here*</label><br>
+                    <input type="email" id="footer-email" required>                       
+                </div>
+
+                <input class="tooter-button" type="submit" value="Subscribe Now">
+
+              </div>
+
+          </div>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8390571953405!2d-122.38931348468252!3d37.77037177976025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7fc4fe7ace37%3A0xfa1746dd4faeb818!2s500%20Terry%20A%20Francois%20Blvd%2C%20San%20Francisco%2C%20CA%2094158%2C%20USA!5e0!3m2!1sen!2suk!4v1639071890812!5m2!1sen!2suk" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+      </footer>
+    </body>
