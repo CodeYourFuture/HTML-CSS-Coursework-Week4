@@ -1,92 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="./main.js" defer></script>
     <!-- Add a link to your custom CSS here -->
 
-    <title>Responsive grid project</title>
-</head>
+    <title>Resume Clone</title>
+  </head>
 
-<body>
+  <body>
+    <header>
+      <h1 class="header-name">Maya Nelson</h1>
+      <span class="header-designation">project manager</span>
+      <button id="nav-btn--open">OPEN NAV</button>
+      <nav id="navigation" class="opaque">
+        <a href="#">about me</a>
+        <a href="#">resume</a>
+        <a href="#">projects</a>
+        <a href="#">contact</a>
+      </nav>
+    </header>
     <main>
-        <header>
-            <p class="header-name">Maya Nelson</p>
-            <p class="header-text">Project Mangaer</p>
-            <nav class="header-nav">
-                <!-- <div></div>
-                <div></div>
-                <div></div>
-                <div></div>   -->
-            </nav>
-        </header>
-        <card>
-            <img class="card-photo" src="images/maya.webp" alt="photo of Maya smiling">
-            <div class="card-names">
-                <p class="card-name-first">Maya</p>
-                <p class="card-name-last">Nelson</p>
-            </div>
-    
-            <div class="card-btn">
-                <button class="card-btn-1">Resume</button>
-                <button class="card-btn-2">Projects</button>
-            </div>
-            <nav class="card-bottom-nav">
-                <img class="card-bottom-nav-icon" src="./icons/facebook.webp" href="" alt="facebook logo">
-                <img class="card-bottom-nav-icon" src="./icons/twitter.webp" href="" alt="twitter logo">
-                <img class="card-bottom-nav-icon" src="./icons/linkedin.webp" href="" alt="linkedin logo">
-                <img class="card-bottom-nav-icon" src="./icons/instagram.webp" href="" alt="instagram logo">
-            </nav>
-        </card>
-    
-        <section>
-            <h1>Hello</h1>
-            <h2>Here's who I am & what I do</h2>
-            <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.</p>
-    
-            <p>I’m a great place for you to tell a story and let your users know a little more about you.</p>
-        </section>
+      <card>
+        <img
+          class="card-photo"
+          src="images/maya.webp"
+          alt="photo of Maya smiling"
+        />
+        <div class="card-names">
+          <p class="card-name-first">Maya</p>
+          <p class="card-name-last">Nelson</p>
+        </div>
+
+        <div class="card-btn">
+          <button class="card-btn-1">Resume</button>
+          <button class="card-btn-2">Projects</button>
+        </div>
+        <nav class="card-bottom-nav">
+          <img
+            class="card-bottom-nav-icon"
+            src="./icons/facebook.webp"
+            href=""
+            alt="facebook logo"
+          />
+          <img
+            class="card-bottom-nav-icon"
+            src="./icons/twitter.webp"
+            href=""
+            alt="twitter logo"
+          />
+          <img
+            class="card-bottom-nav-icon"
+            src="./icons/linkedin.webp"
+            href=""
+            alt="linkedin logo"
+          />
+          <img
+            class="card-bottom-nav-icon"
+            src="./icons/instagram.webp"
+            href=""
+            alt="instagram logo"
+          />
+        </nav>
+      </card>
+
+      <section>
+        <h1>Hello</h1>
+        <h2>Here's who I am & what I do</h2>
+        <p>
+          I'm a paragraph. Click here to add your own text and edit me. It’s
+          easy. Just click “Edit Text” or double click me to add your own
+          content and make changes to the font.
+        </p>
+
+        <p>
+          I’m a great place for you to tell a story and let your users know a
+          little more about you.
+        </p>
+      </section>
     </main>
-    
+
     <footer>
-        <div class="footer-contacts">
-            <div class="footer-contacts-phone">
-                <p class="footer-contacts-phone-text">Call</p>
-                <p class="footer-contacts-phone-number">123-456-7890</p>
-            </div>
-            <div class="footer-contacts-email">
-                <p class="footer-contacts-email-text">Write</p>
-                <p class="footer-contacts-email-address">info@mysite.com</p>
-            </div>
+      <div class="footer-contacts">
+        <div class="footer-contacts-phone">
+          <p class="footer-contacts-phone-text">Call</p>
+          <p class="footer-contacts-phone-number">123-456-7890</p>
         </div>
-        <div class="footer-nav">
-            <p class="footer-nav-text">Follow</p>
-            <div class="footer-nav-icons">
-                <img class="footer-nav-icon" src="./icons/facebook.webp" href="" alt="facebook logo">
-                <img class="footer-nav-icon" src="./icons/twitter.webp" href="" alt="twitter logo">
-                <img class="footer-nav-icon" src="./icons/linkedin.webp" href="" alt="linkedin logo">
-                <img class="footer-nav-icon" src="./icons/instagram.webp" href="" alt="instagram logo">
-            </div>
+        <div class="footer-contacts-email">
+          <p class="footer-contacts-email-text">Write</p>
+          <p class="footer-contacts-email-address">info@mysite.com</p>
         </div>
-        <div>
-            <p>© 2035 by Maya Nelson.</p>
-            <p>Powered and secured by Wix</p>
+      </div>
+      <div class="footer-nav">
+        <p class="footer-nav-text">Follow</p>
+        <div class="footer-nav-icons">
+          <img
+            class="footer-nav-icon"
+            src="./icons/facebook.webp"
+            href=""
+            alt="facebook logo"
+          />
+          <img
+            class="footer-nav-icon"
+            src="./icons/twitter.webp"
+            href=""
+            alt="twitter logo"
+          />
+          <img
+            class="footer-nav-icon"
+            src="./icons/linkedin.webp"
+            href=""
+            alt="linkedin logo"
+          />
+          <img
+            class="footer-nav-icon"
+            src="./icons/instagram.webp"
+            href=""
+            alt="instagram logo"
+          />
         </div>
+      </div>
+      <div>
+        <p>© 2035 by Maya Nelson.</p>
+        <p>Powered and secured by Wix</p>
+      </div>
     </footer>
-
-
-
 
     <!-- Add your markup here -->
 
-
     <!-- Please leave this in to credit the creators of this design -->
-    <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
-</body>
-
+    <p>
+      This website design was created by Wix.com, and is used here for strictly
+      educational purposes.
+    </p>
+  </body>
 </html>
