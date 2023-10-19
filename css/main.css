@@ -1,3 +1,80 @@
 /* Add your CSS here */
 
+
+#cactus-shop {
+    width: 100%;
+    align-items: center;
+}
+
+h1 {
+    font-size: 25px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 15px;
+    text-align: center;
+}
+#explore {
+    color: white;
+       
+}
+
+#welcome {
+    font-size: medium;
+}
+
+.nav-bar {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: auto;
+    vertical-align: middle;
+
+}
+
+#user-icon {
+    width: 15px;
+    margin-right: 8px;
+}
+#order-online {
+    background-color: black;
+    color: white;
+}
+
+.heading {
+    margin-top: 30px;   
+}
+
+.item {
+    width: auto;
+    height: 30px;
+    align-content: center;
+    margin: 10px;
+}
+
+.clickable {
+    background-color: black;
+    border: 3px solid black;
+    padding: 3px;
+    width: 150px;
+    justify-items: center;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+.flavours {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+img {
+    width: 300px;;
+}
+
 /* Dont' forget to link this file to your HTML in the <head> */
