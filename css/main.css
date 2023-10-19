@@ -1,3 +1,667 @@
-/* Add your CSS here */
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-SemiBold.ttf") format("truetype");
+}
 
-/* Dont' forget to link this file to your HTML in the <head> */
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/Quicksand-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/Quicksand-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+:root {
+  --beige-dark: #e6dacd;
+  --beige-light: #f4ece6;
+
+  --blue-royal: #0150fd;
+  --black: #000;
+  --white: #fff;
+
+  --max-width: 1100px;
+
+  --heading-font: "Poppins", sans-serif;
+  --body-font: "Quicksand", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 20px;
+  font-family: var(--body-font);
+  color: var(--black);
+  max-width: var(--max-width);
+  margin: 0 auto !important;
+  float: none !important;
+}
+
+/* Utilities */
+.container {
+  padding: 2rem;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: bolder;
+}
+.active {
+  color: var(--blue-royal);
+}
+.btn {
+  padding: 0.5rem 1.75rem;
+  border: none;
+  border-radius: 50px;
+}
+.btn-primary {
+  background-color: var(--blue-royal);
+  color: var(--white);
+}
+.btn-secondary {
+  background-color: var(--beige-light);
+  color: var(--black);
+  border: 1px solid var(--black);
+}
+.bolder {
+  font-weight: bolder;
+}
+.square {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: var(--blue-royal);
+  margin-right: 0.5rem;
+}
+.text-center {
+  text-align: center;
+}
+.primary-font {
+  font-family: var(--heading-font);
+}
+.secondary-font {
+  font-family: var(--body-font);
+}
+.blue-color {
+  color: var(--blue-royal);
+}
+
+/* Header */
+.nav {
+  font-family: var(--heading-font);
+  font-size: 22px;
+  height: 35vh;
+}
+.nav .nav-menu .occupation {
+  font-family: var(--body-font);
+}
+.nav-toggle {
+  position: absolute;
+  cursor: pointer;
+  margin: 0rem 1rem;
+  right: 0;
+}
+.nav svg {
+  width: 1.5rem;
+}
+.nav img {
+  width: 4rem;
+}
+.nav .close {
+  display: none;
+}
+.nav .menu {
+  margin-top: 0.2rem;
+}
+.nav .nav-checkbox {
+  display: none;
+}
+.nav .nav-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  margin: 1rem;
+}
+.nav .nav-menu li {
+  display: none;
+  font-size: 25px;
+}
+.nav .nav-menu li:first-child {
+  margin-right: auto;
+  display: block;
+}
+.nav #nav-checkbox:checked ~ ul {
+  background-color: var(--beige-dark);
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  z-index: 1;
+}
+
+.nav #nav-checkbox:checked ~ ul.nav-menu li:nth-child(2) {
+  margin-top: 11rem;
+}
+.nav #nav-checkbox:checked ~ ul.nav-menu li:first-child {
+  display: none;
+}
+.nav #nav-checkbox:checked ~ ul.nav-menu li {
+  display: block;
+}
+.nav #nav-checkbox:checked ~ label.nav-toggle .close {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  right: 0.75rem;
+  margin-top: 2rem;
+}
+.nav #nav-checkbox:checked ~ label.nav-toggle .menu {
+  display: none;
+}
+
+/* Main - About Me Page */
+
+/* Description */
+.description {
+  background-color: var(--beige-dark);
+  padding: 0rem 2rem 2rem 2rem;
+}
+.description .btns {
+  display: none;
+}
+.description h1 {
+  padding-top: 29rem;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: var(--heading-font);
+}
+.description h3 {
+  margin: 1.5rem 0rem;
+  font-family: var(--heading-font);
+  font-size: 23px;
+}
+
+/* Introduction */
+.introduction {
+  text-align: center;
+  background-color: var(--beige-light);
+  position: absolute;
+  width: 90%;
+  top: 120px;
+  left: 27px;
+}
+.introduction .row {
+  padding: 1rem 0rem;
+}
+.introduction p {
+  display: none;
+}
+.introduction img {
+  margin-top: 1.5rem;
+  border-radius: 50%;
+}
+.introduction h2 {
+  margin-top: 1rem;
+  font-family: var(--heading-font);
+}
+.introduction .blue-line {
+  width: 80px;
+  border-bottom: 2px solid var(--blue-royal);
+  margin: 0 auto;
+  margin-top: 0.5rem;
+}
+.introduction .btns {
+  margin-top: 2rem;
+}
+.introduction .btn-secondary {
+  margin-left: 1rem;
+}
+.introduction .col-icons {
+  margin-top: 2.5rem;
+  padding: 1rem 0rem;
+  background: var(--white);
+}
+.introduction .col-icons .social-icons {
+  display: flex;
+  justify-content: center;
+}
+.introduction .col-icons .social-icons li {
+  padding: 0rem 1rem;
+}
+/* ---------------------------- */
+
+/* Main - Resume Page */
+.second-nav {
+  height: 15vh;
+}
+.resume {
+  background: var(--beige-dark);
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+  line-height: 1.7;
+}
+.resume h1 {
+  font-size: 40px;
+}
+.resume .title {
+  padding-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.resume .square,
+.projects .square,
+.contact .square {
+  width: 25px;
+  height: 25px;
+  margin-right: 0.75rem;
+}
+.resume .exp-title {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  font-size: 18px;
+}
+.resume .exp-title .btn {
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+}
+.resume article,
+.resume .skill {
+  background-color: var(--white);
+  width: 97%;
+  padding: 2rem 1rem 2rem 2rem;
+  margin: 3.5rem 0rem;
+}
+.resume .title-art1,
+.resume .title-art2 {
+  margin-bottom: 1.5rem;
+}
+.resume .skill h3 {
+  margin-bottom: 1rem;
+}
+.resume ul .square {
+  width: 17px;
+  height: 17px;
+}
+.resume ul li {
+  display: flex;
+  align-items: center;
+}
+
+/* Main - Project Page */
+.projects {
+  background-color: var(--beige-dark);
+  padding: 4rem 0rem 2rem 2rem;
+  line-height: 1.7;
+}
+.projects .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.projects .title ~ p {
+  margin-top: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.projects .pro-articles {
+  width: 97%;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.projects .pro-articles .article {
+  background-color: var(--white);
+  /* padding-top: 1.3rem; */
+  display: flex;
+  flex-direction: column;
+}
+.projects .pro-articles .article .col {
+  flex: 1;
+}
+.projects .pro-articles .article .col1 {
+  padding-top: 1.3rem;
+}
+
+.projects .article .article-title {
+  border-left: 12px solid var(--blue-royal);
+  padding-left: 1.2rem;
+}
+.projects .article .article-title ~ p {
+  padding: 2rem 1.2rem 1.5rem 1.2rem;
+}
+.projects .article img {
+  width: 100%;
+}
+
+/* Main - Contact Page */
+.contact {
+  background-color: var(--beige-dark);
+  padding: 2.5rem 0.5rem 2rem 2rem;
+  line-height: 2;
+}
+.contact .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact form {
+  background-color: var(--white);
+  padding: 2rem 0.75rem;
+  margin-top: 2.5rem;
+}
+.contact form div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+}
+.contact form input {
+  height: 30px;
+  padding-left: 1rem;
+  border: none;
+  border-bottom: 2px solid var(--black);
+}
+.contact form input:focus {
+  outline: none;
+  border-bottom: 2px solid var(--blue-royal);
+}
+.contact form .form-btn {
+  margin-top: 1.5rem;
+}
+.contact form a {
+  /* display: inline-block; */
+  margin: 0 auto;
+  padding: 0.2rem 3rem;
+}
+
+/* Footer section */
+footer {
+  padding: 2rem 2rem;
+}
+footer .row1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 1rem;
+  margin-bottom: 1rem;
+}
+footer .first-three-div .col3 .social-icons {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0.25rem;
+}
+footer .first-three-div .col3 .social-icons li {
+  margin-right: 1rem;
+}
+footer .row2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.circle {
+  display: inline-block;
+  vertical-align: middle;
+}
+.circle a {
+  display: inline-block;
+  border-radius: 50%;
+  background-color: var(--blue-royal);
+}
+.top {
+  display: inline-block;
+  width: 1.5em;
+  height: 2em;
+  border-radius: 50%;
+  margin-right: 0.75em;
+}
+
+.top:after {
+  content: "";
+  display: inline-block;
+  margin-top: 0.8em;
+  margin-left: 0.85em;
+  width: 0.5em;
+  height: 0.5em;
+  border-top: 0.1em solid var(--white);
+  border-right: 0.1em solid var(--white);
+  -moz-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.hide-me {
+  animation: cssAnimation 0s 5s forwards;
+  visibility: visible;
+}
+
+@keyframes cssAnimation {
+  to {
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 541px) and (max-width: 768px) {
+  /* Index Page -Description  */
+  .description h1 {
+    padding-top: 24rem;
+  }
+
+  /* Resume Page  */
+  .resume .exp-title .btn {
+    margin-right: 1rem;
+  }
+  /* Project page */
+  .projects .title ~ p {
+    margin-right: 1rem;
+  }
+  /* Contact Page */
+  .contact form {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  /* Footer */
+  footer .circle {
+    display: none;
+  }
+  footer .first-three-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: 769px) {
+  /* header */
+  .nav {
+    height: 11vh;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .nav .nav-menu {
+    flex-direction: row;
+  }
+  .nav .nav-menu li {
+    display: block;
+  }
+  .nav .nav-menu li {
+    font-size: 19px;
+  }
+  #navbar {
+    position: sticky;
+    top: 0;
+  }
+
+  /* Man - Index Page */
+  .main-home {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 85vh;
+  }
+  .introduction {
+    all: unset;
+  }
+  .description {
+    all: unset;
+  }
+  .description h1 {
+    padding-top: 0rem;
+  }
+  .brown-bg {
+    background-color: var(--beige-dark);
+  }
+  .white-bg {
+    background-color: var(--white);
+  }
+  .overlay {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 26vh;
+    margin: 0rem 1rem 0rem 7rem;
+    max-width: 960px;
+  }
+  .overlay .description,
+  .overlay .introduction {
+    flex: 1;
+    width: 85%;
+  }
+  /* Introduction */
+  .introduction {
+    text-align: center;
+    background-color: var(--beige-light);
+  }
+  .introduction img {
+    margin-top: 1.5rem;
+    border-radius: 50%;
+  }
+  .introduction h2 {
+    margin-top: 1rem;
+    font-family: var(--heading-font);
+  }
+  .introduction .blue-line {
+    width: 80px;
+    border-bottom: 2px solid var(--blue-royal);
+    margin: 0 auto;
+    margin-top: 1rem;
+  }
+  .introduction .btns {
+    display: none;
+  }
+  .introduction p {
+    display: block;
+    margin-top: 2.5rem;
+  }
+  .introduction .col-icons {
+    margin-top: 2.5rem;
+    padding: 1rem 0rem;
+    background: var(--white);
+  }
+  .introduction .col-icons .social-icons {
+    display: flex;
+    justify-content: center;
+  }
+  .introduction .col-icons .social-icons li {
+    padding: 0rem 1rem;
+  }
+  /* Description */
+  .description {
+    background-color: var(--white);
+    padding-left: 2rem;
+  }
+  .description h1 {
+    margin-top: -3rem;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: var(--heading-font);
+  }
+  .description h3 {
+    margin: 1.5rem 0rem;
+    font-family: var(--heading-font);
+    font-size: 23px;
+  }
+  .description .btns {
+    display: block;
+    margin: 2.5rem 0rem;
+  }
+  .description .btn2 {
+    background-color: var(--white);
+  }
+  .description .btn1:hover {
+    background-color: var(--white);
+    color: var(--black);
+    border: 2px solid var(--blue-royal);
+  }
+  .description .btn2:hover {
+    background-color: var(--blue-royal);
+    color: var(--white);
+  }
+  .description .below-text {
+    display: none;
+  }
+
+  /* Project Page */
+  .projects .pro-articles .article {
+    flex-direction: row;
+  }
+  .projects .article img {
+    width: 100%;
+  }
+  .projects .pro-articles .article .col1 {
+    padding-top: 2rem;
+  }
+
+  /* Contact */
+  .contact .title {
+    margin-top: 3rem;
+  }
+  .contact form {
+    margin: 5rem 0rem;
+  }
+
+  /* Footer */
+  footer .circle {
+    display: none;
+  }
+  footer .row1 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.5rem;
+  }
+  footer .all-divs {
+    font-size: 15px;
+    margin-top: -1rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer .row2 {
+    margin-top: -1rem;
+  }
+}
+
+@media (min-width: 960px) {
+  .description .below-text {
+    display: block;
+  }
+
+  /* Project page */
+  .projects .pro-articles .article .col1 {
+    padding-top: 4rem;
+  }
+}

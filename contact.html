@@ -13,14 +13,14 @@
     />
     <link rel="stylesheet" href="./css/main.css" />
 
-    <title>My website | Home</title>
+    <title>My website | Contact</title>
   </head>
 
   <body>
     <div class=".container">
       <!-- Header section -->
       <header>
-        <nav class="nav" id="navbar">
+        <nav class="nav second-nav">
           <input
             type="checkbox"
             name=""
@@ -47,87 +47,53 @@
                 >PROJECT MANAGER</span
               >
             </li>
-            <li><a class="active" href="index.html">ABOUT ME</a></li>
+            <li><a href="index.html">ABOUT ME</a></li>
             <li><a href="resume.html">RESUME</a></li>
             <li><a href="projects.html">PROJECTS</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
+            <li><a class="active" href="contact.html">CONTACT</a></li>
           </ul>
         </nav>
       </header>
 
-      <!-- Main section -->
-      <main class="main-home">
-        <div class="brown-bg"></div>
-        <div class="white-bg"></div>
-        <div class="overlay">
-          <!-- Description Section  -->
-          <section class="description">
-            <h1>Hello</h1>
-            <h3>Here's who I am & what I do</h3>
-            <div class="btns">
-              <a class="btn btn1 btn-primary" href="resume.html">RESUME</a>
-              <a class="btn btn2 btn-secondary" href="Projects.html"
-                >PROJECTS</a
+      <!-- Main section - Contact -->
+      <main>
+        <section class="contact">
+          <div class="title primary-font">
+            <div class="square"></div>
+            <h1>Let's talk</h1>
+          </div>
+          <form>
+            <div>
+              <label for="f-name"
+                >First Name <span class="blue-color">&#42;</span></label
               >
+              <input type="text" id="f-name" />
             </div>
-            <p>
-              I'm a paragraph. Click here to add your own text and edit me. It’s
-              easy. Just click &ldquo; Edit Text &rdquo; or double click me to
-              add your own content and make changes to the font. <br /><br />
-              <span class="below-text"
-                >I’m a great place for you to tell a story and let your users
-                know a little more about you.</span
+            <div>
+              <label for="f-name"
+                >Last Name <span class="blue-color">&#42;</span></label
               >
-            </p>
-          </section>
-
-          <!-- Introduction -->
-          <section class="introduction">
-            <div class="row">
-              <div class="col">
-                <img src="./img/maya.jpg" alt="Maya images" />
-              </div>
-              <div class="col">
-                <h2>
-                  <strong>
-                    Maya <br />
-                    Nelson</strong
-                  >
-                </h2>
-              </div>
-              <div class="col blue-line"></div>
-              <div class="col btns">
-                <a class="btn btn-primary" href="resume.html">RESUME</a>
-                <a class="btn btn-secondary" href="Projects.html">PROJECTS</a>
-              </div>
-              <p>PROJECT MANAGER</p>
-              <div class="col col-icons">
-                <ul class="social-icons">
-                  <li>
-                    <a href="https://www.facebook.com/wix"
-                      ><i class="fa-brands fa-facebook-f fa-xl"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="https://twitter.com/wix"
-                      ><i class="fa-brands fa-twitter fa-xl"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="https://www.linkedin.com/company/wix-com/"
-                      ><i class="fa-brands fa-linkedin-in fa-xl"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="https://www.instagram.com/wix/"
-                      ><i class="fa-brands fa-instagram fa-xl"></i
-                    ></a>
-                  </li>
-                </ul>
-              </div>
+              <input type="text" id="f-name" />
             </div>
-          </section>
-        </div>
+            <div>
+              <label for="f-name"
+                >Email <span class="blue-color">&#42;</span></label
+              >
+              <input type="text" id="f-name" />
+            </div>
+            <div>
+              <label for="f-name">Subject</label>
+              <input type="text" id="f-name" />
+            </div>
+            <div>
+              <label for="f-name">Message</label>
+              <input type="text" id="f-name" />
+            </div>
+            <div class="form-btn">
+              <a class="btn btn-primary submit" href="#">SEND</a>
+            </div>
+          </form>
+        </section>
       </main>
 
       <!-- Footer section -->
