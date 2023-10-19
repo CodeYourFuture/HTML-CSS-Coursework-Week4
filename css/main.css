@@ -1,3 +1,135 @@
-/* Add your CSS here */
+/* 
+Fonts
+Headings: Poppins - Semi-bold 600
+https://fonts.google.com/specimen/Poppins
+Body: Quicksand - Light 300
+https://fonts.google.com/specimen/Quicksand
 
+Colors
+Dark beige: #E6DACD
+Light beige: #F4ECE6
+Royal blue: #0150FD
+Black: #000
+White: #FFF */
+/* Add your CSS here */
 /* Dont' forget to link this file to your HTML in the <head> */
+
+header {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    background-color: white;
+    color: #000;
+    padding: 50x;
+    display: flex;
+    justify-content: center;
+}
+.fixed-nav {
+    display: flex;
+    font-weight: bold;
+    justify-content: space-between;
+    padding: 3%;
+    
+}
+.nav-left{
+    display: flex;
+    justify-content: left;
+    margin-top: 10%;
+    font-family: "Poppins";
+    
+}
+.nav-left p {
+    font-weight: lighter;
+}
+
+    
+.nav-right {
+    display: flex;
+    justify-content:space-evenly;
+    margin-top: 10%   
+}
+.nav-right a {
+    text-decoration: none;
+    justify-content: right;
+    color: #0050FF;
+    font-size: 15px;
+    padding:2%;
+    font-family: Poppins;
+}
+
+
+body {
+    background-color:#E6DACD;
+    
+    /* font-family: 'Quicksand', sans-serif; */
+}
+
+
+
+
+
+
+
+/* footer {
+    background-color: white;
+    padding:50px;
+
+
+} */
+.footer-container {
+    /* position: fixed; */
+    
+    /* float: left; */
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+.row{
+}
+.the-number{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    float:left;
+    width: 25%;
+    /* width: 100%; */
+    background-color: white;
+    color: black;
+    text-align: left;
+    
+}
+.tlf {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: black;
+    text-align: center;
+
+}
+.number {
+    float:left;
+    width: 25%;
+    /* position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: black;
+    text-align: center; */
+
+}
+/* .email {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: black;
+    text-align: center;
+
+} */
