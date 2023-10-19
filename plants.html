@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- css-links -->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel='stylesheet' href="css/plants.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!-- jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>plant-Responsive grid project</title>
+</head>
+
+<body>
+    <div class="grid-container">
+        <!-- header, nav and hamburger -->
+        <div class="header">
+            <div class="header-grid">
+                <!-- header serchbar and icons-->
+                <div class="header-searchbar-and-icons" >
+                    <div class="form">
+                        <form class="searchbar" method="get" >
+                            <input type="search" name="search" id="search" placeholder="Search...">
+                        </form>
+                    </div>
+                    <div class="icons">
+                        <div class='user-icon'>
+                            <a href='#'>
+                                <svg data-bbox="0 0 50 50" data-type="shape" xmlns="http://www.w3.org/2000/svg"
+                                    width="50" height="50" viewBox="0 0 50 50">
+                                    <g>
+                                        <path fill="currentColor"
+                                            d="M25 48.077c-5.924 0-11.31-2.252-15.396-5.921 2.254-5.362 7.492-8.267 15.373-8.267 7.889 0 13.139 3.044 15.408 8.418-4.084 3.659-9.471 5.77-15.385 5.77m.278-35.3c4.927 0 8.611 3.812 8.611 8.878 0 5.21-3.875 9.456-8.611 9.456s-8.611-4.246-8.611-9.456c0-5.066 3.684-8.878 8.611-8.878M25 0C11.193 0 0 11.193 0 25c0 .915.056 1.816.152 2.705.032.295.091.581.133.873.085.589.173 1.176.298 1.751.073.338.169.665.256.997.135.515.273 1.027.439 1.529.114.342.243.675.37 1.01.18.476.369.945.577 1.406.149.331.308.657.472.98.225.446.463.883.714 1.313.182.312.365.619.56.922.272.423.56.832.856 1.237.207.284.41.568.629.841.325.408.671.796 1.02 1.182.22.244.432.494.662.728.405.415.833.801 1.265 1.186.173.154.329.325.507.475l.004-.011A24.886 24.886 0 0 0 25 50a24.881 24.881 0 0 0 16.069-5.861.126.126 0 0 1 .003.01c.172-.144.324-.309.49-.458.442-.392.88-.787 1.293-1.209.228-.232.437-.479.655-.72.352-.389.701-.78 1.028-1.191.218-.272.421-.556.627-.838.297-.405.587-.816.859-1.24a26.104 26.104 0 0 0 1.748-3.216c.208-.461.398-.93.579-1.406.127-.336.256-.669.369-1.012.167-.502.305-1.014.44-1.53.087-.332.183-.659.256-.996.126-.576.214-1.164.299-1.754.042-.292.101-.577.133-.872.095-.89.152-1.791.152-2.707C50 11.193 38.807 0 25 0">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </a>
+                            <p>Log In</p>
+                        </div>
+                        <div class='bag'><a href='#'>
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%"
+                                    viewBox="5.7 0 105.5 126.1" preserveAspectRatio="xMinYMax meet"
+                                    data-hook="svg-icon-1">
+                                    <path fill="currentColor"
+                                        d="M99.8 28.4c0-1.2-0.9-2-2.1-2h-15c0 3.2 0 7.6 0 8.2 0 1.5-1.2 2.6-2.6 2.9 -1.5 0.3-2.9-0.9-3.2-2.3 0-0.3 0-0.3 0-0.6 0-0.9 0-4.7 0-8.2H40.1c0 3.2 0 7.3 0 8.2 0 1.5-1.2 2.9-2.6 2.9 -1.5 0-2.9-0.9-3.2-2.3 0-0.3 0-0.3 0-0.6 0-0.6 0-5 0-8.2h-15c-1.2 0-2 0.9-2 2L8.3 124c0 1.2 0.9 2.1 2.1 2.1h96.3c1.2 0 2.1-0.9 2.1-2.1L99.8 28.4z">
+                                    </path>
+                                    <path fill="currentColor"
+                                        d="M59.1 5.9c-2.9 0-2 0-2.9 0 -2 0-4.4 0.6-6.4 1.5 -3.2 1.5-5.9 4.1-7.6 7.3 -0.9 1.8-1.5 3.5-1.8 5.6 0 0.9-0.3 1.5-0.3 2.3 0 1.2 0 2.1 0 3.2 0 1.5-1.2 2.9-2.6 2.9 -1.5 0-2.9-0.9-3.2-2.3 0-0.3 0-0.3 0-0.6 0-1.2 0-2.3 0-3.5 0-3.2 0.9-6.4 2-9.4 1.2-2.3 2.6-4.7 4.7-6.4 3.2-2.9 6.7-5 11.1-5.9C53.5 0.3 55 0 56.7 0c1.5 0 2.9 0 4.4 0 2.9 0 5.6 0.6 7.9 1.8 2.6 1.2 5 2.6 6.7 4.4 3.2 3.2 5.3 6.7 6.4 11.1 0.3 1.5 0.6 3.2 0.6 4.7 0 1.2 0 2.3 0 3.2 0 1.5-1.2 2.6-2.6 2.9s-2.9-0.9-3.2-2.3c0-0.3 0-0.3 0-0.6 0-1.2 0-2.6 0-3.8 0-2.3-0.6-4.4-1.8-6.4 -1.5-3.2-4.1-5.9-7.3-7.3 -1.8-0.9-3.5-1.8-5.9-1.8C61.1 5.9 59.1 5.9 59.1 5.9L59.1 5.9z">
+                                    </path><text fill="currentColor" x="58.5" y="77" dy=".35em" text-anchor="middle"
+                                        class="LCo0H" data-hook="items-count">0</text>
+                                </svg>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- header text logo, navbar and hambuger menue  -->
+                <div class="header-grid-2nd">
+                    <div class="header-text-and-navbar">
+                        <!-- header logo text -->
+                        <div class="header-text">
+                            <p>PRICKLES & CO.</p>
+                        </div>
+                        <!-- navbar for desktop -->
+                        <div class="header-navbar-desktop">
+                            <ul class='nav-list'>
+                                <li class='nav-item'><a class='click-pad nav-link' href='#shop'>Shop</a></li>
+                                <li class='nav-item'><a class='click-pad nav-link' href='index.html#aboutus'>About</a></li>
+                                <li class='nav-item'><a class='click-pad nav-link' href='index.html#form'>FAQ</a></li>
+                                <li class='nav-item'><a class='click-pad nav-link' href='#contact'>Contact</a></li>
+                            </ul>
+                        </div>
+                        <!-- hamburger menu -->
+                        <div class="hamburger" onclick="myFunction(this)">
+                            <a href="#">
+                                <div class="bars bar1"></div>
+                                <div class="bars bar2"></div>
+                                <div class="bars bar3"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header-contact-animation">
+                        <p class='p1'>Call Us Now! 123-456-7890 </p>
+                        <!-- <p class='p2'>We Deliver To Your Doorstep</p> -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- main  -->
+        <div class="main" id="main-link">
+            <div class="hero-product">
+                <div class="shop-all-link">
+                    <a href="index.html">Shop All</a>
+                </div>
+                <div class="heroh1-and-downarrow">
+                    <h2>THE WORLD NEEDS MORE PLANTS</h2>
+                    <p>I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click “Edit Text”
+                        or double click me to
+                        add your own content and make changes to the font. I'm a great place for you to tell a story and
+                        let your users know a
+                        little more about you.</p>
+                    <div><a href="#shop"><img class="click-pad" src="cacti-img/arrow-down.gif" alt="white down arrow symbol"></a></div>
+                </div>
+            </div>
+
+            <!-- products section -->
+
+            <div class="products-container">
+                <h2 class='click-space' id="shop">PLANTS</h2>
+                <div class="shop">
+                    <div class="products">
+                        <div class="product-img">
+                            <a href="#"><img src="plants-product-img/prod-1.webp" alt="holding a small plants in a tub">
+                            </a>
+                        </div>
+                        <p>I'm a Product</p>
+                        <p class="price-text">$15.00</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="products">
+                        <div class="product-img">
+                            <a href="#"><img src="plants-product-img/prod-2.webp" alt="holding bunch of green leaves">
+                            </a>
+                        </div>
+                        <p>I'm a Product</p>
+                        <p class="price-text"><span>$15.00</span> $10.00</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="products">
+                        <div class="product-img">
+                            <a href="#"><img src="plants-product-img/prod-3.webp" alt="small growing plants in a tub">
+                            </a>
+                        </div>
+                        <p>I'm a Product</p>
+                        <p class="price-text">$20.00</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="products">
+                        <div class="product-img">
+                            <a href="#"><img src="plants-product-img/prod-4.webp" alt="small growing plant with thick green leaves in a tub">
+                            </a>
+                        </div>
+                        <p>I'm a Product</p>
+                        <p class="price-text">$20.00</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="products">
+                        <span class="span">Best Seller</span>
+                        <div class="product-img">
+                            <a href="#"><img src="plants-product-img/prod-5.webp" 
+                                alt="half grown plants with thick green leaves and white small flowers in a big tub">
+                            </a>
+                        </div>
+                        <p>I'm a Product</p>
+                        <p class="price-text">$28.00</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="products">
+                        <div class="product-img">
+                            <a href="#"><img src="plants-product-img/prod-6.webp" 
+                                alt="half grown plant with with rounded leaves in a small tub">
+                            </a>
+                        </div>
+                        <p>I'm a Product</p>
+                        <p class="price-text">$10.00</p>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- footer -->
+            <div class="footer">
+                <div class="footer-items">
+                    <!-- 3 columns text div -->
+                    <div class="footer-links click-space" id='contact'>
+
+                        <div class="store">
+                            <h2>OUR STORE</h2>
+                            <P>Address: 500 Terry Francois Street <br> San Francisco,CA 94158 <br>
+                                Phone: 123-456-7890 <br>
+                                Email: info@mysite.com</P>
+                        </div>
+                        <div class="hours">
+                            <h2>OPENING HOURS</h2>
+                            <p>Mon - Fri: 7am - 10pm <br>
+                                ​​Saturday: 8am - 10pm <br>
+                                ​Sunday: 8am - 11pm</p>
+                        </div>
+                        <div class="help-links">
+                            <h2>HELP</h2>
+                            <a href="#">Shipping & Returns</a> <br>
+                            <a href="#">Policy</a> <br>
+                            <a href="#">FAQ</a>
+                        </div>
+                    </div>
+                    <!-- subscribe div -->
+                    <div class="subscribe">
+                        <form action="get">
+                            <h2>SUBSCRIBE</h2>
+                            <label for="email">Your email address here*</label> <br>
+                            <div class="email-flex">
+                                <input type="email" name="email" id="email"> <br>
+                                <input type="submit" class='button' value="Subscribe Now">
+                            </div>
+                        </form>
+                    </div>
+                    <!-- social media -->
+                    <div class="social-media">
+                        <div class="social-icon"><a href="#"><img src="plant-img/facebook.webp" alt="facebook logo"></a>
+                        </div>
+                        <div class="social-icon"><a href="#"><img src="plant-img/pinterest.webp"
+                                    alt="pinterest logo"></a></div>
+                        <div class="social-icon"><a href="#"><img src="plant-img/instagram.webp"
+                                    alt="instagram logo"></a></div>
+                    </div>
+                    <!-- google map -->
+                    <div class="map-responsive">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3153.8390563320827!2d-122.3893135!3d37.7703718!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7fc4fe7ace37%3A0xfa1746dd4faeb818!2s500%20Terry%20A%20Francois%20Blvd%2C%20San%20Francisco%2C%20CA%2094158%2C%20USA!5e0!3m2!1sen!2suk!4v1640285615535!5m2!1sen!2suk"
+                            width="99%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    <!-- copyright -->
+                    <div class="copyright">
+                        <p> &copy 2023 by Prickles & Co. Proudly</p>
+                        <p> Created with love by <a href="">Mohammad</a></p>
+                    </div>
+                </div>
+            </div>
+            <!-- chat button -->
+            <a href="#">
+                <div class="chat-button"> </div>
+                <div class="chat-button-desktop"></div>
+            </a>
+            <!-- up-arrow -->
+            <div class="up-arrow">
+                <a href="#main-link"><img src="plant-img/up-arrow.png" alt="white up arrow"></a>
+            </div>
+        </div>
+    </div>
+    <!-- hambuger animation function -->
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+        }
+    </script>
+    <!-- jquery -->
+        <script>
+            $(document).ready(function () {
+                $('.click-pad').click(function () {
+                    $('.click-space').css({ 'padding-top': '15%'});
+                    // a links class is used to make space on click of nav bar
+                })
+            })
+        </script>
+</body>
+
+</html>

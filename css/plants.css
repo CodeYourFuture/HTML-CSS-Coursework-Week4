@@ -1,0 +1,191 @@
+/* imported google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap");
+body {
+  font-family: "Outfit", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--Ligh-Grey);
+}
+:root {
+  /* colours */
+  --Red-Brown: #a05941;
+  --Green-Black: #133032;
+  --Ligh-Grey: #ededee;
+  --White: #fff;
+  --Transparent-White: rgba(0, 0, 0, 0.75);
+  /* fonts */
+  --fjalla: "Fjalla One", sans-serif;
+  --outfit-light: "Outfit", sans-serif;
+}
+/* hero-product section */
+.hero-product {
+  background-image: linear-gradient(
+      to right,
+      rgba(204, 204, 204, 0.6) 0%,
+      rgba(79, 109, 34, 0.6) 100%
+    ),url("../plants-product-img/plants-hero.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  background-position: center;
+  background-attachment: fixed;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3rem 32rem;
+  text-align: center;
+  color: var(--White);
+  position: relative;
+}
+/* shop all link div */
+.hero-product .shop-all-link {
+  height: 4rem;
+  margin-top: 3rem;
+  z-index: 1;
+}
+.shop-all-link a {
+  text-decoration: none;
+  color: var(--White);
+  font-size: 1rem;
+  font-weight: bold;
+}
+.shop-all-link a::before {
+  content: "<";
+  padding-right: 3px;
+}
+.hero-product h2 {
+  font-size: 3rem;
+  font-family: var(--fjalla);
+  letter-spacing: 2px;
+  font-weight: lighter;
+}
+.hero-product p {
+  margin-top: -1rem;
+  font-size: 1rem;
+}
+.heroh1-and-downarrow {
+  padding: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* down arrow button */
+    .heroh1-and-downarrow div {
+    height: 2.8rem;
+    width: 2.8rem;
+    transform: scale(1);
+    animation: pulse 2s infinite;
+    }
+/* down arrow animation */
+@keyframes pulse {
+    0% {
+    transform: scale(0.9);
+    }
+    60% {
+    transform: scale(1);
+    }
+    100% {
+    transform: scale(0.9);;
+    }
+}
+
+.heroh1-and-downarrow img {
+  width: 100%;
+  height: 100%;
+}
+
+/* products section */
+.shop {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-flow: row;
+  padding: 1rem; /* remove padding in desktop version */
+}
+.product-img img {
+  width: 100%;
+  height: 100%;
+}
+.products-container h2 {
+  font-size: 2rem;
+  font-family: var(--fjalla);
+  font-weight: lighter;
+  letter-spacing: 1px;
+  text-align: center;
+  padding-top: .5rem;
+  }
+.shop .products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; /* This position is important for new arrival span text */
+}
+.shop .products:hover{
+    cursor: pointer;
+}
+.products .span{
+    position: absolute; /* This position is works due to the parent div's position-relative */
+    font-size: 1rem ;
+    top: 0;
+    left: 0;
+    background-color: var(--Transparent-White);
+    color: var(--White);
+    padding:.5rem;
+}
+.products p {
+  color: var(--Red-Brown);
+  font-size: 1.05rem;
+}
+.products .price-text {
+  margin-top: -0.5rem;
+}
+.products p span {
+  text-decoration: line-through;
+}
+/* shop add to cart button */
+.products button {
+  width: 100%;
+  height: 2.5rem;
+  text-align: center;
+  color: var(--White);
+  background-color: var(--Red-Brown);
+  border: none;
+  font-size: 1.1rem;
+  font-weight: lighter;
+  font-family: var(--outfit-light);
+  margin-bottom: 2rem;
+}
+.products button:hover {
+  opacity: 0.75;
+  transition: 0.5s ease-in-out;
+}
+
+@media screen and (min-width: 1100px) {
+  /* main */
+  .hero-product {
+  margin-top: 14%;
+  }
+  /* shop all link div */
+  .hero-product .shop-all-link {
+  margin-top: 4rem;
+  }
+  .hero-product h2 {
+  margin-top: 4rem;
+  font-size: 4.5rem;
+  width: 37rem;
+  }
+  .hero-product p {
+  margin-top: -2rem;
+  font-size: 1.1rem;
+  width: 55rem;
+  }
+  /* products section */
+  .shop {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-flow: row;  
+  gap: 1rem;
+  padding: 1.5rem 0;
+  }
+}
