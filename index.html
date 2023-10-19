@@ -1,21 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Add a link to your custom CSS here -->
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
     <title>Responsive grid project</title>
-</head>
+  </head>
+  <body>
+    <header>
+      <a href="/index.html">
+        <div class="header-person-initials">
+          <h1 class="header-item-maya-name">
+            <div class="header-square"></div>
+            Maya Nelson
+          </h1>
+          <p class="header-item-maya-posision">
+            <span class="header-slash">/</span>PROJECT MANAGER
+          </p>
+        </div>
+      </a>
+      <div class="header-navbar-container-mobile">
+        <span class="header-navbar-item-mobile"></span>
+        <span class="header-navbar-item-mobile"></span>
+        <span class="header-navbar-item-mobile"></span>
+      </div>
+      <div class="header-navbar-container-desktop">
+        <button id="blue-for-first-child" class="header-nav-item"><a href="index.html"
+          >ABOUT ME</a></button>
+        <button class="header-nav-item"><a href="resume.html" 
+          >RESUME</a></button>
+        <button class="header-nav-item"><a href="projects.html"
+          >PROJECTS</a></button>
+        <button class="header-nav-item"><a href="contact.html"
+          >CONTACT</a></button>
+      </div>
+      <!-- <nav class="hamburger">
+  <div class="ham-span"></div>
+  <div class="ham-span"></div>
+  <div class="ham-span"></div>
+  </nav> -->
+    </header>
 
-<body>
+    <main>
+      <section class="section-one-left">
+        <div class="image-maya-contaner">
+          <img class="image-maya-item" src="img/image-maya.webp" />
+        </div>
+        <div class="text-maya-contaner">
+          <h1 class="text-maya-item">Maya<br />Nelson</h1>
+        </div>
+        <span class="section-one-span"></span>
+        <div class="section-one-paragraf-maya-contaner">
+          <h2 class="section-one-desktop-h2">PROJECT MANAGER</h2>
+        </div>
+        <!-- Buttons for mobile-->
+        <div class="section-one-buttons-mobile">
+          <button class="section-one-button resume-button">
+            <a href="#" ">RESUME</a></button>
+          <button class="section-one-button projects-button">
+            <a href="#">PROJECTS</a>
+          </button>
+        </div>
+        <div class="section-one-container-social">
+          <i class="fa fa-facebook social" style="font-size: 22px"></i>
+          <i class="fa fa-twitter social" style="font-size: 24px"></i>
+          <i class="fa fa-linkedin social" style="font-size: 24px"></i>
+          <i class="fa fa-instagram social" style="font-size: 24px"></i>
+        </div>
+      </section>
 
-    <!-- Add your markup here -->
+      <section class="section-two-right">
+        <h1 class="section-two-heading">Hello</h1>
+        <h2 class="section-two-subheading">Here's who I am & what I do</h2>
+        <div class="section-one-buttons-desktop">
+          <button class="section-one-button resume-button">
+            <a href="#">RESUME</a></button>
+          <button class="section-one-button projects-button">
+            <a href="#">PROJECTS</a>
+          </button>
+        </div>
+        <div class="section-two-paragraf">
+          <p>
+            I'm a paragraph. Click here to add your own text and edit me. It's
+            easy. Just click “Edit Text” or double click me to add your own
+            content and make changes to the font.
+          </p>
+          <br />
+          <p>
+            I'm a great place for you to tell a story and let your users know a
+            little more about you.
+          </p>
+        </div>
+      </section>
+    </main>
 
-
-    <!-- Please leave this in to credit the creators of this design -->
-    <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
-</body>
-
+    <footer>
+      <div class="footer-call">
+        <h3>Call</h3>
+        <p>123-456-7890</p>
+      </div>
+      <div class="footer-email">
+        <h3>Write</h3>
+        <a href="#"><p>info@mysite.com</p></a>
+      </div>
+      <div class="footer-sosial">
+        <h3>Follow</h3>
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-linkedin"></i>
+        <i class="fa fa-instagram"></i>
+      </div>
+      <div class="footer-p">
+        <p>
+          © 2035 by Maya Nelson.<br />Powered and secured by<a class="link-underline" href="#">Wix</a>
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
